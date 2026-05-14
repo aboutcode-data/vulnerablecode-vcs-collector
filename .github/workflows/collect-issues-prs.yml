@@ -1,0 +1,40 @@
+name: Hourly sync for collecting issues and pull requests
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install required packages
+        run: pip install PyGithub==2.8.1 python-dotenv==1.2.2 packageurl-python==0.17.6 python-gitlab==8.1.0 aboutcode.pipeline==0.2.1
+
+      - name: Run sync
+        env:
+            GH_API_TOKEN: ${{ secrets.GH_API_TOKEN }}
+            GLAB_API_TOKEN: ${{ secrets.GLAB_API_TOKEN }}
+        run: python issues_prs_collector.py
+
+      - name: Commit and push if it changed
+        run: |-
+          git config user.name "AboutCode Automation"
+          git config user.email "automation@aboutcode.org"
+          git add -A
+          timestamp=$(date -u)
+          git commit -m "$(echo -e "Sync Collecting Issues and Pull requests related to vulnerabilities: $timestamp\n\nSigned-off-by: AboutCode Automation <automation@aboutcode.org>")" || exit 0
+          git push

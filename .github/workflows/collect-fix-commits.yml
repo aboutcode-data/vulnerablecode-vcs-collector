@@ -1,0 +1,37 @@
+name: Hourly sync for collecting fix commits
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install required packages
+        run: pip install GitPython==3.1.46 packageurl-python==0.17.6 aboutcode.pipeline==0.2.1
+
+      - name: Run sync
+        run: python fix_commits_collector.py
+
+      - name: Commit and push if it changed
+        run: |-
+          git config user.name "AboutCode Automation"
+          git config user.email "automation@aboutcode.org"
+          git add -A
+          timestamp=$(date -u)
+          git commit -m "$(echo -e "Sync Collecting Fix Commits: $timestamp\n\nSigned-off-by: AboutCode Automation <automation@aboutcode.org>")" || exit 0
+          git push
