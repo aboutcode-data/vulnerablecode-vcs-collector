@@ -1,0 +1,53 @@
+{
+  "vcs_url": "https://github.com/apache/accumulo",
+  "vulnerabilities": {
+    "CVE-2025-68161": {
+      "b6cb9a02fba1efe5e4d9749903b946d66340bd15": "Upgrade log4j version (#6064)\n\nUpgrades the log4j version to fix CVE-2025-68161"
+    },
+    "CVE-2025-12183": {
+      "df479238f94375a2f0d2738a748957468d0dfc89": "Upgrade lz4-java dependency (#6000)\n\nThe lz4-java dependency, which is only used in PropertyTest,\nwas flagged due to CVE-2025-12183.  This changes the\ndependency in accordance with the recommendation at\nhttps://sites.google.com/sonatype.com/vulnerabilities/cve-2025-12183"
+    },
+    "CVE-2024-7254": {
+      "bb180629e4ea77510392273d90d14bfe56b62fc9": "Bump protobuf-java to 3.25.6 due to CVE-2024-7254 (#5446)"
+    },
+    "CVE-2023-44981": {
+      "f79bf079509b6e64ac002425163df4bf191a9d28": "Bump ZooKeeper for CVE-2023-44981 (#3899)\n\nBump ZooKeeper to 3.8.3 to address warnings about CVE-2023-44981\r\n\r\n(Note: this CVE affects SASL-configured server deployments of ZK, not ZK\r\nclient code, like how Accumulo uses it, but this removes the warning\r\nfrom GitHub about critical vulnerabilities in Accumulo, and in general,\r\nAccumulo tries to develop against the latest patched version of a\r\nparticular release anyway.)"
+    },
+    "CVE-2023-33201": {
+      "719697786c19506daa301e1a2d2f8ad3453d8d78": "Update bouncycastle test dependency to 1.76 (#3819)\n\n* Mitigate CVE-2023-33201 in bouncycastle test dependency by\r\n  updating to 1.76; it's unlikely we'd have hit this issue,\r\n  because we only use this for a test dependency for our Ssl\r\n  tests, but it is still good to keep it up to date.\r\n* The Java 1.5-compatible bouncycastle libraries are no longer\r\n  maintained, so this moves to the versions that require Java 8,\r\n  which is not a problem, since we require at least Java 11 for\r\n  2.1 and later.\r\n* Also replace usage of bouncycastle's Arrays.fill with Java's\r\n  own, which was a bug in some compaction ITs."
+    },
+    "CVE-2019-16335": {
+      "c03e0fe251e178f30cc1cb8dd0998005c9f8014f": "Update jackson to 2.9.10\n\n* Fix CVE-2019-16335\n* Fix CVE-2019-14540"
+    },
+    "CVE-2019-14540": {
+      "c03e0fe251e178f30cc1cb8dd0998005c9f8014f": "Update jackson to 2.9.10\n\n* Fix CVE-2019-16335\n* Fix CVE-2019-14540"
+    },
+    "CVE-2019-12814": {
+      "5cec6a21b5d3bddf2b9e6da910494b1d35d86f04": "Fix CVE-2019-12814 Use jackson-databind 2.9.9.1"
+    },
+    "CVE-2019-0201": {
+      "c8776a9d08da2638b6e3c1c580a1242c3a6683ed": "Update ZooKeeper (CVE-2019-0201)"
+    },
+    "CVE-2019-12086": {
+      "1e4a6416bf26b85e7035e6320b70591a984cb245": "Update jackson to 2.9.9 (#1170)\n\n(CVE-2019-12086)"
+    },
+    "CVE-2019-10247": {
+      "6294791e5f90b32119e549395c0dd2659b012304": "Update jetty to latest to fix multiple CVEs\n\nThis newer version of jetty fixes:\n\n* CVE-2019-10247\n* CVE-2019-10246\n* CVE-2019-10241"
+    },
+    "CVE-2019-10246": {
+      "6294791e5f90b32119e549395c0dd2659b012304": "Update jetty to latest to fix multiple CVEs\n\nThis newer version of jetty fixes:\n\n* CVE-2019-10247\n* CVE-2019-10246\n* CVE-2019-10241"
+    },
+    "CVE-2019-10241": {
+      "6294791e5f90b32119e549395c0dd2659b012304": "Update jetty to latest to fix multiple CVEs\n\nThis newer version of jetty fixes:\n\n* CVE-2019-10247\n* CVE-2019-10246\n* CVE-2019-10241"
+    },
+    "CVE-2018-12545": {
+      "f7077580e2ffe5f5a9ea1a248f5417b780bc71fb": "Update jetty to latest (CVE-2018-12545)"
+    },
+    "CVE-2019-9658": {
+      "ba943671a7f5353d4ad440c9c807f78102d7ea23": "Update checkstyle (CVE-2019-9658)"
+    },
+    "CVE-2018-1320": {
+      "e0841b77a649487118094d21e06eda61dc87cf69": "Update to libthrift 0.9.3-1 (#1029)\n\nApply update for THRIFT-4506 CVE-2018-1320\r\nGenerator does not change between 0.9.3 and 0.9.3-1, only libthrift jar"
+    }
+  }
+}

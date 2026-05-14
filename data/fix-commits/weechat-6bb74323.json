@@ -1,0 +1,15 @@
+{
+  "vcs_url": "https://github.com/weechat/weechat",
+  "vulnerabilities": {
+    "CVE-2022-2663": {
+      "9cb68b13a94175b6fc64a9d9f20b2b923a1c0b09": "irc: replace chars \"\\01\" by spaces in CTCP replies (closes #1819)\n\nThis prevents any attack due to an external security issue in the Linux\nnetfilter implementation (nf_conntrack_irc).\n\nSee: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2663"
+    },
+    "CVE-2021-40516": {
+      "24f4f8fffa984d32e2f41d2af90743c6a8a3841d": "relay: fix crash when decoding a malformed websocket frame (CVE-2021-40516)"
+    },
+    "CVE-2020-8955": {
+      "51a739df615f8ec66fbe1e9682ec3c3218254ad7": "irc: fix crash when receiving a malformed message 324 (channel mode) (CVE-2020-8955)\n\nThanks to Stuart Nevans Locke for reporting the issue.",
+      "09aa6dbf0617308e8c4b10fd7c2f74ad3249b11f": "core: add CVE-2020-8955 in ChangeLog"
+    }
+  }
+}

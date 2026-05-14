@@ -1,0 +1,50 @@
+{
+  "vcs_url": "https://github.com/swagger-api/swagger-codegen",
+  "vulnerabilities": {
+    "CVE-2019-14439": {
+      "1c18d1c8284d3adc900f39f89261dcdaee1a8806": "Merge pull request #12301 from swagger-api/jackson-databind-CVE-2019-14439\n\nupdated jackson dependency version to solve vulnerability warning"
+    },
+    "CVE-2022-45690": {
+      "02a37a7c58b010b47a6f1203cf426ff8c7079c5e": "bump org.json:json and jersey versions (CVE-2022-45690, CVE-2021-28168)"
+    },
+    "CVE-2021-28168": {
+      "02a37a7c58b010b47a6f1203cf426ff8c7079c5e": "bump org.json:json and jersey versions (CVE-2022-45690, CVE-2021-28168)"
+    },
+    "CVE-2021-29425": {
+      "a06fe1cd53ca06167a66f9c9de3bff713ece182a": "bump Apache Commons IO version in order to fix vulnerability https://nvd.nist.gov/vuln/detail/CVE-2021-29425",
+      "69c7145a6f4dc9e0b9397f9476de6f4e322a8edc": "bump Apache Commons IO version in order to fix vulnerability https://nvd.nist.gov/vuln/detail/CVE-2021-29425",
+      "ffba750ab8b8c6255c0c79a6231cfb6474e39ef3": "bump Apache Commons IO version in order to fix vulnerability https://nvd.nist.gov/vuln/detail/CVE-2021-29425",
+      "abf119ddaad45d1e4f44a010588d3559fc97fab7": "bump Apache Commons IO version in order to fix vulnerability https://nvd.nist.gov/vuln/detail/CVE-2021-29425"
+    },
+    "CVE-2020-25649": {
+      "7e66f4c9edcaf89e14c11deccea6e852081979ce": "ref CVE-2020-25649 - fix jackson code",
+      "a50f14ae1d11f3d12118b28ae3ccde6c584caa03": "ref CVE-2020-25649 - jackson 2.11.4"
+    },
+    "GHSA-HPV8-9RQ5-HQ7W": {
+      "35adbd552d5f99b3ff1e0e59da228becc85190f2": "Merge pull request from GHSA-hpv8-9rq5-hq7w\n\nsecurity: fix CWE-378 CWE-200 CWE-732 - use java.nio.files"
+    },
+    "GHSA-PC22-3G76-GM6J": {
+      "987ea7a30b463cc239580d6ad166c707ae942a89": "Merge pull request from GHSA-pc22-3g76-gm6j\n\n security: use java.nio.files in Generator."
+    },
+    "CVE-2020-27216": {
+      "2d0f7a9e1b61a470039ea580a4d3024b1da92188": "Merge pull request #10569 from swagger-api/bump-jetty-v3\n\nfix CVE-2020-27216 - bump jetty version",
+      "bc90330eae19bdfdbd6706b3ee9fa745292521cf": "Merge pull request #10568 from swagger-api/bump-jetty\n\nfix CVE-2020-27216 - bump jetty version",
+      "b50d2a06bed8d7e95293dda5426d18d48571646c": "fix CVE-2020-27216 - bump jetty version",
+      "567955230f0b1857f8e9b460a652b869f71d795c": "fix CVE-2020-27216 - bump jetty version"
+    },
+    "CVE-2020-8130": {
+      "fd7e6d8df590837246347cede129892be4ef001a": "Merge pull request #10167 from swagger-api/ruby-CVE-2020-8130\n\nruby rake 12.3.3 - fixes CVE-2020-8130",
+      "3f4a56b1a4e5f170f42fe7b5b97950bd57972fc2": "ruby rake 12.3.3 - fixes CVE-2020-8130"
+    },
+    "CVE-2020-7598": {
+      "a043ebf6fe276a3311f495e3e2d8e8c8b2dc80d0": "Merge pull request #10166 from swagger-api/typescript-node-CVE-2020-7598\n\ntypescript-node minimist ^1.2.5 - fixes CVE-2020-7598",
+      "9196bc08dbb5a8fe9ca41430d5eab855929b25c7": "typescript-node minimist ^1.2.5 - fixes CVE-2020-7598"
+    },
+    "CVE-2012-2098": {
+      "1733916d48fdcc24bb1475b135a97901cc2f9f61": "Update maven-bundle-plugin version in POM (#5158)\n\nUpdate maven-bundle-plugin to 3.3.0 to fix CVE-2012-2098, per issue #5148"
+    },
+    "CVE-2016-5641": {
+      "80666394f671ec38f363732a16ed0fb284fd295c": "CVE-2016-5641"
+    }
+  }
+}

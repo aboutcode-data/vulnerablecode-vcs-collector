@@ -1,0 +1,49 @@
+{
+  "vcs_url": "https://github.com/apache/cxf",
+  "vulnerabilities": {
+    "CVE-2025-23184": {
+      "fd7ce3c83098f61e35d27c121720700e2f06c829": "CXF-9171: DelayedCachedOutputStreamCleaner thread accumulation after CVE-2025-23184 fix (#2684)\n\n* CXF-9171: DelayedCachedOutputStreamCleaner thread accumulation after CVE-2025-23184 fix\n\n* Address code review comments\n\n(cherry picked from commit 1ce9fe1cbf779629e77f7b5f4f62bdb8d4322bcb)\n(cherry picked from commit 38adf23f92af3e6115e431aef694377dcec5efd1)",
+      "38adf23f92af3e6115e431aef694377dcec5efd1": "CXF-9171: DelayedCachedOutputStreamCleaner thread accumulation after CVE-2025-23184 fix (#2684)\n\n* CXF-9171: DelayedCachedOutputStreamCleaner thread accumulation after CVE-2025-23184 fix\n\n* Address code review comments\n\n(cherry picked from commit 1ce9fe1cbf779629e77f7b5f4f62bdb8d4322bcb)",
+      "1ce9fe1cbf779629e77f7b5f4f62bdb8d4322bcb": "CXF-9171: DelayedCachedOutputStreamCleaner thread accumulation after CVE-2025-23184 fix (#2684)\n\n* CXF-9171: DelayedCachedOutputStreamCleaner thread accumulation after CVE-2025-23184 fix\n\n* Address code review comments"
+    },
+    "CVE-2023-33008": {
+      "cac0396188038974522356b7d47e208fab755163": "Updating Johnzon to 1.2.21 to fix CVE-2023-33008 (#1511) (#1515)\n\n(cherry picked from commit 3288448e4bbc838b7e4d6461c59b4ebb8aaf6d96)\r\n\r\n# Conflicts:\r\n#\tparent/pom.xml\r\n(cherry picked from commit 68acd8632245c4c80eda297bbd55c2f278ce1c0d)",
+      "ba461cfb01b4f222863061fcc0c85dad7fc091db": "Updating Johnzon to 1.2.21 to fix CVE-2023-33008 (#1512)\n\n* Updating Johnzon to 1.2.21 to fix CVE-2023-33008 (#1511)\r\n\r\n(cherry picked from commit 3288448e4bbc838b7e4d6461c59b4ebb8aaf6d96)\r\n\r\n# Conflicts:\r\n#\tparent/pom.xml\r\n\r\n* Recording .gitmergeinfo Changes\r\n\r\n* Removing jakarta classifier",
+      "68acd8632245c4c80eda297bbd55c2f278ce1c0d": "Updating Johnzon to 1.2.21 to fix CVE-2023-33008 (#1511)\n\n(cherry picked from commit 3288448e4bbc838b7e4d6461c59b4ebb8aaf6d96)\n\n# Conflicts:\n#\tparent/pom.xml",
+      "3288448e4bbc838b7e4d6461c59b4ebb8aaf6d96": "Updating Johnzon to 1.2.21 to fix CVE-2023-33008 (#1511)"
+    },
+    "CVE-2022-42003": {
+      "40d6688ae1dc6301b4182d314f1afd23d29c3934": "Update Jackson Databind to 2.13.4.1 (CVE-2022-42003)\n\n(cherry picked from commit 07d4d658494ab19860932d6ec83059c7ab9443cb)\n(cherry picked from commit 53ddfd845f0861af21cf80ba903b0e10b4d97dca)\n(cherry picked from commit 5af234cd54bbc773998c69cb14771fe4cd6f4de9)",
+      "5af234cd54bbc773998c69cb14771fe4cd6f4de9": "Update Jackson Databind to 2.13.4.1 (CVE-2022-42003)\n\n(cherry picked from commit 07d4d658494ab19860932d6ec83059c7ab9443cb)\n(cherry picked from commit 53ddfd845f0861af21cf80ba903b0e10b4d97dca)",
+      "53ddfd845f0861af21cf80ba903b0e10b4d97dca": "Update Jackson Databind to 2.13.4.1 (CVE-2022-42003)\n\n(cherry picked from commit 07d4d658494ab19860932d6ec83059c7ab9443cb)",
+      "07d4d658494ab19860932d6ec83059c7ab9443cb": "Update Jackson Databind to 2.13.4.1 (CVE-2022-42003)"
+    },
+    "CVE-2020-8908": {
+      "a17f1327b9ad1375f3930d78e88d15556e4af3bd": "Updating Guava to 30.1 due to CVE-2020-8908\n\n(cherry picked from commit 00f9a5fcf9ccfa1212b84ff0a83392a96b29836a)",
+      "00f9a5fcf9ccfa1212b84ff0a83392a96b29836a": "Updating Guava to 30.1 due to CVE-2020-8908"
+    },
+    "CVE-2018-10237": {
+      "eec13f495ec1207da93d8373531cdb3c0605781a": "upgrade guava, CVE-2018-10237 (#638)\n\n* upgrade guava, CVE-2018-10237\r\n\r\nSigned-off-by: David Karlsen <david@davidkarlsen.com>\r\n\r\n* Upgrade to guava 29.0\r\n\r\nSigned-off-by: David Karlsen <david@davidkarlsen.com>"
+    },
+    "CVE-2017-4995": {
+      "8d7bd0e8c16154a184358b9c18e0f8c8e1ae7dbb": "CVE-2017-4995 updated Spring dependencies"
+    },
+    "CVE-2017-5656": {
+      "f25f4a51bf0de5255414c233f41ccc35cf00a073": "Backporting fix for CVE-2017-5656"
+    },
+    "CVE-2016-6812": {
+      "d8e4ea6a67b4093f703387919a98f0026a9d6724": "Merge pull request #3 from exabrial/TRIBESTRM-3973_CVE-2016-6812\n\n[TRIBESTRM-3973] CVE-2016-6812"
+    },
+    "CVE-2016-8739": {
+      "73963a760286eeacc425f4cd366b7dd8dbf20795": "Merge pull request #1 from exabrial/TRIBESTRM_3972_CVE_2016_8739\n\n[Tribestrm-3972] cve-2016-8739"
+    },
+    "CVE-2014-3577": {
+      "1a01c8bcdd9b9b038487c8cc7f692d65cfdfe39a": "fixing CVE-2014-3577 + upgrading wss4j + ignoring invalid tests or instable ones (perf)"
+    },
+    "CVE-2014-8122": {
+      "487cb7c2c992e280e3aa6758399ecfa5bfaccff5": "Updating Weld version due to CVE-2014-8122\n\n# Conflicts:\n#\tparent/pom.xml",
+      "3a1b80659af65063b8c8aa5bbc79cd2a888c8685": "Updating Weld version due to CVE-2014-8122",
+      "c28201f2c9b015614f0c0a3e4b66f73d36f4454b": "Updating Weld version due to CVE-2014-8122"
+    }
+  }
+}

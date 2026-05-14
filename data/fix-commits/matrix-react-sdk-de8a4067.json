@@ -1,0 +1,31 @@
+{
+  "vcs_url": "https://github.com/matrix-org/matrix-react-sdk",
+  "vulnerabilities": {
+    "CVE-2023-37259": {
+      "22fcd34c606f32129ebc967fc21f24fb708a98b8": "Sanitise strings going into the html export CVE-2023-37259"
+    },
+    "GHSA-XV83-X443-7RMW": {
+      "bf182bc94556849d7acdfa0e5fdea2aa129ea826": "Merge pull request from GHSA-xv83-x443-7rmw\n\n* Escape HTML for plaintext search results\n\n* Add tests",
+      "961b843662303442d1fde9375cba3af6350c64ca": "Merge pull request from GHSA-xv83-x443-7rmw\n\n* Escape HTML for plaintext search results\n\n* Add tests"
+    },
+    "CVE-2022-39249": {
+      "66b21e96ca11f0820f7af39fe24c93037a623f57": "Resolve multiple CVEs\n\nCVE-2022-39249\nCVE-2022-39250\nCVE-2022-39251\nCVE-2022-39236"
+    },
+    "CVE-2022-39250": {
+      "66b21e96ca11f0820f7af39fe24c93037a623f57": "Resolve multiple CVEs\n\nCVE-2022-39249\nCVE-2022-39250\nCVE-2022-39251\nCVE-2022-39236"
+    },
+    "CVE-2022-39251": {
+      "66b21e96ca11f0820f7af39fe24c93037a623f57": "Resolve multiple CVEs\n\nCVE-2022-39249\nCVE-2022-39250\nCVE-2022-39251\nCVE-2022-39236"
+    },
+    "CVE-2022-39236": {
+      "66b21e96ca11f0820f7af39fe24c93037a623f57": "Resolve multiple CVEs\n\nCVE-2022-39249\nCVE-2022-39250\nCVE-2022-39251\nCVE-2022-39236"
+    },
+    "GHSA-QMF4-7W7J-VF23": {
+      "7ca7aa1303ca1e2fc06eb6d669d63d6d3e6b30dd": "Merge pull request from GHSA-qmf4-7w7j-vf23 (#8059)\n\nCo-authored-by: J. Ryan Stinnett <jryans@gmail.com>",
+      "c4428a804c51c4f0ab724549323167a11d9b8e26": "Merge pull request from GHSA-qmf4-7w7j-vf23"
+    },
+    "GHSA-F69Q-VRFP-27G2": {
+      "cb00796a25818f5457bb2a77af244296d223aefc": "Merge pull request from GHSA-f69q-vrfp-27g2\n\nSanitize untrusted variables from message previews before translation"
+    }
+  }
+}

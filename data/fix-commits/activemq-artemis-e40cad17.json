@@ -1,0 +1,15 @@
+{
+  "vcs_url": "https://github.com/apache/activemq-artemis",
+  "vulnerabilities": {
+    "CVE-2021-44228": {
+      "a30043572022f81b7bc819ef375f19534d05a1cf": "ARTEMIS-3612 update Hawtio and strip Log4j from console web app\n\nMove to the latest release of Hawtio 2.14.x.\n\nAlso, remove the Log4j archives from the web console application. It's\nnot necessary to include Log4j archives because Hawtio itself uses SLF4J\nand the logging implementation will be provided by the broker runtime.\nWe already do this for SLF4J.\n\nWhile not strictly necessary, removing Log4j will ease concerns about\nsecurity issues such as the recently announced CVE-2021-44228.\n\n(cherry picked from commit 2e3c69c9c8df200ab2c1ab202ebe8da0ea5a5652)",
+      "2e3c69c9c8df200ab2c1ab202ebe8da0ea5a5652": "ARTEMIS-3612 update Hawtio and strip Log4j from console web app\n\nMove to the latest release of Hawtio 2.14.x.\n\nAlso, remove the Log4j archives from the web console application. It's\nnot necessary to include Log4j archives because Hawtio itself uses SLF4J\nand the logging implementation will be provided by the broker runtime.\nWe already do this for SLF4J.\n\nWhile not strictly necessary, removing Log4j will ease concerns about\nsecurity issues such as the recently announced CVE-2021-44228."
+    },
+    "CVE-2014-0114": {
+      "39fe4fd9efb3fb0230cb24c1ef7b52fd819758f9": "Updated Apache BeanUtils to address CVE\n\n1.9.4 is a minor update do address CVE-2014-0114:\r\nhttp://commons.apache.org/proper/commons-beanutils/javadocs/v1.9.4/RELEASE-NOTES.txt"
+    },
+    "CVE-2018-10237": {
+      "d708be31896907e06c8790d1bc9a34abae21cdc7": "ARTEMIS-2359 Upgrade to Guava 24.1\n\nCVE-2018-10237 guava: Unbounded memory allocation in AtomicDoubleArray\nand CompoundOrdering classes allow remote attackers to cause a denial\nof service."
+    }
+  }
+}

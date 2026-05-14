@@ -1,0 +1,13 @@
+{
+  "vcs_url": "https://github.com/pyca/cryptography",
+  "vulnerabilities": {
+    "CVE-2020-36242": {
+      "9a2e1dfacd54fbae855a5fcc85857548b4ba2617": "port 3.4.6 changelog (#5842)\n\n* port 3.4.6 changelog\r\n\r\nAlso link CVE-2020-36242 to CVE-2021-23840 since our 3.3.2 security fix is just a workaround for the OpenSSL issue.\r\n\r\n* Update CHANGELOG.rst\r\n\r\nCo-authored-by: Alex Gaynor <alex.gaynor@gmail.com>\r\n\r\nCo-authored-by: Alex Gaynor <alex.gaynor@gmail.com>",
+      "ade36103176145fa774050c5ff9f73b03b28187d": "protect against integer overfows in release rust (#5836)\n\nthis would have categorically prevented CVE-2020-36242",
+      "06cbf77371881e80ea4b5e349136dcc53749fc0c": "port changelog and fix back to master for CVE-2020-36242 (#5748)"
+    },
+    "CVE-2021-23840": {
+      "9a2e1dfacd54fbae855a5fcc85857548b4ba2617": "port 3.4.6 changelog (#5842)\n\n* port 3.4.6 changelog\r\n\r\nAlso link CVE-2020-36242 to CVE-2021-23840 since our 3.3.2 security fix is just a workaround for the OpenSSL issue.\r\n\r\n* Update CHANGELOG.rst\r\n\r\nCo-authored-by: Alex Gaynor <alex.gaynor@gmail.com>\r\n\r\nCo-authored-by: Alex Gaynor <alex.gaynor@gmail.com>"
+    }
+  }
+}

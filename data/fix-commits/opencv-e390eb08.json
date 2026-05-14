@@ -1,0 +1,14 @@
+{
+  "vcs_url": "https://github.com/opencv/opencv",
+  "vulnerabilities": {
+    "CVE-2019-7317": {
+      "00171ca935d945ec9831d67ff0ef020f078cd19a": "Patched libpng to address CVE-2019-7317"
+    },
+    "CVE-2011-4516": {
+      "70fed019ae4f78582d0ab17a38688e8bce409f21": "Apply 03-CVE-2011-4516-and-CVE-2011-4517 patch from debian libjasper-dev (1.900.1-13) package"
+    },
+    "CVE-2011-4517": {
+      "70fed019ae4f78582d0ab17a38688e8bce409f21": "Apply 03-CVE-2011-4516-and-CVE-2011-4517 patch from debian libjasper-dev (1.900.1-13) package"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "vcs_url": "https://github.com/rabbitmq/rabbitmq-java-client",
+  "vulnerabilities": {
+    "CVE-2019-14540": {
+      "572970f621f69e800d8cc84817ee15e1c53f6a0a": "Bump Jackson to 2.9.10\n\nTo address CVE-2019-14540 and CVE-2019-16335. Note Jackson is an\noptional dependency, required only when using the JSON-RPC support.\n\n(cherry picked from commit 0eda16cc3e81e5325eec70333cd85b2eadd493ad)\n\nConflicts:\n\tpom.xml",
+      "e60bd3a89f8d899078c0601b91b8087e81eb8efb": "Bump Jackson to 2.9.10\n\nTo address CVE-2019-14540 and CVE-2019-16335. Note Jackson is an\noptional dependency, required only when using the JSON-RPC support.\n\n(cherry picked from commit 0eda16cc3e81e5325eec70333cd85b2eadd493ad)",
+      "0eda16cc3e81e5325eec70333cd85b2eadd493ad": "Bump Jackson to 2.9.10\n\nTo address CVE-2019-14540 and CVE-2019-16335. Note Jackson is an\noptional dependency, required only when using the JSON-RPC support."
+    },
+    "CVE-2019-16335": {
+      "572970f621f69e800d8cc84817ee15e1c53f6a0a": "Bump Jackson to 2.9.10\n\nTo address CVE-2019-14540 and CVE-2019-16335. Note Jackson is an\noptional dependency, required only when using the JSON-RPC support.\n\n(cherry picked from commit 0eda16cc3e81e5325eec70333cd85b2eadd493ad)\n\nConflicts:\n\tpom.xml",
+      "e60bd3a89f8d899078c0601b91b8087e81eb8efb": "Bump Jackson to 2.9.10\n\nTo address CVE-2019-14540 and CVE-2019-16335. Note Jackson is an\noptional dependency, required only when using the JSON-RPC support.\n\n(cherry picked from commit 0eda16cc3e81e5325eec70333cd85b2eadd493ad)",
+      "0eda16cc3e81e5325eec70333cd85b2eadd493ad": "Bump Jackson to 2.9.10\n\nTo address CVE-2019-14540 and CVE-2019-16335. Note Jackson is an\noptional dependency, required only when using the JSON-RPC support."
+    },
+    "CVE-2019-12814": {
+      "a2b3b0a5e06bc081c34c67bfbd2a870472ff5ee3": "Bump Jackson to 2.9.9.1\n\nTo address https://nvd.nist.gov/vuln/detail/CVE-2019-12814.\n\nJackson is an optional dependency, necessary only when using JSON RPC.\n\n(cherry picked from commit ebddf5b43180e56e3077c439828dd2b53da91397)\n\nConflicts:\n\tpom.xml",
+      "0527913fb30b5b4adf87f57dd6dc1d72ff4d1455": "Bump Jackson to 2.9.9.1\n\nTo address https://nvd.nist.gov/vuln/detail/CVE-2019-12814.\n\nJackson is an optional dependency, necessary only when using JSON RPC.\n\n(cherry picked from commit ebddf5b43180e56e3077c439828dd2b53da91397)\n\nConflicts:\n\tpom.xml",
+      "ec03c6d48c267c3f3fca4810a9febdf3d46334f8": "Bump Jackson to 2.9.9.1\n\nTo address https://nvd.nist.gov/vuln/detail/CVE-2019-12814.\n\nJackson is an optional dependency, necessary only when using JSON RPC.\n\n(cherry picked from commit ebddf5b43180e56e3077c439828dd2b53da91397)",
+      "ad6a703b40bf0e177180bb4ddf63c32d71485115": "Bump Jackson to 2.9.9.1\n\nTo address https://nvd.nist.gov/vuln/detail/CVE-2019-12814.\n\nJackson is an optional dependency, necessary only when using JSON RPC.\n\n(cherry picked from commit ebddf5b43180e56e3077c439828dd2b53da91397)",
+      "ebddf5b43180e56e3077c439828dd2b53da91397": "Bump Jackson to 2.9.9.1\n\nTo address https://nvd.nist.gov/vuln/detail/CVE-2019-12814.\n\nJackson is an optional dependency, necessary only when using JSON RPC."
+    }
+  }
+}

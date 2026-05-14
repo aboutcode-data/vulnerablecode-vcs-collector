@@ -1,0 +1,96 @@
+{
+  "vcs_url": "https://github.com/strapi/strapi",
+  "vulnerabilities": {
+    "GHSA-7MQX-WWH4-F9FW": {
+      "5e0d243cba9830e6f791de6a94798bcde51468db": "fix: dynamically update rate limit prefix key based on route (#24818)\n\n* fix: start implementing route checking within rate limit middleware\n\n* fix(users-permissions): finalize route-aware rate-limit prefix key\n\nBuilds on the WIP from b5db1e69f9 to close the rate-limit bypass\ndescribed in GHSA-7mqx-wwh4-f9fw, where adding an arbitrary `email`\nfield to the request body produced a fresh rate-limit key per\nrequest on routes that do not use email as their identifier.\n\n- Populates the no-identifier route list (/auth/local,\n  /auth/reset-password, /auth/change-password) and treats OAuth\n  callback paths (/connect/*) the same way.\n- Uses Array.prototype.some + endsWith so the path check is stable\n  regardless of router mount prefix.\n- Skips computing userIdentifier when the route does not use one.\n- Drops the debug console.log and the unused-array `in` check from\n  the WIP.\n- Exports buildPrefixKey and ROUTES_WITHOUT_IDENTIFIER for tests.\n\nAdds a unit test suite covering each route class and confirming\nthat varying body.email cannot change the rate-limit key on the\nidentifier-less routes.\n\n* fix(users-permissions): harden rate-limit prefix keys and throttle send-email-confirmation\n\n---------\n\nCo-authored-by: Ben Irvin <ben@innerdvations.com>"
+    },
+    "GHSA-9H6G-PR28-7CQP": {
+      "0c1f0765c065cb1105cac2d2dca5edc0912169a3": "chore: update nodemailer from 6.9.1 to 6.10.1 (#23678)\n\nfix related to https://github.com/advisories/GHSA-9h6g-pr28-7cqp"
+    },
+    "CVE-2025-27152": {
+      "e86ac7192458208dc921b643405f97aeba7cccb9": "security(deps): upgrade axios to 1.8.2 for CVE-2025-27152 (#23106)"
+    },
+    "CVE-2024-28863": {
+      "3e01e5cf5568821ff20d629f1cd59b1cf981902f": "Merge pull request #20587 from vdhpieter/security-update-tar\n\nchore(deps): update tar to 6.2.1 because of CVE-2024-28863",
+      "f1ca072e22e341c855343407bb19ff95b9ca3afb": "chore(deps): update tar to 6.2.1 because of CVE-2024-28863\npick ca4434f14 chore: fixup"
+    },
+    "CVE-2024-37890": {
+      "5c57d5a9a6f42c53c8e01c2ba645f4a3b6eb4813": "Merge pull request #20577 from vdhpieter/security-update-ws\n\nchore(data-transfer): update ws dependency to 8.17.1 for CVE-2024-37890",
+      "a50af0425dfd5a7ca1f3a3733253ea2ca62fa6c6": "chore(data-transfer): update ws dependency to 8.17.1 for CVE-2024-37890"
+    },
+    "GHSA-WRVH-RCMR-9QFC": {
+      "9c79921d22142a5de77ea26151550a14e4b12669": "Merge pull request from GHSA-wrvh-rcmr-9qfc\n\nAdd validation for custom U&P OAuth callbacks"
+    },
+    "GHSA-WF5P-G6VW-RHXX": {
+      "ecfbf5ede664b0e56f8dd828fd26bd63903b3d14": "chore(deps): update axios to 1.6.0 (#18768) (#18769)\n\ndue to https://github.com/advisories/GHSA-wf5p-g6vw-rhxx",
+      "add566491a1dac21db253d7005aa6e436dfa0a45": "chore(deps): update axios to 1.6.0 (#18768)\n\ndue to https://github.com/advisories/GHSA-wf5p-g6vw-rhxx"
+    },
+    "GHSA-M284-85MF-CGRC": {
+      "5981e7e7c38a99b154e54aee2046c51d711b3a54": "Merge pull request from GHSA-m284-85mf-cgrc\n\nApply RBAC permissions to read field"
+    },
+    "GHSA-24Q2-59HM-RH9R": {
+      "f91f3ac276ee82de0a29e1a1b0a3be7007f397e5": "Merge pull request from GHSA-24q2-59hm-rh9r\n\nUpdate both Admin and U&P ratelimit to lower path"
+    },
+    "GHSA-V8GG-4MQ2-88Q4": {
+      "75275de7f5e35431a002d6228f57544fb4e20b4f": "Merge pull request from GHSA-v8gg-4mq2-88q4\n\nFix relations mainField allowing hidden attributes"
+    },
+    "GHSA-9XG4-3QFM-9W8F": {
+      "7ec5466c22f72da22a7c8981c038ade832189f79": "Merge pull request from GHSA-9xg4-3qfm-9w8f\n\nImprove sanitization in sanitizeQuery and convertQueryParams"
+    },
+    "GHSA-CHMR-RG2F-9JMF": {
+      "263b977edbfb995cd44ccdafd0c91a4d0ab2436a": "Merge pull request from GHSA-chmr-rg2f-9jmf\n\nfix(content-types): remove getter for private attributes"
+    },
+    "CVE-2016-20018": {
+      "32d057b5358a8642274f47bd7a39e5a0fcfa5cfc": "Merge pull request #15412 from strapi/security/updateKnex\n\nUpdate Knex to 2.4.0 to fix CVE-2016-20018",
+      "41b2be355afb594ee93d557d1ae063803bd87549": "Update Knex to 2.4.0 to fix CVE-2016-20018"
+    },
+    "CVE-2022-23539": {
+      "82947f0375adeee8c70f508b89463871ccaca630": "Merge pull request #15397 from strapi/security/fixJWT\n\nFix CVE-2022-23539 / CVE-2022-23541 / CVE-2022-23540 / CVE-2022-23529",
+      "c770a253ba551ac8baef4467da083fdd847c0d96": "Fix CVE-2022-23539 / CVE-2022-23541 / CVE-2022-23540 / CVE-2022-23529"
+    },
+    "CVE-2022-23541": {
+      "82947f0375adeee8c70f508b89463871ccaca630": "Merge pull request #15397 from strapi/security/fixJWT\n\nFix CVE-2022-23539 / CVE-2022-23541 / CVE-2022-23540 / CVE-2022-23529",
+      "c770a253ba551ac8baef4467da083fdd847c0d96": "Fix CVE-2022-23539 / CVE-2022-23541 / CVE-2022-23540 / CVE-2022-23529"
+    },
+    "CVE-2022-23540": {
+      "82947f0375adeee8c70f508b89463871ccaca630": "Merge pull request #15397 from strapi/security/fixJWT\n\nFix CVE-2022-23539 / CVE-2022-23541 / CVE-2022-23540 / CVE-2022-23529",
+      "c770a253ba551ac8baef4467da083fdd847c0d96": "Fix CVE-2022-23539 / CVE-2022-23541 / CVE-2022-23540 / CVE-2022-23529"
+    },
+    "CVE-2022-23529": {
+      "82947f0375adeee8c70f508b89463871ccaca630": "Merge pull request #15397 from strapi/security/fixJWT\n\nFix CVE-2022-23539 / CVE-2022-23541 / CVE-2022-23540 / CVE-2022-23529",
+      "c770a253ba551ac8baef4467da083fdd847c0d96": "Fix CVE-2022-23539 / CVE-2022-23541 / CVE-2022-23540 / CVE-2022-23529"
+    },
+    "CVE-2022-24999": {
+      "6f9b106ec76d294a5a75871e08cfeaf148119e60": "Merge pull request #15189 from strapi/security/qsupgrade\n\nUpdate qs to fix CVE-2022-24999",
+      "e09614c9a4d581c05f391740944b7142fb0fc98d": "Update qs to fix CVE-2022-24999"
+    },
+    "CVE-2022-25896": {
+      "8b9d2d663ef2e1b617a5ac160d7dcd6397179c50": "Merge pull request #13807 from strapi/fix/updatePassport\n\nupdate koa-passport to fix CVE-2022-25896",
+      "1fa180085fdd1418079965e44654a6480354c791": "update koa-passport to fix CVE-2022-25896"
+    },
+    "CVE-2021-46708": {
+      "43ac9e1430c609e7930866dcce82474c40197a40": "Merge pull request #13450 from strapi/fix/CVE-2021-46708\n\nFix CVE-2021-46708",
+      "0309b366718df05c9820f24286b3a892f8727b3b": "Fix CVE-2021-46708"
+    },
+    "CVE-2022-29256": {
+      "0d8254e4608c5eff24f0cab95b76446f374bae39": "Merge pull request #13449 from strapi/fix/cve-2022-29256\n\nFix CVE-2022-29256",
+      "2ea34d27909c137263c3dd0c7c0a61501fa63d65": "Fix CVE-2022-29256\n\nCVE Details: https://github.com/advisories/GHSA-gp95-ppv5-3jc5\r\n\r\nLow sev as it requires your build env to be vuln but it's a quick fix."
+    },
+    "GHSA-GP95-PPV5-3JC5": {
+      "2ea34d27909c137263c3dd0c7c0a61501fa63d65": "Fix CVE-2022-29256\n\nCVE Details: https://github.com/advisories/GHSA-gp95-ppv5-3jc5\r\n\r\nLow sev as it requires your build env to be vuln but it's a quick fix."
+    },
+    "CVE-2021-29418": {
+      "6ebed3c1a0d46879c8806c71b8dbc38082ca2cb8": "Merge pull request #12966 from tbjers/fix/CVE-2021-29418-mailgun-js-deprecated\n\nfix: change from mailgun-js to mailgun.js",
+      "4366b70b4f13ee5c2dcf0ba8df44837ad41ac0e0": "Merge branch 'master' into fix/CVE-2021-29418-mailgun-js-deprecated",
+      "649b385f016203c869dddd56500e7df4ee7f060f": "Merge remote-tracking branch 'upstream/master' into fix/CVE-2021-29418-mailgun-js-deprecated",
+      "903e02843023c90cfe0d1cef48d9670c025c5137": "Merge remote-tracking branch 'upstream/master' into fix/CVE-2021-29418-mailgun-js-deprecated",
+      "ad736c34acb265d576b2b80bbf88b56ad31e09ff": "fix: change from mailgun-js to mailgun.js\n\n- mailgun-js is deprecated\n- mailgun-js has critical vulnerabilities (see CVE-2021-29418)\n- avoid invalidating API contract\n- add functions for converting old config to work with new API\n- update README with correct fields"
+    },
+    "GHSA-R683-J2X4-V87G": {
+      "b5821b04b496140aa67e3199af34040504c8b52a": "chore(deps): update node-fetch to v2.6.7\n\nTo resolve https://github.com/advisories/GHSA-r683-j2x4-v87g."
+    },
+    "GHSA-W7RC-RWVF-8Q5R": {
+      "bf8c17f1201cbcfe6042815244a5dd2030042f20": "Bump node-fetch to 2.6.1 (#8191)\n\nnode-fetch < 2.6.1 has a security vulnerability\r\n(https://github.com/advisories/GHSA-w7rc-rwvf-8q5r)\r\n\r\nThis is a major version bump for strapi-plugin-upload (from 1.7.3), but\r\nit does not look like strapi-plugin-upload is relying on any of the\r\nfunctionality that has broken from 1.x to 2.x\r\n\r\nSigned-off-by: Dan Wendorf <dan@render.com>"
+    }
+  }
+}

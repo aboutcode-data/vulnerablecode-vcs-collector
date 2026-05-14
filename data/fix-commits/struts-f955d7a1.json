@@ -1,0 +1,29 @@
+{
+  "vcs_url": "https://github.com/apache/struts",
+  "vulnerabilities": {
+    "CVE-2017-5638": {
+      "e1de9362aff09b3c8e06e3782dfe5c66f0e011e5": "Improve Claude Code agents configuration for Apache Struts\n\n- Replace hardcoded user paths with dynamic $USER environment variable\n- Update ticket patterns from eng_XXXX to Apache Struts WW-XXXX format\n- Create thoughts/ directory structure for research documentation\n- Add Maven build commands (mvn test -DskipAssembly) to agents\n- Enhance security analysis with CVE-specific patterns (CVE-2017-5638, CVE-2018-11776)\n- Improve Struts-specific knowledge in codebase analysis agents\n- Add Jakarta module support and OGNL security focus\n- Enable portable configuration across all developers\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>"
+    },
+    "CVE-2018-11776": {
+      "e1de9362aff09b3c8e06e3782dfe5c66f0e011e5": "Improve Claude Code agents configuration for Apache Struts\n\n- Replace hardcoded user paths with dynamic $USER environment variable\n- Update ticket patterns from eng_XXXX to Apache Struts WW-XXXX format\n- Create thoughts/ directory structure for research documentation\n- Add Maven build commands (mvn test -DskipAssembly) to agents\n- Enhance security analysis with CVE-specific patterns (CVE-2017-5638, CVE-2018-11776)\n- Improve Struts-specific knowledge in codebase analysis agents\n- Add Jakarta module support and OGNL security focus\n- Enable portable configuration across all developers\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>"
+    },
+    "CVE-2024-53677": {
+      "930fef7679d7247db9e460c146b1698a9d7ad1e4": "Merge pull request #1180 from henrikplate/fix-CVE-2024-53677\n\nFix CVE-2024-53677 in 2-3-x"
+    },
+    "CVE-2023-50164": {
+      "056228cd1e26f43051f8b0665dd8f86646d6af3c": "Merge pull request #819 from henrikplate/fix-CVE-2023-50164\n\nFix CVE-2023-50164 in 2-3-x"
+    },
+    "CVE-2021-43859": {
+      "f0b24d17da4751666f12bc498c73c20d91e29558": "WW-5167 Upgrades Xstream to version 1.4.19 to address CVE-2021-43859"
+    },
+    "CVE-2021-44832": {
+      "767f40b5094ec1feae7387e0b3ed9a366760a050": "Merge pull request #521 from Chromico/master\n\nUpdate log4j to 2.17.1 to address CVE-2021-44832."
+    },
+    "CVE-2020-26258": {
+      "7532d2fb0d6081a12c2a48ec854a81a8b718be62": "Upgrades XStream to version 1.4.15 to address CVE-2020-26258, CVE-2020-26259"
+    },
+    "CVE-2020-26259": {
+      "7532d2fb0d6081a12c2a48ec854a81a8b718be62": "Upgrades XStream to version 1.4.15 to address CVE-2020-26258, CVE-2020-26259"
+    }
+  }
+}

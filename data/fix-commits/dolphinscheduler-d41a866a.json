@@ -1,0 +1,15 @@
+{
+  "vcs_url": "https://github.com/apache/dolphinscheduler",
+  "vulnerabilities": {
+    "CVE-2023-20873": {
+      "0f7a844d128545e2fb2ed2959b3580160d9e9626": "[Improvement-17739][Dependency] Upgrade Spring Boot to fix CVE-2023-20873 (#17747)"
+    },
+    "CVE-2024-1597": {
+      "f5535dcfb74b431b4886b08b3aad38b32c9cfcf5": "[Improvement-17738][Dependency] Upgrade PostgreSQL JDBC Driver to fix CVE-2024-1597 (#17740)"
+    },
+    "CVE-2020-11974": {
+      "e194192f159e1e329dee23beb64161b6bdb8476e": "[1.3.6-prepare][#4851]fix MySQL datasource jdbc connect parameters #4851 (#5063)\n\n* [1.3.6-prepare][#4851]fix MySQL datasource jdbc connect parameters #4851\r\nPR #4851\r\nCVE-2020-11974\r\n\r\n* remove unused import",
+      "6bf5031f455a930488ab58bb15c108cab80425a4": "[FIX] fix MySQL datasource jdbc connect parameters (#4851)\n\n* [FIX-CVE-2020-11974] fix MySQLDataSource Security\r\n\r\n* remove useless code\r\n\r\n* add ut\r\n\r\n* A more reasonable way\r\n\r\n* code style\r\n\r\n* fix test error\r\n\r\n* code style\r\n\r\n* update exception msg"
+    }
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "vcs_url": "https://github.com/osquery/osquery",
+  "vulnerabilities": {
+    "CVE-2026-25210": {
+      "8eb8c0d9aab923c4744e330f24581ce150b22098": "libraries: update expat to 2.7.4 to fix CVE-2026-25210 (#8794)\n\n## Summary\nUpdates the vendored expat submodule from 2.7.1 to 2.7.4 and \nupdates the pre-generated expat_config.h for x86_64 and aarch64.\n\n## Changes\n- Bumped expat submodule pointer to 2.7.4 (f5c2890d)\n- Updated PACKAGE_STRING and PACKAGE_VERSION in expat_config.h \n  for x86_64 and aarch64\n\n## Verification\n- Reviewed changelog between 2.7.1 and 2.7.4: no API changes, \n  only security fixes and CI/tooling updates\n- Confirmed all 3 source files (xmlparse.c, xmlrole.c, xmltok.c) \n  are unchanged\n- Confirmed CMakeLists.txt requires no changes\n- Confirmed expat_config.h.cmake diff has no functional changes\n\nNote: 2.7.4 also includes a fix for CVE-2026-24515, tracked in #8753,\nCVE-2025-66382 tracked in #8736, CVE-2025-59375 tracked in #8702.\n\nFixes #8793\nFixes #8753\nFixes #8736 \nFixes #8702"
+    },
+    "CVE-2026-24515": {
+      "8eb8c0d9aab923c4744e330f24581ce150b22098": "libraries: update expat to 2.7.4 to fix CVE-2026-25210 (#8794)\n\n## Summary\nUpdates the vendored expat submodule from 2.7.1 to 2.7.4 and \nupdates the pre-generated expat_config.h for x86_64 and aarch64.\n\n## Changes\n- Bumped expat submodule pointer to 2.7.4 (f5c2890d)\n- Updated PACKAGE_STRING and PACKAGE_VERSION in expat_config.h \n  for x86_64 and aarch64\n\n## Verification\n- Reviewed changelog between 2.7.1 and 2.7.4: no API changes, \n  only security fixes and CI/tooling updates\n- Confirmed all 3 source files (xmlparse.c, xmlrole.c, xmltok.c) \n  are unchanged\n- Confirmed CMakeLists.txt requires no changes\n- Confirmed expat_config.h.cmake diff has no functional changes\n\nNote: 2.7.4 also includes a fix for CVE-2026-24515, tracked in #8753,\nCVE-2025-66382 tracked in #8736, CVE-2025-59375 tracked in #8702.\n\nFixes #8793\nFixes #8753\nFixes #8736 \nFixes #8702"
+    },
+    "CVE-2025-66382": {
+      "8eb8c0d9aab923c4744e330f24581ce150b22098": "libraries: update expat to 2.7.4 to fix CVE-2026-25210 (#8794)\n\n## Summary\nUpdates the vendored expat submodule from 2.7.1 to 2.7.4 and \nupdates the pre-generated expat_config.h for x86_64 and aarch64.\n\n## Changes\n- Bumped expat submodule pointer to 2.7.4 (f5c2890d)\n- Updated PACKAGE_STRING and PACKAGE_VERSION in expat_config.h \n  for x86_64 and aarch64\n\n## Verification\n- Reviewed changelog between 2.7.1 and 2.7.4: no API changes, \n  only security fixes and CI/tooling updates\n- Confirmed all 3 source files (xmlparse.c, xmlrole.c, xmltok.c) \n  are unchanged\n- Confirmed CMakeLists.txt requires no changes\n- Confirmed expat_config.h.cmake diff has no functional changes\n\nNote: 2.7.4 also includes a fix for CVE-2026-24515, tracked in #8753,\nCVE-2025-66382 tracked in #8736, CVE-2025-59375 tracked in #8702.\n\nFixes #8793\nFixes #8753\nFixes #8736 \nFixes #8702"
+    },
+    "CVE-2025-59375": {
+      "8eb8c0d9aab923c4744e330f24581ce150b22098": "libraries: update expat to 2.7.4 to fix CVE-2026-25210 (#8794)\n\n## Summary\nUpdates the vendored expat submodule from 2.7.1 to 2.7.4 and \nupdates the pre-generated expat_config.h for x86_64 and aarch64.\n\n## Changes\n- Bumped expat submodule pointer to 2.7.4 (f5c2890d)\n- Updated PACKAGE_STRING and PACKAGE_VERSION in expat_config.h \n  for x86_64 and aarch64\n\n## Verification\n- Reviewed changelog between 2.7.1 and 2.7.4: no API changes, \n  only security fixes and CI/tooling updates\n- Confirmed all 3 source files (xmlparse.c, xmlrole.c, xmltok.c) \n  are unchanged\n- Confirmed CMakeLists.txt requires no changes\n- Confirmed expat_config.h.cmake diff has no functional changes\n\nNote: 2.7.4 also includes a fix for CVE-2026-24515, tracked in #8753,\nCVE-2025-66382 tracked in #8736, CVE-2025-59375 tracked in #8702.\n\nFixes #8793\nFixes #8753\nFixes #8736 \nFixes #8702"
+    },
+    "CVE-2025-5918": {
+      "05ddd2b6ba90529614f1bcab199be4594820b16b": "libs: libarchive: 3.7.9 -> 3.8.1 (#8642)\n\nFixes #8634, #8675, #8670, #8671, #8672\n\nFixes:\n* CVE-2025-5918\n* CVE-2025-5914\n* CVE-2025-5915\n* CVE-2025-5916\n* CVE-2025-5917"
+    },
+    "CVE-2025-5914": {
+      "05ddd2b6ba90529614f1bcab199be4594820b16b": "libs: libarchive: 3.7.9 -> 3.8.1 (#8642)\n\nFixes #8634, #8675, #8670, #8671, #8672\n\nFixes:\n* CVE-2025-5918\n* CVE-2025-5914\n* CVE-2025-5915\n* CVE-2025-5916\n* CVE-2025-5917"
+    },
+    "CVE-2025-5915": {
+      "05ddd2b6ba90529614f1bcab199be4594820b16b": "libs: libarchive: 3.7.9 -> 3.8.1 (#8642)\n\nFixes #8634, #8675, #8670, #8671, #8672\n\nFixes:\n* CVE-2025-5918\n* CVE-2025-5914\n* CVE-2025-5915\n* CVE-2025-5916\n* CVE-2025-5917"
+    },
+    "CVE-2025-5916": {
+      "05ddd2b6ba90529614f1bcab199be4594820b16b": "libs: libarchive: 3.7.9 -> 3.8.1 (#8642)\n\nFixes #8634, #8675, #8670, #8671, #8672\n\nFixes:\n* CVE-2025-5918\n* CVE-2025-5914\n* CVE-2025-5915\n* CVE-2025-5916\n* CVE-2025-5917"
+    },
+    "CVE-2025-5917": {
+      "05ddd2b6ba90529614f1bcab199be4594820b16b": "libs: libarchive: 3.7.9 -> 3.8.1 (#8642)\n\nFixes #8634, #8675, #8670, #8671, #8672\n\nFixes:\n* CVE-2025-5918\n* CVE-2025-5914\n* CVE-2025-5915\n* CVE-2025-5916\n* CVE-2025-5917"
+    },
+    "CVE-2024-26364": {
+      "9c38cfcb788dd74389989682703684465d593262": "Update yara library from 4.2.3 -> 4.5.4 (#8643)\n\nFixes CVE-2024-26364\n\nChanges:\nhttps://github.com/VirusTotal/yara/releases/tag/v4.3.0\nhttps://github.com/VirusTotal/yara/releases/tag/v4.3.1\nhttps://github.com/VirusTotal/yara/releases/tag/v4.3.2\nhttps://github.com/VirusTotal/yara/releases/tag/v4.4.0\nhttps://github.com/VirusTotal/yara/releases/tag/v4.5.0\nhttps://github.com/VirusTotal/yara/releases/tag/v4.5.1\nhttps://github.com/VirusTotal/yara/releases/tag/v4.5.2\nhttps://github.com/VirusTotal/yara/releases/tag/v4.5.3\nhttps://github.com/VirusTotal/yara/releases/tag/v4.5.4"
+    },
+    "CVE-2023-30571": {
+      "eb72d1c5d8a2e78d277ce134e5bb7848614bb14e": "libs: libarchive: 3.6.2 -> 3.7.9 (#8605)\n\nFixes:\n* CVE-2023-30571\n* CVE-2024-37407\n* CVE-2024-48957\n* CVE-2024-48958\n* CVE-2024-57970\n* CVE-2025-1632\n* CVE-2025-25724\n* CVE-2024-20696\n* CVE-2024-26256\n* CVE-2024-26256\n\nFixes #8581\nFixes #8597\n\nChanges:\nhttps://github.com/libarchive/libarchive/releases/tag/v3.7.0 https://github.com/libarchive/libarchive/releases/tag/v3.7.1 https://github.com/libarchive/libarchive/releases/tag/v3.7.2 https://github.com/libarchive/libarchive/releases/tag/v3.7.3 https://github.com/libarchive/libarchive/releases/tag/v3.7.4 https://github.com/libarchive/libarchive/releases/tag/v3.7.5 https://github.com/libarchive/libarchive/releases/tag/v3.7.6 https://github.com/libarchive/libarchive/releases/tag/v3.7.7 https://github.com/libarchive/libarchive/releases/tag/v3.7.8 https://github.com/libarchive/libarchive/releases/tag/v3.7.9",
+      "2e3495837d4fe4db3554c6ef76494bc86c74c099": "Ignore CVE-2023-30571 (#8065)"
+    },
+    "CVE-2024-37407": {
+      "eb72d1c5d8a2e78d277ce134e5bb7848614bb14e": "libs: libarchive: 3.6.2 -> 3.7.9 (#8605)\n\nFixes:\n* CVE-2023-30571\n* CVE-2024-37407\n* CVE-2024-48957\n* CVE-2024-48958\n* CVE-2024-57970\n* CVE-2025-1632\n* CVE-2025-25724\n* CVE-2024-20696\n* CVE-2024-26256\n* CVE-2024-26256\n\nFixes #8581\nFixes #8597\n\nChanges:\nhttps://github.com/libarchive/libarchive/releases/tag/v3.7.0 https://github.com/libarchive/libarchive/releases/tag/v3.7.1 https://github.com/libarchive/libarchive/releases/tag/v3.7.2 https://github.com/libarchive/libarchive/releases/tag/v3.7.3 https://github.com/libarchive/libarchive/releases/tag/v3.7.4 https://github.com/libarchive/libarchive/releases/tag/v3.7.5 https://github.com/libarchive/libarchive/releases/tag/v3.7.6 https://github.com/libarchive/libarchive/releases/tag/v3.7.7 https://github.com/libarchive/libarchive/releases/tag/v3.7.8 https://github.com/libarchive/libarchive/releases/tag/v3.7.9"
+    },
+    "CVE-2024-48957": {
+      "eb72d1c5d8a2e78d277ce134e5bb7848614bb14e": "libs: libarchive: 3.6.2 -> 3.7.9 (#8605)\n\nFixes:\n* CVE-2023-30571\n* CVE-2024-37407\n* CVE-2024-48957\n* CVE-2024-48958\n* CVE-2024-57970\n* CVE-2025-1632\n* CVE-2025-25724\n* CVE-2024-20696\n* CVE-2024-26256\n* CVE-2024-26256\n\nFixes #8581\nFixes #8597\n\nChanges:\nhttps://github.com/libarchive/libarchive/releases/tag/v3.7.0 https://github.com/libarchive/libarchive/releases/tag/v3.7.1 https://github.com/libarchive/libarchive/releases/tag/v3.7.2 https://github.com/libarchive/libarchive/releases/tag/v3.7.3 https://github.com/libarchive/libarchive/releases/tag/v3.7.4 https://github.com/libarchive/libarchive/releases/tag/v3.7.5 https://github.com/libarchive/libarchive/releases/tag/v3.7.6 https://github.com/libarchive/libarchive/releases/tag/v3.7.7 https://github.com/libarchive/libarchive/releases/tag/v3.7.8 https://github.com/libarchive/libarchive/releases/tag/v3.7.9"
+    },
+    "CVE-2024-48958": {
+      "eb72d1c5d8a2e78d277ce134e5bb7848614bb14e": "libs: libarchive: 3.6.2 -> 3.7.9 (#8605)\n\nFixes:\n* CVE-2023-30571\n* CVE-2024-37407\n* CVE-2024-48957\n* CVE-2024-48958\n* CVE-2024-57970\n* CVE-2025-1632\n* CVE-2025-25724\n* CVE-2024-20696\n* CVE-2024-26256\n* CVE-2024-26256\n\nFixes #8581\nFixes #8597\n\nChanges:\nhttps://github.com/libarchive/libarchive/releases/tag/v3.7.0 https://github.com/libarchive/libarchive/releases/tag/v3.7.1 https://github.com/libarchive/libarchive/releases/tag/v3.7.2 https://github.com/libarchive/libarchive/releases/tag/v3.7.3 https://github.com/libarchive/libarchive/releases/tag/v3.7.4 https://github.com/libarchive/libarchive/releases/tag/v3.7.5 https://github.com/libarchive/libarchive/releases/tag/v3.7.6 https://github.com/libarchive/libarchive/releases/tag/v3.7.7 https://github.com/libarchive/libarchive/releases/tag/v3.7.8 https://github.com/libarchive/libarchive/releases/tag/v3.7.9"
+    },
+    "CVE-2024-57970": {
+      "eb72d1c5d8a2e78d277ce134e5bb7848614bb14e": "libs: libarchive: 3.6.2 -> 3.7.9 (#8605)\n\nFixes:\n* CVE-2023-30571\n* CVE-2024-37407\n* CVE-2024-48957\n* CVE-2024-48958\n* CVE-2024-57970\n* CVE-2025-1632\n* CVE-2025-25724\n* CVE-2024-20696\n* CVE-2024-26256\n* CVE-2024-26256\n\nFixes #8581\nFixes #8597\n\nChanges:\nhttps://github.com/libarchive/libarchive/releases/tag/v3.7.0 https://github.com/libarchive/libarchive/releases/tag/v3.7.1 https://github.com/libarchive/libarchive/releases/tag/v3.7.2 https://github.com/libarchive/libarchive/releases/tag/v3.7.3 https://github.com/libarchive/libarchive/releases/tag/v3.7.4 https://github.com/libarchive/libarchive/releases/tag/v3.7.5 https://github.com/libarchive/libarchive/releases/tag/v3.7.6 https://github.com/libarchive/libarchive/releases/tag/v3.7.7 https://github.com/libarchive/libarchive/releases/tag/v3.7.8 https://github.com/libarchive/libarchive/releases/tag/v3.7.9"
+    },
+    "CVE-2025-1632": {
+      "eb72d1c5d8a2e78d277ce134e5bb7848614bb14e": "libs: libarchive: 3.6.2 -> 3.7.9 (#8605)\n\nFixes:\n* CVE-2023-30571\n* CVE-2024-37407\n* CVE-2024-48957\n* CVE-2024-48958\n* CVE-2024-57970\n* CVE-2025-1632\n* CVE-2025-25724\n* CVE-2024-20696\n* CVE-2024-26256\n* CVE-2024-26256\n\nFixes #8581\nFixes #8597\n\nChanges:\nhttps://github.com/libarchive/libarchive/releases/tag/v3.7.0 https://github.com/libarchive/libarchive/releases/tag/v3.7.1 https://github.com/libarchive/libarchive/releases/tag/v3.7.2 https://github.com/libarchive/libarchive/releases/tag/v3.7.3 https://github.com/libarchive/libarchive/releases/tag/v3.7.4 https://github.com/libarchive/libarchive/releases/tag/v3.7.5 https://github.com/libarchive/libarchive/releases/tag/v3.7.6 https://github.com/libarchive/libarchive/releases/tag/v3.7.7 https://github.com/libarchive/libarchive/releases/tag/v3.7.8 https://github.com/libarchive/libarchive/releases/tag/v3.7.9"
+    },
+    "CVE-2025-25724": {
+      "eb72d1c5d8a2e78d277ce134e5bb7848614bb14e": "libs: libarchive: 3.6.2 -> 3.7.9 (#8605)\n\nFixes:\n* CVE-2023-30571\n* CVE-2024-37407\n* CVE-2024-48957\n* CVE-2024-48958\n* CVE-2024-57970\n* CVE-2025-1632\n* CVE-2025-25724\n* CVE-2024-20696\n* CVE-2024-26256\n* CVE-2024-26256\n\nFixes #8581\nFixes #8597\n\nChanges:\nhttps://github.com/libarchive/libarchive/releases/tag/v3.7.0 https://github.com/libarchive/libarchive/releases/tag/v3.7.1 https://github.com/libarchive/libarchive/releases/tag/v3.7.2 https://github.com/libarchive/libarchive/releases/tag/v3.7.3 https://github.com/libarchive/libarchive/releases/tag/v3.7.4 https://github.com/libarchive/libarchive/releases/tag/v3.7.5 https://github.com/libarchive/libarchive/releases/tag/v3.7.6 https://github.com/libarchive/libarchive/releases/tag/v3.7.7 https://github.com/libarchive/libarchive/releases/tag/v3.7.8 https://github.com/libarchive/libarchive/releases/tag/v3.7.9"
+    },
+    "CVE-2024-20696": {
+      "eb72d1c5d8a2e78d277ce134e5bb7848614bb14e": "libs: libarchive: 3.6.2 -> 3.7.9 (#8605)\n\nFixes:\n* CVE-2023-30571\n* CVE-2024-37407\n* CVE-2024-48957\n* CVE-2024-48958\n* CVE-2024-57970\n* CVE-2025-1632\n* CVE-2025-25724\n* CVE-2024-20696\n* CVE-2024-26256\n* CVE-2024-26256\n\nFixes #8581\nFixes #8597\n\nChanges:\nhttps://github.com/libarchive/libarchive/releases/tag/v3.7.0 https://github.com/libarchive/libarchive/releases/tag/v3.7.1 https://github.com/libarchive/libarchive/releases/tag/v3.7.2 https://github.com/libarchive/libarchive/releases/tag/v3.7.3 https://github.com/libarchive/libarchive/releases/tag/v3.7.4 https://github.com/libarchive/libarchive/releases/tag/v3.7.5 https://github.com/libarchive/libarchive/releases/tag/v3.7.6 https://github.com/libarchive/libarchive/releases/tag/v3.7.7 https://github.com/libarchive/libarchive/releases/tag/v3.7.8 https://github.com/libarchive/libarchive/releases/tag/v3.7.9"
+    },
+    "CVE-2024-26256": {
+      "eb72d1c5d8a2e78d277ce134e5bb7848614bb14e": "libs: libarchive: 3.6.2 -> 3.7.9 (#8605)\n\nFixes:\n* CVE-2023-30571\n* CVE-2024-37407\n* CVE-2024-48957\n* CVE-2024-48958\n* CVE-2024-57970\n* CVE-2025-1632\n* CVE-2025-25724\n* CVE-2024-20696\n* CVE-2024-26256\n* CVE-2024-26256\n\nFixes #8581\nFixes #8597\n\nChanges:\nhttps://github.com/libarchive/libarchive/releases/tag/v3.7.0 https://github.com/libarchive/libarchive/releases/tag/v3.7.1 https://github.com/libarchive/libarchive/releases/tag/v3.7.2 https://github.com/libarchive/libarchive/releases/tag/v3.7.3 https://github.com/libarchive/libarchive/releases/tag/v3.7.4 https://github.com/libarchive/libarchive/releases/tag/v3.7.5 https://github.com/libarchive/libarchive/releases/tag/v3.7.6 https://github.com/libarchive/libarchive/releases/tag/v3.7.7 https://github.com/libarchive/libarchive/releases/tag/v3.7.8 https://github.com/libarchive/libarchive/releases/tag/v3.7.9",
+      "4f05d3e4bf8a8e9774d425d5037ec65e3de1a4fe": "cve: Ignore libarchive CVE-2024-26256 (#8546)"
+    },
+    "CVE-2024-50602": {
+      "24416b16f9c406d3deb1f74d5dfcee924c732bcd": "libs: expat bump from 2.6.0 to 2.7.1 (#8595)\n\nWas #8571.\n\nFixes #8557 \n\nFixes CVE-2024-50602, CVE-2024-28757 and CVE-2024-8176."
+    },
+    "CVE-2024-28757": {
+      "24416b16f9c406d3deb1f74d5dfcee924c732bcd": "libs: expat bump from 2.6.0 to 2.7.1 (#8595)\n\nWas #8571.\n\nFixes #8557 \n\nFixes CVE-2024-50602, CVE-2024-28757 and CVE-2024-8176."
+    },
+    "CVE-2024-8176": {
+      "24416b16f9c406d3deb1f74d5dfcee924c732bcd": "libs: expat bump from 2.6.0 to 2.7.1 (#8595)\n\nWas #8571.\n\nFixes #8557 \n\nFixes CVE-2024-50602, CVE-2024-28757 and CVE-2024-8176."
+    },
+    "CVE-2024-28085": {
+      "1424defadf2bf65b5a6ff9bdde787820b5a1e1e2": "cve: Ignore util-linux CVE-2024-28085 (#8579)"
+    },
+    "CVE-2024-3094": {
+      "399bc1059f372c03b922586ef585907960974216": "Fix xz submodule url: the GitHub mirror was banned due to CVE-2024-3094 (#8304)"
+    },
+    "CVE-2023-45322": {
+      "52974c7b281dc660c4b8f1e1a12701d25edddb4c": "cve: Update libxml2 to v2.13.2 (#8223)\n\nAlso resolves CVE-2023-45322."
+    },
+    "CVE-2020-22916": {
+      "9dea25eaed4c6df601e161e00c1ffac8eb5ae7f6": "cve: Update lzma to 5.4.4 (#8135)\n\n- The update might resolve CVE-2020-22916,\r\n  but upstream has no information on the CVE details\r\n- Update documentation to mention that CentOS 7 should be used to\r\n  configure libraries"
+    },
+    "CVE-2023-2603": {
+      "41b26307679e11aba88df4f96bef9a61201440f5": "cve: Ignore libcap CVE-2023-2603 (#8127)"
+    },
+    "CVE-2023-34969": {
+      "6913f4261b6f76e3010f3aea0608971bab50e931": "cve: Ignore dbus CVE-2023-34969 (#8126)"
+    },
+    "CVE-2023-0464": {
+      "961b4cd187f2e3ca5b214e6446730a955daaec99": "cve: Update to openssl 1.1.1u (#8050)\n\n- Resolves CVE-2023-0464, CVE-2023-0465, CVE-2023-0466,\r\nand CVE-2023-2650\r\n\r\n- Minor improvement to the libraries manifest validation script,\r\nto stop searching for an openssl version in the library CMakeLists.txt\r\nas soon as it finds one.\r\n\r\n- Remove patch to make openssl build on Windows ARM64,\r\nsince it's now included in the new version."
+    },
+    "CVE-2023-0465": {
+      "961b4cd187f2e3ca5b214e6446730a955daaec99": "cve: Update to openssl 1.1.1u (#8050)\n\n- Resolves CVE-2023-0464, CVE-2023-0465, CVE-2023-0466,\r\nand CVE-2023-2650\r\n\r\n- Minor improvement to the libraries manifest validation script,\r\nto stop searching for an openssl version in the library CMakeLists.txt\r\nas soon as it finds one.\r\n\r\n- Remove patch to make openssl build on Windows ARM64,\r\nsince it's now included in the new version."
+    },
+    "CVE-2023-0466": {
+      "961b4cd187f2e3ca5b214e6446730a955daaec99": "cve: Update to openssl 1.1.1u (#8050)\n\n- Resolves CVE-2023-0464, CVE-2023-0465, CVE-2023-0466,\r\nand CVE-2023-2650\r\n\r\n- Minor improvement to the libraries manifest validation script,\r\nto stop searching for an openssl version in the library CMakeLists.txt\r\nas soon as it finds one.\r\n\r\n- Remove patch to make openssl build on Windows ARM64,\r\nsince it's now included in the new version."
+    },
+    "CVE-2023-2650": {
+      "961b4cd187f2e3ca5b214e6446730a955daaec99": "cve: Update to openssl 1.1.1u (#8050)\n\n- Resolves CVE-2023-0464, CVE-2023-0465, CVE-2023-0466,\r\nand CVE-2023-2650\r\n\r\n- Minor improvement to the libraries manifest validation script,\r\nto stop searching for an openssl version in the library CMakeLists.txt\r\nas soon as it finds one.\r\n\r\n- Remove patch to make openssl build on Windows ARM64,\r\nsince it's now included in the new version."
+    },
+    "CVE-2023-28484": {
+      "7b5c9ebd1a2dfd2c311669994729c97db3636938": "cve: Update libxml2 to v2.11.2 (#8023)\n\nResolves CVE-2023-28484 and CVE-2023-29469"
+    },
+    "CVE-2023-29469": {
+      "7b5c9ebd1a2dfd2c311669994729c97db3636938": "cve: Update libxml2 to v2.11.2 (#8023)\n\nResolves CVE-2023-28484 and CVE-2023-29469"
+    },
+    "CVE-2023-0286": {
+      "1637840024de5e8eead90f4790ba4ea286146fd8": "cve: Update openssl to 1.1.1t (#7937)\n\nResolves CVE-2023-0286, CVE-2022-4304,\r\nCVE-2023-0215, CVE-2022-4450"
+    },
+    "CVE-2022-4304": {
+      "1637840024de5e8eead90f4790ba4ea286146fd8": "cve: Update openssl to 1.1.1t (#7937)\n\nResolves CVE-2023-0286, CVE-2022-4304,\r\nCVE-2023-0215, CVE-2022-4450"
+    },
+    "CVE-2023-0215": {
+      "1637840024de5e8eead90f4790ba4ea286146fd8": "cve: Update openssl to 1.1.1t (#7937)\n\nResolves CVE-2023-0286, CVE-2022-4304,\r\nCVE-2023-0215, CVE-2022-4450"
+    },
+    "CVE-2022-4450": {
+      "1637840024de5e8eead90f4790ba4ea286146fd8": "cve: Update openssl to 1.1.1t (#7937)\n\nResolves CVE-2023-0286, CVE-2022-4304,\r\nCVE-2023-0215, CVE-2022-4450"
+    },
+    "CVE-2021-3995": {
+      "161558021d788c1004bf75f644b5970bbbb7285b": "cve: Ignore util-linux cves (#7929)\n\nIgnore CVE-2021-3995 and CVE-2021-3996,\r\nsince they are not affecting osquery."
+    },
+    "CVE-2021-3996": {
+      "161558021d788c1004bf75f644b5970bbbb7285b": "cve: Ignore util-linux cves (#7929)\n\nIgnore CVE-2021-3995 and CVE-2021-3996,\r\nsince they are not affecting osquery."
+    },
+    "CVE-2016-5011": {
+      "eff27721920c329d119fe9253236bdfb878bb743": "libs: Update util-linux to 2.35.2 (#7902)\n\nThis also resolves CVE-2016-5011, CVE-2018-7738\r\nand ignores CVE-2021-37600 and CVE-2022-0563,\r\nsince they are not affecting osquery.\r\n\r\nlibdpkg was incorrectly taking some symbols from util-linux.\r\nUse the libcompat library that comes with it."
+    },
+    "CVE-2018-7738": {
+      "eff27721920c329d119fe9253236bdfb878bb743": "libs: Update util-linux to 2.35.2 (#7902)\n\nThis also resolves CVE-2016-5011, CVE-2018-7738\r\nand ignores CVE-2021-37600 and CVE-2022-0563,\r\nsince they are not affecting osquery.\r\n\r\nlibdpkg was incorrectly taking some symbols from util-linux.\r\nUse the libcompat library that comes with it."
+    },
+    "CVE-2021-37600": {
+      "eff27721920c329d119fe9253236bdfb878bb743": "libs: Update util-linux to 2.35.2 (#7902)\n\nThis also resolves CVE-2016-5011, CVE-2018-7738\r\nand ignores CVE-2021-37600 and CVE-2022-0563,\r\nsince they are not affecting osquery.\r\n\r\nlibdpkg was incorrectly taking some symbols from util-linux.\r\nUse the libcompat library that comes with it."
+    },
+    "CVE-2022-0563": {
+      "eff27721920c329d119fe9253236bdfb878bb743": "libs: Update util-linux to 2.35.2 (#7902)\n\nThis also resolves CVE-2016-5011, CVE-2018-7738\r\nand ignores CVE-2021-37600 and CVE-2022-0563,\r\nsince they are not affecting osquery.\r\n\r\nlibdpkg was incorrectly taking some symbols from util-linux.\r\nUse the libcompat library that comes with it."
+    },
+    "CVE-2020-35512": {
+      "37b5410e271d9431f7f5c454b4f092a5515f4756": "libs: Update dbus to 1.12.24 (#7905)\n\nThis also resolves CVE-2020-35512, CVE-2022-42010,\r\nCVE-2022-42011 and CVE-2022-42012."
+    },
+    "CVE-2022-42010": {
+      "37b5410e271d9431f7f5c454b4f092a5515f4756": "libs: Update dbus to 1.12.24 (#7905)\n\nThis also resolves CVE-2020-35512, CVE-2022-42010,\r\nCVE-2022-42011 and CVE-2022-42012."
+    },
+    "CVE-2022-42011": {
+      "37b5410e271d9431f7f5c454b4f092a5515f4756": "libs: Update dbus to 1.12.24 (#7905)\n\nThis also resolves CVE-2020-35512, CVE-2022-42010,\r\nCVE-2022-42011 and CVE-2022-42012."
+    },
+    "CVE-2022-42012": {
+      "37b5410e271d9431f7f5c454b4f092a5515f4756": "libs: Update dbus to 1.12.24 (#7905)\n\nThis also resolves CVE-2020-35512, CVE-2022-42010,\r\nCVE-2022-42011 and CVE-2022-42012."
+    },
+    "CVE-2021-45429": {
+      "78a8e3945e13d65d9e96e7f15074e22925aa0cbc": "cve: Update yara to 4.2.3 (#7912)\n\n- Resolves CVE-2021-45429\r\n- Avoid symbol collision from libmagic"
+    },
+    "CVE-2022-46908": {
+      "163ed9366ffd626cb1481e374d59cccf375e6e74": "cve: Ignore sqlite CVE-2022-46908 (#7911)"
+    },
+    "CVE-2021-3521": {
+      "b07a3646ebfa4b0d1609e1f2f03109009885e60b": "cve: Update librpm to 4.18.0 (#7910)\n\nAlso resolves CVE-2021-3521, CVE-2021-35937,\r\nCVE-2021-35938 and CVE-2021-35939."
+    },
+    "CVE-2021-35937": {
+      "b07a3646ebfa4b0d1609e1f2f03109009885e60b": "cve: Update librpm to 4.18.0 (#7910)\n\nAlso resolves CVE-2021-3521, CVE-2021-35937,\r\nCVE-2021-35938 and CVE-2021-35939."
+    },
+    "CVE-2021-35938": {
+      "b07a3646ebfa4b0d1609e1f2f03109009885e60b": "cve: Update librpm to 4.18.0 (#7910)\n\nAlso resolves CVE-2021-3521, CVE-2021-35937,\r\nCVE-2021-35938 and CVE-2021-35939."
+    },
+    "CVE-2021-35939": {
+      "b07a3646ebfa4b0d1609e1f2f03109009885e60b": "cve: Update librpm to 4.18.0 (#7910)\n\nAlso resolves CVE-2021-3521, CVE-2021-35937,\r\nCVE-2021-35938 and CVE-2021-35939."
+    },
+    "CVE-2018-0495": {
+      "5021178112c3ff24d8db4b39efafe5561868c5a6": "cve: Ignore libgcrypt cves (#7873)\n\nIgnore CVE-2018-0495, CVE-2018-6829, CVE-2021-33560,\r\nand CVE-2021-40528, since they do not affect osquery."
+    },
+    "CVE-2018-6829": {
+      "5021178112c3ff24d8db4b39efafe5561868c5a6": "cve: Ignore libgcrypt cves (#7873)\n\nIgnore CVE-2018-0495, CVE-2018-6829, CVE-2021-33560,\r\nand CVE-2021-40528, since they do not affect osquery."
+    },
+    "CVE-2021-33560": {
+      "5021178112c3ff24d8db4b39efafe5561868c5a6": "cve: Ignore libgcrypt cves (#7873)\n\nIgnore CVE-2018-0495, CVE-2018-6829, CVE-2021-33560,\r\nand CVE-2021-40528, since they do not affect osquery."
+    },
+    "CVE-2021-40528": {
+      "5021178112c3ff24d8db4b39efafe5561868c5a6": "cve: Ignore libgcrypt cves (#7873)\n\nIgnore CVE-2018-0495, CVE-2018-6829, CVE-2021-33560,\r\nand CVE-2021-40528, since they do not affect osquery."
+    },
+    "CVE-2022-37434": {
+      "5690a924e377f133c5d50ea00d7cf3a11e570bd4": "libs: Update zlib to 1.2.13 (#7874)\n\nThis also resolves CVE-2022-37434"
+    },
+    "CVE-2022-2309": {
+      "1a1e71e2d7a8f4e96bcc5ac6bff8995cbd3ed415": "libs: Update libxml2 to 2.10.3 (#7882)\n\nThis also resolves CVE-2022-2309, CVE-2022-40303,\r\nand CVE-2022-40304.\r\n\r\nAdditionally moving the \"config\" folder out of \"generated\",\r\nto respect the structure of the other libraries."
+    },
+    "CVE-2022-40303": {
+      "1a1e71e2d7a8f4e96bcc5ac6bff8995cbd3ed415": "libs: Update libxml2 to 2.10.3 (#7882)\n\nThis also resolves CVE-2022-2309, CVE-2022-40303,\r\nand CVE-2022-40304.\r\n\r\nAdditionally moving the \"config\" folder out of \"generated\",\r\nto respect the structure of the other libraries."
+    },
+    "CVE-2022-40304": {
+      "1a1e71e2d7a8f4e96bcc5ac6bff8995cbd3ed415": "libs: Update libxml2 to 2.10.3 (#7882)\n\nThis also resolves CVE-2022-2309, CVE-2022-40303,\r\nand CVE-2022-40304.\r\n\r\nAdditionally moving the \"config\" folder out of \"generated\",\r\nto respect the structure of the other libraries."
+    },
+    "CVE-2022-36227": {
+      "8cdeaf60b48444dcea4f95e9ffde6e2954ac13bb": "libs: Update libarchive to 3.6.2 (#7877)\n\nThis also resolves CVE-2022-36227"
+    },
+    "CVE-2022-1664": {
+      "97a45dc75fba97bbcc3562960594925ead2d6127": "cve: Ignore libdpkg CVE-2022-1664 (#7872)\n\nThe cve is not affecting osquery."
+    },
+    "CVE-2016-4484": {
+      "4ba3211925870536e0a63edbc2bc2384041550cb": "cve: Ignore libcryptsetup cves (#7871)\n\nIgnoring CVE-2016-4484 and CVE-2021-4122,\r\nsince they do not affect osquery."
+    },
+    "CVE-2021-4122": {
+      "4ba3211925870536e0a63edbc2bc2384041550cb": "cve: Ignore libcryptsetup cves (#7871)\n\nIgnoring CVE-2016-4484 and CVE-2021-4122,\r\nsince they do not affect osquery."
+    },
+    "CVE-2021-24031": {
+      "feb718d4dc9b38e59e16aa64c1b9cbb61d9ade98": "cve: Ignore zstd CVE-2021-24031 (#7865)"
+    },
+    "GHSA-4G56-2482-X7Q8": {
+      "c3f9a3dae22d43ed3b4f6a403cbf89da4cba7c3c": "Merge pull request from GHSA-4g56-2482-x7q8\n\n* Proposed fix for attach tables vulnerability\n\n* Add authorizer to ATC tables and cleanups\n\n- Add unit test for authorizer function"
+    }
+  }
+}

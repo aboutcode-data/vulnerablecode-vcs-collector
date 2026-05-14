@@ -1,0 +1,25 @@
+{
+  "vcs_url": "https://github.com/apache/commons-fileupload",
+  "vulnerabilities": {
+    "CVE-2025-48976": {
+      "91f09c1ae3432051b6d94ab0ec3f0becf3de08ea": "Add information for CVE-2025-48976",
+      "c034c13eb8689ad6659a0ceb1b6f90ef0e48b3f6": "Add information for CVE-2025-48976"
+    },
+    "CVE-2023-24998": {
+      "0a306f75949f2e9f5f92c400cad39d20117a2eb0": "Add details of CVE-2023-24998",
+      "52410bd989b2661aab2d9f24cd2cec0501bb82b3": "Add details of CVE-2023-24998"
+    },
+    "CVE-2016-3092": {
+      "20ee08b9948303afa490a20031668fc039c7b4c5": "Add pointer to CVE-2016-3092 to changes entry of release 1.3.2\n\ngit-svn-id: https://svn.apache.org/repos/asf/commons/proper/fileupload/trunk@1750879 13f79535-47bb-0310-9956-ffa450edef68",
+      "7b6f879c46a9a969518d7129c70378e3b7de5af1": "Added information related to CVE-2016-3092.\n\n\ngit-svn-id: https://svn.apache.org/repos/asf/commons/proper/fileupload/trunk@1749637 13f79535-47bb-0310-9956-ffa450edef68",
+      "a092f186f4fe482517858f1fc954cf787c88703d": "Added information related to CVE-2016-3092.\n\n\ngit-svn-id: https://svn.apache.org/repos/asf/commons/proper/fileupload/trunk@1749636 13f79535-47bb-0310-9956-ffa450edef68",
+      "774ef160d591b579f703c694002e080f99bcd28b": "Fix a performance issue with large boundaries leading to a Denial of Service (CVE-2016-3092)\n\n\ngit-svn-id: https://svn.apache.org/repos/asf/commons/proper/fileupload/trunk@1743480 13f79535-47bb-0310-9956-ffa450edef68"
+    },
+    "CVE-2014-0050": {
+      "c61ff05b3241cb14d989b67209e57aa71540417a": "Fix CVE-2014-0050. Specially crafted input can trigger a DoS if the buffer used by the <code>MultipartStream</code> is not big enough. When constructing <code>MultipartStream</code> enforce the requirements for buffer size by throwing an <code>IllegalArgumentException</code> if the requested buffer size is too small. This prevents the DoS.\n\ngit-svn-id: https://svn.apache.org/repos/asf/commons/proper/fileupload/trunk@1565143 13f79535-47bb-0310-9956-ffa450edef68"
+    },
+    "CVE-2013-0248": {
+      "f874563307c1159ac634df67509d9859bca6ddb9": "Make clear that a secure configuration with local, untrusted users requires that a repository is configured.\nThis is CVE-2013-0248\n\ngit-svn-id: https://svn.apache.org/repos/asf/commons/proper/fileupload/trunk@1453273 13f79535-47bb-0310-9956-ffa450edef68"
+    }
+  }
+}

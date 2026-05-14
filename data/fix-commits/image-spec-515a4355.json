@@ -1,0 +1,9 @@
+{
+  "vcs_url": "https://github.com/opencontainers/image-spec",
+  "vulnerabilities": {
+    "GHSA-77VH-XPMG-72QH": {
+      "0126d30a90249ba624d134266b662e1d661381f5": "Merge pull request from GHSA-77vh-xpmg-72qh\n\nAdvisory fix 2",
+      "693428a734f5bab1a84bd2f990d92ef1111cd60c": "Merge pull request from GHSA-77vh-xpmg-72qh\n\n*.md: bring mediaType out of reserved status"
+    }
+  }
+}

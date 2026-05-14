@@ -1,0 +1,49 @@
+{
+  "vcs_url": "https://github.com/opentofu/opentofu",
+  "vulnerabilities": {
+    "CVE-2026-33814": {
+      "a05aad690147a6fe3f0c140515788b6c08f49f6e": "go.mod: Upgrade to Go 1.26.3\n\nThis is primarily to address CVE-2026-33814, also known as GO-2026-4918.\n\nSigned-off-by: Martin Atkins <mart@degeneration.co.uk>",
+      "cc6c038ddafb25b39730a765f59349660e9f6994": "go.mod: Upgrade to Go 1.26.3\n\nThis is primarily to address CVE-2026-33814, also known as GO-2026-4918.\n\nSigned-off-by: Martin Atkins <mart@degeneration.co.uk>",
+      "0e0f7ecdd461e99eced87707fe4bf73886077369": "go.mod: Upgrade to Go 1.25.10\n\nThis is primarily to address CVE-2026-33814, also known as GO-2026-4918.\n\nSigned-off-by: Martin Atkins <mart@degeneration.co.uk>"
+    },
+    "CVE-2025-30204": {
+      "d437ae0427c55a5a77acff7a630f9dee60b6d555": "Fix CVE-2025-30204 (#2627)\n\nSigned-off-by: yottta <andrei.ciobanu@opentofu.org>"
+    },
+    "CVE-2024-45336": {
+      "92e9b7a07dd1e22a815f2ab4b28bf498ea2380e5": "Backports[v1.7]: Bumping Go version to address CVE-2024-45336 and CVE-2024-45341 (#2438) (#2441)\n\nSigned-off-by: AbstractionFactory <179820029+abstractionfactory@users.noreply.github.com>\r\nSigned-off-by: Christian Mesh <christianmesh1@gmail.com>\r\nCo-authored-by: Christian Mesh <christianmesh1@gmail.com>",
+      "945ab945ad82cc10a90a06264479086fd9ebefc2": "Backports[v1.9] Bumping Go version to address CVE-2024-45336 and CVE-2024-45341 (#2438) (#2439)\n\nSigned-off-by: AbstractionFactory <179820029+abstractionfactory@users.noreply.github.com>\r\nSigned-off-by: Christian Mesh <christianmesh1@gmail.com>\r\nCo-authored-by: Christian Mesh <christianmesh1@gmail.com>",
+      "551f4b1b94c0ab1bd65891faf7d2610e2713d4cc": "Backports[v1.8] Bumping Go version to address CVE-2024-45336 and CVE-2024-45341 (#2438) (#2440)\n\nSigned-off-by: AbstractionFactory <179820029+abstractionfactory@users.noreply.github.com>",
+      "77c19fab1e0f40dfcc19ded039fda77d68fcabd8": "Bumping Go version to address CVE-2024-45336 and CVE-2024-45341 (#2438)\n\nSigned-off-by: AbstractionFactory <179820029+abstractionfactory@users.noreply.github.com>"
+    },
+    "CVE-2024-45341": {
+      "92e9b7a07dd1e22a815f2ab4b28bf498ea2380e5": "Backports[v1.7]: Bumping Go version to address CVE-2024-45336 and CVE-2024-45341 (#2438) (#2441)\n\nSigned-off-by: AbstractionFactory <179820029+abstractionfactory@users.noreply.github.com>\r\nSigned-off-by: Christian Mesh <christianmesh1@gmail.com>\r\nCo-authored-by: Christian Mesh <christianmesh1@gmail.com>",
+      "945ab945ad82cc10a90a06264479086fd9ebefc2": "Backports[v1.9] Bumping Go version to address CVE-2024-45336 and CVE-2024-45341 (#2438) (#2439)\n\nSigned-off-by: AbstractionFactory <179820029+abstractionfactory@users.noreply.github.com>\r\nSigned-off-by: Christian Mesh <christianmesh1@gmail.com>\r\nCo-authored-by: Christian Mesh <christianmesh1@gmail.com>",
+      "551f4b1b94c0ab1bd65891faf7d2610e2713d4cc": "Backports[v1.8] Bumping Go version to address CVE-2024-45336 and CVE-2024-45341 (#2438) (#2440)\n\nSigned-off-by: AbstractionFactory <179820029+abstractionfactory@users.noreply.github.com>",
+      "77c19fab1e0f40dfcc19ded039fda77d68fcabd8": "Bumping Go version to address CVE-2024-45336 and CVE-2024-45341 (#2438)\n\nSigned-off-by: AbstractionFactory <179820029+abstractionfactory@users.noreply.github.com>"
+    },
+    "CVE-2024-34156": {
+      "e570b8429c7fa7aa3c7c129a16c1e0a3a451ba26": "Bump golang version to 1.22.8 (address CVE-2024-34156) (#2050) (#2183)\n\nSigned-off-by: Sergey Pisarenko <spisarenko@palantir.com>\r\nSigned-off-by: AbstractionFactory <179820029+abstractionfactory@users.noreply.github.com>\r\nCo-authored-by: Sergey Pisarenko <sergey@pisarenko.net>\r\nCo-authored-by: Sergey Pisarenko <spisarenko@palantir.com>",
+      "8f19aa2c1594d1aaac4a34e5dee8634b67f6fa55": "Bump golang version to 1.22.8 (address CVE-2024-34156) (#2050) (#2182)\n\nSigned-off-by: Sergey Pisarenko <spisarenko@palantir.com>\r\nSigned-off-by: AbstractionFactory <179820029+abstractionfactory@users.noreply.github.com>\r\nCo-authored-by: Sergey Pisarenko <sergey@pisarenko.net>\r\nCo-authored-by: Sergey Pisarenko <spisarenko@palantir.com>",
+      "f6e13956eaac82950674c2bc7e44bd850a19ae1b": "Bump golang version to 1.22.8 (address CVE-2024-34156) (#2050)\n\nSigned-off-by: Sergey Pisarenko <spisarenko@palantir.com>\nCo-authored-by: Sergey Pisarenko <spisarenko@palantir.com>\n(cherry picked from commit bb6b6c1fc4f5bf2a2d6ac9fcec90e5b43dde1ecd)\nSigned-off-by: AbstractionFactory <179820029+abstractionfactory@users.noreply.github.com>",
+      "bb6b6c1fc4f5bf2a2d6ac9fcec90e5b43dde1ecd": "Bump golang version to 1.22.8 (address CVE-2024-34156) (#2050)\n\nSigned-off-by: Sergey Pisarenko <spisarenko@palantir.com>\r\nCo-authored-by: Sergey Pisarenko <spisarenko@palantir.com>"
+    },
+    "CVE-2024-6104": {
+      "8ed42dd7158288140b7dcd53d02b98e52ef50772": "Bump github.com/hashicorp/go-retryablehttp to fix CVE-2024-6104 (#1752)\n\nSigned-off-by: Mikel Olasagasti Uranga <mikel@olasagasti.info>"
+    },
+    "CVE-2024-6257": {
+      "79e29ca7bc7d36e1f2bea398e900d7c3ba2a2901": "Bump github.com/hashicorp/go-getter to fix CVE-2024-6257 (#1751)\n\nSigned-off-by: Mikel Olasagasti Uranga <mikel@olasagasti.info>"
+    },
+    "CVE-2024-3817": {
+      "0ea88633d009a9935f792ae258ff454478df1c79": "Merge pull request from GHSA-vq52-9g87-p577\n\nModule `github.com/hashicorp/go-getter` is vulnerable to argument injection when executing Git to discover remote branches.\n\nMore info:\n\nhttps://nvd.nist.gov/vuln/detail/CVE-2024-3817\nhttps://discuss.hashicorp.com/t/hcsec-2024-09-hashicorp-go-getter-vulnerable-to-argument-injection-when-fetching-remote-default-git-branches/66040\n\nSigned-off-by: Mikel Olasagasti Uranga <mikel@olasagasti.info>"
+    },
+    "GHSA-VQ52-9G87-P577": {
+      "0ea88633d009a9935f792ae258ff454478df1c79": "Merge pull request from GHSA-vq52-9g87-p577\n\nModule `github.com/hashicorp/go-getter` is vulnerable to argument injection when executing Git to discover remote branches.\n\nMore info:\n\nhttps://nvd.nist.gov/vuln/detail/CVE-2024-3817\nhttps://discuss.hashicorp.com/t/hcsec-2024-09-hashicorp-go-getter-vulnerable-to-argument-injection-when-fetching-remote-default-git-branches/66040\n\nSigned-off-by: Mikel Olasagasti Uranga <mikel@olasagasti.info>"
+    },
+    "GHSA-CFGP-2977-2FMM": {
+      "9e6cc4ae6fb7716d9e2fdd19a07aaf7abbc76dae": "go.mod: go get google.golang.org/grpc@v1.53.0\n\nThis is to upgrade past the vulnerability described here:\n    https://github.com/advisories/GHSA-cfgp-2977-2fmm\n\nTerraform does not seem to be significantly affected by it since our use\nis primarily between Terraform Core and provider plugins where at worst\na provider could just make its own connection to Terraform malfunction.\nHowever, this also appears to be a relatively low-risk upgrade.\n\nThis does force upgrading some of the Google Cloud Platform dependencies,\nwhich the \"gcs\" (Google Cloud Storage) backend depends on, so there is\nsome minor risk to that backend but the upstream changes to those\ndependencies do not seem to be significant."
+    },
+    "CVE-2020-26160": {
+      "02ca4e970c44e2ec6cbe7dab6ab90f7866aacb38": "go.mod: replace github.com/dgrijalva/jwt-go with .../golang-jwt/jwt\n\nCVE-2020-26160 is a high-severity advisory reported against this module.\n\nThe dgrijalva package is no longer maintained but our legacy etcv2 backend\ndepends on it indirectly, via go.etcd.io/etcd/client. The golang-jwt\npackage is the blessed successor of the original, and has a v3 line which\nis compatible with the v3 line of dgrijalva, and so through this replace\nwe can get a fix for the advisory without other significant behavior\nchange.\n\nWe've preserved the etcdv2 backend as-is on a best-effort basis in order\nto support anyone who is already using it, but recommend that users switch\nto etcdv3 or to some other backend for ongoing use.\n\nWe also have future plans to make state storage be a matter for provider\nplugins rather than built in to Terraform CLI, at which point this backend\nwill either become obsolete or be factored out into its own plugin, at\nwhich point we can remove this \"replace\" directive and the associated\ndependency altogether."
+    }
+  }
+}

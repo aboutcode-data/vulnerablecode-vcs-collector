@@ -1,0 +1,81 @@
+{
+  "vcs_url": "https://android.googlesource.com/platform/external/libpng",
+  "vulnerabilities": {
+    "CVE-2025-65018": {
+      "e4f7ad4ea2a471776c81dda4846b7691925d9786": "Fix a heap buffer over-read in `png_image_read_direct_scaled`\n\nFix a regression from commit 218612ddd6b17944e21eda56caf8b4bf7779d1ea.\n\nThe function `png_image_read_direct_scaled`, introduced by the fix for\nCVE-2025-65018, copies transformed row data from an intermediate buffer\n(`local_row`) to the user's output buffer. The copy incorrectly used\n`row_bytes` (the caller's stride) as the size parameter to memcpy, even\nthough `local_row` is only `png_get_rowbytes()` bytes long.\n\nThis causes a heap buffer over-read when:\n\n1. The caller provides a padded stride (e.g., for memory alignment):\n   memcpy reads past the end of `local_row` by `stride - row_width`\n   bytes.\n\n2. The caller provides a negative stride (for bottom-up layouts):\n   casting ptrdiff_t to size_t produces ~2^64, causing memcpy to\n   attempt reading exabytes, resulting in an immediate crash.\n\nThe fix consists in using the size of the row buffer for the copy and\nusing the stride for pointer advancement only.\n\nReported-by: Petr Simecek <simecek@users.noreply.github.com>\nAnalyzed-by: Stanislav Fort\nAnalyzed-by: Pavel Kohout\nCo-authored-by: Petr Simecek <simecek@users.noreply.github.com>\nSigned-off-by: Cosmin Truta <ctruta@gmail.com>"
+    },
+    "CVE-2025-66293": {
+      "d1ec15266204deb4102d2b5e40216bb7637261c8": "Refer to CVE-2025-66293 in a comment about a vulnerability fix\n\nFollowing up on commit a05a48b756de63e3234ea6b3b938b8f5f862484a."
+    },
+    "CVE-2019-7317": {
+      "9c0d5c77bf5bf2d7c1e11f388de40a70e0191550": "Call png_image_free_function without guarding it with png_safe_execute\n\npng_image_free_function (or any other destructor) should never fail.\nDestructors need not and must not be executed under png_safe_execute.\n\nReference: CVE-2019-7317, use-after-free in png_image_free"
+    },
+    "CVE-2017-12652": {
+      "61e0a3809185b84463a68df3dd39cdf004293c8c": "[libpng16] Reference CVE-2017-12652 in CHANGES."
+    },
+    "CVE-2016-5737": {
+      "a315efe3b29b5d2c8756c16ebfdba2810045d9ff": "[libpng16] Mention CVE-2016-5737 in CHANGES, update intel \"last changed\" date"
+    },
+    "CVE-2016-10087": {
+      "aa5bb2c3dd2fe53333b48fba68d40e9d1358a234": "[libpng16] Clean up LICENSE, mention CVE-2016-10087 in CHANGES."
+    },
+    "CVE-2015-8126": {
+      "06f1087a94f1e48298e89d77ccc51a0ced871958": "Update to 1.6.20\n\nContains fix for CVE-2015-8126.\n(http://www.libpng.org/pub/png/libpng.html)\n\nBUG:23265085\nChange-Id: Ice2ec48b9ff7fa9746c8d0d24376a3c746c4361d"
+    },
+    "CVE-2015-0973": {
+      "275a4f87f6a13f141215e4bf87ed43a810deb62c": "Restore a width check that was removed from png.c (CVE-2015-0973)\n\nBackported from upstream commit 6d8c88177a. Note that this update\nfrom beta3->rc1 contained one other (accidental) change to pngrutil.c\nthat was subsequently reverted in rc2.\n\nNote that the code around this has moved around and changed quite\na bit since 1.6.10.\n\nbug: 19499430\n\n(cherry picked from commit f4435dfcdb5733f9c340492cc7fcac88a13f6ebd)\n\nChange-Id: Ifde854718c98b92c5846dda62d9fddb5d7fcf6da",
+      "dd0ed46397a05ae69dc8c401f5711f0db0a964fa": "Restore a width check that was removed from png.c (CVE-2015-0973)\n\nBackported from upstream commit 6d8c88177a. Note that this update\nfrom beta3->rc1 contained one other (accidental) change to pngrutil.c\nthat was subsequently reverted in rc2.\n\nNote that the code around this has moved around and changed quite\na bit since 1.6.10.\n\nbug: 19499430\n\n(cherry picked from commit f4435dfcdb5733f9c340492cc7fcac88a13f6ebd)\n\nChange-Id: Ifde854718c98b92c5846dda62d9fddb5d7fcf6da",
+      "5a8ffb9b0aea5d9a012dabe3596aba1d3d652638": "am 538a75a3: am e96107d2: am 31f04ea9: (-s ours) Merge \"Backport of fix for CVE-2015-0973 to libpng 1.2.\" into klp-dev\n\n* commit '538a75a36cb1eb6044b2f7ea21bbd0cc3d1b1aa1':\n  Backport of fix for CVE-2015-0973 to libpng 1.2.",
+      "538a75a36cb1eb6044b2f7ea21bbd0cc3d1b1aa1": "am e96107d2: am 31f04ea9: (-s ours) Merge \"Backport of fix for CVE-2015-0973 to libpng 1.2.\" into klp-dev\n\n* commit 'e96107d2c721043e274fe83828f6d34b720163ad':\n  Backport of fix for CVE-2015-0973 to libpng 1.2.",
+      "e96107d2c721043e274fe83828f6d34b720163ad": "am 31f04ea9: (-s ours) Merge \"Backport of fix for CVE-2015-0973 to libpng 1.2.\" into klp-dev\n\n* commit '31f04ea98a96f6e88c2bcbf4b7e857edfd528c1e':\n  Backport of fix for CVE-2015-0973 to libpng 1.2.",
+      "31f04ea98a96f6e88c2bcbf4b7e857edfd528c1e": "Merge \"Backport of fix for CVE-2015-0973 to libpng 1.2.\" into klp-dev",
+      "1a173d933c4391f435ac3ecbc0816c529ef3fc9d": "Backport of fix for CVE-2015-0973 to libpng 1.2.\n\nThis code hasn't changed very much between 1.2 (klp-dev) and\n1.5 / 1.6, except for some rearrangement of checks.\n\nbug: 19499430\n\nChange-Id: Ie4cc650b2a5848776d4c49b52ee78b9a6e7cd929",
+      "3044d5e22fb553c79c29a3a00969656840ffe7ad": "am bea4e6d9: Restore a width check that was removed from png.c (CVE-2015-0973)\n\n* commit 'bea4e6d976903cb7f768d1835c297d1af9700eac':\n  Restore a width check that was removed from png.c (CVE-2015-0973)",
+      "bea4e6d976903cb7f768d1835c297d1af9700eac": "Restore a width check that was removed from png.c (CVE-2015-0973)\n\nBackported from upstream commit 6d8c88177a. Note that this update\nfrom beta3->rc1 contained one other (accidental) change to pngrutil.c\nthat was subsequently reverted in rc2.\n\nNote that the code around this has moved around and changed quite\na bit since 1.6.10.\n\nbug: 19499430\n\n(cherry picked from commit f4435dfcdb5733f9c340492cc7fcac88a13f6ebd)\n\nChange-Id: Ifde854718c98b92c5846dda62d9fddb5d7fcf6da",
+      "4cbc9dd97325661876f1bfe9563faffd7d94bb00": "am 549b9761: Merge \"Restore a width check that was removed from png.c (CVE-2015-0973)\"\n\n* commit '549b976132cd82ac53c7bd200496f09f3c50863e':\n  Restore a width check that was removed from png.c (CVE-2015-0973)",
+      "549b976132cd82ac53c7bd200496f09f3c50863e": "Merge \"Restore a width check that was removed from png.c (CVE-2015-0973)\"",
+      "f4435dfcdb5733f9c340492cc7fcac88a13f6ebd": "Restore a width check that was removed from png.c (CVE-2015-0973)\n\nBackported from upstream commit 6d8c88177a. Note that this update\nfrom beta3->rc1 contained one other (accidental) change to pngrutil.c\nthat was subsequently reverted in rc2.\n\nNote that the code around this has moved around and changed quite\na bit since 1.6.10.\n\nbug: 19499430\nChange-Id: I303448d2f65ad7dba84e48c3e607dac465ce9f0d"
+    },
+    "CVE-2014-9495": {
+      "36c9013994bb24ed9f9648dce5a03c07c449420d": "Fix buffer overflow security vulnerability (CVE-2014-9495)\n\nFixes the heap-based buffer overflow in the png_combine_row\nfunction, when running on 64-bit systems. Might allow context-\ndependent attackers to execute arbitrary code via a\n\"very wide interlaced\" PNG image.\n\nThis is a cherry-pick of commit dc294204b641373bc6eb603075a8b98f51a75dd8\nfrom upstream branch libpng16\n\nbug: 19474828\n\nSigned-off-by: Henrik Smiding <henrik.smiding@intel.com>\n\n(cherry picked from commit 3ae1ad1c8460c90ae2d2028edde0c4d92316e71d)\n\nChange-Id: Ia8dae5e5d0b8b8840c8871de99f35e03f6fbcc39",
+      "99d16562d3d900f3e1a7ae2a5d0953781c39362f": "am 30cb9532: Fix buffer overflow security vulnerability (CVE-2014-9495)\n\n* commit '30cb95323d941e8988e5ae528d3f2284dabb9df8':\n  Fix buffer overflow security vulnerability (CVE-2014-9495)",
+      "30cb95323d941e8988e5ae528d3f2284dabb9df8": "Fix buffer overflow security vulnerability (CVE-2014-9495)\n\nFixes the heap-based buffer overflow in the png_combine_row\nfunction, when running on 64-bit systems. Might allow context-\ndependent attackers to execute arbitrary code via a\n\"very wide interlaced\" PNG image.\n\nThis is a cherry-pick of commit dc294204b641373bc6eb603075a8b98f51a75dd8\nfrom upstream branch libpng16\n\nbug: 19474828\n\nSigned-off-by: Henrik Smiding <henrik.smiding@intel.com>\n\n(cherry picked from commit 3ae1ad1c8460c90ae2d2028edde0c4d92316e71d)\n\nChange-Id: Ia8dae5e5d0b8b8840c8871de99f35e03f6fbcc39",
+      "14c21756501af3dc1b36e67e504b9346675afb05": "am 31f957bd: Merge \"Fix buffer overflow security vulnerability (CVE-2014-9495)\"\n\n* commit '31f957bd40b2fd7ce44c5f83be20bc5f39ff9838':\n  Fix buffer overflow security vulnerability (CVE-2014-9495)",
+      "31f957bd40b2fd7ce44c5f83be20bc5f39ff9838": "Merge \"Fix buffer overflow security vulnerability (CVE-2014-9495)\"",
+      "3ae1ad1c8460c90ae2d2028edde0c4d92316e71d": "Fix buffer overflow security vulnerability (CVE-2014-9495)\n\nFixes the heap-based buffer overflow in the png_combine_row\nfunction, when running on 64-bit systems. Might allow context-\ndependent attackers to execute arbitrary code via a\n\"very wide interlaced\" PNG image.\n\nThis is a cherry-pick of commit dc294204b641373bc6eb603075a8b98f51a75dd8\nfrom upstream branch libpng16\n\nbug: 19474828\n\nSigned-off-by: Henrik Smiding <henrik.smiding@intel.com>\nChange-Id: If8708a8e48afd61de36bb897d222972979a4e892"
+    },
+    "CVE-2014-0333": {
+      "9f0ac8548b61651a111b7e611c90cda87dd567f0": "[libpng16] Mention CERT VU#684412 and CVE-2014-0333 in CHANGES and ANNOUNCE."
+    },
+    "CVE-2011-3048": {
+      "82ac752bad3e7f7d1dc6944e4ba213d0102ba678": "DO NOT MERGE fix for CVE-2011-3048\n\nRevise png_set_text_2() to avoid potential memory corruption\n\nBug: 6343606\nChange-Id: I654fa367c4c3122bba1f99a495e680b75b2db978",
+      "4c5554b04e73f89d4a9bab8cbcec1943d8c274be": "Merge \"Revise png_set_text_2() to avoid potential memory corruption (fixes CVE-2011-3048)\"",
+      "5e12401790abb7416c1a27ff077e0a823e8cefd8": "Revise png_set_text_2() to avoid potential memory corruption (fixes CVE-2011-3048)\n\nBug: 6343606\nChange-Id: I654fa367c4c3122bba1f99a495e680b75b2db978",
+      "58f277c18ee262210ebb8e22df8fe130bc571177": "[libpng16] Revised png_set_text_2() to avoid potential memory corruption.\n\nFixes CVE-2011-3048."
+    },
+    "CVE-2011-3045": {
+      "9dddf651ebc622db16467626ae0f5995d11e246f": "am e2146085: (-s ours) am b4e0b528: (-s ours) Merge \"DO NOT MERGE Fix for CVE-2011-3045\" into ics-mr1\n\n* commit 'e21460858932813a0873f96e1ddc2bc6f36d7c56':\n  DO NOT MERGE Fix for CVE-2011-3045",
+      "e21460858932813a0873f96e1ddc2bc6f36d7c56": "am b4e0b528: (-s ours) Merge \"DO NOT MERGE Fix for CVE-2011-3045\" into ics-mr1\n\n* commit 'b4e0b528f5c1856d8d03caff5b47c8a5b4b905b9':\n  DO NOT MERGE Fix for CVE-2011-3045",
+      "11135a1bea34b91f083d4a50f90d08b51a1041bb": "Merge \"DO NOT MERGE Fix for CVE-2011-3045\" into gingerbread",
+      "b4e0b528f5c1856d8d03caff5b47c8a5b4b905b9": "Merge \"DO NOT MERGE Fix for CVE-2011-3045\" into ics-mr1",
+      "ff8530a959695bb3fd8f7542a9e8c8df94f07b48": "DO NOT MERGE Fix for CVE-2011-3045\n\nChange-Id: Ia46a262f8c73ec8ad6634c5de5f776373c330061",
+      "e347efe72f8a6b6bc77a7270e6bfd2235e5d8021": "DO NOT MERGE Fix for CVE-2011-3045\n\nChange-Id: Ia46a262f8c73ec8ad6634c5de5f776373c330061",
+      "34efb3d5dcb9d1c7552725702ba2cfc905b4c39a": "Merge \"Fix for CVE-2011-3045\"",
+      "54d908dc93dbbaacd15b8a53b29a8fb88b6c472c": "Fix for CVE-2011-3045\n\nChange-Id: Ia46a262f8c73ec8ad6634c5de5f776373c330061"
+    },
+    "CVE-2011-3026": {
+      "c5ac2140cad524c0df13aafb82211bef3068580d": "am 004865ac: (-s ours) am 07fde26d: DO NOT MERGE Fix for CVE-2011-3026\n\n* commit '004865ac74c217ae1cd5631559223a399eb3befe':\n  DO NOT MERGE Fix for CVE-2011-3026",
+      "004865ac74c217ae1cd5631559223a399eb3befe": "am 07fde26d: DO NOT MERGE Fix for CVE-2011-3026\n\n* commit '07fde26d99f1da11fc514b2aeef7ae0620f85a63':\n  DO NOT MERGE Fix for CVE-2011-3026",
+      "07fde26d99f1da11fc514b2aeef7ae0620f85a63": "DO NOT MERGE Fix for CVE-2011-3026\n\nBug: 6085440\n\nNote that this fix was borrowed from chromium and that the\nissue was fixed in 1.2.47 of libpng (using a different approach).\n\nCherry pick from ccee121fae4c60a5dee6fce51195185694c376c3\n\nChange-Id: I65f4ad400563f7e27ee73872f9c16f3ae4c8644d",
+      "c52db62cbc0bff5334b0421bac961d6a1c6b5c49": "DO NOT MERGE Fix for CVE-2011-3026\n\nBug:6085440\n\nNote that this fix was borrowed from chromium and that the\nissue was fixed in 1.2.47 of libpng (using a different approach).\n\nCherry pick from master commit ccee121fae4c60a5dee6fce51195185694c376c3.\n\nChange-Id: Ia7909af661a4ece2e142222efccc16dc16c4734b",
+      "ccee121fae4c60a5dee6fce51195185694c376c3": "Fix for CVE-2011-3026\n\nNote that this fix was borrowed from chromium and that the\nissue was fixed in 1.2.47 of libpng (using a different approach).\nChange-Id: I9aef05b1b0efd48de8f8121d206257b3c7efb522"
+    },
+    "CVE-2011-2501": {
+      "05fc4ccd3066b7a2f14be221c8f2cb6436134931": "[devel] Added references to CVE-2011-2501 and -0408 to the CHANGES file."
+    },
+    "CVE-2004-0421": {
+      "65e6d5a34f49acdb362a0625a706c6b914e670af": "[master] Fixed 1-byte uninitialized memory reference in png_format_buffer()\n\n(Bug report by Frank Busse, related to CVE-2004-0421).",
+      "07e1d34a8498ebcdaf33a438b6f476f84f7f2b53": "[devel] Fixed 1-byte uninitialized memory reference in png_format_buffer()\n\n(Bug report by Frank Busse, related to CVE-2004-0421)."
+    }
+  }
+}

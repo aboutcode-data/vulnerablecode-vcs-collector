@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/psf/black",
+  "vulnerabilities": {
+    "GHSA-V6WP-4M6F-GCJG": {
+      "1af533108968e40cc005079a328ad117a864af13": "Bump required aiohttp version to 3.7.4 (#2509)\n\nCommit history before merge:\r\n\r\n* Bump required aiohttp version to 3.7.4\r\n\r\nThis release includes an important security fix\r\n(https://github.com/aio-libs/aiohttp/security/advisories/GHSA-v6wp-4m6f-gcjg) and many\r\nother improvements.\r\n\r\n* add changelog entry\r\n* Let's not forget about Pipfile\r\n\r\nCo-authored-by: Richard Si <63936253+ichard26@users.noreply.github.com>"
+    }
+  }
+}

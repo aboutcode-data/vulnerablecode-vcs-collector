@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/open-telemetry/opentelemetry-python-contrib",
+  "vulnerabilities": {
+    "GHSA-5RV5-6H4R-H22V": {
+      "6007e0c013071e7f8b9612d3bc68aeb9d600d74e": "Merge pull request from GHSA-5rv5-6h4r-h22v\n\n* Fix unbound cardinality for label http_method in wsgi based middlewares\n\n* cr: rename file\n\n* cr: change label UNKNOWN to NONSTANDARD\n\n* Update instrumentation/opentelemetry-instrumentation-wsgi/src/opentelemetry/instrumentation/wsgi/__init__.py\n\n---------\n\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>"
+    }
+  }
+}

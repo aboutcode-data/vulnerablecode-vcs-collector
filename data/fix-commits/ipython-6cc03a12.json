@@ -1,0 +1,42 @@
+{
+  "vcs_url": "https://github.com/ipython/ipython",
+  "vulnerabilities": {
+    "CVE-2025-30167": {
+      "7f7f46c4ee3cba533aeb4eb56ac760b8bb4d4f02": "Backport security fix to 8.x\n\nThis include a fix for `CVE-2025-30167\n<https://github.com/jupyter/jupyter_core/security/advisories/GHSA-33p9-3p43-82vq>`__\nthat also affects IPython and should have been fixed as the same time than\nJupyter-Core. This will be backported to 9.10.1 and 8.39",
+      "29630830aea4ca7ca16646f6c292e3175e0c215a": "Backport security fix to 9.10.1\n\nThis include a fix for `CVE-2025-30167\n<https://github.com/jupyter/jupyter_core/security/advisories/GHSA-33p9-3p43-82vq>`__\nthat also affects IPython and should have been fixed as the same time than\nJupyter-Core. This will be backported to 9.10.1 and 8.39"
+    },
+    "GHSA-33P9-3P43-82VQ": {
+      "7f7f46c4ee3cba533aeb4eb56ac760b8bb4d4f02": "Backport security fix to 8.x\n\nThis include a fix for `CVE-2025-30167\n<https://github.com/jupyter/jupyter_core/security/advisories/GHSA-33p9-3p43-82vq>`__\nthat also affects IPython and should have been fixed as the same time than\nJupyter-Core. This will be backported to 9.10.1 and 8.39",
+      "29630830aea4ca7ca16646f6c292e3175e0c215a": "Backport security fix to 9.10.1\n\nThis include a fix for `CVE-2025-30167\n<https://github.com/jupyter/jupyter_core/security/advisories/GHSA-33p9-3p43-82vq>`__\nthat also affects IPython and should have been fixed as the same time than\nJupyter-Core. This will be backported to 9.10.1 and 8.39"
+    },
+    "CVE-2023-24816": {
+      "385d69325319a5972ee9b5983638e3617f21cb1f": "Merge pull request from GHSA-29gw-9793-fvw7\n\nFix CVE-2023-24816",
+      "991849c247fc208628879e7ca2923b3c218a5a75": "Fix CVE-2023-24816 by removing legacy code.\n\nRemove legacy code that might trigger a CVE.\n\nCurrently set_term_title is only called with (semi-)trusted input that\ncontain the current working directory of the current IPython session. If\nan attacker can control directory names, and manage to get a user cd\ninto this directory the attacker can execute arbitrary commands\ncontained in the folder names.\n\nExample:\n\n    - On a windows machine where python is built without _ctypes, create\n      a folder called && echo \"pwn\" > pwn.txt. This can be done by for\n      example cloning a git repository.\n    - call toggled_set_term_title(True), (or have the preference to\n      true)\n    - Open IPython and cd into this directory.\n    - the folder now contain a pwn.txt, with pwn as content, despite the\n      user not asking for any code execution.\n\nWorkaround:\n\n    Set the configuration option\n    c.TerminalInteractiveShell.term_title_format='IPython' (or to any\n    other fixed, safe string)."
+    },
+    "GHSA-29GW-9793-FVW7": {
+      "385d69325319a5972ee9b5983638e3617f21cb1f": "Merge pull request from GHSA-29gw-9793-fvw7\n\nFix CVE-2023-24816"
+    },
+    "CVE-2022-21699": {
+      "5fa1e409d2dc126c456510c16ece18e08b524e5b": "Merge pull request from GHSA-pq7m-3gw7-gq5x\n\nFIX CVE-2022-21699",
+      "67ca2b3aa9039438e6f80e3fccca556f26100b4d": "Merge pull request from GHSA-pq7m-3gw7-gq5x\n\nFIX CVE-2022-21699",
+      "a06ca837273271b4acb82c29be97c0b6d12a30ea": "Merge pull request from GHSA-pq7m-3gw7-gq5x\n\nFIX CVE-2022-21699",
+      "46a51ed69cdf41b4333943d9ceeb945c4ede5668": "Merge pull request from GHSA-pq7m-3gw7-gq5x\n\nFIX CVE-2022-21699",
+      "56665dfcf7df8690da46aab1278df8e47b14fe3b": "Add test for CVE-2022-21699",
+      "1ec91ebf328bdf3450130de4b4604c79dc1e19d9": "FIX CVE-2022-21699\n\nSee https://github.com/ipython/ipython/security/advisories/GHSA-pq7m-3gw7-gq5x",
+      "c306d208946604b1cfc7bcfdc5fb51daf7b8ceae": "FIX CVE-2022-21699\n\nSee https://github.com/ipython/ipython/security/advisories/GHSA-pq7m-3gw7-gq5x"
+    },
+    "GHSA-PQ7M-3GW7-GQ5X": {
+      "5fa1e409d2dc126c456510c16ece18e08b524e5b": "Merge pull request from GHSA-pq7m-3gw7-gq5x\n\nFIX CVE-2022-21699",
+      "67ca2b3aa9039438e6f80e3fccca556f26100b4d": "Merge pull request from GHSA-pq7m-3gw7-gq5x\n\nFIX CVE-2022-21699",
+      "a06ca837273271b4acb82c29be97c0b6d12a30ea": "Merge pull request from GHSA-pq7m-3gw7-gq5x\n\nFIX CVE-2022-21699",
+      "46a51ed69cdf41b4333943d9ceeb945c4ede5668": "Merge pull request from GHSA-pq7m-3gw7-gq5x\n\nFIX CVE-2022-21699",
+      "1ec91ebf328bdf3450130de4b4604c79dc1e19d9": "FIX CVE-2022-21699\n\nSee https://github.com/ipython/ipython/security/advisories/GHSA-pq7m-3gw7-gq5x",
+      "c306d208946604b1cfc7bcfdc5fb51daf7b8ceae": "FIX CVE-2022-21699\n\nSee https://github.com/ipython/ipython/security/advisories/GHSA-pq7m-3gw7-gq5x"
+    },
+    "CVE-2014-3566": {
+      "6a651746ef235aa5a8c4d751bf438b86b90aa4e0": "Backport PR #8179: Fix for CVE-2014-3566 'POODLE' SSL attack\n\noriginal commit '22c4922f4796078c5613de9e07e66b8764549cad'",
+      "b758ee47d83ddcb34c2732ab292074cf9ad2dda2": "Merge pull request #8179 from briandrawert/fix_poodle_ssl_attack\n\nFix for CVE-2014-3566 'POODLE' SSL attack",
+      "a36c8480683d1e2832057c003b4e334e34de3ca2": "Fix for CVE-2014-3566 'POODLE' SSL attack, original commit '22c4922f4796078c5613de9e07e66b8764549cad'"
+    }
+  }
+}

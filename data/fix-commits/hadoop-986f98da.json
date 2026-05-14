@@ -1,0 +1,281 @@
+{
+  "vcs_url": "https://github.com/apache/hadoop",
+  "vulnerabilities": {
+    "CVE-2025-67735": {
+      "d3bf44d42d9c6f9d54bcd975c12c8d000a595fd6": "HADOOP-19788 update netty dependency to 4.1.130.Final (#8188)\n\nAddresses CVE-2025-67735\n\nContributed by Edward Capriolo",
+      "5125fcf4713d0c3eb314ec523688fbf181c8982f": "HADOOP-19788 update netty dependency to 4.1.130.Final (#8188)\n\nAddresses CVE-2025-67735\n\nContributed by Edward Capriolo",
+      "fcee64e2ab263a4da65944f9f8cce5459e2efa6b": "HADOOP-19788 update netty dependency to 4.1.130.Final (#8188)\n\nAddresses CVE-2025-67735\n\nContributed by Edward Capriolo",
+      "ee4cad080b00ea5394e4050ddd1493f23b8b888c": "HADOOP-19788 update netty dependency to 4.1.130.Final (#8188)\n\n\nAddresses CVE-2025-67735\n\nContributed by Edward Capriolo"
+    },
+    "CVE-2025-14813": {
+      "ce385baed88132397f8dcf340447bc103a93be04": "HADOOP-19866. Upgrade bouncycastle to 1.84 for security (#8443) (#8446)\n\n\nCVE-2025-14813 - GOSTCTR implementation unable to process more than 255 blocks correctly.\nCVE-2026-0636 - LDAP Injection Vulnerability in LDAPStoreHelper.java.\nCVE-2026-3505 - Unbounded PGP AEAD chunk size leads to pre-auth resource exhaustion.\nCVE-2026-5588 - PKIX draft CompositeVerifier accepts empty signature sequence as valid.\nCVE-2026-5598 - Non-constant time comparisons risk private key leakage in FrodoKEM.\n\n\nContributed by PJ Fanning",
+      "5b9b543b4f1f70869b29e2abdc03e76674df48a6": "HADOOP-19866. Upgrade bouncycastle to 1.84 for security (#8443) (#8445)\n\n\nCVE-2025-14813 - GOSTCTR implementation unable to process more than 255 blocks correctly.\nCVE-2026-0636 - LDAP Injection Vulnerability in LDAPStoreHelper.java.\nCVE-2026-3505 - Unbounded PGP AEAD chunk size leads to pre-auth resource exhaustion.\nCVE-2026-5588 - PKIX draft CompositeVerifier accepts empty signature sequence as valid.\nCVE-2026-5598 - Non-constant time comparisons risk private key leakage in FrodoKEM.\n\n\nContributed by PJ Fanning",
+      "7bb3afea5e46516edf0fb5db49a7990b485cfb5f": "HADOOP-19866. Upgrade bouncycastle to 1.84 for security (#8443)\n\n\nCVE-2025-14813 - GOSTCTR implementation unable to process more than 255 blocks correctly.\nCVE-2026-0636 - LDAP Injection Vulnerability in LDAPStoreHelper.java.\nCVE-2026-3505 - Unbounded PGP AEAD chunk size leads to pre-auth resource exhaustion.\nCVE-2026-5588 - PKIX draft CompositeVerifier accepts empty signature sequence as valid.\nCVE-2026-5598 - Non-constant time comparisons risk private key leakage in FrodoKEM.\n\n\nContributed by PJ Fanning"
+    },
+    "CVE-2026-0636": {
+      "ce385baed88132397f8dcf340447bc103a93be04": "HADOOP-19866. Upgrade bouncycastle to 1.84 for security (#8443) (#8446)\n\n\nCVE-2025-14813 - GOSTCTR implementation unable to process more than 255 blocks correctly.\nCVE-2026-0636 - LDAP Injection Vulnerability in LDAPStoreHelper.java.\nCVE-2026-3505 - Unbounded PGP AEAD chunk size leads to pre-auth resource exhaustion.\nCVE-2026-5588 - PKIX draft CompositeVerifier accepts empty signature sequence as valid.\nCVE-2026-5598 - Non-constant time comparisons risk private key leakage in FrodoKEM.\n\n\nContributed by PJ Fanning",
+      "5b9b543b4f1f70869b29e2abdc03e76674df48a6": "HADOOP-19866. Upgrade bouncycastle to 1.84 for security (#8443) (#8445)\n\n\nCVE-2025-14813 - GOSTCTR implementation unable to process more than 255 blocks correctly.\nCVE-2026-0636 - LDAP Injection Vulnerability in LDAPStoreHelper.java.\nCVE-2026-3505 - Unbounded PGP AEAD chunk size leads to pre-auth resource exhaustion.\nCVE-2026-5588 - PKIX draft CompositeVerifier accepts empty signature sequence as valid.\nCVE-2026-5598 - Non-constant time comparisons risk private key leakage in FrodoKEM.\n\n\nContributed by PJ Fanning",
+      "7bb3afea5e46516edf0fb5db49a7990b485cfb5f": "HADOOP-19866. Upgrade bouncycastle to 1.84 for security (#8443)\n\n\nCVE-2025-14813 - GOSTCTR implementation unable to process more than 255 blocks correctly.\nCVE-2026-0636 - LDAP Injection Vulnerability in LDAPStoreHelper.java.\nCVE-2026-3505 - Unbounded PGP AEAD chunk size leads to pre-auth resource exhaustion.\nCVE-2026-5588 - PKIX draft CompositeVerifier accepts empty signature sequence as valid.\nCVE-2026-5598 - Non-constant time comparisons risk private key leakage in FrodoKEM.\n\n\nContributed by PJ Fanning"
+    },
+    "CVE-2026-3505": {
+      "ce385baed88132397f8dcf340447bc103a93be04": "HADOOP-19866. Upgrade bouncycastle to 1.84 for security (#8443) (#8446)\n\n\nCVE-2025-14813 - GOSTCTR implementation unable to process more than 255 blocks correctly.\nCVE-2026-0636 - LDAP Injection Vulnerability in LDAPStoreHelper.java.\nCVE-2026-3505 - Unbounded PGP AEAD chunk size leads to pre-auth resource exhaustion.\nCVE-2026-5588 - PKIX draft CompositeVerifier accepts empty signature sequence as valid.\nCVE-2026-5598 - Non-constant time comparisons risk private key leakage in FrodoKEM.\n\n\nContributed by PJ Fanning",
+      "5b9b543b4f1f70869b29e2abdc03e76674df48a6": "HADOOP-19866. Upgrade bouncycastle to 1.84 for security (#8443) (#8445)\n\n\nCVE-2025-14813 - GOSTCTR implementation unable to process more than 255 blocks correctly.\nCVE-2026-0636 - LDAP Injection Vulnerability in LDAPStoreHelper.java.\nCVE-2026-3505 - Unbounded PGP AEAD chunk size leads to pre-auth resource exhaustion.\nCVE-2026-5588 - PKIX draft CompositeVerifier accepts empty signature sequence as valid.\nCVE-2026-5598 - Non-constant time comparisons risk private key leakage in FrodoKEM.\n\n\nContributed by PJ Fanning",
+      "7bb3afea5e46516edf0fb5db49a7990b485cfb5f": "HADOOP-19866. Upgrade bouncycastle to 1.84 for security (#8443)\n\n\nCVE-2025-14813 - GOSTCTR implementation unable to process more than 255 blocks correctly.\nCVE-2026-0636 - LDAP Injection Vulnerability in LDAPStoreHelper.java.\nCVE-2026-3505 - Unbounded PGP AEAD chunk size leads to pre-auth resource exhaustion.\nCVE-2026-5588 - PKIX draft CompositeVerifier accepts empty signature sequence as valid.\nCVE-2026-5598 - Non-constant time comparisons risk private key leakage in FrodoKEM.\n\n\nContributed by PJ Fanning"
+    },
+    "CVE-2026-5588": {
+      "ce385baed88132397f8dcf340447bc103a93be04": "HADOOP-19866. Upgrade bouncycastle to 1.84 for security (#8443) (#8446)\n\n\nCVE-2025-14813 - GOSTCTR implementation unable to process more than 255 blocks correctly.\nCVE-2026-0636 - LDAP Injection Vulnerability in LDAPStoreHelper.java.\nCVE-2026-3505 - Unbounded PGP AEAD chunk size leads to pre-auth resource exhaustion.\nCVE-2026-5588 - PKIX draft CompositeVerifier accepts empty signature sequence as valid.\nCVE-2026-5598 - Non-constant time comparisons risk private key leakage in FrodoKEM.\n\n\nContributed by PJ Fanning",
+      "5b9b543b4f1f70869b29e2abdc03e76674df48a6": "HADOOP-19866. Upgrade bouncycastle to 1.84 for security (#8443) (#8445)\n\n\nCVE-2025-14813 - GOSTCTR implementation unable to process more than 255 blocks correctly.\nCVE-2026-0636 - LDAP Injection Vulnerability in LDAPStoreHelper.java.\nCVE-2026-3505 - Unbounded PGP AEAD chunk size leads to pre-auth resource exhaustion.\nCVE-2026-5588 - PKIX draft CompositeVerifier accepts empty signature sequence as valid.\nCVE-2026-5598 - Non-constant time comparisons risk private key leakage in FrodoKEM.\n\n\nContributed by PJ Fanning",
+      "7bb3afea5e46516edf0fb5db49a7990b485cfb5f": "HADOOP-19866. Upgrade bouncycastle to 1.84 for security (#8443)\n\n\nCVE-2025-14813 - GOSTCTR implementation unable to process more than 255 blocks correctly.\nCVE-2026-0636 - LDAP Injection Vulnerability in LDAPStoreHelper.java.\nCVE-2026-3505 - Unbounded PGP AEAD chunk size leads to pre-auth resource exhaustion.\nCVE-2026-5588 - PKIX draft CompositeVerifier accepts empty signature sequence as valid.\nCVE-2026-5598 - Non-constant time comparisons risk private key leakage in FrodoKEM.\n\n\nContributed by PJ Fanning"
+    },
+    "CVE-2026-5598": {
+      "ce385baed88132397f8dcf340447bc103a93be04": "HADOOP-19866. Upgrade bouncycastle to 1.84 for security (#8443) (#8446)\n\n\nCVE-2025-14813 - GOSTCTR implementation unable to process more than 255 blocks correctly.\nCVE-2026-0636 - LDAP Injection Vulnerability in LDAPStoreHelper.java.\nCVE-2026-3505 - Unbounded PGP AEAD chunk size leads to pre-auth resource exhaustion.\nCVE-2026-5588 - PKIX draft CompositeVerifier accepts empty signature sequence as valid.\nCVE-2026-5598 - Non-constant time comparisons risk private key leakage in FrodoKEM.\n\n\nContributed by PJ Fanning",
+      "5b9b543b4f1f70869b29e2abdc03e76674df48a6": "HADOOP-19866. Upgrade bouncycastle to 1.84 for security (#8443) (#8445)\n\n\nCVE-2025-14813 - GOSTCTR implementation unable to process more than 255 blocks correctly.\nCVE-2026-0636 - LDAP Injection Vulnerability in LDAPStoreHelper.java.\nCVE-2026-3505 - Unbounded PGP AEAD chunk size leads to pre-auth resource exhaustion.\nCVE-2026-5588 - PKIX draft CompositeVerifier accepts empty signature sequence as valid.\nCVE-2026-5598 - Non-constant time comparisons risk private key leakage in FrodoKEM.\n\n\nContributed by PJ Fanning",
+      "7bb3afea5e46516edf0fb5db49a7990b485cfb5f": "HADOOP-19866. Upgrade bouncycastle to 1.84 for security (#8443)\n\n\nCVE-2025-14813 - GOSTCTR implementation unable to process more than 255 blocks correctly.\nCVE-2026-0636 - LDAP Injection Vulnerability in LDAPStoreHelper.java.\nCVE-2026-3505 - Unbounded PGP AEAD chunk size leads to pre-auth resource exhaustion.\nCVE-2026-5588 - PKIX draft CompositeVerifier accepts empty signature sequence as valid.\nCVE-2026-5598 - Non-constant time comparisons risk private key leakage in FrodoKEM.\n\n\nContributed by PJ Fanning"
+    },
+    "CVE-2025-66566": {
+      "fa41b7c6e94a094864664ffb0e555dadd85f61a8": "HADOOP-19747. Switch to at.yawk.lz4:lz4-java:1.10.2 due to CVE-2025-66566 (#8176) Contributed by PJ Fanning \n\n* HADOOP-19747. Switch to at.yawk.lz4:lz4-java:1.10.2 due to CVE-2025-66566\n\nSigned-off-by: Shilun Fan <slfan1989@apache.org>",
+      "1dab2932686e7d342e75d7ba8a40bcbedee79040": "HADOOP-19747. Switch to at.yawk.lz4:lz4-java:1.10.2 due to CVE-2025-66566 (#8122) Contributed by PJ Fanning\n\n* HADOOP-19747. Switch to at.yawk.lz4:lz4-java:1.10.2 due to CVE-2025-66566\n\nSigned-off-by: Shilun Fan <slfan1989@apache.org>"
+    },
+    "CVE-2025-14763": {
+      "5d576af9af6da7d11a3624865a37db294335a9a9": "HADOOP-19764. Upgrade amazon-s3-encryption-client-java to 4.0.0+ due to Invisible Salamanders (CVE-2025-14763) (#8158)\n\nThis CVE is graded medium (5.3).\n\nIt is only an issue if client side S3 encryption (S3-CSE) is used.\n\nContributed by PJ Fanning.",
+      "1356f56e8745593fe0674af73b3571e479bdb2cc": "HADOOP-19764. Upgrade amazon-s3-encryption-client-java to 4.0.0+ due to Invisible Salamanders (CVE-2025-14763) (#8158)\n\nThis CVE is graded medium (5.3).\n\nIt is only an issue if client side S3 encryption (S3-CSE) is used.\n\nContributed by PJ Fanning.",
+      "896fc596980c8d3a7d7d841a92414fe08514444b": "HADOOP-19764. Upgrade amazon-s3-encryption-client-java to 4.0.0+ due to Invisible Salamanders (CVE-2025-14763) (#8158)\n\n\nThis CVE is graded medium (5.3).\n\nIt is only an issue if client side S3 encryption (S3-CSE) is used.\n\nContributed by PJ Fanning."
+    },
+    "CVE-2025-12183": {
+      "535459e9ac347447c449af4bb2bf605239c21525": "HADOOP-19747. Switch to at.yawk.lz4:lz4-java:1.9.0 due to CVE-2025-12183 (#8116)\n\nThe hadoop decompressor org.apache.hadoop.io.compress.lz4.Lz4Compressor\ninstantiated a compressor via a call to\n\n    LZ4Factory.fastestInstance().safeDecompressor()\n\nand so is not directly vulnerable to CVE-2025-12183.\n\nsee https://sites.google.com/sonatype.com/vulnerabilities/cve-2025-12183\n\nContributed by PJ Fanning",
+      "476e67ddeb2a53f81d2319d0799050024edd5ee8": "HADOOP-19747. Switch to at.yawk.lz4:lz4-java:1.9.0 due to CVE-2025-12183 (#8116)\n\nThe hadoop decompressor org.apache.hadoop.io.compress.lz4.Lz4Compressor\ninstantiated a compressor via a call to\n\n    LZ4Factory.fastestInstance().safeDecompressor()\n\nand so is not directly vulnerable to CVE-2025-12183.\n\nsee https://sites.google.com/sonatype.com/vulnerabilities/cve-2025-12183\n\nContributed by PJ Fanning",
+      "8602fe7ea84052cf357643813c120691ec07279e": "HADOOP-19747. Switch to at.yawk.lz4:lz4-java:1.9.0 due to CVE-2025-12183 (#8116)\n\n\nThe hadoop decompressor org.apache.hadoop.io.compress.lz4.Lz4Compressor\ninstantiated a compressor via a call to\n\n    LZ4Factory.fastestInstance().safeDecompressor()\n\nand so is not directly vulnerable to CVE-2025-12183.\n\nsee https://sites.google.com/sonatype.com/vulnerabilities/cve-2025-12183\n\nContributed by PJ Fanning"
+    },
+    "CVE-2025-68161": {
+      "e3990ca57d53678bdcb66cfbf061c3b3dc071968": "HADOOP-19765. Upgrade to log4j 2.25.3 due to CVE-2025-68161 (#8157) (#8161) Contributed by PJ Fanning\n\n* HADOOP-19765. Upgrade to log4j 2.25.3 due to CVE-2025-68161\n\nSigned-off-by: Shilun Fan <slfan1989@apache.org>",
+      "baca63cb2432cbf698805816ba1cec037fad6559": "HADOOP-19765. Upgrade to log4j 2.25.3 due to CVE-2025-68161 (#8157) Contributed by PJ Fanning\n\n* HADOOP-19765. Upgrade to log4j 2.25.3 due to CVE-2025-68161\n\nSigned-off-by: Shilun Fan <slfan1989@apache.org>"
+    },
+    "CVE-2025-5115": {
+      "48448e501494cb2d3b981b5627e5a3c8c54f9928": "HADOOP-19761. Upgrade jetty and http2-common to 9.4.58.v20250814 (#8146)\n\n\nDue to CVE-2025-5115.\n\nContributed by fuchaohong"
+    },
+    "CVE-2025-8916": {
+      "ef5627d86de5385eaa6e030ba6606478ea997f77": "HADOOP-19730. Upgrade Bouncycastle to 1.82 due to CVE-2025-8916 (#8047) Contributed by PJ Fanning\n\n* HADOOP-19730. Upgrade Bouncycastle to 1.82 due to CVE-2025-8916 (#8039) \n\nSigned-off-by: Shilun Fan <slfan1989@apache.org>",
+      "b1d6f04ecf0121976ab023f44fddf2b860656849": "HADOOP-19730. Upgrade Bouncycastle to 1.82 due to CVE-2025-8916 (#8039) Contributed by PJ Fanning\n\n* HADOOP-19730. Upgrade Bouncycastle to 1.82 due to CVE-2025-8916\n\nSigned-off-by: Shilun Fan <slfan1989@apache.org>"
+    },
+    "CVE-2025-53864": {
+      "6ff17315afa867b2510a862bbe08be5ece0474cd": "HADOOP-19632. Upgrade nimbus-jose-jwt to 10.4 due to CVE-2025-53864 (#7993) Contributed by Rohit Kumar.\n\n* HADOOP-19632. Upgrade nimbus-jose-jwt to 10.4 due to CVE-2025-53864\n\nSigned-off-by: Shilun Fan <slfan1989@apache.org>",
+      "3baa288982333fbbc3839cf55baaf36f49e0f7b6": "HADOOP-19632. Upgrade nimbus-jose-jwt to 10.4 (#7965)\n\n\nAddresses  CVE-2025-53864\n\nContributed by Rohit Kumar"
+    },
+    "CVE-2025-58057": {
+      "63d882558b737bedc834c59a57f532b85b019681": "HADOOP-19689: bump netty to 4.1.127.Final due to CVE-2025-58057 (#7969) (#7984) Contributed by PJ Fanning. \n\n* HADOOP-19689: bump netty to 4.1.127.Final due to CVE-2025-58057\n\nSigned-off-by: Shilun Fan <slfan1989@apache.org>",
+      "dc7b9e248129156d62c61f0c1a1ad638adb66d20": "HADOOP-19689: bump netty to 4.1.127.Final due to CVE-2025-58057 (#7969) Contributed by PJ Fanning.\n\n* HADOOP-19689: bump netty to 4.1.127.Final due to CVE-2025-58057\n\nSigned-off-by: Shilun Fan <slfan1989@apache.org>"
+    },
+    "CVE-2025-48924": {
+      "ca3d8acaae69aa3189763f072c9f5f0a6ee41aaf": "HADOOP-19690. bump commons-lang3 to 3.18.0 due to CVE-2025-48924 (#7970) (#7985) Contributed by PJ Fanning. \n\n* HADOOP-19690. bump commons-lang3 to 3.18.0 due to CVE-2025-48924\n\nSigned-off-by: Shilun Fan <slfan1989@apache.org>",
+      "69e96f79aee6a225a470ced7e2123d3e19f0e55b": "HADOOP-19690. bump commons-lang3 to 3.18.0 due to CVE-2025-48924 (#7970) Contributed by PJ Fanning.\n\n* HADOOP-19690. bump commons-lang3 to 3.18.0 due to CVE-2025-48924 \n\nSigned-off-by: Shilun Fan <slfan1989@apache.org>"
+    },
+    "CVE-2024-8184": {
+      "09a4950b6538e2d9906d423e74c70589688f7ad7": "HADOOP-19225. Upgrade Jetty to 9.4.57.v20241219 due to CVE-2024-8184 (#7116)\n\n\nContributed by PJ Fanning.",
+      "ee88030aa57c87290d6fa94f09b9475a2e561559": "HADOOP-19225. Upgrade Jetty to 9.4.57.v20241219 due to CVE-2024-8184 (#7116)\n\n\nContributed by PJ Fanning.",
+      "a5926668682e884b31bdcb6ec20ce6b4bb850ece": "HADOOP-19225. Upgrade Jetty to 9.4.57.v20241219 due to CVE-2024-8184 (#7116). Contributed by PJ Fanning."
+    },
+    "CVE-2024-47561": {
+      "c239f617a784857081b4687b205146ef9b92cf34": "HADOOP-19315. Upgrade Apache Avro to 1.11.4 (#7128) (#7615)\n\n\n* All field access is now via setter/getter methods\n* To use Avro to marshal Serializable objects,\n  the packages they are in must be declared in the system property\n  \"org.apache.avro.SERIALIZABLE_PACKAGES\"\n\nThis is required to address\n- CVE-2024-47561\n- CVE-2023-39410\n\nThis change is not backwards compatible.\n\nContributed by Dominik Diedrich",
+      "9a743bd17f55245841db3de5d1c785282306d408": "HADOOP-19315. Upgrade Apache Avro to 1.11.4 (#7128)\n\n\r\n* All field access is now via setter/getter methods\r\n* To use Avro to marshal Serializable objects,\r\n  the packages they are in must be declared in the system property\r\n  \"org.apache.avro.SERIALIZABLE_PACKAGES\"\r\n  \r\nThis is required to address\r\n- CVE-2024-47561\r\n- CVE-2023-39410  \r\n\r\nThis change is not backwards compatible.\r\n\r\nContributed by Dominik Diedrich"
+    },
+    "CVE-2023-39410": {
+      "c239f617a784857081b4687b205146ef9b92cf34": "HADOOP-19315. Upgrade Apache Avro to 1.11.4 (#7128) (#7615)\n\n\n* All field access is now via setter/getter methods\n* To use Avro to marshal Serializable objects,\n  the packages they are in must be declared in the system property\n  \"org.apache.avro.SERIALIZABLE_PACKAGES\"\n\nThis is required to address\n- CVE-2024-47561\n- CVE-2023-39410\n\nThis change is not backwards compatible.\n\nContributed by Dominik Diedrich",
+      "9a743bd17f55245841db3de5d1c785282306d408": "HADOOP-19315. Upgrade Apache Avro to 1.11.4 (#7128)\n\n\r\n* All field access is now via setter/getter methods\r\n* To use Avro to marshal Serializable objects,\r\n  the packages they are in must be declared in the system property\r\n  \"org.apache.avro.SERIALIZABLE_PACKAGES\"\r\n  \r\nThis is required to address\r\n- CVE-2024-47561\r\n- CVE-2023-39410  \r\n\r\nThis change is not backwards compatible.\r\n\r\nContributed by Dominik Diedrich"
+    },
+    "CVE-2024-52046": {
+      "6eb1c4805dcd7256f5b237a934253d1f144b0ed9": "HADOOP-19383: upgrade Mina 2.0.27 due to CVE-2024-52046\n\nCloses #7267\n\nSigned-off-by: Chris Nauroth <cnauroth@apache.org>\n(cherry picked from commit 1d736cc6791ace7e938f0cde8685ed67f50ba362)",
+      "1d736cc6791ace7e938f0cde8685ed67f50ba362": "HADOOP-19383: upgrade Mina 2.0.27 due to CVE-2024-52046\n\nCloses #7267\n\nSigned-off-by: Chris Nauroth <cnauroth@apache.org>"
+    },
+    "CVE-2025-24970": {
+      "30eb66e68c2979ddce925763b23bf7a2db6c56de": "HADOOP-19465. Upgrade to netty 4.1.118 due to CVE-2025-24970 Contributed by PJ Fanning.  (#7413) (#7423)\n\nSigned-off-by: Shilun Fan <slfan1989@apache.org>",
+      "0dd9bf82ddced98bd6cd087d633b4d11f91c844d": "HADOOP-19465. Upgrade to netty 4.1.118 due to CVE-2025-24970 (#7413) Contributed by PJ Fanning.\n\nSigned-off-by: Shilun Fan <slfan1989@apache.org>"
+    },
+    "CVE-2024-31141": {
+      "08cfb233fb03cd9db4719b610b18a281d3bb4d84": "HADOOP-19456. Upgrade kafka to 3.9.0 to fix CVE-2024-31141. (#7416) Contributed by Palakur Eshwitha Sai.\n\nSigned-off-by: Shilun Fan <slfan1989@apache.org>",
+      "ec6c08b8df6940f7b8e3aee00a3448145aea2306": "HADOOP-19456. Upgrade kafka to 3.9.0 to fix CVE-2024-31141. (#7401) Contributed by Palakur Eshwitha Sai.\n\nReviewed-by: PJ Fanning <fanningpj@apache.org>\nSigned-off-by: Shilun Fan <slfan1989@apache.org>"
+    },
+    "CVE-2024-7254": {
+      "d9bcee929e78f42489bf9f867b89a10aa7300de3": "HADOOP-19289. Upgrade to protobuf-java 3.25.5 (#7072)\n\n\nAddresses CVE-2024-7254\n\nContributed by PJ Fanning"
+    },
+    "CVE-2024-47535": {
+      "f6b57131b3c7341cd142587b67b5069e4d3d0ad3": "HADOOP-19335. Bump netty to 4.1.116 due to CVE-2024-47535 (#7158). Contributed by PJ Fanning (#7259)",
+      "71b3a6477b5c3e40719d9e3a20183fa795c1ac30": "HADOOP-19335. Bump netty to 4.1.116 due to CVE-2024-47535 (#7158). Contributed by PJ Fanning"
+    },
+    "CVE-2023-25194": {
+      "46336b3803cc7022f5a7bc081045cbedce7bf909": "HADOOP-18962. Upgrade kafka to 3.4.0 (#6247)\n\nUpgrade Kafka Client due to CVEs\n\n* CVE-2023-25194\n* CVE-2021-38153\n* CVE-2018-17196\n\nContributed by Murali Krishna",
+      "337f2fc5660b9c0b3b8708baa871175b36341b9b": "HADOOP-18962. Upgrade kafka to 3.4.0 (#6247)\n\n\r\nUpgrade Kafka Client due to CVEs\r\n\r\n* CVE-2023-25194\r\n* CVE-2021-38153\r\n* CVE-2018-17196\r\n\r\nContributed by Murali Krishna",
+      "1baf0e889fec54b6560417b62cada75daf6fe312": "HADOOP-18962. Upgrade kafka to 3.4.0 (#6247)\n\n\r\nUpgrade Kafka Client due to CVEs\r\n\r\n* CVE-2023-25194\r\n* CVE-2021-38153\r\n* CVE-2018-17196\r\n\r\nContributed by Murali Krishna"
+    },
+    "CVE-2021-38153": {
+      "46336b3803cc7022f5a7bc081045cbedce7bf909": "HADOOP-18962. Upgrade kafka to 3.4.0 (#6247)\n\nUpgrade Kafka Client due to CVEs\n\n* CVE-2023-25194\n* CVE-2021-38153\n* CVE-2018-17196\n\nContributed by Murali Krishna",
+      "337f2fc5660b9c0b3b8708baa871175b36341b9b": "HADOOP-18962. Upgrade kafka to 3.4.0 (#6247)\n\n\r\nUpgrade Kafka Client due to CVEs\r\n\r\n* CVE-2023-25194\r\n* CVE-2021-38153\r\n* CVE-2018-17196\r\n\r\nContributed by Murali Krishna",
+      "1baf0e889fec54b6560417b62cada75daf6fe312": "HADOOP-18962. Upgrade kafka to 3.4.0 (#6247)\n\n\r\nUpgrade Kafka Client due to CVEs\r\n\r\n* CVE-2023-25194\r\n* CVE-2021-38153\r\n* CVE-2018-17196\r\n\r\nContributed by Murali Krishna"
+    },
+    "CVE-2018-17196": {
+      "46336b3803cc7022f5a7bc081045cbedce7bf909": "HADOOP-18962. Upgrade kafka to 3.4.0 (#6247)\n\nUpgrade Kafka Client due to CVEs\n\n* CVE-2023-25194\n* CVE-2021-38153\n* CVE-2018-17196\n\nContributed by Murali Krishna",
+      "337f2fc5660b9c0b3b8708baa871175b36341b9b": "HADOOP-18962. Upgrade kafka to 3.4.0 (#6247)\n\n\r\nUpgrade Kafka Client due to CVEs\r\n\r\n* CVE-2023-25194\r\n* CVE-2021-38153\r\n* CVE-2018-17196\r\n\r\nContributed by Murali Krishna",
+      "1baf0e889fec54b6560417b62cada75daf6fe312": "HADOOP-18962. Upgrade kafka to 3.4.0 (#6247)\n\n\r\nUpgrade Kafka Client due to CVEs\r\n\r\n* CVE-2023-25194\r\n* CVE-2021-38153\r\n* CVE-2018-17196\r\n\r\nContributed by Murali Krishna"
+    },
+    "CVE-2024-23944": {
+      "bd63358c0bb53bb1097f38ebf6c125547fe5e547": "HADOOP-19116. Update to zookeeper client 3.8.4 due to CVE-2024-23944. (#6638)\n\n\r\nUpdated ZK client dependency to 3.8.4 to address  CVE-2024-23944.\r\n\r\nContributed by PJ Fanning",
+      "7a9a2b22229eca48993064f73a9b9e130f20d665": "HADOOP-19116. Update to zookeeper client 3.8.4 due to CVE-2024-23944. (#6638)\n\nUpdated ZK client dependency to 3.8.4 to address  CVE-2024-23944.\n\nContributed by PJ Fanning",
+      "7653f968e5e4799b37086c8dffd32c803596f69e": "HADOOP-19116. Update to zookeeper client 3.8.4 due to CVE-2024-23944. (#6638)\n\n\r\nUpdated ZK client dependency to 3.8.4 to address  CVE-2024-23944.\r\n\r\nContributed by PJ Fanning"
+    },
+    "CVE-2024-29857": {
+      "59b29800bdce4bfe9b52ccf2d8bd6eeb0f35176e": "HADOOP-19154. Upgrade bouncycastle to 1.78.1 due to CVEs (#6755) (#6866)\n\n\r\nAddresses\r\n\r\n* CVE-2024-29857 - Importing an EC certificate with specially crafted F2m parameters can cause high CPU usage during parameter evaluation.\r\n* CVE-2024-30171 - Possible timing based leakage in RSA based handshakes due to exception processing eliminated.\r\n* CVE-2024-30172 - Crafted signature and public key can be used to trigger an infinite loop in the Ed25519 verification code.\r\n* CVE-2024-301XX - When endpoint identification is enabled and an SSL socket is not created with an explicit hostname (as happens with HttpsURLConnection), hostname verification could be performed against a DNS-resolved IP address.\r\n\r\nContributed by PJ Fanning",
+      "2ee0bf953492b66765d3d2c902407fbf9bceddec": "HADOOP-19154. Upgrade bouncycastle to 1.78.1 due to CVEs (#6755)\n\n\r\nAddresses\r\n\r\n* CVE-2024-29857 - Importing an EC certificate with specially crafted F2m parameters can cause high CPU usage during parameter evaluation.\r\n* CVE-2024-30171 - Possible timing based leakage in RSA based handshakes due to exception processing eliminated.\r\n* CVE-2024-30172 - Crafted signature and public key can be used to trigger an infinite loop in the Ed25519 verification code.\r\n* CVE-2024-301XX - When endpoint identification is enabled and an SSL socket is not created with an explicit hostname (as happens with HttpsURLConnection), hostname verification could be performed against a DNS-resolved IP address. \r\n\r\nContributed by PJ Fanning"
+    },
+    "CVE-2024-30171": {
+      "59b29800bdce4bfe9b52ccf2d8bd6eeb0f35176e": "HADOOP-19154. Upgrade bouncycastle to 1.78.1 due to CVEs (#6755) (#6866)\n\n\r\nAddresses\r\n\r\n* CVE-2024-29857 - Importing an EC certificate with specially crafted F2m parameters can cause high CPU usage during parameter evaluation.\r\n* CVE-2024-30171 - Possible timing based leakage in RSA based handshakes due to exception processing eliminated.\r\n* CVE-2024-30172 - Crafted signature and public key can be used to trigger an infinite loop in the Ed25519 verification code.\r\n* CVE-2024-301XX - When endpoint identification is enabled and an SSL socket is not created with an explicit hostname (as happens with HttpsURLConnection), hostname verification could be performed against a DNS-resolved IP address.\r\n\r\nContributed by PJ Fanning",
+      "2ee0bf953492b66765d3d2c902407fbf9bceddec": "HADOOP-19154. Upgrade bouncycastle to 1.78.1 due to CVEs (#6755)\n\n\r\nAddresses\r\n\r\n* CVE-2024-29857 - Importing an EC certificate with specially crafted F2m parameters can cause high CPU usage during parameter evaluation.\r\n* CVE-2024-30171 - Possible timing based leakage in RSA based handshakes due to exception processing eliminated.\r\n* CVE-2024-30172 - Crafted signature and public key can be used to trigger an infinite loop in the Ed25519 verification code.\r\n* CVE-2024-301XX - When endpoint identification is enabled and an SSL socket is not created with an explicit hostname (as happens with HttpsURLConnection), hostname verification could be performed against a DNS-resolved IP address. \r\n\r\nContributed by PJ Fanning"
+    },
+    "CVE-2024-30172": {
+      "59b29800bdce4bfe9b52ccf2d8bd6eeb0f35176e": "HADOOP-19154. Upgrade bouncycastle to 1.78.1 due to CVEs (#6755) (#6866)\n\n\r\nAddresses\r\n\r\n* CVE-2024-29857 - Importing an EC certificate with specially crafted F2m parameters can cause high CPU usage during parameter evaluation.\r\n* CVE-2024-30171 - Possible timing based leakage in RSA based handshakes due to exception processing eliminated.\r\n* CVE-2024-30172 - Crafted signature and public key can be used to trigger an infinite loop in the Ed25519 verification code.\r\n* CVE-2024-301XX - When endpoint identification is enabled and an SSL socket is not created with an explicit hostname (as happens with HttpsURLConnection), hostname verification could be performed against a DNS-resolved IP address.\r\n\r\nContributed by PJ Fanning",
+      "2ee0bf953492b66765d3d2c902407fbf9bceddec": "HADOOP-19154. Upgrade bouncycastle to 1.78.1 due to CVEs (#6755)\n\n\r\nAddresses\r\n\r\n* CVE-2024-29857 - Importing an EC certificate with specially crafted F2m parameters can cause high CPU usage during parameter evaluation.\r\n* CVE-2024-30171 - Possible timing based leakage in RSA based handshakes due to exception processing eliminated.\r\n* CVE-2024-30172 - Crafted signature and public key can be used to trigger an infinite loop in the Ed25519 verification code.\r\n* CVE-2024-301XX - When endpoint identification is enabled and an SSL socket is not created with an explicit hostname (as happens with HttpsURLConnection), hostname verification could be performed against a DNS-resolved IP address. \r\n\r\nContributed by PJ Fanning"
+    },
+    "CVE-2024-25710": {
+      "935bc184fa21af3d3fde27b07ebac5a031725fc9": "HADOOP-19114. Upgrade to commons-compress 1.26.1 due to CVEs. (#6636)\n\n\r\nThis addresses two CVEs triggered by malformed archives\r\n\r\nImportant: Denial of Service CVE-2024-25710\r\nModerate: Denial of Service CVE-2024-26308\r\n\r\nContributed by PJ Fanning",
+      "eede5b131575b3ec1dbc45fae078bb7f2c3e992e": "HADOOP-19114. Upgrade to commons-compress 1.26.1 due to CVEs. (#6636)\n\n\r\nThis addresses two CVEs triggered by malformed archives\r\n\r\nImportant: Denial of Service CVE-2024-25710\r\nModerate: Denial of Service CVE-2024-26308\r\n\r\nContributed by PJ Fanning"
+    },
+    "CVE-2024-26308": {
+      "935bc184fa21af3d3fde27b07ebac5a031725fc9": "HADOOP-19114. Upgrade to commons-compress 1.26.1 due to CVEs. (#6636)\n\n\r\nThis addresses two CVEs triggered by malformed archives\r\n\r\nImportant: Denial of Service CVE-2024-25710\r\nModerate: Denial of Service CVE-2024-26308\r\n\r\nContributed by PJ Fanning",
+      "eede5b131575b3ec1dbc45fae078bb7f2c3e992e": "HADOOP-19114. Upgrade to commons-compress 1.26.1 due to CVEs. (#6636)\n\n\r\nThis addresses two CVEs triggered by malformed archives\r\n\r\nImportant: Denial of Service CVE-2024-25710\r\nModerate: Denial of Service CVE-2024-26308\r\n\r\nContributed by PJ Fanning"
+    },
+    "CVE-2023-52428": {
+      "7cc64ce7a7c9c37cd9490fc9060e64d73e72b42b": "HADOOP-19115. Upgrade to nimbus-jose-jwt 9.37.2 due to CVE-2023-52428. (#6637) (#6689) Contributed by PJ Fanning.\n\nSigned-off-by: Shilun Fan <slfan1989@apache.org>",
+      "193c72c1e4102e7a3f09b5003ef0373f11266a83": "HADOOP-19115. Upgrade to nimbus-jose-jwt 9.37.2 due to CVE-2023-52428. (#6637) (#6682) Contributed by PJ Fanning.\n\nReviewed-by: Dinesh Chitlangia <dineshc@apache.org>\r\nSigned-off-by: Shilun Fan <slfan1989@apache.org>",
+      "5bfca656925930df73fe400bdb6afb5e1440dc63": "HADOOP-19115. Upgrade to nimbus-jose-jwt 9.37.2 due to CVE-2023-52428. (#6637)\n\n\r\nContributed by PJ Fanning"
+    },
+    "CVE-2023-34610": {
+      "d72cdf7205c9e5310e832b2faa2e5b103f0804e0": "YARN-11611. Remove json-io to 4.14.1 due to CVE-2023-34610 (#6257)\n\nCo-authored-by: Benjamin Teke <bteke@cloudera.com>"
+    },
+    "GHSA-XPW8-RCWV-8F8P": {
+      "1708df37fb1b86cd9470e9e7025199596333dd81": "HADOOP-18933. upgrade to netty 4.1.100 due to CVE (#6173)\n\n\r\nMitigates Netty security advisory GHSA-xpw8-rcwv-8f8p\r\n\"HTTP/2 Rapid Reset Attack - DDoS vector in the HTTP/2 protocol due RST frames\"\r\n\r\nContributed by PJ Fanning",
+      "bbf905dc99bb8939f61bcb25fe158f56cc826352": "HADOOP-18933. upgrade to netty 4.1.100 due to CVE (#6173)\n\n\r\nMitigates Netty security advisory GHSA-xpw8-rcwv-8f8p\r\n\"HTTP/2 Rapid Reset Attack - DDoS vector in the HTTP/2 protocol due RST frames\"\r\n\r\nContributed by PJ Fanning"
+    },
+    "CVE-2021-26291": {
+      "0042544bf2b3bcb89f1bbd3d792e489c28655432": "HADOOP-18949. upgrade maven dependency plugin due to CVE-2021-26291. (#6219)\n\n\r\nAddresses CVE-2021-26291. \"Origin Validation Error in Apache Maven\"\r\n\r\nContributed by PJ Fanning."
+    },
+    "CVE-2023-3635": {
+      "1c9ad4cbbbd15948a4ba154205b277d3f1b74c40": "HADOOP-18837. Upgrade okio to 3.4.0 due to CVE-2023-3635. (#5914)\n\nContributed by Rohit Kumar",
+      "b1ed23654c01052074ea81fadb685d2ea7bb4bfa": "HADOOP-18837. Upgrade okio to 3.4.0 due to CVE-2023-3635. (#5914)\n\n\r\nContributed by Rohit Kumar"
+    },
+    "CVE-2022-24329": {
+      "591a35cdf6a60de028e37ef25fa8fd3a63809556": "HADOOP-18496. Upgrade okhttp3 and dependencies due to kotlin CVEs (#5035)\n\nUpdates okhttp3 and okio so their transitive dependency on Kotlin\nstdlib is free from recent CVEs.\n\nokhttp3:okhttp => 4.10.0\nokio:okio => 3.2.0\nkotlin stdlib => 1.6.20\n\nkotlin CVEs fixed:\n CVE-2022-24329\n CVE-2020-29582\n\nContributed by PJ Fanning.",
+      "d340c4a7a187cc8a4c6611a7023d0ad06c625a3c": "HADOOP-18496. Upgrade okhttp3 and dependencies due to kotlin CVEs (#5035)\n\n\r\nUpdates okhttp3 and okio so their transitive dependency on Kotlin\r\nstdlib is free from recent CVEs.\r\n\r\nokhttp3:okhttp => 4.10.0\r\nokio:okio => 3.2.0\r\nkotlin stdlib => 1.6.20\r\n\r\nkotlin CVEs fixed:\r\n CVE-2022-24329\r\n CVE-2020-29582\r\n \r\nContributed by PJ Fanning."
+    },
+    "CVE-2020-29582": {
+      "591a35cdf6a60de028e37ef25fa8fd3a63809556": "HADOOP-18496. Upgrade okhttp3 and dependencies due to kotlin CVEs (#5035)\n\nUpdates okhttp3 and okio so their transitive dependency on Kotlin\nstdlib is free from recent CVEs.\n\nokhttp3:okhttp => 4.10.0\nokio:okio => 3.2.0\nkotlin stdlib => 1.6.20\n\nkotlin CVEs fixed:\n CVE-2022-24329\n CVE-2020-29582\n\nContributed by PJ Fanning.",
+      "d340c4a7a187cc8a4c6611a7023d0ad06c625a3c": "HADOOP-18496. Upgrade okhttp3 and dependencies due to kotlin CVEs (#5035)\n\n\r\nUpdates okhttp3 and okio so their transitive dependency on Kotlin\r\nstdlib is free from recent CVEs.\r\n\r\nokhttp3:okhttp => 4.10.0\r\nokio:okio => 3.2.0\r\nkotlin stdlib => 1.6.20\r\n\r\nkotlin CVEs fixed:\r\n CVE-2022-24329\r\n CVE-2020-29582\r\n \r\nContributed by PJ Fanning."
+    },
+    "CVE-2023-34454": {
+      "384891ceeaf8ffe52d87cb9e1cabf06da7842961": "HADOOP-18782. Upgrade to snappy-java 1.1.10.1 due to CVEs (#5773)\n\nAddresses CVE-2023-34454\n\nContributed by PJ Fanning",
+      "56ef05a9ca5caaee8b2703ee21c0231150ce8f28": "HADOOP-18782. Upgrade to snappy-java 1.1.10.1 due to CVEs (#5773)\n\n\r\nAddresses CVE-2023-34454\r\n\r\nContributed by PJ Fanning"
+    },
+    "CVE-2022-41881": {
+      "03a548d4e56104e2807d961f7eec3fbe360e45b9": "HADOOP-18646. Upgrade Netty to 4.1.89.Final to fix CVE-2022-41881 (#5435) (#5729)\n\nThis fixes CVE-2022-41881.\r\n\r\nThis also upgrades io.opencensus dependencies to 0.12.3\r\n\r\nContributed by Aleksandr Nikolaev\r\n\r\n(cherry picked from commit 734f7abfb8b84a4c20dbae5073cf2d4fb60adc1c)\r\n\r\n Conflicts:\r\n\thadoop-project/pom.xml\r\n\r\nChange-Id: I26b8961725706370ac5f0fa248d0b0333034a047\r\n\r\nCo-authored-by: nao <56360298+nao-it@users.noreply.github.com>",
+      "734f7abfb8b84a4c20dbae5073cf2d4fb60adc1c": "HADOOP-18646. Upgrade Netty to 4.1.89.Final to fix CVE-2022-41881 (#5435)\n\n\r\nThis fixes CVE-2022-41881.\r\n\r\nThis also upgrades io.opencensus dependencies to 0.12.3\r\n \r\nContributed by Aleksandr Nikolaev"
+    },
+    "CVE-2023-25613": {
+      "487368c4b92c5b8128cb3ef6661f21afe7e8acb9": "HADOOP-18655. Upgrade kerby to 2.0.3 due to CVE-2023-25613 (#5458)\n\n\r\nUpgrade kerby to 2.0.3 due to the CVE https://nvd.nist.gov/vuln/detail/CVE-2023-25613\r\n\r\n\r\nContributed by Rohit Kumar Badeau"
+    },
+    "CVE-2021-37533": {
+      "223046cb648fe2cec961de39062e4657c15477f8": "HADOOP-18561. Update commons-net to 3.9.0 (#5214)\n\n\r\nAddresses CVE-2021-37533, which *only* relates to FTP.\r\n\r\nApplications not using the ftp:// filesystem, which, as\r\nanyone who has used it will know is very minimal and\r\nso rarely used, is not a critical part of the project.\r\n\r\nFurthermore, the FTP-related issue is at worst information leakage\r\nif someone connects to a malicious server.\r\n\r\nThis is a due diligence PR rather than an emergency fix.\r\n\r\nContributed by Steve Loughran",
+      "2b7480d4ed4d4b0245724c706a3fe52fe13d74be": "HADOOP-18561. Update commons-net to 3.9.0 (#5214)\n\n\r\nAddresses CVE-2021-37533, which *only* relates to FTP.\r\n\r\nApplications not using the ftp:// filesystem, which, as\r\nanyone who has used it will know is very minimal and\r\nso rarely used, is not a critical part of the project.\r\n\r\nFurthermore, the FTP-related issue is at worst information leakage\r\nif someone connects to a malicious server.\r\n\r\nThis is a due diligence PR rather than an emergency fix.\r\n\r\nContributed by Steve Loughran",
+      "5f08e51b72330b2dd2405896b39179a64a3a7efe": "HADOOP-18561. Update commons-net to 3.9.0 (#5214)\n\n\r\nAddresses CVE-2021-37533, which *only* relates to FTP.\r\n\r\nApplications not using the ftp:// filesystem, which, as\r\nanyone who has used it will know is very minimal and\r\nso rarely used, is not a critical part of the project.\r\n\r\nFurthermore, the FTP-related issue is at worst information leakage\r\nif someone connects to a malicious server.\r\n\r\nThis is a due diligence PR rather than an emergency fix.\r\n\r\nContributed by Steve Loughran"
+    },
+    "CVE-2022-41853": {
+      "2cc1896d44724f798f7a7806314c37bbdcd21401": "HADOOP-18484. Upgrade hsqldb to v2.7.1 to mitigate CVE-2022-41853 (#5114)",
+      "7b84f6458b2ee1d6d589378bca67bc7cba944b93": "HADOOP-18484. Upgrade hsqldb to v2.7.1 to mitigate CVE-2022-41853  (#5101)",
+      "f20e0435b851defd9b347e74e61897b5b9c72477": "HADOOP-18484. Upgrade hsqldb to v2.7.1 to mitigate CVE-2022-41853  (#5102)",
+      "e62ba16a02f8f325eff06b932de89e986335a5e1": "HADOOP-18484. Upgrade hsqldb to v2.7.1 to mitigate CVE-2022-41853 (#4991)"
+    },
+    "CVE-2022-42889": {
+      "60f26b0c05e872792ce3c0f4e06705bc3ffe0a84": "HADOOP-18497. Upgrade commons-text version to 1.10.0 to fix CVE-2022-42889.  (#5037)\n\n\r\nContributed by PJ Fanning.",
+      "193e042dd0596bec74fcb8445d6239011211fd09": "HADOOP-18497. Upgrade commons-text version to 1.10.0 to fix CVE-2022-42889.  (#5037).\n\nContributed by PJ Fanning.",
+      "84c7fd909ba57863a4c32f77eb9cf615b5d0ff18": "HADOOP-18497. Upgrade commons-text version to 1.10.0 to fix CVE-2022-42889.  (#5037).\n\n\r\nContributed by PJ Fanning.",
+      "babb050fa3d41e4d7b87bf34920c42ea95c933a1": "HADOOP-18497. Upgrade commons-text version to fix CVE-2022-42889. (#5037). Contributed by PJ Fanning.\n\nCo-authored-by: He Xiaoqiao <hexiaoqiao@apache.org>\r\nReviewed-by: Ashutosh Gupta <ashugpt@amazon.com>\r\nSigned-off-by: Wei-Chiu Chuang <weichiu@apache.org>"
+    },
+    "CVE-2020-15522": {
+      "a05b01e71f12258bcf4483000d81fe7a996f9dca": "HADOOP-17563. Upgrade BouncyCastle to 1.68 (#3980) (#5015)\n\nAddresses CVE-2020-15522 and CVE-2020-26939.\n\nThis can break builds with older maven shade plugins or\nother code using asm.jar which is not aware of recent java bytecodes\nand/or multi-release JARs. fix: use a later version of asm.jar\n\nContributed by PJ Fanning",
+      "cd856b71954e2c522d1bfd14e4f8cc9e87fc5f26": "HADOOP-17563. Upgrade BouncyCastle to 1.68 (#3980) (#5015)\n\n\r\nAddresses CVE-2020-15522 and CVE-2020-26939.\r\n\r\nThis can break builds with older maven shade plugins or\r\nother code using asm.jar which is not aware of recent java bytecodes\r\nand/or multi-release JARs. fix: use a later version of asm.jar\r\n\r\nContributed by PJ Fanning"
+    },
+    "CVE-2020-26939": {
+      "a05b01e71f12258bcf4483000d81fe7a996f9dca": "HADOOP-17563. Upgrade BouncyCastle to 1.68 (#3980) (#5015)\n\nAddresses CVE-2020-15522 and CVE-2020-26939.\n\nThis can break builds with older maven shade plugins or\nother code using asm.jar which is not aware of recent java bytecodes\nand/or multi-release JARs. fix: use a later version of asm.jar\n\nContributed by PJ Fanning",
+      "cd856b71954e2c522d1bfd14e4f8cc9e87fc5f26": "HADOOP-17563. Upgrade BouncyCastle to 1.68 (#3980) (#5015)\n\n\r\nAddresses CVE-2020-15522 and CVE-2020-26939.\r\n\r\nThis can break builds with older maven shade plugins or\r\nother code using asm.jar which is not aware of recent java bytecodes\r\nand/or multi-release JARs. fix: use a later version of asm.jar\r\n\r\nContributed by PJ Fanning"
+    },
+    "CVE-2022-40149": {
+      "cc5344e80faaeb0f3a408c4950d462ea03d4959b": "HADOOP-18468: Upgrade jettison to 1.5.1 to fix CVE-2022-40149 (#4937)\n\n\r\nContributed by PJ Fanning",
+      "e360e7620c9a08c26b11237535f12904dc42762d": "HADOOP-18468: Upgrade jettison to 1.5.1 to fix CVE-2022-40149 (#4937)\n\n\r\nContributed by PJ Fanning",
+      "5eddec8c461bfabd96c36a5df09e5e48947a98c7": "HADOOP-18468: Upgrade jettison to 1.5.1 to fix CVE-2022-40149 (#4937)\n\n\r\nContributed by PJ Fanning"
+    },
+    "CVE-2022-31160": {
+      "7978c0a021b9aa3e2cb96ce26a932756233e4809": "YARN-11303. Upgrade jquery ui to 1.13.2 to mitigate CVE-2022-31160 (#4895)\n\nContributed by Ashutosh Gupta",
+      "1c3bf42ad0b9f541dd4bf7806432c4372c7f9c51": "YARN-11303. Upgrade jquery ui to 1.13.2 to mitigate CVE-2022-31160 (#4895)\n\n\r\nContributed by Ashutosh Gupta",
+      "a134628d1b2e4d01e5ad9b5b4ca1ff0d7cb75402": "YARN-11303. Upgrade jquery ui to 1.13.2 to mitigate CVE-2022-31160 (#4895)"
+    },
+    "CVE-2022-25857": {
+      "832d0e0d76cea7b78eecfe5dbf297e47530c33af": "HADOOP-18443. Upgrade snakeyaml to 1.31 to mitigate CVE-2022-25857 (#4856)\n\nCo-authored-by: Ashutosh Gupta <ashugpt@amazon.com>\r\nSigned-off-by: Brahma Reddy Battula <brahma@apache.org>"
+    },
+    "CVE-2018-7489": {
+      "a585a73c3e02ac62350c136643a5e7f6095a3dbb": "HADOOP-18344. Upgrade AWS SDK to 1.12.262 (#4637)\n\nFixes CVE-2018-7489 in shaded jackson.\n\n+Add more commands in testing.md\n to the CLI tests needed when qualifying\n a release\n\nContributed by Steve Loughran",
+      "7aebacef77c72a3f957fc029c1d0be10e56a0e73": "HADOOP-18344. Upgrade AWS SDK to 1.12.262 (#4637)\n\nFixes CVE-2018-7489 in shaded jackson.\n\n+Add more commands in testing.md\n to the CLI tests needed when qualifying\n a release\n\nContributed by Steve Loughran",
+      "58ed6213048dde316dd16698a9abace75eb6447b": "HADOOP-18344. Upgrade AWS SDK to 1.12.262 (#4637)\n\n\r\nFixes CVE-2018-7489 in shaded jackson.\r\n\r\n+Add more commands in testing.md\r\n to the CLI tests needed when qualifying\r\n a release\r\n\r\nContributed by Steve Loughran"
+    },
+    "CVE-2019-20444": {
+      "402ef0354452ec7f682ea8b8bbac54b409a4f784": "HADOOP-18079. Upgrade Netty to 4.1.77. (#3977) (#4592)\n\nUpgrade netty to address\n\nCVE-2019-20444,\nCVE-2019-20445\nCVE-2022-24823\n\nContributed by Wei-Chiu Chuang\n\n(cherry picked from commit a55ace7bc0c173f609b51e46cb0d4d8bcda3d79d)\n(cherry picked from commit 0c12873487ca35d3101dc4efb215f4253b16060a)",
+      "0c12873487ca35d3101dc4efb215f4253b16060a": "HADOOP-18079. Upgrade Netty to 4.1.77. (#3977) (#4592)\n\nUpgrade netty to address\r\n\r\nCVE-2019-20444,\r\nCVE-2019-20445\r\nCVE-2022-24823\r\n\r\nContributed by Wei-Chiu Chuang\r\n\r\n(cherry picked from commit a55ace7bc0c173f609b51e46cb0d4d8bcda3d79d)",
+      "3e679d9a2dbfafab1df2b1cbc2d6534160336f58": "HADOOP-18079. Upgrade Netty to 4.1.77. (#3977) (#4593)\n\nUpgrade netty to address\r\n\r\nCVE-2019-20444,\r\nCVE-2019-20445\r\nCVE-2022-24823\r\n\r\nContributed by Wei-Chiu Chuang\r\n\r\n(cherry picked from commit a55ace7bc0c173f609b51e46cb0d4d8bcda3d79d)\r\nChange-Id: Idadb5c50329d74daf101829fc573edfa99b4eec9\r\n(cherry picked from commit c545341785186a9a3419396c0c1d843f19830b81)",
+      "a55ace7bc0c173f609b51e46cb0d4d8bcda3d79d": "HADOOP-18079. Upgrade Netty to 4.1.77. (#3977)\n\n\r\nUpgrade netty to address\r\n\r\nCVE-2019-20444,\r\nCVE-2019-20445\r\nCVE-2022-24823\r\n\r\nContributed by Wei-Chiu Chuang",
+      "e829631eed3c94006ed7826ddef4f09d3d7591f9": "HADOOP-16871. Upgrade Netty version to 4.1.45.Final to handle CVE-2019-20444,CVE-2019-16869\n\n(cherry picked from commit c6b8a3038646697b77f6db54a2ef6266a9fc7888)\n(cherry picked from commit 74fa55afc3d333d7d99397754f45b3fc54bc0f4a)\n\n Conflicts:\n\thadoop-project/pom.xml",
+      "74fa55afc3d333d7d99397754f45b3fc54bc0f4a": "HADOOP-16871. Upgrade Netty version to 4.1.45.Final to handle CVE-2019-20444,CVE-2019-16869\n\n(cherry picked from commit c6b8a3038646697b77f6db54a2ef6266a9fc7888)",
+      "c6b8a3038646697b77f6db54a2ef6266a9fc7888": "HADOOP-16871. Upgrade Netty version to 4.1.45.Final to handle CVE-2019-20444,CVE-2019-16869"
+    },
+    "CVE-2019-20445": {
+      "402ef0354452ec7f682ea8b8bbac54b409a4f784": "HADOOP-18079. Upgrade Netty to 4.1.77. (#3977) (#4592)\n\nUpgrade netty to address\n\nCVE-2019-20444,\nCVE-2019-20445\nCVE-2022-24823\n\nContributed by Wei-Chiu Chuang\n\n(cherry picked from commit a55ace7bc0c173f609b51e46cb0d4d8bcda3d79d)\n(cherry picked from commit 0c12873487ca35d3101dc4efb215f4253b16060a)",
+      "0c12873487ca35d3101dc4efb215f4253b16060a": "HADOOP-18079. Upgrade Netty to 4.1.77. (#3977) (#4592)\n\nUpgrade netty to address\r\n\r\nCVE-2019-20444,\r\nCVE-2019-20445\r\nCVE-2022-24823\r\n\r\nContributed by Wei-Chiu Chuang\r\n\r\n(cherry picked from commit a55ace7bc0c173f609b51e46cb0d4d8bcda3d79d)",
+      "3e679d9a2dbfafab1df2b1cbc2d6534160336f58": "HADOOP-18079. Upgrade Netty to 4.1.77. (#3977) (#4593)\n\nUpgrade netty to address\r\n\r\nCVE-2019-20444,\r\nCVE-2019-20445\r\nCVE-2022-24823\r\n\r\nContributed by Wei-Chiu Chuang\r\n\r\n(cherry picked from commit a55ace7bc0c173f609b51e46cb0d4d8bcda3d79d)\r\nChange-Id: Idadb5c50329d74daf101829fc573edfa99b4eec9\r\n(cherry picked from commit c545341785186a9a3419396c0c1d843f19830b81)",
+      "a55ace7bc0c173f609b51e46cb0d4d8bcda3d79d": "HADOOP-18079. Upgrade Netty to 4.1.77. (#3977)\n\n\r\nUpgrade netty to address\r\n\r\nCVE-2019-20444,\r\nCVE-2019-20445\r\nCVE-2022-24823\r\n\r\nContributed by Wei-Chiu Chuang"
+    },
+    "CVE-2022-24823": {
+      "402ef0354452ec7f682ea8b8bbac54b409a4f784": "HADOOP-18079. Upgrade Netty to 4.1.77. (#3977) (#4592)\n\nUpgrade netty to address\n\nCVE-2019-20444,\nCVE-2019-20445\nCVE-2022-24823\n\nContributed by Wei-Chiu Chuang\n\n(cherry picked from commit a55ace7bc0c173f609b51e46cb0d4d8bcda3d79d)\n(cherry picked from commit 0c12873487ca35d3101dc4efb215f4253b16060a)",
+      "0c12873487ca35d3101dc4efb215f4253b16060a": "HADOOP-18079. Upgrade Netty to 4.1.77. (#3977) (#4592)\n\nUpgrade netty to address\r\n\r\nCVE-2019-20444,\r\nCVE-2019-20445\r\nCVE-2022-24823\r\n\r\nContributed by Wei-Chiu Chuang\r\n\r\n(cherry picked from commit a55ace7bc0c173f609b51e46cb0d4d8bcda3d79d)",
+      "3e679d9a2dbfafab1df2b1cbc2d6534160336f58": "HADOOP-18079. Upgrade Netty to 4.1.77. (#3977) (#4593)\n\nUpgrade netty to address\r\n\r\nCVE-2019-20444,\r\nCVE-2019-20445\r\nCVE-2022-24823\r\n\r\nContributed by Wei-Chiu Chuang\r\n\r\n(cherry picked from commit a55ace7bc0c173f609b51e46cb0d4d8bcda3d79d)\r\nChange-Id: Idadb5c50329d74daf101829fc573edfa99b4eec9\r\n(cherry picked from commit c545341785186a9a3419396c0c1d843f19830b81)",
+      "a55ace7bc0c173f609b51e46cb0d4d8bcda3d79d": "HADOOP-18079. Upgrade Netty to 4.1.77. (#3977)\n\n\r\nUpgrade netty to address\r\n\r\nCVE-2019-20444,\r\nCVE-2019-20445\r\nCVE-2022-24823\r\n\r\nContributed by Wei-Chiu Chuang"
+    },
+    "CVE-2020-36518": {
+      "34e548cb62ed21c5bba7a82f5f1489ca6bdfb8c4": "HADOOP-18332: remove rs-api dependency as it conflicts with jsr311-api (#4547)\n\n    This downgrades jackson from the version switched to in\r\n    HADOOP-18033 (2.13.0), to Jackson 2.12.7.\r\n    This removes the dependency on javax.ws.rs-api,\r\n    so avoiding runtime problems with applications using\r\n    jersey-core v1 and/or jsr311-api.\r\n    \r\n    The 2.12.7 release still contains the fix for CVE-2020-36518.\r\n    \r\n    Contributed by PJ Fanning",
+      "7b0c2b7e91c00dffc91596553011e5cae33ec8d3": "HADOOP-18332. Remove rs-api dependency by downgrading jackson to 2.12.7. (#4552)\n\n\r\nThis downgrades jackson from the version switched to in \r\nHADOOP-18033 (2.13.0), to Jackson 2.12.7.\r\nThis removes the dependency on javax.ws.rs-api,\r\nso avoiding runtime problems with applications using\r\njersey-core v1 and/or jsr311-api.\r\n\r\nThe 2.12.7 release still contains the fix for CVE-2020-36518.\r\n\r\nContributed by PJ Fanning",
+      "6733ba56b8bfaedb00ee2087834ac9f8b77c9735": "HADOOP-18332. Remove rs-api dependency by downgrading jackson to 2.12.7. (#4552)\n\n\r\nThis downgrades jackson from the version switched to in \r\nHADOOP-18033 (2.13.0), to Jackson 2.12.7.\r\nThis removes the dependency on javax.ws.rs-api,\r\nso avoiding runtime problems with applications using\r\njersey-core v1 and/or jsr311-api.\r\n\r\nThe 2.12.7 release still contains the fix for CVE-2020-36518.\r\n\r\nContributed by PJ Fanning"
+    },
+    "CVE-2022-23437": {
+      "a94f4eb01a46661b23ab086c11d569cdc4e81eb5": "HADOOP-18237. Upgrade Apache Xerces Java to 2.12.2 (#4318)\n\nUpgrade Apache Xerces Java to 2.12.2 due to handle vulnerability CVE-2022-23437\n\nContributed by Ashutosh Gupta",
+      "b0012ee5781aafb76b0914205756dde2180fb35f": "HADOOP-18237. Upgrade Apache Xerces Java to 2.12.2 (#4318)\n\n\r\nUpgrade Apache Xerces Java to 2.12.2 due to handle vulnerability CVE-2022-23437\r\n\r\nContributed by Ashutosh Gupta",
+      "3ecdf39943c80ddaa7ad498451292090fb504dbc": "HADOOP-18237. Upgrade Apache Xerces Java to 2.12.2 (#4318)\n\n\r\nUpgrade Apache Xerces Java to 2.12.2 due to handle vulnerability CVE-2022-23437\r\n\r\nContributed by Ashutosh Gupta"
+    },
+    "CVE-2022-24765": {
+      "2d0686e0218afa2493e07c5ca7f92b5e535692df": "HADOOP-18202. create-release fails fatal: unsafe repository (#4188)\n\nSince April 2022/CVE-2022-24765, git refuses to work in directories\nwhose owner != the current user, unless explicitly told to trust it.\n\nThis patches the create-release script to trust the /build/source\ndir mounted from the hosting OS, whose userid is inevitably different\nfrom that of the account in the container running git.\n\nContributed by: Steve Loughran, Ayush Saxena and the new git error messages\n\nChange-Id: I855a105e6d0ab533468f9436578c8d4f81b0840b",
+      "51a532a532e3bd506b0e0bc6661bd7942685e93e": "HADOOP-18202. create-release fails fatal: unsafe repository (#4188)\n\nSince April 2022/CVE-2022-24765, git refuses to work in directories\nwhose owner != the current user, unless explicitly told to trust it.\n\nThis patches the create-release script to trust the /build/source\ndir mounted from the hosting OS, whose userid is inevitably different\nfrom that of the account in the container running git.\n\nContributed by: Steve Loughran, Ayush Saxena and the new git error messages\n\nChange-Id: I855a105e6d0ab533468f9436578c8d4f81b0840b",
+      "d7fd61d6163950a196a2bd66e1c3d03c9cff1009": "HADOOP-18202. create-release fails fatal: unsafe repository (#4188)\n\n\r\nSince April 2022/CVE-2022-24765, git refuses to work in directories\r\nwhose owner != the current user, unless explicitly told to trust it.\r\n\r\nThis patches the create-release script to trust the /build/source\r\ndir mounted from the hosting OS, whose userid is inevitably different\r\nfrom that of the account in the container running git.\r\n\r\nContributed by: Steve Loughran, Ayush Saxena and the new git error messages"
+    },
+    "CVE-2017-18640": {
+      "b55002f6e6cd643884f65e2e3ce5216e83524f4b": "HADOOP-17236. Bump up snakeyaml to 1.26 to mitigate CVE-2017-18640. Contributed by Brahma Reddy Battula.\n\nSigned-off-by: Wei-Chiu Chuang <weichiu@apache.org>\n(cherry picked from commit eb84793af1e48db05ab827d0cf09963a430615ed)",
+      "675712afa34ebed7eb2ad2881d69a5540beb18bc": "HADOOP-17236. Bump up snakeyaml to 1.26 to mitigate CVE-2017-18640. Contributed by Brahma Reddy Battula.\n\nSigned-off-by: Wei-Chiu Chuang <weichiu@apache.org>\n(cherry picked from commit eb84793af1e48db05ab827d0cf09963a430615ed)",
+      "fe8b22ca8f44bd48cb00d14bc988599d971b81ca": "HADOOP-17236. Bump up snakeyaml to 1.26 to mitigate CVE-2017-18640. Contributed by Brahma Reddy Battula.\n\nSigned-off-by: Wei-Chiu Chuang <weichiu@apache.org>\n(cherry picked from commit eb84793af1e48db05ab827d0cf09963a430615ed)",
+      "eb84793af1e48db05ab827d0cf09963a430615ed": "HADOOP-17236. Bump up snakeyaml to 1.26 to mitigate CVE-2017-18640. Contributed by Brahma Reddy Battula.\n\nSigned-off-by: Wei-Chiu Chuang <weichiu@apache.org>"
+    },
+    "CVE-2014-4611": {
+      "91acb7b9feb7b08636b7188cfce8b37dd86a2ba0": "HADOOP-17917. Backport HADOOP-15993 to branch-3.2 which address CVE-2014-4611. Contributed by Brahma Reddy Battula.\n\n(cherry picked from commit 85346db636f0dcfe7869e3f09f108014e857c0d5)",
+      "85346db636f0dcfe7869e3f09f108014e857c0d5": "HADOOP-17917. Backport HADOOP-15993 to branch-3.2 which address CVE-2014-4611. Contributed by Brahma Reddy Battula."
+    },
+    "CVE-2018-8088": {
+      "d05051c840e9557b06aea61a84613be6fe31daae": "HADOOP-17220. Upgrade slf4j to 1.7.30 ( To Address: CVE-2018-8088). Contributed by Brahma Reddy Battula.\n\n(cherry picked from commit 15a0fed637129be04bbbb9300eb363341f8f5365)",
+      "15a0fed637129be04bbbb9300eb363341f8f5365": "HADOOP-17220. Upgrade slf4j to 1.7.30 ( To Address: CVE-2018-8088). Contributed by Brahma Reddy Battula."
+    },
+    "CVE-2019-16869": {
+      "e829631eed3c94006ed7826ddef4f09d3d7591f9": "HADOOP-16871. Upgrade Netty version to 4.1.45.Final to handle CVE-2019-20444,CVE-2019-16869\n\n(cherry picked from commit c6b8a3038646697b77f6db54a2ef6266a9fc7888)\n(cherry picked from commit 74fa55afc3d333d7d99397754f45b3fc54bc0f4a)\n\n Conflicts:\n\thadoop-project/pom.xml",
+      "74fa55afc3d333d7d99397754f45b3fc54bc0f4a": "HADOOP-16871. Upgrade Netty version to 4.1.45.Final to handle CVE-2019-20444,CVE-2019-16869\n\n(cherry picked from commit c6b8a3038646697b77f6db54a2ef6266a9fc7888)",
+      "c6b8a3038646697b77f6db54a2ef6266a9fc7888": "HADOOP-16871. Upgrade Netty version to 4.1.45.Final to handle CVE-2019-20444,CVE-2019-16869"
+    }
+  }
+}

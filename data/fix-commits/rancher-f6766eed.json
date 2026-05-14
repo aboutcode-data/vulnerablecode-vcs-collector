@@ -1,0 +1,16 @@
+{
+  "vcs_url": "https://github.com/rancher/rancher",
+  "vulnerabilities": {
+    "CVE-2024-21626": {
+      "9c67046444be23a347839cef5de03f786e296289": "Bump runc to fix CVE-2024-21626\n\nSigned-off-by: Guilherme Macedo <guilherme@gmacedo.com>"
+    },
+    "GHSA-7WW5-4WQC-M92C": {
+      "79d310a967b4c12a26e523cd44df86a7823efb56": "Updating containerd package to the latest 1.6.x\n\nThis update has a fix for security issue GHSA-7ww5-4wqc-m92c.\n1.6.x is an LTS supported version of containerd and this should\nbe compatible with docker 20.10.x.\n\nNote, github.com/microsoft/hcsshim had to be upgraded to support\nthis version of containerd\n\nSigned-off-by: Matt Farina <matt.farina@suse.com>"
+    },
+    "CVE-2023-44487": {
+      "84228de3a22d145b9f5631ec47cf591ed2681236": "[v2.7] Update packages to address CVE-2023-44487 (#44220)\n\nBackport of https://github.com/rancher/rancher/issues/43318\r\nRef: https://github.com/rancher/rancher/issues/44013",
+      "d8a077eb7f1f25ffa66e5e4ba91bc29eb7c85cd4": "Merge pull request #43791 from eliyamlevy/release/v2.8\n\nUpdate packages for CVE-2023-44487",
+      "b2b815c7402d3ec68b53f6fb5e47e41d95bb78fe": "Update packages for CVE-2023-44487"
+    }
+  }
+}

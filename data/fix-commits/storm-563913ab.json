@@ -1,0 +1,23 @@
+{
+  "vcs_url": "https://github.com/apache/storm",
+  "vulnerabilities": {
+    "CVE-2020-25649": {
+      "c71e7ac498067de4ee2c5b9c9b6759cece5b0184": "[STORM-3820] use jackson-databind 2.10.5.1 (#3438)\n\n* [STORM-3820] use jackson-databind 2.10.5.1 to avoid https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25649"
+    },
+    "CVE-2021-45105": {
+      "da4b2938ffc2d27e65b1e1d6c2b2b265b25130c9": "STORM-3811 Update log4j to 2.17 to address CVE-2021-45105. (#3428)",
+      "e32d5848641e7d83e42f40db272bbe02f5c4fa7f": "STORM-3811 Update log4j to 2.17 to address CVE-2021-45105. (#3428)",
+      "b45c1beb1e56fd5b47e433c101fce5009e8b5c4a": "STORM-3811 Update log4j to 2.17 to address CVE-2021-45105. (#3428)",
+      "07be3ed337b184e055463d84fe8aa6c636cbe8b2": "STORM-3811 Update log4j to 2.17 to address CVE-2021-45105. (#3428)"
+    },
+    "CVE-2021-44832": {
+      "bf7449a89b4a225f5b5a1af146af3081b74621f2": "CVE-2021-44832: bumping log4j version to 2.17.1 (#3434)"
+    },
+    "CVE-2021-44228": {
+      "3c5e897448d79b81a8d05a1aa124dcab16c87efd": "STORM-3810: bumping log4j.version to 2.17.0 and disruptor.version to 3.4.4 (CVE-2021-44228, CVE-2021-45046) (#3427)\n\n* CVE-2021-44228: bumping log4j.version to 2.17.0 and disruptor.version to 3.4.4\r\n\r\nCo-authored-by: Paolo Cancedda <paolo.cancedda@primeur.com>"
+    },
+    "CVE-2021-45046": {
+      "3c5e897448d79b81a8d05a1aa124dcab16c87efd": "STORM-3810: bumping log4j.version to 2.17.0 and disruptor.version to 3.4.4 (CVE-2021-44228, CVE-2021-45046) (#3427)\n\n* CVE-2021-44228: bumping log4j.version to 2.17.0 and disruptor.version to 3.4.4\r\n\r\nCo-authored-by: Paolo Cancedda <paolo.cancedda@primeur.com>"
+    }
+  }
+}

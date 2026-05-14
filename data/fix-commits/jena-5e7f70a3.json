@@ -1,0 +1,11 @@
+{
+  "vcs_url": "https://github.com/apache/jena",
+  "vulnerabilities": {
+    "CVE-2019-0205": {
+      "a56a5ba5ba38731d1378f4670e565748d430761d": "CVE-2019-0205 update Thrift version"
+    },
+    "CVE-2019-12402": {
+      "34429f680f58ef3fa1c3daebccf6bc98f689680d": "Merge pull request #600 from bradh/CVE-2019-12402\n\nUpgrade commons-compress to 1.19"
+    }
+  }
+}

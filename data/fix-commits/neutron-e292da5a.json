@@ -1,0 +1,32 @@
+{
+  "vcs_url": "https://github.com/openstack/neutron",
+  "vulnerabilities": {
+    "CVE-2024-53916": {
+      "e697e1a0eafb1daac504c506b3ad2ed37dda03e7": "Fix the tagging policy engine\n\nThe service tagging policy engine should consider the parent resource or\nthe upper parent resource project ID when checking the policies against\nthe caller project ID.\n\nBefore this patch, as introduced in [1], the target was incorrectly\npopulated with the caller project ID instead of using the resource ID.\n\n[1]https://review.opendev.org/c/openstack/neutron/+/896509/13/neutron/extensions/tagging.py\n\nOSSA-2024-005 CVE-2024-53916\n\nConflitcs:\n    neutron/extensions/tagging.py\n\nCloses-Bug: #2088986\nChange-Id: Id7d0c8e7ba37993b1084519d05e7e2eac095b81b\n(cherry picked from commit fb75d3c4f185bb082f69c121090382d9eb803b94)\n(cherry picked from commit 93e86fa84175b525f5b1dc5df1651a44d60219ba)\n(cherry picked from commit 3510fc4b723a86af0a3fad6933c26cb4f1cae518)",
+      "3510fc4b723a86af0a3fad6933c26cb4f1cae518": "Fix the tagging policy engine\n\nThe service tagging policy engine should consider the parent resource or\nthe upper parent resource project ID when checking the policies against\nthe caller project ID.\n\nBefore this patch, as introduced in [1], the target was incorrectly\npopulated with the caller project ID instead of using the resource ID.\n\n[1]https://review.opendev.org/c/openstack/neutron/+/896509/13/neutron/extensions/tagging.py\n\nOSSA-2024-005 CVE-2024-53916\n\nConflitcs:\n    neutron/extensions/tagging.py\n\nCloses-Bug: #2088986\nChange-Id: Id7d0c8e7ba37993b1084519d05e7e2eac095b81b\n(cherry picked from commit fb75d3c4f185bb082f69c121090382d9eb803b94)\n(cherry picked from commit 93e86fa84175b525f5b1dc5df1651a44d60219ba)",
+      "93e86fa84175b525f5b1dc5df1651a44d60219ba": "Fix the tagging policy engine\n\nThe service tagging policy engine should consider the parent resource or\nthe upper parent resource project ID when checking the policies against\nthe caller project ID.\n\nBefore this patch, as introduced in [1], the target was incorrectly\npopulated with the caller project ID instead of using the resource ID.\n\n[1]https://review.opendev.org/c/openstack/neutron/+/896509/13/neutron/extensions/tagging.py\n\nOSSA-2024-005 CVE-2024-53916\n\nConflitcs:\n    neutron/extensions/tagging.py\n\nCloses-Bug: #2088986\nChange-Id: Id7d0c8e7ba37993b1084519d05e7e2eac095b81b\n(cherry picked from commit fb75d3c4f185bb082f69c121090382d9eb803b94)",
+      "fb75d3c4f185bb082f69c121090382d9eb803b94": "Fix the tagging policy engine\n\nThe service tagging policy engine should consider the parent resource or\nthe upper parent resource project ID when checking the policies against\nthe caller project ID.\n\nBefore this patch, as introduced in [1], the target was incorrectly\npopulated with the caller project ID instead of using the resource ID.\n\n[1]https://review.opendev.org/c/openstack/neutron/+/896509/13/neutron/extensions/tagging.py\n\nOSSA-2024-005 CVE-2024-53916\n\nCloses-Bug: #2088986\nChange-Id: Id7d0c8e7ba37993b1084519d05e7e2eac095b81b"
+    },
+    "GHSA-X84V-XCM2-53PG": {
+      "f3ae34214310b76cd53c914384335093291a518c": "Bump requests to 2.32.3\n\nThe previous version had the following vulnerabilities:\n* https://osv.dev/vulnerability/GHSA-x84v-xcm2-53pg\n* https://osv.dev/vulnerability/PYSEC-2018-28\n* https://osv.dev/vulnerability/PYSEC-2023-74\n* https://osv.dev/vulnerability/GHSA-j8r2-6x86-q33q\n* https://osv.dev/vulnerability/GHSA-9wx4-h78v-vm56\n\nChange-Id: I7781fa65e7c816d645975d88eee630166dbe6937"
+    },
+    "GHSA-J8R2-6X86-Q33Q": {
+      "f3ae34214310b76cd53c914384335093291a518c": "Bump requests to 2.32.3\n\nThe previous version had the following vulnerabilities:\n* https://osv.dev/vulnerability/GHSA-x84v-xcm2-53pg\n* https://osv.dev/vulnerability/PYSEC-2018-28\n* https://osv.dev/vulnerability/PYSEC-2023-74\n* https://osv.dev/vulnerability/GHSA-j8r2-6x86-q33q\n* https://osv.dev/vulnerability/GHSA-9wx4-h78v-vm56\n\nChange-Id: I7781fa65e7c816d645975d88eee630166dbe6937"
+    },
+    "GHSA-9WX4-H78V-VM56": {
+      "f3ae34214310b76cd53c914384335093291a518c": "Bump requests to 2.32.3\n\nThe previous version had the following vulnerabilities:\n* https://osv.dev/vulnerability/GHSA-x84v-xcm2-53pg\n* https://osv.dev/vulnerability/PYSEC-2018-28\n* https://osv.dev/vulnerability/PYSEC-2023-74\n* https://osv.dev/vulnerability/GHSA-j8r2-6x86-q33q\n* https://osv.dev/vulnerability/GHSA-9wx4-h78v-vm56\n\nChange-Id: I7781fa65e7c816d645975d88eee630166dbe6937"
+    },
+    "GHSA-Q48Q-77QV-CF9P": {
+      "9983ca66eb144e1f59591f9a868fba8da99a228e": "Bump httplib2 to 0.22.0\n\nThe previous version had the following vulnerabilities:\n* https://osv.dev/vulnerability/PYSEC-2021-16\n* https://osv.dev/vulnerability/GHSA-q48q-77qv-cf9p\n* https://osv.dev/vulnerability/GHSA-93xj-8mrv-444m\n* https://osv.dev/vulnerability/PYSEC-2020-46\n* https://osv.dev/vulnerability/GHSA-gg84-qgv9-w4pq\n\nChange-Id: Ibd0379048ee083253a9b3840872d13fba5cc8322"
+    },
+    "GHSA-93XJ-8MRV-444M": {
+      "9983ca66eb144e1f59591f9a868fba8da99a228e": "Bump httplib2 to 0.22.0\n\nThe previous version had the following vulnerabilities:\n* https://osv.dev/vulnerability/PYSEC-2021-16\n* https://osv.dev/vulnerability/GHSA-q48q-77qv-cf9p\n* https://osv.dev/vulnerability/GHSA-93xj-8mrv-444m\n* https://osv.dev/vulnerability/PYSEC-2020-46\n* https://osv.dev/vulnerability/GHSA-gg84-qgv9-w4pq\n\nChange-Id: Ibd0379048ee083253a9b3840872d13fba5cc8322"
+    },
+    "GHSA-GG84-QGV9-W4PQ": {
+      "9983ca66eb144e1f59591f9a868fba8da99a228e": "Bump httplib2 to 0.22.0\n\nThe previous version had the following vulnerabilities:\n* https://osv.dev/vulnerability/PYSEC-2021-16\n* https://osv.dev/vulnerability/GHSA-q48q-77qv-cf9p\n* https://osv.dev/vulnerability/GHSA-93xj-8mrv-444m\n* https://osv.dev/vulnerability/PYSEC-2020-46\n* https://osv.dev/vulnerability/GHSA-gg84-qgv9-w4pq\n\nChange-Id: Ibd0379048ee083253a9b3840872d13fba5cc8322"
+    },
+    "GHSA-QFC5-MCWQ-26Q8": {
+      "7a12f34b1bb64373c56141eba5579004853fa408": "Bump psutil to 6.1.0\n\nThe previous version had two vulnerabilities detected:\n* https://osv.dev/vulnerability/PYSEC-2019-41\n* https://osv.dev/vulnerability/GHSA-qfc5-mcwq-26q8\n\nChange-Id: I6e90ee9b2f78e0a0611278870cbef8d7e0161e5d"
+    }
+  }
+}

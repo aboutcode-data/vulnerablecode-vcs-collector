@@ -1,0 +1,38 @@
+{
+  "vcs_url": "https://github.com/jellyfin/jellyfin",
+  "vulnerabilities": {
+    "GHSA-JH22-FW8W-2V9X": {
+      "0bf7653e3648a86bd0c6f224fcea341a6fdb8a85": "Fix GHSA-jh22-fw8w-2v9x",
+      "8bf0d372c64e38d07796cdba82e3d8d04cd91660": "Merge commit from fork\n\nFix GHSA-jh22-fw8w-2v9x",
+      "50dc37065b8d530e7dcebc9672dd07583b203582": "Fix GHSA-jh22-fw8w-2v9x"
+    },
+    "GHSA-8FW7-F233-FFR8": {
+      "3c9b71e1241237107c260bb84b9221f532ef8105": "Fix GHSA-8fw7-f233-ffr8 with improved sanitization\n\nCo-Authored-By: Shadowghost <Ghost_of_Stone@web.de>",
+      "66ea1b50e6671ea267b0e2329a4d673b6e6b2333": "Merge commit from fork\n\nFix GHSA-8fw7-f233-ffr8 with improved sanitization",
+      "fddd4e7e6b4de03060d190ac7f332bf34d949ce0": "Fix GHSA-8fw7-f233-ffr8 with improved sanitization\n\nCo-Authored-By: Shadowghost <Ghost_of_Stone@web.de>"
+    },
+    "GHSA-J2HF-X4Q5-47J3": {
+      "8cecf53057b112a5b169d04e3994d1fb233e22f3": "Fix GHSA-j2hf-x4q5-47j3 with improved sanitization\n\nCo-Authored-By: Shadowghost <Ghost_of_Stone@web.de>",
+      "c5f6d00c94e090b20f5de6de7e59e7d1078b9f8e": "Merge commit from fork\n\nFix GHSA-j2hf-x4q5-47j3 with improved sanitization",
+      "0581cd661021752e5063e338c718f211c8929310": "Fix GHSA-j2hf-x4q5-47j3 with improved sanitization\n\nCo-Authored-By: Shadowghost <Ghost_of_Stone@web.de>"
+    },
+    "GHSA-866X-WJ5J-2VF4": {
+      "5db0c5a0e45938b465e972d8ffcd476b7ea2d460": "fix: forward port patch for GHSA-866x-wj5j-2vf4 (#11228)",
+      "a656799dc879d16d21bf2ce7ad412ebd5d45394a": "Merge pull request from GHSA-866x-wj5j-2vf4\n\nValidate codec and container"
+    },
+    "GHSA-RR9H-W522-CVMR": {
+      "83d2c69516471e2db72d9273c6a04247d0f37c86": "Merge pull request from GHSA-rr9h-w522-cvmr\n\nRemove the functionality of /System/MediaEncoder/Path"
+    },
+    "GHSA-9P5F-5X8V-X65M": {
+      "82ad2633fdfb1c37a158057c7935f83e1129eda7": "Merge pull request from GHSA-9p5f-5x8v-x65m\n\nThrow exception on path traversal in WriteDocumentAsync"
+    },
+    "GHSA-RGJW-4FWC-9V96": {
+      "93ce087fc9fa2e0ae067b42205a7637f106fc2cf": "Merge pull request from GHSA-rgjw-4fwc-9v96\n\nRemove /Images/Remote API endpoint\n\n(cherry picked from commit e71cd8274ace8237a84882ffddba4fba12fbc6c1)\nSigned-off-by: Joshua M. Boniface <joshua@boniface.me>",
+      "e71cd8274ace8237a84882ffddba4fba12fbc6c1": "Merge pull request from GHSA-rgjw-4fwc-9v96\n\nRemove /Images/Remote API endpoint"
+    },
+    "GHSA-WG4C-C9G9-RXHX": {
+      "0183ef8e89195f420c48d2600bc0b72f6d3a7fd7": "Merge pull request from GHSA-wg4c-c9g9-rxhx\n\nFix issues 1 through 5 from GHSL-2021-050\n\n(cherry picked from commit fe8cf29cad2ca1b5d3a78c86cacf3ba96608034f)\nSigned-off-by: Joshua M. Boniface <joshua@boniface.me>",
+      "fe8cf29cad2ca1b5d3a78c86cacf3ba96608034f": "Merge pull request from GHSA-wg4c-c9g9-rxhx\n\nFix issues 1 through 5 from GHSL-2021-050"
+    }
+  }
+}

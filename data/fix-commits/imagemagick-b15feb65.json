@@ -1,0 +1,472 @@
+{
+  "vcs_url": "https://github.com/imagemagick/imagemagick",
+  "vulnerabilities": {
+    "GHSA-4G75-9R48-JF92": {
+      "adb4b8d7e1e4014892b71837842326c96c2a625b": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-4g75-9r48-jf92"
+    },
+    "GHSA-XF64-Q5RG-85G5": {
+      "01b2f128eca0d928bb562527d1c0fdfc3c698b70": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-xf64-q5rg-85g5",
+      "f243129822ba1a211a82754d3085b26a47d02706": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-xf64-q5rg-85g5"
+    },
+    "GHSA-5R4X-W6P5-222Q": {
+      "4d92249c84536a20e9723376ec016b4950dcb454": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5r4x-w6p5-222q"
+    },
+    "GHSA-88WQ-X9GC-45H8": {
+      "4fb25267d981cf4e72e707d9e9a4a8bae055ab92": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-88wq-x9gc-45h8"
+    },
+    "GHSA-533M-3WF6-C33V": {
+      "ff2f155f2874737380a80195c5849a2f06cb6ff7": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-533m-3wf6-c33v"
+    },
+    "GHSA-7GG8-QQX7-92G5": {
+      "e8431d4a282013851cb698fdf29b1d7ad80ad7cb": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-7gg8-qqx7-92g5"
+    },
+    "GHSA-JCQP-6R6F-3MFX": {
+      "188fcf538f58a60109ebd008e2c40d29cf3966d7": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-jcqp-6r6f-3mfx"
+    },
+    "GHSA-36WM-HPRC-MCF5": {
+      "3aa35741316909f9e384d13cee197334dc3296d7": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-36wm-hprc-mcf5"
+    },
+    "GHSA-3RVP-MPR5-QJM9": {
+      "c0d67d194d2e0cbce4c264965cd079c39564edaf": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-3rvp-mpr5-qjm9"
+    },
+    "GHSA-GJ92-PWM7-JCMP": {
+      "bbfc7cba08fb24069c171baa7a1d8569822e0ae1": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-gj92-pwm7-jcmp",
+      "0eb34f7c37737601f146284a042677b8b6298ebf": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-gj92-pwm7-jcmp"
+    },
+    "GHSA-G5MF-WQQ5-VWG6": {
+      "10a1a2285659fe1f8978f338319727dfda19500d": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-g5mf-wqq5-vwg6",
+      "6dc0130dbbde34b13126bc4fe25789f894b9e0c1": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-g5mf-wqq5-vwg6"
+    },
+    "GHSA-PFVH-M9XV-8966": {
+      "a66ab7bc559f041b1434606496b5b4b0906ff9a2": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-pfvh-m9xv-8966"
+    },
+    "GHSA-HG5X-PMMV-4Q7G": {
+      "dab73a389810283dfe180046458a2794f2bcd87b": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-hg5x-pmmv-4q7g"
+    },
+    "GHSA-J3PV-77GF-FW2G": {
+      "8def4934c79cc425eb71732286011dccbda9a128": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-j3pv-77gf-fw2g"
+    },
+    "GHSA-CR6R-HMJ8-PR7R": {
+      "2cf3b5750bd7c96fbb92c3f02823ecd63f8dd232": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-cr6r-hmj8-pr7r"
+    },
+    "GHSA-VHRH-72HQ-W8M7": {
+      "9f18e2890088705c9a3dc867a7f2e31be50b8f41": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-vhrh-72hq-w8m7"
+    },
+    "GHSA-CWPJ-H54C-XJPX": {
+      "a96763d717e27d6d136aa734d1cf4b33a91555d0": "Added missing check for the list length limit in the PSD decoder (GHSA-cwpj-h54c-xjpx)"
+    },
+    "GHSA-V6QJ-8RM4-FPGJ": {
+      "be351d3c72d558964b49bc226d819f397fe5ed93": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-v6qj-8rm4-fpgj"
+    },
+    "GHSA-JQQ5-8PX3-9M6M": {
+      "265725551b2819e5f1bdb850504780bf14381497": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-jqq5-8px3-9m6m",
+      "84a15bf667f7bd3b4a17d3544b8d5cba0812eb5d": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-jqq5-8px3-9m6m"
+    },
+    "GHSA-VF33-6R7X-66XX": {
+      "d67eef71764cfeca07b4edf8a8ae922180f5f2e4": "Set a limit to the kernel order to avoid an overflow resulting in a divide by zero (GHSA-vf33-6r7x-66xx)"
+    },
+    "GHSA-RW3G-WVJ6-3P7W": {
+      "6b8bf8cb855358f2268604fc7f60ddcc08b62c0b": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-rw3g-wvj6-3p7w"
+    },
+    "GHSA-7WFF-WPR6-VMHM": {
+      "06301590988fc62e17b4ae6e937d411cc1089ef1": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-7wff-wpr6-vmhm"
+    },
+    "GHSA-85R7-8QR6-54GH": {
+      "8ce0ebabecad0c04716a8a19cfc24a3cb9d98377": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-85r7-8qr6-54gh"
+    },
+    "GHSA-7MXF-FF4F-JJ7P": {
+      "25980041f145afc621233a1c050291231b627c48": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-7mxf-ff4f-jj7p"
+    },
+    "GHSA-5XG3-585R-9JH5": {
+      "2a06c7be3bba3326caf8b7a8d1fa2e0d4b88998d": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5xg3-585r-9jh5"
+    },
+    "GHSA-R83H-CRWP-3VM7": {
+      "5facfecf1abb3fed46a08f614dcc43d1e548e20d": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-r83h-crwp-3vm7"
+    },
+    "GHSA-JVGR-9PH5-M8V4": {
+      "1c7767fc5f822c6edc104c1220d523e96fa20b5a": "Patch to correct the sample size for 16 bit floats in the JXL encoder (GHSA-jvgr-9ph5-m8v4)"
+    },
+    "GHSA-2442-CQ27-VF6X": {
+      "476854241a066041898cc0c9c91847460cde589b": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-2442-cq27-vf6x"
+    },
+    "GHSA-PWG5-6JFC-CRVH": {
+      "3d653bea2df085c728a1c8f775808e1e9249dff9": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-pwg5-6jfc-crvh"
+    },
+    "GHSA-X928-4434-CRQJ": {
+      "ca761f220bbf0470e2e7967639bcfb5be305ad28": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-x928-4434-crqj"
+    },
+    "GHSA-5592-P365-24XH": {
+      "f86452a8aea37bf2b4bd36127f836dcc5f138b38": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5592-p365-24xh"
+    },
+    "GHSA-PMPG-6PWW-FG6Q": {
+      "2ab24d74865ab92faeeefe0fec890abf1e88e57c": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-pmpg-6pww-fg6q"
+    },
+    "GHSA-98CP-RJ9F-6V5G": {
+      "54254cf74d659f38f7a45c73cb52a9a36e8ed943": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-98cp-rj9f-6v5g"
+    },
+    "GHSA-8VFJ-Q2CP-5M5J": {
+      "8f6b59383ce65d839ad3e2aa578d5d7a7dd1d0ec": "https://github.com/ImageMagick/security/advisories/GHSA-8vfj-q2cp-5m5j"
+    },
+    "GHSA-26QP-FFJH-2X4V": {
+      "bcd8519c70ecd9ebbc180920f2cf97b267d1f440": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-26qp-ffjh-2x4v"
+    },
+    "GHSA-Q8H3-JV9V-57QX": {
+      "a6bfb1bb7b4017ec52f5a957641d83ce29b63286": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-q8h3-jv9v-57qx"
+    },
+    "GHSA-W54J-7WPM-CRHJ": {
+      "22aef933133770706caafb93f814f5306dcca345": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-w54j-7wpm-crhj"
+    },
+    "GHSA-CR67-PVMX-2PP2": {
+      "ae679e2fd19ec656bfab9f822ae4cf06bf91604d": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-cr67-pvmx-2pp2"
+    },
+    "GHSA-PCVX-PH33-R5VV": {
+      "cca607366fb38c2dde019a9088b8415ffba3a835": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-pcvx-ph33-r5vv"
+    },
+    "GHSA-FWVM-GGF6-2P4X": {
+      "ccdc01180276aa2cb3d4a32a611aa4f417061cd8": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-fwvm-ggf6-2p4x"
+    },
+    "GHSA-F4QM-VJ5J-9XPW": {
+      "d3c0a37485314c5ccef72efb18f3847cd53868ba": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-f4qm-vj5j-9xpw"
+    },
+    "GHSA-X9H5-R9V2-VCWW": {
+      "4c72003e9e54a4ebaa938d239e75f5d285527ebe": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-x9h5-r9v2-vcww"
+    },
+    "GHSA-V67W-737X-V2C9": {
+      "d27b840a61b322419a66d0d192ff56d52498148d": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-v67w-737x-v2c9"
+    },
+    "GHSA-MW3M-PQR2-QV7C": {
+      "d3af057fb9d3666762ca3731c2360f544f607f88": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-mw3m-pqr2-qv7c",
+      "e2d506aa7989c52e9bbd7878858918cbf35e3335": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-mw3m-pqr2-qv7c"
+    },
+    "GHSA-6P22-Q7W5-33PG": {
+      "3f55da39c813cc44ff21a61d6e0b85c375a2c1a2": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-6p22-q7w5-33pg"
+    },
+    "GHSA-8793-7XV6-82CF": {
+      "ee4468a8ab0635fcaa9c561e583c56ada3b1b721": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-8793-7xv6-82cf"
+    },
+    "GHSA-9R56-3GJQ-HQF7": {
+      "bee248ee853a686a969fae9cfb1e02dd5aae245b": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-9r56-3gjq-hqf7"
+    },
+    "GHSA-CQW9-W2M7-R2M2": {
+      "3ed104956fed43da2ed472d330d542de2f73d450": "Apply correct patch for GHSA-cqw9-w2m7-r2m2."
+    },
+    "GHSA-354P-2QX7-JG9G": {
+      "b84e01381eb3ab183de3b32515e9c5e885f265fb": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-354p-2qx7-jg9g",
+      "9bb57cc2dc8f5f8dc75a41fe576b8a1659ec1ee0": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-354p-2qx7-jg9g",
+      "248c1d2e5423c6ff1a9e50651f080c328c214636": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-354p-2qx7-jg9g"
+    },
+    "GHSA-GC62-2V5P-QPMP": {
+      "361b42c91d173cfb4bd8f39898c599feef6a1e55": "Corrected out of bounds write of a single zero byte (GHSA-gc62-2v5p-qpmp)"
+    },
+    "GHSA-RWGM-46RQ-F86H": {
+      "2352dcbaadab79c83f263d61e2058058c40d850d": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-rwgm-46rq-f86h"
+    },
+    "GHSA-49HX-7656-JPG3": {
+      "df934b4721173f8dda33c6d007f9811669640e86": "Added extra check to prevent out of bounds write when color reduction fails (GHSA-49hx-7656-jpg3)"
+    },
+    "GHSA-QMW5-2P58-XVRC": {
+      "5897fb65d173a57729026321d5067c9ddca5c56f": "Added extra check to prevent overflow that could result in a heap over-write (GHSA-qmw5-2p58-xvrc)"
+    },
+    "GHSA-H95R-C8C7-MRWX": {
+      "7fe4dbabe5d50057513d5d16eb9cbfa0734b4848": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-h95r-c8c7-mrwx"
+    },
+    "GHSA-5Q69-GHXH-WXXX": {
+      "ac3f08d7cef143819a456203cf399c6eda190e46": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5q69-ghxh-wxxx"
+    },
+    "GHSA-5GGV-92R5-CP4P": {
+      "ffbbd7201e0ba08707849c0053aa703e076bf86e": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5ggv-92r5-cp4p"
+    },
+    "GHSA-RQQ8-JH93-F4VG": {
+      "adf831c442b7dc37da04d73331aba26e388eeb9a": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-rqq8-jh93-f4vg"
+    },
+    "GHSA-56JP-JFQG-F8F4": {
+      "7936d9c7bec4bd459a8d4b5304a1a6fbf7dac0ea": "Corrected the overflow check that can cause issues on 32-bit systems (GHSA-56jp-jfqg-f8f4)"
+    },
+    "GHSA-RX45-GH58-4HW3": {
+      "4f0b746dbdb5ed6075a96aaf5cd115617d1e2986": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-rx45-gh58-4hw3"
+    },
+    "GHSA-QPG4-J99F-8XCG": {
+      "134f1c17d5dafc565182f9b00304fc08cfa3184e": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-qpg4-j99f-8xcg"
+    },
+    "GHSA-932H-JW47-73JM": {
+      "a3f2f8680fa01cbce731191789322419efb5954a": "Added checks to avoid possible stack corruption (GHSA-932h-jw47-73jm)"
+    },
+    "GHSA-R39Q-JR8H-GCQ2": {
+      "6cefe972445185cbb9c76651231d52512e0ec14b": "Corrected typecast to avoid an out of bounds write (GHSA-r39q-jr8h-gcq2)"
+    },
+    "GHSA-VWRM-M4F9-5RG5": {
+      "7879fd8182cfcbe85aa9398fa26a525088b19adf": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-vwrm-m4f9-5rg5"
+    },
+    "GHSA-MRMJ-X24C-WWCV": {
+      "cb6cc0611baa4dac59add6439fa1d8af33fc5927": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-mrmj-x24c-wwcv"
+    },
+    "GHSA-WJ8W-PJXF-9G4F": {
+      "87f619bcd066a3c8e8fae4addb99f15d496ae881": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-wj8w-pjxf-9g4f"
+    },
+    "GHSA-H4RJ-WC46-X92P": {
+      "a48e884549e81abd3370ff0938eceea98a3d7306": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-h4rj-wc46-x92p",
+      "f9d6311aa2b53a5d1fa284c220e52e9dac39bbfd": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-h4rj-wc46-x92p"
+    },
+    "GHSA-467J-76J7-5885": {
+      "d622bd6023310d57cec1e8f265095a1979210371": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-467j-76j7-5885"
+    },
+    "GHSA-7H7Q-J33Q-HVPF": {
+      "e6e874875e48dd9838acca3bd22c14a4d2f1b3ca": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-7h7q-j33q-hvpf"
+    },
+    "GHSA-493F-JH8W-QHX3": {
+      "753ffb699934331b31028d4e271f2f6d6db85074": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-493f-jh8w-qhx3",
+      "3eb11260cfe84fddbdcb8d2ed47f92703d1b2987": "partial TOCTOU patch: https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-493f-jh8w-qhx3"
+    },
+    "GHSA-2GQ3-WW97-WFJM": {
+      "f5049954f12c6fcf090a776767526d2a4708d58b": "Corrected possible use after free when allocation fails (GHSA-2gq3-ww97-wfjm)"
+    },
+    "GHSA-RW6C-XP26-225V": {
+      "81129f79ad622ff4c1d729828a34ab0f49ec89f6": "Properly escape the strings that are written as raw html (GHSA-rw6c-xp26-225v)",
+      "26088a83d71e9daa203d54a56fe3c31f3f85463d": "Prevent code injection via PostScript header (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-rw6c-xp26-225v)"
+    },
+    "GHSA-3J4X-RWRX-XXJ9": {
+      "168ffe18def968f886c023146a478897866fd621": "Write after we have checked if the realloc failed (GHSA-3j4x-rwrx-xxj9)"
+    },
+    "GHSA-QPGX-JFCQ-R59F": {
+      "0377e60b3c0d766bd7271221c95d9ee54f6a3738": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-qpgx-jfcq-r59f"
+    },
+    "GHSA-7R58-28VV-QJ5P": {
+      "c12ff82cd733988ae6c6276f90ab70c6c5439144": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-7r58-28vv-qj5p"
+    },
+    "GHSA-W8MW-FRC6-R7M8": {
+      "7cfae4da24a995fb05386d77364ff404a7cca7bc": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-w8mw-frc6-r7m8"
+    },
+    "GHSA-XPG8-7M6M-JF56": {
+      "9db96365ecab5de69cdec81b9359672b3a827aaa": "Escape more strings when creating an MVG file in the internal SVG decoder (GHSA-xpg8-7m6m-jf56)",
+      "f63c78b3828933f1cc7cf499390248981af765aa": "Properly escape strings when creating an MVG file in the internal SVG decoder (GHSA-xpg8-7m6m-jf56)"
+    },
+    "GHSA-MH5H-J6MF-5VR6": {
+      "33531ba6f6798563bd5718510a82768484c9126f": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-mh5h-j6mf-5vr6"
+    },
+    "GHSA-WGXP-Q8XQ-WPP9": {
+      "436e5d2589e3c0adc10d9aa189e81d5d088d8207": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-wgxp-q8xq-wpp9"
+    },
+    "GHSA-GWR3-X37H-H84V": {
+      "c448c6920a985872072fc7be6034f678c087de9b": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-gwr3-x37h-h84v"
+    },
+    "GHSA-V994-63CG-9WJ3": {
+      "880057ce34f6da9dff2fe3b290bbbc45b743e613": "Fixed possible infinite loop (GHSA-v994-63cg-9wj3)"
+    },
+    "GHSA-FPVF-FRM6-625Q": {
+      "3392b4bba6ce076f4d88f5653a42d97b7e4f6970": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-fpvf-frm6-625q"
+    },
+    "GHSA-R99P-5442-Q2X2": {
+      "e87695b3227978ad70b967b8d054baaf8ac2cced": "Corrected type to avoid an overflow (GHSA-r99p-5442-q2x2)"
+    },
+    "GHSA-XXW5-M53X-J38C": {
+      "e2d5b4ff0fb6abf2370af4b3dc483934b4dd63ff": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-xxw5-m53x-j38c",
+      "40cfaa7b38729eb6a2808c9b94d6baa2fae6219b": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-xxw5-m53x-j38c"
+    },
+    "GHSA-X2J6-6H5M-GJG4": {
+      "e5dcf54b8a0debc75fd8671f2b2604e3e148c1fc": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-x2j6-6h5m-gjg4",
+      "13e1eac8ce533e96da10054edd3930bbcf07ce71": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-x2j6-6h5m-gjg4"
+    },
+    "GHSA-VPXV-R9PG-7GPR": {
+      "21525d8f27b86e8063fe359616086fd6b71eb05b": "Fixed out of bound read with negative pixel index (GHSA-vpxv-r9pg-7gpr)",
+      "c9c87dbaba56bf82aebd3392e11f0ffd93709b12": "Fixed out of bound read with negative pixel index (GHSA-vpxv-r9pg-7gpr)"
+    },
+    "GHSA-V7G2-M8C5-MF84": {
+      "1a51eb9af00c36724660e294520878fd1f13e312": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-v7g2-m8c5-mf84"
+    },
+    "GHSA-42P5-62QQ-MMH7": {
+      "bbae0215e1b76830509fd20e6d37c0dd7e3e4c3a": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-42p5-62qq-mmh7"
+    },
+    "GHSA-782X-JH29-9MF7": {
+      "4354fc1d554ec2e6314aed13536efa7bde9593d2": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-782x-jh29-9mf7"
+    },
+    "GHSA-MQFC-82JX-3MR2": {
+      "b9c80ad3ca802b6883da25f153c4fdf72c017eba": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-mqfc-82jx-3mr2"
+    },
+    "GHSA-7355-PWX2-PM84": {
+      "5a545ab9d6c3d12a6a76cfed32b87df096729d95": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-7355-pwx2-pm84"
+    },
+    "GHSA-WFX3-6G53-9FGC": {
+      "fe0a49a58ac5b7a18ff2618b6207dcad71123e43": "Fixed possible memory leak in multiple coders that write raw pixel data (GHSA-wfx3-6g53-9fgc)"
+    },
+    "GHSA-3Q5F-GMJC-38R8": {
+      "e6394098af39a9689bb5f0b4eb6a9968e449a8d3": "Fixed possible memory leak (GHSA-3q5f-gmjc-38r8)"
+    },
+    "GHSA-6J5F-24FW-PQP4": {
+      "23fde73188ea32c15b607571775d4f92bdb75e60": "Added extra check to prevent out of bounds heap write on 32-bit systems (GHSA-6j5f-24fw-pqp4)"
+    },
+    "GHSA-P33R-FQW2-RQMM": {
+      "0c7d0b9671ae2616fca106dcada45536eb4df5dc": "Fixed NULL pointer dereference in ReadSFWImage (GHSA-p33r-fqw2-rqmm)"
+    },
+    "GHSA-G2PR-QXJG-7R2W": {
+      "93ad259ce4f6d641eea0bee73f374af90f35efc3": "Prevent memory leak in early exits (GHSA-g2pr-qxjg-7r2w)"
+    },
+    "GHSA-VHQJ-F5CJ-9X8H": {
+      "ffe589df5ff8ce1433daa4ccb0d2a9fadfbe30ed": "Prevent out of bounds heap write in uhdr encoder (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-vhqj-f5cj-9x8h)"
+    },
+    "GHSA-GM37-QX7W-P258": {
+      "30ce0e8efbd72fd6b50ed3a10ae22f57c8901137": "Fixed possible memory leak (GHSA-gm37-qx7w-p258)"
+    },
+    "GHSA-8MPR-6XR2-CHHC": {
+      "9313e530b37272b748898febd42b5949756f0179": "Keep a splay tree of read files to prevent a stack overflow (GHSA-8mpr-6xr2-chhc)"
+    },
+    "GHSA-3MWP-XQP2-Q6PH": {
+      "56f02958890b820cf2d0a6ecb04eb6f58ea75628": "Patch to resolve possible out of bounds write in the msl decoder (GHSA-3mwp-xqp2-q6ph)."
+    },
+    "GHSA-GXCX-QJQP-8VJW": {
+      "1e88fca11c7b8517100d518bc99bd8c474f02f88": "Fixed memory leak when writing MSL files (GHSA-gxcx-qjqp-8vjw)"
+    },
+    "GHSA-PMQ6-8289-HX3V": {
+      "4e1f5381d4ccbb6b71927e94c5d257fa883b3af7": "Added checks to prevent an out of bounds read (GHSA-pmq6-8289-hx3v)"
+    },
+    "GHSA-8JVJ-P28H-9GM7": {
+      "4a9dc1075dcad3ab0579e1b37dbe854c882699a5": "Prevent path traversal of paths that are blocked in the security policy (GHSA-8jvj-p28h-9gm7)"
+    },
+    "GHSA-XWC6-V6G8-PW2H": {
+      "8d4c67a90ae458fb36393a05c0069e9123ac174c": "Block reading from fd: in our more secure policies by default (GHSA-xwc6-v6g8-pw2h)"
+    },
+    "GHSA-P863-5FGM-RGQ4": {
+      "16dd3158ce197c6f65e7798a7a5cc4538bb0303e": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-p863-5fgm-rgq4"
+    },
+    "GHSA-XG29-8GHV-V4XR": {
+      "729253dc16e1a1ec4cac891a12d597e3fa9336b3": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-xg29-8ghv-v4xr"
+    },
+    "GHSA-72HF-FJ62-W6J4": {
+      "9afe96cc325da1e4349fbd7418675af2f8708c10": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-72hf-fj62-w6j4"
+    },
+    "GHSA-543G-8GRM-9CW6": {
+      "412f3c8bc1d3b6890aad72376cd992c9b5177037": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-543g-8grm-9cw6"
+    },
+    "GHSA-XGM3-V4R9-WFGM": {
+      "a253d1b124ebdcc2832daac6f9a35c362635b40e": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-xgm3-v4r9-wfgm"
+    },
+    "GHSA-WRHR-RF8J-R842": {
+      "0c9ffcf55763e5daf1b61dfed0deed1aa43e217f": "Corrected loop initialization to prevent out of bounds read (GHSA-wrhr-rf8j-r842)"
+    },
+    "GHSA-FWQW-2X5X-W566": {
+      "257200cb21de23404dce5f8261871845d425dee5": "Run checks before accessing the image (GHSA-fwqw-2x5x-w566).",
+      "b4f8e1a387dd1d0a0af516071831a235f2fdf437": "No longer allow mutations on the first image of the list (GHSA-fwqw-2x5x-w566)"
+    },
+    "GHSA-JV4P-GJWQ-9R2J": {
+      "077b42643212d7da8c1a4f6b2cd0067ebca8ec0f": "Fixed out of bounds read in multiple coders that read raw pixel data (GHSA-jv4p-gjwq-9r2j)"
+    },
+    "GHSA-273H-M46V-96Q4": {
+      "5b91ab69af614024255fd93dcc9a62b41fbc435c": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-273h-m46v-96q4"
+    },
+    "GHSA-WG3G-GVX5-2PMV": {
+      "f4525ad83d3876a9a07b74ef1fed4cb21a5332dd": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-wg3g-gvx5-2pmv",
+      "0349df6d43d633bd61bb582d1e1e87d6332de32a": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-wg3g-gvx5-2pmv"
+    },
+    "GHSA-96PC-27RX-PR36": {
+      "51c9d33f4770cdcfa1a029199375d570af801c97": "Initialize the pixels with empty values to prevent possible heap information disclosure (GHSA-96pc-27rx-pr36)"
+    },
+    "GHSA-PQGJ-2P96-RX85": {
+      "55c344f4b514213642da41194bab57b4476fb9f5": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-pqgj-2p96-rx85",
+      "332c1566acc2de77857032d3c2504ead6210ff50": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-pqgj-2p96-rx85"
+    },
+    "GHSA-R49W-JQQ3-3GX8": {
+      "2fae24192b78fdfdd27d766fd21d90aeac6ea8b8": "Added overflow checks to prevent an out of bounds write (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-r49w-jqq3-3gx8)"
+    },
+    "GHSA-5VX3-WX4Q-6CJ8": {
+      "1eefab41bc0ab1c6c2c1fd3e4a49e3ee1849751d": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5vx3-wx4q-6cj8"
+    },
+    "GHSA-QP59-X883-77QV": {
+      "951f6b0940224afc469f6a72503d6e011c688d02": "Fixed memory leak that happens when someone creates a corrupt ImagemagickOpenCLDeviceProfile.xml file (GHSA-qp59-x883-77qv)"
+    },
+    "GHSA-39H3-G67R-7G3C": {
+      "3e0330721020e0c5bb52e4b77c347527dd71658e": "Correct memset initialization and add an overflow check (GHSA-39h3-g67r-7g3c)"
+    },
+    "GHSA-HRH7-J8Q2-4QCW": {
+      "2c08c2311693759153c9aa99a6b2dcb5f985681e": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-hrh7-j8q2-4qcw"
+    },
+    "GHSA-7RVH-XQP3-PR8J": {
+      "204718c2211903949dcfc0df8e65ed066b008dec": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-7rvh-xqp3-pr8j"
+    },
+    "GHSA-P27M-HP98-6637": {
+      "6f431d445f3ddd609c004a1dde617b0a73e60beb": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-p27m-hp98-6637"
+    },
+    "GHSA-6HJR-V6G4-3FM8": {
+      "bdae0681ad1e572defe62df85834218f01e6d670": "Added extra check to avoid an overflow on 32-bit machines (GHSA-6hjr-v6g4-3fm8)"
+    },
+    "GHSA-Q3HC-J9X5-MP9M": {
+      "6f81eb15f822ad86e8255be75efad6f9762c32f8": "Correct incorrect free (GHSA-q3hc-j9x5-mp9m)"
+    },
+    "GHSA-G5VW-P55V-8742": {
+      "8547a24f1b3bf4802592c77b97b969e2ee54f634": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-g5vw-p55v-8742"
+    },
+    "GHSA-WPP4-VQFQ-V4HP": {
+      "7b47fe369eda90483402fcd3d78fa4167d3bb129": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-wpp4-vqfq-v4hp"
+    },
+    "GHSA-9PP9-CFWX-54RM": {
+      "cea1693e2ded51b4cc91c70c54096cbed1691c00": "Added extra check to resolve issue on 32-bit systems (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-9pp9-cfwx-54rm)"
+    },
+    "GHSA-23HG-53Q6-HQFG": {
+      "077a417a19a5ea8c85559b602754a5b928eef23e": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-23hg-53q6-hqfg"
+    },
+    "GHSA-MXVV-97WH-CFMM": {
+      "2c55221f4d38193adcb51056c14cf238fbcc35d7": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-mxvv-97wh-cfmm"
+    },
+    "GHSA-9CCG-6PJW-X645": {
+      "439b362b93c074eea6c3f834d84982b43ef057d5": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-9ccg-6pjw-x645",
+      "1f93323df9d8c011c31bc4c6880390071f7fb895": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-9ccg-6pjw-x645"
+    },
+    "GHSA-FH55-Q5PJ-PXGW": {
+      "5f0bcf986b8b5e90567750d31a37af502b73f2af": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-fh55-q5pj-pxgw",
+      "43d92bf855155e8e716ecbb50ed94c2ed41ff9f6": "Added checks for invalid with or height to ThumbnailImage (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-fh55-q5pj-pxgw)"
+    },
+    "GHSA-6HGW-6X87-578X": {
+      "63d8769dd6a8f32f4096c71be9e08a2c081e47da": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-6hgw-6x87-578x"
+    },
+    "GHSA-QP29-WXP5-WH82": {
+      "db986e4782e9f6cc42a0e50151dc4fe43641b337": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-qp29-wxp5-wh82"
+    },
+    "GHSA-V393-38QX-V8FP": {
+      "b68bb6d3cfe472d5bd9329b4172e2e4f63d90a57": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-v393-38qx-v8fp"
+    },
+    "GHSA-CJC8-G9W8-CHFW": {
+      "55d97055e00a7bc7ae2776c99824002fbb4a72aa": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-cjc8-g9w8-chfw"
+    },
+    "GHSA-QH3H-J545-H8C9": {
+      "66dc8f51c11b0ae1f1cdeacd381c3e9a4de69774": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-qh3h-j545-h8c9"
+    },
+    "GHSA-3R24-6M6Q-VXMR": {
+      "62e67a265a8ec9f272fe50fdc313ec07c7dad9a3": "invalid HTTPS certificates are no longer ignored (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-3r24-6m6q-vxmr)"
+    },
+    "GHSA-HX5J-PXVH-RJ7R": {
+      "828463261d0b3c4d67fb0f9c2b2c829dde82eb8b": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-hx5j-pxvh-rj7r",
+      "9c85f8f8282c10214b3cd7e8504e8ee9c891ab42": "throw exception if # of meta channels exceed max (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-hx5j-pxvh-rj7r)"
+    },
+    "GHSA-WV9P-78JX-G7FV": {
+      "f65eba252e3aa387bd99297a750a2ee250664f8c": "check for corrupt DJVU images (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-wv9p-78jx-g7fv)"
+    },
+    "GHSA-V9P9-6PMH-R6RM": {
+      "0a87eaf381b46feb720022a444375122077881c1": "enable entitiy substitution per local parser (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-v9p9-6pmh-r6rm)"
+    },
+    "GHSA-XFWQ-QG5M-83XR": {
+      "fac0ea8011704c675f65152a161427621cf07917": "Fixed the calculation of the clut_size to resolve the issue reported in: https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-xfwq-qg5m-83xr."
+    },
+    "GHSA-35Q2-86C7-9247": {
+      "d7a8bdd7bb33cf8e58bc01b4a4f2ea5466f8c6b3": "possible heap buffer overflow (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-35q2-86c7-9247)"
+    },
+    "CVE-2019-13454": {
+      "ef59bd764f88d893f1219fee8ba696a5d3f8c1c4": "There is a Division by Zero in function OptimizeLayerFrames (#2743)\n\nin file MagickCore/layer.c. cur->ticks_per_seconds can be zero\r\nwith a crafted input argument *image. This is similar to\r\nCVE-2019-13454."
+    },
+    "CVE-2017-12676": {
+      "f083093a79e61a9bbe541b62a7b1694ec8199f98": "Mention CVE-2017-12676 in ChangeLog"
+    },
+    "CVE-2017-13141": {
+      "7c6b9084a12a181d8fb7797586876760c060f126": "Ref CVE-2017-13141 for Issue 600"
+    },
+    "CVE-2017-11750": {
+      "5e99a980d5ed82ee829e3b9ae9b11354d2eb07e2": "Mention CVE-2017-11750 in ChangeLog"
+    },
+    "CVE-2017-11522": {
+      "0b63cb21ffa525e0b12a00ea6797092917e93902": "Mention CVE-2017-11522 in ChangeLog"
+    },
+    "CVE-2017-11539": {
+      "7693a6ecfdc2481e4a61e0d3b3fd116e64f7bcb1": "Mention CVE-2017-11539 in ChangeLog"
+    },
+    "CVE-2017-11310": {
+      "6ede96436d442227bc02c7a91f8d16b8e19e1f79": "ChangeLog: Mention CVE-2017-11310 in the entry for 22 June 2017."
+    }
+  }
+}

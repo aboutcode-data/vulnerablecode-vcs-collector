@@ -1,0 +1,46 @@
+{
+  "vcs_url": "https://github.com/twisted/twisted",
+  "vulnerabilities": {
+    "GHSA-GRGV-6HW6-V9G4": {
+      "2d196123264efb0027eecfe1b430be4a9babdbd8": "Merge commit from fork\n\nnames: mitigate DNS compression-pointer flood (GHSA-grgv-6hw6-v9g4)"
+    },
+    "GHSA-C8M8-J448-XJX7": {
+      "4a930de12fb67e88fefcb8822104152f42b27abc": "Merge commit from fork\n\nAddress GHSA-c8m8-j448-xjx7"
+    },
+    "GHSA-VG46-2RRJ-3647": {
+      "f2f5e81c03f14e253e85fe457e646130780db40b": "Merge pull request from GHSA-vg46-2rrj-3647\n\n#11716 Fix NameVirtualHost HTML injection and deprecate t.w.r.ErrorPage in favor of t.w.pages"
+    },
+    "GHSA-C2JG-HW38-JRQQ": {
+      "592217e951363d60e9cd99c5bbfd23d4615043ac": "Merge pull request from GHSA-c2jg-hw38-jrqq\n\n10323: Inconsistent Interpretation of HTTP Requests ('HTTP Request Smuggling') in twisted.web",
+      "22b067793cbcd0fb5dee04cfd9115fa85a7ca110": "Some tests for GHSA-c2jg-hw38-jrqq"
+    },
+    "GHSA-RV6R-3F5Q-9RGX": {
+      "98387b39e9f0b21462f6abc7a1325dc370fcdeb1": "Merge pull request from GHSA-rv6r-3f5q-9rgx\n\n[Fix #10284] Fix out of memory deny of service for conch ssh version string handling during handshake."
+    },
+    "GHSA-92X2-JW7W-XVVX": {
+      "a21a1efce87c77b4acf309db9445643c2a6d8162": "Remove twisted.web.client.getPage and friends\n\nGHSA-92x2-jw7w-xvvx",
+      "af8fe78542a6f2bf2235ccee8158d9c88d31e8e2": "Merge pull request from GHSA-92x2-jw7w-xvvx\n\n10294 Advisory fix 1"
+    },
+    "GHSA-8R99-H8J2-RW64": {
+      "20c787a14a09e7cbd5dfd8df08ceff00d1fcc081": "Merge pull request from GHSA-8r99-h8j2-rw64\n\nFix several request smuggling attacks."
+    },
+    "GHSA-32GV-6CF3-WCMQ": {
+      "a40ab1ce5210f231abe7a448a54d7e88e48f2d5d": "Merge pull request from GHSA-32gv-6cf3-wcmq\n\nBuffer outbound control frames and timeout invalid clients."
+    },
+    "CVE-2019-12855": {
+      "cf8ed69824502cb39b3a077ec596fe01c03b93da": "Merge pull request #1147 from twisted/9561-xmpp-tls-verify-cert\n\n[#9561] Check remote certificates for XMPP TLS (CVE-2019-12855)\r\n\r\nAuthor: ralphm\r\nReviewer: glyph, alex\r\nFixes: ticket:9561",
+      "a66878c15abe99fdb3c72d7ec533ee0ef54e7f95": "Mention CVE-2019-12855 in news fragment"
+    },
+    "CVE-2019-12387": {
+      "8a473397d5cdecff38b95a94fc7fc75dd06217dc": "Prevent CRLF injections described in CVE-2019-12387\n\nAuthor: markrwilliams\n\nReviewers: glyph\n\nFixes: ticket:9647\n\nTwisted's HTTP client APIs were vulnerable to maliciously constructed\nHTTP methods, hosts, and/or paths, URI components such as paths and\nquery parameters.  These vulnerabilities were beyond the header name\nand value injection vulnerabilities addressed in:\n\nhttps://twistedmatrix.com/trac/ticket/9420\nhttps://github.com/twisted/twisted/pull/999/\n\nThe following client APIs will raise a ValueError if given a method,\nhost, or URI that includes newlines or other disallowed characters:\n\n- twisted.web.client.Agent.request\n- twisted.web.client.ProxyAgent.request\n- twisted.web.client.Request.__init__\n- twisted.web.client.Request.writeTo\n\nProxyAgent is patched separately from Agent because unlike other\nagents (e.g. CookieAgent) it is not implemented as an Agent wrapper.\n\nRequest.__init__ checks its method and URI so that errors occur closer\nto their originating input.  Request.method and Request.uri are both\npublic APIs, however, so Request.writeTo (via Request._writeHeaders)\nalso checks the validity of both before writing anything to the wire.\n\nAdditionally, the following deprecated client APIs have also been\npatched:\n\n- twisted.web.client.HTTPPageGetter.__init__\n- twisted.web.client.HTTPPageDownloader.__init__\n- twisted.web.client.HTTPClientFactory.__init__\n- twisted.web.client.HTTPClientFactory.setURL\n- twisted.web.client.HTTPDownloader.__init__\n- twisted.web.client.HTTPDownloader.setURL\n- twisted.web.client.getPage\n- twisted.web.client.downloadPage\n\nThese have been patched prior to their removal so that they won't be\nvulnerable in the last Twisted release that includes them.  They\nrepresent a best effort, because testing every combination of these\npublic APIs would require more code than deprecated APIs warrant.\n\nIn all cases URI components, including hostnames, are restricted to\nthe characters allowed in path components.  This mirrors the CPython\npatch (for bpo-30458) that addresses equivalent vulnerabilities:\n\nhttps://github.com/python/cpython/commit/bb8071a4cae5ab3fe321481dd3d73662ffb26052\n\nHTTP methods, however, are checked against the set of characters\ndescribed in RFC-7230.",
+      "6c61fc4503ae39ab8ecee52d10f10ee2c371d7e2": "Prevent CRLF injections described in CVE-2019-12387\n\nAuthor: markrwilliams\r\n\r\nReviewers: glyph\r\n\r\nFixes: ticket:9647\r\n\r\nTwisted's HTTP client APIs were vulnerable to maliciously constructed\r\nHTTP methods, hosts, and/or paths, URI components such as paths and\r\nquery parameters.  These vulnerabilities were beyond the header name\r\nand value injection vulnerabilities addressed in:\r\n\r\nhttps://twistedmatrix.com/trac/ticket/9420\r\nhttps://github.com/twisted/twisted/pull/999/\r\n\r\nThe following client APIs will raise a ValueError if given a method,\r\nhost, or URI that includes newlines or other disallowed characters:\r\n\r\n- twisted.web.client.Agent.request\r\n- twisted.web.client.ProxyAgent.request\r\n- twisted.web.client.Request.__init__\r\n- twisted.web.client.Request.writeTo\r\n\r\nProxyAgent is patched separately from Agent because unlike other\r\nagents (e.g. CookieAgent) it is not implemented as an Agent wrapper.\r\n\r\nRequest.__init__ checks its method and URI so that errors occur closer\r\nto their originating input.  Request.method and Request.uri are both\r\npublic APIs, however, so Request.writeTo (via Request._writeHeaders)\r\nalso checks the validity of both before writing anything to the wire.\r\n\r\nAdditionally, the following deprecated client APIs have also been\r\npatched:\r\n\r\n- twisted.web.client.HTTPPageGetter.__init__\r\n- twisted.web.client.HTTPPageDownloader.__init__\r\n- twisted.web.client.HTTPClientFactory.__init__\r\n- twisted.web.client.HTTPClientFactory.setURL\r\n- twisted.web.client.HTTPDownloader.__init__\r\n- twisted.web.client.HTTPDownloader.setURL\r\n- twisted.web.client.getPage\r\n- twisted.web.client.downloadPage\r\n\r\nThese have been patched prior to their removal so that they won't be\r\nvulnerable in the last Twisted release that includes them.  They\r\nrepresent a best effort, because testing every combination of these\r\npublic APIs would require more code than deprecated APIs warrant.\r\n\r\nIn all cases URI components, including hostnames, are restricted to\r\nthe characters allowed in path components.  This mirrors the CPython\r\npatch (for bpo-30458) that addresses equivalent vulnerabilities:\r\n\r\nhttps://github.com/python/cpython/commit/bb8071a4cae5ab3fe321481dd3d73662ffb26052\r\n\r\nHTTP methods, however, are checked against the set of characters\r\ndescribed in RFC-7230."
+    },
+    "CVE-2016-1000111": {
+      "69707bb1aa55b3a6cec5e02df01d34d2a93c2519": "Merge 8623-httpoxy-hilarity-2: Mitigate CVE-2016-1000111\n\nAuthor: hawkowl\nReviewer: lukasa\nFixes: #8623",
+      "772ec10114f4c35114b1fd5dad4dab1679769ce4": "Revert \"Revert \"Merge 8623-httpoxy-hilarity-2: Mitigate CVE-2016-1000111\"\"\n\nThis reverts commit abe899e8d287676d8060c22a2826ba83f2561b66.",
+      "abe899e8d287676d8060c22a2826ba83f2561b66": "Revert \"Merge 8623-httpoxy-hilarity-2: Mitigate CVE-2016-1000111\"\n\nThis reverts commit 3853ab613d17983638b6039e0878104f9ee1ba92, reversing\nchanges made to c462cc1140cec9739676fe314fb940bc9a919f11.",
+      "5df208a1b59168932d64b399fd7aa605f5554135": "Merge 8623-httpoxy-hilarity-2: Mitigate CVE-2016-1000111\n\nAuthor: hawkowl\r\nReviewer: lukasa\r\nFixes: #8623",
+      "3853ab613d17983638b6039e0878104f9ee1ba92": "Merge 8623-httpoxy-hilarity-2: Mitigate CVE-2016-1000111\n\nAuthor: hawkowl\r\nReviewer: lukasa\r\nFixes: #8623"
+    }
+  }
+}

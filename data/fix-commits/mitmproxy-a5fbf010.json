@@ -1,0 +1,21 @@
+{
+  "vcs_url": "https://github.com/mitmproxy/mitmproxy",
+  "vulnerabilities": {
+    "GHSA-527G-3W9M-29HV": {
+      "71c9234057922bc29b9734ec408d712113d294d2": "Fix LDAP Sanitization (#8178)\n\nThis fixes GHSA-527g-3w9m-29hv."
+    },
+    "CVE-2025-47287": {
+      "c718ce02be71be1c38223cbb9b7475df14e49aa1": "Upgrade tornado to 6.5.0 to fix CVE-2025-47287 (#7716)\n\n* Upgrade tornado to 6.5.0 to fix CVE-2025-47287\n\nhttps://github.com/advisories/GHSA-7cx3-6m66-7c5m\n\n* [autofix.ci] apply automated fixes\n\n---------\n\nCo-authored-by: Philippe Noel <philippe.noel@cyberwatch.com>\nCo-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>"
+    },
+    "GHSA-7CX3-6M66-7C5M": {
+      "c718ce02be71be1c38223cbb9b7475df14e49aa1": "Upgrade tornado to 6.5.0 to fix CVE-2025-47287 (#7716)\n\n* Upgrade tornado to 6.5.0 to fix CVE-2025-47287\n\nhttps://github.com/advisories/GHSA-7cx3-6m66-7c5m\n\n* [autofix.ci] apply automated fixes\n\n---------\n\nCo-authored-by: Philippe Noel <philippe.noel@cyberwatch.com>\nCo-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>"
+    },
+    "GHSA-GCX2-GVJ7-PXV3": {
+      "b06fb6d157087d526bd02e7aadbe37c56865c71b": "security: reject whitespace in HTTP/1 header names\n\nThis commit fixes GHSA-gcx2-gvj7-pxv3 by making mitmproxy\nreject header names that contain whitespace characters by default.\nA new `validate_inbound_headers` option is provided to turn this behavior\noff at the expense of allowing HTTP smuggling vulnerabilities."
+    },
+    "GHSA-22GH-3R9Q-XF38": {
+      "b41416b729214e14300ee25df706c907a0fdb008": "Merge pull request from GHSA-22gh-3r9q-xf38\n\nThis commit makes mitmproxy hard-fail when it encounters any attempts\nat request/response smuggling.\n\nFor details, see https://github.com/mitmproxy/mitmproxy/security/advisories/GHSA-22gh-3r9q-xf38",
+      "9fed8ae554a3ba888cc2a9f20f6e8aaa8d8709e7": "Merge pull request from GHSA-22gh-3r9q-xf38\n\nThis commit makes mitmproxy hard-fail when it encounters any attempts\nat request/response smuggling.\n\nFor details, see https://github.com/mitmproxy/mitmproxy/security/advisories/GHSA-22gh-3r9q-xf38"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "vcs_url": "https://github.com/matplotlib/matplotlib",
+  "vulnerabilities": {
+    "CVE-2019-16865": {
+      "4a84674ee89edacb5801a2611a6da65da143c1fe": "BLD: update pillow dependency\n\nPillow has a security issue for <6.2.0 (CVE-2019-16865).\n\nThis is in violation of our normal support window for dependencies,\nhowever we are making an exception due to the CVE."
+    },
+    "CVE-2013-1424": {
+      "32d7a9f7184a5b3bfb0e6010a56658a2c1ef21a9": "BUG : fix security bug reported via debian by Matt Giuca\n\nFixes CVE-2013-1424"
+    }
+  }
+}

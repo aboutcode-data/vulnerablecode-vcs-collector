@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/gnome/nautilus",
+  "vulnerabilities": {
+    "CVE-2017-14604": {
+      "3a22ed5b8e3bbc1c59ff3069ee79755168754916": "general: Don't allow launching binaries or programs in general\n\nFor long we used to support that since the desktop was part of Nautilus.\nAlso, back then we didn't have a Software app where you are expected to\ninstalls apps. Back then it was common for apps to be delivered in\na tarball, nowadays that's out of question.\n\nNow that the desktop is long gone, launching binaries and desktop files\nfrom within Nautilus is not as useful. Not only that, but we are moving\ntowards a more sandboxed system, and we should use the standard and\nsystem wide support for launching apps based on users choices.\n\nWe also are not able to be secure enough to handle this, as we saw in\nthe past we allowed untrusted binaries to be launched, and therefore\nwe had a CVE (CVE-2017-14604) for Nautilus. We are not being audited\n(afaik) and we are not in a position that we can let this issues slip.\n\nWith that altogether, this prevents launching binaries or programs from\nNautilus.\n\nCloses: https://gitlab.gnome.org/GNOME/nautilus/issues/184"
+    }
+  }
+}

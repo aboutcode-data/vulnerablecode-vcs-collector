@@ -1,0 +1,19 @@
+{
+  "vcs_url": "https://github.com/apache/groovy",
+  "vulnerabilities": {
+    "CVE-2021-36373": {
+      "9ffcf83d92341992fa257a88ccedfa0b94d00db7": "GROOVY-10169: Bump Ant version to 1.10.11 (incorporates CVE-2021-36373 and CVE-2021-36374)",
+      "96616ac54b514d9f2299ed68d936ec16cd0e62ac": "GROOVY-10169: Bump Ant version to 1.10.11 (incorporates CVE-2021-36373 and CVE-2021-36374)"
+    },
+    "CVE-2021-36374": {
+      "9ffcf83d92341992fa257a88ccedfa0b94d00db7": "GROOVY-10169: Bump Ant version to 1.10.11 (incorporates CVE-2021-36373 and CVE-2021-36374)",
+      "96616ac54b514d9f2299ed68d936ec16cd0e62ac": "GROOVY-10169: Bump Ant version to 1.10.11 (incorporates CVE-2021-36373 and CVE-2021-36374)"
+    },
+    "CVE-2020-1945": {
+      "06160a5a4e3cb2e3690664d8ebb3194a2cdfd05d": "GROOVY-9552: Bump Ant versions to address: [CVE-2020-1945] Apache Ant insecure temporary file vulnerability",
+      "e9ab52614cce1f6b79a1dc42945980c2fd51ed8e": "GROOVY-9552: Bump Ant versions to address: [CVE-2020-1945] Apache Ant insecure temporary file vulnerability",
+      "1b7d91311fd8bd9b3903fd1c973f5339408f939a": "GROOVY-9552: Bump Ant versions to address: [CVE-2020-1945] Apache Ant insecure temporary file vulnerability",
+      "5aaf9ccccd5d1942188e50d74790ffd7159900c1": "GROOVY-9552: Bump Ant versions to address: [CVE-2020-1945] Apache Ant insecure temporary file vulnerability"
+    }
+  }
+}

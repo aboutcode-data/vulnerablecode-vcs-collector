@@ -1,0 +1,16 @@
+{
+  "vcs_url": "https://github.com/apache/ranger",
+  "vulnerabilities": {
+    "CVE-2025-8916": {
+      "674e9449bc4fe1e3d203118eff66f92e8db92b4e": "RANGER-5336:Upgrade bouncycastle to 1.79 due to CVE-2025-8916 and CVE-2025-8885 (#750)",
+      "32288bb9fef4659ee80208bfba442f3986c03663": "RANGER-5336:Upgrade bouncycastle to 1.79 due to CVE-2025-8916 and CVE-2025-8885 (#718)"
+    },
+    "CVE-2025-8885": {
+      "674e9449bc4fe1e3d203118eff66f92e8db92b4e": "RANGER-5336:Upgrade bouncycastle to 1.79 due to CVE-2025-8916 and CVE-2025-8885 (#750)",
+      "32288bb9fef4659ee80208bfba442f3986c03663": "RANGER-5336:Upgrade bouncycastle to 1.79 due to CVE-2025-8916 and CVE-2025-8885 (#718)"
+    },
+    "CVE-2025-48924": {
+      "7008e0272bcd0289205f04c7b2ae074353c372a5": "RANGER-5391: Migrate from Apache Commons Lang 2.6 to Commons Lang 3.19.0 (#724)\n\nThis commit migrates Apache Ranger from the vulnerable Commons Lang 2.6 library to Commons Lang 3.19.0, addressing CVE-2025-48924. The migration involves updating all import statements from org.apache.commons.lang.* to org.apache.commons.lang3.* across the codebase and updating dependency declarations in POM files.\n\nKey changes:\n\n- Updated Commons Lang 3 version from 3.3.2 to 3.19.0 in the root POM\n- Replaced all imports across 100+ Java files from org.apache.commons.lang to org.apache.commons.lang3\n- Removed commons-lang:2.6 dependency declarations and added commons-lang3:3.19.0 where needed\n---------\n\nCo-authored-by: Madhan Neethiraj <madhan@apache.org>"
+    }
+  }
+}

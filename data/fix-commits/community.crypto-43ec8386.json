@@ -1,0 +1,11 @@
+{
+  "vcs_url": "https://github.com/ansible-collections/community.crypto",
+  "vulnerabilities": {
+    "CVE-2021-29921": {
+      "871a185ecbc88c4f3364d59acc745d7ab738514b": "Remove vendored copy of ipaddress (#287)\n\n* Remove vendored copy of ipaddress.\r\n\r\n* Forgot an import.\r\n\r\n* Remove sanity ignores and checks related to ipaddress.\r\n\r\n* Remove octal IPv4 address.\r\n\r\nSuch IPs are no longer accepted by ipaddress in Python's standard library (CVE-2021-29921).\r\n\r\n* Remove unused import.\r\n\r\nCo-authored-by: Sviatoslav Sydorenko <wk.cvs.github@sydorenko.org.ua>\r\n\r\nCo-authored-by: Sviatoslav Sydorenko <wk.cvs.github@sydorenko.org.ua>"
+    },
+    "CVE-2020-25646": {
+      "233d1afc296f6770e905a1785ee2f35af7605e43": "CVE-2020-25646: no_log=True missing for private key content options (#125)\n\n* Mark private key content options as no_log (CVE-2020-25646.)\r\n\r\n* Mention no_log for openssl_privatekey's return_content option.\r\n\r\n* Add change PR's URL.\r\n\r\n* Plural."
+    }
+  }
+}

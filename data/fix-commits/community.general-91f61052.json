@@ -1,0 +1,22 @@
+{
+  "vcs_url": "https://github.com/ansible-collections/community.general",
+  "vulnerabilities": {
+    "CVE-2021-20191": {
+      "c22199794d7d07db9218929ae3128869f1e37a7e": "Add no_log to some module arguments (#1725) (#1730)\n\n* Add no_log to some module arguments\r\n\r\nThis will prevent potentially sensitive information from being printed to\r\nthe console.\r\n\r\nSee: CVE-2021-20191\r\n\r\n* Update changelogs/fragments/CVE-2021-20191_no_log.yml\r\n\r\nCo-authored-by: Felix Fontein <felix@fontein.de>\r\n\r\nCo-authored-by: Felix Fontein <felix@fontein.de>\r\n(cherry picked from commit ae8edc02e1943ef9232312471de389e72bef869c)\r\n\r\nCo-authored-by: David Moreau Simard <dmsimard@redhat.com>",
+      "ad5b8a813f5d01a794c3aeaf6c76302a5aa25bc7": "Add no_log to some module arguments (#1725) (#1729)\n\n* Add no_log to some module arguments\r\n\r\nThis will prevent potentially sensitive information from being printed to\r\nthe console.\r\n\r\nSee: CVE-2021-20191\r\n\r\n* Update changelogs/fragments/CVE-2021-20191_no_log.yml\r\n\r\nCo-authored-by: Felix Fontein <felix@fontein.de>\r\n\r\nCo-authored-by: Felix Fontein <felix@fontein.de>\r\n(cherry picked from commit ae8edc02e1943ef9232312471de389e72bef869c)\r\n\r\nCo-authored-by: David Moreau Simard <dmsimard@redhat.com>",
+      "9cccc9f0cdbd4e17258d019bdc7f29e13f8dd2aa": "docker swarm - Add no_log to the signing_ca_key argument (#1728)\n\nThis will prevent accidental disclosure.\r\n\r\nSee: CVE-2021-20191",
+      "ae8edc02e1943ef9232312471de389e72bef869c": "Add no_log to some module arguments (#1725)\n\n* Add no_log to some module arguments\r\n\r\nThis will prevent potentially sensitive information from being printed to\r\nthe console.\r\n\r\nSee: CVE-2021-20191\r\n\r\n* Update changelogs/fragments/CVE-2021-20191_no_log.yml\r\n\r\nCo-authored-by: Felix Fontein <felix@fontein.de>\r\n\r\nCo-authored-by: Felix Fontein <felix@fontein.de>"
+    },
+    "CVE-2021-20180": {
+      "a3f08377b2000f8e179e361bcfef4afec18ba1e5": "bitbucket_pipeline_variable: Hide secured values in console log (#1635) (#1637)\n\n**SECURITY** - CVE-2021-20180\r\n\r\nHide user sensitive information which is marked as ``secured``\r\nwhile logging in console.\r\n\r\nSigned-off-by: Abhijeet Kasurde <akasurde@redhat.com>\r\n(cherry picked from commit 1d0c5e2ba47724c31a18d7b08b9daf13df8829dc)\r\n\r\nCo-authored-by: Abhijeet Kasurde <akasurde@redhat.com>",
+      "1d0c5e2ba47724c31a18d7b08b9daf13df8829dc": "bitbucket_pipeline_variable: Hide secured values in console log (#1635)\n\n**SECURITY** - CVE-2021-20180\r\n\r\nHide user sensitive information which is marked as ``secured``\r\nwhile logging in console.\r\n\r\nSigned-off-by: Abhijeet Kasurde <akasurde@redhat.com>"
+    },
+    "CVE-2021-20178": {
+      "fa2d2d6971d668f82207dd3e265820fdb4b0048d": "snmp_facts: Hide user sensitive information in console (#1621) (#1623)\n\n**SECURITY** - CVE-2021-20178\r\n\r\nHide user sensitive information like `privkey` and `authkey`\r\nwhile logging in console.\r\n\r\nSigned-off-by: Abhijeet Kasurde <akasurde@redhat.com>\r\n(cherry picked from commit 3560aeb12f7061bf21d63ca0e1e19feb99c57de3)\r\n\r\nCo-authored-by: Abhijeet Kasurde <akasurde@redhat.com>",
+      "3560aeb12f7061bf21d63ca0e1e19feb99c57de3": "snmp_facts: Hide user sensitive information in console (#1621)\n\n**SECURITY** - CVE-2021-20178\r\n\r\nHide user sensitive information like `privkey` and `authkey`\r\nwhile logging in console.\r\n\r\nSigned-off-by: Abhijeet Kasurde <akasurde@redhat.com>"
+    },
+    "CVE-2020-1746": {
+      "11ef03e9dd1dc05fd80bbe74eafd89b3645965cf": "Remove the params module option from ldap_attr and ldap_entry (#113)\n\n* Remove the params module option from ldap_attr and ldap_entry\r\n\r\nModule options that circumvent Ansible's option handling were disallowed\r\nin:\r\nhttps://meetbot.fedoraproject.org/ansible-meeting/2017-09-28/ansible_dev_meeting.2017-09-28-15.00.log.html\r\n\r\nAdditionally, this particular usage can be insecure if bind_pw is set\r\nthis way as the password could end up in a logfile or displayed on\r\nstdout.\r\n\r\nFixes CVE-2020-1746\r\n\r\n* Remove checking the version of Ansible\r\n\r\nFix fail_json\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-Authored-By: Felix Fontein <felix@fontein.de>\r\n\r\nCo-authored-by: Toshio Kuratomi <a.badger@gmail.com>\r\nCo-authored-by: Felix Fontein <felix@fontein.de>"
+    }
+  }
+}

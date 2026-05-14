@@ -1,0 +1,97 @@
+{
+  "vcs_url": "https://github.com/apache/camel",
+  "vulnerabilities": {
+    "CVE-2022-45688": {
+      "dee37c785a853a4037f5cffe8c01b74d96fef4d6": "CAMEL-19695: camel-google-bigquery - Bump org.json to 20230618 (#10967)\n\n## Motivation\r\n\r\nThe component `camel-google-bigquery` indirectly depends on `org.json:json:jar:20200518:compile` which has a know CVE https://nvd.nist.gov/vuln/detail/CVE-2022-45688 that can be fixed by upgrading it to `20230227` or higher.\r\n\r\n## Modifications:\r\n\r\n* Add `org.json:json:20230618` to the dependencyManagement section\r\n* Replace `org.json:json:20200518` with `org.json:json:20230618` in `camel-google-bigquery`",
+      "7f6e62d0cfa0c84d8d10f0411d0bd40ac466fae8": "CAMEL-19695: camel-google-bigquery - Bump org.json to 20230618 (#10966)\n\n## Motivation\r\n\r\nThe component `camel-google-bigquery` indirectly depends on `org.json:json:jar:20200518:compile` which has a know CVE https://nvd.nist.gov/vuln/detail/CVE-2022-45688 that can be fixed by upgrading it to `20230227` or higher.\r\n\r\n## Modifications:\r\n\r\n* Add `org.json:json:20230618` to the dependencyManagement section\r\n* Replace `org.json:json:20200518` with `org.json:json:20230618` in `camel-google-bigquery`",
+      "09a0eb6ddc63b76230ad6a4b42c36cf76be72a1a": "CAMEL-19695: camel-google-bigquery - Bump org.json to 20230618 (#10964)\n\n## Motivation\r\n\r\nThe component `camel-google-bigquery` indirectly depends on `org.json:json:jar:20200518:compile` which has a know CVE https://nvd.nist.gov/vuln/detail/CVE-2022-45688 that can be fixed by upgrading it to `20230227` or higher.\r\n\r\n## Modifications:\r\n\r\n* Add `org.json:json:20230618` to the dependencyManagement section\r\n* Replace `org.json:json:20200518` with `org.json:json:20230618` in `camel-google-bigquery`"
+    },
+    "CVE-2021-41561": {
+      "6afabd274d526e163e773859553af546c1825224": "Upgrade Parquet avro and common to version 1.12.3 due to CVE-2021-41561\n\nSigned-off-by: Andrea Cosentino <ancosen@gmail.com>"
+    },
+    "CVE-2022-32532": {
+      "59031f86b28cbbd6f67bd14bb69291bd1d9883fa": "Cherrypicks (#8394)\n\n* Upgrade Tika to version 2.4.1\r\n\r\n* Updating Shiro to 1.9.1 due to CVE-2022-32532\r\n\r\n* Upgrade PostgreSQL JDBC Driver to 42.4.1 (#8330)\r\n\r\n* Upgrade jsoup to 1.15.3 (#8316)\r\n\r\n* Upgrade californium version, provide separate version for newly available version of scandium (#8317)\r\n\r\n* Upgrade version of scandium to 2.7.3 (#8353)\r\n\r\n* Upgrade Jettison to version 1.5.0\r\n\r\n* Upgrade nimbus-jose-jwt to 9.22 (#8356)\r\n\r\nCo-authored-by: Andrea Cosentino <ancosen@gmail.com>\r\nCo-authored-by: Colm O hEigeartaigh <coheigea@apache.org>",
+      "65d1ad5d3dfc3784cb0900d5886969f4ee2ce338": "Updating Shiro to 1.9.1 due to CVE-2022-32532",
+      "7a02ad9a70074621ce4f6548b29510c1045fbd70": "Updating Shiro to 1.9.1 due to CVE-2022-32532"
+    },
+    "CVE-2022-25845": {
+      "b95a27ce5515f5f143c12b0f7981e44c6241aab0": "Upgrade to com.alibaba:fastjson:1.2.83, fix CVE-2022-25845 fastjson: autoType shutdown restriction bypass leads to deserialization (#7966)"
+    },
+    "GHSA-57J2-W4CX-62H2": {
+      "f6e6fc1e1d9aa5d500a4735d9228146d44e1b3a1": "Updating Jackson to 2.12.7 on 3.14.x to fix https://github.com/advisories/GHSA-57j2-w4cx-62h2 (#7852)",
+      "654076472cbb000db236c8c8944cd09cf03a1693": "Updating Jackson to 2.12.7 on 3.14.x to fix https://github.com/advisories/GHSA-57j2-w4cx-62h2 (#7852)"
+    },
+    "CVE-2021-41973": {
+      "6cb195263607b89f36cda701a534bd81af949304": "Update mina to 2.1.5 due to CVE-2021-41973 (#6889)",
+      "1186aecbb44072b19f2501bcc7c652cae336cd63": "Update mina to 2.1.5 due to CVE-2021-41973 (#6889)"
+    },
+    "CVE-2021-45105": {
+      "d9d028440cf2ac831ec231b34ec363c850213881": "Update log 4js version to 2.17 (#6560)\n\n* Update log 4js version to 2.17\n\nThis fixes the security issue https://nvd.nist.gov/vuln/detail/CVE-2021-45105\n\n* Update log 4js version to 2.17\n\nThis fixes the security issue https://nvd.nist.gov/vuln/detail/CVE-2021-45105",
+      "d1cbd73b5384e8fbd0228e0be501015ba965f7f2": "Update log 4js version to 2.17 (#6560)\n\n* Update log 4js version to 2.17\n\nThis fixes the security issue https://nvd.nist.gov/vuln/detail/CVE-2021-45105\n\n* Update log 4js version to 2.17\n\nThis fixes the security issue https://nvd.nist.gov/vuln/detail/CVE-2021-45105",
+      "3429334cb6d0e76d641bcdbf0d999d160edfc6c0": "Update log 4js version to 2.17 (#6560)\n\n* Update log 4js version to 2.17\r\n\r\nThis fixes the security issue https://nvd.nist.gov/vuln/detail/CVE-2021-45105\r\n\r\n* Update log 4js version to 2.17\r\n\r\nThis fixes the security issue https://nvd.nist.gov/vuln/detail/CVE-2021-45105"
+    },
+    "CVE-2020-26217": {
+      "8d78814217dba3ace22a03ed392953ca45dcc1db": "Camel-XStream: Added a test about CVE-2020-26217"
+    },
+    "CVE-2020-13949": {
+      "7682ee7407bfee53254fedb9b7a1322ca8361477": "CAMEL-16880: camel-thrift - Upgrade thrift to 0.14.1 include the fix of CVE-2020-13949 (#5976)"
+    },
+    "CVE-2019-16869": {
+      "4bd1051cefc627f14089b967430156679e9e53f0": "Updating Netty to 4.1.48.Final to fix some CVEs (e.g. CVE-2019-16869, CVE-2019-20444)"
+    },
+    "CVE-2019-20444": {
+      "4bd1051cefc627f14089b967430156679e9e53f0": "Updating Netty to 4.1.48.Final to fix some CVEs (e.g. CVE-2019-16869, CVE-2019-20444)"
+    },
+    "CVE-2019-12416": {
+      "d3cc27ce4ab827ae5db7012d1b323ef4c85a7609": "Updating Deltaspike to 1.9.4 due to CVE-2019-12416"
+    },
+    "CVE-2020-5421": {
+      "b22308b2de3c8eb85bffc9cd8b818151a5a7e786": "Updating Spring to 5.1.18 due to CVE-2020-5421"
+    },
+    "CVE-2020-13692": {
+      "d5a270803a979ccab8af4d47e0dbc95070e9d80e": "Update pgjdbc driver version, that includes fix for CVE-2020-13692 (#4038)",
+      "8bd522199416a8062ef62512aa86fbdf9ade3efe": "Update pgjdbc driver version, that includes fix for CVE-2020-13692 (#4037)"
+    },
+    "CVE-2020-5529": {
+      "df2dc9c8ee4f7ceb3210391e62d8b2504799ce30": "Updating htmlunit due to CVE-2020-5529"
+    },
+    "CVE-2020-1957": {
+      "cae5af329b7f94756d5e8d6ecdff4aff7f027db7": "Updating Shiro to 1.5.2 due to CVE-2020-1957",
+      "f675c4d5cfdaef27e0a05e16b8b58d697239d24b": "Updating Shiro to 1.5.2 due to CVE-2020-1957",
+      "2f6ed1275f606fbe06a624ea1fd0fd9d6eb224cf": "Updating Shiro to 1.5.2 due to CVE-2020-1957"
+    },
+    "CVE-2020-1953": {
+      "96388b54d792202c01f6ab6b39f1fbdf36a50113": "Update Commons Configuration 2 due to CVE-2020-1953",
+      "945fcd0baf12e6354378a8417861ac7bfec93c77": "Update Commons Configuration 2 due to CVE-2020-1953",
+      "48f60e82f6bd79aee440f8e22f70e60ef4dea63c": "Update Commons Configuration 2 due to CVE-2020-1953",
+      "cc9d14b9651c52b0df8318c5fcc90002feff93a3": "Update Commons Configuration 2 due to CVE-2020-1953"
+    },
+    "CVE-2020-5398": {
+      "442bcf6cb8d3e0294e8d496d007abf135f14ee2f": "Updating Spring due to CVE-2020-5398"
+    },
+    "CVE-2019-0188": {
+      "906031afe839e54c55ac052e6eee0be012e03c29": "CVE-2019-0188 - Changed the title in security advisories",
+      "6a51420aa6a2846fda2d8a13d99271ad16bce651": "Errata corrige for CVE-2019-0188",
+      "77600f01be6f8d56d00d97261f1b7556517073cb": "Added security advisory for CVE-2019-0188"
+    },
+    "CVE-2019-0194": {
+      "b4525b37769c46aeebceb27efde98e86d4e4d9c2": "Added CVE-2019-0194 details"
+    },
+    "CVE-2014-0114": {
+      "e108b03b2b36ebab47b0174113d06d96f304c0b0": "Fix CVE-2014-0114 brought in by commons-beanutils"
+    },
+    "CVE-2016-2510": {
+      "405542810c5f568ae5f6a70894d08bbee8768a77": "CAMEL-9913: Upgrading Beanshell for CVE-2016-2510",
+      "61e3d46c35fa841eb2bdc2f805ee761c810789e0": "CAMEL-9913: Upgrading Beanshell for CVE-2016-2510",
+      "28184d307a741de1db2e9559475c86d3f35b7c52": "CAMEL-9913: Upgrading Beanshell for CVE-2016-2510"
+    },
+    "CVE-2014-3623": {
+      "3860decadcf9e9d4d6883df731ce0e6f1728f839": "Upgrade CXF 3.0.1 to 3.0.2, mainly because of CVE-2014-3623",
+      "342dade9585e49b700771904a79eac6099c4eaa8": "Upgrade CXF 3.0.1 to 3.0.2, mainly because of CVE-2014-3623",
+      "e2ba4de81f81634e39443f43315910648fbbad64": "Upgrade CXF 2.7.12 to 2.7.13, mainly because of CVE-2014-3623"
+    },
+    "CVE-2012-5055": {
+      "269ee371f769852d4acac098864b24291702f805": "Upgrade to spring security 3.1.3 to fix CVE-2012-5055\n\ngit-svn-id: https://svn.apache.org/repos/asf/camel/branches/camel-2.10.x@1436352 13f79535-47bb-0310-9956-ffa450edef68"
+    }
+  }
+}

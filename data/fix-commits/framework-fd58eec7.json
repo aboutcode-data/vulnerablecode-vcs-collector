@@ -1,0 +1,21 @@
+{
+  "vcs_url": "https://github.com/laravel/framework",
+  "vulnerabilities": {
+    "GHSA-QRR6-MG7R-M243": {
+      "6d067e531ea17b698a187727125d7dbb5bff1105": "Ignore PHPUnit security advisory GHSA-qrr6-mg7r-m243 (#59761)"
+    },
+    "GHSA-VVJ3-C3RP-C85P": {
+      "0b184b2199c89f400706af6291b4ec1bfafbeee4": "[13.x] Bump minimum PHPUnit (#58537)\n\n* [13.x] Bump minimum PHPUnit\n\nAvoid using versions affected by https://github.com/sebastianbergmann/phpunit/security/advisories/GHSA-vvj3-c3rp-c85p\n\nSigned-off-by: Mior Muhammad Zaki <crynobone@gmail.com>\n\n* update workflows\n\nSigned-off-by: Mior Muhammad Zaki <crynobone@gmail.com>\n\n---------\n\nSigned-off-by: Mior Muhammad Zaki <crynobone@gmail.com>",
+      "89007cb97236634864d31220c7a1c74a760fc732": "[13.x] Bump minimum PHPUnit\n\nAvoid using versions affected by https://github.com/sebastianbergmann/phpunit/security/advisories/GHSA-vvj3-c3rp-c85p\n\nSigned-off-by: Mior Muhammad Zaki <crynobone@gmail.com>"
+    },
+    "CVE-2025-22145": {
+      "86eae446b9fa9f3db8627e8b6bd29d72b291d3e4": "Patch CVE-2025-22145 in nesbot/carbon package (#54335)"
+    },
+    "GHSA-C2PC-G5QF-RFRF": {
+      "9cc32b5de7c3a4a3a8e35f6ecf209c3ae9a58333": "[10.x] Bump minimum `league/commonmark` (#53829)\n\nSecurity fixes: https://github.com/advisories/GHSA-c2pc-g5qf-rfrf\r\n\r\nSigned-off-by: Mior Muhammad Zaki <crynobone@gmail.com>"
+    },
+    "CVE-2018-1058": {
+      "e615d237173915f6ec555b4f8d7f5d43385e8449": "Account for special '$user' variable appearing as first schema in search_path (#35567)\n\nGiven that the default search_path value in a PostgreSQL installation is '\"$user\", public', or perhaps just '\"$user\"', as may be the case if hardened against CVE-2018-1058, it is preferable to account for the possibility that an end-user may wish to configure a PostgreSQL database connection in Laravel to mimic said default.\r\n\r\nNow, if '$user' is the first schema in the search_path, the PostgresBuilder will resolve that schema name to the username defined on the database connection whenever appropriate, e.g., in the hasTable() and getColumnListing() methods."
+    }
+  }
+}

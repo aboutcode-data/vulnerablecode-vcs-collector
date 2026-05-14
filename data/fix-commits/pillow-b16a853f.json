@@ -1,0 +1,90 @@
+{
+  "vcs_url": "https://github.com/python-pillow/pillow",
+  "vulnerabilities": {
+    "CVE-2014-3589": {
+      "c69dcc1c2969406155788d4c3f4e8fb496490f5d": "Fix headers and retro-add notes for #7864\n\n- Include CVE link in title (via @hugovk)\n- Retro-add release notes for 2.3.2, 2.5.2 for CVE-2014-3589",
+      "9cc0e47ec27ab56e5b4b253fd9120800f829b6e8": "Merge pull request #845 from wiredfool/icns_cve\n\nIcns DOS fix --  CVE-2014-3589",
+      "205e056f8f9b06ed7b925cf8aa0874bc4aaf8a7d": "Icns DOS fix --  CVE-2014-3589\n\nFound and reported by Andrew Drake of dropbox.com",
+      "5efeed77666bfd17708f3434b1d2daa9db1e1335": "Icns DOS fix -- CVE-2014-3589\n\nFound and reported by Andrew Drake of dropbox.com",
+      "d47611e6fbb808ea109366781dd76559ffb80bcd": "Icns DOS fix --  CVE-2014-3589\n\nFound and reported by Andrew Drake of dropbox.com"
+    },
+    "CVE-2023-44271": {
+      "bee9c597164ecb72e5454aabbe61484fce504ddd": "Merge pull request #7520 from hugovk/CVE-2023-44271\n\nAdd CVE-2023-44271 to release notes",
+      "5339c1cf63bb4ea43739ac293bdd801a316e66b2": "Add CVE-2023-44271 to ImageFont.MAX_STRING_LENGTH fix in release notes"
+    },
+    "CVE-2007-4559": {
+      "13dee16f99b38e16e3ff0a2e5687e7e422deea19": "Merge pull request #6704 from nulano/cve-2007-4559\n\nCVE-2007-4559 patch in winbuild"
+    },
+    "CVE-2021-25292": {
+      "356681faaeb81ec7d2956c086035ac43d26cf09c": "Merge pull request #5393 from hugovk/test-redos\n\nAdd test for CVE-2021-25292 ReDoS",
+      "bde149be384635ede45e0a5bde7dc3f7cb4ae039": "Add test for CVE-2021-25292 ReDoS",
+      "521dab94c7ab72b037bd9a83e9663401e0fd2cee": "Use more specific regex chars to prevent ReDoS\n\n* CVE-2021-25292",
+      "3bce145966374dd39ce58a6fc0083f8d1890719c": "Use more specific regex chars to prevent ReDoS\n\n* CVE-2021-25292"
+    },
+    "CVE-2021-28678": {
+      "496245aa4365d0827390bd0b6fbd11287453b3a1": "Fix BLP DOS -- CVE-2021-28678\n\n* BlpImagePlugin did not properly check that reads after jumping to\n  file offsets returned data. This could lead to a DOS where the\n  decoder could be run a large number of times on empty data\n* This dates to Pillow 5.1.0"
+    },
+    "CVE-2021-28675": {
+      "22e9bee4ef225c0edbb9323f94c26cee0c623497": "Fix DOS in PSDImagePlugin -- CVE-2021-28675\n\n* PSDImagePlugin did not sanity check the number of input layers and\n  vs the size of the data block, this could lead to a DOS on\n  Image.open prior to Image.load.\n* This issue dates to the PIL fork"
+    },
+    "CVE-2021-28676": {
+      "bb6c11fb889e6c11b0ee122b828132ee763b5856": "Fix FLI DOS -- CVE-2021-28676\n\n* FliDecode did not properly check that the block advance was\n  non-zero, potentally leading to an infinite loop on load.\n* This dates to the PIL Fork\n* Found with oss-fuzz"
+    },
+    "CVE-2021-28677": {
+      "5a5e6db0abf4e7a638fb1b3408c4e495a096cb92": "Fix EPS DOS on _open -- CVE-2021-28677\n\n* The readline used in EPS has to deal with any combination of \\r and\n  \\n as line endings. It used an accidentally quadratic method of\n  accumulating lines while looking for a line ending.\n* A malicious EPS file could use this to perform a DOS of Pillow in\n  the open phase, before an image was accepted for opening.\n* This dates to the PIL Fork"
+    },
+    "CVE-2021-25287": {
+      "3bf5eddb89afdf690eceaa52bc4d3546ba9a5f87": "Fix OOB Read in Jpeg2KDecode CVE-2021-25287,CVE-2021-25288\n\n* For J2k images with multiple bands, it's legal in to have different\n  widths for each band, e.g. 1 byte for L, 4 bytes for A\n* This dates to Pillow 2.4.0"
+    },
+    "CVE-2021-25288": {
+      "3bf5eddb89afdf690eceaa52bc4d3546ba9a5f87": "Fix OOB Read in Jpeg2KDecode CVE-2021-25287,CVE-2021-25288\n\n* For J2k images with multiple bands, it's legal in to have different\n  widths for each band, e.g. 1 byte for L, 4 bytes for A\n* This dates to Pillow 2.4.0"
+    },
+    "CVE-2021-25291": {
+      "8b8076bdcb3815be0ef0d279651d8d1342b8ea61": "Fix for CVE-2021-25291\n\n* Invalid tile boundaries lead to OOB Read in TiffDecode.c, in TiffReadRGBATile\n* Check the tile validity before attempting to read.",
+      "cbdce6c5d054fccaf4af34b47f212355c64ace7a": "Fix for CVE-2021-25291\n\n* Invalid tile boundaries lead to OOB Read in TiffDecode.c, in TiffReadRGBATile\n* Check the tile validity before attempting to read."
+    },
+    "CVE-2021-25290": {
+      "e25be1e33dc526bfd1094bc778a54d8e29bf66c9": "Fix negative size read in TiffDecode.c\n\n* Caught by oss-fuzz runs\n* CVE-2021-25290",
+      "86f02f7c70862a0954bfe8133736d352db978eaa": "Fix negative size read in TiffDecode.c\n\n* Caught by oss-fuzz runs\n* CVE-2021-25290"
+    },
+    "CVE-2021-25293": {
+      "f891baa604636cd2506a9360d170bc2cf4963cc5": "Fix OOB read in SgiRleDecode.c\n\n* From Pillow 4.3.0->8.1.0\n* CVE-2021-25293",
+      "4853e522bddbec66022c0915b9a56255d0188bf9": "Fix OOB read in SgiRleDecode.c\n\n* From Pillow 4.3.0->8.1.0\n* CVE-2021-25293"
+    },
+    "CVE-2021-25289": {
+      "cbfdde7b1f2295059a20a539ee9960f0bec7b299": "Incorrect error code checking in TiffDecode.c\n\n* since Pillow 8.1.0\n* CVE-2021-25289",
+      "3fee28eb9479bf7d59e0fa08068f9cc4a6e2f04c": "Incorrect error code checking in TiffDecode.c\n\n* since Pillow 8.1.0\n* CVE-2021-25289"
+    },
+    "CVE-2020-35655": {
+      "2f409261eb1228e166868f8f0b5da5cda52e55bf": "Fix for CVE CVE-2020-35655 - Read Overflow in PCX Decoding.\n\n* Don't trust the image to specify a buffer size",
+      "7e95c63fa7f503f185d3d9eb16b9cee1e54d1e46": "Fix for SGI Decode buffer overrun CVE-2020-35655\n\n* Independently found by a contributor and sent to Tidelift, and by Google's OSS Fuzz."
+    },
+    "CVE-2020-35654": {
+      "eb8c1206d6b170d4e798a00db7432e023853da5c": "Fix CVE-2020-35654 - OOB Write in TiffDecode.c\n\n* In some circumstances with some versions of libtiff (4.1.0+), there\n  could be a 4 byte out of bound write when decoding a YCbCr tiff.\n* The Pillow code dates to 6.0.0\n* Found and reported through Tidelift"
+    },
+    "CVE-2016-3076": {
+      "d00d8571c2cc7e0f137e4ce4b3669d0698dee79b": "Fixed j2k integer overflow error on encode - CVE-2016-3076",
+      "a1f244343df389cf15cdfff80327594821097295": "Fixed j2k integer overflow error on encode - CVE-2016-3076"
+    },
+    "CVE-2016-0740": {
+      "717720b0516b5e94b18dcc0a4383d56fe03f0db9": "Fix for buffer overflow in TiffDecode.c CVE-2016-0740",
+      "6dcbf5bd96b717c58d7b642949da8d323099928e": "Fix for buffer overflow in TiffDecode.c CVE-2016-0740"
+    },
+    "CVE-2016-0775": {
+      "893a40850c2d5da41537958e40569c029a6e127b": "FLI overflow error fix and testcase CVE-2016-0775",
+      "bcaaf97f4ff25b3b5b9e8efeda364e17e80858ec": "FLI overflow error fix and testcase CVE-2016-0775"
+    },
+    "CVE-2014-3598": {
+      "347a1d8d956f9e64af4463ee25311b60cdd5657d": "J2k DOS fix --  CVE-2014-3598\n\nFound and reported by Andrew Drake of dropbox.com",
+      "05a169d65c19940495c26769ae66c5d1a001cb9f": "J2k DOS fix --  CVE-2014-3598\n\nFound and reported by Andrew Drake of dropbox.com"
+    },
+    "CVE-2014-1932": {
+      "4e9f367dfd3f04c8f5d23f7f759ec12782e10ee7": "Removed tempfile.mktemp, fixes CVE-2014-1932 CVE-2014-1933, debian bug #737059",
+      "1e331e3e6a40141ca8eee4f5da9f74e895423b66": "Removed tempfile.mktemp, fixes CVE-2014-1932 CVE-2014-1933, debian bug #737059"
+    },
+    "CVE-2014-1933": {
+      "4e9f367dfd3f04c8f5d23f7f759ec12782e10ee7": "Removed tempfile.mktemp, fixes CVE-2014-1932 CVE-2014-1933, debian bug #737059",
+      "1e331e3e6a40141ca8eee4f5da9f74e895423b66": "Removed tempfile.mktemp, fixes CVE-2014-1932 CVE-2014-1933, debian bug #737059"
+    }
+  }
+}

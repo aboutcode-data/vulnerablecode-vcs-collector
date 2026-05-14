@@ -1,0 +1,18 @@
+{
+  "vcs_url": "https://github.com/apache/commons-beanutils",
+  "vulnerabilities": {
+    "CVE-2025-48734": {
+      "f799bbeb42f1b3f6ce603c86f42740e78b6fbcf5": "Document release of CVE-2025-48734\n\nCVE-2025-48734: Apache Commons BeanUtils: PropertyUtilsBean does not suppresses an enum's declaredClass property by default (https://www.cve.org/CVERecord?id=CVE-2025-48734)",
+      "7634d8a359f18f3b9ae311c685fe7639d4446f34": "Document release of CVE-2025-48734\n\nCVE-2025-48734: Apache Commons BeanUtils: PropertyUtilsBean does not suppresses an enum's declaredClass property by default (https://www.cve.org/CVERecord?id=CVE-2025-48734)",
+      "d4ab75f9f1e81d7658052d23e580539233fae4fd": "Document release of CVE-2025-48734\n\nCVE-2025-48734: Apache Commons BeanUtils: PropertyUtilsBean does not suppresses an enum's declaredClass property by default (https://www.cve.org/CVERecord?id=CVE-2025-48734)"
+    },
+    "CVE-2019-10086": {
+      "276d8c2eb23dc3fc8e1ec05789d11e3dc377ab01": "Add CVE-2019-10086 to the site's security page"
+    },
+    "CVE-2014-0114": {
+      "62e82ad92cf4818709d6044aaf257b73d42659a4": "BEANUTILS-520: mitigation for CVE-2014-0114",
+      "cf75130609144c2042255d27e5680c6560572882": "[BEANUTILS-520] BeanUtils2 mitigate CVE-2014-0114.",
+      "dd48f4e589462a8cdb1f29bbbccb35d6b0291d58": "BEANUTILS-520: Mitigate CVE-2014-0114 by enabling SuppressPropertiesBeanIntrospector.SUPPRESS_CLASS by default. (#7)\n\nSquash and merge."
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "vcs_url": "https://github.com/nestjs/nest",
+  "vulnerabilities": {
+    "CVE-2025-15284": {
+      "d492171fd14d7d215bb6305f8cfd8d31fc31a4d0": "Merge pull request #16178 from Xilis/fix/body-parser-qs-cve\n\nfix(express): Update body-parser to 1.20.4 for CVE-2025-15284",
+      "b9ec98fee72b1cd841fa8d63e69fc60e062b3fa8": "fix(express): Update body-parser to 1.20.4 for CVE-2025-15284",
+      "5ab165a60d3077c5bbb1fe396c452ba169dcce5c": "Merge pull request #16157 from Xilis/fix/express-version-flexibility\n\nfix(express): Update express to 4.22.1 to address CVE-2025-15284",
+      "eb0f29d3b7f5647be97175390f18ee16f65324b4": "fix(express): update express to 4.22.1 to address CVE-2025-15284\n\nRefs: CVE-2025-15284"
+    },
+    "GHSA-PXG6-PF52-XH8X": {
+      "160c3b37d83283acd634b33f9a95cac63ebef959": "build(express): upgrade to express 4.2.1\n\nfixes vulnerabilites with cookie and path-to-regexp, see\nhttps://github.com/jshttp/cookie/security/advisories/GHSA-pxg6-pf52-xh8x\nhttps://github.com/advisories/GHSA-9wv6-86v2-598j"
+    },
+    "GHSA-9WV6-86V2-598J": {
+      "160c3b37d83283acd634b33f9a95cac63ebef959": "build(express): upgrade to express 4.2.1\n\nfixes vulnerabilites with cookie and path-to-regexp, see\nhttps://github.com/jshttp/cookie/security/advisories/GHSA-pxg6-pf52-xh8x\nhttps://github.com/advisories/GHSA-9wv6-86v2-598j"
+    },
+    "CVE-2022-24434": {
+      "552313966cca6244c53ab865d35cb752015668ae": "Merge pull request #9686 from sushant9096/master\n\nchore(express): bump multer 1.4.4 to 1.4.4-lts.1 to fix \"CVE-2022-24434\"",
+      "457139098d40793b389ca61b0582bb73b2d561f2": "fix(express): vulnerability \"CVE-2022-24434\"\n\nSigned-off-by: Sushant Zope <sushantzope9096@gmail.com>"
+    }
+  }
+}

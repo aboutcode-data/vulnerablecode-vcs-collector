@@ -1,0 +1,559 @@
+{
+  "vcs_url": "https://github.com/openbsd/src",
+  "vulnerabilities": {
+    "CVE-2026-45186": {
+      "104c674285fe383705a2815da1822a59d0fe9c04": "Update libexpat to version 2.8.1.\n\nRelevant for OpenBSD are security fixes #1216, other changes #1209.\nLibrary bump is not necessary.  CVE-2026-45186\n\nOK tb@"
+    },
+    "CVE-2026-41080": {
+      "04e2410ca848bb4089e04aa1decfee122bb47b16": "Backport fixes from libexpat version 2.8.0.\n\nRelevant for OpenBSD are security fixes #47 #1183.  Library bump\nis not necessary.  CVE-2026-41080\n\nOK tb@"
+    },
+    "CVE-2026-28390": {
+      "2fc71f321f1af7823fd119497c1eebbe5b8e82c6": "Fix NULL deref for malformed OAEP parameters in CMS decryption\n\nThis converts rsa_cms_decrypt() to use X509_ALGOR_get0() and fixes a\nNULL deref when a parameter is (invalidly) omitted similar to the fix\nin ec/ec_ameth.c r1.66 from a couple years back. There is currently\nan XXX annotating a hairy leak due to trying to be smart and stealing\nthe parameters from the oaep object. Instead, just make a copy of the\nlabel string and free it in the exit path.\n\nThe diff adds an error for labellen == 0 since that is an invalid\nencoding of pSpecifiedEmpty (see RFC 8017) -- per the DER the default\nmust be omitted. This way we avoid a malloc(0) implementation-defined\nbehavior.\n\nThis minor issue was assigned CVE-2026-28390 by OpenSSL and was reported\nby too many to list. The fix is my own. It is similar to OpenSSL's fix\nonly because I rewiewed theirs and suggested an improvement or two.\n\nThis is the last of the \"security fixes\" in today's OpenSSL release that\n\"affect\" LibreSSL. All the other bugs were already fixed a few years back\nor we didn't have the code/bugs in the first place.\n\nok beck jsing"
+    },
+    "CVE-2026-28388": {
+      "842a6bbe1493b169f9c546a2d53488444675f82a": "Stop Delta CRL processing if a CRL number is misssing\n\nA malformed Delta CRL could cause a crash. Funnily enough the deserializer\nrecognizes this and marks such a CRL as invalid, but nothing ever checks\nthe EXFLAG_INVALID for CRLs. For certificates this would usually result in\nverification failure due to x509v3_cache_extensions() failing.\n\nThis is only reachable if the X509_V_FLAG_USE_DELTAS is used, which only\na handful of ports do, plus openssl(1) does if you use the undocumented\n-use_deltas flag.\n\nReported by Igor Morgenstern to OpenSSL who then sat on this since Jan 8\nand assigned CVE-2026-28388.\n\nok jsing"
+    },
+    "CVE-2026-32776": {
+      "b73ef35b3f5eed850d323f4e2db486f97014d738": "Update libexpat to version 2.7.5.\n\nRelevant for OpenBSD are security fixes #1158 #1161 #1162 #1163,\nother changes #1156 #1153.  Library bump is not necessary.\nCVE-2026-32776 CVE-2026-32777 CVE-2026-32778\n\ntested and OK tb@"
+    },
+    "CVE-2026-32777": {
+      "b73ef35b3f5eed850d323f4e2db486f97014d738": "Update libexpat to version 2.7.5.\n\nRelevant for OpenBSD are security fixes #1158 #1161 #1162 #1163,\nother changes #1156 #1153.  Library bump is not necessary.\nCVE-2026-32776 CVE-2026-32777 CVE-2026-32778\n\ntested and OK tb@"
+    },
+    "CVE-2026-32778": {
+      "b73ef35b3f5eed850d323f4e2db486f97014d738": "Update libexpat to version 2.7.5.\n\nRelevant for OpenBSD are security fixes #1158 #1161 #1162 #1163,\nother changes #1156 #1153.  Library bump is not necessary.\nCVE-2026-32776 CVE-2026-32777 CVE-2026-32778\n\ntested and OK tb@"
+    },
+    "CVE-2026-24515": {
+      "b4b604cd9c338a2447cc301245f4f02e3064e36c": "Update libexpat to version 2.7.4.\n\nRelevant for OpenBSD are security fixes #1131 #1075, bug fixes\n#1073, other changes #1105 #1106 #1051 #1109.  Library bump is not\nnecessary.  CVE-2026-24515 CVE-2026-25210\n\ntested and OK tb@"
+    },
+    "CVE-2026-25210": {
+      "b4b604cd9c338a2447cc301245f4f02e3064e36c": "Update libexpat to version 2.7.4.\n\nRelevant for OpenBSD are security fixes #1131 #1075, bug fixes\n#1073, other changes #1105 #1106 #1051 #1109.  Library bump is not\nnecessary.  CVE-2026-24515 CVE-2026-25210\n\ntested and OK tb@"
+    },
+    "CVE-2025-69421": {
+      "7a3d6f69f0a9b1766a54f549b550113ea4d460f1": "Add NULL pointer check to PKCS12_item_decrypt_d2i()\n\nAvoids a NULL pointer dereference triggerable by a malformed PCKS#12 file.\n\nFrom Luigino Camastra via OpenSSL (CVE-2025-69421)\n\nok jsing"
+    },
+    "CVE-2024-7594": {
+      "f0c5ff0ccd2eb997480875efd31d8cdd616b381c": "When certificate support was added to OpenSSH, certificates were\noriginally specified to represent any principal if the principals\nlist was empty.\n\nThis was, in retrospect, a mistake as it created a fail-open\nsituation if a CA could be convinced to accidentally sign a\ncertificate with no principals. This actually happened in a 3rd-\nparty CA product (CVE-2024-7594).\n\nSomewhat fortunately, the main pathway for using certificates in\nsshd (TrustedUserCAKeys) never supported empty-principals\ncertificates, so the blast radius of such mistakes was\nsubstantially reduced.\n\nThis change removes this footcannon and requires all certificates\ninclude principals sections. It also fixes interpretation of\nwildcard principals, and properly enables them for host\ncertificates only.\n\nThis is a behaviour change that will permanently break uses of\ncertificates with empty principals sections.\n\nok markus@"
+    },
+    "CVE-2025-11411": {
+      "127809470f79ccdcebfb705b15b57e9216d070f7": "Sync to unbound\n\n--------\nFix incomplete mitigation of CVE-2025-11411 by applying the non-test part of\nhttps://nlnetlabs.nl/downloads/unbound/patch_CVE-2025-11411_2_wtests.diff\n\nThis extends the previous fix by also scrubbing unsolicited NS RRSets (and\ntheir respective address records) for YXDOMAIN and nodata non-referral answers.\n--------",
+      "b89c80c7e69590358df864b598d6a03787a932ce": "Fix incomplete mitigation of CVE-2025-11411 by applying the non-test part of\nhttps://nlnetlabs.nl/downloads/unbound/patch_CVE-2025-11411_2_wtests.diff\n\nThis extends the previous fix by also scrubbing unsolicited NS RRSets (and\ntheir respective address records) for YXDOMAIN and nodata non-referral answers.",
+      "309d79dbd1df55c09f66f48f4b4356cff895caa3": "sync to unbound:\n\nadd upstream's commit to fix CVE-2025-11411 by scrubbing\nunsolicited NS RRSets (and their respective address records) from\nreplies.  ok florian\n\nhttps://nlnetlabs.nl/downloads/unbound/CVE-2025-11411.txt",
+      "a37023f05c72a4916de2ba5ed4a0339e2329e8fa": "unbound: add upstream's commit to fix CVE-2025-11411 by scrubbing\nunsolicited NS RRSets (and their respective address records) from\nreplies.  ok florian\n\nhttps://nlnetlabs.nl/downloads/unbound/CVE-2025-11411.txt"
+    },
+    "CVE-2025-62875": {
+      "2b660d1f723cac15f564f281dd8305aa0b804b04": "smtpd(8) can die if a malformed imsg is sent on the local socket.\nCVE-2025-62875\n\nthanks to Matthias Gerstner for report and analysis\nok op@"
+    },
+    "CVE-2025-9230": {
+      "5daacac8dff8aa6d743e0273f4a750af5d86331b": "cms: fix incorrect length check in kek_unwrap_key()\n\nAn incorrect length check can result in a 4-byte overwrite and an\n8-byte overread.\n\nFrom Stanislav Fort and Viktor Dukhovni via OpenSSL.\nCVE-2025-9230.\n\nok jsing"
+    },
+    "CVE-2025-59375": {
+      "c365191f90d5cc9f87b1f2de95995b822b26de64": "Update libexpat to version 2.7.3.\n\nRelevant for OpenBSD are security fixes #1046 #1048 #1059, other\nchanges #1043 #1062 #1056 #1057 #1058 #1045 #1041.  Library bump\nis not necessary.  CVE-2025-59375 CVE-2024-8176\n\nOK tb@",
+      "780244d3d6f2c738cc5079d9db0b65c5c326724b": "Update libexpat to version 2.7.2.\n\nRelevant for OpenBSD are security fixes #1018 #1034, other changes\n#1034 #1027 #994 #1000 #1036 #1010 #1011 #14 #1037 #999 #1001.\nMajor library bump is necessary as new feature constants have been\nadded to a public header file.  CVE-2025-59375\n\nOK tb@"
+    },
+    "CVE-2024-8176": {
+      "c365191f90d5cc9f87b1f2de95995b822b26de64": "Update libexpat to version 2.7.3.\n\nRelevant for OpenBSD are security fixes #1046 #1048 #1059, other\nchanges #1043 #1062 #1056 #1057 #1058 #1045 #1041.  Library bump\nis not necessary.  CVE-2025-59375 CVE-2024-8176\n\nOK tb@",
+      "70ab9842eb8b368612eb098db19dcf94c19d673d": "Update libexpat to version 2.7.0.\n\nRelevant for OpenBSD are security fixes #893 #973, other changes\n#921 #941 #959 #971 #969 #970.  No library bump necessary, only\nversion defines have been changed in public header file.  CVE-2024-8176\n\ntested and OK tb@"
+    },
+    "CVE-2014-8275": {
+      "aafaeed748588ea39f70131855fa92ddce72fb52": "Add missing check to X509_CRL_verify()\n\nWhen fixing CVE-2014-8275 in commit 684400ce, Henson added a check\nthat the AlgorithmIdentifier in the certificate's signature matches\nthe one in the tbsCertificate. A corresponding check for CRLs was\nmissed. BoringSSL added such a check in 2022, so this should be fine\nfor us to do as well even though OpenSSL still doesn't have it. The\nonly caller will set an error on the stack, so we don't do it here.\n\nThere's no obvious check that X509_REQ_verify() could do.\n\nok beck kenjiro",
+      "df47532e50d49e27310270ee8f66ad3811b510c9": "Fix a number of issues relating to algorithms in signatures, Mostly\nfrom OpenSSL with a hint of boring and some things done here. Addresses\nCVE-2014-8275 for OpenSSL fully\nok miod@ doug@"
+    },
+    "CVE-2024-56406": {
+      "f7487d631a74c0f50a687f245a945298898de411": "In Perl, non-ASCII bytes in the left-hand-side of the `tr` operator\ncan overflow an insufficiently sized buffer.  CVE-2024-56406\n\nfrom upstream via afresh1@"
+    },
+    "CVE-2024-50602": {
+      "aa071e6ed2e21e8e72a6aac46533908f2defbdef": "Update libexpat to version 2.6.4.\n\nRelevant for OpenBSD are security fix #915, other changes #905 #902\n#904 #317 #918 #914.  Major library bump is necessary as new error\nconstant has been added to a public header file.  CVE-2024-50602\n\nOK matthieu@ tb@ deraadt@"
+    },
+    "CVE-2024-8508": {
+      "df2ad42785c18a5b93e484b0a1a96d3e683b120d": "apply the CVE-2024-8508 fix from unbound (put a limit on resources used\nfor handling DNS compression). OK florian",
+      "3be9681c7fa1893f390466d4384a920c9214057a": "Fix unbound CVE-2024-8508, put a limit on resources used for handling\nDNS compression. OK florian\n\nFrom unbound 1.21.1 (rest will be merged shortly)."
+    },
+    "CVE-2024-45490": {
+      "61ad8a0768c7e5c0ffe929a1021382551fb8f04f": "Update libexpat to version 2.6.3.\n\nRelevant for OpenBSD are security fixes #887 #890 #888 #891 #889\n#892, other changes #886 #885, infrastructure #880.  No library\nbump necessary.  CVE-2024-45490 CVE-2024-45491 CVE-2024-45492\n\nOK tb@ deraadt@"
+    },
+    "CVE-2024-45491": {
+      "61ad8a0768c7e5c0ffe929a1021382551fb8f04f": "Update libexpat to version 2.6.3.\n\nRelevant for OpenBSD are security fixes #887 #890 #888 #891 #889\n#892, other changes #886 #885, infrastructure #880.  No library\nbump necessary.  CVE-2024-45490 CVE-2024-45491 CVE-2024-45492\n\nOK tb@ deraadt@"
+    },
+    "CVE-2024-45492": {
+      "61ad8a0768c7e5c0ffe929a1021382551fb8f04f": "Update libexpat to version 2.6.3.\n\nRelevant for OpenBSD are security fixes #887 #890 #888 #891 #889\n#892, other changes #886 #885, infrastructure #880.  No library\nbump necessary.  CVE-2024-45490 CVE-2024-45491 CVE-2024-45492\n\nOK tb@ deraadt@"
+    },
+    "CVE-2024-43688": {
+      "9170eb325dbfb3404b14fd1703eef7e0f7be4653": "Fix CVE-2024-43688, buffer underflow for very large step values\n\nIn get_number(), reject values that are so large that they are\ninterpreted as negative numbers.  In set_range(), step values smaller\nthan one or larger than the \"stop\" value are ignored.  This prevents\nbit_nset() from being called with out-of-range values.\n\nBug found by Dave G. of Supernetworks."
+    },
+    "CVE-2024-5535": {
+      "0a52d54c17a97c9e091b44cc815c8a172176da08": "Fix SSL_select_next_proto()\n\nSSL_select_next_proto() is already quite broken by its design: const in,\nnon-const out, with the intention of pointing somewhere inside of the two\ninput pointers. A length returned in an unsigned char (because, you know,\nthe individual protocols are encoded in Pascal strings). Can't signal\nuailure either. It also has an unreachable public return code.\n\nAlso, due to originally catering to NPN, this function opportunistically\nselects a protocol from the second input (client) parameters, which makes\nlittle sense for ALPN since that means the server falls back to a protocol\nit doesn't (want to) support. If there's no overlap, it's the callback's\njob to signal error to its caller for ALPN.\n\nAs if that wasn't enough misdesign and bugs, the one we're concerned with\nhere wasn't reported to us twice in ten years is that if you pass this API\na zero-length (or a sufficiently malformed client protocol list), it would\nreturn a pointer pointing somewhere into the heap instead into one of the\ntwo input pointers. This pointer could then be interpreted as a Pascal\nstring, resulting in an information disclosure of up to 255 bytes from the\nheap to the peer, or a crash.\n\nThis can only happen for NPN (where it does happen in old python and node).\n\nA long time ago jsing removed NPN support from LibreSSL, because it had\nan utter garbage implementation and because it was practically unused.\nFirst it was already replaced by the somewhat less bad ALPN, and the only\nusers were the always same language bindings that tend to use every feature\nthey shouldn't use. There were a lot of complaints due to failing test\ncases in there, but in the end the decision turned out to be the right\none: the consequence is that LibreSSL isn't vulnerable to CVE-2024-5535.\n\nStill, there is a bug here to fix. It is completely straightforward to\ndo so. Rewrite this mess using CBS, preserving the current behavior.\nAlso, we do not follow BoringSSL's renaming of the variables. It would\nresult in confusing code in almost all alpn callbacks I've seen in the\nwild. The only exception is the accidental example of Qt.\n\nok jsing"
+    },
+    "CVE-2024-28757": {
+      "c033f77099126ed63d6da1f62993cd1af88e58ab": "Update libexpat to version 2.6.2.\n\nThe fix for CVE-2024-28757 has been applied earlier.  Relevant for\nOpenBSD are bug fixes #839 #841, and other change #829.  No library\nbump is necessary.\n\nOK deraadt@",
+      "c53bfe587459b8969b9f2306e53762f1dcfd401f": "Cerry-pick fix for CVE-2024-28757 from libexpat.\n\nDetect billion laughs attack with isolated external parser.\ngithub commit 1d50b80cf31de87750103656f6eb693746854aa8\n\nOK deraadt@"
+    },
+    "CVE-2024-1931": {
+      "22a98bd7aa1a829cdeacdbc8ee7f1585cc21f19a": "apply https://nlnetlabs.nl/downloads/unbound/patch_CVE-2024-1931.diff to\nunbound, fixing an indefinite loop that could be triggered by a client\nagainst an unbound server where the (non-default) configuration \"ede: yes\"\nis used.\n\nhttps://nlnetlabs.nl/downloads/unbound/CVE-2024-1931.txt\n\nok florian@"
+    },
+    "CVE-2023-50387": {
+      "fed3efa7ebe28a42f8790bbd65433d2483df6870": "Fix for CVE-2023-50387 and CVE-2023-50868.\n\nBoth can be used to cause high CPU load and potentially denial of\nservice with specifically crafted DNSSEC responses.\n\nThis is a sync with unbound(8).",
+      "817bdb8f8c00756cba1860e85cbb52fd1f125ba8": "Fix for CVE-2023-50387 and CVE-2023-50868.\n\nBoth can be used to cause high CPU load and potentially denial of\nservice with specifically crafted DNSSEC responses."
+    },
+    "CVE-2023-50868": {
+      "fed3efa7ebe28a42f8790bbd65433d2483df6870": "Fix for CVE-2023-50387 and CVE-2023-50868.\n\nBoth can be used to cause high CPU load and potentially denial of\nservice with specifically crafted DNSSEC responses.\n\nThis is a sync with unbound(8).",
+      "817bdb8f8c00756cba1860e85cbb52fd1f125ba8": "Fix for CVE-2023-50387 and CVE-2023-50868.\n\nBoth can be used to cause high CPU load and potentially denial of\nservice with specifically crafted DNSSEC responses."
+    },
+    "CVE-2023-52425": {
+      "bd8f1dc3b0e01803a74947836eef57849c13acb0": "Update libexpat to version 2.6.0.\n\nThis fixes CVE-2023-52425.  OpenBSD is not affected by CVE-2023-52426.\nRelevant for OpenBSD are security fixes #789 #814, bug fixes #753\n#812 #813, other changes #771 #788 #764 #765, and examples, docs,\ncompiler warnings, clang-tidy, tests.  Only a minor library bump\nis necessary, this has been discussed with tb@ guenther@ kettenis@.\n\nOK deraadt@"
+    },
+    "CVE-2023-52426": {
+      "bd8f1dc3b0e01803a74947836eef57849c13acb0": "Update libexpat to version 2.6.0.\n\nThis fixes CVE-2023-52425.  OpenBSD is not affected by CVE-2023-52426.\nRelevant for OpenBSD are security fixes #789 #814, bug fixes #753\n#812 #813, other changes #771 #788 #764 #765, and examples, docs,\ncompiler warnings, clang-tidy, tests.  Only a minor library bump\nis necessary, this has been discussed with tb@ guenther@ kettenis@.\n\nOK deraadt@"
+    },
+    "CVE-2023-4809": {
+      "45550d4a98dbed629b022333d58322e23454c128": "Test pf and stack with double atomic IPv6 fragments.\n\nThat means the IPv6 header chain contains two fragment header that\nspawn the whole packet.  Such packets are illegal and pf drops them.\nOtherwise they could bypass pf rules as described in CVE-2023-4809.\nOpenBSD is not affected as pf_walk_header6() drops them with \"IPv6\nmultiple fragment\" log message.  This check exists since 2013 when\nspecial support for atomic fragments was added to pf.\n\nIf pf is disabled, the IPv6 stack accepts such packets.  I do not\nconsider this a security issue."
+    },
+    "CVE-2023-0401": {
+      "aa5715c96c457686015e476e775057a0acd5b072": "Add missing error checking in PKCS7\n\nCheck the return value of BIO_set_md(). Prompted by OpenSSL's fix for\nCVE-2023-0401 (the crash in that bug is an OpenSSL 3-only problem due\nto provider design).\n\nok beck jsing"
+    },
+    "CVE-2023-24056": {
+      "99a8c03ea500ea834cd0ac62431ef4196ce6a0f2": "Fix CVE-2023-24056, unbounded variable expansion in pkg-config.\nWe now die with an error when trying to expand a variable that is\nalready longer than 64K.  This was never a buffer overflow in our\npkg-config, but rather an unbounded memory allocation that would\neventually run up against resource limits.  OK sthen@ jasper@"
+    },
+    "CVE-2021-44532": {
+      "0cffdb45a9bb573ce4665f5540d1a0d50ff2e37f": "acme-client: fix SAN-handling insanity\n\nThe revoke process, which does a lot more than revoking a cert, wants to\nknow the SANs in the cert to be revoked or renewed and check them against\nthe ones configured in the config file.\n\nTo find out which ones are, it prints the SAN extension to a BIO using\nX509V3_EXT_print(), slurps that into a buffer, tokenizes the undocumented\noutput string and plucks out the \"DNS:\" names. This is reminiscent of\nnode's hilarious CVE-2021-44532 and on about the same level of crazy, but\nfortunately not security relevant.\n\nGet the SAN extension as a GENERAL_NAMES from libcrypto, then we have an\nactual data structure to work with, which allows us to access the DNS names\nwithout problems. This simplifies things quite a bit, but the actual logic\nin this file remains unmodified. Be careful about ASN1_IA5STRINGs and do\nnot assume they are C strings.\n\nTested by florian, millert, Renaud Allard, thanks!\n\nok florian jsing"
+    },
+    "CVE-2022-43680": {
+      "751a8f41a926cac5cc0587722fe35d38520b2eb7": "Update libexpat to 2.5.0.  This fixes CVE-2022-43680.  Relevant for\nOpenBSD are security fixes #616 #649 #650 and bug fixes #612 #645\n#613 #654 #616 #652 #653.  No library bump necessary.\nOK tb@"
+    },
+    "CVE-2022-40674": {
+      "9029d806cde5d118c7772b9602e3084da659cddd": "Update libexpat to 2.4.9.  This fixes CVE-2022-40674.  Relevant for\nOpenBSD are security fixes #629 #640 and other changes #610 #643.\nNo library bump necessary.\nOK deraadt@"
+    },
+    "CVE-2022-25235": {
+      "253fd6bf9902c2fdcde530df57faaf1dbcf5206f": "Update libexpat to 2.4.6.  This fixes CVE-2022-25235, CVE-2022-25236\nCVE-2022-25313, CVE-2022-25314, and CVE-2022-25315.  Relevant for\nOpenBSD are security fixes #558 #559 #560 #561 #562 and bug fixes\n#566.  No library bump necessary.\nOK tb@"
+    },
+    "CVE-2022-25236": {
+      "253fd6bf9902c2fdcde530df57faaf1dbcf5206f": "Update libexpat to 2.4.6.  This fixes CVE-2022-25235, CVE-2022-25236\nCVE-2022-25313, CVE-2022-25314, and CVE-2022-25315.  Relevant for\nOpenBSD are security fixes #558 #559 #560 #561 #562 and bug fixes\n#566.  No library bump necessary.\nOK tb@"
+    },
+    "CVE-2022-25313": {
+      "253fd6bf9902c2fdcde530df57faaf1dbcf5206f": "Update libexpat to 2.4.6.  This fixes CVE-2022-25235, CVE-2022-25236\nCVE-2022-25313, CVE-2022-25314, and CVE-2022-25315.  Relevant for\nOpenBSD are security fixes #558 #559 #560 #561 #562 and bug fixes\n#566.  No library bump necessary.\nOK tb@"
+    },
+    "CVE-2022-25314": {
+      "253fd6bf9902c2fdcde530df57faaf1dbcf5206f": "Update libexpat to 2.4.6.  This fixes CVE-2022-25235, CVE-2022-25236\nCVE-2022-25313, CVE-2022-25314, and CVE-2022-25315.  Relevant for\nOpenBSD are security fixes #558 #559 #560 #561 #562 and bug fixes\n#566.  No library bump necessary.\nOK tb@"
+    },
+    "CVE-2022-25315": {
+      "253fd6bf9902c2fdcde530df57faaf1dbcf5206f": "Update libexpat to 2.4.6.  This fixes CVE-2022-25235, CVE-2022-25236\nCVE-2022-25313, CVE-2022-25314, and CVE-2022-25315.  Relevant for\nOpenBSD are security fixes #558 #559 #560 #561 #562 and bug fixes\n#566.  No library bump necessary.\nOK tb@"
+    },
+    "CVE-2022-23852": {
+      "7f817ade34f17ecb3781fdb1cc6552d9790bcf70": "Update libexpat to 2.4.4.  This fixes CVE-2022-23852 and CVE-2022-23990.\nRelevant for OpenBSD are security fixes #550 #551 and other changes\n#553 (missing in change log).  No library bump necessary.\nOK millert@"
+    },
+    "CVE-2022-23990": {
+      "7f817ade34f17ecb3781fdb1cc6552d9790bcf70": "Update libexpat to 2.4.4.  This fixes CVE-2022-23852 and CVE-2022-23990.\nRelevant for OpenBSD are security fixes #550 #551 and other changes\n#553 (missing in change log).  No library bump necessary.\nOK millert@"
+    },
+    "CVE-2021-45960": {
+      "2c19dcf8d95af7b2b4a1f370f8f03efeacadec60": "Update libexpat to 2.4.3.  This fixes CVE-2021-45960, CVE-2021-46143,\nand CVE-2022-22822 to CVE-2022-22827.  Relevant for OpenBSD are\nsecurity fixes #531 #534 #532 #538 #539 and other changes #527 #513\n#514 #502 #503.  No library bump necessary.\nOK millert@"
+    },
+    "CVE-2021-46143": {
+      "2c19dcf8d95af7b2b4a1f370f8f03efeacadec60": "Update libexpat to 2.4.3.  This fixes CVE-2021-45960, CVE-2021-46143,\nand CVE-2022-22822 to CVE-2022-22827.  Relevant for OpenBSD are\nsecurity fixes #531 #534 #532 #538 #539 and other changes #527 #513\n#514 #502 #503.  No library bump necessary.\nOK millert@"
+    },
+    "CVE-2022-22822": {
+      "2c19dcf8d95af7b2b4a1f370f8f03efeacadec60": "Update libexpat to 2.4.3.  This fixes CVE-2021-45960, CVE-2021-46143,\nand CVE-2022-22822 to CVE-2022-22827.  Relevant for OpenBSD are\nsecurity fixes #531 #534 #532 #538 #539 and other changes #527 #513\n#514 #502 #503.  No library bump necessary.\nOK millert@"
+    },
+    "CVE-2022-22827": {
+      "2c19dcf8d95af7b2b4a1f370f8f03efeacadec60": "Update libexpat to 2.4.3.  This fixes CVE-2021-45960, CVE-2021-46143,\nand CVE-2022-22822 to CVE-2022-22827.  Relevant for OpenBSD are\nsecurity fixes #531 #534 #532 #538 #539 and other changes #527 #513\n#514 #502 #503.  No library bump necessary.\nOK millert@"
+    },
+    "CVE-2021-36770": {
+      "c50a90c55782761bf348230c6e982e9e312a0c70": "Fix Encode(3p) loading module from incorrect relative path\n\nThis is upstream commit\nhttps://github.com/Perl/perl5/commit/c1a937fef07c061600a0078f4cb53fe9c2136bb9\n\nQuoting upstream:\n\n    Without this fix, Encode::ConfigLocal can be loaded from a path\n    relative to the current directory, because the || operator will\n    evaluate @inc in scalar context, putting an integer as the only\n    value in @inc.\n\nAddresses CVE-2021-36770"
+    },
+    "CVE-2013-0340": {
+      "08819b4170fcd59bf2520ff6a2d2af47b8c56234": "Update libexpat to 2.4.1.  This fixes CVE-2013-0340.  Relevant for\nOpenBSD are security fixes #34 #466 #484 and other changes #467\n#473 #483.  A new error number in a public header requires a major\nlibrary bump.  Two functions have been added to API.\nOK tb@"
+    },
+    "CVE-2016-6309": {
+      "31b5396f6d1049be7fb5480f418975bd14813012": "Enable test-cve-2016-6309.py"
+    },
+    "CVE-2020-25648": {
+      "bb0ca7986b24fc01ca950482a42857514f70683c": "Add new test-tls13-multiple-ccs-messages.py\n\nThis is a test that checks for NSS's CCS flood DoS CVE-2020-25648.\nThe test script currently fails on LibreSSL and OpenSSL 1.1.1j because\nit sends invalid records with version 0x0300 instead of 0x0303.\nWe have the ccs_seen logic corresponding to NSS's fix:\nhttps://hg.mozilla.org/projects/nss/rev/57bbefa793232586d27cee83e74411171e128361\nbut we do allow up to two CCS due to an interop issue with Fizz, so\nat least one of the tests will likey be broken once the record version\nis fixed."
+    },
+    "CVE-2021-23840": {
+      "885969450102e2201056743ce572cf8e5180b3f1": "Pull in fix for EVP_CipherUpdate() overflow from OpenSSL.\n\nok inoguchi\n\ncommit 6a51b9e1d0cf0bf8515f7201b68fb0a3482b3dc1\nAuthor: Matt Caswell <matt@openssl.org>\nDate:   Tue Feb 2 17:17:23 2021 +0000\n\n    Don't overflow the output length in EVP_CipherUpdate calls\n\n    CVE-2021-23840\n\n    Reviewed-by: Paul Dale <pauli@openssl.org>"
+    },
+    "CVE-2020-10543": {
+      "1510771fee0a4018f433f239923dfd9a9a2a2e78": "Fix various overflows and state corruption in perl\n\nFound by: ManhND of The Tarantula Team, VinCSS (a member of Vingroup),\n          Hugo van der Sanden, Slaven Rezic, and Sergey Aleynikov\nFixed by: John Lightsey, Hugo van der Sanden, and Karl Williamson\n\nAddresses:\n* CVE-2020-10543\n* CVE-2020-10878\n* CVE-2020-12723"
+    },
+    "CVE-2020-10878": {
+      "1510771fee0a4018f433f239923dfd9a9a2a2e78": "Fix various overflows and state corruption in perl\n\nFound by: ManhND of The Tarantula Team, VinCSS (a member of Vingroup),\n          Hugo van der Sanden, Slaven Rezic, and Sergey Aleynikov\nFixed by: John Lightsey, Hugo van der Sanden, and Karl Williamson\n\nAddresses:\n* CVE-2020-10543\n* CVE-2020-10878\n* CVE-2020-12723"
+    },
+    "CVE-2020-12723": {
+      "1510771fee0a4018f433f239923dfd9a9a2a2e78": "Fix various overflows and state corruption in perl\n\nFound by: ManhND of The Tarantula Team, VinCSS (a member of Vingroup),\n          Hugo van der Sanden, Slaven Rezic, and Sergey Aleynikov\nFixed by: John Lightsey, Hugo van der Sanden, and Karl Williamson\n\nAddresses:\n* CVE-2020-10543\n* CVE-2020-10878\n* CVE-2020-12723"
+    },
+    "CVE-2019-19519": {
+      "13053edc2f30540fa66763e29d0a8eec43f1aa53": "In -L (loop) mode, reset the login class each time through the loop.\nOtherwise, it is possible to log in with another user's login class.\nFixes CVE-2019-19519.  OK deraadt@ markus@"
+    },
+    "CVE-2008-2476": {
+      "b1a121060c68bc31bc5e8206c0fbc36c4102c949": "Don't check that the ipv6 source address of a neighbor advertisment is\nfrom a neighbor's address. Sthen@ dug out RFC 4861 4.4 that says that\nthe source address is \"An address assigned to the interface from which\nthe advertisement is sent.\" -- which can be from a network that the\nreceiver does not know about. Indeed my provider sends such a neighbor\nadvertisment for my default gateway, which breaks my uplink.\n\nClaudio@ added this check for symetry with NetBSD code when he added\nthe same check to nd6_ns_input(), where it is needed to fix\nCVE-2008-2476. See also OpenBSD 4.2 errata 15.\n\nok claudio@, kn@"
+    },
+    "CVE-2019-1563": {
+      "0ae7bae487df98e77da13963066cff2e934b3561": "Fix a padding oracle in PKCS7_dataDecode and CMS_decrypt_set1_pkey.\n(Note that the CMS code is currently disabled.)\n\nPort of Edlinger's Fix for CVE-2019-1563 from OpenSSL 1.1.1 (old license)\n\ntests from bluhm@\nok jsing\n\ncommit e21f8cf78a125cd3c8c0d1a1a6c8bb0b901f893f\nAuthor: Bernd Edlinger <bernd.edlinger@hotmail.de>\nDate:   Sun Sep 1 00:16:28 2019 +0200\n\n    Fix a padding oracle in PKCS7_dataDecode and CMS_decrypt_set1_pkey\n\n    An attack is simple, if the first CMS_recipientInfo is valid but the\n    second CMS_recipientInfo is chosen ciphertext. If the second\n    recipientInfo decodes to PKCS #1 v1.5 form plaintext, the correct\n    encryption key will be replaced by garbage, and the message cannot be\n    decoded, but if the RSA decryption fails, the correct encryption key is\n    used and the recipient will not notice the attack.\n\n    As a work around for this potential attack the length of the decrypted\n    key must be equal to the cipher default key length, in case the\n    certifiate is not given and all recipientInfo are tried out.\n\n    The old behaviour can be re-enabled in the CMS code by setting the\n    CMS_DEBUG_DECRYPT flag.\n\n    Reviewed-by: Matt Caswell <matt@openssl.org>\n    (Merged from https://github.com/openssl/openssl/pull/9777)\n\n    (cherry picked from commit 5840ed0cd1e6487d247efbc1a04136a41d7b3a37)"
+    },
+    "CVE-2019-16866": {
+      "fadbf8b16087a42c3f8ae85748c8b0002b4d728d": "Fix CVE-2019-16866\n---\nRecent versions of Unbound contain a problem that may cause Unbound to\ncrash after receiving a specially crafted query. This issue can only be\ntriggered by queries received from addresses allowed by Unbound's ACL.\n---\ntested by benno, tb"
+    },
+    "CVE-2019-1547": {
+      "baf7262a6abf194713b645f69707db8ee0cce62b": "If a NULL or zero cofactor is passed to EC_GROUP_set_generator(),\ntry to compute it using Hasse's bound.  This works as long as the\ncofactor is small enough.\n\nPort of Brumley's fix for CVE-2019-1547 in OpenSSL 1.1.1 (old license)\n\ntests & ok inoguchi\ninput & ok jsing\n\ncommit 30c22fa8b1d840036b8e203585738df62a03cec8\nAuthor: Billy Brumley <bbrumley@gmail.com>\nDate:   Thu Sep 5 21:25:37 2019 +0300\n\n    [crypto/ec] for ECC parameters with NULL or zero cofactor, compute it\n\n    The cofactor argument to EC_GROUP_set_generator is optional, and SCA\n    mitigations for ECC currently use it. So the library currently falls\n    back to very old SCA-vulnerable code if the cofactor is not present.\n\n    This PR allows EC_GROUP_set_generator to compute the cofactor for all\n    curves of cryptographic interest. Steering scalar multiplication to more\n    SCA-robust code.\n\n    This issue affects persisted private keys in explicit parameter form,\n    where the (optional) cofactor field is zero or absent.\n\n    It also affects curves not built-in to the library, but constructed\n    programatically with explicit parameters, then calling\n    EC_GROUP_set_generator with a nonsensical value (NULL, zero).\n\n    The very old scalar multiplication code is known to be vulnerable to\n    local uarch attacks, outside of the OpenSSL threat model. New results\n    suggest the code path is also vulnerable to traditional wall clock\n    timing attacks.\n\n    CVE-2019-1547\n\n    Reviewed-by: Matt Caswell <matt@openssl.org>\n    Reviewed-by: Tomas Mraz <tmraz@fedoraproject.org>\n    Reviewed-by: Nicola Tuveri <nic.tuv@gmail.com>\n    (Merged from https://github.com/openssl/openssl/pull/9781)"
+    },
+    "CVE-2019-15903": {
+      "28ce31191121e9d8ab02660bd8b761ed56c7239d": "Update libexpat to 2.2.8.  CVE-2019-15903 has been fixed earlier\nin our tree.  Relevant is only bug fix #240.  Most of the upstream\ndiff is automated source format change.\nOK deraadt@",
+      "94f813b1ac1976a9bc44d138e18e431daa23b906": "Fix heap overflow in libexpat 2.2.7 triggered by XML_GetCurrentLineNumber\n(or XML_GetCurrentColumnNumber), and deny internal entities closing\nthe doctype; CVE-2019-15903\nfixed in commit c20b758c332d9a13afbbb276d30db1d183a85d43\nOK tb@"
+    },
+    "CVE-2019-1125": {
+      "5c3fa5a3cf0f4823ae1dce174ce77d5435e353bc": "Mitigate CVE-2019-1125: block speculation past conditional jump to mis-skip\nor mis-take swapgs in interrupt path and in trap/fault/exception path.  The\nlatter is improved to have no conditionals around this when Meltdown mitigation\nis in effect.  Codepatch out the fences based on the description of CPU bugs\nin the (well written) Linux commit message.\n\nfeedback from kettenis@\nok deraadt@"
+    },
+    "CVE-2018-20843": {
+      "04da35325a0b76a93dd9d4b7a4f30e6c39138f1a": "Update libexpat to 2.2.7.  Relevant for OpenBSD is only the fix for\nCVE-2018-20843, a potential denial-of-service in libexpat due to\nhigh RAM and CPU usage.\nOK deraadt@"
+    },
+    "CVE-2017-5715": {
+      "218a2c1fee50252229ac54387154c95ac3dd362b": "Cortex A76 is not affected by spectre variant 2 branch target injection\nattacks described in CVE-2017-5715 and ATF does not implement a\nworkaround for Cortex A76.",
+      "2d5eadd64df901d955fd38b3ba062383c0543bcb": "Simplify the CVE-2017-5715 workaround code.  Marvell backported SMSCCC 1.1\nsupport to their ATF fork and I expect other vendors that bothered to\nbackport the early workaround to do the same.  And another ATF update is\nneeded anyway to implement the workaround for Spectre variant 4i\n(CVE-2018-3639).\n\nok patrick@, mlarkin@, jsg@"
+    },
+    "CVE-2018-18311": {
+      "b3b446fd892e1db0a21af54b805cff07ce462df4": "Fix various overflows in perl\n\nAddresses:\n* CVE-2018-18311 (Perl RT #133204)\n* CVE-2018-18312 (Perl RT #133423)\n* CVE-2018-18313 (Perl RT #133192)\n* CVE-2018-18314 (Perl RT #131649)"
+    },
+    "CVE-2018-18312": {
+      "b3b446fd892e1db0a21af54b805cff07ce462df4": "Fix various overflows in perl\n\nAddresses:\n* CVE-2018-18311 (Perl RT #133204)\n* CVE-2018-18312 (Perl RT #133423)\n* CVE-2018-18313 (Perl RT #133192)\n* CVE-2018-18314 (Perl RT #131649)"
+    },
+    "CVE-2018-18313": {
+      "b3b446fd892e1db0a21af54b805cff07ce462df4": "Fix various overflows in perl\n\nAddresses:\n* CVE-2018-18311 (Perl RT #133204)\n* CVE-2018-18312 (Perl RT #133423)\n* CVE-2018-18313 (Perl RT #133192)\n* CVE-2018-18314 (Perl RT #131649)"
+    },
+    "CVE-2018-18314": {
+      "b3b446fd892e1db0a21af54b805cff07ce462df4": "Fix various overflows in perl\n\nAddresses:\n* CVE-2018-18311 (Perl RT #133204)\n* CVE-2018-18312 (Perl RT #133423)\n* CVE-2018-18313 (Perl RT #133192)\n* CVE-2018-18314 (Perl RT #131649)"
+    },
+    "CVE-2018-0735": {
+      "a67a257033acbb062d165946647d1898007eb802": "Port OpenSSL commit 99540ec79491f59ed8b46b4edf130e17dc907f52 -- mitigation\nfor a timing vullnerability in ECDSA signature generation (CVE-2018-0735).\n\nNote that the blinding that we introduced back in June for ECDSA and DSA\nshould mitigate this and related issues. This simply adds an additional\nlayer of protection.\n\ndiscussed with jsing"
+    },
+    "CVE-2018-12015": {
+      "26f75d2d572a60c61c31a50e340e23ecfafc1c61": "Avoid Archive::Tar directory traversal\n\nAddresses CVE-2018-12015\nFrom Silamael <silamael () coronamundi ! de>\n\nOriginal bug reports:\nhttps://bugs.debian.org/cgi-bin/bugreport.cgi?bug=900834\nhttps://rt.cpan.org/Public/Bug/Display.html?id=125523\n\nOriginal commit with the fix:\nhttps://github.com/jib/archive-tar-new/commit/ae65651eab053fc6dc4590dbb863a268215c1fc5\n\nOK bluhm@, they should already be committed! deraadt@"
+    },
+    "CVE-2018-3639": {
+      "2d5eadd64df901d955fd38b3ba062383c0543bcb": "Simplify the CVE-2017-5715 workaround code.  Marvell backported SMSCCC 1.1\nsupport to their ATF fork and I expect other vendors that bothered to\nbackport the early workaround to do the same.  And another ATF update is\nneeded anyway to implement the workaround for Spectre variant 4i\n(CVE-2018-3639).\n\nok patrick@, mlarkin@, jsg@"
+    },
+    "CVE-2018-6913": {
+      "24ada909ab1e17820175378571f3c317b3bea339": "Correct heap overflow bugs in perl\n\n* RT #131844: [CVE-2018-6913] heap-buffer-overflow in S_pack_rec\n\nReported by GwanYeong Kim, fixed by Tony Cook.\n\n* RT #132063: [CVE-2018-6798] Heap-buffer-overflow in\nPerl__byte_dump_string (utf8.c)\n\nReported by Nguyen Duc Manh, fixed by Karl Williamson, Yves Orton, and\nTony Cook.\n\n* RT #132227: [CVE-2018-6797] heap-buffer-overflow (WRITE of size 1) in\nS_regatom (regcomp.c)\n\nReported by Brian Carpenter, fixed by Yves Orton, Karl Williamson, and\nTony Cook.\n\nMany thanks to deraadt@ tj@ bluhm@ tb@ robert@"
+    },
+    "CVE-2018-6798": {
+      "24ada909ab1e17820175378571f3c317b3bea339": "Correct heap overflow bugs in perl\n\n* RT #131844: [CVE-2018-6913] heap-buffer-overflow in S_pack_rec\n\nReported by GwanYeong Kim, fixed by Tony Cook.\n\n* RT #132063: [CVE-2018-6798] Heap-buffer-overflow in\nPerl__byte_dump_string (utf8.c)\n\nReported by Nguyen Duc Manh, fixed by Karl Williamson, Yves Orton, and\nTony Cook.\n\n* RT #132227: [CVE-2018-6797] heap-buffer-overflow (WRITE of size 1) in\nS_regatom (regcomp.c)\n\nReported by Brian Carpenter, fixed by Yves Orton, Karl Williamson, and\nTony Cook.\n\nMany thanks to deraadt@ tj@ bluhm@ tb@ robert@"
+    },
+    "CVE-2018-6797": {
+      "24ada909ab1e17820175378571f3c317b3bea339": "Correct heap overflow bugs in perl\n\n* RT #131844: [CVE-2018-6913] heap-buffer-overflow in S_pack_rec\n\nReported by GwanYeong Kim, fixed by Tony Cook.\n\n* RT #132063: [CVE-2018-6798] Heap-buffer-overflow in\nPerl__byte_dump_string (utf8.c)\n\nReported by Nguyen Duc Manh, fixed by Karl Williamson, Yves Orton, and\nTony Cook.\n\n* RT #132227: [CVE-2018-6797] heap-buffer-overflow (WRITE of size 1) in\nS_regatom (regcomp.c)\n\nReported by Brian Carpenter, fixed by Yves Orton, Karl Williamson, and\nTony Cook.\n\nMany thanks to deraadt@ tj@ bluhm@ tb@ robert@"
+    },
+    "CVE-2018-0739": {
+      "55f5b47b5c1d209193894ebdaafeb79d4704bfa1": "Limit ASN.1 constructed types recursive definition depth\n\nFixes for CVE-2018-0739.\nCopied from commit below, and modified for adaption to our code.\nhttps://github.com/openssl/openssl/commit/9310d45087ae546e27e61ddf8f6367f29848220d\n\nok bcook@ beck@ jsing@"
+    },
+    "CVE-2017-12883": {
+      "bc7b845e7aa7bb67274375936e9101bc3308617a": "A buffer over-read and heap overflow in perl's regexp may result in\na crash or memory leak.\n\nFixes\n* CVE-2017-12883 (Buffer over-read)\n* CVE-2017-12837 (Heap overflow when compiling case-insensitive regexp)\n\nPatches by Karl Williamson"
+    },
+    "CVE-2017-12837": {
+      "bc7b845e7aa7bb67274375936e9101bc3308617a": "A buffer over-read and heap overflow in perl's regexp may result in\na crash or memory leak.\n\nFixes\n* CVE-2017-12883 (Buffer over-read)\n* CVE-2017-12837 (Heap overflow when compiling case-insensitive regexp)\n\nPatches by Karl Williamson"
+    },
+    "CVE-2017-9233": {
+      "2feb5d2a36a799a4048160a74a6d32eed43212af": "Update libexpat to version 2.2.1 which has some security fixes.\n- CVE-2017-9233 CVE-2016-9063 CVE-2016-5300 CVE-2016-4472 CVE-2016-0718\n  CVE-2015-2716 CVE-2015-1283 CVE-2012-6702 CVE-2012-0876 have been\n  addressed.  Not all of them affect OpenBSD as we had fixes before.\n- Upstream uses arc4random_buf(3) now.  Delete all code for other\n  entropy sources to make sure to compile the correct one.  Our\n  library already used arc4random(3) before.\n- The overflow fixes in rev 1.11 and 1.12 of lib/xmlparse.c\n  have been commited upstream in a different way.  Use the upstream\n  code to make maintenance easier.\n- Although it should be ABI compatible, there is a new global\n  symbol align_limit_to_full_utf8_characters.  As it is in\n  lib/internal.h, add a Symbols.map to restrict the export.  Do not\n  bump the shared library version.\n- Use the internal expat's siphash.h.\nports build ajacoutot@; move ahead deraadt@"
+    },
+    "CVE-2016-9063": {
+      "2feb5d2a36a799a4048160a74a6d32eed43212af": "Update libexpat to version 2.2.1 which has some security fixes.\n- CVE-2017-9233 CVE-2016-9063 CVE-2016-5300 CVE-2016-4472 CVE-2016-0718\n  CVE-2015-2716 CVE-2015-1283 CVE-2012-6702 CVE-2012-0876 have been\n  addressed.  Not all of them affect OpenBSD as we had fixes before.\n- Upstream uses arc4random_buf(3) now.  Delete all code for other\n  entropy sources to make sure to compile the correct one.  Our\n  library already used arc4random(3) before.\n- The overflow fixes in rev 1.11 and 1.12 of lib/xmlparse.c\n  have been commited upstream in a different way.  Use the upstream\n  code to make maintenance easier.\n- Although it should be ABI compatible, there is a new global\n  symbol align_limit_to_full_utf8_characters.  As it is in\n  lib/internal.h, add a Symbols.map to restrict the export.  Do not\n  bump the shared library version.\n- Use the internal expat's siphash.h.\nports build ajacoutot@; move ahead deraadt@"
+    },
+    "CVE-2016-5300": {
+      "2feb5d2a36a799a4048160a74a6d32eed43212af": "Update libexpat to version 2.2.1 which has some security fixes.\n- CVE-2017-9233 CVE-2016-9063 CVE-2016-5300 CVE-2016-4472 CVE-2016-0718\n  CVE-2015-2716 CVE-2015-1283 CVE-2012-6702 CVE-2012-0876 have been\n  addressed.  Not all of them affect OpenBSD as we had fixes before.\n- Upstream uses arc4random_buf(3) now.  Delete all code for other\n  entropy sources to make sure to compile the correct one.  Our\n  library already used arc4random(3) before.\n- The overflow fixes in rev 1.11 and 1.12 of lib/xmlparse.c\n  have been commited upstream in a different way.  Use the upstream\n  code to make maintenance easier.\n- Although it should be ABI compatible, there is a new global\n  symbol align_limit_to_full_utf8_characters.  As it is in\n  lib/internal.h, add a Symbols.map to restrict the export.  Do not\n  bump the shared library version.\n- Use the internal expat's siphash.h.\nports build ajacoutot@; move ahead deraadt@"
+    },
+    "CVE-2016-4472": {
+      "2feb5d2a36a799a4048160a74a6d32eed43212af": "Update libexpat to version 2.2.1 which has some security fixes.\n- CVE-2017-9233 CVE-2016-9063 CVE-2016-5300 CVE-2016-4472 CVE-2016-0718\n  CVE-2015-2716 CVE-2015-1283 CVE-2012-6702 CVE-2012-0876 have been\n  addressed.  Not all of them affect OpenBSD as we had fixes before.\n- Upstream uses arc4random_buf(3) now.  Delete all code for other\n  entropy sources to make sure to compile the correct one.  Our\n  library already used arc4random(3) before.\n- The overflow fixes in rev 1.11 and 1.12 of lib/xmlparse.c\n  have been commited upstream in a different way.  Use the upstream\n  code to make maintenance easier.\n- Although it should be ABI compatible, there is a new global\n  symbol align_limit_to_full_utf8_characters.  As it is in\n  lib/internal.h, add a Symbols.map to restrict the export.  Do not\n  bump the shared library version.\n- Use the internal expat's siphash.h.\nports build ajacoutot@; move ahead deraadt@"
+    },
+    "CVE-2016-0718": {
+      "2feb5d2a36a799a4048160a74a6d32eed43212af": "Update libexpat to version 2.2.1 which has some security fixes.\n- CVE-2017-9233 CVE-2016-9063 CVE-2016-5300 CVE-2016-4472 CVE-2016-0718\n  CVE-2015-2716 CVE-2015-1283 CVE-2012-6702 CVE-2012-0876 have been\n  addressed.  Not all of them affect OpenBSD as we had fixes before.\n- Upstream uses arc4random_buf(3) now.  Delete all code for other\n  entropy sources to make sure to compile the correct one.  Our\n  library already used arc4random(3) before.\n- The overflow fixes in rev 1.11 and 1.12 of lib/xmlparse.c\n  have been commited upstream in a different way.  Use the upstream\n  code to make maintenance easier.\n- Although it should be ABI compatible, there is a new global\n  symbol align_limit_to_full_utf8_characters.  As it is in\n  lib/internal.h, add a Symbols.map to restrict the export.  Do not\n  bump the shared library version.\n- Use the internal expat's siphash.h.\nports build ajacoutot@; move ahead deraadt@",
+      "d9d225e44d6462191a30350d423af47ac33ca59e": "Fix regression introduced by patch to CVE-2016-0718: Tag names were cut off in some cases.",
+      "525cdfc7f28a4fcc14536b61bb848c81325cf28c": "fix CVE-2016-0718."
+    },
+    "CVE-2015-2716": {
+      "2feb5d2a36a799a4048160a74a6d32eed43212af": "Update libexpat to version 2.2.1 which has some security fixes.\n- CVE-2017-9233 CVE-2016-9063 CVE-2016-5300 CVE-2016-4472 CVE-2016-0718\n  CVE-2015-2716 CVE-2015-1283 CVE-2012-6702 CVE-2012-0876 have been\n  addressed.  Not all of them affect OpenBSD as we had fixes before.\n- Upstream uses arc4random_buf(3) now.  Delete all code for other\n  entropy sources to make sure to compile the correct one.  Our\n  library already used arc4random(3) before.\n- The overflow fixes in rev 1.11 and 1.12 of lib/xmlparse.c\n  have been commited upstream in a different way.  Use the upstream\n  code to make maintenance easier.\n- Although it should be ABI compatible, there is a new global\n  symbol align_limit_to_full_utf8_characters.  As it is in\n  lib/internal.h, add a Symbols.map to restrict the export.  Do not\n  bump the shared library version.\n- Use the internal expat's siphash.h.\nports build ajacoutot@; move ahead deraadt@"
+    },
+    "CVE-2015-1283": {
+      "2feb5d2a36a799a4048160a74a6d32eed43212af": "Update libexpat to version 2.2.1 which has some security fixes.\n- CVE-2017-9233 CVE-2016-9063 CVE-2016-5300 CVE-2016-4472 CVE-2016-0718\n  CVE-2015-2716 CVE-2015-1283 CVE-2012-6702 CVE-2012-0876 have been\n  addressed.  Not all of them affect OpenBSD as we had fixes before.\n- Upstream uses arc4random_buf(3) now.  Delete all code for other\n  entropy sources to make sure to compile the correct one.  Our\n  library already used arc4random(3) before.\n- The overflow fixes in rev 1.11 and 1.12 of lib/xmlparse.c\n  have been commited upstream in a different way.  Use the upstream\n  code to make maintenance easier.\n- Although it should be ABI compatible, there is a new global\n  symbol align_limit_to_full_utf8_characters.  As it is in\n  lib/internal.h, add a Symbols.map to restrict the export.  Do not\n  bump the shared library version.\n- Use the internal expat's siphash.h.\nports build ajacoutot@; move ahead deraadt@"
+    },
+    "CVE-2012-6702": {
+      "2feb5d2a36a799a4048160a74a6d32eed43212af": "Update libexpat to version 2.2.1 which has some security fixes.\n- CVE-2017-9233 CVE-2016-9063 CVE-2016-5300 CVE-2016-4472 CVE-2016-0718\n  CVE-2015-2716 CVE-2015-1283 CVE-2012-6702 CVE-2012-0876 have been\n  addressed.  Not all of them affect OpenBSD as we had fixes before.\n- Upstream uses arc4random_buf(3) now.  Delete all code for other\n  entropy sources to make sure to compile the correct one.  Our\n  library already used arc4random(3) before.\n- The overflow fixes in rev 1.11 and 1.12 of lib/xmlparse.c\n  have been commited upstream in a different way.  Use the upstream\n  code to make maintenance easier.\n- Although it should be ABI compatible, there is a new global\n  symbol align_limit_to_full_utf8_characters.  As it is in\n  lib/internal.h, add a Symbols.map to restrict the export.  Do not\n  bump the shared library version.\n- Use the internal expat's siphash.h.\nports build ajacoutot@; move ahead deraadt@"
+    },
+    "CVE-2012-0876": {
+      "2feb5d2a36a799a4048160a74a6d32eed43212af": "Update libexpat to version 2.2.1 which has some security fixes.\n- CVE-2017-9233 CVE-2016-9063 CVE-2016-5300 CVE-2016-4472 CVE-2016-0718\n  CVE-2015-2716 CVE-2015-1283 CVE-2012-6702 CVE-2012-0876 have been\n  addressed.  Not all of them affect OpenBSD as we had fixes before.\n- Upstream uses arc4random_buf(3) now.  Delete all code for other\n  entropy sources to make sure to compile the correct one.  Our\n  library already used arc4random(3) before.\n- The overflow fixes in rev 1.11 and 1.12 of lib/xmlparse.c\n  have been commited upstream in a different way.  Use the upstream\n  code to make maintenance easier.\n- Although it should be ABI compatible, there is a new global\n  symbol align_limit_to_full_utf8_characters.  As it is in\n  lib/internal.h, add a Symbols.map to restrict the export.  Do not\n  bump the shared library version.\n- Use the internal expat's siphash.h.\nports build ajacoutot@; move ahead deraadt@"
+    },
+    "CVE-2016-7055": {
+      "6ebeafd8beeddc3f3dc964ad926d7a0024d1b002": "LibreSSL : regress for carry bug in mulx4x_mont and sqr8x_mont\n\nThis regress bntest.c patch is originally from master branch of OpenSSL.\n- dca2e0e test/bntest.c: regression test for CVE-2016-7055.\n- 3e7a496 test/bntest.c: regression test for carry bug in bn_sqr8x_internal.\n\nThese tests were added for these commit.\n- 2fac86d bn/asm/x86_64-mont.pl: fix for CVE-2016-7055 (Low severity).\n- 3f4bcf5 bn/asm/x86_64-mont5.pl: fix carry bug in bn_sqr8x_internal.\n\nok beck@"
+    },
+    "CVE-2016-10142": {
+      "f3785e278eba661407dcf9306ad48cc66d7e0e0f": "RFC 8021 \"IPv6 Atomic Fragments Considered Harmful\" deprecates\ngenerating atomic fragments.  So remove the code that sends them.\nCVE-2016-10142 has been assigned to that issue.\nOK visa@ mpi@"
+    },
+    "CVE-2016-6559": {
+      "7a8c33b7f43c178f8cbed7b8feb7284d2dff6ee5": "Fix regressions introduce in the fix for CVE-2016-6559.\nFrom FreeBSD (glebius)",
+      "997bb033087ee1d65c271babcd2b7f4d5280dc9e": "CVE-2016-6559: fix potential buffer overflow(s) in link_ntoa(3).\nA specially crafted struct sockaddr_dl argument can trigger a stack\noverflow of a static buffer in libc.  An attacker may be able to\nuse this to write to arbitrary locations in the data segment.\nFrom FreeBSD (glebius); OK deraadt@ mestre@"
+    },
+    "CVE-2016-0702": {
+      "2eb27d8a6f678abfee5ca59268721904e46c12d6": "switch to a constant-time gather procedure for amd64 mont5 asm\n\nfrom OpenSSL commit 7f98aa7403a1244cf17d1aa489f5bb0f39bae431\n\nCVE-2016-0702\nok beck@",
+      "28f6a8c2f092d914bf725280564a0c2e1705cbaa": "add constant-time MOD_EXP_CTIME_COPY_FROM_PREBUF.\n\nPatch based on OpenSSL commit d7a854c055ff22fb7da80c3b0e7cb08d248591d0\n\n\"Performance penalty varies from platform to platform, and even\nkey length. For rsa2048 sign it was observed to reach almost 10%.\"\n\nCVE-2016-0702\nok beck@"
+    },
+    "CVE-2016-1238": {
+      "0b7734b3d77bb9b21afec6f4621cae6c805dbd45": "Patch perl CVE-2016-1238\n\nThe problem relates to Perl 5 (\"perl\") loading modules from the\nincludes directory array (\"@INC\") in which the last element is the\ncurrent directory (\".\").  That means that, when \"perl\" wants to\nload a module (during first compilation or during lazy loading of\na module in run-time), perl will look for the module in the current\ndirectory at the end, since '.' is the last include directory in\nits array of include directories to seek. The issue is with requiring\nlibraries that are in \".\" but are not otherwise installed.\n\nThe major problem with this behavior is that it unexpectedly puts\na user at risk whenever they execute any Perl scripts from a directory\nthat is writable by other accounts on the system. For instance, if\na user is logged in as root and changes directory into /tmp or an\naccount's home directory, it is possible to now run any shell\ncommands that are written in C, Python or Ruby without fear.\n\nThe same isn't true for any shell commands that are written in Perl,\nsince a significant proportion of Perl scripts will execute code\nin the current working directory whenever they are run. For example,\nif a user on a shared system creates the file /tmp/Pod/Perldoc/Toterm.pm,\nand then I log in as root, change directory to /tmp, and run \"perldoc\nperlrun\", it will execute the code they have placed in the file.\n\n\nok deraadt@"
+    },
+    "CVE-2016-6185": {
+      "ee730484fcc4d0bb60f681a9a47565679740ef11": "The XSLoader issue has been assigned CVE-2016-6185"
+    },
+    "CVE-2016-2105": {
+      "ccce386e56971582893954182557ded1eb977d26": "fix for integer overflow in encode and encrypt update functions.\nadditionally, in EncodeUpdate, if the amount written would overflow,\nreturn 0 instead to prevent bugs in the caller.\nCVE-2016-2105 and CVE-2016-2106 from openssl."
+    },
+    "CVE-2016-2106": {
+      "ccce386e56971582893954182557ded1eb977d26": "fix for integer overflow in encode and encrypt update functions.\nadditionally, in EncodeUpdate, if the amount written would overflow,\nreturn 0 instead to prevent bugs in the caller.\nCVE-2016-2105 and CVE-2016-2106 from openssl."
+    },
+    "CVE-2016-2107": {
+      "bf0e219059087b4ab5cc5536f8215c2b5ec12519": "fix a padding oracle in aesni cbc mac check. there must be enough data\nfor both the mac and padding bytes.\nCVE-2016-2107 from openssl"
+    },
+    "CVE-2016-2108": {
+      "a04a87061d7384838ac6c64e49d9f64040f77770": "internal only negative types should not be handled here.\nCVE-2016-2108 from openssl."
+    },
+    "CVE-2016-2109": {
+      "d2986d084c631dc05c1bcbf08f5a2009935b86fa": "be careful about consuming excessive memory by reading in chunks.\nCVE-2016-2109 from openssl."
+    },
+    "CVE-2015-8853": {
+      "429e98d24ce5e56e41d56fb086415dd1c8b03885": "Add entry for CVE-2015-8853 patch.",
+      "4754ee2c4fd18f03874426f1d521f5bc7a0fdd06": "Apply fix for perl bug 123562 which has been assigned CVE-2015-8853.\nIt can cause certain regular expressions with malformed UTF8 inputs\nto go into a forever loop and consume 100% CPU.  OK afresh1@"
+    },
+    "CVE-2015-8605": {
+      "b4e2b63915f513b76fc044a8aa14753d8973493c": "be very careful accepting packets via bpf. First check that the\nfixed part of the IP header is completely present before using its\nheader length field.  Then use the data in the IP header to ensure\nthe entire IP packet is present. Then check that the entire UDP header\nis present. Then use the data in the UDP header to ensure all the\ndata it thinks is present is actually present.\n\nStarted when tj@ and a few others noticed ISC \"DHCP CVE-2015-8605:\nUDP payload length not properly checked\".\n\nok sthen@ henning@"
+    },
+    "CVE-2015-8607": {
+      "ea1cb3a083ca71ebc0de9fb1cda141e17829957c": "Fix perl CVE-2015-8607 - XS File::Spec::canonpath loses taint\n\nhttps://rt.perl.org/Ticket/Display.html?id=126862"
+    },
+    "CVE-2015-3195": {
+      "5280233330d90736333859831f435e1207b176bf": "Fix for OpenSSL CVE-2015-3195\nok djm@ jsing@"
+    },
+    "CVE-2015-3194": {
+      "b97954594ed49e94c660cabd50519c08cb856eef": "Fix for OpenSSL CVE-2015-3194\nok krw@"
+    },
+    "CVE-2012-3509": {
+      "483f9b85c592a4b6529cdf768372384b6072c25a": "Fix CVE-2012-3509, an integer overflow in libiberty, leading to\nheap-buffer overflow.\nFrom Sebastian Trahm;  OK deraadt@"
+    },
+    "CVE-2015-1792": {
+      "008bf30e034c8d8b735bd346a5bc1364982fb24d": "Avoid an infinite loop that can occur when verifying a message with an\nunknown hash function OID.\n\nDiff based on OpenSSL.\n\nFixes CVE-2015-1792 (however, this code is not enabled/built in LibreSSL).\n\nok doug@ miod@"
+    },
+    "CVE-2015-1789": {
+      "180ed961878e77e03f79cee2178ec4de6d32b9fe": "Avoid a potential out-of-bounds read in X509_cmp_time(), due to missing\nlength checks.\n\nDiff based on changes in OpenSSL.\n\nFixes CVE-2015-1789.\n\nok doug@"
+    },
+    "CVE-2015-1788": {
+      "1bb265c6dc8ae140ac96aacb27c882cafd49dd4a": "Avoid an infinite loop that can be triggered by parsing an ASN.1\nECParameters structure that has a specially malformed binary polynomial\nfield.\n\nIssue reported by Joseph Barr-Pixton and fix based on OpenSSL.\n\nFixes CVE-2015-1788.\n\nok doug@ miod@"
+    },
+    "CVE-2015-0209": {
+      "3e1f01a58e06bce857a0bd2d96d69cbd7774112d": "Fix several crash causing defects from OpenSSL.\nThese include:\nCVE-2015-0209 - Use After Free following d2i_ECPrivatekey error\nCVE-2015-0286 - Segmentation fault in ASN1_TYPE_cmp\nCVE-2015-0287 - ASN.1 structure reuse memory corruption\nCVE-2015-0289 - PKCS7 NULL pointer dereferences\n\nSeveral other issues did not apply or were already fixed.\nRefer to https://www.openssl.org/news/secadv_20150319.txt\n\njoint work with beck, doug, guenther, jsing, miod"
+    },
+    "CVE-2015-0286": {
+      "3e1f01a58e06bce857a0bd2d96d69cbd7774112d": "Fix several crash causing defects from OpenSSL.\nThese include:\nCVE-2015-0209 - Use After Free following d2i_ECPrivatekey error\nCVE-2015-0286 - Segmentation fault in ASN1_TYPE_cmp\nCVE-2015-0287 - ASN.1 structure reuse memory corruption\nCVE-2015-0289 - PKCS7 NULL pointer dereferences\n\nSeveral other issues did not apply or were already fixed.\nRefer to https://www.openssl.org/news/secadv_20150319.txt\n\njoint work with beck, doug, guenther, jsing, miod"
+    },
+    "CVE-2015-0287": {
+      "3e1f01a58e06bce857a0bd2d96d69cbd7774112d": "Fix several crash causing defects from OpenSSL.\nThese include:\nCVE-2015-0209 - Use After Free following d2i_ECPrivatekey error\nCVE-2015-0286 - Segmentation fault in ASN1_TYPE_cmp\nCVE-2015-0287 - ASN.1 structure reuse memory corruption\nCVE-2015-0289 - PKCS7 NULL pointer dereferences\n\nSeveral other issues did not apply or were already fixed.\nRefer to https://www.openssl.org/news/secadv_20150319.txt\n\njoint work with beck, doug, guenther, jsing, miod"
+    },
+    "CVE-2015-0289": {
+      "3e1f01a58e06bce857a0bd2d96d69cbd7774112d": "Fix several crash causing defects from OpenSSL.\nThese include:\nCVE-2015-0209 - Use After Free following d2i_ECPrivatekey error\nCVE-2015-0286 - Segmentation fault in ASN1_TYPE_cmp\nCVE-2015-0287 - ASN.1 structure reuse memory corruption\nCVE-2015-0289 - PKCS7 NULL pointer dereferences\n\nSeveral other issues did not apply or were already fixed.\nRefer to https://www.openssl.org/news/secadv_20150319.txt\n\njoint work with beck, doug, guenther, jsing, miod"
+    },
+    "CVE-2015-0288": {
+      "decd7047ef7ec22326fa6a959b7a9c3e318c47c9": "Avoid a NULL pointer deref when X509_get_pubkey() returns NULL.\n\nA NULL pointer could be dereferenced when X509_REQ_set_pubkey() calls\nX509_PUBKEY_set() with pktmp.\n\nOpenSSL says it's the fix for CVE-2015-0288, but there aren't any public\ndetails yet to confirm.  Either way, we should fix this.\n\nBased on OpenSSL commit 28a00bcd8e318da18031b2ac8778c64147cd54f9\nand BoringSSL commit 9d102ddbc0f6ed835ed12272a3d8a627d6a8e728.\n\n\"looks sane\" beck@\nok miod@, bcook@"
+    },
+    "CVE-2014-3570": {
+      "e611d49f194addb29b2ce7bac758c3010ac16a1b": "Fix CVE-2014-3570: properly calculate the square of a BIGNUM value.\n\nSee https://www.openssl.org/news/secadv_20150108.txt for a more detailed\ndiscussion.\n\nOriginal OpenSSL patch here:\nhttps://github.com/openssl/openssl/commit/a7a44ba55cb4f884c6bc9ceac90072dea38e66d0\n\nThe regression test is modified a little for KNF.\nok miod@"
+    },
+    "CVE-2015-0205": {
+      "6de2d86e54f08bf8b25833dcc02536f2edcb2895": "Fix CVE-2015-0205: Do not accept client authentication with Diffie-Hellman\ncertificates without requiring a CertificateVerify message.\n\nFrom OpenSSL commit:\nhttps://github.com/openssl/openssl/commit/1421e0c584ae9120ca1b88098f13d6d2e90b83a3\n\nThanks to Karthikeyan Bhargavan for reporting this.\nok miod@"
+    },
+    "CVE-2014-3572": {
+      "7d2c1669eb9ba7e9fe5838faa6623b7178e48596": "Add additional checks to ssl3_send_client_key_exchange() that ensures\nephemeral keys exist for SSL_kDHE and SSL_kECDHE.\n\nThis would have prevented CVE-2014-3572.\n\nok doug@",
+      "698075327ff9f3c1c54394979a23cce939f0c715": "Ensure that a ServerKeyExchange message is received if the selected cipher\nsuite uses ephemeral keys. This avoids an issue where an ECHDE cipher suite can\neffectively be downgraded to ECDH, if the server omits the ServerKeyExchange\nmessage and has provided a certificate with an ECC public key.\n\nIssue reported to OpenSSL by Karthikeyan Bhargavan.\n\nBased on OpenSSL.\n\nFixes CVE-2014-3572.\n\nok beck@"
+    },
+    "CVE-2015-0206": {
+      "3221bfb84da82a2f41c0eac30e55ef00cebd0cf1": "Fix DTLS memory leak (CVE-2015-0206).\n\nThere were four bugs fixed by this patch:\n\n* dtls1_buffer_record() now frees rdata->rbuf.buf on error.  Since\n  s->s3->rbuf was memset, rdata->rbuf is the only pointer left which\n  points to the old rbuf.  On error, rdata is freed so there will not\n  be any way of freeing this memory unless we do it here.\n\n* Changed the return code of dtls1_buffer_record() to differentiate\n  between queue full (0) and error (-1).  See below as this differs\n  from upstream.\n\n* Handle errors if calls to dtls1_buffer_record() fail with -1.\n  Previously, it did not check the return value.\n\n* Changed the way receipts are recorded.  Previously, it was recorded\n  when processed successfully (whether buffered or not) in\n  dtls1_process_record().  Now, it records when it is handled in\n  dtls1_get_record(): either when it is entered into the queue to buffer\n  for the next epoch or when it is processed directly.  Processing\n  buffered records does not add a receipt because it needed one in\n  order to get into the queue.\n\nThe above bugs combined contributed to an eventual DoS through memory\nexhaustion.  The memory leak came from dtls1_buffer_record()'s error\nhandling.  The error handling can be triggered by a duplicate record\nor malloc failure.  It was possible to add duplicate records because\nthey were not being dropped.  The faulty receipts logic did not detect\nreplays when dealing with records for the next epoch.  Additionally,\ndtls1_buffer_record()'s return value was not checked so an attacker\ncould send repeated replay records for the next epoch.\n\nReported to OpenSSL by Chris Mueller.\n\nPatch based on OpenSSL commit 103b171d8fc282ef435f8de9afbf7782e312961f\nand BoringSSL commit 44e2709cd65fbd2172b9516c79e56f1875f60300.\n\nOur patch matches BoringSSL's commit.  OpenSSL returns 0 when the queue\nis full or when malloc() or pitem_new() fails.  They return -1 on error\nincluding !ssl3_setup_buffers() which is another failure to allocate\nmemory.\n\nBoringSSL and LibreSSL changed the return code for dtls1_buffer_record()\nto be 1 on success, 0 when the queue is full and -1 on error.\n\ninput + ok bcook@, jsing@"
+    },
+    "CVE-2014-6272": {
+      "30030996ead37cfee5b2516b01bfef7da7de6975": "Fix CVE-2014-6272 in Libevent 1.4 from upstream:\n- https://github.com/libevent/libevent/commit/7b21c4eabf1f3946d3f63cce1319c490caab8ecf\n- For this fix, we need to make sure that passing too-large inputs to\n  the evbuffer functions can't make us do bad things with the heap.\nOn top of that do:\n- Update libevent version to 1.4.15-stable.\n- Use SIZE_MAX from limits.h instead of a private define.\n- Do not declare 'size_t need' twice to avoid a compiler warning.\nOK sthen"
+    },
+    "CVE-2014-7844": {
+      "fd9d383e7f262291c3a2b6442c761b37252f7e10": "Add new \"expandaddr\" flag (disabled by default) to enable recipient\naddress expansion and document it.  Previously, this behavior was\nalways enabled.  Also document how address expansion is performed,\nwhich used to only be described in the (no longer installed) Mail\nReference Manual.  CVE-2014-7844"
+    },
+    "CVE-2004-2771": {
+      "32cc11aa10796d2c7ed995a53c31ff376a707aa9": "Use glob() to expand filenames instead of passing it to the shell's\necho command for expansion which could result in arbitrary command\nexecution.  CVE-2004-2771"
+    },
+    "CVE-2014-3158": {
+      "e1b9311f941df1f2b349db8b649c15f500315ee5": "Fix a potential integer overflow in pppd options file parsing.\nFrom Paul Mackerras in 7658e8257183f062dc01f87969c140707c7e52cb\nThis issue is CVE-2014-3158."
+    },
+    "CVE-2014-8602": {
+      "ae1dea89916206c1481074ede0eb3d6daed9615a": "Fix for CVE-2014-8602.\nOK sthen@\n\nUnfortunately you only get the dedication to support the infrastructure\nof the universally connected self-organizing Internet - and the\nautonomy of its participants iff you are a paying customer with a\nsupport contract."
+    },
+    "CVE-2014-3510": {
+      "1d1d8690bd0bd971ae25d1f588b533ef33c97662": "Avoid a NULL dereference in the DTLS client that can be triggered by a\ncrafted server response used in conjunction with an anonymous DH or\nanonymous ECDH ciphersuite.\n\nFixes CVE-2014-3510, which is effectively a repeat of CVE-2014-3470 in\ncopied code.\n\nReported by Felix Groebert of the Google Security Team.\n\nok beck@ miod@",
+      "cce471d34d8d2e83721f593d949d2027933756e1": "merge CVE-2014-3510; Fix DTLS anonymous EC(DH) denial of service\nhttps://git.openssl.org/gitweb/?p=openssl.git;a=commit;h=17160033765480453be0a41335fa6b833691c049\nok bcook"
+    },
+    "CVE-2014-3470": {
+      "1d1d8690bd0bd971ae25d1f588b533ef33c97662": "Avoid a NULL dereference in the DTLS client that can be triggered by a\ncrafted server response used in conjunction with an anonymous DH or\nanonymous ECDH ciphersuite.\n\nFixes CVE-2014-3510, which is effectively a repeat of CVE-2014-3470 in\ncopied code.\n\nReported by Felix Groebert of the Google Security Team.\n\nok beck@ miod@",
+      "2bce330025b6044bd9ed1927f573a40b417a199b": "Ensure that sess_cert is not NULL before trying to use it.\n\nFixes CVE-2014-3470, from OpenSSL.\n\nok deraadt@"
+    },
+    "CVE-2014-4330": {
+      "adf9d3031d693476af54c7c1a0d5eb37e63b433a": "Fix a possibly infinite recursion in Perl Data::Dumper.\n\nDerived from Perl git commit http://perl5.git.perl.org/perl.git\n19be3be6968e2337bcdfe480693fff795ecd1304\nAdd a configuration variable/option to limit recursion when dumping\ndeep data structures.\nDefaults the limit to 1000, which can be reduced or increase, or\neliminated by setting it to 0.\nThis patch addresses CVE-2014-4330.  This bug was found and\nreported by: LSE Leading Security Experts GmbH employee Markus\nVervier.\n\nFrom Maximilian Pascher;  OK schwarze@ afresh1@"
+    },
+    "CVE-2014-3507": {
+      "1ad69c40f41c48743fc2a936ec067f21604a60b3": "Fix CVE-2014-3507, avoid allocating and then leaking a fresh fragment\nstructure when a zero-length fragment is received.\n\nBased on\nhttps://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=d0a4b7d1a2948fce38515b8d862f43e7ba0ebf74\n\ndiff by miod@, ok guenther@ bcook@ deraadt@"
+    },
+    "CVE-2014-3508": {
+      "fca39bf77338b32d5264edaa28a2d4ffd38b333f": "Fix CVE-2014-3508, pretty printing and OID validation:\n - make sure the output buffer is always NUL terminated if buf_len\n   was initially greater than zero.\n - reject OIDs that are too long, too short, or not in proper base-127\n\nBased on\nhttps://git.openssl.org/gitweb/?p=openssl.git;a=commit;h=0042fb5fd1c9d257d713b15a1f45da05cf5c1c87\n\nok bcook@"
+    },
+    "CVE-2014-3509": {
+      "6cc737cbde792bdfb612a6508b9e820d153c98a3": "Correct test reversed during merge of fix for CVE-2014-3509\n\npointed out by Watson Ladd (watson (at) matasano.com)\nok deraadt@",
+      "6b5938cd3586ddafe3e369de19c73fccf73b8ba9": "merge fix for CVE-2014-3509 -- basically a missing s->hit check; ok guenther"
+    },
+    "CVE-2014-3506": {
+      "7dac98335a0d4071a6311c76aaefe7ede4e70bf4": "Fix CVE-2014-3506, DTLS handshake message size checks.  From\nhttps://git.openssl.org/gitweb/?p=openssl.git;a=commit;h=1250f12613b61758675848f6600ebd914ccd7636\nwith comment/whitespace style tweaks\n\nok bcook@ miod@"
+    },
+    "CVE-2014-3511": {
+      "20f15341fcb4f83f1232717df78a93fe38bde346": "Fix CVE-2014-3511; TLS downgrade, verbatim diff\nhttps://git.openssl.org/gitweb/?p=openssl.git;a=commit;h=280b1f1ad12131defcd986676a8fc9717aaa601b\nok guenther miod"
+    },
+    "CVE-2014-0221": {
+      "1aa2bd1933f68335de427dbf34ece22dba428a97": "Do not recurse when a 'Hello Request' message is received while getting\nDTLS fragments. A stream of 'Hello Request' messages will result in\ninfinite recursion, eventually crashing the DTLS client or server.\n\nFixes CVE-2014-0221, from OpenSSL.\n\nReported to OpenSSL by Imre Rad."
+    },
+    "CVE-2014-0195": {
+      "48e47f1764e2bd89adf55fcd559c50c12133d8c9": "Avoid a buffer overflow that can be triggered by sending specially crafted\nDTLS fragments.\n\nFix for CVE-2014-0195, from OpenSSL.\n\nReported to OpenSSL by Juri Aedla.\n\nok deraadt@ beck@"
+    },
+    "CVE-2014-0224": {
+      "80be6061e6dcd27b6153a0ce89043646d5ef4f73": "Be selective as to when ChangeCipherSpec messages will be accepted.\nWithout this an early ChangeCipherSpec message would result in session\nkeys being generated, along with the Finished hash for the handshake,\nusing an empty master secret.\n\nFor a detailed analysis see:\n\n  https://www.imperialviolet.org/2014/06/05/earlyccs.html\n\nThis is a fix for CVE-2014-0224, from OpenSSL.\n\nThis issue was reported to OpenSSL by KIKUCHI Masashi. Unfortunately the\nrecent OpenSSL commit was the first we were made aware of the issue.\n\nok deraadt@ sthen@"
+    },
+    "CVE-2014-3956": {
+      "b45791e2a3da7ae15f0fe86912511428931628b5": "Fix sendmail improper close-on-exec flag handling (CVE-2014-3956)\nFrom FreeBSD SA-14:11\n\nok millert@"
+    },
+    "CVE-2014-0160": {
+      "af0b15b8442fc07b247a220f2f1870ce2652ec68": "cherrypick fix for CVE-2014-0160 \"heartbleed\" vulnerability from\nOpenSSL git; ok sthen@"
+    },
+    "CVE-2014-0133": {
+      "3d034e33c289ba8b5442422c5388c8ee62bf6cd7": "bugfix and security update to 1.4.7:\nCVE-2014-0133 does not affect OpenBSD because SPDY is not enabled\n\nok florian@"
+    },
+    "CVE-2013-4353": {
+      "724b1063fe45f812c6c49b2bd4e01ffac44b5cf7": "SECURITY fixes backported from openssl-1.0.1f.  ok mikeb@\n\nCVE-2013-4353 NULL pointer dereference with crafted Next Protocol\n Negotiation record in TLS handshake.\nUpstream: 197e0ea\n\nCVE-2013-6449 Fix crash with crafted traffic from a TLS 1.2 client.\nUpstream: ca98926, 0294b2b\n\nCVE-2013-6450 Fix DTLS retransmission from previous session.\nUpstream: 3462896"
+    },
+    "CVE-2013-6449": {
+      "724b1063fe45f812c6c49b2bd4e01ffac44b5cf7": "SECURITY fixes backported from openssl-1.0.1f.  ok mikeb@\n\nCVE-2013-4353 NULL pointer dereference with crafted Next Protocol\n Negotiation record in TLS handshake.\nUpstream: 197e0ea\n\nCVE-2013-6449 Fix crash with crafted traffic from a TLS 1.2 client.\nUpstream: ca98926, 0294b2b\n\nCVE-2013-6450 Fix DTLS retransmission from previous session.\nUpstream: 3462896"
+    },
+    "CVE-2013-6450": {
+      "724b1063fe45f812c6c49b2bd4e01ffac44b5cf7": "SECURITY fixes backported from openssl-1.0.1f.  ok mikeb@\n\nCVE-2013-4353 NULL pointer dereference with crafted Next Protocol\n Negotiation record in TLS handshake.\nUpstream: 197e0ea\n\nCVE-2013-6449 Fix crash with crafted traffic from a TLS 1.2 client.\nUpstream: ca98926, 0294b2b\n\nCVE-2013-6450 Fix DTLS retransmission from previous session.\nUpstream: 3462896"
+    },
+    "CVE-2013-4547": {
+      "89164ff76d703fa484f54f6ed53f8cdb06ea5c6c": "security update to nginx 1.4.4 which fixes CVE-2013-4547"
+    },
+    "CVE-2013-2070": {
+      "49441a589f6db81e98f5e4d768fa450ad95e475e": "update to 1.2.9; several bugfixes and security fix for CVE-2013-2070"
+    },
+    "CVE-2013-1667": {
+      "31c123d4d0cfcbb567a6408f2ed834ad6884fe4b": "Apply patch from RedHat to address CVE-2013-1667, perl: DoS in rehashing code\nFor more information please refer to: http://code.activestate.com/lists/perl5-porters/191311/\n\nok millert@"
+    },
+    "CVE-2012-6329": {
+      "70cf8fc5f08cf2dd8626ab2c3a445a6d2d188348": "Fix for CVE-2012-6329; from perl git via Sebastian Trahm"
+    },
+    "CVE-2012-5195": {
+      "534d1eb350d1f974439a933bd02a85d823e17d9f": "Fix for CVE-2012-5195; ok miod@"
+    },
+    "CVE-2012-2979": {
+      "38a044fd6edd2a7956cee815629ff60a3858ba24": "update to NSD 3.2.13\n\n- fix crash in nsd-patch if a zone has been removed from nsd.conf. (difffile.c)\n\n- CVE-2012-2979 DOS fix, this is in optional code which is *not* used with\na standard OpenBSD build. (query.c, server.c)"
+    },
+    "CVE-2012-2978": {
+      "129edcbc3d7eeca232ca71eabc83fe5485f021bf": "Fix for VU#624931 CVE-2012-2978: NSD denial of service\nvulnerability from non-standard DNS packet from any host\non the internet.\n\nOK sthen@"
+    },
+    "CVE-2012-1667": {
+      "4ca673f3df5d9679d1d3bdb337a97b8ceec3e666": "Add a fix for CVE-2012-1667, backported from ISC BIND.  ok millert@\nhttp://www.isc.org/software/bind/advisories/cve-2012-1667\n\nDistinguish rdata removed by BIND due to duplication, from zero-length rdata\nreceived from a server. Otherwise a server supplying zero-length rdata sections\ncan trigger crashes or possible memory disclosure to the client.\nPrimarily affects recursive servers."
+    },
+    "CVE-2012-2110": {
+      "b590e19bab47ffb9f1ac866e183b747b23e94762": "cherrypick fix for CVE-2012-2110: libcrypto ASN.1 parsing heap overflow\nok miod@ deraadt@"
+    },
+    "CVE-2011-4313": {
+      "d4643ec811dde95e1a418e761c847f64440b50b0": "Apply the patches from BIND upstream to mitigate cve-2011-4313 (crashes\nwith INSIST(! dns_rdataset_isassociated(sigrdataset))).\n\nok jakob@"
+    },
+    "CVE-2011-2748": {
+      "a720dd5f942df2aad6cede205026b44e8662b680": "Zero option processing stack storage to prevent stack garbage that\nhappens to look like options from being processed as options when\ntruncated packets received.\n\nPotential problem pointed out by mikeb@, from a couple of NIST\nreports (CVE-2011-2748 and CVE-2011-2749)."
+    },
+    "CVE-2011-2749": {
+      "a720dd5f942df2aad6cede205026b44e8662b680": "Zero option processing stack storage to prevent stack garbage that\nhappens to look like options from being processed as options when\ntruncated packets received.\n\nPotential problem pointed out by mikeb@, from a couple of NIST\nreports (CVE-2011-2748 and CVE-2011-2749)."
+    },
+    "CVE-2011-2939": {
+      "945a9a587895b1b0229296859cdf38ee3657a42c": "Security fix for CVE-2011-2939, Perl decode_xs heap-based buffer overflow.\n\nok espie@ millert@"
+    },
+    "CVE-2011-1487": {
+      "fcc8ea346a2fc4e9d3b36e8758942be80da07b8f": "Perl security fix for CVE-2011-1487:\nucfirst(), uc() and lc() forget to set the tainted flag if input\nwas marked as tainted.\n\nhttp://rt.perl.org/rt3/Public/Bug/Display.html?id=87336\nhttp://perl5.git.perl.org/perl.git/commitdiff/539689e74a3bcb04d29e4cd9396de91a81045b99\n\nok millert@"
+    },
+    "CVE-2011-0014": {
+      "26d465f0668a7a3e8949bf120ad5c39e4c94e02b": "fix for CVE-2011-0014 \"OCSP stapling vulnerability\";\nok markus@ jasper@ miod@\n\nAFAIK nothing in base uses this, though apache2 from ports may be affected."
+    },
+    "CVE-2010-4180": {
+      "2ce4fda50ded934197068143342d4c23be77341b": "Security fix for CVE-2010-4180 as mentioned in http://www.openssl.org/news/secadv_20101202.txt.\nwhere clients could modify the stored session\ncache ciphersuite and in some cases even downgrade the suite to weaker ones.\n\nThis code is not enabled by default.\n\nok djm@"
+    },
+    "CVE-2010-3864": {
+      "53f6a902ebb5cd1028e9064ef5334ed13602fab8": "- Apply security fix for CVE-2010-3864 (+commit 19998 which fixes the fix).\n\nok djm@ deraadt@"
+    },
+    "CVE-2010-0405": {
+      "c44ae3bca046934525ac32eeba51c467686acde3": "Add CVE-2010-0405 to list of local patches.",
+      "f92bd99370f5e67d60423f05250846abbada03bb": "Apply fix for CVE-2010-0405; from matthieu@"
+    },
+    "CVE-2010-1168": {
+      "20a192e8b817ef070b3475cd87733fbcf9eff42d": "Update the Safe module to version 2.2.7 for CVE-2010-1168 and\nCVE-2010-1447.  From Ian McWilliam"
+    },
+    "CVE-2010-1447": {
+      "20a192e8b817ef070b3475cd87733fbcf9eff42d": "Update the Safe module to version 2.2.7 for CVE-2010-1168 and\nCVE-2010-1447.  From Ian McWilliam"
+    },
+    "CVE-2010-0740": {
+      "464c392f568d6459301531c43f050d18b0e84477": "Security fix for CVE-2010-0740\n\n\"In TLS connections, certain incorrectly formatted records can cause an OpenSSL\nclient or server to crash due to a read attempt at NULL.\"\n\nhttp://openssl.org/news/secadv_20100324.txt\n\nok deraadt@ djm@ sthen@"
+    },
+    "CVE-2009-3245": {
+      "9fad2d37f8333d9e6e8206b0ecf586887e73feb4": "cherrypick patch from OpenSSL 0.9.8m:\n\n  *) Always check bn_wexpend() return values for failure.  (CVE-2009-3245)\n     [Martin Olsson, Neel Mehta]"
+    },
+    "CVE-2010-0010": {
+      "15fa1f610f304cd771a6bff0025b5f604f38f1dc": "Add a SECURITY FIX for CVE-2010-0010\n\"on 64-bit platforms this allows remote origin servers to cause a\ndenial of service (daemon crash) or possibly execute arbitrary code\nvia a large chunk size that triggers a heap-based buffer overflow.\"\n\n\"looks good\" to henning@\nok otto@"
+    },
+    "CVE-2009-3560": {
+      "69374b686dc24aae625e026bac8c6c12a3a3d1c7": "Security fix for CVE-2009-3560, which could allow attackers to cause\na DoS using a specially crafted XML document with malformed UTF-8\nsequences.\n\nPatch taken from upstream CVS."
+    },
+    "CVE-2009-3555": {
+      "66a15954f5845cbbe38e8561ce13fc3bb20b68b8": "pull Ben Lauries blind prefix injection fix for CVE-2009-3555 from\nopenssl 0.9.8l; crank minor version; ok djm@ deraadt@; initially from jsg@"
+    },
+    "CVE-2009-3626": {
+      "d886bcfeff3966f63b8fdff847d1e46374e3863f": "- apply fix from upstream git for CVE-2009-3626, which could cause perl to\ncrash on certain invalid UTF-8 codes.\n\nok millert@ sthen@"
+    },
+    "CVE-2009-1391": {
+      "6a153ceef817f397206a456078e5183d146144e5": "CVE-2009-1391: Buffer overflow in the inflate function in Zlib.xs\nin Compress::Raw::Zlib Perl module.\ninitial diff & ok millert@.  go for it miod@"
+    },
+    "CVE-2009-0025": {
+      "db30f6803b59890b2e05d0598996ba83eb10e4bc": "fix CVE-2009-0025: incorrect check of DSA DNSSEC signature verification\n\"please commit\" miod@"
+    },
+    "CVE-2008-1483": {
+      "39ff0b053b9574ba427fa40f29afcc8ceea31f3d": "avoid possible hijacking of x11-forwarded connections (back out 1.183)\nCVE-2008-1483; ok djm@"
+    },
+    "CVE-2007-6388": {
+      "13c83fe772f120c766e2ec5ecb0cd47972b82798": "Fix mod_status XSS CVE-2007-6388:\nA flaw was found in the mod_status module. On sites where mod_status\nis enabled and the status pages were publicly accessible, a cross-site\nscripting attack is possible. Note that the server-status page is\nnot enabled by default and it is best practice to not make this\npublicly available.\n\nFix mod_imap XSS CVE-2007-5000:\nA flaw was found in the mod_imap module. On sites where mod_imap\nis enabled and an imagemap file is publicly available, a cross-site\nscripting attack is possible.\n\nok miod@"
+    },
+    "CVE-2007-5000": {
+      "13c83fe772f120c766e2ec5ecb0cd47972b82798": "Fix mod_status XSS CVE-2007-6388:\nA flaw was found in the mod_status module. On sites where mod_status\nis enabled and the status pages were publicly accessible, a cross-site\nscripting attack is possible. Note that the server-status page is\nnot enabled by default and it is best practice to not make this\npublicly available.\n\nFix mod_imap XSS CVE-2007-5000:\nA flaw was found in the mod_imap module. On sites where mod_imap\nis enabled and an imagemap file is publicly available, a cross-site\nscripting attack is possible.\n\nok miod@"
+    },
+    "CVE-2007-3108": {
+      "d9ef6b125f996bb6decfb253bf0e67c89d188855": "http://openssl.org/news/patch-CVE-2007-3108.txt; ok pval, deraadt"
+    },
+    "CVE-2007-3304": {
+      "451b3c8ea42aa461fe38ce7c4e0ee3543af373d1": "fix CVE-2007-3304\n\nThe Apache HTTP server did not verify that a process was an Apache child\nprocess before sending it signals. A local attacker with the ability to\nrun scripts on the HTTP server could manipulate the scoreboard and cause\narbitrary processes to be terminated which could lead to a denial of\nservice.\n\nok miod@ (who also noticed to protect reclaim_child_processes); henning@;\ndjm@"
+    },
+    "CVE-2006-5752": {
+      "12bf86315208ef652ace74cdad4aa9a19432fe10": "fix CVE-2006-5752\n\nA flaw was found in the mod_status module. On sites where the\nserver-status page is publicly accessible and ExtendedStatus is enabled\nthis could lead to a cross-site scripting attack. Note that the\nserver-status page is not enabled by default and it is best practice to\nnot make this publicly available.\n\nok miod@, henning@"
+    },
+    "CVE-2007-1536": {
+      "8743e97b9d3dde9bd38406e812f834a27aec68a8": "Fix possible heap overflow in file(1), aka CVE-2007-1536.\n\nWhen writing data into a buffer in the file_printf() function, the\nlength of the unused portion of the buffer is not correctly tracked,\nresulting in a buffer overflow when processing certain files.\n\nAdapted from FreeBSD's SA-07:04.file fix, with ok and some minor\ntweaks from canacar@ and ray@."
+    },
+    "CVE-2006-3918": {
+      "5e5a8f6d75979c211a5daee35f8828d3887f5086": "escape error response to unsupported Expect: header, fixes\nCVE-2006-3918; ok cloder@"
+    },
+    "CVE-2006-4339": {
+      "b0424a9b53a4df0e1855115fa3caf71504c4aab3": "fix RSA signature padding vulnerability in OpenSSL libcrypto CVE-2006-4339;\nok beck@ miod@"
+    },
+    "CVE-2006-0225": {
+      "63a6ece597e3b007bd33eb5e4039d1514afff918": "regression test for CVE-2006-0225 written by dtucker@",
+      "c6597f7ad579eb857626cb05801f96a54ea10d6b": "fix local arbitrary command execution vulnerability on local/local and\nremote/remote copies (CVE-2006-0225, bz #1094), patch by\nt8m AT centrum.cz, polished by dtucker@ and myself; ok markus@"
+    },
+    "CVE-2005-3352": {
+      "3f0f566179f1cb67f11a9d3c29cf30b847b4a3f0": "fix a cross-site scripting vulnerability in mod_imap;\nCVE-2005-3352\n\nok niallo@; henning@ no objections"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "vcs_url": "https://gitlab.gnome.org/gnome/gimp",
+  "vulnerabilities": {
+    "CVE-2017-17784": {
+      "3eaeff31f03dd478587ec4d5a30a7b896336063d": "Revert \"Bug 790784 - (CVE-2017-17784) heap overread in gbr parser / load_image.\"\n\nThis reverts commit c57f9dcf1934a9ab0cd67650f2dea18cb0902270.\n\nThe CVE is still fixed but now in a different way. Commit 4fa0cd4dcf\npasses instead the accurate string length when using the string, hence\nmaking it work even when not NUL-terminated. This has the advantage of\nhaving the GBR file loaded in the end, despite such file format error. I\nam personally not persuaded this is the best path since a file with such\nan error may either be corrupted, or worse may have been constructed on\npurpose to be harmful, so rejecting it directly may be the safe choice.\nNevertheless I may also be too doubtful and maybe trying to save a\nslightly corrupted file may be the nicest choice indeed.",
+      "ba759fbcfd3a2316f62cf3d5a9d0fb885314ceff": "Revert \"Bug 790784 - (CVE-2017-17784) heap overread in gbr parser / load_image.\"\n\nThis reverts commit 06d24a79af94837d615d0024916bb95a01bf3c59.\n\nThe CVE is still fixed but now in a different way. Commit 4fa0cd4dcf\npasses instead the accurate string length when using the string, hence\nmaking it work even when not NUL-terminated. This has the advantage of\nhaving the GBR file loaded in the end, despite such file format error. I\nam personally not persuaded this is the best path since a file with such\nan error may either be corrupted, or worse may have been constructed on\npurpose to be harmful, so rejecting it directly may be the safe choice.\nNevertheless I may also be too doubtful and maybe trying to save a\nslightly corrupted file may be the nicest choice indeed.",
+      "c57f9dcf1934a9ab0cd67650f2dea18cb0902270": "Bug 790784 - (CVE-2017-17784) heap overread in gbr parser / load_image.\n\nWe were assuming the input name was well formed, hence was\nnul-terminated. As any data coming from external input, this has to be\nthorougly checked.\nSimilar to commit 06d24a79af94837d615d0024916bb95a01bf3c59 but adapted\nto older gimp-2-8 code.",
+      "06d24a79af94837d615d0024916bb95a01bf3c59": "Bug 790784 - (CVE-2017-17784) heap overread in gbr parser / load_image.\n\nWe were assuming the input name was well formed, hence was\nnul-terminated. As any data coming from external input, this has to be\nthorougly checked."
+    },
+    "CVE-2017-17785": {
+      "1882bac996a20ab5c15c42b0c5e8f49033a1af54": "Bug 739133 - (CVE-2017-17785) Heap overflow while parsing FLI files.\n\nIt is possible to trigger a heap overflow while parsing FLI files. The\nRLE decoder is vulnerable to out of boundary writes due to lack of\nboundary checks.\n\nThe variable \"framebuf\" points to a memory area which was allocated\nwith fli_header->width * fli_header->height bytes. The RLE decoder\ntherefore must never write beyond that limit.\n\nIf an illegal frame is detected, the parser won't stop, which means\nthat the next valid sequence is properly parsed again. This should\nallow GIMP to parse FLI files as good as possible even if they are\nbroken by an attacker or by accident.\n\nWhile at it, I changed the variable xc to be of type size_t, because\nthe multiplication of width and height could overflow a 16 bit type.\n\nSigned-off-by: Tobias Stoeckmann <tobias@stoeckmann.org>\n(cherry picked from commit edb251a7ef1602d20a5afcbf23f24afb163de63b)",
+      "edb251a7ef1602d20a5afcbf23f24afb163de63b": "Bug 739133 - (CVE-2017-17785) Heap overflow while parsing FLI files.\n\nIt is possible to trigger a heap overflow while parsing FLI files. The\nRLE decoder is vulnerable to out of boundary writes due to lack of\nboundary checks.\n\nThe variable \"framebuf\" points to a memory area which was allocated\nwith fli_header->width * fli_header->height bytes. The RLE decoder\ntherefore must never write beyond that limit.\n\nIf an illegal frame is detected, the parser won't stop, which means\nthat the next valid sequence is properly parsed again. This should\nallow GIMP to parse FLI files as good as possible even if they are\nbroken by an attacker or by accident.\n\nWhile at it, I changed the variable xc to be of type size_t, because\nthe multiplication of width and height could overflow a 16 bit type.\n\nSigned-off-by: Tobias Stoeckmann <tobias@stoeckmann.org>"
+    },
+    "CVE-2017-17787": {
+      "87ba505fff85989af795f4ab6a047713f4d9381d": "Bug 790853 - (CVE-2017-17787) heap overread in psp importer.\n\nAs any external data, we have to check that strings being read at fixed\nlength are properly nul-terminated.\n\n(cherry picked from commit eb2980683e6472aff35a3117587c4f814515c74d)",
+      "eb2980683e6472aff35a3117587c4f814515c74d": "Bug 790853 - (CVE-2017-17787) heap overread in psp importer.\n\nAs any external data, we have to check that strings being read at fixed\nlength are properly nul-terminated."
+    },
+    "CVE-2017-17789": {
+      "01898f10f87a094665a7fdcf7153990f4e511d3f": "Bug 790849 - (CVE-2017-17789) CVE-2017-17789 Heap buffer overflow...\n\n... in PSP importer.\nCheck if declared block length is valid (i.e. within the actual file)\nbefore going further.\nConsider the file as broken otherwise and fail loading it.\n\n(cherry picked from commit 28e95fbeb5720e6005a088fa811f5bf3c1af48b8)",
+      "28e95fbeb5720e6005a088fa811f5bf3c1af48b8": "Bug 790849 - (CVE-2017-17789) CVE-2017-17789 Heap buffer overflow...\n\n... in PSP importer.\nCheck if declared block length is valid (i.e. within the actual file)\nbefore going further.\nConsider the file as broken otherwise and fail loading it."
+    },
+    "CVE-2017-17786": {
+      "ef9c821fff8b637a2178eab1c78cae6764c50e12": "Bug 739134 - (CVE-2017-17786) Out of bounds read / heap overflow in...\n\n... TGA importer.\n\nBe more thorough on valid TGA RGB and RGBA images.\nIn particular current TGA plug-in can import RGBA as 32 bits (8 bits per\nchannel) and 16 bits (5 bits per color channel and 1 bit for alpha), and\nRGB as 15 and 24 bits.\nMaybe there exist more variants, but if they do exist, we simply don't\nsupport them yet.\n\nThanks to Hanno B\u00f6ck for the report and a first patch attempt.\n\n(cherry picked from commit 674b62ad45b6579ec6d7923dc3cb1ef4e8b5498b)",
+      "674b62ad45b6579ec6d7923dc3cb1ef4e8b5498b": "Bug 739134 - (CVE-2017-17786) Out of bounds read / heap overflow in...\n\n... TGA importer.\n\nBe more thorough on valid TGA RGB and RGBA images.\nIn particular current TGA plug-in can import RGBA as 32 bits (8 bits per\nchannel) and 16 bits (5 bits per color channel and 1 bit for alpha), and\nRGB as 15 and 24 bits.\nMaybe there exist more variants, but if they do exist, we simply don't\nsupport them yet.\n\nThanks to Hanno B\u00f6ck for the report and a first patch attempt."
+    },
+    "CVE-2007-3126": {
+      "323ecb73f7bf36788fb7066eb2d6678830cd5de7": "Bug 773233 - CVE-2007-3126 - Gimp 2.3.14 allows context-dependent attackers...\n\n...to cause a denial of service (crash) via an ICO file with an\nInfoHeader containing a Height of zero\n\nAdd some error handling to ico-load.c and bail out on zero width or height\nicons. Also some formatting cleanup.\n\n(cherry picked from commit 46bcd82800e37b0f5aead76184430ef2fe802748)",
+      "46bcd82800e37b0f5aead76184430ef2fe802748": "Bug 773233 - CVE-2007-3126 - Gimp 2.3.14 allows context-dependent attackers...\n\n...to cause a denial of service (crash) via an ICO file with an\nInfoHeader containing a Height of zero\n\nAdd some error handling to ico-load.c and bail out on zero width or height\nicons. Also some formatting cleanup."
+    },
+    "CVE-2016-4994": {
+      "e82aaa4b4ee0703c879e35ea9321fff6be3e9b6f": "Bug 767873 - (CVE-2016-4994) Multiple Use-After-Free when parsing...\n\n...XCF channel and layer properties\n\nThe properties PROP_ACTIVE_LAYER, PROP_FLOATING_SELECTION,\nPROP_ACTIVE_CHANNEL saves the current object pointer the @info\nstructure. Others like PROP_SELECTION (for channel) and\nPROP_GROUP_ITEM (for layer) will delete the current object and create\na new object, leaving the pointers in @info invalid (dangling).\n\nTherefore, if a property from the first type will come before the\nsecond, the result will be an UaF in the last lines of xcf_load_image\n(when it actually using the pointers from @info).\n\nI wasn't able to exploit this bug because that\ng_object_instance->c_class gets cleared by the last g_object_unref and\nGIMP_IS_{LAYER,CHANNEL} detects that and return FALSE.\n\n(cherry picked from commit 6d804bf9ae77bc86a0a97f9b944a129844df9395)",
+      "6d804bf9ae77bc86a0a97f9b944a129844df9395": "Bug 767873 - (CVE-2016-4994) Multiple Use-After-Free when parsing...\n\n...XCF channel and layer properties\n\nThe properties PROP_ACTIVE_LAYER, PROP_FLOATING_SELECTION,\nPROP_ACTIVE_CHANNEL saves the current object pointer the @info\nstructure. Others like PROP_SELECTION (for channel) and\nPROP_GROUP_ITEM (for layer) will delete the current object and create\na new object, leaving the pointers in @info invalid (dangling).\n\nTherefore, if a property from the first type will come before the\nsecond, the result will be an UaF in the last lines of xcf_load_image\n(when it actually using the pointers from @info).\n\nI wasn't able to exploit this bug because that\ng_object_instance->c_class gets cleared by the last g_object_unref and\nGIMP_IS_{LAYER,CHANNEL} detects that and return FALSE."
+    },
+    "CVE-2012-4245": {
+      "d6e7557001000e6aaf93cee7c4d3379642d72d4a": "Bug 708098 - Further mitigation for CVE-2012-4245 (script-fu-server)\n\nReorder server_start()'s arguments so they match the PDB signature.\n\n(cherry picked from commit 3b72ad8939c3a1463492d102dfe457e5fef68d04)",
+      "3b72ad8939c3a1463492d102dfe457e5fef68d04": "Bug 708098 - Further mitigation for CVE-2012-4245 (script-fu-server)\n\nReorder server_start()'s arguments so they match the PDB signature.",
+      "401d21b12412e69f0dc813bb8795082184d9c94e": "Bug 708098 - Further mitigation for CVE-2012-4245 (script-fu-server)\n\nAdd an \"ip\" parameter as *first* argument to the\nplug-in-script-fu-server procedure. This is an incompatible change\nwith the intent to make any old-style calls to the procedure\nfail. Also reorder the GUI to have the IP in the first line.\n\n(cherry picked from commit 83741044fc6f6409910b1690dc601c98e0f7ec3f)",
+      "4f83fd3f13631bb6d89cc5c3527fb2ca802f5489": "Bug 708098 - Further mitigation for CVE-2012-4245 (script-fu-server)\n\nAdded a warning message informing about the danger of running a\nscript-fu server on any PI but 127.0.0.1.\n\n(cherry picked from commit 3705f54300b29f4a21857e8d404e545480c6aeff)",
+      "95269e922b486fceb28670fc21073fe1a61c8046": "Bug 708098 - Further mitigation for CVE-2012-4245 (script-fu-server)\n\nadded listen-to-ip field to the script-fu start server dialog\n\n(cherry picked from commit f98592afa31331fd376131fee2c4cf33d6f99151)",
+      "83741044fc6f6409910b1690dc601c98e0f7ec3f": "Bug 708098 - Further mitigation for CVE-2012-4245 (script-fu-server)\n\nAdd an \"ip\" parameter as *first* argument to the\nplug-in-script-fu-server procedure. This is an incompatible change\nwith the intent to make any old-style calls to the procedure\nfail. Also reorder the GUI to have the IP in the first line.",
+      "3705f54300b29f4a21857e8d404e545480c6aeff": "Bug 708098 - Further mitigation for CVE-2012-4245 (script-fu-server)\n\nAdded a warning message informing about the danger of running a\nscript-fu server on any PI but 127.0.0.1.",
+      "f98592afa31331fd376131fee2c4cf33d6f99151": "Bug 708098 - Further mitigation for CVE-2012-4245 (script-fu-server)\n\nadded listen-to-ip field to the script-fu start server dialog"
+    },
+    "CVE-2013-1978": {
+      "0ffb3b6753aad00512349bba31bf5113054c6a0e": "file-xwd: sanity check # of colors and map entries (CVE-2013-1978)\n\nThe number of colors in an image shouldn't be higher than the number of\ncolormap entries. Additionally, consolidate post error cleanup in\nload_image().\n\n(cherry picked from commit 23f685931e5f000dd033a45c60c1e60d7f78caf4)",
+      "23f685931e5f000dd033a45c60c1e60d7f78caf4": "file-xwd: sanity check # of colors and map entries (CVE-2013-1978)\n\nThe number of colors in an image shouldn't be higher than the number of\ncolormap entries. Additionally, consolidate post error cleanup in\nload_image().",
+      "0e859d77a41331a35d2666f20265468bdf38c372": "file-xwd: sanity check # of colors and map entries (CVE-2013-1978)\n\nThe number of colors in an image shouldn't be higher than the number of\ncolormap entries. Additionally, consolidate post error cleanup in\nload_image().\n\n(cherry picked from commit f597355beffd9e483e11407d4c3b56f32db3634d)\n\nConflicts:\n\tplug-ins/common/file-xwd.c"
+    },
+    "CVE-2013-1913": {
+      "7f2322e4ced8ba393abc5a0aa15a607f340f0db8": "file-xwd: sanity check colormap size (CVE-2013-1913)\n\n(cherry picked from commit 32ae0f83e5748299641cceaabe3f80f1b3afd03e)",
+      "32ae0f83e5748299641cceaabe3f80f1b3afd03e": "file-xwd: sanity check colormap size (CVE-2013-1913)",
+      "624306cb84fe08c57f7a927da0333eb04cea001d": "file-xwd: sanity check colormap size (CVE-2013-1913)\n\n(cherry picked from commit 3997c7188a71dc8fc4c6a7513061180cbbd3590e)"
+    },
+    "CVE-2012-3481": {
+      "372ba14850c12fe9c618fceeb5af9404ee8fbdf7": "file-gif-load: fix type overflow (CVE-2012-3481)\n\nCast variables properly to avoid overflowing when computing how much\nmemory to allocate.\n(cherry picked from commit 43fc9dbd8e2196944c8a71321e525b89b7df9f5c)",
+      "53a877eac4b5244958102475e9b8220f8552b39d": "file-gif-load: limit len and height (CVE-2012-3481)\n\nEnsure values of len and height can't overflow g_malloc() argument type.\n(cherry picked from commit d95c2f0bcb6775bdee2bef35b7d84f6dfd490783)",
+      "6b642a26daaf0204fa9a6cf622a6b459e3a059ef": "file-gif-load: fix type overflow (CVE-2012-3481)\n\nCast variables properly to avoid overflowing when computing how much\nmemory to allocate.\n(cherry picked from commit 43fc9dbd8e2196944c8a71321e525b89b7df9f5c)",
+      "4347b3496abd56d8419f3a14cc97fac25e6f546d": "file-gif-load: limit len and height (CVE-2012-3481)\n\nEnsure values of len and height can't overflow g_malloc() argument type.\n(cherry picked from commit d95c2f0bcb6775bdee2bef35b7d84f6dfd490783)",
+      "43fc9dbd8e2196944c8a71321e525b89b7df9f5c": "file-gif-load: fix type overflow (CVE-2012-3481)\n\nCast variables properly to avoid overflowing when computing how much\nmemory to allocate.",
+      "d95c2f0bcb6775bdee2bef35b7d84f6dfd490783": "file-gif-load: limit len and height (CVE-2012-3481)\n\nEnsure values of len and height can't overflow g_malloc() argument type."
+    },
+    "CVE-2012-3403": {
+      "6c39de83ceebf200f32786ed917b0db9fac4f8da": "file-cel: validate header data (CVE-2012-3403)\n(cherry picked from commit b772d1b84c9272bb46ab9a21db4390e6263c9892)",
+      "a605d0c4d5c2c77bfe03204423dc3ad70dfa3483": "file-cel: validate header data (CVE-2012-3403)\n(cherry picked from commit b772d1b84c9272bb46ab9a21db4390e6263c9892)",
+      "b772d1b84c9272bb46ab9a21db4390e6263c9892": "file-cel: validate header data (CVE-2012-3403)"
+    },
+    "CVE-2011-2896": {
+      "62718f821b7c79a6860b8b25f0a21a91daa6e22d": "file-gif-load: fix heap corruption and buffer overflow (CVE-2011-2896)\n(cherry picked from commit 376ad788c1a1c31d40f18494889c383f6909ebfc)",
+      "376ad788c1a1c31d40f18494889c383f6909ebfc": "file-gif-load: fix heap corruption and buffer overflow (CVE-2011-2896)"
+    },
+    "CVE-2011-1782": {
+      "a92328348e47a6386a713d60ef4220e666be8022": "file-psp: fix overflow protection (CVE-2011-1782)\n\namends commit 48ec15890e1751dede061f6d1f469b6508c13439, related to\nCVE-2010-4543\n(cherry picked from commit f657361db04de69ce003328724c59e3f942d7d15)",
+      "f657361db04de69ce003328724c59e3f942d7d15": "file-psp: fix overflow protection (CVE-2011-1782)\n\namends commit 48ec15890e1751dede061f6d1f469b6508c13439, related to\nCVE-2010-4543"
+    },
+    "CVE-2010-4543": {
+      "a92328348e47a6386a713d60ef4220e666be8022": "file-psp: fix overflow protection (CVE-2011-1782)\n\namends commit 48ec15890e1751dede061f6d1f469b6508c13439, related to\nCVE-2010-4543\n(cherry picked from commit f657361db04de69ce003328724c59e3f942d7d15)",
+      "f657361db04de69ce003328724c59e3f942d7d15": "file-psp: fix overflow protection (CVE-2011-1782)\n\namends commit 48ec15890e1751dede061f6d1f469b6508c13439, related to\nCVE-2010-4543"
+    },
+    "CVE-2009-3909": {
+      "88eccea84aa375197cc04a2a0e2e29debb56bfa5": "Harden the PSD plugin against integer overflows.\n\nIssues discovered by Stefan Cornelius, Secunia Research, advisory SA37232\nand CVE identifier CVE-2009-3909. Fixes bug #600741.\n(cherry picked from commit 9cc8d78ff33b7a36852b74e64b427489cad44d0e)",
+      "9cc8d78ff33b7a36852b74e64b427489cad44d0e": "Harden the PSD plugin against integer overflows.\n\nIssues discovered by Stefan Cornelius, Secunia Research, advisory SA37232\nand CVE identifier CVE-2009-3909. Fixes bug #600741."
+    },
+    "CVE-2009-1570": {
+      "df2b0aca2e7cdb95ebfd3454c65aaba0a83e9bbe": "Harden the BMP plugin against integer overflows.\n\nIssues discovered by Stefan Cornelius, Secunia Research, advisory SA37232\nand CVE identifier CVE-2009-1570. Fixes bug #600484.",
+      "e3afc99b2fa7aeddf0dba4778663160a5bc682d3": "Harden the BMP plugin against integer overflows.\n\nIssues discovered by Stefan Cornelius, Secunia Research, advisory SA37232\nand CVE identifier CVE-2009-1570. Fixes bug #600484."
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vcs_url": "https://android.googlesource.com/platform/external/freetype",
+  "vulnerabilities": {
+    "CVE-2020-15999": {
+      "a3bab162b2ae616074c8877a04556932998aeacd": "[sfnt] Fix heap buffer overflow (#59308).\n\nThis is CVE-2020-15999.\n\n* src/sfnt/pngshim.c (Load_SBit_Png): Test bitmap size earlier."
+    },
+    "CVE-2018-6942": {
+      "632a11f91f0d932ac498e9e6ca022c9903ab05e9": "CHANGES: Mention CVE-2018-6942."
+    },
+    "CVE-2017-8287": {
+      "e9e2e5d4601fe4474bd2cff70a2c8c6a7c7387c3": "Document CVE-2017-8287."
+    },
+    "CVE-2017-8105": {
+      "7752c68c50e651d76615de84db1e34f7ee1329b3": "Document CVE-2017-8105."
+    },
+    "CVE-2011-3439": {
+      "27811904d8de0ce5591417812ca31163bf5aad60": "Updated freetype to 2.4.8\n\nThis change is to fix a vulnerability in 2.4.7 (CVE-2011-3439). It\nis taken from http://b/issue?id=5700584.\n\nChange-Id: I25a87999bc3ab44d7c7f59e7f04f56895d86bb5d"
+    },
+    "CVE-2007-1351": {
+      "9f83e055028306dac4103c14f52d7cfdf8adedcf": "* Version 2.3.3 released.\n=========================\n\n\nTag sources with `VER-2-3-3'.\n\n* docs/CHANGES: Mention CVE-2007-1351."
+    }
+  }
+}

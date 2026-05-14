@@ -1,0 +1,108 @@
+{
+  "vcs_url": "https://github.com/prometheus/prometheus",
+  "vulnerabilities": {
+    "GHSA-39J6-789Q-QXVH": {
+      "9122d1f50bd3056bffd035b202612fe116c13efd": "Merge pull request #18650 from roidelapluie/roidelapluie/ghsa-39j6-789q-qxvh-3.5\n\ndiscovery/stackit: use config.Secret for ServiceAccountKey and PrivateKey",
+      "fd2d158f49819797216c263790fd46370be1b06a": "discovery/stackit: use config.Secret for ServiceAccountKey and PrivateKey\n\nFixes GHSA-39j6-789q-qxvh\n\nSigned-off-by: Julien Pivotto <291750+roidelapluie@users.noreply.github.com>",
+      "aa5927029e417d1efe7f201d60a500dafa1af90e": "discovery/stackit: use config.Secret for ServiceAccountKey and PrivateKey\n\nFixes GHSA-39j6-789q-qxvh\n\nSigned-off-by: Julien Pivotto <291750+roidelapluie@users.noreply.github.com>"
+    },
+    "GHSA-FW8G-CG8F-9J28": {
+      "bf6fb7362e761b19da2b40a1ff546f370b531361": "ui: fix stored XSS in old UI heatmap chart tick labels\n\nThis fixes the stored XSS as described in:\n\nhttps://github.com/prometheus/prometheus/security/advisories/GHSA-fw8g-cg8f-9j28\n\nSigned-off-by: Julius Volz <julius.volz@gmail.com>\nSigned-off-by: Julien Pivotto <291750+roidelapluie@users.noreply.github.com>",
+      "38f23b9075ced1de2b82d2dad8b2bebb1ecd5b7d": "ui: fix stored XSS in old UI heatmap chart tick labels\n\nThis fixes the stored XSS as described in:\n\nhttps://github.com/prometheus/prometheus/security/advisories/GHSA-fw8g-cg8f-9j28\n\nSigned-off-by: Julius Volz <julius.volz@gmail.com>\nSigned-off-by: Julien Pivotto <291750+roidelapluie@users.noreply.github.com>"
+    },
+    "GHSA-VFFH-X6R8-XX99": {
+      "a7b86697d684a0bb9a8d549ed3737bdde9766194": "UI: Fix stored XSS via unescaped metric names and labels\n\nMetric names, label names, and label values containing HTML/JavaScript were\ninserted into `innerHTML` without escaping in several UI code paths, enabling\nstored XSS attacks via crafted metrics. This mostly becomes exploitable in\nPrometheus 3.x, since it defaults to allowing any UTF-8 characters in metric\nand label names.\n\nApply `escapeHTML()` to all user-controlled values before innerHTML\ninsertion in:\n\n* Mantine UI chart tooltip\n* Old React UI chart tooltip\n* Old React UI metrics explorer fuzzy search\n* Old React UI heatmap tooltip\n\nSee https://github.com/prometheus/prometheus/security/advisories/GHSA-vffh-x6r8-xx99\n\nSigned-off-by: Julius Volz <julius.volz@gmail.com>\nSigned-off-by: Julien Pivotto <291750+roidelapluie@users.noreply.github.com>",
+      "fddbccf79bc81a870dd455dfd1c8368d31b93a4b": "UI: Fix stored XSS via unescaped metric names and labels\n\nMetric names, label names, and label values containing HTML/JavaScript were\ninserted into `innerHTML` without escaping in several UI code paths, enabling\nstored XSS attacks via crafted metrics. This mostly becomes exploitable in\nPrometheus 3.x, since it defaults to allowing any UTF-8 characters in metric\nand label names.\n\nApply `escapeHTML()` to all user-controlled values before innerHTML\ninsertion in:\n\n* Mantine UI chart tooltip\n* Old React UI chart tooltip\n* Old React UI metrics explorer fuzzy search\n* Old React UI heatmap tooltip\n\nSee https://github.com/prometheus/prometheus/security/advisories/GHSA-vffh-x6r8-xx99\n\nSigned-off-by: Julius Volz <julius.volz@gmail.com>",
+      "a4d5f98f427ac679b258df364192b9f36d7a5c23": "UI: Fix stored XSS via unescaped metric names and labels\n\nMetric names, label names, and label values containing HTML/JavaScript were\ninserted into `innerHTML` without escaping in several UI code paths, enabling\nstored XSS attacks via crafted metrics. This mostly becomes exploitable in\nPrometheus 3.x, since it defaults to allowing any UTF-8 characters in metric\nand label names.\n\nApply `escapeHTML()` to all user-controlled values before innerHTML\ninsertion in:\n\n* Mantine UI chart tooltip\n* Old React UI chart tooltip\n* Old React UI metrics explorer fuzzy search\n* Old React UI heatmap tooltip\n\nSee https://github.com/prometheus/prometheus/security/advisories/GHSA-vffh-x6r8-xx99\n\nSigned-off-by: Julius Volz <julius.volz@gmail.com>"
+    },
+    "CVE-2026-32285": {
+      "04b36ba9a646723cfc87a6b6d2979459e51ee01e": "Merge pull request #18410 from sTomerG/chore/bump-libopenapi-jsonparser-cve\n\nchore: bump libopenapi to pull jsonparser v1.1.2 to address CVE-2026-32285.",
+      "40320810df46df4e91373acbb090fffda609b9f4": "chore: bump libopenapi to pull jsonparser v1.1.2\n\nBump github.com/pb33f/libopenapi to v0.34.4, which upgrades github.com/buger/jsonparser\nto v1.1.2 to address CVE-2026-32285.\n\nSigned-off-by: Tomer Gabay <10978711+sTomerG@users.noreply.github.com>"
+    },
+    "CVE-2026-21884": {
+      "eba102b26d62d452ae3134172fd7942bca19f355": "Merge pull request #17854 from rahulrairai59/patch-1\n\nbuild: update react-router to v7.12.0 to fix CVE-2026-21884",
+      "5499260964b94e4a396f0ce2327388b174cb38f8": "Update react-router version to v7.12.0 to fix CVE-2026-21884 in package-lock.json\n\nTo fix CVE-2026-21884 HIGH severity vulnerability \n\nSigned-off-by: Rahulrairai59 <rahulrairai59@gmail.com>"
+    },
+    "CVE-2025-54388": {
+      "c487ffdb8911a3de45faab0f140381c931cfdef8": "deps(security): bump docker/docker to v28.3.3+incompatible (GHSA-x4rx-4gw3-53p4 / CVE-2025-54388); bump go-viper/mapstructure/v2 to v2.4.0 (GHSA-2464-8j7c-4cjm)\n\nSigned-off-by: Reema Alzaid <reema-alzaid@outlook.com>"
+    },
+    "GHSA-X4RX-4GW3-53P4": {
+      "c487ffdb8911a3de45faab0f140381c931cfdef8": "deps(security): bump docker/docker to v28.3.3+incompatible (GHSA-x4rx-4gw3-53p4 / CVE-2025-54388); bump go-viper/mapstructure/v2 to v2.4.0 (GHSA-2464-8j7c-4cjm)\n\nSigned-off-by: Reema Alzaid <reema-alzaid@outlook.com>"
+    },
+    "GHSA-2464-8J7C-4CJM": {
+      "c487ffdb8911a3de45faab0f140381c931cfdef8": "deps(security): bump docker/docker to v28.3.3+incompatible (GHSA-x4rx-4gw3-53p4 / CVE-2025-54388); bump go-viper/mapstructure/v2 to v2.4.0 (GHSA-2464-8j7c-4cjm)\n\nSigned-off-by: Reema Alzaid <reema-alzaid@outlook.com>"
+    },
+    "CVE-2025-22872": {
+      "45ee441dde21a75b320ea62897f701ebb7417ca1": "chore(deps): bump golang.org/x/net from 0.37.0 to 0.38.0 (fixes CVE-2025-22872) (#16350)\n\n* chore(deps): bump golang.org/x/net from 0.37.0 to 0.38.0 (fixes CVE-2025-22872)\n\n---------\n\nSigned-off-by: Ricard Bejarano <ricard@bejarano.io>"
+    },
+    "GHSA-J8XG-FQG3-53R7": {
+      "76ebd621d688a96cfe663b56cc66b58a2d7be666": "UI: Update word-wrap (GHSA-j8xg-fqg3-53r7)\n\nSigned-off-by: Julien Pivotto <roidelapluie@o11y.eu>"
+    },
+    "GHSA-9C47-M6QQ-7P4H": {
+      "3d80cb1325f47898ea55abc08390886565531561": "UI: Update json5 (GHSA-9c47-m6qq-7p4h)\n\nSigned-off-by: Julien Pivotto <roidelapluie@o11y.eu>"
+    },
+    "GHSA-HHQ3-FF78-JV3G": {
+      "d50c7d3bfc466d144db0666c7d5efa0a17a6be69": "UI: Update loader-utils (GHSA-hhq3-ff78-jv3g GHSA-3rfm-jhwj-7488)\n\nSigned-off-by: Julien Pivotto <roidelapluie@o11y.eu>"
+    },
+    "GHSA-3RFM-JHWJ-7488": {
+      "d50c7d3bfc466d144db0666c7d5efa0a17a6be69": "UI: Update loader-utils (GHSA-hhq3-ff78-jv3g GHSA-3rfm-jhwj-7488)\n\nSigned-off-by: Julien Pivotto <roidelapluie@o11y.eu>"
+    },
+    "GHSA-C2QF-RXJJ-QQGW": {
+      "f24dc17fcc0c7943b3edeffa36f8dba77fda0db7": "UI: Update semver (GHSA-c2qf-rxjj-qqgw)\n\nSigned-off-by: Julien Pivotto <roidelapluie@o11y.eu>"
+    },
+    "GHSA-72XF-G2V4-QVF3": {
+      "ca12cb8909936fbc2000dd7849672efcca7fa3ff": "UI: Update tough-cookie (GHSA-72xf-g2v4-qvf3 GHSA-76p3-8jx3-jpfq)\n\nSigned-off-by: Julien Pivotto <roidelapluie@o11y.eu>"
+    },
+    "GHSA-76P3-8JX3-JPFQ": {
+      "ca12cb8909936fbc2000dd7849672efcca7fa3ff": "UI: Update tough-cookie (GHSA-72xf-g2v4-qvf3 GHSA-76p3-8jx3-jpfq)\n\nSigned-off-by: Julien Pivotto <roidelapluie@o11y.eu>"
+    },
+    "GHSA-HC6Q-2MPP-QW7J": {
+      "b6fbda0c8a1f62688a26b87ba899d5e1b0587660": "UI: Update Webpack (GHSA-hc6q-2mpp-qw7j)\n\nSigned-off-by: Julien Pivotto <roidelapluie@o11y.eu>"
+    },
+    "CVE-2023-28840": {
+      "59616fc60e5f767786aabe63853095a42d3068b4": "Merge pull request #12333 from liam-verta/patch-1\n\nCVE-2023-28840: Update LTS to github.com/docker/docker v20.10.24+incompatible",
+      "77fba9c5b7a6b0259a711e233d879348a5e7ec07": "CVE-2023-28840: Update LTS to github.com/docker/docker v20.10.24+incompatible\n\nhttps://nvd.nist.gov/vuln/detail/CVE-2023-28840 is a high severity vulnerability fixed in `github.com/docker/docker v20.10.24+incompatible`.\n\nSigned-off-by: Liam Newman <liam@verta.ai>"
+    },
+    "GHSA-VVPX-J8F3-3W6H": {
+      "8f3b2fc9aeaf1bd3f839e820e7f9ffc571006e89": "Merge pull request #12020 from amrmahdi/amrh/GHSA-vvpx-j8f3-3w6h\n\nUpdate golang.org/x/net to v0.7.0 ato address GHSA-vvpx-j8f3-3w6h",
+      "4126985908ebb08a0e93021ef2476fd77731227e": "Update golang.org/x/net to v0.7.0 ato address GHSA-vvpx-j8f3-3w6h\n\nhttps://github.com/advisories/GHSA-vvpx-j8f3-3w6h\nSigned-off-by: Amr Hanafi (MAHDI)) <amrh@microsoft.com>"
+    },
+    "CVE-2022-46146": {
+      "414d31aee6586a5f29e755ae059b7d7131f1c6c8": "Merge pull request from GHSA-4v48-4q5m-8vx4\n\nFix Basic Authentication Bypass (CVE-2022-46146)",
+      "a9a24ba58c901a0972e4c38d5b0d2502951de16d": "Merge pull request from GHSA-4v48-4q5m-8vx4\n\nFix Basic Authentication Bypass (CVE-2022-46146)",
+      "ad0109267456789ee70af0431418c6ca2a357ea4": "Fix Basic Authentication Bypass (CVE-2022-46146)\n\nSigned-off-by: Julien Pivotto <roidelapluie@o11y.eu>",
+      "31a2db3ae9c0f4b486b6895973beabc1d1beac93": "Fix Basic Authentication Bypass (CVE-2022-46146)\n\nSigned-off-by: Julien Pivotto <roidelapluie@o11y.eu>"
+    },
+    "GHSA-4V48-4Q5M-8VX4": {
+      "414d31aee6586a5f29e755ae059b7d7131f1c6c8": "Merge pull request from GHSA-4v48-4q5m-8vx4\n\nFix Basic Authentication Bypass (CVE-2022-46146)",
+      "a9a24ba58c901a0972e4c38d5b0d2502951de16d": "Merge pull request from GHSA-4v48-4q5m-8vx4\n\nFix Basic Authentication Bypass (CVE-2022-46146)"
+    },
+    "CVE-2022-41715": {
+      "894e6f833c714ec5d83bc7e96d5792146a065574": "grafana/regexp: Fixes CVE-2022-41715\n\nSigned-off-by: Julien Pivotto <roidelapluie@o11y.eu>"
+    },
+    "CVE-2022-28948": {
+      "b84494d50da1ccb0f20cd1a4848902e04533b341": "Update go-yaml v3 to 3.0.1 (#10786)\n\nPicks up the fix for https://github.com/go-yaml/yaml/issues/665 -- we\r\npicked up the important fix for CVE-2022-28948 already.\r\n\r\nThis only affects go-yaml *v3*; the only user of v3 in Prometheus itself\r\nis rulefmt so the impact seems limited.\r\n\r\nSigned-off-by: David Leadbeater <dgl@dgl.cx>"
+    },
+    "CVE-2021-43816": {
+      "e17d6aad0103eb52da9753324796e616541b9521": "Bump github.com/containerd/containerd to 1.5.9 (#10282)\n\nThere is the critical CVE-2021-43816 against containerd which is only\r\nfixed in v1.5.9. In practice I don't believe this affects prometheus.\r\nHowever, upgrading will help quieten loud vulnerability scanners.\r\n\r\nTo upgrade I ran go get github.com/containerd/containerd@v1.5.9.\r\n\r\nSigned-off-by: Keegan Carruthers-Smith <keegan.csmith@gmail.com>"
+    },
+    "CVE-2021-29622": {
+      "6eeded0fdf760e81af75d9c44ce539ab77da4505": "Merge pull request from GHSA-vx57-7f4q-fpc7\n\n* Do not remove /new because it is not part of the route parameter (CVE-2021-29622)\n\nSigned-off-by: Julien Pivotto <roidelapluie@inuits.eu>\n\n* Release 2.26.1\n\nSigned-off-by: Julien Pivotto <roidelapluie@inuits.eu>",
+      "db7f0bcec27bd8aeebad6b08ac849516efa9ae02": "Merge pull request from GHSA-vx57-7f4q-fpc7\n\n* Do not remove /new because it is not part of the route parameter (CVE-2021-29622)\n\nSigned-off-by: Julien Pivotto <roidelapluie@inuits.eu>\n\n* Release 2.27.1\n\nSigned-off-by: Julien Pivotto <roidelapluie@inuits.eu>"
+    },
+    "GHSA-VX57-7F4Q-FPC7": {
+      "6eeded0fdf760e81af75d9c44ce539ab77da4505": "Merge pull request from GHSA-vx57-7f4q-fpc7\n\n* Do not remove /new because it is not part of the route parameter (CVE-2021-29622)\n\nSigned-off-by: Julien Pivotto <roidelapluie@inuits.eu>\n\n* Release 2.26.1\n\nSigned-off-by: Julien Pivotto <roidelapluie@inuits.eu>",
+      "db7f0bcec27bd8aeebad6b08ac849516efa9ae02": "Merge pull request from GHSA-vx57-7f4q-fpc7\n\n* Do not remove /new because it is not part of the route parameter (CVE-2021-29622)\n\nSigned-off-by: Julien Pivotto <roidelapluie@inuits.eu>\n\n* Release 2.27.1\n\nSigned-off-by: Julien Pivotto <roidelapluie@inuits.eu>"
+    },
+    "CVE-2021-3121": {
+      "cf269b7dddc3704d9fe6715dab09068f3c16e04e": "Update github.com/gogo/protobuf to v1.3.2\n\nFix for CVE-2021-3121\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>"
+    },
+    "CVE-2019-11358": {
+      "cf6890a3a8d6c59a08e8dd89fb778fa388756406": "web/ui: bump jQuery to 3.5.1 for the legacy UI (#7447)\n\njQuery prior to 3.4.0 is affected by an Object.prototype pollution\r\nvulnerability (CVE-2019-11358). Even though our code doesn't seem to be\r\nvulnerable to the issue, lets upgrade to the latest jQuery release so we\r\ndon't have to bother.\r\n\r\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>"
+    },
+    "CVE-2019-10215": {
+      "5b8ff9b8a4e5deb5cd16d7e6eca10b6e31c67d4d": "Merge the 2.13 release branch (#6169)\n\n* Include tsdb tool in builds (#6085) (#6089)\r\n\r\nAdd the tsdb tool to promu so that it's included in the release\r\ntarballs.\r\n\r\nSigned-off-by: Ben Kochie <superq@gmail.com>\r\n\r\n* web/ui: fix for CVE-2019-10215 (#6098)\r\n\r\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>\r\n\r\n* cut 2.13 release (#6099)\r\n\r\nSigned-off-by: Krasi Georgiev <8903888+krasi-georgiev@users.noreply.github.com>\r\n\r\n* Fix panic in ARM builds of Prometheus (#6110)\r\n\r\nAn extra sync.Pool was added during a refactor which caused some 64 bit,\r\natomically accessed variables to no longer be 64 bit aligned. By moving\r\nall atomically accessed variables to the beginning of the struct they\r\nare guaranteed to be 64 bit aligned.\r\n\r\nSigned-off-by: Chris Marchbanks <csmarchbanks@gmail.com>\r\n\r\n* promql: fix potential panic in the query logger (#6094)\r\n\r\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>\r\n\r\n* Cut release 2.13.1 (#6145)\r\n\r\nSigned-off-by: Krasi Georgiev <8903888+krasi-georgiev@users.noreply.github.com>",
+      "35857b59def018223440440b86929ed7c90a40c6": "web/ui: fix for CVE-2019-10215 (#6098)\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>"
+    }
+  }
+}

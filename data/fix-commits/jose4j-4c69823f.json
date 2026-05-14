@@ -1,0 +1,14 @@
+{
+  "vcs_url": "https://bitbucket.org/b_c/jose4j",
+  "vulnerabilities": {
+    "CVE-2018-8088": {
+      "e4da603d8ebd40f4f2080e24c9b906b9e3f31fc5": "Update slf4j-api to 1.7.36 to avoid CVE-2018-8088"
+    },
+    "CVE-2022-21449": {
+      "0f60487b67587bd3f9ecc9f1c8cea61fb205566a": "Do some pre-checks before calling the crypto provider to do ECDSA validation (inspired by CVE-2022-21449 https://neilmadden.blog/2022/04/19/psychic-signatures-in-java/ )"
+    },
+    "GHSA-269G-PWP5-87PP": {
+      "8917d5bc25b6ee95056f1b4c8fba58fbe375683f": "use newer version of junit (probably not a real concern but https://github.com/advisories/GHSA-269g-pwp5-87pp)"
+    }
+  }
+}

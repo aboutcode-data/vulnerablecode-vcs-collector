@@ -1,0 +1,12 @@
+{
+  "vcs_url": "https://github.com/numpy/numpy",
+  "vulnerabilities": {
+    "CVE-2019-6446": {
+      "8cea82a54a36b2232b484c7a50a32cefcb85e6bf": "BUG: load fails when using pickle without allow_pickle=True\n\na partial mitigation of #12759.\n\nsee also https://nvd.nist.gov/vuln/detail/CVE-2019-6446",
+      "a4df7e51483c78853bb33814073498fb027aa9d4": "BUG: load fails when using pickle without allow_pickle=True\n\na partial mitigation of #12759.\n\nsee also https://nvd.nist.gov/vuln/detail/CVE-2019-6446"
+    },
+    "CVE-2017-12852": {
+      "49bcb1aba1ca32a38696ce5239392529430b2cc4": "Merge pull request #9742 from charris/backport-pad-fixes\n\nBUG: Fix np.pad for CVE-2017-12852"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "vcs_url": "https://github.com/ray-project/ray",
+  "vulnerabilities": {
+    "CVE-2025-11230": {
+      "f9ccc7a79ee4535a5575551687e193c003e6c7f9": "[serve] Bump HAProxy to avoid CVE-2025-11230 (#62585)\n\nSigned-off-by: Seiji Eicher <seiji@anyscale.com>"
+    },
+    "GHSA-MW35-8RX3-XF9R": {
+      "c02bd31ae31996805868baa446a131a8d304525f": "[Data] Fix RCE in Arrow extension type deserialization from Parquet (#62056)\n\n## Summary\n- Fix critical RCE vulnerability (GHSA-mw35-8rx3-xf9r) where crafted\nParquet files could execute arbitrary code via `cloudpickle.loads()` in\nArrow tensor extension type deserialization\n- Switch deserialization to JSON-only by default; cloudpickle fallback\nis now opt-in via `RAY_DATA_AUTOLOAD_CLOUDPICKLE_TENSOR_METADATA=1` for\nreading files written by Ray 2.49-2.54\n- Serialization format is unchanged (still cloudpickle by default, with\n`RAY_DATA_ARROW_EXTENSION_SERIALIZATION_LEGACY_JSON_FORMAT=1` to use\nJSON)\n\n## Test plan\n- [ ] Verify existing tensor extension type tests pass with JSON-first\ndeserialization\n- [ ] Verify reading Parquet files with JSON-serialized tensor metadata\nworks\n- [ ] Verify crafted Parquet file with malicious cloudpickle payload\nraises `ValueError` instead of executing code\n- [ ] Verify `RAY_DATA_AUTOLOAD_CLOUDPICKLE_TENSOR_METADATA=1` allows\nreading legacy cloudpickle-serialized files\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\n---------\n\nSigned-off-by: Goutam <goutam@anyscale.com>\nCo-authored-by: Claude Opus 4.6 (1M context) <noreply@anthropic.com>"
+    },
+    "GHSA-72HV-8253-57QQ": {
+      "cb9c80fee6a700efe61ea97987248ce82e3fa2e2": "[Java] Upgrade jackson-databind 2.16.1 -> 2.18.6 to fix GHSA-72hv-8253-57qq (#61808)\n\nAddresses security advisory GHSA-72hv-8253-57qq (HIGH severity), where\nthe async JSON parser in jackson-core bypasses the maxNumberLength\nconstraint, allowing DoS via arbitrarily long numbers. Upgrading\njackson-databind to 2.18.6 pulls in the fixed jackson-core 2.18.6\ntransitively.\n\nCloses #61645\n\nSigned-off-by: andrew <andrew@anyscale.com>\nCo-authored-by: Claude Opus 4.6 (1M context) <noreply@anthropic.com>"
+    },
+    "CVE-2025-48924": {
+      "3e0b804643afa9e98d8a8655e0676c3ef01533a7": "Upgrade commons-lang3 to fix CVE-2025-48924 (#55524)\n\nFixes [CVE-2025-48924](https://nvd.nist.gov/vuln/detail/CVE-2025-48924)\nby upgrading the `commons-lang3` dependency.\nVulnerabilities such as this one, even if not severe, can block\ndeployments of ray within certain enterprise environments.\n\nCloses #55068\n\nSigned-off-by: Markus <msobkowski@hercules.ai>"
+    },
+    "CVE-2023-48022": {
+      "4172f7562af726c1272fd06c10203313b72eeb40": "[Core] Add ray check-open-ports cli (#44428)\n\nFollow-up of https://www.anyscale.com/blog/update-on-ray-cve-2023-48022-new-verification-tooling-available\r\n\r\nSigned-off-by: Jiajun Yao <jeromeyjj@gmail.com>"
+    },
+    "CVE-2023-35116": {
+      "525f2d7b5d11bb4b6f872ce5a4316036694678f5": "Bump Jackson to 2.16+ (#42576)\n\nCVE scanners are triggering on CVE-2023-35116. Doesn't seem to be a real CVE so just cleaning up noise from scanners.\r\n\r\nSigned-off-by: Thomas Desrosiers <thomas@anyscale.com>"
+    },
+    "CVE-2023-2976": {
+      "a29e528cb1dc47ca82eeb82651b7650e4b22c84c": "[Java] Update Guava package (#38424)\n\n* Update Guava to address https://nvd.nist.gov/vuln/detail/CVE-2023-2976"
+    },
+    "CVE-2023-32731": {
+      "229c70bfdd22683db5430d6568b116d62ffd79e1": "Upgrade grpcio to a secure version (#37398)\n\nVersions lower than 1.54.2 are vulnerable to https://nvd.nist.gov/vuln/detail/CVE-2023-32731\r\n\r\nCo-authored-by: Philipp Moritz <pcmoritz@gmail.com>",
+      "61401dad861bff84e4c0b82f561ff539ac54b4ff": "Unpin grpcio for Ray Client (#37368)\n\nIt seems like the bug https://github.com/grpc/grpc/issues/31885 that caused the problems with Ray Client tests has been fixed in grpcio 1.56, so we are removing the pin so people can upgrade to fix https://nvd.nist.gov/vuln/detail/CVE-2023-32731\r\n\r\nPinning to just the latest version would be too restrictive so we remove the pin (since the Ray client works with other versions as well except for some corner cases)."
+    },
+    "GHSA-CFMR-VRGJ-VQWV": {
+      "47bb652de59e0fc7fde26262b48918cdd7ffa64c": "[Core] update grpc to 1.46.6 (#32054)\n\n#31956\r\n\r\nUpgrade to a version of gRPC that GHSA-cfmr-vrgj-vqwv in Zlib\r\n1.46.6 has this patch: grpc/grpc#31845"
+    },
+    "CVE-2022-35977": {
+      "1455a10feda52b80d28ced9411c4ab94e73ea9c3": "[Redis] Update to 7.08 for Security Fixes  (#31925)\n\nUpgrade Redis from 7.0.5 -> 7.0.8 to fix: (CVE-2022-35977) and (CVE-2023-22458)"
+    },
+    "CVE-2023-22458": {
+      "1455a10feda52b80d28ced9411c4ab94e73ea9c3": "[Redis] Update to 7.08 for Security Fixes  (#31925)\n\nUpgrade Redis from 7.0.5 -> 7.0.8 to fix: (CVE-2022-35977) and (CVE-2023-22458)"
+    },
+    "CVE-2022-25647": {
+      "8d04afd72b1380533611552f8988b050e41e3716": "[Java] Update GSON package (#28072)\n\nFixes CVE: https://nvd.nist.gov/vuln/detail/CVE-2022-25647"
+    },
+    "CVE-2021-44832": {
+      "25595a333169d3d6f0c18577a9e5f641bd54f4a3": "[Java] Bump log4j 2.17.0 to 2.17.1 (#21373)\n\nNew log4j version fixes vulnerability:\r\n* https://nvd.nist.gov/vuln/detail/CVE-2021-44832",
+      "8884cf0f4f63fe7a2bff00740d768ee9dd549f42": "[Java] Bump log4j 2.17.0 to 2.17.1 (#21373)\n\nNew log4j version fixes vulnerability:\r\n* https://nvd.nist.gov/vuln/detail/CVE-2021-44832"
+    },
+    "CVE-2021-45105": {
+      "ef593fe5d3c864836b80ae77be32635cef42b537": "[Java] Bump log4j 2.16.0 -> 2.17.0 (#21176)\n\nResolves [CVE-2021-45105](https://github.com/advisories/GHSA-p6xc-xr62-6r2g).",
+      "774163f9c9525960fbd32dabcb6274cbfa32b57c": "[Java] Bump log4j 2.16.0 -> 2.17.0 (#21176)\n\nResolves [CVE-2021-45105](https://github.com/advisories/GHSA-p6xc-xr62-6r2g)."
+    },
+    "GHSA-P6XC-XR62-6R2G": {
+      "ef593fe5d3c864836b80ae77be32635cef42b537": "[Java] Bump log4j 2.16.0 -> 2.17.0 (#21176)\n\nResolves [CVE-2021-45105](https://github.com/advisories/GHSA-p6xc-xr62-6r2g).",
+      "774163f9c9525960fbd32dabcb6274cbfa32b57c": "[Java] Bump log4j 2.16.0 -> 2.17.0 (#21176)\n\nResolves [CVE-2021-45105](https://github.com/advisories/GHSA-p6xc-xr62-6r2g)."
+    },
+    "CVE-2021-44228": {
+      "01c07586ff7e7b59dbc40bef61eafe3c744b321b": "Bump log4j from 2.14.0 to 2.15.0 (#21036)\n\nFix Remote code injection in Log4j\r\nLog4j versions prior to 2.15.0 are subject to a remote code execution vulnerability via the ldap JNDI parser.\r\n\r\nCheck this refer: [CVE-2021-44228](https://github.com/advisories/GHSA-jfh8-c2jp-5v3q)",
+      "df422bbcc6a66264898c3404aae08d4c9c244340": "Bump log4j from 2.14.0 to 2.15.0 (#21036)\n\nFix Remote code injection in Log4j\r\nLog4j versions prior to 2.15.0 are subject to a remote code execution vulnerability via the ldap JNDI parser.\r\n\r\nCheck this refer: [CVE-2021-44228](https://github.com/advisories/GHSA-jfh8-c2jp-5v3q)",
+      "f1acabe9cf37d5d123017fb3f158c37fb36499a5": "Bump log4j from 2.14.0 to 2.15.0 (#21036)\n\nFix Remote code injection in Log4j\r\nLog4j versions prior to 2.15.0 are subject to a remote code execution vulnerability via the ldap JNDI parser.\r\n\r\nCheck this refer: [CVE-2021-44228](https://github.com/advisories/GHSA-jfh8-c2jp-5v3q)"
+    },
+    "GHSA-JFH8-C2JP-5V3Q": {
+      "01c07586ff7e7b59dbc40bef61eafe3c744b321b": "Bump log4j from 2.14.0 to 2.15.0 (#21036)\n\nFix Remote code injection in Log4j\r\nLog4j versions prior to 2.15.0 are subject to a remote code execution vulnerability via the ldap JNDI parser.\r\n\r\nCheck this refer: [CVE-2021-44228](https://github.com/advisories/GHSA-jfh8-c2jp-5v3q)",
+      "df422bbcc6a66264898c3404aae08d4c9c244340": "Bump log4j from 2.14.0 to 2.15.0 (#21036)\n\nFix Remote code injection in Log4j\r\nLog4j versions prior to 2.15.0 are subject to a remote code execution vulnerability via the ldap JNDI parser.\r\n\r\nCheck this refer: [CVE-2021-44228](https://github.com/advisories/GHSA-jfh8-c2jp-5v3q)",
+      "f1acabe9cf37d5d123017fb3f158c37fb36499a5": "Bump log4j from 2.14.0 to 2.15.0 (#21036)\n\nFix Remote code injection in Log4j\r\nLog4j versions prior to 2.15.0 are subject to a remote code execution vulnerability via the ldap JNDI parser.\r\n\r\nCheck this refer: [CVE-2021-44228](https://github.com/advisories/GHSA-jfh8-c2jp-5v3q)"
+    }
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "vcs_url": "https://github.com/apache/druid",
+  "vulnerabilities": {
+    "CVE-2026-33186": {
+      "27556bab76080004e519d468659d975cb591e80c": "suppress-CVE-2026-33186"
+    },
+    "CVE-2026-24308": {
+      "77580495d971886822a2f5f34f669740bbf7a1a2": "Fix CVE-2026-24308: Upgrade Apache ZooKeeper to 3.8.6 (#19135)\n\nUpgrades org.apache.zookeeper from 3.8.4 to 3.8.6 to remediate CVE-2026-24308.\n\n\n---------\n\nCo-authored-by: Ashwin Tumma <ashwin.tumma@salesforce.com>"
+    },
+    "CVE-2025-33042": {
+      "b451264cec1285b6ea2fd42aea435b99ae992705": "Fix CVE-2025-33042: Upgrade Apache Avro to 1.11.5 (#19103)\n\nUpgrades org.apache.avro from 1.11.4 to 1.11.5 to remediate CVE-2025-33042.\n\n\nCo-authored-by: Ashwin Tumma <ashwin.tumma@salesforce.com>"
+    },
+    "CVE-2026-24400": {
+      "9e2fa2138d32b4d910f86989b9d72c841789bba2": "Update assertj-core for CVE-2026-24400 (#18994)\n\nCo-authored-by: Ashwin Tumma <ashwin.tumma@salesforce.com>"
+    },
+    "CVE-2025-68161": {
+      "150a45781f55c4a8d2065e4f74c047aa015eef0a": "Bump org.apache.logging.log4j:log4j-core from 2.22.1 to 2.25.3 (#18874)\n\nUpdates org.apache.logging.log4j:log4j-core from 2.22.1 to 2.25.3 to address CVE-2025-68161.\n\nCo-authored-by: Ashwin Tumma <ashwin.tumma@salesforce.com>"
+    },
+    "CVE-2025-66453": {
+      "b692c59b9de44c3196e08d2649650da7226fcf41": "Bump org.mozilla:rhino from 1.7.14 to 1.7.14.1 (#18868)\n\nUpgraded org.mozilla:rhino version to 1.7.14.1 to resolve CVE-2025-66453.\n\nCo-authored-by: Ashwin Tumma <ashwin.tumma@salesforce.com>"
+    },
+    "CVE-2025-8916": {
+      "4c1a28b2ccb89f3de8248873f47e42751adcf024": "Fix CVE-2025-8916: Update bcpkix-jdk18on from 1.78.1 to 1.79 (#18834)\n\nUpgraded org.bouncycastle:bcpkix-jdk18on version from 1.78.1 to 1.79 to resolve CVE-2025-8916."
+    },
+    "CVE-2025-53864": {
+      "27d682d67fd146947bee094b8f50f8833351cc3e": "Upgrade gson version to resolve CVE-2025-53864 (#18527)\n\nUpgrade gson version to resolve CVE-2025-53864"
+    },
+    "CVE-2025-48924": {
+      "4adac582ac01b9ef1a5449a11732410550e8f7fc": "Upgrade pac4j extension (#18259)\n\n* Upgrade pac4j extension\n\n* Update licenses.yaml\n\n* Fix failing checks\n\n* Fix checkstyle errors\n\n* Fix failing tests\n\n* Fix unit tests\n\n* Remove tests that mock final Cookie class\n\n* Remove pac4j suppression\n\n* Empty commit\n\n* Add annotation for crypto algo\n\n* Upgrade dependency-check-maven to fix nvd api issue\n\n* Exclude crpto service algo check\n\n* Update codeql-config\n\n* Update codeql-config\n\n* Upgrade dependency-check-maven\n\n* Fix CVE-2025-48924\n\n* Update path in codeql-config\n\n* Suppress CVE-2025-5222\n\n* Remove suppression for nimbus\n\n* Update suppressions\n\n* Update suppressions\n\n* Fix CVE-2025-55163\n\n* Update licenses.yaml\n\n* Fix vuln\n\n* Empty commit\n\n* Undo ranger upgrade\n\n* Remove codeql check exclusion\n\n* Undo upgrades to extra deps\n\n* Suppression for netty\n\n* Empty commit for flaky checks\n\n* Empty commit for flaky checks\n\n* Empty commit for flaky checks\n\n* Remove unrelated suppressions\n\n* Revert dependency-check-maven upgrade\n\n* Empty commit for flaky checks\n\n* Empty commit for flaky checks\n\n* Remove log lines with decrypted cookie"
+    },
+    "CVE-2025-5222": {
+      "4adac582ac01b9ef1a5449a11732410550e8f7fc": "Upgrade pac4j extension (#18259)\n\n* Upgrade pac4j extension\n\n* Update licenses.yaml\n\n* Fix failing checks\n\n* Fix checkstyle errors\n\n* Fix failing tests\n\n* Fix unit tests\n\n* Remove tests that mock final Cookie class\n\n* Remove pac4j suppression\n\n* Empty commit\n\n* Add annotation for crypto algo\n\n* Upgrade dependency-check-maven to fix nvd api issue\n\n* Exclude crpto service algo check\n\n* Update codeql-config\n\n* Update codeql-config\n\n* Upgrade dependency-check-maven\n\n* Fix CVE-2025-48924\n\n* Update path in codeql-config\n\n* Suppress CVE-2025-5222\n\n* Remove suppression for nimbus\n\n* Update suppressions\n\n* Update suppressions\n\n* Fix CVE-2025-55163\n\n* Update licenses.yaml\n\n* Fix vuln\n\n* Empty commit\n\n* Undo ranger upgrade\n\n* Remove codeql check exclusion\n\n* Undo upgrades to extra deps\n\n* Suppression for netty\n\n* Empty commit for flaky checks\n\n* Empty commit for flaky checks\n\n* Empty commit for flaky checks\n\n* Remove unrelated suppressions\n\n* Revert dependency-check-maven upgrade\n\n* Empty commit for flaky checks\n\n* Empty commit for flaky checks\n\n* Remove log lines with decrypted cookie"
+    },
+    "CVE-2025-55163": {
+      "4adac582ac01b9ef1a5449a11732410550e8f7fc": "Upgrade pac4j extension (#18259)\n\n* Upgrade pac4j extension\n\n* Update licenses.yaml\n\n* Fix failing checks\n\n* Fix checkstyle errors\n\n* Fix failing tests\n\n* Fix unit tests\n\n* Remove tests that mock final Cookie class\n\n* Remove pac4j suppression\n\n* Empty commit\n\n* Add annotation for crypto algo\n\n* Upgrade dependency-check-maven to fix nvd api issue\n\n* Exclude crpto service algo check\n\n* Update codeql-config\n\n* Update codeql-config\n\n* Upgrade dependency-check-maven\n\n* Fix CVE-2025-48924\n\n* Update path in codeql-config\n\n* Suppress CVE-2025-5222\n\n* Remove suppression for nimbus\n\n* Update suppressions\n\n* Update suppressions\n\n* Fix CVE-2025-55163\n\n* Update licenses.yaml\n\n* Fix vuln\n\n* Empty commit\n\n* Undo ranger upgrade\n\n* Remove codeql check exclusion\n\n* Undo upgrades to extra deps\n\n* Suppression for netty\n\n* Empty commit for flaky checks\n\n* Empty commit for flaky checks\n\n* Empty commit for flaky checks\n\n* Remove unrelated suppressions\n\n* Revert dependency-check-maven upgrade\n\n* Empty commit for flaky checks\n\n* Empty commit for flaky checks\n\n* Remove log lines with decrypted cookie"
+    },
+    "CVE-2025-27817": {
+      "40ce2020f66a89cc07ed823c17d6aac681d024be": "Bump kafka client dep to 3.9.1 and mitigate CVE-2025-27817 (#18178)\n\n* Bump kafka client dep to 3.9.1 and mitigate CVE-2025-27817\n\n* update tests and dependencies\n\n* remove unused throws from method signature\n\n* checkstyle fixes"
+    },
+    "CVE-2024-53990": {
+      "da6f8c05735d373846af96e420f7529c0da9f5eb": "Bump async-http-client to 3.0.1 (#17646)\n\n* Bump async-http-client to 3.0.1\n\nBump async-http-client to 3.0.1 to resolve CVE-2024-53990 _.\n\n* Additional licenses.yaml updates.\n\n* Fix conflict.\n\n---------\n\nCo-authored-by: Gian Merlino <gianmerlino@gmail.com>\n(cherry picked from commit c60e3fb4160463060e660215387b737b92d34612)",
+      "c60e3fb4160463060e660215387b737b92d34612": "Bump async-http-client to 3.0.1 (#17646)\n\n* Bump async-http-client to 3.0.1\n\nBump async-http-client to 3.0.1 to resolve CVE-2024-53990 _.\n\n* Additional licenses.yaml updates.\n\n* Fix conflict.\n\n---------\n\nCo-authored-by: Gian Merlino <gianmerlino@gmail.com>"
+    },
+    "CVE-2025-30065": {
+      "d1c8735e25e24919263550cde7a84dc37a4f7ac3": "update parquet-avro to resolve CVE-2025-30065 (#17874)\n\n* update parquet-avro to resolve CVE-2025-30065\n\n* add missing license for updated parquet\n\n(cherry picked from commit 5fcd2cf56aec992d397e010e67c59cf638d0e7d0)",
+      "5fcd2cf56aec992d397e010e67c59cf638d0e7d0": "update parquet-avro to resolve CVE-2025-30065 (#17874)\n\n* update parquet-avro to resolve CVE-2025-30065\n\n* add missing license for updated parquet"
+    },
+    "CVE-2025-25193": {
+      "e56d55b4ce576a52d19d0829dde2dbb148acf69b": "[CVE-Fix]: Update netty4 version (#17755)\n\nThis PR updates the netty4 version used to resolve CVE-2025-25193: https://nvd.nist.gov/vuln/detail/CVE-2025-25193"
+    },
+    "CVE-2021-26291": {
+      "6aad9b08ddcf56c29078a730eadd59c55f0f9c6b": "Fix low sonatype findings (#17017)\n\nFixed vulnerabilities\r\nCVE-2021-26291 : Apache Maven is vulnerable to Man-in-the-Middle (MitM) attacks. Various\r\nfunctions across several files, mentioned below, allow for custom repositories to use the\r\ninsecure HTTP protocol. An attacker can exploit this as part of a Man-in-the-Middle (MitM)\r\nattack, taking over or impersonating a repository using the insecure HTTP protocol.\r\nUnsuspecting users may then have the compromised repository defined as a dependency in\r\ntheir Project Object Model (pom) file and download potentially malicious files from it.\r\nWas fixed by removing outdated tesla-aether library containing vulnerable maven-settings (v3.1.1) package, pull-deps utility updated to use maven resolver instead.\r\n\r\nsonatype-2020-0244 : The joni package is vulnerable to Man-in-the-Middle (MitM) attacks.\r\nThis project downloads dependencies over HTTP due to an insecure repository configuration\r\nwithin the .pom file. Consequently, a MitM could intercept requests to the specified\r\nrepository and replace the requested dependencies with malicious versions, which can execute\r\narbitrary code from the application that was built with them.\r\nWas fixed by upgrading joni package to recommended 2.1.34 version",
+      "2eff0902aa1865d0878dc53a9fca93fb1e5c0afa": "suppress kafka-clients CVE (#11562)\n\nThe CVE details are here - https://nvd.nist.gov/vuln/detail/CVE-2021-26291. I am marking it suppressed since we are only using kafka-clients jar in druid. We use maven-artifact jar ourselves but it is only used for comparing versions"
+    },
+    "CVE-2024-36114": {
+      "98ef886ef249998ed602afacab70917ad48bce90": "Suppress CVE (#16538)\n\nSuppress CVE-2024-36114"
+    },
+    "CVE-2023-52428": {
+      "b26394e15c49c55a67b0bc842b1dd8e604a5187a": "[Backport] update dependencies to address CVEs (#16374) (#16395)\n\nupdate dependencies to address new batch of CVEs:\r\n- Azure POM from 1.2.19 to 1.2.23 to update transitive dependency nimbus-jose-jwt to address:  CVE-2023-52428\r\n- commons-configuration2 from 2.8.0 to 2.10.1 to address: CVE-2024-29131 CVE-2024-29133\r\n- bcpkix-jdk18on from 1.76 to 1.78.1 to address: CVE-2024-30172 CVE-2024-30171 CVE-2024-29857\r\n\r\nCo-authored-by: Jan Werner <105367074+janjwerner-confluent@users.noreply.github.com>",
+      "b16401323b10fb364ec8bda60b541ae588bbecb6": "update dependencies to address CVEs (#16374)\n\nupdate dependencies to address new batch of CVEs:\r\n- Azure POM from 1.2.19 to 1.2.23 to update transitive dependency nimbus-jose-jwt to address:  CVE-2023-52428\r\n- commons-configuration2 from 2.8.0 to 2.10.1 to address: CVE-2024-29131 CVE-2024-29133\r\n- bcpkix-jdk18on from 1.76 to 1.78.1 to address: CVE-2024-30172 CVE-2024-30171 CVE-2024-29857"
+    },
+    "CVE-2024-29131": {
+      "b26394e15c49c55a67b0bc842b1dd8e604a5187a": "[Backport] update dependencies to address CVEs (#16374) (#16395)\n\nupdate dependencies to address new batch of CVEs:\r\n- Azure POM from 1.2.19 to 1.2.23 to update transitive dependency nimbus-jose-jwt to address:  CVE-2023-52428\r\n- commons-configuration2 from 2.8.0 to 2.10.1 to address: CVE-2024-29131 CVE-2024-29133\r\n- bcpkix-jdk18on from 1.76 to 1.78.1 to address: CVE-2024-30172 CVE-2024-30171 CVE-2024-29857\r\n\r\nCo-authored-by: Jan Werner <105367074+janjwerner-confluent@users.noreply.github.com>",
+      "b16401323b10fb364ec8bda60b541ae588bbecb6": "update dependencies to address CVEs (#16374)\n\nupdate dependencies to address new batch of CVEs:\r\n- Azure POM from 1.2.19 to 1.2.23 to update transitive dependency nimbus-jose-jwt to address:  CVE-2023-52428\r\n- commons-configuration2 from 2.8.0 to 2.10.1 to address: CVE-2024-29131 CVE-2024-29133\r\n- bcpkix-jdk18on from 1.76 to 1.78.1 to address: CVE-2024-30172 CVE-2024-30171 CVE-2024-29857"
+    },
+    "CVE-2024-29133": {
+      "b26394e15c49c55a67b0bc842b1dd8e604a5187a": "[Backport] update dependencies to address CVEs (#16374) (#16395)\n\nupdate dependencies to address new batch of CVEs:\r\n- Azure POM from 1.2.19 to 1.2.23 to update transitive dependency nimbus-jose-jwt to address:  CVE-2023-52428\r\n- commons-configuration2 from 2.8.0 to 2.10.1 to address: CVE-2024-29131 CVE-2024-29133\r\n- bcpkix-jdk18on from 1.76 to 1.78.1 to address: CVE-2024-30172 CVE-2024-30171 CVE-2024-29857\r\n\r\nCo-authored-by: Jan Werner <105367074+janjwerner-confluent@users.noreply.github.com>",
+      "b16401323b10fb364ec8bda60b541ae588bbecb6": "update dependencies to address CVEs (#16374)\n\nupdate dependencies to address new batch of CVEs:\r\n- Azure POM from 1.2.19 to 1.2.23 to update transitive dependency nimbus-jose-jwt to address:  CVE-2023-52428\r\n- commons-configuration2 from 2.8.0 to 2.10.1 to address: CVE-2024-29131 CVE-2024-29133\r\n- bcpkix-jdk18on from 1.76 to 1.78.1 to address: CVE-2024-30172 CVE-2024-30171 CVE-2024-29857"
+    },
+    "CVE-2024-30172": {
+      "b26394e15c49c55a67b0bc842b1dd8e604a5187a": "[Backport] update dependencies to address CVEs (#16374) (#16395)\n\nupdate dependencies to address new batch of CVEs:\r\n- Azure POM from 1.2.19 to 1.2.23 to update transitive dependency nimbus-jose-jwt to address:  CVE-2023-52428\r\n- commons-configuration2 from 2.8.0 to 2.10.1 to address: CVE-2024-29131 CVE-2024-29133\r\n- bcpkix-jdk18on from 1.76 to 1.78.1 to address: CVE-2024-30172 CVE-2024-30171 CVE-2024-29857\r\n\r\nCo-authored-by: Jan Werner <105367074+janjwerner-confluent@users.noreply.github.com>",
+      "b16401323b10fb364ec8bda60b541ae588bbecb6": "update dependencies to address CVEs (#16374)\n\nupdate dependencies to address new batch of CVEs:\r\n- Azure POM from 1.2.19 to 1.2.23 to update transitive dependency nimbus-jose-jwt to address:  CVE-2023-52428\r\n- commons-configuration2 from 2.8.0 to 2.10.1 to address: CVE-2024-29131 CVE-2024-29133\r\n- bcpkix-jdk18on from 1.76 to 1.78.1 to address: CVE-2024-30172 CVE-2024-30171 CVE-2024-29857"
+    },
+    "CVE-2024-30171": {
+      "b26394e15c49c55a67b0bc842b1dd8e604a5187a": "[Backport] update dependencies to address CVEs (#16374) (#16395)\n\nupdate dependencies to address new batch of CVEs:\r\n- Azure POM from 1.2.19 to 1.2.23 to update transitive dependency nimbus-jose-jwt to address:  CVE-2023-52428\r\n- commons-configuration2 from 2.8.0 to 2.10.1 to address: CVE-2024-29131 CVE-2024-29133\r\n- bcpkix-jdk18on from 1.76 to 1.78.1 to address: CVE-2024-30172 CVE-2024-30171 CVE-2024-29857\r\n\r\nCo-authored-by: Jan Werner <105367074+janjwerner-confluent@users.noreply.github.com>",
+      "b16401323b10fb364ec8bda60b541ae588bbecb6": "update dependencies to address CVEs (#16374)\n\nupdate dependencies to address new batch of CVEs:\r\n- Azure POM from 1.2.19 to 1.2.23 to update transitive dependency nimbus-jose-jwt to address:  CVE-2023-52428\r\n- commons-configuration2 from 2.8.0 to 2.10.1 to address: CVE-2024-29131 CVE-2024-29133\r\n- bcpkix-jdk18on from 1.76 to 1.78.1 to address: CVE-2024-30172 CVE-2024-30171 CVE-2024-29857"
+    },
+    "CVE-2024-29857": {
+      "b26394e15c49c55a67b0bc842b1dd8e604a5187a": "[Backport] update dependencies to address CVEs (#16374) (#16395)\n\nupdate dependencies to address new batch of CVEs:\r\n- Azure POM from 1.2.19 to 1.2.23 to update transitive dependency nimbus-jose-jwt to address:  CVE-2023-52428\r\n- commons-configuration2 from 2.8.0 to 2.10.1 to address: CVE-2024-29131 CVE-2024-29133\r\n- bcpkix-jdk18on from 1.76 to 1.78.1 to address: CVE-2024-30172 CVE-2024-30171 CVE-2024-29857\r\n\r\nCo-authored-by: Jan Werner <105367074+janjwerner-confluent@users.noreply.github.com>",
+      "b16401323b10fb364ec8bda60b541ae588bbecb6": "update dependencies to address CVEs (#16374)\n\nupdate dependencies to address new batch of CVEs:\r\n- Azure POM from 1.2.19 to 1.2.23 to update transitive dependency nimbus-jose-jwt to address:  CVE-2023-52428\r\n- commons-configuration2 from 2.8.0 to 2.10.1 to address: CVE-2024-29131 CVE-2024-29133\r\n- bcpkix-jdk18on from 1.76 to 1.78.1 to address: CVE-2024-30172 CVE-2024-30171 CVE-2024-29857"
+    },
+    "CVE-2024-29025": {
+      "c45da431fb53e89450fe60abf5b989d5d19d0f45": "update netty and zookeeper dependencies to address CVEs (#16267)\n\n Update dependencies to address CVEs: \r\n- Update netty from 4.1.107.Final to 4.1.108.Final to address: CVE-2024-29025 \r\n- Update zookeeper from 3.8.3 to 3.8.4 to address: CVE-2024-23944\r\n\r\n\r\nRelease notes:\r\n- Update netty from 4.1.107.Final to 4.1.108.Final to address: CVE-2024-29025 \r\n- Update zookeeper from 3.8.3 to 3.8.4 to address: CVE-2024-23944"
+    },
+    "CVE-2024-23944": {
+      "c45da431fb53e89450fe60abf5b989d5d19d0f45": "update netty and zookeeper dependencies to address CVEs (#16267)\n\n Update dependencies to address CVEs: \r\n- Update netty from 4.1.107.Final to 4.1.108.Final to address: CVE-2024-29025 \r\n- Update zookeeper from 3.8.3 to 3.8.4 to address: CVE-2024-23944\r\n\r\n\r\nRelease notes:\r\n- Update netty from 4.1.107.Final to 4.1.108.Final to address: CVE-2024-29025 \r\n- Update zookeeper from 3.8.3 to 3.8.4 to address: CVE-2024-23944"
+    },
+    "CVE-2023-51775": {
+      "834a0ad9f16530eec24f94bf3bbd7f7ea33e6470": "update jose4j and corresponding license file (#16078)\n\nUpdate org.bitbucket.b_c:jose4j from 0.9.3 to 0.9.6. to resolve https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-51775\r\n\r\nfixes #16075"
+    },
+    "CVE-2024-25710": {
+      "baaa4a68084620bd1432aede5fcd448485de6564": "update common-compress to address CVE-2024-25710 CVE-2024-26308 (#16009)\n\n* Update common-compress to 1.26.0 to address CVEs CVE-2024-25710 CVE-2024-26308\r\n* Add commons-codec as a runtime dependency required by common-compress 1.26.0\r\n\r\n---------\r\n\r\nCo-authored-by: Xavier L\u00e9aut\u00e9 <xl+github@xvrl.net>"
+    },
+    "CVE-2024-26308": {
+      "baaa4a68084620bd1432aede5fcd448485de6564": "update common-compress to address CVE-2024-25710 CVE-2024-26308 (#16009)\n\n* Update common-compress to 1.26.0 to address CVEs CVE-2024-25710 CVE-2024-26308\r\n* Add commons-codec as a runtime dependency required by common-compress 1.26.0\r\n\r\n---------\r\n\r\nCo-authored-by: Xavier L\u00e9aut\u00e9 <xl+github@xvrl.net>"
+    },
+    "CVE-2023-51074": {
+      "495e66f2e737a12ce7e6751f0a432bee1161f0f7": "CVE Fix: Update json-path version (#15772)\n\nApache Druid brings the dependency json-path which is affected by CVE-2023-51074.\r\nIts latest version 2.9.0 fixes the above CVE.\r\n\r\nAppend function has been added to json-path and so the unit test to check for the append function not present has been updated.\r\n\r\n---------\r\n\r\nCo-authored-by: Xavier L\u00e9aut\u00e9 <xvrl@apache.org>"
+    },
+    "CVE-2021-44878": {
+      "f32dbd41311c3d2ac8c781070c354c12ed462104": "Upgrade pac4j-oidc to 4.5.7 to address CVE-2021-44878 (#15522)\n\n* Upgrade org.pac4j:pac4j-oidc to 4.5.5 to address CVE-2021-44878\r\n* add CVE suppression and notes, since vulnerability scan still shows this CVE\r\n* Add tests to improve coverage"
+    },
+    "CVE-2023-3635": {
+      "3c7dec56ca274ea411e0aee780e42f84627c55a3": "update kubernetes java client to 19.0.0 and docker-java to 3.3.4 (#15449)\n\nUpdate of direct dependencies:\r\n* kubernetes java-client to 19.0.0\r\n* docker-java-bom to 3.3.4\r\n\r\nIn order to update transitive dependencies:\r\n* okio to 3.6.0\r\n* bcjava to 1.76\r\n\r\nTo address CVES:\r\n- CVE-2023-3635 in okio\r\n- CVE-2023-33201 in bcjava\r\n\r\n---------\r\n\r\nCo-authored-by: Xavier L\u00e9aut\u00e9 <xvrl@apache.org>",
+      "388d5ecf78de51cbe81a7076a2b23250bff7b8fa": "Fix reported CVEs (#14882)\n\nSuppress CVEs from dependencies with no available fix or false positives\r\nhadoop-annotations: CVE-2022-25168, CVE-2021-33036\r\nhadoop-client-runtime: CVE-2023-1370, CVE-2023-37475\r\nokio: CVE-2023-3635\r\nUpgrade grpc version to fix CVE-2023-33953"
+    },
+    "CVE-2023-33201": {
+      "3c7dec56ca274ea411e0aee780e42f84627c55a3": "update kubernetes java client to 19.0.0 and docker-java to 3.3.4 (#15449)\n\nUpdate of direct dependencies:\r\n* kubernetes java-client to 19.0.0\r\n* docker-java-bom to 3.3.4\r\n\r\nIn order to update transitive dependencies:\r\n* okio to 3.6.0\r\n* bcjava to 1.76\r\n\r\nTo address CVES:\r\n- CVE-2023-3635 in okio\r\n- CVE-2023-33201 in bcjava\r\n\r\n---------\r\n\r\nCo-authored-by: Xavier L\u00e9aut\u00e9 <xvrl@apache.org>"
+    },
+    "CVE-2022-46337": {
+      "e76b87f08958db30d18eeb9867a516df73635d83": "Suppress CVE-2022-46337 and CVEs below score of 9 for the patch branch (#15524)\n\nSuppress CVE-2022-46337 and CVEs below score of 9 for the patch branch"
+    },
+    "CVE-2019-10202": {
+      "f4856bc1c1d96e080bcfbb3b8d869598b3802522": "ranger-security: exclude jackson-jaxrs from + fix outdated documentation (#15481)\n\n* Excluding jackson-jaxrs dependency from ranger-plugin-common to address CVE regression introduced by ranger-upgrade: CVE-2019-10202, CVE-2019-10172\r\n* remove the reference to outdated ranger 2.0 from the docs\r\n\r\n---------\r\n\r\nCo-authored-by: Xavier L\u00e9aut\u00e9 <xl+github@xvrl.net>"
+    },
+    "CVE-2019-10172": {
+      "f4856bc1c1d96e080bcfbb3b8d869598b3802522": "ranger-security: exclude jackson-jaxrs from + fix outdated documentation (#15481)\n\n* Excluding jackson-jaxrs dependency from ranger-plugin-common to address CVE regression introduced by ranger-upgrade: CVE-2019-10202, CVE-2019-10172\r\n* remove the reference to outdated ranger 2.0 from the docs\r\n\r\n---------\r\n\r\nCo-authored-by: Xavier L\u00e9aut\u00e9 <xl+github@xvrl.net>"
+    },
+    "CVE-2020-8908": {
+      "8cc256b07984a3571dc073be792256674c82d803": "update guava to 32.0.1-jre to address CVEs (#15482)\n\nUpdate guava to 32.0.1-jre to address two CVEs: CVE-2020-8908, CVE-2023-2976\r\nThis change requires a minor test change to remove assumptions about ordering.\r\n\r\n---------\r\n\r\nCo-authored-by: Xavier L\u00e9aut\u00e9 <xl+github@xvrl.net>"
+    },
+    "CVE-2023-2976": {
+      "8cc256b07984a3571dc073be792256674c82d803": "update guava to 32.0.1-jre to address CVEs (#15482)\n\nUpdate guava to 32.0.1-jre to address two CVEs: CVE-2020-8908, CVE-2023-2976\r\nThis change requires a minor test change to remove assumptions about ordering.\r\n\r\n---------\r\n\r\nCo-authored-by: Xavier L\u00e9aut\u00e9 <xl+github@xvrl.net>"
+    },
+    "CVE-2022-24329": {
+      "ddeb55fac1148489d6b35eca912e6a92035b3342": "update few minor dependencies to resolve CVEs (#15464)\n\nUpdate multiple dependencies to clear CVEs\r\nUpdate dropwizard-metrics to 4.2.22 to address GHSA-mm8h-8587-p46h in com.rabbitmq:amqp-client\r\nUpdate ant to 1.10.14 to resolve GHSA-f62v-xpxf-3v68 GHSA-4p6w-m9wc-c9c9 GHSA-q5r4-cfpx-h6fh GHSA-5v34-g2px-j4fw\r\nUpdate comomons-compress to resolve GHSA-cgwf-w82q-5jrr\r\nUpdate jose4j to 0.9.3 to resolve GHSA-7g24-qg88-p43q GHSA-jgvc-jfgh-rjvv\r\nUpdate kotlin-stdlib to 1.6.0 to resolve GHSA-cqj8-47ch-rvvq and CVE-2022-24329"
+    },
+    "GHSA-MM8H-8587-P46H": {
+      "ddeb55fac1148489d6b35eca912e6a92035b3342": "update few minor dependencies to resolve CVEs (#15464)\n\nUpdate multiple dependencies to clear CVEs\r\nUpdate dropwizard-metrics to 4.2.22 to address GHSA-mm8h-8587-p46h in com.rabbitmq:amqp-client\r\nUpdate ant to 1.10.14 to resolve GHSA-f62v-xpxf-3v68 GHSA-4p6w-m9wc-c9c9 GHSA-q5r4-cfpx-h6fh GHSA-5v34-g2px-j4fw\r\nUpdate comomons-compress to resolve GHSA-cgwf-w82q-5jrr\r\nUpdate jose4j to 0.9.3 to resolve GHSA-7g24-qg88-p43q GHSA-jgvc-jfgh-rjvv\r\nUpdate kotlin-stdlib to 1.6.0 to resolve GHSA-cqj8-47ch-rvvq and CVE-2022-24329"
+    },
+    "GHSA-F62V-XPXF-3V68": {
+      "ddeb55fac1148489d6b35eca912e6a92035b3342": "update few minor dependencies to resolve CVEs (#15464)\n\nUpdate multiple dependencies to clear CVEs\r\nUpdate dropwizard-metrics to 4.2.22 to address GHSA-mm8h-8587-p46h in com.rabbitmq:amqp-client\r\nUpdate ant to 1.10.14 to resolve GHSA-f62v-xpxf-3v68 GHSA-4p6w-m9wc-c9c9 GHSA-q5r4-cfpx-h6fh GHSA-5v34-g2px-j4fw\r\nUpdate comomons-compress to resolve GHSA-cgwf-w82q-5jrr\r\nUpdate jose4j to 0.9.3 to resolve GHSA-7g24-qg88-p43q GHSA-jgvc-jfgh-rjvv\r\nUpdate kotlin-stdlib to 1.6.0 to resolve GHSA-cqj8-47ch-rvvq and CVE-2022-24329"
+    },
+    "GHSA-4P6W-M9WC-C9C9": {
+      "ddeb55fac1148489d6b35eca912e6a92035b3342": "update few minor dependencies to resolve CVEs (#15464)\n\nUpdate multiple dependencies to clear CVEs\r\nUpdate dropwizard-metrics to 4.2.22 to address GHSA-mm8h-8587-p46h in com.rabbitmq:amqp-client\r\nUpdate ant to 1.10.14 to resolve GHSA-f62v-xpxf-3v68 GHSA-4p6w-m9wc-c9c9 GHSA-q5r4-cfpx-h6fh GHSA-5v34-g2px-j4fw\r\nUpdate comomons-compress to resolve GHSA-cgwf-w82q-5jrr\r\nUpdate jose4j to 0.9.3 to resolve GHSA-7g24-qg88-p43q GHSA-jgvc-jfgh-rjvv\r\nUpdate kotlin-stdlib to 1.6.0 to resolve GHSA-cqj8-47ch-rvvq and CVE-2022-24329"
+    },
+    "GHSA-Q5R4-CFPX-H6FH": {
+      "ddeb55fac1148489d6b35eca912e6a92035b3342": "update few minor dependencies to resolve CVEs (#15464)\n\nUpdate multiple dependencies to clear CVEs\r\nUpdate dropwizard-metrics to 4.2.22 to address GHSA-mm8h-8587-p46h in com.rabbitmq:amqp-client\r\nUpdate ant to 1.10.14 to resolve GHSA-f62v-xpxf-3v68 GHSA-4p6w-m9wc-c9c9 GHSA-q5r4-cfpx-h6fh GHSA-5v34-g2px-j4fw\r\nUpdate comomons-compress to resolve GHSA-cgwf-w82q-5jrr\r\nUpdate jose4j to 0.9.3 to resolve GHSA-7g24-qg88-p43q GHSA-jgvc-jfgh-rjvv\r\nUpdate kotlin-stdlib to 1.6.0 to resolve GHSA-cqj8-47ch-rvvq and CVE-2022-24329"
+    },
+    "GHSA-5V34-G2PX-J4FW": {
+      "ddeb55fac1148489d6b35eca912e6a92035b3342": "update few minor dependencies to resolve CVEs (#15464)\n\nUpdate multiple dependencies to clear CVEs\r\nUpdate dropwizard-metrics to 4.2.22 to address GHSA-mm8h-8587-p46h in com.rabbitmq:amqp-client\r\nUpdate ant to 1.10.14 to resolve GHSA-f62v-xpxf-3v68 GHSA-4p6w-m9wc-c9c9 GHSA-q5r4-cfpx-h6fh GHSA-5v34-g2px-j4fw\r\nUpdate comomons-compress to resolve GHSA-cgwf-w82q-5jrr\r\nUpdate jose4j to 0.9.3 to resolve GHSA-7g24-qg88-p43q GHSA-jgvc-jfgh-rjvv\r\nUpdate kotlin-stdlib to 1.6.0 to resolve GHSA-cqj8-47ch-rvvq and CVE-2022-24329"
+    },
+    "GHSA-CGWF-W82Q-5JRR": {
+      "ddeb55fac1148489d6b35eca912e6a92035b3342": "update few minor dependencies to resolve CVEs (#15464)\n\nUpdate multiple dependencies to clear CVEs\r\nUpdate dropwizard-metrics to 4.2.22 to address GHSA-mm8h-8587-p46h in com.rabbitmq:amqp-client\r\nUpdate ant to 1.10.14 to resolve GHSA-f62v-xpxf-3v68 GHSA-4p6w-m9wc-c9c9 GHSA-q5r4-cfpx-h6fh GHSA-5v34-g2px-j4fw\r\nUpdate comomons-compress to resolve GHSA-cgwf-w82q-5jrr\r\nUpdate jose4j to 0.9.3 to resolve GHSA-7g24-qg88-p43q GHSA-jgvc-jfgh-rjvv\r\nUpdate kotlin-stdlib to 1.6.0 to resolve GHSA-cqj8-47ch-rvvq and CVE-2022-24329"
+    },
+    "GHSA-7G24-QG88-P43Q": {
+      "ddeb55fac1148489d6b35eca912e6a92035b3342": "update few minor dependencies to resolve CVEs (#15464)\n\nUpdate multiple dependencies to clear CVEs\r\nUpdate dropwizard-metrics to 4.2.22 to address GHSA-mm8h-8587-p46h in com.rabbitmq:amqp-client\r\nUpdate ant to 1.10.14 to resolve GHSA-f62v-xpxf-3v68 GHSA-4p6w-m9wc-c9c9 GHSA-q5r4-cfpx-h6fh GHSA-5v34-g2px-j4fw\r\nUpdate comomons-compress to resolve GHSA-cgwf-w82q-5jrr\r\nUpdate jose4j to 0.9.3 to resolve GHSA-7g24-qg88-p43q GHSA-jgvc-jfgh-rjvv\r\nUpdate kotlin-stdlib to 1.6.0 to resolve GHSA-cqj8-47ch-rvvq and CVE-2022-24329"
+    },
+    "GHSA-JGVC-JFGH-RJVV": {
+      "ddeb55fac1148489d6b35eca912e6a92035b3342": "update few minor dependencies to resolve CVEs (#15464)\n\nUpdate multiple dependencies to clear CVEs\r\nUpdate dropwizard-metrics to 4.2.22 to address GHSA-mm8h-8587-p46h in com.rabbitmq:amqp-client\r\nUpdate ant to 1.10.14 to resolve GHSA-f62v-xpxf-3v68 GHSA-4p6w-m9wc-c9c9 GHSA-q5r4-cfpx-h6fh GHSA-5v34-g2px-j4fw\r\nUpdate comomons-compress to resolve GHSA-cgwf-w82q-5jrr\r\nUpdate jose4j to 0.9.3 to resolve GHSA-7g24-qg88-p43q GHSA-jgvc-jfgh-rjvv\r\nUpdate kotlin-stdlib to 1.6.0 to resolve GHSA-cqj8-47ch-rvvq and CVE-2022-24329"
+    },
+    "GHSA-CQJ8-47CH-RVVQ": {
+      "ddeb55fac1148489d6b35eca912e6a92035b3342": "update few minor dependencies to resolve CVEs (#15464)\n\nUpdate multiple dependencies to clear CVEs\r\nUpdate dropwizard-metrics to 4.2.22 to address GHSA-mm8h-8587-p46h in com.rabbitmq:amqp-client\r\nUpdate ant to 1.10.14 to resolve GHSA-f62v-xpxf-3v68 GHSA-4p6w-m9wc-c9c9 GHSA-q5r4-cfpx-h6fh GHSA-5v34-g2px-j4fw\r\nUpdate comomons-compress to resolve GHSA-cgwf-w82q-5jrr\r\nUpdate jose4j to 0.9.3 to resolve GHSA-7g24-qg88-p43q GHSA-jgvc-jfgh-rjvv\r\nUpdate kotlin-stdlib to 1.6.0 to resolve GHSA-cqj8-47ch-rvvq and CVE-2022-24329"
+    },
+    "GHSA-3F7H-MF4Q-VRM4": {
+      "b85405849108feb8f80bbbcb47ef1343bd32a431": "remove unnecessary elasticsearch dependencies to fix CVE regressions (#15443)\n\nRecent upgrade of ranger introduced CVE regressions due to outdated elasticsearch components.\r\nDruid-ranger-plugin does not elasticsearch components , and they have been explicitly removed.\r\n\r\nUpdate woodstox-core to 6.4.0 to address GHSA-3f7h-mf4q-vrm4"
+    },
+    "CVE-2022-42003": {
+      "7467d2c00d56793a03844252e43aaf5b631856b9": "Upgrade Jackson and Google GSON to address CVEs (#15461)\n\nUpgrade Jackson to version 2.12.7.1 to address CVE-2022-42003, CVE-2022-42004 which affects jackson-databind.\r\nUpgrade com.google.code.gson:gson from 2.2.4 to the latest version (2.10.1) since 2.2.4 is affected by CVE-2022-25647.",
+      "cca9118f55e87cc217a597db2ba0738c315b00fc": "Port CVE suppressions from 24.0.1 (#13415) (#13430)\n\n* Suppress jackson-databind CVE-2022-42003 and CVE-2022-42004\r\n(cherry picked from commit 1f4d892c9a2dbc3ce6df1481fd4c6d242ba0ea8d)\r\n* Suppress CVEs\r\n(cherry picked from commit ed55baa8fa7d7f914a0addabb072d9ed47e1cd9f)\r\n* Suppress vulnerabilities from druid-website package\r\n(cherry picked from commit c0fb364f8049d53cd704e414e2ffeab6c49b012e)\r\n* Add more suppressions for website package\r\n(cherry picked from commit 9bba569ebd52c5480bf4219c420ed78eb053701f)\r\n\r\nCo-authored-by: Rohan Garg <7731512+rohangarg@users.noreply.github.com>",
+      "c26b18c953e33b3bc886695e45836182357b593e": "Port CVE suppressions from 24.0.1 (#13415)\n\n* Suppress jackson-databind CVE-2022-42003 and CVE-2022-42004\r\n(cherry picked from commit 1f4d892c9a2dbc3ce6df1481fd4c6d242ba0ea8d)\r\n* Suppress CVEs\r\n(cherry picked from commit ed55baa8fa7d7f914a0addabb072d9ed47e1cd9f)\r\n* Suppress vulnerabilities from druid-website package\r\n(cherry picked from commit c0fb364f8049d53cd704e414e2ffeab6c49b012e)\r\n* Add more suppressions for website package\r\n(cherry picked from commit 9bba569ebd52c5480bf4219c420ed78eb053701f)",
+      "1f4d892c9a2dbc3ce6df1481fd4c6d242ba0ea8d": "Suppress jackson-databind CVE-2022-42003 and CVE-2022-42004"
+    },
+    "CVE-2022-42004": {
+      "7467d2c00d56793a03844252e43aaf5b631856b9": "Upgrade Jackson and Google GSON to address CVEs (#15461)\n\nUpgrade Jackson to version 2.12.7.1 to address CVE-2022-42003, CVE-2022-42004 which affects jackson-databind.\r\nUpgrade com.google.code.gson:gson from 2.2.4 to the latest version (2.10.1) since 2.2.4 is affected by CVE-2022-25647.",
+      "cca9118f55e87cc217a597db2ba0738c315b00fc": "Port CVE suppressions from 24.0.1 (#13415) (#13430)\n\n* Suppress jackson-databind CVE-2022-42003 and CVE-2022-42004\r\n(cherry picked from commit 1f4d892c9a2dbc3ce6df1481fd4c6d242ba0ea8d)\r\n* Suppress CVEs\r\n(cherry picked from commit ed55baa8fa7d7f914a0addabb072d9ed47e1cd9f)\r\n* Suppress vulnerabilities from druid-website package\r\n(cherry picked from commit c0fb364f8049d53cd704e414e2ffeab6c49b012e)\r\n* Add more suppressions for website package\r\n(cherry picked from commit 9bba569ebd52c5480bf4219c420ed78eb053701f)\r\n\r\nCo-authored-by: Rohan Garg <7731512+rohangarg@users.noreply.github.com>",
+      "c26b18c953e33b3bc886695e45836182357b593e": "Port CVE suppressions from 24.0.1 (#13415)\n\n* Suppress jackson-databind CVE-2022-42003 and CVE-2022-42004\r\n(cherry picked from commit 1f4d892c9a2dbc3ce6df1481fd4c6d242ba0ea8d)\r\n* Suppress CVEs\r\n(cherry picked from commit ed55baa8fa7d7f914a0addabb072d9ed47e1cd9f)\r\n* Suppress vulnerabilities from druid-website package\r\n(cherry picked from commit c0fb364f8049d53cd704e414e2ffeab6c49b012e)\r\n* Add more suppressions for website package\r\n(cherry picked from commit 9bba569ebd52c5480bf4219c420ed78eb053701f)",
+      "1f4d892c9a2dbc3ce6df1481fd4c6d242ba0ea8d": "Suppress jackson-databind CVE-2022-42003 and CVE-2022-42004"
+    },
+    "CVE-2022-25647": {
+      "7467d2c00d56793a03844252e43aaf5b631856b9": "Upgrade Jackson and Google GSON to address CVEs (#15461)\n\nUpgrade Jackson to version 2.12.7.1 to address CVE-2022-42003, CVE-2022-42004 which affects jackson-databind.\r\nUpgrade com.google.code.gson:gson from 2.2.4 to the latest version (2.10.1) since 2.2.4 is affected by CVE-2022-25647."
+    },
+    "CVE-2023-39410": {
+      "7a8204db72c82f1ce120b5d4fb316acd8b51e622": "Upgrade Avro to 1.11.3 to address CVE-2023-39410 (#15419)"
+    },
+    "CVE-2023-36478": {
+      "75d6993da93a7459793048095d27c33031c463e2": "Suppress Hadoop and jose4j cve (#15425)\n\nChanges\r\n- Suppress CVE-2023-36478 as there is no newer Hadoop version available that addresses\r\n- Suppress CVE-2023-31582 in jose4j. Pulled in by Kubernetes/Kafka but not addressed yet."
+    },
+    "CVE-2023-31582": {
+      "75d6993da93a7459793048095d27c33031c463e2": "Suppress Hadoop and jose4j cve (#15425)\n\nChanges\r\n- Suppress CVE-2023-36478 as there is no newer Hadoop version available that addresses\r\n- Suppress CVE-2023-31582 in jose4j. Pulled in by Kubernetes/Kafka but not addressed yet."
+    },
+    "CVE-2023-4586": {
+      "52d94b09a771aaba74be0f7e1dbde25774058007": "update jetty & netty4 dependencies (#15129)\n\nUpdate jetty dependencies version to 9.4.53.v20231009\r\nUpdate netty4 dependencies version to 4.1.100.Final to resolve CVE-2023-4586 (Netty-handler does not validate host names by default)"
+    },
+    "CVE-2020-7692": {
+      "dec6a0aa14d3d0100e14199617ab44624f76437f": "Update google client apis to latest version (#14414)\n\nCurrently Druid is using google apis client 1.26.0 version and google-oauth-client-1.26.0.jar in particular is bringing following CVEs CVE-2020-7692, CVE-2021-22573. Despite the CVEs being false positives, they're causing red security scans on Druid distribution. Hence updating the version to latest version with these CVE fixes.",
+      "2f28be3f2aad2e2dc09e5506cb06e86a214c3ef0": "Suppress CVE-2020-7692 (#10214)\n\nDruid is not a native app, so this CVE should not apply."
+    },
+    "CVE-2021-22573": {
+      "dec6a0aa14d3d0100e14199617ab44624f76437f": "Update google client apis to latest version (#14414)\n\nCurrently Druid is using google apis client 1.26.0 version and google-oauth-client-1.26.0.jar in particular is bringing following CVEs CVE-2020-7692, CVE-2021-22573. Despite the CVEs being false positives, they're causing red security scans on Druid distribution. Hence updating the version to latest version with these CVE fixes."
+    },
+    "CVE-2022-25168": {
+      "388d5ecf78de51cbe81a7076a2b23250bff7b8fa": "Fix reported CVEs (#14882)\n\nSuppress CVEs from dependencies with no available fix or false positives\r\nhadoop-annotations: CVE-2022-25168, CVE-2021-33036\r\nhadoop-client-runtime: CVE-2023-1370, CVE-2023-37475\r\nokio: CVE-2023-3635\r\nUpgrade grpc version to fix CVE-2023-33953",
+      "e94b8657274213124e1c24c6bb80007867df421d": "Suppressing CVE-2022-25168 - hadoop-common-2.8.5.jar (#12970)",
+      "9cc30ee1205e3b195d767e377d48c77888ffd7d7": "Suppressing CVE-2022-25168 - hadoop-common-2.8.5.jar (#12970)"
+    },
+    "CVE-2021-33036": {
+      "388d5ecf78de51cbe81a7076a2b23250bff7b8fa": "Fix reported CVEs (#14882)\n\nSuppress CVEs from dependencies with no available fix or false positives\r\nhadoop-annotations: CVE-2022-25168, CVE-2021-33036\r\nhadoop-client-runtime: CVE-2023-1370, CVE-2023-37475\r\nokio: CVE-2023-3635\r\nUpgrade grpc version to fix CVE-2023-33953"
+    },
+    "CVE-2023-1370": {
+      "388d5ecf78de51cbe81a7076a2b23250bff7b8fa": "Fix reported CVEs (#14882)\n\nSuppress CVEs from dependencies with no available fix or false positives\r\nhadoop-annotations: CVE-2022-25168, CVE-2021-33036\r\nhadoop-client-runtime: CVE-2023-1370, CVE-2023-37475\r\nokio: CVE-2023-3635\r\nUpgrade grpc version to fix CVE-2023-33953"
+    },
+    "CVE-2023-37475": {
+      "388d5ecf78de51cbe81a7076a2b23250bff7b8fa": "Fix reported CVEs (#14882)\n\nSuppress CVEs from dependencies with no available fix or false positives\r\nhadoop-annotations: CVE-2022-25168, CVE-2021-33036\r\nhadoop-client-runtime: CVE-2023-1370, CVE-2023-37475\r\nokio: CVE-2023-3635\r\nUpgrade grpc version to fix CVE-2023-33953"
+    },
+    "CVE-2023-33953": {
+      "388d5ecf78de51cbe81a7076a2b23250bff7b8fa": "Fix reported CVEs (#14882)\n\nSuppress CVEs from dependencies with no available fix or false positives\r\nhadoop-annotations: CVE-2022-25168, CVE-2021-33036\r\nhadoop-client-runtime: CVE-2023-1370, CVE-2023-37475\r\nokio: CVE-2023-3635\r\nUpgrade grpc version to fix CVE-2023-33953"
+    },
+    "CVE-2018-10237": {
+      "d87056e708c9a7e7ee530131ec41a6c8ccde675d": "Upgrade guava version to 31.1-jre (#14767)\n\nCurrently, Druid is using Guava 16.0.1 version. This upgrade to 31.1-jre fixes the following issues.\r\n\r\nCVE-2018-10237 (Unbounded memory allocation in Google Guava 11.0 through 24.x before 24.1.1 allows remote attackers to conduct denial of service attacks against servers that depend on this library and deserialize attacker-provided data because the AtomicDoubleArray class (when serialized with Java serialization) and the CompoundOrdering class (when serialized with GWT serialization) perform eager allocation without appropriate checks on what a client has sent and whether the data size is reasonable). We don't use Java or GWT serializations. Despite being false positive they're causing red security scans on Druid distribution.\r\nLatest version of google-client-api is incompatible with the existing Guava version. This PR unblocks Update google client apis to latest version #14414"
+    },
+    "CVE-2019-10219": {
+      "0dc305f9e474cf2a95bd27bb4ffd64d6fd528b31": "Upgrade hibernate validator version to fix CVE-2019-10219 (#14757)"
+    },
+    "CVE-2020-28491": {
+      "550a66d71e4afacdc6bbcdab2e3343007d71d5dd": "Upgrade jackson-databind to 2.12.7 (#14770)\n\nThe current version of jackson-databind is flagged for vulnerabilities CVE-2020-28491 (Although cbor format is not used in druid), CVE-2020-36518 (Seems genuine as deeply nested json in can cause resource exhaustion). Updating the dependency to the latest version 2.12.7 to fix these vulnerabilities."
+    },
+    "CVE-2020-36518": {
+      "550a66d71e4afacdc6bbcdab2e3343007d71d5dd": "Upgrade jackson-databind to 2.12.7 (#14770)\n\nThe current version of jackson-databind is flagged for vulnerabilities CVE-2020-28491 (Although cbor format is not used in druid), CVE-2020-36518 (Seems genuine as deeply nested json in can cause resource exhaustion). Updating the dependency to the latest version 2.12.7 to fix these vulnerabilities."
+    },
+    "CVE-2023-34462": {
+      "6566bda57cfef2741fbfa66e796f1190edc93347": "Suppress CVEs (#14648)\n\nCVE-2023-34462 - (Allows malicious allocation of resources without throttling) Not applicable as the Netty requests in Druid are internal, and not user facing.\r\nCVE-2016-2402 - (Man in the middle with okhttp by sending certificate chains) Not applicable as okhttp requests in Druid are also internal"
+    },
+    "CVE-2016-2402": {
+      "6566bda57cfef2741fbfa66e796f1190edc93347": "Suppress CVEs (#14648)\n\nCVE-2023-34462 - (Allows malicious allocation of resources without throttling) Not applicable as the Netty requests in Druid are internal, and not user facing.\r\nCVE-2016-2402 - (Man in the middle with okhttp by sending certificate chains) Not applicable as okhttp requests in Druid are also internal"
+    },
+    "CVE-2021-40331": {
+      "eae9e07ea933fc7f74ec658e0f8074add079085e": "suppress CVE-2021-40331 since it applies to ranger-hive-plugin which afaict we do not use (#14261)",
+      "627e64d28fd17ea7db7ab9a2c2042664d510f1b0": "suppress CVE-2021-40331 since it applies to ranger-hive-plugin which afaict we do not use (#14264)"
+    },
+    "CVE-2021-43797": {
+      "78ae0b75338016dd02245eeb83715c521daad41d": "Upgrade to netty 4.1.86.Final to address CVEs (#13604)\n\nThis commit addresses the following CVEs:\r\n- CVE-2021-43797\r\n- CVE-2022-41881"
+    },
+    "CVE-2022-41881": {
+      "78ae0b75338016dd02245eeb83715c521daad41d": "Upgrade to netty 4.1.86.Final to address CVEs (#13604)\n\nThis commit addresses the following CVEs:\r\n- CVE-2021-43797\r\n- CVE-2022-41881"
+    },
+    "CVE-2022-1278": {
+      "e34e56295faa51dac4faa5117c2e34528dd8f39c": "Suppress CVE-2022-1278, CVE-2022-2048, CVE-2022-3509, CVE-2022-40152 (#13590)",
+      "d10a09589af8fbad0b5db21eade63e136037e4d7": "Suppress CVE-2022-1278, CVE-2022-2048, CVE-2022-3509, CVE-2022-40152"
+    },
+    "CVE-2022-2048": {
+      "e34e56295faa51dac4faa5117c2e34528dd8f39c": "Suppress CVE-2022-1278, CVE-2022-2048, CVE-2022-3509, CVE-2022-40152 (#13590)",
+      "d10a09589af8fbad0b5db21eade63e136037e4d7": "Suppress CVE-2022-1278, CVE-2022-2048, CVE-2022-3509, CVE-2022-40152",
+      "9e5f0109fd00ffbed2ee80ebb0dfae253660ed5f": "Fix CVE-2022-2048 (jetty) and CVE-2022-31159 (aws-java-sdk-s3) (#12807)\n\nChanges:\r\n- Upgrade aws sdk version from `1.12.37` to `1.12.264`\r\n- Upgrade jetty version from `9.4.41.v20210516` to `9.4.47.v20220610`"
+    },
+    "CVE-2022-3509": {
+      "e34e56295faa51dac4faa5117c2e34528dd8f39c": "Suppress CVE-2022-1278, CVE-2022-2048, CVE-2022-3509, CVE-2022-40152 (#13590)",
+      "d10a09589af8fbad0b5db21eade63e136037e4d7": "Suppress CVE-2022-1278, CVE-2022-2048, CVE-2022-3509, CVE-2022-40152",
+      "32986dd6ffe93e0df8542d14a05468dd06be2dee": "Suppress CVE-2022-3509 from protobuf-java"
+    },
+    "CVE-2022-40152": {
+      "e34e56295faa51dac4faa5117c2e34528dd8f39c": "Suppress CVE-2022-1278, CVE-2022-2048, CVE-2022-3509, CVE-2022-40152 (#13590)",
+      "d10a09589af8fbad0b5db21eade63e136037e4d7": "Suppress CVE-2022-1278, CVE-2022-2048, CVE-2022-3509, CVE-2022-40152"
+    },
+    "CVE-2022-45685": {
+      "1cc9bc9af9ca7c5697a2e8d6fbd4e0cc1164da5c": "Suppress CVE-2022-45685 and CVE-2022-45693 from jettison-1.3 (#13585)",
+      "d5d06982172846827e30df25e42413475cf46e66": "Suppress CVE-2022-45685 and CVE-2022-45693 from jettison-1.3"
+    },
+    "CVE-2022-45693": {
+      "1cc9bc9af9ca7c5697a2e8d6fbd4e0cc1164da5c": "Suppress CVE-2022-45685 and CVE-2022-45693 from jettison-1.3 (#13585)",
+      "d5d06982172846827e30df25e42413475cf46e66": "Suppress CVE-2022-45685 and CVE-2022-45693 from jettison-1.3"
+    },
+    "CVE-2022-1471": {
+      "ad79b2867b11dbea7e79823c4fdb9daa071b78d4": "Suppress CVE-2022-1471 from snakeyaml (#13557)\n\n* Upgrade kube client to 17.0.0\r\n\r\n* Remove snakeyaml CVE suppression\r\n\r\n* Update licenses.yaml\r\n\r\n* Revert changes and suppress cve",
+      "431a1195cae61edac03e6ed5aaeb73c736bd0ea5": "Suppress CVE-2022-1471 from snakeyaml (#13557)\n\n* Upgrade kube client to 17.0.0\r\n\r\n* Remove snakeyaml CVE suppression\r\n\r\n* Update licenses.yaml\r\n\r\n* Revert changes and suppress cve"
+    },
+    "CVE-2022-42889": {
+      "72c16097ac6c04915f0137a1a37fed19f597799b": "Fix Apache Commons Text  CVE-2022-42889 (#13226)\n\n* Fix Apache Commons Text  CVE-2022-42889\r\n\r\nFix Apache Commons Text  CVE-2022-42889\r\n\r\nhttps://nvd.nist.gov/vuln/detail/CVE-2022-42889\r\n\r\n* Update license\r\n\r\nCo-authored-by: Frank Chen <frank.chen021@outlook.com>"
+    },
+    "CVE-2022-34917": {
+      "acafd0d1e03a2f4827f1e300843dc178f95fdd14": "Upgrade kafka version to 3.2.3 to fix CVE (#13142)\n\nUpgrade to 3.2.3 to fix CVE: https://nvd.nist.gov/vuln/detail/CVE-2022-34917"
+    },
+    "CVE-2021-43138": {
+      "6c96d096800961dd7399f19c01027b8ea4644e19": "Suppress some false alarm CVEs (#12812)\n\nThis commit suppresses the following CVEs:\r\n- CVE-2021-43138: false alarm for async-http-client\r\n- CVE-2021-34538: applicable to Hive server\r\n- CVE-2020-25638: requires hibernate update, which causes Hadoop ingestion failure\r\n- CVE-2021-27568: false alarm for accessors-smart which is a dependency of json-smart (already suppressed)",
+      "691e26d2429cd81afef092dbda32e24ad56bb510": "Suppress CVE-2021-43138 (#12437)\n\n* Suppress CVE-2021-43138\r\n\r\n* revert netty 3.10.5.Final"
+    },
+    "CVE-2021-34538": {
+      "6c96d096800961dd7399f19c01027b8ea4644e19": "Suppress some false alarm CVEs (#12812)\n\nThis commit suppresses the following CVEs:\r\n- CVE-2021-43138: false alarm for async-http-client\r\n- CVE-2021-34538: applicable to Hive server\r\n- CVE-2020-25638: requires hibernate update, which causes Hadoop ingestion failure\r\n- CVE-2021-27568: false alarm for accessors-smart which is a dependency of json-smart (already suppressed)"
+    },
+    "CVE-2020-25638": {
+      "6c96d096800961dd7399f19c01027b8ea4644e19": "Suppress some false alarm CVEs (#12812)\n\nThis commit suppresses the following CVEs:\r\n- CVE-2021-43138: false alarm for async-http-client\r\n- CVE-2021-34538: applicable to Hive server\r\n- CVE-2020-25638: requires hibernate update, which causes Hadoop ingestion failure\r\n- CVE-2021-27568: false alarm for accessors-smart which is a dependency of json-smart (already suppressed)"
+    },
+    "CVE-2021-27568": {
+      "6c96d096800961dd7399f19c01027b8ea4644e19": "Suppress some false alarm CVEs (#12812)\n\nThis commit suppresses the following CVEs:\r\n- CVE-2021-43138: false alarm for async-http-client\r\n- CVE-2021-34538: applicable to Hive server\r\n- CVE-2020-25638: requires hibernate update, which causes Hadoop ingestion failure\r\n- CVE-2021-27568: false alarm for accessors-smart which is a dependency of json-smart (already suppressed)",
+      "73711a456a03410e942a3464be01a1dea16f0200": "Suppress CVE-2021-27568 from json-smart 2.3 dependency (#11438)\n\nDependency on hadoop 2.8.5 is preventing us form updating this dependency to a later version. We don't believe that this is a major concern since Druid eats uncaught exceptions, and only displays them in logs. This issue also should only affect ingestion jobs, which can only be run by admin type users."
+    },
+    "CVE-2022-31159": {
+      "9e5f0109fd00ffbed2ee80ebb0dfae253660ed5f": "Fix CVE-2022-2048 (jetty) and CVE-2022-31159 (aws-java-sdk-s3) (#12807)\n\nChanges:\r\n- Upgrade aws sdk version from `1.12.37` to `1.12.264`\r\n- Upgrade jetty version from `9.4.41.v20210516` to `9.4.47.v20220610`"
+    },
+    "CVE-2022-33915": {
+      "97a926fb29e7750db0836432615fd86b843edd1e": "Suppress CVE-2022-33915 (#12740)"
+    },
+    "CVE-2022-26612": {
+      "65d00c705cc56185c6dd9678f860b3d0415caba6": "Supress CVE 2022 26612 (#12463)\n\n* supress CVE-2022-26612\r\n\r\n* adding packageUrl\r\n\r\n* suppressing CVE-2022-26612\r\n\r\n* adding packageUrl\r\n\r\n* moving to hadoop section"
+    },
+    "CVE-2022-21724": {
+      "d2a6754692af3d14ba7622f8c7ad6a8b06eb461a": "Bump PostgreSQL JDBC driver to 42.3.3 (CVE-2022-21724) (#12410)\n\n* Bump PostgreSQL JDBC driver to 42.3.3 (CVE-2022-21724)\r\n\r\n* update license file"
+    },
+    "CVE-2021-3749": {
+      "e1bb1f2d82cae418e594dc84e021eb0d28da2553": "Fix CVE-2021-3749 reported in security vulnerabilities job (#11786)\n\n* Fix CVE-2021-3749 reported in security vulnerabilities job\n\n* test why test fail\n\n* update axios\n\n* remove console log for testing",
+      "adb223762867915b8c73a689c45ac70aae154bec": "Fix CVE-2021-3749 reported in security vulnerabilities job (#11786)\n\n* Fix CVE-2021-3749 reported in security vulnerabilities job\r\n\r\n* test why test fail\r\n\r\n* update axios\r\n\r\n* remove console log for testing"
+    },
+    "CVE-2021-37136": {
+      "a06bf34a2903b512486d22ed78a4a5f9f05ab9b8": "Bump netty4 to 4.1.68; suppress CVE-2021-37136 and CVE-2021-37137 for netty3 (#11844)\n\n* bump netty4 to 4.1.68\r\n\r\n* suppress CVE-2021-37136 and CVE-2021-37137 for netty3\r\n\r\n* license",
+      "07a232d7b4cad698545bad7e23d58767a288149b": "Bump netty4 to 4.1.68; suppress CVE-2021-37136 and CVE-2021-37137 for netty3 (#11844)\n\n* bump netty4 to 4.1.68\r\n\r\n* suppress CVE-2021-37136 and CVE-2021-37137 for netty3\r\n\r\n* license"
+    },
+    "CVE-2021-37137": {
+      "a06bf34a2903b512486d22ed78a4a5f9f05ab9b8": "Bump netty4 to 4.1.68; suppress CVE-2021-37136 and CVE-2021-37137 for netty3 (#11844)\n\n* bump netty4 to 4.1.68\r\n\r\n* suppress CVE-2021-37136 and CVE-2021-37137 for netty3\r\n\r\n* license",
+      "07a232d7b4cad698545bad7e23d58767a288149b": "Bump netty4 to 4.1.68; suppress CVE-2021-37136 and CVE-2021-37137 for netty3 (#11844)\n\n* bump netty4 to 4.1.68\r\n\r\n* suppress CVE-2021-37136 and CVE-2021-37137 for netty3\r\n\r\n* license"
+    },
+    "CVE-2021-35515": {
+      "3f456fe3050604436695c6d6d741f577c4293d4a": "Address CVE-2021-35515 CVE-2021-36090 (#11496)\n\n* Address CVE-2021-35515 CVE-2021-36090\r\n\r\nBump commons-compress to deal with new CVEs\r\n\r\n* fix licenses"
+    },
+    "CVE-2021-36090": {
+      "3f456fe3050604436695c6d6d741f577c4293d4a": "Address CVE-2021-35515 CVE-2021-36090 (#11496)\n\n* Address CVE-2021-35515 CVE-2021-36090\r\n\r\nBump commons-compress to deal with new CVEs\r\n\r\n* fix licenses"
+    },
+    "CVE-2020-7791": {
+      "db679380a0ef14160e5bfcb335eff74b4e7b99ae": "Suppressing false positive CVE-2020-7791 (#11215) (#11217)\n\n* suppressing false positive CVE-2020-7791\r\n\r\n* add comments\r\n\r\nCo-authored-by: Maytas Monsereenusorn <maytasm@apache.org>",
+      "351059ca435233a5ddf60ef998b2fd4f3612f1e2": "Suppressing false positive CVE-2020-7791 (#11215)\n\n* suppressing false positive CVE-2020-7791\r\n\r\n* add comments"
+    },
+    "CVE-2021-26919": {
+      "0c3ef03eaf9a7d0156da2ce65f6ff57047dc5c46": "Allow list for JDBC connection properties to address CVE-2021-26919 (#11047) (#11100)\n\n* Allow list for JDBC connection properties to address CVE-2021-26919\r\n\r\n* fix tests for java 11",
+      "cfcebc40f67a38eb0a3a23ae8919100bd432d533": "Allow list for JDBC connection properties to address CVE-2021-26919 (#11047)\n\n* Allow list for JDBC connection properties to address CVE-2021-26919\r\n\r\n* fix tests for java 11"
+    },
+    "CVE-2020-13949": {
+      "f135d191d6e60606d22f7ccd7030044f9d474b25": "suppress CVE-2020-13949"
+    },
+    "CVE-2020-9492": {
+      "aa2c351fc29c4502171a244ec3bc569bc3bf6ccd": "Suppress CVE-2020-9492 for hadoop-mapreduce-client-core (#10847)",
+      "ad946559bff5301afa36a67517c46f4231ee82f8": "Suppress CVE-2020-9492 for hadoop-mapreduce-client-core (#10847)"
+    },
+    "CVE-2017-15288": {
+      "7d9a61cf7f7a5f623d341ca9fe248ab11f03589f": "Suppress CVE-2017-15288 and upgrade bcprov-ext-jdk15o (#10933)"
+    },
+    "CVE-2021-25646": {
+      "4a64ff12d6afcd6a1d463f28058984f8fc4e69b3": "Fix CVE-2021-25646 (#10818) (#10854)",
+      "3f8f00a231c4b47981e0e2e48f18f1221249e6f3": "Fix CVE-2021-25646 (#10818)"
+    },
+    "CVE-2020-8570": {
+      "a1a49811d92511bd5e1865ce6086450b4b3d6325": "Address CVE-2020-8570, suppress CVE-2020-8554 (#10826)\n\n* Address CVE-2020-8570, suppress CVE-2020-8554\r\n\r\n* Update licenses.yaml"
+    },
+    "CVE-2020-8554": {
+      "a1a49811d92511bd5e1865ce6086450b4b3d6325": "Address CVE-2020-8570, suppress CVE-2020-8554 (#10826)\n\n* Address CVE-2020-8570, suppress CVE-2020-8554\r\n\r\n* Update licenses.yaml"
+    },
+    "CVE-2020-27216": {
+      "1c4852647212b3a4f9480f0fe2b0c16de3509ecd": "Bump jetty to latest version (#10563)\n\nThis addresses CVE-2020-27216 which was flagged by the security vulnerability\r\njob.",
+      "6c8a77b7a9223ac13480a12f59ee0663f5f86f74": "Bump jetty to latest version (#10563)\n\nThis addresses CVE-2020-27216 which was flagged by the security vulnerability\r\njob."
+    },
+    "CVE-2020-28168": {
+      "36687868b0f63b8bcd950a1836d3d88f1242f06e": "Update deps for CVE-2020-28168 and CVE-2020-28052 (#10733)\n\n* Update deps for CVE-2020-28168 and CVE-2020-28052\n\n* Make BC runtime scope",
+      "c7f2d3fbb57a7d40d5d89fab115cba3771a8eaa3": "Update deps for CVE-2020-28168 and CVE-2020-28052 (#10733)\n\n* Update deps for CVE-2020-28168 and CVE-2020-28052\r\n\r\n* Make BC runtime scope"
+    },
+    "CVE-2020-28052": {
+      "36687868b0f63b8bcd950a1836d3d88f1242f06e": "Update deps for CVE-2020-28168 and CVE-2020-28052 (#10733)\n\n* Update deps for CVE-2020-28168 and CVE-2020-28052\n\n* Make BC runtime scope",
+      "c7f2d3fbb57a7d40d5d89fab115cba3771a8eaa3": "Update deps for CVE-2020-28168 and CVE-2020-28052 (#10733)\n\n* Update deps for CVE-2020-28168 and CVE-2020-28052\r\n\r\n* Make BC runtime scope"
+    },
+    "CVE-2018-11765": {
+      "9a2a9acb7d34b81feb98b5b4499a4a36f640bdc1": "Suppress CVE-2018-11765 for hadoop dependencies (#10485) (#10492)",
+      "0aa2a8e2c641aa8eb8722b76b205f70f7bbff8cf": "Suppress CVE-2018-11765 for hadoop dependencies (#10485)"
+    },
+    "CVE-2020-13602": {
+      "67669b4ad4b4dec5b22b1c6557b173c169434894": "Fix CVE-2020-13602 (#10024)\n\nUpgrade postgres jdbc driver to latest version to address CVE, which was\r\nfixed in 42.2.13."
+    },
+    "CVE-2020-12689": {
+      "fd6fffc4b8faf2f026ef4649d8f5c52751e4c52e": "Suppress CVEs for openstack-keystone (#9903)\n\nCVE-2020-12689, CVE-2020-12691, and CVE-2020-12690 can be ignored for\r\nopenstack-keystone as they are for the python SDK and druid uses the\r\njava SDK."
+    },
+    "CVE-2020-12691": {
+      "fd6fffc4b8faf2f026ef4649d8f5c52751e4c52e": "Suppress CVEs for openstack-keystone (#9903)\n\nCVE-2020-12689, CVE-2020-12691, and CVE-2020-12690 can be ignored for\r\nopenstack-keystone as they are for the python SDK and druid uses the\r\njava SDK."
+    },
+    "CVE-2020-12690": {
+      "fd6fffc4b8faf2f026ef4649d8f5c52751e4c52e": "Suppress CVEs for openstack-keystone (#9903)\n\nCVE-2020-12689, CVE-2020-12691, and CVE-2020-12690 can be ignored for\r\nopenstack-keystone as they are for the python SDK and druid uses the\r\njava SDK."
+    },
+    "CVE-2020-11612": {
+      "d7e62f1954670d538d5c9ed0c0ec02c6b6595217": "Upgrade netty 4 to fix CVE-2020-11612 (#9651) (#9654)",
+      "eb45981b606a4f95f35745ccb8955672b2e70d90": "Upgrade netty 4 to fix CVE-2020-11612 (#9651)"
+    },
+    "CVE-2020-1958": {
+      "13b2e802489d7a48ff4b77be6633e64aebb7c3e4": "Fix for [CVE-2020-1958]: Apache Druid LDAP injection vulnerability (#9600) (#9612)",
+      "dbaabdd24710fef726c5730c609937706f456a44": "Fix for [CVE-2020-1958]: Apache Druid LDAP injection vulnerability (#9600)"
+    },
+    "CVE-2013-7109": {
+      "559c7b64cc9bbe25e54b84b4e8fcde5bbe543d95": "Suppress CVEs for htrace-core4 and openstack-swift (#9489)\n\nCVE-2013-7109 can be ignored for openstack-swift as it is for the python\r\nSDK and druid uses the java SDK.\r\n\r\nThe jackson-databind:2.4.0 CVEs via htrace-core4 are all suppressed for\r\nnow as fixing them requires updating the hadoop version."
+    },
+    "CVE-2020-8840": {
+      "3f848e6a7ca5971b9aa5e0e9d1c2aa397fb04c35": "Suppress CVE-2020-8840 for htrace-core-4.0.1 (#9379)\n\nCVE-2020-8840 was updated on 19 Feb 2020, which now gets flagged by the\r\nsecurity vulnerability scan. Since the CVE is for jackson-databind, via\r\nhtrace-core-4.0.1, it can be added to the existing list of security\r\nvulnerability suppressions for that dependency."
+    },
+    "CVE-2019-20445": {
+      "74ac9151c906119cd5ab6396ff1809110093a905": "Fix / suppress netty CVEs CVE-2019-20445 and CVE-2019-20444 (#9300)\n\n* Suppress netty 3 vulnerabilites and upgrade netty 4 version\r\n\r\n* Upgrade netty 4 version to fix vulnerabilities CVE-2019-20445\r\n  and CVE-2019-20444\r\n* suppress these CVEs for netty 3\r\n\r\n* * simplify suppression xml file\r\n* update licenses file with new version of netty\r\n\r\n* * fix type in licenses.yaml"
+    },
+    "CVE-2019-20444": {
+      "74ac9151c906119cd5ab6396ff1809110093a905": "Fix / suppress netty CVEs CVE-2019-20445 and CVE-2019-20444 (#9300)\n\n* Suppress netty 3 vulnerabilites and upgrade netty 4 version\r\n\r\n* Upgrade netty 4 version to fix vulnerabilities CVE-2019-20445\r\n  and CVE-2019-20444\r\n* suppress these CVEs for netty 3\r\n\r\n* * simplify suppression xml file\r\n* update licenses file with new version of netty\r\n\r\n* * fix type in licenses.yaml"
+    },
+    "CVE-2019-12399": {
+      "c6c8b8064425f93a5bf74cc7ee6a207cab406b09": "fix build by updating kafka client to 2.2.2 for CVE-2019-12399 (#9259)\n\n* fix build by updating kafka client to 2.2.2 for CVE-2019-12399\r\n\r\n* one kafka version to rule them all\r\n\r\n* notice"
+    },
+    "CVE-2019-20330": {
+      "47fd6da30c670e4dd7f136e6c549cc751461dcb4": "Suppress CVE-2019-20330 for htrace-core-4.0.1 (#9189) (#9191)\n\nCVE-2019-20330 was updated on 14 Jan 2020, which now gets flagged by the\r\nsecurity vulnerability scan. Since the CVE is for jackson-databind, via\r\nhtrace-core-4.0.1, it can be added to the existing list of security\r\nvulnerability suppressions for that dependency.",
+      "b2877119d07a973b19aa48cb1e278779bf88e874": "Suppress CVE-2019-20330 for htrace-core-4.0.1 (#9189)\n\nCVE-2019-20330 was updated on 14 Jan 2020, which now gets flagged by the\r\nsecurity vulnerability scan. Since the CVE is for jackson-databind, via\r\nhtrace-core-4.0.1, it can be added to the existing list of security\r\nvulnerability suppressions for that dependency."
+    },
+    "CVE-2014-0114": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2019-12402": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2018-11767": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2017-3166": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2017-7536": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2014-8147": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2017-7525": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2017-7657": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2017-7658": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2017-7656": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2018-12545": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2017-5645": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2015-2156": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2019-9518": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2019-16869": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2017-12972": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2017-12974": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2017-1000487": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    },
+    "CVE-2018-10936": {
+      "8365bdf62aff71dcce6db838a7bcd4f74688c2a3": "Address security vulnerabilities (#8878)\n\n* Address security vulnerabilities\r\n\r\nSecurity vulnerabilities addressed by upgrading 3rd party libs:\r\n\r\n- Upgrade avro-ipc to 1.9.1\r\n  - sonatype-2019-0115\r\n- Upgrade caffeine to 2.8.0\r\n  - sonatype-2019-0282\r\n- Upgrade commons-beanutils to 1.9.4\r\n  - CVE-2014-0114\r\n- Upgrade commons-codec to 1.13\r\n  - sonatype-2012-0050\r\n- Upgrade commons-compress to 1.19\r\n  - CVE-2019-12402\r\n  - sonatype-2018-0293\r\n- Upgrade hadoop-common to 2.8.5\r\n  - CVE-2018-11767\r\n- Upgrade hadoop-mapreduce-client-core to 2.8.5\r\n  - CVE-2017-3166\r\n- Upgrade hibernate-validator to 5.2.5\r\n  - CVE-2017-7536\r\n- Upgrade httpclient to 4.5.10\r\n  - sonatype-2017-0359\r\n- Upgrade icu4j to 55.1\r\n  - CVE-2014-8147\r\n- Upgrade jackson-databind to 2.6.7.3:\r\n  - CVE-2017-7525\r\n- Upgrade jetty-http to 9.4.12:\r\n  - CVE-2017-7657\r\n  - CVE-2017-7658\r\n  - CVE-2017-7656\r\n  - CVE-2018-12545\r\n- Upgrade log4j-core to 2.8.2\r\n  - CVE-2017-5645:\r\n- Upgrade netty to 3.10.6\r\n  - CVE-2015-2156\r\n- Upgrade netty-common to 4.1.42\r\n  - CVE-2019-9518\r\n- Upgrade netty-codec-http to 4.1.42\r\n  - CVE-2019-16869\r\n- Upgrade nimbus-jose-jwt to 4.41.1\r\n  - CVE-2017-12972\r\n  - CVE-2017-12974\r\n- Upgrade plexus-utils to 3.0.24\r\n  - CVE-2017-1000487\r\n  - sonatype-2015-0173\r\n  - sonatype-2016-0398\r\n- Upgrade postgresql to 42.2.8\r\n  - CVE-2018-10936\r\n\r\nNote that if users are using JDBC lookups with postgres, they may need\r\nto update the JDBC jar used by the lookup extension.\r\n\r\n* Fix license for postgresql"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "vcs_url": "https://github.com/borgbackup/borg",
+  "vulnerabilities": {
+    "GHSA-5RJG-FVGR-3XXF": {
+      "0069ce1f2db19bae5b29dde63f0db9cb291f852e": "backport(1.4): build: require setuptools>=78.1.1 to address GHSA-5rjg-fvgr-3xxf (backport of #9045)",
+      "16e7039dbee0ba0217ceaf00abe9df11b8e1e98e": "build: require setuptools>=78.1.1 to address GHSA-5rjg-fvgr-3xxf (closes #9042)"
+    },
+    "CVE-2023-36811": {
+      "e78146f453298758b4fbd5ca9826567848b8ef52": "Merge pull request #7914 from ThomasWaldmann/docs-upgrade-chkpt-tam-master\n\nCVE-2023-36811 upgrade docs: consider checkpoint archives, fixes #7802",
+      "62114466e4c5a8d2899b8996c027dd6bae34e993": "CVE-2023-36811 upgrade docs: consider checkpoint archives, fixes #7802\n\nThe traceback seen there came from borg not showing a .checkpoint archive\nthat didn't have a valid TAM and thus the user not see it / fix it:\n\nhttps://github.com/borgbackup/borg/issues/7802#issuecomment-1793860606",
+      "11af475308c26750c3cbf9dcfe60ac4a5f4cb65f": "Merge pull request #7913 from ThomasWaldmann/docs-upgrade-chkpt-tam-1.2\n\nCVE-2023-36811 upgrade docs: consider checkpoint archives, fixes #7802",
+      "9c886330d355f2d07e59d81853ea98e2bbc0a503": "CVE-2023-36811 upgrade docs: consider checkpoint archives, fixes #7802\n\nThe traceback seen there came from borg not showing a .checkpoint archive\nthat didn't have a valid TAM and thus the user not see it / fix it:\n\nhttps://github.com/borgbackup/borg/issues/7802#issuecomment-1793860606",
+      "da4fcc5a66798da68e2e9db280e4b3629de34c53": "docs: point to CVE-2023-36811 upgrade steps from borg 1.1 to 1.2 upgrade steps, fixes #7899\n\nalso: use 1.2.6 to refer to the fixed version\n\n1.2.5 had issues and was superseded by 1.2.6 just 1 day later,\nso we do not need to talk about that.\n\nAlso, the docs point out that:\n\"\"\"\nBelow, if we speak of borg 1.2.6, we mean a borg version >= 1.2.6 **or** a\nborg version that has the relevant security patches for this vulnerability applied\n(could be also an older version in that case).\n\"\"\"\n\nSo, it now just talks about \"1.2.6\" at the relevant places.",
+      "73f7e670930ff2dc57ce2886e7cbb03f113a67b7": "add CVE-2023-36811 related upgrade notes",
+      "2d78fa89a513b7a21403e259de41e21a2a475b27": "always implicitly require archive TAMs\n\nthey must be there since the upgrade to borg 1.2.6 (or other\nborg versions that also have a fix for CVE-2023-36811).",
+      "a0069d4b45af50bb3ce977b9aaf24fdb388f9bbd": "Merge pull request #7801 from ThomasWaldmann/fix-upgrade-docs-1.2\n\ndocs: minor fix to CVE-2023-36811 related upgrade instructions",
+      "97b8eb21043398e5ec502a20792e136c88c6d949": "docs: minor fix to CVE-2023-36811 related upgrade instructions\n\nwhile the main issue in the code has been fixed since 1.2.5,\nlet's better refer to 1.2.6, which has fixes in upgrade docs and code."
+    },
+    "GHSA-8FJR-HGHR-4M99": {
+      "c8b9d72bdbfa40f1384b7050d69b258dd2f4555f": "Merge pull request from GHSA-8fjr-hghr-4m99\n\nRelease 1.2.5 incl. archives TAM security fix"
+    },
+    "CVE-2017-15914": {
+      "75854c1243b29ec5558be6fdefe365cd438abb4c": "security: fix enforcement of --restrict-to-path in args processing\n\nFixes CVE-2017-15914 (affects releases 1.1.0, 1.1.1, 1.1.2,\nbut not 1.0.x).\n\nThanks to Florian Apolloner for discovering/reporting this!\n\nAlso: added tests for this.\n(cherry picked from commit ea0203bb0de557cd29de5ab0a0efe5f6015ca59d)",
+      "ea0203bb0de557cd29de5ab0a0efe5f6015ca59d": "security: fix enforcement of --restrict-to-path in args processing\n\nFixes CVE-2017-15914 (affects releases 1.1.0, 1.1.1, 1.1.2,\nbut not 1.0.x).\n\nThanks to Florian Apolloner for discovering/reporting this!\n\nAlso: added tests for this."
+    },
+    "CVE-2016-10099": {
+      "8e8d9d3f48510a1db982bb019202745369ec990f": "docs: add edited \"Cryptography in Borg\" and \"Remote RPC protocol security\" sections\n\nThe former section is a bit older (Nov 2016) and has been the piece\nresponsible for finding CVE-2016-10099, since while writing it I\nwondered how the manifest was authenticated to actually\n*be* the manifest. Well. There it is ;)\n\nIt has been edited to final form only recently and should now be ready\nfor review.\n\nThe latter section is new."
+    }
+  }
+}

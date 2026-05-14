@@ -1,0 +1,73 @@
+{
+  "vcs_url": "https://github.com/backstage/backstage",
+  "vulnerabilities": {
+    "GHSA-MW96-CPMX-2VGC": {
+      "2e5c5f85b2b36f9062adc624e2a90a9445f1be73": "Bump glob to v13 and rollup to v4.59+ to fix security vulnerabilities\n\nAddresses the high severity rollup path traversal vulnerability\n(GHSA-mw96-cpmx-2vgc) and the glob security advisory by upgrading\nall instances across the monorepo. Updates code that used the legacy\ncallback-based glob API to use the modern promise/sync API.\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>\nSigned-off-by: Fredrik Adel\u00f6w <freben@spotify.com>",
+      "6d76b1729bf8f2337a6e04c871f3c6cc040dc66d": "Bump glob to v13 and rollup to v4.59+ to fix security vulnerabilities\n\nAddresses the high severity rollup path traversal vulnerability\n(GHSA-mw96-cpmx-2vgc) and the glob security advisory by upgrading\nall instances across the monorepo. Updates code that used the legacy\ncallback-based glob API to use the modern promise/sync API.\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>\nSigned-off-by: Fredrik Adel\u00f6w <freben@spotify.com>",
+      "91b359ee5fb2fb0a9183639e695eb6fed8160565": "Bump glob to v13 and rollup to v4.59+ to fix security vulnerabilities\n\nAddresses the high severity rollup path traversal vulnerability\n(GHSA-mw96-cpmx-2vgc) and the glob security advisory by upgrading\nall instances across the monorepo. Updates code that used the legacy\ncallback-based glob API to use the modern promise/sync API.\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>\nSigned-off-by: Fredrik Adel\u00f6w <freben@spotify.com>"
+    },
+    "GHSA-869P-CJFG-CM3X": {
+      "2c1b092379a6788ca80840df4205eb67f5c05d3b": "Merge pull request #32155 from backstage/freben/jws\n\nbump jws for https://github.com/advisories/GHSA-869p-cjfg-cm3x",
+      "7db77493570e72fd74638740e0b9c6a3a30517c3": "bump jws for https://github.com/advisories/GHSA-869p-cjfg-cm3x\n\nSigned-off-by: Fredrik Adel\u00f6w <freben@gmail.com>"
+    },
+    "CVE-2023-28155": {
+      "a096e9ff2d553c7ead7df62794b33babff1d3f37": "Merge pull request #25385 from coreydaley/2024-06-24-fix-cves\n\nfix: mitigate CVE-2023-28155, CVE-2023-26136"
+    },
+    "CVE-2023-26136": {
+      "a096e9ff2d553c7ead7df62794b33babff1d3f37": "Merge pull request #25385 from coreydaley/2024-06-24-fix-cves\n\nfix: mitigate CVE-2023-28155, CVE-2023-26136"
+    },
+    "GHSA-3H5V-Q93C-6H6Q": {
+      "2ced236e072ad432202f5ef13cd7bff987d7b8f3": "build(deps): bump @module-federation/enhanced to ^0.3.5\n\nAvoids dependency on vulnerable version of ws: https://github.com/advisories/GHSA-3h5v-q93c-6h6q\n\nSigned-off-by: MT Lewis <mtlewis@users.noreply.github.com>"
+    },
+    "GHSA-7HV8-3FR9-J2HV": {
+      "3d1371954512f7fa8bd0e2d357e00eada2c3e8a8": "Merge pull request from GHSA-7hv8-3fr9-j2hv\n\ncatalog xss fixes"
+    },
+    "CVE-2022-46175": {
+      "3a373776e628bd93783ff3baaf2b0d6efe7c531c": "Merge pull request #15942 from backstage/freben/cve\n\nCVE-2022-46175",
+      "567a2248877b4c950b346f46781ec4e4f5deaa42": "CVE-2022-46175\n\nSigned-off-by: Fredrik Adel\u00f6w <freben@gmail.com>"
+    },
+    "GHSA-4JQC-JVH2-PXG9": {
+      "429c9f9daa5654dd1b996aa85f7264eb23a2e4fa": "Merge pull request from GHSA-4jqc-jvh2-pxg9\n\nPath traversal for local publishers in TechDocs backend"
+    },
+    "CVE-2021-23820": {
+      "6a28dd4b8e9165711aec7b712821916ffafd12f6": "Merge pull request #10889 from backstage/fix/security-vulnerability-CVE-2021-23820\n\nBumped @asyncapi/react-component to resolve secruity vul. CVE-2021-23820",
+      "21bc4806b6e1997500de5b61e7a5956698b62409": "Merge branch 'master' into fix/security-vulnerability-CVE-2021-23820",
+      "09fa05e5d7d2ed339989fd9ac8008acbd3921888": "Bumped @asyncapi/react-component to resolve secruity vulnerability CVE-2021-23820\n\nSigned-off-by: Harry Hogg <hhogg@spotify.com>"
+    },
+    "CVE-2021-41580": {
+      "2cf86036b5b8ed097efaa3dababcebbae0924198": "Merge pull request #10883 from backstage/fix/security-vulnerability-CVE-2021-41580\n\nBumped passport-microsoft to 1.0.0 to resolve CVE-2021-41580",
+      "45f7a261c7b2f37cce175a92beaa0eb40a3224d8": "Bumped passport-microsoft to 1.0.0 to resolve CVE-2021-41580\n\nSigned-off-by: Harry Hogg <hhogg@spotify.com>"
+    },
+    "CVE-2021-23382": {
+      "7081f1cb9fa0564aaffb16dafb9edeaff3929a87": "Merge pull request #9142 from backstage/freben/postcss-too\n\nbump postcss past CVE-2021-23382",
+      "296ad00b45624430c9b66916bac31a0e10498664": "bump postcss past CVE-2021-23382\n\nSigned-off-by: Fredrik Adel\u00f6w <freben@gmail.com>"
+    },
+    "CVE-2022-0235": {
+      "843f0347fb49bc370fa1210155b60cf16ed528f1": "Merge pull request #9141 from backstage/freben/some-node\n\nget almost all of node-fetch past CVE-2022-0235",
+      "1ce84943fb105a49c63020507d452593b2b2422e": "get almost all of node-fetch past CVE-2022-0235\n\nSigned-off-by: Fredrik Adel\u00f6w <freben@gmail.com>"
+    },
+    "CVE-2021-3918": {
+      "e47a70b60170e7817c5693729709cefb98113706": "Merge pull request #9144 from backstage/freben/bump-json-schema\n\nbump json-schema past CVE-2021-3918",
+      "019460a9afea62d25e74efadbab1202debf3f82b": "bump json-schema past CVE-2021-3918\n\nSigned-off-by: Fredrik Adel\u00f6w <freben@gmail.com>"
+    },
+    "CVE-2022-21680": {
+      "0c0d8a47e73b58d9491e43616bff5386cb0fefa9": "Bump @asyncapi/react-component for CVE\n\n[CVE-2022-21680](https://github.com/advisories/GHSA-rrrm-qjm4-v8hf) and [CVE-2022-21681](https://github.com/advisories/GHSA-5v2h-r2cx-5xgj)\n\nSee https://github.com/asyncapi/asyncapi-react/pull/522\n\nSigned-off-by: Ben Langfeld <blangfeld@powerhrg.com>"
+    },
+    "CVE-2022-21681": {
+      "0c0d8a47e73b58d9491e43616bff5386cb0fefa9": "Bump @asyncapi/react-component for CVE\n\n[CVE-2022-21680](https://github.com/advisories/GHSA-rrrm-qjm4-v8hf) and [CVE-2022-21681](https://github.com/advisories/GHSA-5v2h-r2cx-5xgj)\n\nSee https://github.com/asyncapi/asyncapi-react/pull/522\n\nSigned-off-by: Ben Langfeld <blangfeld@powerhrg.com>"
+    },
+    "GHSA-RRRM-QJM4-V8HF": {
+      "0c0d8a47e73b58d9491e43616bff5386cb0fefa9": "Bump @asyncapi/react-component for CVE\n\n[CVE-2022-21680](https://github.com/advisories/GHSA-rrrm-qjm4-v8hf) and [CVE-2022-21681](https://github.com/advisories/GHSA-5v2h-r2cx-5xgj)\n\nSee https://github.com/asyncapi/asyncapi-react/pull/522\n\nSigned-off-by: Ben Langfeld <blangfeld@powerhrg.com>"
+    },
+    "GHSA-5V2H-R2CX-5XGJ": {
+      "0c0d8a47e73b58d9491e43616bff5386cb0fefa9": "Bump @asyncapi/react-component for CVE\n\n[CVE-2022-21680](https://github.com/advisories/GHSA-rrrm-qjm4-v8hf) and [CVE-2022-21681](https://github.com/advisories/GHSA-5v2h-r2cx-5xgj)\n\nSee https://github.com/asyncapi/asyncapi-react/pull/522\n\nSigned-off-by: Ben Langfeld <blangfeld@powerhrg.com>"
+    },
+    "CVE-2021-3777": {
+      "d2b283489aa776ff508734375805fc333d86031d": "Merge pull request #7203 from backstage/rugvip/vuln\n\nyarn.lock: bump tmpl to include patch for CVE-2021-3777",
+      "4b0bbaab28aa8f5872550c2c4dd9e190cefa37d7": "yarn.lock: bump tmpl to include patch for CVE-2021-3777\n\nSigned-off-by: Patrik Oldsberg <poldsberg@gmail.com>"
+    },
+    "GHSA-PWHF-39XG-4RXW": {
+      "dae35dc48f76c25f3994462660b2c5592ef91c0c": "Merge pull request from GHSA-pwhf-39xg-4rxw\n\nFix Advisory 1"
+    }
+  }
+}

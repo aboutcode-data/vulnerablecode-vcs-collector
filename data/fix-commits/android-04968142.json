@@ -1,0 +1,12 @@
+{
+  "vcs_url": "https://github.com/nextcloud/android",
+  "vulnerabilities": {
+    "GHSA-VJP2-F63V-W479": {
+      "627caba60e69e223b0fc89c4cb18eaa76a95db95": "Merge pull request from GHSA-vjp2-f63v-w479\n\n[stable-3.18] Harden FileContentProvider for public Uri paths",
+      "98465ab3fbcd531fb24fbd08999b931d05e8c79e": "Merge pull request from GHSA-vjp2-f63v-w479\n\nHarden FileContentProvider's public Uri paths"
+    },
+    "GHSA-WFF9-W6WC-H67G": {
+      "aa47197109970b8449c4e44601eba36e3481b086": "Merge pull request from GHSA-wff9-w6wc-h67g\n\nFix GHSL-2021-1008 by using permission instead of readPermission"
+    }
+  }
+}

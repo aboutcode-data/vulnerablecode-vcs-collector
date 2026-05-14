@@ -1,0 +1,23 @@
+{
+  "vcs_url": "https://github.com/jackc/pgx",
+  "vulnerabilities": {
+    "CVE-2024-27289": {
+      "c543134753a0c5d22881c12404025724cb05ffd8": "SQL sanitizer wraps arguments in parentheses\n\npgx v5 was not vulnerable to CVE-2024-27289 do to how the sanitizer was\nbeing called. But the sanitizer itself still had the underlying issue.\nThis commit ports the fix from pgx v4 to v5 to ensure that the issue\ndoes not emerge if pgx uses the sanitizer differently in the future."
+    },
+    "GHSA-MRWW-27VC-GGHV": {
+      "adbb38f298c76e283ffc7c7a3f571036fea47fd4": "Do not allow protocol messages larger than ~1GB\n\nThe PostgreSQL server will reject messages greater than ~1 GB anyway.\nHowever, worse than that is that a message that is larger than 4 GB\ncould wrap the 32-bit integer message size and be interpreted by the\nserver as multiple messages. This could allow a malicious client to\ninject arbitrary protocol messages.\n\nhttps://github.com/jackc/pgx/security/advisories/GHSA-mrww-27vc-gghv"
+    },
+    "CVE-2023-48795": {
+      "6f2ce92356f35263258ef7baa4cde86a3e1c6255": "Upgrade golang.org/x/crypto to v0.17.0\n\npgx is unaffected by CVE-2023-48795 because it does not use SSH.\nHowever, dependabot and other vulnerability scanners may complain so\nbump the dependency anyway."
+    },
+    "CVE-2022-32149": {
+      "ba100785cc1f8d3c93a9a52464f513fc235f4b66": "fix: bump text package for CVE-2022-32149\n\nhttps://security.snyk.io/vuln/SNYK-GOLANG-GOLANGORGXTEXTLANGUAGE-3043869"
+    },
+    "CVE-2020-9283": {
+      "e8f75629d095956d7bff81362bdcd17e37d02464": "upgrade x/crypto to avoid CVE-2020-9283\n\nI found this when scanning for security issues in some\ndependencies. I doubt that this CVE will impact pgconn\nsince I don't think it uses the ssh cropto module, but\nI think it is worth being fairly agressive about upgrading\nsecurity sensative libraries and this doesn't seem to be\na breaking change."
+    },
+    "CVE-2020-14040": {
+      "82c2752e7151902340c65d2b61e483424b308c96": "Update golang.org/x/text to 0.3.3\n\ngolang.org/x/text had a vulnerability:\n\nhttps://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14040\n\npgconn does not appear to use the affected code path, but it is still\nworth updating away from the vulnerable version.\n\nfixes #44"
+    }
+  }
+}

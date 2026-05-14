@@ -1,0 +1,17 @@
+{
+  "vcs_url": "https://github.com/apache/shiro",
+  "vulnerabilities": {
+    "CVE-2023-39017": {
+      "62d8fbc08d04b6668ae42dc80e7746d95df8ed3b": "Merge pull request #1498 from minchai23/main\n\nupdate quartz to 2.4.0-rc2, fix CVE-2023-39017",
+      "75d6f9a850652d8e2f8f87cffcc01a65e171d7c2": "update quartz to 2.4.0-rc2, fix CVE-2023-39017"
+    },
+    "CVE-2020-27216": {
+      "dbe2a25118c90a5e8b535a55fea6b0d881aa7ca3": "Merge pull request #262 from coheigea/jetty\n\nUpdate Jetty to 9.4.33.v20201020 to fix CVE-2020-27216",
+      "fc4ceec1ab52cd4f0f0d2d8cf7d7945606969a50": "Update Jetty to 9.4.33.v20201020 to fix CVE-2020-27216"
+    },
+    "CVE-2014-0114": {
+      "a85e2d78baa3017dcf2b466434ba4dd68530a965": "SHIRO-576 Updated dependency beanutils to version 1.9.3 in order to get rid of CVE-2014-0114",
+      "03927e2f85edd4c53c1a55ef659410fad59adeda": "SHIRO-576 Updated dependency beanutils to version 1.9.3 in order to get rid of CVE-2014-0114"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "vcs_url": "https://github.com/pydantic/pydantic",
+  "vulnerabilities": {
+    "GHSA-5JQP-QGF6-3PVH": {
+      "bdde15b7b947c94ca00fd6eb92da8db390a13520": "Merge pull request from GHSA-5jqp-qgf6-3pvh\n\n* fix infinite loop in datetime parsing\n\n* add change description\n\n* switch to set a max datetime number",
+      "80e0dd3f752bef145dce12f160d262bb40ec8d47": "Merge pull request from GHSA-5jqp-qgf6-3pvh\n\n* fix infinite loop in datetime parsing\n\n* add change description\n\n* switch to set a max datetime number",
+      "1c24f1d74ba95ea985b50bdc001ce96c813229aa": "Merge pull request from GHSA-5jqp-qgf6-3pvh\n\n* fix infinite loop in datetime parsing\n\n* add change description\n\n* switch to set a max datetime number",
+      "7e83fdd2563ffac081db7ecdf1affa65ef38c468": "Merge pull request from GHSA-5jqp-qgf6-3pvh\n\n* fix infinite loop in datetime parsing\n\n* add change description\n\n* switch to set a max datetime number"
+    }
+  }
+}

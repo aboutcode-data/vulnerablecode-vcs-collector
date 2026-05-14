@@ -1,0 +1,22 @@
+{
+  "vcs_url": "https://bitbucket.org/connect2id/nimbus-jose-jwt",
+  "vulnerabilities": {
+    "CVE-2023-52428": {
+      "c30bcdd7d2b9f1569fb5d19ed8d928869010fbd2": "Issue #526 allocated CVE-2023-52428"
+    },
+    "CVE-2022-21449": {
+      "651580526d8e815420e06abe31c0b4976c4afec9": "Adds ECDSA R and S signature value checking to prevent exploitation of Java runtimes and JCE providers vulnerable to CVE-2022-21449 (iss #472)",
+      "5f0a56bcd24ae7031924b4f3d6fd827f8ac21e35": "Adds line of defence against CVE-2022-21449 attacks on vulnerable JREs in addition to the existing defence in ECDSA.transcodeSignatureToDER (iss #474)"
+    },
+    "CVE-2019-17195": {
+      "4f6573dc02c1552963c43f9ea0482c7cf2c3c368": "Updates release notes for 7.9 fixing CVE-2019-17195 to indicate that it also addresses the future CVE-2021-27568",
+      "12a196c103c3fd317bbc1bd114d83e2b6e078f15": "Updates release notes for 7.9 fixing CVE-2019-17195 to indicate that it also addresses the future CVE-2021-27568",
+      "91c93edfefd6509d569966358ed65f5e861dca29": "Allocated CVE-2019-17195 to resolved security issues in 7.9"
+    },
+    "CVE-2021-27568": {
+      "4f6573dc02c1552963c43f9ea0482c7cf2c3c368": "Updates release notes for 7.9 fixing CVE-2019-17195 to indicate that it also addresses the future CVE-2021-27568",
+      "12a196c103c3fd317bbc1bd114d83e2b6e078f15": "Updates release notes for 7.9 fixing CVE-2019-17195 to indicate that it also addresses the future CVE-2021-27568",
+      "fab8c5141ff99f2cbe4a9cfac615716a8446cfd4": "Adds JSONObjectUtils.parse test to capture CVE-2021-27568 workaround (iss #411)"
+    }
+  }
+}

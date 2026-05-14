@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/pypa/virtualenv",
+  "vulnerabilities": {
+    "CVE-2025-68146": {
+      "7c284221b4751388801355fc6ebaa2abe60427bd": "fix: update filelock dependency version to 3.20.1 to fix CVE CVE-2025-68146 (#3002)"
+    }
+  }
+}

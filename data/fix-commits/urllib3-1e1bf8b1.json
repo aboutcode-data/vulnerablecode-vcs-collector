@@ -1,0 +1,37 @@
+{
+  "vcs_url": "https://github.com/urllib3/urllib3",
+  "vulnerabilities": {
+    "GHSA-34JH-P97F-MPXF": {
+      "40b6d1605814dd1db0a46e202d6e56f2e4c9a468": "Merge pull request from GHSA-34jh-p97f-mpxf\n\n* [1.26] Strip Proxy-Authorization header on redirects\n\n* Set release date",
+      "accff72ecc2f6cf5a76d9570198a93ac7c90270e": "Merge pull request from GHSA-34jh-p97f-mpxf\n\n* Strip Proxy-Authorization header on redirects\n\n* Fix test_retry_default_remove_headers_on_redirect\n\n* Set release date"
+    },
+    "GHSA-G4MX-Q9VG-27P4": {
+      "4e98d57809dacab1cbe625fddeec1a290c478ea9": "Bring 2.0.7 & 1.26.18 to main (#3161)\n\n* Merge pull request from GHSA-g4mx-q9vg-27p4\r\n\r\n* Release 2.0.7",
+      "4e50fbc5db74e32cabd5ccc1ab81fc103adfe0b3": "Merge pull request from GHSA-g4mx-q9vg-27p4",
+      "b594c5ceaca38e1ac215f916538fb128e3526a36": "Merge pull request from GHSA-g4mx-q9vg-27p4"
+    },
+    "GHSA-V845-JXX5-VC9F": {
+      "01220354d389cd05474713f8c982d05c9b17aafb": "Backport GHSA-v845-jxx5-vc9f (#3139)\n\nCo-authored-by: Quentin Pradet <quentin.pradet@gmail.com>\r\nCo-authored-by: Illia Volochii <illia.volochii@gmail.com>",
+      "644124ecd0b6e417c527191f866daa05a5a2056d": "Merge pull request from GHSA-v845-jxx5-vc9f"
+    },
+    "GHSA-Q2Q7-5PP4-W6PG": {
+      "e854354f575615a332c15f833d445b84648bc46e": "Merge pull request from GHSA-q2q7-5pp4-w6pg"
+    },
+    "GHSA-5PHF-PP7P-VC2R": {
+      "8d65ea1ecf6e2cdc27d42124e587c1b83a3118b0": "Merge pull request from GHSA-5phf-pp7p-vc2r\n\n* Enable hostname verification for HTTPS proxies with default cert.\n\nSigned-off-by: Jorge Lopez Silva <jalopezsilva@gmail.com>\n\n* Adjust exception check for Python 3.9+\n\nSigned-off-by: Jorge Lopez Silva <jalopezsilva@gmail.com>\n\n* Use a SAN instead of a common name.\n\nSigned-off-by: Jorge Lopez Silva <jalopezsilva@gmail.com>"
+    },
+    "CVE-2019-9740": {
+      "ab2adec26456dc84bd4cc4f120852db96aa8d1da": "travis: bump MacPython version (#1688)\n\nIn particular, Python 3.7.4 ships with OpenSSL 1.1.1 and addresses\r\nCVE-2019-9740. Those two changes caused bugs in our test suite (but\r\nthey're already fixed as we've seen them in Windows too.)",
+      "efddd7e7bad26188c3b692d1090cba768afa9162": "Avoid CVE-2019-9740 in 1.24.x by percent-encoding invalid target characters (#1593)",
+      "9b76785331243689a9d52cef3db05ef7462cb02d": "Apply fix from CPython for CVE-2019-9740 (#1591)"
+    },
+    "CVE-2019-11236": {
+      "324e47ac82e38f0ce4c84b2f8af52aad042229fc": "Mention CVE-2019-11236 in 1.24.3 changelog"
+    },
+    "CVE-2016-9015": {
+      "056045a062478e3c3afc2402ec81680d53490876": "Merge pull request #1010 from Lukasa/pyopenssl11\n\nFix PyOpenSSL with OpenSSL 1.1.0 (and CVE-2016-9015)",
+      "5e36a7096455ea94fb28b623d64e1f1bad97f822": "CVE-2016-9015: Correct set verify flags.\n\nThis error, introduced in 1.17, causes users using OpenSSL 1.1.0 along\nwith PyOpenSSL to silently fail to validate certificates. This is an\nalarming failure mode, and is currently being worked on as part of\nOpenSSL 1.1.0: https://github.com/openssl/openssl/pull/1793",
+      "c32cdbc16a9634fa0f8c829d1270301570158715": "CVE-2016-9015: Correct set verify flags.\n\nThis error, introduced in 1.17, causes users using OpenSSL 1.1.0 along\nwith PyOpenSSL to silently fail to validate certificates. This is an\nalarming failure mode, and is currently being worked on as part of\nOpenSSL 1.1.0: https://github.com/openssl/openssl/pull/1793\n\nThis patch will be merged into master in a different form, as part of a\ngeneral testing cleanup. The flaw was discovered by Cory Benfield, and\nwas in fact caught by urllib3's test suite: it just happens that we\nhadn't tested that particular software configuration before releasing\n1.17."
+    }
+  }
+}

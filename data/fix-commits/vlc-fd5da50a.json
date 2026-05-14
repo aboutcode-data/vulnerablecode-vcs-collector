@@ -1,0 +1,333 @@
+{
+  "vcs_url": "https://github.com/videolan/vlc",
+  "vulnerabilities": {
+    "CVE-2026-5673": {
+      "b3fea20f91a756161d160d6fc480e3b5ac99eb46": "contrib: theora: use latest git hash\n\nIt should fix arm build and fixes CVE-2026-5673"
+    },
+    "CVE-2025-66293": {
+      "6cb9ddc1cba15d4b17a9594f30cca00209c90dd6": "contrib: png: update to 1.6.53\n\nThis fixes several CVEs in libpng:\n- CVE-2025-66293\n- CVE-2025-64505\n- CVE-2025-64506\n- CVE-2025-64720\n- CVE-2025-65018\n\nHowever most of these are for the simple API which we do not seem to\nuse in VLC.\n\n(cherry picked from commit 2bd165ef04713a5828d384530b7c976ecd69ef7b)\nSigned-off-by: Steve Lhomme <robux4@ycbcr.xyz>",
+      "2bd165ef04713a5828d384530b7c976ecd69ef7b": "contrib: png: update to 1.6.53\n\nThis fixes several CVEs in libpng:\n- CVE-2025-66293\n- CVE-2025-64505\n- CVE-2025-64506\n- CVE-2025-64720\n- CVE-2025-65018\n\nHowever most of these are for the simple API which we do not seem to\nuse in VLC."
+    },
+    "CVE-2025-64505": {
+      "6cb9ddc1cba15d4b17a9594f30cca00209c90dd6": "contrib: png: update to 1.6.53\n\nThis fixes several CVEs in libpng:\n- CVE-2025-66293\n- CVE-2025-64505\n- CVE-2025-64506\n- CVE-2025-64720\n- CVE-2025-65018\n\nHowever most of these are for the simple API which we do not seem to\nuse in VLC.\n\n(cherry picked from commit 2bd165ef04713a5828d384530b7c976ecd69ef7b)\nSigned-off-by: Steve Lhomme <robux4@ycbcr.xyz>",
+      "2bd165ef04713a5828d384530b7c976ecd69ef7b": "contrib: png: update to 1.6.53\n\nThis fixes several CVEs in libpng:\n- CVE-2025-66293\n- CVE-2025-64505\n- CVE-2025-64506\n- CVE-2025-64720\n- CVE-2025-65018\n\nHowever most of these are for the simple API which we do not seem to\nuse in VLC."
+    },
+    "CVE-2025-64506": {
+      "6cb9ddc1cba15d4b17a9594f30cca00209c90dd6": "contrib: png: update to 1.6.53\n\nThis fixes several CVEs in libpng:\n- CVE-2025-66293\n- CVE-2025-64505\n- CVE-2025-64506\n- CVE-2025-64720\n- CVE-2025-65018\n\nHowever most of these are for the simple API which we do not seem to\nuse in VLC.\n\n(cherry picked from commit 2bd165ef04713a5828d384530b7c976ecd69ef7b)\nSigned-off-by: Steve Lhomme <robux4@ycbcr.xyz>",
+      "2bd165ef04713a5828d384530b7c976ecd69ef7b": "contrib: png: update to 1.6.53\n\nThis fixes several CVEs in libpng:\n- CVE-2025-66293\n- CVE-2025-64505\n- CVE-2025-64506\n- CVE-2025-64720\n- CVE-2025-65018\n\nHowever most of these are for the simple API which we do not seem to\nuse in VLC."
+    },
+    "CVE-2025-64720": {
+      "6cb9ddc1cba15d4b17a9594f30cca00209c90dd6": "contrib: png: update to 1.6.53\n\nThis fixes several CVEs in libpng:\n- CVE-2025-66293\n- CVE-2025-64505\n- CVE-2025-64506\n- CVE-2025-64720\n- CVE-2025-65018\n\nHowever most of these are for the simple API which we do not seem to\nuse in VLC.\n\n(cherry picked from commit 2bd165ef04713a5828d384530b7c976ecd69ef7b)\nSigned-off-by: Steve Lhomme <robux4@ycbcr.xyz>",
+      "2bd165ef04713a5828d384530b7c976ecd69ef7b": "contrib: png: update to 1.6.53\n\nThis fixes several CVEs in libpng:\n- CVE-2025-66293\n- CVE-2025-64505\n- CVE-2025-64506\n- CVE-2025-64720\n- CVE-2025-65018\n\nHowever most of these are for the simple API which we do not seem to\nuse in VLC."
+    },
+    "CVE-2025-65018": {
+      "6cb9ddc1cba15d4b17a9594f30cca00209c90dd6": "contrib: png: update to 1.6.53\n\nThis fixes several CVEs in libpng:\n- CVE-2025-66293\n- CVE-2025-64505\n- CVE-2025-64506\n- CVE-2025-64720\n- CVE-2025-65018\n\nHowever most of these are for the simple API which we do not seem to\nuse in VLC.\n\n(cherry picked from commit 2bd165ef04713a5828d384530b7c976ecd69ef7b)\nSigned-off-by: Steve Lhomme <robux4@ycbcr.xyz>",
+      "2bd165ef04713a5828d384530b7c976ecd69ef7b": "contrib: png: update to 1.6.53\n\nThis fixes several CVEs in libpng:\n- CVE-2025-66293\n- CVE-2025-64505\n- CVE-2025-64506\n- CVE-2025-64720\n- CVE-2025-65018\n\nHowever most of these are for the simple API which we do not seem to\nuse in VLC."
+    },
+    "CVE-2015-5237": {
+      "d6eba12da70fc9f317f03f28276f1a19fce965fb": "contrib: protobuf: update to 3.4.1\n\nThis version with the CVE-2015-5237 fix, without std::mutex and without\nCompareString internal function that is a define on Windows.\n\n(cherry picked from commit 15192dc0b26c839ca0c3d2e82e52c52d78463b64) (edited)\nedited:\n- 3.0 did the mingw pthread patch elswhere\n- 3.0 builds protoc in extra tools",
+      "15192dc0b26c839ca0c3d2e82e52c52d78463b64": "contrib: protobuf: update to 3.4.1\n\nThis version with the CVE-2015-5237 fix, without std::mutex and without\nCompareString internal function that is a define on Windows."
+    },
+    "CVE-2014-5461": {
+      "8052b3a827571387dae28667c4916aefc76309a0": "contrib: lua: fix CVE-2014-5461\n\nUsing debian's patch [^1].\n\nCo-authored-by: Thomas Guillem <thomas@gllm.fr>\n\n[^1]: https://sources.debian.org/data/main/l/lua5.1/5.1.5-11/debian/patches/0004-Fix-stack-overflow-in-vararg-functions.patch"
+    },
+    "CVE-2025-5283": {
+      "3d209f05270dc109a5b737c30c9bee3a51206859": "contrib: vpx: update to 1.15.2\n\nThis release fixes CVE-2025-5283 (bug webm:413411335), and is ABI compatible\nwith the previous release.\n\n(cherry picked from commit 5869fc3ef1f33649cd5606117f9692e73a2ea4e4)",
+      "5869fc3ef1f33649cd5606117f9692e73a2ea4e4": "contrib: vpx: update to 1.15.2\n\nThis release fixes CVE-2025-5283 (bug webm:413411335), and is ABI compatible\nwith the previous release."
+    },
+    "CVE-2024-5493": {
+      "99ba59dfd81ab96d1dc52df8fafece0f94025e25": "contrib: aom: update to 3.9.1\n\n2024-06-05 v3.9.1\n  This release includes several bug fixes. This release is ABI\n  compatible with the last release. See\n  https://aomedia.googlesource.com/aom/+log/v3.9.0..v3.9.1 for all the\n  commits in this release.\n  - Bug Fixes\n    * aomedia:2754, aomedia:3567: Ensure thread stack size is at least\n      256 KB\n    * b:330639949, oss-fuzz:68195: Increase scaling in linsolve_wiener\n    * Fix high target data rate overflow.\n    * aomedia:3509: Fix two UBSan errors in av1_rc_update_framerate()\n    * aomedia:3382, chromium:339877165: update codec config after\n      svc/scale controls (CVE-2024-5493)\n    * aomedia:3561: libaom-3.8.2 armv7 Android build failed\n    * aomedia:3571: {,highbd_}intrapred_neon.c: Avoid over-reads in z1\n      and z3 preds\n    * aomedia:3578: libaom-3.9.0 undefined reference to\n      `aom_sub_pixel_variance16xh_ssse3'\n    * aomedia:3579: Use round for RC calculations in cyclic_refresh\n    * aomedia:3580: Allow g_timebase.num to be greater than\n      g_timebase.den\n    * oss-fuzz:68774: libaom:av1_dec_fuzzer: Segv on unknown address in\n      od_ec_dec_init\n    * Arm SVE build fixes.\n    * av1_block_error_lp_neon: fix block_size param type\n    * av1_block_error_lp_sve: fix block_size param type"
+    },
+    "CVE-2024-5197": {
+      "5cf1564d338024e9b901e276a7fc7e4f63644419": "contrib: vpx: update to 1.14.1\n\n This release includes enhancements and bug fixes.\n\n  - Upgrading:\n    This release is ABI compatible with the previous release.\n\n  - Enhancement:\n    Improved the detection of compiler support for AArch64 extensions,\n    particularly SVE.\n\n    Added vpx_codec_get_global_headers() support for VP9.\n\n  - Bug fixes:\n\n    Added buffer bounds checks to vpx_writer and vpx_write_bit_buffer.\n    Fix to GetSegmentationData() crash in aq_mode=0 for RTC rate control.\n    Fix to alloc for row_base_thresh_freq_fac.\n    Free row mt memory before freeing cpi->tile_data.\n    Fix to buffer alloc for vp9_bitstream_worker_data.\n    Fix to VP8 race issue for multi-thread with pnsr_calc.\n    Fix to uv width/height in vp9_scale_and_extend_frame_ssse3.\n    Fix to integer division by zero and overflow in calc_pframe_target_size().\n    Fix to integer overflow in vpx_img_alloc() & vpx_img_wrap()(CVE-2024-5197).\n    Fix to UBSan error in vp9_rc_update_framerate().\n    Fix to UBSan errors in vp8_new_framerate().\n    Fix to integer overflow in vp8 encodeframe.c.\n    Handle EINTR from sem_wait().\n\n(cherry picked from commit f7a2b4691b98238b219d5771d7633e4728fb079d)\n(cherry picked from commit 3d230a44e93804a71bff8d60f5b67ee095cc96b5)",
+      "f7a2b4691b98238b219d5771d7633e4728fb079d": "contrib: vpx: update to 1.14.1\n\n This release includes enhancements and bug fixes.\n\n  - Upgrading:\n    This release is ABI compatible with the previous release.\n\n  - Enhancement:\n    Improved the detection of compiler support for AArch64 extensions,\n    particularly SVE.\n\n    Added vpx_codec_get_global_headers() support for VP9.\n\n  - Bug fixes:\n\n    Added buffer bounds checks to vpx_writer and vpx_write_bit_buffer.\n    Fix to GetSegmentationData() crash in aq_mode=0 for RTC rate control.\n    Fix to alloc for row_base_thresh_freq_fac.\n    Free row mt memory before freeing cpi->tile_data.\n    Fix to buffer alloc for vp9_bitstream_worker_data.\n    Fix to VP8 race issue for multi-thread with pnsr_calc.\n    Fix to uv width/height in vp9_scale_and_extend_frame_ssse3.\n    Fix to integer division by zero and overflow in calc_pframe_target_size().\n    Fix to integer overflow in vpx_img_alloc() & vpx_img_wrap()(CVE-2024-5197).\n    Fix to UBSan error in vp9_rc_update_framerate().\n    Fix to UBSan errors in vp8_new_framerate().\n    Fix to integer overflow in vp8 encodeframe.c.\n    Handle EINTR from sem_wait()."
+    },
+    "CVE-2023-5217": {
+      "235747f2c5f2e4af8fe8512c5027b0d11e6ea55e": "Contribs: update libvpx to 1.13.1\n\nCVE-2023-5217\nhttps://crbug.com/1486441 (CVE-2023-5217)\n\n(cherry picked from commit ab520205aecb04ff837066a67d4505fcb79672c3)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "ab520205aecb04ff837066a67d4505fcb79672c3": "Contribs: update libvpx to 1.13.1\n\nCVE-2023-5217\nhttps://crbug.com/1486441 (CVE-2023-5217)"
+    },
+    "CVE-2023-2804": {
+      "c48b58ded7b678c2d624f3882638ea12df3f872b": "contrib: jpeg: update to jpeg-turbo 3.0\n\nNotably:\n- Fixed various segfaults and buffer overruns (CVE-2023-2804)\n- Fixed an issue that caused the C Huffman encoder (which is not used by\n  default on x86 and Arm CPUs) to read from uninitialized memory when\n  attempting to transform a specially-crafted malformed arithmetic-coded\n  JPEG source image into a baseline Huffman-coded JPEG destination image.\n\nRelease notes:\nhttps://github.com/libjpeg-turbo/libjpeg-turbo/releases/tag/3.0.0"
+    },
+    "CVE-2022-46176": {
+      "f18c776337860c9335fcfb3db0c3248e7936e15a": "contrib: rust: update to 1.66.1\n\nFixes: CVE-2022-46176"
+    },
+    "CVE-2022-37434": {
+      "9b707dc06a022f88855ea3f41f29024019944137": "contrib: zlib: update to 1.2.13\n\nFixes CVE-2022-37434.\n\n(cherry picked from commit 0c0ab8186a6ff5a6b1cff7c528fe01f822abd6ce) (edited)",
+      "0c0ab8186a6ff5a6b1cff7c528fe01f822abd6ce": "contrib: zlib: update to 1.2.13\n\nFixes CVE-2022-37434."
+    },
+    "CVE-2018-9251": {
+      "ac99644169fec8213b6f0395807be2f76dd36106": "Contribs: update libxml2 to 2.9.14\n\nFixes notably:\nCVE-2018-9251 CVE-2018-14567 CVE-2018-14404\nCVE-2021-3541 CVE-2022-23308 CVE-2022-29824\n\nAnd move to the official Gnome Infrastructure\n\n(cherry picked from commit 471fd489f3f38c04b131689933d3e7129e5d274a)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "471fd489f3f38c04b131689933d3e7129e5d274a": "Contribs: update libxml2 to 2.9.14\n\nFixes notably:\nCVE-2018-9251 CVE-2018-14567 CVE-2018-14404\nCVE-2021-3541 CVE-2022-23308 CVE-2022-29824\n\nAnd move to the official Gnome Infrastructure"
+    },
+    "CVE-2018-14567": {
+      "ac99644169fec8213b6f0395807be2f76dd36106": "Contribs: update libxml2 to 2.9.14\n\nFixes notably:\nCVE-2018-9251 CVE-2018-14567 CVE-2018-14404\nCVE-2021-3541 CVE-2022-23308 CVE-2022-29824\n\nAnd move to the official Gnome Infrastructure\n\n(cherry picked from commit 471fd489f3f38c04b131689933d3e7129e5d274a)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "471fd489f3f38c04b131689933d3e7129e5d274a": "Contribs: update libxml2 to 2.9.14\n\nFixes notably:\nCVE-2018-9251 CVE-2018-14567 CVE-2018-14404\nCVE-2021-3541 CVE-2022-23308 CVE-2022-29824\n\nAnd move to the official Gnome Infrastructure"
+    },
+    "CVE-2018-14404": {
+      "ac99644169fec8213b6f0395807be2f76dd36106": "Contribs: update libxml2 to 2.9.14\n\nFixes notably:\nCVE-2018-9251 CVE-2018-14567 CVE-2018-14404\nCVE-2021-3541 CVE-2022-23308 CVE-2022-29824\n\nAnd move to the official Gnome Infrastructure\n\n(cherry picked from commit 471fd489f3f38c04b131689933d3e7129e5d274a)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "471fd489f3f38c04b131689933d3e7129e5d274a": "Contribs: update libxml2 to 2.9.14\n\nFixes notably:\nCVE-2018-9251 CVE-2018-14567 CVE-2018-14404\nCVE-2021-3541 CVE-2022-23308 CVE-2022-29824\n\nAnd move to the official Gnome Infrastructure"
+    },
+    "CVE-2021-3541": {
+      "ac99644169fec8213b6f0395807be2f76dd36106": "Contribs: update libxml2 to 2.9.14\n\nFixes notably:\nCVE-2018-9251 CVE-2018-14567 CVE-2018-14404\nCVE-2021-3541 CVE-2022-23308 CVE-2022-29824\n\nAnd move to the official Gnome Infrastructure\n\n(cherry picked from commit 471fd489f3f38c04b131689933d3e7129e5d274a)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "471fd489f3f38c04b131689933d3e7129e5d274a": "Contribs: update libxml2 to 2.9.14\n\nFixes notably:\nCVE-2018-9251 CVE-2018-14567 CVE-2018-14404\nCVE-2021-3541 CVE-2022-23308 CVE-2022-29824\n\nAnd move to the official Gnome Infrastructure"
+    },
+    "CVE-2022-23308": {
+      "ac99644169fec8213b6f0395807be2f76dd36106": "Contribs: update libxml2 to 2.9.14\n\nFixes notably:\nCVE-2018-9251 CVE-2018-14567 CVE-2018-14404\nCVE-2021-3541 CVE-2022-23308 CVE-2022-29824\n\nAnd move to the official Gnome Infrastructure\n\n(cherry picked from commit 471fd489f3f38c04b131689933d3e7129e5d274a)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "471fd489f3f38c04b131689933d3e7129e5d274a": "Contribs: update libxml2 to 2.9.14\n\nFixes notably:\nCVE-2018-9251 CVE-2018-14567 CVE-2018-14404\nCVE-2021-3541 CVE-2022-23308 CVE-2022-29824\n\nAnd move to the official Gnome Infrastructure"
+    },
+    "CVE-2022-29824": {
+      "ac99644169fec8213b6f0395807be2f76dd36106": "Contribs: update libxml2 to 2.9.14\n\nFixes notably:\nCVE-2018-9251 CVE-2018-14567 CVE-2018-14404\nCVE-2021-3541 CVE-2022-23308 CVE-2022-29824\n\nAnd move to the official Gnome Infrastructure\n\n(cherry picked from commit 471fd489f3f38c04b131689933d3e7129e5d274a)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "471fd489f3f38c04b131689933d3e7129e5d274a": "Contribs: update libxml2 to 2.9.14\n\nFixes notably:\nCVE-2018-9251 CVE-2018-14567 CVE-2018-14404\nCVE-2021-3541 CVE-2022-23308 CVE-2022-29824\n\nAnd move to the official Gnome Infrastructure"
+    },
+    "CVE-2021-30498": {
+      "cec83d0bc7a481762a88e6a6cd1629d7a5a1bdef": "caca: update contrib to 0.99.beta20\n\nThe new contrib fixes a bunch of reported CVE:\n\n    CVE-2021-30498  (tga export, not concerned)\n    CVE-2021-30499  (troff export, not concerned)\n    CVE-2021-3410   (canvas.c, v0.99.beta19)\n    CVE-2018-20546  (dither.c, v0.99.beta19)\n    CVE-2018-20547  (dither.c, v0.99.beta19)\n    CVE-2018-20545  (load_image, v0.99.beta19)\n    CVE-2018-20548  (load_image, v0.99.beta19)\n    CVE-2018-20549  (caca_file_read, 0.99.beta19, not concerned)\n\nSee release note[^1] on the github project.\n\nIt also allow to migrate the use of the new API instead of libcucul,\nwhich has been merged into libcaca since 0.99.beta15:\n\n    commit f61816ceb7445f8bf818936151554ac060764b39\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Sat Sep 27 13:12:46 2008 +0000\n\n    Starting refactoring to get rid of libcucul. The initial reason for the\n    split is rendered moot by the plugin system: when enabled, binaries do\n    not link directly with libX11 or libGL. I hope this is a step towards\n    more consisteny and clarity.\n\nIt was then completely wiped out by the following commit, which is part\nof v0.99.beta20:\n\n    commit 5f0ec215f8c9915ed028324a8ecac8212f68e18d\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Thu May 3 10:33:30 2018 +0200\n\n    Remove legacy code from 10 years ago.\n\nCheck NEWS for details:\n\n    \\section news0_99_beta15 Changes between 0.99.beta15 and 0.99.beta14\n\n     - libcucul was merged back into libcaca for more clarity\n\n[^1]: https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20\n\n(cherry picked from commit 2d5974555729b0915e9280e822cf66c2dd3304f8)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "2d5974555729b0915e9280e822cf66c2dd3304f8": "caca: update contrib to 0.99.beta20\n\nThe new contrib fixes a bunch of reported CVE:\n\n    CVE-2021-30498  (tga export, not concerned)\n    CVE-2021-30499  (troff export, not concerned)\n    CVE-2021-3410   (canvas.c, v0.99.beta19)\n    CVE-2018-20546  (dither.c, v0.99.beta19)\n    CVE-2018-20547  (dither.c, v0.99.beta19)\n    CVE-2018-20545  (load_image, v0.99.beta19)\n    CVE-2018-20548  (load_image, v0.99.beta19)\n    CVE-2018-20549  (caca_file_read, 0.99.beta19, not concerned)\n\nSee release note[^1] on the github project.\n\nIt also allow to migrate the use of the new API instead of libcucul,\nwhich has been merged into libcaca since 0.99.beta15:\n\n    commit f61816ceb7445f8bf818936151554ac060764b39\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Sat Sep 27 13:12:46 2008 +0000\n\n    Starting refactoring to get rid of libcucul. The initial reason for the\n    split is rendered moot by the plugin system: when enabled, binaries do\n    not link directly with libX11 or libGL. I hope this is a step towards\n    more consisteny and clarity.\n\nIt was then completely wiped out by the following commit, which is part\nof v0.99.beta20:\n\n    commit 5f0ec215f8c9915ed028324a8ecac8212f68e18d\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Thu May 3 10:33:30 2018 +0200\n\n    Remove legacy code from 10 years ago.\n\nCheck NEWS for details:\n\n    \\section news0_99_beta15 Changes between 0.99.beta15 and 0.99.beta14\n\n     - libcucul was merged back into libcaca for more clarity\n\n[^1]: https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20"
+    },
+    "CVE-2021-30499": {
+      "cec83d0bc7a481762a88e6a6cd1629d7a5a1bdef": "caca: update contrib to 0.99.beta20\n\nThe new contrib fixes a bunch of reported CVE:\n\n    CVE-2021-30498  (tga export, not concerned)\n    CVE-2021-30499  (troff export, not concerned)\n    CVE-2021-3410   (canvas.c, v0.99.beta19)\n    CVE-2018-20546  (dither.c, v0.99.beta19)\n    CVE-2018-20547  (dither.c, v0.99.beta19)\n    CVE-2018-20545  (load_image, v0.99.beta19)\n    CVE-2018-20548  (load_image, v0.99.beta19)\n    CVE-2018-20549  (caca_file_read, 0.99.beta19, not concerned)\n\nSee release note[^1] on the github project.\n\nIt also allow to migrate the use of the new API instead of libcucul,\nwhich has been merged into libcaca since 0.99.beta15:\n\n    commit f61816ceb7445f8bf818936151554ac060764b39\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Sat Sep 27 13:12:46 2008 +0000\n\n    Starting refactoring to get rid of libcucul. The initial reason for the\n    split is rendered moot by the plugin system: when enabled, binaries do\n    not link directly with libX11 or libGL. I hope this is a step towards\n    more consisteny and clarity.\n\nIt was then completely wiped out by the following commit, which is part\nof v0.99.beta20:\n\n    commit 5f0ec215f8c9915ed028324a8ecac8212f68e18d\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Thu May 3 10:33:30 2018 +0200\n\n    Remove legacy code from 10 years ago.\n\nCheck NEWS for details:\n\n    \\section news0_99_beta15 Changes between 0.99.beta15 and 0.99.beta14\n\n     - libcucul was merged back into libcaca for more clarity\n\n[^1]: https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20\n\n(cherry picked from commit 2d5974555729b0915e9280e822cf66c2dd3304f8)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "2d5974555729b0915e9280e822cf66c2dd3304f8": "caca: update contrib to 0.99.beta20\n\nThe new contrib fixes a bunch of reported CVE:\n\n    CVE-2021-30498  (tga export, not concerned)\n    CVE-2021-30499  (troff export, not concerned)\n    CVE-2021-3410   (canvas.c, v0.99.beta19)\n    CVE-2018-20546  (dither.c, v0.99.beta19)\n    CVE-2018-20547  (dither.c, v0.99.beta19)\n    CVE-2018-20545  (load_image, v0.99.beta19)\n    CVE-2018-20548  (load_image, v0.99.beta19)\n    CVE-2018-20549  (caca_file_read, 0.99.beta19, not concerned)\n\nSee release note[^1] on the github project.\n\nIt also allow to migrate the use of the new API instead of libcucul,\nwhich has been merged into libcaca since 0.99.beta15:\n\n    commit f61816ceb7445f8bf818936151554ac060764b39\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Sat Sep 27 13:12:46 2008 +0000\n\n    Starting refactoring to get rid of libcucul. The initial reason for the\n    split is rendered moot by the plugin system: when enabled, binaries do\n    not link directly with libX11 or libGL. I hope this is a step towards\n    more consisteny and clarity.\n\nIt was then completely wiped out by the following commit, which is part\nof v0.99.beta20:\n\n    commit 5f0ec215f8c9915ed028324a8ecac8212f68e18d\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Thu May 3 10:33:30 2018 +0200\n\n    Remove legacy code from 10 years ago.\n\nCheck NEWS for details:\n\n    \\section news0_99_beta15 Changes between 0.99.beta15 and 0.99.beta14\n\n     - libcucul was merged back into libcaca for more clarity\n\n[^1]: https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20"
+    },
+    "CVE-2021-3410": {
+      "cec83d0bc7a481762a88e6a6cd1629d7a5a1bdef": "caca: update contrib to 0.99.beta20\n\nThe new contrib fixes a bunch of reported CVE:\n\n    CVE-2021-30498  (tga export, not concerned)\n    CVE-2021-30499  (troff export, not concerned)\n    CVE-2021-3410   (canvas.c, v0.99.beta19)\n    CVE-2018-20546  (dither.c, v0.99.beta19)\n    CVE-2018-20547  (dither.c, v0.99.beta19)\n    CVE-2018-20545  (load_image, v0.99.beta19)\n    CVE-2018-20548  (load_image, v0.99.beta19)\n    CVE-2018-20549  (caca_file_read, 0.99.beta19, not concerned)\n\nSee release note[^1] on the github project.\n\nIt also allow to migrate the use of the new API instead of libcucul,\nwhich has been merged into libcaca since 0.99.beta15:\n\n    commit f61816ceb7445f8bf818936151554ac060764b39\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Sat Sep 27 13:12:46 2008 +0000\n\n    Starting refactoring to get rid of libcucul. The initial reason for the\n    split is rendered moot by the plugin system: when enabled, binaries do\n    not link directly with libX11 or libGL. I hope this is a step towards\n    more consisteny and clarity.\n\nIt was then completely wiped out by the following commit, which is part\nof v0.99.beta20:\n\n    commit 5f0ec215f8c9915ed028324a8ecac8212f68e18d\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Thu May 3 10:33:30 2018 +0200\n\n    Remove legacy code from 10 years ago.\n\nCheck NEWS for details:\n\n    \\section news0_99_beta15 Changes between 0.99.beta15 and 0.99.beta14\n\n     - libcucul was merged back into libcaca for more clarity\n\n[^1]: https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20\n\n(cherry picked from commit 2d5974555729b0915e9280e822cf66c2dd3304f8)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "2d5974555729b0915e9280e822cf66c2dd3304f8": "caca: update contrib to 0.99.beta20\n\nThe new contrib fixes a bunch of reported CVE:\n\n    CVE-2021-30498  (tga export, not concerned)\n    CVE-2021-30499  (troff export, not concerned)\n    CVE-2021-3410   (canvas.c, v0.99.beta19)\n    CVE-2018-20546  (dither.c, v0.99.beta19)\n    CVE-2018-20547  (dither.c, v0.99.beta19)\n    CVE-2018-20545  (load_image, v0.99.beta19)\n    CVE-2018-20548  (load_image, v0.99.beta19)\n    CVE-2018-20549  (caca_file_read, 0.99.beta19, not concerned)\n\nSee release note[^1] on the github project.\n\nIt also allow to migrate the use of the new API instead of libcucul,\nwhich has been merged into libcaca since 0.99.beta15:\n\n    commit f61816ceb7445f8bf818936151554ac060764b39\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Sat Sep 27 13:12:46 2008 +0000\n\n    Starting refactoring to get rid of libcucul. The initial reason for the\n    split is rendered moot by the plugin system: when enabled, binaries do\n    not link directly with libX11 or libGL. I hope this is a step towards\n    more consisteny and clarity.\n\nIt was then completely wiped out by the following commit, which is part\nof v0.99.beta20:\n\n    commit 5f0ec215f8c9915ed028324a8ecac8212f68e18d\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Thu May 3 10:33:30 2018 +0200\n\n    Remove legacy code from 10 years ago.\n\nCheck NEWS for details:\n\n    \\section news0_99_beta15 Changes between 0.99.beta15 and 0.99.beta14\n\n     - libcucul was merged back into libcaca for more clarity\n\n[^1]: https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20"
+    },
+    "CVE-2018-20546": {
+      "cec83d0bc7a481762a88e6a6cd1629d7a5a1bdef": "caca: update contrib to 0.99.beta20\n\nThe new contrib fixes a bunch of reported CVE:\n\n    CVE-2021-30498  (tga export, not concerned)\n    CVE-2021-30499  (troff export, not concerned)\n    CVE-2021-3410   (canvas.c, v0.99.beta19)\n    CVE-2018-20546  (dither.c, v0.99.beta19)\n    CVE-2018-20547  (dither.c, v0.99.beta19)\n    CVE-2018-20545  (load_image, v0.99.beta19)\n    CVE-2018-20548  (load_image, v0.99.beta19)\n    CVE-2018-20549  (caca_file_read, 0.99.beta19, not concerned)\n\nSee release note[^1] on the github project.\n\nIt also allow to migrate the use of the new API instead of libcucul,\nwhich has been merged into libcaca since 0.99.beta15:\n\n    commit f61816ceb7445f8bf818936151554ac060764b39\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Sat Sep 27 13:12:46 2008 +0000\n\n    Starting refactoring to get rid of libcucul. The initial reason for the\n    split is rendered moot by the plugin system: when enabled, binaries do\n    not link directly with libX11 or libGL. I hope this is a step towards\n    more consisteny and clarity.\n\nIt was then completely wiped out by the following commit, which is part\nof v0.99.beta20:\n\n    commit 5f0ec215f8c9915ed028324a8ecac8212f68e18d\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Thu May 3 10:33:30 2018 +0200\n\n    Remove legacy code from 10 years ago.\n\nCheck NEWS for details:\n\n    \\section news0_99_beta15 Changes between 0.99.beta15 and 0.99.beta14\n\n     - libcucul was merged back into libcaca for more clarity\n\n[^1]: https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20\n\n(cherry picked from commit 2d5974555729b0915e9280e822cf66c2dd3304f8)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "2d5974555729b0915e9280e822cf66c2dd3304f8": "caca: update contrib to 0.99.beta20\n\nThe new contrib fixes a bunch of reported CVE:\n\n    CVE-2021-30498  (tga export, not concerned)\n    CVE-2021-30499  (troff export, not concerned)\n    CVE-2021-3410   (canvas.c, v0.99.beta19)\n    CVE-2018-20546  (dither.c, v0.99.beta19)\n    CVE-2018-20547  (dither.c, v0.99.beta19)\n    CVE-2018-20545  (load_image, v0.99.beta19)\n    CVE-2018-20548  (load_image, v0.99.beta19)\n    CVE-2018-20549  (caca_file_read, 0.99.beta19, not concerned)\n\nSee release note[^1] on the github project.\n\nIt also allow to migrate the use of the new API instead of libcucul,\nwhich has been merged into libcaca since 0.99.beta15:\n\n    commit f61816ceb7445f8bf818936151554ac060764b39\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Sat Sep 27 13:12:46 2008 +0000\n\n    Starting refactoring to get rid of libcucul. The initial reason for the\n    split is rendered moot by the plugin system: when enabled, binaries do\n    not link directly with libX11 or libGL. I hope this is a step towards\n    more consisteny and clarity.\n\nIt was then completely wiped out by the following commit, which is part\nof v0.99.beta20:\n\n    commit 5f0ec215f8c9915ed028324a8ecac8212f68e18d\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Thu May 3 10:33:30 2018 +0200\n\n    Remove legacy code from 10 years ago.\n\nCheck NEWS for details:\n\n    \\section news0_99_beta15 Changes between 0.99.beta15 and 0.99.beta14\n\n     - libcucul was merged back into libcaca for more clarity\n\n[^1]: https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20"
+    },
+    "CVE-2018-20547": {
+      "cec83d0bc7a481762a88e6a6cd1629d7a5a1bdef": "caca: update contrib to 0.99.beta20\n\nThe new contrib fixes a bunch of reported CVE:\n\n    CVE-2021-30498  (tga export, not concerned)\n    CVE-2021-30499  (troff export, not concerned)\n    CVE-2021-3410   (canvas.c, v0.99.beta19)\n    CVE-2018-20546  (dither.c, v0.99.beta19)\n    CVE-2018-20547  (dither.c, v0.99.beta19)\n    CVE-2018-20545  (load_image, v0.99.beta19)\n    CVE-2018-20548  (load_image, v0.99.beta19)\n    CVE-2018-20549  (caca_file_read, 0.99.beta19, not concerned)\n\nSee release note[^1] on the github project.\n\nIt also allow to migrate the use of the new API instead of libcucul,\nwhich has been merged into libcaca since 0.99.beta15:\n\n    commit f61816ceb7445f8bf818936151554ac060764b39\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Sat Sep 27 13:12:46 2008 +0000\n\n    Starting refactoring to get rid of libcucul. The initial reason for the\n    split is rendered moot by the plugin system: when enabled, binaries do\n    not link directly with libX11 or libGL. I hope this is a step towards\n    more consisteny and clarity.\n\nIt was then completely wiped out by the following commit, which is part\nof v0.99.beta20:\n\n    commit 5f0ec215f8c9915ed028324a8ecac8212f68e18d\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Thu May 3 10:33:30 2018 +0200\n\n    Remove legacy code from 10 years ago.\n\nCheck NEWS for details:\n\n    \\section news0_99_beta15 Changes between 0.99.beta15 and 0.99.beta14\n\n     - libcucul was merged back into libcaca for more clarity\n\n[^1]: https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20\n\n(cherry picked from commit 2d5974555729b0915e9280e822cf66c2dd3304f8)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "2d5974555729b0915e9280e822cf66c2dd3304f8": "caca: update contrib to 0.99.beta20\n\nThe new contrib fixes a bunch of reported CVE:\n\n    CVE-2021-30498  (tga export, not concerned)\n    CVE-2021-30499  (troff export, not concerned)\n    CVE-2021-3410   (canvas.c, v0.99.beta19)\n    CVE-2018-20546  (dither.c, v0.99.beta19)\n    CVE-2018-20547  (dither.c, v0.99.beta19)\n    CVE-2018-20545  (load_image, v0.99.beta19)\n    CVE-2018-20548  (load_image, v0.99.beta19)\n    CVE-2018-20549  (caca_file_read, 0.99.beta19, not concerned)\n\nSee release note[^1] on the github project.\n\nIt also allow to migrate the use of the new API instead of libcucul,\nwhich has been merged into libcaca since 0.99.beta15:\n\n    commit f61816ceb7445f8bf818936151554ac060764b39\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Sat Sep 27 13:12:46 2008 +0000\n\n    Starting refactoring to get rid of libcucul. The initial reason for the\n    split is rendered moot by the plugin system: when enabled, binaries do\n    not link directly with libX11 or libGL. I hope this is a step towards\n    more consisteny and clarity.\n\nIt was then completely wiped out by the following commit, which is part\nof v0.99.beta20:\n\n    commit 5f0ec215f8c9915ed028324a8ecac8212f68e18d\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Thu May 3 10:33:30 2018 +0200\n\n    Remove legacy code from 10 years ago.\n\nCheck NEWS for details:\n\n    \\section news0_99_beta15 Changes between 0.99.beta15 and 0.99.beta14\n\n     - libcucul was merged back into libcaca for more clarity\n\n[^1]: https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20"
+    },
+    "CVE-2018-20545": {
+      "cec83d0bc7a481762a88e6a6cd1629d7a5a1bdef": "caca: update contrib to 0.99.beta20\n\nThe new contrib fixes a bunch of reported CVE:\n\n    CVE-2021-30498  (tga export, not concerned)\n    CVE-2021-30499  (troff export, not concerned)\n    CVE-2021-3410   (canvas.c, v0.99.beta19)\n    CVE-2018-20546  (dither.c, v0.99.beta19)\n    CVE-2018-20547  (dither.c, v0.99.beta19)\n    CVE-2018-20545  (load_image, v0.99.beta19)\n    CVE-2018-20548  (load_image, v0.99.beta19)\n    CVE-2018-20549  (caca_file_read, 0.99.beta19, not concerned)\n\nSee release note[^1] on the github project.\n\nIt also allow to migrate the use of the new API instead of libcucul,\nwhich has been merged into libcaca since 0.99.beta15:\n\n    commit f61816ceb7445f8bf818936151554ac060764b39\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Sat Sep 27 13:12:46 2008 +0000\n\n    Starting refactoring to get rid of libcucul. The initial reason for the\n    split is rendered moot by the plugin system: when enabled, binaries do\n    not link directly with libX11 or libGL. I hope this is a step towards\n    more consisteny and clarity.\n\nIt was then completely wiped out by the following commit, which is part\nof v0.99.beta20:\n\n    commit 5f0ec215f8c9915ed028324a8ecac8212f68e18d\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Thu May 3 10:33:30 2018 +0200\n\n    Remove legacy code from 10 years ago.\n\nCheck NEWS for details:\n\n    \\section news0_99_beta15 Changes between 0.99.beta15 and 0.99.beta14\n\n     - libcucul was merged back into libcaca for more clarity\n\n[^1]: https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20\n\n(cherry picked from commit 2d5974555729b0915e9280e822cf66c2dd3304f8)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "2d5974555729b0915e9280e822cf66c2dd3304f8": "caca: update contrib to 0.99.beta20\n\nThe new contrib fixes a bunch of reported CVE:\n\n    CVE-2021-30498  (tga export, not concerned)\n    CVE-2021-30499  (troff export, not concerned)\n    CVE-2021-3410   (canvas.c, v0.99.beta19)\n    CVE-2018-20546  (dither.c, v0.99.beta19)\n    CVE-2018-20547  (dither.c, v0.99.beta19)\n    CVE-2018-20545  (load_image, v0.99.beta19)\n    CVE-2018-20548  (load_image, v0.99.beta19)\n    CVE-2018-20549  (caca_file_read, 0.99.beta19, not concerned)\n\nSee release note[^1] on the github project.\n\nIt also allow to migrate the use of the new API instead of libcucul,\nwhich has been merged into libcaca since 0.99.beta15:\n\n    commit f61816ceb7445f8bf818936151554ac060764b39\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Sat Sep 27 13:12:46 2008 +0000\n\n    Starting refactoring to get rid of libcucul. The initial reason for the\n    split is rendered moot by the plugin system: when enabled, binaries do\n    not link directly with libX11 or libGL. I hope this is a step towards\n    more consisteny and clarity.\n\nIt was then completely wiped out by the following commit, which is part\nof v0.99.beta20:\n\n    commit 5f0ec215f8c9915ed028324a8ecac8212f68e18d\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Thu May 3 10:33:30 2018 +0200\n\n    Remove legacy code from 10 years ago.\n\nCheck NEWS for details:\n\n    \\section news0_99_beta15 Changes between 0.99.beta15 and 0.99.beta14\n\n     - libcucul was merged back into libcaca for more clarity\n\n[^1]: https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20"
+    },
+    "CVE-2018-20548": {
+      "cec83d0bc7a481762a88e6a6cd1629d7a5a1bdef": "caca: update contrib to 0.99.beta20\n\nThe new contrib fixes a bunch of reported CVE:\n\n    CVE-2021-30498  (tga export, not concerned)\n    CVE-2021-30499  (troff export, not concerned)\n    CVE-2021-3410   (canvas.c, v0.99.beta19)\n    CVE-2018-20546  (dither.c, v0.99.beta19)\n    CVE-2018-20547  (dither.c, v0.99.beta19)\n    CVE-2018-20545  (load_image, v0.99.beta19)\n    CVE-2018-20548  (load_image, v0.99.beta19)\n    CVE-2018-20549  (caca_file_read, 0.99.beta19, not concerned)\n\nSee release note[^1] on the github project.\n\nIt also allow to migrate the use of the new API instead of libcucul,\nwhich has been merged into libcaca since 0.99.beta15:\n\n    commit f61816ceb7445f8bf818936151554ac060764b39\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Sat Sep 27 13:12:46 2008 +0000\n\n    Starting refactoring to get rid of libcucul. The initial reason for the\n    split is rendered moot by the plugin system: when enabled, binaries do\n    not link directly with libX11 or libGL. I hope this is a step towards\n    more consisteny and clarity.\n\nIt was then completely wiped out by the following commit, which is part\nof v0.99.beta20:\n\n    commit 5f0ec215f8c9915ed028324a8ecac8212f68e18d\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Thu May 3 10:33:30 2018 +0200\n\n    Remove legacy code from 10 years ago.\n\nCheck NEWS for details:\n\n    \\section news0_99_beta15 Changes between 0.99.beta15 and 0.99.beta14\n\n     - libcucul was merged back into libcaca for more clarity\n\n[^1]: https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20\n\n(cherry picked from commit 2d5974555729b0915e9280e822cf66c2dd3304f8)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "2d5974555729b0915e9280e822cf66c2dd3304f8": "caca: update contrib to 0.99.beta20\n\nThe new contrib fixes a bunch of reported CVE:\n\n    CVE-2021-30498  (tga export, not concerned)\n    CVE-2021-30499  (troff export, not concerned)\n    CVE-2021-3410   (canvas.c, v0.99.beta19)\n    CVE-2018-20546  (dither.c, v0.99.beta19)\n    CVE-2018-20547  (dither.c, v0.99.beta19)\n    CVE-2018-20545  (load_image, v0.99.beta19)\n    CVE-2018-20548  (load_image, v0.99.beta19)\n    CVE-2018-20549  (caca_file_read, 0.99.beta19, not concerned)\n\nSee release note[^1] on the github project.\n\nIt also allow to migrate the use of the new API instead of libcucul,\nwhich has been merged into libcaca since 0.99.beta15:\n\n    commit f61816ceb7445f8bf818936151554ac060764b39\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Sat Sep 27 13:12:46 2008 +0000\n\n    Starting refactoring to get rid of libcucul. The initial reason for the\n    split is rendered moot by the plugin system: when enabled, binaries do\n    not link directly with libX11 or libGL. I hope this is a step towards\n    more consisteny and clarity.\n\nIt was then completely wiped out by the following commit, which is part\nof v0.99.beta20:\n\n    commit 5f0ec215f8c9915ed028324a8ecac8212f68e18d\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Thu May 3 10:33:30 2018 +0200\n\n    Remove legacy code from 10 years ago.\n\nCheck NEWS for details:\n\n    \\section news0_99_beta15 Changes between 0.99.beta15 and 0.99.beta14\n\n     - libcucul was merged back into libcaca for more clarity\n\n[^1]: https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20"
+    },
+    "CVE-2018-20549": {
+      "cec83d0bc7a481762a88e6a6cd1629d7a5a1bdef": "caca: update contrib to 0.99.beta20\n\nThe new contrib fixes a bunch of reported CVE:\n\n    CVE-2021-30498  (tga export, not concerned)\n    CVE-2021-30499  (troff export, not concerned)\n    CVE-2021-3410   (canvas.c, v0.99.beta19)\n    CVE-2018-20546  (dither.c, v0.99.beta19)\n    CVE-2018-20547  (dither.c, v0.99.beta19)\n    CVE-2018-20545  (load_image, v0.99.beta19)\n    CVE-2018-20548  (load_image, v0.99.beta19)\n    CVE-2018-20549  (caca_file_read, 0.99.beta19, not concerned)\n\nSee release note[^1] on the github project.\n\nIt also allow to migrate the use of the new API instead of libcucul,\nwhich has been merged into libcaca since 0.99.beta15:\n\n    commit f61816ceb7445f8bf818936151554ac060764b39\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Sat Sep 27 13:12:46 2008 +0000\n\n    Starting refactoring to get rid of libcucul. The initial reason for the\n    split is rendered moot by the plugin system: when enabled, binaries do\n    not link directly with libX11 or libGL. I hope this is a step towards\n    more consisteny and clarity.\n\nIt was then completely wiped out by the following commit, which is part\nof v0.99.beta20:\n\n    commit 5f0ec215f8c9915ed028324a8ecac8212f68e18d\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Thu May 3 10:33:30 2018 +0200\n\n    Remove legacy code from 10 years ago.\n\nCheck NEWS for details:\n\n    \\section news0_99_beta15 Changes between 0.99.beta15 and 0.99.beta14\n\n     - libcucul was merged back into libcaca for more clarity\n\n[^1]: https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20\n\n(cherry picked from commit 2d5974555729b0915e9280e822cf66c2dd3304f8)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "2d5974555729b0915e9280e822cf66c2dd3304f8": "caca: update contrib to 0.99.beta20\n\nThe new contrib fixes a bunch of reported CVE:\n\n    CVE-2021-30498  (tga export, not concerned)\n    CVE-2021-30499  (troff export, not concerned)\n    CVE-2021-3410   (canvas.c, v0.99.beta19)\n    CVE-2018-20546  (dither.c, v0.99.beta19)\n    CVE-2018-20547  (dither.c, v0.99.beta19)\n    CVE-2018-20545  (load_image, v0.99.beta19)\n    CVE-2018-20548  (load_image, v0.99.beta19)\n    CVE-2018-20549  (caca_file_read, 0.99.beta19, not concerned)\n\nSee release note[^1] on the github project.\n\nIt also allow to migrate the use of the new API instead of libcucul,\nwhich has been merged into libcaca since 0.99.beta15:\n\n    commit f61816ceb7445f8bf818936151554ac060764b39\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Sat Sep 27 13:12:46 2008 +0000\n\n    Starting refactoring to get rid of libcucul. The initial reason for the\n    split is rendered moot by the plugin system: when enabled, binaries do\n    not link directly with libX11 or libGL. I hope this is a step towards\n    more consisteny and clarity.\n\nIt was then completely wiped out by the following commit, which is part\nof v0.99.beta20:\n\n    commit 5f0ec215f8c9915ed028324a8ecac8212f68e18d\n    Author: Sam Hocevar <sam@hocevar.net>\n    Date:   Thu May 3 10:33:30 2018 +0200\n\n    Remove legacy code from 10 years ago.\n\nCheck NEWS for details:\n\n    \\section news0_99_beta15 Changes between 0.99.beta15 and 0.99.beta14\n\n     - libcucul was merged back into libcaca for more clarity\n\n[^1]: https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20"
+    },
+    "CVE-2020-12695": {
+      "8e05bad0c9dbd118b76411e96c61cb073aedfd53": "upnp: exclusively use `UpnpInit2`\n\n`UpnpInit` is deprecated and unmaintained since 1.6. It is known to be\nvulnerable (CVE-2020-12695). Dropping its support simplifies a lot the\nnetwork code as solely a net interface name is required by `UpnpInit2`\nnow."
+    },
+    "CVE-2021-31566": {
+      "8276f2d90ff56a56f2a92e703852b58d8673441a": "Contribs: update libarchive to 3.6.0\n\nFixes CVE-2021-31566, CVE-2021-36976\n\n(cherry picked from commit e308b8c851490c672883813c7c0004dee95fc2fc)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "e308b8c851490c672883813c7c0004dee95fc2fc": "Contribs: update libarchive to 3.6.0\n\nFixes CVE-2021-31566, CVE-2021-36976"
+    },
+    "CVE-2021-36976": {
+      "8276f2d90ff56a56f2a92e703852b58d8673441a": "Contribs: update libarchive to 3.6.0\n\nFixes CVE-2021-31566, CVE-2021-36976\n\n(cherry picked from commit e308b8c851490c672883813c7c0004dee95fc2fc)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "e308b8c851490c672883813c7c0004dee95fc2fc": "Contribs: update libarchive to 3.6.0\n\nFixes CVE-2021-31566, CVE-2021-36976"
+    },
+    "CVE-2021-28421": {
+      "22999703ad6c3bf544c82cf0b9df235e2e7ddcc8": "contribs: Bump libfluidsynth to 2.1.8\n\nIn order to include support the fix CVE-2021-28421\n\n(cherry picked from commit 39f444c32d262d6e10928c69ab6070f6c1a49eef)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "39f444c32d262d6e10928c69ab6070f6c1a49eef": "contribs: Bump libfluidsynth to 2.1.8\n\nIn order to include support the fix CVE-2021-28421"
+    },
+    "CVE-2020-15999": {
+      "5216e1bd09b0f3efdff856db8088b11f63fae4ec": "Contribs: update Freetype2 to 2.10.4\n\nCVE-2020-15999 (but we shouldn't be impacted)\n\n(cherry picked from commit a6fb42a20a4b8e77c5cdbd83458d489fa523dc5d)\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>",
+      "a6fb42a20a4b8e77c5cdbd83458d489fa523dc5d": "Contribs: update Freetype2 to 2.10.4\n\nCVE-2020-15999 (but we shouldn't be impacted)"
+    },
+    "CVE-2020-13428": {
+      "d5c43c21c747ff30ed19fcca745dea3481c733e0": "hxxx_nal: remove useless optim\n\nThis special case is now useless since p_source is always copied to p_dest,\nright after in the memmove loop.\n\nFurthermore, this caused an invalid payload size when the buffer was actually\nreallocated since the payload calculation was comparing two different buffers\noffset.\n\nCVE-2020-13428\n\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>\n(cherry picked from commit 56822f03d7a498bb22257d6075723c0e1c7f91fe)\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>",
+      "56822f03d7a498bb22257d6075723c0e1c7f91fe": "hxxx_nal: remove useless optim\n\nThis special case is now useless since p_source is always copied to p_dest,\nright after in the memmove loop.\n\nFurthermore, this caused an invalid payload size when the buffer was actually\nreallocated since the payload calculation was comparing two different buffers\noffset.\n\nCVE-2020-13428\n\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>"
+    },
+    "CVE-2020-9308": {
+      "f39c6bc495867fac0dab1bacbafbca6dd4baf735": "Contribs: update libarchive\n\nCVE-2020-9308 and CVE-2019-19221 + a few other crashes that deserve a\nCVE...\n\n(cherry picked from commit 5409bed7ef7a5fba60ac64dcb91b4ee22a499ef0)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "5409bed7ef7a5fba60ac64dcb91b4ee22a499ef0": "Contribs: update libarchive\n\nCVE-2020-9308 and CVE-2019-19221 + a few other crashes that deserve a\nCVE..."
+    },
+    "CVE-2019-19221": {
+      "f39c6bc495867fac0dab1bacbafbca6dd4baf735": "Contribs: update libarchive\n\nCVE-2020-9308 and CVE-2019-19221 + a few other crashes that deserve a\nCVE...\n\n(cherry picked from commit 5409bed7ef7a5fba60ac64dcb91b4ee22a499ef0)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "5409bed7ef7a5fba60ac64dcb91b4ee22a499ef0": "Contribs: update libarchive\n\nCVE-2020-9308 and CVE-2019-19221 + a few other crashes that deserve a\nCVE..."
+    },
+    "CVE-2019-14970": {
+      "78af05d741ea0c48202bfa9e4f4d2a1a9b75e9a5": "mkv: Improve PCI events handling\n\nCVE-2019-14970\n(manually cherry picked from commit\n51450a0f3c5c6a0fefc5ae25f35fe34ef3484af0)",
+      "51450a0f3c5c6a0fefc5ae25f35fe34ef3484af0": "mkv: Improve PCI events handling\n\nCVE-2019-14970"
+    },
+    "CVE-2019-14777": {
+      "b7cd72f6c1d8bce17227b90d3ae5bfdcbc80b365": "demux: mkv: preloaded segments with no tracks are preloaded\n\nA Segment with no Tracks is allowed by the specs.\n\nCVE-2019-14777, CVE-2019-14778\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>\n(cherry picked from commit 0f71d03f65d54c1cc5b21bdb10124f469bf7ec21)\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>",
+      "0f71d03f65d54c1cc5b21bdb10124f469bf7ec21": "demux: mkv: preloaded segments with no tracks are preloaded\n\nA Segment with no Tracks is allowed by the specs.\n\nCVE-2019-14777, CVE-2019-14778\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>"
+    },
+    "CVE-2019-14778": {
+      "b7cd72f6c1d8bce17227b90d3ae5bfdcbc80b365": "demux: mkv: preloaded segments with no tracks are preloaded\n\nA Segment with no Tracks is allowed by the specs.\n\nCVE-2019-14777, CVE-2019-14778\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>\n(cherry picked from commit 0f71d03f65d54c1cc5b21bdb10124f469bf7ec21)\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>",
+      "0f71d03f65d54c1cc5b21bdb10124f469bf7ec21": "demux: mkv: preloaded segments with no tracks are preloaded\n\nA Segment with no Tracks is allowed by the specs.\n\nCVE-2019-14777, CVE-2019-14778\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>"
+    },
+    "CVE-2019-14776": {
+      "4d262af8da7d479cbf57461e01ccd19281579633": "asf: Fix out of bound read\n\np_data is already offset by 64 bytes, so we need to propagate that\noffset to the boundary check\nCVE-2019-14776\n\n(cherry picked from commit fdbdd677c1e6262f31771b0ba10afb24aabf108c)\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>",
+      "fdbdd677c1e6262f31771b0ba10afb24aabf108c": "asf: Fix out of bound read\n\np_data is already offset by 64 bytes, so we need to propagate that\noffset to the boundary check\n\nCVE-2019-14776"
+    },
+    "CVE-2019-14533": {
+      "59058abed0c8e5022c21544c7c4279b349a339ea": "asf: Fix missing fp pointer reset\n\nThis fixes a potential use after free\n\nCVE-2019-14533\n\n(cherry picked from commit d5a9fb5c671a00b13ca0a8d39489f4ee0ac23f94)\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>",
+      "d5a9fb5c671a00b13ca0a8d39489f4ee0ac23f94": "asf: Fix missing fp pointer reset\n\nThis fixes a potential use after free\n\nCVE-2019-14533"
+    },
+    "CVE-2019-14534": {
+      "aad818bf380383246f090c94dcda9136a8d1fdfe": "asf: Reject seeking when no file properties object is available\n\nCVE-2019-14534\n\n(cherry picked from commit 078afb259f06d5a59624f26cbdd2b79a4e5ea713)\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>",
+      "078afb259f06d5a59624f26cbdd2b79a4e5ea713": "asf: Reject seeking when no file properties object is available\n\nCVE-2019-14534"
+    },
+    "CVE-2019-14535": {
+      "aa15d138089c8bc1ead129b6822df7e8cd4e85c5": "asf: Reject streams with invalid entry time interval\n\nCVE-2019-14535\n\n(cherry picked from commit 4d2f92b67e99a04553305ffd7656f0308c520d1f)\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>",
+      "4d2f92b67e99a04553305ffd7656f0308c520d1f": "asf: Reject streams with invalid entry time interval\n\nCVE-2019-14535"
+    },
+    "CVE-2019-14498": {
+      "9df056b6d6acf78acd36ea699b4e0588988a8f66": "caf: Reject samples without samplerate\n\nSince the spec mandates it\nCVE-2019-14498\n\n(cherry picked from commit 56b21668e8d9384386cb037f3eb0b13dd6dae5b5)\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>",
+      "56b21668e8d9384386cb037f3eb0b13dd6dae5b5": "caf: Reject samples without samplerate\n\nSince the spec mandates it\nCVE-2019-14498"
+    },
+    "CVE-2019-14437": {
+      "9f330e3ad615e17be0eb4224dc32843f1c2176eb": "demux: xiph: rewrite to split cases handling\n\nCVE-2019-14437, CVE-2019-14438\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>\n(cherry picked from commit 93f04f42e92df8af1697a3c990c88d62eb7f528d)\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>",
+      "93f04f42e92df8af1697a3c990c88d62eb7f528d": "demux: xiph: rewrite to split cases handling\n\nCVE-2019-14437, CVE-2019-14438\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>"
+    },
+    "CVE-2019-14438": {
+      "9f330e3ad615e17be0eb4224dc32843f1c2176eb": "demux: xiph: rewrite to split cases handling\n\nCVE-2019-14437, CVE-2019-14438\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>\n(cherry picked from commit 93f04f42e92df8af1697a3c990c88d62eb7f528d)\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>",
+      "93f04f42e92df8af1697a3c990c88d62eb7f528d": "demux: xiph: rewrite to split cases handling\n\nCVE-2019-14437, CVE-2019-14438\nSigned-off-by: Hugo Beauz\u00e9e-Luyssen <hugo@beauzee.fr>"
+    },
+    "CVE-2019-7317": {
+      "c792fc108ec122aac1c069c02cb86087dcd51060": "contrib: png: update to 1.6.37\n\nFrom the release notes of 1.6.36:\n\"Fixes some build issues, adds a couple of small optimizations (ARM\npng_do_expand_palette(), Intel SSE2 memcpy()), and updates the license\n(identical terms to the zlib license, with the old license appended in the\nmanner of the Python Software Foundation License version 2, and the list of\ncontributing authors moved to a separate AUTHORS file).\"\n\n1.6.37:\nThis release fixed CVE-2019-7317, although our png module is not using this API.\n\n(cherry picked from commit a643b2fa1cd6bd74e1613fd66fe0fe724cb695e8)\n(cherry picked from commit 6bfeb1d885a238959ca254076035e928a701beda)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "6bfeb1d885a238959ca254076035e928a701beda": "contrib: png: update to 1.6.37\n\nThis release fixed CVE-2019-7317, although our png module is not using this API."
+    },
+    "CVE-2018-0495": {
+      "0fd278ed1a4cf716d51d6a70efd1186e91ae52c2": "Contribs: update gcrypt to 1.7.10\n\nCVE-2018-0495\n\n(cherry picked from commit 6081bfc2942d26fc652c8de43cf37807ab7c9262)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "6081bfc2942d26fc652c8de43cf37807ab7c9262": "Contribs: update gcrypt to 1.7.10\n\nCVE-2018-0495"
+    },
+    "CVE-2017-0379": {
+      "e03d1c90b73f53e8fea564d50e9bde6ee7abae01": "Contribs: update gcrypt to 1.7.9\n\nCVE-2017-0379\n\n(cherry picked from commit cab5eafaaaeb69ba1e95d38f442332b9bdfab825)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "cab5eafaaaeb69ba1e95d38f442332b9bdfab825": "Contribs: update gcrypt to 1.7.9\n\nCVE-2017-0379"
+    },
+    "CVE-2018-6942": {
+      "9f13b33e85c896e0a5ca1010ce090a7318095665": "Contribs: update Freetype2 to 2.9.1\n\nCVE-2018-6942\n\n(cherry picked from commit e1330cc47804de28a8bd11b9cceef71e7d98f137)\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>",
+      "e1330cc47804de28a8bd11b9cceef71e7d98f137": "Contribs: update Freetype2 to 2.9.1\n\nCVE-2018-6942"
+    },
+    "CVE-2017-0381": {
+      "0760d52122ab0b3de1cbfbcb21ec55e4eb652865": "contrib: update to opus 1.1.4\n\nSingle bugfix release for CVE-2017-0381 [1][2].\n\n[1] https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-038\n[2] https://git.xiph.org/?p=opus.git;a=commit;h=70a3d641b760b3d313b6025f82aed93a460720e5"
+    },
+    "CVE-2016-7969": {
+      "e44764415a84ce86325298c6735381c0b14c197c": "contrib: libass: update to 0.13.4\n\nDrop Solaris patch, merged upstream.\nFixes CVE-2016-7969, CVE-2016-7970 and CVE-2016-7972.\n\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>"
+    },
+    "CVE-2016-7970": {
+      "e44764415a84ce86325298c6735381c0b14c197c": "contrib: libass: update to 0.13.4\n\nDrop Solaris patch, merged upstream.\nFixes CVE-2016-7969, CVE-2016-7970 and CVE-2016-7972.\n\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>"
+    },
+    "CVE-2016-7972": {
+      "e44764415a84ce86325298c6735381c0b14c197c": "contrib: libass: update to 0.13.4\n\nDrop Solaris patch, merged upstream.\nFixes CVE-2016-7969, CVE-2016-7970 and CVE-2016-7972.\n\nSigned-off-by: Jean-Baptiste Kempf <jb@videolan.org>"
+    },
+    "CVE-2015-7981": {
+      "c3b4e38d181709d63882b404e3882f243a2a74a1": "Contribs: update PNG to 1.6.19\n\nCVE-2015-7981 and CVE-2015-8126"
+    },
+    "CVE-2015-8126": {
+      "c3b4e38d181709d63882b404e3882f243a2a74a1": "Contribs: update PNG to 1.6.19\n\nCVE-2015-7981 and CVE-2015-8126"
+    },
+    "CVE-2014-9495": {
+      "ed62e5b38363e6ecbf9c234c37510bf87db5c3c4": "Contribs: update libpng to 1.6.16\n\nCVE-2014-9495"
+    },
+    "CVE-2014-8962": {
+      "bc270b0d593aeeb095560e15b6c65e84e5061104": "contrib: flac: bump to 1.3.1\n\nCVE-2014-8962\nCVE-2014-9028"
+    },
+    "CVE-2014-9028": {
+      "bc270b0d593aeeb095560e15b6c65e84e5061104": "contrib: flac: bump to 1.3.1\n\nCVE-2014-8962\nCVE-2014-9028"
+    },
+    "CVE-2014-3466": {
+      "3291be91e64d309c36a4b94281d37bb7156b2467": "GnuTLS: update to 3.1.25\n\nCVE-2014-3466"
+    },
+    "CVE-2014-0333": {
+      "4bcd83c9546dbb87e6ab931866923da371c49410": "Contribs: update PNG to 1.6.10\n\nCVE-2014-0333"
+    },
+    "CVE-2014-0092": {
+      "ec78f3219473d150c2c0f5039fbcdf8d0ddc4346": "Contribs: update GnuTLS to 3.1.22\n\nSee CVE-2014-0092"
+    },
+    "CVE-2013-6954": {
+      "4e62c1faae876d142a3430eb243df63033f6785e": "Contribs: update libpng to 1.6.8\n\nSee CVE-2013-6954"
+    },
+    "CVE-2012-2396": {
+      "02a1c23e33c01f424b5d2c6de498baaeca2252a3": "Update taglib to 1.7.2\n\nCVE-2012-2396"
+    },
+    "CVE-2011-3048": {
+      "efeb2e712313a988743307bea766edac2d748d78": "Contrib: update libpng to 1.5.10\n\nCVE-2011-3048 (serious vulnerability)"
+    },
+    "CVE-2012-1126": {
+      "b737cac862fe1807e9026c5bfcb9966d3b44cf4a": "Contribs: update freetype to 2.4.9\n\nCVE-2012-1126 up to CVE-2012-1144 and SA48320"
+    },
+    "CVE-2012-1144": {
+      "b737cac862fe1807e9026c5bfcb9966d3b44cf4a": "Contribs: update freetype to 2.4.9\n\nCVE-2012-1126 up to CVE-2012-1144 and SA48320"
+    },
+    "CVE-2011-3026": {
+      "41988c3288c0a0d3a298eee6740e3d4fc4cf784c": "PNG release 1.5.9 (CVE-2011-3026)"
+    },
+    "CVE-2011-3464": {
+      "36fc180ec70896ad6905aa9219dea29e1bc18d20": "contrib: update libpng because of CVE-2011-3464"
+    },
+    "CVE-2011-3439": {
+      "02f4690929f72d3ff844ec0387b1e4e5de3983e0": "Contribs: update freetype to 2.4.8 (CVE-2011-3439)"
+    },
+    "CVE-2011-3256": {
+      "3d0a5eb47461fdb70d2770599ffac0fa1cd454b4": "Contribs: update freetype to 2.4.7 (CVE-2011-3256)"
+    },
+    "CVE-2011-0226": {
+      "dde15a53ca98c8eccd1b6517702d399e8a0987b5": "Contribs: Update Freetype and libass\n\nCf CVE-2011-0226",
+      "ee430b461b4f86b6f04c45133da10ff5fd5663eb": "Old contribs: update of freetype and libass\n\nCf CVE-2011-0226"
+    },
+    "CVE-2011-2690": {
+      "a86ca0b7275efe93413d0a7781f337ddb16b4090": "Contribs: update libpng to 1.4.8\n\nSee CVE-2011-2690 (we shouldn't be affected), CVE-2011-2691 (same),\nCVE-2011-2692 (no idea)"
+    },
+    "CVE-2011-2691": {
+      "a86ca0b7275efe93413d0a7781f337ddb16b4090": "Contribs: update libpng to 1.4.8\n\nSee CVE-2011-2690 (we shouldn't be affected), CVE-2011-2691 (same),\nCVE-2011-2692 (no idea)"
+    },
+    "CVE-2011-2692": {
+      "a86ca0b7275efe93413d0a7781f337ddb16b4090": "Contribs: update libpng to 1.4.8\n\nSee CVE-2011-2690 (we shouldn't be affected), CVE-2011-2691 (same),\nCVE-2011-2692 (no idea)"
+    },
+    "CVE-2011-2588": {
+      "9c14964bd11482d5c1d6c0e223440f9f1e5b1831": "AVI: fix heap buffer overflow (CVE-2011-2588)"
+    },
+    "CVE-2011-2587": {
+      "1bce40644cddee93b4b1877a94a6ce345f32852c": "real: fix heap buffer overflow (CVE-2011-2587)"
+    },
+    "CVE-2010-3907": {
+      "6568965770f906d34d4aef83237842a5376adb55": "Real: fix heap buffer overflow (CVE-2010-3907)\n\nMalformatted files may have a zero i_subpackets value. In this case,\nwe cannot use the array, but we still have to free it (calloc(0)).\n\nThis should fix LP#690173.\n\nReported-by: Dan Rosenberg <drosenberg@vsecurity.com>"
+    },
+    "CVE-2009-2730": {
+      "f2be9295c799739d9a55e8bf6e581b83d99f4fb9": "GnuTLS 2.8.1 => 2.8.3 CVE-2009-2730 GNUTLS-SA-2009-4"
+    },
+    "CVE-2009-0040": {
+      "3ac9e644485b5062e921b2234cc5ac172a45cbfc": "Contribs: update libpng... CVE-2009-0040"
+    },
+    "CVE-2008-3964": {
+      "4c30e1d7dfe4908f0cac8c0862f9cb2aac515e38": "[Contribs] libpng update for CVE-2008-3964"
+    },
+    "CVE-2008-2430": {
+      "3de60bf5b886ad81d7c05d68dff7a1ba461c0ac1": "wav: fix integer overflow (CVE-2008-2430)\n\nWhen i_size is sufficiently large, we would overflow malloc(), and then\noverwrite the heap with stream_Read().\n\nBug reported by: Alin Rad Pop, Secunia Research.\n\n(cherry-picked from commit 95e2f0ff579a5b987cbde9454aa1fc86080528e2)"
+    },
+    "CVE-2008-2109": {
+      "dc040150d52d6abe1074ec443753bb435a6ec089": "Contrib: fix CVE-2008-2109 for libid3tag."
+    },
+    "CVE-2008-1382": {
+      "22dbee0081c2f38a775d059175f4a9b21841d38c": "Update libpng to 1.2.29. We shouldn't be affected by CVE-2008-1382"
+    },
+    "CVE-2006-4192": {
+      "27fbc72f258273df7135cb1a6025812e12a64fce": "Contrib: update modplug version as well (fixes CVE-2006-4192, lol)."
+    },
+    "CVE-2008-0073": {
+      "f351efa7d22645625d20204f86a44b194fde8352": "Fix Array Indexing Vulnerability in sdpplin_parse(). (CVE-2008-0073). (closes #1531).\nThanks to Alin Rad Pop, Secunia Research.\nPorted from libxine."
+    },
+    "CVE-2007-6284": {
+      "4d6a0a40d59e256385e9b2c5638a2848a99c16fc": "Contribs - XML CVE-2007-6284"
+    },
+    "CVE-2008-0295": {
+      "bce04f187738008884ef1834a229155cfa7b99ae": "Avoid buffer overflow. Fix #1442. Refs CVE-2008-0295 CVE-2008-0296"
+    },
+    "CVE-2008-0296": {
+      "bce04f187738008884ef1834a229155cfa7b99ae": "Avoid buffer overflow. Fix #1442. Refs CVE-2008-0295 CVE-2008-0296"
+    },
+    "CVE-2008-0225": {
+      "a89f96d89cf2d52ae7e6990f31cccdcd518364ca": "Port some fixes from CVE-2008-0225 fix for xine-lib plus some code style fixes. Someone should really review it as it may be not fully fixed."
+    },
+    "CVE-2006-4567": {
+      "7b75f68f17bbe31e4ff8c69fd5f19e9aabb8f040": "Remove auto-update. This is blatantly insecure.\nOther projects have had CVEs for much less than this (e.g. CVE-2006-4567)"
+    },
+    "CVE-2007-2445": {
+      "259f7c8dbf0dd94631610417b4c9f2cda6c07599": "Contrib: libpng 1.2.16 => 1.2.18 (fix CVE-2007-2445, VU#684664)"
+    },
+    "CVE-2006-3334": {
+      "0aa5744310de34261dc39c192a0a93046d79a3df": "Change libpng version to 1.2.15 especially to fix security issue CVE-2006-3334.\nTested on epsilon, veda, altair/mingw32."
+    }
+  }
+}

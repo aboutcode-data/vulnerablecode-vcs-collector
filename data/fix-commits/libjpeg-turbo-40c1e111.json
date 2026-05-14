@@ -1,0 +1,26 @@
+{
+  "vcs_url": "https://android.googlesource.com/platform/external/libjpeg-turbo",
+  "vulnerabilities": {
+    "CVE-2018-19664": {
+      "db870dfef8ab97950b4bdf22c66dd6c18326460b": "Update libjpeg-turbo to v2.0.5\n\nUpdate Chromium's copy of libjpeg-turbo to the latest stable upstream\nrelease (v2.0.5) and reapply our local changes documented in\nREADME.chromium. This update addresses three CVEs - CVE-2018-19664,\nCVE-2018-20330, CVE-2018-20330 - that do not affect Chromium. The\nfixes do, however, satisfy UBSan - allowing Chromium's libjpeg-turbo\nto be used in AOSP.\n\nCherry-pick one additional change[1] from upstream to prevent AArch64\nWindows builds from failing.\n\n[1] https://github.com/libjpeg-turbo/libjpeg-turbo/commit/6ee5d5f568fda1a7c6a49dd8995f2d89866ee42d\n\nBug: 922430\nBug: https://issuetracker.google.com/135180511\nChange-Id: I146fe82f7a016ce393eb0d37aebe0b7c2492a9da"
+    },
+    "CVE-2018-20330": {
+      "db870dfef8ab97950b4bdf22c66dd6c18326460b": "Update libjpeg-turbo to v2.0.5\n\nUpdate Chromium's copy of libjpeg-turbo to the latest stable upstream\nrelease (v2.0.5) and reapply our local changes documented in\nREADME.chromium. This update addresses three CVEs - CVE-2018-19664,\nCVE-2018-20330, CVE-2018-20330 - that do not affect Chromium. The\nfixes do, however, satisfy UBSan - allowing Chromium's libjpeg-turbo\nto be used in AOSP.\n\nCherry-pick one additional change[1] from upstream to prevent AArch64\nWindows builds from failing.\n\n[1] https://github.com/libjpeg-turbo/libjpeg-turbo/commit/6ee5d5f568fda1a7c6a49dd8995f2d89866ee42d\n\nBug: 922430\nBug: https://issuetracker.google.com/135180511\nChange-Id: I146fe82f7a016ce393eb0d37aebe0b7c2492a9da"
+    },
+    "CVE-2018-11813": {
+      "909a8cfc7bca9b2e6707425bdb74da997e8fa499": "Fix CVE-2018-11813\n\nRefer to change log for details.\n\nFixes #242"
+    },
+    "CVE-2013-6629": {
+      "3395bcc26e390d2960d15020d4a4d27ae0c122fe": "Upgrade libjpeg_turbo to 1.3.1 (r1219)\n\nRemove google.jdmarker.patch, since the fixes for CVE-2013-6629\nand CVE-2013-6630 are upstream most everywhere now [1]. Version\nnumber to 1.3.1 (config.h, jconfig.h).\n\nREADME.chromium: \"Fixed valgrind error\" patch was upstreamed in\nr839 http://sourceforge.net/p/libjpeg-turbo/code/839. The r1188\ncherry-pick was put in config.h, say that.\n\n[1] http://seclists.org/fulldisclosure/2013/Nov/83\n\nTBR=darin@chromium.org\nBUG=258723, 299835\n\nReview URL: https://codereview.appspot.com/87110044\n\ngit-svn-id: http://src.chromium.org/svn/trunk/deps/third_party/libjpeg_turbo@263594 4ff67af0-8c30-449e-8e8b-ad334ec8d88c",
+      "43d8cf4d4572fa50a37cccadbe71b9bee37de55d": "Fix CVE-2013-6629 and CVE-2013-6630\n\n\ngit-svn-id: svn+ssh://svn.code.sf.net/p/libjpeg-turbo/code/branches/1.2.x@1090 632fc199-4ca6-4c93-a231-07263d6284db",
+      "7ebf2941a981f75539f8298cb7e178607c937c14": "Fix CVE-2013-6629 and CVE-2013-6630\n\n\ngit-svn-id: svn+ssh://svn.code.sf.net/p/libjpeg-turbo/code/branches/1.3.x@1089 632fc199-4ca6-4c93-a231-07263d6284db",
+      "9f9436ae237855e9a6861d2e2a87359dc7f102f0": "Fix CVE-2013-6629 and CVE-2013-6630\n\n\ngit-svn-id: svn+ssh://svn.code.sf.net/p/libjpeg-turbo/code/trunk@1088 632fc199-4ca6-4c93-a231-07263d6284db"
+    },
+    "CVE-2013-6630": {
+      "3395bcc26e390d2960d15020d4a4d27ae0c122fe": "Upgrade libjpeg_turbo to 1.3.1 (r1219)\n\nRemove google.jdmarker.patch, since the fixes for CVE-2013-6629\nand CVE-2013-6630 are upstream most everywhere now [1]. Version\nnumber to 1.3.1 (config.h, jconfig.h).\n\nREADME.chromium: \"Fixed valgrind error\" patch was upstreamed in\nr839 http://sourceforge.net/p/libjpeg-turbo/code/839. The r1188\ncherry-pick was put in config.h, say that.\n\n[1] http://seclists.org/fulldisclosure/2013/Nov/83\n\nTBR=darin@chromium.org\nBUG=258723, 299835\n\nReview URL: https://codereview.appspot.com/87110044\n\ngit-svn-id: http://src.chromium.org/svn/trunk/deps/third_party/libjpeg_turbo@263594 4ff67af0-8c30-449e-8e8b-ad334ec8d88c",
+      "43d8cf4d4572fa50a37cccadbe71b9bee37de55d": "Fix CVE-2013-6629 and CVE-2013-6630\n\n\ngit-svn-id: svn+ssh://svn.code.sf.net/p/libjpeg-turbo/code/branches/1.2.x@1090 632fc199-4ca6-4c93-a231-07263d6284db",
+      "7ebf2941a981f75539f8298cb7e178607c937c14": "Fix CVE-2013-6629 and CVE-2013-6630\n\n\ngit-svn-id: svn+ssh://svn.code.sf.net/p/libjpeg-turbo/code/branches/1.3.x@1089 632fc199-4ca6-4c93-a231-07263d6284db",
+      "9f9436ae237855e9a6861d2e2a87359dc7f102f0": "Fix CVE-2013-6629 and CVE-2013-6630\n\n\ngit-svn-id: svn+ssh://svn.code.sf.net/p/libjpeg-turbo/code/trunk@1088 632fc199-4ca6-4c93-a231-07263d6284db"
+    }
+  }
+}

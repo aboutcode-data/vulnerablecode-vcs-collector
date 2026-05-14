@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/apache/poi",
+  "vulnerabilities": {
+    "CVE-2025-48924": {
+      "9ebec77acae28ca539c5cb272d7895769951be75": "Bump commons-compress from 1.27.1 to 1.28.0 (#868)\n\nhttps://github.com/apache/poi/issues/867\r\nThere is a security vulnerability in commons-lang3, with the vulnerability number CVE-2025-48924."
+    }
+  }
+}

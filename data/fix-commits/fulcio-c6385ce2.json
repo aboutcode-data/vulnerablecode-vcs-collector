@@ -1,0 +1,11 @@
+{
+  "vcs_url": "https://github.com/sigstore/fulcio",
+  "vulnerabilities": {
+    "GHSA-59JP-PJ84-45MR": {
+      "eaae2f2be56df9dea5f9b439ec81bedae4c0978d": "Add anchors when matching meta issuer regexp (GHSA-59jp-pj84-45mr) (#2263)\n\nWithout these anchors, URLs where the issuer is not the host could be\nmatched. This can result in server side request forgery, where the OIDC\nlibrary will query the well-known or JWKS URIs.\n\nSigned-off-by: Hayden <8418760+haydentherapper@users.noreply.github.com>"
+    },
+    "GHSA-F83F-XPX7-FFPW": {
+      "765a0e57608b9ef390e1eeeea8595b9054c63a5a": "Merge commit from fork (#2233)\n\nFixes: GHSA-f83f-xpx7-ffpw\n\nSigned-off-by: Bob Callaway <bcallaway@google.com>"
+    }
+  }
+}

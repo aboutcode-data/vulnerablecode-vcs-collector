@@ -1,0 +1,14 @@
+{
+  "vcs_url": "https://github.com/babel/babel",
+  "vulnerabilities": {
+    "CVE-2025-9287": {
+      "b79f64a144c2db466d09770298b4ece0adca34bf": "chore: update cipher-base (#17979)\n\n* fix: CVE-2025-9287 security vulnerability\n\nAutomated dependency upgrade by Orbis Security AI\n\n* chore: refresh cipher-base transitive resolution\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.6 <noreply@anthropic.com>"
+    },
+    "CVE-2024-43788": {
+      "dcb7b9beea84ae11def6fa25dddfe6871d77d398": "Update webpack to 5.94.0 (#17696)\n\n* Update webpack to 5.94.0 to remove CVE-2024-43788\n\nSigned-off-by: ivonaest <ivona.cvija@est.tech>\n\n* Optimised lockfile with yarn dedupe\n\nSigned-off-by: ivonaest <ivona.cvija@est.tech>\n\n---------\n\nSigned-off-by: ivonaest <ivona.cvija@est.tech>"
+    },
+    "CVE-2018-16472": {
+      "73de7f7d654934ee0692114f91df3cf25fb2e86b": "Upgrade browserify to get past CVE (facebook/regenerator#362)\n\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-16472 claims\r\ncached-path-relative is potentially vulnerable to an exploit. As\r\na transitive dependency, the risks are virtually non-existant, but might\r\nas well."
+    }
+  }
+}

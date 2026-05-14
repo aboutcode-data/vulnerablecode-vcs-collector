@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/sequelize/sequelize",
+  "vulnerabilities": {
+    "CVE-2023-22578": {
+      "d3f5b5a65e297f4b6861e6a6ce335a9830b28781": "feat: throw an error if attribute includes parentheses (fixes CVE-2023-22578) (#15710)\n\n\r\n\u26a0\ufe0f You may be impacted by this change if you use deprecated features. See PR for details"
+    }
+  }
+}

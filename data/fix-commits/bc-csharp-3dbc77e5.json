@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/bcgit/bc-csharp",
+  "vulnerabilities": {
+    "CVE-2017-15361": {
+      "c809f7a6b6cfdfa2ff8cf2af190155e7f20086b0": "Add RSA test case for CVE-2017-15361 vulnerability"
+    }
+  }
+}

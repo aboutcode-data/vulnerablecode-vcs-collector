@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/apache/maven",
+  "vulnerabilities": {
+    "CVE-2015-6748": {
+      "2b336ff150b12aeae9bd0d2a61f1e8d02504492f": "[MNG-6312] Update Maven Wagon dependency\n o Upgrade wagon version to 3.0.0 based on CVE-2015-6748\n   in shaded jsoup."
+    }
+  }
+}

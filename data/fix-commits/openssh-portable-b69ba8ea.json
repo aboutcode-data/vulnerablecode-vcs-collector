@@ -1,0 +1,36 @@
+{
+  "vcs_url": "https://github.com/openssh/openssh-portable",
+  "vulnerabilities": {
+    "CVE-2024-7594": {
+      "5166b6cbf2b6103117a79f90a68068e89e02bf66": "upstream: When certificate support was added to OpenSSH,\n\ncertificates were originally specified to represent any principal if the\nprincipals list was empty.\n\nThis was, in retrospect, a mistake as it created a fail-open\nsituation if a CA could be convinced to accidentally sign a\ncertificate with no principals. This actually happened in a 3rd-\nparty CA product (CVE-2024-7594).\n\nSomewhat fortunately, the main pathway for using certificates in\nsshd (TrustedUserCAKeys) never supported empty-principals\ncertificates, so the blast radius of such mistakes was\nsubstantially reduced.\n\nThis change removes this footcannon and requires all certificates\ninclude principals sections. It also fixes interpretation of\nwildcard principals, and properly enables them for host\ncertificates only.\n\nThis is a behaviour change that will permanently break uses of\ncertificates with empty principals sections.\n\nok markus@\n\nOpenBSD-Commit-ID: 0a901f03c567c100724a492cf91e02939904712e"
+    },
+    "CVE-2020-29368": {
+      "195313dfe10a23c82e9d56d5fdd2f59beee1bdcf": "harden Linux seccomp sandbox\n\nLinux mmap(2) and madvise(2) syscalls support quite a number of funky\nflags that we don't expect that sshd/libc will ever need. We can\nexclude this kernel attack surface by filtering the mmap(2) flags\nand the madvise(2) advice arguments.\n\nSimilarly, the sandboxed process in sshd is a single-threaded program\nthat does not use shared memory for synchronisation or communication.\nTherefore, there should be no reason for the advanced priority\ninheritance futex(2) operations to be necessary. These can also be\nexcluded.\n\nMotivated by Jann Horn pointing out that there have been kernel bugs\nin nearby Linux kernel code, e.g. CVE-2020-29368, CVE-2020-29374 and\nCVE-2022-42703.\n\nFeedback Jann Horn, ok dtucker@"
+    },
+    "CVE-2020-29374": {
+      "195313dfe10a23c82e9d56d5fdd2f59beee1bdcf": "harden Linux seccomp sandbox\n\nLinux mmap(2) and madvise(2) syscalls support quite a number of funky\nflags that we don't expect that sshd/libc will ever need. We can\nexclude this kernel attack surface by filtering the mmap(2) flags\nand the madvise(2) advice arguments.\n\nSimilarly, the sandboxed process in sshd is a single-threaded program\nthat does not use shared memory for synchronisation or communication.\nTherefore, there should be no reason for the advanced priority\ninheritance futex(2) operations to be necessary. These can also be\nexcluded.\n\nMotivated by Jann Horn pointing out that there have been kernel bugs\nin nearby Linux kernel code, e.g. CVE-2020-29368, CVE-2020-29374 and\nCVE-2022-42703.\n\nFeedback Jann Horn, ok dtucker@"
+    },
+    "CVE-2022-42703": {
+      "195313dfe10a23c82e9d56d5fdd2f59beee1bdcf": "harden Linux seccomp sandbox\n\nLinux mmap(2) and madvise(2) syscalls support quite a number of funky\nflags that we don't expect that sshd/libc will ever need. We can\nexclude this kernel attack surface by filtering the mmap(2) flags\nand the madvise(2) advice arguments.\n\nSimilarly, the sandboxed process in sshd is a single-threaded program\nthat does not use shared memory for synchronisation or communication.\nTherefore, there should be no reason for the advanced priority\ninheritance futex(2) operations to be necessary. These can also be\nexcluded.\n\nMotivated by Jann Horn pointing out that there have been kernel bugs\nin nearby Linux kernel code, e.g. CVE-2020-29368, CVE-2020-29374 and\nCVE-2022-42703.\n\nFeedback Jann Horn, ok dtucker@"
+    },
+    "CVE-2022-2274": {
+      "d9eaea4bea6271bcee6a2b9428f1271faf2d033b": "Refuse to use OpenSSL 3.0.4 due to potential RCE.\n\nOpenSSL has a potential RCE in its RSA implementation (CVE-2022-2274)\nso refuse to use that specific version."
+    },
+    "CVE-2020-14871": {
+      "fcf429a4c69d30d8725612a55b37181594da8ddf": "Prevent excessively long username going to PAM.\n\nThis is a mitigation for a buffer overflow in Solaris' PAM username\nhandling (CVE-2020-14871), and is only enabled for Sun-derived PAM\nimplementations.  This is not a problem in sshd itself, it only\nprevents sshd from being used as a vector to attack Solaris' PAM.\nIt does not prevent the bug in PAM from being exploited via some other\nPAM application.\n\nBased on github PR#212 from Mike Scott but implemented slightly\ndifferently.  ok tim@ djm@"
+    },
+    "CVE-2016-6210": {
+      "9286875a73b2de7736b5e50692739d314cd8d9dc": "Determine appropriate salt for invalid users.\n\nWhen sshd is processing a non-PAM login for a non-existent user it uses\nthe string from the fakepw structure as the salt for crypt(3)ing the\npassword supplied by the client.  That string has a Blowfish prefix, so on\nsystems that don't understand that crypt will fail fast due to an invalid\nsalt, and even on those that do it may have significantly different timing\nfrom the hash methods used for real accounts (eg sha512).  This allows\nuser enumeration by, eg, sending large password strings.  This was noted\nby EddieEzra.Harari at verint.com (CVE-2016-6210).\n\nTo mitigate, use the same hash algorithm that root uses for hashing\npasswords for users that do not exist on the system.  ok djm@"
+    },
+    "CVE-2015-8325": {
+      "85bdcd7c92fe7ff133bbc4e10a65c91810f88755": "ignore PAM environment vars when UseLogin=yes\n\nIf PAM is configured to read user-specified environment variables\nand UseLogin=yes in sshd_config, then a hostile local user may\nattack /bin/login via LD_PRELOAD or similar environment variables\nset via PAM.\n\nCVE-2015-8325, found by Shayan Sadigh, via Colin Watson"
+    },
+    "CVE-2008-1483": {
+      "5f5cd746f357a87637a6a91605a44e1ed9a6dab1": "- markus@cvs.openbsd.org 2008/04/02 15:36:51\n     [channels.c]\n     avoid possible hijacking of x11-forwarded connections (back out 1.183)\n     CVE-2008-1483; ok djm@"
+    },
+    "CVE-2006-0225": {
+      "7410ad79f85a62361a6e40ac4ea11e6504408666": "- djm@cvs.openbsd.org 2006/01/31 10:23:23\n     [scp.sh]\n     regression test for CVE-2006-0225 written by dtucker@",
+      "3eec6b73a2c446225fce546d61d83cfc695fbaa0": "- djm@cvs.openbsd.org 2006/01/31 10:19:02\n     [misc.c misc.h scp.c sftp.c]\n     fix local arbitrary command execution vulnerability on local/local and\n     remote/remote copies (CVE-2006-0225, bz #1094), patch by\n     t8m AT centrum.cz, polished by dtucker@ and myself; ok markus@"
+    }
+  }
+}

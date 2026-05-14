@@ -1,0 +1,874 @@
+{
+  "vcs_url": "https://github.com/apache/pulsar",
+  "vulnerabilities": {
+    "CVE-2026-43869": {
+      "16496c20b0d5e046c0a9c5825eafb4e70cb2ca16": "[fix][sec] Upgrade thrift to 0.23.0 to address CVE-2026-43869 (#25744)\n\n(cherry picked from commit 6c2fdef849acf2c66bddc8631bc86909adfe0d8e)",
+      "43209694977c699782ed8ddb39a22be338df30a7": "[fix][sec] Upgrade thrift to 0.23.0 to address CVE-2026-43869 (#25744)\n\n(cherry picked from commit 6c2fdef849acf2c66bddc8631bc86909adfe0d8e)",
+      "7dd424b65c32030f04d19eedfb016c17f3bbe49c": "[fix][sec] Upgrade thrift to 0.23.0 to address CVE-2026-43869 (#25744)\n\n(cherry picked from commit 6c2fdef849acf2c66bddc8631bc86909adfe0d8e)",
+      "6c2fdef849acf2c66bddc8631bc86909adfe0d8e": "[fix][sec] Upgrade thrift to 0.23.0 to address CVE-2026-43869 (#25744)"
+    },
+    "CVE-2026-6860": {
+      "ad9cc2fa0c80f423d1e64b6bc3e0ea4d4f3da6c6": "[fix][sec] Upgrade vertx to 4.5.27 to address CVE-2026-6860 (#25745)\n\n(cherry picked from commit 2964ab59af0fb65406b9cfe3a632f4de5c628b9a)",
+      "fd89f9ed0d894bac5e9def028d67273cd7eb64f0": "[fix][sec] Upgrade vertx to 4.5.27 to address CVE-2026-6860 (#25745)\n\n(cherry picked from commit 2964ab59af0fb65406b9cfe3a632f4de5c628b9a)",
+      "e09461b37a3bef0bca39f9a2811687b8da92bdef": "[fix][sec] Upgrade vertx to 4.5.27 to address CVE-2026-6860 (#25745)\n\n(cherry picked from commit 2964ab59af0fb65406b9cfe3a632f4de5c628b9a)",
+      "2964ab59af0fb65406b9cfe3a632f4de5c628b9a": "[fix][sec] Upgrade vertx to 4.5.27 to address CVE-2026-6860 (#25745)",
+      "659e5acc6109263e9b1a23cd343bfcdce6ad2953": "[fix][sec] Upgrade vert.x to 4.5.25 to address CVE-2026-6860 (#25737)\n\n(cherry picked from commit 90f83d465020bbb2f703fa1dc54b2d271b2ec8ae)",
+      "bae26c46e1f942da0b4404e98ff5000852908ddc": "[fix][sec] Upgrade vert.x to 4.5.25 to address CVE-2026-6860 (#25737)\n\n(cherry picked from commit 90f83d465020bbb2f703fa1dc54b2d271b2ec8ae)",
+      "d5ba0d86ce67ad03313c1696ce85ca9326d1de8f": "[fix][sec] Upgrade vert.x to 4.5.25 to address CVE-2026-6860 (#25737)\n\n(cherry picked from commit 90f83d465020bbb2f703fa1dc54b2d271b2ec8ae)",
+      "90f83d465020bbb2f703fa1dc54b2d271b2ec8ae": "[fix][sec] Upgrade vert.x to 4.5.25 to address CVE-2026-6860 (#25737)"
+    },
+    "CVE-2026-5588": {
+      "01552692747ce23a28e31c2396e8687e9c8d46da": "[fix][sec] Upgrade BouncyCastle to 1.84 (CVE-2026-5588, CVE-2026-0636) (#25569)\n\n(cherry picked from commit a14f6ccf31464a645dcb9af012ccdde73fc5124e)",
+      "65091af28ce26276ec5838110a0ee5fdb51f2ea9": "[fix][sec] Upgrade BouncyCastle to 1.84 (CVE-2026-5588, CVE-2026-0636) (#25569)\n\n(cherry picked from commit a14f6ccf31464a645dcb9af012ccdde73fc5124e)",
+      "e1a490e208b2965bd111a143307cf44ce25cfe0d": "[fix][sec] Upgrade BouncyCastle to 1.84 (CVE-2026-5588, CVE-2026-0636) (#25569)\n\n(cherry picked from commit a14f6ccf31464a645dcb9af012ccdde73fc5124e)",
+      "1fb3a6b5343b7d52e70f112c18bcac62dbc0221d": "[fix][sec] Upgrade BouncyCastle to 1.84 (CVE-2026-5588, CVE-2026-0636) (#25569)\n\n(cherry picked from commit a14f6ccf31464a645dcb9af012ccdde73fc5124e)",
+      "a14f6ccf31464a645dcb9af012ccdde73fc5124e": "[fix][sec] Upgrade BouncyCastle to 1.84 (CVE-2026-5588, CVE-2026-0636) (#25569)"
+    },
+    "CVE-2026-0636": {
+      "01552692747ce23a28e31c2396e8687e9c8d46da": "[fix][sec] Upgrade BouncyCastle to 1.84 (CVE-2026-5588, CVE-2026-0636) (#25569)\n\n(cherry picked from commit a14f6ccf31464a645dcb9af012ccdde73fc5124e)",
+      "65091af28ce26276ec5838110a0ee5fdb51f2ea9": "[fix][sec] Upgrade BouncyCastle to 1.84 (CVE-2026-5588, CVE-2026-0636) (#25569)\n\n(cherry picked from commit a14f6ccf31464a645dcb9af012ccdde73fc5124e)",
+      "e1a490e208b2965bd111a143307cf44ce25cfe0d": "[fix][sec] Upgrade BouncyCastle to 1.84 (CVE-2026-5588, CVE-2026-0636) (#25569)\n\n(cherry picked from commit a14f6ccf31464a645dcb9af012ccdde73fc5124e)",
+      "1fb3a6b5343b7d52e70f112c18bcac62dbc0221d": "[fix][sec] Upgrade BouncyCastle to 1.84 (CVE-2026-5588, CVE-2026-0636) (#25569)\n\n(cherry picked from commit a14f6ccf31464a645dcb9af012ccdde73fc5124e)",
+      "a14f6ccf31464a645dcb9af012ccdde73fc5124e": "[fix][sec] Upgrade BouncyCastle to 1.84 (CVE-2026-5588, CVE-2026-0636) (#25569)"
+    },
+    "CVE-2025-12183": {
+      "d7a4814e603d7b945abbb3d147be391c218c1745": "[fix][sec] Exclude org.lz4:lz4-java and standardize on at.yawk.lz4-java to remediate CVE-2025-12183 and CVE-2025-66566 (#25198)\n\n(cherry picked from commit c07f2adbaccc34c05bfbb895889f464fa9cc495f)",
+      "aff523d2aedeb60550a97b90e0fda7326602f2db": "[fix][sec] Exclude org.lz4:lz4-java and standardize on at.yawk.lz4-java to remediate CVE-2025-12183 and CVE-2025-66566 (#25198)\n\n(cherry picked from commit c07f2adbaccc34c05bfbb895889f464fa9cc495f)",
+      "2ac6d033e1ca2650e73296c9b47620b2ba932ce3": "[fix][sec] Exclude org.lz4:lz4-java and standardize on at.yawk.lz4-java to remediate CVE-2025-12183 and CVE-2025-66566 (#25198)\n\n(cherry picked from commit c07f2adbaccc34c05bfbb895889f464fa9cc495f)",
+      "c07f2adbaccc34c05bfbb895889f464fa9cc495f": "[fix][sec] Exclude org.lz4:lz4-java and standardize on at.yawk.lz4-java to remediate CVE-2025-12183 and CVE-2025-66566 (#25198)"
+    },
+    "CVE-2025-66566": {
+      "d7a4814e603d7b945abbb3d147be391c218c1745": "[fix][sec] Exclude org.lz4:lz4-java and standardize on at.yawk.lz4-java to remediate CVE-2025-12183 and CVE-2025-66566 (#25198)\n\n(cherry picked from commit c07f2adbaccc34c05bfbb895889f464fa9cc495f)",
+      "aff523d2aedeb60550a97b90e0fda7326602f2db": "[fix][sec] Exclude org.lz4:lz4-java and standardize on at.yawk.lz4-java to remediate CVE-2025-12183 and CVE-2025-66566 (#25198)\n\n(cherry picked from commit c07f2adbaccc34c05bfbb895889f464fa9cc495f)",
+      "2ac6d033e1ca2650e73296c9b47620b2ba932ce3": "[fix][sec] Exclude org.lz4:lz4-java and standardize on at.yawk.lz4-java to remediate CVE-2025-12183 and CVE-2025-66566 (#25198)\n\n(cherry picked from commit c07f2adbaccc34c05bfbb895889f464fa9cc495f)",
+      "c07f2adbaccc34c05bfbb895889f464fa9cc495f": "[fix][sec] Exclude org.lz4:lz4-java and standardize on at.yawk.lz4-java to remediate CVE-2025-12183 and CVE-2025-66566 (#25198)"
+    },
+    "CVE-2024-31141": {
+      "6de69534a15dcd64fc909ffae024966e149e6de3": "[fix][sec] Override kafka-clients in kinesis-kpl-shaded to remediate CVE-2024-31141 and CVE-2025-27817 (#24935)\n\n(cherry picked from commit 8cb1040336e8a397ff60220842102c99f712348b)",
+      "e08dcfc7107b52e12cbfd1971812a3332633fb0a": "[fix][sec] Override kafka-clients in kinesis-kpl-shaded to remediate CVE-2024-31141 and CVE-2025-27817 (#24935)\n\n(cherry picked from commit 8cb1040336e8a397ff60220842102c99f712348b)",
+      "02a3bc3336dd591d1b4e589906f72ee773294681": "[fix][sec] Override kafka-clients in kinesis-kpl-shaded to remediate CVE-2024-31141 and CVE-2025-27817 (#24935)\n\n(cherry picked from commit 8cb1040336e8a397ff60220842102c99f712348b)",
+      "8cb1040336e8a397ff60220842102c99f712348b": "[fix][sec] Override kafka-clients in kinesis-kpl-shaded to remediate CVE-2024-31141 and CVE-2025-27817 (#24935)"
+    },
+    "CVE-2025-27817": {
+      "6de69534a15dcd64fc909ffae024966e149e6de3": "[fix][sec] Override kafka-clients in kinesis-kpl-shaded to remediate CVE-2024-31141 and CVE-2025-27817 (#24935)\n\n(cherry picked from commit 8cb1040336e8a397ff60220842102c99f712348b)",
+      "e08dcfc7107b52e12cbfd1971812a3332633fb0a": "[fix][sec] Override kafka-clients in kinesis-kpl-shaded to remediate CVE-2024-31141 and CVE-2025-27817 (#24935)\n\n(cherry picked from commit 8cb1040336e8a397ff60220842102c99f712348b)",
+      "02a3bc3336dd591d1b4e589906f72ee773294681": "[fix][sec] Override kafka-clients in kinesis-kpl-shaded to remediate CVE-2024-31141 and CVE-2025-27817 (#24935)\n\n(cherry picked from commit 8cb1040336e8a397ff60220842102c99f712348b)",
+      "8cb1040336e8a397ff60220842102c99f712348b": "[fix][sec] Override kafka-clients in kinesis-kpl-shaded to remediate CVE-2024-31141 and CVE-2025-27817 (#24935)"
+    },
+    "CVE-2026-34477": {
+      "87783896c878ef6b11cc58277b202116502e3941": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481 (#25521)\n\nUpgrades org.apache.logging.log4j:* from 2.25.3 to 2.25.4 to fix:\n- CVE-2026-34477: verifyHostName attribute silently ignored in TLS configuration\n- CVE-2026-34478: log injection in Rfc5424Layout due to silent configuration incompatibility\n- CVE-2026-34480: XmlLayout fails to sanitize characters forbidden by XML 1.0\n- CVE-2026-34481: JsonTemplateLayout produces invalid JSON for non-finite floats\n\n(cherry picked from commit dfb06f183c312b849fce42d729c6b36181239490)",
+      "a9eb83a0ee83b04f97baaede5641c9bf005717e7": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481 (#25521)\n\nUpgrades org.apache.logging.log4j:* from 2.25.3 to 2.25.4 to fix:\n- CVE-2026-34477: verifyHostName attribute silently ignored in TLS configuration\n- CVE-2026-34478: log injection in Rfc5424Layout due to silent configuration incompatibility\n- CVE-2026-34480: XmlLayout fails to sanitize characters forbidden by XML 1.0\n- CVE-2026-34481: JsonTemplateLayout produces invalid JSON for non-finite floats\n\n(cherry picked from commit dfb06f183c312b849fce42d729c6b36181239490)",
+      "8b0c1a3eee46a39d7158bcd48cbbfbf6c8c2796e": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481\n\nUpgrades org.apache.logging.log4j:* from 2.25.3 to 2.25.4 to fix:\n- CVE-2026-34477: verifyHostName attribute silently ignored in TLS configuration\n- CVE-2026-34478: log injection in Rfc5424Layout due to silent configuration incompatibility\n- CVE-2026-34480: XmlLayout fails to sanitize characters forbidden by XML 1.0\n- CVE-2026-34481: JsonTemplateLayout produces invalid JSON for non-finite floats\n\n(cherry picked from commit dfb06f183c312b849fce42d729c6b36181239490)",
+      "81fc1ca111ad872a42025bb1dcb449ea4ab5a600": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481\n\nUpgrades org.apache.logging.log4j:* from 2.25.3 to 2.25.4 to fix:\n- CVE-2026-34477: verifyHostName attribute silently ignored in TLS configuration\n- CVE-2026-34478: log injection in Rfc5424Layout due to silent configuration incompatibility\n- CVE-2026-34480: XmlLayout fails to sanitize characters forbidden by XML 1.0\n- CVE-2026-34481: JsonTemplateLayout produces invalid JSON for non-finite floats\n\n(cherry picked from commit dfb06f183c312b849fce42d729c6b36181239490)",
+      "dfb06f183c312b849fce42d729c6b36181239490": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481 (#25521)\n\nCo-authored-by: Lari Hotari <lhotari@users.noreply.github.com>"
+    },
+    "CVE-2026-34478": {
+      "87783896c878ef6b11cc58277b202116502e3941": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481 (#25521)\n\nUpgrades org.apache.logging.log4j:* from 2.25.3 to 2.25.4 to fix:\n- CVE-2026-34477: verifyHostName attribute silently ignored in TLS configuration\n- CVE-2026-34478: log injection in Rfc5424Layout due to silent configuration incompatibility\n- CVE-2026-34480: XmlLayout fails to sanitize characters forbidden by XML 1.0\n- CVE-2026-34481: JsonTemplateLayout produces invalid JSON for non-finite floats\n\n(cherry picked from commit dfb06f183c312b849fce42d729c6b36181239490)",
+      "a9eb83a0ee83b04f97baaede5641c9bf005717e7": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481 (#25521)\n\nUpgrades org.apache.logging.log4j:* from 2.25.3 to 2.25.4 to fix:\n- CVE-2026-34477: verifyHostName attribute silently ignored in TLS configuration\n- CVE-2026-34478: log injection in Rfc5424Layout due to silent configuration incompatibility\n- CVE-2026-34480: XmlLayout fails to sanitize characters forbidden by XML 1.0\n- CVE-2026-34481: JsonTemplateLayout produces invalid JSON for non-finite floats\n\n(cherry picked from commit dfb06f183c312b849fce42d729c6b36181239490)",
+      "8b0c1a3eee46a39d7158bcd48cbbfbf6c8c2796e": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481\n\nUpgrades org.apache.logging.log4j:* from 2.25.3 to 2.25.4 to fix:\n- CVE-2026-34477: verifyHostName attribute silently ignored in TLS configuration\n- CVE-2026-34478: log injection in Rfc5424Layout due to silent configuration incompatibility\n- CVE-2026-34480: XmlLayout fails to sanitize characters forbidden by XML 1.0\n- CVE-2026-34481: JsonTemplateLayout produces invalid JSON for non-finite floats\n\n(cherry picked from commit dfb06f183c312b849fce42d729c6b36181239490)",
+      "81fc1ca111ad872a42025bb1dcb449ea4ab5a600": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481\n\nUpgrades org.apache.logging.log4j:* from 2.25.3 to 2.25.4 to fix:\n- CVE-2026-34477: verifyHostName attribute silently ignored in TLS configuration\n- CVE-2026-34478: log injection in Rfc5424Layout due to silent configuration incompatibility\n- CVE-2026-34480: XmlLayout fails to sanitize characters forbidden by XML 1.0\n- CVE-2026-34481: JsonTemplateLayout produces invalid JSON for non-finite floats\n\n(cherry picked from commit dfb06f183c312b849fce42d729c6b36181239490)",
+      "dfb06f183c312b849fce42d729c6b36181239490": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481 (#25521)\n\nCo-authored-by: Lari Hotari <lhotari@users.noreply.github.com>"
+    },
+    "CVE-2026-34480": {
+      "87783896c878ef6b11cc58277b202116502e3941": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481 (#25521)\n\nUpgrades org.apache.logging.log4j:* from 2.25.3 to 2.25.4 to fix:\n- CVE-2026-34477: verifyHostName attribute silently ignored in TLS configuration\n- CVE-2026-34478: log injection in Rfc5424Layout due to silent configuration incompatibility\n- CVE-2026-34480: XmlLayout fails to sanitize characters forbidden by XML 1.0\n- CVE-2026-34481: JsonTemplateLayout produces invalid JSON for non-finite floats\n\n(cherry picked from commit dfb06f183c312b849fce42d729c6b36181239490)",
+      "a9eb83a0ee83b04f97baaede5641c9bf005717e7": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481 (#25521)\n\nUpgrades org.apache.logging.log4j:* from 2.25.3 to 2.25.4 to fix:\n- CVE-2026-34477: verifyHostName attribute silently ignored in TLS configuration\n- CVE-2026-34478: log injection in Rfc5424Layout due to silent configuration incompatibility\n- CVE-2026-34480: XmlLayout fails to sanitize characters forbidden by XML 1.0\n- CVE-2026-34481: JsonTemplateLayout produces invalid JSON for non-finite floats\n\n(cherry picked from commit dfb06f183c312b849fce42d729c6b36181239490)",
+      "8b0c1a3eee46a39d7158bcd48cbbfbf6c8c2796e": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481\n\nUpgrades org.apache.logging.log4j:* from 2.25.3 to 2.25.4 to fix:\n- CVE-2026-34477: verifyHostName attribute silently ignored in TLS configuration\n- CVE-2026-34478: log injection in Rfc5424Layout due to silent configuration incompatibility\n- CVE-2026-34480: XmlLayout fails to sanitize characters forbidden by XML 1.0\n- CVE-2026-34481: JsonTemplateLayout produces invalid JSON for non-finite floats\n\n(cherry picked from commit dfb06f183c312b849fce42d729c6b36181239490)",
+      "81fc1ca111ad872a42025bb1dcb449ea4ab5a600": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481\n\nUpgrades org.apache.logging.log4j:* from 2.25.3 to 2.25.4 to fix:\n- CVE-2026-34477: verifyHostName attribute silently ignored in TLS configuration\n- CVE-2026-34478: log injection in Rfc5424Layout due to silent configuration incompatibility\n- CVE-2026-34480: XmlLayout fails to sanitize characters forbidden by XML 1.0\n- CVE-2026-34481: JsonTemplateLayout produces invalid JSON for non-finite floats\n\n(cherry picked from commit dfb06f183c312b849fce42d729c6b36181239490)",
+      "dfb06f183c312b849fce42d729c6b36181239490": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481 (#25521)\n\nCo-authored-by: Lari Hotari <lhotari@users.noreply.github.com>"
+    },
+    "CVE-2026-34481": {
+      "87783896c878ef6b11cc58277b202116502e3941": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481 (#25521)\n\nUpgrades org.apache.logging.log4j:* from 2.25.3 to 2.25.4 to fix:\n- CVE-2026-34477: verifyHostName attribute silently ignored in TLS configuration\n- CVE-2026-34478: log injection in Rfc5424Layout due to silent configuration incompatibility\n- CVE-2026-34480: XmlLayout fails to sanitize characters forbidden by XML 1.0\n- CVE-2026-34481: JsonTemplateLayout produces invalid JSON for non-finite floats\n\n(cherry picked from commit dfb06f183c312b849fce42d729c6b36181239490)",
+      "a9eb83a0ee83b04f97baaede5641c9bf005717e7": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481 (#25521)\n\nUpgrades org.apache.logging.log4j:* from 2.25.3 to 2.25.4 to fix:\n- CVE-2026-34477: verifyHostName attribute silently ignored in TLS configuration\n- CVE-2026-34478: log injection in Rfc5424Layout due to silent configuration incompatibility\n- CVE-2026-34480: XmlLayout fails to sanitize characters forbidden by XML 1.0\n- CVE-2026-34481: JsonTemplateLayout produces invalid JSON for non-finite floats\n\n(cherry picked from commit dfb06f183c312b849fce42d729c6b36181239490)",
+      "8b0c1a3eee46a39d7158bcd48cbbfbf6c8c2796e": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481\n\nUpgrades org.apache.logging.log4j:* from 2.25.3 to 2.25.4 to fix:\n- CVE-2026-34477: verifyHostName attribute silently ignored in TLS configuration\n- CVE-2026-34478: log injection in Rfc5424Layout due to silent configuration incompatibility\n- CVE-2026-34480: XmlLayout fails to sanitize characters forbidden by XML 1.0\n- CVE-2026-34481: JsonTemplateLayout produces invalid JSON for non-finite floats\n\n(cherry picked from commit dfb06f183c312b849fce42d729c6b36181239490)",
+      "81fc1ca111ad872a42025bb1dcb449ea4ab5a600": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481\n\nUpgrades org.apache.logging.log4j:* from 2.25.3 to 2.25.4 to fix:\n- CVE-2026-34477: verifyHostName attribute silently ignored in TLS configuration\n- CVE-2026-34478: log injection in Rfc5424Layout due to silent configuration incompatibility\n- CVE-2026-34480: XmlLayout fails to sanitize characters forbidden by XML 1.0\n- CVE-2026-34481: JsonTemplateLayout produces invalid JSON for non-finite floats\n\n(cherry picked from commit dfb06f183c312b849fce42d729c6b36181239490)",
+      "dfb06f183c312b849fce42d729c6b36181239490": "[fix][sec] Upgrade log4j to 2.25.4 to address CVE-2026-34477, CVE-2026-34478, CVE-2026-34480, CVE-2026-34481 (#25521)\n\nCo-authored-by: Lari Hotari <lhotari@users.noreply.github.com>"
+    },
+    "CVE-2026-40490": {
+      "bc811025c5280b58b1034113eabaa08e8a539bf4": "[fix][sec] Upgrade to async-http-client 2.14.5 to address CVE-2026-40490 (#25546)\n\n(cherry picked from commit a1613bc2e5fd26cc16fc95b4a3c61bc5e1ae090d)",
+      "cfa8192198c2c8bd6c23c599bc761157ab166f6d": "[fix][sec] Upgrade to async-http-client 2.14.5 to address CVE-2026-40490 (#25546)\n\n(cherry picked from commit a1613bc2e5fd26cc16fc95b4a3c61bc5e1ae090d)",
+      "ff90898b88eea16fe1b48207398a05efded355c8": "[fix][sec] Upgrade to async-http-client 2.14.5 to address CVE-2026-40490 (#25546)\n\n(cherry picked from commit a1613bc2e5fd26cc16fc95b4a3c61bc5e1ae090d)",
+      "5736b60085f538b74c0236904d1c39959f35ce48": "[fix][sec] Upgrade to async-http-client 2.14.5 to address CVE-2026-40490 (#25546)\n\n(cherry picked from commit a1613bc2e5fd26cc16fc95b4a3c61bc5e1ae090d)",
+      "a1613bc2e5fd26cc16fc95b4a3c61bc5e1ae090d": "[fix][sec] Upgrade to async-http-client 2.14.5 to address CVE-2026-40490 (#25546)"
+    },
+    "CVE-2026-5795": {
+      "ab397b1f08642c8281a1e75dc9d6bedda5bb5a93": "[fix][sec] Upgrade Jetty to address CVE-2026-5795 (#25532)\n\n(cherry picked from commit e05c2129aad5a8620b1fda88ee2a5f79bc86a365)",
+      "e05c2129aad5a8620b1fda88ee2a5f79bc86a365": "[fix][sec] Upgrade Jetty to address CVE-2026-5795 (#25532)"
+    },
+    "CVE-2026-2332": {
+      "28cd4e396c3d65674f17e008572fd83fdfe18cf8": "[fix][sec] Upgrade Jetty to address CVE-2026-2332 (#25527)\n\n(cherry picked from commit 4c96c730aa2fa7c9b70ded7892a40797c36855e2)",
+      "4c96c730aa2fa7c9b70ded7892a40797c36855e2": "[fix][sec] Upgrade Jetty to address CVE-2026-2332 (#25527)"
+    },
+    "CVE-2026-1605": {
+      "927c3e8f2694b74d3b94147ab6cf3d5027996514": "[fix] Upgrade Jetty to 12.1.6 to fix CVE-2026-1605 (#25485)\n\n(cherry picked from commit 5b2778e8676ede45025b8c94b563b8db258c50fc)",
+      "5b2778e8676ede45025b8c94b563b8db258c50fc": "[fix] Upgrade Jetty to 12.1.6 to fix CVE-2026-1605 (#25485)"
+    },
+    "CVE-2025-67721": {
+      "cdd34ad099b751c2236d133b29bda93bc5a20472": "[fix][sec] Upgrade aircompressor to 2.0.3 to resolve CVE-2025-67721 (#25256)",
+      "274a35924adf0350a3da7d9fb513008bf42a669c": "[fix][sec] Upgrade aircompressor to 2.0.3 to resolve CVE-2025-67721 (#25256)",
+      "5454031502a7c3d20000cce73615869976e85e2b": "[fix][sec] Upgrade aircompressor to 2.0.3 to resolve CVE-2025-67721 (#25256)",
+      "ee477cc1dfe645ef473b87d166ccc2fcf9a4e04a": "[fix][sec] Upgrade aircompressor to 2.0.3 to resolve CVE-2025-67721 (#25256)"
+    },
+    "CVE-2026-0994": {
+      "4b26d23d8bf42a6e3de26cf2f5d5fa3f5bfe530d": "[fix][sec] Upgrade Python protobuf version to 6.33.5 to address CVE-2026-0994 (#25250)\n\n(cherry picked from commit 163b900cceab4c7ac0a1a4f91087387689d6dc17)",
+      "27aad1c8c2a25b329ce4e7dd13e4034fb0416304": "[fix][sec] Upgrade Python protobuf version to 6.33.5 to address CVE-2026-0994 (#25250)\n\n(cherry picked from commit 163b900cceab4c7ac0a1a4f91087387689d6dc17)",
+      "5c27f87adc7c7ca1bdd1cc2bf9cbe0690a845c3d": "[fix][sec] Upgrade Python protobuf version to 6.33.5 to address CVE-2026-0994 (#25250)\n\n(cherry picked from commit 163b900cceab4c7ac0a1a4f91087387689d6dc17)",
+      "163b900cceab4c7ac0a1a4f91087387689d6dc17": "[fix][sec] Upgrade Python protobuf version to 6.33.5 to address CVE-2026-0994 (#25250)"
+    },
+    "CVE-2026-21452": {
+      "d5145e4f029db7b5a4972150322eb9fa11d157de": "[fix][sec] Override msgpack-core to 0.9.11 to address CVE-2026-21452 (#25233)"
+    },
+    "CVE-2024-29371": {
+      "b38fe721500470c74aaf4a3615cb05746c272b6e": "[fix][sec] Upgrade jose4j to 0.9.6 to address CVE-2024-29371 (#25095)\n\n(cherry picked from commit 3fb52c5d7494d4020956b7a26db5e9e721c7d555)",
+      "f88c407caaa5d5575280b8d6f72a34712555c875": "[fix][sec] Upgrade jose4j to 0.9.6 to address CVE-2024-29371 (#25095)\n\n(cherry picked from commit 3fb52c5d7494d4020956b7a26db5e9e721c7d555)",
+      "d468a84f6a25c481f3791d32e88818a65c3e4dbd": "[fix][sec] Upgrade jose4j to 0.9.6 to address CVE-2024-29371 (#25095)\n\n(cherry picked from commit 3fb52c5d7494d4020956b7a26db5e9e721c7d555)",
+      "9e54ea91e932c46602d29284739b68649711437b": "[fix][sec] Upgrade jose4j to 0.9.6 to address CVE-2024-29371 (#25095)\n\n(cherry picked from commit 3fb52c5d7494d4020956b7a26db5e9e721c7d555)",
+      "0513c0766fdffba32e10bf53a8f602cf3f32a013": "[fix][sec] Upgrade jose4j to 0.9.6 to address CVE-2024-29371 (#25095)\n\n(cherry picked from commit 3fb52c5d7494d4020956b7a26db5e9e721c7d555)",
+      "3fb52c5d7494d4020956b7a26db5e9e721c7d555": "[fix][sec] Upgrade jose4j to 0.9.6 to address CVE-2024-29371 (#25095)"
+    },
+    "CVE-2025-9624": {
+      "64f6407bb0a562620e3ee5cbb8567bc4f8ec3916": "[fix][sec] Upgrade OpenSearch to 2.19.4 to remediate CVE-2025-9624 (#25206)\n\n(cherry picked from commit 64333094705769640d747b868017b01931b17705)",
+      "05157e71d63c1d8cd5cfc370dedc18a2c6190227": "[fix][sec] Upgrade OpenSearch to 2.19.4 to remediate CVE-2025-9624 (#25206)\n\n(cherry picked from commit 64333094705769640d747b868017b01931b17705)",
+      "64333094705769640d747b868017b01931b17705": "[fix][sec] Upgrade OpenSearch to 2.19.4 to remediate CVE-2025-9624 (#25206)"
+    },
+    "CVE-2026-1002": {
+      "026cccf857d7bda5b692f71c31180a4f4cee0a9b": "[fix][sec] Upgrade vertx to address CVE-2026-1002 (#25152)\n\n(cherry picked from commit dff4f1e95aee2addffa6db38e19984755f5aca38)",
+      "d8dd7661e76c117fcecf094111f082d4feb18222": "[fix][sec] Upgrade vertx to address CVE-2026-1002 (#25152)\n\n(cherry picked from commit dff4f1e95aee2addffa6db38e19984755f5aca38)",
+      "98c21c4397378abb9612caec543ca94e2843e5da": "[fix][sec] Upgrade vertx to address CVE-2026-1002 (#25152)\n\n(cherry picked from commit dff4f1e95aee2addffa6db38e19984755f5aca38)",
+      "dff4f1e95aee2addffa6db38e19984755f5aca38": "[fix][sec] Upgrade vertx to address CVE-2026-1002 (#25152)"
+    },
+    "CVE-2025-68161": {
+      "feda88fa401af30886724310148c141007bf4bb0": "[fix][sec] Upgrade log4j to 2.25.3 to address CVE-2025-68161 (#25102)\n\n(cherry picked from commit 449552534c1e1191056e957bc31081760560ff9a)",
+      "64054268ae688cdd7d21e4233682d5e6db57cf8c": "[fix][sec] Upgrade log4j to 2.25.3 to address CVE-2025-68161 (#25102)\n\n(cherry picked from commit 449552534c1e1191056e957bc31081760560ff9a)",
+      "e1cac56ba48c85a719e891c55847ec4387e2a795": "[fix][sec] Upgrade log4j to 2.25.3 to address CVE-2025-68161 (#25102)\n\n(cherry picked from commit 449552534c1e1191056e957bc31081760560ff9a)",
+      "449552534c1e1191056e957bc31081760560ff9a": "[fix][sec] Upgrade log4j to 2.25.3 to address CVE-2025-68161 (#25102)"
+    },
+    "CVE-2023-52428": {
+      "5ada17fb28d0fdb60cbdba5234adc72511acefe7": "[fix][sec] Override nimbus-jose-jwt to remediate CVE-2023-52428 and CVE-2025-53864 (#24937)\n\n(cherry picked from commit 676ba078de57ff1a8b30384babc88becdf61e566)",
+      "c30cb6a77ad1b427456fda457ebbe01356c4aee0": "[fix][sec] Override nimbus-jose-jwt to remediate CVE-2023-52428 and CVE-2025-53864 (#24937)\n\n(cherry picked from commit 676ba078de57ff1a8b30384babc88becdf61e566)",
+      "676ba078de57ff1a8b30384babc88becdf61e566": "[fix][sec] Override nimbus-jose-jwt to remediate CVE-2023-52428 and CVE-2025-53864 (#24937)"
+    },
+    "CVE-2025-53864": {
+      "5ada17fb28d0fdb60cbdba5234adc72511acefe7": "[fix][sec] Override nimbus-jose-jwt to remediate CVE-2023-52428 and CVE-2025-53864 (#24937)\n\n(cherry picked from commit 676ba078de57ff1a8b30384babc88becdf61e566)",
+      "c30cb6a77ad1b427456fda457ebbe01356c4aee0": "[fix][sec] Override nimbus-jose-jwt to remediate CVE-2023-52428 and CVE-2025-53864 (#24937)\n\n(cherry picked from commit 676ba078de57ff1a8b30384babc88becdf61e566)",
+      "676ba078de57ff1a8b30384babc88becdf61e566": "[fix][sec] Override nimbus-jose-jwt to remediate CVE-2023-52428 and CVE-2025-53864 (#24937)"
+    },
+    "CVE-2025-8916": {
+      "ec9861b70b969f5f7d552edb5904d94d14822155": "[fix][sec] Upgrade BouncyCastle FIPS to 2.0.10 to remediate CVE-2025-8916 (#24923)\n\n(cherry picked from commit f3fa7e6dfded17c7f617fcebc8337bc02c67ce96)",
+      "31aa81e50a1b0cad824edf97e813dcdb921b5090": "[fix][sec] Upgrade BouncyCastle FIPS to 2.0.10 to remediate CVE-2025-8916 (#24923)\n\n(cherry picked from commit f3fa7e6dfded17c7f617fcebc8337bc02c67ce96)",
+      "b0481fd4cd5d8e3c21b7fadb82e2e9ceb92431a2": "[fix][sec] Upgrade BouncyCastle FIPS to 2.0.10 to remediate CVE-2025-8916 (#24923)\n\n(cherry picked from commit f3fa7e6dfded17c7f617fcebc8337bc02c67ce96)",
+      "f3fa7e6dfded17c7f617fcebc8337bc02c67ce96": "[fix][sec] Upgrade BouncyCastle FIPS to 2.0.10 to remediate CVE-2025-8916 (#24923)",
+      "7a9e1a92f376f6a052ccacd39153d7a31bb46135": "[fix][sec] Upgrade bouncycastle bcpkix-fips version to 1.79 to address CVE-2025-8916 (#24650)\n\n(cherry picked from commit e78068a0430891b24088138ce96a6538673858d3)",
+      "76f06e1d2b1a8702a39a8b2b9a43680f03e9f161": "[fix][sec] Upgrade bouncycastle bcpkix-fips version to 1.79 to address CVE-2025-8916 (#24650)\n\n(cherry picked from commit e78068a0430891b24088138ce96a6538673858d3)",
+      "2d50d168c19d6a63f74e8eb0b081a1722075fdc4": "[fix][sec] Upgrade bouncycastle bcpkix-fips version to 1.79 to address CVE-2025-8916 (#24650)",
+      "e78068a0430891b24088138ce96a6538673858d3": "[fix][sec] Upgrade bouncycastle bcpkix-fips version to 1.79 to address CVE-2025-8916 (#24650)"
+    },
+    "CVE-2025-22233": {
+      "f02d2c931602085d71aa8224e116edfb43f63f12": "[fix][sec] Upgrade Spring to 6.2.12 to remediate CVE-2025-22233 and CVE-2025-41249 (#24903)\n\n(cherry picked from commit 38e0fa1da6a3fa9e8f7ba9c079f3b61db8b1d075)",
+      "f3cf6aa6dc78b23f995c93f9e8402ab0c66239aa": "[fix][sec] Upgrade Spring to 6.2.12 to remediate CVE-2025-22233 and CVE-2025-41249 (#24903)\n\n(cherry picked from commit 38e0fa1da6a3fa9e8f7ba9c079f3b61db8b1d075)",
+      "856da6e3fda5a3433b8c58022c6635b7ea598cf5": "[fix][sec] Upgrade Spring to 6.2.12 to remediate CVE-2025-22233 and CVE-2025-41249 (#24903)\n\n(cherry picked from commit 38e0fa1da6a3fa9e8f7ba9c079f3b61db8b1d075)",
+      "38e0fa1da6a3fa9e8f7ba9c079f3b61db8b1d075": "[fix][sec] Upgrade Spring to 6.2.12 to remediate CVE-2025-22233 and CVE-2025-41249 (#24903)"
+    },
+    "CVE-2025-41249": {
+      "f02d2c931602085d71aa8224e116edfb43f63f12": "[fix][sec] Upgrade Spring to 6.2.12 to remediate CVE-2025-22233 and CVE-2025-41249 (#24903)\n\n(cherry picked from commit 38e0fa1da6a3fa9e8f7ba9c079f3b61db8b1d075)",
+      "f3cf6aa6dc78b23f995c93f9e8402ab0c66239aa": "[fix][sec] Upgrade Spring to 6.2.12 to remediate CVE-2025-22233 and CVE-2025-41249 (#24903)\n\n(cherry picked from commit 38e0fa1da6a3fa9e8f7ba9c079f3b61db8b1d075)",
+      "856da6e3fda5a3433b8c58022c6635b7ea598cf5": "[fix][sec] Upgrade Spring to 6.2.12 to remediate CVE-2025-22233 and CVE-2025-41249 (#24903)\n\n(cherry picked from commit 38e0fa1da6a3fa9e8f7ba9c079f3b61db8b1d075)",
+      "38e0fa1da6a3fa9e8f7ba9c079f3b61db8b1d075": "[fix][sec] Upgrade Spring to 6.2.12 to remediate CVE-2025-22233 and CVE-2025-41249 (#24903)"
+    },
+    "CVE-2025-5115": {
+      "181863a2903fc8cc145df4c6ba20bb488118a31a": "[fix][sec] Upgrade Jetty to 9.4.58.v20250814 to address CVE-2025-5115 (#24897)\n\n(cherry picked from commit d1bddf810ca6ace8d6f07dcfe2a34c26abe6d8dd)",
+      "037e28423a80a2b204c6070ae2cdf66904531fa3": "[fix][sec] Upgrade Jetty to 9.4.58.v20250814 to address CVE-2025-5115 (#24897)",
+      "bf71d4d55eee6ff0eab7036f616291bcf3d604ee": "[fix][sec] Upgrade Jetty to 9.4.58.v20250814 to address CVE-2025-5115 (#24897)",
+      "bb81dce054233612ceba5d5543118099159ce38b": "[fix][sec] Upgrade Jetty to 9.4.58.v20250814 to address CVE-2025-5115 (#24897)",
+      "d1bddf810ca6ace8d6f07dcfe2a34c26abe6d8dd": "[fix][sec] Upgrade Jetty to 9.4.58.v20250814 to address CVE-2025-5115 (#24897)"
+    },
+    "CVE-2025-55163": {
+      "67437c2f09919a67e528033a011e624c7ecda207": "[fix][sec] Upgrade to Netty 4.1.124.Final to address CVE-2025-55163 (#24637)\n\n(cherry picked from commit 64137f629fbf9d31842489e4ba89e84d48d97925)",
+      "0a40f083fc93bc659aafbea84070328dadef219e": "[fix][sec] Upgrade to Netty 4.1.124.Final to address CVE-2025-55163 (#24637)\n\n(cherry picked from commit 64137f629fbf9d31842489e4ba89e84d48d97925)",
+      "4dc94a2ad5d2f8d9711b7d08165165c2f3ff04c9": "[fix][sec] Upgrade to Netty 4.1.124.Final to address CVE-2025-55163 (#24637)\n\n(cherry picked from commit 64137f629fbf9d31842489e4ba89e84d48d97925)",
+      "64137f629fbf9d31842489e4ba89e84d48d97925": "[fix][sec] Upgrade to Netty 4.1.124.Final to address CVE-2025-55163 (#24637)"
+    },
+    "CVE-2025-27818": {
+      "a777d0a90853596501069123dbdde7ef2759a833": "[fix][sec] Upgrade Kafka connector and clients version to 3.9.1 to address CVE-2025-27818 (#24564)\n\n(cherry picked from commit 441820131c8e0b53bccc47ecb71d62a4da2e9c32)",
+      "9d3f09107f1b691eb079b51310a87c00808698a5": "[fix][sec] Upgrade Kafka connector and clients version to 3.9.1 to address CVE-2025-27818 (#24564)\n\n(cherry picked from commit 441820131c8e0b53bccc47ecb71d62a4da2e9c32)",
+      "d1724da0a5774574ea8d96d410b727c14848ef92": "[fix][sec] Upgrade Kafka connector and clients version to 3.9.1 to address CVE-2025-27818 (#24564)\n\n(cherry picked from commit 441820131c8e0b53bccc47ecb71d62a4da2e9c32)",
+      "441820131c8e0b53bccc47ecb71d62a4da2e9c32": "[fix][sec] Upgrade Kafka connector and clients version to 3.9.1 to address CVE-2025-27818 (#24564)"
+    },
+    "CVE-2025-22868": {
+      "8f5a14becb3e083745f737c95e4d5d69e2d059d4": "[fix][sec] Upgrade pulsar-function-go dependencies to address CVE-2025-22868 (#24547)\n\n(cherry picked from commit 86b036bf38d2fc49c34829406b1721e7cc715ca8)",
+      "59fe986917fc883e9c0563b2ba65a871936d62a7": "[fix][sec] Upgrade pulsar-function-go dependencies to address CVE-2025-22868 (#24547)\n\n(cherry picked from commit 86b036bf38d2fc49c34829406b1721e7cc715ca8)",
+      "af164add652a09ecd5e8c654fe82c56c8b0a43e9": "[fix][sec] Upgrade pulsar-function-go dependencies to address CVE-2025-22868 (#24547)\n\n(cherry picked from commit 86b036bf38d2fc49c34829406b1721e7cc715ca8)",
+      "86b036bf38d2fc49c34829406b1721e7cc715ca8": "[fix][sec] Upgrade pulsar-function-go dependencies to address CVE-2025-22868 (#24547)"
+    },
+    "CVE-2024-6763": {
+      "b3c6f2a104cfb82e72cb794e0539c0b7450602ce": "[fix][sec] Upgrade Jetty to 9.4.57.v20241219 to mitigate CVE-2024-6763 (#24232)\n\n(cherry picked from commit 611dc3f360b5c14fd95eeb36b50948115da2bada)",
+      "e099f3af0b7ad27740644d0374cbb8ee8cd3d07e": "[fix][sec] Upgrade Jetty to 9.4.57.v20241219 to mitigate CVE-2024-6763 (#24232)\n\n(cherry picked from commit 611dc3f360b5c14fd95eeb36b50948115da2bada)",
+      "1ac0898a0f9a2b10a0521879ac089addd114eace": "[fix][sec] Upgrade Jetty to 9.4.57.v20241219 to mitigate CVE-2024-6763 (#24232)\n\n(cherry picked from commit 611dc3f360b5c14fd95eeb36b50948115da2bada)",
+      "611dc3f360b5c14fd95eeb36b50948115da2bada": "[fix][sec] Upgrade Jetty to 9.4.57.v20241219 to mitigate CVE-2024-6763 (#24232)"
+    },
+    "CVE-2025-30204": {
+      "239a9944d6cbb2916c53283b434f5cadf2300d14": "[fix][sec] Upgrade jwt/v5 to 5.2.2 to address CVE-2025-30204 (#24140)\n\n(cherry picked from commit f0296b54734a1c951f6d2170738becfb7d17a990)",
+      "800f8cd9266af6f798c7da73545f50fdcebc4fb9": "[fix][sec] Upgrade jwt/v5 to 5.2.2 to address CVE-2025-30204 (#24140)\n\n(cherry picked from commit f0296b54734a1c951f6d2170738becfb7d17a990)",
+      "0d38ff17b158318736f9319b3ab77d410850ce83": "[fix][sec] Upgrade jwt/v5 to 5.2.2 to address CVE-2025-30204 (#24140)\n\n(cherry picked from commit f0296b54734a1c951f6d2170738becfb7d17a990)",
+      "f0296b54734a1c951f6d2170738becfb7d17a990": "[fix][sec] Upgrade jwt/v5 to 5.2.2 to address CVE-2025-30204 (#24140)"
+    },
+    "CVE-2025-22870": {
+      "2be02a4af311d487531e1cdea97fb396ee19d00d": "[fix][sec] Upgrade pulsar-function-go dependencies to address CVE-2025-22870 (#24135)\n\n(cherry picked from commit 371020d66ee01fb79d223fb815f51d3cd69276c9)",
+      "c14e64eb7982861b4d10dd9f029e354831df5fb2": "[fix][sec] Upgrade pulsar-function-go dependencies to address CVE-2025-22870 (#24135)\n\n(cherry picked from commit 371020d66ee01fb79d223fb815f51d3cd69276c9)",
+      "733d37e1f866a8bb65c5f4a6bb73ff205249d5d1": "[fix][sec] Upgrade pulsar-function-go dependencies to address CVE-2025-22870 (#24135)\n\n(cherry picked from commit 371020d66ee01fb79d223fb815f51d3cd69276c9)",
+      "371020d66ee01fb79d223fb815f51d3cd69276c9": "[fix][sec] Upgrade pulsar-function-go dependencies to address CVE-2025-22870 (#24135)"
+    },
+    "CVE-2024-53990": {
+      "9c04964f21e117631e63f3dbdac07011909f7524": "[fix][sec] Upgrade async-http-client to 2.12.4 to address CVE-2024-53990 (#23732)\n\n(cherry picked from commit 9a7269a9cf98bd63f45cc48db85b70fb191fb054)",
+      "1fa459d6fa455932a3d7b7d5385a1dd79e555756": "[fix][sec] Upgrade async-http-client to 2.12.4 to address CVE-2024-53990 (#23732)\n\n(cherry picked from commit 9a7269a9cf98bd63f45cc48db85b70fb191fb054)",
+      "c49a2e594660de1929f8e3774ce171f2422369c3": "[fix][sec] Upgrade async-http-client to 2.12.4 to address CVE-2024-53990 (#23732)\n\n(cherry picked from commit 9a7269a9cf98bd63f45cc48db85b70fb191fb054)",
+      "9a7269a9cf98bd63f45cc48db85b70fb191fb054": "[fix][sec] Upgrade async-http-client to 2.12.4 to address CVE-2024-53990 (#23732)",
+      "6e98d4a50cdace2addecadd6dd90b7d8259f3e1d": "[fix][sec] Mitigate CVE-2024-53990 by disabling AsyncHttpClient CookieStore (#23725)\n\n(cherry picked from commit 51e8247e497626eee3ff83056f7ca24acf4cf57a)",
+      "d92f42d13d825fc79037ee55a7a407d59540b5a0": "[fix][sec] Mitigate CVE-2024-53990 by disabling AsyncHttpClient CookieStore (#23725)\n\n(cherry picked from commit 51e8247e497626eee3ff83056f7ca24acf4cf57a)",
+      "78274a7e90a3e4e1e204674f5bf76b0110a87a18": "[fix][sec] Mitigate CVE-2024-53990 by disabling AsyncHttpClient CookieStore (#23725)\n\n(cherry picked from commit 51e8247e497626eee3ff83056f7ca24acf4cf57a)",
+      "51e8247e497626eee3ff83056f7ca24acf4cf57a": "[fix][sec] Mitigate CVE-2024-53990 by disabling AsyncHttpClient CookieStore (#23725)"
+    },
+    "CVE-2024-47535": {
+      "db32c5684c80cd5337fa7243b782cdd696a8d9c2": "[fix][sec] Upgrade to Netty 4.1.115.Final to address CVE-2024-47535 (#23596)\n\n(cherry picked from commit 04c80f17d4f48bc0a2062d9cc0e90946fcc145ad)",
+      "a4368721434d34f7cb8dbfc1ce8b3aea197813f9": "[fix][sec] Upgrade to Netty 4.1.115.Final to address CVE-2024-47535 (#23596)\n\n(cherry picked from commit 04c80f17d4f48bc0a2062d9cc0e90946fcc145ad)",
+      "73b7c4d479ee9d9dc4a7163501174dafa8a12bd1": "[fix][sec] Upgrade to Netty 4.1.115.Final to address CVE-2024-47535 (#23596)\n\n(cherry picked from commit 04c80f17d4f48bc0a2062d9cc0e90946fcc145ad)",
+      "04c80f17d4f48bc0a2062d9cc0e90946fcc145ad": "[fix][sec] Upgrade to Netty 4.1.115.Final to address CVE-2024-47535 (#23596)"
+    },
+    "CVE-2024-51504": {
+      "b5dfd4b051504b71821e10953afce0577cf05612": "[fix][sec] Upgrade Zookeeper to 3.9.3 to address CVE-2024-51504 (#23581)\n\n(cherry picked from commit d7433d0f3d383651bd0c49b1858ebf7da50dbe1c)",
+      "ce84f8be799fca603686d8eea62852df85c55cad": "[fix][sec] Upgrade Zookeeper to 3.9.3 to address CVE-2024-51504 (#23581)\n\n(cherry picked from commit d7433d0f3d383651bd0c49b1858ebf7da50dbe1c)",
+      "787b65a2f700d559cb2d5f25eed564f51663583c": "[fix][sec] Upgrade Zookeeper to 3.9.3 to address CVE-2024-51504 (#23581)\n\n(cherry picked from commit d7433d0f3d383651bd0c49b1858ebf7da50dbe1c)",
+      "d7433d0f3d383651bd0c49b1858ebf7da50dbe1c": "[fix][sec] Upgrade Zookeeper to 3.9.3 to address CVE-2024-51504 (#23581)"
+    },
+    "CVE-2024-25638": {
+      "63611108ea6ae986ca27518cda5d2cc13aada8ee": "[fix][sec] Drop hdfs2 support, Upgrade hadoop3 to 3.4.0 and dnsjava to 3.6.2 to address CVE-2024-25638 (#23411)\n\n(cherry picked from commit d5e3675439458faa6f1d75929719d5a80e34238a)",
+      "d5e3675439458faa6f1d75929719d5a80e34238a": "[fix][sec] Drop hdfs2 support, Upgrade hadoop3 to 3.4.0 and dnsjava to 3.6.2 to address CVE-2024-25638 (#23411)"
+    },
+    "CVE-2024-47561": {
+      "1be3793c3f598ee5b00b2732c172d90620a21eac": "[fix][sec] Upgrade Avro to 1.11.4 to address CVE-2024-47561 (#23394)\n\n(cherry picked from commit 8571e65a1af0df5058397cdb096e794b41a93258)",
+      "8571e65a1af0df5058397cdb096e794b41a93258": "[fix][sec] Upgrade Avro to 1.11.4 to address CVE-2024-47561 (#23394)",
+      "fd7e0b48fd766413759bbf53d9e7a4dcdcae995d": "[fix][sec] Upgrade Avro to 1.11.4 to address CVE-2024-47561 (#23394)",
+      "0b39f58ee3f460786906ee073d07bc7f26f27ecc": "[fix][sec] Upgrade Avro to 1.11.4 to address CVE-2024-47561 (#23394)\n\n(cherry picked from commit fad67613a4bbf5fa670bc18d7013eff3f44769a6)",
+      "265e9874c5bdb815392f7cb2e788006840634a75": "[fix][sec] Upgrade Avro to 1.11.4 to address CVE-2024-47561 (#23394)\n\n(cherry picked from commit fad67613a4bbf5fa670bc18d7013eff3f44769a6)",
+      "430a9e8cc59840ef3f35da7a52d660e4e5bda6a4": "[fix][sec] Upgrade Avro to 1.11.4 to address CVE-2024-47561 (#23394)\n\n(cherry picked from commit fad67613a4bbf5fa670bc18d7013eff3f44769a6)",
+      "1d2fc73f2f327bc300e934a7555840a8c0f88faa": "[fix][sec] Upgrade Avro to 1.11.4 to address CVE-2024-47561 (#23394)",
+      "d4aa14de755416f8573e33b61ebdccef5b60d5fd": "[fix][sec] Upgrade Avro to 1.11.4 to address CVE-2024-47561 (#23394)",
+      "fad67613a4bbf5fa670bc18d7013eff3f44769a6": "[fix][sec] Upgrade Avro to 1.11.4 to address CVE-2024-47561 (#23394)"
+    },
+    "CVE-2023-39410": {
+      "007d8cb5489453b815ea8540019b991600ead8de": "[fix][sec] Bump avro version to 1.11.3 for CVE-2023-39410 (#21341)\n\nSigned-off-by: tison <wander4096@gmail.com>\n(cherry picked from commit f5222d6b1f64d14029f8fef3e0108cf74ffefded)\n(cherry picked from commit 5f282575401948fedd18e8438627b806112736b0)\n(cherry picked from commit a6b5ac49b39986179b08f8406720695d5708dca0)",
+      "a6b5ac49b39986179b08f8406720695d5708dca0": "[fix][sec] Bump avro version to 1.11.3 for CVE-2023-39410 (#21341)\n\nSigned-off-by: tison <wander4096@gmail.com>\n(cherry picked from commit f5222d6b1f64d14029f8fef3e0108cf74ffefded)\n(cherry picked from commit 5f282575401948fedd18e8438627b806112736b0)",
+      "1facababe9de9d1d9907825aba131bc9f94a6015": "[fix][sec] Bump avro version to 1.11.3 for CVE-2023-39410 (#21341)\n\nSigned-off-by: tison <wander4096@gmail.com>\n(cherry picked from commit f5222d6b1f64d14029f8fef3e0108cf74ffefded)\n(cherry picked from commit 5f282575401948fedd18e8438627b806112736b0)",
+      "5f282575401948fedd18e8438627b806112736b0": "[fix][sec] Bump avro version to 1.11.3 for CVE-2023-39410 (#21341)\n\nSigned-off-by: tison <wander4096@gmail.com>\n(cherry picked from commit f5222d6b1f64d14029f8fef3e0108cf74ffefded)",
+      "23bf51a74e974f9e43a6b77159c180ee6e41e8cb": "[fix][sec] Bump avro version to 1.11.3 for CVE-2023-39410 (#21341)\n\nSigned-off-by: tison <wander4096@gmail.com>",
+      "beed0a34488d80657e52694ce3b980fe40fe3ffc": "[fix][sec] Bump avro version to 1.11.3 for CVE-2023-39410 (#21341)\n\nSigned-off-by: tison <wander4096@gmail.com>\n(cherry picked from commit f5222d6b1f64d14029f8fef3e0108cf74ffefded)",
+      "f5222d6b1f64d14029f8fef3e0108cf74ffefded": "[fix][sec] Bump avro version to 1.11.3 for CVE-2023-39410 (#21341)\n\nSigned-off-by: tison <wander4096@gmail.com>"
+    },
+    "CVE-2024-8391": {
+      "e8e9126bb1ac4d2baf91bb73f4b4c12e81fe4497": "[fix][sec] Upgrade vertx to 4.5.10 to address CVE-2024-8391 (#23338)\n\n(cherry picked from commit 501dfdeace9ef321acbdc5ce32d98eb3e56e083a)",
+      "43674b9e70c3f30a2a3926a17e9d6bb4b033e023": "[fix][sec] Upgrade vertx to 4.5.10 to address CVE-2024-8391 (#23338)\n\n(cherry picked from commit 501dfdeace9ef321acbdc5ce32d98eb3e56e083a)",
+      "501dfdeace9ef321acbdc5ce32d98eb3e56e083a": "[fix][sec] Upgrade vertx to 4.5.10 to address CVE-2024-8391 (#23338)"
+    },
+    "CVE-2024-1597": {
+      "72641cb18883bc03041029e656b805bb94463a79": "[fix][sec] Upgrade postgresql version to avoid CVE-2024-1597 (#22635)",
+      "31a19973d679aca8a939000299e2b71f873bff88": "[fix][sec] Upgrade postgresql version to avoid CVE-2024-1597 (#22635)\n\n(cherry picked from commit 2cfd9597676828bae68c9dac74e41d65a1a29864)",
+      "cea5409cde1c33f085fe28fd335574852913e45b": "[fix][sec] Upgrade postgresql version to avoid CVE-2024-1597 (#22635)\n\n(cherry picked from commit 2cfd9597676828bae68c9dac74e41d65a1a29864)",
+      "2cfd9597676828bae68c9dac74e41d65a1a29864": "[fix][sec] Upgrade postgresql version to avoid CVE-2024-1597 (#22635)"
+    },
+    "CVE-2023-4236": {
+      "5c6adef96450f429d923b9304d263295aa63d5e0": "[fix] Upgrade Alpine packages at build time to fix CVE-2023-4236 (#22763)",
+      "dd359819b3a1a54e196bc55a38a2265d3bbe9caa": "[fix] Upgrade Alpine packages at build time to fix CVE-2023-4236 (#22763)"
+    },
+    "CVE-2024-2511": {
+      "3fcba6ca685a26db838381ded2c7df5b031fa8de": "[fix][build] Fix CVE-2024-2511 by upgrading to OpenSSL in docker image (#22731)\n\n(cherry picked from commit 528c4b0fdb0207ac33d7715829761d0a83830544)",
+      "528c4b0fdb0207ac33d7715829761d0a83830544": "[fix][build] Fix CVE-2024-2511 by upgrading to OpenSSL in docker image (#22731)"
+    },
+    "CVE-2023-4043": {
+      "46d802232b9f5cb479b9dd92aafa18a54de3b438": "[fix][sec] Upgrade elasticsearch-java version to avoid CVE-2023-4043 (#22640)\n\n(cherry picked from commit 3ca4ddfc8fecab633b473e48e1a6f78adcfbd4df)",
+      "e5af8ef5ad34c94b7e18a311055fc25e766ea646": "[fix][sec] Upgrade elasticsearch-java version to avoid CVE-2023-4043 (#22640)",
+      "3ca4ddfc8fecab633b473e48e1a6f78adcfbd4df": "[fix][sec] Upgrade elasticsearch-java version to avoid CVE-2023-4043 (#22640)"
+    },
+    "CVE-2024-21634": {
+      "04c429c7cf7949d4c503b006e04c8858392508d3": "[fix][sec] Upgrade aws-sdk.version to avoid CVE-2024-21634 (#22633)\n\n(cherry picked from commit bc44280e88e98fdf0a815fa384a0f52508ca4b8e)",
+      "40eb39146513c0f9f74142b5c12e9c53e74f318d": "[fix][sec] Upgrade aws-sdk.version to avoid CVE-2024-21634 (#22633)",
+      "bc44280e88e98fdf0a815fa384a0f52508ca4b8e": "[fix][sec] Upgrade aws-sdk.version to avoid CVE-2024-21634 (#22633)"
+    },
+    "CVE-2023-4586": {
+      "412a02a4157a1ce0f16f8a2c6e119913352cba80": "[fix][sec] Upgrade Debezium oracle connector version to avoid CVE-2023-4586 (#22641)",
+      "4a5953640fd93f8ecac39c7713851ac4c1ab902b": "[fix][sec] Upgrade Debezium oracle connector version to avoid CVE-2023-4586 (#22641)"
+    },
+    "CVE-2023-38889": {
+      "31f0ae44b7f34eceb4f06b42601f8eaba3f0c16e": "[fix][build] Upgrade alluxio version to 2.9.3 to fix CVE-2023-38889 (#21715)\n\n(cherry picked from commit 33313c02089e97ee6989bcae4da73cb6434b8fd5)",
+      "33313c02089e97ee6989bcae4da73cb6434b8fd5": "[fix][build] Upgrade alluxio version to 2.9.3 to fix CVE-2023-38889 (#21715)"
+    },
+    "CVE-2022-21698": {
+      "0233b705916a6602f7ca41e1ce890994270ecb41": "[fix][sec] Upgrade prometheus client_golang to v1.12.2 to fix CVE-2022-21698 (#20579)\n\nSigned-off-by: ericsyh <ericshenyuhao@outlook.com>\n(cherry picked from commit a85e9df1e7c990aec10022815259d2644152677d)",
+      "a85e9df1e7c990aec10022815259d2644152677d": "[fix][sec] Upgrade prometheus client_golang to v1.12.2 to fix CVE-2022-21698 (#20579)\n\nSigned-off-by: ericsyh <ericshenyuhao@outlook.com>"
+    },
+    "CVE-2024-23944": {
+      "e6c7d73606ce64e0aac01135168651fab989b538": "[fix][sec] Upgrade Zookeeper to 3.9.2 to address CVE-2024-23944 (#22275)\n\n(cherry picked from commit 2ffcf62f628c6f41e78eeb2dd64999d558b6f617)",
+      "c1be06c3def43cd84f958ebbd9ff25267df7ed0f": "[fix][sec] Upgrade Zookeeper to 3.9.2 to address CVE-2024-23944 (#22275)\n\n(cherry picked from commit 2ffcf62f628c6f41e78eeb2dd64999d558b6f617)",
+      "78d0b2ed300fc5f9a17405941f91ab3619c5f551": "[fix][sec] Upgrade Zookeeper to 3.9.2 to address CVE-2024-23944 (#22275)\n\n(cherry picked from commit 2ffcf62f628c6f41e78eeb2dd64999d558b6f617)\n\n# Conflicts:\n#\tpom.xml",
+      "e3bbedf32797ec1ad8294face61d9a0eeffa6cba": "[fix][sec] Upgrade Zookeeper to 3.9.2 to address CVE-2024-23944 (#22275)\n\n(cherry picked from commit 2ffcf62f628c6f41e78eeb2dd64999d558b6f617)",
+      "81cbc1240a392495a862b23aa180b634a099a8f1": "[fix][sec] Upgrade Zookeeper to 3.9.2 to address CVE-2024-23944 (#22275)\n\n(cherry picked from commit 2ffcf62f628c6f41e78eeb2dd64999d558b6f617)",
+      "2ffcf62f628c6f41e78eeb2dd64999d558b6f617": "[fix][sec] Upgrade Zookeeper to 3.9.2 to address CVE-2024-23944 (#22275)"
+    },
+    "CVE-2024-22201": {
+      "cbf3e215440573e66ef21e0c470131e87791a798": "[fix][sec] Upgrade Jetty to 9.4.54.v20240208 to address CVE-2024-22201 (#22144)\n\n(cherry picked from commit e3a081e4c5ea380eb505751193bc71dd0ae39281)",
+      "e622dbc84e382536f4b1fc1700be31ef3eb91338": "[fix][sec] Upgrade Jetty to 9.4.54.v20240208 to address CVE-2024-22201 (#22144)\n\n(cherry picked from commit e3a081e4c5ea380eb505751193bc71dd0ae39281)",
+      "ec9f8abf9ed11093b4d7a03e0f0ac8bcea1db3d2": "[fix][sec] Upgrade Jetty to 9.4.54.v20240208 to address CVE-2024-22201 (#22144)\n\n(cherry picked from commit e3a081e4c5ea380eb505751193bc71dd0ae39281)",
+      "93a44574fca5e562173b2b0e7e60f568f7e5a934": "[fix][sec] Upgrade Jetty to 9.4.54.v20240208 to address CVE-2024-22201 (#22144)\n\n(cherry picked from commit e3a081e4c5ea380eb505751193bc71dd0ae39281)",
+      "fa813b58c683a7970f86db5db630b4f450bd50ed": "[fix][sec] Upgrade Jetty to 9.4.54.v20240208 to address CVE-2024-22201 (#22144)",
+      "e3a081e4c5ea380eb505751193bc71dd0ae39281": "[fix][sec] Upgrade Jetty to 9.4.54.v20240208 to address CVE-2024-22201 (#22144)"
+    },
+    "CVE-2023-44487": {
+      "cf7340512581a6b29b0536fa3b1d07e03e3a763b": "[fix][sec] Upgrade Jetty to 9.4.53 to address CVE-2023-44487 (#21395)\n\n(cherry picked from commit 22fd8c26c97238348b251980407ec3c338834f29)\n(cherry picked from commit a34bd59efce321dc32bd4d12843cb6e87889f539)",
+      "2b01a4904fca2bd7de8091dc6b0a42db9661320a": "[fix][sec] Upgrade Jetty to 9.4.53 to address CVE-2023-44487 (#21395)\n\n(cherry picked from commit 22fd8c26c97238348b251980407ec3c338834f29)\n(cherry picked from commit a34bd59efce321dc32bd4d12843cb6e87889f539)",
+      "036f7918a711cd676fa1573317d98fe9146a269f": "[fix][sec] Upgrade Netty to 4.1.100 to address CVE-2023-44487 (#21397)\n\n(cherry picked from commit aae6c716b6f7b32c96484b9004b62359e27f158e)\n(cherry picked from commit 2f00fb91d66b265efbaa002d3d995806c04f70ad)",
+      "2f00fb91d66b265efbaa002d3d995806c04f70ad": "[fix][sec] Upgrade Netty to 4.1.100 to address CVE-2023-44487 (#21397)\n\n(cherry picked from commit aae6c716b6f7b32c96484b9004b62359e27f158e)",
+      "6d8e17fd0fe38916c37b61518e0dc54e0edce911": "[fix][sec] Upgrade Netty to 4.1.100 to address CVE-2023-44487 (#21397)\n\n(cherry picked from commit aae6c716b6f7b32c96484b9004b62359e27f158e)\n\n# Conflicts:\n#\tbuildtools/pom.xml\n#\tdistribution/server/src/assemble/LICENSE.bin.txt\n#\tdistribution/shell/src/assemble/LICENSE.bin.txt\n#\tpom.xml\n#\tpulsar-sql/presto-distribution/LICENSE",
+      "a790d7ff9634c9d770e94b00e79188161c0f8fc3": "[fix][sec] Upgrade Jetty to 9.4.53 to address CVE-2023-44487 (#21395)\n\n(cherry picked from commit 22fd8c26c97238348b251980407ec3c338834f29)",
+      "b931ad23a2981a4c9ebb6ff2d6d4edd98928ac28": "[fix][sec] Upgrade Netty to 4.1.100 to address CVE-2023-44487 (#21397)\n\n(cherry picked from commit aae6c716b6f7b32c96484b9004b62359e27f158e)",
+      "a34bd59efce321dc32bd4d12843cb6e87889f539": "[fix][sec] Upgrade Jetty to 9.4.53 to address CVE-2023-44487 (#21395)\n\n(cherry picked from commit 22fd8c26c97238348b251980407ec3c338834f29)",
+      "aae6c716b6f7b32c96484b9004b62359e27f158e": "[fix][sec] Upgrade Netty to 4.1.100 to address CVE-2023-44487 (#21397)",
+      "22fd8c26c97238348b251980407ec3c338834f29": "[fix][sec] Upgrade Jetty to 9.4.53 to address CVE-2023-44487 (#21395)"
+    },
+    "CVE-2023-31582": {
+      "860f085ceaebe64fe5de3a6dfb90749709635207": "[improve][ci] Exclude jose4j to avoid CVE-2023-31582 (#21791)\n\n(cherry picked from commit d9c55b4f5c70fa13185fdf0290d4513b0380f216)",
+      "4ca7b7888a0d8b3e0e6258f98f8e58bcafc1920d": "[improve][ci] Exclude jose4j to avoid CVE-2023-31582 (#21791)\n\n(cherry picked from commit d9c55b4f5c70fa13185fdf0290d4513b0380f216)",
+      "d9c55b4f5c70fa13185fdf0290d4513b0380f216": "[improve][ci] Exclude jose4j to avoid CVE-2023-31582 (#21791)"
+    },
+    "CVE-2023-1428": {
+      "20656534e0d26e169acffe066bfcdbf3392dba5f": "[improve][ci] Upgrade pulsar-client-python to 3.4.0 to avoid CVE-2023-1428 (#21899)",
+      "65ce9d6ea3babf66880142c602cdb7fe59f61725": "[improve][ci] Upgrade pulsar-client-python to 3.4.0 to avoid CVE-2023-1428 (#21899)",
+      "61436ef2d55fba9e95543fbad500a19f1a88ee60": "[improve][ci] Upgrade pulsar-client-python to 3.4.0 to avoid CVE-2023-1428 (#21899)",
+      "24c927e10532bd0168a56745f69c70dad60029ac": "[improve][ci] Upgrade pulsar-client-python to 3.4.0 to avoid CVE-2023-1428 (#21899)"
+    },
+    "CVE-2023-6378": {
+      "95e1de78eb0243fa6dfbfb1bb6cb35742eb77cfa": "cve: exclude ch.qos.logback in canal.protocol\n* resolve CVE-2023-6378\n\n(cherry picked from commit 2e86e0710c61f23bf63a7a1720ceca556c04c62b)",
+      "2e86e0710c61f23bf63a7a1720ceca556c04c62b": "cve: exclude ch.qos.logback in canal.protocol\n* resolve CVE-2023-6378"
+    },
+    "CVE-2023-36480": {
+      "9a5c2f229e11ea1dd59737afc8b2308fac78f16d": "[improve][ci] Upgrade Aerospike java client to 4.5.0 to avoid CVE-2023-36480 (#21792)"
+    },
+    "CVE-2023-33201": {
+      "0f7434580f285d027a625d9de7ca41e3e74a6365": "[fix][sec] Upgrade Bouncycastle to 1.75 to address CVE-2023-33201 (#20631)",
+      "46b6dcd9571262f72f963a755c8a51fb4f66c81e": "[fix][sec] Upgrade Bouncycastle to 1.75 to address CVE-2023-33201 (#20631)"
+    },
+    "CVE-2023-46120": {
+      "0344814be62d8077444b841f3faaf375183a6622": "[fix][sec] Upgrade rabbitmq client to address CVE-2023-46120 (#21619)\n\nCo-authored-by: Jiwe Guo <technoboy@apache.org>\n(cherry picked from commit 697c1680b9930005a80e5a58a278e8da74f6383e)",
+      "e6bebabe56f63d544635fd02ecd870e58957b545": "[fix][sec] Upgrade rabbitmq client to address CVE-2023-46120 (#21619)\n\nCo-authored-by: Jiwe Guo <technoboy@apache.org>",
+      "697c1680b9930005a80e5a58a278e8da74f6383e": "[fix][sec] Upgrade rabbitmq client to address CVE-2023-46120 (#21619)\n\nCo-authored-by: Jiwe Guo <technoboy@apache.org>"
+    },
+    "CVE-2023-44981": {
+      "ce322f078147a2eaf0133940595cfa5ff01eb515": "[fix][sec] Upgrade Zookeeper to 3.8.3 to address CVE-2023-44981 (#21398)\n\n(cherry picked from commit e5120ec68907525177f5add5c95b022f3106da1a)",
+      "6d4a883e0f350b931d40435f95cf8aafb09a6317": "[fix][sec] Upgrade Zookeeper to 3.8.3 to address CVE-2023-44981 (#21398)\n\n(cherry picked from commit e5120ec68907525177f5add5c95b022f3106da1a)",
+      "88fa4578b4914655c118d5282dd9d7edfbbaf9eb": "[fix][sec] Upgrade Zookeeper to 3.8.3 to address CVE-2023-44981 (#21398)\n\n(cherry picked from commit e5120ec68907525177f5add5c95b022f3106da1a)",
+      "e5120ec68907525177f5add5c95b022f3106da1a": "[fix][sec] Upgrade Zookeeper to 3.8.3 to address CVE-2023-44981 (#21398)"
+    },
+    "CVE-2023-2976": {
+      "086c59ac0b5254bb510da6faefeab07d1da4ca1d": "[fix][sec] Upgrade Guava to 32.1.1 to address CVE-2023-2976 (#20699)",
+      "514fa603788a9194e375915b8773e67268c5da78": "[fix][sec] Suppress addressed CVE-2023-2976 in clickhouse-jdbc-0.4.6-all and canal.client-1.1.5 (#20792)",
+      "e789a71f010ab1e3f0863eb2180ebb4ad61e912a": "[fix][sec] Upgrade Guava to 32.1.1 to address CVE-2023-2976 (#20699)",
+      "1a4a4031512fd57b10dd6046fcea3c3e18d23167": "[fix][sec] Upgrade Guava to 32.1.1 to address CVE-2023-2976 (#20699)",
+      "1cc99b361ffefbd88f5ce11bb3f5b58d394fa212": "[fix][sec] Upgrade Guava to 32.0.0 to address CVE-2023-2976 (#20459)\n\n(cherry picked from commit 57f9467a8dbcd546ee9127d8dfbd000b46333f23)\n\n# Conflicts:\n#\tpom.xml\n#\tpulsar-sql/presto-distribution/LICENSE",
+      "63210385cc8eeba424836136e02ccbaff6cdea34": "[fix][sec] Upgrade Guava to 32.0.0 to address CVE-2023-2976 (#20459)\n\n(cherry picked from commit 57f9467a8dbcd546ee9127d8dfbd000b46333f23)\n\n# Conflicts:\n#\tdistribution/server/src/assemble/LICENSE.bin.txt\n#\tpom.xml\n#\tpulsar-sql/presto-distribution/LICENSE",
+      "212a4828ced2d4ab6d8edf8219ec60c82810a6d2": "[fix][sec] Upgrade Guava to 32.0.0 to address CVE-2023-2976 (#20459)\n\n(cherry picked from commit 57f9467a8dbcd546ee9127d8dfbd000b46333f23)\n\n# Conflicts:\n#\tpom.xml\n#\tpulsar-sql/presto-distribution/LICENSE",
+      "57f9467a8dbcd546ee9127d8dfbd000b46333f23": "[fix][sec] Upgrade Guava to 32.0.0 to address CVE-2023-2976 (#20459)"
+    },
+    "CVE-2023-34462": {
+      "17acf903ce5001793f47567f4a90a841e1182288": "[fix][sec] Upgrade Netty to 4.1.94.Final to address CVE-2023-34462 (#20632)\n\n(cherry picked from commit ed9a81e895f9ba728ecdb7dc2dbc6098bf3f5471)",
+      "ed9a81e895f9ba728ecdb7dc2dbc6098bf3f5471": "[fix][sec] Upgrade Netty to 4.1.94.Final to address CVE-2023-34462 (#20632)"
+    },
+    "CVE-2017-14063": {
+      "13ed7c256135928d3e68511be67c70b722e6ef04": "[fix][misc] Use ubuntu 22.04 for Pulsar images (#20475)\n\nUpgrade Ubuntu to 22.04 to fix some CVEs\n\n- CVE-2017-14063: https://nvd.nist.gov/vuln/detail/cve-2017-14063\n- CVE-2021-27291: https://nvd.nist.gov/vuln/detail/CVE-2021-27291\n- CVE-2021-20270: https://nvd.nist.gov/vuln/detail/CVE-2021-20270",
+      "b19ab1fad66b01b9d6fdee720d504a409381c448": "[fix][misc] Use ubuntu 22.04 for Pulsar images (#20475)\n\n### Motivation\r\n\r\nUpgrade Ubuntu to 22.04 to fix some CVEs\r\n\r\n- CVE-2017-14063: https://nvd.nist.gov/vuln/detail/cve-2017-14063\r\n- CVE-2021-27291: https://nvd.nist.gov/vuln/detail/CVE-2021-27291\r\n- CVE-2021-20270: https://nvd.nist.gov/vuln/detail/CVE-2021-20270",
+      "12e6dd558b6ca1a22c228c8567f466d3d6aef024": "[fix][misc] Use ubuntu 22.04 for Pulsar images (#20475)\n\n### Motivation\r\n\r\nUpgrade Ubuntu to 22.04 to fix some CVEs\r\n\r\n- CVE-2017-14063: https://nvd.nist.gov/vuln/detail/cve-2017-14063\r\n- CVE-2021-27291: https://nvd.nist.gov/vuln/detail/CVE-2021-27291\r\n- CVE-2021-20270: https://nvd.nist.gov/vuln/detail/CVE-2021-20270"
+    },
+    "CVE-2021-27291": {
+      "13ed7c256135928d3e68511be67c70b722e6ef04": "[fix][misc] Use ubuntu 22.04 for Pulsar images (#20475)\n\nUpgrade Ubuntu to 22.04 to fix some CVEs\n\n- CVE-2017-14063: https://nvd.nist.gov/vuln/detail/cve-2017-14063\n- CVE-2021-27291: https://nvd.nist.gov/vuln/detail/CVE-2021-27291\n- CVE-2021-20270: https://nvd.nist.gov/vuln/detail/CVE-2021-20270",
+      "b19ab1fad66b01b9d6fdee720d504a409381c448": "[fix][misc] Use ubuntu 22.04 for Pulsar images (#20475)\n\n### Motivation\r\n\r\nUpgrade Ubuntu to 22.04 to fix some CVEs\r\n\r\n- CVE-2017-14063: https://nvd.nist.gov/vuln/detail/cve-2017-14063\r\n- CVE-2021-27291: https://nvd.nist.gov/vuln/detail/CVE-2021-27291\r\n- CVE-2021-20270: https://nvd.nist.gov/vuln/detail/CVE-2021-20270",
+      "12e6dd558b6ca1a22c228c8567f466d3d6aef024": "[fix][misc] Use ubuntu 22.04 for Pulsar images (#20475)\n\n### Motivation\r\n\r\nUpgrade Ubuntu to 22.04 to fix some CVEs\r\n\r\n- CVE-2017-14063: https://nvd.nist.gov/vuln/detail/cve-2017-14063\r\n- CVE-2021-27291: https://nvd.nist.gov/vuln/detail/CVE-2021-27291\r\n- CVE-2021-20270: https://nvd.nist.gov/vuln/detail/CVE-2021-20270"
+    },
+    "CVE-2021-20270": {
+      "13ed7c256135928d3e68511be67c70b722e6ef04": "[fix][misc] Use ubuntu 22.04 for Pulsar images (#20475)\n\nUpgrade Ubuntu to 22.04 to fix some CVEs\n\n- CVE-2017-14063: https://nvd.nist.gov/vuln/detail/cve-2017-14063\n- CVE-2021-27291: https://nvd.nist.gov/vuln/detail/CVE-2021-27291\n- CVE-2021-20270: https://nvd.nist.gov/vuln/detail/CVE-2021-20270",
+      "b19ab1fad66b01b9d6fdee720d504a409381c448": "[fix][misc] Use ubuntu 22.04 for Pulsar images (#20475)\n\n### Motivation\r\n\r\nUpgrade Ubuntu to 22.04 to fix some CVEs\r\n\r\n- CVE-2017-14063: https://nvd.nist.gov/vuln/detail/cve-2017-14063\r\n- CVE-2021-27291: https://nvd.nist.gov/vuln/detail/CVE-2021-27291\r\n- CVE-2021-20270: https://nvd.nist.gov/vuln/detail/CVE-2021-20270",
+      "12e6dd558b6ca1a22c228c8567f466d3d6aef024": "[fix][misc] Use ubuntu 22.04 for Pulsar images (#20475)\n\n### Motivation\r\n\r\nUpgrade Ubuntu to 22.04 to fix some CVEs\r\n\r\n- CVE-2017-14063: https://nvd.nist.gov/vuln/detail/cve-2017-14063\r\n- CVE-2021-27291: https://nvd.nist.gov/vuln/detail/CVE-2021-27291\r\n- CVE-2021-20270: https://nvd.nist.gov/vuln/detail/CVE-2021-20270"
+    },
+    "CVE-2023-35116": {
+      "505b449b2b750a841d1b2ad8e5c566ce4b5829ed": "[fix][sec] Suppress false positive CVE-2023-35116 in jackson-databind (#20603)"
+    },
+    "CVE-2023-32697": {
+      "f2d780881e2341d5872258eb6b62079635e5417e": "[fix][sec] Upgrade sqlite-jdbc to resolve CVE-2023-32697 (#20411)\n\n(cherry picked from commit a953027aad38c9f54e952133949280ec2f4c04e8)",
+      "6a6948cd24b8a025b65f8045d4a2c0be41dbea88": "[fix][sec] Upgrade sqlite-jdbc to resolve CVE-2023-32697 (#20411)\n\n(cherry picked from commit a953027aad38c9f54e952133949280ec2f4c04e8)",
+      "bc45b852acd0b6518856a4d7d81bc2283c4e58d5": "[fix][sec] Upgrade sqlite-jdbc to resolve CVE-2023-32697 (#20411)\n\n(cherry picked from commit a953027aad38c9f54e952133949280ec2f4c04e8)",
+      "a953027aad38c9f54e952133949280ec2f4c04e8": "[fix][sec] Upgrade sqlite-jdbc to resolve CVE-2023-32697 (#20411)"
+    },
+    "CVE-2023-20863": {
+      "88e05b5b9ee65d245276dfdca87e9200206fede6": "[fix][sec] spring.version=5.3.27 to fix CVE-2023-20863 (#20124)\n\nSigned-off-by: tison <wander4096@gmail.com>\n(cherry picked from commit 866d405726bb6527db954201f2260620181747dc)",
+      "866d405726bb6527db954201f2260620181747dc": "[fix][sec] spring.version=5.3.27 to fix CVE-2023-20863 (#20124)\n\nSigned-off-by: tison <wander4096@gmail.com>"
+    },
+    "CVE-2022-1471": {
+      "7bd9998c9974ff17b1fbd5b3db7cf5bd7d3bc518": "[improve][build] Revert \"Upgrade jackson version to 2.15.0 for CVE-2022-1471 (#20177)\" (#20182)",
+      "b062d8ceb4042a5f0203376f6cfd01706564d9ea": "Revert \"[branch-2.10][improve][build] Upgrade jackson version to 2.15.0 for CVE-2022-1471 (#20181)\"\n\nThis reverts commit d3766c8105507570866613815e61e829ddcbd899.",
+      "d3766c8105507570866613815e61e829ddcbd899": "[branch-2.10][improve][build] Upgrade jackson version to 2.15.0 for CVE-2022-1471 (#20181)",
+      "fd60e9e8380af1c7680999cbb5bff8160ba3571a": "[improve][build] Upgrade jackson version to 2.15.0 for CVE-2022-1471 (#20177)",
+      "73462d65a2657424363f7737bae50e4b7da9bc6e": "[branch-2.10][fix][build] Upgrade swagger version to fix CVE-2022-1471 (#20172)"
+    },
+    "CVE-2020-8908": {
+      "dfe87a462ff5840693ab8d70126745f21f48e719": "[fix][build] Suppress Guava CVE-2020-8908 in OWASP dependency check (#20005)\n\n(cherry picked from commit d0916754ddeb1a4315e4429601941fdc6a210f30)",
+      "d0916754ddeb1a4315e4429601941fdc6a210f30": "[fix][build] Suppress Guava CVE-2020-8908 in OWASP dependency check (#20005)",
+      "86fd8e789bfa44f424730fa3d62891b124c08e52": "Getting rid of CVEs reported in testmocks and buildtools (#13895)\n\nCVE-2020-1945\r\nCVE-2021-36373\r\nCVE-2021-36374\r\nCVE-2020-8908\r\nCVE-2017-18640\r\n\r\nbuildtools sets dependency version/properties independently of the root\r\npom.",
+      "808333360cf8ed86c71f3f85a404ddb27008b198": "Updating dependencies (guava and what brought in older guava) to get rid of the guava-related CVE-2018-10237 and CVE-2020-8908 (#13716)\n\n* Updating dependencies (guava and what brought in older guava) to get rid of the guava-related CVE-2018-10237 and CVE-2020-8908\r\n\r\n* testng 7.5 isn't compatible with current powermock https://github.com/powermock/powermock/issues/1118\r\n\r\n* Upgraded canal to 1.1.5, excluded logback, and upgraded spring that canal uses to get rid of multiple CVEs",
+      "5b1c0b74ac01fc6d286b0b0a322634edd5c749bd": "Update maven artifact version (#8966)\n\n### Motivation\r\n\r\nCurrent version of libraries are out of date and have known CVE's\r\n\r\n* CVE-2020-27218\r\n* CVE-2020-8908\r\n\r\n### Modification\r\n\r\n    Update maven artifact versions\r\n    \r\n    * Upgrade Jetty to 9.4.35.v20201120\r\n    * Upgade Guava to 30.1-jre\r\n    * Upgrade AssertJ to 3.18.1\r\n    * Upgrade Lombok to 1.18.16\r\n    * Upgrade Awaitility to 4.0.3\r\n    * Remove Arquillian references\n\n(cherry picked from commit 5ee37b7da169bf01c9aaf7849d5ae0de4d1b16d8)",
+      "5ee37b7da169bf01c9aaf7849d5ae0de4d1b16d8": "Update maven artifact version (#8966)\n\n### Motivation\r\n\r\nCurrent version of libraries are out of date and have known CVE's\r\n\r\n* CVE-2020-27218\r\n* CVE-2020-8908\r\n\r\n### Modification\r\n\r\n    Update maven artifact versions\r\n    \r\n    * Upgrade Jetty to 9.4.35.v20201120\r\n    * Upgade Guava to 30.1-jre\r\n    * Upgrade AssertJ to 3.18.1\r\n    * Upgrade Lombok to 1.18.16\r\n    * Upgrade Awaitility to 4.0.3\r\n    * Remove Arquillian references"
+    },
+    "CVE-2022-3143": {
+      "49b678b765a525b4aeb41360931c4236052ef418": "[improve] Upgrade wildfly-eytron (used by debezium) to fix CVE-2022-3143 (#19333)\n\n(cherry picked from commit 71dafe89755272c1003daaec0457e79a22d663a1)",
+      "2c591ae2d6371e466ea424058edcb6db8c683168": "[improve] Upgrade wildfly-eytron (used by debezium) to fix CVE-2022-3143 (#19333)\n\n(cherry picked from commit 71dafe89755272c1003daaec0457e79a22d663a1)",
+      "71dafe89755272c1003daaec0457e79a22d663a1": "[improve] Upgrade wildfly-eytron (used by debezium) to fix CVE-2022-3143 (#19333)"
+    },
+    "CVE-2022-36944": {
+      "be3bc7ee96148333ab3c51f821a2417fe0115b51": "[fix][sec] Upgrade scala-library to get rid of CVE-2022-36944 (#18021)\n\n(cherry picked from commit 3011946a5c3b64ed7c08b6bfb1f6492f8aaaca9c)",
+      "d8fa685a83f38022de907104d40b0e9e78108f16": "[fix][sec] Upgrade scala-library to get rid of CVE-2022-36944 (#18021)\n\n(cherry picked from commit 3011946a5c3b64ed7c08b6bfb1f6492f8aaaca9c)",
+      "e62efbd64b23161aedece75efcfd1a361da020c0": "[fix][sec] Upgrade scala-library to get rid of CVE-2022-36944 (#18021)\n\n(cherry picked from commit 3011946a5c3b64ed7c08b6bfb1f6492f8aaaca9c)",
+      "3011946a5c3b64ed7c08b6bfb1f6492f8aaaca9c": "[fix][sec] Upgrade scala-library to get rid of CVE-2022-36944 (#18021)"
+    },
+    "CVE-2023-25194": {
+      "ca0b25ecba50dd86de28ad221d1c29ec6419a973": "[fix][sec] Upgrade kafka client to 3.4.0 to fix CVE-2023-25194 (#19527)"
+    },
+    "CVE-2017-1000487": {
+      "fb5477b7d8b00bba6715ac9ad8cdd059baa6c92e": "[fix][security] Fix secure problem CVE-2017-1000487 (#19479)"
+    },
+    "CVE-2022-38752": {
+      "0e93e9871050c1a4fca6ee95a94eaa3003c4208c": "[fix][sec] Bump snakeyaml to 1.32 for CVE-2022-38752 (#17779)\n\n(cherry picked from commit ec8b58675a0a2a924b5541e49e878d8361c4742c)",
+      "757053d593971fe8ca542d9fc714a6067dfe091a": "[fix][sec] [branch-2.9] Bump snakeyaml to 1.32 for CVE-2022-38752 (#18467)\n\nSigned-off-by: tison <wander4096@gmail.com>\n(cherry picked from commit 1b41225e6cc69d3eae260d4aa137823779331a71)",
+      "1b41225e6cc69d3eae260d4aa137823779331a71": "[fix][sec] [branch-2.9] Bump snakeyaml to 1.32 for CVE-2022-38752 (#18467)\n\nSigned-off-by: tison <wander4096@gmail.com>",
+      "f4e2b3f7ebd9b7226ae369e88b6be1dd99fc069b": "[fix][sec] Bump snakeyaml to 1.32 for CVE-2022-38752 (#17779)\n\n(cherry picked from commit ec8b58675a0a2a924b5541e49e878d8361c4742c)",
+      "ec8b58675a0a2a924b5541e49e878d8361c4742c": "[fix][sec] Bump snakeyaml to 1.32 for CVE-2022-38752 (#17779)"
+    },
+    "CVE-2022-42003": {
+      "2551c926c48a8cc470c29008c5e7f59ed8318ea3": "[fix][sec] Upgrade jackson-databind to 2.13.4.2 to get rid of CVE-2022-42003 (#18394)\n\n* [fix][sec] Upgrade jackson-databind to 2.13.4.2 to get rid of CVE-2022-42003\n\n* Fix IO jackson dependencies\n\n* Fix IO http\n\n* revert unrelated change\n\n(cherry picked from commit da64346de46638aadcaec43fe530dfe9e8a97141)",
+      "bd2875667bda8c4c81c349f058519792a51abe98": "[fix][sec] Upgrade jackson-databind to 2.13.4.2 to get rid of CVE-2022-42003 (#18394)\n\n* [fix][sec] Upgrade jackson-databind to 2.13.4.2 to get rid of CVE-2022-42003\r\n\r\n* Fix IO jackson dependencies\r\n\r\n* Fix IO http\r\n\r\n* revert unrelated change",
+      "e12642afb8560ffcdfe2ccba942ea87730c18232": "[fix][sec] Upgrade jackson-databind to 2.13.4.2 to get rid of CVE-2022-42003 (#18394)\n\n* [fix][sec] Upgrade jackson-databind to 2.13.4.2 to get rid of CVE-2022-42003\n\n* Fix IO jackson dependencies\n\n* Fix IO http\n\n* revert unrelated change\n\n(cherry picked from commit da64346de46638aadcaec43fe530dfe9e8a97141)\n(cherry picked from commit 5da0d4b0b07826310934d2ba845165e3c899bda0)",
+      "790dd9f0c525467049202ed867634f2b12e58d47": "[fix][sec] Upgrade jackson-databind to 2.13.4.2 to get rid of CVE-2022-42003 (#18394)\n\n* [fix][sec] Upgrade jackson-databind to 2.13.4.2 to get rid of CVE-2022-42003\n\n* Fix IO jackson dependencies\n\n* Fix IO http\n\n* revert unrelated change\n\n(cherry picked from commit da64346de46638aadcaec43fe530dfe9e8a97141)\n(cherry picked from commit 5da0d4b0b07826310934d2ba845165e3c899bda0)",
+      "1850bc976c65201ebf0bf5399a2a9e8a319228e4": "[fix][sec] Upgrade jackson-databind to 2.13.4.2 to get rid of CVE-2022-42003 (#18394)\n\n* [fix][sec] Upgrade jackson-databind to 2.13.4.2 to get rid of CVE-2022-42003\n\n* Fix IO jackson dependencies\n\n* Fix IO http\n\n* revert unrelated change\n\n(cherry picked from commit da64346de46638aadcaec43fe530dfe9e8a97141)",
+      "da64346de46638aadcaec43fe530dfe9e8a97141": "[fix][sec] Upgrade jackson-databind to 2.13.4.2 to get rid of CVE-2022-42003 (#18394)\n\n* [fix][sec] Upgrade jackson-databind to 2.13.4.2 to get rid of CVE-2022-42003\r\n\r\n* Fix IO jackson dependencies\r\n\r\n* Fix IO http\r\n\r\n* revert unrelated change"
+    },
+    "CVE-2020-27218": {
+      "94de85fc6d84a3210ccb5456017500e044fce090": "[fix][sec] Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726) (#18304)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104\r\n\r\n(cherry picked from commit 3acdbfe4eac79040be140b423342c28a07dc0327)",
+      "7751597b1ba763d46b4678cb10e78c1187e46476": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "9909ec859a5668005591a105565b4abde87b3341": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "76fc2fbc9801da5232cd4ba32d25298b74d460db": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\r\nCVE-2020-27216\r\nCVE-2020-27218\r\nCVE-2020-27223\r\nCVE-2021-28165\r\nCVE-2021-28169\r\nCVE-2021-34428\r\nCVE-2021-27905\r\nCVE-2021-29262\r\nCVE-2021-29943\r\nCVE-2021-44548",
+      "3acdbfe4eac79040be140b423342c28a07dc0327": "Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104",
+      "5b1c0b74ac01fc6d286b0b0a322634edd5c749bd": "Update maven artifact version (#8966)\n\n### Motivation\r\n\r\nCurrent version of libraries are out of date and have known CVE's\r\n\r\n* CVE-2020-27218\r\n* CVE-2020-8908\r\n\r\n### Modification\r\n\r\n    Update maven artifact versions\r\n    \r\n    * Upgrade Jetty to 9.4.35.v20201120\r\n    * Upgade Guava to 30.1-jre\r\n    * Upgrade AssertJ to 3.18.1\r\n    * Upgrade Lombok to 1.18.16\r\n    * Upgrade Awaitility to 4.0.3\r\n    * Remove Arquillian references\n\n(cherry picked from commit 5ee37b7da169bf01c9aaf7849d5ae0de4d1b16d8)",
+      "5ee37b7da169bf01c9aaf7849d5ae0de4d1b16d8": "Update maven artifact version (#8966)\n\n### Motivation\r\n\r\nCurrent version of libraries are out of date and have known CVE's\r\n\r\n* CVE-2020-27218\r\n* CVE-2020-8908\r\n\r\n### Modification\r\n\r\n    Update maven artifact versions\r\n    \r\n    * Upgrade Jetty to 9.4.35.v20201120\r\n    * Upgade Guava to 30.1-jre\r\n    * Upgrade AssertJ to 3.18.1\r\n    * Upgrade Lombok to 1.18.16\r\n    * Upgrade Awaitility to 4.0.3\r\n    * Remove Arquillian references"
+    },
+    "CVE-2021-38153": {
+      "94de85fc6d84a3210ccb5456017500e044fce090": "[fix][sec] Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726) (#18304)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104\r\n\r\n(cherry picked from commit 3acdbfe4eac79040be140b423342c28a07dc0327)",
+      "3acdbfe4eac79040be140b423342c28a07dc0327": "Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104"
+    },
+    "CVE-2021-44228": {
+      "94de85fc6d84a3210ccb5456017500e044fce090": "[fix][sec] Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726) (#18304)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104\r\n\r\n(cherry picked from commit 3acdbfe4eac79040be140b423342c28a07dc0327)",
+      "3acdbfe4eac79040be140b423342c28a07dc0327": "Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104"
+    },
+    "CVE-2021-44832": {
+      "94de85fc6d84a3210ccb5456017500e044fce090": "[fix][sec] Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726) (#18304)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104\r\n\r\n(cherry picked from commit 3acdbfe4eac79040be140b423342c28a07dc0327)",
+      "3acdbfe4eac79040be140b423342c28a07dc0327": "Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104",
+      "0e81192716eb75054346f08019c463755a85188f": "[Security] Upgrade Log4j to 2.17.1 (#13552)\n\n- see https://logging.apache.org/log4j/2.x/security.html\n- mitigates CVE-2021-44832\n\n(cherry picked from commit 978bb7c1998acef749912075ea8f4e1e1c148e2d)",
+      "36443112c86afc296780c180154f922d611ebf25": "[Security] Upgrade Log4j to 2.17.1 (#13552)\n\n- see https://logging.apache.org/log4j/2.x/security.html\n- mitigates CVE-2021-44832\n\n(cherry picked from commit 978bb7c1998acef749912075ea8f4e1e1c148e2d)",
+      "0e6bf549f0438b01633232b36b08c886b42b2b3b": "[Security] Upgrade Log4j to 2.17.1 (#13552)\n\n- see https://logging.apache.org/log4j/2.x/security.html\n- mitigates CVE-2021-44832\n\n(cherry picked from commit 978bb7c1998acef749912075ea8f4e1e1c148e2d)\n(cherry picked from commit d75dc86f1a78d7624d15ed73f5f2e3c717d29683)",
+      "978bb7c1998acef749912075ea8f4e1e1c148e2d": "[Security] Upgrade Log4j to 2.17.1 (#13552)\n\n- see https://logging.apache.org/log4j/2.x/security.html\r\n- mitigates CVE-2021-44832"
+    },
+    "CVE-2021-45046": {
+      "94de85fc6d84a3210ccb5456017500e044fce090": "[fix][sec] Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726) (#18304)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104\r\n\r\n(cherry picked from commit 3acdbfe4eac79040be140b423342c28a07dc0327)",
+      "3acdbfe4eac79040be140b423342c28a07dc0327": "Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104"
+    },
+    "CVE-2021-45105": {
+      "94de85fc6d84a3210ccb5456017500e044fce090": "[fix][sec] Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726) (#18304)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104\r\n\r\n(cherry picked from commit 3acdbfe4eac79040be140b423342c28a07dc0327)",
+      "3acdbfe4eac79040be140b423342c28a07dc0327": "Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104",
+      "2774b464f3b7e1ccfdc84d6d390efe7260cbb7fa": "[Security] Upgrade to Log4J 2.17.0 to mitigate CVE-2021-45105 (#13392)\n\n- more details at https://logging.apache.org/log4j/2.x/security.html\n\n(cherry picked from commit 0fa626d6b74734f4c77ec49dcf33d7ab4f0c80c1)",
+      "4b9cadcd57e41bc8eb95cc9b9917f938365b1cca": "[Security] Upgrade to Log4J 2.17.0 to mitigate CVE-2021-45105 (#13392)\n\n- more details at https://logging.apache.org/log4j/2.x/security.html\n\n(cherry picked from commit 0fa626d6b74734f4c77ec49dcf33d7ab4f0c80c1)",
+      "7ea0473fc0b9a3d67d5431669d2996f01a385791": "[Security] Upgrade to Log4J 2.17.0 to mitigate CVE-2021-45105 (#13392)\n\n- more details at https://logging.apache.org/log4j/2.x/security.html\n\n(cherry picked from commit 0fa626d6b74734f4c77ec49dcf33d7ab4f0c80c1)",
+      "0fa626d6b74734f4c77ec49dcf33d7ab4f0c80c1": "[Security] Upgrade to Log4J 2.17.0 to mitigate CVE-2021-45105 (#13392)\n\n- more details at https://logging.apache.org/log4j/2.x/security.html"
+    },
+    "CVE-2020-9488": {
+      "94de85fc6d84a3210ccb5456017500e044fce090": "[fix][sec] Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726) (#18304)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104\r\n\r\n(cherry picked from commit 3acdbfe4eac79040be140b423342c28a07dc0327)",
+      "3acdbfe4eac79040be140b423342c28a07dc0327": "Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104"
+    },
+    "CVE-2019-17571": {
+      "94de85fc6d84a3210ccb5456017500e044fce090": "[fix][sec] Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726) (#18304)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104\r\n\r\n(cherry picked from commit 3acdbfe4eac79040be140b423342c28a07dc0327)",
+      "3acdbfe4eac79040be140b423342c28a07dc0327": "Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104"
+    },
+    "CVE-2021-4104": {
+      "94de85fc6d84a3210ccb5456017500e044fce090": "[fix][sec] Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726) (#18304)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104\r\n\r\n(cherry picked from commit 3acdbfe4eac79040be140b423342c28a07dc0327)",
+      "3acdbfe4eac79040be140b423342c28a07dc0327": "Updating dependencies to get rid of CVEs brought in with kafka and log4j-1.2 libs (#13726)\n\nCVE-2020-27218,\r\nCVE-2021-38153,\r\nCVE-2021-44228,\r\nCVE-2021-44832,\r\nCVE-2021-45046,\r\nCVE-2021-45105,\r\nCVE-2020-9488,\r\nCVE-2019-17571,\r\nCVE-2021-4104"
+    },
+    "CVE-2022-40149": {
+      "469d44daaa69edf2c60cca71c22206a5c7e7884f": "[fix][sec] File tiered storage: upgrade jettison to get rid of CVE-2022-40149 (#18105)",
+      "36a9d1324764b50dbbc14aaf1be27a732d9f548f": "Revert \"[fix][sec] File tiered storage: upgrade jettison to get rid of CVE-2022-40149 (#18022)\"\n\nThis reverts commit b53bc51027b192ae42b68308f8b03950e2ec2a6d.",
+      "b53bc51027b192ae42b68308f8b03950e2ec2a6d": "[fix][sec] File tiered storage: upgrade jettison to get rid of CVE-2022-40149 (#18022)\n\n* [fix][sec] File tiered storage: upgrade jettison to get rid of CVE-2022-40149\n\n* fix\n\n(cherry picked from commit 9acafc9b9084cbb127ce5669236bdd5dd8e85a0f)",
+      "b97f6f66d0b0d74f0617046dc5869c7ae5bf86a3": "[fix][sec] File tiered storage: upgrade jettison to get rid of CVE-2022-40149 (#18022)\n\n* [fix][sec] File tiered storage: upgrade jettison to get rid of CVE-2022-40149\n\n* fix\n\n(cherry picked from commit 9acafc9b9084cbb127ce5669236bdd5dd8e85a0f)",
+      "c46d5ddc3aeee70f5800c426dd85270ed07b1af9": "[fix][sec] File tiered storage: upgrade jettison to get rid of CVE-2022-40149 (#18022)\n\n* [fix][sec] File tiered storage: upgrade jettison to get rid of CVE-2022-40149\n\n* fix\n\n(cherry picked from commit 9acafc9b9084cbb127ce5669236bdd5dd8e85a0f)",
+      "9acafc9b9084cbb127ce5669236bdd5dd8e85a0f": "[fix][sec] File tiered storage: upgrade jettison to get rid of CVE-2022-40149 (#18022)\n\n* [fix][sec] File tiered storage: upgrade jettison to get rid of CVE-2022-40149\r\n\r\n* fix"
+    },
+    "CVE-2022-3171": {
+      "c538fdae0ddd54a09878176a5789f88e25350a1d": "[fix][sec] Upgrade protobuf to 3.19.6 to get rid of CVE-2022-3171 (#18086)\n\n(cherry picked from commit 3da7b9f8bfb55bf4698dc68a8b05b4daa3277faf)",
+      "84644ec85f05c2ee37275962d60b3157d848f2f7": "[fix][sec] Upgrade protobuf to 3.19.6 to get rid of CVE-2022-3171 (#18086)\n\n(cherry picked from commit 3da7b9f8bfb55bf4698dc68a8b05b4daa3277faf)",
+      "81fbef5a493fa761087a7ce0bd8fed5c685506bc": "[fix][sec] Upgrade protobuf to 3.19.6 to get rid of CVE-2022-3171 (#18086)\n\n(cherry picked from commit 3da7b9f8bfb55bf4698dc68a8b05b4daa3277faf)",
+      "3da7b9f8bfb55bf4698dc68a8b05b4daa3277faf": "[fix][sec] Upgrade protobuf to 3.19.6 to get rid of CVE-2022-3171 (#18086)"
+    },
+    "CVE-2022-24280": {
+      "1475505565bf1f8e60a4e7372f55796dabb0ec17": "[doc][proxy] Fix typo in \"Document how to mitigate CVE-2022-24280\" (#17830)",
+      "1c63ee37cfe55e3aa9b18f64ad60bdc8ecb2b5fb": "[doc][proxy] Fix typo in \"Document how to mitigate CVE-2022-24280\"",
+      "7fa4ceff41e3ffaffb38b3523c6180d0274e58c0": "[doc][proxy] Fix typo in \"Document how to mitigate CVE-2022-24280\"",
+      "b29b1bc8b4653f4f3050833adbb2caf0ab435643": "[doc][proxy] Document how to mitigate CVE-2022-24280 (#17825)\n\n(cherry picked from commit 0c0984a81488f6da0cf46576b50345bb08e78be7)\n(cherry picked from commit 5ffd0b9da7b64a8157222243573c93a2b9d4195c)\n(cherry picked from commit 4d2a279dc9429b14c08776f438c7f7564c8182e2)",
+      "4d2a279dc9429b14c08776f438c7f7564c8182e2": "[doc][proxy] Document how to mitigate CVE-2022-24280 (#17825)\n\n(cherry picked from commit 0c0984a81488f6da0cf46576b50345bb08e78be7)\n(cherry picked from commit 5ffd0b9da7b64a8157222243573c93a2b9d4195c)",
+      "29420622eb78fec2af9f5e83f5fedacd3b12f9b2": "[doc][proxy] Document how to mitigate CVE-2022-24280 (#17825)\n\n(cherry picked from commit 0c0984a81488f6da0cf46576b50345bb08e78be7)\n(cherry picked from commit 5ffd0b9da7b64a8157222243573c93a2b9d4195c)",
+      "5ffd0b9da7b64a8157222243573c93a2b9d4195c": "[doc][proxy] Document how to mitigate CVE-2022-24280 (#17825)\n\n(cherry picked from commit 0c0984a81488f6da0cf46576b50345bb08e78be7)",
+      "a5cabbcfeb766516cf76e77db8e71ba1b1aa6cc9": "[doc][proxy] Document how to mitigate CVE-2022-24280 (#17825)\n\n(cherry picked from commit 0c0984a81488f6da0cf46576b50345bb08e78be7)",
+      "0c0984a81488f6da0cf46576b50345bb08e78be7": "[doc][proxy] Document how to mitigate CVE-2022-24280 (#17825)"
+    },
+    "CVE-2021-3563": {
+      "d2764d6e52fad4236917cf256377eba962961921": "[improve][sec] suppress CVE-2021-3563 of openstack-keystone-2.5.0  (#17458)\n\n(cherry picked from commit 0e4e88b9b06da0e1f2841a107e683988e1a7a1d8)",
+      "ebd8a3f821c2f01e171a4d89259ffbdfd4cde4b8": "[improve][sec] suppress CVE-2021-3563 of openstack-keystone-2.5.0  (#17458) (#17467)",
+      "0e4e88b9b06da0e1f2841a107e683988e1a7a1d8": "[improve][sec] suppress CVE-2021-3563 of openstack-keystone-2.5.0  (#17458)"
+    },
+    "CVE-2022-25857": {
+      "f3114b971c3acfb5ff7b94f4efe823d78f533053": "[fix][sec] bump snakeyaml to 1.31 fix CVE-2022-25857 (#17457)\n\n(cherry picked from commit 3ea478a025149afccf7cbe4887c249b98a776098)",
+      "09155d005caf5cb3f26af84d7ae84ddd73c6eddd": "[fix][sec] bump snakeyaml to 1.31 fix CVE-2022-25857 (#17457)\n\n(cherry picked from commit 3ea478a025149afccf7cbe4887c249b98a776098)",
+      "a90f2ec219469b6bb9ec0943731ac2ad271afc38": "[fix][sec] bump snakeyaml to 1.31 fix CVE-2022-25857 (#17457) (#17466)",
+      "3ea478a025149afccf7cbe4887c249b98a776098": "[fix][sec] bump snakeyaml to 1.31 fix CVE-2022-25857 (#17457)"
+    },
+    "CVE-2022-22968": {
+      "9fd542efc8f2aa0393156102470c1d453a14ab99": "Bump dependency check and spring version to avoid potential FP (#15408)\n\nBump dependency check version to avoid potential FP\nBump spring version to solve [CVE-2022-22968](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22968)\n\n- Bump dependency check version from 6.1.6 to 7.1.0\n- Bump spring version from 5.3.18 to 5.3.19\n\n(cherry picked from commit 7dd6fb2ba62a1ba41f53d5d310cc966d36dbd974)",
+      "8409652f82b291891fe2670cfef3b869ad264a5a": "Bump dependency check and spring version to avoid potential FP (#15408)\n\n### Motivation\nBump dependency check version to avoid potential FP\nBump spring version to solve [CVE-2022-22968](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22968)\n\n### Modifications\n- Bump dependency check version from 6.1.6 to 7.1.0\n- Bump spring version from 5.3.18 to 5.3.19\n\n(cherry picked from commit 7dd6fb2ba62a1ba41f53d5d310cc966d36dbd974)",
+      "7dd6fb2ba62a1ba41f53d5d310cc966d36dbd974": "Bump dependency check and spring version to avoid potential FP (#15408)\n\n### Motivation\r\nBump dependency check version to avoid potential FP\r\nBump spring version to solve [CVE-2022-22968](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22968)\r\n\r\n### Modifications\r\n- Bump dependency check version from 6.1.6 to 7.1.0\r\n- Bump spring version from 5.3.18 to 5.3.19"
+    },
+    "CVE-2022-2047": {
+      "7f1eb9a31d8e2fc3580d0856b1ee31541ab2a636": "[fix][security] Upgrade to Jetty to 9.4.48.v20220622 to get rid of CVE-2022-2047 (#16520)\n\n* [fix][security] Upgrade to Jetty to 9.4.48.v20220622 to get rid of CVE-2022-2047\n\n* suppress CVE-2022-2191 - false positive\n\n* Revert \"suppress CVE-2022-2191 - false positive\"\n\nThis reverts commit ab4601f43093c88ae97b03af9d90518fea174768.\n\n(cherry picked from commit 6872ac332f392790688dfd971e232240bd9f4978)\n(cherry picked from commit 87f64d05f64b18a724d64251862014fbbedd562e)",
+      "87f64d05f64b18a724d64251862014fbbedd562e": "[fix][security] Upgrade to Jetty to 9.4.48.v20220622 to get rid of CVE-2022-2047 (#16520)\n\n* [fix][security] Upgrade to Jetty to 9.4.48.v20220622 to get rid of CVE-2022-2047\n\n* suppress CVE-2022-2191 - false positive\n\n* Revert \"suppress CVE-2022-2191 - false positive\"\n\nThis reverts commit ab4601f43093c88ae97b03af9d90518fea174768.\n\n(cherry picked from commit 6872ac332f392790688dfd971e232240bd9f4978)",
+      "eb5e6af1eedde87be894da31b1c832b97f028a24": "[fix][security] Upgrade to Jetty to 9.4.48.v20220622 to get rid of CVE-2022-2047 (#16520)\n\n* [fix][security] Upgrade to Jetty to 9.4.48.v20220622 to get rid of CVE-2022-2047\n\n* suppress CVE-2022-2191 - false positive\n\n* Revert \"suppress CVE-2022-2191 - false positive\"\n\nThis reverts commit ab4601f43093c88ae97b03af9d90518fea174768.\n\n(cherry picked from commit 6872ac332f392790688dfd971e232240bd9f4978)",
+      "6872ac332f392790688dfd971e232240bd9f4978": "[fix][security] Upgrade to Jetty to 9.4.48.v20220622 to get rid of CVE-2022-2047 (#16520)\n\n* [fix][security] Upgrade to Jetty to 9.4.48.v20220622 to get rid of CVE-2022-2047\r\n\r\n* suppress CVE-2022-2191 - false positive\r\n\r\n* Revert \"suppress CVE-2022-2191 - false positive\"\r\n\r\nThis reverts commit ab4601f43093c88ae97b03af9d90518fea174768."
+    },
+    "CVE-2022-2191": {
+      "7f1eb9a31d8e2fc3580d0856b1ee31541ab2a636": "[fix][security] Upgrade to Jetty to 9.4.48.v20220622 to get rid of CVE-2022-2047 (#16520)\n\n* [fix][security] Upgrade to Jetty to 9.4.48.v20220622 to get rid of CVE-2022-2047\n\n* suppress CVE-2022-2191 - false positive\n\n* Revert \"suppress CVE-2022-2191 - false positive\"\n\nThis reverts commit ab4601f43093c88ae97b03af9d90518fea174768.\n\n(cherry picked from commit 6872ac332f392790688dfd971e232240bd9f4978)\n(cherry picked from commit 87f64d05f64b18a724d64251862014fbbedd562e)",
+      "87f64d05f64b18a724d64251862014fbbedd562e": "[fix][security] Upgrade to Jetty to 9.4.48.v20220622 to get rid of CVE-2022-2047 (#16520)\n\n* [fix][security] Upgrade to Jetty to 9.4.48.v20220622 to get rid of CVE-2022-2047\n\n* suppress CVE-2022-2191 - false positive\n\n* Revert \"suppress CVE-2022-2191 - false positive\"\n\nThis reverts commit ab4601f43093c88ae97b03af9d90518fea174768.\n\n(cherry picked from commit 6872ac332f392790688dfd971e232240bd9f4978)",
+      "eb5e6af1eedde87be894da31b1c832b97f028a24": "[fix][security] Upgrade to Jetty to 9.4.48.v20220622 to get rid of CVE-2022-2047 (#16520)\n\n* [fix][security] Upgrade to Jetty to 9.4.48.v20220622 to get rid of CVE-2022-2047\n\n* suppress CVE-2022-2191 - false positive\n\n* Revert \"suppress CVE-2022-2191 - false positive\"\n\nThis reverts commit ab4601f43093c88ae97b03af9d90518fea174768.\n\n(cherry picked from commit 6872ac332f392790688dfd971e232240bd9f4978)",
+      "6872ac332f392790688dfd971e232240bd9f4978": "[fix][security] Upgrade to Jetty to 9.4.48.v20220622 to get rid of CVE-2022-2047 (#16520)\n\n* [fix][security] Upgrade to Jetty to 9.4.48.v20220622 to get rid of CVE-2022-2047\r\n\r\n* suppress CVE-2022-2191 - false positive\r\n\r\n* Revert \"suppress CVE-2022-2191 - false positive\"\r\n\r\nThis reverts commit ab4601f43093c88ae97b03af9d90518fea174768."
+    },
+    "CVE-2022-25845": {
+      "31cd85763582626a1afa2ed15079b74ac26e5454": "[security] Update fastjson version to 1.2.83 (#16148)\n\nFixes CVE-2022-25845.\n\nSigned-off-by: tison <wander4096@gmail.com>",
+      "f4a6b864f84ad5c403c8736ed465b6f4340d625c": "[security] Suppress CVE-2022-23712 warnings (#16110)\n\n* [security] Bump ES client version to 8.2.3\n\nThis fixes CVE-2022-23712.\r\n\r\nSigned-off-by: tison <wander4096@gmail.com>\n\n* add suppressions\n\nSigned-off-by: tison <wander4096@gmail.com>\n\n* suppress exact CVE-2022-23712\n\nSigned-off-by: tison <wander4096@gmail.com>\n\n* using sha1\n\nSigned-off-by: tison <wander4096@gmail.com>\n\n* bump fastjson version\n\nFixes CVE-2022-25845.\n\nSigned-off-by: tison <wander4096@gmail.com>\n\n* Revert \"bump fastjson version\"\n\nThis reverts commit 4d140adf6d9489094715a7e20d77783ce4493e90."
+    },
+    "CVE-2022-23712": {
+      "f4a6b864f84ad5c403c8736ed465b6f4340d625c": "[security] Suppress CVE-2022-23712 warnings (#16110)\n\n* [security] Bump ES client version to 8.2.3\n\nThis fixes CVE-2022-23712.\r\n\r\nSigned-off-by: tison <wander4096@gmail.com>\n\n* add suppressions\n\nSigned-off-by: tison <wander4096@gmail.com>\n\n* suppress exact CVE-2022-23712\n\nSigned-off-by: tison <wander4096@gmail.com>\n\n* using sha1\n\nSigned-off-by: tison <wander4096@gmail.com>\n\n* bump fastjson version\n\nFixes CVE-2022-25845.\n\nSigned-off-by: tison <wander4096@gmail.com>\n\n* Revert \"bump fastjson version\"\n\nThis reverts commit 4d140adf6d9489094715a7e20d77783ce4493e90."
+    },
+    "CVE-2019-20444": {
+      "88c5681b219d26526b3b5c4c69897ed1fee8d35d": "Upgrade Netty Reactive Streams to 2.0.6 (#15990)\n\n### Motivation\n\nhttps://nvd.nist.gov/vuln/detail/CVE-2019-20444#range-6908693\n\nUpgrade from 2.0.4 to 2.0.6\n\n(cherry picked from commit 3d7634a06ff48f070a0bfce3925ccd30f1981cf6)",
+      "4fca9d0ba308abe27f71e4341402203102c913b4": "Upgrade Netty Reactive Streams to 2.0.6 (#15990)\n\nhttps://nvd.nist.gov/vuln/detail/CVE-2019-20444#range-6908693\n\nUpgrade from 2.0.4 to 2.0.6",
+      "3d7634a06ff48f070a0bfce3925ccd30f1981cf6": "Upgrade Netty Reactive Streams to 2.0.6 (#15990)\n\n### Motivation\r\n\r\nhttps://nvd.nist.gov/vuln/detail/CVE-2019-20444#range-6908693\r\n\r\nUpgrade from 2.0.4 to 2.0.6"
+    },
+    "CVE-2020-14343": {
+      "ec09b60a1988355cae47012b36252ea5d19c8782": "[fix][pulsar] Bump pyyaml from 5.3.1 to 5.4.1 to solve CVE-2020-14343 (#15989)",
+      "d8a3048e1c1353548ca84bae8b09f98b0f755e28": "[fix][pulsar] Bump pyyaml from 5.3.1 to 5.4.1 to solve CVE-2020-14343 (#15989)",
+      "75fecd0bdcc67a2992cbdebbb513447c6b9cc383": "[fix][pulsar] Bump pyyaml from 5.3.1 to 5.4.1 to solve CVE-2020-14343 (#15989)"
+    },
+    "CVE-2016-1000027": {
+      "10a8c852b8e1442192e347586b97bd35d4610f7e": "[fix][owasp] Suppress CVE-2016-1000027 detection in Spring dependencies (#15864)\n\n### Motivation\r\nFix OWASP scan as CVE-2016-1000027 is a false positive for Spring\r\nSee https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-1132113566\r\n\r\n### Modifications\r\n* Added CVE-2016-1000027 to OWASP suppressions fiile\r\n* Removed old suppressions not used anymore\r\n\r\n### Verifying this change\r\n\r\n- [x] Make sure that the change passes the CI checks.\r\n\r\nThis change is a trivial rework / code cleanup without any test coverage.\r\n\r\n### Does this pull request potentially affect one of the following parts:\r\n\r\nno\r\n\r\n*If `yes` was chosen, please highlight the changes*\r\n\r\n  - Dependencies (does it add or upgrade a dependency): (yes / no)\r\n  - The public API: (yes / no)\r\n  - The schema: (yes / no / don't know)\r\n  - The default values of configurations: (yes / no)\r\n  - The wire protocol: (yes / no)\r\n  - The rest endpoints: (yes / no)\r\n  - The admin cli options: (yes / no)\r\n  - Anything that affects deployment: (yes / no / don't know)\r\n\r\n### Documentation\r\n\r\nCheck the box below or label this PR directly.\r\n\r\nNeed to update docs? \r\n\r\n- [ ] `doc-required` \r\n(Your PR needs to update docs and you will update later)\r\n  \r\n- [x] `doc-not-needed` \r\nfix\r\n  \r\n- [ ] `doc` \r\n(Your PR contains doc changes)\r\n\r\n- [ ] `doc-complete`\r\n(Docs have been already added)",
+      "a9cf4632ab17348ed8f08b6c48c31f8cbf85d478": "Bump spring version from 5.3.19 to 5.3.20 to solve CVE-2016-1000027 (#15699)"
+    },
+    "CVE-2022-24329": {
+      "2939bb788f2d3f3618232a6991a7da8167ee17d1": "[owasp] add suppression for Kotlin stdlib CVE-2022-24329 - part 2 (#14715)\n\n(cherry picked from commit 828d057a0d75fe250e07a98d546843e988b1a34e)",
+      "782ca43dd0884ae38ae7d818fad958dce1bb5d03": "[owasp] add suppression for Kotlin stdlib CVE-2022-24329 - part 2 (#14715)\n\n(cherry picked from commit 828d057a0d75fe250e07a98d546843e988b1a34e)\n(cherry picked from commit cc4178b510fbfd1a835507d801b133791bbbdb35)",
+      "55be557d7a65b88ad767e8be4a8e2dc89399e562": "[owasp] add suppressions for Kotlin stdlib CVE-2022-24329 (#14629)\n\n(cherry picked from commit 4910519eb5c20249d982cab40813af3e870e4f90)",
+      "4be6eee6e294a1858d35540515b5161d043a8d20": "[owasp] add suppressions for Kotlin stdlib CVE-2022-24329 (#14629)\n\n(cherry picked from commit 4910519eb5c20249d982cab40813af3e870e4f90)",
+      "828d057a0d75fe250e07a98d546843e988b1a34e": "[owasp] add suppression for Kotlin stdlib CVE-2022-24329 - part 2 (#14715)",
+      "4910519eb5c20249d982cab40813af3e870e4f90": "[owasp] add suppressions for Kotlin stdlib CVE-2022-24329 (#14629)"
+    },
+    "CVE-2022-26612": {
+      "730bc43484b5b817dafd9418286891653fdd66d2": "[fix][security] Tiered storage: Upgrade Hadoop to 3.3.3 to get rid of CVE-2022-26612 (#15660)\n\n(cherry picked from commit d926582c14dfa7f98231289824b85d8f05e1d5f4)",
+      "cbbfe08eea0c7ed079e9a4bb3362bb97a4dd05cc": "[fix][security] Tiered storage: Upgrade Hadoop to 3.3.3 to get rid of CVE-2022-26612 (#15660)\n\n(cherry picked from commit d926582c14dfa7f98231289824b85d8f05e1d5f4)",
+      "906f438da68d8f3ac204fafcc8c02471a7373693": "[fix][security] Tiered storage: Upgrade Hadoop to 3.3.3 to get rid of CVE-2022-26612 (#15660)\n\n(cherry picked from commit d926582c14dfa7f98231289824b85d8f05e1d5f4)",
+      "d926582c14dfa7f98231289824b85d8f05e1d5f4": "[fix][security] Tiered storage: Upgrade Hadoop to 3.3.3 to get rid of CVE-2022-26612 (#15660)"
+    },
+    "CVE-2021-3711": {
+      "08fa2cf5be292080882966c4551d7a6a5872be13": "[fix][security] Upgrade MySQL connector to 8.0.28 to get rid of CVE-2021-3711 (#14998)\n\n(cherry picked from commit 1df46db634ac360b10db0a7cad6fada321031477)",
+      "1df46db634ac360b10db0a7cad6fada321031477": "[fix][security] Upgrade MySQL connector to 8.0.28 to get rid of CVE-2021-3711 (#14998)"
+    },
+    "CVE-2022-22965": {
+      "70b484a6749135ebcbab3f85ebfb9d70b0293f48": "[fix][security] Upgrade Spring Context in Pulsar IO batch-data-generator to get rid of CVE-2022-22965 (#14975)\n\n(cherry picked from commit 63c5a62cb672ab6b00ad2a231618374c9be0121f)",
+      "af351647710a9f5787d3cdc04cf9376895476eda": "[fix][security] Update spring library to fix CVE-2022-22965 (#15065)",
+      "63c5a62cb672ab6b00ad2a231618374c9be0121f": "[fix][security] Upgrade Spring Context in Pulsar IO batch-data-generator to get rid of CVE-2022-22965 (#14975)"
+    },
+    "CVE-2021-23214": {
+      "de9c718c6d36a39f77de69ef3dc03fd41c5db489": "[owasp] suppress debezium-connector-postgres CVE-2021-23214 false positive (#14802)\n\nLet's get this in and unblock flaky tests\n\n(cherry picked from commit d03e2d32064d2d52b437c7700078f4a7a4dca2e7)",
+      "d03e2d32064d2d52b437c7700078f4a7a4dca2e7": "[owasp] suppress debezium-connector-postgres CVE-2021-23214 false positive (#14802)\n\nLet's get this in and unblock flaky tests"
+    },
+    "CVE-2022-23307": {
+      "c8858e18da05e53033a469a66661e38c3c146034": "[fix][security] Remove log4j for CVE-2022-23307 (#15109)\n\n(cherry picked from commit a4c4aea993aabab5231d4136b7eba366bee9e778)",
+      "549692f8e4f7ceac114b504e7fc354faf1e97a06": "[fix][security] Remove log4j for CVE-2022-23307 (#15109)\n\n(cherry picked from commit a4c4aea993aabab5231d4136b7eba366bee9e778)",
+      "41e2e7ceb68f5a92db853a569969f3232232f853": "[fix][security] Remove log4j for CVE-2022-23307 (#15109)\n\n(cherry picked from commit a4c4aea993aabab5231d4136b7eba366bee9e778)",
+      "a4c4aea993aabab5231d4136b7eba366bee9e778": "[fix][security] Remove log4j for CVE-2022-23307 (#15109)"
+    },
+    "CVE-2020-36518": {
+      "e5a7da929160733089661f0ef8810ceeae7360d4": "[fix][security] Upgrade jackson and jackson-databind (2.13.2.1) to get rid of CVE-2020-36518 (#14871)\n\n* [fix][security] Upgrade JacksonXML to get rid of CVE-2020-36518\n\n* force jackson-databind version\n\n(cherry picked from commit 6d9ba7b60ab97257aa6e4e032a9764b5c3aefffa)",
+      "e4467869673a23c0d4591b99a94d498974c6f977": "[fix][security] Upgrade jackson and jackson-databind (2.13.2.1) to get rid of CVE-2020-36518 (#14871)\n\n* [fix][security] Upgrade JacksonXML to get rid of CVE-2020-36518\n\n* force jackson-databind version\n\n(cherry picked from commit 6d9ba7b60ab97257aa6e4e032a9764b5c3aefffa)",
+      "bb4862e396b0c0fa2a98af25679a6d6b70f2fa1d": "[fix][security] Upgrade jackson and jackson-databind (2.13.2.1) to get rid of CVE-2020-36518 (#14871)\n\n* [fix][security] Upgrade JacksonXML to get rid of CVE-2020-36518\n\n* force jackson-databind version\n\n(cherry picked from commit 6d9ba7b60ab97257aa6e4e032a9764b5c3aefffa)",
+      "6d9ba7b60ab97257aa6e4e032a9764b5c3aefffa": "[fix][security] Upgrade jackson and jackson-databind (2.13.2.1) to get rid of CVE-2020-36518 (#14871)\n\n* [fix][security] Upgrade JacksonXML to get rid of CVE-2020-36518\r\n\r\n* force jackson-databind version"
+    },
+    "CVE-2022-26520": {
+      "557d3490394f4587e552247ee9aeb14aadb50349": "[security] Upgrade PostGre driver to 42.3.3 to get rid of CVE-2022-26520 (#14910)"
+    },
+    "CVE-2021-43045": {
+      "ee87c7d6c20186ae59298a9a9ec1fdb2b09954c7": "[owasp] suppress false positive Avro CVE-2021-43045 (#13764)\n\n(cherry picked from commit 239133670b927741d673e26ad2810b01c6bab8bd)",
+      "065ccd4a712f89df0df0c32b5ee8d66feeb9b028": "[owasp] suppress false positive Avro CVE-2021-43045 (#13764)\n\n(cherry picked from commit 239133670b927741d673e26ad2810b01c6bab8bd)",
+      "239133670b927741d673e26ad2810b01c6bab8bd": "[owasp] suppress false positive Avro CVE-2021-43045 (#13764)"
+    },
+    "CVE-2022-21724": {
+      "1e17289e6ab9bb7b70034b807fa04e0f9232fc1b": "[security] Upgrade Postgre driver to 42.2.25 to get rid of CVE-2022-21724 (#14119)\n\nhttp://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21724\n\nUpgrade both `jdbc` and `debezium` Postgre java driver dependency to 42.2.25 (from 42.2.24 and 42.2.22).\nNote: the version is not shared on purpose because we should leave the driver dependencies separated since the two connectors are used in different ways. (For example, when we'll upgrade Debezium to 1.8.x we'll need to remove the override and keep the 42.3.x version)\n\nFor cherry-picks, branch-2.9 and branch-2.8 are compatible since:\n* branch-2.9 has the same debezium version\n* branch-2.8 has 1.0.0 but it uses [pg driver 42.2.x](https://search.maven.org/artifact/io.debezium/debezium-parent/1.0.0.Final/pom) as well\n\n- [x] `no-need-doc`\n\n(cherry picked from commit 64818458727df20384463bbedf9cb7c92c0f9216)",
+      "6089daaefd2dd89ac00eb92f4c2ea5e9a1c1739f": "[security] Upgrade Postgre driver to 42.2.25 to get rid of CVE-2022-21724 (#14119)\n\nhttp://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21724\n\nUpgrade both `jdbc` and `debezium` Postgre java driver dependency to 42.2.25 (from 42.2.24 and 42.2.22).\nNote: the version is not shared on purpose because we should leave the driver dependencies separated since the two connectors are used in different ways. (For example, when we'll upgrade Debezium to 1.8.x we'll need to remove the override and keep the 42.3.x version)\n\nFor cherry-picks, branch-2.9 and branch-2.8 are compatible since:\n* branch-2.9 has the same debezium version\n* branch-2.8 has 1.0.0 but it uses [pg driver 42.2.x](https://search.maven.org/artifact/io.debezium/debezium-parent/1.0.0.Final/pom) as well\n\n- [x] `no-need-doc`\n\n(cherry picked from commit 64818458727df20384463bbedf9cb7c92c0f9216)",
+      "64818458727df20384463bbedf9cb7c92c0f9216": "[security] Upgrade Postgre driver to 42.2.25 to get rid of CVE-2022-21724 (#14119)\n\n### Motivation\r\n\r\nhttp://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21724\r\n\r\n### Modifications\r\n\r\nUpgrade both `jdbc` and `debezium` Postgre java driver dependency to 42.2.25 (from 42.2.24 and 42.2.22).\r\nNote: the version is not shared on purpose because we should leave the driver dependencies separated since the two connectors are used in different ways. (For example, when we'll upgrade Debezium to 1.8.x we'll need to remove the override and keep the 42.3.x version)\r\n\r\nFor cherry-picks, branch-2.9 and branch-2.8 are compatible since:\r\n* branch-2.9 has the same debezium version\r\n* branch-2.8 has 1.0.0 but it uses [pg driver 42.2.x](https://search.maven.org/artifact/io.debezium/debezium-parent/1.0.0.Final/pom) as well \r\n\r\n### Documentation\r\n\r\n- [x] `no-need-doc`"
+    },
+    "CVE-2020-13692": {
+      "e2c94b8976ecaf6582684cde1584a81c80ef7abd": "Updated dependencies to get rid of pulsar-io/jdbc related CVE-2020-13692 (#13753)\n\n* Updated dependencies to get rid of pulsar-io/jdbc related CVE-2020-13692\n\nAlso upgraded clickhouse lib and suppressed wrongly detected clickhouse\nCVEs (client lib matched to server CVEs)\n\n* CR feedback\n\n(cherry picked from commit 8214da86b2bd2213a7d97e1d174e8d4e53c1b669)",
+      "8214da86b2bd2213a7d97e1d174e8d4e53c1b669": "Updated dependencies to get rid of pulsar-io/jdbc related CVE-2020-13692 (#13753)\n\n* Updated dependencies to get rid of pulsar-io/jdbc related CVE-2020-13692\n\nAlso upgraded clickhouse lib and suppressed wrongly detected clickhouse\nCVEs (client lib matched to server CVEs)\n\n* CR feedback"
+    },
+    "CVE-2021-28170": {
+      "e7dca353c615317dc06ae6f7f5b8c5ec2c08cc2a": "[security] pulsar-io-kafka: upgrade jakarta.el to 3.0.4 to get rid of CVE-2021-28170 (#13943)"
+    },
+    "CVE-2021-20328": {
+      "cbe9c2b31fcf3aa0fe0c58960f9843cab8b5d42f": "Upgraded debezium to 1.7.2 (+ fixed CVE-2021-20328, + suppressed OWASP misdetections) (#13928)\n\nUpgraded debezium mostly to pick up perf fix https://issues.redhat.com/browse/DBZ-4309\r\nCVE-2021-20328 from mongo lib fixed by forcing newer version.",
+      "6912289e8ed3075aac03b80d9473f78690102c63": "Getting rid of CVE in MongoDB connector (CVE-2021-20328) (#13947)"
+    },
+    "CVE-2021-22569": {
+      "f380c87a53982e45fc8ee4c4bfea064cf8c472f2": "[Security] Upgrade protobuf to 3.16.1 to address CVE-2021-22569 (#13695)\n\n- protobuf < 3.16.1 contains DoS vulnerability CVE-2021-22569, https://nvd.nist.gov/vuln/detail/CVE-2021-22569.\n\n- upgrade protobuf from 3.11.4 to 3.16.1\n\n(cherry picked from commit 1a3688c936bb2320db34ccfbef08500f2c522591)",
+      "4b194327cdd2b3154491f5557a990041d9ca5aa0": "[Security] Upgrade protobuf to 3.16.1 to address CVE-2021-22569 (#13695)\n\n### Motivation\n\n- protobuf < 3.16.1 contains DoS vulnerability CVE-2021-22569, https://nvd.nist.gov/vuln/detail/CVE-2021-22569.\n\n### Modifications\n\n- upgrade protobuf from 3.11.4 to 3.16.1\n\n(cherry picked from commit 1a3688c936bb2320db34ccfbef08500f2c522591)",
+      "b4822565632419e0c43c237f865578afca73f793": "[Security] Upgrade protobuf to 3.16.1 to address CVE-2021-22569 (#13695)\n\n### Motivation\n\n- protobuf < 3.16.1 contains DoS vulnerability CVE-2021-22569, https://nvd.nist.gov/vuln/detail/CVE-2021-22569.\n\n### Modifications\n\n- upgrade protobuf from 3.11.4 to 3.16.1\n\n(cherry picked from commit 1a3688c936bb2320db34ccfbef08500f2c522591)",
+      "1a3688c936bb2320db34ccfbef08500f2c522591": "[Security] Upgrade protobuf to 3.16.1 to address CVE-2021-22569 (#13695)\n\n### Motivation\r\n\r\n- protobuf < 3.16.1 contains DoS vulnerability CVE-2021-22569, https://nvd.nist.gov/vuln/detail/CVE-2021-22569.\r\n\r\n### Modifications\r\n\r\n- upgrade protobuf from 3.11.4 to 3.16.1"
+    },
+    "CVE-2019-17638": {
+      "7751597b1ba763d46b4678cb10e78c1187e46476": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "9909ec859a5668005591a105565b4abde87b3341": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "76fc2fbc9801da5232cd4ba32d25298b74d460db": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\r\nCVE-2020-27216\r\nCVE-2020-27218\r\nCVE-2020-27223\r\nCVE-2021-28165\r\nCVE-2021-28169\r\nCVE-2021-34428\r\nCVE-2021-27905\r\nCVE-2021-29262\r\nCVE-2021-29943\r\nCVE-2021-44548"
+    },
+    "CVE-2020-27216": {
+      "7751597b1ba763d46b4678cb10e78c1187e46476": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "9909ec859a5668005591a105565b4abde87b3341": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "76fc2fbc9801da5232cd4ba32d25298b74d460db": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\r\nCVE-2020-27216\r\nCVE-2020-27218\r\nCVE-2020-27223\r\nCVE-2021-28165\r\nCVE-2021-28169\r\nCVE-2021-34428\r\nCVE-2021-27905\r\nCVE-2021-29262\r\nCVE-2021-29943\r\nCVE-2021-44548",
+      "0f2fad02f413b9a02242034232326b593c9739f0": "Upgrade jetty to 9.4.33.v20201020 (#8413)\n\nJetty versions 9.4.32.v20200930 and earlier have a security vulnerability, so upgraded to the latest stable version.\r\nhttps://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27216\n\n(cherry picked from commit ec2de258ce39b38311e92bab6882c198070d8975)",
+      "ec2de258ce39b38311e92bab6882c198070d8975": "Upgrade jetty to 9.4.33.v20201020 (#8413)\n\nJetty versions 9.4.32.v20200930 and earlier have a security vulnerability, so upgraded to the latest stable version.\r\nhttps://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27216"
+    },
+    "CVE-2020-27223": {
+      "7751597b1ba763d46b4678cb10e78c1187e46476": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "9909ec859a5668005591a105565b4abde87b3341": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "76fc2fbc9801da5232cd4ba32d25298b74d460db": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\r\nCVE-2020-27216\r\nCVE-2020-27218\r\nCVE-2020-27223\r\nCVE-2021-28165\r\nCVE-2021-28169\r\nCVE-2021-34428\r\nCVE-2021-27905\r\nCVE-2021-29262\r\nCVE-2021-29943\r\nCVE-2021-44548"
+    },
+    "CVE-2021-28165": {
+      "7751597b1ba763d46b4678cb10e78c1187e46476": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "9909ec859a5668005591a105565b4abde87b3341": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "76fc2fbc9801da5232cd4ba32d25298b74d460db": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\r\nCVE-2020-27216\r\nCVE-2020-27218\r\nCVE-2020-27223\r\nCVE-2021-28165\r\nCVE-2021-28169\r\nCVE-2021-34428\r\nCVE-2021-27905\r\nCVE-2021-29262\r\nCVE-2021-29943\r\nCVE-2021-44548"
+    },
+    "CVE-2021-28169": {
+      "7751597b1ba763d46b4678cb10e78c1187e46476": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "9909ec859a5668005591a105565b4abde87b3341": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "76fc2fbc9801da5232cd4ba32d25298b74d460db": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\r\nCVE-2020-27216\r\nCVE-2020-27218\r\nCVE-2020-27223\r\nCVE-2021-28165\r\nCVE-2021-28169\r\nCVE-2021-34428\r\nCVE-2021-27905\r\nCVE-2021-29262\r\nCVE-2021-29943\r\nCVE-2021-44548",
+      "15d9a10c1727dfd17c2827b1b3e536ae71661575": "Upgrade Jetty to 9.4.42.v20210604 (#10907)\n\nFixes #10906\n\nAlso addresses CVE-2021-28169\n\n(cherry picked from commit 6c03154ff29868181124a0a1a81e9ea09b22a9b0)",
+      "1916324c8f07bb43a2693921fb18ec5cdd5278ac": "Upgrade Jetty to 9.4.42.v20210604 (#10907)\n\nFixes #10906\r\n\r\nAlso addresses CVE-2021-28169\n\n(cherry picked from commit 6c03154ff29868181124a0a1a81e9ea09b22a9b0)",
+      "6c03154ff29868181124a0a1a81e9ea09b22a9b0": "Upgrade Jetty to 9.4.42.v20210604 (#10907)\n\nFixes #10906\r\n\r\nAlso addresses CVE-2021-28169"
+    },
+    "CVE-2021-34428": {
+      "7751597b1ba763d46b4678cb10e78c1187e46476": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "9909ec859a5668005591a105565b4abde87b3341": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "76fc2fbc9801da5232cd4ba32d25298b74d460db": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\r\nCVE-2020-27216\r\nCVE-2020-27218\r\nCVE-2020-27223\r\nCVE-2021-28165\r\nCVE-2021-28169\r\nCVE-2021-34428\r\nCVE-2021-27905\r\nCVE-2021-29262\r\nCVE-2021-29943\r\nCVE-2021-44548"
+    },
+    "CVE-2021-27905": {
+      "7751597b1ba763d46b4678cb10e78c1187e46476": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "9909ec859a5668005591a105565b4abde87b3341": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "76fc2fbc9801da5232cd4ba32d25298b74d460db": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\r\nCVE-2020-27216\r\nCVE-2020-27218\r\nCVE-2020-27223\r\nCVE-2021-28165\r\nCVE-2021-28169\r\nCVE-2021-34428\r\nCVE-2021-27905\r\nCVE-2021-29262\r\nCVE-2021-29943\r\nCVE-2021-44548"
+    },
+    "CVE-2021-29262": {
+      "7751597b1ba763d46b4678cb10e78c1187e46476": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "9909ec859a5668005591a105565b4abde87b3341": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "76fc2fbc9801da5232cd4ba32d25298b74d460db": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\r\nCVE-2020-27216\r\nCVE-2020-27218\r\nCVE-2020-27223\r\nCVE-2021-28165\r\nCVE-2021-28169\r\nCVE-2021-34428\r\nCVE-2021-27905\r\nCVE-2021-29262\r\nCVE-2021-29943\r\nCVE-2021-44548"
+    },
+    "CVE-2021-29943": {
+      "7751597b1ba763d46b4678cb10e78c1187e46476": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "9909ec859a5668005591a105565b4abde87b3341": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "76fc2fbc9801da5232cd4ba32d25298b74d460db": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\r\nCVE-2020-27216\r\nCVE-2020-27218\r\nCVE-2020-27223\r\nCVE-2021-28165\r\nCVE-2021-28169\r\nCVE-2021-34428\r\nCVE-2021-27905\r\nCVE-2021-29262\r\nCVE-2021-29943\r\nCVE-2021-44548"
+    },
+    "CVE-2021-44548": {
+      "7751597b1ba763d46b4678cb10e78c1187e46476": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "9909ec859a5668005591a105565b4abde87b3341": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\nCVE-2020-27216\nCVE-2020-27218\nCVE-2020-27223\nCVE-2021-28165\nCVE-2021-28169\nCVE-2021-34428\nCVE-2021-27905\nCVE-2021-29262\nCVE-2021-29943\nCVE-2021-44548\n\n(cherry picked from commit 76fc2fbc9801da5232cd4ba32d25298b74d460db)",
+      "76fc2fbc9801da5232cd4ba32d25298b74d460db": "Getting rid of CVEs in Solr connector (#13822)\n\nCVE-2019-17638\r\nCVE-2020-27216\r\nCVE-2020-27218\r\nCVE-2020-27223\r\nCVE-2021-28165\r\nCVE-2021-28169\r\nCVE-2021-34428\r\nCVE-2021-27905\r\nCVE-2021-29262\r\nCVE-2021-29943\r\nCVE-2021-44548"
+    },
+    "CVE-2019-20933": {
+      "f2bfe9213af5879f423eb781e9f8307304222090": "Getitng rid of CVEs in InfluxDB connector (#13821)\n\nCVE-2019-20933\nCVE-2018-1000850\n\n(cherry picked from commit 85746390c4421cce710ec6988d1747fd5a3f7ade)",
+      "f68892c03c4393f7105878a6ca96268a4a206b7d": "Getitng rid of CVEs in InfluxDB connector (#13821)\n\nCVE-2019-20933\nCVE-2018-1000850\n\n(cherry picked from commit 85746390c4421cce710ec6988d1747fd5a3f7ade)",
+      "85746390c4421cce710ec6988d1747fd5a3f7ade": "Getitng rid of CVEs in InfluxDB connector (#13821)\n\nCVE-2019-20933\r\nCVE-2018-1000850"
+    },
+    "CVE-2018-1000850": {
+      "f2bfe9213af5879f423eb781e9f8307304222090": "Getitng rid of CVEs in InfluxDB connector (#13821)\n\nCVE-2019-20933\nCVE-2018-1000850\n\n(cherry picked from commit 85746390c4421cce710ec6988d1747fd5a3f7ade)",
+      "f68892c03c4393f7105878a6ca96268a4a206b7d": "Getitng rid of CVEs in InfluxDB connector (#13821)\n\nCVE-2019-20933\nCVE-2018-1000850\n\n(cherry picked from commit 85746390c4421cce710ec6988d1747fd5a3f7ade)",
+      "85746390c4421cce710ec6988d1747fd5a3f7ade": "Getitng rid of CVEs in InfluxDB connector (#13821)\n\nCVE-2019-20933\r\nCVE-2018-1000850"
+    },
+    "CVE-2021-41269": {
+      "444d2a3b49e803326c56bfaff7a461f13bd6ed4a": "Getting rid of CVEs in batch-data-generator (#13820)\n\nCVE-2021-41269\nCVE-2021-22060\nCVE-2021-22096\nCVE-2021-22118\n\n(cherry picked from commit 5a33d106dd282fa85008888a687c94203f888df7)",
+      "ff96162732b6978d8046ddb6caa28d62f5bf101a": "Getting rid of CVEs in batch-data-generator (#13820)\n\nCVE-2021-41269\nCVE-2021-22060\nCVE-2021-22096\nCVE-2021-22118\n\n(cherry picked from commit 5a33d106dd282fa85008888a687c94203f888df7)",
+      "5a33d106dd282fa85008888a687c94203f888df7": "Getting rid of CVEs in batch-data-generator (#13820)\n\nCVE-2021-41269\r\nCVE-2021-22060\r\nCVE-2021-22096\r\nCVE-2021-22118"
+    },
+    "CVE-2021-22060": {
+      "444d2a3b49e803326c56bfaff7a461f13bd6ed4a": "Getting rid of CVEs in batch-data-generator (#13820)\n\nCVE-2021-41269\nCVE-2021-22060\nCVE-2021-22096\nCVE-2021-22118\n\n(cherry picked from commit 5a33d106dd282fa85008888a687c94203f888df7)",
+      "ff96162732b6978d8046ddb6caa28d62f5bf101a": "Getting rid of CVEs in batch-data-generator (#13820)\n\nCVE-2021-41269\nCVE-2021-22060\nCVE-2021-22096\nCVE-2021-22118\n\n(cherry picked from commit 5a33d106dd282fa85008888a687c94203f888df7)",
+      "5a33d106dd282fa85008888a687c94203f888df7": "Getting rid of CVEs in batch-data-generator (#13820)\n\nCVE-2021-41269\r\nCVE-2021-22060\r\nCVE-2021-22096\r\nCVE-2021-22118"
+    },
+    "CVE-2021-22096": {
+      "444d2a3b49e803326c56bfaff7a461f13bd6ed4a": "Getting rid of CVEs in batch-data-generator (#13820)\n\nCVE-2021-41269\nCVE-2021-22060\nCVE-2021-22096\nCVE-2021-22118\n\n(cherry picked from commit 5a33d106dd282fa85008888a687c94203f888df7)",
+      "ff96162732b6978d8046ddb6caa28d62f5bf101a": "Getting rid of CVEs in batch-data-generator (#13820)\n\nCVE-2021-41269\nCVE-2021-22060\nCVE-2021-22096\nCVE-2021-22118\n\n(cherry picked from commit 5a33d106dd282fa85008888a687c94203f888df7)",
+      "5a33d106dd282fa85008888a687c94203f888df7": "Getting rid of CVEs in batch-data-generator (#13820)\n\nCVE-2021-41269\r\nCVE-2021-22060\r\nCVE-2021-22096\r\nCVE-2021-22118"
+    },
+    "CVE-2021-22118": {
+      "444d2a3b49e803326c56bfaff7a461f13bd6ed4a": "Getting rid of CVEs in batch-data-generator (#13820)\n\nCVE-2021-41269\nCVE-2021-22060\nCVE-2021-22096\nCVE-2021-22118\n\n(cherry picked from commit 5a33d106dd282fa85008888a687c94203f888df7)",
+      "ff96162732b6978d8046ddb6caa28d62f5bf101a": "Getting rid of CVEs in batch-data-generator (#13820)\n\nCVE-2021-41269\nCVE-2021-22060\nCVE-2021-22096\nCVE-2021-22118\n\n(cherry picked from commit 5a33d106dd282fa85008888a687c94203f888df7)",
+      "5a33d106dd282fa85008888a687c94203f888df7": "Getting rid of CVEs in batch-data-generator (#13820)\n\nCVE-2021-41269\r\nCVE-2021-22060\r\nCVE-2021-22096\r\nCVE-2021-22118"
+    },
+    "CVE-2020-26939": {
+      "a669b258c1978beb1aa47375c50054ff6115ac9f": "Getting rid of CVes brought in with aerospike (#13819)\n\nCVE-2020-26939\nCVE-2015-0886\n\n(cherry picked from commit 8a452b733c91d6a60ddf32b403c9169be5ba7978)",
+      "bf7af7943895377a465943a19c93ba191920edea": "Getting rid of CVes brought in with aerospike (#13819)\n\nCVE-2020-26939\nCVE-2015-0886\n\n(cherry picked from commit 8a452b733c91d6a60ddf32b403c9169be5ba7978)",
+      "8a452b733c91d6a60ddf32b403c9169be5ba7978": "Getting rid of CVes brought in with aerospike (#13819)\n\nCVE-2020-26939\r\nCVE-2015-0886"
+    },
+    "CVE-2015-0886": {
+      "a669b258c1978beb1aa47375c50054ff6115ac9f": "Getting rid of CVes brought in with aerospike (#13819)\n\nCVE-2020-26939\nCVE-2015-0886\n\n(cherry picked from commit 8a452b733c91d6a60ddf32b403c9169be5ba7978)",
+      "bf7af7943895377a465943a19c93ba191920edea": "Getting rid of CVes brought in with aerospike (#13819)\n\nCVE-2020-26939\nCVE-2015-0886\n\n(cherry picked from commit 8a452b733c91d6a60ddf32b403c9169be5ba7978)",
+      "8a452b733c91d6a60ddf32b403c9169be5ba7978": "Getting rid of CVes brought in with aerospike (#13819)\n\nCVE-2020-26939\r\nCVE-2015-0886"
+    },
+    "CVE-2020-1945": {
+      "86fd8e789bfa44f424730fa3d62891b124c08e52": "Getting rid of CVEs reported in testmocks and buildtools (#13895)\n\nCVE-2020-1945\r\nCVE-2021-36373\r\nCVE-2021-36374\r\nCVE-2020-8908\r\nCVE-2017-18640\r\n\r\nbuildtools sets dependency version/properties independently of the root\r\npom."
+    },
+    "CVE-2021-36373": {
+      "86fd8e789bfa44f424730fa3d62891b124c08e52": "Getting rid of CVEs reported in testmocks and buildtools (#13895)\n\nCVE-2020-1945\r\nCVE-2021-36373\r\nCVE-2021-36374\r\nCVE-2020-8908\r\nCVE-2017-18640\r\n\r\nbuildtools sets dependency version/properties independently of the root\r\npom."
+    },
+    "CVE-2021-36374": {
+      "86fd8e789bfa44f424730fa3d62891b124c08e52": "Getting rid of CVEs reported in testmocks and buildtools (#13895)\n\nCVE-2020-1945\r\nCVE-2021-36373\r\nCVE-2021-36374\r\nCVE-2020-8908\r\nCVE-2017-18640\r\n\r\nbuildtools sets dependency version/properties independently of the root\r\npom."
+    },
+    "CVE-2017-18640": {
+      "86fd8e789bfa44f424730fa3d62891b124c08e52": "Getting rid of CVEs reported in testmocks and buildtools (#13895)\n\nCVE-2020-1945\r\nCVE-2021-36373\r\nCVE-2021-36374\r\nCVE-2020-8908\r\nCVE-2017-18640\r\n\r\nbuildtools sets dependency version/properties independently of the root\r\npom.",
+      "c263c6c89bc7f51bb2ba22b21e19035a833eaaaa": "[Security] Upgrade the snakeyaml verion to 1.26 (#7994)\n\nFixes #7928\n\nAs https://nvd.nist.gov/vuln/detail/CVE-2017-18640 said, the `snakeyaml` < 1.26\n\nIn `pulsar-functions` model:\n\n- The `snakeyaml` 1.19 appears to be included from dependency on org.apache.pulsar:pulsar-functions-secrets:jar:2.6.1 based on included dependency of io.kubernetes:client-java-api:jar:2.0.0:compile Fixed in 9.0.2\n\n- The `snakeyaml` 1.16 appears to be included from the dependency on org.apache.pulsar:pulsar-functions-instance:jar:2.6.1 based on io.prometheus.jmx:collector:jar:0.12.0 Fixed in 0.13.0\n\n- The 1.17 org.apache.pulsar.tests:integration:test-jar:tests:2.6.1:test depends on org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.3.2:test Fixed in elasticsearch >= 7.7.1 (7.9.1 current)\n\n(cherry picked from commit 5adbc1f99958a09fc1cd5191fbe2ff76a70b4c85)",
+      "5adbc1f99958a09fc1cd5191fbe2ff76a70b4c85": "[Security] Upgrade the snakeyaml verion to 1.26 (#7994)\n\nFixes #7928\r\n\r\n### Motivation\r\n\r\nAs https://nvd.nist.gov/vuln/detail/CVE-2017-18640 said, the `snakeyaml` < 1.26\r\n\r\n### Modifications\r\n\r\nIn `pulsar-functions` model:\r\n\r\n- The `snakeyaml` 1.19 appears to be included from dependency on org.apache.pulsar:pulsar-functions-secrets:jar:2.6.1 based on included dependency of io.kubernetes:client-java-api:jar:2.0.0:compile Fixed in 9.0.2\r\n\r\n- The `snakeyaml` 1.16 appears to be included from the dependency on org.apache.pulsar:pulsar-functions-instance:jar:2.6.1 based on io.prometheus.jmx:collector:jar:0.12.0 Fixed in 0.13.0\r\n\r\n- The 1.17 org.apache.pulsar.tests:integration:test-jar:tests:2.6.1:test depends on org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.3.2:test Fixed in elasticsearch >= 7.7.1 (7.9.1 current)"
+    },
+    "CVE-2017-7536": {
+      "705e9a2f528aea507ad16ed3b378c1dfd0dbed51": "[security] pulsar-io-kafka: upgrade jersey-bean-validation to get rid CVE-2017-7536 (brought in by Hibernate Validator 5.x) (#13868)"
+    },
+    "CVE-2018-10237": {
+      "808333360cf8ed86c71f3f85a404ddb27008b198": "Updating dependencies (guava and what brought in older guava) to get rid of the guava-related CVE-2018-10237 and CVE-2020-8908 (#13716)\n\n* Updating dependencies (guava and what brought in older guava) to get rid of the guava-related CVE-2018-10237 and CVE-2020-8908\r\n\r\n* testng 7.5 isn't compatible with current powermock https://github.com/powermock/powermock/issues/1118\r\n\r\n* Upgraded canal to 1.1.5, excluded logback, and upgraded spring that canal uses to get rid of multiple CVEs"
+    },
+    "CVE-2020-7020": {
+      "bef30719ef10325f9308015552bb6215f542446e": "Upgraded ElasticSearch to get rid of CVEs (and switched client to OpenSearch one) (#13867)\n\n* Upgraded ElasticSearch to get rid of CVEs. (#13747)\r\n\r\n* Upgraded ElasticSearch to get rid of CVEs.\r\n\r\nCVE-2020-7020\r\nCVE-2020-7021\r\nCVE-2021-22132\r\nCVE-2021-22134\r\nCVE-2021-22144\r\nCVE-2021-22147\r\n\r\n* Elastic search client version >= 7.11 no longer works with OSS Elastic images (and elastic.co no longer releases OSS images)\r\n\r\n* Fixed tests for Elasticsearch\r\n\r\n* pom cleanup\r\n\r\n* Switched to OpenSearch client for Elastic (Apache 2 licensed)",
+      "1af8d3fc6bca31c1ca059a2dda80e6d8eb7ae24b": "Upgraded ElasticSearch to get rid of CVEs. (#13747)\n\n* Upgraded ElasticSearch to get rid of CVEs.\r\n\r\nCVE-2020-7020\r\nCVE-2020-7021\r\nCVE-2021-22132\r\nCVE-2021-22134\r\nCVE-2021-22144\r\nCVE-2021-22147\r\n\r\n* Elastic search client version >= 7.11 no longer works with OSS Elastic images (and elastic.co no longer releases OSS images)\r\n\r\n* Fixed tests for Elasticsearch\r\n\r\n* pom cleanup"
+    },
+    "CVE-2020-7021": {
+      "bef30719ef10325f9308015552bb6215f542446e": "Upgraded ElasticSearch to get rid of CVEs (and switched client to OpenSearch one) (#13867)\n\n* Upgraded ElasticSearch to get rid of CVEs. (#13747)\r\n\r\n* Upgraded ElasticSearch to get rid of CVEs.\r\n\r\nCVE-2020-7020\r\nCVE-2020-7021\r\nCVE-2021-22132\r\nCVE-2021-22134\r\nCVE-2021-22144\r\nCVE-2021-22147\r\n\r\n* Elastic search client version >= 7.11 no longer works with OSS Elastic images (and elastic.co no longer releases OSS images)\r\n\r\n* Fixed tests for Elasticsearch\r\n\r\n* pom cleanup\r\n\r\n* Switched to OpenSearch client for Elastic (Apache 2 licensed)",
+      "1af8d3fc6bca31c1ca059a2dda80e6d8eb7ae24b": "Upgraded ElasticSearch to get rid of CVEs. (#13747)\n\n* Upgraded ElasticSearch to get rid of CVEs.\r\n\r\nCVE-2020-7020\r\nCVE-2020-7021\r\nCVE-2021-22132\r\nCVE-2021-22134\r\nCVE-2021-22144\r\nCVE-2021-22147\r\n\r\n* Elastic search client version >= 7.11 no longer works with OSS Elastic images (and elastic.co no longer releases OSS images)\r\n\r\n* Fixed tests for Elasticsearch\r\n\r\n* pom cleanup"
+    },
+    "CVE-2021-22132": {
+      "bef30719ef10325f9308015552bb6215f542446e": "Upgraded ElasticSearch to get rid of CVEs (and switched client to OpenSearch one) (#13867)\n\n* Upgraded ElasticSearch to get rid of CVEs. (#13747)\r\n\r\n* Upgraded ElasticSearch to get rid of CVEs.\r\n\r\nCVE-2020-7020\r\nCVE-2020-7021\r\nCVE-2021-22132\r\nCVE-2021-22134\r\nCVE-2021-22144\r\nCVE-2021-22147\r\n\r\n* Elastic search client version >= 7.11 no longer works with OSS Elastic images (and elastic.co no longer releases OSS images)\r\n\r\n* Fixed tests for Elasticsearch\r\n\r\n* pom cleanup\r\n\r\n* Switched to OpenSearch client for Elastic (Apache 2 licensed)",
+      "1af8d3fc6bca31c1ca059a2dda80e6d8eb7ae24b": "Upgraded ElasticSearch to get rid of CVEs. (#13747)\n\n* Upgraded ElasticSearch to get rid of CVEs.\r\n\r\nCVE-2020-7020\r\nCVE-2020-7021\r\nCVE-2021-22132\r\nCVE-2021-22134\r\nCVE-2021-22144\r\nCVE-2021-22147\r\n\r\n* Elastic search client version >= 7.11 no longer works with OSS Elastic images (and elastic.co no longer releases OSS images)\r\n\r\n* Fixed tests for Elasticsearch\r\n\r\n* pom cleanup"
+    },
+    "CVE-2021-22134": {
+      "bef30719ef10325f9308015552bb6215f542446e": "Upgraded ElasticSearch to get rid of CVEs (and switched client to OpenSearch one) (#13867)\n\n* Upgraded ElasticSearch to get rid of CVEs. (#13747)\r\n\r\n* Upgraded ElasticSearch to get rid of CVEs.\r\n\r\nCVE-2020-7020\r\nCVE-2020-7021\r\nCVE-2021-22132\r\nCVE-2021-22134\r\nCVE-2021-22144\r\nCVE-2021-22147\r\n\r\n* Elastic search client version >= 7.11 no longer works with OSS Elastic images (and elastic.co no longer releases OSS images)\r\n\r\n* Fixed tests for Elasticsearch\r\n\r\n* pom cleanup\r\n\r\n* Switched to OpenSearch client for Elastic (Apache 2 licensed)",
+      "1af8d3fc6bca31c1ca059a2dda80e6d8eb7ae24b": "Upgraded ElasticSearch to get rid of CVEs. (#13747)\n\n* Upgraded ElasticSearch to get rid of CVEs.\r\n\r\nCVE-2020-7020\r\nCVE-2020-7021\r\nCVE-2021-22132\r\nCVE-2021-22134\r\nCVE-2021-22144\r\nCVE-2021-22147\r\n\r\n* Elastic search client version >= 7.11 no longer works with OSS Elastic images (and elastic.co no longer releases OSS images)\r\n\r\n* Fixed tests for Elasticsearch\r\n\r\n* pom cleanup"
+    },
+    "CVE-2021-22144": {
+      "bef30719ef10325f9308015552bb6215f542446e": "Upgraded ElasticSearch to get rid of CVEs (and switched client to OpenSearch one) (#13867)\n\n* Upgraded ElasticSearch to get rid of CVEs. (#13747)\r\n\r\n* Upgraded ElasticSearch to get rid of CVEs.\r\n\r\nCVE-2020-7020\r\nCVE-2020-7021\r\nCVE-2021-22132\r\nCVE-2021-22134\r\nCVE-2021-22144\r\nCVE-2021-22147\r\n\r\n* Elastic search client version >= 7.11 no longer works with OSS Elastic images (and elastic.co no longer releases OSS images)\r\n\r\n* Fixed tests for Elasticsearch\r\n\r\n* pom cleanup\r\n\r\n* Switched to OpenSearch client for Elastic (Apache 2 licensed)",
+      "1af8d3fc6bca31c1ca059a2dda80e6d8eb7ae24b": "Upgraded ElasticSearch to get rid of CVEs. (#13747)\n\n* Upgraded ElasticSearch to get rid of CVEs.\r\n\r\nCVE-2020-7020\r\nCVE-2020-7021\r\nCVE-2021-22132\r\nCVE-2021-22134\r\nCVE-2021-22144\r\nCVE-2021-22147\r\n\r\n* Elastic search client version >= 7.11 no longer works with OSS Elastic images (and elastic.co no longer releases OSS images)\r\n\r\n* Fixed tests for Elasticsearch\r\n\r\n* pom cleanup"
+    },
+    "CVE-2021-22147": {
+      "bef30719ef10325f9308015552bb6215f542446e": "Upgraded ElasticSearch to get rid of CVEs (and switched client to OpenSearch one) (#13867)\n\n* Upgraded ElasticSearch to get rid of CVEs. (#13747)\r\n\r\n* Upgraded ElasticSearch to get rid of CVEs.\r\n\r\nCVE-2020-7020\r\nCVE-2020-7021\r\nCVE-2021-22132\r\nCVE-2021-22134\r\nCVE-2021-22144\r\nCVE-2021-22147\r\n\r\n* Elastic search client version >= 7.11 no longer works with OSS Elastic images (and elastic.co no longer releases OSS images)\r\n\r\n* Fixed tests for Elasticsearch\r\n\r\n* pom cleanup\r\n\r\n* Switched to OpenSearch client for Elastic (Apache 2 licensed)",
+      "1af8d3fc6bca31c1ca059a2dda80e6d8eb7ae24b": "Upgraded ElasticSearch to get rid of CVEs. (#13747)\n\n* Upgraded ElasticSearch to get rid of CVEs.\r\n\r\nCVE-2020-7020\r\nCVE-2020-7021\r\nCVE-2021-22132\r\nCVE-2021-22134\r\nCVE-2021-22144\r\nCVE-2021-22147\r\n\r\n* Elastic search client version >= 7.11 no longer works with OSS Elastic images (and elastic.co no longer releases OSS images)\r\n\r\n* Fixed tests for Elasticsearch\r\n\r\n* pom cleanup"
+    },
+    "CVE-2020-15250": {
+      "11cbe23ef6fea403750c6011f945bf5cbaac98b1": "[security] Offloaders - get rid of several CVEs (Log4J included) (#13746)\n\n### Motivation\r\n\r\nThe offloaders Nar files contain dependecies with open CVEs\r\n\r\n#### tiered-storage-file-system\r\n\r\n`hadoop-commons:3.3.0`  brings several vulnerable transitive dependencies: (severity >= 7.5)\r\n* com.faster.xml.woodstox:woodstox-core:5.0.3 -> CVE-2020-15250\r\n* log4j:log4j:2.17\r\n* net.minidev:json-smart:2.3 -> CVE-2021-27568\r\n* jackson-mapper-asl:1.9.2 \r\n* okhttp 2.7.5\r\n* jetty 9.4.20\r\n* Avro 1.7.7\r\n\r\n###  tiered-storage-jcloud\r\nthe dependency `org.apache.jclouds:jclouds-core`\u00a0looks like an uber jar containing only a dependency inside the `lib` directory: gson:2.8.5 which is vulnerable to `sonatype-2021-1694`\r\n\r\n### Modifications\r\n\r\n#### tiered-storage-file-system\r\n* Upgraded hadoop packages to from 3.3.0 to 3.3.1\r\n* Fixed Log4j transitive dependency\r\n* excluded deprecated Jackson from Jetty 1 (transitive dependency of hadoop-commons)\r\n* forced Avro to 1.10.2\r\n* forced json-smart to 2.4.7\r\n\r\n\r\n####  tiered-storage-jcloud\r\n* excluded the exceeding gson jar and added the correct latest one (2.8.9)\r\n\r\n### Verifying this change\r\n\r\nThis change is already covered by existing tests, such as *(please describe tests)*.\r\n\r\n* integrations test about offloading\r\n\r\n### Does this pull request potentially affect one of the following parts:\r\n\r\n- Dependencies (does it add or upgrade a dependency): (yes)\r\n\r\n### Documentation\r\n\r\n- [x] `no-need-doc`",
+      "9d3cbef9b011f5985b5f91a22dc5afc2cf92e439": "[Security] Upgrade junit version to 4.13.1 to resolve CVE-2020-15250 and fix test dependency leak (#10147)"
+    },
+    "CVE-2021-27568": {
+      "11cbe23ef6fea403750c6011f945bf5cbaac98b1": "[security] Offloaders - get rid of several CVEs (Log4J included) (#13746)\n\n### Motivation\r\n\r\nThe offloaders Nar files contain dependecies with open CVEs\r\n\r\n#### tiered-storage-file-system\r\n\r\n`hadoop-commons:3.3.0`  brings several vulnerable transitive dependencies: (severity >= 7.5)\r\n* com.faster.xml.woodstox:woodstox-core:5.0.3 -> CVE-2020-15250\r\n* log4j:log4j:2.17\r\n* net.minidev:json-smart:2.3 -> CVE-2021-27568\r\n* jackson-mapper-asl:1.9.2 \r\n* okhttp 2.7.5\r\n* jetty 9.4.20\r\n* Avro 1.7.7\r\n\r\n###  tiered-storage-jcloud\r\nthe dependency `org.apache.jclouds:jclouds-core`\u00a0looks like an uber jar containing only a dependency inside the `lib` directory: gson:2.8.5 which is vulnerable to `sonatype-2021-1694`\r\n\r\n### Modifications\r\n\r\n#### tiered-storage-file-system\r\n* Upgraded hadoop packages to from 3.3.0 to 3.3.1\r\n* Fixed Log4j transitive dependency\r\n* excluded deprecated Jackson from Jetty 1 (transitive dependency of hadoop-commons)\r\n* forced Avro to 1.10.2\r\n* forced json-smart to 2.4.7\r\n\r\n\r\n####  tiered-storage-jcloud\r\n* excluded the exceeding gson jar and added the correct latest one (2.8.9)\r\n\r\n### Verifying this change\r\n\r\nThis change is already covered by existing tests, such as *(please describe tests)*.\r\n\r\n* integrations test about offloading\r\n\r\n### Does this pull request potentially affect one of the following parts:\r\n\r\n- Dependencies (does it add or upgrade a dependency): (yes)\r\n\r\n### Documentation\r\n\r\n- [x] `no-need-doc`"
+    },
+    "CVE-2021-43797": {
+      "3b44d674602fc6972a8e5e92b55a082c791280b1": "[security] Upgrade Netty to 4.1.72 - CVE-2021-43797 (#13328)\n\n* [security] Upgrade Netty to 4.1.72\n\n* fix licenses files",
+      "f52ac045f41acbb6c31da21a3463df3cfbe8f1b4": "[security] Upgrade Netty to 4.1.72 - CVE-2021-43797 (#13328)\n\n* [security] Upgrade Netty to 4.1.72\r\n\r\n* fix licenses files",
+      "6e206f5e045e730f7bc1991b9a3ecf1731cfa077": "[security] Upgrade Netty to 4.1.72 - CVE-2021-43797 (#13328)\n\n* [security] Upgrade Netty to 4.1.72\r\n\r\n* fix licenses files"
+    },
+    "CVE-2021-0341": {
+      "47d91a18662e0902cd0216948f054b2780505472": "[Security] Upgrade OkHttp3 to address CVE-2021-0341 (#13065)\n\n* Upgrade OkHttp3 from 3.14.9 to 4.9.3\n* Upgrade Okio to the same version of OkHttp3 4.9.3\n* Override Okio transitive dependency - Kotlin stdlib - to 1.4.32 in order to address CVE-2020-29582\n\n(cherry picked from commit d24faac38bc8babd1167d9ae684a6273b65930d8)",
+      "d24faac38bc8babd1167d9ae684a6273b65930d8": "[Security] Upgrade OkHttp3 to address CVE-2021-0341 (#13065)\n\n* Upgrade OkHttp3 from 3.14.9 to 4.9.3\r\n* Upgrade Okio to the same version of OkHttp3 4.9.3\r\n* Override Okio transitive dependency - Kotlin stdlib - to 1.4.32 in order to address CVE-2020-29582"
+    },
+    "CVE-2020-29582": {
+      "47d91a18662e0902cd0216948f054b2780505472": "[Security] Upgrade OkHttp3 to address CVE-2021-0341 (#13065)\n\n* Upgrade OkHttp3 from 3.14.9 to 4.9.3\n* Upgrade Okio to the same version of OkHttp3 4.9.3\n* Override Okio transitive dependency - Kotlin stdlib - to 1.4.32 in order to address CVE-2020-29582\n\n(cherry picked from commit d24faac38bc8babd1167d9ae684a6273b65930d8)",
+      "d24faac38bc8babd1167d9ae684a6273b65930d8": "[Security] Upgrade OkHttp3 to address CVE-2021-0341 (#13065)\n\n* Upgrade OkHttp3 from 3.14.9 to 4.9.3\r\n* Upgrade Okio to the same version of OkHttp3 4.9.3\r\n* Override Okio transitive dependency - Kotlin stdlib - to 1.4.32 in order to address CVE-2020-29582"
+    },
+    "CVE-2021-35515": {
+      "5945e32a46580c0e316019990be2f552665c78a9": "[Security] Upgrade commons-compress to 1.21 (#11345)\n\n- addresses CVE-2021-35515, CVE-2021-35516, CVE-2021-35517\n  and CVE-2021-36090\n\n(cherry picked from commit 73404bf227d53cb3cf96349f88c3fc831427828b)",
+      "d413f296dc1964373e8bf055eaf7946e00d3323e": "[Security] Upgrade commons-compress to 1.21 (#11345)\n\n- addresses CVE-2021-35515, CVE-2021-35516, CVE-2021-35517\r\n  and CVE-2021-36090\n\n(cherry picked from commit 73404bf227d53cb3cf96349f88c3fc831427828b)",
+      "73404bf227d53cb3cf96349f88c3fc831427828b": "[Security] Upgrade commons-compress to 1.21 (#11345)\n\n- addresses CVE-2021-35515, CVE-2021-35516, CVE-2021-35517\r\n  and CVE-2021-36090"
+    },
+    "CVE-2021-35516": {
+      "5945e32a46580c0e316019990be2f552665c78a9": "[Security] Upgrade commons-compress to 1.21 (#11345)\n\n- addresses CVE-2021-35515, CVE-2021-35516, CVE-2021-35517\n  and CVE-2021-36090\n\n(cherry picked from commit 73404bf227d53cb3cf96349f88c3fc831427828b)",
+      "d413f296dc1964373e8bf055eaf7946e00d3323e": "[Security] Upgrade commons-compress to 1.21 (#11345)\n\n- addresses CVE-2021-35515, CVE-2021-35516, CVE-2021-35517\r\n  and CVE-2021-36090\n\n(cherry picked from commit 73404bf227d53cb3cf96349f88c3fc831427828b)",
+      "73404bf227d53cb3cf96349f88c3fc831427828b": "[Security] Upgrade commons-compress to 1.21 (#11345)\n\n- addresses CVE-2021-35515, CVE-2021-35516, CVE-2021-35517\r\n  and CVE-2021-36090"
+    },
+    "CVE-2021-35517": {
+      "5945e32a46580c0e316019990be2f552665c78a9": "[Security] Upgrade commons-compress to 1.21 (#11345)\n\n- addresses CVE-2021-35515, CVE-2021-35516, CVE-2021-35517\n  and CVE-2021-36090\n\n(cherry picked from commit 73404bf227d53cb3cf96349f88c3fc831427828b)",
+      "d413f296dc1964373e8bf055eaf7946e00d3323e": "[Security] Upgrade commons-compress to 1.21 (#11345)\n\n- addresses CVE-2021-35515, CVE-2021-35516, CVE-2021-35517\r\n  and CVE-2021-36090\n\n(cherry picked from commit 73404bf227d53cb3cf96349f88c3fc831427828b)",
+      "73404bf227d53cb3cf96349f88c3fc831427828b": "[Security] Upgrade commons-compress to 1.21 (#11345)\n\n- addresses CVE-2021-35515, CVE-2021-35516, CVE-2021-35517\r\n  and CVE-2021-36090"
+    },
+    "CVE-2021-36090": {
+      "5945e32a46580c0e316019990be2f552665c78a9": "[Security] Upgrade commons-compress to 1.21 (#11345)\n\n- addresses CVE-2021-35515, CVE-2021-35516, CVE-2021-35517\n  and CVE-2021-36090\n\n(cherry picked from commit 73404bf227d53cb3cf96349f88c3fc831427828b)",
+      "d413f296dc1964373e8bf055eaf7946e00d3323e": "[Security] Upgrade commons-compress to 1.21 (#11345)\n\n- addresses CVE-2021-35515, CVE-2021-35516, CVE-2021-35517\r\n  and CVE-2021-36090\n\n(cherry picked from commit 73404bf227d53cb3cf96349f88c3fc831427828b)",
+      "73404bf227d53cb3cf96349f88c3fc831427828b": "[Security] Upgrade commons-compress to 1.21 (#11345)\n\n- addresses CVE-2021-35515, CVE-2021-35516, CVE-2021-35517\r\n  and CVE-2021-36090"
+    },
+    "CVE-2019-17640": {
+      "be1eedc24a9c1ddc2c52cf9b7514e29d581892fd": "[Security] Upgrade vertx to 3.9.8 to address CVE-2019-17640 (#10889)\n\n(cherry picked from commit bce9144fb3c6c444d441dcf5527450ab4caed0f0)",
+      "bce9144fb3c6c444d441dcf5527450ab4caed0f0": "[Security] Upgrade vertx to 3.9.8 to address CVE-2019-17640 (#10889)"
+    },
+    "CVE-2021-25738": {
+      "0ee56e2af6decfe28cb6b83e3ccab8e6abecc4e0": "[Security] Upgrade k8s client-java to 12.0.1 (#10866)\n\n### Motivation\r\n\r\n- address security vulnerability CVE-2021-25738 which has been reported as https://github.com/kubernetes-client/java/issues/1698\r\n\r\n### Modifications\r\n\r\n- upgrade kubernetes client-java to 12.0.1\n\n(cherry picked from commit 43f4e4446fb163db2659551e0084718623e85d05)",
+      "43f4e4446fb163db2659551e0084718623e85d05": "[Security] Upgrade k8s client-java to 12.0.1 (#10866)\n\n### Motivation\r\n\r\n- address security vulnerability CVE-2021-25738 which has been reported as https://github.com/kubernetes-client/java/issues/1698\r\n\r\n### Modifications\r\n\r\n- upgrade kubernetes client-java to 12.0.1"
+    },
+    "CVE-2021-29425": {
+      "c941860dc229f318cd9c9b67dbaf28d30cc3a59e": "[Security] Upgrade commons-io to address CVE-2021-29425 (#10287)\n\n* [Security] Upgrade commons-io to address CVE-2021-29425\n\n* Upgrade license\n\n(cherry picked from commit 9d7cad44030f6a02578bb8d4c73e590ddc8a8c1d)",
+      "9d7cad44030f6a02578bb8d4c73e590ddc8a8c1d": "[Security] Upgrade commons-io to address CVE-2021-29425 (#10287)\n\n* [Security] Upgrade commons-io to address CVE-2021-29425\r\n\r\n* Upgrade license"
+    },
+    "CVE-2021-21409": {
+      "0b71b1370227dbab7c02d01b478fb7c42a778fcf": "[Security] Upgrade Netty to 4.1.63.Final (#10266)\n\n- addresses CVE-2021-21409"
+    },
+    "CVE-2018-12541": {
+      "0ce0bcccb21d32a0bf6bb5643fb23b5e09fa1895": "[Security] Upgrade vertx to 3.9.7, addresses CVE-2018-12541 (#10261)"
+    },
+    "CVE-2020-26238": {
+      "05c91569b5ec7e2b83395b8f30f7802912e793a7": "Update version for cron-utils and spring-context (#8822)\n\n* update cron-utils to 9.1.3\r\n* update sprint-context to 5.3.1\r\n* this is to resolve security vulnerability \"CVE-2020-26238\"\r\n\r\nCo-authored-by: Ali Ahmed <alia@splunk.com>"
+    },
+    "CVE-2020-5421": {
+      "97f2e5b664da2623e893cbf9aa2e677e7c42bef6": "Issue 8354: Upgrade spring framework version to patch CVE-2020-5421 (#8355)"
+    },
+    "CVE-2018-1296": {
+      "412d45c9f016aad1d2772d0ffb75207bd0887048": "Upgrade hdfs2 version to 2.8.5 (#8319)\n\nSigned-off-by: xiaolong.ran <rxl@apache.org>\r\n\r\n\r\nFixes #8305 \r\n\r\n\r\n### Motivation\r\n\r\nIn Apache Hadoop 2.8.2, there are the following security issues:\r\n\r\n- CVE-2018-1296\r\n- CVE-2018-8009\r\n\r\nRecommended upgrade version\uff1a2.8.5\r\n\r\n### Modifications\r\n\r\n- Upgrade hdfs2 version to `2.8.5`\r\n\r\n\n(cherry picked from commit cd5cbb6d9b7a97010be5f2c8cccd4e1f5a679834)",
+      "cd5cbb6d9b7a97010be5f2c8cccd4e1f5a679834": "Upgrade hdfs2 version to 2.8.5 (#8319)\n\nSigned-off-by: xiaolong.ran <rxl@apache.org>\r\n\r\n\r\nFixes #8305 \r\n\r\n\r\n### Motivation\r\n\r\nIn Apache Hadoop 2.8.2, there are the following security issues:\r\n\r\n- CVE-2018-1296\r\n- CVE-2018-8009\r\n\r\nRecommended upgrade version\uff1a2.8.5\r\n\r\n### Modifications\r\n\r\n- Upgrade hdfs2 version to `2.8.5`"
+    },
+    "CVE-2018-8009": {
+      "412d45c9f016aad1d2772d0ffb75207bd0887048": "Upgrade hdfs2 version to 2.8.5 (#8319)\n\nSigned-off-by: xiaolong.ran <rxl@apache.org>\r\n\r\n\r\nFixes #8305 \r\n\r\n\r\n### Motivation\r\n\r\nIn Apache Hadoop 2.8.2, there are the following security issues:\r\n\r\n- CVE-2018-1296\r\n- CVE-2018-8009\r\n\r\nRecommended upgrade version\uff1a2.8.5\r\n\r\n### Modifications\r\n\r\n- Upgrade hdfs2 version to `2.8.5`\r\n\r\n\n(cherry picked from commit cd5cbb6d9b7a97010be5f2c8cccd4e1f5a679834)",
+      "cd5cbb6d9b7a97010be5f2c8cccd4e1f5a679834": "Upgrade hdfs2 version to 2.8.5 (#8319)\n\nSigned-off-by: xiaolong.ran <rxl@apache.org>\r\n\r\n\r\nFixes #8305 \r\n\r\n\r\n### Motivation\r\n\r\nIn Apache Hadoop 2.8.2, there are the following security issues:\r\n\r\n- CVE-2018-1296\r\n- CVE-2018-8009\r\n\r\nRecommended upgrade version\uff1a2.8.5\r\n\r\n### Modifications\r\n\r\n- Upgrade hdfs2 version to `2.8.5`"
+    },
+    "CVE-2020-13957": {
+      "94d791b5a78b13ed48d54ddd0ef260bf6a3a32e6": "Upgrade solr version to 8.6.3 (#8328)\n\nSigned-off-by: xiaolong.ran <rxl@apache.org>\r\n\r\n\r\nFixes #8324 \r\n\r\n\r\n### Motivation\r\n\r\nIn Apache Solr 8.6.0, there are the following security issues:\r\n\r\n- CVE-2020-13957\r\n\r\nRecommended upgrade version\uff1a8.6.3\r\n\r\n### Modifications\r\n\r\n- Upgrade solr version to `8.6.3`"
+    },
+    "CVE-2017-5645": {
+      "4284e393c8ec9502e35d73eafaa1c73efc9fa986": "upgrade scala-maven-plugin to 4.1.0 (#6469)\n\n### Motivation\r\nThe Pulsar examples include some third-party libraries with security vulnerabilities.\r\n- log4j-core-2.8.1\r\nhttps://www.cvedetails.com/cve/CVE-2017-5645\r\n\r\n### Modifications\r\n\r\n- Upgraded the version of scala-maven-plugin from 4.0.1 to 4.1.0. log4j-core-2.8.1 were installed because scala-maven-plugin depends on it."
+    },
+    "CVE-2019-17531": {
+      "9ad95357a9f6005eb38e840424f36e501c885190": "Bump jackson libraries to 2.10.1 (#5758)\n\nUpdated jackson libraries to the latest version. There is a security vulnerability in `jackson-databind` currently used by Pulsar.\r\nhttps://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-17531"
+    },
+    "CVE-2015-7501": {
+      "d0dbb21361b0b2ba23b16329154d3b7dd68ea35d": "Upgrade commons-collections for Security Vulnerabilities[CVE-2015-7501] (#2886)\n\n* Upgrade commons-collections for Security Vulnerabilities[CVE-2015-7501]\n\n* fix license\n\n* fix license",
+      "c7e2197a7452729600a76204f1b2b00dabfd5c4b": "Upgrade commons-collections for Security Vulnerabilities[CVE-2015-7501] (#2886)\n\n* Upgrade commons-collections for Security Vulnerabilities[CVE-2015-7501]\r\n\r\n* fix license\r\n\r\n* fix license"
+    }
+  }
+}

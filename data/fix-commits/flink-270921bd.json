@@ -1,0 +1,41 @@
+{
+  "vcs_url": "https://github.com/apache/flink",
+  "vulnerabilities": {
+    "CVE-2024-36114": {
+      "aaa8ad48f8e0fa7876d92068517d8a648133c91e": "[FLINK-36593] Update io.airlift:aircompressor to 0.27. This closes #25567\n\nUpgrade the io.airlift:aircompressor version used by flink-runtime from 0.21 to 0.27.\r\nThis addresses CVE-2024-36114."
+    },
+    "CVE-2023-39410": {
+      "a85832fb8ff1b1c55fa3e532645d208749b803d5": "[FLINK-33238][Formats/Avro] Upgrade used AVRO version to 1.11.3. This closes #23559\n\nMitigate scanners flagging Flink as vulnerable for CVE-2023-39410\r\n\r\nCo-authored-by: AndreiLeib <andrei.leibovski@appdirect.com>",
+      "a58a35e2b1abda28ae7d884a433ca26624c7a4c4": "[FLINK-33238][Formats/Avro] Upgrade AVRO dependency to 1.11.3. This closes #23508\n\nUpgrade AVRO dependency to 1.11.3 to mitigate scanners flagging Flink as vulnerable for CVE-2023-39410\r\nThis also solves the problem where Union types are not inheriting type conversions\r\n\r\nCo-authored-by: AndreiLeib <andrei.leibovski@appdirect.com>"
+    },
+    "CVE-2022-41946": {
+      "e08b251cf11e6d4a6922e9e5a3653f901a03257c": "[FLINK-30177][Connectors/JDBC] Update pgjdbc to avoid CVE-2022-41946"
+    },
+    "CVE-2022-21363": {
+      "c28c70af5a295a487467bf2ae789735831bdd804": "[FLINK-28217] Bumps [mysql-connector-java](https://github.com/mysql/mysql-connector-j) from 8.0.27 to 8.0.29.\n\nFlink doesn't bundle this dependency but only uses it for testing. Bumping this dependency will also address false positives for CVE-2022-21363 (direct vulnerability) and CVE-2021-22569 (vulnerability from included dependency)."
+    },
+    "CVE-2021-22569": {
+      "c28c70af5a295a487467bf2ae789735831bdd804": "[FLINK-28217] Bumps [mysql-connector-java](https://github.com/mysql/mysql-connector-j) from 8.0.27 to 8.0.29.\n\nFlink doesn't bundle this dependency but only uses it for testing. Bumping this dependency will also address false positives for CVE-2022-21363 (direct vulnerability) and CVE-2021-22569 (vulnerability from included dependency)."
+    },
+    "CVE-2021-21240": {
+      "dcb77049d21b586d4669229a8248da72ef6fdcf7": "[FLINK-28147][Python] Update httplib2 to at least 0.19.0 to address CVE-2021-21240"
+    },
+    "CVE-2021-45105": {
+      "49971b8a527b81b5e00169d5b187e21a274184e2": "[FLINK-25375] Update log4j2 dependency to 2.17.0 to address (#18167)\n\nCVE-2021-45105\r\n\r\nCo-authored-by: Bernard Joseph Jean Bruno <brunobernard@busymind101.com>",
+      "1561f0f908a96b8efa83e79d44cfe579cb7d29ef": "[FLINK-25375] Update log4j2 dependency to 2.17.0 to address (#18166)\n\nCVE-2021-45105\r\n\r\nCo-authored-by: Bernard Joseph Jean Bruno <brunobernard@busymind101.com>",
+      "d903739d6cf95bcac4be46eedafe016d6dd02446": "[FLINK-25375] Update log4j2 dependency to 2.17.0 to address (#18168)\n\nCVE-2021-45105\r\n\r\nCo-authored-by: Bernard Joseph Jean Bruno <brunobernard@busymind101.com>",
+      "fef7f46c476875bd2974e5303f7ae0fb9bf2faf4": "[FLINK-25375] Update log4j2 dependency to 2.17.0 to address\nCVE-2021-45105\n\nThis closes #18149."
+    },
+    "CVE-2020-9488": {
+      "1cbc0034ffa926ca3cfea9b9615b21e98e13c1f3": "[FLINK-22407][build] Bump log4j to 2.24.1\n\n- CVE-2020-9488"
+    },
+    "CVE-2019-12402": {
+      "0477368813fba33f0f9aa5ff82304516c499ed41": "[FLINK-14121] Update commons-compress because of CVE-2019-12402\n\nThis closes #11333."
+    },
+    "CVE-2018-11771": {
+      "93c13f4b603aae37cb90c04787ad7e4207ca7df8": "[FLINK-11207][build] Bump commons-compress to 1.18\n\nThis addresses CVE-2018-11771.",
+      "d209ed356978d04bc0bd426877fae20bfb455b8c": "[FLINK-11207][build] Bump commons-compress to 1.18\n\nThis addresses CVE-2018-11771.",
+      "f817537f51d09ac618138e0d3aecf015bb22b55b": "[FLINK-11207][build] Bump commons-compress to 1.18\n\nThis addresses CVE-2018-11771."
+    }
+  }
+}

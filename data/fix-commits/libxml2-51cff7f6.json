@@ -1,0 +1,172 @@
+{
+  "vcs_url": "https://gitlab.gnome.org/gnome/libxml2",
+  "vulnerabilities": {
+    "CVE-2025-24928": {
+      "61e5f3ea97609bb221a355579d2285ddd28d90d2": "fix: add bounds checks to xmlSnprintfElements in valid.c\n\nCVE-2025-24928 fixed xmlSnprintfElementContent for unchecked strcat()\nwrites, but the sibling function xmlSnprintfElements has the identical\nunfixed pattern. The strcat(buf, \"(\") before the while loop and\nstrcat(buf, \")\") after the loop exit have no bounds checks.\n\nAdd remaining-space checks before both strcat calls, with early return\nand ellipsis when space is insufficient.",
+      "858ca26c0689161a6b903a6682cc8a1cc10a0ea8": "[CVE-2025-24928] Fix stack-buffer-overflow in xmlSnprintfElements\n\nFixes #847.",
+      "8c8753ad5280ee13aee5eec9b0f6eee2ed920f57": "[CVE-2025-24928] Fix stack-buffer-overflow in xmlSnprintfElements\n\nFixes #847.",
+      "055b382541c8b8ba12d8f0d709db7030e10e8135": "[CVE-2025-24928] Fix stack-buffer-overflow in xmlSnprintfElements\n\nFixes #847."
+    },
+    "CVE-2025-7425": {
+      "a489aca81b70169fd52cf7c8c34ef4e9ab97a7e7": "tree: Guard against atype corruption\n\nAlways remove ids if `id` member is set.\n\nUntested, but this should fix CVE-2025-7425 reported against libxslt:\n\nhttps://gitlab.gnome.org/GNOME/libxslt/-/issues/140",
+      "9de92ed78d8495527c5d7a4d0cc76c1f83768195": "tree: Guard against atype corruption\n\nAlways remove ids if `id` member is set.\n\nUntested, but this should fix CVE-2025-7425 reported against libxslt:\n\nhttps://gitlab.gnome.org/GNOME/libxslt/-/issues/140",
+      "f1e1f13b766eb580a8dcc0c4e7a447346dfd862e": "tree: Guard against atype corruption\n\nAlways remove ids if `id` member is set.\n\nUntested, but this should fix CVE-2025-7425 reported against libxslt:\n\nhttps://gitlab.gnome.org/GNOME/libxslt/-/issues/140"
+    },
+    "CVE-2025-49794": {
+      "81cef8c5b5aec2acdf5707e57a6db0c8d1d0abca": "[CVE-2025-49794] [CVE-2025-49796] schematron: Fix xmlSchematronReportOutput\n\nFix use-after-free (CVE-2025-49794) and type confusion (CVE-2025-49796)\nin xmlSchematronReportOutput.\n\nFixes #931.\nFixes #933.",
+      "f7ebc65f05bffded58d1e1b2138eb124c2e44f21": "schematron: Fix memory safety issues in xmlSchematronReportOutput\n\nFix use-after-free (CVE-2025-49794) and type confusion (CVE-2025-49796)\nin xmlSchematronReportOutput.\n\nFixes #931.\nFixes #933.",
+      "71e1e8af5ee46dad1b57bb96cfbf1c3ad21fbd7b": "schematron: Fix memory safety issues in xmlSchematronReportOutput\n\nFix use-after-free (CVE-2025-49794) and type confusion (CVE-2025-49796)\nin xmlSchematronReportOutput.\n\nFixes #931.\nFixes #933."
+    },
+    "CVE-2025-49796": {
+      "81cef8c5b5aec2acdf5707e57a6db0c8d1d0abca": "[CVE-2025-49794] [CVE-2025-49796] schematron: Fix xmlSchematronReportOutput\n\nFix use-after-free (CVE-2025-49794) and type confusion (CVE-2025-49796)\nin xmlSchematronReportOutput.\n\nFixes #931.\nFixes #933.",
+      "f7ebc65f05bffded58d1e1b2138eb124c2e44f21": "schematron: Fix memory safety issues in xmlSchematronReportOutput\n\nFix use-after-free (CVE-2025-49794) and type confusion (CVE-2025-49796)\nin xmlSchematronReportOutput.\n\nFixes #931.\nFixes #933.",
+      "71e1e8af5ee46dad1b57bb96cfbf1c3ad21fbd7b": "schematron: Fix memory safety issues in xmlSchematronReportOutput\n\nFix use-after-free (CVE-2025-49794) and type confusion (CVE-2025-49796)\nin xmlSchematronReportOutput.\n\nFixes #931.\nFixes #933."
+    },
+    "CVE-2025-49795": {
+      "62048278a4c5fdf14d287dfb400005c0a0caa69f": "[CVE-2025-49795] schematron: Fix null pointer dereference leading to DoS\n\nFixes #932",
+      "c24909ba2601848825b49a60f988222da3019667": "Schematron: Fix null pointer dereference leading to DoS\n\n(CVE-2025-49795)\n\nFixes #932",
+      "24d7e15914588cb45e7fb41cbe4fcf785e1a4861": "schematron: Complete fix for CVE-2025-49795\n\n- Fix memory leaks\n- Fix tests",
+      "499bcb78ab389f60c2fd634ce410d4bb85c18765": "Schematron: Fix null pointer dereference leading to DoS\n\n(CVE-2025-49795)\n\nFixes #932"
+    },
+    "CVE-2025-6170": {
+      "5e9ec5c107d3f5b5179c3dbc19df43df041cd55b": "[CVE-2025-6170] Fix potential buffer overflows of interactive shell\n\nFixes #941",
+      "c340e419505cf4bf1d9ed7019a87cc00ec200434": "Fix potential buffer overflows of interactive shell\n\nCVE-2025-6170\n\nFixes #941",
+      "069bcda17d8194e9582c64dd4bc9dac99b015810": "Fix potential buffer overflows of interactive shell\n\nCVE-2025-6170\n\nFixes #941"
+    },
+    "CVE-2025-6021": {
+      "17d950ae33c23f87692aa179bacedb6743f3188a": "[CVE-2025-6021] tree: Fix integer overflow in xmlBuildQName\n\nFixes #926."
+    },
+    "CVE-2025-32415": {
+      "384cc7c182fc00c6d5e2ab4b5e3671b2e3f93c84": "[CVE-2025-32415] schemas: Fix heap buffer overflow in xmlSchemaIDCFillNodeTables\n\nDon't use local variable which could contain a stale value.\n\nFixes #890.",
+      "8ac33b1c821b4e67326e8e416945b31c9537c7c0": "[CVE-2025-32415] schemas: Fix heap buffer overflow in xmlSchemaIDCFillNodeTables\n\nDon't use local variable which could contain a stale value.\n\nFixes #890.",
+      "487ee1d8711c6415218b373ef455fcd969d12399": "[CVE-2025-32415] schemas: Fix heap buffer overflow in xmlSchemaIDCFillNodeTables\n\nDon't use local variable which could contain a stale value.\n\nFixes #890."
+    },
+    "CVE-2025-32414": {
+      "d7657811964eac1cb9743bb98649278ad948f0d2": "[CVE-2025-32414] python: Read at most len/4 characters.\n\nFixes #889 by reserving space in the buffer for UTF-8 encoding of text.",
+      "443a9c89115203e5bd88fb136e256267b90cb78e": "[CVE-2025-32414] python: Read at most len/4 characters.\n\nFixes #889 by reserving space in the buffer for UTF-8 encoding of text.",
+      "53d259454161eee801d22c56e08ea331b4c495b5": "[CVE-2025-32414] python: Read at most len/4 characters.\n\nFixes #889 by reserving space in the buffer for UTF-8 encoding of text.",
+      "8d415b8911be26b12b85497f7cc57143b5321787": "[CVE-2025-32414] python: Read at most len/4 characters.\n\nFixes #889 by reserving space in the buffer for UTF-8 encoding of text."
+    },
+    "CVE-2024-56171": {
+      "245b70d7d2768572ae1b05b3668ca858b9ec4ed4": "[CVE-2024-56171] Fix use-after-free after xmlSchemaItemListAdd\n\nxmlSchemaItemListAdd can reallocate the items array. Update local\nvariables after adding item in\n\n- xmlSchemaIDCFillNodeTables\n- xmlSchemaBubbleIDCNodeTables\n\nFixes #828.",
+      "5880a9a6bd97c0f9ac8fc4f30110fe023f484746": "[CVE-2024-56171] Fix use-after-free after xmlSchemaItemListAdd\n\nxmlSchemaItemListAdd can reallocate the items array. Update local\nvariables after adding item in\n\n- xmlSchemaIDCFillNodeTables\n- xmlSchemaBubbleIDCNodeTables\n\nFixes #828.",
+      "a6bf2cb76cc672c1fd1959e3793e43883893d94e": "[CVE-2024-56171] Fix use-after-free after xmlSchemaItemListAdd\n\nxmlSchemaItemListAdd can reallocate the items array. Update local\nvariables after adding item in\n\n- xmlSchemaIDCFillNodeTables\n- xmlSchemaBubbleIDCNodeTables\n\nFixes #828."
+    },
+    "CVE-2024-40896": {
+      "1a8932303969907f6572b1b6aac4081c56adb5c6": "[CVE-2024-40896] Fix XXE protection in downstream code\n\nSome users set an entity's children manually in the getEntity SAX\ncallback to restrict entity expansion. This stopped working after\nrenaming the \"checked\" member of xmlEntity, making at least one\ndownstream project and its dependants susceptible to XXE attacks.\n\nSee #761.",
+      "ae8f0ac0a2900219c3d762ae0b513e199dcf19a5": "[CVE-2024-40896] Fix XXE protection in downstream code\n\nSome users set an entity's children manually in the getEntity SAX\ncallback to restrict entity expansion. This stopped working after\nrenaming the \"checked\" member of xmlEntity, making at least one\ndownstream project and its dependants susceptible to XXE attacks.\n\nSee #761.",
+      "4c2b237174539db92f4504fbc5198d2f1561baca": "[CVE-2024-40896] Fix XXE protection in downstream code\n\nSome users set an entity's children manually in the getEntity SAX\ncallback to restrict entity expansion. This stopped working after\nrenaming the \"checked\" member of xmlEntity, making at least one\ndownstream project and its dependants susceptible to XXE attacks.\n\nSee #761.",
+      "de28e6ed3a7f18d3188dd18ac5b854b21e05d33a": "[CVE-2024-40896] Fix XXE protection in downstream code\n\nSome users set an entity's children manually in the getEntity SAX\ncallback to restrict entity expansion. This stopped working after\nrenaming the \"checked\" member of xmlEntity, making at least one\ndownstream project and its dependants susceptible to XXE attacks.\n\nSee #761."
+    },
+    "CVE-2024-34459": {
+      "3ad7f81624572ebd5b9e6058c9f67d38207c10e2": "[CVE-2024-34459] Fix buffer overread with `xmllint --htmlout`\n\nAdd a missing bounds check.\n\nFixes #720.",
+      "8ddc7f13337c9fe7c6b6e616f404b0fffb8a5145": "[CVE-2024-34459] Fix buffer overread with `xmllint --htmlout`\n\nAdd a missing bounds check.",
+      "2876ac5392a4e891b81e40e592c3ac6cb46016ce": "[CVE-2024-34459] Fix buffer overread with `xmllint --htmlout`\n\nAdd a missing bounds check."
+    },
+    "CVE-2024-25062": {
+      "1a66b176055d25ee635bf328c7b35b381db0b71d": "[CVE-2024-25062] xmlreader: Don't expand XIncludes when backtracking\n\nFixes a use-after-free if XML Reader if used with DTD validation and\nXInclude expansion.\n\nFixes #604.",
+      "2b0aac140d739905c7848a42efc60bfe783a39b7": "[CVE-2024-25062] xmlreader: Don't expand XIncludes when backtracking\n\nFixes a use-after-free if XML Reader if used with DTD validation and\nXInclude expansion.\n\nFixes #604.",
+      "92721970884fcc13305cb8e23cdc5f0dd7667c2c": "[CVE-2024-25062] xmlreader: Don't expand XIncludes when backtracking\n\nFixes a use-after-free if XML Reader if used with DTD validation and\nXInclude expansion.\n\nFixes #604."
+    },
+    "CVE-2023-29469": {
+      "547edbf1cbdccd46b2e8ff322a456eaa5931c5df": "[CVE-2023-29469] Hashing of empty dict strings isn't deterministic\n\nWhen hashing empty strings which aren't null-terminated,\nxmlDictComputeFastKey could produce inconsistent results. This could\nlead to various logic or memory errors, including double frees.\n\nFor consistency the seed is also taken into account, but this shouldn't\nhave an impact on security.\n\nFound by OSS-Fuzz.\n\nFixes #510.",
+      "09a2dd453007f9c7205274623acdd73747c22d64": "[CVE-2023-29469] Hashing of empty dict strings isn't deterministic\n\nWhen hashing empty strings which aren't null-terminated,\nxmlDictComputeFastKey could produce inconsistent results. This could\nlead to various logic or memory errors, including double frees.\n\nFor consistency the seed is also taken into account, but this shouldn't\nhave an impact on security.\n\nFound by OSS-Fuzz.\n\nFixes #510."
+    },
+    "CVE-2023-28484": {
+      "e4f85f1bd2eb34d9b49da9154a4cc3a1bc284f68": "[CVE-2023-28484] Fix null deref in xmlSchemaFixupComplexType\n\nFix a null pointer dereference when parsing (invalid) XML schemas.\n\nThanks to Robby Simpson for the report!\n\nFixes #491.",
+      "647e072ea0a2f12687fa05c172f4c4713fdb0c4f": "[CVE-2023-28484] Fix null deref in xmlSchemaFixupComplexType\n\nFix a null pointer dereference when parsing (invalid) XML schemas.\n\nThanks to Robby Simpson for the report!\n\nFixes #491."
+    },
+    "CVE-2021-3541": {
+      "046f99c543a1b82ba17c896c351176956331da73": "testrecurse: Add lol_param.xml\n\nAdd test case contributed by Sebastian Pipping for CVE-2021-3541.",
+      "e1bcffea180d6cc0651757bb64284a763e0e2239": "Release of libxml2-2.9.11\n\nPrompted by CVE-2021-3541, but this includes an awful lot of serious bug\nfixes by Nick and others.\n- configure.ac: bumped to new release\n- doc/* updated and regenerated",
+      "8598060bacada41a0eb09d95c97744ff4e428f8e": "Patch for security issue CVE-2021-3541\n\nThis is relapted to parameter entities expansion and following\nthe line of the billion laugh attack. Somehow in that path the\ncounting of parameters was missed and the normal algorithm based\non entities \"density\" was useless."
+    },
+    "CVE-2022-40304": {
+      "644a89e080bced793295f61f18aac8cfad6bece2": "[CVE-2022-40304] Fix dict corruption caused by entity reference cycles\n\nWhen an entity reference cycle is detected, the entity content is\ncleared by setting its first byte to zero. But the entity content might\nbe allocated from a dict. In this case, the dict entry becomes corrupted\nleading to all kinds of logic errors, including memory errors like\ndouble-frees.\n\nStop storing entity content, orig, ExternalID and SystemID in a dict.\nThese values are unlikely to occur multiple times in a document, so they\nshouldn't have been stored in a dict in the first place.\n\nThanks to Ned Williamson and Nathan Wachholz working with Google Project\nZero for the report!",
+      "1b41ec4e9433b05bb0376be4725804c54ef1d80b": "[CVE-2022-40304] Fix dict corruption caused by entity reference cycles\n\nWhen an entity reference cycle is detected, the entity content is\ncleared by setting its first byte to zero. But the entity content might\nbe allocated from a dict. In this case, the dict entry becomes corrupted\nleading to all kinds of logic errors, including memory errors like\ndouble-frees.\n\nStop storing entity content, orig, ExternalID and SystemID in a dict.\nThese values are unlikely to occur multiple times in a document, so they\nshouldn't have been stored in a dict in the first place.\n\nThanks to Ned Williamson and Nathan Wachholz working with Google Project\nZero for the report!"
+    },
+    "CVE-2022-40303": {
+      "c846986356fc149915a74972bf198abc266bc2c0": "[CVE-2022-40303] Fix integer overflows with XML_PARSE_HUGE\n\nAlso impose size limits when XML_PARSE_HUGE is set. Limit size of names\nto XML_MAX_TEXT_LENGTH (10 million bytes) and other content to\nXML_MAX_HUGE_LENGTH (1 billion bytes).\n\nMove some the length checks to the end of the respective loop to make\nthem strict.\n\nxmlParseEntityValue didn't have a length limitation at all. But without\nXML_PARSE_HUGE, this should eventually trigger an error in xmlGROW.\n\nThanks to Maddie Stone working with Google Project Zero for the report!"
+    },
+    "CVE-2022-29824": {
+      "6c283d83eccd940bcde15634ac8c7f100e3caefd": "[CVE-2022-29824] Fix integer overflows in xmlBuf and xmlBuffer\n\nIn several places, the code handling string buffers didn't check for\ninteger overflow or used wrong types for buffer sizes. This could\nresult in out-of-bounds writes or other memory errors when working on\nlarge, multi-gigabyte buffers.\n\nThanks to Felix Wilhelm for the report.",
+      "2554a2408e09f13652049e5ffb0d26196b02ebab": "[CVE-2022-29824] Fix integer overflows in xmlBuf and xmlBuffer\n\nIn several places, the code handling string buffers didn't check for\ninteger overflow or used wrong types for buffer sizes. This could\nresult in out-of-bounds writes or other memory errors when working on\nlarge, multi-gigabyte buffers.\n\nThanks to Felix Wilhelm for the report."
+    },
+    "CVE-2022-23308": {
+      "652dd12a858989b14eed4e84e453059cd3ba340e": "[CVE-2022-23308] Use-after-free of ID and IDREF attributes\n\nIf a document is parsed with XML_PARSE_DTDVALID and without\nXML_PARSE_NOENT, the value of ID attributes has to be normalized after\npotentially expanding entities in xmlRemoveID. Otherwise, later calls\nto xmlGetID can return a pointer to previously freed memory.\n\nID attributes which are empty or contain only whitespace after\nentity expansion are affected in a similar way. This is fixed by\nnot storing such attributes in the ID table.\n\nThe test to detect streaming mode when validating against a DTD was\nbroken. In connection with the defects above, this could result in a\nuse-after-free when using the xmlReader interface with validation.\nFix detection of streaming mode to avoid similar issues. (This changes\nthe expected result of a test case. But as far as I can tell, using the\nXML reader with XIncludes referencing the root document never worked\nproperly, anyway.)\n\nAll of these issues can result in denial of service. Using xmlReader\nwith validation could result in disclosure of memory via the error\nchannel, typically stderr. The security impact of xmlGetID returning\na pointer to freed memory depends on the application. The typical use\ncase of calling xmlGetID on an unmodified document is not affected."
+    },
+    "CVE-2018-9251": {
+      "2240fbf5912054af025fb6e01e26375100275e74": "Fix infinite loop in LZMA decompression\n\nCheck the liblzma error code more thoroughly to avoid infinite loops.\n\nCloses: https://gitlab.gnome.org/GNOME/libxml2/issues/13\nCloses: https://bugzilla.gnome.org/show_bug.cgi?id=794914\n\nThis is CVE-2018-9251 and CVE-2018-14567.\n\nThanks to Dongliang Mu and Simon W\u00f6rner for the reports."
+    },
+    "CVE-2018-14567": {
+      "2240fbf5912054af025fb6e01e26375100275e74": "Fix infinite loop in LZMA decompression\n\nCheck the liblzma error code more thoroughly to avoid infinite loops.\n\nCloses: https://gitlab.gnome.org/GNOME/libxml2/issues/13\nCloses: https://bugzilla.gnome.org/show_bug.cgi?id=794914\n\nThis is CVE-2018-9251 and CVE-2018-14567.\n\nThanks to Dongliang Mu and Simon W\u00f6rner for the reports."
+    },
+    "CVE-2018-14404": {
+      "a436374994c47b12d5de1b8b1d191a098fa23594": "Fix nullptr deref with XPath logic ops\n\nIf the XPath stack is corrupted, for example by a misbehaving extension\nfunction, the \"and\" and \"or\" XPath operators could dereference NULL\npointers. Check that the XPath stack isn't empty and optimize the\nlogic operators slightly.\n\nCloses: https://gitlab.gnome.org/GNOME/libxml2/issues/5\n\nAlso see\nhttps://bugs.debian.org/cgi-bin/bugreport.cgi?bug=901817\nhttps://bugzilla.redhat.com/show_bug.cgi?id=1595985\n\nThis is CVE-2018-14404.\n\nThanks to Guy Inbar for the report."
+    },
+    "CVE-2017-5969": {
+      "94691dc884d1a8ada39f073408b4bb92fe7fe882": "Fix NULL pointer deref in xmlDumpElementContent\n\nCan only be triggered in recovery mode.\n\nFixes bug 758422 (CVE-2017-5969)."
+    },
+    "CVE-2017-9047": {
+      "932cc9896ab41475d4aa429c27d9afd175959d74": "Fix buffer size checks in xmlSnprintfElementContent\n\nxmlSnprintfElementContent failed to correctly check the available\nbuffer space in two locations.\n\nFixes bug 781333 (CVE-2017-9047) and bug 781701 (CVE-2017-9048).\n\nThanks to Marcel B\u00f6hme and Thuan Pham for the report."
+    },
+    "CVE-2017-9048": {
+      "932cc9896ab41475d4aa429c27d9afd175959d74": "Fix buffer size checks in xmlSnprintfElementContent\n\nxmlSnprintfElementContent failed to correctly check the available\nbuffer space in two locations.\n\nFixes bug 781333 (CVE-2017-9047) and bug 781701 (CVE-2017-9048).\n\nThanks to Marcel B\u00f6hme and Thuan Pham for the report."
+    },
+    "CVE-2017-9049": {
+      "e26630548e7d138d2c560844c43820b6767251e3": "Fix handling of parameter-entity references\n\nThere were two bugs where parameter-entity references could lead to an\nunexpected change of the input buffer in xmlParseNameComplex and\nxmlDictLookup being called with an invalid pointer.\n\nPercent sign in DTD Names\n=========================\n\nThe NEXTL macro used to call xmlParserHandlePEReference. When parsing\n\"complex\" names inside the DTD, this could result in entity expansion\nwhich created a new input buffer. The fix is to simply remove the call\nto xmlParserHandlePEReference from the NEXTL macro. This is safe because\nno users of the macro require expansion of parameter entities.\n\n- xmlParseNameComplex\n- xmlParseNCNameComplex\n- xmlParseNmtoken\n\nThe percent sign is not allowed in names, which are grammatical tokens.\n\n- xmlParseEntityValue\n\nParameter-entity references in entity values are expanded but this\nhappens in a separate step in this function.\n\n- xmlParseSystemLiteral\n\nParameter-entity references are ignored in the system literal.\n\n- xmlParseAttValueComplex\n- xmlParseCharDataComplex\n- xmlParseCommentComplex\n- xmlParsePI\n- xmlParseCDSect\n\nParameter-entity references are ignored outside the DTD.\n\n- xmlLoadEntityContent\n\nThis function is only called from xmlStringLenDecodeEntities and\nentities are replaced in a separate step immediately after the function\ncall.\n\nThis bug could also be triggered with an internal subset and double\nentity expansion.\n\nThis fixes bug 766956 initially reported by Wei Lei and independently by\nChromium's ClusterFuzz, Hanno B\u00f6ck, and Marco Grassi. Thanks to everyone\ninvolved.\n\nxmlParseNameComplex with XML_PARSE_OLD10\n========================================\n\nWhen parsing Names inside an expanded parameter entity with the\nXML_PARSE_OLD10 option, xmlParseNameComplex would call xmlGROW via the\nGROW macro if the input buffer was exhausted. At the end of the\nparameter entity's replacement text, this function would then call\nxmlPopInput which invalidated the input buffer.\n\nThere should be no need to invoke GROW in this situation because the\nbuffer is grown periodically every XML_PARSER_CHUNK_SIZE characters and,\nat least for UTF-8, in xmlCurrentChar. This also matches the code path\nexecuted when XML_PARSE_OLD10 is not set.\n\nThis fixes bugs 781205 (CVE-2017-9049) and 781361 (CVE-2017-9050).\nThanks to Marcel B\u00f6hme and Thuan Pham for the report.\n\nAdditional hardening\n====================\n\nA separate check was added in xmlParseNameComplex to validate the\nbuffer size."
+    },
+    "CVE-2017-9050": {
+      "e26630548e7d138d2c560844c43820b6767251e3": "Fix handling of parameter-entity references\n\nThere were two bugs where parameter-entity references could lead to an\nunexpected change of the input buffer in xmlParseNameComplex and\nxmlDictLookup being called with an invalid pointer.\n\nPercent sign in DTD Names\n=========================\n\nThe NEXTL macro used to call xmlParserHandlePEReference. When parsing\n\"complex\" names inside the DTD, this could result in entity expansion\nwhich created a new input buffer. The fix is to simply remove the call\nto xmlParserHandlePEReference from the NEXTL macro. This is safe because\nno users of the macro require expansion of parameter entities.\n\n- xmlParseNameComplex\n- xmlParseNCNameComplex\n- xmlParseNmtoken\n\nThe percent sign is not allowed in names, which are grammatical tokens.\n\n- xmlParseEntityValue\n\nParameter-entity references in entity values are expanded but this\nhappens in a separate step in this function.\n\n- xmlParseSystemLiteral\n\nParameter-entity references are ignored in the system literal.\n\n- xmlParseAttValueComplex\n- xmlParseCharDataComplex\n- xmlParseCommentComplex\n- xmlParsePI\n- xmlParseCDSect\n\nParameter-entity references are ignored outside the DTD.\n\n- xmlLoadEntityContent\n\nThis function is only called from xmlStringLenDecodeEntities and\nentities are replaced in a separate step immediately after the function\ncall.\n\nThis bug could also be triggered with an internal subset and double\nentity expansion.\n\nThis fixes bug 766956 initially reported by Wei Lei and independently by\nChromium's ClusterFuzz, Hanno B\u00f6ck, and Marco Grassi. Thanks to everyone\ninvolved.\n\nxmlParseNameComplex with XML_PARSE_OLD10\n========================================\n\nWhen parsing Names inside an expanded parameter entity with the\nXML_PARSE_OLD10 option, xmlParseNameComplex would call xmlGROW via the\nGROW macro if the input buffer was exhausted. At the end of the\nparameter entity's replacement text, this function would then call\nxmlPopInput which invalidated the input buffer.\n\nThere should be no need to invoke GROW in this situation because the\nbuffer is grown periodically every XML_PARSER_CHUNK_SIZE characters and,\nat least for UTF-8, in xmlCurrentChar. This also matches the code path\nexecuted when XML_PARSE_OLD10 is not set.\n\nThis fixes bugs 781205 (CVE-2017-9049) and 781361 (CVE-2017-9050).\nThanks to Marcel B\u00f6hme and Thuan Pham for the report.\n\nAdditional hardening\n====================\n\nA separate check was added in xmlParseNameComplex to validate the\nbuffer size."
+    },
+    "CVE-2016-4658": {
+      "c1d1f7121194036608bf555f08d3062a36fd344b": "Disallow namespace nodes in XPointer ranges\n\nNamespace nodes must be copied to avoid use-after-free errors.\nBut they don't necessarily have a physical representation in a\ndocument, so simply disallow them in XPointer ranges.\n\nFound with afl-fuzz.\n\nFixes CVE-2016-4658."
+    },
+    "CVE-2016-5131": {
+      "9ab01a277d71f54d3143c2cf333c5c2e9aaedd9e": "Fix XPointer paths beginning with range-to\n\nThe old code would invoke the broken xmlXPtrRangeToFunction. range-to\nisn't really a function but a special kind of location step. Remove\nthis function and always handle range-to in the XPath code.\n\nThe old xmlXPtrRangeToFunction could also be abused to trigger a\nuse-after-free error with the potential for remote code execution.\n\nFound with afl-fuzz.\n\nFixes CVE-2016-5131."
+    },
+    "CVE-2016-3705": {
+      "8f30bdff69edac9075f4663ce3b56b0c52d48ce6": "Add missing increments of recursion depth counter to XML parser.\n\nFor https://bugzilla.gnome.org/show_bug.cgi?id=765207\nCVE-2016-3705\nThe functions xmlParserEntityCheck() and xmlParseAttValueComplex() used to call\nxmlStringDecodeEntities() in a recursive context without incrementing the\n'depth' counter in the parser context. Because of that omission, the parser\nfailed to detect attribute recursions in certain documents before running out\nof stack space."
+    },
+    "CVE-2015-8242": {
+      "8fb4a770075628d6441fb17a1e435100e2f3b1a2": "CVE-2015-8242 Buffer overead with HTML parser in push mode\n\nFor https://bugzilla.gnome.org/show_bug.cgi?id=756372\nError in the code pointing to the codepoint in the stack for the\ncurrent char value instead of the pointer in the input that the SAX\ncallback expects\nReported and fixed by Hugh Davenport"
+    },
+    "CVE-2015-7500": {
+      "f1063fdbe7fa66332bbb76874101c2a7b51b519f": "CVE-2015-7500 Fix memory access error due to incorrect entities boundaries\n\nFor https://bugzilla.gnome.org/show_bug.cgi?id=756525\nhandle properly the case where we popped out of the current entity\nwhile processing a start tag\nReported by Kostya Serebryany @ Google\n\nThis slightly modifies the output of 754946 in regression tests"
+    },
+    "CVE-2015-5312": {
+      "69030714cde66d525a8884bda01b9e8f0abf8e1e": "CVE-2015-5312 Another entity expansion issue\n\nFor https://bugzilla.gnome.org/show_bug.cgi?id=756733\nIt is one case where the code in place to detect entities expansions\nfailed to exit when the situation was detected, leading to DoS\nProblem reported by Kostya Serebryany @ Google\nPatch provided by David Drysdale @ Google"
+    },
+    "CVE-2015-7497": {
+      "6360a31a84efe69d155ed96306b9a931a40beab9": "CVE-2015-7497 Avoid an heap buffer overflow in xmlDictComputeFastQKey\n\nFor https://bugzilla.gnome.org/show_bug.cgi?id=756528\nIt was possible to hit a negative offset in the name indexing\nused to randomize the dictionary key generation\nReported and fix provided by David Drysdale @ Google"
+    },
+    "CVE-2015-8035": {
+      "f0709e3ca8f8947f2d91ed34e92e38a4c23eae63": "CVE-2015-8035 Fix XZ compression support loop\n\nFor https://bugzilla.gnome.org/show_bug.cgi?id=757466\nDoS when parsing specially crafted XML document if XZ support\nis compiled in (which wasn't the case for 2.9.2 and master since\nNov 2013, fixed in next commit !)"
+    },
+    "CVE-2015-1819": {
+      "213f1fe0d76d30eaed6e5853057defc43e6df2c9": "CVE-2015-1819 Enforce the reader to run in constant memory\n\nOne of the operation on the reader could resolve entities\nleading to the classic expansion issue. Make sure the\nbuffer used for xmlreader operation is bounded.\nIntroduce a new allocation type for the buffers for this effect."
+    },
+    "CVE-2014-3660": {
+      "72a46a519ce7326d9a00f0b6a7f2a8e958cd1675": "Fix missing entities after CVE-2014-3660 fix\n\nFor https://bugzilla.gnome.org/show_bug.cgi?id=738805\n\nThe fix for CVE-2014-3660 introduced a regression in some case\nwhere entity substitution is required and the entity is used\nfirst in anotther entity referenced from an attribute value",
+      "be2a7edaf289c5da74a4f9ed3a0b6c733e775230": "Fix for CVE-2014-3660\n\nIssues related to the billion laugh entity expansion which happened to\nescape the initial set of fixes"
+    },
+    "CVE-2014-0191": {
+      "dd8367da17c2948981a51e52c8a6beb445edf825": "Fix regressions introduced by CVE-2014-0191 patch\n\nA number of issues have been raised after the fix, and this patch\ntries to correct all of them, though most were related to\npostvalidation.\nhttps://bugzilla.gnome.org/show_bug.cgi?id=730290\nand other reports on list, off-list and on Red Hat bugzilla"
+    },
+    "CVE-2009-2414": {
+      "489f9671e71cc44a97b23111b3126ac8a1e21a59": "Fix a couple of problems in the parser\n\n* parser.c: a couple of nasty bugs CVE-2009-2414 and CVE-2009-2416"
+    },
+    "CVE-2009-2416": {
+      "489f9671e71cc44a97b23111b3126ac8a1e21a59": "Fix a couple of problems in the parser\n\n* parser.c: a couple of nasty bugs CVE-2009-2414 and CVE-2009-2416"
+    },
+    "CVE-2008-4226": {
+      "1dc9feb00fd3bce5967304dcb388ea3ba7e964e6": "fix for CVE-2008-4226, a memory overflow when building gigantic text\n\n* SAX2.c parser.c: fix for CVE-2008-4226, a memory overflow\n  when building gigantic text nodes, and a bit of cleanup\n  to better handled out of memory problem in that code.\n* tree.c: fix for CVE-2008-4225, lack of testing leads to\n  a busy loop test assuming one have enough core memory.\nDaniel\n\nsvn path=/trunk/; revision=3803"
+    },
+    "CVE-2008-4225": {
+      "1dc9feb00fd3bce5967304dcb388ea3ba7e964e6": "fix for CVE-2008-4226, a memory overflow when building gigantic text\n\n* SAX2.c parser.c: fix for CVE-2008-4226, a memory overflow\n  when building gigantic text nodes, and a bit of cleanup\n  to better handled out of memory problem in that code.\n* tree.c: fix for CVE-2008-4225, lack of testing leads to\n  a busy loop test assuming one have enough core memory.\nDaniel\n\nsvn path=/trunk/; revision=3803"
+    },
+    "CVE-2008-3281": {
+      "4bf899bf1b719d692be407b89f6610103f13bd5d": "fix for CVE-2008-3281 Daniel\n\n* include/libxml/parser.h include/libxml/entities.h entities.c\n  parserInternals.c parser.c: fix for CVE-2008-3281\nDaniel\n\nsvn path=/trunk/; revision=3772"
+    }
+  }
+}

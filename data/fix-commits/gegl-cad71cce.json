@@ -1,0 +1,9 @@
+{
+  "vcs_url": "https://gitlab.gnome.org/gnome/gegl",
+  "vulnerabilities": {
+    "CVE-2012-4433": {
+      "4757cdf73d3675478d645a3ec8250ba02168a230": "ppm-load: CVE-2012-4433: add plausibility checks for header fields\n\nRefuse values that are non-decimal, negative or overflow the target\ntype.",
+      "1e92e5235ded0415d555aa86066b8e4041ee5a53": "ppm-load: CVE-2012-4433: don't overflow memory allocation\n\nCarefully selected width/height values could cause the size of a later\nallocation to overflow, resulting in a buffer much too small to store\nthe data which would then written beyond its end."
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://bitbucket.org/snakeyaml/snakeyaml",
+  "vulnerabilities": {
+    "CVE-2020-13936": {
+      "607672097f3aeec3357488881440c730900b06b6": "Issue 539: Fix false positive CVE-2020-13936"
+    }
+  }
+}

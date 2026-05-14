@@ -1,0 +1,37 @@
+{
+  "vcs_url": "https://github.com/apache/logging-log4j2",
+  "vulnerabilities": {
+    "CVE-2018-8088": {
+      "0809c8bea8b9c92859e21bb013eff72025fb6bd8": "Removes support for `EventData`\n\nThe `org.slf4j.ext.EventData` class was a primitive equivalent of\nLog4j's `StructuredDataMessage`. QOS.CH published CVE-2018-8088 against\nthis class and removed it from `slf4j-ext` version 1.7.26.\n\nFor a long time we kept support code to convert `EventData` to its Log4j\nequivalent for compatibility's sake: users that relied on this class\ncould still use Log4j Core, but the functionality was **automatically**\ndisabled once they upgraded `slf4j-ext`.\n\nSince 5 years passed since `slfj4-ext` 1.7.26 was published, we can\nsafely assume that all the users upgraded the library and the support\ncode can be removed.",
+      "a5b64a4f2f954246788ce3c6dd0ff905d690ec00": "Removes support for `EventData`\n\nThe `org.slf4j.ext.EventData` class was a primitive equivalent of\nLog4j's `StructuredDataMessage`. QOS.CH published CVE-2018-8088 against\nthis class and removed it from `slf4j-ext` version 1.7.26.\n\nFor a long time we kept support code to convert `EventData` to its Log4j\nequivalent for compatibility's sake: users that relied on this class\ncould still use Log4j Core, but the functionality was **automatically**\ndisabled once they upgraded `slf4j-ext`.\n\nSince 5 years passed since `slfj4-ext` 1.7.26 was published, we can\nsafely assume that all the users upgraded the library and the support\ncode can be removed."
+    },
+    "CVE-2021-44832": {
+      "cf32a4d371731f97e453c6f3179183f027b7d441": "Clarify CVE-2021-44832 details"
+    },
+    "CVE-2020-9488": {
+      "3c62f0bea692456b1b5039d3bcc1c3e0ba65146a": "[LOG4J2-2819] Add SSL/TLS hostname verify option\n\nThis backports a fix for CVE-2020-9488.",
+      "cdac17cd594e5235b8e26e28b4c80583fe9afc75": "[LOG4J2-2819] update security page for CVE-2020-9488 fix backported to 2.12.3"
+    },
+    "CVE-2021-44228": {
+      "667362884c1624454077c33fb6bbc46030173bbc": "[DOC] update security page to add other OS-es where RCE has been demonstrated for CVE-2021-44228",
+      "b964eeab0d900acd1de20c179ebd1ead0bde0d4e": "[DOC] remove duplicate entry for cve-2021-44228",
+      "6cfd08511c822f7f28f6723042d2c697f90e0fb8": "Improve CVE-2021-44228 section\n\n* create subsections\n* add text for Log4j 1.x and CVE-2021-4104\n* correct the discredited mitigation techniques\n* list the recommended mitigation techniques\n* list details about releases related to this issue"
+    },
+    "CVE-2021-45105": {
+      "2faa5bc1b8248d72ac314615cca5c4f3a9f75fd8": "Update severity of CVE-2021-45105\n\nAlso updates some info about severity score ranges.",
+      "5476a16845cb0b98e0eec711b11d0df8f41fb71d": "[DOC] fix typos and rephrase mitigation for CVE-2021-45105",
+      "ff844c0a4d8eb4afe260494be1c2dc1b52cbf50d": "[DOC] add CVE-2021-45105 for 2.17.0 and 2.12.3"
+    },
+    "CVE-2021-45046": {
+      "0dc72b936eafdeb61b7b82503dde8c0cdadbca08": "[DOC] update CVE-2021-45046 severity to critical",
+      "d8e2d4ab80bca67130fc77b2713d368067865963": "[DOC] add credit to 4ra1n for reporting related to CVE-2021-45046",
+      "f8e30c84764b8d7b799b17d2b5ecb2924865ba5f": "Update for CVE-2021-45046"
+    },
+    "CVE-2021-4428": {
+      "9573cbe30ac3f23161e853be441740db1a4ffc11": "Improve top page\n\n* move CVE-2021-4428 section to the top of the page\n* explain the vulnerability in more detail\n* mention related releases\n* link the the security page"
+    },
+    "CVE-2021-4104": {
+      "6cfd08511c822f7f28f6723042d2c697f90e0fb8": "Improve CVE-2021-44228 section\n\n* create subsections\n* add text for Log4j 1.x and CVE-2021-4104\n* correct the discredited mitigation techniques\n* list the recommended mitigation techniques\n* list details about releases related to this issue"
+    }
+  }
+}

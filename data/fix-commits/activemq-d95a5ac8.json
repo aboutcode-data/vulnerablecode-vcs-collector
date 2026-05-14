@@ -1,0 +1,21 @@
+{
+  "vcs_url": "https://github.com/apache/activemq",
+  "vulnerabilities": {
+    "CVE-2022-23437": {
+      "25b20550271a7208e5c91557b5b84db87e32be1d": "AMQ-8648 - CVE-2022-23437: Infinite loop within Apache XercesJ xml parser\n\n(cherry picked from commit 70915ea5c078d796a81be7d0d2b511330fd150d4)",
+      "b572d0cd5a2cdf818d4cf4ce8507d0fec6b1cf65": "AMQ-8648 - CVE-2022-23437: Infinite loop within Apache XercesJ xml parser\n\n(cherry picked from commit 70915ea5c078d796a81be7d0d2b511330fd150d4)",
+      "bd8c24e91fa44e86baf2565997f4fb3d9f1e8d98": "Merge pull request #753 from coheigea/coheigea/AMQ-8468\n\nAMQ-8648 - CVE-2022-23437: Infinite loop within Apache XercesJ xml pa\u2026",
+      "70915ea5c078d796a81be7d0d2b511330fd150d4": "AMQ-8648 - CVE-2022-23437: Infinite loop within Apache XercesJ xml parser"
+    },
+    "CVE-2020-17523": {
+      "071c7ae8e3497d5a573ebf5fccd89fbb185a7ae6": "Update shiro to 1.7.1\n\nFixes CVE-2020-17523\n\n(cherry picked from commit bf9348eb0bba41e18d7438f0db98b1527e7fe41e)",
+      "8b1dacb414f5522d9ea32911241678d3549de5be": "Update shiro to 1.7.1\n\nFixes CVE-2020-17523\n\n(cherry picked from commit bf9348eb0bba41e18d7438f0db98b1527e7fe41e)",
+      "bf9348eb0bba41e18d7438f0db98b1527e7fe41e": "Update shiro to 1.7.1\n\nFixes CVE-2020-17523"
+    },
+    "CVE-2020-27223": {
+      "36a0c0a1fe165492708b6e5b3f117f54694e5ebc": "Upgrade to Jetty 9.4.38.v20210224\n\nMitigates CVE-2020-27223\n\n(cherry picked from commit 4dba27196146d268b5a06bb866e4d94ed2582e2d)",
+      "10b7f7eba77adbdc9694640d7fcba53a430b5949": "Upgrade to Jetty 9.4.38.v20210224\n\nMitigates CVE-2020-27223\n\n(cherry picked from commit 4dba27196146d268b5a06bb866e4d94ed2582e2d)",
+      "4dba27196146d268b5a06bb866e4d94ed2582e2d": "Upgrade to Jetty 9.4.38.v20210224\n\nMitigates CVE-2020-27223"
+    }
+  }
+}

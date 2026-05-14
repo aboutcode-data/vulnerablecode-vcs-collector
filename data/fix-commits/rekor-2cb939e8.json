@@ -1,0 +1,20 @@
+{
+  "vcs_url": "https://github.com/sigstore/rekor",
+  "vulnerabilities": {
+    "GHSA-4C4X-JM2X-PF9J": {
+      "60ef2bceba192c5bf9327d003bceea8bf1f8275f": "Drop support for fetching public keys by URL in the search index (#2731)\n\nThis mitigates blind SSRF. Note that this API was marked as experimental\nso while this is a breaking change to the API, we offered no guarantee\nof stability.\n\nFixes GHSA-4c4x-jm2x-pf9j\n\nSigned-off-by: Hayden <8418760+Hayden-IO@users.noreply.github.com>"
+    },
+    "GHSA-273P-M2CW-6833": {
+      "39bae3d192bce48ef4ef2cbd1788fb5770fee8cd": "Merge commit from fork (#2729)\n\nThis adds graceful handling of dereferencing a number of pointers where\nthe content may be user-controlled.\n\nAlso took care of a few spelling errors too.\n\nFixes GHSA-273p-m2cw-6833\n\nSigned-off-by: Hayden <8418760+Hayden-IO@users.noreply.github.com>"
+    },
+    "GHSA-VRW8-FXC6-2R93": {
+      "0b80f3f32d8bb37557f8f25b1debe6ae28a793d3": "sec(deps): update go-chi/chi to v5\n\nsee GO-2025-3770\nsee GHSA-vrw8-fxc6-2r93\n\nSigned-off-by: Carlos Alexandro Becker <caarlos0@users.noreply.github.com>"
+    },
+    "GHSA-FRQX-JFCM-6JJR": {
+      "140c5add105179e5ffd9e3e114fd1b6b93aebbd4": "Merge pull request from GHSA-frqx-jfcm-6jjr\n\n* fix for ghsa-frqx-jfcm-6jjr\n\nSigned-off-by: Bob Callaway <bcallaway@google.com>\n\n* add defensive check\n\nSigned-off-by: Bob Callaway <bcallaway@google.com>\n\n* add defensive check to dsse type\n\nSigned-off-by: Bob Callaway <bcallaway@google.com>\n\n* be stricter for DSSE, add another defensive check\n\nSigned-off-by: Bob Callaway <bcallaway@google.com>\n\n---------\n\nSigned-off-by: Bob Callaway <bcallaway@google.com>"
+    },
+    "GHSA-2H5H-59F5-C5X9": {
+      "cf42ace82667025fe128f7a50cf6b4cdff51cc48": "Merge pull request from GHSA-2h5h-59f5-c5x9\n\n* check size of archive metadata files before read\n\nSigned-off-by: Ceridwen Coghlan <cdriskill@google.com>\n\n* fix your ints\n\nSigned-off-by: Ceridwen Coghlan <cdriskill@google.com>\n\n* unit tests for metadata size errors\n\nSigned-off-by: Ceridwen Coghlan <cdriskill@google.com>\n\n* update for other tests\n\nSigned-off-by: Ceridwen Coghlan <cdriskill@google.com>\n\n* quick checks and comments\n\nSigned-off-by: Ceridwen Coghlan <cdriskill@google.com>\n\n* checks + comments take 2\n\nSigned-off-by: Ceridwen Coghlan <cdriskill@google.com>\n\n---------\n\nSigned-off-by: Ceridwen Coghlan <cdriskill@google.com>"
+    }
+  }
+}

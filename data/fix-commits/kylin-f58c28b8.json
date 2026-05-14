@@ -1,0 +1,14 @@
+{
+  "vcs_url": "https://github.com/apache/kylin",
+  "vulnerabilities": {
+    "CVE-2020-13925": {
+      "da4f13bdda66539d6ef4bf4bca619dc763b49604": "Add new security issue in Kylin 3.1.0\n\nCVE-2020-13925,CVE-2020-13926"
+    },
+    "CVE-2020-13926": {
+      "da4f13bdda66539d6ef4bf4bca619dc763b49604": "Add new security issue in Kylin 3.1.0\n\nCVE-2020-13925,CVE-2020-13926"
+    },
+    "CVE-2020-1956": {
+      "5ed64e16129476e4502a1a2cf1b417ba359cfc40": "Add security issue of CVE-2020-1956"
+    }
+  }
+}

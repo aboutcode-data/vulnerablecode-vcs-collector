@@ -1,0 +1,18 @@
+{
+  "vcs_url": "https://github.com/kubernetes-sigs/aws-iam-authenticator",
+  "vulnerabilities": {
+    "CVE-2025-47910": {
+      "e274c1a7d126c52e6807991e6c456b0e98e661d4": "Merge pull request #930 from a-cool-train/master\n\nFix CVE-2025-47910",
+      "e5c37d0bc4d181c87f9c1e0e4cd022adbfb48ad3": "Fix CVE-2025-47910"
+    },
+    "CVE-2024-39689": {
+      "eb4cd5cc68cca75b2c66bb6f49ba1a3d64fd6dfb": "Merge pull request #745 from kmala/release-0.6\n\nupdate the image to latest to fix CVE-2024-39689",
+      "99d363af4d6255b768956699517014f96863a985": "update the image to latest to fix CVE-2024-39689",
+      "5a5ea779ddd4ee9e6dcb9c3b0f983ddcdec355f9": "Merge pull request #744 from kmala/master\n\nupdate the image to latest to fix CVE-2024-39689",
+      "ceef53db6aeddbeb5b0f6fd80f04bb75db0fc66a": "update the image to latest to fix CVE-2024-39689"
+    },
+    "CVE-2022-41723": {
+      "b037258ef733b4b1670273333425417b20df3e82": "Merge pull request #596 from zafs23/fix-CVE-2022-41723\n\nBump golang.org/x/net to v.0.7.0 to fix CVE-2022-41723"
+    }
+  }
+}

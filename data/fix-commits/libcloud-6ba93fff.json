@@ -1,0 +1,9 @@
+{
+  "vcs_url": "https://github.com/apache/libcloud",
+  "vulnerabilities": {
+    "CVE-2012-3446": {
+      "c46d57b7dee19339b9c0d005dc9eb86cb4d720b8": "Merge changes from 0.11.x branch:\n\nFix hostname validation in the SSL verification code (CVE-2012-3446). Reported\nby researchers from the University of Texas at Austin (Martin Georgiev, Suman\nJana and Vitaly Shmatikov). For more info, see\nhttp://libcloud.apache.org/security.html.\n\n\ngit-svn-id: https://svn.apache.org/repos/asf/libcloud/trunk@1368325 13f79535-47bb-0310-9956-ffa450edef68",
+      "f2af5502dae3ac63e656dd1b7d5f29cc82ded401": "Fix hostname validation in the SSL verification code (CVE-2012-3446). Reported by researchers\nfrom the University of Texas at Austin (Martin Georgiev, Suman Jana and Vitaly Shmatikov). \nFor more info, see http://libcloud.apache.org/security.html.\n\n\ngit-svn-id: https://svn.apache.org/repos/asf/libcloud/branches/0.11.x@1368323 13f79535-47bb-0310-9956-ffa450edef68"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "vcs_url": "https://github.com/apache/mina-sshd",
+  "vulnerabilities": {
+    "CVE-2008-1561": {
+      "023729c80be3a95f363a07d58e2de6c719dbcbe9": "Use more appropriate disconnect reason codes\n\nIn too many places the general SSH2_DISCONNECT_PROTOCOL_ERROR was used,\nwhich gives a potentially misleading message to the client. Use other\nerror reason codes that enable transporting custom messages. (With\n\"protocol error\" or \"mac error\" we always send a fixed message because\nof CVE-2008-1561.)"
+    },
+    "CVE-2025-4949": {
+      "fc3412ed136f46f165e2eee6dbd42ee437c9e433": "Bump jgit.version from 5.13.3.202401111512-r to 5.13.5.202508271544-r (#831)\n\nFixes CVE-2025-4949[1].\n\n[1] https://www.cve.org/CVERecord?id=CVE-2025-4949\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    "CVE-2020-36843": {
+      "362758d2d1bad0bd91f4210f6ea8b5763a2cfe38": "SignatureEd25519: fix vulnerability in net.i2p.crypto:eddsa:0.3.0\n\nnet.i2p.crypto:eddsa:0.3.0 has a bug and omits a crucial check in\nsignature verification. This was reported as CVE-2020-36843[1]\n(signature malleability).\n\nThe problem affects signature verification, but luckily the missing\ncheck can also be performed outside of the library. With this commit\nwe do so and verify that the second 32 bytes of the signature is\nactually in the range [0..L),[2] with L the order as given in RFC\n7748.[3]\n\nThis means that the use of net.i2p.crypto:eddsa:0.3.0, if used for\ned25519 signatures via Apache MINA SSHD, is safe and **not** subject of\nCVE-2020-36843. Of course, vulnerability scanners will still report the\nvulnerability.\n\nNote that Apache MINA SSHD has only a completely optional dependency on\nnet.i2p.crypto:eddsa:0.3.0. If that artifact is not present in the\napplication using Apache MINA SSHD, Apache MINA SSHD will still work. In\nthat case, ed25519 is supported via Bouncy Castle.\n\n[1] https://www.cve.org/CVERecord?id=CVE-2020-36843\n[2] https://datatracker.ietf.org/doc/html/rfc8032#section-5.1.7\n[3] https://www.rfc-editor.org/rfc/rfc7748.html#section-4.1"
+    },
+    "CVE-2008-5161": {
+      "edb2b95121ff19866e34245abdee8460cea1b4ca": "Remove AES-CBC ciphers from the server's default KEX proposal\n\nCBC implementations have been historically susceptible to various\npadding oracle attacks, and the use of CBC-mode ciphers in the SSH\nprotocol was found insecure in 2008 in another attack known as\nCPNI-957037[1], VU#958563[2], or CVE-2008-5161[3]. Details were\npublished in [4] in 2009.\n\nOpenSSH does not propose the CBC ciphers (unless explicitly enabled)\nin servers since 2014, and has removed them from the client proposal\nin 2017, too.\n\nBefore the full disclosure in 2009, OpenSSH had implemented some\nmitigations against CPNI-957037, but given the nature of the attack\nI'm not convinced they are effective. The attack leverages OpenSSH\nas an oracle and it does not need to control the IV, so it should be\npossible to perform the decryption attack offline using an older\nunpatched SSH implementation.\n\nTLS has deprecated CBC ciphers in TLS v1.2, and has removed them in\nTLS v.1.3.\n\nFor clients, we keep the CBC ciphers by default for now to facilitate\nconnecting to legacy servers. I plan to remove them from the client's\ndefault list in the next release.\n\n[1] https://www.openssh.com/txt/cbc.adv\n[2] https://www.kb.cert.org/vuls/id/958563\n[3] https://cve.mitre.org/cgi-bin/cvename.cgi?name=2008-5161\n[4] https://www.cs.umd.edu/~jkatz/security/downloads/PlaintextRecoverySSH.pdf"
+    },
+    "CVE-2023-4759": {
+      "44a0b1b58410b142de36ea02d47b47678b4d3c02": "Bump jgit 5.13.0 -> 5.13.3\n\nJGit 5.13.3 includes the fix for CVE-2023-4759[1].\n\n[1] https://nvd.nist.gov/vuln/detail/CVE-2023-4759"
+    },
+    "CVE-2023-37460": {
+      "9cc8be81f479410300cefe6e3988fa8736c7cf87": "Use Apache parent POM 30\n\nRemove unnecessary version overrides; use the versions pinned in the\nparent POM. Bump plexus-archiver to 4.8.0 to mitigate CVE-2023-37460."
+    },
+    "CVE-2022-45047": {
+      "03238d51586f6b3c0bdbb1a23cf16799344d6c32": "Mention CVE-2022-45047 fixed"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/capstone-engine/capstone",
+  "vulnerabilities": {
+    "GHSA-97V9-6W8P-MH32": {
+      "18ea7ad7e72e9a5061727d23f2f0a3894c07e969": "Remove unused fuzzit.sh script and key. (#2797)\n\nIn https://github.com/capstone-engine/capstone/security/advisories/GHSA-97v9-6w8p-mh32,\nAnton-4 pointed out that the FUZZIT_API_KEY was public in the script.\n\nThis is no longer a problem because Fuzzit was acquired by GitLab in 2020,\nand they stated that all data was removed six months later.\n\nThe advisory was closed by us because it doesn't seem to be a security issue.\nHowever, we don't know at this time if the key was public or private.\nIf the key was public, it was allowed to be in the repo.\nIf the key turns out to be private, it very likely has no impact anymore.\n\nNonetheless, if it later turns out to be private, we can reopen the advisory.\nThe fix, simply removing the unused script, would still be the same.\n\nGitHub doesn't seem to allow publishing closed advisories,\nso the link above unfortunately only works for maintainers.\n\nThanks a lot, Anton-4, for reporting the issue!\n\nReferences:\n\n- https://github.com/capstone-engine/capstone/security/advisories/GHSA-97v9-6w8p-mh32\n- https://web.archive.org/web/20201026032736/https://fuzzit.dev/2020/06/11/news-fuzzit-is-acquired-by-gitlab/"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "vcs_url": "https://github.com/cakephp/cakephp",
+  "vulnerabilities": {
+    "CVE-2020-15400": {
+      "309c8990dcadcf4391967f4b01aa84c58f84b8d8": "Add configuration option to enable more secure CSRF token (#16481)\n\n* Add configuration option to enable more secure CSRF token\r\n\r\nBackport the fixes from #14431 to 3.x. This will resolve\r\nGHSA-j33j-fg2g-mcv2 aka CVE-2020-15400 in a backwards compatible way.\r\nI didn't initially make this change because of the backwards\r\ncompatibility risk. However, I think a setting based approach at least\r\ngives application developers a way to have a clean security audit and\r\nmaintain backwards compatibility.\r\n\r\nFixes #16326"
+    },
+    "GHSA-J33J-FG2G-MCV2": {
+      "309c8990dcadcf4391967f4b01aa84c58f84b8d8": "Add configuration option to enable more secure CSRF token (#16481)\n\n* Add configuration option to enable more secure CSRF token\r\n\r\nBackport the fixes from #14431 to 3.x. This will resolve\r\nGHSA-j33j-fg2g-mcv2 aka CVE-2020-15400 in a backwards compatible way.\r\nI didn't initially make this change because of the backwards\r\ncompatibility risk. However, I think a setting based approach at least\r\ngives application developers a way to have a clean security audit and\r\nmaintain backwards compatibility.\r\n\r\nFixes #16326"
+    }
+  }
+}

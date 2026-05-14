@@ -1,0 +1,121 @@
+{
+  "vcs_url": "https://github.com/open-policy-agent/opa",
+  "vulnerabilities": {
+    "GHSA-9H8M-3FM2-QJRQ": {
+      "59ca1e4ec6907e6b7bad9d1cf6ed0fad0995b1b0": "Update OTel dependency to 1.40.0\n\nhttps://github.com/orgs/open-policy-agent/discussions/740\n\nhttps://github.com/advisories/GHSA-9h8m-3fm2-qjrq\n\nSigned-off-by: Charlie Egan <charlie_egan@apple.com>"
+    },
+    "CVE-2025-15284": {
+      "72b1c7baa7ee6288217d04acd34420348d9fc39d": "deps(docs): bump qs to 6.14.1\n\nTo get rid of this \"finding\":\n\n    https://avd.aquasec.com/nvd/2025/cve-2025-15284/\n\nThis is on our website, I don't think it's problematic. But the report\nis annoying regardless.\n\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>"
+    },
+    "CVE-2025-64756": {
+      "6904178b3ed20bfb5b943050c459ec56a35b6804": "docs: bump glob dep (CVE-2025-64756)\n\nWe're not using the glob CLI at all. But this fixes the trivy scan result.\n\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>"
+    },
+    "GHSA-2464-8J7C-4CJM": {
+      "74c18a0c3e49bd35d510ef2cc1ac0578d1455a9a": "Update go-viper/mapstructure/v2 (#7857)\n\nhttps://github.com/go-viper/mapstructure/security/advisories/GHSA-2464-8j7c-4cjm\n\nRan go mod vendor.\n\nSigned-off-by: Dionna Glaze <d_glaze@apple.com>\nCo-authored-by: Dionna Glaze <d_glaze@apple.com>"
+    },
+    "GHSA-6M8W-JC87-6CR7": {
+      "ad2063247a14711882f18c387a511fc8094aa79c": "Merge commit from fork\n\nto disable code injection attacks, where Rego code can be injected into the constructed evaluation query.\n\nSee Security Advisory: https://github.com/open-policy-agent/opa/security/advisories/GHSA-6m8w-jc87-6cr7\n\nFixes: #GHSA-6m8w-jc87-6cr7"
+    },
+    "CVE-2025-22871": {
+      "5a62130b23c1537e7f3c40b87f5361e4f3f9ab1a": "build: bump go to 1.23.8 (#7502)\n\nCVE-2025-22871\n\nhttps://pkg.go.dev/vuln/GO-2025-3563\n\nSigned-off-by: Johan Fylling <johan.dev@fylling.se>"
+    },
+    "CVE-2024-45341": {
+      "73419421896b5296af40d8320c9f89b8f4b33f3d": "build(go): bump to 1.23.5\n\nCVE-2024-45341\nCVE-2024-45336\n\nhttps://groups.google.com/g/golang-announce/c/sSaUhLA-2SI/m/Y9wOnjSUDgAJ\n\nSigned-off-by: Stephan Renatus <stephan@styra.com>\n(cherry picked from commit 2f3a6fb8b8063cd02f35f98ebdd5671445e9e34b)",
+      "2f3a6fb8b8063cd02f35f98ebdd5671445e9e34b": "build(go): bump to 1.23.5\n\nCVE-2024-45341\nCVE-2024-45336\n\nhttps://groups.google.com/g/golang-announce/c/sSaUhLA-2SI/m/Y9wOnjSUDgAJ\n\nSigned-off-by: Stephan Renatus <stephan@styra.com>"
+    },
+    "CVE-2024-45336": {
+      "73419421896b5296af40d8320c9f89b8f4b33f3d": "build(go): bump to 1.23.5\n\nCVE-2024-45341\nCVE-2024-45336\n\nhttps://groups.google.com/g/golang-announce/c/sSaUhLA-2SI/m/Y9wOnjSUDgAJ\n\nSigned-off-by: Stephan Renatus <stephan@styra.com>\n(cherry picked from commit 2f3a6fb8b8063cd02f35f98ebdd5671445e9e34b)",
+      "2f3a6fb8b8063cd02f35f98ebdd5671445e9e34b": "build(go): bump to 1.23.5\n\nCVE-2024-45341\nCVE-2024-45336\n\nhttps://groups.google.com/g/golang-announce/c/sSaUhLA-2SI/m/Y9wOnjSUDgAJ\n\nSigned-off-by: Stephan Renatus <stephan@styra.com>"
+    },
+    "CVE-2022-24765": {
+      "82606979402db6ba745299d80af30b221f71458b": "build: Update WASM Rego test generation setup (#6707)\n\nThis change updates the WASM Rego test generation docker\r\ncommand to address CVE-2022-24765 in Git which could cause\r\nit to execute arbitrary commands.\r\n\r\nThe error was seen when running the `make wasm-rego-test` target on\r\ndarwin/arm64.\r\n\r\nFixes: #6703\r\n\r\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>"
+    },
+    "CVE-2023-45142": {
+      "fbbb6e562634304a0eca40019a25ca59a3ba6a9a": "deps: Bump OpenTelemetry-Go Contrib 0.45.0\n\nThis version includes security fixes which addresses\nvulnerability CVE-2023-45142.More details can be\nfound at\nhttps://github.com/open-telemetry/opentelemetry-go-contrib/security/advisories/GHSA-rcjv-mgp8-qvmr.\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>\n(cherry picked from commit 9a1a42758d3c4715405efa38ec695781fe1f9e87)",
+      "9a1a42758d3c4715405efa38ec695781fe1f9e87": "deps: Bump OpenTelemetry-Go Contrib 0.45.0\n\nThis version includes security fixes which addresses\nvulnerability CVE-2023-45142.More details can be\nfound at\nhttps://github.com/open-telemetry/opentelemetry-go-contrib/security/advisories/GHSA-rcjv-mgp8-qvmr.\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>"
+    },
+    "GHSA-RCJV-MGP8-QVMR": {
+      "fbbb6e562634304a0eca40019a25ca59a3ba6a9a": "deps: Bump OpenTelemetry-Go Contrib 0.45.0\n\nThis version includes security fixes which addresses\nvulnerability CVE-2023-45142.More details can be\nfound at\nhttps://github.com/open-telemetry/opentelemetry-go-contrib/security/advisories/GHSA-rcjv-mgp8-qvmr.\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>\n(cherry picked from commit 9a1a42758d3c4715405efa38ec695781fe1f9e87)",
+      "9a1a42758d3c4715405efa38ec695781fe1f9e87": "deps: Bump OpenTelemetry-Go Contrib 0.45.0\n\nThis version includes security fixes which addresses\nvulnerability CVE-2023-45142.More details can be\nfound at\nhttps://github.com/open-telemetry/opentelemetry-go-contrib/security/advisories/GHSA-rcjv-mgp8-qvmr.\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>"
+    },
+    "CVE-2023-39318": {
+      "cdf2d35a25574a7ee09f391aede4c4fec01e4613": "golang: Update golang to 1.21.1\n\nThis version includes security fixes which address the following CVEs:\n\n* CVE-2023-39318\n* CVE-2023-39319\n* CVE-2023-39320\n* CVE-2023-39321\n* CVE-2023-39322\n\nAlso changes to internal/prometheus/TestJSONSerialization: add new metric\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>"
+    },
+    "CVE-2023-39319": {
+      "cdf2d35a25574a7ee09f391aede4c4fec01e4613": "golang: Update golang to 1.21.1\n\nThis version includes security fixes which address the following CVEs:\n\n* CVE-2023-39318\n* CVE-2023-39319\n* CVE-2023-39320\n* CVE-2023-39321\n* CVE-2023-39322\n\nAlso changes to internal/prometheus/TestJSONSerialization: add new metric\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>"
+    },
+    "CVE-2023-39320": {
+      "cdf2d35a25574a7ee09f391aede4c4fec01e4613": "golang: Update golang to 1.21.1\n\nThis version includes security fixes which address the following CVEs:\n\n* CVE-2023-39318\n* CVE-2023-39319\n* CVE-2023-39320\n* CVE-2023-39321\n* CVE-2023-39322\n\nAlso changes to internal/prometheus/TestJSONSerialization: add new metric\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>"
+    },
+    "CVE-2023-39321": {
+      "cdf2d35a25574a7ee09f391aede4c4fec01e4613": "golang: Update golang to 1.21.1\n\nThis version includes security fixes which address the following CVEs:\n\n* CVE-2023-39318\n* CVE-2023-39319\n* CVE-2023-39320\n* CVE-2023-39321\n* CVE-2023-39322\n\nAlso changes to internal/prometheus/TestJSONSerialization: add new metric\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>"
+    },
+    "CVE-2023-39322": {
+      "cdf2d35a25574a7ee09f391aede4c4fec01e4613": "golang: Update golang to 1.21.1\n\nThis version includes security fixes which address the following CVEs:\n\n* CVE-2023-39318\n* CVE-2023-39319\n* CVE-2023-39320\n* CVE-2023-39321\n* CVE-2023-39322\n\nAlso changes to internal/prometheus/TestJSONSerialization: add new metric\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>"
+    },
+    "CVE-2022-3517": {
+      "d3811e29eba10e9e79e8d517c2858be0dc2494fc": "fix: CVE-2022-3517 (#5941)\n\nSigned-off-by: guoguangwu <guoguangwu@magic-shield.com>"
+    },
+    "CVE-2023-24537": {
+      "d9d18d305392d5915211f9aba3f7e52086ab8e35": "build: bump golang 1.20.2 -> 1.20.3\n\nThis Go release includes the following security fixes:\n\n* CVE-2023-24537\n* CVE-2023-24538\n* CVE-2023-24534\n* CVE-2023-24536\n\nhttps://groups.google.com/g/golang-announce/c/Xdv6JL9ENs8\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>"
+    },
+    "CVE-2023-24538": {
+      "d9d18d305392d5915211f9aba3f7e52086ab8e35": "build: bump golang 1.20.2 -> 1.20.3\n\nThis Go release includes the following security fixes:\n\n* CVE-2023-24537\n* CVE-2023-24538\n* CVE-2023-24534\n* CVE-2023-24536\n\nhttps://groups.google.com/g/golang-announce/c/Xdv6JL9ENs8\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>"
+    },
+    "CVE-2023-24534": {
+      "d9d18d305392d5915211f9aba3f7e52086ab8e35": "build: bump golang 1.20.2 -> 1.20.3\n\nThis Go release includes the following security fixes:\n\n* CVE-2023-24537\n* CVE-2023-24538\n* CVE-2023-24534\n* CVE-2023-24536\n\nhttps://groups.google.com/g/golang-announce/c/Xdv6JL9ENs8\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>"
+    },
+    "CVE-2023-24536": {
+      "d9d18d305392d5915211f9aba3f7e52086ab8e35": "build: bump golang 1.20.2 -> 1.20.3\n\nThis Go release includes the following security fixes:\n\n* CVE-2023-24537\n* CVE-2023-24538\n* CVE-2023-24534\n* CVE-2023-24536\n\nhttps://groups.google.com/g/golang-announce/c/Xdv6JL9ENs8\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>"
+    },
+    "CVE-2023-24532": {
+      "85a10ff095a98e94e7b1181f6a21ef8f765953d9": "build: bump golang 1.20.1 -> 1.20.2 (#5740)\n\nFixes CVE-2023-24532:\r\n\r\n> crypto/elliptic: incorrect P-256 ScalarMult and ScalarBaseMult result\r\n\r\nhttps://groups.google.com/g/golang-announce/c/3-TpUx48iQY\r\n\r\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>"
+    },
+    "CVE-2022-41716": {
+      "6e2facf01e55405463f28223a153702d85e57aac": "Migrate ORAS Go library from v1.2.2 to v2\n\nThis change migrates the ORAS Go library from v1.2.2 to v2.\nThe OCI downloader which uses this lib was updated as per\nthe new API changes in the library.\n\nThe v1.2.2 of the ORAS library had a dependency on the docker package.\nThe library used a version of that package that had some\nreported vulnerabilities such as CVE-2022-41716, CVE-2022-41720.\n\nThe ORAS Go library v2 removes the dependency on the docker package.\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>\n(cherry picked from commit 83b1614c947b396081010c82a4a135d150a6dd8f)",
+      "83b1614c947b396081010c82a4a135d150a6dd8f": "Migrate ORAS Go library from v1.2.2 to v2\n\nThis change migrates the ORAS Go library from v1.2.2 to v2.\nThe OCI downloader which uses this lib was updated as per\nthe new API changes in the library.\n\nThe v1.2.2 of the ORAS library had a dependency on the docker package.\nThe library used a version of that package that had some\nreported vulnerabilities such as CVE-2022-41716, CVE-2022-41720.\n\nThe ORAS Go library v2 removes the dependency on the docker package.\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>"
+    },
+    "CVE-2022-41720": {
+      "6e2facf01e55405463f28223a153702d85e57aac": "Migrate ORAS Go library from v1.2.2 to v2\n\nThis change migrates the ORAS Go library from v1.2.2 to v2.\nThe OCI downloader which uses this lib was updated as per\nthe new API changes in the library.\n\nThe v1.2.2 of the ORAS library had a dependency on the docker package.\nThe library used a version of that package that had some\nreported vulnerabilities such as CVE-2022-41716, CVE-2022-41720.\n\nThe ORAS Go library v2 removes the dependency on the docker package.\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>\n(cherry picked from commit 83b1614c947b396081010c82a4a135d150a6dd8f)",
+      "83b1614c947b396081010c82a4a135d150a6dd8f": "Migrate ORAS Go library from v1.2.2 to v2\n\nThis change migrates the ORAS Go library from v1.2.2 to v2.\nThe OCI downloader which uses this lib was updated as per\nthe new API changes in the library.\n\nThe v1.2.2 of the ORAS library had a dependency on the docker package.\nThe library used a version of that package that had some\nreported vulnerabilities such as CVE-2022-41716, CVE-2022-41720.\n\nThe ORAS Go library v2 removes the dependency on the docker package.\n\nSigned-off-by: Ashutosh Narkar <anarkar4387@gmail.com>"
+    },
+    "CVE-2022-41717": {
+      "828872ac09836653fe7e05a4ef44a0901b0dab73": "build: bump golang 1.19.3 -> 1.19.4 (#5448)\n\nFixes CVE-2022-41717:\r\n\r\n> net/http: limit canonical header cache by bytes, not entries\r\n\r\nhttps://groups.google.com/g/golang-announce/c/L_3rmdT0BMU\r\n\r\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>",
+      "840b21da986b2854012aeb102588ee4bb7553044": "build: bump golang 1.19.3 -> 1.19.4 (#5448)\n\nFixes CVE-2022-41717:\r\n\r\n> net/http: limit canonical header cache by bytes, not entries\r\n\r\nhttps://groups.google.com/g/golang-announce/c/L_3rmdT0BMU\r\n\r\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>",
+      "e55dc67fad7d668dd80b166797fe3a0141e24a5e": "build: bump golang 1.19.3 -> 1.19.4 (#5448)\n\nFixes CVE-2022-41717:\r\n\r\n> net/http: limit canonical header cache by bytes, not entries\r\n\r\nhttps://groups.google.com/g/golang-announce/c/L_3rmdT0BMU\r\n\r\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>"
+    },
+    "CVE-2022-39392": {
+      "6798ec7ad813d6cbaf8dee1f8755e2e86d3e8bbb": "build(deps): bump wasmtime-go to v3 (#5422)\n\nRelease notes for Wasmtime 3.0.0:\r\nhttps://github.com/bytecodealliance/wasmtime/blob/main/RELEASES.md#300\r\n\r\nBut we're also now getting a bunch of CVE fixes, which is the real reason for\r\nupdating this dependency:\r\n\r\nCVE-2022-39392 - modules may perform out-of-bounds reads/writes when the pooling allocator was configured with memory_pages: 0.\r\n\r\nCVE-2022-39393 - data can be leaked between instances when using the pooling allocator.\r\n\r\nCVE-2022-39394 - An incorrect Rust signature for the C API wasmtime_trap_code function could lead to an out-of-bounds write of three zero bytes.\r\n\r\nWe're not using their allocator, but the last one could have been a problem for us, too.\r\nI've never seen it happen in the wild, but it's definitely a code path that we're using.\r\n\r\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>"
+    },
+    "CVE-2022-39393": {
+      "6798ec7ad813d6cbaf8dee1f8755e2e86d3e8bbb": "build(deps): bump wasmtime-go to v3 (#5422)\n\nRelease notes for Wasmtime 3.0.0:\r\nhttps://github.com/bytecodealliance/wasmtime/blob/main/RELEASES.md#300\r\n\r\nBut we're also now getting a bunch of CVE fixes, which is the real reason for\r\nupdating this dependency:\r\n\r\nCVE-2022-39392 - modules may perform out-of-bounds reads/writes when the pooling allocator was configured with memory_pages: 0.\r\n\r\nCVE-2022-39393 - data can be leaked between instances when using the pooling allocator.\r\n\r\nCVE-2022-39394 - An incorrect Rust signature for the C API wasmtime_trap_code function could lead to an out-of-bounds write of three zero bytes.\r\n\r\nWe're not using their allocator, but the last one could have been a problem for us, too.\r\nI've never seen it happen in the wild, but it's definitely a code path that we're using.\r\n\r\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>"
+    },
+    "CVE-2022-39394": {
+      "6798ec7ad813d6cbaf8dee1f8755e2e86d3e8bbb": "build(deps): bump wasmtime-go to v3 (#5422)\n\nRelease notes for Wasmtime 3.0.0:\r\nhttps://github.com/bytecodealliance/wasmtime/blob/main/RELEASES.md#300\r\n\r\nBut we're also now getting a bunch of CVE fixes, which is the real reason for\r\nupdating this dependency:\r\n\r\nCVE-2022-39392 - modules may perform out-of-bounds reads/writes when the pooling allocator was configured with memory_pages: 0.\r\n\r\nCVE-2022-39393 - data can be leaked between instances when using the pooling allocator.\r\n\r\nCVE-2022-39394 - An incorrect Rust signature for the C API wasmtime_trap_code function could lead to an out-of-bounds write of three zero bytes.\r\n\r\nWe're not using their allocator, but the last one could have been a problem for us, too.\r\nI've never seen it happen in the wild, but it's definitely a code path that we're using.\r\n\r\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>"
+    },
+    "GHSA-P2G7-XWVR-RRW3": {
+      "51f9acbf98f9810196fc2c451f8ae9d480a0abb6": "internal/strvals: port helm strvals fix (CLI --set arguments)(#5315)\n\nThe impact of this in OPA is minimal: when passing for example\r\n\r\n    --set \"abc[9999999999999]=123\"\r\n\r\nto `opa run` or `opa exec`, it would run out of memory. With this change, it\r\nwill return an error instead:\r\n\r\n    $ opa exec --set \"abc[9999999999999]=123\" .\r\n    {\"err\":\"config error: failed parsing --set data: index of 9999999999999 is greater than maximum supported index of 65536\",\r\n     \"level\":\"error\",\"msg\":\"Unexpected error.\",\"time\":\"2022-10-27T10:24:01+02:00\"}\r\n\r\nSince these parameters are never user-controlled, or accessible at\r\nruntime, any attack vector here involves having access to a machines\r\nCLI, and is thus equivalent to already having local user rights. The\r\naffected instance of OPA would be the instance that is started -- so no\r\nothers would be affected.\r\n\r\nThanks to @pjbgf for bringing this up on the security mailing list.\r\n\r\nSee also the issue in helm,\r\nhttps://github.com/fluxcd/flux2/security/advisories/GHSA-p2g7-xwvr-rrw3.\r\n\r\nThe changes have been ported from @mattfarina fix in\r\nhttps://github.com/helm/helm/commit/225f8d7732aba378378e7507655157b1d26cd514.\r\n\r\nMore stuff has happened on that package in helm, and new features have been\r\nadded -- but I've refrained from pulling all that in.\r\n\r\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>"
+    },
+    "CVE-2022-31169": {
+      "e65b7fe71cf9bc9b24bd4b6a70cf2eb4f44b3cff": "trivyignore: add wasmtime-go CVE-2022-31169 (#5117)\n\nWe should still update, but we shouldn't be rushed by this CVE.\r\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>"
+    },
+    "CVE-2022-36085": {
+      "25a597bc3f4985162e7f65f9c36599f4f8f55823": "ast/compile: respect unsafeBuiltinMap for 'with' replacements (#5107)\n\nThe changes are necessary for both the Compiler and the QueryCompiler. Tests\r\nhave been added to ensure that the code path through the rego package has also\r\nbeen fixed.\r\n\r\nFixes CVE-2022-36085.\r\n\r\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>",
+      "3e8c754ed007b22393cf65e48751ad9f6457fee8": "ast/compile: respect unsafeBuiltinMap for 'with' replacements\n\nThe changes are necessary for both the Compiler and the QueryCompiler. Tests\nhave been added to ensure that the code path through the rego package has also\nbeen fixed.\n\nFixes CVE-2022-36085.\n\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>"
+    },
+    "CVE-2022-27664": {
+      "b78756fa6427435ae4c2e16dc6cbec66bf937996": "build: bump golang: 1.18 -> 1.18.6\n\nGolang Announcement: https://groups.google.com/g/golang-announce/c/x49AQzIVX-s\n\nNotably:\n* CVE-2022-27664 and Go issue https://go.dev/issue/54658\n\nAlso adding 'opa version' output to the binary smoke tests for easier\nverification here.\n\nNOTE That this is not the same commit we've done on main: there, we went from\n1.19 to 1.19.1 But since the step from 1.18 to 1.19 is more involved than we'd\nlike for a patch release, we make an extra step here.\n\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>",
+      "1bcf82cd068e4580fec2d8e7ab056a954429d23d": "build: bump golang: 1.19 -> 1.19.1 (#5099)\n\nGolang Announcement: https://groups.google.com/g/golang-announce/c/x49AQzIVX-s\r\n\r\nNotably:\r\n* CVE-2022-27664 and Go issue https://go.dev/issue/54658\r\n\r\nAlso adding 'opa version' output to the binary smoke tests for easier\r\nverification here.\r\n\r\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>"
+    },
+    "CVE-2022-1996": {
+      "16bae6c4aaaf26e444c6e00806adc059611fb41c": "CI: remove trivy from PRs, add CVE-2022-1996 to ignores (#4867)\n\nThis is breaking contributions when there is something new in trivy's\r\ndatabases. That's unfortunate, and will be turned off by this commit.\r\n\r\nWe're still running the checks nightly, and that's good enough for raising the\r\nmaintainers' attention.\r\n\r\n* .trivyignore: add CVE-2022-1996\r\n\r\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>",
+      "eef861dec6100fe798051e5b3be132271be21848": "CI: remove trivy from PRs, add CVE-2022-1996 to ignores (#4867)\n\nThis is breaking contributions when there is something new in trivy's\r\ndatabases. That's unfortunate, and will be turned off by this commit.\r\n\r\nWe're still running the checks nightly, and that's good enough for raising the\r\nmaintainers' attention.\r\n\r\n* .trivyignore: add CVE-2022-1996\r\n\r\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>"
+    },
+    "CVE-2020-7598": {
+      "1fdb3264db6c3818ea30f9e42cb49d438b8dca1e": "docs: Update minimist dev tool dependency\n\nMore follow on to fixing our dev tooling for the website for:\n\nhttps://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7598\n\nSigned-off-by: Patrick East <east.patrick@gmail.com>"
+    },
+    "GHSA-7FHM-MQM4-2WP7": {
+      "015e1b5291f5d0965c10f2cb3d0baeb50f2a2d59": "docs: Update acorn to fix CVE with dev tooling\n\nFixing https://github.com/advisories/GHSA-7fhm-mqm4-2wp7\n\nThis also fixes the unit tests (not sure how long they've been borken)\nand makes them run as part of the netlify preview build, so any\nregressions should be seen in PR's.\n\nSigned-off-by: Patrick East <east.patrick@gmail.com>"
+    }
+  }
+}

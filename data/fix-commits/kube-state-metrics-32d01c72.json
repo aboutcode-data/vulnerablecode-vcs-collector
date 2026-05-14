@@ -1,0 +1,79 @@
+{
+  "vcs_url": "https://github.com/kubernetes/kube-state-metrics",
+  "vulnerabilities": {
+    "CVE-2026-39883": {
+      "ac2585d02093131f1a84924be435d9e6e1451be4": "Merge pull request #2952 from Dinesh-Jilagam/main\n\nfix: CVE-2026-39883 security fix on otel go library",
+      "d45ed71902b81027464e383ee782353ab9a0e5aa": "fix: CVE-2026-39883 security fix on otel go library"
+    },
+    "CVE-2026-34986": {
+      "454b63b7546f2848a21942ffe6f89f9e98a4f8c3": "Merge pull request #2941 from marioferh/bump_go_jose\n\nfix: bump go-jose/v4 to v4.1.4 for CVE-2026-34986"
+    },
+    "CVE-2026-33186": {
+      "63f7470c180b5fe34e0aeb1b25bc4462c3f6c5aa": "Merge pull request #2925 from sturman/fix/update-grpc-cve-2026-33186\n\nfix(deps): bump google.golang.org/grpc to v1.79.3",
+      "c7c61277015da78aabacdb7ba80f3f8b0528224a": "fix(deps): bump google.golang.org/grpc to v1.79.3\n\nFixes CVE-2026-33186: gRPC-Go authorization bypass via missing leading\nslash in :path pseudo-header (CVSS 9.1 Critical)."
+    },
+    "CVE-2026-24051": {
+      "acae9effcda427217e6bd8cae255a082748ca41c": "Merge pull request #2908 from marvin659/otelupdate\n\nfix: CVE-2026-24051 security fix on otel go library",
+      "ae1cd26b85e5ec3a65be1bd62d84f18f0b305a07": "fix: CVE-2026-24051 security fix on otel go library"
+    },
+    "CVE-2025-22870": {
+      "ffd8f41131a047e09bbbf5b561ddbdce91607000": "Merge pull request #2641 from ricardbejarano/main\n\nfix: bump golang.org/x/net to v0.38.0 (fixes CVE-2025-22870 & CVE-2025-22872)",
+      "a6ff8ae41c132b490edcf03afe7dcff657ab9398": "fix: bump golang.org/x/net to v0.36.0 (fixes CVE-2025-22870)"
+    },
+    "CVE-2025-22872": {
+      "ffd8f41131a047e09bbbf5b561ddbdce91607000": "Merge pull request #2641 from ricardbejarano/main\n\nfix: bump golang.org/x/net to v0.38.0 (fixes CVE-2025-22870 & CVE-2025-22872)",
+      "1c923dc83b10df9b3b4438b4ea3087a72bc858e5": "fix: bump golang.org/x/net to v0.38.0 (fixes CVE-2025-22872)"
+    },
+    "CVE-2022-21698": {
+      "a5e168f26953c39e296d5ae88604717ff7d88a49": "build: bump deps to fix CVEs\n\nUpdates all deps flagging for fixed CVEs and updates go to 1.22.2.\n\nFixes CVE-2022-21698 CVE-2022-46146 CVE-2021-43565 CVE-2022-27191\n    CVE-2023-48795 CVE-2022-27664 CVE-2022-41723 CVE-2023-39325\n    CVE-2023-3978 CVE-2023-44487 CVE-2023-45288 CVE-2022-29526\n    CVE-2021-38561 CVE-2022-32149 CVE-2024-24786 CVE-2022-28948"
+    },
+    "CVE-2022-46146": {
+      "a5e168f26953c39e296d5ae88604717ff7d88a49": "build: bump deps to fix CVEs\n\nUpdates all deps flagging for fixed CVEs and updates go to 1.22.2.\n\nFixes CVE-2022-21698 CVE-2022-46146 CVE-2021-43565 CVE-2022-27191\n    CVE-2023-48795 CVE-2022-27664 CVE-2022-41723 CVE-2023-39325\n    CVE-2023-3978 CVE-2023-44487 CVE-2023-45288 CVE-2022-29526\n    CVE-2021-38561 CVE-2022-32149 CVE-2024-24786 CVE-2022-28948",
+      "8b1016485ac08f3417349c5c99fac1e7be60038b": "Update github.com/prometheus/exporter-toolkit\n\nThe latest version (v0.8.2) fixes CVE-2022-46146.\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>"
+    },
+    "CVE-2021-43565": {
+      "a5e168f26953c39e296d5ae88604717ff7d88a49": "build: bump deps to fix CVEs\n\nUpdates all deps flagging for fixed CVEs and updates go to 1.22.2.\n\nFixes CVE-2022-21698 CVE-2022-46146 CVE-2021-43565 CVE-2022-27191\n    CVE-2023-48795 CVE-2022-27664 CVE-2022-41723 CVE-2023-39325\n    CVE-2023-3978 CVE-2023-44487 CVE-2023-45288 CVE-2022-29526\n    CVE-2021-38561 CVE-2022-32149 CVE-2024-24786 CVE-2022-28948"
+    },
+    "CVE-2022-27191": {
+      "a5e168f26953c39e296d5ae88604717ff7d88a49": "build: bump deps to fix CVEs\n\nUpdates all deps flagging for fixed CVEs and updates go to 1.22.2.\n\nFixes CVE-2022-21698 CVE-2022-46146 CVE-2021-43565 CVE-2022-27191\n    CVE-2023-48795 CVE-2022-27664 CVE-2022-41723 CVE-2023-39325\n    CVE-2023-3978 CVE-2023-44487 CVE-2023-45288 CVE-2022-29526\n    CVE-2021-38561 CVE-2022-32149 CVE-2024-24786 CVE-2022-28948",
+      "1f9457b64bfa0c538492b7068601c41bae97f287": "Merge pull request #1721 from pgvishnuram/master\n\nfix CVE: CVE-2022-27191 in go.mod package",
+      "0a6761d765084cbacaf0f72766ffa057871db3a1": "fix CVE: CVE-2022-27191 in go.mod package"
+    },
+    "CVE-2023-48795": {
+      "a5e168f26953c39e296d5ae88604717ff7d88a49": "build: bump deps to fix CVEs\n\nUpdates all deps flagging for fixed CVEs and updates go to 1.22.2.\n\nFixes CVE-2022-21698 CVE-2022-46146 CVE-2021-43565 CVE-2022-27191\n    CVE-2023-48795 CVE-2022-27664 CVE-2022-41723 CVE-2023-39325\n    CVE-2023-3978 CVE-2023-44487 CVE-2023-45288 CVE-2022-29526\n    CVE-2021-38561 CVE-2022-32149 CVE-2024-24786 CVE-2022-28948"
+    },
+    "CVE-2022-27664": {
+      "a5e168f26953c39e296d5ae88604717ff7d88a49": "build: bump deps to fix CVEs\n\nUpdates all deps flagging for fixed CVEs and updates go to 1.22.2.\n\nFixes CVE-2022-21698 CVE-2022-46146 CVE-2021-43565 CVE-2022-27191\n    CVE-2023-48795 CVE-2022-27664 CVE-2022-41723 CVE-2023-39325\n    CVE-2023-3978 CVE-2023-44487 CVE-2023-45288 CVE-2022-29526\n    CVE-2021-38561 CVE-2022-32149 CVE-2024-24786 CVE-2022-28948"
+    },
+    "CVE-2022-41723": {
+      "a5e168f26953c39e296d5ae88604717ff7d88a49": "build: bump deps to fix CVEs\n\nUpdates all deps flagging for fixed CVEs and updates go to 1.22.2.\n\nFixes CVE-2022-21698 CVE-2022-46146 CVE-2021-43565 CVE-2022-27191\n    CVE-2023-48795 CVE-2022-27664 CVE-2022-41723 CVE-2023-39325\n    CVE-2023-3978 CVE-2023-44487 CVE-2023-45288 CVE-2022-29526\n    CVE-2021-38561 CVE-2022-32149 CVE-2024-24786 CVE-2022-28948"
+    },
+    "CVE-2023-39325": {
+      "a5e168f26953c39e296d5ae88604717ff7d88a49": "build: bump deps to fix CVEs\n\nUpdates all deps flagging for fixed CVEs and updates go to 1.22.2.\n\nFixes CVE-2022-21698 CVE-2022-46146 CVE-2021-43565 CVE-2022-27191\n    CVE-2023-48795 CVE-2022-27664 CVE-2022-41723 CVE-2023-39325\n    CVE-2023-3978 CVE-2023-44487 CVE-2023-45288 CVE-2022-29526\n    CVE-2021-38561 CVE-2022-32149 CVE-2024-24786 CVE-2022-28948"
+    },
+    "CVE-2023-3978": {
+      "a5e168f26953c39e296d5ae88604717ff7d88a49": "build: bump deps to fix CVEs\n\nUpdates all deps flagging for fixed CVEs and updates go to 1.22.2.\n\nFixes CVE-2022-21698 CVE-2022-46146 CVE-2021-43565 CVE-2022-27191\n    CVE-2023-48795 CVE-2022-27664 CVE-2022-41723 CVE-2023-39325\n    CVE-2023-3978 CVE-2023-44487 CVE-2023-45288 CVE-2022-29526\n    CVE-2021-38561 CVE-2022-32149 CVE-2024-24786 CVE-2022-28948"
+    },
+    "CVE-2023-44487": {
+      "a5e168f26953c39e296d5ae88604717ff7d88a49": "build: bump deps to fix CVEs\n\nUpdates all deps flagging for fixed CVEs and updates go to 1.22.2.\n\nFixes CVE-2022-21698 CVE-2022-46146 CVE-2021-43565 CVE-2022-27191\n    CVE-2023-48795 CVE-2022-27664 CVE-2022-41723 CVE-2023-39325\n    CVE-2023-3978 CVE-2023-44487 CVE-2023-45288 CVE-2022-29526\n    CVE-2021-38561 CVE-2022-32149 CVE-2024-24786 CVE-2022-28948"
+    },
+    "CVE-2023-45288": {
+      "a5e168f26953c39e296d5ae88604717ff7d88a49": "build: bump deps to fix CVEs\n\nUpdates all deps flagging for fixed CVEs and updates go to 1.22.2.\n\nFixes CVE-2022-21698 CVE-2022-46146 CVE-2021-43565 CVE-2022-27191\n    CVE-2023-48795 CVE-2022-27664 CVE-2022-41723 CVE-2023-39325\n    CVE-2023-3978 CVE-2023-44487 CVE-2023-45288 CVE-2022-29526\n    CVE-2021-38561 CVE-2022-32149 CVE-2024-24786 CVE-2022-28948"
+    },
+    "CVE-2022-29526": {
+      "a5e168f26953c39e296d5ae88604717ff7d88a49": "build: bump deps to fix CVEs\n\nUpdates all deps flagging for fixed CVEs and updates go to 1.22.2.\n\nFixes CVE-2022-21698 CVE-2022-46146 CVE-2021-43565 CVE-2022-27191\n    CVE-2023-48795 CVE-2022-27664 CVE-2022-41723 CVE-2023-39325\n    CVE-2023-3978 CVE-2023-44487 CVE-2023-45288 CVE-2022-29526\n    CVE-2021-38561 CVE-2022-32149 CVE-2024-24786 CVE-2022-28948"
+    },
+    "CVE-2021-38561": {
+      "a5e168f26953c39e296d5ae88604717ff7d88a49": "build: bump deps to fix CVEs\n\nUpdates all deps flagging for fixed CVEs and updates go to 1.22.2.\n\nFixes CVE-2022-21698 CVE-2022-46146 CVE-2021-43565 CVE-2022-27191\n    CVE-2023-48795 CVE-2022-27664 CVE-2022-41723 CVE-2023-39325\n    CVE-2023-3978 CVE-2023-44487 CVE-2023-45288 CVE-2022-29526\n    CVE-2021-38561 CVE-2022-32149 CVE-2024-24786 CVE-2022-28948"
+    },
+    "CVE-2022-32149": {
+      "a5e168f26953c39e296d5ae88604717ff7d88a49": "build: bump deps to fix CVEs\n\nUpdates all deps flagging for fixed CVEs and updates go to 1.22.2.\n\nFixes CVE-2022-21698 CVE-2022-46146 CVE-2021-43565 CVE-2022-27191\n    CVE-2023-48795 CVE-2022-27664 CVE-2022-41723 CVE-2023-39325\n    CVE-2023-3978 CVE-2023-44487 CVE-2023-45288 CVE-2022-29526\n    CVE-2021-38561 CVE-2022-32149 CVE-2024-24786 CVE-2022-28948"
+    },
+    "CVE-2024-24786": {
+      "a5e168f26953c39e296d5ae88604717ff7d88a49": "build: bump deps to fix CVEs\n\nUpdates all deps flagging for fixed CVEs and updates go to 1.22.2.\n\nFixes CVE-2022-21698 CVE-2022-46146 CVE-2021-43565 CVE-2022-27191\n    CVE-2023-48795 CVE-2022-27664 CVE-2022-41723 CVE-2023-39325\n    CVE-2023-3978 CVE-2023-44487 CVE-2023-45288 CVE-2022-29526\n    CVE-2021-38561 CVE-2022-32149 CVE-2024-24786 CVE-2022-28948"
+    },
+    "CVE-2022-28948": {
+      "a5e168f26953c39e296d5ae88604717ff7d88a49": "build: bump deps to fix CVEs\n\nUpdates all deps flagging for fixed CVEs and updates go to 1.22.2.\n\nFixes CVE-2022-21698 CVE-2022-46146 CVE-2021-43565 CVE-2022-27191\n    CVE-2023-48795 CVE-2022-27664 CVE-2022-41723 CVE-2023-39325\n    CVE-2023-3978 CVE-2023-44487 CVE-2023-45288 CVE-2022-29526\n    CVE-2021-38561 CVE-2022-32149 CVE-2024-24786 CVE-2022-28948"
+    }
+  }
+}

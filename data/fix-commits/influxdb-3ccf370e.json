@@ -1,0 +1,21 @@
+{
+  "vcs_url": "https://github.com/influxdata/influxdb",
+  "vulnerabilities": {
+    "CVE-2025-22871": {
+      "ec9dcde5d6f0e1c4d15ff2332127987a42ca30fc": "chore: update go to 1.23.9 (#26405)\n\nFixes CVE-2025-22871.\n\nFixes #26404.\n\nCo-authored-by: Jamie Strandboge <jamie@influxdata.com>"
+    },
+    "CVE-2024-24790": {
+      "1ff55ea4ac77baf5d15d86657c5916a1fa9b2ada": "chore: upgrade go toolchain to 1.21.12 (#25177)\n\nFixes CVE-2024-24790, reported by X-Ray."
+    },
+    "CVE-2022-46176": {
+      "e0dcfc88304e48ff032b8a9f6ab5ea694e0dafc7": "chore: bump rust to 1.66.1\n\nPicks up a fix to SSH host authentication in cargo when pulling the\ncrates index:\n\n    https://blog.rust-lang.org/2023/01/10/cve-2022-46176.html"
+    },
+    "GHSA-7RRJ-XR53-82P7": {
+      "7f7f0ca170ab099db78bfcc61de781e4316c5021": "chore: bump tokio 1.22 -> 1.24\n\nFixes a bug on windows:\n\nhttps://github.com/tokio-rs/tokio/security/advisories/GHSA-7rrj-xr53-82p7"
+    },
+    "CVE-2020-26160": {
+      "7fe7db5f2571b3e6150a6a6e5f6508abc259d1f0": "chore: upgrade to golang-jwt 3.2.1 to fix CVE-2020-26160 (#21941)\n\n* chore: upgrade to golang-jwt 3.2.1 to fix CVE-2020-26160\r\n\r\nCVE-2020-26160[0] is an access restriction bypass under certain\r\ncircumstances when validating audience checks. The original\r\ndgrijalva/jwt-go project is no longer maintained[1] and will not be\r\nissuing a fix for this CVE[2]. Instead, they have transferred ownership\r\nto golang-jwt/jwt[2][3][4].\r\n\r\nThe following was performed:\r\n\r\n1. update chronograf and jsonweb to import golang-jwt/jwt\r\n2. go mod edit -require github.com/golang-jwt/jwt@v3.2.1+incompatible\r\n3. go mod edit -droprequire github.com/dgrijalva/jwt-go\r\n4. go mod tidy\r\n5. make\r\n6. make test\r\n\r\nReferences:\r\n[0] https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26160\r\n[1] dgrijalva/jwt-go#462\r\n[2] dgrijalva/jwt-go#463\r\n[3] https://github.com/dgrijalva/jwt-go/blob/master/README.md\r\n[4] https://github.com/golang-jwt/jwt",
+      "bf5965d22b830f135958196faf48b69f076313ff": "chore: upgrade to golang-jwt 3.2.1 to fix CVE-2020-26160 (#21925)\n\nCVE-2020-26160[0] is an access restriction bypass under certain\r\ncircumstances when validating audience checks. The original\r\ndgrijalva/jwt-go project is no longer maintained[1] and will not be\r\nissuing a fix for this CVE[2]. Instead, they have transferred ownership\r\nto golang-jwt/jwt[2][3][4].\r\n\r\nThe following was performed:\r\n\r\n1. update chronograf and jsonweb to import golang-jwt/jwt\r\n2. go mod edit -require github.com/golang-jwt/jwt@v3.2.1+incompatible\r\n3. go mod edit -droprequire github.com/dgrijalva/jwt-go\r\n4. go mod tidy\r\n5. make\r\n6. make test\r\n\r\nReferences:\r\n[0] https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26160\r\n[1] dgrijalva/jwt-go#462\r\n[2] dgrijalva/jwt-go#463\r\n[3] https://github.com/dgrijalva/jwt-go/blob/master/README.md\r\n[4] https://github.com/golang-jwt/jwt"
+    }
+  }
+}

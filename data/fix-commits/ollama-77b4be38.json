@@ -1,0 +1,14 @@
+{
+  "vcs_url": "https://github.com/ollama/ollama",
+  "vulnerabilities": {
+    "CVE-2023-3978": {
+      "bb8464c0d2ad3221dd8586212b9c8f2f1b2a8a52": "update golang.org/x/net fixes CVE-2023-3978,CVE-2023-39325,CVE-2023-44487 (#855)"
+    },
+    "CVE-2023-39325": {
+      "bb8464c0d2ad3221dd8586212b9c8f2f1b2a8a52": "update golang.org/x/net fixes CVE-2023-3978,CVE-2023-39325,CVE-2023-44487 (#855)"
+    },
+    "CVE-2023-44487": {
+      "bb8464c0d2ad3221dd8586212b9c8f2f1b2a8a52": "update golang.org/x/net fixes CVE-2023-3978,CVE-2023-39325,CVE-2023-44487 (#855)"
+    }
+  }
+}

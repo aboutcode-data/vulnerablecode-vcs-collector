@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/apache/commons-collections",
+  "vulnerabilities": {
+    "CVE-2015-7501": {
+      "634917ecc8e3d8046cae12cdc7017441843323db": "security-report: added CVE-2015-7501 (Red Hat) to de-serialisaton references\n\ngit-svn-id: https://svn.apache.org/repos/asf/commons/proper/collections/trunk@1719350 13f79535-47bb-0310-9956-ffa450edef68"
+    }
+  }
+}

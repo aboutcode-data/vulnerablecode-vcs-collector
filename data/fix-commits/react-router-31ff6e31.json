@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/remix-run/react-router",
+  "vulnerabilities": {
+    "CVE-2025-55182": {
+      "8ef719f4fa74c33e4d8c151f4144d1cb72fe41bd": "fix: bump react-server-dom-parcel in internal repo deps (#14636)\n\n* fix: bump react-server-dom-parcel to patch CVE-2025-55182\n\n* add to contributos\n\n* Run pnpm install\n\n---------\n\nCo-authored-by: Tim Dorr <git@timdorr.com>"
+    }
+  }
+}

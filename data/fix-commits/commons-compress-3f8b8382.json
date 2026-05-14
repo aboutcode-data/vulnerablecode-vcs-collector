@@ -1,0 +1,27 @@
+{
+  "vcs_url": "https://github.com/apache/commons-compress",
+  "vulnerabilities": {
+    "CVE-2025-48924": {
+      "66d0d760c727c13c100260885e7afca4c542b991": "Update release notes for CVE-2025-48924 in a dependency\n\nThis release updates Apache Commons Lang to 3.18.0 to pick up the fix\nfor CVE-2025-48924 (https://nvd.nist.gov/vuln/detail/CVE-2025-48924),\nbut is not affected by it.",
+      "c76bc976703dc0cebfb6d4653061b8ac3524421d": "Use OpenVEX to document that we are not affected by CVE-2025-48924 in\nCommons Lang"
+    },
+    "CVE-2023-42503": {
+      "3eee09dd4c9fabc83234353ff7327f2bc4c36e03": "Update site for CVE-2023-42503",
+      "aae38bfb820159ae7a0b792e779571f6a46b3889": "Update site for CVE-2023-42503"
+    },
+    "CVE-2019-12402": {
+      "a98d68e2b5c7b018db5153eb37ba38297027c852": "record CVE-2019-12402"
+    },
+    "CVE-2018-11771": {
+      "1efa5de83e0f00fec485fbc9669e17d30556ed98": "update security page with CVE-2018-11771"
+    },
+    "CVE-2018-1324": {
+      "d3dac8c0f50b2e7ae97b764034823adce6878287": "include CVE-2018-1324 in limitations page"
+    },
+    "CVE-2012-2098": {
+      "8f702469cbf4c451b6dea349290bc4af0f6f76c7": "[CVE-2012-2098] Actually this shift is supposed to be unsigned.\n\nKudos to Findbugs:\nhttp://findbugs.sourceforge.net/bugDescriptions.html#IM_AVERAGE_COMPUTATION_COULD_OVERFLOW\n\n\ngit-svn-id: https://svn.apache.org/repos/asf/commons/proper/compress/trunk@1340799 13f79535-47bb-0310-9956-ffa450edef68",
+      "0600296ab8f8a0bbdfedd483f51b38005eb8e34e": "[CVE-2012-2098] Integrate fallback sort into the rest, add some more tests and fix bug in bucket boundary calculation\n\ngit-svn-id: https://svn.apache.org/repos/asf/commons/proper/compress/trunk@1340786 13f79535-47bb-0310-9956-ffa450edef68",
+      "fdd7459bc5470e90024dbe762249166481cce769": "[CVE-2012-2098] add fallback sorting algorithm of libbzip2 1.0.6 (actually added with 0.9.5)\n\ngit-svn-id: https://svn.apache.org/repos/asf/commons/proper/compress/trunk@1340757 13f79535-47bb-0310-9956-ffa450edef68"
+    }
+  }
+}

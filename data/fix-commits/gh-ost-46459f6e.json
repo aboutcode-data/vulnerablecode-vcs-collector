@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/github/gh-ost",
+  "vulnerabilities": {
+    "GHSA-RRP4-2XX3-MV29": {
+      "1f780ae97338e6a61481647f199b57df6afaae27": "Merge pull request from GHSA-rrp4-2xx3-mv29\n\nSecurity: fix vulnerability where `-database` parameter accepts arbitrary DSN strings"
+    }
+  }
+}

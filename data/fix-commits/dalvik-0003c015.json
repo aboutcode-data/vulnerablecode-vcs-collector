@@ -1,0 +1,9 @@
+{
+  "vcs_url": "https://android.googlesource.com/platform/dalvik",
+  "vulnerabilities": {
+    "CVE-2011-1090": {
+      "5c247d07f1ec3e75ecafb2b1ba5e81fe5e0bea33": "Merge \"Address CVE-2011-1090.\" into dalvik-dev",
+      "d53c7efac74f2c690a86871f160a0f36fbc069ef": "Address CVE-2011-1090.\n\nThis adds a credentials check after connecting to the (alleged)\nADB control socket, to make sure that the other side really is\nthe system and not a malicious non-system process.\n\nSince I was in the territory, I also did some minor comment\ncleanup / correction (at the top of the file).\n\nThis change relies on a related change in system/core.\n\nChange-Id: Iecbc4383cf285444f9d5a0414986951593777fa3"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "vcs_url": "https://github.com/nmap/nmap",
+  "vulnerabilities": {
+    "CVE-2014-0683": {
+      "55a8441924ac18476d80335b14915d801887076c": "Adds attack signature for CVE-2014-0683. Closes #1448"
+    },
+    "CVE-2019-1653": {
+      "c89f4892bfd0f79293d53c3337b9c356a5a2e27f": "Adds attack signature for CVE-2019-1653. Closes #1446"
+    },
+    "CVE-2018-10824": {
+      "b5b2a5dc78e85fdd2c31667e8b1154e3aa100243": "Adds attack signature for CVE-2018-10824. Closes #1378"
+    },
+    "CVE-2018-10822": {
+      "ffe8dd418fbd028e005a6791ef017152f38ddff4": "Adds attack signature for CVE-2018-10822. Closes #1376"
+    },
+    "CVE-2018-15173": {
+      "0a0e9c443319cafe0fce0e2411af76328345fad5": "Changelog entry for #1147, #1108, CVE-2018-15173"
+    },
+    "CVE-2017-9248": {
+      "d0566d1807a8aae8034a6bce5feb18a0b79db776": "Fingerprint for Telerik CVE-2017-9248. Closes #954"
+    },
+    "CVE-2014-3704": {
+      "30f0fab5bc468efad15de189f55d950c50a80f8e": "Improves detection of cve-2014-3704. Fixes #902. Closes #905."
+    },
+    "CVE-2017-7494": {
+      "24f1d960fcb9aabd06208de1ec09f2a2fde5b3bd": "Added smb-vuln-cve-2017-7494 script. Closes #893"
+    },
+    "CVE-2016-2183": {
+      "fb2fc62a0b8d30b2a3a151c7d7e46b2569270696": "Penalizes 3DES for SWEET32 attack (CVE-2016-2183)"
+    },
+    "CVE-2014-4019": {
+      "bb507ac7bfcc4a2188da76580f679de28f322af4": "Add RomPager CVE-2014-4019 check to http-fingerprints"
+    },
+    "CVE-2014-3398": {
+      "e985053c6dd351676088ba282706e7474f864a01": "Add check for Cisco ASA version disclosure, CVE-2014-3398"
+    },
+    "CVE-2011-2523": {
+      "f8ef3f48dae51c67b4f5281fac4a9f6b42544199": "Fix detection of CVE-2011-2523\n\nhttp://seclists.org/nmap-dev/2014/q4/130",
+      "bd78274b20d25ab04535295b08b3d1a5f4a271da": "o [NSE] Updated ftp-vsftpd-backdoor documentation since CVE-2011-2523 was just\n  assigned to this backdoor.\n  Added a final 'exit' command to terminate the remote '/bin/sh', however I don't\n  think that this is necessary since the backdoor was very simple: it did not\n  fork(), and closing the stdin of the '/bin/sh' will terminate it."
+    },
+    "CVE-2006-3392": {
+      "17ef614c49c7b2587e12ff91ce3979e079543a93": "Added Paul Amar's Webmin File Disclosure NSE script (CVE-2006-3392)."
+    },
+    "CVE-2014-0160": {
+      "20eb77d6d2d37d232c325703b1386b7be404bf63": "o [NSE] Add ssl-heartbleed script to detect the Heartbleed bug in OpenSSL\n  CVE-2014-0160 [Patrik Karlsson]"
+    },
+    "CVE-2013-0156": {
+      "70dfe708e991d2517d9249a137dd87bfaa13ec5b": "Adds http-vuln-cve2013-0156.nse: Detects Ruby on Rails servers vulnerable to object injection, remote\ncommand executions and denial of service attacks. (CVE-2013-0156)"
+    },
+    "CVE-2012-3137": {
+      "6cfa5aea0fc327220aad69fe73c890c5a42b524e": "o [NSE] Added oracle-brute-stealth which exploits CVE-2012-3137, a weakness\n  in the Oracle O5LOGIN authentication scheme. [Dhiru Kholia]"
+    },
+    "CVE-2011-3192": {
+      "51cf3b0df992a5c01eab1fe0a59ad2d61e94a6f9": "Fixed a false positive in http-vuln-cve2011-3192.nse, which detected Apache\n2.2.22 as vulnerable.\n\nThe corresponding ChangeLog entry for Apache 2.2.22 says:\n\"\"\"\nFix a regression introduced by the CVE-2011-3192 byterange fix in 2.2.20:\nA range of '0-' will now return 206 instead of 200.\n\"\"\"\nhttps://issues.apache.org/bugzilla/show_bug.cgi?id=51878"
+    },
+    "CVE-2004-2687": {
+      "49edb164d2df42f38639183f2c2d46a480f48677": "renamed distcc-CVE-2004-2687.nse to distcc-cve2004-2687.nse",
+      "322ed971a2e690f9c0bef849b9a470afd575c6ea": "o Added the script distcc-CVE-2004-2687 that checks and exploits a remote\n  command execution vulnerability in distcc. [Patrik Karlsson]"
+    },
+    "CVE-2012-1823": {
+      "96c6cd7780c306a38e856633f1dc96b368070c88": "Adds http-vuln-cve2012-1823.nse - This script detects PHP-CGI installations that are vulnerable to CVE-2012-1823. This vulnerability is critical and it allows attackers to retrieve source code and execute code remotely."
+    },
+    "CVE-2012-1182": {
+      "2de40c99b4077e8169996a0bea450a903546b0a9": "o [NSE] Added the script samba-vuln-cve-2012-1182 which detects the SAMBA CVE\n  2012-1182 vulnerability. [Aleksandar Nikolic]"
+    },
+    "CVE-2010-2861": {
+      "13b6b01e219ce02469bb63ff24c41362bba2cc38": "o [NSE] Added the script http-vuln-cve2010-2861 to detect the Cold Fusion\n  CVE-2010-2861 directory traversal vulnerability. [Micah Hoffman]"
+    },
+    "CVE-2010-0738": {
+      "25a54f58cb7a5bd737ec1b3ed7c6b543f002df2a": "o [NSE] Applied patch that corrects an issue where the http-method-tamper\n  script would fail to properly detect JBoss servers vulnerable to the\n  CVE-2010-0738 vulnerability. [Hani Benhabiles]"
+    },
+    "CVE-2011-3368": {
+      "4b64da4f14f88c97bfe63b96a3e65c530b85d1f7": "o [NSE] Added http-vuln-cve2011-3368 a script that attempts to detect whether\n  the remote web server is vulnerable to the Apache reverse proxy bypass\n  vulnerability CVE-2011-3368. [Ange Gutek, Patrik]"
+    },
+    "CVE-2010-2333": {
+      "c43e0bb9700395baddc66990465119ef08fcbff7": "Added http-litespeed-sourcecode-download:\nhttp-litespeed-sourcecode-download.nse exploits a null-byte poisoning vulnerability in Litespeed Web Servers 4.0.x before 4.0.15 to retrieve the target script's source code by sending a HTTP request with a null byte followed by a .txt file extension (CVE-2010-2333).\n\nIf the server is not vulnerable it returns an error 400. If index.php is not found, you may try /phpinfo.php which is also shipped with LiteSpeed Web Server. The attack payload looks like this:\n* <code>/index.php\\00.txt</code>\n\nReferences:\n* http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2333\n* http://www.exploit-db.com/exploits/13850/"
+    },
+    "CVE-2011-1764": {
+      "2c7cad079b5774af065acfff18bc6780d5e70da3": "o [NSE] Added smtp-vuln-cve2011-1764 script, which checks the Exim DKIM\n  Format String vulnerability (CVE-2011-1764)."
+    },
+    "CVE-2010-4221": {
+      "1c3d400822c20359650cded1388affe5c811c513": "o [NSE] Added ftp-vuln-cve2010-4221 script which checks if the ProFTPD\n  server is vulnerable to the Telnet IAC stack overflow CVE-2010-4221\n  [Djalal]."
+    },
+    "CVE-2010-4344": {
+      "49774ecf104cd7b67fdc062988ccc5a6bfad5631": "o [NSE] Added smtp-vuln-cve2010-4344 script that will check and exploit\n  two vulnerabilities in the Exim SMTP Server:\n  o CVE-2010-4344: A heap overflow vulnerability.\n  o CVE-2010-4345: A privileges escalation vulnerability."
+    },
+    "CVE-2010-4345": {
+      "49774ecf104cd7b67fdc062988ccc5a6bfad5631": "o [NSE] Added smtp-vuln-cve2010-4344 script that will check and exploit\n  two vulnerabilities in the Exim SMTP Server:\n  o CVE-2010-4344: A heap overflow vulnerability.\n  o CVE-2010-4345: A privileges escalation vulnerability."
+    },
+    "CVE-2011-1720": {
+      "c1ba2511354083eb2b6a50cb2e06c50a372fc0cb": "o [NSE] Added smtp-check-vulns, which currently checks for the Postfix\n  SMTP server Cyrus SASL authentication memory corruption (CVE-2011-1720)."
+    },
+    "CVE-2011-1002": {
+      "9e60e88eca054d845c7219fb8b29d1466f619123": "o [NSE] Added broadcast-avahi-dos.nse, which tries to detect if the\n  hosts in the local network that are running Avahi are vulnerable to\n  the NULL UDP packet denial of service (CVE-2011-1002)."
+    },
+    "CVE-2006-5835": {
+      "e80b196d2e1d7ca847b1980976eb057e8501c58a": "o [NSE] Added a smallish Lotus Domino rpc library (nrpc.lua) and some Lotus\n  Domino oriented scripts:\n  - domino-enum-users.nse guesses users and attempts to download ID files by\n                          exploiting (CVE-2006-5835).\n  - domino-enum-passwords attempts to download Internet passwords and ID files\n                          from the web server.\n  - domcon-brute performs password guessing against the remote console.\n  - domcon-cmd adds support for running custom remote console commands.\n  [Patrik]"
+    },
+    "CVE-2010-0533": {
+      "b1e64b3161583a4545bf5ae8e993e73a8327513c": "o [NSE] Updated the AFP library to support several new AFP functions and added\n  authentication support. Updated the afp-showmount script and added two new\n  scripts:\n  - afp-brute attempts to guess passwords against the AFP service\n  - afp-path-vuln detects the AFP directory traversal vulnerability \n    CVE-2010-0533\n  [Patrik]"
+    },
+    "CVE-2009-3733": {
+      "1421838d94f1094e650466cecd3977f428701f37": "Added http-vmware-path-vuln.nse, a script that checks for a path-traversal vulnerability in VMWare (CVE-2009-3733)"
+    },
+    "CVE-2009-3103": {
+      "32d9c9fe98321319c4432dc2e12d0194b0674b77": "Added a check for a SMBv2 vulnerability (CVE-2009-3103) to smb-check-vulns. Due to its nature (it performs a DoS, then checks if the system is still online), the script isn't run by default and requires a special script-arg to work."
+    }
+  }
+}

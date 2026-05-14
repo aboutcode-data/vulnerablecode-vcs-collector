@@ -1,0 +1,11 @@
+{
+  "vcs_url": "https://bitbucket.org/tildeslash/monit",
+  "vulnerabilities": {
+    "CVE-2011-1473": {
+      "2f61c88ebbe172ebec4c40baf4c0299223729f76": "Fixed: Disable SSL session renegotiation iin the Monit HTTP interface (CVE-2011-1473)"
+    },
+    "CVE-2016-7067": {
+      "c6ec3820e627f85417053e6336de2987f2d863e3": "Fixed: CSRF vulnerability (CVE-2016-7067).\n\nWe use the double-submit cookie pattern to protect all POST requests (https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet#Double_Submit_Cookie)\n\nThe following http services are no longer implemented for GET method and require CSRF protected POST:\n\n    _status\n    _status2\n    _summary\n    _report\n    _doaction\n    _viewlog\n\nThe service for \"_runtime\" and \"/<servicename>\" is still available via GET, but only the non-state changing part (read-only) - the actions for \"_runtime\" (force validate, stop monit http) and \"/<servicename>\" require CSRF protected POST too."
+    }
+  }
+}

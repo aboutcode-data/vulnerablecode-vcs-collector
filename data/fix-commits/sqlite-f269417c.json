@@ -1,0 +1,12 @@
+{
+  "vcs_url": "https://github.com/sqlite/sqlite",
+  "vulnerabilities": {
+    "CVE-2020-13871": {
+      "f505fda49854204e2b81a3014864cdd49e0ef7e4": "Remove two incorrect assert() statements from the logic used to derive\ncolumn names and types from subqueries. This allows the SQL associated with CVE-2020-13871 (ticket [c8d3b9f0a750a529]) to be tested.\n\nFossilOrigin-Name: d2e672203704aa18fdc652e9567eb29b71dae32e871f514308478a7a96025f29"
+    },
+    "CVE-2020-15358": {
+      "ae0ce57ac0c16ec6ce857dd45dd63b2da2791bdc": "Fix a defect in the query-flattener optimization identified by\nticket [8f157e8010b22af0]. This fix is associated with CVE-2020-15358.\n\nFossilOrigin-Name: bcd014c473794b09f61fbc0f4d9488365b023f16123b278dbbd49948c27c0fee",
+      "79410ac8efceeeb82cd3f854a6fc87bba9be0368": "Fix a defect in the query-flattener optimization identified by\nticket [8f157e8010b22af0]. This fix is associated with CVE-2020-15358.\n\nFossilOrigin-Name: 9e001b635f3cff672e591204ab90deefe01baaefe64ff121bd2c32edd2d03675"
+    }
+  }
+}

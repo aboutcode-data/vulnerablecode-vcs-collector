@@ -1,0 +1,9 @@
+{
+  "vcs_url": "https://github.com/redis/redis-py",
+  "vulnerabilities": {
+    "CVE-2026-32597": {
+      "46ab74d02ed9b15176f67edb817de83524f8145a": "Fixing security concern in __repr__ methods for ConnectionPools - passwords might leak in plain text logs (#3998)\n\n* Fixing security concern in __repr__ methods for ConnectionPools - passwords might leak in plain text logs\n\n* Disabling dependency vulnerability check  for  the upcoming patch release (CVE-2026-32597 --> PyJWT does not validate the crit (Critical) Header Parameter defined in RFC 7515, this will be fixed in the next release)  - will update the pyjwt version in master after a patch is released",
+      "a72e3f00f0b47b7916f96e27c6c3ec7c31b31393": "Fixing security concern in __repr__ methods for ConnectionPools - passwords might leak in plain text logs (#3998)\n\n* Fixing security concern in __repr__ methods for ConnectionPools - passwords might leak in plain text logs\n\n* Disabling dependency vulnerability check  for  the upcoming patch release (CVE-2026-32597 --> PyJWT does not validate the crit (Critical) Header Parameter defined in RFC 7515, this will be fixed in the next release)  - will update the pyjwt version in master after a patch is released"
+    }
+  }
+}

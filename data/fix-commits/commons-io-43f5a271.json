@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/apache/commons-io",
+  "vulnerabilities": {
+    "CVE-2024-47554": {
+      "7f7a0515e9cb4062f1fd8159152abd9785aca926": "Document CVE-2024-47554 for version 2.0 before 2.14.0"
+    }
+  }
+}

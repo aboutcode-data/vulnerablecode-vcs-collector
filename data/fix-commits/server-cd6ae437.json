@@ -1,0 +1,16 @@
+{
+  "vcs_url": "https://github.com/mariadb/server",
+  "vulnerabilities": {
+    "CVE-2005-0004": {
+      "412e3e6917233fe612354622a18b3f9cdf3a350c": "MDEV-9546 mysqlaccess script shows an old version (which was vulnerable to CVE-2005-0004)\n\nupdate mysqlaccess version"
+    },
+    "CVE-2012-5611": {
+      "cd548a0b70bf22a0f6afdce48f48e3548f5c99e4": "Bug#16900358 FIX FOR CVE-2012-5611 IS INCOMPLETE\n\nMerging from mysql-5.1 to mysql-5.5",
+      "e84d48742e80eb185466feb5efd5b5352bbc7bfc": "Bug#16900358 FIX FOR CVE-2012-5611 IS INCOMPLETE\n\nMerging from mysql-5.1 to mysql-5.5",
+      "f8e27655820acdecb5b373273c3c2a6beda87252": "Bug#16900358 FIX FOR CVE-2012-5611 IS INCOMPLETE\n\nMerging from mysql-5.1 to mysql-5.5",
+      "eab2a733e54a6895de0fb93ddf5fead79568b5c4": "Bug#16900358 FIX FOR CVE-2012-5611 IS INCOMPLETE\n\nDescription: Fix for bug CVE-2012-5611 (bug 67685) is \nincomplete. The ACL_KEY_LENGTH-sized buffers in acl_get() and \ncheck_grant_db() can be overflown by up to two bytes. That's \nprobably not enough to do anything more serious than crashing \nmysqld.\nAnalysis: In acl_get() when \"copy_length\" is calculated it \njust adding the variable lengths. But when we are using them \nwith strmov() we are adding +1 to each. This will lead to a \nthree byte buffer overflow (i.e two +1's at strmov() and one \nbyte for the null added by strmov() function). Similarly it \nhappens for check_grant_db() function as well.\nFix: We need to add \"+2\" to \"copy_length\" in acl_get() \nand \"+1\" to \"copy_length\" in check_grant_db().",
+      "de0e8a02d18b4593e11b282b7c8641603b7cbfe9": "Bug#16900358 FIX FOR CVE-2012-5611 IS INCOMPLETE\n\nDescription: Fix for bug CVE-2012-5611 (bug 67685) is \nincomplete. The ACL_KEY_LENGTH-sized buffers in acl_get() and \ncheck_grant_db() can be overflown by up to two bytes. That's \nprobably not enough to do anything more serious than crashing \nmysqld.\nAnalysis: In acl_get() when \"copy_length\" is calculated it \njust adding the variable lengths. But when we are using them \nwith strmov() we are adding +1 to each. This will lead to a \nthree byte buffer overflow (i.e two +1's at strmov() and one \nbyte for the null added by strmov() function). Similarly it \nhappens for check_grant_db() function as well.\nFix: We need to add \"+2\" to \"copy_length\" in acl_get() \nand \"+1\" to \"copy_length\" in check_grant_db().",
+      "9fc5122471a0a919bfeff750b9af2f07ec422668": "Bug#16900358 FIX FOR CVE-2012-5611 IS INCOMPLETE\n\nDescription: Fix for bug CVE-2012-5611 (bug 67685) is \nincomplete. The ACL_KEY_LENGTH-sized buffers in acl_get() and \ncheck_grant_db() can be overflown by up to two bytes. That's \nprobably not enough to do anything more serious than crashing \nmysqld.\nAnalysis: In acl_get() when \"copy_length\" is calculated it \njust adding the variable lengths. But when we are using them \nwith strmov() we are adding +1 to each. This will lead to a \nthree byte buffer overflow (i.e two +1's at strmov() and one \nbyte for the null added by strmov() function). Similarly it \nhappens for check_grant_db() function as well.\nFix: We need to add \"+2\" to \"copy_length\" in acl_get() \nand \"+1\" to \"copy_length\" in check_grant_db()."
+    }
+  }
+}

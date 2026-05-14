@@ -1,0 +1,321 @@
+{
+  "vcs_url": "https://github.com/bagder/curl",
+  "vulnerabilities": {
+    "CVE-2025-71176": {
+      "bcb02fe5265f1e0eb67945e389f7d7801a1d725f": "GHA: bump pytest from 9.0.2 to 9.0.3\n\nCVE-2025-71176\n\nCloses #21306"
+    },
+    "CVE-2025-14821": {
+      "e127f8ce843e1c070c0ca2074c10dcc01081a395": "GHA/windows: drop building with libssh\n\nBumping `msys2/setup-msys2` from 2.30.0 to 2.31.0 also brought libssh\n0.12.0 (after 0.11.3). libssh has been long known for loading OpenSSH\nconfiguration from disk insecurely on Windows. 0.12.0 brings some fixes\nto this (CVE-2025-14821), which in turn may be changing its behavior on\nthe default GH Windows runner to fail all curl SCP/SFTP tests.\n\nDetecting what is the exact root cause, then defining exact runtime\nconditions for it is difficult and fragile. Same for changing these\nlibssh defaults (if at all possible.)\n\nBut, since configuration loading remains insecure and broken on Windows\neven after the mitigations made by 0.12.0 [0], this patch removes libssh\nfrom the Windows CI job using it previously.\n\nIf someone figures out how to run in CI, it can be readded, though in\ngeneral, using libssh on Windows seems to be less than ideal.\n\n[0] https://github.com/curl/curl-for-win/blob/0e4bd38a5b90f6431b4c145ed094940b4d6b6c0d/libssh.sh#L11-L94\n\nRefs:\nhttps://www.libssh.org/2026/02/10/libssh-0-12-0-and-0-11-4-security-releases/\nhttps://github.com/msys2/MINGW-packages/commit/91382507d5df17d89c074a1469bf3725a9602ff5\n#21199 (unsuccessful fix attempts)\n\nBug: https://github.com/curl/curl/pull/21195#issuecomment-4173085194\nFollow-up to fcf946e8461b68840e4afb39711a52c9bf622a10 #21195\n\nCloses #21204"
+    },
+    "CVE-2026-34073": {
+      "bb0c8cf5af39a78e1aeaf356863326884e154673": "GHA: bump pip-dependencies\n\n- update `filelock` from 3.24.3 to 3.25.2\n- update `ruff` from 0.15.2 to 0.15.7\n- update `cryptography` from 46.0.5 to 46.0.6 (CVE-2026-34073)\n\nCloses #21138"
+    },
+    "CVE-2026-26007": {
+      "e269e3daf1c73f629ea1bba14db07c9c18f99340": "pytest: bump pip cryptography to 46.0.5\n\nFor CVE-2026-26007 (curl not affected)"
+    },
+    "CVE-2026-22701": {
+      "ad8374aedc93225f564bbf190ccfc5ede763f7c9": "GHA: bump pip-dependencies\n\n- update `ruff` from 0.14.10 to 0.14.11\n- update `filelock` from 3.20.1 to 3.20.3 (CVE-2026-22701) (used in pytests)\n- update `psutil` from 7.2.0 to 7.2.1\n\nCloses #20300"
+    },
+    "CVE-2025-68146": {
+      "1b205078bd7f1b15c527233901ee9df249b5d8ab": "GHA: bump pip-dependencies\n\n- update `filelock` from 3.20.0 to 3.20.1 (CVE-2025-68146) (used in pytests)\n- update `pytest` from 9.0.1 to 9.0.2\n- update `ruff` from 0.14.8 to 0.14.9\n\nCloses #20004"
+    },
+    "CVE-2023-38545": {
+      "fb4415d8aee6c1045be932a34fe6107c2f5ed147": "socks: return error if hostname too long for remote resolve\n\nPrior to this change the state machine attempted to change the remote\nresolve to a local resolve if the hostname was longer than 255\ncharacters. Unfortunately that did not work as intended and caused a\nsecurity issue.\n\nBug: https://curl.se/docs/CVE-2023-38545.html"
+    },
+    "CVE-2022-35252": {
+      "8dfc93e573ca740544a2d79ebb0ed786592c65c3": "cookie: reject cookies with \"control bytes\"\n\nRejects 0x01 - 0x1f (except 0x09) plus 0x7f\n\nReported-by: Axel Chong\n\nBug: https://curl.se/docs/CVE-2022-35252.html\n\nCVE-2022-35252\n\nCloses #9381"
+    },
+    "CVE-2022-32207": {
+      "20f9dd6bae50b7223171b17ba7798946e74f877f": "fopen: add Curl_fopen() for better overwriting of files\n\nBug: https://curl.se/docs/CVE-2022-32207.html\nCVE-2022-32207\nReported-by: Harry Sintonen\nCloses #9050"
+    },
+    "CVE-2022-32205": {
+      "48d7064a49148f03942380967da739dcde1cdc24": "cookie: apply limits\n\n- Send no more than 150 cookies per request\n- Cap the max length used for a cookie: header to 8K\n- Cap the max number of received Set-Cookie: headers to 50\n\nBug: https://curl.se/docs/CVE-2022-32205.html\nCVE-2022-32205\nReported-by: Harry Sintonen\nCloses #9048"
+    },
+    "CVE-2022-32206": {
+      "3a09fbb7f264c67c438d01a30669ce325aa508e2": "content_encoding: return error on too many compression steps\n\nThe max allowed steps is arbitrarily set to 5.\n\nBug: https://curl.se/docs/CVE-2022-32206.html\nCVE-2022-32206\nReported-by: Harry Sintonen\nCloses #9049"
+    },
+    "CVE-2022-32208": {
+      "6ecdf5136b52af747e7bda08db9a748256b1cd09": "krb5: return error properly on decode errors\n\nBug: https://curl.se/docs/CVE-2022-32208.html\nCVE-2022-32208\nReported-by: Harry Sintonen\nCloses #9051"
+    },
+    "CVE-2022-27782": {
+      "1645e9b44505abd5cbaf65da5282c3f33b5924a5": "url: check SSH config match on connection reuse\n\nCVE-2022-27782\n\nReported-by: Harry Sintonen\nBug: https://curl.se/docs/CVE-2022-27782.html\nCloses #8825",
+      "f18af4f874cecab82a9797e8c7541e0990c7a64c": "tls: check more TLS details for connection reuse\n\nCVE-2022-27782\n\nReported-by: Harry Sintonen\nBug: https://curl.se/docs/CVE-2022-27782.html\nCloses #8825"
+    },
+    "CVE-2022-27779": {
+      "7e92d12b4e6911f424678a133b19de670e183a59": "cookies: make bad_domain() not consider a trailing dot fine\n\nThe check for a dot in the domain must not consider a single trailing\ndot to be fine, as then TLD + trailing dot is fine and curl will accept\nsetting cookies for it.\n\nCVE-2022-27779\n\nReported-by: Axel Chong\nBug: https://curl.se/docs/CVE-2022-27779.html\nCloses #8820"
+    },
+    "CVE-2022-27778": {
+      "8c7ee9083d0d719d0a77ab20d9cc2ae84eeea7f3": "post_per_transfer: remove the updated file name\n\nWhen --remove-on-error is used with --no-clobber, it might have an\nupdated file name to remove.\n\nBug: https://curl.se/docs/CVE-2022-27778.html\n\nCVE-2022-27778\n\nReported-by: Harry Sintonen\n\nCloses #8824"
+    },
+    "CVE-2022-30115": {
+      "fae6fea209a2d4db1582f608bd8cc8000721733a": "hsts: ignore trailing dots when comparing hosts names\n\nCVE-2022-30115\n\nReported-by: Axel Chong\nBug: https://curl.se/docs/CVE-2022-30115.html\nCloses #8821"
+    },
+    "CVE-2022-27780": {
+      "914aaab9153764ef8fa4178215b8ad89d3ac263a": "urlapi: reject percent-decoding host name into separator bytes\n\nCVE-2022-27780\n\nReported-by: Axel Chong\nBug: https://curl.se/docs/CVE-2022-27780.html\nCloses #8826"
+    },
+    "CVE-2022-27781": {
+      "5c7da89d404bf59c8dd82a001119a16d18365917": "nss: return error if seemingly stuck in a cert loop\n\nCVE-2022-27781\n\nReported-by: Florian Kohnh\u00e4user\nBug: https://curl.se/docs/CVE-2022-27781.html\nCloses #8822"
+    },
+    "CVE-2022-27774": {
+      "5295e8d64ac6949ecb3f9e564317a608f51b90d8": "tests: verify the fix for CVE-2022-27774\n\n - Test 973 redirects from HTTP to FTP, clear auth\n - Test 974 redirects from HTTP to HTTP different port, clear auth\n - Test 975 redirects from HTTP to FTP, permitted to keep auth\n - Test 976 redirects from HTTP to HTTP different port, permitted to keep\n   auth",
+      "620ea21410030a9977396b4661806bc187231b79": "transfer: redirects to other protocols or ports clear auth\n\n... unless explicitly permitted.\n\nBug: https://curl.se/docs/CVE-2022-27774.html\nReported-by: Harry Sintonen\nCloses #8748"
+    },
+    "CVE-2022-27776": {
+      "afe752e0504ab60bf63787ede0b992cbe1065f78": "test898: verify the fix for CVE-2022-27776\n\nDo not pass on Authorization headers on redirects to another port",
+      "6e659993952aa5f90f48864be84a1bbb047fc258": "http: avoid auth/cookie on redirects same host diff port\n\nCVE-2022-27776\n\nReported-by: Harry Sintonen\nBug: https://curl.se/docs/CVE-2022-27776.html\nCloses #8749"
+    },
+    "CVE-2022-27775": {
+      "058f98dc3fe595f21dc26a5b9b1699e519ba5705": "conncache: include the zone id in the \"bundle\" hashkey\n\nMake connections to two separate IPv6 zone ids create separate\nconnections.\n\nReported-by: Harry Sintonen\nBug: https://curl.se/docs/CVE-2022-27775.html\nCloses #8747"
+    },
+    "CVE-2022-22576": {
+      "852aa5ad351ea53e5f01d2f44b5b4370c2bf5425": "url: check sasl additional parameters for connection reuse.\n\nAlso move static function safecmp() as non-static Curl_safecmp() since\nits purpose is needed at several places.\n\nBug: https://curl.se/docs/CVE-2022-22576.html\n\nCVE-2022-22576\n\nCloses #8746"
+    },
+    "CVE-2021-22947": {
+      "8ef147c43646e91fdaad5d0e7b60351f842e5c68": "ftp,imap,pop3,smtp: reject STARTTLS server response pipelining\n\nIf a server pipelines future responses within the STARTTLS response, the\nformer are preserved in the pingpong cache across TLS negotiation and\nused as responses to the encrypted commands.\n\nThis fix detects pipelined STARTTLS responses and rejects them with an\nerror.\n\nCVE-2021-22947\n\nBug: https://curl.se/docs/CVE-2021-22947.html"
+    },
+    "CVE-2021-22946": {
+      "364f174724ef115c63d5e5dc1d3342c8a43b1cca": "ftp,imap,pop3: do not ignore --ssl-reqd\n\nIn imap and pop3, check if TLS is required even when capabilities\nrequest has failed.\n\nIn ftp, ignore preauthentication (230 status of server greeting) if TLS\nis required.\n\nBug: https://curl.se/docs/CVE-2021-22946.html\n\nCVE-2021-22946"
+    },
+    "CVE-2021-22945": {
+      "43157490a5054bd24256fe12876931e8abc9df49": "mqtt: clear the leftovers pointer when sending succeeds\n\nCVE-2021-22945\n\nBug: https://curl.se/docs/CVE-2021-22945.html"
+    },
+    "CVE-2021-22924": {
+      "5ea3145850ebff1dc2b13d17440300a01ca38161": "vtls: fix connection reuse checks for issuer cert and case sensitivity\n\nCVE-2021-22924\n\nReported-by: Harry Sintonen\nBug: https://curl.se/docs/CVE-2021-22924.html"
+    },
+    "CVE-2021-22926": {
+      "fd9b40bf8dfd43edcbc0d254d613d95a11061c05": "sectransp: check for client certs by name first, then file\n\nCVE-2021-22926\n\nBug: https://curl.se/docs/CVE-2021-22926.html\n\nAssisted-by: Daniel Gustafsson\nReported-by: Harry Sintonen"
+    },
+    "CVE-2021-22925": {
+      "894f6ec730597eb243618d33cc84d71add8d6a8a": "telnet: fix option parser to not send uninitialized contents\n\nCVS-2021-22925\n\nReported-by: Red Hat Product Security\nBug: https://curl.se/docs/CVE-2021-22925.html"
+    },
+    "CVE-2021-22901": {
+      "7f4a9a9b2a49547eae24d2e19bc5c346e9026479": "openssl: associate/detach the transfer from connection\n\nCVE-2021-22901\n\nBug: https://curl.se/docs/CVE-2021-22901.html"
+    },
+    "CVE-2021-22898": {
+      "39ce47f219b09c380b81f89fe54ac586c8db6bde": "telnet: check sscanf() for correct number of matches\n\nCVE-2021-22898\n\nBug: https://curl.se/docs/CVE-2021-22898.html"
+    },
+    "CVE-2021-22897": {
+      "bbb71507b7bab52002f9b1e0880bed6a32834511": "schannel: don't use static to store selected ciphers\n\nCVE-2021-22897\n\nBug: https://curl.se/docs/CVE-2021-22897.html"
+    },
+    "CVE-2021-22890": {
+      "b09c8ee15771c614c4bf3ddac893cdb12187c844": "vtls: add 'isproxy' argument to Curl_ssl_get/addsessionid()\n\nTo make sure we set and extract the correct session.\n\nReported-by: Mingtao Yang\nBug: https://curl.se/docs/CVE-2021-22890.html\n\nCVE-2021-22890"
+    },
+    "CVE-2021-22876": {
+      "7214288898f5625a6cc196e22a74232eada7861c": "transfer: strip credentials from the auto-referer header field\n\nAdded test 2081 to verify.\n\nCVE-2021-22876\n\nBug: https://curl.se/docs/CVE-2021-22876.html"
+    },
+    "CVE-2020-8286": {
+      "d9d01672785b8ac04aab1abb6de95fe3072ae199": "openssl: make the OCSP verification verify the certificate id\n\nCVE-2020-8286\n\nReported by anonymous\n\nBug: https://curl.se/docs/CVE-2020-8286.html"
+    },
+    "CVE-2020-8285": {
+      "69a358f2186e04cf44698b5100332cbf1ee7f01d": "ftp: make wc_statemach loop instead of recurse\n\nCVE-2020-8285\n\nFixes #6255\nBug: https://curl.se/docs/CVE-2020-8285.html\nReported-by: xnynx on github"
+    },
+    "CVE-2020-8284": {
+      "ec9cc725d598ac77de7b6df8afeec292b3c8ad46": "ftp: CURLOPT_FTP_SKIP_PASV_IP by default\n\nThe command line tool also independently sets --ftp-skip-pasv-ip by\ndefault.\n\nTen test cases updated to adapt the modified --libcurl output.\n\nBug: https://curl.se/docs/CVE-2020-8284.html\nCVE-2020-8284\n\nReported-by: Varnavas Papaioannou"
+    },
+    "CVE-2020-8231": {
+      "3c9e021f86872baae412a427e807fbfa2f3e8a22": "Curl_easy: remember last connection by id, not by pointer\n\nCVE-2020-8231\n\nBug: https://curl.haxx.se/docs/CVE-2020-8231.html\n\nReported-by: Marc Aldorasi\nCloses #5824"
+    },
+    "CVE-2016-9586": {
+      "8829703b5a8d595457f3f4954cf09e6d6bae1523": "mprintf: Fix stack overflows\n\nStack overflows can occur with precisions for integers and floats.\n\nProof of concepts:\n- curl_mprintf(\"%d, %.*1$d\", 500, 1);\n- curl_mprintf(\"%d, %+0500.*1$f\", 500, 1);\n\nIdeally, compile with -fsanitize=address which makes this undefined\nbehavior a bit more defined for debug purposes.\n\nThe format strings are valid. The overflows occur due to invalid\narguments. If these arguments are variables with contents controlled\nby an attacker, the function's stack can be corrupted.\n\nAlso see CVE-2016-9586 which partially fixed the float aspect.\n\nSigned-off-by: Tobias Stoeckmann <tobias@stoeckmann.org>\n\nCloses https://github.com/curl/curl/pull/5722"
+    },
+    "CVE-2020-8177": {
+      "8236aba58542c5f89f1d41ca09d84579efb05e22": "tool_getparam: -i is not OK if -J is used\n\nReported-by: sn on hackerone\nBug: https://curl.haxx.se/docs/CVE-2020-8177.html"
+    },
+    "CVE-2019-15601": {
+      "1b71bc532bde8621fd3260843f8197182a467ff2": "file: on Windows, refuse paths that start with \\\\\n\n... as that might cause an unexpected SMB connection to a given host\nname.\n\nReported-by: Fernando Mu\u00f1oz\nCVE-2019-15601\nBug: https://curl.haxx.se/docs/CVE-2019-15601.html"
+    },
+    "CVE-2019-5481": {
+      "9069838b30fb3b48af0123e39f664cea683254a5": "security:read_data fix bad realloc()\n\n... that could end up a double-free\n\nCVE-2019-5481\nBug: https://curl.haxx.se/docs/CVE-2019-5481.html"
+    },
+    "CVE-2019-5482": {
+      "facb0e4662415b5f28163e853dc6742ac5fafb3d": "tftp: Alloc maximum blksize, and use default unless OACK is received\n\nFixes potential buffer overflow from 'recvfrom()', should the server\nreturn an OACK without blksize.\n\nBug: https://curl.haxx.se/docs/CVE-2019-5482.html\nCVE-2019-5482"
+    },
+    "CVE-2019-5436": {
+      "2576003415625d7b5f0e390902f8097830b82275": "tftp: use the current blksize for recvfrom()\n\nbug: https://curl.haxx.se/docs/CVE-2019-5436.html\nReported-by: l00p3r on hackerone\nCVE-2019-5436"
+    },
+    "CVE-2019-3823": {
+      "39df4073e5413fcdbb5a38da0c1ce6f1c0ceb484": "smtp: avoid risk of buffer overflow in strtol\n\nIf the incoming len 5, but the buffer does not have a termination\nafter 5 bytes, the strtol() call may keep reading through the line\nbuffer until is exceeds its boundary. Fix by ensuring that we are\nusing a bounded read with a temporary buffer on the stack.\n\nBug: https://curl.haxx.se/docs/CVE-2019-3823.html\nReported-by: Brian Carpenter (Geeknik Labs)\nCVE-2019-3823"
+    },
+    "CVE-2019-3822": {
+      "50c9484278c63b958655a717844f0721263939cc": "ntlm: fix *_type3_message size check to avoid buffer overflow\n\nBug: https://curl.haxx.se/docs/CVE-2019-3822.html\nReported-by: Wenxiang Qian\nCVE-2019-3822"
+    },
+    "CVE-2018-16890": {
+      "b780b30d1377adb10bbe774835f49e9b237fb9bb": "NTLM: fix size check condition for type2 received data\n\nBug: https://curl.haxx.se/docs/CVE-2018-16890.html\nReported-by: Wenxiang Qian\nCVE-2018-16890"
+    },
+    "CVE-2018-16842": {
+      "350306e4726b71b5b386fc30e3fecc039a807157": "test2080: verify the fix for CVE-2018-16842",
+      "d530e92f59ae9bb2d47066c3c460b25d2ffeb211": "voutf: fix bad arethmetic when outputting warnings to stderr\n\nCVE-2018-16842\nReported-by: Brian Carpenter\nBug: https://curl.haxx.se/docs/CVE-2018-16842.html"
+    },
+    "CVE-2018-16839": {
+      "f3a24d7916b9173c69a3e0ee790102993833d6c5": "Curl_auth_create_plain_message: fix too-large-input-check\n\nCVE-2018-16839\nReported-by: Harry Sintonen\nBug: https://curl.haxx.se/docs/CVE-2018-16839.html"
+    },
+    "CVE-2018-16840": {
+      "81d135d67155c5295b1033679c606165d4e28f3f": "Curl_close: clear data->multi_easy on free to avoid use-after-free\n\nRegression from b46cfbc068 (7.59.0)\nCVE-2018-16840\nReported-by: Brian Carpenter (Geeknik Labs)\n\nBug: https://curl.haxx.se/docs/CVE-2018-16840.html"
+    },
+    "CVE-2018-14618": {
+      "57d299a499155d4b327e341c6024e293b0418243": "Curl_ntlm_core_mk_nt_hash: return error on too long password\n\n... since it would cause an integer overflow if longer than (max size_t\n/ 2).\n\nThis is CVE-2018-14618\n\nBug: https://curl.haxx.se/docs/CVE-2018-14618.html\nCloses #2756\nReported-by: Zhaoyang Wu"
+    },
+    "CVE-2018-0500": {
+      "ba1dbd78e5f1ed67c1b8d37ac89d90e5e330b628": "smtp: use the upload buffer size for scratch buffer malloc\n\n... not the read buffer size, as that can be set smaller and thus cause\na buffer overflow! CVE-2018-0500\n\nReported-by: Peter Wu\nBug: https://curl.haxx.se/docs/adv_2018-70a2.html"
+    },
+    "CVE-2018-1000300": {
+      "583b42cb3b809b1bf597af160468ccba728c2248": "pingpong: fix response cache memcpy overflow\n\nResponse data for a handle with a large buffer might be cached and then\nused with the \"closure\" handle when it has a smaller buffer and then the\nlarger cache will be copied and overflow the new smaller heap based\nbuffer.\n\nReported-by: Dario Weisser\nCVE: CVE-2018-1000300\nBug: https://curl.haxx.se/docs/adv_2018-82c2.html"
+    },
+    "CVE-2018-1000301": {
+      "8c7b3737d29ed5c0575bf592063de8a51450812d": "http: restore buffer pointer when bad response-line is parsed\n\n... leaving the k->str could lead to buffer over-reads later on.\n\nCVE: CVE-2018-1000301\nAssisted-by: Max Dymond\n\nDetected by OSS-Fuzz.\nBug: https://curl.haxx.se/docs/adv_2018-b138.html\nBug: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7105"
+    },
+    "CVE-2018-1000121": {
+      "9889db043393092e9d4b5a42720bba0b3d58deba": "openldap: check ldap_get_attribute_ber() results for NULL before using\n\nCVE-2018-1000121\nReported-by: Dario Weisser\nBug: https://curl.haxx.se/docs/adv_2018-97a2.html"
+    },
+    "CVE-2018-1000120": {
+      "535432c0adb62fe167ec09621500470b6fa4eb0f": "FTP: reject path components with control codes\n\nRefuse to operate when given path components featuring byte values lower\nthan 32.\n\nPreviously, inserting a %00 sequence early in the directory part when\nusing the 'singlecwd' ftp method could make curl write a zero byte\noutside of the allocated buffer.\n\nTest case 340 verifies.\n\nCVE-2018-1000120\nReported-by: Duy Phan Thanh\nBug: https://curl.haxx.se/docs/adv_2018-9cd6.html"
+    },
+    "CVE-2018-1000122": {
+      "d52dc4760f6d9ca1937eefa2093058a952465128": "readwrite: make sure excess reads don't go beyond buffer end\n\nCVE-2018-1000122\nBug: https://curl.haxx.se/docs/adv_2018-b047.html\n\nDetected by OSS-fuzz"
+    },
+    "CVE-2017-8816": {
+      "7f2a1df6f5fc598750b2c6f34465c8d924db28cc": "ntlm: avoid integer overflow for malloc size\n\nReported-by: Alex Nichols\nAssisted-by: Kamil Dudka and Max Dymond\n\nCVE-2017-8816\n\nBug: https://curl.haxx.se/docs/adv_2017-11e7.html"
+    },
+    "CVE-2017-8817": {
+      "0b664ba968437715819bfe4c7ada5679d16ebbc3": "wildcardmatch: fix heap buffer overflow in setcharset\n\nThe code would previous read beyond the end of the pattern string if the\nmatch pattern ends with an open bracket when the default pattern\nmatching function is used.\n\nDetected by OSS-Fuzz:\nhttps://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4161\n\nCVE-2017-8817\n\nBug: https://curl.haxx.se/docs/adv_2017-ae72.html"
+    },
+    "CVE-2017-8818": {
+      "9b5e12a5491d2e6b68e0c88ca56f3a9ef9fba400": "url: fix alignment of ssl_backend_data struct\n\n- Align the array of ssl_backend_data on a max 32 byte boundary.\n\n8 is likely to be ok but I went with 32 for posterity should one of\nthe ssl_backend_data structs change to contain a larger sized variable\nin the future.\n\nPrior to this change (since dev 70f1db3, release 7.56) the connectdata\nstructure was undersized by 4 bytes in 32-bit builds with ssl enabled\nbecause long long * was mistakenly used for alignment instead of\nlong long, with the intention being an 8 byte boundary. Also long long\nmay not be an available type.\n\nThe undersized connectdata could lead to oob read/write past the end in\nwhat was expected to be the last 4 bytes of the connection's secondary\nsocket https proxy ssl_backend_data struct (the secondary socket in a\nconnection is used by ftp, others?).\n\nCloses https://github.com/curl/curl/issues/2093\n\nCVE-2017-8818\n\nBug: https://curl.haxx.se/docs/adv_2017-af0a.html"
+    },
+    "CVE-2017-1000257": {
+      "13c9a9ded3ae744a1e11cbc14e9146d9fa427040": "imap: if a FETCH response has no size, don't call write callback\n\nCVE-2017-1000257\n\nReported-by: Brian Carpenter and 0xd34db347\nAlso detected by OSS-Fuzz: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3586"
+    },
+    "CVE-2017-1000254": {
+      "5ff2c5ff25750aba1a8f64fbcad8e5b891512584": "FTP: zero terminate the entry path even on bad input\n\n... a single double quote could leave the entry path buffer without a zero\nterminating byte. CVE-2017-1000254\n\nTest 1152 added to verify.\n\nReported-by: Max Dymond\nBug: https://curl.haxx.se/docs/adv_20171004.html"
+    },
+    "CVE-2017-1000101": {
+      "453e7a7a03a2cec749abd3878a48e728c515cca7": "glob: do not continue parsing after a strtoul() overflow range\n\nAdded test 1289 to verify.\n\nCVE-2017-1000101\n\nBug: https://curl.haxx.se/docs/adv_20170809A.html\nReported-by: Brian Carpenter"
+    },
+    "CVE-2017-1000100": {
+      "358b2b131ad6c095696f20dcfa62b8305263f898": "tftp: reject file name lengths that don't fit\n\n... and thereby avoid telling send() to send off more bytes than the\nsize of the buffer!\n\nCVE-2017-1000100\n\nBug: https://curl.haxx.se/docs/adv_20170809B.html\nReported-by: Even Rouault\n\nCredit to OSS-Fuzz for the discovery"
+    },
+    "CVE-2017-1000099": {
+      "c9332fa5e84f24da300b42b1a931ade929d3e27d": "file: output the correct buffer to the user\n\nRegression brought by 7c312f84ea930d8 (April 2017)\n\nCVE-2017-1000099\n\nBug: https://curl.haxx.se/docs/adv_20170809C.html\n\nCredit to OSS-Fuzz for the discovery"
+    },
+    "CVE-2017-9502": {
+      "5d7952f52e410e1d4a8ff1965e5cc6fc1bde86aa": "url: fix buffer overwrite with file protocol (CVE-2017-9502)\n\nBug: https://github.com/curl/curl/issues/1540\nAdvisory: https://curl.haxx.se/docs/adv_20170614.html\n\nAssisted-by: Ray Satiro\nReported-by: Marcel Raad"
+    },
+    "CVE-2016-5419": {
+      "33cfcfd9f0378625d3bddbd2c8ac5aad4b646f26": "TLS: Fix switching off SSL session id when client cert is used\n\nMove the sessionid flag to ssl_primary_config so that ssl and proxy_ssl\nwill each have their own sessionid flag.\n\nRegression since HTTPS-Proxy support was added in cb4e2be. Prior to that\nthis issue had been fixed in 247d890, CVE-2016-5419.\n\nBug: https://github.com/curl/curl/issues/1341\nReported-by: lijian996@users.noreply.github.com\n\nThe new incarnation of this bug is called CVE-2017-7468 and is documented\nhere: https://curl.haxx.se/docs/adv_20170419.html",
+      "247d890da88f9ee817079e246c59f3d7d12fde5f": "TLS: switch off SSL session id when client cert is used\n\nCVE-2016-5419\nBug: https://curl.haxx.se/docs/adv_20160803A.html\nReported-by: Bru Rom\nContributions-by: Eric Rescorla and Ray Satiro"
+    },
+    "CVE-2017-7468": {
+      "33cfcfd9f0378625d3bddbd2c8ac5aad4b646f26": "TLS: Fix switching off SSL session id when client cert is used\n\nMove the sessionid flag to ssl_primary_config so that ssl and proxy_ssl\nwill each have their own sessionid flag.\n\nRegression since HTTPS-Proxy support was added in cb4e2be. Prior to that\nthis issue had been fixed in 247d890, CVE-2016-5419.\n\nBug: https://github.com/curl/curl/issues/1341\nReported-by: lijian996@users.noreply.github.com\n\nThe new incarnation of this bug is called CVE-2017-7468 and is documented\nhere: https://curl.haxx.se/docs/adv_20170419.html"
+    },
+    "CVE-2017-2629": {
+      "ca6ea6d9be5102a2246dff6e17b3ee9ad4ec64d0": "TLS: make SSL_VERIFYSTATUS work again\n\nThe CURLOPT_SSL_VERIFYSTATUS option was not properly handled by libcurl\nand thus even if the status couldn't be verified, the connection would\nbe allowed and the user would not be told about the failed verification.\n\nRegression since cb4e2be7c6d42ca\n\nCVE-2017-2629\nBug: https://curl.haxx.se/docs/adv_20170222.html\n\nReported-by: Marcus Hoffmann"
+    },
+    "CVE-2016-8615": {
+      "cff89bc088b7884098ea0c5378bbda3d49c437bc": "cookie: replace use of fgets() with custom version\n\n... that will ignore lines that are too long to fit in the buffer.\n\nCVE-2016-8615\n\nBug: https://curl.haxx.se/docs/adv_20161102A.html\nReported-by: Cure53"
+    },
+    "CVE-2016-8616": {
+      "b3ee26c5df75d97f6895e6ec4538894ebaf76e48": "connectionexists: use case sensitive user/password comparisons\n\nCVE-2016-8616\n\nBug: https://curl.haxx.se/docs/adv_20161102B.html\nReported-by: Cure53"
+    },
+    "CVE-2016-8617": {
+      "efd24d57426bd77c9b5860e6b297904703750412": "base64: check for integer overflow on large input\n\nCVE-2016-8617\n\nBug: https://curl.haxx.se/docs/adv_20161102C.html\nReported-by: Cure53"
+    },
+    "CVE-2016-8619": {
+      "3d6460edeee21d7d790ec570d0887bed1f4366dd": "krb5: avoid realloc(0)\n\nIf the requested size is zero, bail out with error instead of doing a\nrealloc() that would cause a double-free: realloc(0) acts as a free()\nand then there's a second free in the cleanup path.\n\nCVE-2016-8619\n\nBug: https://curl.haxx.se/docs/adv_20161102E.html\nReported-by: Cure53"
+    },
+    "CVE-2016-8618": {
+      "8732ec40db652c53fa58cd13e2acb8eab6e40874": "aprintf: detect wrap-around when growing allocation\n\nOn 32bit systems we could otherwise wrap around after 2GB and allocate 0\nbytes and crash.\n\nCVE-2016-8618\n\nBug: https://curl.haxx.se/docs/adv_20161102D.html\nReported-by: Cure53"
+    },
+    "CVE-2016-8620": {
+      "fbb5f1aa0326d485d5a7ac643b48481897ca667f": "range: prevent negative end number in a glob range\n\nCVE-2016-8620\n\nBug: https://curl.haxx.se/docs/adv_20161102F.html\nReported-by: Lu\u1eadt Nguy\u1ec5n"
+    },
+    "CVE-2016-8621": {
+      "96a80b5a262fb6dd2ddcea7987296f3b9a405618": "parsedate: handle cut off numbers better\n\n... and don't read outside of the given buffer!\n\nCVE-2016-8621\n\nbug: https://curl.haxx.se/docs/adv_20161102G.html\nReported-by: Lu\u1eadt Nguy\u1ec5n"
+    },
+    "CVE-2016-8622": {
+      "53e71e47d6b81650d26ec33a58d0dca24c7ffb2c": "unescape: avoid integer overflow\n\nCVE-2016-8622\n\nBug: https://curl.haxx.se/docs/adv_20161102H.html\nReported-by: Cure53"
+    },
+    "CVE-2016-8623": {
+      "c5be3d7267c725dbd093ff3a883e07ee8cf2a1d5": "cookies: getlist() now holds deep copies of all cookies\n\nPreviously it only held references to them, which was reckless as the\nthread lock was released so the cookies could get modified by other\nhandles that share the same cookie jar over the share interface.\n\nCVE-2016-8623\n\nBug: https://curl.haxx.se/docs/adv_20161102I.html\nReported-by: Cure53"
+    },
+    "CVE-2016-8625": {
+      "9c91ec778104ae3b744b39444d544e82d5ee9ece": "idn: switch to libidn2 use and IDNA2008 support\n\nCVE-2016-8625\n\nBug: https://curl.haxx.se/docs/adv_20161102K.html\nReported-by: Christian Heimes"
+    },
+    "CVE-2016-8624": {
+      "3bb273db7e40ebc284cff45f3ce3f0475c8339c2": "urlparse: accept '#' as end of host name\n\n'http://example.com#@127.0.0.1/x.txt' equals a request to example.com\nfor the '/' document with the rest of the URL being a fragment.\n\nCVE-2016-8624\n\nBug: https://curl.haxx.se/docs/adv_20161102J.html\nReported-by: Fernando Mu\u00f1oz"
+    },
+    "CVE-2016-7167": {
+      "01cf1308ee2e792c77bb1d2c9218c56a30fd40ae": "curl_easy_unescape: deny negative string lengths as input\n\nCVE-2016-7167\n\nBug: https://curl.haxx.se/docs/adv_20160914.html",
+      "826a9ced2bed217155e34065ef4048931f327b1e": "curl_easy_escape: deny negative string lengths as input\n\nCVE-2016-7167\n\nBug: https://curl.haxx.se/docs/adv_20160914.html"
+    },
+    "CVE-2016-5420": {
+      "11ec5ad4352bba384404c56e77c7fab9382fd22d": "TLS: only reuse connections with the same client cert\n\nCVE-2016-5420\nBug: https://curl.haxx.se/docs/adv_20160803B.html"
+    },
+    "CVE-2016-5421": {
+      "75dc096e01ef1e21b6c57690d99371dedb2c0b80": "curl_multi_cleanup: clear connection pointer for easy handles\n\nCVE-2016-5421\nBug: https://curl.haxx.se/docs/adv_20160803C.html\nReported-by: Marcelo Echeverria and Fernando Mu\u00f1oz"
+    },
+    "CVE-2016-4802": {
+      "6df916d751e72fc9a1febc07bb59c4ddd886c043": "loadlibrary: Only load system DLLs from the system directory\n\nInspiration provided by: Daniel Stenberg and Ray Satiro\n\nBug: https://curl.haxx.se/docs/adv_20160530.html\n\nRef: Windows DLL hijacking with curl, CVE-2016-4802"
+    },
+    "CVE-2016-3739": {
+      "6efd2fa529a189bf41736a610f6184cd8ad94b4d": "mbedtls/polarssl: set \"hostname\" unconditionally\n\n...as otherwise the TLS libs will skip the CN/SAN check and just allow\nconnection to any server. curl previously skipped this function when SNI\nwasn't used or when connecting to an IP address specified host.\n\nCVE-2016-3739\n\nBug: https://curl.haxx.se/docs/adv_20160518A.html\nReported-by: Moti Avrahami"
+    },
+    "CVE-2016-0755": {
+      "d41dcba4e9b69d6b761e3460cc6ae7e8fd8f621f": "NTLM: Fix ConnectionExists to compare Proxy credentials\n\nProxy NTLM authentication should compare credentials when\nre-using a connection similar to host authentication, as it\nauthenticate the connection.\n\nExample:\ncurl -v -x http://proxy:port http://host/ -U good_user:good_pwd\n  --proxy-ntlm --next -x http://proxy:port http://host/\n    [-U fake_user:fake_pwd --proxy-ntlm]\n\nCVE-2016-0755\n\nBug: http://curl.haxx.se/docs/adv_20160127A.html"
+    },
+    "CVE-2016-0754": {
+      "3017d8a8d8849ebd4feae4f5eae037cd55736a61": "curl: avoid local drive traversal when saving file (Windows)\n\ncurl does not sanitize colons in a remote file name that is used as the\nlocal file name. This may lead to a vulnerability on systems where the\ncolon is a special path character. Currently Windows/DOS is the only OS\nwhere this vulnerability applies.\n\nCVE-2016-0754\n\nBug: http://curl.haxx.se/docs/adv_20160127B.html"
+    },
+    "CVE-2015-3236": {
+      "24a8359b256f8a3d7892f21f156a4bf0a42710d5": "http: do not leak basic auth credentials on re-used connections\n\nCVE-2015-3236\n\nThis partially reverts commit curl-7_39_0-237-g87c4abb\n\nReported-by: Tomas Tomecek, Kamil Dudka\nBug: http://curl.haxx.se/docs/adv_20150617A.html"
+    },
+    "CVE-2015-3237": {
+      "50c7f17e503fbab5081b69c97f9d4645389b9270": "SMB: rangecheck values read off incoming packet\n\nCVE-2015-3237\n\nDetected by Coverity. CID 1299430.\n\nBug: http://curl.haxx.se/docs/adv_20150617B.html"
+    },
+    "CVE-2015-3148": {
+      "79b9d5f1a42578f807a6c94914bc65cbaa304b6d": "http_done: close Negotiate connections when done\n\nWhen doing HTTP requests Negotiate authenticated, the entire connnection\nmay become authenticated and not just the specific HTTP request which is\notherwise how HTTP works, as Negotiate can basically use NTLM under the\nhood. curl was not adhering to this fact but would assume that such\nrequests would also be authenticated per request.\n\nCVE-2015-3148\n\nBug: http://curl.haxx.se/docs/adv_20150422B.html\nReported-by: Isaac Boukris"
+    },
+    "CVE-2015-3144": {
+      "0583e87ada7a3cfb10904ae4ab61b339582c5bd3": "fix_hostname: zero length host name caused -1 index offset\n\nIf a URL is given with a zero-length host name, like in \"http://:80\" or\njust \":80\", `fix_hostname()` will index the host name pointer with a -1\noffset (as it blindly assumes a non-zero length) and both read and\nassign that address.\n\nCVE-2015-3144\n\nBug: http://curl.haxx.se/docs/adv_20150422D.html\nReported-by: Hanno B\u00f6ck"
+    },
+    "CVE-2015-3145": {
+      "b5f947b8ac0e282c61c75b69cd5b9d37dafc6959": "cookie: cookie parser out of boundary memory access\n\nThe internal libcurl function called sanitize_cookie_path() that cleans\nup the path element as given to it from a remote site or when read from\na file, did not properly validate the input. If given a path that\nconsisted of a single double-quote, libcurl would index a newly\nallocated memory area with index -1 and assign a zero to it, thus\ndestroying heap memory it wasn't supposed to.\n\nCVE-2015-3145\n\nBug: http://curl.haxx.se/docs/adv_20150422C.html\nReported-by: Hanno B\u00f6ck"
+    },
+    "CVE-2015-3143": {
+      "31be461c6b659312100c47be6ddd5f0f569290f6": "ConnectionExists: for NTLM re-use, require credentials to match\n\nCVE-2015-3143\n\nBug: http://curl.haxx.se/docs/adv_20150422A.html\nReported-by: Paras Sethia"
+    },
+    "CVE-2014-3707": {
+      "b3875606925536f82fc61f3114ac42f29eaf6945": "curl_easy_duphandle: CURLOPT_COPYPOSTFIELDS read out of bounds\n\nWhen duplicating a handle, the data to post was duplicated using\nstrdup() when it could be binary and contain zeroes and it was not even\nzero terminated! This caused read out of bounds crashes/segfaults.\n\nSince the lib/strdup.c file no longer is easily shared with the curl\ntool with this change, it now uses its own version instead.\n\nBug: http://curl.haxx.se/docs/adv_20141105.html\nCVE: CVE-2014-3707\nReported-By: Symeon Paraschoudis"
+    },
+    "CVE-2014-3620": {
+      "a76825a5efa6b41d3a1d4f275dada2f017f6f566": "cookies: reject incoming cookies set for TLDs\n\nTest 61 was modified to verify this.\n\nCVE-2014-3620\n\nReported-by: Tim Ruehsen\nURL: http://curl.haxx.se/docs/adv_20140910B.html"
+    },
+    "CVE-2014-3613": {
+      "8a75dbeb2305297640453029b7905ef51b87e8dd": "cookies: only use full host matches for hosts used as IP address\n\nBy not detecting and rejecting domain names for partial literal IP\naddresses properly when parsing received HTTP cookies, libcurl can be\nfooled to both send cookies to wrong sites and to allow arbitrary sites\nto set cookies for others.\n\nCVE-2014-3613\n\nBug: http://curl.haxx.se/docs/adv_20140910A.html"
+    },
+    "CVE-2013-6422": {
+      "1dc43de0dccc2ea7da6dddb7b98f8d7dcf323914": "gtls: respect *VERIFYHOST independently of *VERIFYPEER\n\nSecurity flaw CVE-2013-6422\n\nThis is conceptually the same problem and fix that 3c3622b6 brought to the\nOpenSSL backend and that resulted in CVE-2013-4545.\n\nThis version of the problem was independently introduced to the GnuTLS\nbackend with commit 59cf93cc, present in the code since the libcurl\n7.21.4 release.\n\nAdvisory: http://curl.haxx.se/docs/adv_20131217.html\nBug: http://curl.haxx.se/mail/lib-2013-11/0214.html\nReported-by: Marc Deslauriers"
+    },
+    "CVE-2013-4545": {
+      "1dc43de0dccc2ea7da6dddb7b98f8d7dcf323914": "gtls: respect *VERIFYHOST independently of *VERIFYPEER\n\nSecurity flaw CVE-2013-6422\n\nThis is conceptually the same problem and fix that 3c3622b6 brought to the\nOpenSSL backend and that resulted in CVE-2013-4545.\n\nThis version of the problem was independently introduced to the GnuTLS\nbackend with commit 59cf93cc, present in the code since the libcurl\n7.21.4 release.\n\nAdvisory: http://curl.haxx.se/docs/adv_20131217.html\nBug: http://curl.haxx.se/mail/lib-2013-11/0214.html\nReported-by: Marc Deslauriers"
+    },
+    "CVE-2013-2174": {
+      "192c4f788d48f82c03e9cef40013f34370e90737": "Curl_urldecode: no peeking beyond end of input buffer\n\nSecurity problem: CVE-2013-2174\n\nIf a program would give a string like \"%FF\" to curl_easy_unescape() but\nask for it to decode only the first byte, it would still parse and\ndecode the full hex sequence. The function then not only read beyond the\nallowed buffer but it would also deduct the *unsigned* counter variable\nfor how many more bytes there's left to read in the buffer by two,\nmaking the counter wrap. Continuing this, the function would go on\nreading beyond the buffer and soon writing beyond the allocated target\nbuffer...\n\nBug: http://curl.haxx.se/docs/adv_20130622.html\nReported-by: Timo Sirainen"
+    },
+    "CVE-2013-1944": {
+      "2eb8dcf26cb37f09cffe26909a646e702dbcab66": "cookie: fix tailmatching to prevent cross-domain leakage\n\nCookies set for 'example.com' could accidentaly also be sent by libcurl\nto the 'bexample.com' (ie with a prefix to the first domain name).\n\nThis is a security vulnerabilty, CVE-2013-1944.\n\nBug: http://curl.haxx.se/docs/adv_20130412.html"
+    },
+    "CVE-2012-4929": {
+      "fa1ae0abcde5df8d0b3283299e3f246bedf7692c": "OpenSSL: Disable SSL/TLS compression\n\nIt either causes increased memory usage or exposes users\nto the \"CRIME attack\" (CVE-2012-4929)"
+    },
+    "CVE-2012-0036": {
+      "c11c30a8c8d727dcf5634fa0cc6ee0b4b77ddc3d": "tests: test CRLF in URLs\n\nRelated to the security vulnerability: CVE-2012-0036\n\nBug: http://curl.haxx.se/docs/adv_20120124.html",
+      "75ca568fa1c19de4c5358fed246686de8467c238": "URL sanitize: reject URLs containing bad data\n\nProtocols (IMAP, POP3 and SMTP) that use the path part of a URL in a\ndecoded manner now use the new Curl_urldecode() function to reject URLs\nwith embedded control codes (anything that is or decodes to a byte value\nless than 32).\n\nURLs containing such codes could easily otherwise be used to do harm and\nallow users to do unintended actions with otherwise innocent tools and\napplications. Like for example using a URL like\npop3://pop3.example.com/1%0d%0aDELE%201 when the app wants a URL to get\na mail and instead this would delete one.\n\nThis flaw is considered a security vulnerability: CVE-2012-0036\n\nSecurity advisory at: http://curl.haxx.se/docs/adv_20120124.html\n\nReported by: Dan Fandrich"
+    },
+    "CVE-2010-4180": {
+      "a20daf90e358c1476a325ea665d533f7a27e3364": "OpenSSL: SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG option is no longer enabled\n\nSSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG option enabling allowed successfull\ninteroperability with web server Netscape Enterprise Server 2.0.1 released\nback in 1996 more than 15 years ago.\n\nDue to CVE-2010-4180, option SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG has\nbecome ineffective as of OpenSSL 0.9.8q and 1.0.0c. In order to mitigate\nCVE-2010-4180 when using previous OpenSSL versions we no longer enable\nthis option regardless of OpenSSL version and SSL_OP_ALL definition."
+    },
+    "CVE-2009-0037": {
+      "042cc1f69ec0878f542667cb684378869f859911": "- David Kierznowski notified us about a security flaw\n  (http://curl.haxx.se/docs/adv_20090303.html also known as CVE-2009-0037) in\n  which previous libcurl versions (by design) can be tricked to access an\n  arbitrary local/different file instead of a remote one when\n  CURLOPT_FOLLOWLOCATION is enabled. This flaw is now fixed in this release\n  together this the addition of two new setopt options for controlling this\n  new behavior:\n\n  o CURLOPT_REDIR_PROTOCOLS controls what protocols libcurl is allowed to\n  follow to when CURLOPT_FOLLOWLOCATION is enabled. By default, this option\n  excludes the FILE and SCP protocols and thus you nee to explicitly allow\n  them in your app if you really want that behavior.\n\n  o CURLOPT_PROTOCOLS controls what protocol(s) libcurl is allowed to fetch\n  using the primary URL option. This is useful if you want to allow a user or\n  other outsiders control what URL to pass to libcurl and yet not allow all\n  protocols libcurl may have been built to support."
+    }
+  }
+}

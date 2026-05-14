@@ -1,0 +1,186 @@
+{
+  "vcs_url": "https://github.com/brave/brave-core",
+  "vulnerabilities": {
+    "GHSA-W9J2-PVGH-6H63": {
+      "e22bfb7026569f314064bacfa7a1c19f70062b4c": "bump axios to address security alerts (#36171)\n\naddress axios issues\n\nrelated to the following issues:\nhttps://github.com/advisories/GHSA-w9j2-pvgh-6h63\nhttps://github.com/advisories/GHSA-pmwg-cvhr-8vh7\nhttps://github.com/advisories/GHSA-3w6x-2g7m-8v23\nhttps://github.com/advisories/GHSA-q8qp-cvcw-x6jj\nhttps://github.com/advisories/GHSA-xhjh-pmcv-23jw\nhttps://github.com/advisories/GHSA-445q-vr5w-6q77\nhttps://github.com/advisories/GHSA-m7pr-hjqh-92cm\nhttps://github.com/advisories/GHSA-62hf-57xw-28j9"
+    },
+    "GHSA-PMWG-CVHR-8VH7": {
+      "e22bfb7026569f314064bacfa7a1c19f70062b4c": "bump axios to address security alerts (#36171)\n\naddress axios issues\n\nrelated to the following issues:\nhttps://github.com/advisories/GHSA-w9j2-pvgh-6h63\nhttps://github.com/advisories/GHSA-pmwg-cvhr-8vh7\nhttps://github.com/advisories/GHSA-3w6x-2g7m-8v23\nhttps://github.com/advisories/GHSA-q8qp-cvcw-x6jj\nhttps://github.com/advisories/GHSA-xhjh-pmcv-23jw\nhttps://github.com/advisories/GHSA-445q-vr5w-6q77\nhttps://github.com/advisories/GHSA-m7pr-hjqh-92cm\nhttps://github.com/advisories/GHSA-62hf-57xw-28j9"
+    },
+    "GHSA-3W6X-2G7M-8V23": {
+      "e22bfb7026569f314064bacfa7a1c19f70062b4c": "bump axios to address security alerts (#36171)\n\naddress axios issues\n\nrelated to the following issues:\nhttps://github.com/advisories/GHSA-w9j2-pvgh-6h63\nhttps://github.com/advisories/GHSA-pmwg-cvhr-8vh7\nhttps://github.com/advisories/GHSA-3w6x-2g7m-8v23\nhttps://github.com/advisories/GHSA-q8qp-cvcw-x6jj\nhttps://github.com/advisories/GHSA-xhjh-pmcv-23jw\nhttps://github.com/advisories/GHSA-445q-vr5w-6q77\nhttps://github.com/advisories/GHSA-m7pr-hjqh-92cm\nhttps://github.com/advisories/GHSA-62hf-57xw-28j9"
+    },
+    "GHSA-Q8QP-CVCW-X6JJ": {
+      "e22bfb7026569f314064bacfa7a1c19f70062b4c": "bump axios to address security alerts (#36171)\n\naddress axios issues\n\nrelated to the following issues:\nhttps://github.com/advisories/GHSA-w9j2-pvgh-6h63\nhttps://github.com/advisories/GHSA-pmwg-cvhr-8vh7\nhttps://github.com/advisories/GHSA-3w6x-2g7m-8v23\nhttps://github.com/advisories/GHSA-q8qp-cvcw-x6jj\nhttps://github.com/advisories/GHSA-xhjh-pmcv-23jw\nhttps://github.com/advisories/GHSA-445q-vr5w-6q77\nhttps://github.com/advisories/GHSA-m7pr-hjqh-92cm\nhttps://github.com/advisories/GHSA-62hf-57xw-28j9"
+    },
+    "GHSA-XHJH-PMCV-23JW": {
+      "e22bfb7026569f314064bacfa7a1c19f70062b4c": "bump axios to address security alerts (#36171)\n\naddress axios issues\n\nrelated to the following issues:\nhttps://github.com/advisories/GHSA-w9j2-pvgh-6h63\nhttps://github.com/advisories/GHSA-pmwg-cvhr-8vh7\nhttps://github.com/advisories/GHSA-3w6x-2g7m-8v23\nhttps://github.com/advisories/GHSA-q8qp-cvcw-x6jj\nhttps://github.com/advisories/GHSA-xhjh-pmcv-23jw\nhttps://github.com/advisories/GHSA-445q-vr5w-6q77\nhttps://github.com/advisories/GHSA-m7pr-hjqh-92cm\nhttps://github.com/advisories/GHSA-62hf-57xw-28j9"
+    },
+    "GHSA-445Q-VR5W-6Q77": {
+      "e22bfb7026569f314064bacfa7a1c19f70062b4c": "bump axios to address security alerts (#36171)\n\naddress axios issues\n\nrelated to the following issues:\nhttps://github.com/advisories/GHSA-w9j2-pvgh-6h63\nhttps://github.com/advisories/GHSA-pmwg-cvhr-8vh7\nhttps://github.com/advisories/GHSA-3w6x-2g7m-8v23\nhttps://github.com/advisories/GHSA-q8qp-cvcw-x6jj\nhttps://github.com/advisories/GHSA-xhjh-pmcv-23jw\nhttps://github.com/advisories/GHSA-445q-vr5w-6q77\nhttps://github.com/advisories/GHSA-m7pr-hjqh-92cm\nhttps://github.com/advisories/GHSA-62hf-57xw-28j9"
+    },
+    "GHSA-M7PR-HJQH-92CM": {
+      "e22bfb7026569f314064bacfa7a1c19f70062b4c": "bump axios to address security alerts (#36171)\n\naddress axios issues\n\nrelated to the following issues:\nhttps://github.com/advisories/GHSA-w9j2-pvgh-6h63\nhttps://github.com/advisories/GHSA-pmwg-cvhr-8vh7\nhttps://github.com/advisories/GHSA-3w6x-2g7m-8v23\nhttps://github.com/advisories/GHSA-q8qp-cvcw-x6jj\nhttps://github.com/advisories/GHSA-xhjh-pmcv-23jw\nhttps://github.com/advisories/GHSA-445q-vr5w-6q77\nhttps://github.com/advisories/GHSA-m7pr-hjqh-92cm\nhttps://github.com/advisories/GHSA-62hf-57xw-28j9"
+    },
+    "GHSA-62HF-57XW-28J9": {
+      "e22bfb7026569f314064bacfa7a1c19f70062b4c": "bump axios to address security alerts (#36171)\n\naddress axios issues\n\nrelated to the following issues:\nhttps://github.com/advisories/GHSA-w9j2-pvgh-6h63\nhttps://github.com/advisories/GHSA-pmwg-cvhr-8vh7\nhttps://github.com/advisories/GHSA-3w6x-2g7m-8v23\nhttps://github.com/advisories/GHSA-q8qp-cvcw-x6jj\nhttps://github.com/advisories/GHSA-xhjh-pmcv-23jw\nhttps://github.com/advisories/GHSA-445q-vr5w-6q77\nhttps://github.com/advisories/GHSA-m7pr-hjqh-92cm\nhttps://github.com/advisories/GHSA-62hf-57xw-28j9"
+    },
+    "GHSA-W5HQ-G745-H8PQ": {
+      "8f23577ab519c946658e55cb3d5c268ee2219202": "bump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8",
+      "0032eb0750211b8b7c95356b1d6f4a3d113ed815": "Uplift security fixes to 1.90.x (#35861)\n\nbump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8",
+      "3d1c5bec063136d34f864896f52d6aba38e0d67f": "Uplift security fixes to 1.89.x (#35860)\n\nbump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8",
+      "1a0a912d2249dd9b8f285205db3d277174a57ddc": "bump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8"
+    },
+    "GHSA-2V35-W6HQ-6MFW": {
+      "8f23577ab519c946658e55cb3d5c268ee2219202": "bump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8",
+      "0032eb0750211b8b7c95356b1d6f4a3d113ed815": "Uplift security fixes to 1.90.x (#35861)\n\nbump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8",
+      "3d1c5bec063136d34f864896f52d6aba38e0d67f": "Uplift security fixes to 1.89.x (#35860)\n\nbump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8",
+      "1a0a912d2249dd9b8f285205db3d277174a57ddc": "bump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8"
+    },
+    "GHSA-F6WW-3GGP-FR8H": {
+      "8f23577ab519c946658e55cb3d5c268ee2219202": "bump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8",
+      "0032eb0750211b8b7c95356b1d6f4a3d113ed815": "Uplift security fixes to 1.90.x (#35861)\n\nbump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8",
+      "3d1c5bec063136d34f864896f52d6aba38e0d67f": "Uplift security fixes to 1.89.x (#35860)\n\nbump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8",
+      "1a0a912d2249dd9b8f285205db3d277174a57ddc": "bump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8"
+    },
+    "GHSA-X6WF-F3PX-WCQX": {
+      "8f23577ab519c946658e55cb3d5c268ee2219202": "bump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8",
+      "0032eb0750211b8b7c95356b1d6f4a3d113ed815": "Uplift security fixes to 1.90.x (#35861)\n\nbump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8",
+      "3d1c5bec063136d34f864896f52d6aba38e0d67f": "Uplift security fixes to 1.89.x (#35860)\n\nbump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8",
+      "1a0a912d2249dd9b8f285205db3d277174a57ddc": "bump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8"
+    },
+    "GHSA-J759-J44W-7FR8": {
+      "8f23577ab519c946658e55cb3d5c268ee2219202": "bump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8",
+      "0032eb0750211b8b7c95356b1d6f4a3d113ed815": "Uplift security fixes to 1.90.x (#35861)\n\nbump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8",
+      "3d1c5bec063136d34f864896f52d6aba38e0d67f": "Uplift security fixes to 1.89.x (#35860)\n\nbump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8",
+      "1a0a912d2249dd9b8f285205db3d277174a57ddc": "bump security alerts (#35822)\n\naddress security alerts\n\nhttps://github.com/advisories/GHSA-w5hq-g745-h8pq\nhttps://github.com/advisories/GHSA-2v35-w6hq-6mfw\nhttps://github.com/advisories/GHSA-f6ww-3ggp-fr8h\nhttps://github.com/advisories/GHSA-x6wf-f3px-wcqx\nhttps://github.com/advisories/GHSA-j759-j44w-7fr8"
+    },
+    "GHSA-FVCV-3M26-PCQX": {
+      "afb5751fb6305921112569aee46fdd6630256fbc": "Fix failing audit deps (#35443)\n\nThis change updates the affected axios module to the [recommended](https://github.com/advisories/GHSA-fvcv-3m26-pcqx) 1.15.0 version. \n\nTested the change locally via `npm run audit_deps`. \n\nResolves brave/brave-browser#54412",
+      "a1c4699820971b09b0c3eb4fc207670b2edb74c3": "Fix failing audit deps (#35443)\n\nThis change updates the affected axios module to the [recommended](https://github.com/advisories/GHSA-fvcv-3m26-pcqx) 1.15.0 version. \n\nTested the change locally via `npm run audit_deps`. \n\nResolves brave/brave-browser#54412"
+    },
+    "GHSA-RF6F-7FWH-WJGH": {
+      "536998a2d0f4dff5d8eb7d464ded4933fbe3d588": "Override flatted to 3.4.2 to fix GHSA-rf6f-7fwh-wjgh (#34854)\n\n* Override flatted to 3.4.2 to fix GHSA-rf6f-7fwh-wjgh\n\nPrototype pollution via parse() in flatted <=3.4.1.\nTracking: https://github.com/brave/brave-browser/issues/53816\n\n* Update dependency vendor/web-discovery-project@965f7955d846db44ec36f37af7fb838f4381e47c\n\n---------\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
+      "70c7e38b243f7ec1ab1a3f8a09f413e9deef1b24": "fix GHSA-rf6f-7fwh-wjgh (uplift to 1.88.x) (#34922)\n\nUplift of #34854 (squashed) to release",
+      "aa0c1413b202c02338b2036a73cae704954a017e": "fix GHSA-rf6f-7fwh-wjgh (uplift to 1.89.x) (#34923)\n\nUplift of #34854 (squashed) to beta\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
+      "089136ec9a2c231c65ca7e48c17113cc3556dfe5": "Override flatted to 3.4.2 to fix GHSA-rf6f-7fwh-wjgh (#34854)\n\n* Override flatted to 3.4.2 to fix GHSA-rf6f-7fwh-wjgh\n\nPrototype pollution via parse() in flatted <=3.4.1.\nTracking: https://github.com/brave/brave-browser/issues/53816\n\n* Update dependency vendor/web-discovery-project@965f7955d846db44ec36f37af7fb838f4381e47c\n\n---------\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    "GHSA-43FC-JF86-J433": {
+      "894cc44cf46edb500939acff8651e2069085207e": "Address GHSA-43fc-jf86-j433 (#33822)\n\naddress GHSA-43fc-jf86-j433",
+      "b596882b516b93aff29394c286520de7b4763fa6": "Address GHSA-43fc-jf86-j433 (uplift to 1.87.x) (#33825)\n\nUplift of #33822 (squashed) to release",
+      "762f4dedbbca65fb62ef2070d7545ac0f4f988ea": "Address GHSA-43fc-jf86-j433 (uplift to 1.88.x) (#33824)\n\nUplift of #33822 (squashed) to beta",
+      "5bf1609f0ef95056053c9818ab6136392ba5b22f": "Address GHSA-43fc-jf86-j433 (#33822)\n\naddress GHSA-43fc-jf86-j433"
+    },
+    "GHSA-MJF5-7G4M-GX5W": {
+      "6608d520fc11b124704b79e822ca14ab839a2d24": "Update storybook packages to 8.6.17\n\nResolves audit finding for GHSA-mjf5-7g4m-gx5w by updating\nstorybook and @storybook/* packages to 8.6.17.\n\nResolves https://github.com/brave/brave-browser/issues/53171"
+    },
+    "GHSA-FJXV-7RQG-78G4": {
+      "92e157a1eeab46bbef4b22614e7d6b86e42f5184": "fix https://github.com/advisories/GHSA-fjxv-7rqg-78g4 (#30172)",
+      "64a8f698ef89481d4d72d762cc01b9c31a62b770": "fix https://github.com/advisories/GHSA-fjxv-7rqg-78g4 (uplift to 1.80.x) (#30174)\n\nUplift of #30172 (squashed) to release",
+      "4a338ee683a4aa6b8dbc0b736ae9998b2e6070eb": "fix https://github.com/advisories/GHSA-fjxv-7rqg-78g4 (uplift to 1.81.x) (#30173)\n\nUplift of #30172 (squashed) to beta"
+    },
+    "GHSA-76C9-3JPH-RJ3Q": {
+      "4b6d25fc8cf0051d20ab87da895925531a7887b6": "fix https://github.com/advisories/GHSA-76c9-3jph-rj3q (uplift to 1.80.x) (#30122)\n\nUplift of #30116 (squashed) to release",
+      "57a2c4be560806ab72034e57743825e0bd4b3c2a": "fix https://github.com/advisories/GHSA-76c9-3jph-rj3q (uplift to 1.81.x) (#30121)\n\nUplift of #30116 (squashed) to beta",
+      "a180401e01221e15c8f75c2077afd1522b56fba5": "fix https://github.com/advisories/GHSA-76c9-3jph-rj3q (#30116)"
+    },
+    "GHSA-JR5F-V2JV-69X6": {
+      "98419cb78e089aea825f33764e6c78f66ca75c51": "Merge pull request #28092 from brave/pr28064_kdh/bump-axios_1.76.x\n\naddress GHSA-jr5f-v2jv-69x6 (uplift to 1.76.x)",
+      "2544052050fda17d33d44c4a0a65f7198fbf9462": "Merge pull request #28091 from brave/pr28064_kdh/bump-axios_1.77.x\n\naddress GHSA-jr5f-v2jv-69x6 (uplift to 1.77.x)",
+      "1608f2c8b3188467acc30fec1eeb3548f42f1392": "address GHSA-jr5f-v2jv-69x6 (#28064)"
+    },
+    "GHSA-FC9H-WHQ2-V747": {
+      "1aeed7e597276c448624c1511b6150dced768a14": "Merge pull request #26312 from brave/kdh/bump-elliptic-override-1.71.x\n\nbump elliptic to address GHSA-fc9h-whq2-v747 (#26274) (Uplift to 1.71.x)",
+      "4118848885238d1e3487f1951420c6f5f905d902": "Merge pull request #26311 from brave/kdh/bump-elliptic-override-1.72.x\n\nbump elliptic to address GHSA-fc9h-whq2-v747 (#26274) (Uplift to 1.72.x)",
+      "724bae93832ea36ff442f81e62ffda61942ef6ee": "bump elliptic to address GHSA-fc9h-whq2-v747 (#26274)",
+      "45269270a6394661e21ff3d65b5e9ba5b2ef836a": "bump elliptic to address GHSA-fc9h-whq2-v747 (#26274)",
+      "34a40323413e89fc233c8968188a4ea5c0c4b01b": "bump elliptic to address GHSA-fc9h-whq2-v747 (#26274)"
+    },
+    "GHSA-8HC4-VH64-CXMJ": {
+      "09ddb83e209a759ac7691ef51d61a33dca910068": "bump axios to address GHSA-8hc4-vh64-cxmj (uplift to 1.69.x) (#25116)\n\nUplift of #25115 (squashed) to beta",
+      "59547383d85e5b77ad1bbef9f0cd9575e81d4ea8": "bump axios to address GHSA-8hc4-vh64-cxmj (#25115)",
+      "23595943bcb4eac6cb77660d56f9121068712807": "bump axios to address GHSA-8hc4-vh64-cxmj (uplift to 1.68.x) (#25117)\n\nUplift of #25115 (squashed) to release"
+    },
+    "GHSA-7W47-3WG8-547C": {
+      "afdd2504f0582260172bc4a8dbd99ca910011161": "Update cargo-audit to rustset 0.29.3 (uplift to 1.67.x) (#23878)\n\n* Uplift of #23795 (squashed) to beta\r\n\r\n* Update cargo-audit to rustsec 0.29.3.\r\n\r\nUpdate Cargo.lock for our vendored `cargo-audit` to pick up recent\r\nfixes to the `gix` crate series.\r\n\r\nAddresses GHSA-7w47-3wg8-547c and GHSA-49jc-r788-3fc9.\r\n\r\n---------\r\n\r\nCo-authored-by: Ralph Giles <rgiles@brave.com>",
+      "ef1b6531699dfc8a01b7e3cf59abe3674253f01a": "Update cargo-audit rustsec to 0.29.3\n\nBackport of #23834 and #23795 to 1.66.x.\n\nAddresses:\n\n- https://github.com/advisories/GHSA-7w47-3wg8-547c\n- https://github.com/advisories/GHSA-49jc-r788-3fc9\n- https://rustsec.org/advisories/RUSTSEC-2024-0335\n- https://rustsec.org/advisories/RUSTSEC-2024-0332\n- https://rustsec.org/advisories/RUSTSEC-2024-0336",
+      "fadb7d6e082fc38cb2fbfe9ac71dc3851e02615d": "Update cargo-audit to rustsec 0.29.3.\n\nUpdate Cargo.lock for our vendored `cargo-audit` to pick up recent\nfixes to the `gix` crate series.\n\nAddresses GHSA-7w47-3wg8-547c and GHSA-49jc-r788-3fc9."
+    },
+    "GHSA-49JC-R788-3FC9": {
+      "afdd2504f0582260172bc4a8dbd99ca910011161": "Update cargo-audit to rustset 0.29.3 (uplift to 1.67.x) (#23878)\n\n* Uplift of #23795 (squashed) to beta\r\n\r\n* Update cargo-audit to rustsec 0.29.3.\r\n\r\nUpdate Cargo.lock for our vendored `cargo-audit` to pick up recent\r\nfixes to the `gix` crate series.\r\n\r\nAddresses GHSA-7w47-3wg8-547c and GHSA-49jc-r788-3fc9.\r\n\r\n---------\r\n\r\nCo-authored-by: Ralph Giles <rgiles@brave.com>",
+      "ef1b6531699dfc8a01b7e3cf59abe3674253f01a": "Update cargo-audit rustsec to 0.29.3\n\nBackport of #23834 and #23795 to 1.66.x.\n\nAddresses:\n\n- https://github.com/advisories/GHSA-7w47-3wg8-547c\n- https://github.com/advisories/GHSA-49jc-r788-3fc9\n- https://rustsec.org/advisories/RUSTSEC-2024-0335\n- https://rustsec.org/advisories/RUSTSEC-2024-0332\n- https://rustsec.org/advisories/RUSTSEC-2024-0336",
+      "fadb7d6e082fc38cb2fbfe9ac71dc3851e02615d": "Update cargo-audit to rustsec 0.29.3.\n\nUpdate Cargo.lock for our vendored `cargo-audit` to pick up recent\nfixes to the `gix` crate series.\n\nAddresses GHSA-7w47-3wg8-547c and GHSA-49jc-r788-3fc9."
+    },
+    "GHSA-22Q8-GHMQ-63VF": {
+      "74e4f8d631b41f9df70d3280268fd2a599ea1fa5": "Update cargo-audit to v0.20.0\n\nUse the latest version of the tool. Addresses GHSA-22q8-ghmq-63vf."
+    },
+    "GHSA-JCHW-25XP-JWWC": {
+      "2eb1d114eef45d77fb5397029fe91790ac12b04e": "Bumped follow-redirects and WDP to address GHSA-jchw-25xp-jwwc 1.62.x (#21527)",
+      "9b55eda1d0ec2500cc2a261bd6e9d8e9030919cc": "Bumped follow-redirects and WDP to address GHSA-jchw-25xp-jwwc 1.61.x (#21528)",
+      "9400d7cde563ad88ec6565e9c77d53ec94d50d84": "Bumped follow-redirects and WDP to address GHSA-jchw-25xp-jwwc (#21521)\n\n* Bumped follow-redirects to address GHSA-jchw-25xp-jwwc\r\n\r\n* Update DEPS\r\n\r\n* Removed an unused label from labeler\r\n\r\n---------\r\n\r\nCo-authored-by: Mihai PLESA <mplesa@brave.com>"
+    },
+    "GHSA-RP65-9CF3-CJXR": {
+      "cfa36aad9f68a57b5b834a96fafcd5926a9e1692": "Remove crate/book from third_party rust cxx tree.\n\nWe don't need it and it's causing node audit deps check failure:\n\nAuditing (npm) /home/ubuntu/workspace/pr-brave-browser-cr109-noplatform/src/brave/third_party/rust/cxx/v1/crate/book\n Result: Audit failed due to vulnerabilities\n [\n   \"https://github.com/advisories/GHSA-rp65-9cf3-cjxr\"\n ]\n\n\"nth-check is vulnerable to Inefficient Regular Expression Complexity\"."
+    },
+    "GHSA-R7QP-CFHV-P84W": {
+      "505295f91a6744432c465bf493f7563016d36551": "Fix engine.io dependency vulnerability\n\nhttps://github.com/brave/web-discovery-project/commit/ba8d631ab021d9cf28ed6412d52ebc6452fdfefc\n\naddress https://github.com/advisories/GHSA-r7qp-cfhv-p84w\n\nfix https://github.com/brave/brave-browser/issues/26914"
+    },
+    "CVE-2022-41713": {
+      "dfb494d0dab03b12ad317b5058d11f46358d0cb6": "Merge pull request #15935 from brave/pr15934_wknapik-fix-GHSA-653v-rqx9-j85p_1.46.x\n\nBumped deep-object-diff from 1.1.0 to 1.1.9 to address GHSA-653v-rqx9-j85p, a.k.a. CVE-2022-41713 (uplift to 1.46.x)",
+      "58d34ba0cc6a4717447e29583ec5b3fe5de4239e": "Merge pull request #15936 from brave/pr15934_wknapik-fix-GHSA-653v-rqx9-j85p_1.45.x\n\nBumped deep-object-diff from 1.1.0 to 1.1.9 to address GHSA-653v-rqx9-j85p, a.k.a. CVE-2022-41713 (uplift to 1.45.x)",
+      "f29b5ad8741088a34fc3230ac4897668e312e2cc": "Bumped deep-object-diff from 1.1.0 to 1.1.9 to address GHSA-653v-rqx9-j85p, a.k.a. CVE-2022-41713 (#15934)"
+    },
+    "GHSA-653V-RQX9-J85P": {
+      "dfb494d0dab03b12ad317b5058d11f46358d0cb6": "Merge pull request #15935 from brave/pr15934_wknapik-fix-GHSA-653v-rqx9-j85p_1.46.x\n\nBumped deep-object-diff from 1.1.0 to 1.1.9 to address GHSA-653v-rqx9-j85p, a.k.a. CVE-2022-41713 (uplift to 1.46.x)",
+      "58d34ba0cc6a4717447e29583ec5b3fe5de4239e": "Merge pull request #15936 from brave/pr15934_wknapik-fix-GHSA-653v-rqx9-j85p_1.45.x\n\nBumped deep-object-diff from 1.1.0 to 1.1.9 to address GHSA-653v-rqx9-j85p, a.k.a. CVE-2022-41713 (uplift to 1.45.x)",
+      "f29b5ad8741088a34fc3230ac4897668e312e2cc": "Bumped deep-object-diff from 1.1.0 to 1.1.9 to address GHSA-653v-rqx9-j85p, a.k.a. CVE-2022-41713 (#15934)"
+    },
+    "GHSA-4WF5-VPHF-C2XC": {
+      "f095f32572575fed243b3d40be2bef36e9514845": "Merge pull request #14335 from brave/pr14331_kdh/remove-redos-advisory_1.41.x\n\nAdd GHSA-4wf5-vphf-c2xc to the ignore list (uplift to 1.41.x)",
+      "56659c09f51a0710d35907a1b92100df2ccded9b": "Merge pull request #14334 from brave/pr14331_kdh/remove-redos-advisory_1.42.x\n\nAdd GHSA-4wf5-vphf-c2xc to the ignore list (uplift to 1.42.x)",
+      "042b63b2a30bf36a78e1dfb3fe799c637a884d16": "Merge pull request #14331 from brave/kdh/remove-redos-advisory\n\nAdd GHSA-4wf5-vphf-c2xc to the ignore list",
+      "a17cbecba40f44a4ba5931497841696d80141dbb": "Add GHSA-4wf5-vphf-c2xc to the ignore list\n\nhttps://github.com/advisories/GHSA-4wf5-vphf-c2xc is a ReDoS attack that we're not concerned about so disabling this alert."
+    },
+    "GHSA-MHXJ-85R3-2X55": {
+      "fa9698a96d67ba316f866907a4db31936b44cbc3": "Merge pull request #14319 from brave/pr14314_bsc-ignore-audit-GHSA-mhxj-85r3-2x55_1.41.x\n\nAdd ignore for advisory (uplift to 1.41.x)",
+      "0c5b075191c3c01f4a5addfa0a2a5eac27445961": "Merge pull request #14318 from brave/pr14314_bsc-ignore-audit-GHSA-mhxj-85r3-2x55_1.42.x\n\nAdd ignore for advisory (uplift to 1.42.x)",
+      "489fcb35d0620fa94d57e54b91b388a7aac7a9cf": "Merge pull request #14314 from brave/bsc-ignore-audit-GHSA-mhxj-85r3-2x55\n\nAdd ignore for advisory"
+    },
+    "CVE-2022-33987": {
+      "5e581f3e61b816462d60e53844c7de77fe9caade": "Bumped WDP to fix CVE-2022-33987 (#13899)",
+      "cfb5bd169eccbc1fc7f8cea92ef6923a6b7f360a": "Bumped WDP to fix CVE-2022-33987 (#13898)",
+      "df1de0f60e428e00393d188edb9b22d8817c4a46": "Bumped WDP to fix CVE-2022-33987 (#13897)"
+    },
+    "GHSA-3XGX-R9J4-QW9W": {
+      "b389439d4fe1ef7d8abddedc36b51d19ee98297d": "Bump WDP to fix dexie security issue (#13454)\n\nBumps WDP version to the latest commit that has the updated\r\nDexie@3.2.2 to fix a prototype pollution issue.\r\n\r\nSee https://github.com/advisories/GHSA-3xgx-r9j4-qw9w for more details\r\n\r\nCo-authored-by: Kyle Den Hartog <kdenhartog@brave.com>"
+    },
+    "CVE-2022-24713": {
+      "2eb39b72376ff1efb19891c086b6ea9d8c745d3b": "Update regex crate to prevent ReDoS issues\n\nWe don't currently use untrusted regex grammars to parse data,\nbut this update to the regex crate would prevent it in the event\nsomeone were to add functionality like that in the future. See\nCVE-2022-24713 for more details.",
+      "cf4a184f8c8a4177e2aef0b80db1715cffc0f095": "Bump rust regex crate to 1.5.5.\n\nAddress `cargo audit` warnings about CVE-2022-24713 by updating\nour version of the regex crate to the current release.\n\nWe only use static regular expressions with this crate, so we\nare not vulnerable to the issue with 1.5.4.\n\nSee https://rustsec.org/advisories/RUSTSEC-2022-0013 for more info.\n\nPort of #12527 to release",
+      "a7c004479d3ddab6a96c0cdabc130706213f41f6": "Bump rust regex crate to 1.5.5.\n\nAddress `cargo audit` warnings about CVE-2022-24713 by updating\nour version of the regex crate to the current release.\n\nWe only use static regular expressions with this crate, so we\nare not vulnerable to the issue with 1.5.4.\n\nSee https://rustsec.org/advisories/RUSTSEC-2022-0013 for more info."
+    },
+    "CVE-2022-23647": {
+      "1f0ceff72a46d8eb4624a3d77d20e5496704bc9a": "Merge pull request #12428 from brave/audit-fix-CVE-2022-23647-1.36.x\n\nUplift to 1.36.x - #12421 from brave/audit-fix-CVE-2022-23647",
+      "73a3ac01103c18e4ebea21850cc2e6ca2a093dc9": "Merge pull request #12429 from brave/audit-fix-CVE-2022-23647-1.37.x\n\nUplift to 1.37.x - #12421 from brave/audit-fix-CVE-2022-23647",
+      "9d6823bfaff61ba17801df14d2f3651f467bbb6a": "Merge pull request #12421 from brave/audit-fix-CVE-2022-23647\n\nfix https://github.com/advisories/GHSA-3949-f494-cm99",
+      "f7f06bf71d1670e1687077d06d1930a4998802ce": "Merge pull request #12421 from brave/audit-fix-CVE-2022-23647\n\nfix https://github.com/advisories/GHSA-3949-f494-cm99",
+      "01052b366596c3051f8dbd1ce24c7535584bbc15": "Merge pull request #12421 from brave/audit-fix-CVE-2022-23647\n\nfix https://github.com/advisories/GHSA-3949-f494-cm99"
+    },
+    "GHSA-3949-F494-CM99": {
+      "9d6823bfaff61ba17801df14d2f3651f467bbb6a": "Merge pull request #12421 from brave/audit-fix-CVE-2022-23647\n\nfix https://github.com/advisories/GHSA-3949-f494-cm99",
+      "f7f06bf71d1670e1687077d06d1930a4998802ce": "Merge pull request #12421 from brave/audit-fix-CVE-2022-23647\n\nfix https://github.com/advisories/GHSA-3949-f494-cm99",
+      "01052b366596c3051f8dbd1ce24c7535584bbc15": "Merge pull request #12421 from brave/audit-fix-CVE-2022-23647\n\nfix https://github.com/advisories/GHSA-3949-f494-cm99",
+      "c8a127ec6b2883170125f796145fbe21624651fb": "fix https://github.com/advisories/GHSA-3949-f494-cm99\n\nvia npm audit fix"
+    },
+    "CVE-2021-23382": {
+      "108b2d38bb28e8db583c4eb7c41dbc266b5be2b6": "Muted audit finding GHSA-566m-qj78-rww5 (CVE-2021-23382) (#11778)",
+      "f874260aadf2dd5fc1e1ef293a3944ecccf2e27a": "Muted audit finding GHSA-566m-qj78-rww5 (CVE-2021-23382) (#11775)",
+      "00a17500b5fc74ee4d1f8e1621e6e960fa2e50ce": "Muted audit finding GHSA-566m-qj78-rww5 (CVE-2021-23382) (#11774)"
+    },
+    "GHSA-566M-QJ78-RWW5": {
+      "108b2d38bb28e8db583c4eb7c41dbc266b5be2b6": "Muted audit finding GHSA-566m-qj78-rww5 (CVE-2021-23382) (#11778)",
+      "f874260aadf2dd5fc1e1ef293a3944ecccf2e27a": "Muted audit finding GHSA-566m-qj78-rww5 (CVE-2021-23382) (#11775)",
+      "00a17500b5fc74ee4d1f8e1621e6e960fa2e50ce": "Muted audit finding GHSA-566m-qj78-rww5 (CVE-2021-23382) (#11774)"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "vcs_url": "https://github.com/gin-gonic/gin",
+  "vulnerabilities": {
+    "CVE-2025-59530": {
+      "af6e8b70b8261bb0c99ad094fe552ab92991620a": "chore(deps): upgrade quic-go to v0.57.1\n\nFix CVE-2025-59530 vulnerability (quic-go Crash Due to Premature HANDSHAKE_DONE Frame)\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>"
+    },
+    "CVE-2025-47914": {
+      "ecb3f7b5e2f3915bf1db240ed5eee572f8dbea36": "chore(deps): upgrade golang.org/x/crypto to v0.45.0 (#4449)\n\n- Update golang.org/x/crypto dependency to version 0.45.0\n\n1. https://avd.aquasec.com/nvd/cve-2025-47914\n2. https://avd.aquasec.com/nvd/cve-2025-58181\n\nSigned-off-by: appleboy <appleboy.tw@gmail.com>"
+    },
+    "CVE-2025-58181": {
+      "ecb3f7b5e2f3915bf1db240ed5eee572f8dbea36": "chore(deps): upgrade golang.org/x/crypto to v0.45.0 (#4449)\n\n- Update golang.org/x/crypto dependency to version 0.45.0\n\n1. https://avd.aquasec.com/nvd/cve-2025-47914\n2. https://avd.aquasec.com/nvd/cve-2025-58181\n\nSigned-off-by: appleboy <appleboy.tw@gmail.com>"
+    },
+    "CVE-2024-24786": {
+      "0d9dbbb44551a872d30fd89d4d55ba0515d646fd": "chore(security): upgrade Protobuf for CVE-2024-24786 (#3893)"
+    }
+  }
+}

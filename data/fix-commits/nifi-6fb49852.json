@@ -1,0 +1,28 @@
+{
+  "vcs_url": "https://github.com/apache/nifi",
+  "vulnerabilities": {
+    "CVE-2026-22610": {
+      "58fc0b18c4ef32ebd73d22bd2a084445ed694660": "NIFI-15459 - Security: Update Angular to 20.3.16 to patch XSS vulnerability (CVE-2026-22610) (#10762)\n\nAddresses high-severity XSS vulnerability in Angular's SVG script attribute sanitization.\n\nChanges:\n- Updated @angular/* packages from 20.3.15 to 20.3.16 (security patch)\n- Regenerated package-lock.json with updated dependency tree\n\nVerification:\n- Build completes successfully\n- All 271 test suites pass (1,303 tests total)\n- npm audit: 0 vulnerabilities\n- No regressions detected\n\nVulnerability Details:\n- CVE-2026-22610 (GHSA-jrmj-c5cx-3cw6)\n- Affects: Angular 20.0.0-next.0 through 20.3.15\n- Issue: SVG script href/xlink:href attributes not recognized as Resource URL contexts\n- Fixed in: Angular 20.3.16\n\nReferences:\n- https://github.com/advisories/GHSA-jrmj-c5cx-3cw6\n- https://osv.dev/vulnerability/GHSA-jrmj-c5cx-3cw6"
+    },
+    "GHSA-JRMJ-C5CX-3CW6": {
+      "58fc0b18c4ef32ebd73d22bd2a084445ed694660": "NIFI-15459 - Security: Update Angular to 20.3.16 to patch XSS vulnerability (CVE-2026-22610) (#10762)\n\nAddresses high-severity XSS vulnerability in Angular's SVG script attribute sanitization.\n\nChanges:\n- Updated @angular/* packages from 20.3.15 to 20.3.16 (security patch)\n- Regenerated package-lock.json with updated dependency tree\n\nVerification:\n- Build completes successfully\n- All 271 test suites pass (1,303 tests total)\n- npm audit: 0 vulnerabilities\n- No regressions detected\n\nVulnerability Details:\n- CVE-2026-22610 (GHSA-jrmj-c5cx-3cw6)\n- Affects: Angular 20.0.0-next.0 through 20.3.15\n- Issue: SVG script href/xlink:href attributes not recognized as Resource URL contexts\n- Fixed in: Angular 20.3.16\n\nReferences:\n- https://github.com/advisories/GHSA-jrmj-c5cx-3cw6\n- https://osv.dev/vulnerability/GHSA-jrmj-c5cx-3cw6"
+    },
+    "CVE-2023-4759": {
+      "57b4d92a3ae4b9ddccd13815b21f90222cb8d297": "NIFI-13621 Upgraded JGit to 5.13.3.202401111512 for CVE-2023-4759\n\nThis closes #9141\n\nSigned-off-by: David Handermann <exceptionfactory@apache.org>"
+    },
+    "CVE-2023-36052": {
+      "26c21bbdcc22b926db404a65cc4e1685dff7689d": "NIFI-12618 Upgraded Azure SDK BOM from 1.2.18 to 1.2.19\n\n- Suppressed CVE-2023-36052 not applicable to Java Azure libraries\n\nSigned-off-by: Pierre Villard <pierre.villard.fr@gmail.com>\n\nThis closes #8254.",
+      "c6f5f534cb40c1d9d1ac1db458eb4f4567e40eaa": "NIFI-12618 Upgraded Azure SDK BOM from 1.2.18 to 1.2.19\n\n- Suppressed CVE-2023-36052 not applicable to Java Azure libraries\n\nSigned-off-by: Pierre Villard <pierre.villard.fr@gmail.com>\n\nThis closes #8254."
+    },
+    "CVE-2023-44981": {
+      "1647682709eae4fbe2f3728916c6abee5f8aeaea": "NIFI-12215 Upgraded ZooKeeper from 3.9.0 to 3.9.1\n\n- Resolves CVE-2023-44981\n\nThis closes #7872\n\nSigned-off-by: David Handermann <exceptionfactory@apache.org>\n\n(cherry picked from commit 2bcdcab5dd6dfb03924db8b4450c3b755315dbb9)",
+      "2bcdcab5dd6dfb03924db8b4450c3b755315dbb9": "NIFI-12215 Upgraded ZooKeeper from 3.9.0 to 3.9.1\n\n- Resolves CVE-2023-44981\n\nThis closes #7872\n\nSigned-off-by: David Handermann <exceptionfactory@apache.org>"
+    },
+    "CVE-2017-10355": {
+      "7244b9cfc43dcb73ff1d088ecec7c1cf0b045e28": "NIFI-10271 This closes #6242. Upgraded Xerces from 2.12.1 to 2.12.2\n\n- Suppressed false positive vulnerability report for CVE-2017-10355\n\nSigned-off-by: Joe Witt <joewitt@apache.org>"
+    },
+    "CVE-2019-10086": {
+      "acb25c1130a4a329141dc09750d6a79d2f5a3315": "NIFI-9170 Upgrade commons-beanutils to 1.9.4 to mitigate CVE-2019-10086\nNIFI-9170 Add two more 1.9.4 references to close out the few things identified by the Maven dependency plugin.\n\nThis closes #5351\n\nSigned-off-by: Mike Thomsen <mthomsen@apache.org>"
+    }
+  }
+}

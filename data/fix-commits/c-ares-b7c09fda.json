@@ -1,0 +1,33 @@
+{
+  "vcs_url": "https://github.com/c-ares/c-ares",
+  "vulnerabilities": {
+    "CVE-2025-31498": {
+      "1bcdaf0f5eee09f518f210e64ac6fedb7767ecc7": "CVE-2025-31498: backport (#981)\n\nAt no point should a resend occur directly during answer parsing. It\nneeds to be queued up to be processed after all the answers are taken\noff the wire to re-send any queries. Because immediate resending can hit\nerror conditions that can cause the conneciton to be closed this needs\nto be avoided at all costs.\n\nThis patch simply introduces a queue of queries to be resent which will\nthen be sent after all answers are processed when the connection handle\nis no longer needed.\n\nSigned-off-by: Brad House (@bradh352)\n\nSigned-off-by: Brad House (@bradh352)"
+    },
+    "CVE-2024-25629": {
+      "a2a8578ee095225d941e397a635977f69803a6d3": "Replace configuration file parsers with memory-safe parser (#725)\n\nRewrite configuration parsers using new memory safe parsing functions.\r\nAfter CVE-2024-25629 its obvious that we need to prioritize again on\r\ngetting all the hand written parsers with direct pointer manipulation\r\nreplaced. They're just not safe and hard to audit. It was yet another\r\nexample of 20+yr old code having a memory safety issue just now coming\r\nto light.\r\n\r\nThough these parsers are definitely less efficient, they're written with\r\nmemory safety in mind, and any performance difference is going to be\r\nmeaningless for something that only happens once a while.\r\n\r\nFix By: Brad House (@bradh352)"
+    },
+    "GHSA-MG26-V6QH-X48Q": {
+      "76cefd5a79f5e8882cb235de8ad0c59c09afe7c0": "Merge pull request from GHSA-mg26-v6qh-x48q",
+      "a6d71edecf3652512d0c07fb60950f63daa43145": "Merge pull request from GHSA-mg26-v6qh-x48q",
+      "cd1546a7fefc15be840459087babc344789d6c34": "Merge pull request from GHSA-mg26-v6qh-x48q",
+      "4082760583b10cac4a43dc069721d29d56ebac29": "Merge pull request from GHSA-mg26-v6qh-x48q",
+      "a804c04ddc8245fc8adf0e92368709639125e183": "Merge pull request from GHSA-mg26-v6qh-x48q"
+    },
+    "GHSA-9G78-JV2R-P7VC": {
+      "b9b8413cfdb70a3f99e1573333b23052d57ec1ae": "Merge pull request from GHSA-9g78-jv2r-p7vc"
+    },
+    "GHSA-X6MF-CXR9-8Q6V": {
+      "f22cc01039b6473b736d3bf438f56a2654cdf2b2": "Merge pull request from GHSA-x6mf-cxr9-8q6v\n\n* Merged latest OpenBSD changes for inet_net_pton_ipv6() into c-ares.\n* Always use our own IP conversion functions now, do not delegate to OS\n  so we can have consistency in testing and fuzzing.\n* Removed bogus test cases that never should have passed.\n* Add new test case for crash bug found.\n\nFix By: Brad House (@bradh352)"
+    },
+    "GHSA-8R8P-23F3-64C2": {
+      "823df3b989e59465d17b0a2eb1239a5fc048b4e5": "Merge pull request from GHSA-8r8p-23f3-64c2\n\n* segment random number generation into own file\n\n* abstract random code to make it more modular so we can have multiple backends\n\n* rand: add support for arc4random_buf() and also direct CARES_RANDOM_FILE reading\n\n* autotools: fix detection of arc4random_buf\n\n* rework initial rc4 seed for PRNG as last fallback\n\n* rc4: more proper implementation, simplified for clarity\n\n* clarifications"
+    },
+    "GHSA-54XR-F67R-4PC4": {
+      "c4930223e51d0e3dbfd8b2a814f4be2e269e2a9d": "Merge pull request from GHSA-54xr-f67r-4pc4\n\n* CARES_RANDOM_FILE should always default to /dev/urandom\n\nDuring cross-compilation, CARES_RANDOM_FILE may not be able to be appropriately\ndetected, therefore we should always set it to /dev/urandom and allow the\nentity requesting compilation override the value.  The code does appropriately\nfall back if CARES_RANDOM_FILE cannot be opened.\n\n* use set not option"
+    },
+    "CVE-2016-5180": {
+      "65c71be1cbe587f290432bef2f669ee6cb8ac137": "ares_create_query: avoid single-byte buffer overwrite\n\n... when the name ends with an escaped dot.\n\nCVE-2016-5180\n\nBug: https://c-ares.haxx.se/adv_20160929.html"
+    }
+  }
+}

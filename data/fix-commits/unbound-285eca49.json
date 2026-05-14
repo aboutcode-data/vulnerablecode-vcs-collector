@@ -1,0 +1,71 @@
+{
+  "vcs_url": "https://github.com/nlnetlabs/unbound",
+  "vulnerabilities": {
+    "CVE-2025-11411": {
+      "f6269baa605d31859f28770e01a24e3677e5f82c": "- Additional fix for CVE-2025-11411 (possible domain hijacking attack),\n  to include YXDOMAIN and non-referral nodata answers in the mitigation as\n  well, reported by TaoFei Guo from Peking University, Yang Luo and JianJun\n  Chen from Tsinghua University.",
+      "a33f0638e1dacf2633cf2292078a674576bca852": "- Fix CVE-2025-11411 (possible domain hijacking attack), reported by Yuxiao Wu,\n  Yunyi Zhang, Baojun Liu and Haixin Duan from Tsinghua University."
+    },
+    "CVE-2025-5994": {
+      "f49e6ccecd0b14f6e4539583d989d52c4a20cc6f": "- Fix for RebirthDay Attack CVE-2025-5994, reported by Xiang Li\n  from AOSP Lab Nankai University.\n- Tag for 1.23.1 with the release of 1.23.0 and the CVE fix, the\n  repository continues with the previous fixes, with 1.23.2.",
+      "5bf82f246481098a6473f296b21fc1229d276c0f": "- Fix RebirthDay Attack CVE-2025-5994, reported by Xiang Li from AOSP\n  Lab Nankai University."
+    },
+    "CVE-2024-8508": {
+      "a1b25f0296416ed237358e7a8b925853cf5ec846": "- The fix for CVE-2024-8508 was part of 1.21.1, a security point release\n  on 1.21.0. The code repository continues with this fix and the version\n  number 1.22.0.",
+      "b7c61d7cc256d6a174e6179622c7fa968272c259": "- Fix CVE-2024-8508, unbounded name compression could lead to denial of\n  service."
+    },
+    "CVE-2024-33655": {
+      "c3206f4568f60c486be6d165b1f2b5b254fea3de": "- Fix for the DNSBomb vulnerability CVE-2024-33655. Thanks to Xiang Li\n  from the Network and Information Security Lab of Tsinghua University\n  for reporting it."
+    },
+    "CVE-2024-1931": {
+      "326ba26522b13ab9a9d0d0d02c018bfd7af56e09": "- Version set to 1.19.3 for release. After 1.19.2 point release with\n  security fix for CVE-2024-1931, Denial of service when trimming\n  EDE text on positive replies. The code repo includes the fix and\n  is for version 1.19.3.",
+      "5b37cd6e4cf1aafe0cce4de792c42bc5a0fcdf57": "- Fix CVE-2024-1931, Denial of service when trimming EDE text on\n  positive replies."
+    },
+    "CVE-2023-50868": {
+      "92f2a1ca690a44880f4c4fa70a4b5a4b029aaf1c": "- Fix CVE-2023-50868, NSEC3 closest encloser proof can exhaust CPU."
+    },
+    "CVE-2023-50387": {
+      "882903f2fa800c4cb6f5e225b728e2887bb7b9ae": "- Fix CVE-2023-50387, DNSSEC verification complexity can be exploited to\n  exhaust CPU resources and stall DNS resolvers."
+    },
+    "CVE-2022-3204": {
+      "137719522a8ea5b380fbb6206d2466f402f5b554": "- Patch for CVE-2022-3204 Non-Responsive Delegation Attack."
+    },
+    "CVE-2022-30698": {
+      "f6753a0f1018133df552347a199e0362fc1dac68": "- Fix the novel ghost domain issues CVE-2022-30698 and CVE-2022-30699."
+    },
+    "CVE-2022-30699": {
+      "f6753a0f1018133df552347a199e0362fc1dac68": "- Fix the novel ghost domain issues CVE-2022-30698 and CVE-2022-30699."
+    },
+    "CVE-2020-28935": {
+      "19f8f4d9f99a44906ab9dcc46d44da299fde3506": "Further fix for CVE-2020-28935, so the chown is omitted when the pidfile\nfails due to a symlink.",
+      "ad387832979b6ce4c93f64fe706301cd7d034e87": "- Fix for #303 CVE-2020-28935 : Fix that symlink does not interfere\n  with chown of pidfile."
+    },
+    "CVE-2020-12662": {
+      "ba0f382eee814e56900a535778d13206b86b6d49": "- CVE-2020-12662 Unbound can be tricked into amplifying an incoming\n  query into a large number of queries directed to a target.\n- CVE-2020-12663 Malformed answers from upstream name servers can be\n  used to make Unbound unresponsive.",
+      "50d4c893c4e9c2e7ebedb39a6c0fd23a2f55d00a": "Fix CVE-2020-12662 and CVE-2020-12663"
+    },
+    "CVE-2020-12663": {
+      "ba0f382eee814e56900a535778d13206b86b6d49": "- CVE-2020-12662 Unbound can be tricked into amplifying an incoming\n  query into a large number of queries directed to a target.\n- CVE-2020-12663 Malformed answers from upstream name servers can be\n  used to make Unbound unresponsive.",
+      "50d4c893c4e9c2e7ebedb39a6c0fd23a2f55d00a": "Fix CVE-2020-12662 and CVE-2020-12663"
+    },
+    "CVE-2019-18934": {
+      "09845779d5f2c96e3064ff398cad65c08357cfbf": "- Fix CVE-2019-18934, shell execution in ipsecmod.",
+      "34e52a4313d59b9d57e928c44300fd81e1a48910": "Fix CVE-2019-18934, shell execution in ipsecmod."
+    },
+    "CVE-2019-16866": {
+      "facc6c6541448b9689361b196f2c92cd4779f8ee": "- Merge 1.9.4 release with fix for vulnerability CVE-2019-16866.\n- Continue with development of 1.9.5."
+    },
+    "CVE-2017-15105": {
+      "eff62cecac1388214032906eb6944ceb9c0e6d41": "- Added tests with wildcard expanded NSEC records (CVE-2017-15105 test)\n\n\ngit-svn-id: file:///svn/unbound/trunk@4528 be551aaa-1e26-0410-a405-d3ace91eadb9",
+      "2a6250e3fb3ccd6e9a0a16b6908c5cfb76d8d6f3": "- patch for CVE-2017-15105: vulnerability in the processing of\n  wildcard synthesized NSEC records.\n\n\ngit-svn-id: file:///svn/unbound/trunk@4441 be551aaa-1e26-0410-a405-d3ace91eadb9"
+    },
+    "CVE-2014-8602": {
+      "f7039d8a592366574dabb3412a3f87647a591527": "- Fix CVE-2014-8602: denial of service by making resolver chase\n  endless series of delegations.\n\n\ngit-svn-id: file:///svn/unbound/trunk@3289 be551aaa-1e26-0410-a405-d3ace91eadb9"
+    },
+    "CVE-2011-4528": {
+      "0916e1d0ea19f82b6c3dfe06ce8fab9bae6c0316": "- Fix for VU#209659 CVE-2011-4528: Unbound denial of service\nvulnerabilities from nonstandard redirection and denial of existence\nhttp://www.unbound.net/downloads/CVE-2011-4528.txt\n- robust checks for next-closer NSEC3s.\n- tag 1.4.14 created.\n\n\ngit-svn-id: file:///svn/unbound/trunk@2574 be551aaa-1e26-0410-a405-d3ace91eadb9"
+    },
+    "CVE-2011-1922": {
+      "a79861c86c62adfca69dcf07cc4035b216c4265d": "- Fix assertion failure when unbound generates an empty error reply\n        in response to a query, CVE-2011-1922 VU#531342.\n      - release 1.4.10.\n\n\ngit-svn-id: file:///svn/unbound/tags/release-1.4.10@2417 be551aaa-1e26-0410-a405-d3ace91eadb9"
+    }
+  }
+}

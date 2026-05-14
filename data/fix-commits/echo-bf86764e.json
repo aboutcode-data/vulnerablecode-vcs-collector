@@ -1,0 +1,14 @@
+{
+  "vcs_url": "https://github.com/labstack/echo",
+  "vulnerabilities": {
+    "CVE-2023-39325": {
+      "5780908c7cb110a8c4d56a62e32dc5cbc030a5ab": "Fix CVE-2023-39325 / CVE-2023-44487 (#2527)\n\nBump golang.org/x/net from v0.12.0 to v0.17.0\r\n\r\nRelated:\r\n* https://github.com/golang/go/issues/63417\r\n* https://www.cve.org/CVERecord?id=CVE-2023-44487"
+    },
+    "CVE-2023-44487": {
+      "5780908c7cb110a8c4d56a62e32dc5cbc030a5ab": "Fix CVE-2023-39325 / CVE-2023-44487 (#2527)\n\nBump golang.org/x/net from v0.12.0 to v0.17.0\r\n\r\nRelated:\r\n* https://github.com/golang/go/issues/63417\r\n* https://www.cve.org/CVERecord?id=CVE-2023-44487"
+    },
+    "CVE-2022-32149": {
+      "b02e78ba55d1d642cc045b503c83780eb79943d4": "bump x/text to 0.3.8\n\nsee https://go.dev/issue/56152, https://ossindex.sonatype.org/vulnerability/CVE-2022-32149?component-type=golang&component-name=golang.org%2Fx%2Ftext&utm_source=nancy-client&utm_medium=integration&utm_content=1.0.41"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "vcs_url": "https://github.com/stedolan/jq",
+  "vulnerabilities": {
+    "CVE-2026-44777": {
+      "f58787c41835d9b17795730cb04925fdba25c71c": "Detect circular module imports to prevent stack overflow\n\njq used to recurse without bound on mutual or self-referential\n`import` declarations, exhausting the stack. Track each library's\nload state with a `loading` flag set before its dependencies are\nprocessed; a recursive reference to an in-progress library now\nreports \"circular import of X\".\n\nFixes CVE-2026-44777."
+    },
+    "CVE-2026-43895": {
+      "9d223f153c3632a207fa071caaa6292da33ae361": "Reject embedded NUL bytes in module import paths\n\njq accepts embedded NUL bytes at the language level but resolves\nmodule import paths through NUL-terminated C strings, so the path\nvalidated by policy or audit code could differ from the on-disk\npath jq actually opens. Pass jv through gen_import so the AST\npreserves the original bytes, and reject embedded NULs in\nvalidate_relpath.\n\nFixes CVE-2026-43895."
+    },
+    "CVE-2026-43894": {
+      "9761ceb7d6cc48c16b25f0ab1baaef0e701927e4": "Reject numeric literals longer than DEC_MAX_DIGITS (999999999)\n\nA signed-int overflow in decNumber's D2U macro lets huge literals\nwrite attacker-controlled bytes past a stack buffer. Cap the length\nbefore calling decNumberFromString, and pre-slice long strings in\njv_dump_string_trunc so the resulting error message doesn't itself\nallocate a multi-GiB buffer.\n\nFixes CVE-2026-43894."
+    },
+    "CVE-2026-43896": {
+      "532ccea6080ed6758f39fe9f6208a44b665023d2": "Limit recursive object merge depth to prevent stack overflow\n\nThis fixes CVE-2026-43896."
+    },
+    "CVE-2026-41256": {
+      "5a015deae35d19e3ebbc65db6c157a80e76df738": "Fix NUL truncation in program files loaded with -f\n\nThis fixes CVE-2026-41256."
+    },
+    "CVE-2026-41257": {
+      "01b3cded76daacbfddb7f8763700b0803bcb5c6f": "Fix signed-int overflow in `stack_reallocate`\n\nThis fixes CVE-2026-41257."
+    },
+    "CVE-2026-40612": {
+      "d1a12569d91641135976a8536776a4a329c02cc2": "Limit the containment check depth\n\nThis fixes CVE-2026-40612."
+    },
+    "CVE-2026-33947": {
+      "fb59f1491058d58bdc3e8dd28f1773d1ac690a1f": "Limit path depth to prevent stack overflow\n\nDeeply nested path arrays can cause unbounded recursion in\n`jv_setpath`, `jv_getpath`, and `jv_delpaths`, leading to\nstack overflow. Add a depth limit of 10000 to match the\nexisting `tojson` depth limit. This fixes CVE-2026-33947."
+    },
+    "CVE-2026-39979": {
+      "2f09060afab23fe9390cce7cb860b10416e1bf5f": "Fix out-of-bounds read in jv_parse_sized()\n\nThis fixes CVE-2026-39979.\n\nCo-authored-by: Mattias Wadman <mattias.wadman@gmail.com>"
+    },
+    "CVE-2026-40164": {
+      "0c7d133c3c7e37c00b6d46b658a02244fdd3c784": "Randomize hash seed to mitigate hash collision DoS attacks\n\nThe hash function used a fixed seed, allowing attackers to craft colliding keys\nand cause O(n^2) object parsing performance. Initialize the seed from a random\nsource at process startup to prevent the attack. This fixes CVE-2026-40164.\n\nCo-authored-by: Asaf Meizner <asafmeizner@gmail.com>"
+    },
+    "CVE-2026-33948": {
+      "6374ae0bcdfe33a18eb0ae6db28493b1f34a0a5b": "Fix NUL truncation in the JSON parser\n\nThis fixes CVE-2026-33948."
+    },
+    "CVE-2026-39956": {
+      "fdf8ef0f0810e3d365cdd5160de43db46f57ed03": "Add runtime type checks to f_string_indexes\n\nThis fixes CVE-2026-39956."
+    },
+    "CVE-2026-32316": {
+      "e47e56d226519635768e6aab2f38f0ab037c09e5": "Fix heap buffer overflow in `jvp_string_append` and `jvp_string_copy_replace_bad`\n\nIn `jvp_string_append`, the allocation size `(currlen + len) * 2` could\noverflow `uint32_t` when `currlen + len` exceeds `INT_MAX`, causing a small\nallocation followed by a large `memcpy`.\n\nIn `jvp_string_copy_replace_bad`, the output buffer size calculation\n`length * 3 + 1` could overflow `uint32_t`, again resulting in a small\nallocation followed by a large write.\n\nAdd overflow checks to both functions to return an error for strings\nthat would exceed `INT_MAX` in length. Fixes CVE-2026-32316."
+    },
+    "GHSA-GF4G-95WJ-4Q4R": {
+      "3985b80ce50bd75c6eb5a97cb3348c3f835ca8e0": "Fix use-after-free in args2obj() array argument path (#3498)\n\nCopy `kk` and `vk` before passing to jv_object_get(), which consumes\nits arguments. Without copies, subsequent loop iterations read freed\nmemory (CWE-416) and post-loop jv_free() double-frees (CWE-415).\n\nThis bug was introduced in `b279713e` when array processing was hoisted\nout of\nthe loop into locals without accounting for jv_object_get() semantics.\nFixes GHSA-gf4g-95wj-4q4r."
+    },
+    "GHSA-F946-J5J2-4W5M": {
+      "5e159b34b179417e3e0404108190a2ac7d65611c": "Fix GHSA-f946-j5j2-4w5m stack-overflow by limit regex parse depth\n\nWas detect by AFL build but it's unsure if possible to trigger in non-fuzz build.\n\nOniguruma has a default limit of 4096 but this is not be low enough to\nprotect from stack-overflows in some builds like with AFL where it seems\nto use more stack space. A limit of 1024 should be enough usage-wise\nand also give more margin."
+    },
+    "CVE-2025-49014": {
+      "499c91bca9d4d027833bc62787d1bb075c03680e": "Fixes CVE-2025-49014 which was introduced in 1.8.0"
+    },
+    "CVE-2025-48060": {
+      "c6e041699d8cd31b97375a2596217aff2cfca85b": "Fix heap buffer overflow when formatting an empty string\n\nThe `jv_string_empty` did not properly null-terminate the string data,\nwhich could lead to a heap buffer overflow. The test case of\nGHSA-p7rr-28xf-3m5w (`0[\"\"*0]`) was fixed by the commit dc849e9bb74a,\nbut another case (`0[[]|implode]`) was still vulnerable. This commit\nensures string data is properly null-terminated, and fixes CVE-2025-48060."
+    },
+    "GHSA-P7RR-28XF-3M5W": {
+      "c6e041699d8cd31b97375a2596217aff2cfca85b": "Fix heap buffer overflow when formatting an empty string\n\nThe `jv_string_empty` did not properly null-terminate the string data,\nwhich could lead to a heap buffer overflow. The test case of\nGHSA-p7rr-28xf-3m5w (`0[\"\"*0]`) was fixed by the commit dc849e9bb74a,\nbut another case (`0[[]|implode]`) was still vulnerable. This commit\nensures string data is properly null-terminated, and fixes CVE-2025-48060."
+    },
+    "CVE-2024-23337": {
+      "de21386681c0df0104a99d9d09db23a9b2a78b1e": "Fix signed integer overflow in jvp_array_write and jvp_object_rehash\n\nThis commit fixes signed integer overflow and SEGV issues on growing\narrays and objects. The size of arrays and objects is now limited to\n`536870912` (`0x20000000`). This fixes CVE-2024-23337 and fixes #3262."
+    },
+    "CVE-2024-53427": {
+      "a09a4dfd55e6c24d04b35062ccfe4509748b1dd3": "Reject NaN with payload while parsing JSON\n\nThis commit drops support for parsing NaN with payload in JSON like\n`NaN123` and fixes CVE-2024-53427. Other JSON extensions like `NaN` and\n`Infinity` are still supported. Fixes #3023, fixes #3196, fixes #3246."
+    },
+    "GHSA-686W-5M7M-54VC": {
+      "71c2ab509a8628dbbad4bc7b3f98a64aa90d3297": "Merge pull request from GHSA-686w-5m7m-54vc\n\ndecNumberToString calls for a buffer that can hold a string of digits+14\ncharacters, not a buffer of size digits+14.\nWe need to allocate an extra byte for the NUL byte.\n\n-10E-1000010001, for example, will be stringified as -1.0E-1000010000\nand decNumberToString will currently write an extra NUL byte after the\nallocated buffer in the heap.\n\nOriginally reported by @SEU-SSL on GitHub.\n\nRef: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64574\n\nFixes GHSA-686w-5m7m-54vc"
+    },
+    "GHSA-7HMR-442F-QC8J": {
+      "c9a51565214eece8f1053089739aea73145bfd6b": "Merge pull request from GHSA-7hmr-442f-qc8j\n\nThe unit allocated for decNumberCompare was accidentally removed by\ncommit 680baeffeb7983e7570b5e68db07fe47f94db8c7 (PR #2804)\n\nThis caused a stack overflow when comparing a nan with a payload of 1000\nor more.\n\nThis bug was found by OSS-fuzz.\nRef: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64771\nFixes GHSA-7hmr-442f-qc8j\n\nIt also fixes 1e999999999 > 1e-1147483646   triggering UBSAN errors\nFixes #2968"
+    }
+  }
+}

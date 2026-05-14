@@ -1,0 +1,15 @@
+{
+  "vcs_url": "https://gitlab.com/mailman/mailman",
+  "vulnerabilities": {
+    "CVE-2021-34337": {
+      "8d9c8770ebc06e8128ec026d34c408cebc6b288f": "Merge branch 'rest-password' into 'master'\n\nCheck REST API password in a way that prevents timing attacks: CVE-2021-34337\n\nCloses #911\n\nSee merge request mailman/mailman!881",
+      "e4a39488c4510fcad8851217f10e7337a196bb51": "Check the REST API password in a way that is resistant to timing attacks (CVE-2021-34337)\n\nUsing basic string equality is vulnerable to timing attacks as it will\nshort circuit at the first wrong character. Using hmac.compare_digest\navoids that issue and will take the same time, regardless of whether\nthe value is correct or not.\n\nThis is only exploitable if an attacker can talk directly to the\nREST API, which by default is bound to localhost.\n\nFixes #911."
+    },
+    "CVE-2006-1512": {
+      "d2690b029f12f7d1a69269bc4b875715a418b160": "Fix XSS bug: Thanks Moritz Naumann. (CVE-2006-1512)"
+    },
+    "CVE-2005-4153": {
+      "06934160815d2f92c8c8b969758c7dfceb0e47de": "add OverflowError in exceptions. (CVE-2005-4153 related but not DoS)"
+    }
+  }
+}

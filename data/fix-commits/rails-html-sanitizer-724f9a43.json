@@ -1,0 +1,24 @@
+{
+  "vcs_url": "https://github.com/rails/rails-html-sanitizer",
+  "vulnerabilities": {
+    "CVE-2022-32209": {
+      "45a5c10fed3d9aa141594c80afa06d748fa0967d": "fix: modify safelist option if it contains both `select` and `style`\n\nAddresses CVE-2022-32209",
+      "c871aa4034d3d80ad67cf33a3462154b0a0fb477": "fix: modify safelist option if it contains both `select` and `style`\n\nAddresses CVE-2022-32209"
+    },
+    "CVE-2018-8048": {
+      "f3ba1a839a35f2ba7f941c15e239a1cb379d56ae": "Make sure we address CVE-2018-8048\n\nEven that the issue was fixed on loofah we have our own logic to scrub\nattributes so when the whitelist serializer is used the issue was still\npresent.\n\nFix CVE-2018-3741."
+    },
+    "CVE-2018-3741": {
+      "f3ba1a839a35f2ba7f941c15e239a1cb379d56ae": "Make sure we address CVE-2018-8048\n\nEven that the issue was fixed on loofah we have our own logic to scrub\nattributes so when the whitelist serializer is used the issue was still\npresent.\n\nFix CVE-2018-3741."
+    },
+    "CVE-2015-7580": {
+      "63903b0eaa6d2a4e1c91bc86008256c4c8335e78": "convert CDATA nodes to TEXT nodes to avoid XSS issues\n\nCDATA nodes will not be html escaped.  Users shouldn't be submitting\nCDATA nodes in the first place, so we should convert them to text nodes\nbefore escaping\n\nCVE-2015-7580"
+    },
+    "CVE-2015-7579": {
+      "49dfc1584c5b8e35a4ffabf8356ba3df025e8d3f": "Do not unescape already escaped HTML entities\n\nThe full sanitizer was using Loofah's #text method that automatically\nescapes HTML entities. That behavior caused some problems where strings\nthat were not escaped in the older sanitizer started to be escaped. To\nfix these problems we used the #text's `encode_special_chars` option as\n`false` that not just skipped the HTML entities escaping but unescaped\nalready escaped entities.\n\nThis introduced a security bug because an attacker can pass escaped HTML\ntags that will not be sanitized and will be returned as unescaped HTML\ntags.\n\nTo fix it properly we introduced a new scrubber that will remove all\ntags and keep just the text nodes of these tags without changing how\nto escape the string.\n\nCVE-2015-7579"
+    },
+    "CVE-2015-7578": {
+      "297161e29a3e11186ce4c02bf7defc088bf544d4": "Define a less permissive list of tags and attributes\n\nAnd use it by default.\n\nThe new sanitizer were being a lot more permissive that we had in Rails\nuntil the version 4.2.\n\nThis was also allowing arbritary data attributes by default what can\nlead to CSRF and XSS attacks.\n\nNow data attributes need to be explicitly allowed.\n\nCVE-2015-7578"
+    }
+  }
+}

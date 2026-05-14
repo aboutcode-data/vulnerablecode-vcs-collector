@@ -1,0 +1,9 @@
+{
+  "vcs_url": "https://github.com/jellyfin/jellyfin-web",
+  "vulnerabilities": {
+    "GHSA-89HP-H43H-R5PQ": {
+      "28b3ba57142b82792b5572ef534ae869eaeda045": "Merge pull request #4541 from thornbill/backport-ghsa-89hp-h43h-r5pq\n\nEscape device id in raw HTML.",
+      "b88a5951e1a517ff4c820e693d9c0da981cf68ee": "Merge pull request from GHSA-89hp-h43h-r5pq\n\nEscape device id in raw HTML"
+    }
+  }
+}

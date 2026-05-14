@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/nationalsecurityagency/ghidra",
+  "vulnerabilities": {
+    "CVE-2018-8897": {
+      "97b4528388628c2c5972a29a23ad0a7974334e14": "x86: Improvements to breakpoint disassembly\n\n * `CC` and `CD 03` are different instructions, but previously disassembled to\n   `INT 3` and `INT 0x3` respectively.\n\n   The proper mnemonic for the former is `INT3` (no space), while the latter\n   is a byte sequence only seen in tests and when trying to exploit emulator\n   bugs.  Switch `CC` to use its documented mnemonic, which makes it easier to\n   distinguish.\n\n * `INT1`, also commonly known as `ICEBP` (In Circuit Emulator Break-Point)\n   has existed since the 486 processor, and was finally documented by Intel\n   following the fallout from CVE-2018-8897.  Model it after `INT3`.\n\n * It is unclear why there is a specialisation for `:INT n29`, because vector\n   29 is `#VC` in newer AMD CPUs, and can't be invoked using the `INT $29`\n   instruction anyway.\n\n   The byte sequence `CC 1D` always gets disassembled using `:INT imm8`, which\n   suggests that SLEIGH has noticed the redundancy and folded the decode\n   rules.  Drop the specialisation.\n\nFixes #514"
+    }
+  }
+}

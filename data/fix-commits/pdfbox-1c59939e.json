@@ -1,0 +1,27 @@
+{
+  "vcs_url": "https://github.com/apache/pdfbox",
+  "vulnerabilities": {
+    "CVE-2019-0228": {
+      "be36ef01842885b556a4e7b40b5e2e8e7b1d2816": "PDFBOX-4505: unify the usage of a XMLParser (DRY) to avoid a XML External Entity (XXE) attack as reported by Kurt Boberg of DocuSign CVE-2019-0228\n\ngit-svn-id: https://svn.apache.org/repos/asf/pdfbox/trunk@1856954 13f79535-47bb-0310-9956-ffa450edef68",
+      "e5232887e684aeffc37ebb25ee8953e43d95c77c": "PDFBOX-4505: unify the usage of a XMLParser (DRY) to avoid a XML External Entity (XXE) attack as reported by Kurt Boberg of DocuSign CVE-2019-0228\n\ngit-svn-id: https://svn.apache.org/repos/asf/pdfbox/branches/2.0@1856952 13f79535-47bb-0310-9956-ffa450edef68"
+    },
+    "CVE-2018-11797": {
+      "bb5defd088bebd566d126df079d35b356ba0534a": "PDFBOX-4071: improve skip duplicates - CVE-2018-11797\n\ngit-svn-id: https://svn.apache.org/repos/asf/pdfbox/branches/1.8@1842278 13f79535-47bb-0310-9956-ffa450edef68",
+      "ea7d321b6e23cf017437846bcee4de19784cf6c8": "PDFBOX-4071: skip duplicates - CVE-2018-11797\n\ngit-svn-id: https://svn.apache.org/repos/asf/pdfbox/trunk@1842131 13f79535-47bb-0310-9956-ffa450edef68",
+      "2db39c139d935a8ba03e1ae3c012d2d41dd6912a": "PDFBOX-4071: skip duplicates - CVE-2018-11797\n\ngit-svn-id: https://svn.apache.org/repos/asf/pdfbox/branches/2.0@1842130 13f79535-47bb-0310-9956-ffa450edef68"
+    },
+    "CVE-2018-8036": {
+      "1e43aab90bde9264843e1271c49c1810f243b228": "PDFBOX-4071, PDFBOX-4251: fix DoS (OOM) Vulnerability (CVE-2018-8036) + test\n\ngit-svn-id: https://svn.apache.org/repos/asf/pdfbox/trunk@1834048 13f79535-47bb-0310-9956-ffa450edef68",
+      "0ee190856c3b67f5d09d6e32d00951930a0dea21": "PDFBOX-4071, PDFBOX-4251: fix DoS (OOM) Vulnerability (CVE-2018-8036) + test\n\ngit-svn-id: https://svn.apache.org/repos/asf/pdfbox/branches/1.8@1834047 13f79535-47bb-0310-9956-ffa450edef68",
+      "a994cabc705ea0366de7edab1271248cf71e1221": "PDFBOX-4071, PDFBOX-4251: fix DoS (OOM) Vulnerability (CVE-2018-8036) + test\n\ngit-svn-id: https://svn.apache.org/repos/asf/pdfbox/branches/2.0@1834046 13f79535-47bb-0310-9956-ffa450edef68"
+    },
+    "CVE-2015-7940": {
+      "0aeaa02d3d82ffb7cac2fda3697599cd1a962d4b": "PDFBOX-3865: add suppression file with CVE-2015-7940 which is irrelevant to us\n\ngit-svn-id: https://svn.apache.org/repos/asf/pdfbox/branches/1.8@1801638 13f79535-47bb-0310-9956-ffa450edef68"
+    },
+    "CVE-2016-2175": {
+      "17e7a5d5735f939f42a3a0211f340f4fc5420001": "PDFBOX-2852: improve factory config; CVE-2016-2175\n\ngit-svn-id: https://svn.apache.org/repos/asf/pdfbox/branches/2.0@1739565 13f79535-47bb-0310-9956-ffa450edef68",
+      "6eb3ad2627d2cc7527bb3327370fa09e31907235": "PDFBOX-2852: improve factory config; CVE-2016-2175\n\ngit-svn-id: https://svn.apache.org/repos/asf/pdfbox/branches/1.8@1739564 13f79535-47bb-0310-9956-ffa450edef68",
+      "26e03ccb9aead0349e4e065e6666e4103bd89790": "PDFBOX-2852: improve factory config; CVE-2016-2175\n\ngit-svn-id: https://svn.apache.org/repos/asf/pdfbox/trunk@1739563 13f79535-47bb-0310-9956-ffa450edef68"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "vcs_url": "https://github.com/apache/rocketmq",
+  "vulnerabilities": {
+    "CVE-2023-34462": {
+      "7bc2d92afc87ae153cf14d6ad7226e769d949e04": "update netty version to 4.1.114 to fix CVE-2023-34462 (#8832)",
+      "a024dc81dafad21182a8485c1216b97e79b64661": "update netty version to 4.1.114 to fix CVE-2023-34462 (#8832)",
+      "e8a9d9ffd02865e71ba948320890c18d250edb05": "update netty version to 4.1.114 to fix CVE-2023-34462 (#8834)"
+    },
+    "CVE-2011-1473": {
+      "e9b2d8522df084a0f8c19eb56e91d6d61bcb673b": "[ISSUE #1233] Fix CVE-2011-1473"
+    }
+  }
+}

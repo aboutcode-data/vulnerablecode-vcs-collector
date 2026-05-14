@@ -1,0 +1,17 @@
+{
+  "vcs_url": "https://github.com/matrix-org/matrix-js-sdk",
+  "vulnerabilities": {
+    "CVE-2022-39249": {
+      "a587d7c36026fe1fcf93dfff63588abee359be76": "Resolve multiple CVEs\n\nCVE-2022-39249\nCVE-2022-39250\nCVE-2022-39251\nCVE-2022-39236"
+    },
+    "CVE-2022-39250": {
+      "a587d7c36026fe1fcf93dfff63588abee359be76": "Resolve multiple CVEs\n\nCVE-2022-39249\nCVE-2022-39250\nCVE-2022-39251\nCVE-2022-39236"
+    },
+    "CVE-2022-39251": {
+      "a587d7c36026fe1fcf93dfff63588abee359be76": "Resolve multiple CVEs\n\nCVE-2022-39249\nCVE-2022-39250\nCVE-2022-39251\nCVE-2022-39236"
+    },
+    "CVE-2022-39236": {
+      "a587d7c36026fe1fcf93dfff63588abee359be76": "Resolve multiple CVEs\n\nCVE-2022-39249\nCVE-2022-39250\nCVE-2022-39251\nCVE-2022-39236"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "vcs_url": "https://github.com/mono/mono",
+  "vulnerabilities": {
+    "CVE-2011-0992": {
+      "722f9890f09aadfc37ae479e7d946d5fc5ef7b91": "Fix access to freed members of a dead thread\n\n* threads.c: Fix access to freed members of a dead thread. Found\nand fixed by Rodrigo Kumpera <rkumpera@novell.com>\nRef: CVE-2011-0992"
+    },
+    "CVE-2007-5197": {
+      "e10979e53a082e7d18dd7fc605c95d6c4db51d68": "Remove dead code from BigInteger since it confuse some people\n\n* corlib/Mono.Math/BigInteger.cs:\n* Mono.Security/Mono.Math/BigInteger.cs:\n\tRemove Montgomery internal inner class since it's buggy, has not\n\tbeen used for years and confuse some people (seeing ghosts of\n\tCVE-2007-5197)"
+    },
+    "CVE-2010-1459": {
+      "8125ab9c2a8c9b0d7da01b6909d54c47344eaa67": "2010-04-29  Marek Habersack  <mhabersack@novell.com>\n\n\t* PageParser.cs, Page.cs: do not ignore the EnableViewStateMac\n\tdirective attribute. Fixes bug #592428\n\tFixes cross-site scripting vulnerability (CVE: CVE-2010-1459)\n\tCredits: Web Security Research Group (WSRG) of Hewlett Packard\n\t(HP)\n\n2010-04-29  Marek Habersack  <mhabersack@novell.com>\n\n\t* PagesConfiguration.cs: make EnableViewStateMac default to\n\ttrue. Fixes bug #592428 \n\tFixes cross-site scripting vulnerability (CVE: CVE-2010-1459)\n\tCredits: Web Security Research Group (WSRG) of Hewlett Packard\n\t(HP)\n\nsvn path=/branches/mono-2-4-2/mcs/; revision=156450",
+      "caf3bc3ea26af4027cee81fa99a50d69f810ed63": "2010-04-29  Marek Habersack  <mhabersack@novell.com>\n\n\t* PageParser.cs, Page.cs: do not ignore the EnableViewStateMac\n\tdirective attribute. Fixes bug #592428\n\tFixes cross-site scripting vulnerability (CVE: CVE-2010-1459)\n\tCredits: Web Security Research Group (WSRG) of Hewlett Packard\n\t(HP)\n\n2010-04-29  Marek Habersack  <mhabersack@novell.com>\n\n\t* PagesConfiguration.cs: make EnableViewStateMac default to\n\ttrue. Fixes bug #592428 \n\tFixes cross-site scripting vulnerability (CVE: CVE-2010-1459)\n\tCredits: Web Security Research Group (WSRG) of Hewlett Packard\n\t(HP)\n\nsvn path=/branches/mono-2-0/mcs/; revision=156449",
+      "c115636e0f354c3217920614182a3dfec4337541": "2010-04-29  Marek Habersack  <mhabersack@novell.com>\n\n\t* PagesConfiguration.cs: make EnableViewStateMac default to\n\ttrue. Fixes bug #592428 \n\tFixes cross-site scripting vulnerability (CVE: CVE-2010-1459)\n\tCredits: Web Security Research Group (WSRG) of Hewlett Packard\n\t(HP)\n\n2010-04-29  Marek Habersack  <mhabersack@novell.com>\n\n\t* PageParser.cs, Page.cs: do not ignore the EnableViewStateMac\n\tdirective attribute. Fixes bug #592428\n\tFixes cross-site scripting vulnerability (CVE: CVE-2010-1459)\n\tCredits: Web Security Research Group (WSRG) of Hewlett Packard\n\t(HP)\n\nsvn path=/branches/mono-1-9-1-1/mcs/; revision=156448",
+      "bb0cde85b1f31230be337328ebd83d412f6b9c90": "2010-04-29  Marek Habersack  <mhabersack@novell.com>\n\n\t* PagesConfiguration.cs: make EnableViewStateMac default to\n\ttrue. Fixes bug #592428 \n\tFixes cross-site scripting vulnerability (CVE: CVE-2010-1459)\n\tCredits: Web Security Research Group (WSRG) of Hewlett Packard\n\t(HP)\n\n2010-04-29  Marek Habersack  <mhabersack@novell.com>\n\n\t* PageParser.cs, Page.cs: do not ignore the EnableViewStateMac\n\tdirective attribute. Fixes bug #592428\n\tFixes cross-site scripting vulnerability (CVE: CVE-2010-1459)\n\tCredits: Web Security Research Group (WSRG) of Hewlett Packard\n\t(HP)\n\nsvn path=/branches/mono-1-9/mcs/; revision=156447"
+    },
+    "CVE-2009-0217": {
+      "3b1cee23d6f2f69f8444a5a1def4051028abff5f": "Security fix for CVE-2009-0217\n\nsvn path=/branches/mono-2-4-2/mcs/; revision=138331",
+      "b79738dc7f734a78039567ea35f4e6a7d319a227": "CVE-2009-0217, 2.4.2.2\n\nsvn path=/tags/mono-2-4-2-2/mono/; revision=137979",
+      "e2be4afec1d41aacd7c0a35605e369a55c4fe3a6": "CVE-2009-0217, 2.4.2.2\n\nsvn path=/tags/mono-2-4-2-2/mcs/; revision=137979",
+      "939994df00fc3e1372b9dc1243e261e2f6c6c133": "Security fix for CVE-2009-0217\n\nsvn path=/branches/mono-1-1-7/mcs/; revision=137892",
+      "c20551c1942db667672b36a07856467caace2d92": "Security fix for CVE-2009-0217\n\nsvn path=/branches/mono-1-2-2/mcs/; revision=137891",
+      "8bb489774f42a734947859a1742ee5710efd9b49": "Security fix for CVE-2009-0217\n\nsvn path=/branches/mono-1-2-5/mcs/; revision=137890",
+      "c48fa75d0c8f8e16a554de988cbadcb298fce013": "Security fix for CVE-2009-0217\n\nsvn path=/branches/mono-1-9/mcs/; revision=137889",
+      "cbfbf2f522399692d0edf7741746e300453338ca": "Security fix for CVE-2009-0217\n\nsvn path=/branches/mono-2-0/mcs/; revision=137888",
+      "7449a342c85eeb5e2f0a5fcad029c2e6c137b4e7": "Security fix for CVE-2009-0217\n\nsvn path=/branches/mono-2-4/mcs/; revision=137887",
+      "14846e6f2f0c8e95b3eec525ee9367bcd02fcbd3": "Security fix for CVE-2009-0217\n\nsvn path=/trunk/mcs/; revision=137886"
+    },
+    "CVE-2008-3422": {
+      "49c9dba9a538221ce2fb6964e13568c1ca2e5f34": "Fix for CVE-2008-3422\n\nsvn path=/branches/mono-1-2-5/mcs/; revision=110144",
+      "0319233e9b8fe1a16657bad2c58c72d98aab6834": "Fix for CVE-2008-3422\n\nsvn path=/branches/mono-1-2-2/mcs/; revision=110143",
+      "4f5502c48eceefce46fa66b6f42c3303cec24fb9": "Fix for CVE-2008-3422\n\nsvn path=/branches/mono-1-1-18/mcs/; revision=110142",
+      "e1a3756f402576f8cfd224c6b7b3702ced0f0b8f": "Fix for CVE-2008-3422\n\nsvn path=/branches/mono-1-1-7/mcs/; revision=110136"
+    },
+    "CVE-2007-5473": {
+      "3e4bd5f6e0dfc74907b40cdefcf91ee3a791876b": "2007-10-17  Marek Habersack  <mhabersack@novell.com>\n\n\t* StaticFileHandler.cs: fixed an bug with Mono running under\n\tWindows operating systems which caused XSP to return source of the\n\trequested page if the file name used in the request ended in any\n\tnumber of spaces or dots. The problem lies in the way the Win32\n\tsubsystem treats such file names - it ignores the trailing\n\tcharacters and allows the calling application to open a file on\n\tdisk even when its name does not contain the trailing characters\n\tused in the open request. Such file names may be supported by the\n\tunderlying filesystem (e.g. NTFS) but they are not supported by\n\tthe I/O Win32 subsystem. The security issue is reported in\n\tCVE security report CVE-2007-5473. Fixes bug #332401\n\nsvn path=/trunk/mcs/; revision=87715"
+    },
+    "CVE-2006-4339": {
+      "62e21116a9d4468fac6c8284bd4ed14bc7c7b6fd": "2006-10-04  Sebastien Pouliot  <sebastien@ximian.com>\n\n\t* PKCS1.cs: Remove compatibility block where all padding wasn't \n\tverified (can't find the original test case for it). Note: the \n\texisting implementation wasn't affected by CVE-2006-4339, aka RSA \n\tPKCS#1 1.5 signature forgery (but we're stronger without it).\n\n\nsvn path=/trunk/mcs/; revision=66232"
+    }
+  }
+}

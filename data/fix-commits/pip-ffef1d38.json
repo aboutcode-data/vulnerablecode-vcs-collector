@@ -1,0 +1,15 @@
+{
+  "vcs_url": "https://github.com/pypa/pip",
+  "vulnerabilities": {
+    "CVE-2024-32004": {
+      "038dc755061d6918288eae97fbec363df3607366": "Update git tests to not use local partial clones (#12721)\n\nThis works around a git restriction to fix CVE-2024-32004.\r\nUsers affected by the error `remote: fatal: could not fetch ... from promisor remote`\r\nshould consider setting the GIT_NO_LAZY_FETCH=0 if they trust the source repo."
+    },
+    "CVE-2022-39253": {
+      "1e236f4c8491d50d91038050bc393b2266364c06": "Ignore failing git submodule test for now\n\nGit 2.38.1 patched CVE-2022-39253 by disaling automated fetch against a\nfile: repository. This breaks git submodule, which is used by a pip\ntest. Information on how projects relying on automated fetch should\nconfigure git correctly after this change is lacking, so the test is\ndisabled for now until someone can come up with a better solution."
+    },
+    "CVE-2021-28363": {
+      "5803bb69f6945a39ad8ba29568e8f24780afbc66": "Merge pull request #9760 from hroncok/CVE-2021-28363\n\nUpdate urllib3 to 1.26.4 to fix CVE-2021-28363",
+      "960c01adce491de00ef7a8d02a32fea31b15a1dc": "Update urllib3 to 1.26.4 to fix CVE-2021-28363"
+    }
+  }
+}

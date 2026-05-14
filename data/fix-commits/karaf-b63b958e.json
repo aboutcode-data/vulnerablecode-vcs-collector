@@ -1,0 +1,27 @@
+{
+  "vcs_url": "https://github.com/apache/karaf",
+  "vulnerabilities": {
+    "CVE-2023-33008": {
+      "45117823da42006804246787025fd74d6d21c77d": "KARAF-7712 - Upgrade to Sling common johnzon 1.2.16 (johnzon 1.2.21) to fix CVE-2023-33008\n\n(cherry picked from commit f426ad082fac73487612f0ec411ff7655b8d86ae)",
+      "f426ad082fac73487612f0ec411ff7655b8d86ae": "KARAF-7712 - Upgrade to Sling common johnzon 1.2.16 (johnzon 1.2.21) to fix CVE-2023-33008"
+    },
+    "CVE-2020-25649": {
+      "cd7b07380e937ff2edeec434870a420a02408ddd": "Merge pull request #1296 from seeburger-ag/fix-databind\n\nUpdate jackson-databind to fix CVE-2020-25649 / BDSA-2020-2965",
+      "0329dadcb9d9dc668b8512a3fb19cda6a2d3afb1": "Update jackson-databind to fix CVE-2020-25649 / BDSA-2020-2965"
+    },
+    "CVE-2020-13956": {
+      "99e5a1072466b50a8ef2f7f9a674c919d9f106ab": "CVE-2020-13956:Update httpclient.version to 4.5.13\n\nAs per https://bugzilla.redhat.com/show_bug.cgi?id=1886587, http.client librarires below version 4.5.13 have the vulnerability CVE-2020-13956. As Karaf rebundles http.client classes as seen at https://github.com/apache/karaf/blob/karaf-4.2.10/jaas/modules/pom.xml#L180 This makes it vulnerable and hence our security scans are detecting it as a vulnerable library. And hence updating the httpclient.version to 4.5.13.\n\n(cherry picked from commit 2eeda0020a945d7aa224bee0b69109fc4c5c0865)",
+      "fd6ca4f352ff12aa3ec7bbd0c157cd2917e12b06": "Merge pull request #1243 from Sachpat/master\n\nUpdate httpclient.version to 4.5.13 to address CVE-2020-13956.",
+      "2eeda0020a945d7aa224bee0b69109fc4c5c0865": "CVE-2020-13956:Update httpclient.version to 4.5.13\n\nAs per https://bugzilla.redhat.com/show_bug.cgi?id=1886587, http.client librarires below version 4.5.13 have the vulnerability CVE-2020-13956. As Karaf rebundles http.client classes as seen at https://github.com/apache/karaf/blob/karaf-4.2.10/jaas/modules/pom.xml#L180 This makes it vulnerable and hence our security scans are detecting it as a vulnerable library. And hence updating the httpclient.version to 4.5.13."
+    },
+    "CVE-2020-5398": {
+      "e922ff35e437f27d96e79ef546ea329ad9ae8ae6": "KARAF-6721 - Update Spring versions due to CVE-2020-5398\n\n(cherry picked from commit df82131b3c04d3cc28d4aae1cef0907a2bd642c4)",
+      "2af2008e81fa9350c4f43d054cf37d16d459899b": "Merge pull request #1118 from coheigea/KARAF-6721\n\nKARAF-6721 - Update Spring versions due to CVE-2020-5398",
+      "df82131b3c04d3cc28d4aae1cef0907a2bd642c4": "KARAF-6721 - Update Spring versions due to CVE-2020-5398"
+    },
+    "CVE-2015-5262": {
+      "b7139523b1bad1ebecde77cf65a7381bc40fc157": "[KARAF-5423] - Karaf is flagged as vulnerable to CVE-2015-5262",
+      "fc7af0b0ca3cbaa75c01e9e1ff7529586c373b9c": "[KARAF-5423] - Karaf is flagged as vulnerable to CVE-2015-5262"
+    }
+  }
+}

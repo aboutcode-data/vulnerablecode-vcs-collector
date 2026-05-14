@@ -1,0 +1,15 @@
+{
+  "vcs_url": "https://github.com/getsentry/sentry-java",
+  "vulnerabilities": {
+    "CVE-2018-9492": {
+      "897ad85f50e5be591f53f110db37025e7a791ca0": "Expand fix for potential Privilege Escalation via Content Provider (CVE-2018-9492) (#2482)",
+      "2374884da56c962423388002806505fc20da54af": "Fix potential Privilege Escalation via Content Provider (CVE-2018-9492) (#2466)\n\nCo-authored-by: Markus Hintersteiner <markus.hintersteiner@sentry.io>\r\nclose undefined"
+    },
+    "CVE-2022-22970": {
+      "1a9d55529de5d92e7bcf781deffb8e4b35e6fe61": "Upgrading springBoot to fix the CVE-2022-22970 (#2068)\n\n* Upgrading springBoot to fix the CVE-2022-22970\r\n\r\n* Add changelog and fix lint.\r\n\r\n* Update CHANGELOG.md\r\n\r\nCo-authored-by: Maciej Walkowiak <walkowiak.maciej@yahoo.com>\r\n\r\nCo-authored-by: Filippo Nova <filipponova@BRSPPM-C02FJ4B8MD6M.local>\r\nCo-authored-by: Alexander Dinauer <adinauer@users.noreply.github.com>\r\nCo-authored-by: Maciej Walkowiak <walkowiak.maciej@yahoo.com>"
+    },
+    "CVE-2021-42550": {
+      "2b9c130f18540d8cd20b880932fcbeed9861c894": "Upgrade logback to 1.2.9 to address LOGBACK-1591/CVE-2021-42550 (#1853)\n\nCo-authored-by: jcaraballo <jcaraballo@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "vcs_url": "https://github.com/typeorm/typeorm",
+  "vulnerabilities": {
+    "CVE-2025-64756": {
+      "dc74f5374ef5ec83d53045e4bca99cb9ff7d49d4": "fix(deps): upgrade glob to fix CVE-2025-64756 (#11784)\n\nCo-authored-by: Oleg \"OSA413\" Sokolov <OSA413@users.noreply.github.com>"
+    },
+    "CVE-2025-9288": {
+      "9cdfb20b12125ae4a11ca561b8c0aff8a2542e87": "chore: bump sha.js from 2.4.11 to 2.4.12 (fix security issue: CVE-2025-9288) (#11639)\n\n* chore: bump sha.js from 2.4.11 to 2.4.12 (fix security issue: CVE-2025-9288)\n\n* test: add unit tests for hash() to ensure sha.js upgrade compatibility\n\n- Verify SHA1 output for known inputs\n- Test truncation with options.length\n- Handle empty string input\n- Confirm deterministic behavior for identical inputs\n\n* removed .only from test/unit/util/string-utils.ts to run all the unit tests\n\n* fix(hash): ensure negative or zero options.length returns full hash\n\n- Updated hash() to only truncate when options.length > 0\n- Prevents accidental truncation when options.length is negative\n- Maintains expected behavior for full-length hash\n\n* added strict +ve number input validation for hash()\n\n* simplified the logic to check number len before applying slice() in StringUtils.ts->hash()\n\n---------\n\nCo-authored-by: Prateek Hegde <prateek.hegde@deliverysolutions.co>\nCo-authored-by: Prateek Hegde <prateek@Prateeks-MacBook-Pro.local>"
+    }
+  }
+}

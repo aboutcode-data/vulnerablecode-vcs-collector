@@ -1,0 +1,15 @@
+{
+  "vcs_url": "https://github.com/laravel/laravel",
+  "vulnerabilities": {
+    "GHSA-4MG9-VHXQ-VM7J": {
+      "5c137aae41315fea6b9201d23ddfef2502d3feda": "Bump framework version (#5602)\n\nto include SQL server security fix for GHSA-4mg9-vhxq-vm7j",
+      "5bd72e78058f5b12977ce0917a3e55bdb9f3b233": "Bump framework version (#5601)\n\nto include SQL server security fix for GHSA-4mg9-vhxq-vm7j"
+    },
+    "CVE-2021-3129": {
+      "8c7ccd3fe82b3723880e5f70d8aa02e30ac03f82": "target 1.16.15 of facade/ignition for Laravel 6.x (#5544)\n\nfixes CVE-2021-3129 vulnerability (Laravel 6)"
+    },
+    "CVE-2019-10744": {
+      "ff15a66d8c8d989ce6e1cee6fcc06c4025d06998": "Fixed lodash version (CVE-2019-10744) (#5060)"
+    }
+  }
+}

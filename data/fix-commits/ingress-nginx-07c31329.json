@@ -1,0 +1,68 @@
+{
+  "vcs_url": "https://github.com/kubernetes/ingress-nginx",
+  "vulnerabilities": {
+    "CVE-2023-44487": {
+      "86f1cedcadd8bb86585f4ef8ee89e6645cbb325e": "add upstream patch for CVE-2023-44487 (#10494)\n\n* add upstream patch\n\n* add source\n\n* remove auto-added depend"
+    },
+    "CVE-2022-27664": {
+      "d003aae913cc25f375deb74f898c7f3c65c06f05": "Merge pull request #9275 from strongjz/release-1.5.1\n\nAdd CVE-2022-27664 #9273 in latest release",
+      "3bca5e9c19bedfef2365a9214bd0c1675d53a725": "missed CVE-2022-27664 #9273 in 1.5.0 build\n\nSigned-off-by: James Strong <strong.james.e@gmail.com>",
+      "70e21c5ac7ec07821e7df80a40ecacb4ffe979a7": "Merge pull request #9273 from esigo/fix-CVE-2022-27664\n\nfix CVE-2022-27664",
+      "894937993107e1dbe6e1b28bd916b06790a07d3c": "fix CVE-2022-27664",
+      "00f86f7f342730ee27fbdb651fd874a2962f4120": "update x/net to remove vul CVE-2022-27664 (#9109)\n\nSigned-off-by: James Strong <strong.james.e@gmail.com>\n\nSigned-off-by: James Strong <strong.james.e@gmail.com>"
+    },
+    "CVE-2022-1996": {
+      "90a9d6457536158b433719ff4a9a7ed5b4356c06": "Fix CVE-2022-1996 (#9244)\n\n* CVE-2022-1996\n\n* clean\n\n* fix\n\n* fix",
+      "f6d04d3e3bb3db11641644962c1a5317cacf6cd8": "fix: bump k8s dependencies to fix go-restful CVE (#8969)\n\n[1] https://nvd.nist.gov/vuln/detail/CVE-2022-1996\n[2] https://github.com/kubernetes/ingress-nginx/issues/8745\n\nSigned-off-by: Ismayil Mirzali <ismayilmirzeli@gmail.com>\n\nSigned-off-by: Ismayil Mirzali <ismayilmirzeli@gmail.com>"
+    },
+    "CVE-2022-32149": {
+      "5a42ec4f35ae6d62b240f61ceb075459aaece16e": "Fix CVE-2022-32149 (#9258)\n\n* Fix CVE-2022-32149\n\n* fix CI"
+    },
+    "CVE-2021-25742": {
+      "21bab108f41f65eddd92b92e3c249b674d07c11c": "mention CVE-2021-25742 in annotations doc (#7843)\n\nReferring to CVE-2021-25742 in the annotations doc at the description of `configuration-snippet`."
+    },
+    "CVE-2021-23017": {
+      "35fe26faaf902d9e36ecc4758d4131efe38235f3": "Add a note to README.md with context on CVE-2021-23017 patch (#7735)",
+      "c6bc9870f1458abc5ba5de7044c1879a2696f255": "Update base nginx (#7552)\n\n* upgrade alpine\n\n* use nginx 1.19.9 and corresponding patches from openresty\n\n* include openresty CVE-2021-23017 patch too"
+    },
+    "CVE-2020-8553": {
+      "ed81ee3b757b817ad314ab419c420dfcf8c25b09": "Fix typo \n\nTypo the correct CVE is CVE-2020-8553 and not CVE-2019-11251"
+    },
+    "CVE-2019-11251": {
+      "ed81ee3b757b817ad314ab419c420dfcf8c25b09": "Fix typo \n\nTypo the correct CVE is CVE-2020-8553 and not CVE-2019-11251"
+    },
+    "CVE-2018-16843": {
+      "333d9fd48d69730a03e087fb6e0f0dae5601c04f": "Fixes for CVE-2018-16843, CVE-2018-16844, CVE-2019-9511, CVE-2019-9513, and CVE-2019-9516 (#4440)"
+    },
+    "CVE-2018-16844": {
+      "333d9fd48d69730a03e087fb6e0f0dae5601c04f": "Fixes for CVE-2018-16843, CVE-2018-16844, CVE-2019-9511, CVE-2019-9513, and CVE-2019-9516 (#4440)"
+    },
+    "CVE-2019-9511": {
+      "333d9fd48d69730a03e087fb6e0f0dae5601c04f": "Fixes for CVE-2018-16843, CVE-2018-16844, CVE-2019-9511, CVE-2019-9513, and CVE-2019-9516 (#4440)"
+    },
+    "CVE-2019-9513": {
+      "333d9fd48d69730a03e087fb6e0f0dae5601c04f": "Fixes for CVE-2018-16843, CVE-2018-16844, CVE-2019-9511, CVE-2019-9513, and CVE-2019-9516 (#4440)"
+    },
+    "CVE-2019-9516": {
+      "333d9fd48d69730a03e087fb6e0f0dae5601c04f": "Fixes for CVE-2018-16843, CVE-2018-16844, CVE-2019-9511, CVE-2019-9513, and CVE-2019-9516 (#4440)"
+    },
+    "CVE-2016-1234": {
+      "9e09b43a5800777c85d7ecbf66ed8e391ada78ec": "Release ubuntu-slim:0.8\n\nThis has no code changes, but it uses updated upstream dependencies with\nfixes for the following:\n* CVE-2016-1234\n* CVE-2016-3706\n* CVE-2016-4429\n* CVE-2016-5417\n* CVE-2016-6323\n* CVE-2017-6507"
+    },
+    "CVE-2016-3706": {
+      "9e09b43a5800777c85d7ecbf66ed8e391ada78ec": "Release ubuntu-slim:0.8\n\nThis has no code changes, but it uses updated upstream dependencies with\nfixes for the following:\n* CVE-2016-1234\n* CVE-2016-3706\n* CVE-2016-4429\n* CVE-2016-5417\n* CVE-2016-6323\n* CVE-2017-6507"
+    },
+    "CVE-2016-4429": {
+      "9e09b43a5800777c85d7ecbf66ed8e391ada78ec": "Release ubuntu-slim:0.8\n\nThis has no code changes, but it uses updated upstream dependencies with\nfixes for the following:\n* CVE-2016-1234\n* CVE-2016-3706\n* CVE-2016-4429\n* CVE-2016-5417\n* CVE-2016-6323\n* CVE-2017-6507"
+    },
+    "CVE-2016-5417": {
+      "9e09b43a5800777c85d7ecbf66ed8e391ada78ec": "Release ubuntu-slim:0.8\n\nThis has no code changes, but it uses updated upstream dependencies with\nfixes for the following:\n* CVE-2016-1234\n* CVE-2016-3706\n* CVE-2016-4429\n* CVE-2016-5417\n* CVE-2016-6323\n* CVE-2017-6507"
+    },
+    "CVE-2016-6323": {
+      "9e09b43a5800777c85d7ecbf66ed8e391ada78ec": "Release ubuntu-slim:0.8\n\nThis has no code changes, but it uses updated upstream dependencies with\nfixes for the following:\n* CVE-2016-1234\n* CVE-2016-3706\n* CVE-2016-4429\n* CVE-2016-5417\n* CVE-2016-6323\n* CVE-2017-6507"
+    },
+    "CVE-2017-6507": {
+      "9e09b43a5800777c85d7ecbf66ed8e391ada78ec": "Release ubuntu-slim:0.8\n\nThis has no code changes, but it uses updated upstream dependencies with\nfixes for the following:\n* CVE-2016-1234\n* CVE-2016-3706\n* CVE-2016-4429\n* CVE-2016-5417\n* CVE-2016-6323\n* CVE-2017-6507"
+    }
+  }
+}

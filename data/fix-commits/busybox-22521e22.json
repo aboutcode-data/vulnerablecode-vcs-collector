@@ -1,0 +1,21 @@
+{
+  "vcs_url": "https://github.com/mirror/busybox",
+  "vulnerabilities": {
+    "CVE-2023-42363": {
+      "fb08d43d44d1fea1f741fafb9aa7e1958a5f69aa": "awk: fix use after free (CVE-2023-42363)\n\nfunction                                             old     new   delta\nevaluate                                            3377    3385      +8\n\nFixes https://bugs.busybox.net/show_bug.cgi?id=15865\n\nSigned-off-by: Natanael Copa <ncopa@alpinelinux.org>\nSigned-off-by: Denys Vlasenko <vda.linux@googlemail.com>"
+    },
+    "CVE-2021-42380": {
+      "5dcc443dba039b305a510c01883e9f34e42656ae": "awk: fix use-after-realloc (CVE-2021-42380), closes 15601\n\nSigned-off-by: Denys Vlasenko <vda.linux@googlemail.com>"
+    },
+    "CVE-2022-30065": {
+      "e63d7cdfdac78c6fd27e9e63150335767592b85e": "awk: fix use after free (CVE-2022-30065)\n\nfixes https://bugs.busybox.net/show_bug.cgi?id=14781\n\nfunction                                             old     new   delta\nevaluate                                            3343    3357     +14\n\nSigned-off-by: Natanael Copa <ncopa@alpinelinux.org>\nSigned-off-by: Denys Vlasenko <vda.linux@googlemail.com>"
+    },
+    "CVE-2018-1000500": {
+      "45fa3f18adf57ef9d743038743d9c90573aeeb91": "wget: implement TLS verification with ENABLE_FEATURE_WGET_OPENSSL\n\nWhen ENABLE_FEATURE_WGET_OPENSSL is enabled, correctly implement TLS\nverification by default. And only ignore verification errors, if\n--no-check-certificate was passed.\n\nAlso note, that previously OPENSSL implementation did not implement\nTLS verification, nor printed any warning messages that verification\nwas not performed.\n\nBug-Ubuntu: https://bugs.launchpad.net/bugs/1879533\n\nCVE-2018-1000500\n\nSigned-off-by: Dimitri John Ledkov <xnox@ubuntu.com>\nSigned-off-by: Denys Vlasenko <vda.linux@googlemail.com>"
+    },
+    "CVE-2014-4607": {
+      "5698ff93233b47218a677fd7facd8cc90211d1a4": "lzop: add overflow check\n\nSee CVE-2014-4607\nhttp://www.openwall.com/lists/oss-security/2014/06/26/20\n\nfunction                                             old     new   delta\nlzo1x_decompress_safe                               1010    1031     +21\n\nSigned-off-by: Denys Vlasenko <vda.linux@googlemail.com>\nSigned-off-by: Mike Frysinger <vapier@gentoo.org>\n(cherry picked from commit a9dc7c2f59dc5e92870d2d46316ea5c1f14740e3)",
+      "a9dc7c2f59dc5e92870d2d46316ea5c1f14740e3": "lzop: add overflow check\n\nSee CVE-2014-4607\nhttp://www.openwall.com/lists/oss-security/2014/06/26/20\n\nfunction                                             old     new   delta\nlzo1x_decompress_safe                               1010    1031     +21\n\nSigned-off-by: Denys Vlasenko <vda.linux@googlemail.com>"
+    }
+  }
+}

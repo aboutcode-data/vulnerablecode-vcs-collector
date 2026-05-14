@@ -1,0 +1,12 @@
+{
+  "vcs_url": "https://android.googlesource.com/platform/external/conscrypt",
+  "vulnerabilities": {
+    "CVE-2021-3712": {
+      "168dca2f7036723344157abde7add4833cb9b920": "Revise GENERAL_NAME_to_jobject. (#1032)\n\nThis fixes a few issues. First, the comment is a little confusing. The\r\nvalue is an IA5String. The issue isn't whether it might accidentally be\r\na T61String, but that its contents may be invalid for an IA5String.\r\n\r\nNext, I've replaced ASN1_PRINTABLE_type with a loop. ASN1_PRINTABLE_type\r\ndoes actually work, but it's normally used in OpenSSL to auto-detect a\r\nstring type for a Latin-1 string, which is a little confusing.\r\n\r\nFinally, I've tweaked this so it does not rely on the ASN1_STRING being\r\nNUL-terminated. The ASN1_STRING is almost always NUL-terminated, but\r\nbest not to rely on this. (See CVE-2021-3712.)"
+    },
+    "CVE-2017-13309": {
+      "d119bf71fcaeca1f977fa8e78cd53cf387609504": "Merge upstream master\n\nMain changes:\n\n* Add locking around use of native SSL objects.\n* Add tests for java.security classes (to replace libcore versions).\n* Fix for CVE-2017-13309.\n\nBug: 65476203\nTest: cts -m CtsLibcoreTestCases\nChange-Id: Ib248a4bc4ede6f33d4b05d5a750e7c32535ebfaf",
+      "e56958e7dea05c1784317f139e2216e2e707d391": "Fix SSLEngine bug with multiple heap buffer inputs. (#485)\n\nWhen the SSLEngine overload that accepts an array of ByteBuffers is\r\ncalled with heap buffers for both the source and destination, those\r\nheap buffers are converted to direct buffers for passing to JNI by way\r\nof copying them to a single temporary direct buffer.  A bug in the\r\nreading of the encrypted data out of BoringSSL resulted in the data\r\nbeing placed at the wrong offset of the temporary buffer, meaning that\r\nthe output data was prefixed in the worst case by the plaintext.\r\n\r\nFixes CVE-2017-13309."
+    }
+  }
+}

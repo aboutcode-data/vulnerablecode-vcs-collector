@@ -1,0 +1,14 @@
+{
+  "vcs_url": "https://github.com/micropython/micropython",
+  "vulnerabilities": {
+    "CVE-2025-4565": {
+      "499bedf7aa07bb26dc19fb8b3ef5db5c8e578f52": "tools/ci.sh: Always call `apt-get update` before `apt-get install`.\n\nThere have been recent build failures in build_renesas_ra_board.  It\nappears to be the case that a security update for this package was recently\nissued by Ubuntu for CVE-2025-4565 and the buggy version is no longer on\npackage servers.  However, it is still referred to by the cached apt\nmetadata in the GitHub runners.\n\nAdd `apt-get update` to fix this, and audit for other sites in `ci.sh`\nwhere it might also be necessary.\n\nSigned-off-by: Jeff Epler <jepler@gmail.com>"
+    },
+    "CVE-2019-12586": {
+      "5641aa55dddbdf312a1e8dbb8c3936115683840a": "esp32: Update to use ESP IDF v3.3\n\nIncludes patches for CVE-2019-12586 & CVE-2019-12587"
+    },
+    "CVE-2019-12587": {
+      "5641aa55dddbdf312a1e8dbb8c3936115683840a": "esp32: Update to use ESP IDF v3.3\n\nIncludes patches for CVE-2019-12586 & CVE-2019-12587"
+    }
+  }
+}

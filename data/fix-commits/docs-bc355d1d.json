@@ -1,0 +1,61 @@
+{
+  "vcs_url": "https://github.com/github/docs",
+  "vulnerabilities": {
+    "CVE-2023-23766": {
+      "473a8e32c9f057136dd0361f0726e7fa1c1980b3": "Add cve-2023-23766 (#43026)\n\nCo-authored-by: Matt Pollard <mattpollard@users.noreply.github.com>"
+    },
+    "CVE-2023-23763": {
+      "882b46dbd52856691f658ff35df97627d0590a78": "Add CVE-2023-23763 (#41774)\n\nCo-authored-by: Matt Pollard <mattpollard@users.noreply.github.com>"
+    },
+    "CVE-2023-23765": {
+      "3fa90647fe654d2188af78662bc2b615487491c1": "Add CVE-2023-23765 (#41719)\n\nCo-authored-by: Brandon <99298910+BlueSzy@users.noreply.github.com>\nCo-authored-by: Rachael Rose Renk <91027132+rachaelrenk@users.noreply.github.com>",
+      "222f855a9fe2956e885cf5a2fca1c090454832cc": "Remove CVE-2023-23765 (#40930)\n\nCo-authored-by: Matt Pollard <mattpollard@users.noreply.github.com>"
+    },
+    "CVE-2023-23764": {
+      "7a0cd902aeb07f078c78982f0c89f7ed25e049d4": "Updating release notes to include CVE-2023-23764 (#39255)\n\nCo-authored-by: Laura Coursen <lecoursen@github.com>"
+    },
+    "CVE-2023-22490": {
+      "d53bed25e5a5743a027f739fbc074171eae24c2e": "Delete duplicated security fix entry of CVE-2023-22490 and CVE-2023-23946 (#38603)"
+    },
+    "CVE-2023-23946": {
+      "d53bed25e5a5743a027f739fbc074171eae24c2e": "Delete duplicated security fix entry of CVE-2023-22490 and CVE-2023-23946 (#38603)"
+    },
+    "CVE-2023-23760": {
+      "81c15fd38e9d3c42468558728c7021c2574c03db": "Add CVE-2023-23760 to patch notes (#35404)\n\nCo-authored-by: Matt Pollard <mattpollard@users.noreply.github.com>\nCo-authored-by: Brandon <99298910+BlueSzy@users.noreply.github.com>"
+    },
+    "CVE-2023-22380": {
+      "d42c439a2ef13fe941188676e8297926079c1195": "Add CVE-2023-22380 detail and link to 3.7.6 release notes (#34930)"
+    },
+    "CVE-2022-23739": {
+      "71ac38e4ed51beb08b1184fc50a3d64a1fb5eac4": "Add CVE-2022-23739 details to release notes (#34003)"
+    },
+    "CVE-2022-23738": {
+      "a0ad3bfe2a99c3092e76ca9b3d476cf30988ca55": "Add CVE-2022-23738 to patch notes (#32151)\n\nCo-authored-by: Laura Coursen <lecoursen@github.com>"
+    },
+    "GHSA-HQHP-5P83-HX96": {
+      "45f0f49719686dd1a3853b69d2cbb5baf032a726": "Upgrade to refractor@3.5.0 to update its prismjs dependency (#22034)\n\nFixes https://github.com/advisories/GHSA-hqhp-5p83-hx96",
+      "d3f64591da90b213196ec20d2524882739e26087": "Update prismjs indirect dependency (#21958)\n\nTowards https://github.com/advisories/GHSA-hqhp-5p83-hx96"
+    },
+    "GHSA-CPH5-M8F7-6C5X": {
+      "9c11786e0ebe28271224d6e866fdd080d6e6b017": "Update axios indirect dependency (#21955)\n\nFixes https://github.com/advisories/GHSA-cph5-m8f7-6c5x"
+    },
+    "GHSA-JG8V-48H5-WGXG": {
+      "42658ba4a819151fbba4ad404c6758c715a23228": "Update jszip indirect dependency (#21954)\n\nFixes https://github.com/advisories/GHSA-jg8v-48h5-wgxg"
+    },
+    "GHSA-RP65-9CF3-CJXR": {
+      "1799db90924f8ffae66815104d12f4a5555abf42": "Update nth-check indirect dependency (#21959)\n\nFixes https://github.com/advisories/GHSA-rp65-9cf3-cjxr"
+    },
+    "GHSA-HJ48-42VR-X3V9": {
+      "0c59d1b0ef785930f0fd329201b384d9a984a0b2": "Update path-parse indirect dependency (#21953)\n\nFixes https://github.com/advisories/GHSA-hj48-42vr-x3v9"
+    },
+    "GHSA-4R62-V4VQ-HR96": {
+      "919054f91c9507dacc0552359bf97fa3e6799ea8": "Update npm dependencies to address Dependabot security alerts (#18992)\n\n* npm audit fix\r\n\r\nAddresses 1 Dependabot security alert for marked@<2.0.0, which is a dependency of linkinator\r\n\r\nhttps://github.com/advisories/GHSA-4r62-v4vq-hr96\r\n\r\n* Update jest to latest, which updates node-notifier@<8.0.1, to address 1 Dependabot security alert\r\n\r\nhttps://github.com/advisories/GHSA-5fw9-fq32-wv5p\r\n\r\n* Update rehype-highlight to latest, which updates highlight.js@<10.4.1, to address 1 Dependabot security alert\r\n\r\nhttps://github.com/advisories/GHSA-7wwv-vh3v-89cq"
+    },
+    "GHSA-5FW9-FQ32-WV5P": {
+      "919054f91c9507dacc0552359bf97fa3e6799ea8": "Update npm dependencies to address Dependabot security alerts (#18992)\n\n* npm audit fix\r\n\r\nAddresses 1 Dependabot security alert for marked@<2.0.0, which is a dependency of linkinator\r\n\r\nhttps://github.com/advisories/GHSA-4r62-v4vq-hr96\r\n\r\n* Update jest to latest, which updates node-notifier@<8.0.1, to address 1 Dependabot security alert\r\n\r\nhttps://github.com/advisories/GHSA-5fw9-fq32-wv5p\r\n\r\n* Update rehype-highlight to latest, which updates highlight.js@<10.4.1, to address 1 Dependabot security alert\r\n\r\nhttps://github.com/advisories/GHSA-7wwv-vh3v-89cq"
+    },
+    "GHSA-7WWV-VH3V-89CQ": {
+      "919054f91c9507dacc0552359bf97fa3e6799ea8": "Update npm dependencies to address Dependabot security alerts (#18992)\n\n* npm audit fix\r\n\r\nAddresses 1 Dependabot security alert for marked@<2.0.0, which is a dependency of linkinator\r\n\r\nhttps://github.com/advisories/GHSA-4r62-v4vq-hr96\r\n\r\n* Update jest to latest, which updates node-notifier@<8.0.1, to address 1 Dependabot security alert\r\n\r\nhttps://github.com/advisories/GHSA-5fw9-fq32-wv5p\r\n\r\n* Update rehype-highlight to latest, which updates highlight.js@<10.4.1, to address 1 Dependabot security alert\r\n\r\nhttps://github.com/advisories/GHSA-7wwv-vh3v-89cq"
+    }
+  }
+}

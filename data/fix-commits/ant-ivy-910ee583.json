@@ -1,0 +1,15 @@
+{
+  "vcs_url": "https://github.com/apache/ant-ivy",
+  "vulnerabilities": {
+    "CVE-2022-46751": {
+      "6c0560f93ca421bc5ce210010b3c5f0bff01f2d9": "update release notes with CVE-2022-46751",
+      "2be17bc18b0e1d4123007d579e43ba1a4b6fab3d": "CVE-2022-46751 don't parse doctypes and access external entities by default"
+    },
+    "CVE-2022-37866": {
+      "3f374602d4d63691398951b9af692960d019f4d9": "CVE-2022-37866 prevent path-traversal with bogus module coordinates"
+    },
+    "CVE-2022-37865": {
+      "03b6b8c3ae27406fadb3b3539b51294af246aafa": "CVE-2022-37865 ZipPacking allows overwriting arbitrary files"
+    }
+  }
+}

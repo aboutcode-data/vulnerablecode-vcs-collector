@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/mattermost/mattermost",
+  "vulnerabilities": {
+    "CVE-2020-10675": {
+      "190631b6e174a920bd6eb8da708f373f74bc532c": "Suppress CVE-2020-10675 (#14132)\n\nAutomatic Merge"
+    }
+  }
+}

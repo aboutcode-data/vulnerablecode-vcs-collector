@@ -1,0 +1,11 @@
+{
+  "vcs_url": "https://github.com/netdata/netdata",
+  "vulnerabilities": {
+    "CVE-2026-0621": {
+      "01996049c4348a53092943da82472325928a3a8c": "fix: update @modelcontextprotocol/sdk to v1.25.2 (CVE-2026-0621 ReDoS)\n\n- Fixes HIGH severity ReDoS vulnerability in UriTemplate class\n- Updates all opentelemetry packages to latest patch versions\n- Updates eslint-plugin-jsdoc, eslint-plugin-perfectionist, and knip\n- All tests pass"
+    },
+    "CVE-2022-24765": {
+      "ac0fe6cf07d613623ac1edf35c3791a1f17256a9": "Fix the static build code in light of CVE-2022-24765 (#12683)\n\nAlso, fix handling of the source directory in the builds so that we\r\ndon\u2019t leave behind a dirty source directory."
+    }
+  }
+}

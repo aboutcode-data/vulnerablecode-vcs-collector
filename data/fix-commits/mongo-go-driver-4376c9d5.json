@@ -1,0 +1,13 @@
+{
+  "vcs_url": "https://github.com/mongodb/mongo-go-driver",
+  "vulnerabilities": {
+    "CVE-2020-29652": {
+      "3de449f646e4f15db4be189c123e21399f33a358": "GODRIVER-2162 Update vendored modules - CVE-2020-29652 - golang.org/x/crypto (#745)",
+      "f9279c4ddec602a91a8e720c6339682ca64aff1c": "Update go.mod - CVE-2020-29652 - golang.org/x/crypto (#729)"
+    },
+    "CVE-2019-11254": {
+      "44a08b7d04549d3f72d94aa926a633f583650c84": "GODRIVER-1748 Upgrade transitive go-yaml dependency (#505)\n\nThis commit upgrades our direct aws-sdk-go, go-toml and testify\r\ndependencies, which transitively depend on go-yaml to address\r\nCVE-2019-11254.",
+      "93c2b896c41e4f14bfaa701588522c89f22b48ef": "GODRIVER-1748 Upgrade transitive go-yaml dependency (#505)\n\nThis commit upgrades our direct aws-sdk-go, go-toml and testify\r\ndependencies, which transitively depend on go-yaml to address\r\nCVE-2019-11254."
+    }
+  }
+}

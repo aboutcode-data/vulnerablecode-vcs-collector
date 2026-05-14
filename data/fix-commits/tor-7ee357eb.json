@@ -1,0 +1,54 @@
+{
+  "vcs_url": "https://github.com/torproject/tor",
+  "vulnerabilities": {
+    "CVE-2021-28090": {
+      "890ae4fb1adfa13e37aaf5261e089e8c195a75cf": "Fix detection of point to insert signatures on a pending consensus.\n\nWe were looking for the first instance of \"directory-signature \"\nwhen instead the correct behavior is to look for the first instance\nof \"directory-signature \" at the start of a line.\n\nUnfortunately, this can be exploited as to crash authorities while\nthey're voting.\n\nFixes #40316; bugfix on 0.2.2.4-alpha.  This is TROVE-2021-002,\nalso tracked as CVE-2021-28090."
+    },
+    "CVE-2017-8819": {
+      "2834cc9c18230c36278ffa94a252abeb91b6cff9": "Fix length of replaycache-checked data.\n\nThis is a regression; we should have been checking only the\npublic-key encrypted portion.  Fixes bug 24244, TROVE-2017-009, and\nCVE-2017-8819."
+    },
+    "CVE-2017-0380": {
+      "09ea89764a4d3a907808ed7d4fe42abfe64bd486": "Fix log-uninitialized-stack bug in rend_service_intro_established.\n\nFixes bug 23490; bugfix on 0.2.7.2-alpha.\n\nTROVE-2017-008\nCVE-2017-0380",
+      "4a2cbea6ce585fcdaf86a80ccf39bceb4137e86a": "Fix log-uninitialized-stack bug in rend_service_intro_established.\n\nFixes bug 23490; bugfix on 0.2.7.2-alpha.\n\nTROVE-2017-008\nCVE-2017-0380"
+    },
+    "CVE-2017-0377": {
+      "665baf5ed5c6186d973c46cdea165c0548027350": "Consider the exit family when applying guard restrictions.\n\nWhen the new path selection logic went into place, I accidentally\ndropped the code that considered the _family_ of the exit node when\ndeciding if the guard was usable, and we didn't catch that during\ncode review.\n\nThis patch makes the guard_restriction_t code consider the exit\nfamily as well, and adds some (hopefully redundant) checks for the\ncase where we lack a node_t for a guard but we have a bridge_info_t\nfor it.\n\nFixes bug 22753; bugfix on 0.3.0.1-alpha. Tracked as TROVE-2016-006\nand CVE-2017-0377."
+    },
+    "CVE-2008-0166": {
+      "7b60f0129a12543cf08a2cef5c13b8bfa6691459": "Remove tor-checkkey as obsolete\n\nCVE-2008-0166 is long gone, and we no longer need a helper tool to\ndump out public key moduli so folks can detect it.\n\nCloses ticket 21842.",
+      "0b6b356f7131619fb8e5185fe8b75dff0c61cd0e": "r19725@catbus:  nickm | 2008-05-13 08:47:18 -0400\n Forward-port: update authority keys affected by Debian OpenSSL bug (See CVE-2008-0166 or http://lists.debian.org/debian-security-announce/2008/msg00152.html )\n\n\nsvn:r14603",
+      "9b87cfbdf8e3eb760d4db80e2edece321a125254": "r19723@catbus:  nickm | 2008-05-13 08:41:40 -0400\n Bump version and update authority keys affected by Debian OpenSSL bug (See CVE-2008-0166 or http://lists.debian.org/debian-security-announce/2008/msg00152.html )\n\n\nsvn:r14600"
+    },
+    "CVE-2016-1254": {
+      "d978216dea6b21ac38230a59d172139185a68dbd": "Fix parsing bug with unecognized token at EOS\n\nIn get_token(), we could read one byte past the end of the\nregion. This is only a big problem in the case where the region\nitself is (a) potentially hostile, and (b) not explicitly\nnul-terminated.\n\nThis patch fixes the underlying bug, and also makes sure that the\none remaining case of not-NUL-terminated potentially hostile data\ngets NUL-terminated.\n\nFix for bug 21018, TROVE-2016-12-002, and CVE-2016-1254"
+    },
+    "CVE-2012-2250": {
+      "e4abac08a2ade5329594dcc220a02b3b680cb9e8": "Merge remote-tracking branch 'origin/maint-0.2.3'\n\n(Using an -s ours merge for Not taking the CVE-2012-2250 fix from\nmaint-0.2.3; it would conflict.)",
+      "c442d85439dd406c846e930dedcd8ed4c780d66e": "Fix a remotely triggerable assertion failure (CVE-2012-2250)\n\nIf we completed the handshake for the v2 link protocol but wound up\nnegotiating the wong protocol version, we'd become so confused about\nwhat part of the handshake we were in that we'd promptly die with an\nassertion.\n\nThis is a fix for CVE-2012-2250; it's a bugfix on 0.2.3.6-alpha.\nAll servers running that version or later should really upgrade.\n\nBug and fix from \"some guy from France.\"  I tweaked his code slightly\nto make it log the IP of the offending node, and to forward-port it to\n0.2.4.",
+      "758428dd32128874cefacc92ef63c1b5bc9a656e": "Fix a remotely triggerable assertion failure (CVE-2012-2250)\n\nIf we completed the handshake for the v2 link protocol but wound up\nnegotiating the wong protocol version, we'd become so confused about\nwhat part of the handshake we were in that we'd promptly die with an\nassertion.\n\nThis is a fix for CVE-2012-2250; it's a bugfix on 0.2.3.6-alpha.\nAll servers running that version or later should really upgrade.\n\nBug and fix from \"some guy from France.\"  I tweaked his code slightly\nto make it log the IP of the offending node."
+    },
+    "CVE-2012-2249": {
+      "3d8b73db553712b2bea4fc74b8f478f1b1b39aee": "Discard extraneous renegotiation attempts in the v3 link protocol\n\nFailure to do so left us open to a remotely triggerable assertion\nfailure. Fixes CVE-2012-2249; bugfix on 0.2.3.6-alpha. Reported by\n\"some guy from France\".\n\nThis patch is a forward-port to 0.2.4, to work with the new channel\nlogic.",
+      "f357ef9dccccfb5ce2408dbd5f8456de02bac895": "Discard extraneous renegotiation attempts in the v3 link protocol\n\nFailure to do so left us open to a remotely triggerable assertion\nfailure. Fixes CVE-2012-2249; bugfix on 0.2.3.6-alpha. Reported by\n\"some guy from France\"."
+    },
+    "CVE-2011-4576": {
+      "2da0efb547b70a7caed59097036d1e59859a4b35": "Use correct CVE number for CVE-2011-4576. Found by fermenthor. bug 5066",
+      "db78fe45898a6d03727f8db68642bfebdfc10bf8": "Disable SSLv3 when using a not-up-to-date openssl\n\nThis is to address bug 4822, and CVE-2011-4576."
+    },
+    "CVE-2011-0427": {
+      "9bcb18738747e12629c38ae366b96993e2002859": "Authorities reject insecure Tors.\n\nThis patch should make us reject every Tor that was vulnerable to\nCVE-2011-0427.  Additionally, it makes us reject every Tor that couldn't\nhandle RELAY_EARLY cells, which helps with proposal 110 (#4339)."
+    },
+    "CVE-2011-2778": {
+      "796563f7f3924fb5f2bed39cd37e1471da657cc4": "Actually merge the CVE-2011-2778 log entry into ChangeLog"
+    },
+    "CVE-2011-2768": {
+      "4684ced1b3fced0543fa65bf01f75c5d81eaf464": "Add option to give guard flag to relays without the CVE-2011-2768 fix\n\nThis way, all of the DA operators can upgrade immediately, without nuking\nevery client's set of entry guards as soon as a majority of them upgrade.\n\nUntil enough guards have upgraded, a majority of dirauths should set this\nconfig option so that there are still enough guards in the network. After\na few days pass, all dirauths should use the default.",
+      "00fffbc1a15e2696a89c721d0c94dc333ff419ef": "Don't give the Guard flag to relays without the CVE-2011-2768 fix"
+    },
+    "CVE-2006-0414": {
+      "9cbfc008efa93b0588bb23f14ddf6f1602a83f1c": "Lasse and Paul's attack has a CVE: CVE-2006-0414\n\n\nsvn:r5868",
+      "20183cf55949c08896cc748ff067386c12e7536c": "Lasse and Paul's attack has a CVE: CVE-2006-0414\n\n\nsvn:r5868",
+      "95ae3ff0fe7c8a661812704b12ce8e285178a0a8": "Lasse and Paul's attack has a CVE: CVE-2006-0414\n\n\nsvn:r5868"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "vcs_url": "https://github.com/beego/beego",
+  "vulnerabilities": {
+    "CVE-2025-30223": {
+      "8ec11e65b57b8f779da8530159709e9f0d0db98a": "fix: fix for CVE-2025-30223, CVE-2021-27116, CVE-2021-27117 (#5801)\n\n* fix: fix for CVE-2025-30223, CVE-2021-27116, CVE-2021-27117\n\n* fix: fix for CVE-2025-30223, CVE-2021-27116, CVE-2021-27117, add utils for opening file source"
+    },
+    "CVE-2021-27116": {
+      "8ec11e65b57b8f779da8530159709e9f0d0db98a": "fix: fix for CVE-2025-30223, CVE-2021-27116, CVE-2021-27117 (#5801)\n\n* fix: fix for CVE-2025-30223, CVE-2021-27116, CVE-2021-27117\n\n* fix: fix for CVE-2025-30223, CVE-2021-27116, CVE-2021-27117, add utils for opening file source",
+      "1f40a88b0ccc861dee094371aeeb29a3f70a2ee6": "Fix CVE-2021-27116 CVE-2021-27117\n\n1. Adding O_NOFOLLOW flag to prevent symlink attacks\n\nThese changes help protect against various security issues including:\n\n- Symlink attacks where attackers could trick the application into modifying unintended files\n- Privilege escalation through improper file permissions\n\nSigned-off-by: chengjingtao <jtcheng0616@gmail.com>"
+    },
+    "CVE-2021-27117": {
+      "8ec11e65b57b8f779da8530159709e9f0d0db98a": "fix: fix for CVE-2025-30223, CVE-2021-27116, CVE-2021-27117 (#5801)\n\n* fix: fix for CVE-2025-30223, CVE-2021-27116, CVE-2021-27117\n\n* fix: fix for CVE-2025-30223, CVE-2021-27116, CVE-2021-27117, add utils for opening file source",
+      "1f40a88b0ccc861dee094371aeeb29a3f70a2ee6": "Fix CVE-2021-27116 CVE-2021-27117\n\n1. Adding O_NOFOLLOW flag to prevent symlink attacks\n\nThese changes help protect against various security issues including:\n\n- Symlink attacks where attackers could trick the application into modifying unintended files\n- Privilege escalation through improper file permissions\n\nSigned-off-by: chengjingtao <jtcheng0616@gmail.com>"
+    },
+    "CVE-2022-31836": {
+      "b602bdafcd302133cf3ca0f59df467ed6da125b2": "fix for the CVE-2022-31836 4ca2780dbf19d137746041886525fdebe594e50a (#5707)\n\nCo-authored-by: Ming Deng <mingflycash@gmail.com>"
+    },
+    "GHSA-6G9P-WV47-4FXQ": {
+      "8f89e12e6cafb106d5c201dbc3b2a338bfde74e2": "fix GHSA-6g9p-wv47-4fxq"
+    },
+    "CVE-2022-24450": {
+      "fef71f2a96e640db41b51fb0fd87be17890131e6": "Merge pull request #5121 from A7103/develop\n\nUpgrade `github.com/go-kit/kit` package to fix `CVE-2022-24450` vulnerability"
+    },
+    "CVE-2022-31259": {
+      "64cf44d725c8cc35d782327d333df9cbeb1bf2dd": "fix issue 4946 (#4954)\n\n* Update tree.go\r\n\r\nfix issue 4946 CVE-2022-31259"
+    }
+  }
+}

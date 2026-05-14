@@ -1,0 +1,12 @@
+{
+  "vcs_url": "https://android.googlesource.com/platform/frameworks/av",
+  "vulnerabilities": {
+    "CVE-2015-1538": {
+      "13758331f9db389271c1cb432f1a11edbf073ab2": "am 4e027b58: am a80a60fe: am 34f70071: Merge \"Fixed benign overflows triggered by tests CVE-2015-1538-1 and CVE-2015-1538-2 in CTS.\"\n\n* commit '4e027b587f6b05999ed10f14c4f8ccf0cd7a1f02':\n  Fixed benign overflows triggered by tests CVE-2015-1538-1 and CVE-2015-1538-2 in CTS.",
+      "4e027b587f6b05999ed10f14c4f8ccf0cd7a1f02": "am a80a60fe: am 34f70071: Merge \"Fixed benign overflows triggered by tests CVE-2015-1538-1 and CVE-2015-1538-2 in CTS.\"\n\n* commit 'a80a60fe98b49a85368ebfe454ccf9d276d95813':\n  Fixed benign overflows triggered by tests CVE-2015-1538-1 and CVE-2015-1538-2 in CTS.",
+      "a80a60fe98b49a85368ebfe454ccf9d276d95813": "am 34f70071: Merge \"Fixed benign overflows triggered by tests CVE-2015-1538-1 and CVE-2015-1538-2 in CTS.\"\n\n* commit '34f7007194bcc6a27cafc93e2a15eee468b3d746':\n  Fixed benign overflows triggered by tests CVE-2015-1538-1 and CVE-2015-1538-2 in CTS.",
+      "34f7007194bcc6a27cafc93e2a15eee468b3d746": "Merge \"Fixed benign overflows triggered by tests CVE-2015-1538-1 and CVE-2015-1538-2 in CTS.\"",
+      "ffd7950633edeb8e990770e4c8abb81bdcaa6f32": "Fixed benign overflows triggered by tests CVE-2015-1538-1 and\nCVE-2015-1538-2 in CTS.\n\nBug: 25016754\nChange-Id: I0ceb2c799899015be6b37d5e94fe306d0037a8d2"
+    }
+  }
+}

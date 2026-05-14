@@ -1,0 +1,11 @@
+{
+  "vcs_url": "https://android.googlesource.com/platform/external/webkit",
+  "vulnerabilities": {
+    "CVE-2008-2317": {
+      "db0ff3b0d66227d6946f8a613ebc3d160bea88c8": "This fixes two webkit bugs already fixed in the G1:\n\n(1) Memory corruption due to dangling ownerNode pointer on JSStyleSheet\nobject (CVE-2008-2317). Described by: http://trac.webkit.org/changeset/37368\n\n(2) Integer overflow in handling of JavaScript array indicees\n(CVE-2008-2303). This is a slightly smaller change than the one shown by:\nhttp://trac.webkit.org/changeset/37355"
+    },
+    "CVE-2008-2303": {
+      "db0ff3b0d66227d6946f8a613ebc3d160bea88c8": "This fixes two webkit bugs already fixed in the G1:\n\n(1) Memory corruption due to dangling ownerNode pointer on JSStyleSheet\nobject (CVE-2008-2317). Described by: http://trac.webkit.org/changeset/37368\n\n(2) Integer overflow in handling of JavaScript array indicees\n(CVE-2008-2303). This is a slightly smaller change than the one shown by:\nhttp://trac.webkit.org/changeset/37355"
+    }
+  }
+}

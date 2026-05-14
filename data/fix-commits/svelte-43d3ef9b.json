@@ -1,0 +1,14 @@
+{
+  "vcs_url": "https://github.com/sveltejs/svelte",
+  "vulnerabilities": {
+    "GHSA-F3CJ-J4F6-WQ85": {
+      "a16ebc67bbcf8f708360195687e1b2719463e1a4": "Merge commit from fork\n\nhttps://github.com/sveltejs/svelte/security/advisories/GHSA-f3cj-j4f6-wq85\n\nCo-authored-by: Simon Holthausen <simon.holthausen@vercel.com>"
+    },
+    "GHSA-GW32-9RMW-QWWW": {
+      "a31dec5eb30978cff7ff4d77f4bf316841f711bc": "Merge pull request from GHSA-gw32-9rmw-qwww\n\n* rename previous test\n\n* add new <textarea bind:value> test\n\n* escape value in <textarea bind:value>\n\n---------\n\nCo-authored-by: Conduitry <git@chor.date>"
+    },
+    "CVE-2018-6341": {
+      "065d0f7411dd1df91a7d26c6a0103e2d0870cf3c": "Merge pull request #1623 from sveltejs/CVE-2018-6341\n\nSanitize spread attributes in SSR"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/markedjs/marked",
+  "vulnerabilities": {
+    "GHSA-RRRM-QJM4-V8HF": {
+      "c4a3ccd344b6929afa8a1d50ac54a721e57012c0": "Merge pull request from GHSA-rrrm-qjm4-v8hf\n\n* fix: fix reflink redos\n\nCo-authored-by: MakeNowJust <make.just.on@gmail.com>\n\n* fix: fix def redos\n\nCo-authored-by: MakeNowJust <make.just.on@gmail.com>\n\n* fix block label for multiple slashes\n\nCo-authored-by: MakeNowJust <make.just.on@gmail.com>"
+    }
+  }
+}

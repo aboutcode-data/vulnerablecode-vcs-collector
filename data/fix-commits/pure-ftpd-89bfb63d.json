@@ -1,0 +1,12 @@
+{
+  "vcs_url": "https://github.com/jedisct1/pure-ftpd",
+  "vulnerabilities": {
+    "CVE-2011-0418": {
+      "a56096baf8c98cead873839dcbb4b30476a309b3": "Check the number of braces in glob()\nSee CVE-2011-0418"
+    },
+    "CVE-2011-0411": {
+      "f702f66d94fdf7ee6c8835dc9ad957d945f8275e": "Flush the command buffer after switching to TLS.\nFixes a flaw similar to CVE-2011-0411.",
+      "65c4d4ad331e94661de763e9b5304d28698999c4": "Flush the command buffer after switching to TLS.\nFixes a flaw similar to CVE-2011-0411."
+    }
+  }
+}

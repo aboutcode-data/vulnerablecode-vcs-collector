@@ -1,0 +1,14 @@
+{
+  "vcs_url": "https://github.com/apache/ant",
+  "vulnerabilities": {
+    "GHSA-269G-PWP5-87PP": {
+      "4ae9d1cd603ca52659891dcd391df813fcee6bb5": "bump JUnit to fix https://github.com/junit-team/junit4/security/advisories/GHSA-269g-pwp5-87pp"
+    },
+    "CVE-2013-1571": {
+      "7bc745a289cf68cb2eba647bbfba9e9ec06eb771": "post-process generated javadocs as workaround for CVE-2013-1571 - based on Maven patch by Uwe Schindler - PR 55132\n\ngit-svn-id: https://svn.apache.org/repos/asf/ant/core/trunk@1496083 13f79535-47bb-0310-9956-ffa450edef68"
+    },
+    "CVE-2012-2098": {
+      "08284bc7aa7d066544b30974231240c9b73597eb": "[CVE-2012-2098] merge bzip2 edge case improvement from Commons Compress\n\ngit-svn-id: https://svn.apache.org/repos/asf/ant/core/trunk@1340895 13f79535-47bb-0310-9956-ffa450edef68"
+    }
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "vcs_url": "https://github.com/apache/james-project",
+  "vulnerabilities": {
+    "CVE-2025-67735": {
+      "5d9f29746e5e9817d76214d4a709a4c9696750c8": "[UPGRADE] Upgrade Netty 4.1.126.Final \u2192 4.1.132.Final (CVE-2025-67735)"
+    },
+    "CVE-2026-41044": {
+      "d8d6f8717fe3e409c20b771203010ea4f0bc0570": "[UPGRADE] activeMQ 6.2.4 -> 6.2.5 (CVE-2026-41044 CVE-2026-41043 CVE-2026-40466)"
+    },
+    "CVE-2026-41043": {
+      "d8d6f8717fe3e409c20b771203010ea4f0bc0570": "[UPGRADE] activeMQ 6.2.4 -> 6.2.5 (CVE-2026-41044 CVE-2026-41043 CVE-2026-40466)"
+    },
+    "CVE-2026-40466": {
+      "d8d6f8717fe3e409c20b771203010ea4f0bc0570": "[UPGRADE] activeMQ 6.2.4 -> 6.2.5 (CVE-2026-41044 CVE-2026-41043 CVE-2026-40466)"
+    },
+    "CVE-2026-1605": {
+      "4b366f96df3328e493e107b1634b6ad5d10fb0f6": "[UPGRADE] Spark java 3.0.2 -> 3.0.4 (CVE-2026-1605)"
+    },
+    "CVE-2026-34477": {
+      "3df6cab49c5ab5696949970c6030893249771232": "[UPGRADE] Log4J 2.24.3 -> 2.25.4 (CVE-2026-34477 CVE-2026-34479 CVE-2026-34478 CVE-2026-34480)"
+    },
+    "CVE-2026-34479": {
+      "3df6cab49c5ab5696949970c6030893249771232": "[UPGRADE] Log4J 2.24.3 -> 2.25.4 (CVE-2026-34477 CVE-2026-34479 CVE-2026-34478 CVE-2026-34480)"
+    },
+    "CVE-2026-34478": {
+      "3df6cab49c5ab5696949970c6030893249771232": "[UPGRADE] Log4J 2.24.3 -> 2.25.4 (CVE-2026-34477 CVE-2026-34479 CVE-2026-34478 CVE-2026-34480)"
+    },
+    "CVE-2026-34480": {
+      "3df6cab49c5ab5696949970c6030893249771232": "[UPGRADE] Log4J 2.24.3 -> 2.25.4 (CVE-2026-34477 CVE-2026-34479 CVE-2026-34478 CVE-2026-34480)"
+    },
+    "CVE-2026-40046": {
+      "ac9388f68f8b18f89cbc9517aa2a5cef2f443169": "[UPGRADE] ActiveMQ 6.2.3 -> 6.2.4 (CVE-2026-40046 CVE-2026-39304)"
+    },
+    "CVE-2026-39304": {
+      "ac9388f68f8b18f89cbc9517aa2a5cef2f443169": "[UPGRADE] ActiveMQ 6.2.3 -> 6.2.4 (CVE-2026-40046 CVE-2026-39304)"
+    },
+    "CVE-2026-33227": {
+      "7b7815319729ad570c680a2808a3fc0f14f0567b": "[UPGRADE] ActiveMQ 6.2.1 -> 6.2.3 (CVE-2026-33227 + CVE-2026-34197) (#2994)"
+    },
+    "CVE-2026-34197": {
+      "7b7815319729ad570c680a2808a3fc0f14f0567b": "[UPGRADE] ActiveMQ 6.2.1 -> 6.2.3 (CVE-2026-33227 + CVE-2026-34197) (#2994)"
+    },
+    "CVE-2025-66168": {
+      "b70d73d82d64ff1c296a0df393cc62709f510906": "Upgrade ActiveMQ & friends - CVE-2025-66168 + CVE-2026-27446 (#2961)"
+    },
+    "CVE-2026-27446": {
+      "b70d73d82d64ff1c296a0df393cc62709f510906": "Upgrade ActiveMQ & friends - CVE-2025-66168 + CVE-2026-27446 (#2961)"
+    },
+    "CVE-2026-24400": {
+      "29d0271053ecef3ddfd29c975162243d7f58e962": "Bump org.assertj:assertj-core from 3.27.3 to 3.27.7 (#2920)\n\nFix XXE vulnerability in isXmlEqualTo assertion (CVE-2026-24400)"
+    },
+    "CVE-2025-11226": {
+      "0cd58041113e45c8346e9889c74fd60594f59462": "[UPGRADE] logback 1.5.18 -> 1.5.19 to fix minor CVE-2025-11226"
+    },
+    "CVE-2025-48924": {
+      "be7bd6db582ffa67994caf8eba40999beb20e0a8": "[FIX] commons-lang3 3.17.0 -> 3.18.0 (CVE-2025-48924) (#2768)"
+    },
+    "CVE-2025-48976": {
+      "2f59333b9f08640d358ccbd6e7d0673a0ab2bcf7": "[UPGRADE] commons-fileupload 1.5 -> 1.6.0\n\nFixes CVE-2025-48976 FileUpload DoS via part headers",
+      "07faa8d2f2eaef2415414ed2f64d5138ba119183": "[UPGRADE] commons-fileupload 1.5 -> 1.6.0\n\nFixes CVE-2025-48976 FileUpload DoS via part headers"
+    },
+    "CVE-2025-48734": {
+      "4b510740525c9bf9fef4238607907bf8317adc17": "[CVE] Upgrade commons-beanutils 1.9.4 -> 1.11.0 (CVE-2025-48734)"
+    },
+    "CVE-2024-37358": {
+      "0f33615907e4866c350acd8f554389b13450fd5f": "[ANNOUNCE] CVE-2024-37358 + CVE-2024-45626 (#2627)"
+    },
+    "CVE-2024-45626": {
+      "0f33615907e4866c350acd8f554389b13450fd5f": "[ANNOUNCE] CVE-2024-37358 + CVE-2024-45626 (#2627)"
+    },
+    "CVE-2024-12798": {
+      "187428bf0f73803337e9649bcff2df50e1bf1269": "[UPGRADE] Logback 1.5.12 -> 1.5.15 (#2581)\n\nFixes:\r\n\r\n - https://www.cve.org/CVERecord?id=CVE-2024-12798\r\n - https://www.cve.org/CVERecord?id=CVE-2024-12801"
+    },
+    "CVE-2024-12801": {
+      "187428bf0f73803337e9649bcff2df50e1bf1269": "[UPGRADE] Logback 1.5.12 -> 1.5.15 (#2581)\n\nFixes:\r\n\r\n - https://www.cve.org/CVERecord?id=CVE-2024-12798\r\n - https://www.cve.org/CVERecord?id=CVE-2024-12801"
+    },
+    "CVE-2024-47554": {
+      "91090093c430d5b11ebecdc33ee24865edf8f762": "Bump commons-io to 2.17.0\n\nAvoid CVE-2024-47554 https://nvd.nist.gov/vuln/detail/CVE-2024-47554"
+    },
+    "CVE-2023-51518": {
+      "487d9faeead180a7cd14656632a4ba68c18da554": "[DOCUMENTATION] CVE-2023-51518 CVE-2023-51747 CVE-2024-21742 (#2047)"
+    },
+    "CVE-2023-51747": {
+      "487d9faeead180a7cd14656632a4ba68c18da554": "[DOCUMENTATION] CVE-2023-51518 CVE-2023-51747 CVE-2024-21742 (#2047)"
+    },
+    "CVE-2024-21742": {
+      "487d9faeead180a7cd14656632a4ba68c18da554": "[DOCUMENTATION] CVE-2023-51518 CVE-2023-51747 CVE-2024-21742 (#2047)"
+    },
+    "CVE-2023-42503": {
+      "280b92f769099bccd829ed706221f7032792eb68": "FIX common compress 1.23.0 -> 1.24.0 to fix CVE-2023-42503 (#1728)"
+    },
+    "CVE-2023-26269": {
+      "e8da8518a5b2a187634965964e99e63dadaea829": "[ANNOUNCE] CVE-2023-26269: Privilege escalation through unauthenticated JMX (#1507)",
+      "7334d8593cb9c6f21c3834a63a2f2a1b515928ca": "[ANNOUNCE] CVE-2023-26269: Privilege escalation through unauthenticated JMX (#1507)"
+    },
+    "CVE-2022-45935": {
+      "b5580d13d6c74ecbf647127eff1a3ac1086f5493": "[DOC] CVE-2022-45935: Temporary File Information Disclosure in Apache JAMES (#1378)"
+    },
+    "CVE-2022-42004": {
+      "ad32445a6fcbd10cd6c78d1d744ba9df1792b8de": "[UPGRADE] com.fasterxml.jackson.core:jackson-databind 2.13.3 -> 2.13.4.2\n\nFixing:\nCVE-2022-42004\nCVE-2022-42003"
+    },
+    "CVE-2022-42003": {
+      "ad32445a6fcbd10cd6c78d1d744ba9df1792b8de": "[UPGRADE] com.fasterxml.jackson.core:jackson-databind 2.13.3 -> 2.13.4.2\n\nFixing:\nCVE-2022-42004\nCVE-2022-42003"
+    },
+    "CVE-2022-28220": {
+      "670dd9da473820112b9b587fdc8056a3affbef0a": "[CHANGELOG] Mention CVE-2022-28220 STARTTLS command injection in Apache JAMES (#1188)"
+    },
+    "CVE-2021-44228": {
+      "372ed02f0e9bda1a64a55b150c0ea75d48091001": "Announce CVE-2021-44228 (#1180)",
+      "fb939c7aa286c91190c910691be853279a125469": "JAMES-3683 Upgrade Log4J to 2.15.0 (#794)\n\nCF CVE-2021-44228",
+      "19de56ec618ed9fff45d1a5941d8b7de2502448a": "JAMES-3683 log4j 2.14.1 -> 2.15.0 to address CVE-2021-44228 (#793)\n\nhttps://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228"
+    },
+    "CVE-2020-36518": {
+      "c6a1120033e7651054608b0320293f8541190ac7": "[UPGRADE] jackson 2.13.1 -> 2.13.2.2 fixes CVE-2020-36518\n\nhttps://security.snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-2421244\n\ncom.fasterxml.jackson.core:jackson-databind is a library which contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS) via a large depth of nested objects.",
+      "8f5c7a030135051e8c80bfccf593e411bb01ada9": "[UPGRADE] jackson 2.13.1 -> 2.13.2.2 fixes CVE-2020-36518 [3.7.x] (#982)\n\nhttps://security.snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-2421244\r\n\r\ncom.fasterxml.jackson.core:jackson-databind is a library which contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor.\r\n\r\nAffected versions of this package are vulnerable to Denial of Service (DoS) via a large depth of nested objects."
+    },
+    "CVE-2015-5254": {
+      "a46bd77135fa4cd5c45ef3b17e80109dc8adc97d": "[SonarLint] CVE-2015-5254 Explicitly says our ActiveMQ code not to deserialize untrusted data\n\nActiveMQ can send/receive JMS Object messages (named ObjectMessage in ActiveMQ context) to comply with JMS specification. Internally, ActiveMQ relies on Java serialization mechanism for marshaling/unmarshaling of the message payload. Deserialization based on data supplied by the user could lead to remote code execution attacks, where the structure of the serialized data is changed to modify the behavior of the object being unserialized.\nTo limit the risk to be victim of such attack, ActiveMQ 5.12.2+ enforces developers to explicitly whitelist packages that can be exchanged using ObjectMessages.\n\nOur exposure is anyway very limited (only an in-vm one),\nbut taking defensive measures likely do not hurt."
+    },
+    "CVE-2022-22931": {
+      "7d22c6fbd79d817bc137da7b9d712cb2802a7df8": "CVE-2022-22931 JAMES-3646 Rely on strong typing for file paths operations (#877)"
+    },
+    "CVE-2021-44832": {
+      "7e2f40a7231933feb0d6e18999d7493d12d2fd13": "[UPGRADE] Upgrade log4j 2.17.0 -> 2.17.1 (#817)\n\nSolves CVE-2021-44832 (Score 6.6)\r\n\r\nhttps://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44832\r\n\r\nApache Log4j2 versions 2.0-beta7 through 2.17.0\r\n(excluding security fix releases 2.3.2 and 2.12.4)\r\nare vulnerable to a remote code execution (RCE)\r\nattack when a configuration uses a JDBC Appender\r\nwith a JNDI LDAP data source URI when an attacker\r\nhas control of the target LDAP server. This issue\r\nis fixed by limiting JNDI data source names to the\r\njava protocol in Log4j2 versions 2.17.1, 2.12.4,\r\nand 2.3.2.",
+      "c3513b2b39a3f3167f5ecaf602f1c29f5d9a3562": "[UPGRADE] Upgrade log4j 2.17.0 -> 2.17.1 (#816)\n\nSolves CVE-2021-44832 (Score 6.6)\r\n\r\nhttps://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44832\r\n\r\nApache Log4j2 versions 2.0-beta7 through 2.17.0\r\n(excluding security fix releases 2.3.2 and 2.12.4)\r\nare vulnerable to a remote code execution (RCE)\r\nattack when a configuration uses a JDBC Appender\r\nwith a JNDI LDAP data source URI when an attacker\r\nhas control of the target LDAP server. This issue\r\nis fixed by limiting JNDI data source names to the\r\njava protocol in Log4j2 versions 2.17.1, 2.12.4,\r\nand 2.3.2."
+    },
+    "CVE-2021-38542": {
+      "1920424d0cef803df80f92ea06e9b77b5a169224": "[SITE] Fill the security page following recent CVE announces (#818)\n\n- Adds a Reporting vulnerabilities section\r\n - CVE-2021-38542: Apache James vulnerable to STARTTLS command injection (IMAP and POP3)\r\n - CVE-2021-40110: Apache James IMAP vulnerable to a ReDoS\r\n - CVE-2021-40111: Apache James IMAP parsing Denial Of Service\r\n - CVE-2021-40525: Apache James: Sieve file storage\r\n  vulnerable to path traversal attacks\r\n - Add details for CVE-2017-12628"
+    },
+    "CVE-2021-40110": {
+      "1920424d0cef803df80f92ea06e9b77b5a169224": "[SITE] Fill the security page following recent CVE announces (#818)\n\n- Adds a Reporting vulnerabilities section\r\n - CVE-2021-38542: Apache James vulnerable to STARTTLS command injection (IMAP and POP3)\r\n - CVE-2021-40110: Apache James IMAP vulnerable to a ReDoS\r\n - CVE-2021-40111: Apache James IMAP parsing Denial Of Service\r\n - CVE-2021-40525: Apache James: Sieve file storage\r\n  vulnerable to path traversal attacks\r\n - Add details for CVE-2017-12628"
+    },
+    "CVE-2021-40111": {
+      "1920424d0cef803df80f92ea06e9b77b5a169224": "[SITE] Fill the security page following recent CVE announces (#818)\n\n- Adds a Reporting vulnerabilities section\r\n - CVE-2021-38542: Apache James vulnerable to STARTTLS command injection (IMAP and POP3)\r\n - CVE-2021-40110: Apache James IMAP vulnerable to a ReDoS\r\n - CVE-2021-40111: Apache James IMAP parsing Denial Of Service\r\n - CVE-2021-40525: Apache James: Sieve file storage\r\n  vulnerable to path traversal attacks\r\n - Add details for CVE-2017-12628"
+    },
+    "CVE-2021-40525": {
+      "1920424d0cef803df80f92ea06e9b77b5a169224": "[SITE] Fill the security page following recent CVE announces (#818)\n\n- Adds a Reporting vulnerabilities section\r\n - CVE-2021-38542: Apache James vulnerable to STARTTLS command injection (IMAP and POP3)\r\n - CVE-2021-40110: Apache James IMAP vulnerable to a ReDoS\r\n - CVE-2021-40111: Apache James IMAP parsing Denial Of Service\r\n - CVE-2021-40525: Apache James: Sieve file storage\r\n  vulnerable to path traversal attacks\r\n - Add details for CVE-2017-12628"
+    },
+    "CVE-2017-12628": {
+      "1920424d0cef803df80f92ea06e9b77b5a169224": "[SITE] Fill the security page following recent CVE announces (#818)\n\n- Adds a Reporting vulnerabilities section\r\n - CVE-2021-38542: Apache James vulnerable to STARTTLS command injection (IMAP and POP3)\r\n - CVE-2021-40110: Apache James IMAP vulnerable to a ReDoS\r\n - CVE-2021-40111: Apache James IMAP parsing Denial Of Service\r\n - CVE-2021-40525: Apache James: Sieve file storage\r\n  vulnerable to path traversal attacks\r\n - Add details for CVE-2017-12628",
+      "34d11a2b7021331c43c11e7be8f7672052dc2736": "JAMES-2198 CVE-2017-12628 Upgrade commons collection to version 3.2.2",
+      "537416f199feb80f2ef420fb3869daed5fda5d7e": "CVE-2017-12628 Upgrade commons-collections"
+    },
+    "CVE-2021-42550": {
+      "1f10fecd1f2454a793839c90e5ebf78c55f26c7e": "[UPGRADE] Logback 1.2.3 -> 1.2.9\n\nFixes https://cve.report/CVE-2021-42550",
+      "cfdce40e5507e2b3142b34d2eb6fbd445ab023da": "[UPGRADE] Logback 1.2.5 -> 1.2.9\n\nFixes https://cve.report/CVE-2021-42550"
+    },
+    "CVE-2021-45105": {
+      "502f707b4b98c0958d0ff157f25932a5b0fcfa98": "Upgrade log4j to 2.17.0 [CVE-2021-45105] (#801)",
+      "35ca6ce01c7c1bbbfd607ab7a9041f1520d7e9ca": "Upgrade log4j to 2.17.0 [CVE-2021-45105]"
+    },
+    "CVE-2021-45046": {
+      "4b932493452b57c850b79c6282747c221f4a0752": "JAMES-3863 Upgrade Log4J to 2.16.0 cf CVE-2021-45046"
+    },
+    "CVE-2021-37136": {
+      "c59c139dd6928ad9419a002639f0f519349cc1de": "[UPGRADE] netty-* 4.1.65 -> 4.1.68\n\nFixes:\n - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37136 (DoS)\n - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37137 (DoS)"
+    },
+    "CVE-2021-37137": {
+      "c59c139dd6928ad9419a002639f0f519349cc1de": "[UPGRADE] netty-* 4.1.65 -> 4.1.68\n\nFixes:\n - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37136 (DoS)\n - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37137 (DoS)"
+    },
+    "CVE-2021-37714": {
+      "c920db144998ce1a9dc8521a1c6592bb413d9c77": "[UPGRADE] JSOUP 1.14.1 -> 1.14.2 to address CVE-2021-37714\n\nhttps://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37714\n\njsoup is a Java library for working with HTML. Those using jsoup versions\nprior to 1.14.2 to parse untrusted HTML or XML may be vulnerable to DOS\nattacks. If the parser is run on user supplied input, an attacker may supply\ncontent that causes the parser to get stuck (loop indefinitely until\ncancelled), to complete more slowly than usual, or to throw an unexpected\nexception. This effect may support a denial of service attack. The issue is\npatched in version 1.14.2. There are a few available workarounds. Users may\nrate limit input parsing, limit the size of inputs based on system resources,\nand/or implement thread watchdogs to cap and timeout parse runtimes."
+    },
+    "CVE-2021-36090": {
+      "960fd11e125be8f0353df4008454c16fe95b7532": "[UPGRADE] Security upgrade: common-compress to 1.21\n\nFixes CVE-2021-36090 that exposes to denial of services attacks"
+    },
+    "CVE-2021-31812": {
+      "8fc5942de08e388dc6b20fc16bbe4c563c72d57e": "Upgrade pdfbox to 2.0.24\n\n2 CVEs for versions anterior to 2.0.24 have been reported:\n- https://nvd.nist.gov/vuln/detail/CVE-2021-31812\n- https://nvd.nist.gov/vuln/detail/CVE-2021-31811\n\nThis upgrade should solve them."
+    },
+    "CVE-2021-31811": {
+      "8fc5942de08e388dc6b20fc16bbe4c563c72d57e": "Upgrade pdfbox to 2.0.24\n\n2 CVEs for versions anterior to 2.0.24 have been reported:\n- https://nvd.nist.gov/vuln/detail/CVE-2021-31812\n- https://nvd.nist.gov/vuln/detail/CVE-2021-31811\n\nThis upgrade should solve them."
+    },
+    "CVE-2020-5419": {
+      "533097baaada2a9c018273a63c32dfe81047630a": "JAMES-3593 Recommend upgrade of RabbitMQ to 3.8.16\n\nAccording to https://www.rabbitmq.com/changelog.html RabbitMQ prior this version is subject to several CVE:\n\n - https://tanzu.vmware.com/security/cve-2020-5419\n - https://tanzu.vmware.com/security/cve-2021-22117\n - https://tanzu.vmware.com/security/cve-2021-22116\n\nWe currently run on `3.8.3`..."
+    },
+    "CVE-2021-22117": {
+      "533097baaada2a9c018273a63c32dfe81047630a": "JAMES-3593 Recommend upgrade of RabbitMQ to 3.8.16\n\nAccording to https://www.rabbitmq.com/changelog.html RabbitMQ prior this version is subject to several CVE:\n\n - https://tanzu.vmware.com/security/cve-2020-5419\n - https://tanzu.vmware.com/security/cve-2021-22117\n - https://tanzu.vmware.com/security/cve-2021-22116\n\nWe currently run on `3.8.3`..."
+    },
+    "CVE-2021-22116": {
+      "533097baaada2a9c018273a63c32dfe81047630a": "JAMES-3593 Recommend upgrade of RabbitMQ to 3.8.16\n\nAccording to https://www.rabbitmq.com/changelog.html RabbitMQ prior this version is subject to several CVE:\n\n - https://tanzu.vmware.com/security/cve-2020-5419\n - https://tanzu.vmware.com/security/cve-2021-22117\n - https://tanzu.vmware.com/security/cve-2021-22116\n\nWe currently run on `3.8.3`..."
+    },
+    "CVE-2021-28657": {
+      "c690e6081c1b34596be5faf7ad958bff324998f5": "[UPGRADE] Adopt Apache Tika 1.26\n\n1.25 and before are subject to CVE-2021-28657\nCVE-2021-27906 CVE-2021-27807\n\n1.24 is subject to CVE-2020-9489"
+    },
+    "CVE-2021-27906": {
+      "c690e6081c1b34596be5faf7ad958bff324998f5": "[UPGRADE] Adopt Apache Tika 1.26\n\n1.25 and before are subject to CVE-2021-28657\nCVE-2021-27906 CVE-2021-27807\n\n1.24 is subject to CVE-2020-9489"
+    },
+    "CVE-2021-27807": {
+      "c690e6081c1b34596be5faf7ad958bff324998f5": "[UPGRADE] Adopt Apache Tika 1.26\n\n1.25 and before are subject to CVE-2021-28657\nCVE-2021-27906 CVE-2021-27807\n\n1.24 is subject to CVE-2020-9489"
+    },
+    "CVE-2020-9489": {
+      "c690e6081c1b34596be5faf7ad958bff324998f5": "[UPGRADE] Adopt Apache Tika 1.26\n\n1.25 and before are subject to CVE-2021-28657\nCVE-2021-27906 CVE-2021-27807\n\n1.24 is subject to CVE-2020-9489"
+    },
+    "CVE-2021-26118": {
+      "8c337b2db3bb089884e29bc3c90167a2c0756184": "JAMES-3496 Update ActiveMQ and Artemis\n\nSeveral CVE had been announced by the ActiveMQ PMC, namely:\n\n - CVE-2021-26118: Flaw in ActiveMQ Artemis OpenWire support\n - CVE-2021-26117: ActiveMQ: LDAP-Authentication does not verify passwords on servers with anonymous bind\n\nWe do not use these features thus JAMES server is unaffected however updating these components seems like to be a good idea to me."
+    },
+    "CVE-2021-26117": {
+      "8c337b2db3bb089884e29bc3c90167a2c0756184": "JAMES-3496 Update ActiveMQ and Artemis\n\nSeveral CVE had been announced by the ActiveMQ PMC, namely:\n\n - CVE-2021-26118: Flaw in ActiveMQ Artemis OpenWire support\n - CVE-2021-26117: ActiveMQ: LDAP-Authentication does not verify passwords on servers with anonymous bind\n\nWe do not use these features thus JAMES server is unaffected however updating these components seems like to be a good idea to me."
+    },
+    "CVE-2020-1945": {
+      "dde16a135c5679c1e69be739e96f4771b4198400": "[Security fix] Upgrade org.apache.ant:ant from 1.10.6 to 1.10.8\n\nCVE-2020-1945\nmoderate severity\nVulnerable versions: >= 1.10.0, < 1.10.8\nPatched version: 1.10.8\n\nApache Ant 1.1 to 1.9.14 and 1.10.0 to 1.10.7 uses the default temporary directory identified by the Java system property java.io.tmpdir for several tasks and may thus leak sensitive information. The fixcrlf and replaceregexp tasks also copy files from the temporary directory back into the build tree allowing an attacker to inject modified source files into the build process."
+    },
+    "CVE-2019-10088": {
+      "cdfef0d8dd5b492e64f21cda5e9bc8fcb070f5cb": "JAMES-2855 Upgrade tika server image from 1.20 -> 1.22\n\nTo fix:\n- [CVE-2019-10088] OOM from a crafted Zip File in Apache Tika's RecursiveParserWrapper\n- [CVE-2019-10093] Denial of Service in Apache Tika's 2003ml and 2006ml Parsers\n- [CVE-2019-10094] StackOverflow from Crafted Package/Compressed Files in Apache Tika's RecursiveParserWrapper"
+    },
+    "CVE-2019-10093": {
+      "cdfef0d8dd5b492e64f21cda5e9bc8fcb070f5cb": "JAMES-2855 Upgrade tika server image from 1.20 -> 1.22\n\nTo fix:\n- [CVE-2019-10088] OOM from a crafted Zip File in Apache Tika's RecursiveParserWrapper\n- [CVE-2019-10093] Denial of Service in Apache Tika's 2003ml and 2006ml Parsers\n- [CVE-2019-10094] StackOverflow from Crafted Package/Compressed Files in Apache Tika's RecursiveParserWrapper"
+    },
+    "CVE-2019-10094": {
+      "cdfef0d8dd5b492e64f21cda5e9bc8fcb070f5cb": "JAMES-2855 Upgrade tika server image from 1.20 -> 1.22\n\nTo fix:\n- [CVE-2019-10088] OOM from a crafted Zip File in Apache Tika's RecursiveParserWrapper\n- [CVE-2019-10093] Denial of Service in Apache Tika's 2003ml and 2006ml Parsers\n- [CVE-2019-10094] StackOverflow from Crafted Package/Compressed Files in Apache Tika's RecursiveParserWrapper"
+    },
+    "CVE-2019-12402": {
+      "a9197d2caa47fea12d87dca76cb0005c02b1a102": "JAMES-2855 Upgrade commons-compress 1.18 -> 1.19\n\n[CVE-2019-12402] Apache Commons Compress denial of service vulnerability\nSeverity: Low\n\nVersions Affected:\nApache Commons Compress 1.15 to 1.18\n\nDescription:\nThe file name encoding algorithm used internally in Apache Commons\nCompress can get into an infinite loop when faced with specially\ncrafted inputs. This can lead to a denial of service attack if an\nattacker can choose the file names inside of an archive created by\nCompress.\n\nMitigation:\nCommons Compress users should upgrade to 1.19 or later.\n\nImpact on James: Non affected. The only end-user exposed functionality\nrelying on commons-compress is experimental, and relies on randomly generated\nfile name (Deleted messages export & messageIds for name generation)"
+    },
+    "CVE-2019-9658": {
+      "47d23061be958af8e21fdaa9f83c86a174e2b0cf": "JAMES-2693 Update com.puppycrawl.tools:checkstyle to respond to CVE-2019-9658"
+    },
+    "CVE-2018-17197": {
+      "61baf0772417e562b55afc2af64d41d0c66ca370": "JAMES-2634 CVE-2018-17197 Recommend using Tika after version 1.20"
+    },
+    "CVE-2017-15705": {
+      "acd245f76c72af577e81f4b5e01bea5458c3621d": "JAMES-2558 Tests should rely on SpamAssassin 3.4.2\n\nFixes CVE-2017-15705, CVE-2016-1238, CVE-2018-11780 & CVE-2018-11781",
+      "743bc85b3eda9027cb407b99e0ed70f43fa60a65": "JAMES-2558 Tests should rely on SpamAssassin 3.4.2\n\nFixes CVE-2017-15705, CVE-2016-1238, CVE-2018-11780 & CVE-2018-11781"
+    },
+    "CVE-2016-1238": {
+      "acd245f76c72af577e81f4b5e01bea5458c3621d": "JAMES-2558 Tests should rely on SpamAssassin 3.4.2\n\nFixes CVE-2017-15705, CVE-2016-1238, CVE-2018-11780 & CVE-2018-11781",
+      "743bc85b3eda9027cb407b99e0ed70f43fa60a65": "JAMES-2558 Tests should rely on SpamAssassin 3.4.2\n\nFixes CVE-2017-15705, CVE-2016-1238, CVE-2018-11780 & CVE-2018-11781"
+    },
+    "CVE-2018-11780": {
+      "acd245f76c72af577e81f4b5e01bea5458c3621d": "JAMES-2558 Tests should rely on SpamAssassin 3.4.2\n\nFixes CVE-2017-15705, CVE-2016-1238, CVE-2018-11780 & CVE-2018-11781",
+      "743bc85b3eda9027cb407b99e0ed70f43fa60a65": "JAMES-2558 Tests should rely on SpamAssassin 3.4.2\n\nFixes CVE-2017-15705, CVE-2016-1238, CVE-2018-11780 & CVE-2018-11781"
+    },
+    "CVE-2018-11781": {
+      "acd245f76c72af577e81f4b5e01bea5458c3621d": "JAMES-2558 Tests should rely on SpamAssassin 3.4.2\n\nFixes CVE-2017-15705, CVE-2016-1238, CVE-2018-11780 & CVE-2018-11781",
+      "743bc85b3eda9027cb407b99e0ed70f43fa60a65": "JAMES-2558 Tests should rely on SpamAssassin 3.4.2\n\nFixes CVE-2017-15705, CVE-2016-1238, CVE-2018-11780 & CVE-2018-11781"
+    },
+    "CVE-2018-11797": {
+      "c3f5b26532c9b01459c2cdc0a0037fdcb08944aa": "JAMES-2561 Upgrade PDFBox to 2.0.12\n\nCVE-2018-11797: In Apache PDFBox 1.8.0 to 1.8.15 and 2.0.0RC1 to 2.0.11, a carefully crafted PDF file can trigger an extremely long running computation when parsing the page tree.\n\nThis dependency is used only in tests but we should perform the upgrade anyway."
+    },
+    "CVE-2018-8041": {
+      "8f5df4978450810394c2d420cd33a04262379920": "JAMES-2558 Upgrade to Apache Camel 2.22.1\n\nFixes CVE-2018-8041"
+    },
+    "CVE-2018-11771": {
+      "82c630b5ec633d5720861790b5616f77ba844b0e": "JAMES-2426 Update commons-compress to 1.18\n\nThis fixes CVE-2018-11771 which reported a denial of service.\n\nFrom CVE announcement:\n\nWhen reading a specially crafted ZIP archive, the read method of\nZipArchiveInputStream can fail to return the correct EOF indication\nafter the end of the stream has been reached.  When combined with a\njava.io.InputStreamReader this can lead to an infinite stream, which\ncan be used to mount a denial of service attack against services that\nuse Compress' zip package."
+    },
+    "CVE-2017-9735": {
+      "7efdc530b17d8f64eb0461183b64fdfb1d2b2fee": "JAMES-2209 Upgrade Jetty to 9.4.7.v20170914\n\nJetty 9.4.4.v20170414 is vulnerable to CVE-2017-9735."
+    },
+    "CVE-2017-5929": {
+      "434126b3253416e1c0ab3365950bf3908cfba8b4": "JAMES-2209 Upgrade Logback to 1.1.11\n\nlogback-classic is vulnerable to CVE-2017-5929."
+    },
+    "CVE-2015-5183": {
+      "36ee04014f0136a3dafcbba23bc5b42fa09a81e0": "JAMES-2209 Upgrade ActiveMQ to 5.15.2\n\nActiveMQ 5.15.0 is vulberable to CVE-2015-5183 and CVE-2015-5184."
+    },
+    "CVE-2015-5184": {
+      "36ee04014f0136a3dafcbba23bc5b42fa09a81e0": "JAMES-2209 Upgrade ActiveMQ to 5.15.2\n\nActiveMQ 5.15.0 is vulberable to CVE-2015-5183 and CVE-2015-5184."
+    }
+  }
+}

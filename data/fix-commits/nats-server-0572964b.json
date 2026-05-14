@@ -1,0 +1,20 @@
+{
+  "vcs_url": "https://github.com/nats-io/nats-server",
+  "vulnerabilities": {
+    "CVE-2026-33216": {
+      "b84fb8ddd4e258d824c1eeb4e4027412007c453e": "Send `JWT` to auth callout from MQTT clients\n\nThis was a regression from the CVE-2026-33216 fix.\n\nSigned-off-by: Neil Twigg <neil@nats.io>",
+      "8b88f518933c61451680bc9de823bb182897d7e7": "Send `JWT` to auth callout from MQTT clients (#7997)\n\nThis was a regression from the CVE-2026-33216 fix. Fixes #7995.\n\nSigned-off-by: Neil Twigg <neil@nats.io>",
+      "10a029f01ab3c67fcb6e4dca074b3b774e3e5d9c": "Send `JWT` to auth callout from MQTT clients\n\nThis was a regression from the CVE-2026-33216 fix.\n\nSigned-off-by: Neil Twigg <neil@nats.io>"
+    },
+    "CVE-2022-27191": {
+      "243851af54b70c86cc686bd4dec4a8e544e97501": "Merge pull request #3065 from pgvishnuram/main\n\nfix for CVE-2022-27191",
+      "5cc4d0ca4a56b30fcea520a4cfed0733c02fe302": "fix for CVE-2022-27191\n* our CVE scanner has detected crypto go module vulnerability in nats exporter this PR fixes that issue by updating the module version"
+    },
+    "CVE-2020-26892": {
+      "1e08b67f08e18cd844dce833a265aaa72500a12f": "[FIXED] User and claims activation revocation checks\n\nThis addresses [CVE-2020-26892](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26892)\n\nThis is a port of #1632, #1635 and #1645\n\nSigned-off-by: Ivan Kozlovic <ivan@synadia.com>"
+    },
+    "CVE-2020-26521": {
+      "9ff8bcde2e46009e98bd9e88f598af355f62c168": "[FIXED] Possible panic if server receives a maliciously crafted JWT\n\nThis addresses [CVE-2020-26521](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26521)\n\nThis is mainly a port of #1624 with some other updates related\nto tests.\n\nSigned-off-by: Ivan Kozlovic <ivan@synadia.com>"
+    }
+  }
+}

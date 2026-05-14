@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://chromium.googlesource.com/webm/libwebm",
+  "vulnerabilities": {
+    "CVE-2018-19212": {
+      "bc32e3c6b0aff6fb32a413203352ec4632b1424f": "webm2pes: avoid null deref w/track->GetCodecId()\n\ncheck pointer value before converting to string\n\nfixes CVE-2018-19212\n\nBUG=webm:1605\n\nChange-Id: Idbe51dc8e0e454019003ba1ac7afa175f7bf8950"
+    }
+  }
+}

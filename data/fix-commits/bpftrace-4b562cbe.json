@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/bpftrace/bpftrace",
+  "vulnerabilities": {
+    "CVE-2024-2313": {
+      "093855092c5fe2c4099759da2ce85afb3187c049": "v0.20.4 release\n\nFix CVE-2024-2313 by removing unpacking kernel headers or looking in tmp"
+    }
+  }
+}

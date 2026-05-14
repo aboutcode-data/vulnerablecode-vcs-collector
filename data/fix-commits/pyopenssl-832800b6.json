@@ -1,0 +1,11 @@
+{
+  "vcs_url": "https://github.com/pyca/pyopenssl",
+  "vulnerabilities": {
+    "CVE-2026-40475": {
+      "3be23b621cc4797667a79f483d19514a032c7e8f": "Prepare 26.1.0 release (#1495)\n\n* Prepare 26.1.0 release\n\nFixes X509Name NUL-byte truncation (CVE-2026-40475), raises the\nmaximum supported cryptography version to 47.x, and bumps the\nversion to 26.1.0.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n* Use valid DER-encoded OCSPResponse in OCSP stapling tests\n\nOpenSSL 4.0.0 reworked SSL_set_tlsext_status_ocsp_resp to parse the\ninput bytes via d2i_OCSP_RESPONSE and only staple the parsed form on\nthe wire. Arbitrary bytes (previously accepted) are now silently\ndropped, so the test's fake \"this is totally ocsp data\" no longer\nreaches the client. Use a minimal valid DER OCSPResponse instead.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>"
+    },
+    "CVE-2013-4073": {
+      "de1a6825575f89b896b71156d6dfe14964184326": "CVE-2013-4073 is sort of related, but it doesn\\t really explain what's being fixed here."
+    }
+  }
+}

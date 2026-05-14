@@ -1,0 +1,31 @@
+{
+  "vcs_url": "https://github.com/apache/tika",
+  "vulnerabilities": {
+    "CVE-2025-66516": {
+      "fd557d4e0187fd870b7b8809dc80271733159d98": "Addressing CVE-2025-66516 in branch_1x (#2437)\n\n* Addressing CVE-2025-66516\n\nDisabling the processing of external entities when parsing XML.\n\n* Addressing CVE-2025-54988\n\nBackport of missing patch.\n\n---------\n\nCo-authored-by: Manfred Baedke <manfred.baedke@gmail.com>"
+    },
+    "CVE-2025-54988": {
+      "fd557d4e0187fd870b7b8809dc80271733159d98": "Addressing CVE-2025-66516 in branch_1x (#2437)\n\n* Addressing CVE-2025-66516\n\nDisabling the processing of external entities when parsing XML.\n\n* Addressing CVE-2025-54988\n\nBackport of missing patch.\n\n---------\n\nCo-authored-by: Manfred Baedke <manfred.baedke@gmail.com>"
+    },
+    "CVE-2023-6378": {
+      "19aa55687679afcbe7a835337bfb38411a146ace": "TIKA-4162: add logback to dependencyManagement to avoid CVE-2023-6378",
+      "a98b00ed9b4819fd0aed269100e7216777333a2e": "TIKA-4166: add logback to dependencyManagement to avoid CVE-2023-6378"
+    },
+    "CVE-2023-44981": {
+      "a467891d7eed14020a8b3bf539969a3a08fc995d": "TIKA-4129: add zookeeper to dependencymanagement because of CVE-2023-44981 in solr emitter"
+    },
+    "CVE-2023-24998": {
+      "aa60b193ba7a4d46b915e97c021d68421468c95c": "update commons-fileupload\n\nbecause of CVE-2023-24998"
+    },
+    "CVE-2021-37714": {
+      "ed53797129e25cd9b879879c12d40d3ff4455518": "TIKA-3601 - Update JSoup to fix CVE-2021-37714 (#458)\n\nThank you!"
+    },
+    "CVE-2017-17485": {
+      "69a85d214d244cd59e93f9d9fecd9e061af10fd1": "TIKA-2570 - upgrade to more recent version of jackson to avoid CVE-2017-17485 via Ewan Mellor.",
+      "55e10455cd655aa0df9a54cba7dcb244a94a181e": "Fix for TIKA-2570 contributed by ewanmellor.\n\nUpgrade use of jackson to 2.9.4.  Versions 2.9.2 and 2.9.3 allow\nunauthenticated remote code execution, labeled CVE-2017-17485."
+    },
+    "CVE-2015-3271": {
+      "ce1fc3720cdcd84b5523b14fc28fd2fb355c9ee2": "* Re-enable fileUrl for tika-server (TIKA-2081).  If you choose,\n    to use this feature, beware of the security vulnerabilities!\n    See: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3271"
+    }
+  }
+}

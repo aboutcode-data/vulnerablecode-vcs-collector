@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/apache/commons-text",
+  "vulnerabilities": {
+    "CVE-2025-48924": {
+      "b57a280f86da740d1e22b01a87f19986fe25d31b": "feat: Add experimental CycloneDX VEX file (#683)\n\n* feat: Add experimental CycloneDX VEX file\n\nThis commit introduces an experimental CycloneDX VEX document that:\n\n* Provides an analysis of **CVE-2025-48924** as it pertains to this library.\n* Is committed to the **Git repository only** (not published to Maven Central), allowing it to be retrieved via `raw.githubusercontent.com`.\n\nThis VEX file is intended to support consumers in evaluating the exploitability of known vulnerabilities in Apache Commons Text.\n\n* fix: Move files and fix copy/paste problems\n\nMoves files as suggested in apache/commons-bcel#446 and fixes copy/paste mistakes."
+    }
+  }
+}

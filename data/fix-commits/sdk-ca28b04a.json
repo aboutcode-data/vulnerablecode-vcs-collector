@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/dart-lang/sdk",
+  "vulnerabilities": {
+    "CVE-2022-0451": {
+      "e69217fe280425f532e46b4058e5db92731bfeef": "Add CVE-2022-0451 to changelog\n\nChange-Id: I6fffab997fbd1b63c54cfc883e10280c97a6366a\nReviewed-on: https://dart-review.googlesource.com/c/sdk/+/231560\nAuto-Submit: Michael Thomsen <mit@google.com>\nReviewed-by: Brian Quinlan <bquinlan@google.com>\nCommit-Queue: Brian Quinlan <bquinlan@google.com>"
+    }
+  }
+}

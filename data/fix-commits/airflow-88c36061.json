@@ -1,0 +1,37 @@
+{
+  "vcs_url": "https://github.com/apache/airflow",
+  "vulnerabilities": {
+    "CVE-2024-24786": {
+      "35faaf8b5542425248ecc94aaea79c68b998ab16": "Switch to newer pgbouncer-exporter image as default for Helm Chart (#40318)\n\nWith #40303 we have a new pgbouncer-exporter image with newer version\r\nof the exporter and without CVE-2024-24786.\r\n\r\nThis PR switches chart to the newer image."
+    },
+    "CVE-2024-23829": {
+      "2e50c1d9fa8af1d070fcf1d4e3df6bbfad8e1de6": "Bump aiohttp min version to avoid CVE-2024-23829 and CVE-2024-23334 (#37110)\n\n(cherry picked from commit 0c4210af62d2e514f37c5c973163c0748716ccff)",
+      "0c4210af62d2e514f37c5c973163c0748716ccff": "Bump aiohttp min version to avoid CVE-2024-23829 and CVE-2024-23334 (#37110)"
+    },
+    "CVE-2024-23334": {
+      "2e50c1d9fa8af1d070fcf1d4e3df6bbfad8e1de6": "Bump aiohttp min version to avoid CVE-2024-23829 and CVE-2024-23334 (#37110)\n\n(cherry picked from commit 0c4210af62d2e514f37c5c973163c0748716ccff)",
+      "0c4210af62d2e514f37c5c973163c0748716ccff": "Bump aiohttp min version to avoid CVE-2024-23829 and CVE-2024-23334 (#37110)"
+    },
+    "CVE-2023-47248": {
+      "8bb9e79b4d9157b87d467b000b89f0bf69c1d9db": "Get rid of pyarrow-hotfix for CVE-2023-47248 (#36697)\n\nThe #35650 introduced a hotfix for Pyarrow CVE-2023-47248. So far\nwe have been blocked from removing it by Apache Beam that limited\nAirflow from bumping pyarrow to a version that was not vulnerable.\n\nThis is now possible since Apache Beam relesed 2.53.0 version on\n4th of January 2023 that allows to use non-vulnerable pyarrow.\n\nWe are now bumping both Pyarrow and Beam minimum versions to\nreflect that and remove pyarrow hotfix.\n\n(cherry picked from commit d105c7115f56f88d48a2888484a0ed7d1c01576f)",
+      "975ddce2ef214794befffadb430fdb1199aeabe0": "Get rid of pyarrow-hotfix for CVE-2023-47248 (#36697)\n\nThe #35650 introduced a hotfix for Pyarrow CVE-2023-47248. So far\nwe have been blocked from removing it by Apache Beam that limited\nAirflow from bumping pyarrow to a version that was not vulnerable.\n\nThis is now possible since Apache Beam relesed 2.53.0 version on\n4th of January 2023 that allows to use non-vulnerable pyarrow.\n\nWe are now bumping both Pyarrow and Beam minimum versions to\nreflect that and remove pyarrow hotfix.\n\n(cherry picked from commit d105c7115f56f88d48a2888484a0ed7d1c01576f)",
+      "d105c7115f56f88d48a2888484a0ed7d1c01576f": "Get rid of pyarrow-hotfix for CVE-2023-47248 (#36697)\n\nThe #35650 introduced a hotfix for Pyarrow CVE-2023-47248. So far\r\nwe have been blocked from removing it by Apache Beam that limited\r\nAirflow from bumping pyarrow to a version that was not vulnerable.\r\n\r\nThis is now possible since Apache Beam relesed 2.53.0 version on\r\n4th of January 2023 that allows to use non-vulnerable pyarrow.\r\n\r\nWe are now bumping both Pyarrow and Beam minimum versions to\r\nreflect that and remove pyarrow hotfix.",
+      "2afbb0a8d133ccd99ceb39d8e199f763908d4ca1": "Use `pyarrow-hotfix` to mitigate CVE-2023-47248 (#35650)\n\n* Use `pyarrow-hotfix` to mitigate CVE-2023-47248\r\n\r\nThis is a temporary measure and we will remove it once\r\nApache Beam allows us to upgrade to pyarrow 14.0.1\r\n\r\n\r\n---------\r\n\r\nCo-authored-by: Jarek Potiuk <jarek@potiuk.com>"
+    },
+    "GHSA-35JH-R3H4-6JHM": {
+      "74c1ce045e31adc1527dfb9353ea0ad7f18a20ca": "Add resolution to force dependencies to use patched version of lodash (#15777)\n\nResolves [a known vulnerability](https://github.com/advisories/GHSA-35jh-r3h4-6jhm) in lodash. Lodash is an indirect dependency and not all of the the direct dependencies have been patched yet. This resolution forces the currently utilized `4.17.15`, `4.17.19`, and `4.17.20` versions to use the safe `4.17.21` patch."
+    },
+    "CVE-2019-11358": {
+      "f95b051bed560716136367518cffb050cfcaf550": "[AIRFLOW-XXX] Fix CVE-2019-11358 (#5197)\n\n\n(cherry picked from commit 05cc636a0907f784100e58e80f4a6eea23b98089)",
+      "05cc636a0907f784100e58e80f4a6eea23b98089": "[AIRFLOW-XXX] Fix CVE-2019-11358 (#5197)"
+    },
+    "CVE-2019-10906": {
+      "990272cec033a4283699577e886f43631a41e41a": "[AIRFLOW-XXX] Change allowed version of Jinja2 to fix CVE-2019-10906 (#5075)",
+      "ee4815d05c39c721b56689da3a00320d160754bd": "[AIRFLOW-XXX] Change allowed version of Jinja2 to fix CVE-2019-10906 (#5075)"
+    },
+    "CVE-2018-7753": {
+      "8807071d2b0c09ab816d3008aba042b14b8b755e": "[AIRFLOW-2592] Bump bleach dependency\n\nBleach dependency is updated to 2.1.3 to address\nCVE-2018-7753\n\nCloses #3524 from ctrebing/AIRFLOW-2592-bump-\nbleach-dependency",
+      "8622046783d4fb5c938daeca4fc294cfe1540ff0": "[AIRFLOW-2592] Bump bleach dependency\n\nBleach dependency is updated to 2.1.3 to address\nCVE-2018-7753\n\nCloses #3524 from ctrebing/AIRFLOW-2592-bump-\nbleach-dependency"
+    }
+  }
+}

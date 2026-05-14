@@ -1,0 +1,23 @@
+{
+  "vcs_url": "https://android.googlesource.com/platform/external/pdfium",
+  "vulnerabilities": {
+    "CVE-2025-54874": {
+      "83e6b42d10bd8482de0ba6def14ad46c4d8850f9": "Cherry-pick OpenJPEG patch for CVE-2025-54874\n\nCherry-pick a commit from upstream OpenJPEG:\n\nhttps://github.com/uclouvain/openjpeg/commit/f809b80c67717c152a5ad30bf06774f00da4fd2d\n\nBug: 445128546\nChange-Id: Ie402da715c8342cd948c41c5d44b3edbec29e33c\nReviewed-on: https://pdfium-review.googlesource.com/c/pdfium/+/135731\nCommit-Queue: Lei Zhang <thestig@chromium.org>\nReviewed-by: Tom Sepez <tsepez@chromium.org>"
+    },
+    "CVE-2023-52355": {
+      "244491fa800131fe92684212ad55fae0da4bb82b": "Mark CVE-2023-52355 as mitigated in third_party/libtiff/METADATA\n\nSince there are no callers to TIFFRasterScanlineSize() and\nTIFFRasterScanlineSize64() in this code base, the potential OOM issue\ncannot occur.\n\nBug: 323286416\nChange-Id: I6d1882cac97d8cb152bc6539a5da2c25ab7d2196\nReviewed-on: https://pdfium-review.googlesource.com/c/pdfium/+/116292\nReviewed-by: Thomas Sepez <tsepez@google.com>\nReviewed-by: Tom Sepez <tsepez@chromium.org>\nCommit-Queue: Thomas Sepez <tsepez@google.com>"
+    },
+    "CVE-2022-0908": {
+      "fe7dad362371181a176d1ad202f99e9bb25f8c5b": "Apply libtiff fixes for CVE-2022-0908.\n\nBug: chromium:1323687\nChange-Id: Ie94f0084d333ec4ce5d0cddec647b2b5f94d3f7b\nReviewed-on: https://pdfium-review.googlesource.com/c/pdfium/+/93570\nReviewed-by: Tom Sepez <tsepez@chromium.org>\nCommit-Queue: Tom Sepez <tsepez@chromium.org>\nAuto-Submit: Lei Zhang <thestig@chromium.org>"
+    },
+    "CVE-2022-0561": {
+      "2e0b693c10c7357fd38a61b53584b5bed2056e50": "Apply libtiff fixes for CVE-2022-0561 and CVE-2022-0562.\n\nApply fixes for a couple of related issues.\n\nBug: chromium:1303919\nChange-Id: I06597d448fff5a330ec388d7098967ef06e2f5fb\nReviewed-on: https://pdfium-review.googlesource.com/c/pdfium/+/91355\nReviewed-by: Tom Sepez <tsepez@chromium.org>\nCommit-Queue: Lei Zhang <thestig@chromium.org>"
+    },
+    "CVE-2022-0562": {
+      "2e0b693c10c7357fd38a61b53584b5bed2056e50": "Apply libtiff fixes for CVE-2022-0561 and CVE-2022-0562.\n\nApply fixes for a couple of related issues.\n\nBug: chromium:1303919\nChange-Id: I06597d448fff5a330ec388d7098967ef06e2f5fb\nReviewed-on: https://pdfium-review.googlesource.com/c/pdfium/+/91355\nReviewed-by: Tom Sepez <tsepez@chromium.org>\nCommit-Queue: Lei Zhang <thestig@chromium.org>"
+    },
+    "CVE-2018-6942": {
+      "d9da586dd3dbaa35706ac274e2fef8b73b867b22": "Roll third_party/freetype/src/ 26ad1acbc..2157d8fa6 (21 commits)\n\nhttps://chromium.googlesource.com/chromium/src/third_party/freetype2.git/+log/26ad1acbcb4c..2157d8fa6f7e\n\n$ git log 26ad1acbc..2157d8fa6 --date=short --no-merges --format='%ad %ae %s'\n2018-04-24 bungeman [base] Avoid undefined behaviour in lcd filtering code (#53727).\n2018-04-22 wl * src/base/ftoutln.c (FT_Outline_Decompose): Improve error tracing.\n2018-04-22 apodtele [base] Fix bitmap emboldening.\n2018-04-22 wl Revert \"[base] Fix bitmap copying where the new pitch is smaller.\"\n2018-04-22 wl [base] Fix bitmap copying where the new pitch is smaller.\n2018-04-22 wl Another fix for handling invalid format 2 cmaps.\n2018-04-19 apodtele Documentation tweaks.\n2018-04-19 wl [autofit] Add support for Georgian Mtavruli characters.\n2018-04-19 wl Fix handling of invalid format 2 cmaps.\n2018-04-17 wl [truetype] Integer overflow issues.\n2018-04-16 wl CHANGES: Mention CVE-2018-6942.\n2018-04-16 wl [truetype] Integer overflow issues.\n2018-04-15 ankit97dhankhar [docmaker] Make it work with python3.\n2018-04-15 apodtele [build] Use `info' function of make 3.81.\n2018-04-15 wl [truetype]: Limit `SLOOP' bytecode argument to 16 bits.\n2018-04-14 wl [truetype] Integer overflow issues.\n2018-04-14 wl [autofit] Update to Unicode 11.0.0.\n2018-04-07 madigens Modernize CMake build.\n2018-04-09 wl [truetype] Integer overflow issues.\n2018-04-06 apodtele [windows, wince] Clean up legacy project files.\n2018-04-04 wl [cff, type1] Sanitize `BlueFuzz' and `BlueShift'.\n\nCreated with:\n  roll-dep third_party/freetype/src\n\nBug: pdfium:1070\nChange-Id: I097d77d9f9f4e37524edfdeaa2bc49e261ce4f42\nReviewed-on: https://pdfium-review.googlesource.com/31312\nReviewed-by: Nicol\u00e1s Pe\u00f1a Moreno <npm@chromium.org>\nCommit-Queue: Nicol\u00e1s Pe\u00f1a Moreno <npm@chromium.org>"
+    }
+  }
+}

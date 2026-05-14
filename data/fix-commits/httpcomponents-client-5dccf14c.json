@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/apache/httpcomponents-client",
+  "vulnerabilities": {
+    "CVE-2021-44832": {
+      "fefbf0b75659e38db7657591a21867f3c44cd831": "Bumping versions of slf4j and log4j.\n\nRemoves CVE-2021-44832."
+    }
+  }
+}

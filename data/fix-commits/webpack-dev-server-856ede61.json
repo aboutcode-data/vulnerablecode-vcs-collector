@@ -1,0 +1,14 @@
+{
+  "vcs_url": "https://github.com/webpack/webpack-dev-server",
+  "vulnerabilities": {
+    "GHSA-79CF-XCQC-C78W": {
+      "df073c53a8cefb54210b43813fa6ee60364a554e": "Merge commit from fork\n\n* test: add regression tests for CORP header on cross-origin responses\n\nRef: https://github.com/webpack/webpack-dev-server/security/advisories/GHSA-79cf-xcqc-c78w\n\n* fix: set Cross-Origin-Resource-Policy header to prevent source code theft over HTTP\n\nRef: https://github.com/webpack/webpack-dev-server/security/advisories/GHSA-79cf-xcqc-c78w\n\n* fix: update CORS handling to differentiate between wildcard and specific-origin headers\n\n---------\n\nCo-authored-by: Sebastian Beltran <bjohansebas@gmail.com>"
+    },
+    "CVE-2024-29041": {
+      "767b4935484830522dea491f733fe40f88da8dfd": "chore: upgrading express from version 4.17.3 to version 4.19.2 due to vulnerability CVE-2024-29041 (#5134)"
+    },
+    "CVE-2017-17461": {
+      "c9c61f27e3ba209222ee2834ea8c6d7aa7ffd14c": "fix(package): Increase minimum `marked` version for ReDos vuln (#1255)\n\n- CVE: https://nvd.nist.gov/vuln/detail/CVE-2017-17461"
+    }
+  }
+}

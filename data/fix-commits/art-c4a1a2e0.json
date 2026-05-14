@@ -1,0 +1,14 @@
+{
+  "vcs_url": "https://android.googlesource.com/platform/art",
+  "vulnerabilities": {
+    "CVE-2021-39689": {
+      "f137a0facfa24c13c1869107515f39a4570499cc": "Add regression test for CVE-2021-39689 (b/206090748). am: f7aef20a02 am: 9cf1a5579a am: de993d1362 am: 88fee94a5e am: 08d6fb8363 am: 0b01bf916d\n\nOriginal change: https://android-review.googlesource.com/c/platform/art/+/2609990\n\nChange-Id: I6a018b098738fc0eaba43af694b1f2bc8bad9182\nSigned-off-by: Automerger Merge Worker <android-build-automerger-merge-worker@system.gserviceaccount.com>",
+      "0b01bf916d9e615027d946bc3960a00ea3baf075": "Add regression test for CVE-2021-39689 (b/206090748). am: f7aef20a02 am: 9cf1a5579a am: de993d1362 am: 88fee94a5e am: 08d6fb8363\n\nOriginal change: https://android-review.googlesource.com/c/platform/art/+/2609990\n\nChange-Id: I58ceadca2967e35e7789a48f00c21273b2f0c69c\nSigned-off-by: Automerger Merge Worker <android-build-automerger-merge-worker@system.gserviceaccount.com>",
+      "08d6fb83636549ae3cd88f5c19f2cd8cecc5f03d": "Add regression test for CVE-2021-39689 (b/206090748). am: f7aef20a02 am: 9cf1a5579a am: de993d1362 am: 88fee94a5e\n\nOriginal change: https://android-review.googlesource.com/c/platform/art/+/2609990\n\nChange-Id: Iad0ab035c838e4d3f6a17509c0755bddeab6ad5f\nSigned-off-by: Automerger Merge Worker <android-build-automerger-merge-worker@system.gserviceaccount.com>",
+      "88fee94a5e20e10026718036cc2ff8fb1ee184b2": "Add regression test for CVE-2021-39689 (b/206090748). am: f7aef20a02 am: 9cf1a5579a am: de993d1362\n\nOriginal change: https://android-review.googlesource.com/c/platform/art/+/2609990\n\nChange-Id: Id5307c6c93b7767742fc8f1cefb938ee93c49804\nSigned-off-by: Automerger Merge Worker <android-build-automerger-merge-worker@system.gserviceaccount.com>",
+      "de993d13624e731df3fca8f1c740497b867e13c8": "Add regression test for CVE-2021-39689 (b/206090748). am: f7aef20a02 am: 9cf1a5579a\n\nOriginal change: https://android-review.googlesource.com/c/platform/art/+/2609990\n\nChange-Id: Ieab8a2562783f608fdbecd64d7b748e9e689bc6b\nSigned-off-by: Automerger Merge Worker <android-build-automerger-merge-worker@system.gserviceaccount.com>",
+      "9cf1a5579a5eec62e14c496794b1ec6d786293a0": "Add regression test for CVE-2021-39689 (b/206090748). am: f7aef20a02\n\nOriginal change: https://android-review.googlesource.com/c/platform/art/+/2609990\n\nChange-Id: If2e95a61d0457ab1e2b1942a38b620240a0edd5d\nSigned-off-by: Automerger Merge Worker <android-build-automerger-merge-worker@system.gserviceaccount.com>",
+      "f7aef20a021aafa383708534c23365d4b1e8c817": "Add regression test for CVE-2021-39689 (b/206090748).\n\nThis is to ensure that a later change won't introduce a security\nregression.\n\nBug: 280776418\nTest: atest odsign_e2e_tests_full\nChange-Id: Ib1c9320e272cf051f285393332e47b8c1843ff54"
+    }
+  }
+}

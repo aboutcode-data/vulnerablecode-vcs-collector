@@ -1,0 +1,12 @@
+{
+  "vcs_url": "https://github.com/apache/ignite",
+  "vulnerabilities": {
+    "CVE-2022-22965": {
+      "9d4561bd2c5d4017c659419238041e1944b8bad7": "IGNITE-16781 Upgrade org.springframework:spring-core for CVE-2022-22965 (a.k.a. Spring4Shell)\n\n(cherry picked from commit 94613b095eb59d39221720c0f50ab42a0733661e)",
+      "94613b095eb59d39221720c0f50ab42a0733661e": "IGNITE-16781 Upgrade org.springframework:spring-core for CVE-2022-22965 (a.k.a. Spring4Shell)"
+    },
+    "CVE-2021-2816": {
+      "e3674cc316d3f8921fe03f52607a63a72fd1d8a4": "IGNITE-14527 CVE-2021-2816[3,4,5] in Jetty (#9002)"
+    }
+  }
+}

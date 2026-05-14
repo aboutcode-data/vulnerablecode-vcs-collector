@@ -1,0 +1,47 @@
+{
+  "vcs_url": "https://github.com/apache/superset",
+  "vulnerabilities": {
+    "GHSA-36JR-MH4H-2G58": {
+      "af3e08823314199a783e3f53899b80cdb47cf321": "build(deps): resolve GHSA-36jr-mh4h-2g58 by upgrading d3-color to 3.1.0 (#37981)\n\nSigned-off-by: hainenber <dotronghai96@gmail.com>"
+    },
+    "CVE-2025-68428": {
+      "fc1690f50b984212894e6753660b141ce9b2c964": "fix(security): update jspdf to 4.0.0 to address CVE-2025-68428 (#37553)",
+      "8fd34010776611e800e12481a3b6b34008142be3": "fix(security): update jspdf to 4.0.0 to address CVE-2025-68428 (#37553)"
+    },
+    "CVE-2025-48912": {
+      "b033406387794bed3a951a2f1e2b047669523100": "docs: CVE-2025-48912 added to 4.1.2 (#33662)"
+    },
+    "CVE-2025-29907": {
+      "fd1e44b8f6ac9b5d6a35189b38ae8fdff04696c9": "fix(sec): resolve CVE-2025-29907 and CVE-2025-25977 by pinning `jspdf` to v3 (#32802)\n\nSigned-off-by: hainenber <dotronghai96@gmail.com>",
+      "ca7c65456a8cdb0b0acd58eaef69dd76aca10f4f": "fix(sec): resolve CVE-2025-29907 and CVE-2025-25977 by pinning `jspdf` to v3 (#32802)\n\nSigned-off-by: hainenber <dotronghai96@gmail.com>",
+      "a82f916a71500ff43b1cd8acba7fd605c9a81728": "fix(sec): resolve CVE-2025-29907 and CVE-2025-25977 by pinning `jspdf` to v3 (#32802)\n\nSigned-off-by: hainenber <dotronghai96@gmail.com>"
+    },
+    "CVE-2025-25977": {
+      "fd1e44b8f6ac9b5d6a35189b38ae8fdff04696c9": "fix(sec): resolve CVE-2025-29907 and CVE-2025-25977 by pinning `jspdf` to v3 (#32802)\n\nSigned-off-by: hainenber <dotronghai96@gmail.com>",
+      "ca7c65456a8cdb0b0acd58eaef69dd76aca10f4f": "fix(sec): resolve CVE-2025-29907 and CVE-2025-25977 by pinning `jspdf` to v3 (#32802)\n\nSigned-off-by: hainenber <dotronghai96@gmail.com>",
+      "a82f916a71500ff43b1cd8acba7fd605c9a81728": "fix(sec): resolve CVE-2025-29907 and CVE-2025-25977 by pinning `jspdf` to v3 (#32802)\n\nSigned-off-by: hainenber <dotronghai96@gmail.com>"
+    },
+    "CVE-2025-26791": {
+      "321d105c42f27c51dd36ac71464a61ddafa091f5": "chore(deps): bump dompurify from 3.2.3 to 3.2.4 in /superset-frontend (#32270) \n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\nStability: no breaking change as described 3.2.4's GH release\n\nFunctionality: fixes Moderate GHSA-vhxf-7vqr-mrjg (CVE-2025-26791)"
+    },
+    "GHSA-VHXF-7VQR-MRJG": {
+      "321d105c42f27c51dd36ac71464a61ddafa091f5": "chore(deps): bump dompurify from 3.2.3 to 3.2.4 in /superset-frontend (#32270) \n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\nStability: no breaking change as described 3.2.4's GH release\n\nFunctionality: fixes Moderate GHSA-vhxf-7vqr-mrjg (CVE-2025-26791)"
+    },
+    "CVE-2024-21538": {
+      "109e6c69ff25b82b603a4daff40207250788e6b1": "chore(fe/sec): resolve High CVE-2024-21538 and Moderate CVE-2024-55565 by bumping `nanoid` and `cross-spawn` (#31712)\n\nSigned-off-by: hainenber <dotronghai96@gmail.com>"
+    },
+    "CVE-2024-55565": {
+      "109e6c69ff25b82b603a4daff40207250788e6b1": "chore(fe/sec): resolve High CVE-2024-21538 and Moderate CVE-2024-55565 by bumping `nanoid` and `cross-spawn` (#31712)\n\nSigned-off-by: hainenber <dotronghai96@gmail.com>"
+    },
+    "CVE-2023-39631": {
+      "ecebd70ba043208ad56f24c0a9351c7c1d2edd5d": "chore: numexpr to fix CVE-2023-39631\u2060 (2.8.4 => 2.9.0) (#27187)\n\nCo-authored-by: Stefan Arnold <stefan.st.arnold@mercedes-benz.com>\n(cherry picked from commit f453d5d7e75cfd403b5552d6719b8ebc1f121d9e)",
+      "16e5eddeb6d648cf4738ca2f0bcf5422d4e6bcb1": "chore: numexpr to fix CVE-2023-39631\u2060 (2.8.4 => 2.9.0) (#27187)\n\nCo-authored-by: Stefan Arnold <stefan.st.arnold@mercedes-benz.com>",
+      "f453d5d7e75cfd403b5552d6719b8ebc1f121d9e": "chore: numexpr to fix CVE-2023-39631\u2060 (2.8.4 => 2.9.0) (#27187)\n\nCo-authored-by: Stefan Arnold <stefan.st.arnold@mercedes-benz.com>"
+    },
+    "CVE-2023-47248": {
+      "c99c6301c7ba616cbb54dd235d71b97a781df627": "fix: bump pyarrow constraints (CVE-2023-47248) (#26187)\n\n(cherry picked from commit 2ac28927a326fee6431b5e01f7930e650c636c17)",
+      "be81aaa31aa15f5e6d166d1ebfdb73ecd4f1462e": "fix: bump pyarrow constraints (CVE-2023-47248) (#26187)\n\n(cherry picked from commit 2ac28927a326fee6431b5e01f7930e650c636c17)",
+      "2ac28927a326fee6431b5e01f7930e650c636c17": "fix: bump pyarrow constraints (CVE-2023-47248) (#26187)"
+    }
+  }
+}

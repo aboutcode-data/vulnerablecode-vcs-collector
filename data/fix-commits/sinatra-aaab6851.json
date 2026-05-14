@@ -1,0 +1,11 @@
+{
+  "vcs_url": "https://github.com/sinatra/sinatra",
+  "vulnerabilities": {
+    "CVE-2024-21510": {
+      "cd3e00de20ddaff34ea30f7a74a7b9dad189d1d8": "Add `HostAuthorization` rack-protection middleware (#2053)\n\nThe Sinatra project received a security report with the following\r\ndetails:\r\n\r\n> Title: Reliance on Untrusted Inputs in a Security Decision\r\n> CWE ID: CWE-807\r\n> CVE ID: CVE-2024-21510\r\n> Credit: t0rchwo0d\r\n> Description: The sinatra package is vulnerable to Reliance on\r\nUntrusted\r\n> Inputs in a Security Decision via the `X-Forwarded-Host (XFH)` header.\r\n> When making a request to a method with redirect applied, it is\r\npossible\r\n> to trigger an Open Redirect Attack by inserting an arbitrary address\r\n> into this header. If used for caching purposes, such as with servers\r\n> like Nginx, or as a reverse proxy, without handling the\r\n> `X-Forwarded-Host` header, attackers can potentially exploit Cache\r\n> Poisoning or Routing-based SSRF.\r\n\r\nThe vulnerable code was introduced in fae7c011. Sinatra can not know\r\nwhether the header value can be trusted or not without input from the\r\napp creator. This change introduce the `host_authorization` settings for\r\nthat.\r\n\r\nIt is implemented as a Rack middleware, bundled with rack-protection,\r\nbut not exposed as a default nor opt-in protection. It is meant to be\r\nused by itself, as sharing reaction with other protections is not ideal."
+    },
+    "CVE-2018-7212": {
+      "2e5551ddd6de1e8909ebdd8cd3204219b42d2b55": "update changelog about CVE-2018-7212 (#1389)"
+    }
+  }
+}

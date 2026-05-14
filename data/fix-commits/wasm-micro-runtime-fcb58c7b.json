@@ -1,0 +1,11 @@
+{
+  "vcs_url": "https://github.com/bytecodealliance/wasm-micro-runtime",
+  "vulnerabilities": {
+    "CVE-2022-28948": {
+      "6f62820d145e8b4ce853f2dbd58ce3d2e00f07d7": "language-bindings/go: upgrade yaml.v3 (#4799)\n\nUpgrade github.com/stretchr/testify from v1.7.0 to v1.11.1,\nand upgrade gopkg.in/yaml.v3 to v3.0.1\n\nThis fixes CVE-2022-28948 in yaml v3.0.0\n\nSigned-off-by: Haitao Huang <haitaohuang@microsoft.com>"
+    },
+    "CVE-2007-4559": {
+      "7ad3412591246faf749af86fb03eb0442e6f0d7c": "Adding tarfile member sanitization to extractall() (#1709)\n\nFix a widespread bug named CVE-2007-4559, which is a 15 year old bug\r\nin the Python tarfile package. By using extract() or extractall() on a tarfile\r\nobject without sanitizing input, a maliciously crafted .tar file could\r\nperform a directory path traversal attack. This patch essentially checks to\r\nsee if all tarfile members will be extracted safely and throws an exception\r\notherwise."
+    }
+  }
+}

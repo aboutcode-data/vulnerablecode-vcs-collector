@@ -1,0 +1,11 @@
+{
+  "vcs_url": "https://github.com/apache/logging-log4net",
+  "vulnerabilities": {
+    "GHSA-4F7C-PMJV-C25W": {
+      "0b6e500808f704fee0981b5c9fd1e9fef4881cac": "bump internal log4net version for https://github.com/advisories/GHSA-4f7c-pmjv-c25w #289 (#289)"
+    },
+    "CVE-2006-0743": {
+      "ea3faab25fe5f1d4dbda9f5da8dcfa6fc3d9e1b8": "Fix for LOG4NET-67. CVE-2006-0743 Security vulnerability in LocalSyslogAppender"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/apache/thrift",
+  "vulnerabilities": {
+    "CVE-2019-0205": {
+      "33dcbd08c080d589c639275b151e0b6ff0e6a0be": "THRIFT-5075: Backport changes for CVE-2019-0205 to 0.9.3.1 branch\n\nThis closes #1993\n\nTHRIFT-4024, THRIFT-4783, THRIFT-4784: throw when skipping invalid type (#1742)\n* THRIFT-4024: make c_glib throw on unsupported type when skipping\n* THRIFT-4783: throw on invalid skip (py)\n* THRIFT-4024: make cpp throw on unsupported type when skipping\n* THRIFT-4024: uniform skip behavior on unsupported type\n* THRIFT-4784: Thrift should throw when skipping over unexpected data"
+    }
+  }
+}

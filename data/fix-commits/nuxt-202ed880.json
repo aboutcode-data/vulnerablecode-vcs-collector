@@ -1,0 +1,17 @@
+{
+  "vcs_url": "https://github.com/nuxt/nuxt",
+  "vulnerabilities": {
+    "GHSA-3H5V-Q93C-6H6Q": {
+      "5ef7311f092a1f2f8b29c65b1778d7882f903dce": "chore: add non-applicable advisory GHSA-3h5v-q93c-6h6q"
+    },
+    "GHSA-GRV7-FG5C-XMJG": {
+      "eeb6207c9488e1e2347b2f7ecdfc4be6d9d54fac": "chore: mark GHSA-grv7-fg5c-xmjg as not applicable"
+    },
+    "GHSA-2P57-RM9W-GVFP": {
+      "4782e3c90ae5bf9bbe67e65b4cf08b8a37695764": "chore: mark https://github.com/advisories/GHSA-2p57-rm9w-gvfp as not applicable"
+    },
+    "CVE-2020-7660": {
+      "8c5005a6da23df9782534d285e474109655a045a": "chore: ignore  CVE-2020-7660 (#7903)\n\nsee comments in linked issue"
+    }
+  }
+}

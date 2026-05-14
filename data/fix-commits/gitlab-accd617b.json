@@ -1,0 +1,330 @@
+{
+  "vcs_url": "https://gitlab.com/gitlab-org/gitlab",
+  "vulnerabilities": {
+    "CVE-2026-1752": {
+      "2346d1bd67f3d0507640c1a6d401b46c735b5af4": "Clarify Maintainer permissions for protected environments\n\n\"To protect, update, or unprotect\" implied Maintainers could update\neverything. After CVE-2026-1752 in 18.10.3, updating attributes on a\nprotected environment also requires membership in Allowed to deploy.\n\nSplit the permissions, record the change in a history block, and link\nfrom the general environments page.\n\nCloses https://gitlab.com/gitlab-org/gitlab/-/work_items/596284"
+    },
+    "CVE-2026-2619": {
+      "fd8bfe6769a55f1bf31fbec7eb3f4a4b6e6aef05": "Merge branch 'security-fix-cve-2026-2619' into 'master'\n\nUse correct permission check when updating vuln flag\n\nSee merge request https://gitlab.com/gitlab-org/security/gitlab/-/merge_requests/5791\n\nMerged-by: GitLab Release Tools Bot <delivery-team+release-tools@gitlab.com>\nApproved-by: F\u00e9lix Veillette-Potvin <fveillette@gitlab.com>\nApproved-by: Huzaifa Iftikhar <hiftikhar@gitlab.com>\nApproved-by: Ugo Nnanna Okeadu <uokeadu@gitlab.com>\nReviewed-by: Ugo Nnanna Okeadu <uokeadu@gitlab.com>\nCo-authored-by: SAM FIGUEROA <sfigueroa@gitlab.com>",
+      "37fa01da5b0ca32cb34b37c6d70e5a393110cbd1": "Use correct permission check when updating vuln flag\n\nMerge branch 'security-fix-cve-2026-2619' into 'master'\n\nSee merge request gitlab-org/security/gitlab!5791\n\nChangelog: security"
+    },
+    "CVE-2025-5195": {
+      "bffb1f1922e1ab2283d4f17f290d739132c7dbde": "Merge branch 'security-backport-fix-cve-2025-5195-private-data-disclosure-18-6' into '18-6-stable-ee'\n\nRequire correct permissions to access frameworks\n\nSee merge request https://gitlab.com/gitlab-org/security/gitlab/-/merge_requests/5540\n\nMerged-by: GitLab Release Tools Bot <delivery-team+release-tools@gitlab.com>\nApproved-by: Ian Anderson <ianderson@gitlab.com>\nReviewed-by: GitLab Duo <gitlab-duo@gitlab.com>\nCo-authored-by: SAM FIGUEROA <sfigueroa@gitlab.com>",
+      "daecb53efb85e3f5a77872f66916aca49971b2c0": "Require correct permissions to access frameworks\n\nMerge branch 'security-backport-fix-cve-2025-5195-private-data-disclosure-18-6' into '18-6-stable-ee'\n\nSee merge request gitlab-org/security/gitlab!5540\n\nChangelog: security",
+      "7ba32ab7511bcee084828a6f2706886e5224baa7": "Merge branch 'security-backport-fix-cve-2025-5195-private-data-disclosure-18-4' into '18-4-stable-ee'\n\nRequire correct permissions to access frameworks\n\nSee merge request https://gitlab.com/gitlab-org/security/gitlab/-/merge_requests/5486\n\nMerged-by: GitLab Release Tools Bot <delivery-team+release-tools@gitlab.com>\nApproved-by: Ian Anderson <ianderson@gitlab.com>\nCo-authored-by: SAM FIGUEROA <sfigueroa@gitlab.com>",
+      "06b2c5a0ab610ed26378e5cc445a70ce1b05f860": "Require correct permissions to access frameworks\n\nMerge branch 'security-backport-fix-cve-2025-5195-private-data-disclosure-18-4' into '18-4-stable-ee'\n\nSee merge request gitlab-org/security/gitlab!5486\n\nChangelog: security",
+      "7a29273a31b1e7f49dfb0bcf173ee9711741ca46": "Merge branch 'security-backport-fix-cve-2025-5195-private-data-disclosure' into '18-5-stable-ee'\n\nRequire correct permissions to access frameworks\n\nSee merge request https://gitlab.com/gitlab-org/security/gitlab/-/merge_requests/5474\n\nMerged-by: GitLab Release Tools Bot <delivery-team+release-tools@gitlab.com>\nApproved-by: Ian Anderson <ianderson@gitlab.com>\nCo-authored-by: SAM FIGUEROA <sfigueroa@gitlab.com>",
+      "ca6092ccbcc0d3daf18b21487444094ee0371c07": "Require correct permissions to access frameworks\n\nMerge branch 'security-backport-fix-cve-2025-5195-private-data-disclosure' into '18-5-stable-ee'\n\nSee merge request gitlab-org/security/gitlab!5474\n\nChangelog: security",
+      "623361cfe957726d51fb6ced0bc9265a7fd38598": "Merge branch 'security-fix-cve-2025-5195-private-data-disclosure' into 'master'\n\nRequire correct permissions to access frameworks\n\nSee merge request https://gitlab.com/gitlab-org/security/gitlab/-/merge_requests/5420\n\nMerged-by: GitLab Release Tools Bot <delivery-team+release-tools@gitlab.com>\nApproved-by: Ian Anderson <ianderson@gitlab.com>\nApproved-by: Daniel Hauenstein <dhauenstein@gitlab.com>\nReviewed-by: Ian Anderson <ianderson@gitlab.com>\nReviewed-by: Jason Knabl <jknabl@gitlab.com>\nCo-authored-by: SAM FIGUEROA <sfigueroa@gitlab.com>",
+      "196c2ee92ee6f4addb46fd2c0ae98904989c326e": "Require correct permissions to access frameworks\n\nMerge branch 'security-fix-cve-2025-5195-private-data-disclosure' into 'master'\n\nSee merge request gitlab-org/security/gitlab!5420\n\nChangelog: security"
+    },
+    "CVE-2025-8714": {
+      "1399abab5a7e1c1a610606712dd7ace860f2b28c": "Merge branch 'cherry-pick-15f09cc7' into '18-3-stable-ee' \n\n[18.3 backport] Remove CVE-2025-8714 commands from structure.sql\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/204902\n\nMerged-by: Krasimir Angelov <kangelov@gitlab.com>\nApproved-by: Ravi Kumar <rkumar@gitlab.com>\nApproved-by: Krasimir Angelov <kangelov@gitlab.com>\nReviewed-by: Krasimir Angelov <kangelov@gitlab.com>\nReviewed-by: GitLab Duo <gitlab-duo@gitlab.com>\nCo-authored-by: Terri Chu <tchu@gitlab.com>",
+      "779be71f13169fe604e895d815ad3d71b7eb82f0": "Merge branch '563042-clean-up-structure-sql' into 'master' \n\nRemove CVE-2025-8714 commands from structure.sql\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/202330\n\nMerged-by: Marius Bobin <mbobin@gitlab.com>\nApproved-by: Stan Hu <stanhu@gmail.com>\nApproved-by: Marius Bobin <mbobin@gitlab.com>\nApproved-by: Max Orefice <morefice@gitlab.com>\nReviewed-by: GitLab Duo <gitlab-duo@gitlab.com>\nCo-authored-by: Krasimir Angelov <kangelov@gitlab.com>\n\n(cherry picked from commit 15f09cc711c987ba6d06eb154d24fa5809ef85da)\n\nc2b89547 Remove CVE-2025-8714 commands from structure.sql\n\nCo-authored-by: Marius Bobin <mbobin@gitlab.com>",
+      "15f09cc711c987ba6d06eb154d24fa5809ef85da": "Merge branch '563042-clean-up-structure-sql' into 'master' \n\nRemove CVE-2025-8714 commands from structure.sql\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/202330\n\nMerged-by: Marius Bobin <mbobin@gitlab.com>\nApproved-by: Stan Hu <stanhu@gmail.com>\nApproved-by: Marius Bobin <mbobin@gitlab.com>\nApproved-by: Max Orefice <morefice@gitlab.com>\nReviewed-by: GitLab Duo <gitlab-duo@gitlab.com>\nCo-authored-by: Krasimir Angelov <kangelov@gitlab.com>",
+      "c2b89547d0409e449e0ebce6122cabd0fe7a99ef": "Remove CVE-2025-8714 commands from structure.sql\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/563042",
+      "1eb6baa5ff277fb6b506f5e8651cfc3cd141ad91": "Override Rails method to remove 'restrict' lines\n\npg_dump adds 'restrict' lines to its dumps as a response to\n\nhttps://www.postgresql.org/support/security/CVE-2025-8714/\n\nThis breaks schema checking for MRs and adds noise to structure.sql, so\nthis commit overrides a method in a Rails task class that is responsible\nfor properly formatting structure.sql."
+    },
+    "CVE-2023-7028": {
+      "f655a949eacbb4694154e2ffbc2c49c12ef670b1": "Merge branch 'nmalcolm-scg-video-link' into 'master' \n\nAdd a link to the video walkthrough of CVE-2023-7028\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/178803\n\nMerged-by: Evan Read <eread@gitlab.com>\nApproved-by: Evan Read <eread@gitlab.com>\nCo-authored-by: Nick Malcolm <nmalcolm@gitlab.com>",
+      "cc21df18059c11a5a47273d66b2c87271465bac8": "Add a link to the video walkthrough of CVE-2023-7028\n\nIn https://gitlab.com/groups/gitlab-com/gl-security/product-security/-/epics/6\nwe created a youtube video that walks through the bug. This video may\nbe useful as a resource for developers now and in the future, but it\nis very undiscoverable.\n\nThis commit adds a link to the video."
+    },
+    "CVE-2024-54133": {
+      "ed8267b6d57c9bb995eb714d790fbff81f65277e": "Update rails to 7.0.8.7\n\nThis update fixes CVE-2024-54133. We are not vulnerable to it\nat the moment but this prevents a regression in the future.\n\nChangelog: security"
+    },
+    "CVE-2024-45338": {
+      "1a356bf1995bd61b3e3a6f5c8232f40f1b81f94f": "Merge branch 'dcouture-CVE-2024-45338' into 'master' \n\nUpdate golang.org/x/net package\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/176775\n\nMerged-by: Igor Drozdov <idrozdov@gitlab.com>\nApproved-by: Sylvester Chin <schin@gitlab.com>\nApproved-by: Igor Drozdov <idrozdov@gitlab.com>\nCo-authored-by: Dominic Couture <dcouture@gitlab.com>",
+      "776e269a1eab799fdeb891ac0e9e37d2c7d09037": "Update golang.org/x/net package\n\nBumps the version to 0.33.0 to fix CVE-2024-45338\n\nChangelog: security"
+    },
+    "CVE-2023-48795": {
+      "bca4e3fd329a376426b7785ac7e72746f2f05375": "Merge branch 'dcouture-net-ssh-update' into 'master' \n\nUpdate net-ssh to fix CVE-2023-48795\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/176092\n\nMerged-by: Jason Goodman <jgoodman@gitlab.com>\nApproved-by: Alex Buijs <abuijs@gitlab.com>\nApproved-by: Jason Goodman <jgoodman@gitlab.com>\nCo-authored-by: Dominic Couture <dcouture@gitlab.com>",
+      "3d1006d7fdfd87028028d33d6cb3220832ef580d": "Update net-ssh to fix CVE-2023-48795\n\nChangelog: security"
+    },
+    "CVE-2024-27285": {
+      "fc4265d99a8e07b5ea1ac4aab6774ef13ba9ebbd": "Merge branch 'dcouture-update-yard' into 'master' \n\nUpdate yard to fix CVE-2024-27285\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/176096\n\nMerged-by: Allen Cook <acook@gitlab.com>\nApproved-by: Ian Baum <ibaum@gitlab.com>\nApproved-by: Allen Cook <acook@gitlab.com>\nCo-authored-by: Dominic Couture <dcouture@gitlab.com>",
+      "9ec01eecb1d1c229f723920622798e26ebfcdebd": "Update yard to fix CVE-2024-27285\n\nChangelog: security"
+    },
+    "CVE-2024-43380": {
+      "1598abd69e37233a77d072bd7d006b154292963e": "Merge branch 'dcouture-fugit-CVE-2024-43380' into 'master' \n\nUpgrade fugit to 1.11.1\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/174037\n\nMerged-by: Ravi Kumar <rkumar@gitlab.com>\nApproved-by: Ravi Kumar <rkumar@gitlab.com>\nCo-authored-by: Dominic Couture <dcouture@gitlab.com>",
+      "898763f8ae3785bce797ec9f1af0852abf5bf69d": "Upgrade fugit to 1.11.1\n\nFixes CVE-2024-43380\n\nChangelog: security"
+    },
+    "CVE-2024-21538": {
+      "d2ff1b3a10462dc4e2c1a2a8ecd2b5f86f400ac5": "Merge branch 'dcouture-update-cross-spawn' into 'master' \n\nUpdate cross-spawn to resolve CVE-2024-21538\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/173661\n\nMerged-by: Alexander Turinske <aturinske@gitlab.com>\nApproved-by: Thomas Randolph <trandolph@gitlab.com>\nApproved-by: Alexander Turinske <aturinske@gitlab.com>\nCo-authored-by: Dominic Couture <dcouture@gitlab.com>",
+      "12bb2a586f3ed990d7b026b14d3b25dde694867a": "Update cross-spawn to resolve CVE-2024-21538\n\nChangelog: security"
+    },
+    "CVE-2024-47220": {
+      "fcbe6a7d54cf1d4537262f446c6307c924bc3907": "Update webrick to 1.8.2\n\nFixes CVE-2024-47220\n\nChangelog: security"
+    },
+    "CVE-2024-49761": {
+      "494bb7f32032944c371477d45803c5de09199958": "Merge branch 'dcouture-rexml-CVE-2024-49761' into 'master' \n\nUpdate rexml to fix CVE-2024-49761\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/171537\n\nMerged-by: Peter Leitzen <pleitzen@gitlab.com>\nApproved-by: Hercules Merscher <hmerscher@gitlab.com>\nApproved-by: Peter Leitzen <pleitzen@gitlab.com>\nCo-authored-by: Dominic Couture <dcouture@gitlab.com>",
+      "311f5b34a38d669dc3e2633f42d81b9f27bf43c6": "Update rexml to fix CVE-2024-49761\n\nChangelog: security"
+    },
+    "CVE-2024-41946": {
+      "d6535b84f3878a8855b7319ec0132788133a33c1": "Merge branch 'dcouture-rexml-CVE-2024-41946' into 'master' \n\nUpdate rexml to fix CVE-2024-41946\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/169632\n\nMerged-by: Heinrich Lee Yu <heinrich@gitlab.com>\nApproved-by: Greg Myers <gmyers@gitlab.com>\nApproved-by: Ash McKenzie <amckenzie@gitlab.com>\nApproved-by: Heinrich Lee Yu <heinrich@gitlab.com>\nCo-authored-by: Dominic Couture <dcouture@gitlab.com>",
+      "8feae3956828b94ff84f25affc41e61750baa5d1": "Update rexml to fix CVE-2024-41946\n\nChangelog: security"
+    },
+    "CVE-2024-25126": {
+      "526208b4386c3b5673f5ceaed5d9b1f3f49186ff": "Update rack to v2.2.8.1\n\nThis addresses CVE-2024-25126, CVE-2024-26146, and CVE-2024-26141.\n\nDiff: https://my.diffend.io/gems/rack/2.2.8/2.2.8.1\n\nRelates to https://gitlab.com/gitlab-org/gitlab/-/issues/442679\n\nChangelog: security",
+      "4df84ee731b04079ccad24fb8327e0107abcb0eb": "Update rack to v2.2.8.1\n\nThis addresses CVE-2024-25126, CVE-2024-26146, and CVE-2024-26141.\n\nDiff: https://my.diffend.io/gems/rack/2.2.8/2.2.8.1\n\nRelates to https://gitlab.com/gitlab-org/gitlab/-/issues/442679\n\nChangelog: security"
+    },
+    "CVE-2024-26146": {
+      "526208b4386c3b5673f5ceaed5d9b1f3f49186ff": "Update rack to v2.2.8.1\n\nThis addresses CVE-2024-25126, CVE-2024-26146, and CVE-2024-26141.\n\nDiff: https://my.diffend.io/gems/rack/2.2.8/2.2.8.1\n\nRelates to https://gitlab.com/gitlab-org/gitlab/-/issues/442679\n\nChangelog: security",
+      "4df84ee731b04079ccad24fb8327e0107abcb0eb": "Update rack to v2.2.8.1\n\nThis addresses CVE-2024-25126, CVE-2024-26146, and CVE-2024-26141.\n\nDiff: https://my.diffend.io/gems/rack/2.2.8/2.2.8.1\n\nRelates to https://gitlab.com/gitlab-org/gitlab/-/issues/442679\n\nChangelog: security"
+    },
+    "CVE-2024-26141": {
+      "526208b4386c3b5673f5ceaed5d9b1f3f49186ff": "Update rack to v2.2.8.1\n\nThis addresses CVE-2024-25126, CVE-2024-26146, and CVE-2024-26141.\n\nDiff: https://my.diffend.io/gems/rack/2.2.8/2.2.8.1\n\nRelates to https://gitlab.com/gitlab-org/gitlab/-/issues/442679\n\nChangelog: security",
+      "4df84ee731b04079ccad24fb8327e0107abcb0eb": "Update rack to v2.2.8.1\n\nThis addresses CVE-2024-25126, CVE-2024-26146, and CVE-2024-26141.\n\nDiff: https://my.diffend.io/gems/rack/2.2.8/2.2.8.1\n\nRelates to https://gitlab.com/gitlab-org/gitlab/-/issues/442679\n\nChangelog: security"
+    },
+    "CVE-2023-26141": {
+      "674319bcc8c4aacbccf40abcf2161c813a3fd51e": "Update sidekiq to 6.5.12\n\nUpdate sidekiq to 6.5.12 to include fixes to CVE-2023-26141\n\nChangelog: security"
+    },
+    "CVE-2023-44487": {
+      "1bc5ee5cbe11dab24572a16f70401aa8f9d2d44e": "workhorse: Update google.golang.org/grpc to v1.58.3\n\nThis security update address CVE-2023-44487."
+    },
+    "CVE-2023-36617": {
+      "9e74d720e4aa77f3b1588a6f56e0bace2e4b8fb9": "Update URI gem to v0.12.2\n\nUpdate URI gem to include fix to CVE-2023-36617\n\nChangelog: security"
+    },
+    "CVE-2023-3676": {
+      "4945de3785377e2c0586f006f6846c3e24fe432b": "Merge branch 'security-CVE-2023-3676-and-CVE-2023-3955-release-16-2' into '16-2-stable-ee'\n\nUpdate dependency auto-deploy-image to v2.55.0\n\nSee merge request https://gitlab.com/gitlab-org/security/gitlab/-/merge_requests/3521\n\nMerged-by: Jenny Kim <yjeankim@gitlab.com>\nApproved-by: Shinya Maeda <shinya@gitlab.com>\nCo-authored-by: Jo\u00e3o Cunha <j.a.cunha@gmail.com>",
+      "e589a2f2058ff795db8a6e162629ff76d00d2518": "Update dependency auto-deploy-image to v2.55.0\n\nMerge branch 'security-CVE-2023-3676-and-CVE-2023-3955-release-16-2' into '16-2-stable-ee'\n\nSee merge request gitlab-org/security/gitlab!3521\n\nChangelog: security",
+      "3798827ccc7b6b701c6c1fdad8c3b50593e46e60": "Merge branch 'security-CVE-2023-3676-and-CVE-2023-3955-release-16-3' into '16-3-stable-ee'\n\nUpdate dependency auto-deploy-image to v2.55.0\n\nSee merge request https://gitlab.com/gitlab-org/security/gitlab/-/merge_requests/3520\n\nMerged-by: Jenny Kim <yjeankim@gitlab.com>\nApproved-by: Shinya Maeda <shinya@gitlab.com>\nCo-authored-by: GitLab Renovate Bot <gitlab-bot@gitlab.com>",
+      "019561fba6919e30ad47af4099074f012440750c": "Update dependency auto-deploy-image to v2.55.0\n\nMerge branch 'security-CVE-2023-3676-and-CVE-2023-3955-release-16-3' into '16-3-stable-ee'\n\nSee merge request gitlab-org/security/gitlab!3520\n\nChangelog: security"
+    },
+    "CVE-2023-3955": {
+      "4945de3785377e2c0586f006f6846c3e24fe432b": "Merge branch 'security-CVE-2023-3676-and-CVE-2023-3955-release-16-2' into '16-2-stable-ee'\n\nUpdate dependency auto-deploy-image to v2.55.0\n\nSee merge request https://gitlab.com/gitlab-org/security/gitlab/-/merge_requests/3521\n\nMerged-by: Jenny Kim <yjeankim@gitlab.com>\nApproved-by: Shinya Maeda <shinya@gitlab.com>\nCo-authored-by: Jo\u00e3o Cunha <j.a.cunha@gmail.com>",
+      "e589a2f2058ff795db8a6e162629ff76d00d2518": "Update dependency auto-deploy-image to v2.55.0\n\nMerge branch 'security-CVE-2023-3676-and-CVE-2023-3955-release-16-2' into '16-2-stable-ee'\n\nSee merge request gitlab-org/security/gitlab!3521\n\nChangelog: security",
+      "3798827ccc7b6b701c6c1fdad8c3b50593e46e60": "Merge branch 'security-CVE-2023-3676-and-CVE-2023-3955-release-16-3' into '16-3-stable-ee'\n\nUpdate dependency auto-deploy-image to v2.55.0\n\nSee merge request https://gitlab.com/gitlab-org/security/gitlab/-/merge_requests/3520\n\nMerged-by: Jenny Kim <yjeankim@gitlab.com>\nApproved-by: Shinya Maeda <shinya@gitlab.com>\nCo-authored-by: GitLab Renovate Bot <gitlab-bot@gitlab.com>",
+      "019561fba6919e30ad47af4099074f012440750c": "Update dependency auto-deploy-image to v2.55.0\n\nMerge branch 'security-CVE-2023-3676-and-CVE-2023-3955-release-16-3' into '16-3-stable-ee'\n\nSee merge request gitlab-org/security/gitlab!3520\n\nChangelog: security"
+    },
+    "CVE-2023-34246": {
+      "ac36a04f97e6e73f46d61397f22942f061862bde": "Always require consent for OAuth public clients\n\nRequire consent for every OAuth public client authentication, even if\nuser previously consented. This is necessary because OAuth public\nclients are inherently vulnerable to client impersonation.\n\nVulnerability CVE-2023-34246 was fixed upstream in Doorkeeper but\nremained in GitLab because GitLab overrides `new` method. This change\nsimply copies the upstream fix.\n\nhttps://www.cve.org/CVERecord?id=CVE-2023-34246\n\nhttps://github.com/doorkeeper-gem/doorkeeper/pull/1646/commits/f202079baac4c978a01ccc9a45d78fde368ac907#diff-66fc64b17118c035403fae8265f359b94d03b14e405cf6013418c6f3c83d2817\n\nChangelog: security\n\nCo-authored-by: Vitali Tatarintev <vtatarintev@gitlab.com>"
+    },
+    "CVE-2023-22742": {
+      "74ab3db84c2437e53bd863c34a66dc4b162956b1": "Update Rugged to v1.5.1\n\nThe libgit2 project has published a security release for\nCVE-2023-22742.  This vulnerability allows for man-in-the-middle\nattacks because by default, libgit2 would not verify SSH keys of the\nremote server when connecting to it.\n\nGitaly is not impacted by this CVE given that we never use libgit2 to\nconnect to a remote server. But let's upgrade anyway in case anybody\nwonders.\n\nThis is to match Gitaly's update:\nhttps://gitlab.com/gitlab-org/gitaly/-/merge_requests/5300\n\nChangelog: changed"
+    },
+    "CVE-2023-22797": {
+      "52ea63620eddb24d84b932b09d1e2c9d3430fdd2": "Update Rails to 6.1.7.1 to address security vulnerabilities\n\n- [CVE-2023-22797] Possible Open Redirect Vulnerability in Action Pack\n- [CVE-2022-44566] Possible Denial of Service Vulnerability in ActiveRecord\u2019s PostgreSQL\n- [CVE-2023-22795] Possible ReDoS based DoS vulnerability in Action Dispatch\n- [CVE-2023-22794] SQL Injection Vulnerability via ActiveRecord comments\n- [CVE-2023-22796] Possible ReDoS based DoS vulnerability in Active Support\u2019s underscore\n- [CVE-2023-22792] Possible ReDoS based DoS vulnerability in Action Dispatch\n\nSee details at https://rubyonrails.org/2023/1/17/Rails-Versions-6-0-6-1-6-1-7-1-7-0-4-1-have-been-released\n\nChangelog: security"
+    },
+    "CVE-2022-44566": {
+      "52ea63620eddb24d84b932b09d1e2c9d3430fdd2": "Update Rails to 6.1.7.1 to address security vulnerabilities\n\n- [CVE-2023-22797] Possible Open Redirect Vulnerability in Action Pack\n- [CVE-2022-44566] Possible Denial of Service Vulnerability in ActiveRecord\u2019s PostgreSQL\n- [CVE-2023-22795] Possible ReDoS based DoS vulnerability in Action Dispatch\n- [CVE-2023-22794] SQL Injection Vulnerability via ActiveRecord comments\n- [CVE-2023-22796] Possible ReDoS based DoS vulnerability in Active Support\u2019s underscore\n- [CVE-2023-22792] Possible ReDoS based DoS vulnerability in Action Dispatch\n\nSee details at https://rubyonrails.org/2023/1/17/Rails-Versions-6-0-6-1-6-1-7-1-7-0-4-1-have-been-released\n\nChangelog: security"
+    },
+    "CVE-2023-22795": {
+      "52ea63620eddb24d84b932b09d1e2c9d3430fdd2": "Update Rails to 6.1.7.1 to address security vulnerabilities\n\n- [CVE-2023-22797] Possible Open Redirect Vulnerability in Action Pack\n- [CVE-2022-44566] Possible Denial of Service Vulnerability in ActiveRecord\u2019s PostgreSQL\n- [CVE-2023-22795] Possible ReDoS based DoS vulnerability in Action Dispatch\n- [CVE-2023-22794] SQL Injection Vulnerability via ActiveRecord comments\n- [CVE-2023-22796] Possible ReDoS based DoS vulnerability in Active Support\u2019s underscore\n- [CVE-2023-22792] Possible ReDoS based DoS vulnerability in Action Dispatch\n\nSee details at https://rubyonrails.org/2023/1/17/Rails-Versions-6-0-6-1-6-1-7-1-7-0-4-1-have-been-released\n\nChangelog: security"
+    },
+    "CVE-2023-22794": {
+      "52ea63620eddb24d84b932b09d1e2c9d3430fdd2": "Update Rails to 6.1.7.1 to address security vulnerabilities\n\n- [CVE-2023-22797] Possible Open Redirect Vulnerability in Action Pack\n- [CVE-2022-44566] Possible Denial of Service Vulnerability in ActiveRecord\u2019s PostgreSQL\n- [CVE-2023-22795] Possible ReDoS based DoS vulnerability in Action Dispatch\n- [CVE-2023-22794] SQL Injection Vulnerability via ActiveRecord comments\n- [CVE-2023-22796] Possible ReDoS based DoS vulnerability in Active Support\u2019s underscore\n- [CVE-2023-22792] Possible ReDoS based DoS vulnerability in Action Dispatch\n\nSee details at https://rubyonrails.org/2023/1/17/Rails-Versions-6-0-6-1-6-1-7-1-7-0-4-1-have-been-released\n\nChangelog: security"
+    },
+    "CVE-2023-22796": {
+      "52ea63620eddb24d84b932b09d1e2c9d3430fdd2": "Update Rails to 6.1.7.1 to address security vulnerabilities\n\n- [CVE-2023-22797] Possible Open Redirect Vulnerability in Action Pack\n- [CVE-2022-44566] Possible Denial of Service Vulnerability in ActiveRecord\u2019s PostgreSQL\n- [CVE-2023-22795] Possible ReDoS based DoS vulnerability in Action Dispatch\n- [CVE-2023-22794] SQL Injection Vulnerability via ActiveRecord comments\n- [CVE-2023-22796] Possible ReDoS based DoS vulnerability in Active Support\u2019s underscore\n- [CVE-2023-22792] Possible ReDoS based DoS vulnerability in Action Dispatch\n\nSee details at https://rubyonrails.org/2023/1/17/Rails-Versions-6-0-6-1-6-1-7-1-7-0-4-1-have-been-released\n\nChangelog: security"
+    },
+    "CVE-2023-22792": {
+      "52ea63620eddb24d84b932b09d1e2c9d3430fdd2": "Update Rails to 6.1.7.1 to address security vulnerabilities\n\n- [CVE-2023-22797] Possible Open Redirect Vulnerability in Action Pack\n- [CVE-2022-44566] Possible Denial of Service Vulnerability in ActiveRecord\u2019s PostgreSQL\n- [CVE-2023-22795] Possible ReDoS based DoS vulnerability in Action Dispatch\n- [CVE-2023-22794] SQL Injection Vulnerability via ActiveRecord comments\n- [CVE-2023-22796] Possible ReDoS based DoS vulnerability in Active Support\u2019s underscore\n- [CVE-2023-22792] Possible ReDoS based DoS vulnerability in Action Dispatch\n\nSee details at https://rubyonrails.org/2023/1/17/Rails-Versions-6-0-6-1-6-1-7-1-7-0-4-1-have-been-released\n\nChangelog: security"
+    },
+    "CVE-2022-32149": {
+      "c619967fbada2a65aae099bae8e70c9e3fa734ec": "Merge branch 'workhorse-bump-golang-text' into 'master'\n\nFix CVE-2022-32149 in workhorse dependency\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/100828\n\nMerged-by: Jacob Vosmaer <jacob@gitlab.com>\nApproved-by: Jacob Vosmaer <jacob@gitlab.com>\nCo-authored-by: Alessio Caiazza <acaiazza@gitlab.com>",
+      "6b4b2df5152c85f50627e5a9fd7cd38a1e155e38": "Fix CVE-2022-32149 in workhorse dependency\n\nUpdate golang.org/x/text to v0.3.8 to fix CVE-2022-32149\n\nChangelog: security"
+    },
+    "CVE-2020-28483": {
+      "563163f762aa128266181b46ec9d2969f5c32d13": "Exclude gin and bluemonday package from dependencies\n\n- github.com/gin-gonic/gin < 1.6.0 vulnerable to CVE-2020-28483\n- github.com/microcosm-cc/bluemonday < 1.0.16 to CVE-2021-42576\n\nThe vulnerabilities are inexploitable in Workhorse because these\npackages are sentry-go dependencies and used by sentry-go/gin\nand sentry-go/iris that we don't use\n\nChangelog: other"
+    },
+    "CVE-2021-42576": {
+      "563163f762aa128266181b46ec9d2969f5c32d13": "Exclude gin and bluemonday package from dependencies\n\n- github.com/gin-gonic/gin < 1.6.0 vulnerable to CVE-2020-28483\n- github.com/microcosm-cc/bluemonday < 1.0.16 to CVE-2021-42576\n\nThe vulnerabilities are inexploitable in Workhorse because these\npackages are sentry-go dependencies and used by sentry-go/gin\nand sentry-go/iris that we don't use\n\nChangelog: other"
+    },
+    "CVE-2021-22569": {
+      "f9bcdf86b2c8ea9c75482dace154e0bcbb2e4f48": "Update google-protobuf to v3.21.3\n\nThis not only addresses CVE-2021-22569, but it also pulls in all the\nbig endian fixes made towards supporting s390x\n(https://gitlab.com/gitlab-org/omnibus-gitlab/-/issues/6435).\n\nChangelog: changed"
+    },
+    "CVE-2022-30122": {
+      "053cc4d21f9c8cf426db68244df29ee242e91cd7": "Update rack gem to version 2.2.3.1\n\nFixes CVE-2022-30122 and CVE-2022-30123\n\nChangelog: security"
+    },
+    "CVE-2022-30123": {
+      "053cc4d21f9c8cf426db68244df29ee242e91cd7": "Update rack gem to version 2.2.3.1\n\nFixes CVE-2022-30122 and CVE-2022-30123\n\nChangelog: security"
+    },
+    "GHSA-RMJ8-8HHH-GV5H": {
+      "624a6067225cda864cfb5c5651fadfbd12303236": "Update to Puma 5.6.2\n\nThis addresses\nhttps://github.com/puma/puma/security/advisories/GHSA-rmj8-8hhh-gv5h.\n\nFull diff: https://my.diffend.io/gems/puma/5.5.2/5.6.2\n\nRelates to https://gitlab.com/gitlab-org/gitlab/-/issues/352659\n\nChangelog: changed"
+    },
+    "CVE-2021-44528": {
+      "a091fd5e95b7033453c236d7f8e188cebd8b94ff": "Update Rails to v6.1.4.4\n\nFrom https://github.com/rails/rails/releases, the changes between\nv6.1.4.1 and v6.1.4.4 are minor:\n\n- ActionPack (https://my.diffend.io/gems/actionpack/6.1.4.1/6.1.4.4)\n\n* Fix issue with host protection not allowing host with port in development.\n* Fix issue with host protection not allowing localhost in development.\n* Fix X_FORWARDED_HOST protection. [CVE-2021-44528]\n\n- Railties (https://my.diffend.io/gems/railties/6.1.4.1/6.1.4.4)\n\n* Allow localhost with a port by default in development\n\nzeitwerk diff: https://my.diffend.io/gems/zeitwerk/2.5.1/2.5.3\nmarcel diff: https://my.diffend.io/gems/marcel/1.0.1/1.0.2\nglobalid diff: https://my.diffend.io/gems/globalid/0.5.2/1.0.0\n\nRelates to https://gitlab.com/gitlab-org/gitlab/-/issues/349634\n\nChangelog: fixed"
+    },
+    "CVE-2021-41136": {
+      "32d23747fc560f7eafc0eb52fae04a1633e5bded": "Update Puma to version 5.5.2\n\nIt addresses CVE-2021-41136 which we're not vulnerable\nto under our default configuration.\n\nChangelog: security"
+    },
+    "CVE-2021-22942": {
+      "d05402636d8ca8f9d3662cb08cefa79033ec4ce4": "Merge branch 'security-339169-fix-cve-2021-22942-14-3' into '14-3-stable-ee'\n\nUpdate to Rails v6.1.4.1\n\nSee merge request gitlab-org/security/gitlab!1757"
+    },
+    "CVE-2021-35513": {
+      "ba3db73a2c8d34e4664a78983feb2befdc10afff": "Update mermaid to 8.11.5\n\nMermaid before 8.11.0 allows XSS when the antiscript feature is used,\nsee https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35513\n\nChangelog: security"
+    },
+    "CVE-2020-11076": {
+      "e02a1fff33dd5f1eb64e37b4228e7d0e76b0fed9": "Update gitlab-puma to 4.3.5-gitlab-3\n\n- Contains fix for missing `ctype.h`\n- Contains security fix for `CVE-2020-11076` and `CVE-2020-11077`"
+    },
+    "CVE-2020-11077": {
+      "e02a1fff33dd5f1eb64e37b4228e7d0e76b0fed9": "Update gitlab-puma to 4.3.5-gitlab-3\n\n- Contains fix for missing `ctype.h`\n- Contains security fix for `CVE-2020-11076` and `CVE-2020-11077`"
+    },
+    "CVE-2020-15138": {
+      "625978cacd3e0b64e1fcdfd0651f6093a21e2617": "Update prismjs from 1.6.0 to 1.21.0\n\nTo address CVE-2020-15138\n\nSigned-off-by: Takuya Noguchi <takninnovationresearch@gmail.com>"
+    },
+    "CVE-2020-10187": {
+      "c62625efdca9bc4f443f210b953ecbfc944c9a80": "Merge branch 'security-fix-CVE-2020-10187-12-10' into '12-10-stable-ee'\n\nFix doorkeeper CVE-2020-10187\n\nSee merge request gitlab-org/security/gitlab!454",
+      "cdf2d605c7fa5aebfc8938866095a022b2a6deb4": "Merge branch 'security-fix-CVE-2020-10187-12-8' into '12-8-stable-ee'\n\nFix doorkeeper CVE-2020-10187\n\nSee merge request gitlab-org/security/gitlab!445",
+      "a78b7e011c919570e0101476e3e4ab771837386f": "Merge branch 'security-fix-CVE-2020-10187-12-9' into '12-9-stable-ee'\n\nFix doorkeeper CVE-2020-10187\n\nSee merge request gitlab-org/security/gitlab!444",
+      "03213b25e9ed4862aa3f528364cc59e8796c1eb8": "Merge branch 'security-fix-CVE-2020-10187' into 'master'\n\nFix doorkeeper CVE-2020-10187\n\nCloses #115\n\nSee merge request gitlab-org/security/gitlab!429",
+      "8c544877cce3c41bcf6172f95e213e1290385257": "Fix doorkeeper CVE-2020-10187",
+      "f51b2deb521ed167747ead28f658525bcfc581d1": "Fix doorkeeper CVE-2020-10187",
+      "d12692db797e9a68004f848505266b1cd63c2779": "Fix doorkeeper CVE-2020-10187",
+      "f8d71631de1228d49a4728e39b44b82741198a4f": "Fix doorkeeper CVE-2020-10187"
+    },
+    "CVE-2020-7595": {
+      "04d3c979303500398f5737d4a50f96c130957264": "Merge branch 'security-update-nokogiri-cve-2020-7595' into 'master'\n\nUpdate Nokogiri to fix CVE-2020-7595\n\nCloses #73\n\nSee merge request gitlab-org/security/gitlab!271",
+      "75f230d4b9736f903ce137bc8d84be4db7f70e2e": "Update Nokogiri to fix CVE-2020-7595",
+      "290b5b4d882ce35c6197db1983d44913001d583f": "Merge branch 'security-update-nokogiri-cve-2020-7595-12-8' into '12-8-stable-ee'\n\nUpdate Nokogiri to fix CVE-2020-7595\n\nSee merge request gitlab-org/security/gitlab!310",
+      "fe3e56462da0b52cfab1aea4229bd641e67768d0": "Update Nokogiri to fix CVE-2020-7595",
+      "9eeb54db391e40144e442f38253d338f0a7a844e": "Merge branch 'security-update-nokogiri-cve-2020-7595-12-9' into '12-9-stable-ee'\n\nUpdate Nokogiri to fix CVE-2020-7595\n\nSee merge request gitlab-org/security/gitlab!353",
+      "ab63502ed61f2b339c63eae991fd5371adf29d5d": "Update Nokogiri to fix CVE-2020-7595",
+      "62b2e1e5172917ba448745cc923d350e81386f27": "Merge branch 'security-update-nokogiri-cve-2020-7595-12-7' into '12-7-stable-ee'\n\nUpdate Nokogiri to fix CVE-2020-7595\n\nSee merge request gitlab-org/security/gitlab!311",
+      "dd685109ff23086753e5840449b60e27fcf551ad": "Update Nokogiri to fix CVE-2020-7595"
+    },
+    "CVE-2020-5247": {
+      "59ce70237f5e20304b68d1f400aa11d0c6124e51": "Update Puma to 4.3.3\n\n- https://gitlab.com/gitlab-org/gitlab-puma/-/compare/v4.3.1.gitlab.2...v4.3.3.gitlab.2\n- Fixes CVE-2020-5247"
+    },
+    "CVE-2019-9837": {
+      "b20eea286f8b621e0fc138535c10c66286cc2532": "Upgrade doorkeeper to 5.0.2\n\nWe need to upgrade doorkeeper-openid_connect to > 1.5.4 to address the\nsecurity vulnerability CVE-2019-9837. This update is dependent on\ndoorkeeper 5.x so bump doorkeeper at the same time."
+    },
+    "CVE-2019-16772": {
+      "ca701b5b9782655ac69b240c9559599437f3b63c": "Update webpack related packages\n\ncompression-webpack-plugin from 3.0.0 to 3.0.1\ncopy-webpack-plugin from 5.0.4 to 5.0.5\n\nto address CVE-2019-16772 existing in serialize-javascript\n\nSigned-off-by: Takuya Noguchi <takninnovationresearch@gmail.com>"
+    },
+    "CVE-2019-16779": {
+      "946856d5d5e8d8d9663d71fad088b9c49f74deda": "Merge branch 'security-update-excon-cve-2019-16779' into 'master'\n\nUpdate excon to 0.71.1 to fix CVE-2019-16779\n\nCloses #35\n\nSee merge request gitlab-org/security/gitlab!102",
+      "fc4b3423a2b889c6c724b664b76204aeec1c57b3": "Merge branch 'security-update-excon-cve-2019-16779-12-5' into '12-5-stable-ee'\n\nUpdate excon to 0.71.1 to fix CVE-2019-16779\n\nSee merge request gitlab-org/security/gitlab!114",
+      "7d5f406891b4fc61a58c7989ddc50cfaadb8c264": "Merge branch 'security-update-excon-cve-2019-16779-12-7' into '12-7-stable-ee'\n\nUpdate excon to 0.71.1 to fix CVE-2019-16779\n\nSee merge request gitlab-org/security/gitlab!112",
+      "2f743b2e9bc2cf2a86e606c227d5e63081dbd1ae": "Merge branch 'security-update-excon-cve-2019-16779-12-6' into '12-6-stable-ee'\n\nUpdate excon to 0.71.1 to fix CVE-2019-16779\n\nSee merge request gitlab-org/security/gitlab!113"
+    },
+    "CVE-2018-1000211": {
+      "90aa9f5e14321857d5a7e4b6c8df5b997fb813e2": "Update doorkeeper to 4.4.3\n\nUpdates the doorkeeper gem to 4.4.3 so that we can address security\nissue CVE-2018-1000211.\n\nThis issue involves token revocation not working for public apps.\n\nhttps://gitlab.com/gitlab-org/gitlab/merge_requests/20953"
+    },
+    "CVE-2019-10747": {
+      "f4e46becd53b89f4b60074daf2a306a6180c6b5d": "Update set-value from 2.0.0 to 2.0.1\n\nand also update union-value from 1.0.0 to 1.0.1\n\nto fix the valunerability named as CVE-2019-10747\n\n- https://www.npmjs.com/advisories/1012\n- https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10747\n\nSigned-off-by: Takuya Noguchi <takninnovationresearch@gmail.com>"
+    },
+    "CVE-2019-18848": {
+      "d597dc904aca1624db1c101b3894425304e048a6": "Upgrade json-jwt to v1.11.0\n\nThis fixes CVE-2019-18848 and brings in a number of minor fixes:\nhttps://github.com/nov/json-jwt/compare/v1.9.4..v1.11.0\n\nCloses https://gitlab.com/gitlab-org/gitlab/issues/39148"
+    },
+    "CVE-2019-16770": {
+      "9303e6abebbd9f5f70afe211c844c0d83da7bba8": "Update puma to v4.3.1\n\nThis is a security release to patch CVE-2019-16770:\nhttps://github.com/puma/puma/blob/master/History.md"
+    },
+    "CVE-2019-15657": {
+      "f88f12477ad566c576d88bdbb38fdd5365981b78": "Merge branch 'update-eslint-utils-to-1.4.2' into 'master'\n\nUpdate eslint-utils to 1.4.2\n\nFixes vulnerability in development environment.\nSee https://nvd.nist.gov/vuln/detail/CVE-2019-15657\n\nSee merge request gitlab-org/gitlab-ce!32251",
+      "1c7587be7d08fae2ed199a71a447b63613705542": "Update eslint-utils to 1.4.2\n\n> In eslint-utils before 1.4.1, the getStaticValue function can execute arbitrary code.\n\n- https://github.com/mysticatea/eslint-utils/security/advisories/GHSA-3gx7-xhv7-5mx3\n- https://nvd.nist.gov/vuln/detail/CVE-2019-15657\n\nSigned-off-by: Takuya Noguchi <takninnovationresearch@gmail.com>"
+    },
+    "GHSA-3GX7-XHV7-5MX3": {
+      "1c7587be7d08fae2ed199a71a447b63613705542": "Update eslint-utils to 1.4.2\n\n> In eslint-utils before 1.4.1, the getStaticValue function can execute arbitrary code.\n\n- https://github.com/mysticatea/eslint-utils/security/advisories/GHSA-3gx7-xhv7-5mx3\n- https://nvd.nist.gov/vuln/detail/CVE-2019-15657\n\nSigned-off-by: Takuya Noguchi <takninnovationresearch@gmail.com>"
+    },
+    "CVE-2019-5477": {
+      "2d58eba11134d2f3013d2ab45d93ae0581893be7": "Bump nokogiri to 1.10.4\n\nThis pulls in fix for CVE-2019-5477, where usage of\nNokogiri::CSS::Tokenizer#load_file leads to potential command injection."
+    },
+    "CVE-2019-13574": {
+      "6b7e245902051ad5a5e99dddd127cdf6d981e3f1": "Update mini_magick to 4.9.5\n\nto address CVE-2019-13574\n\nSigned-off-by: Takuya Noguchi <takninnovationresearch@gmail.com>"
+    },
+    "CVE-2019-10746": {
+      "e549a7fb1f364395c20522e5395e22a2bf434ed0": "Update mixin-deep to 1.3.2\n\nTo address a Prototype Pollution vulnerability,\nwhich exists in `mixin-deep` package, versions\n`>=2.0.0 <2.0.1 || <1.3.2` (CVE-2019-10746).\n\n- Diff: https://github.com/jonschlinkert/mixin-deep/compare/1.3.1...1.3.2\n- Synk ID: https://app.snyk.io/vuln/SNYK-JS-MIXINDEEP-450212\n\nSigned-off-by: Takuya Noguchi <takninnovationresearch@gmail.com>"
+    },
+    "CVE-2019-11068": {
+      "9d7bb9d8c2631a9bd781fa7793fbcfc4fdbf71b8": "Bump Nokogiri to 1.10.3\n\nThis pulls in a fix for libxslt that addresses CVE-2019-11068:\nhttps://github.com/sparklemotion/nokogiri/releases"
+    },
+    "CVE-2018-16476": {
+      "453bcfb3f34b61f94c51d8c5e8de4f2ae6ee309c": "Merge branch 'blackst0ne-bump-rails-cve-2018-16476' into 'master'\n\nBump Ruby on Rails to 5.0.7.1\n\nSee merge request gitlab-org/gitlab-ce!23396",
+      "f40478fe194113722d5db5e066acde37a7cdbd85": "Bump Ruby on Rails to 5.0.7.1\n\nFix the CVE-2018-16476 vulnerability."
+    },
+    "CVE-2018-16471": {
+      "5d077fabae3eeb720af7942093d8d5f643dee81e": "Update rack to 2.0.6 (for QA environments) for addressing CVE-2018-16471\n\nSigned-off-by: Takuya Noguchi <takninnovationresearch@gmail.com>",
+      "eded08152273cf3eacac1002d41463d97de2e8de": "Bump nokogiri, loofah, and rack gems for security updates\n\nloofah: CVE-2018-16468:\nhttps://github.com/flavorjones/loofah/issues/154\n\nnokogiri: CVE-2018-14404 and CVE-2018-14567\nhttps://github.com/sparklemotion/nokogiri/blob/master/CHANGELOG.md\n\nrack: CVE-2018-16471\nhttps://github.com/rack/rack/commit/e5d58031b766e49687157b45edab1b8457d972bd\n\ni18n: https://github.com/svenfuchs/i18n/releases\n\nconcurrent-ruby: https://github.com/ruby-concurrency/concurrent-ruby/blob/master/CHANGELOG.md"
+    },
+    "CVE-2018-16468": {
+      "eded08152273cf3eacac1002d41463d97de2e8de": "Bump nokogiri, loofah, and rack gems for security updates\n\nloofah: CVE-2018-16468:\nhttps://github.com/flavorjones/loofah/issues/154\n\nnokogiri: CVE-2018-14404 and CVE-2018-14567\nhttps://github.com/sparklemotion/nokogiri/blob/master/CHANGELOG.md\n\nrack: CVE-2018-16471\nhttps://github.com/rack/rack/commit/e5d58031b766e49687157b45edab1b8457d972bd\n\ni18n: https://github.com/svenfuchs/i18n/releases\n\nconcurrent-ruby: https://github.com/ruby-concurrency/concurrent-ruby/blob/master/CHANGELOG.md"
+    },
+    "CVE-2018-14404": {
+      "eded08152273cf3eacac1002d41463d97de2e8de": "Bump nokogiri, loofah, and rack gems for security updates\n\nloofah: CVE-2018-16468:\nhttps://github.com/flavorjones/loofah/issues/154\n\nnokogiri: CVE-2018-14404 and CVE-2018-14567\nhttps://github.com/sparklemotion/nokogiri/blob/master/CHANGELOG.md\n\nrack: CVE-2018-16471\nhttps://github.com/rack/rack/commit/e5d58031b766e49687157b45edab1b8457d972bd\n\ni18n: https://github.com/svenfuchs/i18n/releases\n\nconcurrent-ruby: https://github.com/ruby-concurrency/concurrent-ruby/blob/master/CHANGELOG.md"
+    },
+    "CVE-2018-14567": {
+      "eded08152273cf3eacac1002d41463d97de2e8de": "Bump nokogiri, loofah, and rack gems for security updates\n\nloofah: CVE-2018-16468:\nhttps://github.com/flavorjones/loofah/issues/154\n\nnokogiri: CVE-2018-14404 and CVE-2018-14567\nhttps://github.com/sparklemotion/nokogiri/blob/master/CHANGELOG.md\n\nrack: CVE-2018-16471\nhttps://github.com/rack/rack/commit/e5d58031b766e49687157b45edab1b8457d972bd\n\ni18n: https://github.com/svenfuchs/i18n/releases\n\nconcurrent-ruby: https://github.com/ruby-concurrency/concurrent-ruby/blob/master/CHANGELOG.md"
+    },
+    "CVE-2014-9490": {
+      "135c1913604fb20d060de2cad6ea5baa83255e08": "Bump Sidekiq and other related gems\n\n* Sidekiq changes:\n  https://github.com/mperham/sidekiq/blob/master/Changes.md\n\n* Rack 1.6.1 fixes CVE-2014-9490:\n  https://github.com/rack/rack/blob/master/CHANGELOG.md\n\n* rack-protection 2.0.4 only fixes a minor message:\n  https://github.com/sinatra/sinatra/commits/master/rack-protection"
+    },
+    "CVE-2018-1000544": {
+      "265b49135436af9b8938c4b21b13462f0cfffdcb": "Merge branch '50930-update-rubyzip-to-1-2-2' into 'master'\n\nUpdate rubyzip gem to 1.2.2 (CVE-2018-1000544)\n\nCloses #50930\n\nSee merge request gitlab-org/gitlab-ce!21460",
+      "4df16d8d5a1849d89f683b22389ebb5a93823fa0": "Update rubyzip to 1.2.2 (CVE-2018-1000544)"
+    },
+    "CVE-2018-3760": {
+      "9829032c97f86e21a5bba0aee5b9affb3f08f350": "Merge branch 'rs-update-sprockets' into 'master'\n\nBump sprockets to 3.7.2 to address CVE-2018-3760\n\nSee merge request gitlab-org/gitlab-ce!20109",
+      "21f1b16ea286103a454bc44a518b8b12e92af207": "Merge branch 'master' into 6078-add-permissions-checks-dismiss-issue\n\n* master: (189 commits)\n  Remove redundant callbacks\n  (Part 1) Resolve \"Recognise when a user is trying to validate a private SSH key\"\n  Fix auto_cancel_pending_pipelines check\n  Resolve \"2FA should not attempt to use U2F in unsupported browsers\"\n  Resolve \"Change the BitBucket import page to indicate that its for BB Cloud only, not for on-prem BB\"\n  Resolve \"Help users find our contributing page\"\n  Docs broken links\n  Refactor issue boards and get the EE changes to CE\n  [Rails5] Fix error on missed :authenticate_user callback\n  Delete non-latest merge request diff files upon diffs reload\n  Adds test to cover the fix in #45575\n  Log push output on exception\n  Update issue_board.md\n  edit issue_board.md\n  edits to issue_board.md\n  Update gitlab_chart.md\n  Add note about license management first run\n  Remove top margin for bootstrap popover headers\n  Bump sprockets to 3.7.2 to address CVE-2018-3760\n  Bring changes from EE\n  ...",
+      "28aa8a31dc9adf32684557edfcfc173a2155ac82": "Merge branch 'rs-update-sprockets' into 'master'\n\nBump sprockets to 3.7.2 to address CVE-2018-3760\n\nSee merge request gitlab-org/gitlab-ce!20109",
+      "ab339cf68b4d7cbc05a20e3555f86980b7c0d91c": "Merge branch 'master' into fl-fix-tech-debt\n\n* master: (67 commits)\n  (Part 1) Resolve \"Recognise when a user is trying to validate a private SSH key\"\n  Fix auto_cancel_pending_pipelines check\n  Resolve \"2FA should not attempt to use U2F in unsupported browsers\"\n  Resolve \"Change the BitBucket import page to indicate that its for BB Cloud only, not for on-prem BB\"\n  Resolve \"Help users find our contributing page\"\n  Docs broken links\n  Refactor issue boards and get the EE changes to CE\n  Adds test to cover the fix in #45575\n  Log push output on exception\n  Update gitlab_chart.md\n  Remove top margin for bootstrap popover headers\n  Bump sprockets to 3.7.2 to address CVE-2018-3760\n  Bring changes from EE\n  Bring changes from EE\n  Simplify the decode secret step\n  Cleanup ruby sampler metrics\n  Raw diffs are served from Gitaly\n  add inline badges to auto devops feature list\n  Add more large tables to cop\n  Bring changes from EE\n  ...",
+      "95842f230bbce6204d2ad547c7b2be1d73deeee9": "Merge branch 'rs-update-sprockets' into 'master'\n\nBump sprockets to 3.7.2 to address CVE-2018-3760\n\nSee merge request gitlab-org/gitlab-ce!20109",
+      "fce42cbc8ac47285c24cc60de82d7a2dd25c1184": "Bump sprockets to 3.7.2 to address CVE-2018-3760"
+    },
+    "CVE-2017-18258": {
+      "5ed0e4b4ce1b362580075424c428332b83eb59bc": "Bump nokogiri to 1.8.2 in qa Gemfile\n\nResolves CVE-2017-18258"
+    },
+    "CVE-2017-11428": {
+      "2dca1bc04d82ebcf9629a51c5ea285957a5fccda": "Merge branch '43806-update-ruby-saml-to-1.7.2' into 'master'\n\nUpdate ruby-saml to 1.7.2 and omniauth-saml to 1.10.0 (CVE-2017-11428, CVE-2017-11430)\n\nCloses #43806\n\nSee merge request gitlab-org/gitlab-ce!17734"
+    },
+    "CVE-2017-11430": {
+      "2dca1bc04d82ebcf9629a51c5ea285957a5fccda": "Merge branch '43806-update-ruby-saml-to-1.7.2' into 'master'\n\nUpdate ruby-saml to 1.7.2 and omniauth-saml to 1.10.0 (CVE-2017-11428, CVE-2017-11430)\n\nCloses #43806\n\nSee merge request gitlab-org/gitlab-ce!17734"
+    },
+    "CVE-2017-9050": {
+      "0190b014508c30cad86e55663010ba63f64c1016": "Merge branch 'winh-upgrade-nokogiri' into 'master'\n\nUpgrade Nokogiri because of CVE-2017-9050\n\nSee merge request gitlab-org/gitlab-ce!14427",
+      "7d4ad67b8fa0124680eebb20f39f0eb06c524e58": "Merge branch 'winh-upgrade-nokogiri' into 'master'\n\nUpgrade Nokogiri because of CVE-2017-9050\n\nSee merge request gitlab-org/gitlab-ce!14427",
+      "80ef42d6555ad64eb8e2b7e4e8333fd7ac218ee2": "Merge branch 'winh-upgrade-nokogiri' into 'master'\n\nUpgrade Nokogiri because of CVE-2017-9050\n\nSee merge request gitlab-org/gitlab-ce!14427",
+      "239332eed3fa870fd41be83864882c0f389840d8": "Merge remote-tracking branch 'upstream/master' into no-ivar-in-modules\n\n* upstream/master: (168 commits)\n  Update CHANGELOG.md for 10.0.1\n  Remove Grit settings from default settings\n  Fix duplicate key errors in PostDeployMigrateUserExternalMailData migration\n  Workaround for #38259\n  Workaround for n+1 in Projects::TreeController#show\n  Removed old icons from project page\n  Make branches page translatable\n  fix typo in icons section\n  Don't show it if there's no project.\n  Update CHANGELOG.md for 10.0.0\n  Inform user that current shared projects will remain shared\n  Allow the git circuit breaker to correctly handle missing repository storages\n  Reserve refs/replace cos `git-replace` is using it\n  Resolve \"Better SVG Usage in the Frontend\"\n  Replace the 'project/service.feature' spinach test with an rspec analog\n  Replace the 'project/shortcuts.feature' spinach test with an rspec analog\n  Removed two legacy config options\n  Fix rendering double note issue.\n  IssueNotes: Switch back to Write pane when note cancel or submit.\n  Upgrade Nokogiri because of CVE-2017-9050\n  ...",
+      "3efcb46a3d5202ffe25b03f7a35d862949768254": "Merge remote-tracking branch 'upstream/master' into ce-to-ee-2017-09-22\n\n* upstream/master: (26 commits)\n  Resolve \"Better SVG Usage in the Frontend\"\n  Replace the 'project/service.feature' spinach test with an rspec analog\n  Removed two legacy config options\n  Fix rendering double note issue.\n  IssueNotes: Switch back to Write pane when note cancel or submit.\n  Upgrade Nokogiri because of CVE-2017-9050\n  Bump VERSION to 10.1.0-pre\n  Standardize access to CSRF token in JavaScript\n  Do not clone the repo when running the review-docs jobs\n  Don't memoize storage configuration on `FsShardsCheck`\n  Document that group Owners can always create subgroups\n  Auto DevOps docs cleanup\n  Display full pre-receive and post-receive hook output in GitLab UI\n  Simplify a test\n  Adds EE tag detection to remove_old in gitlab backup.\n  Correctly detect multiple issue URLs after 'Closes...' in MR descriptions\n  new sharing permissions\n  IssueNotes: Resize comment form after note submit and discard.\n  [skip ci] Add changelog\n  update spacing\n  ...",
+      "fc805edf904ec712769fd2806c4154efba83b45d": "Merge branch 'sh-bump-nokogiri' into 'master'\n\nUpgrade Nokogiri because of CVE-2017-9050\n\nSee merge request gitlab-org/gitlab-ee!2996",
+      "07b0d933b523b22464c72e0dd85bc413f455b72f": "Merge branch 'master' into 31050-registry-image-lists\n\n* master: (112 commits)\n  Replace the 'project/service.feature' spinach test with an rspec analog\n  Removed two legacy config options\n  Fix rendering double note issue.\n  IssueNotes: Switch back to Write pane when note cancel or submit.\n  Upgrade Nokogiri because of CVE-2017-9050\n  Bump VERSION to 10.1.0-pre\n  Standardize access to CSRF token in JavaScript\n  Do not clone the repo when running the review-docs jobs\n  Don't memoize storage configuration on `FsShardsCheck`\n  Document that group Owners can always create subgroups\n  Auto DevOps docs cleanup\n  Display full pre-receive and post-receive hook output in GitLab UI\n  Adds EE tag detection to remove_old in gitlab backup.\n  Correctly detect multiple issue URLs after 'Closes...' in MR descriptions\n  new sharing permissions\n  IssueNotes: Resize comment form after note submit and discard.\n  [skip ci] Add changelog\n  Make resolve discussion icon gray\n  update spacing\n  Deleted another Fixture due to User Callout\n  ...",
+      "34797ad365a820505236f3814df1cf5d299f376c": "Merge branch 'winh-upgrade-nokogiri' into 'master'\n\nUpgrade Nokogiri because of CVE-2017-9050\n\nSee merge request gitlab-org/gitlab-ce!14427",
+      "92173ac55cd921a65ce137e238ed8bc4474aaccb": "Merge branch 'winh-upgrade-nokogiri' into 'master'\n\nUpgrade Nokogiri because of CVE-2017-9050\n\nSee merge request gitlab-org/gitlab-ce!14427",
+      "f45f7ad62a952f90430f67b36c5edc8525f346c6": "Upgrade Nokogiri because of CVE-2017-9050"
+    },
+    "CVE-2017-5029": {
+      "7afa087734496ccdcbea8f1ba9f38d7fb5370e56": "Merge remote-tracking branch 'ee/master' into 2302-environment-specific-variables\n\n* ee/master: (24 commits)\n  Changelog\n  Fix GeoDynaicBackoff strategy code and added specs\n  Enable RSpec/SingleLineHook cop\n  Correct RSpec/SingleLineHook cop offenses\n  Add a custom RSpec/SingleLineHook cop\n  Add docs for personal access tokens\n  Fix wrong link to codeclimate diff docs\n  Cleaned up helper methods in protected tags/branches specs\n  Handle nil GeoNode to prevent spec failures\n  Fix failing spec\n  Add related issues backend\n  Add more descriptive message about NotImplementedError and display it in health check\n  Restrict Geo tests to PostgreSQL\n  Suggest a way to resolve Geo tracking DB not having all the migrations\n  Move License initializer to the front\n  Memoized access levels in ProtectedBranch EE specs\n  Cleanup protected branch EE specs, removing unnecessary to_sym\n  Revert \"Fix specs during CE->EE\"\n  Fix specs during CE->EE\n  Merge branch 'winh-ignore-CVE-2017-5029' into 'master'\n  ...",
+      "c61ede30e80ad83e3d26e50ec27b5daa8d8f2ed8": "Merge branch 'winh-ignore-CVE-2017-5029' into 'master'\n\nIgnore CVE-2017-5029 in Nokogiri\n\nCloses #33597\n\nSee merge request !12109",
+      "ff6864b8a8944f75dff65fa469c93067389cad38": "Merge remote-tracking branch 'ee/master' into 2302-environment-specific-variables\n\n* ee/master:\n  Merge branch 'winh-ignore-CVE-2017-5029' into 'master'\n  Treat licenses with no plan specified as EES\n  Add explicit licensing for Elasticsearch\n  removes redundant project pull mirroring code from a bad merge\n  Add an optional performance bar to view performance metrics\n  Use :request_store hooks on specs\n  Override `file_storage` on the `ObjectStoreUploader`\n  Update rename_system_namespace_spec to new validations.\n  Make the uploader use the updated folder\n  Bring in security changes from the 9.2.5 release\n  Fix tests on `security-9-2-ee`",
+      "edc46ce3e44147d5fe1b3071ba1e020846b60b13": "Merge remote-tracking branch 'upstream/master' into 33149-rename-more-builds\n\n* upstream/master: (460 commits)\n  Center dropdown for pipeline's  mini graph\n  Documentation bugfix of invalid JSON payload example of Create a commit with multiple files and actions\n  Fix filename method of GitlabUploader to return always real filename\n  Ignore CVE-2017-5029 in Nokogiri\n  Refactor atom builder by using xml.atom layout\n  Let PhantomJS load local images\n  Add a changelog entry\n  Only add a description change note when no tasks are updated\n  Doc: Add the need to upgrade to Go 1.8.3 in the 9.1->9.2 documentation as the upgrade fails with Go 1.5 (installed with Gitlab 8.1)\n  Use gitaly 0.11.2\n  Add the ability to perform background migrations\n  Always render warnings icon in orange\n  Fix a few translation for zh_TW\n  Improve Job detail view to make it refreshed in real-time instead of reloading\n  Attempts to run RSpec tests twice (1 retry)\n  ignore name validation on importing\n  Only show hover state on links and buttons\n  Use vue files for navigation tabs and buttons\n  doc: add example of scheduler when\n  Add test for u2f helper and changelog entry\n  ...",
+      "a4270596d7c8ce3b47fe164755181df7b22ac5de": "Merge branch 'winh-ignore-CVE-2017-5029' into 'master'\n\nIgnore CVE-2017-5029 in Nokogiri\n\nCloses #33597\n\nSee merge request !12109",
+      "b64a46caed20acee92d9157dc9d3d939e24cbf4a": "Merge branch 'winh-ignore-CVE-2017-5029' into 'master'\n\nIgnore CVE-2017-5029 in Nokogiri\n\nCloses #33597\n\nSee merge request !12109",
+      "0d9311624754fbc3e0b8f4a28be576e48783bf81": "Merge branch 'winh-ignore-CVE-2017-5029' into 'master'\n\nIgnore CVE-2017-5029 in Nokogiri\n\nCloses #33597\n\nSee merge request !12109",
+      "b83972f9633e865c1f7ddbfd2d03919ca7c40ae3": "Ignore CVE-2017-5029 in Nokogiri",
+      "de20057ccbd3b8c94d64ff5d8deb14cab232d08a": "Merge branch 'winh-ignore-CVE-2017-5029' into 'master'\n\nIgnore CVE-2017-5029 in Nokogiri\n\nCloses #33597\n\nSee merge request !12109",
+      "3268b84f89a85e3dd1c64611e6c989076e0dc768": "Ignore CVE-2017-5029 in Nokogiri"
+    },
+    "CVE-2016-4658": {
+      "cef1d6d2cb0dd64e19ecf7f6621dcf1d595b8930": "Merge branch 'rs-ignore-nokogiri-advisory' into 'master'\r\n\r\nTemporarily ignore Nokogiri CVE-2016-4658\r\n\r\nSee merge request !10218",
+      "1e43753b438b8b4bc70f300faab961cf920ce310": "Temporarily ignore Nokogiri CVE-2016-4658\n\nSee https://gitlab.com/gitlab-org/gitlab-ce/issues/29992 for progress on\nupdating this gem. In the meantime, we can't do anything about it\nquickly, so we'll ignore the CVE in `bundle-audit`"
+    },
+    "CVE-2012-6684": {
+      "71212ecea6aee0365c336a596fbb3f593dfaf4ab": "Merge branch 'redcloth-4-3-2-cve-2012-6684' into 'master'\n\nUpdate RedCloth to 4.3.2 for CVE-2012-6684\n\n## What does this MR do?\n\nTo fix XSS (CVE-2012-6684), upgrade RedCloth to 4.3.2.\n\n## Are there points in the code the reviewer needs to double check?\n\nNo.\n\n## Why was this MR needed?\n\nSecurity vulnerability in RedCloth (CVE-2012-6684) should be fixed to provide GitLab as a secure software.\n\n## What are the relevant issue numbers?\n\nCloses #19169\n\ncf. !2037, !2071\n\n## Does this MR meet the acceptance criteria?\n\n- [x] [CHANGELOG](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/CHANGELOG) entry added\n- [n/a] [Documentation created/updated](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/development/doc_styleguide.md)\n- [n/a] API support added\n- Tests\n  - [n/a] Added for this feature/bug\n  - [x] All builds are passing\n- [x] Conform by the [style guides](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/CONTRIBUTING.md#style-guides)\n- [x] Branch has no merge conflicts with `master` (if you do - rebase it please)\n- [x] [Squashed related commits together](https://git-scm.com/book/en/Git-Tools-Rewriting-History#Squashing-Commits)\n\nSee merge request !4929\n(cherry picked from commit 95336861e97eb72fba8c3034deb2b9b61c9ec961)",
+      "596f46881f2f70cfca8e30794b4c9572a8644ceb": "Merge remote-tracking branch 'upstream/master' into save-artifacts_sizes\n\n* upstream/master: (175 commits)\n  Document Repository#keep_around\n  Don't garbage collect commits that have related DB records like comments\n  Update CHANGELOG\n  Update RedCloth to 4.3.2 for CVE-2012-6684\n  Fix typo in Merge Requests API documentation\n  Downgrade to Redis 3.2.2 due to massive memory leak with Sidekiq\n  Enable Style/EmptyLines cop, remove redundant ones\n  Update CHANGELOG\n  Cache results from jQuery selectors to retrieve namespace name\n  Fix import button when import fail due the namespace already been taken\n  Fix snippets comments not displayed\n  Fix emoji paths in relative root configurations\n  Exclude requesters from Project#members, Group#members and User#members\n  Upgrade Thin from 1.6.1 to 1.7.0.\n  Many squashed commits\n  Cache autocomplete results\n  Upgrade Sidekiq from 4.1.2 to 4.1.4.\n  Upgrade seed-fu from 2.3.5 to 2.3.6\n  use has_many relationship with events\n  Support creating a todo on issuables via API\n  ...",
+      "95336861e97eb72fba8c3034deb2b9b61c9ec961": "Merge branch 'redcloth-4-3-2-cve-2012-6684' into 'master'\r\n\r\nUpdate RedCloth to 4.3.2 for CVE-2012-6684\r\n\r\n## What does this MR do?\r\n\r\nTo fix XSS (CVE-2012-6684), upgrade RedCloth to 4.3.2.\r\n\r\n## Are there points in the code the reviewer needs to double check?\r\n\r\nNo.\r\n\r\n## Why was this MR needed?\r\n\r\nSecurity vulnerability in RedCloth (CVE-2012-6684) should be fixed to provide GitLab as a secure software.\r\n\r\n## What are the relevant issue numbers?\r\n\r\nCloses #19169 \r\n\r\ncf. !2037, !2071\r\n\r\n## Does this MR meet the acceptance criteria?\r\n\r\n- [x] [CHANGELOG](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/CHANGELOG) entry added\r\n- [n/a] [Documentation created/updated](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/development/doc_styleguide.md)\r\n- [n/a] API support added\r\n- Tests\r\n  - [n/a] Added for this feature/bug\r\n  - [x] All builds are passing\r\n- [x] Conform by the [style guides](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/CONTRIBUTING.md#style-guides)\r\n- [x] Branch has no merge conflicts with `master` (if you do - rebase it please)\r\n- [x] [Squashed related commits together](https://git-scm.com/book/en/Git-Tools-Rewriting-History#Squashing-Commits)\r\n\r\nSee merge request !4929",
+      "b6863388984853ccd6e9b49aadac9c714454257f": "Update RedCloth to 4.3.2 for CVE-2012-6684"
+    },
+    "CVE-2016-5697": {
+      "5297d111f5f12c6c2c5ccc971b691608a8387978": "Merge branch 'update-omniauth-saml' into 'master'\n\nUpdate omniauth-saml to 1.6.0 to address a security vulnerability in ruby-saml\n\nUpdates `omniauth-saml` to bring in the new `ruby-saml` dependency that addresses [CVE-2016-5697](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5697)\n\nFixes #19206\n\nSee merge request !4951\n(cherry picked from commit c3a8b252cdf569729e5e1e8e0614b4d2e5226371)",
+      "4c80039c48ffcf2ab2bcb21b62a9a5c0d257c59a": "Merge branch 'update-omniauth-saml' into 'master'\n\nUpdate omniauth-saml to 1.6.0 to address a security vulnerability in ruby-saml\n\nUpdates `omniauth-saml` to bring in the new `ruby-saml` dependency that addresses [CVE-2016-5697](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5697)\n\nFixes #19206\n\nSee merge request !4951\n(cherry picked from commit c3a8b252cdf569729e5e1e8e0614b4d2e5226371)",
+      "7cf41bf5e692201b17e8300afcea44142ac8a993": "Merge branch 'update-omniauth-saml' into 'master'\n\nUpdate omniauth-saml to 1.6.0 to address a security vulnerability in ruby-saml\n\n## What does this MR do?\n\nUpdates `omniauth-saml` to bring in the new `ruby-saml` dependency that addresses [CVE-2016-5697](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5697)\n\nFixes #19206\n\nSee merge request !4951",
+      "c3a8b252cdf569729e5e1e8e0614b4d2e5226371": "Merge branch 'update-omniauth-saml' into 'master'\r\n\r\nUpdate omniauth-saml to 1.6.0 to address a security vulnerability in ruby-saml\r\n\r\n## What does this MR do?\r\n\r\nUpdates `omniauth-saml` to bring in the new `ruby-saml` dependency that addresses [CVE-2016-5697](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5697)\r\n\r\nFixes #19206 \r\n\r\nSee merge request !4951"
+    },
+    "CVE-2015-5312": {
+      "9e5ed7ef89a51b9d326e6f24a80f857711e2ad1a": "Merge branch 'rs-bump-nokogiri' into 'master'\r\n\r\nExplicitly require Nokogiri 1.6.7.1 due to security issue\r\n\r\n```\r\nName: nokogiri\r\nVersion: 1.6.7\r\nAdvisory: CVE-2015-5312\r\nCriticality: High\r\nURL: https://groups.google.com/forum/#!topic/ruby-security-ann/aSbgDiwb24s\r\nTitle: Nokogiri gem contains several vulnerabilities in libxml2\r\nSolution: upgrade to >= 1.6.7.1\r\n```\r\n\r\nSee merge request !2154",
+      "36026fb97b4e20a0021fc36ea9915a4883b9b07b": "Merge branch 'rs-bump-nokogiri' into 'master'\r\n\r\nExplicitly require Nokogiri 1.6.7.1 due to security issue\r\n\r\n```\r\nName: nokogiri\r\nVersion: 1.6.7\r\nAdvisory: CVE-2015-5312\r\nCriticality: High\r\nURL: https://groups.google.com/forum/#!topic/ruby-security-ann/aSbgDiwb24s\r\nTitle: Nokogiri gem contains several vulnerabilities in libxml2\r\nSolution: upgrade to >= 1.6.7.1\r\n```\r\n\r\nSee merge request !2154",
+      "e5e4405747ec4025d8eefb5652bda2a83c283a13": "Explicitly require Nokogiri 1.6.7.1 due to security issue\n\nName: nokogiri\nVersion: 1.6.7\nAdvisory: CVE-2015-5312\nCriticality: High\nURL:\nhttps://groups.google.com/forum/#!topic/ruby-security-ann/aSbgDiwb24s\nTitle: Nokogiri gem contains several vulnerabilities in libxml2\nSolution: upgrade to >= 1.6.7.1"
+    },
+    "CVE-2014-9390": {
+      "d26ae2914992f5c655815f658ab885b8a4060475": "Install git 2.4.3\n\nGit 2.1.2 does not protect against pushes trying the '.Git/config'\nattack (CVE-2014-9390). Going to 2.4.3 is perhaps a big jump but why not\nuse the latest? (Famous last words.)"
+    },
+    "CVE-2014-0160": {
+      "28246292a9c618ccd7eefe4f54f905a82d7cd38f": "Merge branch 'packages/6-7-2-openssl' into 'master'\n\nUpdate omnibus openssl for CVE-2014-0160",
+      "2db296f8ab4e1895545726ce664337cc5a1d663f": "Update omnibus openssl for CVE-2014-0160"
+    },
+    "CVE-2013-4164": {
+      "17952c30b272db567d2d1869f765e127640bf5da": "Update ruby to patchlevel 353 (security update)\n\nhttps://www.ruby-lang.org/en/news/2013/11/22/heap-overflow-in-floating-point-parsing-cve-2013-4164/",
+      "251c384a7c3ce6a6606ab070bf9f78f5d59015cc": "Update ruby to patchlevel 353 (security update)\n\nhttps://www.ruby-lang.org/en/news/2013/11/22/heap-overflow-in-floating-point-parsing-cve-2013-4164/"
+    }
+  }
+}

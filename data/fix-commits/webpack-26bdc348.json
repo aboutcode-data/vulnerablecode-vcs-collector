@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/webpack/webpack",
+  "vulnerabilities": {
+    "GHSA-H9RV-JMMF-4PGX": {
+      "29b2bdd641b18d413281cf413afd31323b0bae82": "Update terser-webpack-plugin to ^1.4.3\n\nhttps://github.com/advisories/GHSA-h9rv-jmmf-4pgx"
+    }
+  }
+}

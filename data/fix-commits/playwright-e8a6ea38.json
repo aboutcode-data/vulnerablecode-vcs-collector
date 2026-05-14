@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/microsoft/playwright",
+  "vulnerabilities": {
+    "GHSA-64VR-G452-QVP3": {
+      "623b2e6bc85497aceb861a89a1cdbde898685b3b": "chore: bump vite  dependency 5.0.13->5.4.6 (#32672)\n\nFixes the following:\r\n\r\n```\r\nnpm audit report\r\n\r\nvite  5.0.0 - 5.2.13\r\nSeverity: moderate\r\nVite DOM Clobbering gadget found in vite bundled scripts that leads to XSS - https://github.com/advisories/GHSA-64vr-g452-qvp3\r\n```"
+    }
+  }
+}

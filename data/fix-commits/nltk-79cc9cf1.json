@@ -1,0 +1,22 @@
+{
+  "vcs_url": "https://github.com/nltk/nltk",
+  "vulnerabilities": {
+    "GHSA-R6GQ-WHWQ-MVG9": {
+      "896a8ee981d8089b9edc2309aa10dcac6e2dec48": "Add realpath symlink check to FileSystemPathPointer.join()\n\nAfter the existing lexical normpath check, resolve symlinks with\nrealpath() and verify the result stays within the corpus root.\nThis prevents symlink escapes where a path looks lexically\ncontained but resolves outside the root via a symlink.\n\nAlso blocks absolute file IDs.\n\nFixes GHSA-r6gq-whwq-mvg9. Does not touch open() \u2014 that is\nhandled by pathsec.open() via _secure_open.\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+      "cbe04c348677ee0d80dd4753d602d5915faad95f": "Unconditionally enforce path containment in FileSystemPathPointer\n\nFileSystemPathPointer is the trust boundary for corpus readers.\nIts open() and join() methods must always enforce containment\nregardless of pathsec.ENFORCE setting.\n\nChanges:\n- Add _check_containment(): resolves symlinks with realpath() and\n  verifies the path is within an allowed nltk.data.path directory.\n  Always raises ValueError on violation (not warn-only).\n- open(): calls _check_containment() before opening, fixing\n  GHSA-72r2-7mfr-5xr9 (no-op sandbox check)\n- join(): adds realpath-based symlink resolution check after the\n  lexical normpath check, fixing GHSA-r6gq-whwq-mvg9 (symlink\n  escape). Also blocks absolute file IDs.\n\nThese checks are independent of ENFORCE=True/False because they\nprotect the corpus reader sandbox, not general file I/O.\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>"
+    },
+    "GHSA-72R2-7MFR-5XR9": {
+      "cbe04c348677ee0d80dd4753d602d5915faad95f": "Unconditionally enforce path containment in FileSystemPathPointer\n\nFileSystemPathPointer is the trust boundary for corpus readers.\nIts open() and join() methods must always enforce containment\nregardless of pathsec.ENFORCE setting.\n\nChanges:\n- Add _check_containment(): resolves symlinks with realpath() and\n  verifies the path is within an allowed nltk.data.path directory.\n  Always raises ValueError on violation (not warn-only).\n- open(): calls _check_containment() before opening, fixing\n  GHSA-72r2-7mfr-5xr9 (no-op sandbox check)\n- join(): adds realpath-based symlink resolution check after the\n  lexical normpath check, fixing GHSA-r6gq-whwq-mvg9 (symlink\n  escape). Also blocks absolute file IDs.\n\nThese checks are independent of ENFORCE=True/False because they\nprotect the corpus reader sandbox, not general file I/O.\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>"
+    },
+    "GHSA-RF74-V2FM-23PW": {
+      "00cdcd392142e6c745e7120c8d50a24127df5fad": "Fix GHSA-rf74-v2fm-23pw: unbounded recursion in JSONTaggedDecoder\n\nJSONTaggedDecoder.decode_obj() recursed without depth limit,\nallowing a crafted deeply-nested JSON payload to trigger\nRecursionError and crash the process (denial of service).\n\nFix:\n- Add MAX_DECODE_DEPTH = 200 class attribute as hard limit\n- Add _depth counter parameter to decode_obj() that raises\n  ValueError when exceeded\n- Catch RecursionError in decode() for payloads that exceed\n  Python's C-level json parser recursion limit (~1000) before\n  decode_obj is reached\n\nNo other recursive JSON decoding paths exist in the codebase.\nThe stdlib json.load/json.loads calls in data.py, help.py,\nsentiment/util.py, twitter/common.py, and tag/perceptron.py\ndo not use JSONTaggedDecoder and are not affected.\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>"
+    },
+    "CVE-2025-14009": {
+      "c4b9087e9cce27a5ca5661f0e0713319349d377a": "Merge pull request #3502 from PastelStorm/fix/cve-2025-14009\n\nFix CVE-2025-14009",
+      "e1fbbfda7e0fde4a3702421f8d4140a6c498094e": "Fix CVE-2025-14009"
+    },
+    "CVE-2019-14751": {
+      "f59d7ed8df2e0e957f7f247fe218032abdbe9a10": "CVE-2019-14751:\nFixed security bug in downloader\n(https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14751)"
+    }
+  }
+}

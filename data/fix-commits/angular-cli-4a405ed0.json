@@ -1,0 +1,146 @@
+{
+  "vcs_url": "https://github.com/angular/angular-cli",
+  "vulnerabilities": {
+    "GHSA-QX2V-QP2M-JG93": {
+      "5e01ef40eb87deda79d18654fc696b64d18bf889": "fix(@angular-devkit/build-angular): upgrade postcss to 8.5.12\n\nThis addresses GHSA-qx2v-qp2m-jg93\n\nFixes: #33067",
+      "49ae0ad2d452ab7d7510297919125fe00081fa49": "fix(@angular-devkit/build-angular): upgrade postcss to 8.5.12\n\nThis addresses GHSA-qx2v-qp2m-jg93\n\nFixes: #33067"
+    },
+    "GHSA-V2WJ-Q39Q-566R": {
+      "ccab02ba0413f25464a6e4cb5871716b221013b7": "fix(@angular/build): update vite to `7.3.2`\n\nThis fixes GHSA-v2wj-q39q-566r",
+      "f4595d599001713ae978865d7f84e33e5a9a077a": "fix(@angular/build): update vite to `6.4.2`\n\nThis fixes GHSA-v2wj-q39q-566r"
+    },
+    "GHSA-C2C7-RCM5-VVQJ": {
+      "de2da4874026bb47d08de828b6b4b44fd7d9a3c4": "fix(@angular-devkit/core): update picomatch to 4.0.4\n\nUpdate picomatch to address GHSA-c2c7-rcm5-vvqj",
+      "771b979e78af079242bea607470b3ad3b6162659": "fix(@angular-devkit/build-angular): update picomatch to 4.0.4\n\nUpdate picomatch to address GHSA-c2c7-rcm5-vvqj",
+      "27a9ce4a7446db0533e4a7ef64301eeccc5e21e1": "fix(@angular/build): update picomatch to 4.0.4\n\nUpdate picomatch to address GHSA-c2c7-rcm5-vvqj",
+      "67cfbe32ff013d7c9763253c8ccd383d8ee2416c": "fix(@angular/cli): update picomatch to 4.0.4\n\nUpdate picomatch to address GHSA-c2c7-rcm5-vvqj",
+      "6e9b926129a9dd79f01d47b7446411b8963ffb62": "fix(@angular-devkit/core): update picomatch to 4.0.4\n\nUpdate picomatch to address GHSA-c2c7-rcm5-vvqj",
+      "5978eeeff63cd62f1515d949eaad0b5e6f7c44cd": "fix(@angular-devkit/build-angular): update picomatch to 4.0.4\n\nUpdate picomatch to address GHSA-c2c7-rcm5-vvqj",
+      "6f209c26dc5a454acd1cd76f25240c26978fa827": "fix(@angular/build): update picomatch to 4.0.4\n\nUpdate picomatch to address GHSA-c2c7-rcm5-vvqj"
+    },
+    "GHSA-2G4F-4PWH-QVX6": {
+      "0a01aecd92a5dfa1a254429481906a88be725c5e": "fix(@angular-devkit/core): update `ajv` to `8.18.0`\n\nThis fixes GHSA-2g4f-4pwh-qvx6\n\nCloses #32592",
+      "39596d529f831f72a2134bc3c9ac163867ff5702": "fix(@angular-devkit/core): update `ajv` to `8.18.0`\n\nThis fixes GHSA-2g4f-4pwh-qvx6\n\nCloses #32592"
+    },
+    "GHSA-MW96-CPMX-2VGC": {
+      "79f59412a17eeabd2ad5df1d614ed634354d1eee": "fix(@angular/build): update rollup to 4.59.0\n\nThis fixes GHSA-mw96-cpmx-2vgc\n\nCloses #32592",
+      "f668e2778c4c4dbecc8a1c6831c092f5512d1ec1": "fix(@angular/build): update rollup to 4.59.0\n\nThis fixes GHSA-mw96-cpmx-2vgc\n\nCloses #32592"
+    },
+    "GHSA-8FGC-7CC6-RX7X": {
+      "0e5421ba78814cf11e4d4510e930eaacc6458662": "fix(@angular-devkit/build-angular): update webpack to 5.105.0\n\nThis the below security security issues:\nGHSA-8fgc-7cc6-rx7x\nGHSA-38r7-794h-5758\n\nCloses: #32465"
+    },
+    "GHSA-38R7-794H-5758": {
+      "0e5421ba78814cf11e4d4510e930eaacc6458662": "fix(@angular-devkit/build-angular): update webpack to 5.105.0\n\nThis the below security security issues:\nGHSA-8fgc-7cc6-rx7x\nGHSA-38r7-794h-5758\n\nCloses: #32465"
+    },
+    "GHSA-345P-7CG4-V4C7": {
+      "656888a250af060c110ae87024b0e475b079c23d": "fix(@angular/cli): update dependency @modelcontextprotocol/sdk to v1.26.0\n\nFixes https://github.com/modelcontextprotocol/typescript-sdk/security/advisories/GHSA-345p-7cg4-v4c7"
+    },
+    "GHSA-8QQ5-RM4J-MR97": {
+      "795d654138701a03d4d793d3299ff4f33e427a03": "fix(@angular/cli): update pacote to v21.0.4\n\nAddresses https://github.com/advisories/GHSA-8qq5-rm4j-mr97"
+    },
+    "GHSA-G9MF-H72J-4RW9": {
+      "98ef0981a2e3aee3c6fd2b6cf0561f6919487723": "fix(@angular/build): update undici to v7.18.2\n\nAddresses https://github.com/advisories/GHSA-g9mf-h72j-4rw9"
+    },
+    "GHSA-93M4-6634-74Q7": {
+      "4d8ea27a1726709b8398a26915395e7611571dae": "fix(@angular/build): update vite to v6.4.1\n\nAddresses https://github.com/advisories/GHSA-93m4-6634-74q7",
+      "5847ccc545e54eb77a78b2435db7970faf748156": "fix(@angular/build): update `vite` to `7.11.1`\n\nBump version to fix GHSA-93m4-6634-74q7"
+    },
+    "GHSA-G4JQ-H2W9-997C": {
+      "365d525b596b437ad0b1a74b1417eaae6aa8694e": "fix(@angular/build): update `vite` to `6.3.6`\n\nThis fixes https://github.com/advisories/GHSA-g4jq-h2w9-997c"
+    },
+    "CVE-2025-58751": {
+      "d60f4e53d8f511d313e517161dc26eb3cc005f1c": "fix(@angular/build): update vite to version `7.1.5`\n\nThis fixes https://nvd.nist.gov/vuln/detail/CVE-2025-58751\n\nCloses: #31158"
+    },
+    "GHSA-4WWW-5P9H-95MH": {
+      "743d85bacce03bcc454574e0ffa9f243ff6631dd": "fix(@angular-devkit/build-angular): update http-proxy-middleware to v2.0.8\n\nAddresses https://github.com/advisories/GHSA-4www-5p9h-95mh",
+      "de52cc2c813e49a06828ff9e9ef0543fa63a9929": "fix(@angular-devkit/build-angular): update http-proxy-middleware to v3.0.5\n\nAddresses https://github.com/advisories/GHSA-4www-5p9h-95mh",
+      "01cc617bc0e0a5a30c3b86f679494500a914c574": "fix(@angular-devkit/build-angular): update http-proxy-middleware to v3.0.5\n\nAddresses https://github.com/advisories/GHSA-4www-5p9h-95mh"
+    },
+    "GHSA-859W-5945-R5V3": {
+      "067f1cba031361f71c79b70af143c53c777e9f7d": "fix(@angular/build): update vite to 6.2.7\n\nAddresses: https://github.com/vitejs/vite/security/advisories/GHSA-859w-5945-r5v3\n\nCloses #30206"
+    },
+    "CVE-2025-22150": {
+      "5aa53b40c34e1555548d201f840a5ffc01f14601": "fix(@angular-devkit/build-angular): remove undici from dependencies\n\nThis fixes CVE-2025-22150\n\nCloses #30066"
+    },
+    "GHSA-XCJ6-PQ6G-QJ4X": {
+      "fce61564ded8c476ef1c257d2844b1a1560af732": "fix(@angular-devkit/build-angular): update vite to 5.4.17\n\nThis fixes  GHSA-xcj6-pq6g-qj4x\n\nCloses #30056",
+      "4245ca7b434e0aa859c805c459ce50238601b940": "fix(@angular/build): update vite to 5.4.17\n\nThis fixes  GHSA-xcj6-pq6g-qj4x\n\nCloses #30056"
+    },
+    "GHSA-4R4M-QW57-CHR8": {
+      "247ceff7f7d71901f51dbab1c1a5235d59e45847": "fix(@angular/build): update vite to 5.4.16 due to a security issues\n\nAddresses GHSA-4r4m-qw57-chr8\n\nCloses #29996",
+      "0525fec6183c2972b97a6ad4d57e89aaa478a2de": "fix(@angular-devkit/build-angular): update vite to 5.4.16 due to a security issues\n\nAddresses GHSA-4r4m-qw57-chr8\n\nCloses #29996",
+      "d69188c6be2b851e3dfb84e2bd8d209062d7a283": "fix(@angular/build): update vite to 6.2.4 due to a security issues\n\nAddresses GHSA-4r4m-qw57-chr8"
+    },
+    "GHSA-X574-M823-4X7W": {
+      "1eb5b43575ab9908122606b94c0aaa53718678aa": "fix(@angular/build): update vite to 6.2.3\n\nThis fixes https://github.com/vitejs/vite/security/advisories/GHSA-x574-m823-4x7w\n\nCloses #29936",
+      "9c2904d0d3a7b2790b27d21c1ff23e6d8a01c4f0": "fix(@angular/build): update vite to 5.4.15\n\nThis fixes https://github.com/vitejs/vite/security/advisories/GHSA-x574-m823-4x7w\n\nCloses #29936",
+      "cb8f859f181a325c15b91791c78f5326f22bb7f5": "fix(@angular-devkit/build-angular): update vite to 5.4.15\n\nThis fixes https://github.com/vitejs/vite/security/advisories/GHSA-x574-m823-4x7w\n\nCloses #29936"
+    },
+    "GHSA-968P-4WVH-CQC8": {
+      "22901df0261812a3408ff9d7a7690bf6b87ec2a3": "fix(@angular-devkit/build-angular): update babel packages\n\nThis fixes a security report: https://github.com/babel/babel/security/advisories/GHSA-968p-4wvh-cqc8\n\nCloses #29833",
+      "5a739820be5cc7cb25e159a1f2283db92e741f78": "fix(@angular/build): update babel packages\n\nThis fixes a security report: https://github.com/babel/babel/security/advisories/GHSA-968p-4wvh-cqc8\n\nCloses #29833",
+      "255c8a50d2214747c8121e963afcd96cbff39293": "fix(@angular-devkit/build-angular): update babel packages\n\nThis fixes a security report: https://github.com/babel/babel/security/advisories/GHSA-968p-4wvh-cqc8\n\nCloses #29833"
+    },
+    "GHSA-VG6X-RCGG-RJX6": {
+      "d832370285adccbf955963a5115cf9b9bf54a08d": "fix(@angular-devkit/build-angular): update vite to version 5.4.14\nVersion update from 5.1.8 to address advisory GHSA-vg6x-rcgg-rjx6\n\nVite version 5.4.12+, which is now used by the Angular CLI with the `application`/`browser-esbuild`\nbuilders, contains a potentially breaking change for some development setups. Examples of such\nsetups include those that use reverse proxies or custom host names during development.\nThe change within a patch release was made by Vite to address a security vulnerability.\nFor projects that directly access the development server via `localhost`, no changes should\nbe needed. However, some development setups may now need to adjust the\n`allowedHosts` development server option. This option can include an array\nof host names that are allowed to communicate with the development server. The option\nsets the corresponding Vite option within the Angular CLI.\nFor more information on the option and its specific behavior, please see the Vite\ndocumentation located here:\nhttps://vite.dev/config/server-options.html#server-allowedhosts\n\nThe following is an example of the configuration option allowing `example.com`:\n```\n\"serve\": {\n      \"builder\": \"@angular-devkit/build-angular:dev-server\",\n      \"options\": {\n        \"allowedHosts\": [\"example.com\"]\n      },\n```",
+      "9d34d28ec2965e1b9753556b2721d25ab05c655b": "fix(@angular-devkit/build-angular): remove unused `vite` dependency\n\nThis resolves advisory GHSA-vg6x-rcgg-rjx6\n\nFixes #29464",
+      "fdddf2c0844081667a09f2ffe0b16f77384959b2": "fix(@angular/build): update vite to version 5.4.14\n\nVersion update from 5.4.6 to address advisory https://github.com/vitejs/vite/security/advisories/GHSA-vg6x-rcgg-rjx6\n\nVite version 5.4.12+, which is now used by the Angular CLI with the `application`/`browser-esbuild`\nbuilders, contains a potentially breaking change for some development setups. Examples of such\nsetups include those that use reverse proxies or custom host names during development.\nThe change within a patch release was made by Vite to address a security vulnerability.\nFor projects that directly access the development server via `localhost`, no changes should\nbe needed. However, some development setups may now need to adjust the\n`allowedHosts` development server option. This option can include an array\nof host names that are allowed to communicate with the development server. The option\nsets the corresponding Vite option within the Angular CLI.\nFor more information on the option and its specific behavior, please see the Vite\ndocumentation located here:\nhttps://vite.dev/config/server-options.html#server-allowedhosts\n\nThe following is an example of the configuration option allowing `example.com`:\n```\n\"serve\": {\n      \"builder\": \"@angular-devkit/build-angular:dev-server\",\n      \"options\": {\n        \"allowedHosts\": [\"example.com\"]\n      },\n```",
+      "688019946358b176eacc872ece72987387a603f1": "fix(@angular/build): update vite to version 6.0.11\n\nVersion update from 6.0.7 to address advisory https://github.com/vitejs/vite/security/advisories/GHSA-vg6x-rcgg-rjx6\n\nVite version 6.0.9+, which is now used by the Angular CLI with the `application`/`browser-esbuild`\nbuilders, contains a potentially breaking change for some development setups. Examples of such\nsetups include those that use reverse proxies or custom host names during development.\nThe change within a patch release was made by Vite to address a security vulnerability.\nFor projects that directly access the development server via `localhost`, no changes should\nbe needed. However, some development setups may now need to adjust the\n`allowedHosts` development server option. This option can include an array\nof host names that are allowed to communicate with the development server. The option\nsets the corresponding Vite option within the Angular CLI.\nFor more information on the option and its specific behavior, please see the Vite\ndocumentation located here:\nhttps://vite.dev/config/server-options.html#server-allowedhosts\n\nThe following is an example of the configuration option allowing `example.com`:\n```\n\"serve\": {\n      \"builder\": \"@angular-devkit/build-angular:dev-server\",\n      \"options\": {\n        \"allowedHosts\": [\"example.com\"]\n      },\n```",
+      "f836be9e676575fccd4d74eddbc5bf647f7ff1bd": "fix(@angular/build): support Vite `allowedHosts` option for development server\n\nVite version 6.0.9+, which is now used by the Angular CLI, contains a potentially\nbreaking change for some development setups. Examples of such setups include those\nthat use reverse proxies or custom host names during development. The change within\na patch release was made by Vite to address a security vulnerability. For\nprojects that directly access the development server via `localhost`, no changes should\nbe needed. However, some development setups may now need to adjust the newly\nintroduced `allowedHosts` development server option. This option can include an array\nof host names that are allowed to communicate with the development server. The option\nsets the corresponding Vite option within the Angular CLI.\nFor more information on the option and its specific behavior, please see the Vite\ndocumentation located here:\nhttps://vite.dev/config/server-options.html#server-allowedhosts\n\nThe following is an example of the configuration option allowing `example.com`:\n```\n\"serve\": {\n      \"builder\": \"@angular/build:dev-server\",\n      \"options\": {\n        \"allowedHosts\": [\"example.com\"]\n      },\n```\n\nAdditional details on the vulnerability can be found here:\nhttps://github.com/vitejs/vite/security/advisories/GHSA-vg6x-rcgg-rjx6"
+    },
+    "CVE-2024-21536": {
+      "8bad9cee08982fffa5ce8244148b491e66191ed8": "fix(@angular-devkit/build-angular): update `http-proxy-middleware` to `2.0.7`\n\nAddress CVE-2024-21536\n\nCloses #28680",
+      "7b775f4e008652777bbe7b788dabed02bcc70cc7": "fix(@angular-devkit/build-angular): update `http-proxy-middleware` to `3.0.3`\n\nAddress CVE-2024-21536\n\nCloses #28680"
+    },
+    "CVE-2024-47068": {
+      "5fea635b20b29429e355072c5adc5bf2a597a267": "fix(@angular/build): update rollup to 4.22.4\n\nContains fix for CVE-2024-47068.\n\nSee: https://github.com/advisories/GHSA-gcx4-mw62-g8wm"
+    },
+    "GHSA-GCX4-MW62-G8WM": {
+      "5fea635b20b29429e355072c5adc5bf2a597a267": "fix(@angular/build): update rollup to 4.22.4\n\nContains fix for CVE-2024-47068.\n\nSee: https://github.com/advisories/GHSA-gcx4-mw62-g8wm"
+    },
+    "CVE-2024-45812": {
+      "30489d8fd1cf738162d95333fe462eea58ba460f": "fix(@angular-devkit/build-angular): update vite to 4.1.8\n\nIncludes a fix for CVE-2024-45812 / CVE-2024-45811",
+      "12aca0060492c73cec1bbc231119dde6a4b52607": "fix(@angular-devkit/build-angular): update vite to 4.5.5\n\nIncludes a fix for CVE-2024-45812 / CVE-2024-45811\n\nCloses #28435",
+      "1032b3da1a0f3aaf63d2fd3cd8c6fd3b0d0b578c": "fix(@angular/build): update vite to `5.4.6`\n\nIncludes a fix for CVE-2024-45812 / CVE-2024-45811\n\nCloses #28435"
+    },
+    "CVE-2024-45811": {
+      "30489d8fd1cf738162d95333fe462eea58ba460f": "fix(@angular-devkit/build-angular): update vite to 4.1.8\n\nIncludes a fix for CVE-2024-45812 / CVE-2024-45811",
+      "12aca0060492c73cec1bbc231119dde6a4b52607": "fix(@angular-devkit/build-angular): update vite to 4.5.5\n\nIncludes a fix for CVE-2024-45812 / CVE-2024-45811\n\nCloses #28435",
+      "1032b3da1a0f3aaf63d2fd3cd8c6fd3b0d0b578c": "fix(@angular/build): update vite to `5.4.6`\n\nIncludes a fix for CVE-2024-45812 / CVE-2024-45811\n\nCloses #28435"
+    },
+    "GHSA-4VVJ-4CPR-P986": {
+      "56fa051bd92ad47ea089499a488f3566a93375e6": "fix(@angular-devkit/build-angular): upgrade webpack to `5.94.0`\n\nAddresses security vulnerability detailed in https://github.com/advisories/GHSA-4vvj-4cpr-p986.\n\nCloses #28292",
+      "88501f3d5586f72ee0900b8d351af3d72bdc0dee": "fix(@angular-devkit/build-angular): upgrade webpack to `5.94.0`\n\nAddresses security vulnerability detailed in https://github.com/advisories/GHSA-4vvj-4cpr-p986.\n\nCloses #28292"
+    },
+    "GHSA-8JHW-289H-JH2G": {
+      "1068c3c733a7c52e7876d43454d0ff590c99b61b": "fix(@angular-devkit/build-angular): update vite to `4.5.3`\n\nThis fixes GHSA-8jhw-289h-jh2g\n\nCloses #27409"
+    },
+    "GHSA-WR3J-PWJ9-HQQ6": {
+      "c6feb0bb0247a1cf17e17325b8c42d0d6a7d1451": "fix(@angular-devkit/build-angular): `update webpack-dev-middleware` to `6.1.2`\n\nAddressed in this commit is an update to `webpack-dev-middleware` to version `6.1.2`, resolving a security concern identified at GHSA-wr3j-pwj9-hqq6.\n\nCloses #27334",
+      "5ad507e3d4cb27fb275d255018b9b6e735835711": "fix(@angular-devkit/build-angular): `update webpack-dev-middleware` to `6.1.2`\n\nAddressed in this commit is an update to `webpack-dev-middleware` to version `6.1.2`, resolving a security concern identified at GHSA-wr3j-pwj9-hqq6.\n\nCloses angular#27334",
+      "c12907d92f8a2268541fd3bf28857dbb216ec7c9": "fix(@angular-devkit/build-angular): update `webpack-dev-middleware` to `6.1.2`\n\nAddressed in this commit is an update to `webpack-dev-middleware` to version `6.1.2`, resolving a security concern identified at https://github.com/advisories/GHSA-wr3j-pwj9-hqq6.\n\nCloses #27334"
+    },
+    "GHSA-C24V-8RFC-W8VW": {
+      "4e2b23f0321f3ec6edfd3e20e9bf95d799de5e7f": "fix(@angular-devkit/build-angular): update dependency vite to v5.0.12\n\nThis commit updates vite to address GHSA-c24v-8rfc-w8vw\n\nCloses #26916",
+      "5fad401628f7ddbc412d7e761a4300724f078bde": "fix(@angular-devkit/build-angular): update dependency vite to v4.5.2\n\nThis commit updates vite to address https://github.com/advisories/GHSA-c24v-8rfc-w8vw\n\nCloses #26916"
+    },
+    "GHSA-7FH5-64P2-3V2J": {
+      "05213c95b032dd64fdc73ed33af695e9f19b5d09": "fix(@angular-devkit/build-angular): update dependency postcss to v8.4.31\n\nAddresses npm audit report of GHSA-7fh5-64p2-3v2j",
+      "1ca44dcd9d79916db70180da37b962c2672a76a8": "fix(@angular-devkit/build-angular): update dependency postcss to v8.4.31\n\nAddresses npm audit report of GHSA-7fh5-64p2-3v2j",
+      "493bd390679889359a05b2f23b74787647aee341": "fix(@angular-devkit/build-angular): update dependency postcss to v8.4.31\n\nAddresses npm audit report of https://github.com/advisories/GHSA-7fh5-64p2-3v2j"
+    },
+    "GHSA-C2QF-RXJJ-QQGW": {
+      "f36e38a913b454ec340d6bf2311391c5df1cee24": "fix(@angular/cli): update direct semver dependencies to 7.5.3\n\nAll direct usages of the `semver` package have been updated to address https://github.com/advisories/GHSA-c2qf-rxjj-qqgw. The `semver` package is only used as a development dependency and not included in built application code within generated projects. This update does not affect any transitive usages of `semver` and any such usages would need to be handled by relevant upstream packages.",
+      "bd396b65623fb0b8e826be13f88709e87b54336e": "fix(@angular/cli): update direct semver dependencies to 7.5.3\n\nAll direct usages of the `semver` package have been updated to address https://github.com/advisories/GHSA-c2qf-rxjj-qqgw. The `semver` package is only used as a development dependency and not included in built application code within generated projects. This update does not affect any transitive usages of `semver` and any such usages would need to be handled by relevant upstream packages.",
+      "3475e0281da3298f288a5f8836155c0b8c971372": "fix(@angular/cli): update direct `semver` dependencies to 7.5.3\n\nAll direct usages of the `semver` package have been updated to address https://github.com/advisories/GHSA-c2qf-rxjj-qqgw.\nThe `semver` package is only used as a development dependency and not included in built application code within generated projects.\nThis update does not affect any transitive usages of `semver` and any such usages would need to be handled by relevant upstream packages."
+    },
+    "GHSA-3RFM-JHWJ-7488": {
+      "21cea0b42f08bf56990bdade82e2daa7c33011ed": "fix(@angular-devkit/build-angular): update `loader-utils` to `3.2.1`\n\n`loader-utils` is vulnerable to Regular Expression Denial of Service (ReDoS) via url variable.\n\nSee: https://github.com/advisories/GHSA-3rfm-jhwj-7488\n\nCloses #24241",
+      "f298ebbd5f86077985d994662314379df92b6771": "fix(@angular-devkit/build-angular): update `loader-utils` to `3.2.1`\n\n`loader-utils` is vulnerable to Regular Expression Denial of Service (ReDoS) via url variable.\n\nSee: https://github.com/advisories/GHSA-3rfm-jhwj-7488\n\nCloses #24241"
+    },
+    "CVE-2022-25858": {
+      "4d723ca95913fd8643059d22151571f240cec998": "fix(@angular-devkit/build-angular): update terser to address CVE-2022-25858\n\nWhile this vulnerability cannot be exploited through the Angular CLI as we don't expect it to be run on production servers. We update terser to remove the unnecessary vulnerability noise.\n\nCloses #23593\n\n(cherry picked from commit 3d0b6fe3384bbe2cae0fa41170211a218da1c9c9)",
+      "0d62716ae3753bb463de6b176ae07520ebb24fc9": "fix(@angular-devkit/build-angular): update terser to address CVE-2022-25858\n\nWhile this vulnerability cannot be exploited through the Angular CLI as we don't expect it to be run on production servers. We update terser to remove the unnecessary vulnerability noise.\n\nCloses #23593"
+    }
+  }
+}

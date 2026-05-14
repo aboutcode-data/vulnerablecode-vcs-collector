@@ -1,0 +1,11 @@
+{
+  "vcs_url": "https://github.com/modelcontextprotocol/python-sdk",
+  "vulnerabilities": {
+    "CVE-2025-62518": {
+      "35a9ccdb4229198a3db64585acf85486ec4bec02": "fix: uv CVE-2025-62518 astral-tokio-tar issue GHSA-j5gw-2vrg-8fgx (#1505)"
+    },
+    "GHSA-J5GW-2VRG-8FGX": {
+      "35a9ccdb4229198a3db64585acf85486ec4bec02": "fix: uv CVE-2025-62518 astral-tokio-tar issue GHSA-j5gw-2vrg-8fgx (#1505)"
+    }
+  }
+}

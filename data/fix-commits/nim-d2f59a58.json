@@ -1,0 +1,29 @@
+{
+  "vcs_url": "https://github.com/nim-lang/nim",
+  "vulnerabilities": {
+    "CVE-2021-41259": {
+      "9df8ca0d8104c5f474dd5184b69446bbb1515242": "Add URI parsing warning (#21547)\n\nRelated to CVE-2021-41259\r\nhttps://github.com/nim-lang/security/security/advisories/GHSA-3gg2-rw3q-qwgc\r\nhttps://github.com/nim-lang/Nim/pull/19128#issuecomment-1181944367"
+    },
+    "GHSA-3GG2-RW3Q-QWGC": {
+      "9df8ca0d8104c5f474dd5184b69446bbb1515242": "Add URI parsing warning (#21547)\n\nRelated to CVE-2021-41259\r\nhttps://github.com/nim-lang/security/security/advisories/GHSA-3gg2-rw3q-qwgc\r\nhttps://github.com/nim-lang/Nim/pull/19128#issuecomment-1181944367"
+    },
+    "GHSA-GGRQ-H43F-3W7M": {
+      "b6024fe8617a6ddb584746c8bbf6a62b2f78750f": "Merge pull request from GHSA-ggrq-h43f-3w7m\n\nThis fixes a CVE (currently\nhttps://github.com/nim-lang/Nim/security/advisories/GHSA-ggrq-h43f-3w7m)\n\n(cherry picked from commit cb894c7094fb49014f85815a9dafc38b5dda743e)",
+      "cb894c7094fb49014f85815a9dafc38b5dda743e": "Merge pull request from GHSA-ggrq-h43f-3w7m\n\nThis fixes a CVE (currently\nhttps://github.com/nim-lang/Nim/security/advisories/GHSA-ggrq-h43f-3w7m)"
+    },
+    "CVE-2021-29922": {
+      "0d3af5454b66dfe4a8a7017030708a890207c658": "Only allow IPv4 literals in strict form (#18656)\n\n* Only allow IPv4 literals in strict form\r\n\r\nThe strict form as defined in RFC 6943, section 3.1.1 only allows the dotted\r\nform ddd.ddd.ddd.ddd of IPv4 literals, where ddd is a one to three digit decimal\r\nnumber between 0 and 255. Until now octal numbers (with a leading zero) were\r\ninterpreted as decimal numbers which has security implications, see\r\nCVE-2021-29922 and CVE-2021-29923.\r\n\r\n* Update lib/pure/net.nim\r\n\r\nCo-authored-by: Dominik Picheta <dominikpicheta@googlemail.com>"
+    },
+    "CVE-2021-29923": {
+      "0d3af5454b66dfe4a8a7017030708a890207c658": "Only allow IPv4 literals in strict form (#18656)\n\n* Only allow IPv4 literals in strict form\r\n\r\nThe strict form as defined in RFC 6943, section 3.1.1 only allows the dotted\r\nform ddd.ddd.ddd.ddd of IPv4 literals, where ddd is a one to three digit decimal\r\nnumber between 0 and 255. Until now octal numbers (with a leading zero) were\r\ninterpreted as decimal numbers which has security implications, see\r\nCVE-2021-29922 and CVE-2021-29923.\r\n\r\n* Update lib/pure/net.nim\r\n\r\nCo-authored-by: Dominik Picheta <dominikpicheta@googlemail.com>"
+    },
+    "CVE-2021-29495": {
+      "a266c549212d1d6e09dbfa01344edbca8b2f6222": "Improve httpClient docs on SSL cert verification (#15201)\n\n* Improve httpClient docs on SSL cert verification\r\n\r\nCert verification is enabled by default after CVE-2021-29495\r\n\r\n* Update httpclient.nim\r\n\r\nCo-authored-by: Dominik Picheta <dominikpicheta@googlemail.com>"
+    },
+    "CVE-2020-15228": {
+      "1ee94744e3c7ed700f1afe7a1c36eee3f515cec5": "CI(actions): Replace deprecated `add-path` commands (#15892)\n\nThis commit resolves the following warning in the CI logs:\n\n> Error: The `add-path` command is deprecated and will be disabled soon.\n> Please upgrade to using Environment Files. For more information see:\n> https://github.blog/changelog/2020-10-01-github-actions-deprecating-set-env-and-add-path-commands/\n\nThe deprecation is due to an injection vulnerability (CVE-2020-15228).\n\nSee:\n- https://bugs.chromium.org/p/project-zero/issues/detail?id=2070\n- https://github.com/nim-lang/Nim/runs/1373146963#step:8:1\n\n(cherry picked from commit 3948b40bcd79a3883529608bf4bd156c2e9de5f8)",
+      "b6f8ed7193ee0f39f8bb3e0e6b73dfe25c6de371": "CI(actions): Replace deprecated `add-path` commands (#15892)\n\nThis commit resolves the following warning in the CI logs:\n\n> Error: The `add-path` command is deprecated and will be disabled soon.\n> Please upgrade to using Environment Files. For more information see:\n> https://github.blog/changelog/2020-10-01-github-actions-deprecating-set-env-and-add-path-commands/\n\nThe deprecation is due to an injection vulnerability (CVE-2020-15228).\n\nSee:\n- https://bugs.chromium.org/p/project-zero/issues/detail?id=2070\n- https://github.com/nim-lang/Nim/runs/1373146963#step:8:1\n\n(cherry picked from commit 3948b40bcd79a3883529608bf4bd156c2e9de5f8)",
+      "3948b40bcd79a3883529608bf4bd156c2e9de5f8": "CI(actions): Replace deprecated `add-path` commands (#15892)\n\nThis commit resolves the following warning in the CI logs:\r\n\r\n> Error: The `add-path` command is deprecated and will be disabled soon.\r\n> Please upgrade to using Environment Files. For more information see:\r\n> https://github.blog/changelog/2020-10-01-github-actions-deprecating-set-env-and-add-path-commands/\r\n\r\nThe deprecation is due to an injection vulnerability (CVE-2020-15228).\r\n\r\nSee:\r\n- https://bugs.chromium.org/p/project-zero/issues/detail?id=2070\r\n- https://github.com/nim-lang/Nim/runs/1373146963#step:8:1"
+    }
+  }
+}

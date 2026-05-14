@@ -1,0 +1,21 @@
+{
+  "vcs_url": "https://github.com/woocommerce/woocommerce",
+  "vulnerabilities": {
+    "CVE-2026-32304": {
+      "1ab08b1ead38e5d83c0ae37bbdaa12e689642cf3": "[Backport to release/10.6] Update locutus to v3 to fix CVE-2026-32304 (#63994)\n\nUpdate locutus to v3 to fix CVE-2026-32304 (#63992)",
+      "9ed5111418112c6c98565f7f1393bcd3b3bc3a24": "[Backport to release/10.7] Update locutus to v3 to fix CVE-2026-32304 (#63993)\n\n* Cherry-pick 969e0faa9a633e866d66af0fa299f4248966567a with unresolved conflicts from #63992\n\n* Resolve conflicts\n\n---------\n\nCo-authored-by: Brandon Kraft <public@brandonkraft.com>",
+      "969e0faa9a633e866d66af0fa299f4248966567a": "Update locutus to v3 to fix CVE-2026-32304 (#63992)\n\nUpdate locutus dependency to v3 in woocommerce/number\n\nFixes #63965"
+    },
+    "GHSA-GXFX-93XQ-PR6P": {
+      "608b8eb4a5cfc5bfef61b7400085c6f388b4aa94": "Merge pull request from GHSA-gxfx-93xq-pr6p\n\n* Add cors check\n\n* refactor logic\n\n* Refactor add_cors_headers to allow null and allowed hosts\n\n* Move remove_filter inline\n\n* Revert unrelated code style changes\n\n* Add explainer to docblock\n\n* Remove access for null origin\n\n* Move CORS handling to auth class so it applies API wide\n\n* Move only Authentication to priority 11\n\n* Handle preflight requests so cart-tokens work\n\n---------\n\nCo-authored-by: Mike Jolley <mike.jolley@me.com>",
+      "0eab61f93fec6bc5fd5094a1af23be93aa1fdca3": "Merge pull request from GHSA-gxfx-93xq-pr6p\n\n* Add cors check\n\n* refactor logic\n\n* Refactor add_cors_headers to allow null and allowed hosts\n\n* Move remove_filter inline\n\n* Revert unrelated code style changes\n\n* Add explainer to docblock\n\n* Remove access for null origin\n\n* Move CORS handling to auth class so it applies API wide\n\n* Move only Authentication to priority 11\n\n* Handle preflight requests so cart-tokens work\n\n---------\n\nCo-authored-by: Mike Jolley <mike.jolley@me.com>"
+    },
+    "GHSA-6HQ4-W6WV-8WRP": {
+      "698c2668e52b97888420bf414ac408a92868f1a9": "Merge pull request from GHSA-6hq4-w6wv-8wrp",
+      "e0053afd6a382d1bbd6eef3915e9fc22ac834ca6": "Merge pull request from GHSA-6hq4-w6wv-8wrp"
+    },
+    "GHSA-6WVR-47FF-M546": {
+      "4a87a9bfbb15d317dac47044ba7a1ffa6399cf3a": "Merge pull request from GHSA-6wvr-47ff-m546\n\nFixed permission check for reviews in v1 & v2 REST API"
+    }
+  }
+}

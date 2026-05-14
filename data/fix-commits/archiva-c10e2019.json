@@ -1,0 +1,21 @@
+{
+  "vcs_url": "https://github.com/apache/archiva",
+  "vulnerabilities": {
+    "CVE-2019-0213": {
+      "8a13d818fe05aa13055fc1208da4764be109f872": "[MRM-1987] Improving URL check for organisation info\n\n(cherry picked from commit 796716d44183bd315dd20184a66b39ae533eb747)\n\nThis is the final commit from the 2.x branch of multiple commits to fix the vulnerabilities\nCVE-2019-0213 and CVE-2019-0214"
+    },
+    "CVE-2019-0214": {
+      "8a13d818fe05aa13055fc1208da4764be109f872": "[MRM-1987] Improving URL check for organisation info\n\n(cherry picked from commit 796716d44183bd315dd20184a66b39ae533eb747)\n\nThis is the final commit from the 2.x branch of multiple commits to fix the vulnerabilities\nCVE-2019-0213 and CVE-2019-0214"
+    },
+    "CVE-2011-1026": {
+      "58d905941b9522e830c6e13b3a850b5cc637679e": "[MRM-1480]/[REDBACK-274] (CVE-2011-1026)\no upgrade to redback 1.2.8-SNAPSHOT\no configured struts2's token interceptor + use of <s:token> in affected actions to prevent CSRF issue\n[MRM-1460] added selenium tests for CSRF fixes in affected pages\nMerged: r1066067:1091313\n\n\ngit-svn-id: https://svn.apache.org/repos/asf/archiva/trunk@1091315 13f79535-47bb-0310-9956-ffa450edef68",
+      "622d4ecd46de0e48a8233542a89892eedbeefec4": "[MRM-1480]/[REDBACK-274] (CVE-2011-1026)\no upgrade to redback 1.2.8-SNAPSHOT\no configured struts2's token interceptor + use of <s:token> in affected actions to prevent CSRF issue\n\n\ngit-svn-id: https://svn.apache.org/repos/asf/archiva/branches/archiva-1.3.x@1089839 13f79535-47bb-0310-9956-ffa450edef68"
+    },
+    "CVE-2011-0533": {
+      "c45bcee96f8ab98f6249af8f5b058dbc3764d08e": "[MRM-1455] Upgrade to Redback 1.2.6\nIncludes fix for [CVE-2011-0533]\n\n\ngit-svn-id: https://svn.apache.org/repos/asf/archiva/branches/archiva-1.3.x@1066067 13f79535-47bb-0310-9956-ffa450edef68"
+    },
+    "CVE-2010-3449": {
+      "71d0bb56b1d80ee605420772adb5acb71335ef43": "[MRM-1438] [CVE-2010-3449]\no update to Redback 1.2.4 issue is fixed\no enable referrer check by default for security interceptor\n\n\ngit-svn-id: https://svn.apache.org/repos/asf/archiva/branches/archiva-1.3.x@1038518 13f79535-47bb-0310-9956-ffa450edef68"
+    }
+  }
+}

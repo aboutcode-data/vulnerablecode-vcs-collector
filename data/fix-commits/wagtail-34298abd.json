@@ -1,0 +1,155 @@
+{
+  "vcs_url": "https://github.com/wagtail/wagtail",
+  "vulnerabilities": {
+    "CVE-2026-28223": {
+      "d5807f771fde7dd6806d9367b9242ec6b941492f": "Release note for CVE-2026-28223 in 7.3.1",
+      "001f921beadcb6bccfba928c8f05067d301d464d": "Release note for CVE-2026-28223 in 7.2.3",
+      "d49ba90c5b4830147fe723a02aeb86f577bbd26f": "Release note for CVE-2026-28223 in 7.0.6",
+      "cfb9baa427199237d856f0e878e7ab443235fb21": "Release note for CVE-2026-28223 in 6.3.8",
+      "06750d47de2ff9b22b37ff56949c1abb325e0d96": "Release note for CVE-2026-28223 in 7.3.1",
+      "1b971d0ba7020c1bf5814851eb1ca82ce537245f": "Release note for CVE-2026-28223 in 7.2.3",
+      "3aada716a7ba92d0c73f78e8c17586fe372088ae": "Release note for CVE-2026-28223 in 7.0.6",
+      "804ed3bce26c60bc56763947a612269b816cb2b7": "Release note for CVE-2026-28223 in 6.3.8",
+      "3b1684d5d949e69291ccd93c825a709084953cb1": "Release note for CVE-2026-28223 in 7.2.3",
+      "94b8939db67e62517b2acd859ea7aac88ee0cc72": "Release note for CVE-2026-28223 in 7.0.6",
+      "0a6b3b64561fa113117f652237d8fe8dcb369cbb": "Release note for CVE-2026-28223 in 6.3.8",
+      "87ec63c0a688529b45dc43b5c3fda27571439894": "Release note for CVE-2026-28223 in 7.0.6",
+      "4bce4cc4f8ba87c4a54d9fa4318ce72798f7b7f8": "Release note for CVE-2026-28223 in 6.3.8",
+      "ce8e0f80485df26711d7ec0e7bb5bac12a10e2e7": "Release note for CVE-2026-28223 in 6.3.8"
+    },
+    "GHSA-P4V8-RW59-93CQ": {
+      "fccf7650d9709342882862c0ecd147428e98e6f1": "Enforce HTML escaping of all confirmation / warning / error messages\n\nFixes GHSA-p4v8-rw59-93cq\n\nEnsure that all messages are handled through `wagtail.admin.messages` (which uses a template that correctly escapes messages and outputs a safe string) rather than `django.contrib.messages`, and remove the `|safe` filter when outputting messages in base.html (which should not be necessary, if all messages that intentionally contain HTML are constructed as safe strings).",
+      "ba70244d376a7b1bd180ded03e827917ff410c19": "Enforce HTML escaping of all confirmation / warning / error messages\n\nFixes GHSA-p4v8-rw59-93cq\n\nEnsure that all messages are handled through `wagtail.admin.messages` (which uses a template that correctly escapes messages and outputs a safe string) rather than `django.contrib.messages`, and remove the `|safe` filter when outputting messages in base.html (which should not be necessary, if all messages that intentionally contain HTML are constructed as safe strings).",
+      "1c6f2effed68f4ccad6fbd07987e03641505f863": "Enforce HTML escaping of all confirmation / warning / error messages\n\nFixes GHSA-p4v8-rw59-93cq\n\nEnsure that all messages are handled through `wagtail.admin.messages` (which uses a template that correctly escapes messages and outputs a safe string) rather than `django.contrib.messages`, and remove the `|safe` filter when outputting messages in base.html (which should not be necessary, if all messages that intentionally contain HTML are constructed as safe strings).",
+      "ee39d39deeb7f250fe886417b24802d7e05b1143": "Enforce HTML escaping of all confirmation / warning / error messages\n\nFixes GHSA-p4v8-rw59-93cq\n\nEnsure that all messages are handled through `wagtail.admin.messages` (which uses a template that correctly escapes messages and outputs a safe string) rather than `django.contrib.messages`, and remove the `|safe` filter when outputting messages in base.html (which should not be necessary, if all messages that intentionally contain HTML are constructed as safe strings).",
+      "d8c5900982df8ed5938ad993aa9ff69cda50f80c": "Enforce HTML escaping of all confirmation / warning / error messages\n\nFixes GHSA-p4v8-rw59-93cq\n\nEnsure that all messages are handled through `wagtail.admin.messages` (which uses a template that correctly escapes messages and outputs a safe string) rather than `django.contrib.messages`, and remove the `|safe` filter when outputting messages in base.html (which should not be necessary, if all messages that intentionally contain HTML are constructed as safe strings)."
+    },
+    "CVE-2026-28222": {
+      "dc741b35730f9224912df5b744e1c29403b65a24": "Release note for CVE-2026-28222 in 7.3.1",
+      "ca135ebbbadd326f3d22f67d73d5ea832fef02c7": "Release note for CVE-2026-28222 in 7.2.3",
+      "7da78050e63567bd62941cc561e9f25c2ea71df8": "Release note for CVE-2026-28222 in 7.0.6",
+      "233a35c2829a090854f0b2e51fa87ad0a2b678c6": "Release note for CVE-2026-28222 in 6.3.8",
+      "423934efd88565b1bd2feea735cbacb8df35cb6c": "Release note for CVE-2026-28222 in 7.3.1",
+      "a2db131d3f9bf2baa4256cb6c141691947f5f1b4": "Release note for CVE-2026-28222 in 7.2.3",
+      "16bbf260f6faa8674d0ff53a27133223a047d2e5": "Release note for CVE-2026-28222 in 7.0.6",
+      "06a0646f2562b852087de1de610cbb0ebf3d52fa": "Release note for CVE-2026-28222 in 6.3.8",
+      "29ff50c92b1392a007b2f7860804f10c600bed59": "Release note for CVE-2026-28222 in 7.2.3",
+      "75858f4b07671d323712c68d3e7ea1312f7bd0a6": "Release note for CVE-2026-28222 in 7.0.6",
+      "0c5bf737880530bfec989b3fec85f4ec1d43b70c": "Release note for CVE-2026-28222 in 6.3.8",
+      "467071f4ec0f065d8235c16bc70b959435bdedca": "Release note for CVE-2026-28222 in 7.0.6",
+      "d571c41e5979609ffc0c7478e1f12ef952580c7a": "Release note for CVE-2026-28222 in 6.3.8",
+      "80aefafb8d4b7d285fee8cdf089829dfd6d7e011": "Release note for CVE-2026-28222 in 6.3.8"
+    },
+    "GHSA-P5CM-246W-84JM": {
+      "80c61971d4f603c5b28b5422e1dc9490350d72e9": "Correctly escape `class`, `rowspan` and `colspan` attributes in TableBlock HTML output\n\nFixes GHSA-p5cm-246w-84jm",
+      "575c0d7c18c7716ed73f7a3c2720ad75956f0a85": "Correctly escape `class`, `rowspan` and `colspan` attributes in TableBlock HTML output\n\nFixes GHSA-p5cm-246w-84jm",
+      "605a5569686565e035313222e1bc2f9802fbc55b": "Correctly escape `class`, `rowspan` and `colspan` attributes in TableBlock HTML output\n\nFixes GHSA-p5cm-246w-84jm",
+      "4620423cb22c5253391a0f04178089c1162f6e2e": "Correctly escape `class`, `rowspan` and `colspan` attributes in TableBlock HTML output\n\nFixes GHSA-p5cm-246w-84jm",
+      "0375094bb57ce6e527005c2bb2e871dd20bca04d": "Correctly escape `class`, `rowspan` and `colspan` attributes in TableBlock HTML output\n\nFixes GHSA-p5cm-246w-84jm"
+    },
+    "CVE-2026-25517": {
+      "82e074f8f85ee659eded3a37ac0aa6a007c4b844": "Release note for CVE-2026-25517 in 7.3",
+      "da5b8beeba69ac86b47b343bd8c82d057dfa33dc": "Release note for CVE-2026-25517 in 7.2.2",
+      "ffe44a3248dce72a663af4f581606a4da6f2d88d": "Release note for CVE-2026-25517 in 7.1.3",
+      "048ad90612e495df483bbc53f9079f7c74d149aa": "Release note for CVE-2026-25517 in 7.0.4",
+      "821b555f55fe11745e04d55557c2d74c3cb7abe6": "Release note for CVE-2026-25517 in 6.3.6",
+      "b410ddd6d446aa4d3e885c999f7607484a525c65": "Release note for CVE-2026-25517 in 7.3",
+      "2ea0573e6eee3edb67e5d43169b34b75132c0ddb": "Release note for CVE-2026-25517 in 7.2.2",
+      "5812d446e9de549f1ee1d1937e5dbdbb461026a5": "Release note for CVE-2026-25517 in 7.1.3",
+      "1d306d89d47fddcb8cbd280fdfe56b9cb3231b8d": "Release note for CVE-2026-25517 in 7.0.4",
+      "ccbb38d41bc494b8dd42041859538867987dba67": "Release note for CVE-2026-25517 in 6.3.6",
+      "13546003e42e2520124e1a8a55743bb1dfc9be36": "Release note for CVE-2026-25517 in 7.2.2",
+      "63f186e9d916b4a7f82eac5bae2b15145dc11383": "Release note for CVE-2026-25517 in 7.1.3",
+      "3e6e68cb7a700e02036d42a51b18a7b71a41dcd4": "Release note for CVE-2026-25517 in 7.0.4",
+      "fa33bea65e37cc003a95cbdd3b1e63bdd2c08043": "Release note for CVE-2026-25517 in 6.3.6",
+      "df34793c262d45410736b0f96a650998b180def5": "Release note for CVE-2026-25517 in 7.1.3",
+      "c9afaf475000a95dec3d5fd8998a8fdbc5348610": "Release note for CVE-2026-25517 in 7.0.4",
+      "483d22b37157d27c95c9aaaaa5c2466cd74e90e7": "Release note for CVE-2026-25517 in 6.3.6",
+      "37ae9eaf422e9837fadcd4f917e9387876ccf3ab": "Release note for CVE-2026-25517 in 7.0.4",
+      "35a5be8dd08772e5ffe3432ddb5903e9bf0ad223": "Release note for CVE-2026-25517 in 6.3.6",
+      "4fc4fd87e04f62776de21805088c8e4efbae4604": "Release note for CVE-2026-25517 in 6.3.6"
+    },
+    "CVE-2024-39317": {
+      "7c160753425cf9e8c212ea71bd78650e4090412f": "Release note for CVE-2024-39317 in 5.2.6",
+      "8667318326fa91b07b089f75e2c6d430cd7e7e87": "Require word boundaries before search query filters (CVE-2024-39317)\n\nRequiring a word boundary before the start of a filter prevents backtracking, as substrings of the filter name are no longer valid filter names.\n\nThis also makes matching around an order of magnitude faster.",
+      "b783c096b6d4fd2cfc05f9137a0be288850e99a2": "Require word boundaries before search query filters (CVE-2024-39317)\n\nRequiring a word boundary before the start of a filter prevents backtracking, as substrings of the filter name are no longer valid filter names.\n\nThis also makes matching around an order of magnitude faster.",
+      "3c941136f79c48446e3858df46e5b668d7f83797": "Require word boundaries before search query filters (CVE-2024-39317)\n\nRequiring a word boundary before the start of a filter prevents backtracking, as substrings of the filter name are no longer valid filter names.\n\nThis also makes matching around an order of magnitude faster.",
+      "68917f1c97124463dd7b2a417a36ed3ed5bc2785": "Release note for CVE-2024-39317 in 5.2.6",
+      "31b1e8532dfb1b70d8d37d22aff9cbde9109cdf2": "Require word boundaries before search query filters (CVE-2024-39317)\n\nRequiring a word boundary before the start of a filter prevents backtracking, as substrings of the filter name are no longer valid filter names.\n\nThis also makes matching around an order of magnitude faster."
+    },
+    "CVE-2024-35228": {
+      "72cfe9ad1c6aec5e7a54209ad964a88a499ac79c": "Release note for CVE-2024-35228 in 6.1.2",
+      "8b63309ced49bf6737f8acacf6440444b46b5983": "Release note for CVE-2024-35228 in 6.1.2",
+      "c66c0bd2b4ebf13a6444e15bcddfde5961562851": "Release note for CVE-2024-35228 in 6.0.5",
+      "857b6f9820618ad7d23db6852331c03e6fe7affe": "Release note for CVE-2024-35228 in 6.0.5",
+      "f8bf4977414be63a078c90c5de0ee8d8dae64c84": "Release note for CVE-2024-35228 in 6.0.5"
+    },
+    "GHSA-W2V8-PHP4-P8HC": {
+      "ab2a5d82b4ee3c909d2456704388ccf90e367c9b": "Revert \"Merge pull request from GHSA-w2v8-php4-p8hc\"\n\nThis reverts commit fa0d4829f9c81eefb37cc058e2fa1b6a918741da.",
+      "fa0d4829f9c81eefb37cc058e2fa1b6a918741da": "Merge pull request from GHSA-w2v8-php4-p8hc\n\n* Pass user to settings form to enable permissions checks\n\n* Add tests for settings creation and editing\n\n* Ensure all generic create / edit view forms receive `for_user`\n\nCo-authored-by: Sage Abdullah <sage.abdullah@torchbox.com>\n\n* Test field permissions on ModelViewTest\n\n---------\n\nCo-authored-by: Sage Abdullah <sage.abdullah@torchbox.com>",
+      "ad74c97f40433f84f722bd2dd81499cc80534423": "Merge pull request from GHSA-w2v8-php4-p8hc\n\n* Pass user to settings form to enable permissions checks\n\n* Add tests for settings creation and editing\n\n* Ensure all generic create / edit view forms receive `for_user`\n\nCo-authored-by: Sage Abdullah <sage.abdullah@torchbox.com>\n\n* Test field permissions on ModelViewTest\n\n---------\n\nCo-authored-by: Sage Abdullah <sage.abdullah@torchbox.com>",
+      "ee57f6d4dc0724e11169672a31aa9c3557c0313a": "Merge pull request from GHSA-w2v8-php4-p8hc\n\n* Pass user to settings form to enable permissions checks\n\n* Add tests for settings creation and editing\n\n* Ensure all generic create / edit view forms receive `for_user`\n\nCo-authored-by: Sage Abdullah <sage.abdullah@torchbox.com>\n\n* Test field permissions on ModelViewTest\n\n---------\n\nCo-authored-by: Sage Abdullah <sage.abdullah@torchbox.com>"
+    },
+    "CVE-2024-32882": {
+      "4e520a5007fe6ec79a87e1ced9e0ee65e37a21d4": "Release note for CVE-2024-32882 in 6.0.3",
+      "54b33e87c3b6cb1f90ea18a2dbe844710cbdd61d": "Release note for CVE-2024-32882 in 6.1",
+      "6f880761ff86d507cddf3658fd151ab68e06e61e": "Release note for CVE-2024-32882 in 6.0.3",
+      "42b7c9bcdedb0ce20dbf9cd9197079e3a7043f89": "Release note for CVE-2024-32882 in 6.1",
+      "9d24ac4e3966bccb95a2decdd9fb4d87462b77dd": "Release note for CVE-2024-32882 in 6.0.3"
+    },
+    "CVE-2023-45809": {
+      "b21921dd83a08af97fd7824cf3547c4247662712": "Release note for CVE-2023-45809 in 5.1.3 (and fill in release date)",
+      "8111639f9e656bb77ef4b3e5b290ea439182aebf": "Release note for CVE-2023-45809 in 5.0.5",
+      "6033a3841b42e82f80f6eb4eb38e41ef955d6828": "Release note for CVE-2023-45809 in 4.1.9",
+      "b0b70b1a2eda91976f988b2a52ff78436e711cf8": "Release note for CVE-2023-45809 in 5.1.3 (and fill in release date)",
+      "bc1178853114f6d06c0460fc40dfbda3ae3bb573": "Release note for CVE-2023-45809 in 5.0.5",
+      "c8c313e077e87cc6d68e25860a38997c1f82b3f2": "Release note for CVE-2023-45809 in 4.1.9",
+      "8cae3f09c2b14ea757667b0e049f6b60bbe40ba8": "Release note for CVE-2023-45809 in 5.0.5",
+      "c94056432827e217dc704c5965728be46853b90b": "Release note for CVE-2023-45809 in 4.1.9",
+      "8db9bf3ee06a1df67d9f1b2eb302d963d4b67cae": "Release note for CVE-2023-45809 in 4.1.9"
+    },
+    "CVE-2023-28837": {
+      "add3c78322ea5f723e564c844ffbf7f92f3a062b": "Release note for CVE-2023-28837 in 4.1.4",
+      "203e4abd39d95383b08b2018e09fc05627b8a6a1": "Release note for CVE-2023-28837 in 4.2.2",
+      "36d62151c452092611e87f177e9723447a98570d": "Release note for CVE-2023-28837 in 4.1.4",
+      "d4022310cbe497993459c3136311467c7ac6329a": "Release note for CVE-2023-28837 in 4.1.4",
+      "c9d2fcd650a88d76ae122646142245e5927a9165": "Release note for CVE-2023-28837 in 4.2.2"
+    },
+    "CVE-2023-28836": {
+      "65a626f309eb82691cb7543a4c041aa15d181be5": "Release note for CVE-2023-28836 in 4.1.4",
+      "b533ec1e1dfb0004d9ba0e2d608ce1d1ce8c72d9": "Release note for CVE-2023-28836 in 4.2.2",
+      "dab2422cdc81b957165924132f46e89245efe8b9": "Release note for CVE-2023-28836 in 4.1.4",
+      "eefc3381d37b476791610e5d30594fae443f33af": "Release note for CVE-2023-28836 in 4.1.4",
+      "bc84bf9815610cfbf8db3b6050c7ddcbaa4b9713": "Release note for CVE-2023-28836 in 4.2.2"
+    },
+    "CVE-2022-21683": {
+      "7c2dec3e7367d8f39860d3fc0e05c2b3d83490e2": "Release note for CVE-2022-21683",
+      "bbafc97af9e9ee49ae8276455b61f942a5bab6bc": "Release note for CVE-2022-21683"
+    },
+    "CVE-2021-32681": {
+      "74e3c1764f059fdbf98ffd92b774ad5e6c19dc68": "Release note for CVE-2021-32681 in Wagtail 2.13.2",
+      "f108167111da07200f3a8468081cd19c756cc024": "Release note for CVE-2021-32681 in Wagtail 2.12.5",
+      "5954921cdf0d1c9e97428b67fba0d2af35db5e9b": "Release note for CVE-2021-32681 in Wagtail 2.11.8",
+      "9b1a5cd5fcb82a59b94c29de0f390d4ac6dbb8be": "Release note for CVE-2021-32681 in Wagtail 2.13.2",
+      "d824212f1ef6964f2af7c70e6772e122da3744fc": "Release note for CVE-2021-32681 in Wagtail 2.12.5",
+      "37c8db589b3bc15f7762fd9196de085c928c528f": "Release note for CVE-2021-32681 in Wagtail 2.11.8",
+      "8755fd17b5c934e4c117765e0e951a791232eaf6": "Release note for CVE-2021-32681 in Wagtail 2.12.5",
+      "15441d70f192bb636071a5cc0c44544c5384bf57": "Release note for CVE-2021-32681 in Wagtail 2.11.8",
+      "863e6fc9264bf47a7eaacfa3874452e9a2dd37f3": "Release note for CVE-2021-32681 in Wagtail 2.11.8"
+    },
+    "CVE-2021-29434": {
+      "b3f3df2764134c2d85f9813570328871b1408caf": "Release note for CVE-2021-29434 in 2.11.7",
+      "fec40b211bd99ce93caec0b0669e7c7d3aa2e27c": "Release note for CVE-2021-29434 in 2.11.7",
+      "d2d4e6efba03ded9463c3baf13a7144b8f20c44a": "Release note for CVE-2021-29434 in 2.11.7",
+      "1069e2b44a44b0c5f692041d42c2b44fcf15f19e": "Release note for CVE-2021-29434 in 2.12.4",
+      "a44312f48f436df50bc920aa9b071de47cdcbb78": "Release note for CVE-2021-29434 in 2.12.4"
+    },
+    "CVE-2020-10379": {
+      "8939583e982fa0888bca1eccc5c8467f19d4e5d1": "Expand Pillow dependency to include 7.x\n\nThis allows users on the 2.7 LTS branch to upgrade Pillow to address [CVE-2020-10379](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10379), as Pillow 6.x is EOL (https://github.com/python-pillow/Pillow/issues/4750)."
+    },
+    "CVE-2020-11037": {
+      "4717c2c1c477933f061841fb677e3fa67a8dfa26": "Release note for CVE-2020-11037 in 2.9",
+      "b76ab57ee859732b9cf9287d380493ab24061090": "Release note for CVE-2020-11037 in 2.9"
+    }
+  }
+}

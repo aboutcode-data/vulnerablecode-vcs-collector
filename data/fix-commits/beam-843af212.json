@@ -1,0 +1,84 @@
+{
+  "vcs_url": "https://github.com/apache/beam",
+  "vulnerabilities": {
+    "CVE-2026-34477": {
+      "6e46b0ab90df61bcb954c2a540864309e900b9cd": "Fix CVE-2026-34477 (#38210) (#38260)",
+      "c166bbe066c897a77eaf65bac7fa2dc061f81713": "Fix CVE-2026-34477 (#38210)"
+    },
+    "CVE-2024-1597": {
+      "d2aed60042e0f546f116906cd2e7876734671b1d": "[Security] Bump PostgreSQL JDBC Driver from 42.2.16 to 42.7.10 (#37941)\n\n* [Security] Bump PostgreSQL JDBC Driver from 42.2.16 to 42.7.10\n\nUpgrades the PostgreSQL JDBC Driver to address multiple CVEs:\n- CVE-2024-1597 (CVSS 9.8): SQL injection via preferQueryMode=simple\n- CVE-2022-31197: SQL injection in ResultSet.refreshRow\n- CVE-2022-21724: Arbitrary code execution via JDBC URL\n\n* Add issue link to CHANGES.md entry (fixes #37942)"
+    },
+    "CVE-2022-31197": {
+      "d2aed60042e0f546f116906cd2e7876734671b1d": "[Security] Bump PostgreSQL JDBC Driver from 42.2.16 to 42.7.10 (#37941)\n\n* [Security] Bump PostgreSQL JDBC Driver from 42.2.16 to 42.7.10\n\nUpgrades the PostgreSQL JDBC Driver to address multiple CVEs:\n- CVE-2024-1597 (CVSS 9.8): SQL injection via preferQueryMode=simple\n- CVE-2022-31197: SQL injection in ResultSet.refreshRow\n- CVE-2022-21724: Arbitrary code execution via JDBC URL\n\n* Add issue link to CHANGES.md entry (fixes #37942)"
+    },
+    "CVE-2022-21724": {
+      "d2aed60042e0f546f116906cd2e7876734671b1d": "[Security] Bump PostgreSQL JDBC Driver from 42.2.16 to 42.7.10 (#37941)\n\n* [Security] Bump PostgreSQL JDBC Driver from 42.2.16 to 42.7.10\n\nUpgrades the PostgreSQL JDBC Driver to address multiple CVEs:\n- CVE-2024-1597 (CVSS 9.8): SQL injection via preferQueryMode=simple\n- CVE-2022-31197: SQL injection in ResultSet.refreshRow\n- CVE-2022-21724: Arbitrary code execution via JDBC URL\n\n* Add issue link to CHANGES.md entry (fixes #37942)"
+    },
+    "CVE-2023-46604": {
+      "3aad50b99e8f4f97ed5344e56d6915a5a1cf2b29": "[Security] Bump ActiveMQ from 5.14.5 to 5.19.2 (#37944)\n\nFixes CVE-2023-46604 (CVSS 10.0, RCE via OpenWire protocol) and\nCVE-2022-41678 (CVSS 8.8, RCE via Jolokia and REST API).\n\nActiveMQ is used exclusively as a test dependency in Beam (embedded\nbroker for JMS, MQTT, and AMQP IO connector tests).\n\nChanges required for compatibility:\n- Upgrade JMS spec from 1.1 to 2.0 (geronimo-jms) for JMS IO, since\n  ActiveMQ 5.19.x uses JMS 2.0 API (setJMSDeliveryTime).\n- Add JMS 2.0 createContext() stubs to MockNonSerializableConnectionFactory.\n- Exclude transitive proton-j from activemq-amqp in AMQP IO to avoid\n  conflict with the directly declared proton-j:0.16.0.\n\nAll three affected test modules pass: JMS IO, MQTT IO, AMQP IO.\n\nFixes #37943"
+    },
+    "CVE-2022-41678": {
+      "3aad50b99e8f4f97ed5344e56d6915a5a1cf2b29": "[Security] Bump ActiveMQ from 5.14.5 to 5.19.2 (#37944)\n\nFixes CVE-2023-46604 (CVSS 10.0, RCE via OpenWire protocol) and\nCVE-2022-41678 (CVSS 8.8, RCE via Jolokia and REST API).\n\nActiveMQ is used exclusively as a test dependency in Beam (embedded\nbroker for JMS, MQTT, and AMQP IO connector tests).\n\nChanges required for compatibility:\n- Upgrade JMS spec from 1.1 to 2.0 (geronimo-jms) for JMS IO, since\n  ActiveMQ 5.19.x uses JMS 2.0 API (setJMSDeliveryTime).\n- Add JMS 2.0 createContext() stubs to MockNonSerializableConnectionFactory.\n- Exclude transitive proton-j from activemq-amqp in AMQP IO to avoid\n  conflict with the directly declared proton-j:0.16.0.\n\nAll three affected test modules pass: JMS IO, MQTT IO, AMQP IO.\n\nFixes #37943"
+    },
+    "CVE-2024-57699": {
+      "9e3dd1a2c8701ee3ea38f49e65a80326188cb217": "fix CVE-2024-57699 by pinning version (#37200)"
+    },
+    "CVE-2025-59250": {
+      "4eff1798314e7530bf3179e28d9dc865848923a4": "fix CVE-2025-59250 (#36800)"
+    },
+    "CVE-2025-48734": {
+      "66ed773e7a7aaa727b88a60131b03f1288d60032": "Merge pull request #36111: [2.67.0 postrelease] Fix CVE-2025-48734, CVE-2024-13009 (cherrypicking #36106)",
+      "3461a467804f5373098ea61f5bb9c2b6ce460e2d": "Fix CVE-2025-48734, CVE-2024-13009 (#36106) (#36109)\n\n* update dependencies due to CVE-2024-13009 and CVE-2025-24970\n\n* update dependency due to transitive dependency with  CVE-2025-48734\n\n* outstanding netty dependency.\n\n* fix netty's CVE-2025-55163\n\n* Revert \"fix netty's CVE-2025-55163\"\n\nThis reverts commit 874a77c9e5949bef9dd72ecc90ff8a6af749e0f9.\n\n* revert netty\n\nCo-authored-by: Rados\u0142aw Stankiewicz <radoslaws@google.com>",
+      "f8723b45eccb483fc52293806c7cf06e0cbd247f": "Fix CVE-2025-48734, CVE-2024-13009 (#36106)\n\n* update dependencies due to CVE-2024-13009 and CVE-2025-24970\n\n* update dependency due to transitive dependency with  CVE-2025-48734\n\n* outstanding netty dependency.\n\n* fix netty's CVE-2025-55163\n\n* Revert \"fix netty's CVE-2025-55163\"\n\nThis reverts commit 874a77c9e5949bef9dd72ecc90ff8a6af749e0f9.\n\n* revert netty",
+      "becfcf86ab6f5c2f24986915fd0dfbbfd19de532": "Fix CVE-2025-48734, CVE-2024-13009 (#36106)\n\n* update dependencies due to CVE-2024-13009 and CVE-2025-24970\n\n* update dependency due to transitive dependency with  CVE-2025-48734\n\n* outstanding netty dependency.\n\n* fix netty's CVE-2025-55163\n\n* Revert \"fix netty's CVE-2025-55163\"\n\nThis reverts commit 874a77c9e5949bef9dd72ecc90ff8a6af749e0f9.\n\n* revert netty"
+    },
+    "CVE-2024-13009": {
+      "66ed773e7a7aaa727b88a60131b03f1288d60032": "Merge pull request #36111: [2.67.0 postrelease] Fix CVE-2025-48734, CVE-2024-13009 (cherrypicking #36106)",
+      "3461a467804f5373098ea61f5bb9c2b6ce460e2d": "Fix CVE-2025-48734, CVE-2024-13009 (#36106) (#36109)\n\n* update dependencies due to CVE-2024-13009 and CVE-2025-24970\n\n* update dependency due to transitive dependency with  CVE-2025-48734\n\n* outstanding netty dependency.\n\n* fix netty's CVE-2025-55163\n\n* Revert \"fix netty's CVE-2025-55163\"\n\nThis reverts commit 874a77c9e5949bef9dd72ecc90ff8a6af749e0f9.\n\n* revert netty\n\nCo-authored-by: Rados\u0142aw Stankiewicz <radoslaws@google.com>",
+      "f8723b45eccb483fc52293806c7cf06e0cbd247f": "Fix CVE-2025-48734, CVE-2024-13009 (#36106)\n\n* update dependencies due to CVE-2024-13009 and CVE-2025-24970\n\n* update dependency due to transitive dependency with  CVE-2025-48734\n\n* outstanding netty dependency.\n\n* fix netty's CVE-2025-55163\n\n* Revert \"fix netty's CVE-2025-55163\"\n\nThis reverts commit 874a77c9e5949bef9dd72ecc90ff8a6af749e0f9.\n\n* revert netty",
+      "becfcf86ab6f5c2f24986915fd0dfbbfd19de532": "Fix CVE-2025-48734, CVE-2024-13009 (#36106)\n\n* update dependencies due to CVE-2024-13009 and CVE-2025-24970\n\n* update dependency due to transitive dependency with  CVE-2025-48734\n\n* outstanding netty dependency.\n\n* fix netty's CVE-2025-55163\n\n* Revert \"fix netty's CVE-2025-55163\"\n\nThis reverts commit 874a77c9e5949bef9dd72ecc90ff8a6af749e0f9.\n\n* revert netty"
+    },
+    "CVE-2025-24970": {
+      "3461a467804f5373098ea61f5bb9c2b6ce460e2d": "Fix CVE-2025-48734, CVE-2024-13009 (#36106) (#36109)\n\n* update dependencies due to CVE-2024-13009 and CVE-2025-24970\n\n* update dependency due to transitive dependency with  CVE-2025-48734\n\n* outstanding netty dependency.\n\n* fix netty's CVE-2025-55163\n\n* Revert \"fix netty's CVE-2025-55163\"\n\nThis reverts commit 874a77c9e5949bef9dd72ecc90ff8a6af749e0f9.\n\n* revert netty\n\nCo-authored-by: Rados\u0142aw Stankiewicz <radoslaws@google.com>",
+      "f8723b45eccb483fc52293806c7cf06e0cbd247f": "Fix CVE-2025-48734, CVE-2024-13009 (#36106)\n\n* update dependencies due to CVE-2024-13009 and CVE-2025-24970\n\n* update dependency due to transitive dependency with  CVE-2025-48734\n\n* outstanding netty dependency.\n\n* fix netty's CVE-2025-55163\n\n* Revert \"fix netty's CVE-2025-55163\"\n\nThis reverts commit 874a77c9e5949bef9dd72ecc90ff8a6af749e0f9.\n\n* revert netty",
+      "becfcf86ab6f5c2f24986915fd0dfbbfd19de532": "Fix CVE-2025-48734, CVE-2024-13009 (#36106)\n\n* update dependencies due to CVE-2024-13009 and CVE-2025-24970\n\n* update dependency due to transitive dependency with  CVE-2025-48734\n\n* outstanding netty dependency.\n\n* fix netty's CVE-2025-55163\n\n* Revert \"fix netty's CVE-2025-55163\"\n\nThis reverts commit 874a77c9e5949bef9dd72ecc90ff8a6af749e0f9.\n\n* revert netty"
+    },
+    "CVE-2025-55163": {
+      "3461a467804f5373098ea61f5bb9c2b6ce460e2d": "Fix CVE-2025-48734, CVE-2024-13009 (#36106) (#36109)\n\n* update dependencies due to CVE-2024-13009 and CVE-2025-24970\n\n* update dependency due to transitive dependency with  CVE-2025-48734\n\n* outstanding netty dependency.\n\n* fix netty's CVE-2025-55163\n\n* Revert \"fix netty's CVE-2025-55163\"\n\nThis reverts commit 874a77c9e5949bef9dd72ecc90ff8a6af749e0f9.\n\n* revert netty\n\nCo-authored-by: Rados\u0142aw Stankiewicz <radoslaws@google.com>",
+      "f8723b45eccb483fc52293806c7cf06e0cbd247f": "Fix CVE-2025-48734, CVE-2024-13009 (#36106)\n\n* update dependencies due to CVE-2024-13009 and CVE-2025-24970\n\n* update dependency due to transitive dependency with  CVE-2025-48734\n\n* outstanding netty dependency.\n\n* fix netty's CVE-2025-55163\n\n* Revert \"fix netty's CVE-2025-55163\"\n\nThis reverts commit 874a77c9e5949bef9dd72ecc90ff8a6af749e0f9.\n\n* revert netty",
+      "becfcf86ab6f5c2f24986915fd0dfbbfd19de532": "Fix CVE-2025-48734, CVE-2024-13009 (#36106)\n\n* update dependencies due to CVE-2024-13009 and CVE-2025-24970\n\n* update dependency due to transitive dependency with  CVE-2025-48734\n\n* outstanding netty dependency.\n\n* fix netty's CVE-2025-55163\n\n* Revert \"fix netty's CVE-2025-55163\"\n\nThis reverts commit 874a77c9e5949bef9dd72ecc90ff8a6af749e0f9.\n\n* revert netty"
+    },
+    "CVE-2025-25193": {
+      "a91f22de4ca90d2a96a3724b4015fd1f7dba6d91": "fix CVE-2025-25193 (#34508)"
+    },
+    "CVE-2024-26308": {
+      "a27282363aa2b97dda96750f6d1cbf55ebd752ae": "Update confluent version to fix CVE-2024-26308 CVE-2024-25710 (#32674)\n\n* bump confluent version\r\n\r\nKafka Schema Registry Client has been reported with following vuln \r\nCVE-2024-26308\r\nCVE-2024-25710 due to vulnerable dependencies.\r\n\r\n* try slighly older version due to unmet dependencies to ThrottlingQuotaExceededException\r\n\r\n* try slighly older version due to unmet dependencies to ThrottlingQuotaExceededException\r\n\r\n* comment on version"
+    },
+    "CVE-2024-25710": {
+      "a27282363aa2b97dda96750f6d1cbf55ebd752ae": "Update confluent version to fix CVE-2024-26308 CVE-2024-25710 (#32674)\n\n* bump confluent version\r\n\r\nKafka Schema Registry Client has been reported with following vuln \r\nCVE-2024-26308\r\nCVE-2024-25710 due to vulnerable dependencies.\r\n\r\n* try slighly older version due to unmet dependencies to ThrottlingQuotaExceededException\r\n\r\n* try slighly older version due to unmet dependencies to ThrottlingQuotaExceededException\r\n\r\n* comment on version"
+    },
+    "CVE-2024-47561": {
+      "3b759f27cd2e2d069eb7280d800df0f7113a260d": "Bump avro, fix CVE-2024-47561 (#32770)\n\n* Bump avro, fix CVE-2024-47561\r\n\r\n* Update BeamModulePlugin.groovy\r\n\r\n* Run Avro tests"
+    },
+    "CVE-2023-47248": {
+      "8b6ae4a4c351666deb4b49ecda8822c3e2f578b8": "Invoke pyarrow_hotfix to alleviate concerns due to CVE-2023-47248. (#29402)",
+      "1e1c2a319f6e873070a2e848341555700706cc2a": "Invoke pyarrow_hotfix to alleviate concerns due to CVE-2023-47248. (#29396)"
+    },
+    "CVE-2023-5072": {
+      "e2a7ea66fa23497efe570e7d78758523c68c5339": "[Security] Bump org.json version due to CVE-2023-5072 (#29207)"
+    },
+    "CVE-2022-45688": {
+      "8fb23eef6dcf6fa8c42975f2d434492623b349ff": "[Security] Bump org.json:json due to CVE-2022-45688 (#28962)"
+    },
+    "CVE-2023-20861": {
+      "0c7f4ddc8922908af0a44337ca9282fa956844f3": "Upgrade spring-expression due to CVE-2023-20861 and CVE-2023-20863 (#26813)"
+    },
+    "CVE-2023-20863": {
+      "0c7f4ddc8922908af0a44337ca9282fa956844f3": "Upgrade spring-expression due to CVE-2023-20861 and CVE-2023-20863 (#26813)"
+    },
+    "CVE-2018-1324": {
+      "2626fb54d94e4f60fc51cacc8fa3e745354ac3ad": "[BEAM-3873] Current version of commons-compress is DOS vulnerable CVE-2018-1324",
+      "e577d64f2851eab3cae4c7412f57d59539108953": "[BEAM-3873] Update commons-compress to version 1.16.1 (fix CVE-2018-1324)"
+    }
+  }
+}

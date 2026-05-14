@@ -1,0 +1,11 @@
+{
+  "vcs_url": "https://github.com/psf/requests",
+  "vulnerabilities": {
+    "GHSA-J8R2-6X86-Q33Q": {
+      "74ea7cf7a6a27a4eeb2ae24e162bcc942a6706d5": "Merge pull request from GHSA-j8r2-6x86-q33q"
+    },
+    "CVE-2015-2296": {
+      "8c6d82a244880004863abe6b311ec0cf6a8e4a96": "Merge pull request #2496 from Lukasa/cve\n\nUpdate 2.6.0 changelog with CVE number CVE-2015-2296"
+    }
+  }
+}

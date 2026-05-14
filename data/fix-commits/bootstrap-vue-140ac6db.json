@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/bootstrap-vue/bootstrap-vue",
+  "vulnerabilities": {
+    "GHSA-VC8W-JR9V-VJ7F": {
+      "0111d3e4f898d482b9921c553180e584e5458687": "fix: ignore \"GHSA-vc8w-jr9v-vj7f\" in audit"
+    }
+  }
+}

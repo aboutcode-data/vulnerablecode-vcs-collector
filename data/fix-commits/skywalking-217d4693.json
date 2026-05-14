@@ -1,0 +1,50 @@
+{
+  "vcs_url": "https://github.com/apache/skywalking",
+  "vulnerabilities": {
+    "CVE-2025-24970": {
+      "b7e961b232b4f5cb89d80518e334998e632879ee": "Bump up netty to 4.11.118 and a bunch of GHA to fix CVE-2025-24970 (#13027)"
+    },
+    "CVE-2024-1597": {
+      "6b49098aed66680025e50b8b18419e2b02423c46": "Upgrade PostgreSQL driver to `42.4.4` to fix CVE-2024-1597. (#11922)"
+    },
+    "CVE-2021-38153": {
+      "671cb029823dd1a5b8aafce0a21819a515e9fa54": "Bump up Kafka client to 2.8.1 to fix CVE-2021-38153. (#9949)"
+    },
+    "CVE-2022-25857": {
+      "18d24638138ff3c7d9c13cf2b1a71bc15e8ca713": "Bump up snakeyaml to 1.31 for fixing CVE-2022-25857 (#9567)"
+    },
+    "CVE-2022-23221": {
+      "4d803e387fec1aa6c1085ad53c09eb44d62512fe": "Fix CVE-2022-23221 (#8464)\n\n* Fix CVE-2022-23221\r\n\r\nH2 Console before 2.1.210 allows remote attackers to execute arbitrary code via a jdbc:h2:mem JDBC URL containing the IGNORE_UNKNOWN_SETTINGS=TRUE;FORBID_CREATION=FALSE;INIT=RUNSCRIPT substring\r\n\r\nSigned-off-by: Gao Hongtao <hanahmily@gmail.com>"
+    },
+    "CVE-2021-22569": {
+      "0d5a289c207478cc3f43a95054bde81b1ed7a1e2": "Bump up gRPC/protobuf to fix CVE-2021-22569 (#8405)\n\n* Bump up gRPC/protobuf to fix CVE-2021-2256"
+    },
+    "CVE-2021-2256": {
+      "0d5a289c207478cc3f43a95054bde81b1ed7a1e2": "Bump up gRPC/protobuf to fix CVE-2021-22569 (#8405)\n\n* Bump up gRPC/protobuf to fix CVE-2021-2256"
+    },
+    "GHSA-H376-J262-VHQ6": {
+      "67f6681ba33d28f8cba7614f5ac34dd84f1f80b6": "Upgrade H2 version to fix GHSA-h376-j262-vhq6 (#8396)"
+    },
+    "CVE-2021-23463": {
+      "8fa4eb7d75d82858931fc741d309b6091731309d": "Upgrade H2 version to 2.0.202 to fix CVE-2021-23463 (#8332)"
+    },
+    "CVE-2021-44228": {
+      "c3dd317ca5b4bf82e9155aa9388ff6db2b1181fc": "Upgrade log4j2 to 2.15.0 for CVE-2021-44228"
+    },
+    "CVE-2021-37136": {
+      "1feca85f88979a5e45418b71314523b669e9a991": "Upgrade netty version to 4.1.68.Final avoid cve-2021-37136 (#7799)"
+    },
+    "CVE-2021-35515": {
+      "651f7f16ca22e8ad3238a1a5b5e49335849dc4ac": "Fix CVE-2021-35515, CVE-2021-35516, CVE-2021-35517, CVE-2021-36090 (#7400)"
+    },
+    "CVE-2021-35516": {
+      "651f7f16ca22e8ad3238a1a5b5e49335849dc4ac": "Fix CVE-2021-35515, CVE-2021-35516, CVE-2021-35517, CVE-2021-36090 (#7400)"
+    },
+    "CVE-2021-35517": {
+      "651f7f16ca22e8ad3238a1a5b5e49335849dc4ac": "Fix CVE-2021-35515, CVE-2021-35516, CVE-2021-35517, CVE-2021-36090 (#7400)"
+    },
+    "CVE-2021-36090": {
+      "651f7f16ca22e8ad3238a1a5b5e49335849dc4ac": "Fix CVE-2021-35515, CVE-2021-35516, CVE-2021-35517, CVE-2021-36090 (#7400)"
+    }
+  }
+}

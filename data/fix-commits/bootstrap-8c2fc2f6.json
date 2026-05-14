@@ -1,0 +1,14 @@
+{
+  "vcs_url": "https://github.com/twbs/bootstrap",
+  "vulnerabilities": {
+    "CVE-2020-8244": {
+      "f3e81f8cae3e4917dab9d7812dd376ac4ba10f87": "Regenerate package-lock.json to fix CVE-2020-8244 (#31601)"
+    },
+    "CVE-2018-14040": {
+      "2a5ba23ce8f041f3548317acc992ed8a736b609d": "Fix/xss issues on data attributes (#27047)\n\n* fix(collapse): xss CVE-2018-14040\r\n\r\nFixes #26625\r\n\r\n* fix(tooltip): xss CVE-2018-14042\r\n\r\nFixes #26628\r\n\r\n* fix(tooltip): XSS on data-viewport attribute\r\n\r\nFixes #27044\r\n\r\n* fix(affix): XSS on target config\r\n\r\nFixes #27045"
+    },
+    "CVE-2018-14042": {
+      "2a5ba23ce8f041f3548317acc992ed8a736b609d": "Fix/xss issues on data attributes (#27047)\n\n* fix(collapse): xss CVE-2018-14040\r\n\r\nFixes #26625\r\n\r\n* fix(tooltip): xss CVE-2018-14042\r\n\r\nFixes #26628\r\n\r\n* fix(tooltip): XSS on data-viewport attribute\r\n\r\nFixes #27044\r\n\r\n* fix(affix): XSS on target config\r\n\r\nFixes #27045"
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "vcs_url": "https://github.com/quarkusio/quarkus",
+  "vulnerabilities": {
+    "CVE-2026-42198": {
+      "a7f93d862210d7531ea7b61ba30d8cd08ab6016f": "Bump postgresql-jdbc.version to 42.7.11\n\nUpdated PostgreSQL JDBC version from 42.7.10 to 42.7.11 to fix https://nvd.nist.gov/vuln/detail/CVE-2026-42198\n\n(cherry picked from commit 66516a8e1792671096e3e8970f6a21c7514c0069)",
+      "c9e94ab53cbc6f70a72adc098674f109651b6ec2": "Bump postgresql-jdbc.version to 42.7.11\n\nUpdated PostgreSQL JDBC version from 42.7.10 to 42.7.11 to fix https://nvd.nist.gov/vuln/detail/CVE-2026-42198\n\n(cherry picked from commit 66516a8e1792671096e3e8970f6a21c7514c0069)",
+      "66516a8e1792671096e3e8970f6a21c7514c0069": "Bump postgresql-jdbc.version to 42.7.11\n\nUpdated PostgreSQL JDBC version from 42.7.10 to 42.7.11 to fix https://nvd.nist.gov/vuln/detail/CVE-2026-42198"
+    },
+    "CVE-2025-67030": {
+      "21cae9abbe036516072a66d0c7a1b9742c3327df": "Enforce plexus-utils 3.6.1 to fix CVE-2025-67030\n\nhttps://nvd.nist.gov/vuln/detail/CVE-2025-67030\n(cherry picked from commit 83982c6fe6a23e9c3e5a16dbf77ec261756aa16e)",
+      "4f002165b07a08ead5aee8dae73aa1a7e59ebb05": "Enforce plexus-utils 3.6.1 to fix CVE-2025-67030\n\nhttps://nvd.nist.gov/vuln/detail/CVE-2025-67030\n(cherry picked from commit 83982c6fe6a23e9c3e5a16dbf77ec261756aa16e)",
+      "839e0b5434796f208dc29a7e3a355d812208d8be": "Enforce plexus-utils 3.6.1 to fix CVE-2025-67030\n\nhttps://nvd.nist.gov/vuln/detail/CVE-2025-67030\n(cherry picked from commit 83982c6fe6a23e9c3e5a16dbf77ec261756aa16e)",
+      "8e0767e783db5a56481d3686e3236b071b6ee555": "Enforce plexus-utils 3.6.1 to fix CVE-2025-67030\n\nhttps://nvd.nist.gov/vuln/detail/CVE-2025-67030\n(cherry picked from commit 83982c6fe6a23e9c3e5a16dbf77ec261756aa16e)",
+      "3c8ef79612fb909d24ad4df55e139856019396c1": "Enforce plexus-utils 3.6.1 to fix CVE-2025-67030\n\nhttps://nvd.nist.gov/vuln/detail/CVE-2025-67030\n(cherry picked from commit 83982c6fe6a23e9c3e5a16dbf77ec261756aa16e)",
+      "2bf634298f2761735733812ecf06a20cfa7d2571": "Enforce plexus-utils 3.6.1 to fix CVE-2025-67030\n\nhttps://nvd.nist.gov/vuln/detail/CVE-2025-67030\n(cherry picked from commit 83982c6fe6a23e9c3e5a16dbf77ec261756aa16e)",
+      "3721e77a00a5fd19d8194c8df5048dc5f14cf672": "Merge pull request #53435 from gsmet/plexus-utils-3.6.1\n\nEnforce plexus-utils 3.6.1 to fix CVE-2025-67030",
+      "83982c6fe6a23e9c3e5a16dbf77ec261756aa16e": "Enforce plexus-utils 3.6.1 to fix CVE-2025-67030\n\nhttps://nvd.nist.gov/vuln/detail/CVE-2025-67030"
+    },
+    "CVE-2026-33871": {
+      "fa8655a3ee74973212151b9753093b1064f947af": "Upgrade to Vert.x 4.5.26 and Netty 4.1.132.Final\n\nThese releases fix the following CVEs:\n\n- CVE-2026-33871\n- CVE-2026-33870\n\nReferences:\n\n- https://netty.io/news/2026/03/24/4-1-132-Final.html\n- https://vertx.io/blog/eclipse-vert-x-4-5-26/",
+      "35b0fb71a908ead23b8ec6492b338678c437d42b": "Upgrade to Vert.x 4.5.26 and Netty 4.1.132.Final\n\nThese releases fix the following CVEs:\n\n- CVE-2026-33871\n- CVE-2026-33870\n\nReferences:\n\n- https://netty.io/news/2026/03/24/4-1-132-Final.html\n- https://vertx.io/blog/eclipse-vert-x-4-5-26/",
+      "accce5c180a468b8f3e94ae92fea4f3f7d2151b6": "Upgrade to Vert.x 4.5.26 and Netty 4.1.132.Final\n\nThese releases fix the following CVEs:\n\n- CVE-2026-33871\n- CVE-2026-33870\n\nReferences:\n\n- https://netty.io/news/2026/03/24/4-1-132-Final.html\n- https://vertx.io/blog/eclipse-vert-x-4-5-26/",
+      "33684d8b48f76ea4f55c427bf071b3e3ca3d50b5": "Upgrade to Vert.x 4.5.26 and Netty 4.1.132.Final\n\nThese releases fix the following CVEs:\n\n- CVE-2026-33871\n- CVE-2026-33870\n\nReferences:\n\n- https://netty.io/news/2026/03/24/4-1-132-Final.html\n- https://vertx.io/blog/eclipse-vert-x-4-5-26/",
+      "0892fa2b5faa41dd721e86df68a6e22cbb504c54": "Upgrade to Vert.x 4.5.26 and Netty 4.1.132.Final\n\nThese releases fix the following CVEs:\n\n- CVE-2026-33871\n- CVE-2026-33870\n\nReferences:\n\n- https://netty.io/news/2026/03/24/4-1-132-Final.html\n- https://vertx.io/blog/eclipse-vert-x-4-5-26/",
+      "0276b289df3b5a6dcbc0877afd107745dc3fb2da": "Upgrade to Vert.x 4.5.26 and Netty 4.1.132.Final\n\nThese releases fix the following CVEs:\n\n- CVE-2026-33871\n- CVE-2026-33870\n\nReferences:\n\n- https://netty.io/news/2026/03/24/4-1-132-Final.html\n- https://vertx.io/blog/eclipse-vert-x-4-5-26/\n\n(cherry picked from commit b46f2650cd8ec6e098a2d52f3fc1f16c1a87f2bd)",
+      "b46f2650cd8ec6e098a2d52f3fc1f16c1a87f2bd": "Upgrade to Vert.x 4.5.26 and Netty 4.1.132.Final\n\nThese releases fix the following CVEs:\n\n- CVE-2026-33871\n- CVE-2026-33870\n\nReferences:\n\n- https://netty.io/news/2026/03/24/4-1-132-Final.html\n- https://vertx.io/blog/eclipse-vert-x-4-5-26/"
+    },
+    "CVE-2026-33870": {
+      "fa8655a3ee74973212151b9753093b1064f947af": "Upgrade to Vert.x 4.5.26 and Netty 4.1.132.Final\n\nThese releases fix the following CVEs:\n\n- CVE-2026-33871\n- CVE-2026-33870\n\nReferences:\n\n- https://netty.io/news/2026/03/24/4-1-132-Final.html\n- https://vertx.io/blog/eclipse-vert-x-4-5-26/",
+      "35b0fb71a908ead23b8ec6492b338678c437d42b": "Upgrade to Vert.x 4.5.26 and Netty 4.1.132.Final\n\nThese releases fix the following CVEs:\n\n- CVE-2026-33871\n- CVE-2026-33870\n\nReferences:\n\n- https://netty.io/news/2026/03/24/4-1-132-Final.html\n- https://vertx.io/blog/eclipse-vert-x-4-5-26/",
+      "accce5c180a468b8f3e94ae92fea4f3f7d2151b6": "Upgrade to Vert.x 4.5.26 and Netty 4.1.132.Final\n\nThese releases fix the following CVEs:\n\n- CVE-2026-33871\n- CVE-2026-33870\n\nReferences:\n\n- https://netty.io/news/2026/03/24/4-1-132-Final.html\n- https://vertx.io/blog/eclipse-vert-x-4-5-26/",
+      "33684d8b48f76ea4f55c427bf071b3e3ca3d50b5": "Upgrade to Vert.x 4.5.26 and Netty 4.1.132.Final\n\nThese releases fix the following CVEs:\n\n- CVE-2026-33871\n- CVE-2026-33870\n\nReferences:\n\n- https://netty.io/news/2026/03/24/4-1-132-Final.html\n- https://vertx.io/blog/eclipse-vert-x-4-5-26/",
+      "0892fa2b5faa41dd721e86df68a6e22cbb504c54": "Upgrade to Vert.x 4.5.26 and Netty 4.1.132.Final\n\nThese releases fix the following CVEs:\n\n- CVE-2026-33871\n- CVE-2026-33870\n\nReferences:\n\n- https://netty.io/news/2026/03/24/4-1-132-Final.html\n- https://vertx.io/blog/eclipse-vert-x-4-5-26/",
+      "0276b289df3b5a6dcbc0877afd107745dc3fb2da": "Upgrade to Vert.x 4.5.26 and Netty 4.1.132.Final\n\nThese releases fix the following CVEs:\n\n- CVE-2026-33871\n- CVE-2026-33870\n\nReferences:\n\n- https://netty.io/news/2026/03/24/4-1-132-Final.html\n- https://vertx.io/blog/eclipse-vert-x-4-5-26/\n\n(cherry picked from commit b46f2650cd8ec6e098a2d52f3fc1f16c1a87f2bd)",
+      "b46f2650cd8ec6e098a2d52f3fc1f16c1a87f2bd": "Upgrade to Vert.x 4.5.26 and Netty 4.1.132.Final\n\nThese releases fix the following CVEs:\n\n- CVE-2026-33871\n- CVE-2026-33870\n\nReferences:\n\n- https://netty.io/news/2026/03/24/4-1-132-Final.html\n- https://vertx.io/blog/eclipse-vert-x-4-5-26/"
+    },
+    "CVE-2026-1002": {
+      "2bca75c0b79cb61e3a47535d2f492e8854630af6": "Bump to Vert.x 4.5.24\n\nThis Vert.x release fixes CVE-2026-1002\n\n(cherry picked from commit 015894094d52efcf9c07f85244104ac0e968eeaf)",
+      "90ae8def6911ac436aba610e0f97eef11c9e58d8": "Bump to Vert.x 4.5.24\n\nThis Vert.x release fixes CVE-2026-1002\n\n(cherry picked from commit 015894094d52efcf9c07f85244104ac0e968eeaf)",
+      "d545fc747402d801162effa741d4b911d4011e28": "Bump to Vert.x 4.5.24\n\nThis Vert.x release fixes CVE-2026-1002\n\n(cherry picked from commit 015894094d52efcf9c07f85244104ac0e968eeaf)",
+      "2294313645d0a85bb0dd9d9975fb129bffff2e05": "Bump to Vert.x 4.5.24\n\nThis Vert.x release fixes CVE-2026-1002\n\n(cherry picked from commit 015894094d52efcf9c07f85244104ac0e968eeaf)",
+      "015894094d52efcf9c07f85244104ac0e968eeaf": "Bump to Vert.x 4.5.24\n\nThis Vert.x release fixes CVE-2026-1002"
+    },
+    "CVE-2025-67735": {
+      "1c915ca85144e77b0c656773330fc78b37d993cf": "Bump to Vert.x 4.5.23 and Netty 4.1.130.Final\n\nThese version upgrades address CVE-2025-67735 from Netty, see:\nhttps://github.com/netty/netty/security/advisories/GHSA-84h7-rjj3-6jx4\n\nThis also bumps the Mutiny Vert.x clients to 3.21.3",
+      "a229f483aee508b81268c12357e445ceba990985": "Bump to Vert.x 4.5.23 and Netty 4.1.130.Final\n\nThese version upgrades address CVE-2025-67735 from Netty, see:\nhttps://github.com/netty/netty/security/advisories/GHSA-84h7-rjj3-6jx4\n\nThis also bumps the Mutiny Vert.x clients to 3.21.3\n\n(cherry picked from commit d4938f35bd271c436e90b5f6b1fec5ab471c647b)",
+      "d4938f35bd271c436e90b5f6b1fec5ab471c647b": "Bump to Vert.x 4.5.23 and Netty 4.1.130.Final\n\nThese version upgrades address CVE-2025-67735 from Netty, see:\nhttps://github.com/netty/netty/security/advisories/GHSA-84h7-rjj3-6jx4\n\nThis also bumps the Mutiny Vert.x clients to 3.21.3",
+      "a2e3dbb5a21c4c2c7a922f2e22ef1e6414d54389": "Bump to Vert.x 4.5.23 and Netty 4.1.130.Final\n\nThese version upgrades address CVE-2025-67735 from Netty, see:\nhttps://github.com/netty/netty/security/advisories/GHSA-84h7-rjj3-6jx4\n\nThis also bumps the Mutiny Vert.x clients to 3.21.3"
+    },
+    "GHSA-84H7-RJJ3-6JX4": {
+      "1c915ca85144e77b0c656773330fc78b37d993cf": "Bump to Vert.x 4.5.23 and Netty 4.1.130.Final\n\nThese version upgrades address CVE-2025-67735 from Netty, see:\nhttps://github.com/netty/netty/security/advisories/GHSA-84h7-rjj3-6jx4\n\nThis also bumps the Mutiny Vert.x clients to 3.21.3",
+      "a229f483aee508b81268c12357e445ceba990985": "Bump to Vert.x 4.5.23 and Netty 4.1.130.Final\n\nThese version upgrades address CVE-2025-67735 from Netty, see:\nhttps://github.com/netty/netty/security/advisories/GHSA-84h7-rjj3-6jx4\n\nThis also bumps the Mutiny Vert.x clients to 3.21.3\n\n(cherry picked from commit d4938f35bd271c436e90b5f6b1fec5ab471c647b)",
+      "d4938f35bd271c436e90b5f6b1fec5ab471c647b": "Bump to Vert.x 4.5.23 and Netty 4.1.130.Final\n\nThese version upgrades address CVE-2025-67735 from Netty, see:\nhttps://github.com/netty/netty/security/advisories/GHSA-84h7-rjj3-6jx4\n\nThis also bumps the Mutiny Vert.x clients to 3.21.3",
+      "a2e3dbb5a21c4c2c7a922f2e22ef1e6414d54389": "Bump to Vert.x 4.5.23 and Netty 4.1.130.Final\n\nThese version upgrades address CVE-2025-67735 from Netty, see:\nhttps://github.com/netty/netty/security/advisories/GHSA-84h7-rjj3-6jx4\n\nThis also bumps the Mutiny Vert.x clients to 3.21.3"
+    },
+    "CVE-2025-11965": {
+      "b9a26f73bd8dfc235ebbcbe027674c29f74da03f": "Bump to Vert.x 4.5.22\n\nThis aligns to:\n- Vert.x 4.5.22\n- Vert.x Mutiny Bindings 3.20.1\n- Mutiny 3.0.1\n- Netty 4.1.128.Final\n\nSee https://github.com/vert-x3/wiki/wiki/4.5.22-Release-Notes for the Vert.x release notes.\n\nNoteworthy: this Vert.x release fixes CVE-2025-11965 and CVE-2025-11966\n(cherry picked from commit 0c9610804efbc0de9fa3455fb4267e533b72e086)",
+      "ed1104cec671888c747ef24ece52daf62a59364f": "Bump to Vert.x 4.5.22\n\nThis aligns to:\n- Vert.x 4.5.22\n- Vert.x Mutiny Bindings 3.20.1\n- Mutiny 3.0.1\n- Netty 4.1.128.Final\n\nSee https://github.com/vert-x3/wiki/wiki/4.5.22-Release-Notes for the Vert.x release notes.\n\nNoteworthy: this Vert.x release fixes CVE-2025-11965 and CVE-2025-11966\n(cherry picked from commit 0c9610804efbc0de9fa3455fb4267e533b72e086)",
+      "b8386f68afc4476d21c6df28583f242b2ca56f39": "Bump to Vert.x 4.5.22\n\nThis aligns to:\n- Vert.x 4.5.22\n- Vert.x Mutiny Bindings 3.20.1\n- Mutiny 3.0.1\n- Netty 4.1.128.Final\n\nSee https://github.com/vert-x3/wiki/wiki/4.5.22-Release-Notes for the Vert.x release notes.\n\nNoteworthy: this Vert.x release fixes CVE-2025-11965 and CVE-2025-11966\n(cherry picked from commit 0c9610804efbc0de9fa3455fb4267e533b72e086)",
+      "0c9610804efbc0de9fa3455fb4267e533b72e086": "Bump to Vert.x 4.5.22\n\nThis aligns to:\n- Vert.x 4.5.22\n- Vert.x Mutiny Bindings 3.20.1\n- Mutiny 3.0.1\n- Netty 4.1.128.Final\n\nSee https://github.com/vert-x3/wiki/wiki/4.5.22-Release-Notes for the Vert.x release notes.\n\nNoteworthy: this Vert.x release fixes CVE-2025-11965 and CVE-2025-11966"
+    },
+    "CVE-2025-11966": {
+      "b9a26f73bd8dfc235ebbcbe027674c29f74da03f": "Bump to Vert.x 4.5.22\n\nThis aligns to:\n- Vert.x 4.5.22\n- Vert.x Mutiny Bindings 3.20.1\n- Mutiny 3.0.1\n- Netty 4.1.128.Final\n\nSee https://github.com/vert-x3/wiki/wiki/4.5.22-Release-Notes for the Vert.x release notes.\n\nNoteworthy: this Vert.x release fixes CVE-2025-11965 and CVE-2025-11966\n(cherry picked from commit 0c9610804efbc0de9fa3455fb4267e533b72e086)",
+      "ed1104cec671888c747ef24ece52daf62a59364f": "Bump to Vert.x 4.5.22\n\nThis aligns to:\n- Vert.x 4.5.22\n- Vert.x Mutiny Bindings 3.20.1\n- Mutiny 3.0.1\n- Netty 4.1.128.Final\n\nSee https://github.com/vert-x3/wiki/wiki/4.5.22-Release-Notes for the Vert.x release notes.\n\nNoteworthy: this Vert.x release fixes CVE-2025-11965 and CVE-2025-11966\n(cherry picked from commit 0c9610804efbc0de9fa3455fb4267e533b72e086)",
+      "b8386f68afc4476d21c6df28583f242b2ca56f39": "Bump to Vert.x 4.5.22\n\nThis aligns to:\n- Vert.x 4.5.22\n- Vert.x Mutiny Bindings 3.20.1\n- Mutiny 3.0.1\n- Netty 4.1.128.Final\n\nSee https://github.com/vert-x3/wiki/wiki/4.5.22-Release-Notes for the Vert.x release notes.\n\nNoteworthy: this Vert.x release fixes CVE-2025-11965 and CVE-2025-11966\n(cherry picked from commit 0c9610804efbc0de9fa3455fb4267e533b72e086)",
+      "0c9610804efbc0de9fa3455fb4267e533b72e086": "Bump to Vert.x 4.5.22\n\nThis aligns to:\n- Vert.x 4.5.22\n- Vert.x Mutiny Bindings 3.20.1\n- Mutiny 3.0.1\n- Netty 4.1.128.Final\n\nSee https://github.com/vert-x3/wiki/wiki/4.5.22-Release-Notes for the Vert.x release notes.\n\nNoteworthy: this Vert.x release fixes CVE-2025-11965 and CVE-2025-11966"
+    },
+    "CVE-2025-58057": {
+      "eff88af7398366cb0507235f115d7f35eeaecb85": "Bump to Vert.x 4.5.21 and Netty 4.1.126.Final\n\nThis fixes Netty CVEs: CVE-2025-58057 and CVE-2025-58056\n\n(cherry picked from commit e75a3285593850ac8b12a73dc2672c993d93fef9)",
+      "f495bbe479dc370fffbd128f80766f4137b89e97": "Bump to Vert.x 4.5.21 and Netty 4.1.126.Final\n\nThis fixes Netty CVEs: CVE-2025-58057 and CVE-2025-58056",
+      "e75a3285593850ac8b12a73dc2672c993d93fef9": "Bump to Vert.x 4.5.21 and Netty 4.1.126.Final\n\nThis fixes Netty CVEs: CVE-2025-58057 and CVE-2025-58056",
+      "6f8e7a34e95993c31077ed55f6f8b86da20d71ff": "Bump to Vert.x 4.5.21 and Netty 4.1.126.Final\n\nThis fixes Netty CVEs: CVE-2025-58057 and CVE-2025-58056"
+    },
+    "CVE-2025-58056": {
+      "eff88af7398366cb0507235f115d7f35eeaecb85": "Bump to Vert.x 4.5.21 and Netty 4.1.126.Final\n\nThis fixes Netty CVEs: CVE-2025-58057 and CVE-2025-58056\n\n(cherry picked from commit e75a3285593850ac8b12a73dc2672c993d93fef9)",
+      "f495bbe479dc370fffbd128f80766f4137b89e97": "Bump to Vert.x 4.5.21 and Netty 4.1.126.Final\n\nThis fixes Netty CVEs: CVE-2025-58057 and CVE-2025-58056",
+      "e75a3285593850ac8b12a73dc2672c993d93fef9": "Bump to Vert.x 4.5.21 and Netty 4.1.126.Final\n\nThis fixes Netty CVEs: CVE-2025-58057 and CVE-2025-58056",
+      "6f8e7a34e95993c31077ed55f6f8b86da20d71ff": "Bump to Vert.x 4.5.21 and Netty 4.1.126.Final\n\nThis fixes Netty CVEs: CVE-2025-58057 and CVE-2025-58056"
+    },
+    "CVE-2024-56128": {
+      "1f12e9f31753be5c6b765d2ea6d41e5eae141241": "Merge pull request #46554 from cescoffier/3.15-kafka-client-bump\n\n[3.15] Update Kafka client version to 3.7.2 to cover CVE-2024-56128",
+      "871a9b4d52983515d4e603e41731b0d4227f6008": "Update Kafka client version to 3.7.2 to cover CVE-2024-56128"
+    },
+    "CVE-2025-24970": {
+      "95502fc97371ff2454b042d7cfa8d03b6c88287e": "Bump to Vert.x 4.5.13 and Netty 4.1.118.Final\n\nSee https://github.com/vert-x3/wiki/wiki/4.5.13-Release-Notes\n\nFixes the following CVEs:\n- CVE-2025-24970\n- CVE-2025-25193",
+      "3862033e567767a9efe77c0c58ae6a9ec530737f": "Bump to Vert.x 4.5.13 and Netty 4.1.118.Final\n\nSee https://github.com/vert-x3/wiki/wiki/4.5.13-Release-Notes\n\nFixes the following CVEs:\n- CVE-2025-24970\n- CVE-2025-25193\n\n(cherry picked from commit c07461a0c74a695fb9caa4f93cc4a03cdda17027)",
+      "207320ab9116423fa659a3150b1ba3f2edf52e54": "Bump to Netty 4.1.118.Final\n\nFixes the following CVEs:\n- CVE-2025-24970\n- CVE-2025-25193\n\nThere is no need to bump Vert.x + Mutiny bindings, the CVEs are fixed at the Netty level.",
+      "c07461a0c74a695fb9caa4f93cc4a03cdda17027": "Bump to Vert.x 4.5.13 and Netty 4.1.118.Final\n\nSee https://github.com/vert-x3/wiki/wiki/4.5.13-Release-Notes\n\nFixes the following CVEs:\n- CVE-2025-24970\n- CVE-2025-25193"
+    },
+    "CVE-2025-25193": {
+      "95502fc97371ff2454b042d7cfa8d03b6c88287e": "Bump to Vert.x 4.5.13 and Netty 4.1.118.Final\n\nSee https://github.com/vert-x3/wiki/wiki/4.5.13-Release-Notes\n\nFixes the following CVEs:\n- CVE-2025-24970\n- CVE-2025-25193",
+      "3862033e567767a9efe77c0c58ae6a9ec530737f": "Bump to Vert.x 4.5.13 and Netty 4.1.118.Final\n\nSee https://github.com/vert-x3/wiki/wiki/4.5.13-Release-Notes\n\nFixes the following CVEs:\n- CVE-2025-24970\n- CVE-2025-25193\n\n(cherry picked from commit c07461a0c74a695fb9caa4f93cc4a03cdda17027)",
+      "207320ab9116423fa659a3150b1ba3f2edf52e54": "Bump to Netty 4.1.118.Final\n\nFixes the following CVEs:\n- CVE-2025-24970\n- CVE-2025-25193\n\nThere is no need to bump Vert.x + Mutiny bindings, the CVEs are fixed at the Netty level.",
+      "c07461a0c74a695fb9caa4f93cc4a03cdda17027": "Bump to Vert.x 4.5.13 and Netty 4.1.118.Final\n\nSee https://github.com/vert-x3/wiki/wiki/4.5.13-Release-Notes\n\nFixes the following CVEs:\n- CVE-2025-24970\n- CVE-2025-25193"
+    },
+    "CVE-2024-47535": {
+      "24df347c7e184c089ba3cc418158ab90a085fd77": "Coordinated Vert.x 4.5.11 upgrades\n\n- Bump to Netty 4.1.115.Final and fix SSL-related substitutions due to internal Netty breaking changes\n- Bump to Vert.x 4.5.11\n- Bump Mutiny Vert.x bindings 3.16.0\n- Re-aligned the Vert.x versions across Quarkus modules\n\nFixes CVE-2024-47535 with Netty 4.1.115.Final\n\n(cherry picked from commit 9fd8dcb55c1064f964cc001bf3e7785b1b3d8b50)",
+      "b62877673f57ceead47fd5f462842a77df415b81": "Coordinated Vert.x 4.5.11 upgrades\n\n- Bump to Netty 4.1.115.Final and fix SSL-related substitutions due to internal Netty breaking changes\n- Bump to Vert.x 4.5.11\n- Bump Mutiny Vert.x bindings 3.16.0\n- Re-aligned the Vert.x versions across Quarkus modules\n\nFixes CVE-2024-47535 with Netty 4.1.115.Final\n\n(cherry picked from commit 9fd8dcb55c1064f964cc001bf3e7785b1b3d8b50)",
+      "d9e4cffa8929a5808139fd18ab138ee805fe7839": "Coordinated Vert.x 4.5.11 upgrades\n\n- Bump to Netty 4.1.115.Final and fix SSL-related substitutions due to internal Netty breaking changes\n- Bump to Vert.x 4.5.11\n- Bump Mutiny Vert.x bindings 3.16.0\n- Re-aligned the Vert.x versions across Quarkus modules\n\nFixes CVE-2024-47535 with Netty 4.1.115.Final\n\n(cherry picked from commit 9fd8dcb55c1064f964cc001bf3e7785b1b3d8b50)",
+      "9fd8dcb55c1064f964cc001bf3e7785b1b3d8b50": "Coordinated Vert.x 4.5.11 upgrades\n\n- Bump to Netty 4.1.115.Final and fix SSL-related substitutions due to internal Netty breaking changes\n- Bump to Vert.x 4.5.11\n- Bump Mutiny Vert.x bindings 3.16.0\n- Re-aligned the Vert.x versions across Quarkus modules\n\nFixes CVE-2024-47535 with Netty 4.1.115.Final"
+    },
+    "GHSA-WQ93-GH3H-3242": {
+      "68805a1492777dcfb894e909c5a6d9e16f8c17e8": "Merge pull request from GHSA-wq93-gh3h-3242\n\nFix two workflow issues in preview.yml"
+    },
+    "CVE-2023-26119": {
+      "c65d982c43fdb9aa32a8af6e684170f4f6bc6ff1": "Update to HTMLUnit 4.1.0\n\n- This changes the package names and the artifact GA\n- Fixes CVE-2023-26119"
+    },
+    "CVE-2024-25710": {
+      "fc714b370bc65ca2b851896ee3950e0429909c8c": "Update commons-compress version to mitigate CVE-2024-25710\n\n(cherry picked from commit 0f6ffef6be9ad81509d921cd49ba3a05e161e7d4)",
+      "f1ab295e7ce4b405c6d33598303e799b2cdd6d48": "Update commons-compress version to mitigate CVE-2024-25710\n\n(cherry picked from commit 0f6ffef6be9ad81509d921cd49ba3a05e161e7d4)",
+      "0ac84fe5b3929a61b9831f4c42939e2a697e9dae": "Merge pull request #38865 from drik98/main\n\nUpdate commons-compress version to mitigate CVE-2024-25710",
+      "0f6ffef6be9ad81509d921cd49ba3a05e161e7d4": "Update commons-compress version to mitigate CVE-2024-25710"
+    },
+    "CVE-2024-1300": {
+      "2cbfb677ac265d6c43ecee79312dbc6ef48baff6": "Update Vert.x to version 4.5.3\n\nThe only detected breaking changes are related to the vertx-mutiny-http-proxy module which is not used in Quarkus.\n\nFull release notes are there: https://github.com/vert-x3/wiki/wiki/4.5.3-Release-Notes.\n\nImportant:\n - Fix CVE-2024-1300 io.vertx:vertx-core: memory leak when a TCP server is configured with TLS and SNI support\n - Fix the classloading issue for NVMPN and WebJars in dev mode (https://github.com/quarkusio/quarkus/issues/38576)\n(cherry picked from commit 7bcbb9985829a2c171f922daf525aa6b4c4b990d)",
+      "7bcbb9985829a2c171f922daf525aa6b4c4b990d": "Update Vert.x to version 4.5.3\n\nThe only detected breaking changes are related to the vertx-mutiny-http-proxy module which is not used in Quarkus.\n\nFull release notes are there: https://github.com/vert-x3/wiki/wiki/4.5.3-Release-Notes.\n\nImportant:\n - Fix CVE-2024-1300 io.vertx:vertx-core: memory leak when a TCP server is configured with TLS and SNI support\n - Fix the classloading issue for NVMPN and WebJars in dev mode (https://github.com/quarkusio/quarkus/issues/38576)",
+      "485fbeb9a26367270eb8d013b907de92c6b000b4": "Update Vert.x to version 4.4.8\n\nFix CVE-2024-1300 io.vertx:vertx-core: memory leak when a TCP server is configured with TLS and SNI support",
+      "737f52edeb48e92e34f405a4ff9968ab787b1ef9": "Update Vert.x to version 4.4.8\n\nFix CVE-2024-1300 io.vertx:vertx-core: memory leak when a TCP server is configured with TLS and SNI support"
+    },
+    "CVE-2024-1023": {
+      "7c15fba1f90b1e263916c9b8730c46707cc13e8f": "Update to Vert.x 4.5.2\n\n- Contains the fix for https://access.redhat.com/security/cve/cve-2024-1023.\n- The pretty JSON mapper is deprecated\n\n(cherry picked from commit 53d39739bc8d6af2c2fefe4a53494fc3d92908f9)",
+      "53d39739bc8d6af2c2fefe4a53494fc3d92908f9": "Update to Vert.x 4.5.2\n\n- Contains the fix for https://access.redhat.com/security/cve/cve-2024-1023.\n- The pretty JSON mapper is deprecated"
+    },
+    "CVE-2023-6267": {
+      "796c38a283818803e33e8e0c1a7c4aefe901bf89": "Merge pull request #38414 from gsmet/jaxrs-security-fixes\n\nAssorted JAX-RS security fixes - CVE-2023-6267 and CVE-2023-5675"
+    },
+    "CVE-2023-5675": {
+      "796c38a283818803e33e8e0c1a7c4aefe901bf89": "Merge pull request #38414 from gsmet/jaxrs-security-fixes\n\nAssorted JAX-RS security fixes - CVE-2023-6267 and CVE-2023-5675"
+    },
+    "CVE-2023-43642": {
+      "cf3ae77d8ddf4fa8b517cd98e84dcbe7d431de40": "Update Snappy to version 1.1.10.5\n\nFix CVE-2023-43642 (https://access.redhat.com/security/cve/CVE-2023-43642)\n\n(cherry picked from commit c2fa0343cb71ae7641b78862ca0767b2d3b8d888)",
+      "2b25e4982b00c54cebeb45c89804783d7a9e2738": "Update Snappy to version 1.1.10.5\n\nFix CVE-2023-43642 (https://access.redhat.com/security/cve/CVE-2023-43642)\n\n(cherry picked from commit c2fa0343cb71ae7641b78862ca0767b2d3b8d888)",
+      "65a530b9ace6317daaf34935f38e5a5bf96ee008": "Update Snappy to version 1.1.10.5\n\nFix CVE-2023-43642 (https://access.redhat.com/security/cve/CVE-2023-43642)\n\n(cherry picked from commit c2fa0343cb71ae7641b78862ca0767b2d3b8d888)",
+      "d52be3466092105add10c8c5ac2741903f7852d5": "Update Snappy to version 1.1.10.5\n\nFix CVE-2023-43642 (https://access.redhat.com/security/cve/CVE-2023-43642)\n\n(cherry picked from commit c2fa0343cb71ae7641b78862ca0767b2d3b8d888)",
+      "7c261587e37a779c54bde27215ef501ab6dac778": "Merge pull request #36241 from cescoffier/CVE-2023-43642-snappy-update\n\nUpdate Snappy to version 1.1.10.5",
+      "c2fa0343cb71ae7641b78862ca0767b2d3b8d888": "Update Snappy to version 1.1.10.5\n\nFix CVE-2023-43642 (https://access.redhat.com/security/cve/CVE-2023-43642)"
+    },
+    "CVE-2023-21971": {
+      "f7f124fde993064a9deacc6e934bff01b42d7665": "Address CVE-2023-21971 present in MySQL connector\n\nCloses #37018\n\nSigned-off-by: Bruno Oliveira da Silva <bruno@abstractj.com>\n(cherry picked from commit 42a028ae36e2dda57a7b8558088e9d70d26ea513)",
+      "2d702826c2642c6db0eccda3b0f9c699fdb0d5ca": "Merge pull request #37019 from abstractj/issue-37018\n\nAddress CVE-2023-21971 present in MySQL connector",
+      "42a028ae36e2dda57a7b8558088e9d70d26ea513": "Address CVE-2023-21971 present in MySQL connector\n\nCloses #37018\n\nSigned-off-by: Bruno Oliveira da Silva <bruno@abstractj.com>"
+    },
+    "GHSA-V3H5-JW6M-6M42": {
+      "59bc85b582183ce3920335093774806239a79460": "Merge pull request from GHSA-v3h5-jw6m-6m42\n\nFilter configuration names from the quarkus namespace in the Gradle p\u2026"
+    },
+    "CVE-2023-44487": {
+      "ee579b2efd3c91b482a93b3ee1a2128d5e14d9e0": "Update to Netty 4.1.100\n\nFix CVE-2023-44487 - HTTP/2 Rapid Reset",
+      "6ab6e84f03cf733f0e67dba99c09fe37aafaef6c": "Update Netty to 4.1.100\n\nContains the fix for CVE-2023-44487.\n\n(cherry picked from commit e9a563fb17371d279074d29d08989727eb45318c)",
+      "b951e70a283cdbde4f6b21b7688668ec00cd6fe1": "Update Netty to 4.1.100\n\nContains the fix for CVE-2023-44487.\n\n(cherry picked from commit e9a563fb17371d279074d29d08989727eb45318c)",
+      "e9b2dd3339219c529e89626b5a572337f9040416": "Update Netty to 4.1.100\n\nContains the fix for CVE-2023-44487.\n\n(cherry picked from commit e9a563fb17371d279074d29d08989727eb45318c)",
+      "85200484ffbc880866d0fe31c0c440ce90849e1d": "Update Netty to 4.1.100\n\nContains the fix for CVE-2023-44487.\n\n(cherry picked from commit e9a563fb17371d279074d29d08989727eb45318c)",
+      "e9a563fb17371d279074d29d08989727eb45318c": "Update Netty to 4.1.100\n\nContains the fix for CVE-2023-44487."
+    },
+    "GHSA-PV6M-J4FG-QX7H": {
+      "3e50616b9f5fc31e44bd960507d44f2c56acfe87": "Merge pull request from GHSA-pv6m-j4fg-qx7h\n\nApply HTTP Security Policy on normalized path (2.13)",
+      "639a05994d8ccba1960cda042b71630598e9abbf": "Merge pull request from GHSA-pv6m-j4fg-qx7h\n\nApply HTTP Security Policy on normalized path (2.16)",
+      "cca68dd37170d3d389fcf7117455ee798f6d055e": "Merge pull request from GHSA-pv6m-j4fg-qx7h\n\nApply HTTP Security Policy on normalized path (3.2)",
+      "ea16e83f6ef3b632c1118c69a2a903bc645ecc54": "Merge pull request from GHSA-pv6m-j4fg-qx7h\n\nApply HTTP Security Policy on normalized path (3.3)",
+      "237f7bec6c852ce744a9fc3de83919841e2564e2": "Merge pull request from GHSA-pv6m-j4fg-qx7h\n\nApply HTTP Security Policy on normalized path (main)"
+    },
+    "CVE-2023-2974": {
+      "40d0c0151e6b449301ce344a597bd2064bfd84ed": "Enforce the configured TLS version\n\nFix https://access.redhat.com/security/cve/cve-2023-2974\n\n(cherry picked from commit cdd9ce5bcc0cbbc3cc23a34f3c980fb2dff17616)",
+      "2f856a15be582e8763394f36c81bafc56a87fcc8": "Merge pull request #34469 from cescoffier/2.16-cve-2023-2974\n\n2.16 - Enforce the configured TLS version",
+      "468397ae53a8d6aae933d0d406f94965e97d1935": "Merge pull request #34468 from cescoffier/cve-2023-2974\n\nEnforce the configured TLS version",
+      "d5fc95429199629b189b61a78f3d8da76f75ed86": "Enforce the configured TLS version\n\nFix https://access.redhat.com/security/cve/cve-2023-2974",
+      "cdd9ce5bcc0cbbc3cc23a34f3c980fb2dff17616": "Enforce the configured TLS version\n\nFix https://access.redhat.com/security/cve/cve-2023-2974"
+    },
+    "GHSA-H4H5-3HR4-J3G2": {
+      "9f06dac43dcd602116c83b9b14146db8c1bd0877": "Update protoc to 3.21.9.\n\nThis update uses https://github.com/protocolbuffers/protobuf/releases/tag/v21.7, which contains a fix for https://github.com/protocolbuffers/protobuf/security/advisories/GHSA-h4h5-3hr4-j3g2.\nNote that because the fix for that CVE was backported to 3.19, Quarkus is not affected, but better to stay up to date when we can.\n\nFix #29317"
+    },
+    "CVE-2020-36518": {
+      "2785a24af3f7f45faaee78f9b9eee5c2347886f6": "Merge pull request #24554 from jorsol/fix-CVE-2020-36518\n\nUpdate Jackson BOM to 2.13.2.20220328"
+    },
+    "CVE-2021-22569": {
+      "44d52986184310038669ef959d8ed91c72616f2c": "Merge pull request #22761 from cescoffier/2.2-protobuf-update\n\n[2.2] Protobuf Java and gRPC version updates (CVE-2021-22569)",
+      "b2f2bb238d4c6d96bead717730fe9ca6c91b2c41": "Update Protobuf Java to 3.18.2 and gRPC Java to 1.41.2\n\nUpgraded Protobuf Java to 3.18.2 to avoid CVE-2021-22569 - https://github.com/protocolbuffers/protobuf/security/advisories/GHSA-wrvw-hg22-4m67"
+    },
+    "GHSA-WRVW-HG22-4M67": {
+      "b2f2bb238d4c6d96bead717730fe9ca6c91b2c41": "Update Protobuf Java to 3.18.2 and gRPC Java to 1.41.2\n\nUpgraded Protobuf Java to 3.18.2 to avoid CVE-2021-22569 - https://github.com/protocolbuffers/protobuf/security/advisories/GHSA-wrvw-hg22-4m67"
+    },
+    "CVE-2021-4428": {
+      "fd4349181303a27e0ff383d7669e5f286bf9b4dc": "Update Log4j 2 API to 2.15.0\n\nWhile we are not affected by CVE-2021-4428 as we are only using the\nLog4j2 API and not the implementation which contains the security flaw,\nsecurity scanners are known to not always be as fine grained as we would\nhave liked and we don't want Quarkus to be reported as unsafe because of\nfalse positives.\n\n(cherry picked from commit aead1da0e08a4fc8f57036de83afc78ad472c072)",
+      "66928d1259f473db567a0990d1d031553cb2167c": "Update Log4j 2 API to 2.15.0\n\nWhile we are not affected by CVE-2021-4428 as we are only using the\nLog4j2 API and not the implementation which contains the security flaw,\nsecurity scanners are known to not always be as fine grained as we would\nhave liked and we don't want Quarkus to be reported as unsafe because of\nfalse positives.\n\n(cherry picked from commit aead1da0e08a4fc8f57036de83afc78ad472c072)",
+      "708ac736ab3fc14edb21e67bc8be9c4b6768cdf0": "Update Log4j 2 API to 2.15.0\n\nWhile we are not affected by CVE-2021-4428 as we are only using the\nLog4j2 API and not the implementation which contains the security flaw,\nsecurity scanners are known to not always be as fine grained as we would\nhave liked and we don't want Quarkus to be reported as unsafe because of\nfalse positives.\n\n(cherry picked from commit aead1da0e08a4fc8f57036de83afc78ad472c072)",
+      "aead1da0e08a4fc8f57036de83afc78ad472c072": "Update Log4j 2 API to 2.15.0\n\nWhile we are not affected by CVE-2021-4428 as we are only using the\nLog4j2 API and not the implementation which contains the security flaw,\nsecurity scanners are known to not always be as fine grained as we would\nhave liked and we don't want Quarkus to be reported as unsafe because of\nfalse positives."
+    },
+    "CVE-2021-37137": {
+      "cf96b7c95d2fe5b20674520935f4dacab415ac3f": "Bump netty-bom from 4.1.67 to 4.1.68\n\n[CVE-2021-37137](https://www.whitesourcesoftware.com/vulnerability-database/CVE-2021-37137) is reported against Netty 4.1.67 and should be addressed by 4.1.68.\n\n(cherry picked from commit aba75be9a3173408f6ef4b1407c831c663cae149)",
+      "aba75be9a3173408f6ef4b1407c831c663cae149": "Bump netty-bom from 4.1.67 to 4.1.68\n\n[CVE-2021-37137](https://www.whitesourcesoftware.com/vulnerability-database/CVE-2021-37137) is reported against Netty 4.1.67 and should be addressed by 4.1.68."
+    },
+    "CVE-2021-20218": {
+      "3b7ee277cfdcd942ae232c059a7f8e421f2e2de6": "Bump kubernetes-client-bom from 5.0.1 to 5.0.2\n\n- Fix for CVE-2021-20218\n  https://github.com/fabric8io/kubernetes-client/issues/2715\n\n(cherry picked from commit d43a3e1a4322bf6f79990ac7d0bb2b6bccbeadae)",
+      "d43a3e1a4322bf6f79990ac7d0bb2b6bccbeadae": "Bump kubernetes-client-bom from 5.0.1 to 5.0.2\n\n- Fix for CVE-2021-20218\n  https://github.com/fabric8io/kubernetes-client/issues/2715"
+    },
+    "GHSA-MW36-7C6C-Q4Q2": {
+      "afab7b9a55025dd2f706912147569cf89e1b106d": "Updates XStream due to published CVE\n\nSee https://github.com/x-stream/xstream/security/advisories/GHSA-mw36-7c6c-q4q2\r\n\r\nNot sure if Quarkus is impacted thought as I'm not aware of the usage.",
+      "5bb4904263ce07256e52403b681245e3fe36523e": "Updates XStream due to published CVE\n\nSee https://github.com/x-stream/xstream/security/advisories/GHSA-mw36-7c6c-q4q2\r\n\r\nNot sure if Quarkus is impacted thought as I'm not aware of the usage."
+    },
+    "CVE-2020-10693": {
+      "d4be0b1cfc2cb1d77a25dca839eb84c15502fa86": "Update to Hibernate Validator 6.1.5.Final\n\nFixes CVE-2020-10693"
+    },
+    "CVE-2019-20444": {
+      "f81f7bcff3dbf018bd29d0c9aade09d4f15b8c0b": "Upgrade netty to 4.1.44.Final to fix known vulnerabilities\n\nFixes CVE-2019-20444 and CVE-2019-20445",
+      "27f53235024036b74f503f2d93710898a0281772": "Upgrade netty to 4.1.44.Final to fix known vulnerabilities\n\nFixes CVE-2019-20444 and CVE-2019-20445"
+    },
+    "CVE-2019-20445": {
+      "f81f7bcff3dbf018bd29d0c9aade09d4f15b8c0b": "Upgrade netty to 4.1.44.Final to fix known vulnerabilities\n\nFixes CVE-2019-20444 and CVE-2019-20445",
+      "27f53235024036b74f503f2d93710898a0281772": "Upgrade netty to 4.1.44.Final to fix known vulnerabilities\n\nFixes CVE-2019-20444 and CVE-2019-20445"
+    },
+    "CVE-2019-16942": {
+      "6e1634a633ce023ce6fd18f78826294c5a05aa23": "fix: jackson-databind CVEs\n\nCVE-2019-16942, CVE-2019-16943, CVE-2019-17531"
+    },
+    "CVE-2019-16943": {
+      "6e1634a633ce023ce6fd18f78826294c5a05aa23": "fix: jackson-databind CVEs\n\nCVE-2019-16942, CVE-2019-16943, CVE-2019-17531"
+    },
+    "CVE-2019-17531": {
+      "6e1634a633ce023ce6fd18f78826294c5a05aa23": "fix: jackson-databind CVEs\n\nCVE-2019-16942, CVE-2019-16943, CVE-2019-17531"
+    },
+    "CVE-2019-16335": {
+      "c0cc26dfcab7dad2c3a79fd237de1983b766d130": "fix: jackson 2.9.10\n\nFixes tow CVE: CVE-2019-16335 and CVE-2019-14540",
+      "4af02f5de3e166ace92b61169d3ca7660fcf822c": "fix: jackson 2.9.10\n\nFixes tow CVE: CVE-2019-16335 and CVE-2019-14540"
+    },
+    "CVE-2019-14540": {
+      "c0cc26dfcab7dad2c3a79fd237de1983b766d130": "fix: jackson 2.9.10\n\nFixes tow CVE: CVE-2019-16335 and CVE-2019-14540",
+      "4af02f5de3e166ace92b61169d3ca7660fcf822c": "fix: jackson 2.9.10\n\nFixes tow CVE: CVE-2019-16335 and CVE-2019-14540"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "vcs_url": "https://github.com/mongodb/mongo",
+  "vulnerabilities": {
+    "CVE-2019-6292": {
+      "3bb9020468cdb5a7ab028ece70604aa349e509df": "SERVER-48273 SERVER-48273 Backport yaml-cpp CVE fixes from 0.6.3 to 0.6.2\n\nBackport the following yaml-cpp CVE fixes from version 0.6.3 to version 0.6.2:\n  * CVE-2019-6292\n  * CVE-2019-6285\n\nAlso, backport one fix from 0.6.3 for failing VS2017 builds.\n\nWe were previously downloading a source archive for yaml-cpp. To support\neasily backporting fixes, it's changed to use git instead.\n\n(cherry picked from commit 1845ea31140161354ff6308296bde3436d0bd5f9)",
+      "1845ea31140161354ff6308296bde3436d0bd5f9": "SERVER-48273 SERVER-48273 Backport yaml-cpp CVE fixes from 0.6.3 to 0.6.2\n\nBackport the following yaml-cpp CVE fixes from version 0.6.3 to version 0.6.2:\n  * CVE-2019-6292\n  * CVE-2019-6285\n\nAlso, backport one fix from 0.6.3 for failing VS2017 builds.\n\nWe were previously downloading a source archive for yaml-cpp. To support\neasily backporting fixes, it's changed to use git instead."
+    },
+    "CVE-2019-6285": {
+      "3bb9020468cdb5a7ab028ece70604aa349e509df": "SERVER-48273 SERVER-48273 Backport yaml-cpp CVE fixes from 0.6.3 to 0.6.2\n\nBackport the following yaml-cpp CVE fixes from version 0.6.3 to version 0.6.2:\n  * CVE-2019-6292\n  * CVE-2019-6285\n\nAlso, backport one fix from 0.6.3 for failing VS2017 builds.\n\nWe were previously downloading a source archive for yaml-cpp. To support\neasily backporting fixes, it's changed to use git instead.\n\n(cherry picked from commit 1845ea31140161354ff6308296bde3436d0bd5f9)",
+      "1845ea31140161354ff6308296bde3436d0bd5f9": "SERVER-48273 SERVER-48273 Backport yaml-cpp CVE fixes from 0.6.3 to 0.6.2\n\nBackport the following yaml-cpp CVE fixes from version 0.6.3 to version 0.6.2:\n  * CVE-2019-6292\n  * CVE-2019-6285\n\nAlso, backport one fix from 0.6.3 for failing VS2017 builds.\n\nWe were previously downloading a source archive for yaml-cpp. To support\neasily backporting fixes, it's changed to use git instead."
+    },
+    "CVE-2014-8964": {
+      "e8a768d0f47d92d56308ea45c4e5dd98f89b4c07": "SERVER-17252: CVE-2014-8964: Fix zero-repeat assertion condition bug.\n\n(cherry picked from commit 558a019e51175b874de11f96c276f6be633fea91)\n(cherry picked from commit 060ec05e9af5530830781da7e69510b8a7474f80)",
+      "d101f2d09375b594a3d6051271decd565d389a81": "SERVER-17252: CVE-2014-8964: Fix zero-repeat assertion condition bug.\n\n(cherry picked from commit 558a019e51175b874de11f96c276f6be633fea91)",
+      "060ec05e9af5530830781da7e69510b8a7474f80": "SERVER-17252: CVE-2014-8964: Fix zero-repeat assertion condition bug.\n\n(cherry picked from commit 558a019e51175b874de11f96c276f6be633fea91)",
+      "558a019e51175b874de11f96c276f6be633fea91": "SERVER-17252: CVE-2014-8964: Fix zero-repeat assertion condition bug."
+    },
+    "CVE-2014-3566": {
+      "8b9242837510e6410ddcf4f19969da4c7b01b2f7": "SERVER-15673 Disable SSLv3 ciphers (CVE-2014-3566 \"POODLE\")\n\n(cherry picked from commit 035b5a90f56d653e930fcbe20c89f4dda7e48a30)",
+      "035b5a90f56d653e930fcbe20c89f4dda7e48a30": "SERVER-15673 Disable SSLv3 ciphers (CVE-2014-3566 \"POODLE\")\n\n(cherry picked from commit bdee10aed8691579d17300a1235edce8742ef6dd)",
+      "bdee10aed8691579d17300a1235edce8742ef6dd": "SERVER-15673 Disable SSLv3 ciphers (CVE-2014-3566 \"POODLE\")"
+    }
+  }
+}

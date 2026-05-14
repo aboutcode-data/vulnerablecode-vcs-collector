@@ -1,0 +1,18 @@
+{
+  "vcs_url": "https://github.com/koajs/koa",
+  "vulnerabilities": {
+    "GHSA-C5VW-J4HF-J526": {
+      "83128eb6cc210fa6f5519f93afb5606ffc3ffa5e": "fix: fixes response.attachment behavior leads to Content-Type Sniffing (#1904)\n\n## Checklist\n\nAdded security-focused tests to verify:\n  1. Content-Type is preserved when already set\n2. Content-Type is still set when not previously defined (backwards\ncompatibility)\n  3. The fix prevents XSS vulnerabilities with HTML and SVG files\n\ncredit \"Luca Carettoni of Doyensec LLC\" as [requested in the\nadvisory](https://github.com/koajs/koa/security/advisories/GHSA-c5vw-j4hf-j526)."
+    },
+    "GHSA-JGMV-J7WW-JX2X": {
+      "c02f188132dec670549a748224952f1a0c62d7ca": "fix: only allow back redirect to the same origin referer (#1898)\n\nhttps://github.com/koajs/koa/security/advisories/GHSA-jgmv-j7ww-jx2x\n\nclose https://github.com/koajs/koa/issues/1892\nclose https://github.com/koajs/koa/issues/1897",
+      "422c551c63d00f24e2bbbdf492f262a5935bb1f0": "Merge commit from fork\n\nhttps://github.com/koajs/koa/security/advisories/GHSA-jgmv-j7ww-jx2x\n\nclose https://github.com/koajs/koa/issues/1892"
+    },
+    "GHSA-593F-38F6-JP5M": {
+      "3ee1e30c6980933dcdb01d21f3c9e3a8fc3d5b78": "Merge commit from fork\n\n* fix: avoid redos on host and protocol getter\n\nOnly effect on app.proxy enable\n\ncloses https://github.com/koajs/koa/security/advisories/GHSA-593f-38f6-jp5m\n\n* Release 0.21.2",
+      "93fe903fc966635a991bcf890cfc3427d33a1a08": "Merge commit from fork\n\n* fix: avoid redos on host and protocol getter\n\nOnly effect on app.proxy enable\n\ncloses https://github.com/koajs/koa/security/advisories/GHSA-593f-38f6-jp5m\n\n* Release 1.7.1",
+      "5f294bb1c7c8d9c61904378d250439a321bffd32": "Merge commit from fork\n\n* fix: avoid redos on host and protocol getter\n\nOnly effect on app.proxy enable\n\ncloses https://github.com/koajs/koa/security/advisories/GHSA-593f-38f6-jp5m\n\n* Release 2.15.4",
+      "5054af6e31ffd451a4151a1fe144cef6e5d0d83c": "Merge commit from fork\n\n* fix: avoid redos on host and protocol getter\n\nOnly effect on app.proxy enable\n\ncloses https://github.com/koajs/koa/security/advisories/GHSA-593f-38f6-jp5m\n\n* 3.0.0-alpha.3"
+    }
+  }
+}

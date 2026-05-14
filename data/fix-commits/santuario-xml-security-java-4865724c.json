@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/apache/santuario-xml-security-java",
+  "vulnerabilities": {
+    "CVE-2014-8152": {
+      "3d7086c603a4538933dfa98d697d0df4539a984f": "CVE-2014-8152 - more signature verification tests"
+    }
+  }
+}

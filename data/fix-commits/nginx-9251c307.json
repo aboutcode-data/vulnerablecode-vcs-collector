@@ -1,0 +1,16 @@
+{
+  "vcs_url": "https://github.com/nginx/nginx",
+  "vulnerabilities": {
+    "CVE-2014-3616": {
+      "ecfab06cb20959219c9aadc2ef59507488e4fa99": "SSL: adjusted session id context with dynamic certificates.\n\nDynamic certificates re-introduce problem with incorrect session\nreuse (AKA \"virtual host confusion\", CVE-2014-3616), since there are\nno server certificates to generate session id context from.\n\nTo prevent this, session id context is now generated from ssl_certificate\ndirectives as specified in the configuration.  This approach prevents\nincorrect session reuse in most cases, while still allowing sharing\nsessions across multiple machines with ssl_session_ticket_key set as\nlong as configurations are identical."
+    },
+    "CVE-2009-3555": {
+      "36be79301e513a97ec170950b6c9216100b2c264": "SSL: disabled renegotiation detection in client mode.\n\nCVE-2009-3555 is no longer relevant and mitigated by the renegotiation\ninfo extension (secure renegotiation).  On the other hand, unexpected\nrenegotiation still introduces potential security risks, and hence we do\nnot allow renegotiation on the server side, as we never request renegotiation.\n\nOn the client side the situation is different though.  There are backends\nwhich explicitly request renegotiation, and disabled renegotiation\nintroduces interoperability problems.  This change allows renegotiation\non the client side, and fixes interoperability problems as observed with\nsuch backends (ticket #872).\n\nAdditionally, with TLSv1.3 the SSL_CB_HANDSHAKE_START flag is currently set\nby OpenSSL when receiving a NewSessionTicket message, and was detected by\nnginx as a renegotiation attempt.  This looks like a bug in OpenSSL, though\nthis change also allows better interoperability till the problem is fixed.",
+      "0da83434d705483a7cd8c710396c9238622843a6": "r3301 merge:\n\ndisable SSL renegotiation (CVE-2009-3555)",
+      "70bd187c4c386d82d6e4d180e0db84f361d1be02": "disable SSL renegotiation (CVE-2009-3555)"
+    },
+    "CVE-2010-4180": {
+      "3e3ee60b99f41cdc15f3651f0a917217977157c1": "remove SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG becuase of CVE-2010-4180"
+    }
+  }
+}

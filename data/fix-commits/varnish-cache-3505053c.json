@@ -1,0 +1,16 @@
+{
+  "vcs_url": "https://github.com/varnishcache/varnish-cache",
+  "vulnerabilities": {
+    "CVE-2024-30156": {
+      "13979d1dc31eae68a4d66dd5d0de5724866b24f3": "whats-new: Use CVE-2024-30156 for the h2 broke window",
+      "8f2c3648b82a6e527ef86c1d6f228b94583b9e0a": "whats-new: Use CVE-2024-30156 for the h2 broke window"
+    },
+    "CVE-2023-43622": {
+      "88f7f790d79941fb7592efd9b34068d1c7e0b7c2": "whats-new: Mention CVE-2023-43622"
+    },
+    "CVE-2013-4090": {
+      "987ba4c49facf31978d0e6e395a33f053536feed": "Fix two bugs in ACL compile code.\n\nFixes\t#1312\n\nSee Also:\tCVE-2013-4090",
+      "bcd514d3ffdf24ed3fd1253679deca62ce2cf1aa": "Fix two bugs in ACL compile code.\n\nFixes\t#1312\n\nSee Also:\tCVE-2013-4090"
+    }
+  }
+}

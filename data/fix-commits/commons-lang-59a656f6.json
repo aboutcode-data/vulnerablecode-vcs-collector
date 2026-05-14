@@ -1,0 +1,10 @@
+{
+  "vcs_url": "https://github.com/apache/commons-lang",
+  "vulnerabilities": {
+    "CVE-2025-48924": {
+      "853768240aac39a347765073a9271d041f9a7531": "Merge pull request #1492 from vlsi/lang-2.6-CVE-2025-48924\n\nRewrite ClassUtils.getClass() without recursion to avoid StackOverflowError on very long inputs",
+      "50696dd2508fa0889aa4813f6498a52f0b7a3f21": "Add documentation to site for CVE-2025-48924 ClassUtils.getClass(...)\ncan throw a StackOverflowError on very long inputs",
+      "4cd563f2857169f051f361e44f713cfd3c57a0b8": "Document CVE-2025-48924 ClassUtils.getClass(...) can throw a\nStackOverflowError on very long inputs"
+    }
+  }
+}

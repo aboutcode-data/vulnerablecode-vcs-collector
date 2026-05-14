@@ -1,0 +1,38 @@
+{
+  "vcs_url": "https://github.com/github/cmark-gfm",
+  "vulnerabilities": {
+    "GHSA-W4QG-3VF7-M9X5": {
+      "38d1cfeba3ce457da53e77f9712dfbce95d8558c": "Merge pull request from GHSA-w4qg-3vf7-m9x5\n\nFix GHSL-2023-117, GHSL-2023-118, GHSL-2023-119"
+    },
+    "GHSA-66G8-4HJF-77XH": {
+      "1971f30fb0631135cc20528465b53b6b4fb5c58f": "Merge pull request #323 from kevinbackhouse/list-depth-limit\n\nRevert bad fix for GHSA-66g8-4hjf-77xh",
+      "2300c1bd2c8226108885bf019655c4159cf26b59": "Merge pull request from GHSA-66g8-4hjf-77xh\n\nKeep a count of the number of open blocks (WIP)",
+      "6e4493d628e71e8e6b25918bbd69733f37f8b03a": "Fix GHSA-66g8-4hjf-77xh: don't run expense safety check which causes quadratic performance."
+    },
+    "GHSA-R8VR-C48J-FCC5": {
+      "07a66c9bc341f902878e37d7da8647d6ef150987": "Merge pull request from GHSA-r8vr-c48j-fcc5\n\nFix quadratic behavior in rendering"
+    },
+    "GHSA-29G3-96G3-JG6C": {
+      "62be38f8da5677958ed5a71d09f19341fac5705d": "Merge pull request from GHSA-29g3-96g3-jg6c\n\nMultiple vulnerability fixes and improvements"
+    },
+    "GHSA-C944-CV5F-HPVR": {
+      "d84de009806036b51ed605bebccf684b79eab1ef": "Merge pull request from GHSA-c944-cv5f-hpvr\n\n Improve performance in postprocess_text"
+    },
+    "GHSA-24F7-9FRR-5H2R": {
+      "f787273ac124b2de87febe7172e8964bcaea0ebc": "Merge pull request from GHSA-24f7-9frr-5h2r\n\nFix GHSL-2022-098 V2"
+    },
+    "GHSA-R572-JVJ2-3M8P": {
+      "a68f6307c0d8c404a7cc0eef3e8ec7fcaddcdd5c": "Merge pull request from GHSA-r572-jvj2-3m8p\n\nFix GHSL-2022-128 V2"
+    },
+    "GHSA-CGH3-P57X-9Q7Q": {
+      "9d57d8a23142b316282bdfc954cb0ecda40a8655": "Merge pull request from GHSA-cgh3-p57x-9q7q\n\n0.29.0.gfm.6"
+    },
+    "GHSA-MC3G-88WQ-6F4X": {
+      "6fc5672293c1052e2fb7ab65a92a41495cb6426a": "Merge pull request from GHSA-mc3g-88wq-6f4x\n\n0.28.3.gfm.21 patch",
+      "cf7577d2f74289cb83de0a652afc1a8b08a37036": "Merge pull request from GHSA-mc3g-88wq-6f4x\n\n0.29.0.gfm.3 patch"
+    },
+    "GHSA-7GC6-9QR5-HC85": {
+      "85d895289c5ab67f988ca659493a64abb5fec7b4": "Merge pull request from GHSA-7gc6-9qr5-hc85\n\nFix pathological table parsing"
+    }
+  }
+}

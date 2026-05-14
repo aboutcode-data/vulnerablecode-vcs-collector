@@ -1,0 +1,9 @@
+{
+  "vcs_url": "https://android.googlesource.com/platform/external/okhttp",
+  "vulnerabilities": {
+    "CVE-2021-0341": {
+      "17e76e75ee789af354e55211a6f16f5c50f0f5b6": "[DO NOT MERGE] Update external/okhttp/repackaged to match source.\n\nThe fix for CVE-2021-0341 in qt-dev was cherry-picked from\npi-dev. However while the repackaged okhttp files did not\nrequired merging for pi-dev, they *do* for qt-dev and beyond. This\nchange merges them in qt-dev, and qt-qpr2-dev after automerging.\n\nIs set to do not merge as the fix was applied correctly to\nrvc-dev and all branches downstream of that.\n\nBug: 171980069\nTest: atest CtsLibcoreTestCases CtsLibcoreOkHttpTestCases\nChange-Id: Ic47bb42d68c768277be0a8677cd9830ee03ff293\n(cherry picked from commit d101e9eff44dcab231b6991acfbfda521124c682)\nMerged-In: Ic47bb42d68c768277be0a8677cd9830ee03ff293",
+      "d101e9eff44dcab231b6991acfbfda521124c682": "[DO NOT MERGE] Update external/okhttp/repackaged to match source.\n\nThe fix for CVE-2021-0341 in qt-dev was cherry-picked from\npi-dev. However while the repackaged okhttp files did not\nrequired merging for pi-dev, they *do* for qt-dev and beyond. This\nchange merges them in qt-dev, and qt-qpr2-dev after automerging.\n\nIs set to do not merge as the fix was applied correctly to\nrvc-dev and all branches downstream of that.\n\nBug: 171980069\nTest: atest CtsLibcoreTestCases CtsLibcoreOkHttpTestCases\nChange-Id: Ic47bb42d68c768277be0a8677cd9830ee03ff293"
+    }
+  }
+}

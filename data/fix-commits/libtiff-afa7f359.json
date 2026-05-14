@@ -1,0 +1,177 @@
+{
+  "vcs_url": "https://gitlab.com/libtiff/libtiff",
+  "vulnerabilities": {
+    "CVE-2011-0192": {
+      "72c4acef4b554c2f658802eb7529966334cd1c4a": "tif_fax3: better fix for CVE-2011-0192\n\nThere are some legitimate case which were forbidden by the previous fix",
+      "8e9fb979836e016c2031abd6d580db3252e4aa3b": "incorporate a fix for possible fax3 decoding overflow (CVE-2011-0192)",
+      "940d1ec552d3563941f8430e559c4cebd9d1c3a8": "incorporate a fix for possible fax3 decoding overflow (CVE-2011-0192)"
+    },
+    "CVE-2019-14973": {
+      "2218055ca67d84be596a13080e8f50f22116555c": "Merge branch 'fix_integer_overflow' into 'master'\n\nFix integer overflow in _TIFFCheckMalloc() and other implementation-defined behaviour (CVE-2019-14973)\n\nSee merge request libtiff/libtiff!90",
+      "1b5e3b6a23827c33acf19ad50ce5ce78f12b3773": "Fix integer overflow in _TIFFCheckMalloc() and other implementation-defined behaviour (CVE-2019-14973)\n\n_TIFFCheckMalloc()/_TIFFCheckRealloc() used a unsafe way to detect overflow\nin the multiplication of nmemb and elem_size (which are of type tmsize_t, thus\nsigned), which was especially easily triggered on 32-bit builds (with recent\nenough compilers that assume that signed multiplication cannot overflow, since\nthis is undefined behaviour by the C standard). The original issue which lead to\nthis fix was trigged from tif_fax3.c\n\nThere were also unsafe (implementation defied), and broken in practice on 64bit\nbuilds, ways of checking that a uint64 fits of a (signed) tmsize_t by doing\n(uint64)(tmsize_t)uint64_var != uint64_var comparisons. Those have no known\nat that time exploits, but are better to fix in a more bullet-proof way.\nOr similarly use of (int64)uint64_var <= 0."
+    },
+    "CVE-2019-6128": {
+      "ae0bed1fe530a82faf2e9ea1775109dbf301a971": "Merge branch 'master' into 'master'\n\nFix for simple memory leak that was assigned CVE-2019-6128.\n\nSee merge request libtiff/libtiff!50",
+      "0c74a9f49b8d7a36b17b54a7428b3526d20f88a8": "Fix for simple memory leak that was assigned CVE-2019-6128.\n\npal2rgb failed to free memory on a few errors. This was reported\nhere: http://bugzilla.maptools.org/show_bug.cgi?id=2836."
+    },
+    "CVE-2018-19210": {
+      "1edeee44c8b9cb3f647ac175d434f5d9f2b03aeb": "Merge branch 'master' into 'master'\n\ntif_dir: unset transferfunction field if necessary (CVE-2018-19210)\n\nSee merge request libtiff/libtiff!47",
+      "d0a842c5dbad2609aed43c701a12ed12461d3405": "tif_dir: unset transferfunction field if necessary\n\nThe number of entries in the transfer table is determined as following:\n\n(td->td_samplesperpixel - td->td_extrasamples) > 1 ? 3 : 1\n\nThis means that whenever td->td_samplesperpixel or td->td_extrasamples are\nmodified we also need to make sure that the number of required entries in\nthe transfer table didn't change.\n\nIf it changed and the number of entries is higher than before we should\ninvalidate the transfer table field and free previously allocated values.\nIn the other case there's nothing to do, additional tf entries won't harm\nand properly written code will just ignore them since spp - es < 1.\n\nFor instance this situation might happen when reading an OJPEG compressed\nimage with missing SamplesPerPixel tag. In this case the SamplesPerPixel\nfield might be updated after setting the transfer table.\n\nsee http://bugzilla.maptools.org/show_bug.cgi?id=2500\n\nThis commit addresses CVE-2018-19210."
+    },
+    "CVE-2018-18661": {
+      "99b10edde9a0fc28cc0e7b7757aa18ac4c8c225f": "tiff2bw: avoid null pointer dereference in case of out of memory situation. Fixes http://bugzilla.maptools.org/show_bug.cgi?id=2819 / CVE-2018-18661"
+    },
+    "CVE-2018-10779": {
+      "981e43ecae83935625c86c9118c0778c942c7048": "TIFFSetupStrips(): avoid potential uint32 overflow on 32-bit systems with large number of strips. Probably relates to http://bugzilla.maptools.org/show_bug.cgi?id=2788 / CVE-2018-10779"
+    },
+    "CVE-2018-8905": {
+      "58a898cb4459055bb488ca815c23b880c242a27d": "LZWDecodeCompat(): fix potential index-out-of-bounds write. Fixes http://bugzilla.maptools.org/show_bug.cgi?id=2780 / CVE-2018-8905\n\nThe fix consists in using the similar code LZWDecode() to validate we\ndon't write outside of the output buffer."
+    },
+    "CVE-2018-10963": {
+      "de144fd228e4be8aa484c3caf3d814b6fa88c6d9": "TIFFWriteDirectorySec: avoid assertion. Fixes http://bugzilla.maptools.org/show_bug.cgi?id=2795. CVE-2018-10963"
+    },
+    "CVE-2018-7456": {
+      "18d85181e9b839fe8adc2bcc24879014f011a747": "Merge branch 'master' into 'master'\n\nFix NULL pointer dereference in TIFFPrintDirectory (bugzilla 2778/CVE-2018-7456)\n\nSee merge request libtiff/libtiff!27",
+      "be4c85b16e8801a16eec25e80eb9f3dd6a96731b": "Fix NULL pointer dereference in TIFFPrintDirectory\n\nThe TIFFPrintDirectory function relies on the following assumptions,\nsupposed to be guaranteed by the specification:\n\n(a) A Transfer Function field is only present if the TIFF file has\n    photometric type < 3.\n\n(b) If SamplesPerPixel > Color Channels, then the ExtraSamples field\n    has count SamplesPerPixel - (Color Channels) and contains\n    information about supplementary channels.\n\nWhile respect of (a) and (b) are essential for the well functioning of\nTIFFPrintDirectory, no checks are realized neither by the callee nor\nby TIFFPrintDirectory itself. Hence, following scenarios might happen\nand trigger the NULL pointer dereference:\n\n(1) TIFF File of photometric type 4 or more has illegal Transfer\n    Function field.\n\n(2) TIFF File has photometric type 3 or less and defines a\n    SamplesPerPixel field such that SamplesPerPixel > Color Channels\n    without defining all extra samples in the ExtraSamples fields.\n\nIn this patch, we address both issues with respect of the following\nprinciples:\n\n(A) In the case of (1), the defined transfer table should be printed\n    safely even if it isn't 'legal'. This allows us to avoid expensive\n    checks in TIFFPrintDirectory. Also, it is quite possible that\n    an alternative photometric type would be developed (not part of the\n    standard) and would allow definition of Transfer Table. We want\n    libtiff to be able to handle this scenario out of the box.\n\n(B) In the case of (2), the transfer table should be printed at its\n    right size, that is if TIFF file has photometric type Palette\n    then the transfer table should have one row and not three, even\n    if two extra samples are declared.\n\nIn order to fulfill (A) we simply add a new 'i < 3' end condition to\nthe broken TIFFPrintDirectory loop. This makes sure that in any case\nwhere (b) would be respected but not (a), everything stays fine.\n\n(B) is fulfilled by the loop condition\n'i < td->td_samplesperpixel - td->td_extrasamples'. This is enough as\nlong as (b) is respected.\n\nNaturally, we also make sure (b) is respected. This is done in the\nTIFFReadDirectory function by making sure any non-color channel is\ncounted in ExtraSamples.\n\nThis commit addresses CVE-2018-7456."
+    },
+    "CVE-2017-11613": {
+      "7a092f8af2568d61993a8cc2e7a35a998d7d37be": "ChopUpSingleUncompressedStrip: avoid memory exhaustion (CVE-2017-11613)\n\nRework fix done in 3719385a3fac5cfb20b487619a5f08abbf967cf8 to work in more\ncases like https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6979.\nCredit to OSS Fuzz\n\nFixes http://bugzilla.maptools.org/show_bug.cgi?id=2724",
+      "0a2e5e98b353a987ea69985d2283bba569a7e063": "Merge branch 'avoid_memory_exhaustion_in_ChopUpSingleUncompressedStrip' into 'master'\n\nChopUpSingleUncompressedStrip: avoid memory exhaustion (CVE-2017-11613)\n\nSee merge request libtiff/libtiff!26",
+      "3719385a3fac5cfb20b487619a5f08abbf967cf8": "ChopUpSingleUncompressedStrip: avoid memory exhaustion (CVE-2017-11613)\n\nIn ChopUpSingleUncompressedStrip(), if the computed number of strips is big\nenough and we are in read only mode, validate that the file size is consistent\nwith that number of strips to avoid useless attempts at allocating a lot of\nmemory for the td_stripbytecount and td_stripoffset arrays.\n\nFixes http://bugzilla.maptools.org/show_bug.cgi?id=2724"
+    },
+    "CVE-2017-9935": {
+      "5848777bd7e4f465681a7c4d0acf96a1dbd5b75c": "Merge branch 'fix_cve-2017-9935' into 'master'\n\nFix CVE-2017-9935\n\nSee merge request libtiff/libtiff!7",
+      "3dd8f6a357981a4090f126ab9025056c938b6940": "tiff2pdf: Fix CVE-2017-9935\n\nFix for http://bugzilla.maptools.org/show_bug.cgi?id=2704\n\nThis vulnerability - at least for the supplied test case - is because we\nassume that a tiff will only have one transfer function that is the same\nfor all pages. This is not required by the TIFF standards.\n\nWe than read the transfer function for every page.  Depending on the\ntransfer function, we allocate either 2 or 4 bytes to the XREF buffer.\nWe allocate this memory after we read in the transfer function for the\npage.\n\nFor the first exploit - POC1, this file has 3 pages. For the first page\nwe allocate 2 extra extra XREF entries. Then for the next page 2 more\nentries. Then for the last page the transfer function changes and we\nallocate 4 more entries.\n\nWhen we read the file into memory, we assume we have 4 bytes extra for\neach and every page (as per the last transfer function we read). Which\nis not correct, we only have 2 bytes extra for the first 2 pages. As a\nresult, we end up writing past the end of the buffer.\n\nThere are also some related issues that this also fixes. For example,\nTIFFGetField can return uninitalized pointer values, and the logic to\ndetect a N=3 vs N=1 transfer function seemed rather strange.\n\nIt is also strange that we declare the transfer functions to be of type\nfloat, when the standard says they are unsigned 16 bit values. This is\nfixed in another patch.\n\nThis patch will check to ensure that the N value for every transfer\nfunction is the same for every page. If this changes, we abort with an\nerror. In theory, we should perhaps check that the transfer function\nitself is identical for every page, however we don't do that due to the\nconfusion of the type of the data in the transfer function."
+    },
+    "CVE-2017-16232": {
+      "25f9ffa56548c1846c4a1f19308b7f561f7b1ab0": "* tools/tiff2bw.c (main): Free memory allocated in the tiff2bw\nprogram.  This is in response to the report associated with\nCVE-2017-16232 but does not solve the extremely high memory usage\nwith the associated POC file."
+    },
+    "CVE-2016-10095": {
+      "6281927e03aed3fdaac4c25e1cd1a5ff7232bcd8": "* libtiff/tif_dirinfo.c, tif_dirread.c: add _TIFFCheckFieldIsValidForCodec(),\nand use it in TIFFReadDirectory() so as to ignore fields whose tag is a\ncodec-specified tag but this codec is not enabled. This avoids TIFFGetField()\nto behave differently depending on whether the codec is enabled or not, and\nthus can avoid stack based buffer overflows in a number of TIFF utilities\nsuch as tiffsplit, tiffcmp, thumbnail, etc.\nPatch derived from 0063-Handle-properly-CODEC-specific-tags.patch\n(http://bugzilla.maptools.org/show_bug.cgi?id=2580) by Rapha\u00ebl Hertzog.\nFixes:\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2580\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2693\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2625 (CVE-2016-10095)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2564 (CVE-2015-7554)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2561 (CVE-2016-5318)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2499 (CVE-2014-8128)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2441\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2433"
+    },
+    "CVE-2015-7554": {
+      "6281927e03aed3fdaac4c25e1cd1a5ff7232bcd8": "* libtiff/tif_dirinfo.c, tif_dirread.c: add _TIFFCheckFieldIsValidForCodec(),\nand use it in TIFFReadDirectory() so as to ignore fields whose tag is a\ncodec-specified tag but this codec is not enabled. This avoids TIFFGetField()\nto behave differently depending on whether the codec is enabled or not, and\nthus can avoid stack based buffer overflows in a number of TIFF utilities\nsuch as tiffsplit, tiffcmp, thumbnail, etc.\nPatch derived from 0063-Handle-properly-CODEC-specific-tags.patch\n(http://bugzilla.maptools.org/show_bug.cgi?id=2580) by Rapha\u00ebl Hertzog.\nFixes:\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2580\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2693\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2625 (CVE-2016-10095)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2564 (CVE-2015-7554)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2561 (CVE-2016-5318)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2499 (CVE-2014-8128)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2441\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2433"
+    },
+    "CVE-2016-5318": {
+      "6281927e03aed3fdaac4c25e1cd1a5ff7232bcd8": "* libtiff/tif_dirinfo.c, tif_dirread.c: add _TIFFCheckFieldIsValidForCodec(),\nand use it in TIFFReadDirectory() so as to ignore fields whose tag is a\ncodec-specified tag but this codec is not enabled. This avoids TIFFGetField()\nto behave differently depending on whether the codec is enabled or not, and\nthus can avoid stack based buffer overflows in a number of TIFF utilities\nsuch as tiffsplit, tiffcmp, thumbnail, etc.\nPatch derived from 0063-Handle-properly-CODEC-specific-tags.patch\n(http://bugzilla.maptools.org/show_bug.cgi?id=2580) by Rapha\u00ebl Hertzog.\nFixes:\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2580\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2693\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2625 (CVE-2016-10095)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2564 (CVE-2015-7554)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2561 (CVE-2016-5318)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2499 (CVE-2014-8128)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2441\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2433"
+    },
+    "CVE-2014-8128": {
+      "6281927e03aed3fdaac4c25e1cd1a5ff7232bcd8": "* libtiff/tif_dirinfo.c, tif_dirread.c: add _TIFFCheckFieldIsValidForCodec(),\nand use it in TIFFReadDirectory() so as to ignore fields whose tag is a\ncodec-specified tag but this codec is not enabled. This avoids TIFFGetField()\nto behave differently depending on whether the codec is enabled or not, and\nthus can avoid stack based buffer overflows in a number of TIFF utilities\nsuch as tiffsplit, tiffcmp, thumbnail, etc.\nPatch derived from 0063-Handle-properly-CODEC-specific-tags.patch\n(http://bugzilla.maptools.org/show_bug.cgi?id=2580) by Rapha\u00ebl Hertzog.\nFixes:\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2580\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2693\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2625 (CVE-2016-10095)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2564 (CVE-2015-7554)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2561 (CVE-2016-5318)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2499 (CVE-2014-8128)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2441\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2433",
+      "7bed6738f27b015ae6d746e2a1000efeb58f44a6": "* tools/tiffdither.c: check memory allocations to avoid writing to\nNULL pointer. Also check multiplication overflow. Fixes #2501,\nCVE-2014-8128. Derived from patch by Petr Gajdos.",
+      "47647443c13cc5110263835f79caca08454a79dd": "* tools/thumbnail.c: fix out-of-buffer write\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2489 (CVE-2014-8128)",
+      "1246f97138b0d5c0cd44b643ca1ff7239a86daca": "* tools/thumbnail.c, tools/tiffcmp.c: only read/write TIFFTAG_GROUP3OPTIONS\nor TIFFTAG_GROUP4OPTIONS if compression is COMPRESSION_CCITTFAX3 or\nCOMPRESSION_CCITTFAX4\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2493 (CVE-2014-8128)"
+    },
+    "CVE-2016-9273": {
+      "9e9a0bbfb20bbdfdd5e67fb2017a86976eb94865": "* libtiff/tif_dirread.c: modify ChopUpSingleUncompressedStrip() to\ninstanciate compute ntrips as TIFFhowmany_32(td->td_imagelength, rowsperstrip),\ninstead of a logic based on the total size of data. Which is faulty is\nthe total size of data is not sufficient to fill the whole image, and thus\nresults in reading outside of the StripByCounts/StripOffsets arrays when\nusing TIFFReadScanline().\nReported by Agostino Sarubbo.\nFixes http://bugzilla.maptools.org/show_bug.cgi?id=2608.\n\n* libtiff/tif_strip.c: revert the change in TIFFNumberOfStrips() done\nfor http://bugzilla.maptools.org/show_bug.cgi?id=2587 / CVE-2016-9273 since\nthe above change is a better fix that makes it unnecessary.",
+      "1a64e2ccd18ad9d5b448b3988208c325469eac31": "Fixes http://bugzilla.maptools.org/show_bug.cgi?id=2587 (CVE-2016-9273)"
+    },
+    "CVE-2016-9297": {
+      "6d055b4f99a763b1f602825ce9648137fe15e97a": "* libtiff/tif_dirread.c: in TIFFFetchNormalTag(), do not dereference\nNULL pointer when values of tags with TIFF_SETGET_C16_ASCII / TIFF_SETGET_C32_ASCII\naccess are 0-byte arrays.\nFixes http://bugzilla.maptools.org/show_bug.cgi?id=2593 (regression introduced\nby previous fix done on 2016-11-11 for CVE-2016-9297).\nReported by Henri Salo.",
+      "5936de5bae9628b3e91cba0b1f96acfc35502c89": "Assign CVE-2016-9297 number"
+    },
+    "CVE-2014-8127": {
+      "739dcd28a061738b317c1e9f91029d9cbc157159": "* libtiff/tif_dir.c: discard values of SMinSampleValue and\nSMaxSampleValue when they have been read and the value of\nSamplesPerPixel is changed afterwards (like when reading a\nOJPEG compressed image with a missing SamplesPerPixel tag,\nand whose photometric is RGB or YCbCr, forcing SamplesPerPixel\nbeing 3). Otherwise when rewriting the directory (for example\nwith tiffset, we will expect 3 values whereas the array had been\nallocated with just one), thus causing a out of bound read access.\nFixes http://bugzilla.maptools.org/show_bug.cgi?id=2500\n(CVE-2014-8127, duplicate: CVE-2016-3658)\n\n* libtiff/tif_write.c: avoid null pointer dereference on td_stripoffset\nwhen writing directory, if FIELD_STRIPOFFSETS was artificially set\nfor a hack case\tin OJPEG case.\nFixes http://bugzilla.maptools.org/show_bug.cgi?id=2500\n(CVE-2014-8127, duplicate: CVE-2016-3658)",
+      "5db18217c33c4f2c2c51ea1f6ba8b0daa0f19cd4": "* tools/tiff2bw.c: when Photometric=RGB, the utility only works if\nSamplesPerPixel = 3. Enforce that\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2485 (CVE-2014-8127)",
+      "aaf52fa4110ee404f6e20ceb2dbc12a50da52480": "* tools/pal2rgb.c, tools/thumbnail.c: fix crash by disabling TIFFTAG_INKNAMES\ncopying. The right fix would be to properly copy it, but not worth the burden\nfor those esoteric utilities.\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2484 (CVE-2014-8127)"
+    },
+    "CVE-2016-3658": {
+      "739dcd28a061738b317c1e9f91029d9cbc157159": "* libtiff/tif_dir.c: discard values of SMinSampleValue and\nSMaxSampleValue when they have been read and the value of\nSamplesPerPixel is changed afterwards (like when reading a\nOJPEG compressed image with a missing SamplesPerPixel tag,\nand whose photometric is RGB or YCbCr, forcing SamplesPerPixel\nbeing 3). Otherwise when rewriting the directory (for example\nwith tiffset, we will expect 3 values whereas the array had been\nallocated with just one), thus causing a out of bound read access.\nFixes http://bugzilla.maptools.org/show_bug.cgi?id=2500\n(CVE-2014-8127, duplicate: CVE-2016-3658)\n\n* libtiff/tif_write.c: avoid null pointer dereference on td_stripoffset\nwhen writing directory, if FIELD_STRIPOFFSETS was artificially set\nfor a hack case\tin OJPEG case.\nFixes http://bugzilla.maptools.org/show_bug.cgi?id=2500\n(CVE-2014-8127, duplicate: CVE-2016-3658)"
+    },
+    "CVE-2016-5652": {
+      "0937638efd79afb96215b08cfddf48d20c03eead": "* tools/tiff2pdf.c: fix write buffer overflow of 2 bytes on JPEG\ncompressed images. Reported by Tyler Bohan of Cisco Talos as\nTALOS-CAN-0187 / CVE-2016-5652.\nAlso prevents writing 2 extra uninitialized bytes to the file stream."
+    },
+    "CVE-2016-3622": {
+      "65d7db09a56c044b059f4053947b6ef40e79a82b": "* libtiff/tif_getimage.c (TIFFRGBAImageOK): Reject attempts to\nread floating point images.\n\n* libtiff/tif_predict.c (PredictorSetup): Enforce bits-per-sample\nrequirements of floating point predictor (3).  Fixes CVE-2016-3622\n\"Divide By Zero in the tiff2rgba tool.\"\n\nplaces where it isn't done currently, but it seems this patch is enough."
+    },
+    "CVE-2016-3623": {
+      "f18e33b3a5ab03d3c988aa367c2729c98edf163a": "* tools/rgb2ycbcr.c: validate values of -v and -h parameters to\navoid potential divide by zero. Fixes CVE-2016-3623 (bugzilla #2569)"
+    },
+    "CVE-2016-3991": {
+      "5dd73c2b77798cebe22f8668187e502ad462c588": "* tools/tiffcrop.c: Fix out-of-bounds write in loadImage().\nFrom patch libtiff-CVE-2016-3991.patch from\nlibtiff-4.0.3-25.el7_2.src.rpm by Nikola Forro (bugzilla #2543)"
+    },
+    "CVE-2016-3990": {
+      "a71b62bcff784cb86a8f81878f760cb2bcba66e6": "* libtiff/tif_pixarlog.c: Fix write buffer overflow in PixarLogEncode\nif more input samples are provided than expected by PixarLogSetupEncode.\nIdea based on libtiff-CVE-2016-3990.patch from\nlibtiff-4.0.3-25.el7_2.src.rpm by Nikola Forro, but with different and\nsimpler check. (bugzilla #2544)\n\n\ninvalid tests that rejected valid files. (bugzilla #2545)"
+    },
+    "CVE-2016-3945": {
+      "01bac25a5a9fa0bc41b90a83eca3026e351d818d": "* tools/tiff2rgba.c: Fix integer overflow in size of allocated\nbuffer, when -b mode is enabled, that could result in out-of-bounds\nwrite. Based initially on patch tiff-CVE-2016-3945.patch from\nlibtiff-4.0.3-25.el7_2.src.rpm by Nikola Forro, with correction for\ninvalid tests that rejected valid files."
+    },
+    "CVE-2016-5321": {
+      "e54eac223be495ba512f0487a958f29b7cb6d5d9": "(CVE-2016-5321 / CVE-2016-5323 , bugzilla #2558 / #2559)",
+      "a1277756ad8f02af72da16414de1b9aed341d9b5": "* tools/tiffcrop.c: Avoid access outside of stack allocated array\non a tiled separate TIFF with more than 8 samples per pixel.\nReported by Kaixiang Zhang of the Cloud Security Team, Qihoo 360\n(CVE-2016-5321, bugzilla #2558)"
+    },
+    "CVE-2016-5323": {
+      "e54eac223be495ba512f0487a958f29b7cb6d5d9": "(CVE-2016-5321 / CVE-2016-5323 , bugzilla #2558 / #2559)"
+    },
+    "CVE-2016-5875": {
+      "234b8543a8b1587e3926f54d1ff552140d445299": "Fix typo in CVE number for CVE-2016-5875"
+    },
+    "CVE-2015-8665": {
+      "b7cc3e59027d960d6678a086638325f5629d8fa4": "* libtiff/tif_getimage.c: fix out-of-bound reads in TIFFRGBAImage\ninterface in case of unsupported values of SamplesPerPixel/ExtraSamples\nfor LogLUV / CIELab. Add explicit call to TIFFRGBAImageOK() in\nTIFFRGBAImageBegin(). Fix CVE-2015-8665 reported by limingxing and\nCVE-2015-8683 reported by zzf of Alibaba."
+    },
+    "CVE-2015-8683": {
+      "b7cc3e59027d960d6678a086638325f5629d8fa4": "* libtiff/tif_getimage.c: fix out-of-bound reads in TIFFRGBAImage\ninterface in case of unsupported values of SamplesPerPixel/ExtraSamples\nfor LogLUV / CIELab. Add explicit call to TIFFRGBAImageOK() in\nTIFFRGBAImageBegin(). Fix CVE-2015-8665 reported by limingxing and\nCVE-2015-8683 reported by zzf of Alibaba."
+    },
+    "CVE-2014-8129": {
+      "7d3b9da6cb48d962934a0bbc34e751d9fb0d0d1e": "* libtiff/tif_next.c: check that BitsPerSample = 2. Fixes\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2487 (CVE-2014-8129)"
+    },
+    "CVE-2013-4243": {
+      "abea4b2b0480a3788993ebe625357d6594988f36": "* libtiff/tif_lzw.c: prevent potential null dereference of\nsp->dec_codetab in LZWPreDecode (bug #2459)\n\n* libtiff/tif_read.c: in TIFFReadBufferSetup(), avoid passing -1 size\nto TIFFmalloc() if passed user buffer size is 0 (bug #2459)\n\n* libtiff/tif_ojpeg.c: make Coverity happier (not a bug, #2459)\n\n* libtiff/tif_dir.c: in _TIFFVGetField() and _TIFFVSetField(), make\nCoverity happier (not a bug, #2459)\n\n* libtiff/tif_dirread.c: in TIFFFetchNormalTag(), make Coverity happier\n(not a bug, #2459)\n\n* tools/tiff2pdf.c: close PDF file (bug #2479)\n\n* tools/fax2ps.c: check malloc()/realloc() result (bug #2470)\n\n* tools/tiffdump.c: detect cycle in TIFF directory chaining (bug #2463)\nand avoid passing a NULL pointer to read() if seek() failed before (bug #2459)\n\n* tools/tiffcrop.c: fix segfault if bad value passed to -Z option\n(bug #2459) and add missing va_end in dump_info (#2459)\n\n* tools/gif2tif.c: apply patch for CVE-2013-4243 (#2451)"
+    },
+    "CVE-2013-4244": {
+      "f4203fa73844fed8fcded7a2268650975035f01e": "* libtiff/tif_dir.c (TIFFAdvanceDirectory): If nextdir is found to\nbe defective, then set it to zero before returning error in order\nto terminate processing of truncated TIFF.  Issue found and fix\nsuggested by Richard Nolde.\n\n* tools/gif2tiff.c: fix possible OOB write (#2452, CVE-2013-4244)\n* tools/tiff2pdf.c: terminate after failure of allocating\n* tools/tiffinfo.c: Default various values fetched with"
+    },
+    "CVE-2013-4231": {
+      "44650c28f16d6f6e298ef448bfe32d5c305c37fc": "make more resistent to corrupt/hostile input files (#2450, CVE-2013-4231)"
+    },
+    "CVE-2013-1960": {
+      "45a4c455450066cec0c48b766ddcb85d75f13f51": "Rewrite t2p_process_jpeg_strip(), to fix CVE-2013-1960.",
+      "96ceea8c8a76c54b1a9bc857c3c71d44f45e9042": "Rewrite t2p_process_jpeg_strip(), to fix CVE-2013-1960."
+    },
+    "CVE-2013-1961": {
+      "53d8c2e3b0601b5f5895bb93be6fae81b664509f": "Replace sprintf with snprintf, to fix CVE-2013-1961.",
+      "b6d66f9f309949f8cbb4d0369bf95731780530b9": "Replace sprintf with snprintf, to fix CVE-2013-1961."
+    },
+    "CVE-2012-4564": {
+      "3f8d15254aa69d310d09e9c84e11d26c8491739a": "Back-patch fix for CVE-2012-4564",
+      "800527edd2f8ba113123c881cf1c1fbebb62db6b": "Improve previous patch for CVE-2012-4564.",
+      "37671b36b9c44153325d0d8e4db258cc875cd41f": "fix zero size buffer exploit (CVE-2012-4564) in ppm2tiff"
+    },
+    "CVE-2012-2088": {
+      "a1d5b1d4a662044b89cb1ff23ba21aa8856151da": "Fix CVE-2012-2088 and CVE-2012-2113"
+    },
+    "CVE-2012-2113": {
+      "a1d5b1d4a662044b89cb1ff23ba21aa8856151da": "Fix CVE-2012-2088 and CVE-2012-2113",
+      "f5077ed7ed77d3d36eb4f66dc68c0d24e8975371": "Fix CVE-2012-2113"
+    },
+    "CVE-2012-1173": {
+      "fada19fb9c2dfc3eaae38870d77e18d024436eee": "Fix size overflow (zdi-can-1221,CVE-2012-1173) care of Tom Lane @ Red Hat.",
+      "f502a159f92f6ad04febdb1c1012e7c5a4473fdf": "Fix size overflow (zdi-can-1221,CVE-2012-1173) care of Tom Lane @ Red Hat."
+    },
+    "CVE-2011-1167": {
+      "0cea5839ccf481a3371aff8dc9f7bfad35b5884b": "Correct potential buffer overflow with thunder encoded files with wrong\nbitspersample set (CVE-2011-1167)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2300",
+      "130c55232b841b536ead402c774e42792dec1c08": "Correct potential buffer overflow with thunder encoded files with wrong\nbitspersample set (CVE-2011-1167)\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2300"
+    },
+    "CVE-2010-2595": {
+      "9036804e856bd8740acad9232af55b1eccab6e54": "* libtiff/tif_color.c: prevent crash in handling bad TIFFs\n        resolves CVE-2010-2595\n        http://bugzilla.maptools.org/show_bug.cgi?id=2208",
+      "907489cd99799233660feb441e4775e8b54e3b17": "* libtiff/tif_color.c: prevent crash in handling bad TIFFs\n        resolves CVE-2010-2595\n        http://bugzilla.maptools.org/show_bug.cgi?id=2208"
+    },
+    "CVE-2010-3087": {
+      "1db17dee95a9b3be48970716e6ecd8b2821cbfe5": "Apply Tom Lane's partial-patch and fix for CVE-2010-3087."
+    },
+    "CVE-2009-2347": {
+      "9fe360cc7328bfb4be58950846fe45f210fe3359": "* tools/tiff2rgba.c: Applied portion of patch (from Tom Lane)\nwhich was left out in order to fully resolve \"CVE-2009-2347\nlibtiff: integer overflows in various inter-color space conversion\ntools\". http://bugzilla.maptools.org/show_bug.cgi?id=2079\n\n* libtiff/tiffiop.h (TIFFSafeMultiply): Need more castings to\navoid compiler warnings if parameter types are not sign\nconsistent.",
+      "614f95d8b13b88ace11360c6ca63192dd52444e6": "* tools/{rgb2ycbcr.c, tiff2rgba.c}: Applied fixes for \"Bug 2079 -\nCVE-2009-2347 libtiff: integer overflows in various inter-color\nspace conversion tools\".\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2079",
+      "5fb39dbe2d2b1006fd349ea42357f4043c82c5b2": "* tools/{rgb2ycbcr.c, tiff2rgba.c}: Applied patch for\nCVE-2009-2347 libtiff: integer overflows in various inter-color\nspace conversion tools.\nhttp://bugzilla.maptools.org/show_bug.cgi?id=2079"
+    },
+    "CVE-2010-1411": {
+      "d36017b9384e678783453930cfcfa594dde13a1c": "* libtiff/tif_fax3.c (Fax3SetupState): Yesterday's fix for\nCVE-2010-1411 was not complete.\n\n* libtiff/tiffiop.h (TIFFSafeMultiply): New macro to safely\nmultiply two integers.  Returns zero if there is an integer\noverflow.\n\n* tools/tiffcp.c (main): tiffcp should not leak memory if an error\nis reported when reading the input file.",
+      "4579a589c91867b80829a8d2f81b011a0fd6d43e": "* libtiff/tif_fax3.c (Fax3SetupState): Yesterday's fix for\nCVE-2010-1411 was not complete.\n\n* libtiff/tiffiop.h (TIFFSafeMultiply): New macro to safely\nmultiply two integers.  Returns zero if there is an integer\noverflow.\n\n* tools/tiffcp.c (main): Fix more TIFF handle leaks.",
+      "3adc33842b7533066daea2516741832edc44d5fd": "* Update libtool to version 2.2.8.\n\n* libtiff/tif_fax3.c (Fax3SetupState): Avoid under-allocation of\nbuffer due to integer overflow in TIFFroundup() and several other\npotential overflows.  In conjunction with the fix to TIFFhowmany(),\nfixes CVE-2010-1411.\n\n* libtiff/tiffiop.h (TIFFhowmany): Return zero if parameters would\nresult in an integer overflow. This causes TIFFroundup() to also\nreturn zero if there would be an integer overflow.",
+      "f5c2f05dd75ae77e42211665fcf9d0eb43cf342a": "* tools/tiffcrop.c: Removed duplicated macros such as\nTIFFhowmany().\n\n* Update libtool to version 2.2.8.\n\n* libtiff/tif_fax3.c (Fax3SetupState): Avoid under-allocation of\nbuffer due to integer overflow in TIFFroundup() and several other\npotential overflows.  In conjunction with the fix to TIFFhowmany(),\nfixes CVE-2010-1411.\n\n* libtiff/tiffiop.h (TIFFhowmany): Return zero if parameters would\nresult in an integer overflow. This causes TIFFroundup() to also\nreturn zero if there would be an integer overflow.\n\n* libtiff/tif_read.c (TIFFReadBufferSetup): Return an error if\ntif_rawdatasize becomes zero due to an initial raw size of zero or\nan overflow reported by TIFFroundup().\n\n* libtiff/tif_ojpeg.c (OJPEGReadBufferFill): Report an error and\navoid a crash if the input file is so broken that the strip\noffsets are not defined.\n\n* tools/tiffcp.c (main): tiffcp should not leak memory if an error\nis reported when reading the input file."
+    },
+    "CVE-2008-2327": {
+      "6f9bf5769fdf28fcfa9255bc17af77528a93fc45": "Properly zero out the string table. Fixes CVE-2008-2327 security issue.",
+      "aef997530cbfdca4c37e45658f968bb44165c746": "Properly zero out the string table. Fixes CVE-2008-2327 security issue."
+    }
+  }
+}

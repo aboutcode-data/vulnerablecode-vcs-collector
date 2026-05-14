@@ -1,0 +1,85 @@
+{
+  "vcs_url": "https://github.com/swagger-api/swagger-ui",
+  "vulnerabilities": {
+    "CVE-2017-18924": {
+      "7b5a54f81f4ffcaa4d7eda2101be06d89d5107c5": "chore(deps): replace local-web-server with serve, migrate oauth2-server to @node-oauth/oauth2-server\n\n- Replace local-web-server (unmaintained) with serve for the serve-static script\n- Migrate oauth2-server to @node-oauth/oauth2-server v5 to address CVE-2017-18924 and CVE-2020-26938\n  - Rewrite E2E OAuth2 test server to use v3+ Request/Response API\n  - Rewrite model to use synchronous return values and v3+ method signatures (saveToken, grants on client)\n- Fix jest.artifact.config.js testEnvironment to use explicit jest-environment-jsdom\n- Update test/unit/core/utils.js to use history.pushState instead of deleting window.location\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+    },
+    "CVE-2020-26938": {
+      "7b5a54f81f4ffcaa4d7eda2101be06d89d5107c5": "chore(deps): replace local-web-server with serve, migrate oauth2-server to @node-oauth/oauth2-server\n\n- Replace local-web-server (unmaintained) with serve for the serve-static script\n- Migrate oauth2-server to @node-oauth/oauth2-server v5 to address CVE-2017-18924 and CVE-2020-26938\n  - Rewrite E2E OAuth2 test server to use v3+ Request/Response API\n  - Rewrite model to use synchronous return values and v3+ method signatures (saveToken, grants on client)\n- Fix jest.artifact.config.js testEnvironment to use explicit jest-environment-jsdom\n- Update test/unit/core/utils.js to use history.pushState instead of deleting window.location\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+    },
+    "CVE-2026-27135": {
+      "dcdca62c8b64a0a54e4decd4e1a6c3c712fdcc60": "chore(release): cut the 5.32.6 release\n\n## [5.32.6](https://github.com/swagger-api/swagger-ui/compare/v5.32.5...v5.32.6) (2026-05-12)\n\n### Bug Fixes\n\n* **deps-dev:** address undici vulnerability ([#10870](https://github.com/swagger-api/swagger-ui/issues/10870)) ([35f5a6a](https://github.com/swagger-api/swagger-ui/commit/35f5a6a84a9b4681809e8d70d32b9de69c779691))\n* **docker:** address CVE-2026-27135 nghttp2-libs vulnerability ([#10879](https://github.com/swagger-api/swagger-ui/issues/10879)) ([0a63415](https://github.com/swagger-api/swagger-ui/commit/0a63415dfbaa491f5741d9025407e30a8ebf9592))",
+      "0a63415dfbaa491f5741d9025407e30a8ebf9592": "fix(docker): address CVE-2026-27135 nghttp2-libs vulnerability (#10879)",
+      "3c0a58d12c8e94369f3d356996cdd9d84e0f992e": "fix(docker): address CVE-2026-27135 nghttp2-libs vulnerability\n\nPin nghttp2-libs to >=1.68.1-r0 in Docker image to fix HIGH severity\nCVE-2026-27135 (DoS via malformed HTTP/2 frames after session termination).\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+    },
+    "CVE-2026-28390": {
+      "9ced3791b605347e906b2560055a5b5c256e9045": "fix(docker): upgrade alpine packages to address HIGH severity CVEs\n\nExplicitly pin minimum versions for libcrypto3, libssl3, musl, and\nmusl-utils to resolve Trivy-detected vulnerabilities in the Docker image:\n\n- CVE-2026-28390 (HIGH): OpenSSL NULL pointer dereference DoS\n  libcrypto3/libssl3 3.5.5-r0 \u2192 >=3.5.6-r0\n- CVE-2026-40200 (HIGH): musl libc arbitrary code execution/DoS\n  musl/musl-utils 1.2.5-r21 \u2192 >=1.2.5-r23\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+    },
+    "CVE-2026-40200": {
+      "9ced3791b605347e906b2560055a5b5c256e9045": "fix(docker): upgrade alpine packages to address HIGH severity CVEs\n\nExplicitly pin minimum versions for libcrypto3, libssl3, musl, and\nmusl-utils to resolve Trivy-detected vulnerabilities in the Docker image:\n\n- CVE-2026-28390 (HIGH): OpenSSL NULL pointer dereference DoS\n  libcrypto3/libssl3 3.5.5-r0 \u2192 >=3.5.6-r0\n- CVE-2026-40200 (HIGH): musl libc arbitrary code execution/DoS\n  musl/musl-utils 1.2.5-r21 \u2192 >=1.2.5-r23\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+    },
+    "CVE-2026-33416": {
+      "d02a2df106961d8cb6bceb6b4b3aa8d9f6faaf4a": "chore(release): cut the 5.32.2 release\n\n## [5.32.2](https://github.com/swagger-api/swagger-ui/compare/v5.32.1...v5.32.2) (2026-04-07)\n\n### Bug Fixes\n\n* **docker:** bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184 ([#10802](https://github.com/swagger-api/swagger-ui/issues/10802)) ([c200a69](https://github.com/swagger-api/swagger-ui/commit/c200a69b634343b663f4cb8908678cd332aa8e64))",
+      "c200a69b634343b663f4cb8908678cd332aa8e64": "fix(docker): bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184 (#10802)",
+      "56a2a1c6c9dd3595da79a632e122d9cf5cf4787b": "fix(docker): bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184"
+    },
+    "CVE-2026-33636": {
+      "d02a2df106961d8cb6bceb6b4b3aa8d9f6faaf4a": "chore(release): cut the 5.32.2 release\n\n## [5.32.2](https://github.com/swagger-api/swagger-ui/compare/v5.32.1...v5.32.2) (2026-04-07)\n\n### Bug Fixes\n\n* **docker:** bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184 ([#10802](https://github.com/swagger-api/swagger-ui/issues/10802)) ([c200a69](https://github.com/swagger-api/swagger-ui/commit/c200a69b634343b663f4cb8908678cd332aa8e64))",
+      "c200a69b634343b663f4cb8908678cd332aa8e64": "fix(docker): bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184 (#10802)",
+      "56a2a1c6c9dd3595da79a632e122d9cf5cf4787b": "fix(docker): bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184"
+    },
+    "CVE-2026-22184": {
+      "d02a2df106961d8cb6bceb6b4b3aa8d9f6faaf4a": "chore(release): cut the 5.32.2 release\n\n## [5.32.2](https://github.com/swagger-api/swagger-ui/compare/v5.32.1...v5.32.2) (2026-04-07)\n\n### Bug Fixes\n\n* **docker:** bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184 ([#10802](https://github.com/swagger-api/swagger-ui/issues/10802)) ([c200a69](https://github.com/swagger-api/swagger-ui/commit/c200a69b634343b663f4cb8908678cd332aa8e64))",
+      "c200a69b634343b663f4cb8908678cd332aa8e64": "fix(docker): bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184 (#10802)",
+      "56a2a1c6c9dd3595da79a632e122d9cf5cf4787b": "fix(docker): bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184"
+    },
+    "CVE-2025-48174": {
+      "1b712dc9fc0181a4c2d5f7450d4ac814f0c4c9e3": "chore(release): cut the 5.25.4 release\n\n## [5.25.4](https://github.com/swagger-api/swagger-ui/compare/v5.25.3...v5.25.4) (2025-07-01)\n\n### Bug Fixes\n\n* **docker:** bump nginx image to version 1.29.0-alpine to fix CVE-2025-48174 ([#10508](https://github.com/swagger-api/swagger-ui/issues/10508)) ([94f0818](https://github.com/swagger-api/swagger-ui/commit/94f0818e66e7c59957878e14a5e90121e5a0d17e))",
+      "94f0818e66e7c59957878e14a5e90121e5a0d17e": "fix(docker): bump nginx image to version 1.29.0-alpine to fix CVE-2025-48174 (#10508)"
+    },
+    "CVE-2025-32414": {
+      "01e380e3bce7f36ad3d654c1589508f99bd7f7a3": "fix(docker): address CVE-2025-32414/CVE-2025-32415 (#10461)",
+      "86001762344f018c7f498a06b46bddbc0e2fc40b": "fix(docker): address CVE-2025-32414/CVE-2025-32415"
+    },
+    "CVE-2025-32415": {
+      "01e380e3bce7f36ad3d654c1589508f99bd7f7a3": "fix(docker): address CVE-2025-32414/CVE-2025-32415 (#10461)",
+      "86001762344f018c7f498a06b46bddbc0e2fc40b": "fix(docker): address CVE-2025-32414/CVE-2025-32415"
+    },
+    "CVE-2024-56171": {
+      "3dc2cd6dc21b0f626598952fcf8bc4d4b3a9f9e4": "fix(docker): fix security issues CVE-2024-56171, CVE-2025-24928 (#10351)",
+      "57bc3bcd6acce09c998fa42d5a222db688671fcb": "fix(docker): fix security issues CVE-2024-56171, CVE-2025-24928"
+    },
+    "CVE-2025-24928": {
+      "3dc2cd6dc21b0f626598952fcf8bc4d4b3a9f9e4": "fix(docker): fix security issues CVE-2024-56171, CVE-2025-24928 (#10351)",
+      "57bc3bcd6acce09c998fa42d5a222db688671fcb": "fix(docker): fix security issues CVE-2024-56171, CVE-2025-24928"
+    },
+    "CVE-2024-27983": {
+      "a94dd2808b2f0971cf3147c29ed43f5a9d1f229b": "fix(docker): fix CVE-2024-27983 related to Node.js (#9786)"
+    },
+    "CVE-2023-0801": {
+      "45e9ece967b9f4e0a05c5d01c78026fb00cf62ed": "fix(docker): update libtiff to non-vulnerable version (#9033)\n\nRefs CVE-2023-0801\r\nRefs 2ff8986dbc5020883974d6ed80e13070705d7e50",
+      "2ff8986dbc5020883974d6ed80e13070705d7e50": "fix(docker): remove vulnerable libtiff (#9032)\n\nWe will keep the removal in the image untill\r\nit's fixed in upstream nginx base image.\r\n\r\nRef CVE-2023-0801"
+    },
+    "CVE-2023-29469": {
+      "da48ea14b5b0a2e9f50159502f04bf8a0b4907d4": "chore(docker): update Dockerfile base image to nginx:1.24.0-alpine (#8697)\n\nThis update fixes following CVEs:\r\n  - CVE-2023-29469\r\n  - CVE-2023-28484\u2060"
+    },
+    "CVE-2023-28484": {
+      "da48ea14b5b0a2e9f50159502f04bf8a0b4907d4": "chore(docker): update Dockerfile base image to nginx:1.24.0-alpine (#8697)\n\nThis update fixes following CVEs:\r\n  - CVE-2023-29469\r\n  - CVE-2023-28484\u2060"
+    },
+    "CVE-2023-24807": {
+      "a88f02bfeff010081ec73381dab9eb78f1d79571": "fix(docker): use vulnerability free Node.js=>18.14.1-r0 (#8440)\n\nNode.js@18.12.1-r0 got installed by default.\r\nCVE-2023-24807 was manifesting in image security\r\nscans.\r\n\r\nRefs https://github.com/swagger-api/swagger-ui/actions/runs/4310624218/jobs/7519243077"
+    },
+    "GHSA-R683-J2X4-V87G": {
+      "6c417e490185cb6c0e8855d642f9666d5e6f9bf0": "fix(security): update swagger-client to v3.18.3 (#7798)\n\nRefs https://github.com/advisories/GHSA-r683-j2x4-v87g"
+    },
+    "GHSA-QRMM-W75W-3WPX": {
+      "01a3e55960f864a0acf6a8d06e5ddaf6776a7f76": "fix(security): disable reading config params from URL search params (#7697)\n\nReading configuration parameters from URL search params \r\nis by default no longer enabled. To re-enable it, set queryConfigEnabled\r\nconfiguration parameter to true.\r\n\r\nFunctionally, this is a breaking change, but given we're just providing\r\na security vulnerability patch we're considering this a PATCH version bump\r\nonly.\r\n\r\nRefs #4872\r\nRefs https://github.com/swagger-api/swagger-ui/security/advisories/GHSA-qrmm-w75w-3wpx"
+    },
+    "CVE-2018-20834": {
+      "1135e7c5485dbac41ddd1d442d36b289d7348fbc": "Swagger ui redesign/custom dropdown (via #5381)\n\n* improvement: OAS3 $ref friendly-name regex in model.jsx (via #5334)\r\n\r\n* improvement: relax schema description styling so Markdown can be effective (via #5340)\r\n\r\n* improvement: add `isShown` check to <ModelCollapse />'s prop `expanded` logic (via #5331)\r\n\r\n* Add and apply default button classes, styling\r\n\r\n* Update buttons to use custom component\r\n\r\n* Fix breaking unit tests\r\n\r\n* Replace button transition, replace EOF new-line\r\n\r\n* Apply custom sui-btn-wrapper class\r\n\r\n* Add span wrapper for button-text (allows us to apply em padding / margins on button element)\r\n\r\n* security: CVE-2018-20834 (via #5368)\r\n\r\n* bump minimum `bundlesize` version\r\n\r\n* bump `node-sass`\r\n\r\n* bump webpack + webpack-dev-server; update lockfile\r\n\r\n* release: v3.22.2\r\n\r\n* Abstract default classnames to Button component\r\n\r\n* Use classnames lib where applicable\r\n\r\n* Fix unit tests\r\n\r\n* Tidy up, remove unused classnames\r\n\r\n* eliminate `auth` class\r\n\r\n* eliminate `authorize` class\r\n\r\n* move `.sui-btn--authorize` to buttons stylesheet\r\n\r\n* Remove duplicate import after merge\r\n\r\n* Dropdown component set up\r\n\r\n* Dropdown id & custom class props\r\n\r\n* Dropdown disabled prop\r\n\r\n* Basic DropDownItem, Updated Dropdown child classnames to not inherit modifer\r\n\r\n* Layout-utils restucture\r\n\r\n* Dropdown Basic controls\r\n\r\n* Dropdown Labels\r\n\r\n* Moved Dropdown to LayoutUtils\r\n\r\n* Dropdowm relocation cleanup\r\n\r\n* Dropdowm relocation cleanup P2\r\n\r\n* Dropdown refs rough draft\r\n\r\n* Dropdown movement controls\r\n\r\n* Dropdown select option functionality\r\n\r\n* Dropdown default selected value and default placeholder\r\n\r\n* Add temporary dropdown icon - to be replaced by fontawesome\r\n\r\n* Move clickhandler to li element\r\n\r\n* Wrap dropdown text in span\r\n\r\n* Update alter-hue mixin to accept custom degree\r\n\r\n* Update dropdown styling\r\n\r\n* Apply custom Dropdown to \"schemes\"\r\n\r\n* Dropdown onChange\r\n\r\n* Removed Dropdown labels\r\n\r\n* Dropdown classname improvements\r\n\r\n* IE/Edge specific keyboard event keys\r\n\r\n* Removed onKeyPress\r\n\r\n* Dropdown classname improvements\r\n\r\n* Dropdown move item focus function\r\n\r\n* Dropdown move item focus function update\r\n\r\n* Replaced xclass with classnames\r\n\r\n* Dropdown styling\r\n\r\n* Dropdown seperate children function\r\n\r\n* Dropdown icon\r\n\r\n* Dropdown error handling - no children\r\n\r\n* Dropdown no options available msg",
+      "6eefeeda6c0fe54ee5d5b9715fc048b36b6c94aa": "Fix/remove unknown props (#5372)\n\n* improvement: OAS3 $ref friendly-name regex in model.jsx (via #5334)\r\n\r\n* improvement: relax schema description styling so Markdown can be effective (via #5340)\r\n\r\n* improvement: add `isShown` check to <ModelCollapse />'s prop `expanded` logic (via #5331)\r\n\r\n* security: CVE-2018-20834 (via #5368)\r\n\r\n* bump minimum `bundlesize` version\r\n\r\n* bump `node-sass`\r\n\r\n* bump webpack + webpack-dev-server; update lockfile\r\n\r\n* release: v3.22.2\r\n\r\n* Filter unknown props from being applied to native button (React Warning)\r\n\r\n* Filter props without lodash",
+      "4a43d105b2a7545cb84e3c499033f88e1006c2d9": "Sync with master (#5370)\n\n* improvement: OAS3 $ref friendly-name regex in model.jsx (via #5334)\r\n\r\n* improvement: relax schema description styling so Markdown can be effective (via #5340)\r\n\r\n* improvement: add `isShown` check to <ModelCollapse />'s prop `expanded` logic (via #5331)\r\n\r\n* security: CVE-2018-20834 (via #5368)\r\n\r\n* bump minimum `bundlesize` version\r\n\r\n* bump `node-sass`\r\n\r\n* bump webpack + webpack-dev-server; update lockfile\r\n\r\n* release: v3.22.2",
+      "5628ff02f4da4fcc77aaf808466be9550bef2cbe": "security: CVE-2018-20834 (via #5368)\n\n* bump minimum `bundlesize` version\r\n\r\n* bump `node-sass`\r\n\r\n* bump webpack + webpack-dev-server; update lockfile"
+    }
+  }
+}

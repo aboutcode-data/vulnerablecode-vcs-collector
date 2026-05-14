@@ -1,0 +1,307 @@
+{
+  "vcs_url": "https://chromium.googlesource.com/chromium/third_party/ffmpeg",
+  "vulnerabilities": {
+    "CVE-2023-6602": {
+      "91d96dc8ddaebe0b6cb393f672085e6bfaf15a31": "avformat/hls: Be more picky on extensions\n\nThis blocks disallowed extensions from probing\nIt also requires all available segments to have matching extensions to the format\nmpegts is treated independent of the extension\n\nIt is recommended to set the whitelists correctly\ninstead of depending on extensions, but this should help a bit,\nand this is easier to backport\n\nFixes: CVE-2023-6602 II. HLS Force TTY Demuxer\nFixes: CVE-2023-6602 IV. HLS XBIN Demuxer DoS Amplification\n\nThe other parts of CVE-2023-6602 have been fixed by prior commits\n\nFound-by: Harvey Phillips of Amazon Element55 (element55)\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>",
+      "4c96d6bf75357ab13808efc9f08c1b41b1bf5bdf": "avformat/dashdec: Check whitelist\n\nFixes: CVE-2023-6602, V. DASH Playlist SSRF\n\nFound-by: Harvey Phillips of Amazon Element55 (element55)\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+    },
+    "CVE-2022-2566": {
+      "c2c8cac2131bcfb32df86b81f29a00034997f062": "[M102-LTS] avformat/mov: Check count sums in build_open_gop_key_points()\n\nFixes: ffmpeg.md\nFixes: Out of array access\nFixes: CVE-2022-2566\n\nBug: 1348283\nFound-by: Andy Nguyen <theflow@google.com>\nFound-by: 3pvd <3pvd@google.com>\nChange-Id: I6821c87acce5a62cd9a5b829c17f56ae6418116a\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>\n(cherry picked from commit 64d7d8d0e5035087ebe24a65845b36f78e7fad92)\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/third_party/ffmpeg/+/3890391\nReviewed-by: Matthew Wolenetz <wolenetz@chromium.org>",
+      "42601c274d7a39f5ded391024c52ff444f144f75": "avformat/mov: Check count sums in build_open_gop_key_points()\n\nFixes: ffmpeg.md\nFixes: Out of array access\nFixes: CVE-2022-2566\n\nFound-by: Andy Nguyen <theflow@google.com>\nFound-by: 3pvd <3pvd@google.com>\nReviewed-by: Andy Nguyen <theflow@google.com>\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>",
+      "d2d6dbd621167546b70f91e89f941e9f71dc420c": "avformat/mov: Check count sums in build_open_gop_key_points()\n\nFixes: ffmpeg.md\nFixes: Out of array access\nFixes: CVE-2022-2566\n\nFound-by: Andy Nguyen <theflow@google.com>\nFound-by: 3pvd <3pvd@google.com>\nReviewed-by: Andy Nguyen <theflow@google.com>\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>",
+      "f7a2aaa56ebda21cff6bfa021ba363a715a5ed9b": "avformat/mov: Check count sums in build_open_gop_key_points()\n\nFixes: ffmpeg.md\nFixes: Out of array access\nFixes: CVE-2022-2566\n\nFound-by: Andy Nguyen <theflow@google.com>\nFound-by: 3pvd <3pvd@google.com>\nReviewed-by: Andy Nguyen <theflow@google.com>\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>",
+      "64d7d8d0e5035087ebe24a65845b36f78e7fad92": "avformat/mov: Check count sums in build_open_gop_key_points()\n\nFixes: ffmpeg.md\nFixes: Out of array access\nFixes: CVE-2022-2566\n\nFound-by: Andy Nguyen <theflow@google.com>\nFound-by: 3pvd <3pvd@google.com>\nReviewed-by: Andy Nguyen <theflow@google.com>\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>",
+      "c953baa084607dd1d84c3bfcce3cf6a87c3e6e05": "avformat/mov: Check count sums in build_open_gop_key_points()\n\nFixes: ffmpeg.md\nFixes: Out of array access\nFixes: CVE-2022-2566\n\nFound-by: Andy Nguyen <theflow@google.com>\nFound-by: 3pvd <3pvd@google.com>\nReviewed-by: Andy Nguyen <theflow@google.com>\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+    },
+    "CVE-2020-22037": {
+      "7bba0dd6382e30d646cb406034a66199e071d713": "avcodec/frame_thread_encoder: Free AVCodecContext structure on error during init\n\nFixes: MemLeak\nFixes: 8281\nFixes: PoC_option158.jpg\nFixes: CVE-2020-22037\n\nReviewed-by: Andreas Rheinhardt <andreas.rheinhardt@outlook.com>\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+    },
+    "CVE-2013-0868": {
+      "7150f9575671f898382c370acae35f9087a30ba1": "avcodec/dnxhddec: check and propagate function return value\n\nSimilar to CVE-2013-0868, here return value check for 'init_vlc' is needed.\ncrafted DNxHD data can cause unspecified impact.\n\nReviewed-by: Paul B Mahol <onemda@gmail.com>\nSigned-off-by: James Almer <jamrial@gmail.com>",
+      "d0393d79bc3d61c9f2ff832c0e273b7774ff0269": "huffyuv: Check and propagate function return values\n\nBug-Id: CVE-2013-0868\n\ninspired by a patch from Michael Niedermayer <michaelni@gmx.at>\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Diego Biurrun <diego@biurrun.de>\n\nCC: libav-stable@libav.org"
+    },
+    "CVE-2020-22021": {
+      "7971f62120a55c141ec437aa3f0bacc1c1a3526b": "avfilter/vf_yadif: Fix handing of tiny images\n\nFixes: out of array access\nFixes: Ticket8240\nFixes: CVE-2020-22021\n\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+    },
+    "CVE-2020-22019": {
+      "82ad1b76751bcfad5005440db48c46a4de5d6f02": "avfilter/vf_vmafmotion: Check dimensions\n\nFixes: out of array access\nFixes: Ticket8241\nFixes: Ticket8246\nFixes: CVE-2020-22019\nFixes: CVE-2020-22033\n\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+    },
+    "CVE-2020-22033": {
+      "82ad1b76751bcfad5005440db48c46a4de5d6f02": "avfilter/vf_vmafmotion: Check dimensions\n\nFixes: out of array access\nFixes: Ticket8241\nFixes: Ticket8246\nFixes: CVE-2020-22019\nFixes: CVE-2020-22033\n\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+    },
+    "CVE-2020-22015": {
+      "4c1afa292520329eecd1cc7631bc59a8cca95c46": "avformat/movenc: Check pal_size before use\n\nFixes: assertion failure\nFixes: out of array read\nFixes: Ticket8190\nFixes: CVE-2020-22015\n\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+    },
+    "CVE-2020-20445": {
+      "38d18fb57863bb9c54e68ae44aa780c5c282a184": "avcodec/lpc: Avoid floating point division by 0\n\nFixes: Ticket7996\nFixes: CVE-2020-20445\n\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+    },
+    "CVE-2020-20446": {
+      "223b5e8ac9f6461bb13ed365419ec485c5b2b002": "avcodec/aacpsy: Avoid floating point division by 0 of norm_fac\n\nFixes: Ticket7995\nFixes: CVE-2020-20446\n\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+    },
+    "CVE-2020-20453": {
+      "a7a7f32c8ad0179a1a85d0a8cff35924e6d90be8": "avcodec/aacenc: Avoid 0 lambda\n\nFixes: Ticket8003\nFixes: CVE-2020-20453\n\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+    },
+    "CVE-2017-7862": {
+      "eb3c1a94adbc28411610167d3dac583436e50125": "pictor: Correctly check frame dimensions\n\nFixes: 559/clusterfuzz-testcase-6424225917173760\nBug-Id: CVE-2017-7862\nCC: libav-stable@libav.org\n\nFound-by: continuous fuzzing process https://github.com/google/oss-fuzz/tree/master/targets/ffmpeg\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>\n(cherry picked from commit 8c2ea3030af7b40a3c4275696fb5c76cdb80950a)\nSigned-off-by: Diego Biurrun <diego@biurrun.de>"
+    },
+    "CVE-2017-9992": {
+      "d34a133b78afe2793cd8537f3c7f42437f441e94": "dfa: Disallow odd width/height and add proper bounds check for DDS1 chunks\n\nDDS1 chunks are decoded in 2x2 blocks, odd chunk width or height is not\nallowed in that case. Also ensure that the decode buffer is big enough\nfor all blocks being processed.\n\nBug-Id: CVE-2017-9992\nCC: libav-stable@libav.org"
+    },
+    "CVE-2017-9608": {
+      "611b35627488a8d0763e75c25ee0875c5b7987dd": "avcodec/dnxhd_parser: Do not return invalid value from dnxhd_find_frame_end() on error\n\nFixes: Null pointer dereference\n\nFixes: CVE-2017-9608\nFound-by: Yihan Lian\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+    },
+    "CVE-2015-8365": {
+      "b98f082d8ddc0a0d8317114d8414ab51de60ef02": "smacker: Check that the data size is a multiple of a sample vector\n\nFixes out of array access\nFixes: ce19e41f0ef1e52a23edc488faecdb58/asan_heap-oob_2504e97_4202_ffa0df1baed14022b9bfd4f8ac23d0cb.smk\n\nBug-Id: CVE-2015-8365\nCC: libav-stable@libav.org\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>\n(cherry picked from commit 4a9af07a49295e014b059c1ab624c40345af5892)\nSigned-off-by: Diego Biurrun <diego@biurrun.de>"
+    },
+    "CVE-2016-9561": {
+      "30581c51e72a7a7ea1572c1c6039f6e4c590a55c": "avformat/options_table: Set the default maximum number of streams to 1000\n\nFixes CVE-2016-9561, Note the security relevance of this is disputed as\nrunning out of memory can happen with valid files\n\nSuggested-by: Andreas Cadhalpun <andreas.cadhalpun@googlemail.com>\nReviewed-by: Andreas Cadhalpun <andreas.cadhalpun@googlemail.com>\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+    },
+    "CVE-2016-2326": {
+      "bfd0f42277d1fab7b354f80f5e158e15a75f34ee": "Merge commit 'ff3db937ef3aa30046a3936146f86ad48ee2ff90'\n\nThis commit is a no-op. As far as I can tell, we already added\nchecks, to address this CVE in 7c0b84d89911b2035161f5ef51aafbfcc84aa9e2,\nwhich is also reflected in the CVE database:\n\n    https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2326\n\n* commit 'ff3db937ef3aa30046a3936146f86ad48ee2ff90':\n  asfenc: fix some possible integer overflows\n\nMerged-by: Derek Buitenhuis <derek.buitenhuis@gmail.com>",
+      "ff3db937ef3aa30046a3936146f86ad48ee2ff90": "asfenc: fix some possible integer overflows\n\nStore the file duration in the same timebase it arrives (i.e.\nmilliseconds) and only convert it to the file duration units (100ns)\nwhen it's actually written, thus simplifying some calculations. Also,\nstore the duration as unsigned, since it cannot be negative.\n\nCC: libav-stable@libav.org\nBug-ID: CVE-2016-2326"
+    },
+    "CVE-2016-3062": {
+      "7e01d48cfd168c3dfc663f03a3b6a98e0ecba328": "mov: Check the entries value when parsing dref boxes\n\nAnd properly reset the entries count when resetting the entries.\n\nCC: libav-stable@libav.org\n\nBug-Id: 929\nBug-Id: CVE-2016-3062"
+    },
+    "CVE-2016-1897": {
+      "ec4c48397641dbaf4ae8df36c32aaa5a311a11bf": "lavf: add a protocol whitelist/blacklist for file opened internally\n\nShould make the default behaviour safer for careless callers that open\nrandom untrusted files.\n\nBug-Id: CVE-2016-1897\nBug-Id: CVE-2016-1898"
+    },
+    "CVE-2016-1898": {
+      "ec4c48397641dbaf4ae8df36c32aaa5a311a11bf": "lavf: add a protocol whitelist/blacklist for file opened internally\n\nShould make the default behaviour safer for careless callers that open\nrandom untrusted files.\n\nBug-Id: CVE-2016-1897\nBug-Id: CVE-2016-1898"
+    },
+    "CVE-2015-3417": {
+      "0181ae9af2de1526464d23209b82e6674d362f5d": "h264: Make sure reinit failures mark the context as not initialized\n\nBug-Id: CVE-2015-3417\nCC: libav-stable@libav.org"
+    },
+    "CVE-2015-3395": {
+      "5ecabd3c54b7c802522dc338838c9a4c2dc42948": "msrle: Use FFABS to determine the frame size in msrle_decode_pal4\n\nAs done in msrle_decode_8_16_24_32.\n\nBug-Id: CVE-2015-3395\nCC: libav-stable@libav.org"
+    },
+    "CVE-2014-9604": {
+      "0ce3a0f9d9523a9bcad4c6d451ca5bbd7a4f420d": "utvideodec: Handle slice_height being zero\n\nFixes out of array accesses.\n\nCC: libav-stable@libav.org\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nBug-Id: CVE-2014-9604\nSigned-off-by: Vittorio Giovara <vittorio.giovara@gmail.com>\nSigned-off-by: Luca Barbato <lu_zero@gentoo.org>"
+    },
+    "CVE-2014-8544": {
+      "ae5e1f3d663a8c9a532d89e588cbc61f171c9186": "tiff: Check that there is no aliasing in pixel format selection\n\nFixes possible issues with unexpected bpp/bppcount values.\n\nCC: libav-stable@libav.org\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nBug-Id: CVE-2014-8544\nSigned-off-by: Luca Barbato <lu_zero@gentoo.org>"
+    },
+    "CVE-2014-8549": {
+      "cee4490b521fd0d02476d46aa2598af24fb8d686": "on2avc: check number of channels\n\nFixes invalid memory access.\n\nCC: libav-stable@libav.org\nBug-ID: CVE-2014-8549\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2014-8548": {
+      "d423dd72be451462c6fb1cbbe313bed0194001ab": "smc: fix the bounds check\n\nFixes invalid writes when there are more blocks in a run than total\nremaining blocks.\n\nCC: libav-stable@libav.org\nBug-ID: CVE-2014-8548\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2014-8547": {
+      "0b39ac6f54505a538c21fe49a626de94c518c903": "gifdec: refactor interleave end handling\n\nFixes invalid writes with very small image heights.\n\nCC: libav-stable@libav.org\nBug-ID: CVE-2014-8547\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2014-8543": {
+      "17ba719d9ba30c970f65747f42d5fbb1e447ca28": "mmvideo: check frame dimensions\n\nThe frame size must be set by the caller and each dimension must be a\nmultiple of 2.\n\nCC: libav-stable@libav.org\nBug-ID: CVE-2014-8543\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind"
+    },
+    "CVE-2014-8542": {
+      "88626e5af8d006e67189bf10b96b982502a7e8ad": "jvdec: check frame dimensions\n\nThe frame size must be set by the caller and each dimension must be a\nmultiple of 8.\n\nCC: libav-stable@libav.org\nBug-ID: CVE-2014-8542\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind"
+    },
+    "CVE-2014-8541": {
+      "809c3023b699c54c90511913d3b6140dd2436550": "mjpegdec: check for pixel format changes\n\nFixes possible invalid memory access.\n\nBased on code by Michael Niedermayer <michaelni@gmx.at>\n\nCC: libav-stable@libav.org\nBug-ID: CVE-2014-8541\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind"
+    },
+    "CVE-2014-2263": {
+      "e8049af1325dd59a51546c15b2e71a0f578e9d27": "mpegts: Do not try to write a PMT larger than SECTION_SIZE\n\nPrevent out of array writes.\n\nSimilar to what Michael Niedermayer did to address the same issue.\n\nBug-Id: CVE-2014-2263\nCC: libav-stable@libav.org\n\nSigned-off-by: Diego Biurrun <diego@biurrun.de>"
+    },
+    "CVE-2013-7020": {
+      "da7d839a0d3ec40423a665dc85e0cfaed3f92eb8": "ffv1dec: check that global parameters do not change in version 0/1\n\nSuch changes are neither allowed nor supported\n\nFound-by: ami_stuff\nBug-Id: CVE-2013-7020\nCC: libav-stable@libav.org\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2013-3674": {
+      "a1599f3f7ea8478d1f6a95e59e3bc6bc86d5f812": "cdgraphics: switch to bytestream2\n\nFixes possible invalid memory accesses on corrupted data.\n\nCC:libav-stable@libav.org\nBug-ID: CVE-2013-3674"
+    },
+    "CVE-2013-0848": {
+      "a7153444df9040bf6ae103e0bbf6104b66f974cb": "huffyuvdec: check width size for yuv422p\n\nAvoid out of array accesses.\n\nCC: libav-stable@libav.org\nBug-Id: CVE-2013-0848\nSigned-off-by: Vittorio Giovara <vittorio.giovara@gmail.com>\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2013-3672": {
+      "70cd3b8e659c3522eea5c16a65d14b8658894a94": "mmvideo: check horizontal coordinate too\n\nFixes out of array accesses.\n\nBug-Id: CVE-2013-3672\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Vittorio Giovara <vittorio.giovara@gmail.com>\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2014-2098": {
+      "849b9d34c7ef70b370c53e7af3940f51cbc07d0f": "wmalosslessdec: fix mclms_coeffs* array size\n\nFixes corruption of context\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nCC:libav-stable@libav.org\nBug-Id: CVE-2014-2098\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2011-3946": {
+      "7ab551f9fd9a63586649a7df8790ddaeac55420f": "h264: prevent theoretical infinite loop in SEI parsing\n\nProperly address CVE-2011-3946 and parse bitstream as described in the spec.\n\nCC: libav-stable@libav.org\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind",
+      "9decfc17bb76da34734296048d390b176abf404c": "h264_sei: Fix infinite loop.\n\nFixes not yet fixed parts of CVE-2011-3946.\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2013-0852": {
+      "d98e6c5d5d80c1dfe0c30f2e73d41a3aea0b920d": "pgssubdec: Check RLE size before copying\n\nMake sure the buffer size does not exceed the expected\nRLE size.\n\nPrevent an out of array bound write.\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>\nBug-Id: CVE-2013-0852\n\nSigned-off-by: Luca Barbato <lu_zero@gentoo.org>"
+    },
+    "CVE-2012-6618": {
+      "2115a3597457231a6e5c0527fe0ff8550f64b733": "lavf: make av_probe_input_buffer more robust\n\nAlways use the actually read size as the offset instead of making\npossibly invalid assumptions.\n\nAddresses: CVE-2012-6618"
+    },
+    "CVE-2013-0845": {
+      "2a0fb7286d67c47e44aa76c237ede117b22af616": "alsdec: check block length\n\nFix writing over the end\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nAddresses: CVE-2013-0845"
+    },
+    "CVE-2013-2495": {
+      "50c449ac24fbb4c03c15d2e2026cef2204b80385": "iff: validate CMAP palette size\n\nFixes CVE-2013-2495\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Luca Barbato <lu_zero@gentoo.org>\n\nCC: libav-stable@libav.org"
+    },
+    "CVE-2013-2277": {
+      "4987faee78b9869f8f4646b8dd971d459df218a5": "h264: check for luma and chroma bit dept being equal\n\nThe decoder assumes a single bit depth for all the planes\nwhile the specification allows different bit depths for luma\nand chroma.\n\nAvoid the possible problems described in CVE-2013-2277\n\nCC: libav-stable@libav.org"
+    },
+    "CVE-2013-0894": {
+      "11dcecfcca0eca1a571792c4fa3c21fb2cfddddc": "vorbisdec: Error on bark_map_size equal to 0.\n\nThe value is used to calculate output LSP curve and a division by zero\nand out of array accesses would occur.\n\nCVE-2013-0894\n\nCC: libav-stable@libav.org\n\nReported-by: Dale Curtis <dalecurtis@chromium.org>\nFound-by: inferno@chromium.org\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>\nSigned-off-by: Luca Barbato <lu_zero@gentoo.org>"
+    },
+    "CVE-2012-2803": {
+      "582368626188c070d4300913c6da5efa4c24cfb2": "mpeg12: do not decode extradata more than once.\n\nFixes CVE-2012-2803.\n\nCC: libav-stable@libav.org"
+    },
+    "CVE-2012-2782": {
+      "9e696d2e5ffaa763c564682ec18c3b51b3e5fccc": "h264: support frame parameter changes during frame-mt\n\nFixes CVE-2012-2782."
+    },
+    "CVE-2012-2783": {
+      "f33b5ba63eee96c9d1c7f0e568169cb0c3694238": "vp56: release frames on error\n\nFixes CVE-2012-2783\n\nCC: libav-stable@libav.org"
+    },
+    "CVE-2012-2791": {
+      "deabb52ab4c1fdb3dd319f3980b1489a182011f1": "ivi_common: check that scan pattern is set before using it.\n\nFixes CVE-2012-2791.\n\nCC: libav-stable@libav.org"
+    },
+    "CVE-2012-2802": {
+      "56b6a43056235fc110a018678da590595734203d": "ac3dec: ensure get_buffer() gets a buffer for the correct number of channels\n\nIf there is an error during frame parsing, but AVCodecContext.channels was\nchanged and AC3DecodeContext.out_channels was set previously, the two may not\nmatch.\n\nFixes CVE-2012-2802\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\n\nCC: libav-stable@libav.org"
+    },
+    "CVE-2012-2801": {
+      "85f477935cd6b34e6ec2716b20e15ce748277a89": "avsdec: Set dimensions instead of relying on the demuxer.\n\nThe decode function assumes that the video will have those dimensions.\n\nFixes CVE-2012-2801\n\nCC:libav-stable@libav.org\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2012-2799": {
+      "d65d8347314b645051e336aed141aaf32a6c0d02": "wmalosslessdec: Reset put bit buffer when num_saved_bits is reset.\n\nFixes CVE-2012-2799\n\nCC:libav-stable@libav.org\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2012-2798": {
+      "d05f72c75445969cd7bdb1d860635c9880c67fb6": "dfa: improve boundary checks in decode_dds1()\n\nFixes CVE-2012-2798\n\nCC:libav-stable@libav.org"
+    },
+    "CVE-2012-2795": {
+      "6a99310fce49f51773ab7d8ffa4f4748bbf58db9": "wmalosslessdec: Fix reading too many bits in decode_channel_residues()\n\nFixes a part of CVE-2012-2795\n\nCC:libav-stable@libav.org\n\nBased on a patch by Michael Niedermayer <michaelni@gmx.at>\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind",
+      "f48fbf2eb5ba7015c65b31c266edf399dd6a82b1": "wmalosslessdec: fix a get_bits(0) in decode_ac_filter\n\nFixes a part of CVE-2012-2795\n\nCC:libav-stable@libav.org\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Anton Khirnov <anton@khirnov.net>",
+      "607f57152c59bcec26caaf2060a86d96f76c4e8b": "wmalosslessdec: make MCLMS arrays big enough for what is written into them.\n\nFixes a part of CVE-2012-2795\n\nCC:libav-stable@libav.org\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2012-2800": {
+      "ae3da0ae5550053583a6f281ea7fd940497ea0d1": "indeo4/5: check empty tile size in decode_mb_info().\n\nThis prevents writing into a too small array if some parameters changed\nwithout the tile being reallocated.\n\nBased on a patch by Michael Niedermayer <michaelni@gmx.at>\n\nFixes CVE-2012-2800\n\nCC:libav-stable@libav.org\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind"
+    },
+    "CVE-2012-2794": {
+      "2d09cdbaf2f449ba23d54e97e94bd97ca22208c6": "indeo5: check tile size in decode_mb_info().\n\nThis prevents writing into a too small array if some parameters changed\nwithout the tile being reallocated.\n\nFixes CVE-2012-2794\n\nCC:libav-stable@libav.org\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2012-2776": {
+      "e4d4044339b9c3b0f45f7203cd026eda3c0414c0": "indeo3: fix out of cell write.\n\nFixes CVE-2012-2776.\n\nCC:libav-stable@libav.org\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind"
+    },
+    "CVE-2012-2792": {
+      "065b3a1cfa3f23aedf76244b3f3883ba913173ff": "wmalosslessdec: increase channel_coeffs/residues size\n\nFixes CVE-2012-2792\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind"
+    },
+    "CVE-2012-2793": {
+      "b631e4ed64f7d1b9ca8f897fda31140e8d1fad81": "lagarith: check count before writing zeros.\n\nFixes CVE-2012-2793\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2012-2789": {
+      "99f392a584dd10b553facc8e819f2c7e982e176d": "wmaprodec: check num_vec_coeffs for validity\n\nFixes CVE-2012-2789\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2012-2788": {
+      "0af49a63c7f87876486ab09482d5b26b95abce60": "avidec: use actually read size instead of requested size\n\nFixes CVE-2012-2788"
+    },
+    "CVE-2012-2787": {
+      "b146d74730ab9ec5abede9066f770ad851e45fbc": "indeo4: update AVCodecContext width/height on size change\n\nFixes CVE-2012-2787\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2012-2786": {
+      "ee715f49a06bf3898246d01b056284a9bb1bcbb9": "dfa: check that the caller set width/height properly.\n\nFixes CVE-2012-2786."
+    },
+    "CVE-2012-2779": {
+      "891918431db628db17885ed947ee387b29826a64": "indeo5dec: Make sure we have had a valid gop header.\n\nThis prevents decoding happening on a half initialized context.\n\nFixes CVE-2012-2779\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2012-2777": {
+      "c20a69630619d14ae92c5541d52c579d7c8f3e94": "cavsdec: check for changing w/h.\n\nOur decoder does not support changing w/h.\n\nFixes CVE-2012-2777 and CVE-2012-2784.\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2012-2784": {
+      "c20a69630619d14ae92c5541d52c579d7c8f3e94": "cavsdec: check for changing w/h.\n\nOur decoder does not support changing w/h.\n\nFixes CVE-2012-2777 and CVE-2012-2784.\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Anton Khirnov <anton@khirnov.net>"
+    },
+    "CVE-2012-2790": {
+      "66197988b1ee914825afbc3084e6da63f862068a": "alsdec: fix number of decoded samples in first sub-block in BGMC mode.\n\nFixes CVE-2012-2790\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>\nSigned-off-by: Justin Ruggles <justin.ruggles@gmail.com>"
+    },
+    "CVE-2012-2775": {
+      "9853e41aa0a6cfff629ff7009685eb8bf8d64e7f": "alsdec: check opt_order.\n\nFixes out of array write in quant_cof.\nAlso make sure no invalid opt_order stays in the context.\n\nFixes CVE-2012-2775\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>\nSigned-off-by: Justin Ruggles <justin.ruggles@gmail.com>"
+    },
+    "CVE-2012-0947": {
+      "58b2e0f0f2fc96c1158e04f8aba95cbe6157a1a3": "vqavideo: return error if image size is not a multiple of block size\n\nThe decoder assumes in various places that the image size\nis a multiple of the block size, and there is no obvious\nway to support odd sizes.  Bailing out early if the header\nspecifies a bad size avoids various errors later on.\n\nFixes CVE-2012-0947.\n\nSigned-off-by: Mans Rullgard <mans@mansr.com>"
+    },
+    "CVE-2011-3937": {
+      "71db86d53b5c6872cea31bf714a1a38ec78feaba": "h263dec: Disallow width/height changing with frame threads.\n\nFixes CVE-2011-3937\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>",
+      "59e95fa4a8844d2abe7ddd7b8d269ea8d8eea17d": "h263dec: Disallow width/height changing with frame threads.\n\nFixes CVE-2011-3937\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2011-3951": {
+      "ce7aee9b733134649a6ce2fa743e51733f33e67e": "dpcm: ignore extra unpaired bytes in stereo streams.\n\nFixes: CVE-2011-3951\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind",
+      "92115bb685914cbfeb02fed26d5acd50dea03d7e": "dpcm: Round output buffer size up.\n\nFixes: CVE-2011-3951\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2012-0858": {
+      "204cb29b3c84a74cbcd059d353c70c8bdc567d98": "shorten: Use separate pointers for the allocated memory for decoded samples.\n\nFixes invalid free() if any of the buffers are not allocated due to either\nnot decoding a header or an error prior to allocating all buffers.\n\nFixes CVE-2012-0858\nCC: libav-stable@libav.org\n\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>\nSigned-off-by: Justin Ruggles <justin.ruggles@gmail.com>"
+    },
+    "CVE-2012-0853": {
+      "c509f4f74713b035a06f79cb4d00e708f5226bc5": "atrac3: Fix crash in tonal component decoding.\n\nAdd a check to avoid writing past the end of the channel_unit.components[]\narray.\n\nBug Found by: cosminamironesei\nFixes CVE-2012-0853\nCC: libav-stable@libav.org\n\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>\nSigned-off-by: Justin Ruggles <justin.ruggles@gmail.com>"
+    },
+    "CVE-2012-0848": {
+      "9fb7a5af97d8c084c3af2566070d09eae0ab49fc": "ws_snd1: Fix wrong samples counts.\n\nThis makes the check that avoids overwrite of the samples array actually\nwork properly.\n\nfixes CVE-2012-0848\nCC: libav-stable@libav.org\n\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>\nSigned-off-by: Justin Ruggles <justin.ruggles@gmail.com>"
+    },
+    "CVE-2011-3929": {
+      "4c677df27cc62e5dd8df9da9d0ca9fb7d963bc08": "Merge remote-tracking branch 'qatar/master'\n\n* qatar/master: (22 commits)\n  frwu: Employ more meaningful return values.\n  fraps: Use av_fast_padded_malloc() instead of av_realloc()\n  mjpegdec: use av_fast_padded_malloc()\n  eatqi: use av_fast_padded_malloc()\n  asv1: use av_fast_padded_malloc()\n  avcodec: Add av_fast_padded_malloc().\n  swscale: enable dithering in MMX functions.\n  swscale: make rgb24 function macros slightly smaller.\n  avcodec.h: Remove some disabled cruft.\n  swscale: remove obsolete comment.\n  swscale-test: Drop unused argc and argv arguments from main().\n  zmbv: Employ more meaningful return values.\n  zmbvenc: Employ more meaningful return values.\n  vc1: prevent null pointer dereference on broken files\n  zmbv: check av_realloc() return values and avoid memleaks on ENOMEM\n  truespeech: align buffer\n  ac3: Do not read past the end of ff_ac3_band_start_tab.\n  dv: Fix small stack overread related to CVE-2011-3929 and CVE-2011-3936.\n  dv: Fix null pointer dereference due to ach=0\n  dv: check stype\n  ...\n\nConflicts:\n\tdoc/APIchanges\n\tlibavcodec/asv1.c\n\tlibavcodec/avcodec.h\n\tlibavcodec/eatqi.c\n\tlibavcodec/fraps.c\n\tlibavcodec/frwu.c\n\tlibavcodec/zmbv.c\n\tlibavformat/dv.c\n\tlibswscale/swscale.c\n\nMerged-by: Michael Niedermayer <michaelni@gmx.at>",
+      "2d1c0dea5f6b91bec7f5fa53ec050913d851e366": "dv: Fix small stack overread related to CVE-2011-3929 and CVE-2011-3936.\n\nFound with asan.\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Alex Converse <alex.converse@gmail.com>",
+      "5a396bb3a66a61a68b80f2369d0249729bf85e04": "dv: Fix null pointer dereference due to ach=0\n\ndv: Fix null pointer dereference due to ach=0\n\nFixes part2 of CVE-2011-3929\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nReviewed-by: Roman Shaposhnik <roman@shaposhnik.org>\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>\nSigned-off-by: Alex Converse <alex.converse@gmail.com>",
+      "635bcfccd439480003b74a665b5aa7c872c1ad6b": "dv: check stype\n\ndv: check stype\n\nFixes part1 of CVE-2011-3929\nPossibly fixes part of CVE-2011-3936\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nReviewed-by: Roman Shaposhnik <roman@shaposhnik.org>\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>\nSigned-off-by: Alex Converse <alex.converse@gmail.com>",
+      "5cb57a16ede71d913384a0b3036a2c6df5da5e43": "dv: Fix null pointer dereference due to ach=0\n\nFixes part2 of CVE-2011-3929\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nReviewed-by: Roman Shaposhnik <roman@shaposhnik.org>\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>",
+      "f9de136b17bc72ff02f39c6a53756d72bbc4bd15": "dv: check stype\n\nFixes part1 of CVE-2011-3929\nPossibly fixes part of CVE-2011-3936\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nReviewed-by: Roman Shaposhnik <roman@shaposhnik.org>\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2011-3936": {
+      "4c677df27cc62e5dd8df9da9d0ca9fb7d963bc08": "Merge remote-tracking branch 'qatar/master'\n\n* qatar/master: (22 commits)\n  frwu: Employ more meaningful return values.\n  fraps: Use av_fast_padded_malloc() instead of av_realloc()\n  mjpegdec: use av_fast_padded_malloc()\n  eatqi: use av_fast_padded_malloc()\n  asv1: use av_fast_padded_malloc()\n  avcodec: Add av_fast_padded_malloc().\n  swscale: enable dithering in MMX functions.\n  swscale: make rgb24 function macros slightly smaller.\n  avcodec.h: Remove some disabled cruft.\n  swscale: remove obsolete comment.\n  swscale-test: Drop unused argc and argv arguments from main().\n  zmbv: Employ more meaningful return values.\n  zmbvenc: Employ more meaningful return values.\n  vc1: prevent null pointer dereference on broken files\n  zmbv: check av_realloc() return values and avoid memleaks on ENOMEM\n  truespeech: align buffer\n  ac3: Do not read past the end of ff_ac3_band_start_tab.\n  dv: Fix small stack overread related to CVE-2011-3929 and CVE-2011-3936.\n  dv: Fix null pointer dereference due to ach=0\n  dv: check stype\n  ...\n\nConflicts:\n\tdoc/APIchanges\n\tlibavcodec/asv1.c\n\tlibavcodec/avcodec.h\n\tlibavcodec/eatqi.c\n\tlibavcodec/fraps.c\n\tlibavcodec/frwu.c\n\tlibavcodec/zmbv.c\n\tlibavformat/dv.c\n\tlibswscale/swscale.c\n\nMerged-by: Michael Niedermayer <michaelni@gmx.at>",
+      "2d1c0dea5f6b91bec7f5fa53ec050913d851e366": "dv: Fix small stack overread related to CVE-2011-3929 and CVE-2011-3936.\n\nFound with asan.\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Alex Converse <alex.converse@gmail.com>",
+      "635bcfccd439480003b74a665b5aa7c872c1ad6b": "dv: check stype\n\ndv: check stype\n\nFixes part1 of CVE-2011-3929\nPossibly fixes part of CVE-2011-3936\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nReviewed-by: Roman Shaposhnik <roman@shaposhnik.org>\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>\nSigned-off-by: Alex Converse <alex.converse@gmail.com>",
+      "88d84dd8eacd4edfe29f12209f10733d631ca5ae": "dv: Fix out of array read\n\nFixes part of CVE-2011-3936\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>",
+      "f9de136b17bc72ff02f39c6a53756d72bbc4bd15": "dv: check stype\n\nFixes part1 of CVE-2011-3929\nPossibly fixes part of CVE-2011-3936\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nReviewed-by: Roman Shaposhnik <roman@shaposhnik.org>\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2011-3945": {
+      "a02e8df973f5478ec82f4c507f5b5b191a5ecb6b": "kgv1dec: Increase offsets array size so it is large enough.\n\nFixes CVE-2011-3945\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>\n(cherry picked from commit 807a045ab7f51993a2c1b3116016cbbd4f3d20d6)\n\nSigned-off-by: Alex Converse <alex.converse@gmail.com>",
+      "807a045ab7f51993a2c1b3116016cbbd4f3d20d6": "kgv1dec: Increase offsets array size so it is large enough.\n\nFixes CVE-2011-3945\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2011-3952": {
+      "386741f887714d3e46c9e8fe577e326a7964037b": "kmvc: Check palsize.\n\nFixes: CVE-2011-3952\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nBased on fix by Michael Niedermayer",
+      "70dba1e3c856e86e1780c0a324abbce034f0c7da": "kvmc: Check palsize.\n\nFixes: CVE-2011-3952\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2011-3940": {
+      "c898431ca5ef2a997fe9388b650f658fb60783e5": "nsvdec: Propagate errors\n\nRelated to CVE-2011-3940.\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind",
+      "8fd8a48263ff1437f9d02d7e78dc63efb9b5ed3a": "nsvdec: Be more careful with av_malloc().\n\nCheck results for av_malloc() and fix an overflow in one call.\n\nRelated to CVE-2011-3940.\n\nBased in part on work from Michael Niedermayer.\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind",
+      "6a89b41d9780325ba6d89a37f2aeb925aa68e6a3": "nsvdec: Fix use of uninitialized streams.\n\nFixes CVE-2011-3940 (Out of bounds read resulting in out of bounds write)\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>\n(cherry picked from commit 5c011706bc752d34bc6ada31d7df2ca0c9af7c6b)\n\nSigned-off-by: Alex Converse <alex.converse@gmail.com>",
+      "5c011706bc752d34bc6ada31d7df2ca0c9af7c6b": "nsvdec: Fix use of uninitialized streams.\n\nFixes CVE-2011-3940 (Out of bounds read resulting in out of bounds write)\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2011-3947": {
+      "b57d262412204e54a7ef8fa1b23ff4dcede622e5": "mjpegbdec: Fix overflow in SOS.\n\nBased in part by a fix from Michael Niedermayer <michaelni@gmx.at>\n\nFixes CVE-2011-3947\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind",
+      "01e5e97026cf0b344abafca22b0336a2c58b2a33": "mjpegbdec: Fix incorrect bitstream buffer size.\n\nFixes CVE-2011-3947\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2011-3950": {
+      "ddf0c1d86ad8e1df5ab3265206aef493a1bdc813": "diracdec: Check num_refs.\n\nFixes: CVE-2011-3950\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2011-3949": {
+      "e2291ea1534d17306f685b8c8abc8585bbed87bf": "diracdec: Check dirac_unpack_idwt_params parameters before storing them.\n\nFixes CVE-2011-3949\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2011-3944": {
+      "1285baaab550e3e761590ef6dfb1d9bd9d1332e4": "smackerdec: Check that the last indexes are within the table.\n\nFixes CVE-2011-3944\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2011-3934": {
+      "247d30a7dba6684ccce4508424f35fd58465e535": "vp3: Copy all 3 frames for thread updates.\n\nThis fixes a double release of the current frame on deinit.\nFixes CVE-2011-3934\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2011-3935": {
+      "668494acd8b20f974c7722895d4a6a14c1005f1e": "ffmpeg: add image size check to codec_get_buffer()\n\nFixes CVE-2011-3935\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2011-3941": {
+      "c77be3a35a0160d6af88056b0899f120f2eef38e": "error concealment: initialize block index.\n\nFixes CVE-2011-3941 (out of bounds write)\n\nFound-by: Mateusz \"j00ru\" Jurczyk and Gynvael Coldwind\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2011-3893": {
+      "afb2aa537954db537d54358997b68f46561fd5a7": "vorbis: An additional defense in the Vorbis codec.\n\nFixes Bug: #190\nChromium Bug: #100543\nRelated to CVE-2011-3893\n\nSigned-off-by: Reinhard Tartler <siretart@tauware.de>",
+      "57cd6d709565e84e84385f8f2a9641ca3fa718be": "vorbis: Avoid some out-of-bounds reads\n\nFixes Bug: #190\nChromium Bug: #100543\nRelated to CVE-2011-3893\n\nSigned-off-by: Reinhard Tartler <siretart@tauware.de>",
+      "faaec4676cb4c7a2303d50df66c6290bc96a7657": "matroskadec: Fix a bug where a pointer was cached to an array that might later move due to a realloc()\n\nFixes bug #190\nChromium bug #100492\nrelated to CVE-2011-3893\n\nSigned-off-by: Reinhard Tartler <siretart@tauware.de>",
+      "6fcf2bb8af0e7d6bb179e71e67e5fab8ef0d2ec2": "vorbis: Fix last quarter of CVE-2011-3893\n\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>",
+      "7149fce2cac0474a5fbc5b47add1158cd8bb283e": "ogg: Avoid the possibility to read out-of-bounds of a static global array in Vorbis\ndecoding.\n\nBUG=100543\nReview URL: http://codereview.chromium.org/8365014\nThis fixes 25% of CVE-2011-3893\n\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>",
+      "f35e037c93cf7d25e65b4a2ed3674358f05e4bed": "mkv: Fix a bug where a pointer was cached to an array that might later move due to\na realloc()\n\nBUG=100492\nReview URL: http://codereview.chromium.org/8366004\nFixes: 1 of 2 for CVE-2011-3893\n\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2011-3895": {
+      "e6d527ff729e42d80e4756cab779ff4ad693631b": "vorbisdec: Fix decoding bug with channel handling\n\nFixes Bug: #191\nChromium Bug: #101458\nCVE-2011-3895\n\nSigned-off-by: Reinhard Tartler <siretart@tauware.de>",
+      "ff7f198d7f9504f71676327be0be47661cfe39d6": "vorbis: make sure ch is non zero before calling vorbis_residue_decode\n\nThis possibly makes part of the CVE-2011-3895 fix unneeded.\n\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>",
+      "f74ce3a60d6ef49080df85c44b54280357109f56": "vorbis: An additional defense in the Vorbis codec.\n\nBUG=101458\nReview URL: http://codereview.chromium.org/8414025\n\nFixes second part of CVE-2011-3895\n\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2011-4352": {
+      "8b94df0f2047e9728cb872adc9e64557b7a5152f": "vp3dec: Check coefficient index in vp3_dequant()\n\nBased on a patch by Michael Niedermayer <michaelni@gmx.at>\n\nFixes NGS00145, CVE-2011-4352\n\nFound-by: Phillip Langlois\nSigned-off-by: Reinhard Tartler <siretart@tauware.de>"
+    },
+    "CVE-2011-4579": {
+      "6e24b9488e67849a28e64a8056e05f83cf439229": "svq1dec: call avcodec_set_dimensions() after dimensions changed.\n\nFixes NGS00148, CVE-2011-4579\n\nFound-by: Phillip Langlois\nSigned-off-by: Michael Niedermayer <michaelni@gmx.at>"
+    },
+    "CVE-2010-3429": {
+      "6e73cef6e3b536fbccdb82bd9260440d836b3f03": "Fix several security issues in flicvideo.c\nThis fixes CVE-2010-3429\n\nOriginally committed as revision 25223 to svn://svn.ffmpeg.org/ffmpeg/trunk"
+    }
+  }
+}

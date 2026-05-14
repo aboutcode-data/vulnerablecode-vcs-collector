@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/swiftlang/swift",
+  "vulnerabilities": {
+    "CVE-2022-37434": {
+      "fa64c2f0c976f48ba6a5fe6d4adec55a025ce183": "update_checkout: update zlib to 1.2.13 to fix CVE-2022-37434"
+    }
+  }
+}

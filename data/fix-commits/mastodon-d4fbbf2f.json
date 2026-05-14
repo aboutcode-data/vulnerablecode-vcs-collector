@@ -1,0 +1,173 @@
+{
+  "vcs_url": "https://github.com/mastodon/mastodon",
+  "vulnerabilities": {
+    "CVE-2024-8796": {
+      "d2842db18dc617673289f1d153899acfd20065bc": "Ignore CVE-2024-8796, which does not impact us"
+    },
+    "GHSA-XJVF-FM67-4QC3": {
+      "d3a056adfd0eca4fff57dde65ee9d95ce7c9bb3e": "Merge pull request from GHSA-xjvf-fm67-4qc3",
+      "a1c7aae28aecf06659c5b18cfa131b37cd1512a3": "Merge pull request from GHSA-xjvf-fm67-4qc3",
+      "d4bf22b632ea8b1174375c4966a6768ab66393b6": "Merge pull request from GHSA-xjvf-fm67-4qc3"
+    },
+    "GHSA-58X8-3QXW-6HM7": {
+      "502cf75b160c76f963a179d46498e3ea1a9fefca": "Merge pull request from GHSA-58x8-3qxw-6hm7\n\n* Fix insufficient permission checking for public timeline endpoints\n\nNote that this changes unauthenticated access failure code from 401 to 422\n\n* Add more tests for public timelines\n\n* Require user token in `/api/v1/statuses/:id/translate` and `/api/v1/scheduled_statuses`",
+      "34aeef345320f7808a1eec00c8b5025e9a9b8329": "Merge pull request from GHSA-58x8-3qxw-6hm7\n\n* Fix insufficient permission checking for public timeline endpoints\n\nNote that this changes unauthenticated access failure code from 401 to 422\n\n* Add more tests for public timelines\n\n* Require user token in `/api/v1/statuses/:id/translate` and `/api/v1/scheduled_statuses`",
+      "4fb4721072e552dc2fa7541f7bdeb1737a6c113e": "Merge pull request from GHSA-58x8-3qxw-6hm7\n\n* Fix insufficient permission checking for public timeline endpoints\n\nNote that this changes unauthenticated access failure code from 401 to 422\n\n* Add more tests for public timelines\n\n* Require user token in `/api/v1/statuses/:id/translate` and `/api/v1/scheduled_statuses`"
+    },
+    "GHSA-VP5R-5PGW-JWQX": {
+      "395f17ca17b27f9e722425a4d76ef1b02bcebea8": "Merge pull request from GHSA-vp5r-5pgw-jwqx\n\n* Fix streaming sessions not being closed when revoking access to an app\n\n* Add tests for GHSA-7w3c-p9j8-mq3x",
+      "122740047a1a0361e32991e791322e0e6e41ac9f": "Merge pull request from GHSA-vp5r-5pgw-jwqx\n\n* Fix streaming sessions not being closed when revoking access to an app\n\n* Add tests for GHSA-7w3c-p9j8-mq3x",
+      "df974a912b59e276ad7bfa413e2b628633a776d4": "Merge pull request from GHSA-vp5r-5pgw-jwqx\n\n* Fix streaming sessions not being closed when revoking access to an app\n\n* Add tests for GHSA-7w3c-p9j8-mq3x"
+    },
+    "GHSA-7W3C-P9J8-MQ3X": {
+      "395f17ca17b27f9e722425a4d76ef1b02bcebea8": "Merge pull request from GHSA-vp5r-5pgw-jwqx\n\n* Fix streaming sessions not being closed when revoking access to an app\n\n* Add tests for GHSA-7w3c-p9j8-mq3x",
+      "122740047a1a0361e32991e791322e0e6e41ac9f": "Merge pull request from GHSA-vp5r-5pgw-jwqx\n\n* Fix streaming sessions not being closed when revoking access to an app\n\n* Add tests for GHSA-7w3c-p9j8-mq3x",
+      "df974a912b59e276ad7bfa413e2b628633a776d4": "Merge pull request from GHSA-vp5r-5pgw-jwqx\n\n* Fix streaming sessions not being closed when revoking access to an app\n\n* Add tests for GHSA-7w3c-p9j8-mq3x",
+      "68eaa804c9bafdc5f798e114e9ba00161425dd71": "Merge pull request from GHSA-7w3c-p9j8-mq3x\n\n* Ensure destruction of OAuth Applications notifies streaming\n\nDue to doorkeeper using a dependent: delete_all relationship, the destroy of an OAuth Application bypassed the existing AccessTokenExtension callbacks for announcing destructing of access tokens.\n\n* Ensure password resets revoke access to Streaming API\n\n* Improve performance of deleting OAuth tokens\n\n---------\n\nCo-authored-by: Claire <claire.github-309c@sitedethib.com>",
+      "47c6079d8da3810889f70166950a29af2c2f1333": "Merge pull request from GHSA-7w3c-p9j8-mq3x\n\n* Ensure destruction of OAuth Applications notifies streaming\n\nDue to doorkeeper using a dependent: delete_all relationship, the destroy of an OAuth Application bypassed the existing AccessTokenExtension callbacks for announcing destructing of access tokens.\n\n* Ensure password resets revoke access to Streaming API\n\n* Improve performance of deleting OAuth tokens\n\n---------\n\nCo-authored-by: Emelia Smith <ThisIsMissEm@users.noreply.github.com>",
+      "c1073750354a172188780b1f575620c18bc33439": "Merge pull request from GHSA-7w3c-p9j8-mq3x\n\n* Ensure destruction of OAuth Applications notifies streaming\n\nDue to doorkeeper using a dependent: delete_all relationship, the destroy of an OAuth Application bypassed the existing AccessTokenExtension callbacks for announcing destructing of access tokens.\n\n* Ensure password resets revoke access to Streaming API\n\n* Improve performance of deleting OAuth tokens\n\n---------\n\nCo-authored-by: Emelia Smith <ThisIsMissEm@users.noreply.github.com>",
+      "d807b3960e96dc29669b7767cea1246ac68d508d": "Merge pull request from GHSA-7w3c-p9j8-mq3x\n\n* Ensure destruction of OAuth Applications notifies streaming\n\nDue to doorkeeper using a dependent: delete_all relationship, the destroy of an OAuth Application bypassed the existing AccessTokenExtension callbacks for announcing destructing of access tokens.\n\n* Ensure password resets revoke access to Streaming API\n\n* Improve performance of deleting OAuth tokens\n\n---------\n\nCo-authored-by: Emelia Smith <ThisIsMissEm@users.noreply.github.com>",
+      "0b0c7af2c112606c441b6b4083e6638b14b9263c": "Merge pull request from GHSA-7w3c-p9j8-mq3x\n\n* Ensure destruction of OAuth Applications notifies streaming\n\nDue to doorkeeper using a dependent: delete_all relationship, the destroy of an OAuth Application bypassed the existing AccessTokenExtension callbacks for announcing destructing of access tokens.\n\n* Ensure password resets revoke access to Streaming API\n\n* Improve performance of deleting OAuth tokens\n\n---------\n\nCo-authored-by: Emelia Smith <ThisIsMissEm@users.noreply.github.com>"
+    },
+    "GHSA-C2R5-CFQR-C553": {
+      "d770b61a749569cc222eb598e1a5d12ee8ceefe9": "Merge pull request from GHSA-c2r5-cfqr-c553\n\n* Add hardening monkey-patch to prevent IP spoofing on misconfigured installations\n\n* Remove rack-attack safelist",
+      "8ab0ca7d64b9f7ec9d658d9a90eae1120ccef117": "Merge pull request from GHSA-c2r5-cfqr-c553\n\n* Add hardening monkey-patch to prevent IP spoofing on misconfigured installations\n\n* Remove rack-attack safelist",
+      "3fa0dd0b88bae1aeb505195044951eb9eebe90f1": "Merge pull request from GHSA-c2r5-cfqr-c553\n\n* Add hardening monkey-patch to prevent IP spoofing on misconfigured installations\n\n* Remove rack-attack safelist"
+    },
+    "GHSA-Q3RG-XX5V-4MXH": {
+      "020228ddba50c5da461093766c0a679382c48a59": "Merge pull request from GHSA-q3rg-xx5v-4mxh",
+      "7920aa59e85bf21a4f6e2e9d485cd82dac89554c": "Merge pull request from GHSA-q3rg-xx5v-4mxh",
+      "16249946aea0db8a74748909d65c94742482dcb7": "Merge pull request from GHSA-q3rg-xx5v-4mxh"
+    },
+    "GHSA-5FQ7-3P3J-9VRF": {
+      "e292a28933c390745bbce78cdc87d69c7db82354": "Merge pull request from GHSA-5fq7-3p3j-9vrf",
+      "943792c187392dc0a0f0b4e34dae5ddbc5c169b3": "Merge pull request from GHSA-5fq7-3p3j-9vrf",
+      "3ea4275ae3b7dc2b75e7a2db09b13576b49cec7a": "Merge pull request from GHSA-5fq7-3p3j-9vrf"
+    },
+    "CVE-2023-51774": {
+      "653ce43abe0a928d944a15c433d2c8324f9b5e2a": "Update `json-jwt` gem to fix CVE-2023-51774 (#29520)"
+    },
+    "GHSA-JHRQ-QVRM-QR36": {
+      "9fee5e852669e26f970e278021302e1a203fc022": "Merge pull request from GHSA-jhrq-qvrm-qr36\n\n* Fix insufficient Content-Type checking of fetched ActivityStreams objects\n\n* Allow JSON-LD documents with multiple profiles",
+      "c397c1a9e3090a0e879c15cafd48d5f1414b6836": "Merge pull request from GHSA-jhrq-qvrm-qr36\n\n* Fix insufficient Content-Type checking of fetched ActivityStreams objects\n\n* Allow JSON-LD documents with multiple profiles",
+      "c78c003272b6ce3276a86b5da511ff99fd5436b7": "Merge pull request from GHSA-jhrq-qvrm-qr36\n\n* Fix insufficient Content-Type checking of fetched ActivityStreams objects\n\n* Allow JSON-LD documents with multiple profiles",
+      "a07fff079b184435b156cd9d4fb155cf02694fe9": "Merge pull request from GHSA-jhrq-qvrm-qr36\n\n* Fix insufficient Content-Type checking of fetched ActivityStreams objects\n\n* Allow JSON-LD documents with multiple profiles",
+      "15de5202012a2f9c4417724987e54bc885051c0d": "Merge pull request from GHSA-jhrq-qvrm-qr36\n\n* Fix insufficient Content-Type checking of fetched ActivityStreams objects\n\n* Allow JSON-LD documents with multiple profiles"
+    },
+    "GHSA-VM39-J3VX-PCH3": {
+      "b31af34c9716338e4a32a62cc812d1ca59e88d15": "Merge pull request from GHSA-vm39-j3vx-pch3\n\n* Prevent different identities from a same SSO provider from accessing a same account\n\n* Lock auth provider changes behind `ALLOW_UNSAFE_AUTH_PROVIDER_REATTACH=true`\n\n* Rename methods to avoid confusion between OAuth and OmniAuth",
+      "4a57e44809e33a8050c0062a244c351ab0871c71": "Merge pull request from GHSA-vm39-j3vx-pch3\n\n* Prevent different identities from a same SSO provider from accessing a same account\n\n* Lock auth provider changes behind `ALLOW_UNSAFE_AUTH_PROVIDER_REATTACH=true`\n\n* Rename methods to avoid confusion between OAuth and OmniAuth",
+      "1f0e040cb821d553e78387eb538059c68206c55e": "Merge pull request from GHSA-vm39-j3vx-pch3\n\n* Prevent different identities from a same SSO provider from accessing a same account\n\n* Lock auth provider changes behind `ALLOW_UNSAFE_AUTH_PROVIDER_REATTACH=true`\n\n* Rename methods to avoid confusion between OAuth and OmniAuth",
+      "6f36b633a7545a2cbbe5f28dc5c8e512aeb98ea9": "Merge pull request from GHSA-vm39-j3vx-pch3\n\n* Prevent different identities from a same SSO provider from accessing a same account\n\n* Lock auth provider changes behind `ALLOW_UNSAFE_AUTH_PROVIDER_REATTACH=true`\n\n* Rename methods to avoid confusion between OAuth and OmniAuth",
+      "f1700523f15cd714fbb05b4f277a6feb40ab8e4b": "Merge pull request from GHSA-vm39-j3vx-pch3\n\n* Prevent different identities from a same SSO provider from accessing a same account\n\n* Lock auth provider changes behind `ALLOW_UNSAFE_AUTH_PROVIDER_REATTACH=true`\n\n* Rename methods to avoid confusion between OAuth and OmniAuth"
+    },
+    "GHSA-3FJR-858R-92RW": {
+      "b1ed009c65802b70c9b780f3c7c3a866cba72478": "Merge pull request from GHSA-3fjr-858r-92rw\n\n* Fix insufficient origin validation\n\n* Bump version to v3.5.17",
+      "befd534eb832feedca401f7dd2cb9225d4599213": "Merge pull request from GHSA-3fjr-858r-92rw\n\n* Fix insufficient origin validation\n\n* Bump version to v4.0.13",
+      "5799bc4af76813294a9eee8164d64a96612c0c0d": "Merge pull request from GHSA-3fjr-858r-92rw\n\n* Fix insufficient origin validation\n\n* Bump version to v4.1.13",
+      "a6641f828b9e6f5806be01754318279c2532ae82": "Merge pull request from GHSA-3fjr-858r-92rw\n\n* Fix insufficient origin validation\n\n* Bump version to v4.2.5",
+      "ed36f7beaaa3526ef50f40caec9529d75926b0bd": "Merge pull request from GHSA-3fjr-858r-92rw",
+      "1726085db5cd73dd30953da858f9887bcc90b958": "Merge pull request from GHSA-3fjr-858r-92rw\n\n* Fix insufficient origin validation\n\n* Bump version to 4.3.0-alpha.1"
+    },
+    "CVE-2023-26141": {
+      "a011d3a7c6f44e744c96f12600bd34435282be7d": "Ignore CVE-2023-26141 (Sidekiq) from bundler audit (#27037)"
+    },
+    "GHSA-V3XF-C9QF-J667": {
+      "eeab3560fc0516070b3fb97e089b15ecab1938c8": "Merge pull request from GHSA-v3xf-c9qf-j667",
+      "48ee3ae13de9125beaee726ac737a770a5160961": "Merge pull request from GHSA-v3xf-c9qf-j667",
+      "9ae857c035c9346c1498ea64e0c4ef7ffc0ca11c": "Merge pull request from GHSA-v3xf-c9qf-j667",
+      "9deb1781269fd817c930d38f916672bec3d566a8": "Merge pull request from GHSA-v3xf-c9qf-j667"
+    },
+    "GHSA-2693-XR3M-JHQR": {
+      "ff32475f5f4a84ebf9619e7eef5bf8b4c075d0e2": "Merge pull request from GHSA-2693-xr3m-jhqr",
+      "5f9511c389041570d21c383ce07dd2786df9cc2d": "Merge pull request from GHSA-2693-xr3m-jhqr",
+      "9fa89dbdcb26bd0e72c575f54290a6a57d6bdd77": "Merge pull request from GHSA-2693-xr3m-jhqr"
+    },
+    "GHSA-HCQF-FW2R-52G4": {
+      "94893cf24fc95b32cc7a756262acbe008c20a9d2": "Merge pull request from GHSA-hcqf-fw2r-52g4\n\n* Revert \"Fix request URL normalisation for bare domain and 8-bit characters (#26285)\"\n\nThis reverts commit 8891d8945d837f0da16a3a5aa2dc9783e39b0acd.\n\n* Revert \"Do not normalize URL before fetching it (#26219)\"\n\nThis reverts commit fd284311e79854d6bc2901a9d9363ba9e7e00513."
+    },
+    "GHSA-55J9-C3MP-6FCQ": {
+      "2d42175ef01a75efd6e2e69b24adb66c75d27db0": "Merge pull request from GHSA-55j9-c3mp-6fcq",
+      "32ebeed59ba424732130073474fe03699efe07fc": "Merge pull request from GHSA-55j9-c3mp-6fcq",
+      "610731b03dfcadd887078cb0399f4e514aa1931c": "Merge pull request from GHSA-55j9-c3mp-6fcq",
+      "ca4b23bf0d936f09f0bf60ab1055f6c2f0373dd9": "Merge pull request from GHSA-55j9-c3mp-6fcq"
+    },
+    "GHSA-9PXV-6QVF-PJWC": {
+      "3af396e561b20f67188a946b97cf77b97435b056": "Merge pull request from GHSA-9pxv-6qvf-pjwc\n\n* Fix timeout handling of outbound HTTP requests\n\n* Use CLOCK_MONOTONIC instead of Time.now",
+      "e75ad1de0f95f38b45748cafb1212560fe7587f5": "Merge pull request from GHSA-9pxv-6qvf-pjwc\n\n* Fix timeout handling of outbound HTTP requests\n\n* Use CLOCK_MONOTONIC instead of Time.now",
+      "32e5a9f053d4d59cd7cd782a889055295554a697": "Merge pull request from GHSA-9pxv-6qvf-pjwc\n\n* Fix timeout handling of outbound HTTP requests\n\n* Use CLOCK_MONOTONIC instead of Time.now",
+      "c5929798bf7e56cc2c79b15bed0c4692ded3dcb6": "Merge pull request from GHSA-9pxv-6qvf-pjwc\n\n* Fix timeout handling of outbound HTTP requests\n\n* Use CLOCK_MONOTONIC instead of Time.now"
+    },
+    "GHSA-9928-3CP5-93FM": {
+      "2119aadf0af370d11983926e4060f96e19e9c770": "Merge pull request from GHSA-9928-3cp5-93fm\n\n* Fix attachments getting processed despite failing content-type validation\n\n* Add a restrictive ImageMagick security policy tailored for Mastodon\n\n* Fix misdetection of MP3 files with large cover art\n\n* Reject unprocessable audio/video files instead of keeping them unchanged",
+      "0aa0b71f2cae9e35cff613b13d05ee3aeaf9f944": "Merge pull request from GHSA-9928-3cp5-93fm\n\n* Fix attachments getting processed despite failing content-type validation\n\n* Add a restrictive ImageMagick security policy tailored for Mastodon\n\n* Fix misdetection of MP3 files with large cover art\n\n* Reject unprocessable audio/video files instead of keeping them unchanged",
+      "987f9099947fdcd71e79d4908cdc4373eca92a85": "Merge pull request from GHSA-9928-3cp5-93fm\n\n* Fix attachments getting processed despite failing content-type validation\n\n* Add a restrictive ImageMagick security policy tailored for Mastodon\n\n* Fix misdetection of MP3 files with large cover art\n\n* Reject unprocessable audio/video files instead of keeping them unchanged",
+      "dc8f1fbd976ae544720a4e07120d9a91b2722440": "Merge pull request from GHSA-9928-3cp5-93fm\n\n* Fix attachments getting processed despite failing content-type validation\n\n* Add a restrictive ImageMagick security policy tailored for Mastodon\n\n* Fix misdetection of MP3 files with large cover art\n\n* Reject unprocessable audio/video files instead of keeping them unchanged"
+    },
+    "GHSA-CCM4-VGCC-73HP": {
+      "102ed6e8ca10257ee06b78af057ef3393eda78b4": "Merge pull request from GHSA-ccm4-vgcc-73hp\n\n* Tighten allowed HTML in oEmbed-based preview cards\n\n* Sanitize preview cards at render time\n\n* Add `sandbox` attribute to preview card iframes",
+      "c4f2609f7a604daef1648e164ef8181d858bd058": "Merge pull request from GHSA-ccm4-vgcc-73hp\n\n* Tighten allowed HTML in oEmbed-based preview cards\n\n* Sanitize preview cards at render time\n\n* Add `sandbox` attribute to preview card iframes",
+      "c02fa93c578d6578f39de689752c02dd92f3b079": "Merge pull request from GHSA-ccm4-vgcc-73hp\n\n* Tighten allowed HTML in oEmbed-based preview cards\n\n* Sanitize preview cards at render time\n\n* Add `sandbox` attribute to preview card iframes",
+      "6d8e0fae3e96f3cf4febe03fa7fcf5b95ff761b2": "Merge pull request from GHSA-ccm4-vgcc-73hp\n\n* Tighten allowed HTML in oEmbed-based preview cards\n\n* Sanitize preview cards at render time\n\n* Add `sandbox` attribute to preview card iframes"
+    },
+    "CVE-2023-28853": {
+      "b9f271364e8be91e822fc621c0d99cdd66a7acf1": "Fix unescaped user input in LDAP query (#24379)\n\nFix CVE-2023-28853",
+      "05c45e9eebf97ec5412f39d7b9e2a8a7c49d2d41": "Fix unescaped user input in LDAP query (#24379)\n\nFix CVE-2023-28853",
+      "55144262d054a52b76baa9d077e235e5c61fac37": "Fix unescaped user input in LDAP query (#24379)\n\nFix CVE-2023-28853"
+    },
+    "CVE-2023-22626": {
+      "9b795a25cd7a014d8c08cc213031b55dff83bb69": "fix(pghero): update because CVE-2023-22626 (#23190)\n\nThere is a vulnerability\r\n[CVE-2023-22626](https://github.com/advisories/GHSA-vf99-xw26-86g5)\r\n\r\n```\r\nName: pghero\r\nVersion: 2.8.3\r\nCVE: CVE-2023-22626\r\nGHSA: GHSA-vf99-xw26-86g5\r\nCriticality: High\r\nURL: https://github.com/ankane/pghero/issues/439\r\nTitle: Information Disclosure Through EXPLAIN Feature\r\nSolution: upgrade to '>= 3.1.0'\r\n```"
+    },
+    "GHSA-VF99-XW26-86G5": {
+      "9b795a25cd7a014d8c08cc213031b55dff83bb69": "fix(pghero): update because CVE-2023-22626 (#23190)\n\nThere is a vulnerability\r\n[CVE-2023-22626](https://github.com/advisories/GHSA-vf99-xw26-86g5)\r\n\r\n```\r\nName: pghero\r\nVersion: 2.8.3\r\nCVE: CVE-2023-22626\r\nGHSA: GHSA-vf99-xw26-86g5\r\nCriticality: High\r\nURL: https://github.com/ankane/pghero/issues/439\r\nTitle: Information Disclosure Through EXPLAIN Feature\r\nSolution: upgrade to '>= 3.1.0'\r\n```"
+    },
+    "CVE-2022-24307": {
+      "63c9d2bc2881391496d372cc5166afb1662b841a": "Add tests for CVE-2022-24307 (#17733)\n\nFollow-up to #17426"
+    },
+    "CVE-2021-44532": {
+      "aa45404578f3f4bc61742b0bda7111b520491100": "Bump NODE_VER to 16.13.2, to solve security issues (#17399)\n\nFixes CVE-2021-44532, CVE-2021-44533, and CVE-2022-21824.\r\nSee: https://nodejs.org/en/blog/vulnerability/jan-2022-security-releases/"
+    },
+    "CVE-2021-44533": {
+      "aa45404578f3f4bc61742b0bda7111b520491100": "Bump NODE_VER to 16.13.2, to solve security issues (#17399)\n\nFixes CVE-2021-44532, CVE-2021-44533, and CVE-2022-21824.\r\nSee: https://nodejs.org/en/blog/vulnerability/jan-2022-security-releases/"
+    },
+    "CVE-2022-21824": {
+      "aa45404578f3f4bc61742b0bda7111b520491100": "Bump NODE_VER to 16.13.2, to solve security issues (#17399)\n\nFixes CVE-2021-44532, CVE-2021-44533, and CVE-2022-21824.\r\nSee: https://nodejs.org/en/blog/vulnerability/jan-2022-security-releases/"
+    },
+    "CVE-2021-28965": {
+      "3f8d0de82e15f80f1dfbd4d93f721b2853538774": "Upgrade Ruby to 2.7.3 (#16004)\n\n* Upgrade Ruby to 2.7.3\r\n\r\nhttps://www.ruby-lang.org/en/news/2021/04/05/ruby-2-7-3-released/\r\nincludes security fixes to\r\n- CVE-2021-28965: XML round-trip vulnerability in REXML\r\n- CVE-2021-28966: Path traversal in Tempfile on Windows\r\n\r\n* Update rexml to 3.2.5\r\n\r\nhttps://www.ruby-lang.org/en/news/2021/04/05/xml-round-trip-vulnerability-in-rexml-cve-2021-28965/"
+    },
+    "CVE-2021-28966": {
+      "3f8d0de82e15f80f1dfbd4d93f721b2853538774": "Upgrade Ruby to 2.7.3 (#16004)\n\n* Upgrade Ruby to 2.7.3\r\n\r\nhttps://www.ruby-lang.org/en/news/2021/04/05/ruby-2-7-3-released/\r\nincludes security fixes to\r\n- CVE-2021-28965: XML round-trip vulnerability in REXML\r\n- CVE-2021-28966: Path traversal in Tempfile on Windows\r\n\r\n* Update rexml to 3.2.5\r\n\r\nhttps://www.ruby-lang.org/en/news/2021/04/05/xml-round-trip-vulnerability-in-rexml-cve-2021-28965/"
+    },
+    "CVE-2017-17742": {
+      "f464f98fd3b8ef33b3afa5acf09e829c046134de": "Update Ruby to version 2.4.4 (#6964)\n\nhttps://www.ruby-lang.org/en/news/2018/03/28/ruby-2-4-4-released/\r\n\r\n> This release includes some bug fixes and some security fixes.\r\n>\r\n> - CVE-2017-17742: HTTP response splitting in WEBrick\r\n> - CVE-2018-6914: Unintentional file and directory creation with directory traversal in tempfile and tmpdir\r\n> - CVE-2018-8777: DoS by large request in WEBrick\r\n> - CVE-2018-8778: Buffer under-read in String#unpack\r\n> - CVE-2018-8779: Unintentional socket creation by poisoned NUL byte in UNIXServer and UNIXSocket\r\n> - CVE-2018-8780: Unintentional directory traversal by poisoned NUL byte in Dir\r\n> - Multiple vulnerabilities in RubyGems"
+    },
+    "CVE-2018-6914": {
+      "f464f98fd3b8ef33b3afa5acf09e829c046134de": "Update Ruby to version 2.4.4 (#6964)\n\nhttps://www.ruby-lang.org/en/news/2018/03/28/ruby-2-4-4-released/\r\n\r\n> This release includes some bug fixes and some security fixes.\r\n>\r\n> - CVE-2017-17742: HTTP response splitting in WEBrick\r\n> - CVE-2018-6914: Unintentional file and directory creation with directory traversal in tempfile and tmpdir\r\n> - CVE-2018-8777: DoS by large request in WEBrick\r\n> - CVE-2018-8778: Buffer under-read in String#unpack\r\n> - CVE-2018-8779: Unintentional socket creation by poisoned NUL byte in UNIXServer and UNIXSocket\r\n> - CVE-2018-8780: Unintentional directory traversal by poisoned NUL byte in Dir\r\n> - Multiple vulnerabilities in RubyGems"
+    },
+    "CVE-2018-8777": {
+      "f464f98fd3b8ef33b3afa5acf09e829c046134de": "Update Ruby to version 2.4.4 (#6964)\n\nhttps://www.ruby-lang.org/en/news/2018/03/28/ruby-2-4-4-released/\r\n\r\n> This release includes some bug fixes and some security fixes.\r\n>\r\n> - CVE-2017-17742: HTTP response splitting in WEBrick\r\n> - CVE-2018-6914: Unintentional file and directory creation with directory traversal in tempfile and tmpdir\r\n> - CVE-2018-8777: DoS by large request in WEBrick\r\n> - CVE-2018-8778: Buffer under-read in String#unpack\r\n> - CVE-2018-8779: Unintentional socket creation by poisoned NUL byte in UNIXServer and UNIXSocket\r\n> - CVE-2018-8780: Unintentional directory traversal by poisoned NUL byte in Dir\r\n> - Multiple vulnerabilities in RubyGems"
+    },
+    "CVE-2018-8778": {
+      "f464f98fd3b8ef33b3afa5acf09e829c046134de": "Update Ruby to version 2.4.4 (#6964)\n\nhttps://www.ruby-lang.org/en/news/2018/03/28/ruby-2-4-4-released/\r\n\r\n> This release includes some bug fixes and some security fixes.\r\n>\r\n> - CVE-2017-17742: HTTP response splitting in WEBrick\r\n> - CVE-2018-6914: Unintentional file and directory creation with directory traversal in tempfile and tmpdir\r\n> - CVE-2018-8777: DoS by large request in WEBrick\r\n> - CVE-2018-8778: Buffer under-read in String#unpack\r\n> - CVE-2018-8779: Unintentional socket creation by poisoned NUL byte in UNIXServer and UNIXSocket\r\n> - CVE-2018-8780: Unintentional directory traversal by poisoned NUL byte in Dir\r\n> - Multiple vulnerabilities in RubyGems"
+    },
+    "CVE-2018-8779": {
+      "f464f98fd3b8ef33b3afa5acf09e829c046134de": "Update Ruby to version 2.4.4 (#6964)\n\nhttps://www.ruby-lang.org/en/news/2018/03/28/ruby-2-4-4-released/\r\n\r\n> This release includes some bug fixes and some security fixes.\r\n>\r\n> - CVE-2017-17742: HTTP response splitting in WEBrick\r\n> - CVE-2018-6914: Unintentional file and directory creation with directory traversal in tempfile and tmpdir\r\n> - CVE-2018-8777: DoS by large request in WEBrick\r\n> - CVE-2018-8778: Buffer under-read in String#unpack\r\n> - CVE-2018-8779: Unintentional socket creation by poisoned NUL byte in UNIXServer and UNIXSocket\r\n> - CVE-2018-8780: Unintentional directory traversal by poisoned NUL byte in Dir\r\n> - Multiple vulnerabilities in RubyGems"
+    },
+    "CVE-2018-8780": {
+      "f464f98fd3b8ef33b3afa5acf09e829c046134de": "Update Ruby to version 2.4.4 (#6964)\n\nhttps://www.ruby-lang.org/en/news/2018/03/28/ruby-2-4-4-released/\r\n\r\n> This release includes some bug fixes and some security fixes.\r\n>\r\n> - CVE-2017-17742: HTTP response splitting in WEBrick\r\n> - CVE-2018-6914: Unintentional file and directory creation with directory traversal in tempfile and tmpdir\r\n> - CVE-2018-8777: DoS by large request in WEBrick\r\n> - CVE-2018-8778: Buffer under-read in String#unpack\r\n> - CVE-2018-8779: Unintentional socket creation by poisoned NUL byte in UNIXServer and UNIXSocket\r\n> - CVE-2018-8780: Unintentional directory traversal by poisoned NUL byte in Dir\r\n> - Multiple vulnerabilities in RubyGems"
+    },
+    "CVE-2018-8048": {
+      "d97903a3587e137316adbd8a9f0460552b5bfbcd": "Update sanitize and loofah (#6855)\n\nFixes CVE-2018-8048 and CVE-2018-3740, two medium-severity XSS\r\nvulnerabilities present in these gems when built against\r\nlibxml2 >= 2.9.2."
+    },
+    "CVE-2018-3740": {
+      "d97903a3587e137316adbd8a9f0460552b5bfbcd": "Update sanitize and loofah (#6855)\n\nFixes CVE-2018-8048 and CVE-2018-3740, two medium-severity XSS\r\nvulnerabilities present in these gems when built against\r\nlibxml2 >= 2.9.2."
+    },
+    "CVE-2017-11428": {
+      "e4db0f28d29e391108154d57606f3cb2c48d67e2": "Update omniauth-saml to 1.10 (#6587)\n\nFixes CVE-2017-11428"
+    },
+    "CVE-2017-0889": {
+      "f4bd51da1e4236fce5d46d76136bb2ef4a0e51ed": "Upgrade Paperclip > 5.2.1 (#6404)\n\nMitigation for CVE-2017-0889.\r\n\r\nhttps://www.cvedetails.com/cve/CVE-2017-0889/\r\nhttps://medium.com/in-the-weeds/all-about-paperclips-cve-2017-0889-server-side-request-forgery-ssrf-vulnerability-8cb2b1c96fe8"
+    }
+  }
+}

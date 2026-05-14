@@ -1,0 +1,15 @@
+{
+  "vcs_url": "https://github.com/bcgit/bc-java",
+  "vulnerabilities": {
+    "CVE-2018-5382": {
+      "c014f78b148685527c5646b1204cd7f595005afa": "updates from FIPS API\nadded ref to CVE-2018-5382 in releasenotes.",
+      "4534f41ab3ce581d1bb69d64276ab60d0df49a7e": "updates from FIPS API\nadded ref to CVE-2018-5382 in releasenotes.",
+      "15b91d6e88441348d3d0b387528e470be46e759f": "updates from FIPS API\nadded ref to CVE-2018-5382 in releasenotes."
+    },
+    "CVE-2017-15361": {
+      "672fd2ae98019ddeb3afebfdb821e5531496d57f": "Add RSA test case for CVE-2017-15361 vulnerability",
+      "9d1457db79f4a24fcca7060c7f220cd44d365a84": "Add RSA test case for CVE-2017-15361 vulnerability",
+      "736e3965206edf2995289fff5f8c99c7f2409d8a": "Add RSA test case for CVE-2017-15361 vulnerability"
+    }
+  }
+}

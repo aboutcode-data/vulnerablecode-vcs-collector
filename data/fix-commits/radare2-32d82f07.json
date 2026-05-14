@@ -1,0 +1,23 @@
+{
+  "vcs_url": "https://github.com/radareorg/radare2",
+  "vulnerabilities": {
+    "CVE-2015-8865": {
+      "db6decd4bc90bb4a492129e70803136fa184f470": "Fix memory corruption in libmagic - CVE-2015-8865 ##crash\n\n* When the continuation level jumps by more than 20 in a single step"
+    },
+    "CVE-2024-56737": {
+      "1f45f87c99281aba30cb1d4eb59bdcbfaf93df58": "CVE-2024-56737 - Fix buffer overflow in the HFS parser from grub2 ##crash"
+    },
+    "CVE-2022-0559": {
+      "3345147916b9bb3da225248d571cdbac690c0c4d": "Properly fix the UAF in r_io_bank_map_add_top ##crash\n\n* Associated with the CVE-2022-0559\r\n* Reported by alkyne Choi via huntr.dev"
+    },
+    "CVE-2019-19590": {
+      "204b7317beb1ede1ba352b13f7ebb09efff1c55d": "Blindfix for #15543 - aka CVE-2019-19590"
+    },
+    "CVE-2019-14745": {
+      "5411543a310a470b1257fb93273cdd6e8dfcb3af": "More fixes for the CVE-2019-14745"
+    },
+    "CVE-2015-2331": {
+      "3614547d74a466e2eb4e1b0a0987834dcf795a4e": "Fix CVE-2015-2331 in libzip"
+    }
+  }
+}

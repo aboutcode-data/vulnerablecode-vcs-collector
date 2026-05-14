@@ -1,0 +1,29 @@
+{
+  "vcs_url": "https://github.com/apache/atlas",
+  "vulnerabilities": {
+    "CVE-2024-38821": {
+      "90056d9ac490dbc41c035b2b6bcc66fe42271909": "ATLAS-4915: Upgrade Spring Security to 5.7.13/5.8.15/6.2.7/6.3.4+ due to CVE-2024-38821\n\nSigned-off-by: Radhika Kundam <radhika.kundam@gmail.com>\n(cherry picked from commit 63b396a5ff42cea01b7d89a4c20a59f7e87d6be1)",
+      "63b396a5ff42cea01b7d89a4c20a59f7e87d6be1": "ATLAS-4915: Upgrade Spring Security to 5.7.13/5.8.15/6.2.7/6.3.4+ due to CVE-2024-38821\n\nSigned-off-by: Radhika Kundam <radhika.kundam@gmail.com>"
+    },
+    "CVE-2023-44487": {
+      "04645652d7918ad96911fde06a06b6a142befa64": "ATLAS-4806: Upgrade netty to 4.1.100.Final due to CVE-2023-44487\n\nSigned-off-by: radhikakundam <radhikakundam@apache.org>\n(cherry picked from commit f9df3293d74e10894ab4730ad2b8ccc593d8bc04)",
+      "f9df3293d74e10894ab4730ad2b8ccc593d8bc04": "ATLAS-4806: Upgrade netty to 4.1.100.Final due to CVE-2023-44487\n\nSigned-off-by: radhikakundam <radhikakundam@apache.org>"
+    },
+    "CVE-2023-3635": {
+      "60b861512b27126932ad4298d675d1006a290eee": "ATLAS-4801: Atlas - Upgrade Okio to 3.4.0 due to CVE-2023-3635\n\nSigned-off-by: radhikakundam <radhikakundam@apache.org>\n(cherry picked from commit 830521b846619217bdad563f8b69ba5dd58a35d1)",
+      "830521b846619217bdad563f8b69ba5dd58a35d1": "ATLAS-4801: Atlas - Upgrade Okio to 3.4.0 due to CVE-2023-3635\n\nSigned-off-by: radhikakundam <radhikakundam@apache.org>"
+    },
+    "CVE-2022-46751": {
+      "bd35d3fd1ddb98920917195ef5129118dc99bd11": "ATLAS-4800: Atlas - Upgrade Apache Ivy to 2.5.2 due to CVE-2022-46751\n\nSigned-off-by: radhikakundam <radhikakundam@apache.org>\n(cherry picked from commit 7e1286266ebd876c78d9130e057e25d58ebed052)",
+      "7e1286266ebd876c78d9130e057e25d58ebed052": "ATLAS-4800: Atlas - Upgrade Apache Ivy to 2.5.2 due to CVE-2022-46751\n\nSigned-off-by: radhikakundam <radhikakundam@apache.org>"
+    },
+    "CVE-2019-10086": {
+      "4d050f0a205eb9b0394aceaae0e040cb5462aa2d": "ATLAS-4002 : Upgrade commons-beanutils to 1.9.4 due to CVE-2019-10086\n\n(cherry picked from commit f3faad547380ac786427d84c95244de502781360)",
+      "f3faad547380ac786427d84c95244de502781360": "ATLAS-4002 : Upgrade commons-beanutils to 1.9.4 due to CVE-2019-10086"
+    },
+    "CVE-2017-18640": {
+      "d330da8763242faa955bb665cb74c96c5b34e7a2": "ATLAS-3940 : Upgrade snakeyaml to a version without CVE-2017-18640 (#110)\n\n(cherry picked from commit d555c02ba283312e2d9b014b5d68a17da3661525)",
+      "d555c02ba283312e2d9b014b5d68a17da3661525": "ATLAS-3940 : Upgrade snakeyaml to a version without CVE-2017-18640 (#110)"
+    }
+  }
+}

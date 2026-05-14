@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/caolan/async",
+  "vulnerabilities": {
+    "CVE-2021-43138": {
+      "8f7f90342a6571ba1c197d747ebed30c368096d2": "Fix prototype pollution vulnerability (#1828)\n\n(cherry picked from commit e1ecdbf79264f9ab488c7799f4c76996d5dca66d)\r\n\r\nConflicts:\r\n  lib/internal/iterator.js\r\n  test/mapValues.js\r\n\r\nNOTE(mriedem): The conflicts are due to:\r\n\r\n- e4751178540a3c6e64598b93977481ec599704d2 for iterator.js;\r\n  resolution was trivial\r\n- bd86f42a7d71552d9a502b50235ffc090a1b4a98 for mapValues.js;\r\n  resolution was just copying the test change into the old\r\n  test file before it was moved\r\n\r\nThis is a 2.x series backport for\r\nhttps://nvd.nist.gov/vuln/detail/CVE-2021-43138.\r\n\r\nCo-authored-by: Alexander Early <alexander.early@gmail.com>"
+    }
+  }
+}

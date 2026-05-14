@@ -1,0 +1,8 @@
+{
+  "vcs_url": "https://github.com/madler/zlib",
+  "vulnerabilities": {
+    "CVE-2014-9485": {
+      "14a5f8f266c16c87ab6c086fc52b770b27701e01": "Neutralize zip file traversal attacks in miniunz.\n\nArchive formats such as .zip files are generally susceptible to\nso-called \"traversal attacks\". This allows an attacker to craft\nan archive that writes to unexpected locations of the file system\n(e.g., /etc/shadow) if an unspecting root user were to unpack a\nmalicious archive.\n\nThis patch neutralizes absolute paths such as /tmp/moo and deeply\nrelative paths such as dummy/../../../../../../../../../../tmp/moo\n\nThe Debian project requested CVE-2014-9485 be allocated for the\nfirst identified weakness. The fix was incomplete, resulting in a\nrevised patch applied here. Since there wasn't an updated version\nreleased by Debian with the incomplete fix, I suggest we use this\nCVE to identify both issues.\n\nLink: https://security.snyk.io/research/zip-slip-vulnerability\nLink: https://bugs.debian.org/774321\nLink: https://bugs.debian.org/776831\nLink: https://nvd.nist.gov/vuln/detail/CVE-2014-9485\nReported-by: Jakub Wilk <jwilk@debian.org>\nFixed-by: Michael Gilbert <mgilbert@debian.org>"
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "vcs_url": "https://github.com/apache/cassandra",
+  "vulnerabilities": {
+    "CVE-2025-67735": {
+      "60c7f05138cea101b3b3a24c7b918a558b00b8c0": "Cleanup of dependency-check-suppressions.xml, suppressing CVE-2025-67735\n\npatch by Stefan Miklosovic; reviewed by Michael Semb Wever for CASSANDRA-21159"
+    },
+    "CVE-2025-25193": {
+      "73f0e2e4017397bfdcf16b7e333c1279ada57c74": "Suppress CVE-2025-25193\n\npatch by Stefan Miklosovic; reviewed by Michael Semb Wever, Brandon Williams for CASSANDRA-20504"
+    },
+    "CVE-2024-12801": {
+      "d509d2fcbe70d50013a9982f97832b3049d681f2": "Suppress CVE-2024-12801\n\nPatch by brandonwilliams; reviewed by smiklosovic for CASSANDRA-20412",
+      "4a66f68cba8b8b3c27c387eac88463579115770f": "Suppress CVE-2024-12801\n\nPatch by brandonwilliams; reviewed by smiklosovic for CASSANDRA-20412"
+    },
+    "CVE-2024-12798": {
+      "0e0ff79dd6b1b10bafcef93ab2437d707716716f": "Suppress CVE-2024-12798\n\nPatch by brandonwilliams; reviewed by smiklosovic for CASSANDRA-20408",
+      "393901a85842b952a25e2c2d6dfc4de6d0d59c2c": "Suppress CVE-2024-12798\n\nPatch by brandonwilliams; reviewed by smiklosovic for CASSANDRA-20408"
+    },
+    "CVE-2024-45772": {
+      "916486b34e916afe1b22c3370f8c3c7710d927ef": "Merge branch 'cassandra-5.0' into trunk\n\n* cassandra-5.0:\n  Suppress CVE-2024-45772 lucene-core-9.7.0.jar",
+      "3550b88307e87fa6d980f321359ccfcc6067b5a3": "Suppress CVE-2024-45772 lucene-core-9.7.0.jar\n\nCVE in Lucene Replicator which the project doesn't use.\n\n patch by Mick Semb Wever; reviewed by Brandon Williams, Caleb Rackliffe for CASSANDRA-20024"
+    },
+    "CVE-2023-6481": {
+      "a92de92b8c7628d9fb5085a4549ce9264ec05097": "Suppress CVE-2023-6481\n\nPatch by brandonwilliams, reviewed by smiklosovic for CASSANDRA-19184"
+    },
+    "CVE-2023-6378": {
+      "a1421ec324e4bf8ab46df2a72af298f9286e0d59": "Suppress CVE-2023-6378\n\nPatch by brandonwilliams, reviewed by smiklosovic for CASSANDRA-19142"
+    },
+    "CVE-2023-44487": {
+      "5bf1d2f8d5b6b37b8f6e2718f85dec068ceb7206": "Suppress CVE-2023-44487\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18943"
+    },
+    "CVE-2023-34462": {
+      "7150cc5b99aafa6194dbaa5b8c73dc82e33c5279": "Suppress CVE-2023-34462\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18649"
+    },
+    "CVE-2022-45688": {
+      "d302b837b2b9a6854a98f83ecf687b08a58562fc": "Suppress CVE-2022-45688\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18643",
+      "30639d8852825c14a98fb3a7ba46c89b559d56bf": "Suppress CVE-2022-45688\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18389",
+      "98dd5058d52165afb703b22cc2dc8a2b7262203b": "Suppress CVE-2022-45688\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18389",
+      "99cd33e28faed1fb2cad0acf437e0b509c769e5e": "Suppress CVE-2022-45688\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18389",
+      "d41e69a6527fd42d0c17ac4f5a0ecb81d00837ca": "Suppress CVE-2022-45688\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18389",
+      "f9364e4f44b0d37905713a76d088218645ab72fb": "Suppress CVE-2022-45688\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18389"
+    },
+    "CVE-2023-35116": {
+      "de7b1584f888eb6acc7d10602e302475169472bb": "Suppress CVE-2023-35116\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18630"
+    },
+    "CVE-2023-34455": {
+      "d99bccd6493ceb7aed4e05b05f81913ea876d855": "Suppress CVE-2023-34455, CVE-2023-34454, CVE-2023-34453\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18608"
+    },
+    "CVE-2023-34454": {
+      "d99bccd6493ceb7aed4e05b05f81913ea876d855": "Suppress CVE-2023-34455, CVE-2023-34454, CVE-2023-34453\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18608"
+    },
+    "CVE-2023-34453": {
+      "d99bccd6493ceb7aed4e05b05f81913ea876d855": "Suppress CVE-2023-34455, CVE-2023-34454, CVE-2023-34453\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18608"
+    },
+    "CVE-2023-2976": {
+      "e28ef4089ecbc2f64182de0ba5c9e9dea113195b": "Suppress CVE-2023-2976\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18562"
+    },
+    "CVE-2023-2251": {
+      "4a62757624d120a0e493d9d39bcd9bf8282b4f58": "Suppress CVE-2023-2251\n\nPatch by brandonwilliams; reviewed by smiklosovic for CASSANDRA-18497"
+    },
+    "CVE-2022-41915": {
+      "89266aadde0eccacc5551ae2dbd32d5720235d4c": "Suppress CVE-2022-41915\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18147",
+      "fa18ea185233d97b9f2771b1a3a88f46dc1610d4": "Suppress CVE-2022-41915\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18147",
+      "7ad693581bb87e75330c38daf266255dd78cbf6d": "Suppress CVE-2022-41915\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18147"
+    },
+    "CVE-2021-1471": {
+      "9a64be32340829038e4895a667eda025d5219f1b": "Suppress CVE-2021-1471, CVE-2021-3064, CVE-2021-4235"
+    },
+    "CVE-2021-3064": {
+      "9a64be32340829038e4895a667eda025d5219f1b": "Suppress CVE-2021-1471, CVE-2021-3064, CVE-2021-4235"
+    },
+    "CVE-2021-4235": {
+      "9a64be32340829038e4895a667eda025d5219f1b": "Suppress CVE-2021-1471, CVE-2021-3064, CVE-2021-4235"
+    },
+    "CVE-2022-41881": {
+      "fe71dfd7a15ded62b70eee4a2981d54baf35be8d": "Suppress CVE-2022-41881\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18148"
+    },
+    "CVE-2021-37533": {
+      "e0e63f44155a00a540407b402a6cae8480aa2c32": "Suppress CVE-2021-37533\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18146"
+    },
+    "CVE-2022-41854": {
+      "92019df4d8540b384d7fb8655f7c02293f7f7ec1": "Suppress CVE-2022-41854 and similar\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-18083"
+    },
+    "CVE-2019-2684": {
+      "3d4e6944ef11d96858507779b9280f5b9c198ffa": "Suppress CVE-2019-2684\n\nPatch by brandonwilliams; reviewed by smiklosovic for CASSANDRA-17965"
+    },
+    "CVE-2022-42003": {
+      "2e6528542b21a5d79eeba6d22ddc2a289805f98c": "Suppress CVE-2022-42003 and CVE-2022-42004\n\nPatch by brandonwilliams; reviewed by smiklosovic for CASSANDRA-17966"
+    },
+    "CVE-2022-42004": {
+      "2e6528542b21a5d79eeba6d22ddc2a289805f98c": "Suppress CVE-2022-42003 and CVE-2022-42004\n\nPatch by brandonwilliams; reviewed by smiklosovic for CASSANDRA-17966"
+    },
+    "CVE-2022-25857": {
+      "70b0673d85ba67c7c1129d4e50da72ee0d5dc5d9": "Supress CVE-2022-25857 et al for snakeyaml\n\nAlso suppresses CVE-2022-38752, CVE-2022-38751, CVE-2022-38750,\nCVE-2022-25857, CVE-2022-38749\n\nPatch by brandonwilliams; reviewed by smiklosovic for CASSANDRA-17907"
+    },
+    "CVE-2022-38752": {
+      "70b0673d85ba67c7c1129d4e50da72ee0d5dc5d9": "Supress CVE-2022-25857 et al for snakeyaml\n\nAlso suppresses CVE-2022-38752, CVE-2022-38751, CVE-2022-38750,\nCVE-2022-25857, CVE-2022-38749\n\nPatch by brandonwilliams; reviewed by smiklosovic for CASSANDRA-17907"
+    },
+    "CVE-2022-38751": {
+      "70b0673d85ba67c7c1129d4e50da72ee0d5dc5d9": "Supress CVE-2022-25857 et al for snakeyaml\n\nAlso suppresses CVE-2022-38752, CVE-2022-38751, CVE-2022-38750,\nCVE-2022-25857, CVE-2022-38749\n\nPatch by brandonwilliams; reviewed by smiklosovic for CASSANDRA-17907"
+    },
+    "CVE-2022-38750": {
+      "70b0673d85ba67c7c1129d4e50da72ee0d5dc5d9": "Supress CVE-2022-25857 et al for snakeyaml\n\nAlso suppresses CVE-2022-38752, CVE-2022-38751, CVE-2022-38750,\nCVE-2022-25857, CVE-2022-38749\n\nPatch by brandonwilliams; reviewed by smiklosovic for CASSANDRA-17907"
+    },
+    "CVE-2022-38749": {
+      "70b0673d85ba67c7c1129d4e50da72ee0d5dc5d9": "Supress CVE-2022-25857 et al for snakeyaml\n\nAlso suppresses CVE-2022-38752, CVE-2022-38751, CVE-2022-38750,\nCVE-2022-25857, CVE-2022-38749\n\nPatch by brandonwilliams; reviewed by smiklosovic for CASSANDRA-17907"
+    },
+    "CVE-2020-7238": {
+      "5ed63e0a5a01bf7709bb5adc9165ccc6e6d9a7cf": "Suppress CVE-2020-7238\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-17697"
+    },
+    "CVE-2022-24823": {
+      "a482e374356fa401829e5e562460087b1d79927a": "Suppress CVE-2022-24823\n\nPatch by brandonwilliams; reviewed by edimitrova for CASSANDRA-17633"
+    },
+    "CVE-2021-44521": {
+      "fd1f245353584833b8569666c115c6c64755c2c9": "Suppress CVE-2021-44521\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-17492",
+      "592cee30640f7d5ca0fc80cefb1c9dad24a58a81": "Suppress CVE-2021-44521\n\nPatch by brandonwilliams; reviewed by bereng for CASSANDRA-17459",
+      "679740ff487490d7d2fb0bf0d090e955a8092404": "Added CVE-2021-44521 to CHANGES.txt, NEWS.txt\n\npatch by Erick Ramirez; reviewed by Marcus Eriksson, Mick Semb Wever for CASSANDRA-17388"
+    },
+    "CVE-2021-43797": {
+      "f18b432ce6904bd2d9f9d778e2f99715bbe5d413": "Suppress more inapplicables: CVE-2021-43797, CVE-2021-37136, CVE-2021-37137\n\nPatch by brandonwilliams, reviewed by bereng for CASSANDRA-17368"
+    },
+    "CVE-2021-37136": {
+      "f18b432ce6904bd2d9f9d778e2f99715bbe5d413": "Suppress more inapplicables: CVE-2021-43797, CVE-2021-37136, CVE-2021-37137\n\nPatch by brandonwilliams, reviewed by bereng for CASSANDRA-17368"
+    },
+    "CVE-2021-37137": {
+      "f18b432ce6904bd2d9f9d778e2f99715bbe5d413": "Suppress more inapplicables: CVE-2021-43797, CVE-2021-37136, CVE-2021-37137\n\nPatch by brandonwilliams, reviewed by bereng for CASSANDRA-17368"
+    },
+    "CVE-2017-18640": {
+      "e37f766403e6911e5d965a211758387c6ef4c587": "Upgrade to snakeyaml >= 1.26 version for CVE-2017-18640 fix\n\npatch by Rahul Nandi; reviewed by Alex Petrov, David Capwell for CASSANDRA-16150"
+    },
+    "CVE-2018-16888": {
+      "9105dcd99e61537e8d177b41b7d38c5569412230": "Fix Red Hat init script on newer systemd versions\n\nThe fix for systemd CVE-2018-16888 required changes to init scripts, so\nthat PID files end up owned by the \"root\" user.\n\n patch by Mike Kelly; reviewed by Mick Semb Wever for CASSANDRA-15273"
+    },
+    "CVE-2017-5929": {
+      "81ac654ff82f9149bc3265a18bfbdd6fbd2073f0": "Add logback-1.2.3 licenses for CASSANDRA-14183 commit\n\nCVE-2017-5929 Security vulnerability and redefine default log rotation policy.\n\nPatch by Michael Shuler; Reviewed by Ariel Weisberg for CASSANDRA-14183",
+      "c0aa79e5453d64a583ba2197b2ac76d04ecd7020": "CVE-2017-5929 Security vulnerability and redefine default log rotation policy.\n\nPatch by Michael Shuler; Reviewed by Ariel Weisberg for CASSANDRA-14183",
+      "4bbd28a043f15dd6c19de157acb5950319e8c16c": "CVE-2017-5929 Security vulnerability in Logback warning in NEWS.txt\n\nPatch by Ariel Weisberg; Reviewed by Jason Brown for CASSANDRA-14183"
+    }
+  }
+}

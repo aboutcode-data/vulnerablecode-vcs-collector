@@ -1,0 +1,101 @@
+{
+  "vcs_url": "https://github.com/apache/hive",
+  "vulnerabilities": {
+    "GHSA-72HV-8253-57QQ": {
+      "d4d166d51d03ecbb1411f4eb701bb0310786a3f9": "HIVE-29518: Upgrade jackson to 2.18.6 due to GHSA-72hv-8253-57qq (#6385)"
+    },
+    "CVE-2025-58057": {
+      "f12406752b2514aec10a0bfb77359d0ced4ad42c": "HIVE-29253: Bump netty version to 4.1.127.Final due to CVE-2025-58057, CVE-2025-58056 (#6121)\n\nenforced netty version to transitive dependencies"
+    },
+    "CVE-2025-58056": {
+      "f12406752b2514aec10a0bfb77359d0ced4ad42c": "HIVE-29253: Bump netty version to 4.1.127.Final due to CVE-2025-58057, CVE-2025-58056 (#6121)\n\nenforced netty version to transitive dependencies"
+    },
+    "CVE-2023-2976": {
+      "0759352ddddc793c0e717c460f0e08eb3f14c1e9": "HIVE-28751: Upgrade curator version from 5.2.0 to 5.7.1 to fix CVE-2023-2976 (#5640) (Kiran Velumuri, reviewed by Shohei Okumiya)"
+    },
+    "CVE-2023-7272": {
+      "04c1102929b2253ad74272b7d5d8f9a01914620c": "HIVE-28704: Upgrade pac4j core and opensamlv3 and exclude Javax.json to fix CVE-2023-7272 (#5620) (Indhumathi Muthumurugesh, reviewed by Shohei Okumiya)"
+    },
+    "CVE-2020-28487": {
+      "d85b87cfd750623d365d39c73df6d58e1220128a": "HIVE-28496: Address CVE-2020-28487 due to 4.20.0 version of vis.js (#5430)(Kiran Velumuri, reviewed by Shohei Okumiya, Stamatis Zampetakis, Butao Zhang)"
+    },
+    "CVE-2024-1597": {
+      "bbf5d6f0da31de15df0898a150e46d91ab1d332f": "HIVE-28188:Upgrade Postgres to 42.7.3 to target CVE-2024-1597 (#5185)(Devaspati, reviewed by Butao Zhang)"
+    },
+    "CVE-2022-45868": {
+      "9da7488179e7c69d986dbc8a6654a5c3dc6c0210": "HIVE-27501: Upgrade h2database version to 2.2.220 to fix CVE-2022-45868 (Diksha, reviewed by Aman Raj)\n\nSigned-off-by: Sankar Hariappan <sankarh@apache.org>\r\nCloses (#4481)"
+    },
+    "CVE-2023-34455": {
+      "7c83f6babc1a95e7fc26aeaa779d35ce7c91d1c0": "HIVE-27450: Upgrade snappy version to 1.1.10.1 for CVE-2023-34455 (Diksha, reviewed by Aman Raj, Sankar Hariappan)\n\nSigned-off-by: Sankar Hariappan <sankarh@apache.org>\r\nCloses (#4434)"
+    },
+    "CVE-2020-13936": {
+      "8f4e0ab0dcddc29b2870fb1f6eb41b24d1e02f03": "HIVE-25726: Upgrade velocity to 2.3 due to CVE-2020-13936 (Sourabh Goyal via Naveen Gangam)\n\nCo-authored-by: Sourabh Goyal <sourabhg@cloudera.com>\r\n\r\nSigned-off-by: Sankar Hariappan <sankarh@apache.org>\r\nCloses (#4308)",
+      "5ea9a9ca1362e210466193ff733d83685cd01475": "HIVE-25726: Upgrade velocity to 2.3 due to CVE-2020-13936 (Sourabh Goyal via Naveen Gangam)\n\nChange-Id: I067ed469a981a8c23c5e51ad1625dab260f6d5d0",
+      "e50fa5662bbefd8e9e192bd4f109709aeff548e5": "HIVE-25726: Upgrade velocity to 2.3 due to CVE-2020-13936 (Sourabh Goyal via Naveen Gangam)\n\nChange-Id: I067ed469a981a8c23c5e51ad1625dab260f6d5d0"
+    },
+    "CVE-2023-1436": {
+      "96660903706ce0d538e5f80cf679fb200d28f193": "HIVE-27286: Upgrade jettison version to 1.5.4 to address CVE-2023-1436 (#4259) (Shreeya Sand, reviewed by Akshat Mathur)"
+    },
+    "CVE-2022-45693": {
+      "1747bc7b8c58d84f455c95f26f1183a65246f331": "HIVE-27027: Upgrade jettison to 1.5.3 to fix CVE-2022-45693 (Shreeya Sand, reviewed by Pravin Kumar Sinha)"
+    },
+    "CVE-2022-37865": {
+      "7207a62def246b3290f1ece529e65b79012a3578": "HIVE-26753: Upgrade Apache Ivy to 2.5.1 due to CVE-2022-37865, CVE-2022-37866 (#3776)"
+    },
+    "CVE-2022-37866": {
+      "7207a62def246b3290f1ece529e65b79012a3578": "HIVE-26753: Upgrade Apache Ivy to 2.5.1 due to CVE-2022-37865, CVE-2022-37866 (#3776)"
+    },
+    "CVE-2022-41853": {
+      "297f510d3b581c9d4079e42caa28aa84f8486012": "HIVE-26656:Remove hsqldb dependency in hive due to CVE-2022-41853 (Devaspati Krishnatri, reviewed by Sai Hemanth)"
+    },
+    "CVE-2022-40149": {
+      "eb860203fcdc126788e62e932b40a5f3ff944458": "HIVE-26613: Upgrade jettison to 1.5.1 to fix CVE-2022-40149. (#3653). (fanshilun, reviewed by Ayush Saxena)"
+    },
+    "CVE-2022-24823": {
+      "9db31108e1a44b2fb0436134fa78eea79418d4ad": "HIVE-26594: Upgrade netty to 4.1.77 due to CVE-2022-24823 (#3643)"
+    },
+    "CVE-2020-36518": {
+      "568ded4b22a020f4d2d3567f15b287b25a3f2b71": "HIVE-26300: Upgraded Jackson bom version to 2.12.6.1+ to avoid CVE-2020-36518 (#3351) (Sai Hemanth Gantasala reviewed by Zoltan Haindrich and Ayush Saxena)"
+    },
+    "CVE-2021-29425": {
+      "43a08a81335922f205753dccb1dce985bc4533cf": "HIVE-25942: Upgrade commons-io version to 2.8.0 due to CVE-2021-29425. (#3008) (Syed Shameerur Rahman reviewed by Zoltan Haindrich)"
+    },
+    "CVE-2021-42392": {
+      "2b7c3a844156077a8a57f75b548aeb7bc7685cfe": "HIVE-25945: Upgrade H2 database version to 2.1.210 (Stamatis Zampetakis, reviewed by Zhihua Deng)\n\nThe 1.3.166 version suffers from the following security vulnerabilities:\nhttps://nvd.nist.gov/vuln/detail/CVE-2021-42392\nhttps://nvd.nist.gov/vuln/detail/CVE-2022-23221\n\nIn the project, we use H2 only for testing purposes (inside the\njdbc-handler module) thus the H2 binaries are not present in the\nruntime classpath thus these CVEs do not pose a problem for Hive or its\nusers.\n\nCloses #3012"
+    },
+    "CVE-2022-23221": {
+      "2b7c3a844156077a8a57f75b548aeb7bc7685cfe": "HIVE-25945: Upgrade H2 database version to 2.1.210 (Stamatis Zampetakis, reviewed by Zhihua Deng)\n\nThe 1.3.166 version suffers from the following security vulnerabilities:\nhttps://nvd.nist.gov/vuln/detail/CVE-2021-42392\nhttps://nvd.nist.gov/vuln/detail/CVE-2022-23221\n\nIn the project, we use H2 only for testing purposes (inside the\njdbc-handler module) thus the H2 binaries are not present in the\nruntime classpath thus these CVEs do not pose a problem for Hive or its\nusers.\n\nCloses #3012"
+    },
+    "CVE-2021-44832": {
+      "9cfdac44975bf38193de7449fc21b9536109daea": "HIVE-25839: Upgrade Log4j2 to 2.17.1 due to CVE-2021-44832 (Hank\u00f3 Gergely, weidongkl, reviewed by Stamatis Zampetakis)\n\nCo-authored-by: weidongkl <weidong@uniontech.com>\n\nCloses #2930\nCloses #2912"
+    },
+    "CVE-2021-45105": {
+      "9857c4e584384f7b0a49c34bc2bdf876c2ea1503": "HIVE-25825: Upgrade log4j 2.16.0 to 2.17.0+ due to CVE-2021-45105 (Renjianting, reviewed by Sankar Hariappan)\n\nSigned-off-by: Sankar Hariappan <sankarh@apache.org>\r\nCloses (#2901)"
+    },
+    "CVE-2021-44228": {
+      "6f29c1acf04fa1f1b84a6fb86f92bdc65b584567": "HIVE-25804: Update log4j2 version to 2.16.0 to incorporate further CVE-2021-44228 hardening (#2874) (Csaba Juh\u00e1sz reviewed by Zoltan Haindrich)",
+      "f5778344034912fa47a770ca2917d95c9fcfff12": "HIVE-25795: [CVE-2021-44228] Update log4j2 version to 2.15.0\n\nSigned-off-by: Sankar Hariappan <sankarh@apache.org>\r\nCloses (#2863)"
+    },
+    "CVE-2021-40690": {
+      "9297ffe3075a73d6cf3f500912e38eef3a66b3b4": "HIVE-25785: Upgraded XML to 2.3.0 version to avoid CVE-2021-40690 (Saihemanth via Naveen Gangam)"
+    },
+    "CVE-2020-13949": {
+      "2fc946fa0e000362c01c6c83d288a78555fe2743": "HIVE-25098: [CVE-2020-13949] Upgrade thrift from 0.13.0 to 0.14.1 (Ashish Sharma, reviewed by Matt McCline)\n\nSigned-off-by: Sankar Hariappan <sankarh@apache.org>\r\nCloses (# 2330)"
+    },
+    "CVE-2018-21234": {
+      "fd6e70155ee43ddfb49c66fdbb6fa838c48816e7": "HIVE-25054: Upgrade `jodd-core` dependency to get rid of CVE-2018-21234 (Abhay Chennagiri, reviewed by Jesus Camacho Rodriguez)\n\nCloses apache/hive#2217"
+    },
+    "CVE-2020-26238": {
+      "12b99f785be3f542e0f3fcda9816fc3e0955feba": "HIVE-24890: Upgrade the cron-utils library from 8.1.1 to 9.1.3 because of CVE-2020-26238 (#2081) (Abhay Chennagiri, reviewed by Zoltan Haindrich)"
+    },
+    "CVE-2020-9488": {
+      "cd37d368425ec4e58c03a2f2783604ec67878bfc": "HIVE-24500: Bump up the log4j version from 2.12.1 to 2.13.2 to avoid CVE-2020-9488 (#1754)(Sai Hemanth Gantasala, reviewed by Yongzhi Chen)"
+    },
+    "CVE-2020-11023": {
+      "4b31ede11189a76627469acc20298cde2676f4dd": "HIVE-24039 : Update jquery version to mitigate CVE-2020-11023 (#1403)\n\n\r\nCo-authored-by: rajkrrsingh <rajkumar.singh@HW14317.local>"
+    },
+    "CVE-2014-0228": {
+      "c3d7083b7605d1753946c4c4411e3a3241ea7ffe": "HIVE-8019 : Missing hive 0.13.1 commit in trunk : export/import statement authorization - CVE-2014-0228\n\ngit-svn-id: https://svn.apache.org/repos/asf/hive/trunk@1624615 13f79535-47bb-0310-9956-ffa450edef68"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "vcs_url": "https://github.com/apache/calcite",
+  "vulnerabilities": {
+    "CVE-2025-48924": {
+      "ca974f08cef081f56ad2b7056e23a13ef846c03a": "[CALCITE-7108] Upgrade aggdesigner-algorithm from 6.0 to 6.1\n\nPer release notes of 6.1, upgrades commons-lang3 to fix CVE-2025-48924:\nhttps://github.com/julianhyde/aggdesigner/blob/main/HISTORY.md#61--2025-07-24\n\nClose apache/calcite#4477"
+    },
+    "CVE-2021-29425": {
+      "c9ea3e61ab88861f31241eaf3c21202ae8963b2e": "[CALCITE-5025] Upgrade commons-io version from 2.4 to 2.11.0\n\ncommons-io versions before 2.7 suffer from CVE-2021-29425 which allows\nto traverse into the parent directory.\n\nUpdate to a more recent version to avoid the afforementioned security\nvulnerability and benefit from the other improvements in this library.\n\nClose apache/calcite#2734",
+      "20ca53c962b1642ac4cda32ffdf1294042e951a8": "[CALCITE-5025] Upgrade commons-io version from 2.4 to 2.11.0\n\ncommons-io versions before 2.7 suffer from CVE-2021-29425 which allows\nto traverse into the parent directory.\n\nUpdate to a more recent version to avoid the afforementioned security\nvulnerability and benefit from the other improvements in this library.\n\nClose apache/calcite#2734"
+    },
+    "CVE-2018-14335": {
+      "07edf272be60cf044b226639500f7ae6f92a53bc": "[CALCITE-5007] Upgrade H2 database version to 2.1.210\n\nThe 1.4.197 version suffers from multiple CVEs such as:\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-14335\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-10054\nhttps://nvd.nist.gov/vuln/detail/CVE-2021-42392\nhttps://nvd.nist.gov/vuln/detail/CVE-2022-23221\n\nIn the project, we use H2 only for testing purposes thus the H2\nbinaries are not present in the runtime classpath thus these CVEs do\nnot pose a problem for Calcite or its users.\n\nClose apache/calcite#2717",
+      "5111f0f1bd2e63a947fd8524fa79517eb4c00052": "[CALCITE-5007] Upgrade H2 database version to 2.1.210\n\nThe 1.4.197 version suffers from multiple CVEs such as:\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-14335\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-10054\nhttps://nvd.nist.gov/vuln/detail/CVE-2021-42392\nhttps://nvd.nist.gov/vuln/detail/CVE-2022-23221\n\nIn the project, we use H2 only for testing purposes thus the H2\nbinaries are not present in the runtime classpath thus these CVEs do\nnot pose a problem for Calcite or its users.\n\nClose apache/calcite#2717"
+    },
+    "CVE-2018-10054": {
+      "07edf272be60cf044b226639500f7ae6f92a53bc": "[CALCITE-5007] Upgrade H2 database version to 2.1.210\n\nThe 1.4.197 version suffers from multiple CVEs such as:\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-14335\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-10054\nhttps://nvd.nist.gov/vuln/detail/CVE-2021-42392\nhttps://nvd.nist.gov/vuln/detail/CVE-2022-23221\n\nIn the project, we use H2 only for testing purposes thus the H2\nbinaries are not present in the runtime classpath thus these CVEs do\nnot pose a problem for Calcite or its users.\n\nClose apache/calcite#2717",
+      "5111f0f1bd2e63a947fd8524fa79517eb4c00052": "[CALCITE-5007] Upgrade H2 database version to 2.1.210\n\nThe 1.4.197 version suffers from multiple CVEs such as:\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-14335\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-10054\nhttps://nvd.nist.gov/vuln/detail/CVE-2021-42392\nhttps://nvd.nist.gov/vuln/detail/CVE-2022-23221\n\nIn the project, we use H2 only for testing purposes thus the H2\nbinaries are not present in the runtime classpath thus these CVEs do\nnot pose a problem for Calcite or its users.\n\nClose apache/calcite#2717"
+    },
+    "CVE-2021-42392": {
+      "07edf272be60cf044b226639500f7ae6f92a53bc": "[CALCITE-5007] Upgrade H2 database version to 2.1.210\n\nThe 1.4.197 version suffers from multiple CVEs such as:\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-14335\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-10054\nhttps://nvd.nist.gov/vuln/detail/CVE-2021-42392\nhttps://nvd.nist.gov/vuln/detail/CVE-2022-23221\n\nIn the project, we use H2 only for testing purposes thus the H2\nbinaries are not present in the runtime classpath thus these CVEs do\nnot pose a problem for Calcite or its users.\n\nClose apache/calcite#2717",
+      "5111f0f1bd2e63a947fd8524fa79517eb4c00052": "[CALCITE-5007] Upgrade H2 database version to 2.1.210\n\nThe 1.4.197 version suffers from multiple CVEs such as:\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-14335\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-10054\nhttps://nvd.nist.gov/vuln/detail/CVE-2021-42392\nhttps://nvd.nist.gov/vuln/detail/CVE-2022-23221\n\nIn the project, we use H2 only for testing purposes thus the H2\nbinaries are not present in the runtime classpath thus these CVEs do\nnot pose a problem for Calcite or its users.\n\nClose apache/calcite#2717"
+    },
+    "CVE-2022-23221": {
+      "07edf272be60cf044b226639500f7ae6f92a53bc": "[CALCITE-5007] Upgrade H2 database version to 2.1.210\n\nThe 1.4.197 version suffers from multiple CVEs such as:\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-14335\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-10054\nhttps://nvd.nist.gov/vuln/detail/CVE-2021-42392\nhttps://nvd.nist.gov/vuln/detail/CVE-2022-23221\n\nIn the project, we use H2 only for testing purposes thus the H2\nbinaries are not present in the runtime classpath thus these CVEs do\nnot pose a problem for Calcite or its users.\n\nClose apache/calcite#2717",
+      "5111f0f1bd2e63a947fd8524fa79517eb4c00052": "[CALCITE-5007] Upgrade H2 database version to 2.1.210\n\nThe 1.4.197 version suffers from multiple CVEs such as:\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-14335\nhttps://nvd.nist.gov/vuln/detail/CVE-2018-10054\nhttps://nvd.nist.gov/vuln/detail/CVE-2021-42392\nhttps://nvd.nist.gov/vuln/detail/CVE-2022-23221\n\nIn the project, we use H2 only for testing purposes thus the H2\nbinaries are not present in the runtime classpath thus these CVEs do\nnot pose a problem for Calcite or its users.\n\nClose apache/calcite#2717"
+    },
+    "CVE-2021-44832": {
+      "770561e7ad905327a2da49543a88dead655cf226": "[CALCITE-4973] Upgrade log4j2 version to 2.17.1\n\nThe 2.17.1 contains a fix for CVE-2021-44832 (security vulnerability)\nand other minor improvements.",
+      "58fb52ca7bb229e483d41ab7d25aa7da7015b5c5": "[CALCITE-4973] Upgrade log4j2 version to 2.17.1\n\nThe 2.17.1 contains a fix for CVE-2021-44832 (security vulnerability)\nand other minor improvements."
+    },
+    "CVE-2021-45105": {
+      "0d1796570fdc91269eaf0c3ed7f8a0c9bdba6df9": "[CALCITE-4950] Upgrade log4j2 version to 2.17.0\n\nThe 2.17.0 release fixes a new security vulnerability CVE-2021-45105."
+    },
+    "CVE-2021-4422": {
+      "f5a652693368ec35388b71f7c8e32ecdebd1558d": "[CALCITE-4939] Upgrade log4j2 version to 2.16.0\n\nThe 2.16.0 release has two additional fixes related to CVE-2021-4422 for\nhardening security."
+    },
+    "CVE-2021-44228": {
+      "c9861565c385e55bb2d0e7629cc3eadfa9e23821": "[CALCITE-4937] Upgrade Calcite to Avatica 1.20\n\nFixes CVE-2021-44228."
+    }
+  }
+}
