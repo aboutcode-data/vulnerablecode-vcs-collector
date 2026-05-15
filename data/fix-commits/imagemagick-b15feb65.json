@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
     "GHSA-4G75-9R48-JF92": {
+      "d954e9c48a7b2bdb76f0c9a3f8bc0e22071288e6": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-4g75-9r48-jf92",
       "adb4b8d7e1e4014892b71837842326c96c2a625b": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-4g75-9r48-jf92"
     },
     "GHSA-XF64-Q5RG-85G5": {
