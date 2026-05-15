@@ -1,6 +1,13 @@
 {
   "vcs_url": "https://github.com/apache/httpd",
   "vulnerabilities": {
+    "CVE-2024-38474": {
+      "a1f226f0372b3be663ec39c2bad25b013512cab2": "flags.xml: Add examples and security warnings for UnsafeAllow3F and UnsafePrefixStat\n\nBoth flags were introduced to address CVE-2024-38474 and CVE-2024-38475\nrespectively. Add practical examples showing common scenarios where each\nflag is needed (PHP front controller for UnsafeAllow3F; backreference-\nstarting substitution for UnsafePrefixStat), along with warning notes\nlinking to the relevant CVEs and advising restraint in their use.\n\n\ngit-svn-id: https://svn.apache.org/repos/asf/httpd/httpd/trunk@1934248 13f79535-47bb-0310-9956-ffa450edef68",
+      "c7ac35ab0f56088bbe7c0c395de04215496ed996": "flags.xml: Add example and security warning for UnsafeAllow3F\n\nShow the common real-world trigger: a PHP front controller with a\nquery string in the substitution (index.php?route=\\$1) that breaks\nwhen a request contains %3F. Add a warning note linking to\nCVE-2024-38474, advising users to prefer URL restructuring over\nenabling the flag where possible.\n\n\ngit-svn-id: https://svn.apache.org/repos/asf/httpd/httpd/trunk@1934244 13f79535-47bb-0310-9956-ffa450edef68"
+    },
+    "CVE-2024-38475": {
+      "a1f226f0372b3be663ec39c2bad25b013512cab2": "flags.xml: Add examples and security warnings for UnsafeAllow3F and UnsafePrefixStat\n\nBoth flags were introduced to address CVE-2024-38474 and CVE-2024-38475\nrespectively. Add practical examples showing common scenarios where each\nflag is needed (PHP front controller for UnsafeAllow3F; backreference-\nstarting substitution for UnsafePrefixStat), along with warning notes\nlinking to the relevant CVEs and advising restraint in their use.\n\n\ngit-svn-id: https://svn.apache.org/repos/asf/httpd/httpd/trunk@1934248 13f79535-47bb-0310-9956-ffa450edef68"
+    },
     "CVE-2025-54090": {
       "8abb3d06b23975705ebcf4bf4476464fd0b9bd0b": "fix `rewritecond expr` regression in 2.4.64\n\n  *) SECURITY: CVE-2025-54090: Apache HTTP Server: 'RewriteCond expr'\n     always evaluates to true in 2.4.64 (cve.mitre.org)\n     A bug in Apache HTTP Server 2.4.64 results in all \"RewriteCond\n     expr ...\" tests evaluating as \"true\".\n     Users are recommended to upgrade to version 2.4.65, which fixes\n     the issue.\n\n\nReviewed By: covener, ylavic, gbechis, jorton\n\n\n\ngit-svn-id: https://svn.apache.org/repos/asf/httpd/httpd/branches/2.4.x@1927361 13f79535-47bb-0310-9956-ffa450edef68"
     },
