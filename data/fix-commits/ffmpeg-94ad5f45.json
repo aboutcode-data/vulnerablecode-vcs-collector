@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/FFmpeg/FFmpeg",
   "vulnerabilities": {
+    "CVE-2026-30998": {
+      "18b83f2d0a0f9bcbafb0001a2911327c4b8df056": "tools/zmqsend: close the input FILE\n\nFixes CVE-2026-30998\n\nFixes: Resource leak\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>"
+    },
+    "CVE-2026-30999": {
+      "144af8f81abc1385631b4e1f4672cd415a9c6e05": "tools/zmqsend: free the AVBprint buffer after using it\n\nFixes CVE-2026-30999\n\nFixes: memleak\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>"
+    },
     "CVE-2026-30997": {
       "c3795bf59a414ae3156940e229a14279a2991657": "avcodec/av1dec: check that primary_ref_frame is within range\n\nFixes CVE-2026-30997\n\nFixes: Out-of-Bounds Access\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>\n(cherry picked from commit 1a2c16fe514b60e1860829c42ce199de77a007e5)\n(cherry picked from commit 3c4ca300f469d657051c8584515870fe9c36aaa3)\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>",
       "74c75e9ceacd99d20c09d09fec73c1b15ffd6172": "avcodec/av1dec: check that primary_ref_frame is within range\n\nFixes CVE-2026-30997\n\nFixes: Out-of-Bounds Access\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>\n(cherry picked from commit 1a2c16fe514b60e1860829c42ce199de77a007e5)\n(cherry picked from commit 3c4ca300f469d657051c8584515870fe9c36aaa3)\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>",
