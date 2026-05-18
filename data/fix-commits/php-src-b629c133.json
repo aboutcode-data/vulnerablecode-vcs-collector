@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/php/php-src",
   "vulnerabilities": {
+    "CVE-2026-44927": {
+      "bb739429b48130b0654fc460d4fee22e721b4cd8": "uri: Update to uriparser-1.0.2 (#22070)\n\nThis fixes CVE-2026-44927 and CVE-2026-44928."
+    },
+    "CVE-2026-44928": {
+      "bb739429b48130b0654fc460d4fee22e721b4cd8": "uri: Update to uriparser-1.0.2 (#22070)\n\nThis fixes CVE-2026-44927 and CVE-2026-44928."
+    },
     "GHSA-96WQ-48VP-HH57": {
       "0173ef4b84697a6d7964248a0da0faae4cff7fa4": "Merge branch 'PHP-8.5'\n\n* PHP-8.5:\n  [skip ci] Adjust credits for GHSA-96wq-48vp-hh57.phpt",
       "0017e9be7a4b0f37d5e9d57cbc0ffbf678b3d3b7": "Merge branch 'PHP-8.4' into PHP-8.5\n\n* PHP-8.4:\n  [skip ci] Adjust credits for GHSA-96wq-48vp-hh57.phpt",
