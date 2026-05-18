@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/neovim/neovim",
   "vulnerabilities": {
+    "GHSA-4473-94JM-W5X9": {
+      "878718fa7617bc9b18d51c66f50823f2299d8d9d": "vim-patch:9.2.0496: [security]: Code Injection in cucumber filetype plugin\n\nProblem:  [security]: Code Injection in cucumber filetype plugin\n          (Christopher Lusk)\nSolution: Use rubys Regexp.new() with the untrusted pattern\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-4473-94jm-w5x9\n\nhttps://github.com/vim/vim/commit/a65a52d684bc58535ad28a4ae824d22e76399934\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
+    },
+    "GHSA-CRM5-RH6J-2C7C": {
+      "a7d3835cb9f2322a2bb9d3b54bd2dc8c4a590702": "vim-patch:9.2.0495: [security]: runtime(netrw): code injection via NetrwBookHistSave()\n\nProblem:  [security]: runtime(netrw): code injection via\n          NetrwBookHistSave()\nSolution: Properly quote the directory name using string() function\n          (Srinivas Piskala Ganesh Babu)\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-crm5-rh6j-2c7c\n\nhttps://github.com/vim/vim/commit/f08ab2f4d7d2947c8dd6c179ae08ee6146a2694b\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-66HR-7P6X-X5J3": {
       "86c57031110a25e362f30a17c1d2997bb947c7cb": "vim-patch:9.2.0480: [security]: runtime(netrw): code injection via mf command\n\nProblem:  [security]: runtime(netrw): code injection via mf command\n          (Christopher Lusk, Zdenek Dohnal)\nSolution: Do not use string concatenation inside the filter() commands\n          (Zdenek Dohnal)\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-66hr-7p6x-x5j3\n\nhttps://github.com/vim/vim/commit/8af0f098c3a42a28661d0295364e6e0fd7dbc92c\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
     },
