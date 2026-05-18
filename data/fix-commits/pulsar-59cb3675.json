@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/apache/pulsar",
   "vulnerabilities": {
     "CVE-2025-33042": {
+      "26f95a46a8b69148b87f304472f59c366168cc07": "[fix][sec][branch-3.0] Upgrade avro to 1.11.5 to address CVE-2025-33042 (#24993)",
       "8c1090e94b1355b805ccc379d7738a0285ed8638": "[fix][sec][branch-4.0] Upgrade avro to 1.11.5 to address CVE-2025-33042 (#25788)"
     },
     "CVE-2026-43869": {
