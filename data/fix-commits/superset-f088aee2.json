@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/apache/superset",
   "vulnerabilities": {
+    "CVE-2026-33036": {
+      "dd523c1a7bb2ac445e29c6bcbf338f026d824124": "fix(deps): patch fast-xml-parser CVE-2026-33036 and CVE-2026-33349 (#40118)"
+    },
+    "CVE-2026-33349": {
+      "dd523c1a7bb2ac445e29c6bcbf338f026d824124": "fix(deps): patch fast-xml-parser CVE-2026-33036 and CVE-2026-33349 (#40118)"
+    },
     "GHSA-36JR-MH4H-2G58": {
       "af3e08823314199a783e3f53899b80cdb47cf321": "build(deps): resolve GHSA-36jr-mh4h-2g58 by upgrading d3-color to 3.1.0 (#37981)\n\nSigned-off-by: hainenber <dotronghai96@gmail.com>"
     },

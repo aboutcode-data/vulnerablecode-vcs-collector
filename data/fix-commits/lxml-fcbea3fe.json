@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/lxml/lxml",
   "vulnerabilities": {
+    "GHSA-4JHM-JV67-739F": {
+      "5927a6d5e851845140975d99b65461e255caaab0": "Add missing \"xlink:href\" to the known HTML link attributes.\nCloses https://github.com/fedora-python/lxml_html_clean/security/advisories/GHSA-4jhm-jv67-739f"
+    },
     "CVE-2023-52425": {
       "373ac417fd44b6ef629ef426dc3a3211bd8d10b4": "Fix test_elementtree with Expat 2.6.0 (GH-407)\n\nFeeding the parser by too small chunks defers parsing to prevent\r\nCVE-2023-52425. Future versions of Expat may be more reactive.\r\n\r\nHeavily inspired by https://github.com/python/cpython/commit/4a08e7b3431cd32a0daf22a33421cd3035343dc4\r\n\r\nWe cannot use a @fails_with_expat_2_6_0 decorator\r\nbecause the test passes in ETreePullTestCase.\r\n\r\nSee https://github.com/python/cpython/issues/115133\r\nSee https://github.com/advisories/GHSA-gh68-jm46-84rf\r\nCo-authored-by: Serhiy Storchaka <storchaka@gmail.com>",
       "3ccc7d583e325ceb0ebdf8fc295bbb7fc8cd404d": "Fix test_elementtree with Expat 2.6.0 (GH-407)\n\nFeeding the parser by too small chunks defers parsing to prevent\r\nCVE-2023-52425. Future versions of Expat may be more reactive.\r\n\r\nHeavily inspired by https://github.com/python/cpython/commit/4a08e7b3431cd32a0daf22a33421cd3035343dc4\r\n\r\nWe cannot use a @fails_with_expat_2_6_0 decorator\r\nbecause the test passes in ETreePullTestCase.\r\n\r\nSee https://github.com/python/cpython/issues/115133\r\nSee https://github.com/advisories/GHSA-gh68-jm46-84rf\r\nCo-authored-by: Serhiy Storchaka <storchaka@gmail.com>"
