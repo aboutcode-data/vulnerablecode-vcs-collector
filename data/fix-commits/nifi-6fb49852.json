@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/nifi",
   "vulnerabilities": {
+    "GHSA-72HV-8253-57QQ": {
+      "d0f3cc2cd1dd977ed11e9e0e2c0c1be13f15a5c6": "NIFI-15950 Removed Grype ignore for GHSA-72hv-8253-57qq (#11261)\n\n- parquet-jackson 1.17.1 includes newer version of Jackson\n- hazelcast 5.7.0 includes newer version of Jackson"
+    },
     "CVE-2026-22610": {
       "58fc0b18c4ef32ebd73d22bd2a084445ed694660": "NIFI-15459 - Security: Update Angular to 20.3.16 to patch XSS vulnerability (CVE-2026-22610) (#10762)\n\nAddresses high-severity XSS vulnerability in Angular's SVG script attribute sanitization.\n\nChanges:\n- Updated @angular/* packages from 20.3.15 to 20.3.16 (security patch)\n- Regenerated package-lock.json with updated dependency tree\n\nVerification:\n- Build completes successfully\n- All 271 test suites pass (1,303 tests total)\n- npm audit: 0 vulnerabilities\n- No regressions detected\n\nVulnerability Details:\n- CVE-2026-22610 (GHSA-jrmj-c5cx-3cw6)\n- Affects: Angular 20.0.0-next.0 through 20.3.15\n- Issue: SVG script href/xlink:href attributes not recognized as Resource URL contexts\n- Fixed in: Angular 20.3.16\n\nReferences:\n- https://github.com/advisories/GHSA-jrmj-c5cx-3cw6\n- https://osv.dev/vulnerability/GHSA-jrmj-c5cx-3cw6"
     },

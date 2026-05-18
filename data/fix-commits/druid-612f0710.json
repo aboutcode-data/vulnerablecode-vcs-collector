@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/druid",
   "vulnerabilities": {
+    "CVE-2026-5588": {
+      "b04b349bef32eb0ddc0fd799c5d1e5a57eed034a": "bump bouncy castle due to CVE-2026-5588 (#19473)"
+    },
     "CVE-2026-33186": {
       "27556bab76080004e519d468659d975cb591e80c": "suppress-CVE-2026-33186"
     },
