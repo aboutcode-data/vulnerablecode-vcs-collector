@@ -1,6 +1,15 @@
 {
   "vcs_url": "https://chromium.googlesource.com/chromium/third_party/ffmpeg",
   "vulnerabilities": {
+    "CVE-2026-30998": {
+      "18b83f2d0a0f9bcbafb0001a2911327c4b8df056": "tools/zmqsend: close the input FILE\n\nFixes CVE-2026-30998\n\nFixes: Resource leak\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>"
+    },
+    "CVE-2026-30999": {
+      "144af8f81abc1385631b4e1f4672cd415a9c6e05": "tools/zmqsend: free the AVBprint buffer after using it\n\nFixes CVE-2026-30999\n\nFixes: memleak\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>"
+    },
+    "CVE-2026-30997": {
+      "1a2c16fe514b60e1860829c42ce199de77a007e5": "avcodec/av1dec: check that primary_ref_frame is within range\n\nFixes CVE-2026-30997\n\nFixes: Out-of-Bounds Access\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>"
+    },
     "CVE-2023-6602": {
       "91d96dc8ddaebe0b6cb393f672085e6bfaf15a31": "avformat/hls: Be more picky on extensions\n\nThis blocks disallowed extensions from probing\nIt also requires all available segments to have matching extensions to the format\nmpegts is treated independent of the extension\n\nIt is recommended to set the whitelists correctly\ninstead of depending on extensions, but this should help a bit,\nand this is easier to backport\n\nFixes: CVE-2023-6602 II. HLS Force TTY Demuxer\nFixes: CVE-2023-6602 IV. HLS XBIN Demuxer DoS Amplification\n\nThe other parts of CVE-2023-6602 have been fixed by prior commits\n\nFound-by: Harvey Phillips of Amazon Element55 (element55)\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>",
       "4c96d6bf75357ab13808efc9f08c1b41b1bf5bdf": "avformat/dashdec: Check whitelist\n\nFixes: CVE-2023-6602, V. DASH Playlist SSRF\n\nFound-by: Harvey Phillips of Amazon Element55 (element55)\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>"
