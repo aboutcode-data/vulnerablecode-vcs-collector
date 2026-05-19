@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://android.googlesource.com/platform/external/pdfium",
   "vulnerabilities": {
+    "CVE-2026-6192": {
+      "65c78d0727c665106efed287a687b37d41a49439": "Patch CVE-2026-6192 in libopenjpeg\n\nApply https://github.com/uclouvain/openjpeg/pull/1619\n\nBug: 514547039\nChange-Id: Icae4d89c2a578623c81fe616beab6385def1d8e2\nReviewed-on: https://pdfium-review.googlesource.com/c/pdfium/+/147950\nCommit-Queue: Lei Zhang <thestig@chromium.org>\nReviewed-by: Tom Sepez <tsepez@chromium.org>"
+    },
     "CVE-2025-54874": {
       "83e6b42d10bd8482de0ba6def14ad46c4d8850f9": "Cherry-pick OpenJPEG patch for CVE-2025-54874\n\nCherry-pick a commit from upstream OpenJPEG:\n\nhttps://github.com/uclouvain/openjpeg/commit/f809b80c67717c152a5ad30bf06774f00da4fd2d\n\nBug: 445128546\nChange-Id: Ie402da715c8342cd948c41c5d44b3edbec29e33c\nReviewed-on: https://pdfium-review.googlesource.com/c/pdfium/+/135731\nCommit-Queue: Lei Zhang <thestig@chromium.org>\nReviewed-by: Tom Sepez <tsepez@chromium.org>"
     },
