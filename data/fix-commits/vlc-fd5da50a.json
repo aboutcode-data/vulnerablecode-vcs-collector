@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/videolan/vlc",
   "vulnerabilities": {
+    "CVE-2026-5121": {
+      "27f5a6e9ab5ebe82f38cb78eb4933d6ccfeda33c": "contrib: libarchive: update to 3.8.7\n\nFixes some security issues [^1] including CVE-2026-5121 [^2]\n\n[^1]: https://github.com/libarchive/libarchive/releases/tag/v3.8.7\n[^2]: https://nvd.nist.gov/vuln/detail/CVE-2026-5121"
+    },
     "CVE-2026-5673": {
       "b3fea20f91a756161d160d6fc480e3b5ac99eb46": "contrib: theora: use latest git hash\n\nIt should fix arm build and fixes CVE-2026-5673"
     },

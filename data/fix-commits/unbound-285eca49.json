@@ -1,6 +1,46 @@
 {
   "vcs_url": "https://github.com/nlnetlabs/unbound",
   "vulnerabilities": {
+    "CVE-2026-44390": {
+      "25e112c6749cf23f9551ff35e40b3a7769785f73": "- Unit test for CVE-2026-44390.",
+      "138fb48eac364f1567b5ad8a0a038eab6312a8be": "Changelog entry.\n- Fix CVE-2026-44390, Unbounded name compression in certain cases\n  causes degradation of service. Thanks to Qifan Zhang, Palo Alto\n  Networks, for the report.",
+      "dae7a3797424607906b132c008fc12dba867b5f3": "- Fix CVE-2026-44390, Unbounded name compression in certain cases\n  causes degradation of service. Thanks to Qifan Zhang, Palo Alto\n  Networks, for the report."
+    },
+    "CVE-2026-42960": {
+      "0d2282d5513e73b526a44483d63fc5d0f9c41439": "- Unit test for CVE-2026-42960.",
+      "8ae4b4545dccaaabd30b597b0dcb0d9640c8cc39": "- Fix CVE-2026-42960, Possible cache poisoning attack while following\n  delegation. Thanks to TaoFei Guo from Peking University, Yang Luo\n  and JianJun Chen, Tsinghua University, for the report."
+    },
+    "CVE-2026-40622": {
+      "b5f21f41658f65d6143df6a3208e8ccf1a01604d": "- Unit test for CVE-2026-40622.",
+      "8d8fa4226613138f5a244a9f1a2506704e049180": "- Fix CVE-2026-40622, \"Ghost domain name\" variant. Thanks to Qifan\n  Zhang, Palo Alto Networks, for the report."
+    },
+    "CVE-2026-42959": {
+      "d357935f662d239616fee1403f6799a66b60d986": "- Unit test for CVE-2026-42959.",
+      "94d5babaee22a016e376bdcfee2b9bb40360367c": "- Fix CVE-2026-42959, Crash during DNSSEC validation of malicious\n  content. Thanks to Qifan Zhang, Palo Alto Networks, for the report."
+    },
+    "CVE-2026-42944": {
+      "9d2e0f1c02f842d355809ffea28a1bd62bfe83ba": "- Unit test for CVE-2026-42944.",
+      "fe946ba4e935a1528e6866e108e5bc9e7533ae18": "- Fix CVE-2026-42944, Heap overflow and crash with multiple nsid,\n  cookie, padding EDNS options. Thanks to Qifan Zhang, Palo Alto\n  Networks, for the report."
+    },
+    "CVE-2026-33278": {
+      "b46ff5c18eafa055378b7105c9c5e77454291a47": "- Unit test for CVE-2026-33278.",
+      "6a31e470f80a6e5c559ebe7fd4cfc0582d3b6d0a": "- Fix CVE-2026-33278, Possible remote code execution during DNSSEC\n  validation. Thanks to Qifan Zhang, Palo Alto Networks, for the report."
+    },
+    "CVE-2026-44608": {
+      "75b6dba593d4fff000434cd64807c6ebd50bd244": "- Fix CVE-2026-44608, Use after free and crash in RPZ code. Thanks\n  to Qifan Zhang, Palo Alto Networks, for the report."
+    },
+    "CVE-2026-42923": {
+      "c343fff3a4de922835fec7232b90faed658b5371": "- Fix CVE-2026-42923, Degradation of service with unbounded NSEC3\n  hash calculations. Thanks to Qifan Zhang, Palo Alto Networks, for\n  the report."
+    },
+    "CVE-2026-42534": {
+      "a794c87578c963606a6fb00a54c46fcf935f519a": "- Fix CVE-2026-42534, Jostle logic bypass degrades resolution\n  performance. Thanks to Qifan Zhang, Palo Alto Networks, for the\n  report."
+    },
+    "CVE-2026-41292": {
+      "ef5ca84360934fa1e857ebc371d4b093aea6355d": "- Fix CVE-2026-41292, Parsing a long list of incoming EDNS options\n  degrades performance. Thanks to GitHub user 'N0zoM1z0', also Qifan\n  Zhang from Palo Alto Networks, for the report."
+    },
+    "CVE-2026-32792": {
+      "a587535c5dd8a5ea8259507152f055be318367df": "- Fix CVE-2026-32792, Packet of death with DNSCrypt. Thanks to Andrew\n  Griffiths from 'calif.io' for the report."
+    },
     "CVE-2025-11411": {
       "f6269baa605d31859f28770e01a24e3677e5f82c": "- Additional fix for CVE-2025-11411 (possible domain hijacking attack),\n  to include YXDOMAIN and non-referral nodata answers in the mitigation as\n  well, reported by TaoFei Guo from Peking University, Yang Luo and JianJun\n  Chen from Tsinghua University.",
       "a33f0638e1dacf2633cf2292078a674576bca852": "- Fix CVE-2025-11411 (possible domain hijacking attack), reported by Yuxiao Wu,\n  Yunyi Zhang, Baojun Liu and Haixin Duan from Tsinghua University."
