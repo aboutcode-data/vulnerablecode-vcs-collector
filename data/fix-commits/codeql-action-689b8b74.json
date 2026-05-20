@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/github/codeql-action",
   "vulnerabilities": {
+    "GHSA-JXXR-4GWJ-5JF2": {
+      "a134948b87e69d30508cc585ceb2296f899f11e9": "Bump `brace-expansion`\n\nAddress https://github.com/juliangruber/brace-expansion/security/advisories/GHSA-jxxr-4gwj-5jf2"
+    },
     "CVE-2023-0842": {
       "c2b5d643fdc41c9b28b4930ec55e93dbedf6636d": "Require xml2js `>=0.5.0` to address CVE-2023-0842"
     }

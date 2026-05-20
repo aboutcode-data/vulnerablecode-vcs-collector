@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-46529": {
+      "3386a9564b3629ddebcd3c5d951f467ca82162b5": "app-text/evince: patch CVE-2026-46529\n\nBug: https://bugs.gentoo.org/975515\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
     "CVE-2026-41054": {
       "57607c11ca0bfec89208497dedb093900c95dbee": "sys-apps/haveged: add 1.9.21 to fix CVE-2026-41054\n\nBug: https://bugs.gentoo.org/975496\nSigned-off-by: Agostino Sarubbo <ago@gentoo.org>"
     },
