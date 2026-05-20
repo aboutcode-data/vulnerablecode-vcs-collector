@@ -1,12 +1,14 @@
 {
   "vcs_url": "https://github.com/moby/moby",
   "vulnerabilities": {
+    "GHSA-X86F-5XW2-FM2R": {
+      "f930df54d23cf0ab4263c5dd3cbcb6e415f6af66": "Merge pull request #52647 from vvoland/25-GHSA-x86f-5xw2-fm2r\n\n[25.0 backport] daemon: Decompress archives before entering container filesystem",
+      "06224f7ad000fda8de7939ea08aa61ad9814ee63": "Merge pull request from GHSA-x86f-5xw2-fm2r"
+    },
     "GHSA-VP62-88P7-QQF5": {
+      "fb3702d033601bb0e767f2ca398e3909a15be29c": "daemon: resolve in-container symlinks before os.Root mount ops\n\nThe security fix in GHSA-vp62-88p7-qqf5 switched openContainerFS to\nos.Root for mount-destination operations, but stopped walking the\ndestination through in-container symlinks.\n\nos.Root refuses to follow absolute symlinks, so any container whose\nimage had an absolute symlink along the mount target's path (e.g. the\ncommon /var/run -> /run in ubuntu/alpine/busybox) broke `docker cp`.\n\nWalk m.Destination through ctr.GetResourcePath first which follows\nsymlinks to get a path relative to BaseFS, then keep using os.Root for\nthe actual MkdirAll/OpenFile/Open calls.\n\nSigned-off-by: Pawe\u0142 Gronowski <pawel.gronowski@docker.com>",
       "7a7dc016bf51235a96e4f7d10aa2bda5733c2071": "Merge pull request #52648 from vvoland/25-GHSA-vp62-88p7-qqf5\n\n[25.0 backport] daemon/copy: Fix symlink escape in mount destination creation",
       "af1613468c1023941f3d701344ee1df376ba9f8a": "Merge pull request from GHSA-vp62-88p7-qqf5"
-    },
-    "GHSA-X86F-5XW2-FM2R": {
-      "06224f7ad000fda8de7939ea08aa61ad9814ee63": "Merge pull request from GHSA-x86f-5xw2-fm2r"
     },
     "GHSA-RG2X-37C3-W2RH": {
       "bb6a9b177dc457b024300dfa87b4e51a86bf6406": "Merge pull request from GHSA-rg2x-37c3-w2rh"
