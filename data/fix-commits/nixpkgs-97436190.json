@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-46529": {
+      "837e9d61303079f52c21e3da2ffebbc5cdf8c91e": "evince: 48.1 -> 48.4\n\nSecurity update for CVE-2026-46529\nSee https://gitlab.gnome.org/GNOME/evince/-/work_items/2153\n\n(cherry picked from commit 436577778a7e429aa7af4f6809fa65867616bf34)",
+      "436577778a7e429aa7af4f6809fa65867616bf34": "evince: 48.1 -> 48.4\n\nSecurity update for CVE-2026-46529\nSee https://gitlab.gnome.org/GNOME/evince/-/work_items/2153"
+    },
     "CVE-2026-8053": {
       "c43511484e072ffc6f171fc1e080fa5e3f0c2f36": "mongodb-7_0: 7.0.32 -> 7.0.34\n\nhttps://www.mongodb.com/docs/manual/release-notes/7.0-changelog/#7.0.34-changelog\n\nFixes: CVE-2026-8053\nFixes: CVE-2026-8199\nFixes: CVE-2026-8200\nFixes: CVE-2026-8201\nFixes: CVE-2026-8202\n(cherry picked from commit 054666879ee08787e67beb9dbbafb82ca950b495)",
       "054666879ee08787e67beb9dbbafb82ca950b495": "mongodb-7_0: 7.0.32 -> 7.0.34\n\nhttps://www.mongodb.com/docs/manual/release-notes/7.0-changelog/#7.0.34-changelog\n\nFixes: CVE-2026-8053\nFixes: CVE-2026-8199\nFixes: CVE-2026-8200\nFixes: CVE-2026-8201\nFixes: CVE-2026-8202"
