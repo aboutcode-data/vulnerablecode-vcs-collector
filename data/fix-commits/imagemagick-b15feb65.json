@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-8PJ9-6897-74XC": {
+      "84fbcef8a558b1da075417a89d29aa5632d57f63": "Added missing check for returning an image with zero columns or rows (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-8pj9-6897-74xc)"
+    },
     "GHSA-GM48-C7F2-V67P": {
       "3705205e1424d379c2fc46c026c8560ccea0509e": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-gm48-c7f2-v67p"
     },
