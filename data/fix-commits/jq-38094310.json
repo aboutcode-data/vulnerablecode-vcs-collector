@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/stedolan/jq",
   "vulnerabilities": {
+    "CVE-2026-47770": {
+      "7122866869960b55cea3646bc91334ef55787831": "Guard deep structural equality and comparison recursion (#3539)\n\njv_equal and jv_cmp overflows the C stack on deeply nested\ninput. Cap recursion at 10000 with -1 / INT_MIN sentinels;\noperators that compose user expressions surface this as\n\"Equality check too deep\" / \"Comparison too deep\".\n\nFixes CVE-2026-47770."
+    },
     "CVE-2026-44777": {
       "f58787c41835d9b17795730cb04925fdba25c71c": "Detect circular module imports to prevent stack overflow\n\njq used to recurse without bound on mutual or self-referential\n`import` declarations, exhausting the stack. Track each library's\nload state with a `loading` flag set before its dependencies are\nprocessed; a recursive reference to an in-progress library now\nreports \"circular import of X\".\n\nFixes CVE-2026-44777."
     },
