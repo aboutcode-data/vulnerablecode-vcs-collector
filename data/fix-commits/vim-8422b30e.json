@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/vim/vim",
   "vulnerabilities": {
+    "GHSA-3H95-3962-MMVF": {
+      "25e4e46c584840806b45da20edf8219cf19801a2": "patch 9.2.0513: [security]: memory safety issues in spellfile.c\n\nProblem:  [security]: memory safety issues in spellfile.c\n          (tacdm)\nSolution: Add recursion limit to read_tree_node(), add length limit\n          check in tree_count_words(), use alloc_clear() in\n          spell_read_tree().\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-3h95-3962-mmvf\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-4473-94JM-W5X9": {
       "a65a52d684bc58535ad28a4ae824d22e76399934": "patch 9.2.0496: [security]: Code Injection in cucumber filetype plugin\n\nProblem:  [security]: Code Injection in cucumber filetype plugin\n          (Christopher Lusk)\nSolution: Use rubys Regexp.new() with the untrusted pattern\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-4473-94jm-w5x9\n\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
     },
