@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/neovim/neovim",
   "vulnerabilities": {
+    "GHSA-3H95-3962-MMVF": {
+      "15a3318e134d6dc1dec4a7edf3c0b21efc7be000": "vim-patch:9.2.0513: [security]: memory safety issues in spellfile.c (#39960)\n\nProblem:  [security]: memory safety issues in spellfile.c\n          (tacdm)\nSolution: Add recursion limit to read_tree_node(), add length limit\n          check in tree_count_words(), use alloc_clear() in\n          spell_read_tree().\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-3h95-3962-mmvf\n\nhttps://github.com/vim/vim/commit/25e4e46c584840806b45da20edf8219cf19801a2\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\n(cherry picked from commit 7a1bad27ca690e83496c900609875d3e6d041635)",
+      "7a1bad27ca690e83496c900609875d3e6d041635": "vim-patch:9.2.0513: [security]: memory safety issues in spellfile.c (#39960)\n\nProblem:  [security]: memory safety issues in spellfile.c\n          (tacdm)\nSolution: Add recursion limit to read_tree_node(), add length limit\n          check in tree_count_words(), use alloc_clear() in\n          spell_read_tree().\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-3h95-3962-mmvf\n\nhttps://github.com/vim/vim/commit/25e4e46c584840806b45da20edf8219cf19801a2\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>"
+    },
     "GHSA-4473-94JM-W5X9": {
       "878718fa7617bc9b18d51c66f50823f2299d8d9d": "vim-patch:9.2.0496: [security]: Code Injection in cucumber filetype plugin\n\nProblem:  [security]: Code Injection in cucumber filetype plugin\n          (Christopher Lusk)\nSolution: Use rubys Regexp.new() with the untrusted pattern\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-4473-94jm-w5x9\n\nhttps://github.com/vim/vim/commit/a65a52d684bc58535ad28a4ae824d22e76399934\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
     },
