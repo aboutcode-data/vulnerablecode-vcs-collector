@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-9256": {
+      "308c3c352cdbda17ab08b750886d3b5895018a05": "nginx: 1.30.1 -> 1.30.2\n\nChangelog: https://nginx.org/en/CHANGES-1.30\nAdvisory: https://my.f5.com/manage/s/article/K000161377\n\nFixes: CVE-2026-9256"
+    },
     "CVE-2026-46529": {
       "837e9d61303079f52c21e3da2ffebbc5cdf8c91e": "evince: 48.1 -> 48.4\n\nSecurity update for CVE-2026-46529\nSee https://gitlab.gnome.org/GNOME/evince/-/work_items/2153\n\n(cherry picked from commit 436577778a7e429aa7af4f6809fa65867616bf34)",
       "436577778a7e429aa7af4f6809fa65867616bf34": "evince: 48.1 -> 48.4\n\nSecurity update for CVE-2026-46529\nSee https://gitlab.gnome.org/GNOME/evince/-/work_items/2153"
