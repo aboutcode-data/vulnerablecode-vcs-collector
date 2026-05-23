@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-43983": {
+      "2d9c6e1e667c14e87f80c95ad750f07beb6d6ac8": "[25.11] pocket-id: fix CVE-2026-43983, 1.15.0 -> 1.16.0 (#519749)",
+      "02bd18ef8069c19768d100e71f39bf425208ea59": "pocket-id: fix CVE-2026-43983\n\nNot-cherry-picked-because: the package in unstable has advanced to the next major version"
+    },
     "CVE-2026-9256": {
       "308c3c352cdbda17ab08b750886d3b5895018a05": "nginx: 1.30.1 -> 1.30.2\n\nChangelog: https://nginx.org/en/CHANGES-1.30\nAdvisory: https://my.f5.com/manage/s/article/K000161377\n\nFixes: CVE-2026-9256"
     },
