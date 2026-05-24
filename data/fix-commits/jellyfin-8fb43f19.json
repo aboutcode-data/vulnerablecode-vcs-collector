@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://github.com/jellyfin/jellyfin",
   "vulnerabilities": {
+    "GHSA-WWWM-PX48-FPVQ": {
+      "f2b358a3c86e8012a2c7cdd3c142015f36ad9ce6": "Merge commit from fork\n\nFix GHSA-wwwm-px48-fpvq",
+      "19a35a6159a91bd1aad5d0a4c03fa7cb4bcab5a2": "Fix GHSA-wwwm-px48-fpvq"
+    },
+    "GHSA-JG92-MRXQ-VV75": {
+      "95600752a3650b067e80e3c452aab6e5f9329e4a": "Merge commit from fork\n\nFix GHSA-jg92-mrxq-vv75",
+      "734145ab98ab0d0214c4a5a1072c18e3e67398f4": "Fix GHSA-jg92-mrxq-vv75"
+    },
+    "GHSA-F47C-M7GR-Q92J": {
+      "7249b5744cbf9029eef034bc45ca2ecbbff4c99f": "Merge commit from fork\n\nFix GHSA-f47c-m7gr-q92j",
+      "72360ba292411d6ec60d81a219b76ed24459e323": "Fix GHSA-f47c-m7gr-q92j"
+    },
     "GHSA-JH22-FW8W-2V9X": {
       "0bf7653e3648a86bd0c6f224fcea341a6fdb8a85": "Fix GHSA-jh22-fw8w-2v9x",
       "8bf0d372c64e38d07796cdba82e3d8d04cd91660": "Merge commit from fork\n\nFix GHSA-jh22-fw8w-2v9x",
