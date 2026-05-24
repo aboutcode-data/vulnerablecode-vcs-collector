@@ -1,12 +1,15 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-9256": {
+      "cdea7a689f82286dd420a874ad438db109fbaedb": "nginx{Stable,Mainline}: add patch for CVE-2026-9256 (#523267)",
+      "ddda31615e8d649d9f955b6e87feb11ffe6427d0": "nginxStable: add patch for CVE-2026-9256\n\nhttps://my.f5.com/manage/s/article/K000161377\n\nNot-cherry-picked-because: different version than in unstable",
+      "d3a81ed68f20b669165bd16f31fe4a22311cd93e": "nginxMainline: add patch for CVE-2026-9256\n\nhttps://my.f5.com/manage/s/article/K000161377\n\nNot-cherry-picked-because: Different version than in unstable",
+      "308c3c352cdbda17ab08b750886d3b5895018a05": "nginx: 1.30.1 -> 1.30.2\n\nChangelog: https://nginx.org/en/CHANGES-1.30\nAdvisory: https://my.f5.com/manage/s/article/K000161377\n\nFixes: CVE-2026-9256"
+    },
     "CVE-2026-43983": {
       "2d9c6e1e667c14e87f80c95ad750f07beb6d6ac8": "[25.11] pocket-id: fix CVE-2026-43983, 1.15.0 -> 1.16.0 (#519749)",
       "02bd18ef8069c19768d100e71f39bf425208ea59": "pocket-id: fix CVE-2026-43983\n\nNot-cherry-picked-because: the package in unstable has advanced to the next major version"
-    },
-    "CVE-2026-9256": {
-      "308c3c352cdbda17ab08b750886d3b5895018a05": "nginx: 1.30.1 -> 1.30.2\n\nChangelog: https://nginx.org/en/CHANGES-1.30\nAdvisory: https://my.f5.com/manage/s/article/K000161377\n\nFixes: CVE-2026-9256"
     },
     "CVE-2026-46529": {
       "837e9d61303079f52c21e3da2ffebbc5cdf8c91e": "evince: 48.1 -> 48.4\n\nSecurity update for CVE-2026-46529\nSee https://gitlab.gnome.org/GNOME/evince/-/work_items/2153\n\n(cherry picked from commit 436577778a7e429aa7af4f6809fa65867616bf34)",

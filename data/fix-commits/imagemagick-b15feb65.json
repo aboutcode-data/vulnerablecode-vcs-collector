@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-4V89-6MGQ-6RGC": {
+      "44df3a54af31b8d33fa5e40b4dc61d051c4a5d9a": "Added extra checks to prevent an overflow on 32-bit systems (GHSA-4v89-6mgq-6rgc)"
+    },
     "GHSA-8PJ9-6897-74XC": {
       "2fd447c5475aa7c1a2093b857d96af220473b11b": "reject farbfeld files with zero columns or rows (#8750)\n\nThe header dimensions are read directly from the blob and then control\nthe ping early-return path, which lets a 16-byte file with width=0 or\nheight=0 succeed and surface as a 0x0 image to callers. SetImageExtent\nalready rejects this on the non-ping path. Same bug class as the recent\nDCM fix in 84fbcef (GHSA-8pj9-6897-74xc).",
       "84fbcef8a558b1da075417a89d29aa5632d57f63": "Added missing check for returning an image with zero columns or rows (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-8pj9-6897-74xc)"

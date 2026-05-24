@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/stedolan/jq",
   "vulnerabilities": {
+    "GHSA-GGC9-RPV2-XGPM": {
+      "df924eae91af10cc236a907cdadd97813827aa1f": "Fix undefined pointer arithmetic in UTF-8 helpers\n\nFixes GHSA-ggc9-rpv2-xgpm and GHSA-gvwx-xj9r-3frq."
+    },
+    "GHSA-GVWX-XJ9R-3FRQ": {
+      "df924eae91af10cc236a907cdadd97813827aa1f": "Fix undefined pointer arithmetic in UTF-8 helpers\n\nFixes GHSA-ggc9-rpv2-xgpm and GHSA-gvwx-xj9r-3frq."
+    },
     "CVE-2026-47770": {
       "7122866869960b55cea3646bc91334ef55787831": "Guard deep structural equality and comparison recursion (#3539)\n\njv_equal and jv_cmp overflows the C stack on deeply nested\ninput. Cap recursion at 10000 with -1 / INT_MIN sentinels;\noperators that compose user expressions surface this as\n\"Equality check too deep\" / \"Comparison too deep\".\n\nFixes CVE-2026-47770."
     },
