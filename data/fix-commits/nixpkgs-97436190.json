@@ -1,6 +1,13 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-42046": {
+      "1b6f0c5288b37d63b3151aa41d19eefb1c14def3": "[Backport staging-25.11] libcaca: apply patch for CVE-2026-42046 (#523999)",
+      "8513d19d4f92c99ec7403755360bbb225d681aa7": "libcaca: apply patch for CVE-2026-42046\n\nFixes https://github.com/NixOS/nixpkgs/issues/519387\n\n(cherry picked from commit 00cd8e646c7da669125ae26acf4b47079826e1f0)",
+      "0c76ded5a714231787f27efdabf21bc408e339d0": "libcaca: apply patch for CVE-2026-42046\n\nFixes https://github.com/NixOS/nixpkgs/issues/519387\n\n(cherry picked from commit 00cd8e646c7da669125ae26acf4b47079826e1f0)",
+      "c898a19e6f0972affac86f07cc38d1b1578d8c3c": "libcaca: apply patch for CVE-2026-42046 (#519401)",
+      "00cd8e646c7da669125ae26acf4b47079826e1f0": "libcaca: apply patch for CVE-2026-42046\n\nFixes https://github.com/NixOS/nixpkgs/issues/519387"
+    },
     "CVE-2026-9256": {
       "cdea7a689f82286dd420a874ad438db109fbaedb": "nginx{Stable,Mainline}: add patch for CVE-2026-9256 (#523267)",
       "ddda31615e8d649d9f955b6e87feb11ffe6427d0": "nginxStable: add patch for CVE-2026-9256\n\nhttps://my.f5.com/manage/s/article/K000161377\n\nNot-cherry-picked-because: different version than in unstable",
