@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-48715": {
+      "e9181fae4e4bd0ed9b60f4d908e79c6c309a968a": "radvd: 2.20 -> 2.21\n\nhttps://github.com/radvd-project/radvd/blob/refs/tags/v2.21/CHANGES\n\nFixes: CVE-2026-48715\n(cherry picked from commit 161ac6ef6b5dc567dd47eb5ea6ac4fc7b3ee771f)",
+      "161ac6ef6b5dc567dd47eb5ea6ac4fc7b3ee771f": "radvd: 2.20 -> 2.21\n\nhttps://github.com/radvd-project/radvd/blob/refs/tags/v2.21/CHANGES\n\nFixes: CVE-2026-48715"
+    },
     "CVE-2026-42046": {
       "1b6f0c5288b37d63b3151aa41d19eefb1c14def3": "[Backport staging-25.11] libcaca: apply patch for CVE-2026-42046 (#523999)",
       "8513d19d4f92c99ec7403755360bbb225d681aa7": "libcaca: apply patch for CVE-2026-42046\n\nFixes https://github.com/NixOS/nixpkgs/issues/519387\n\n(cherry picked from commit 00cd8e646c7da669125ae26acf4b47079826e1f0)",
