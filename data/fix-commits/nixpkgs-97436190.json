@@ -1,6 +1,14 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-48710": {
+      "a416d0dc4ff922c0ba1f72c0d5ed53bef01f4ed7": "python3Packages.starlette: 0.52.1 -> 1.1.0\n\nhttps://www.starlette.io/release-notes/#110\nhttps://github.com/Kludex/starlette/security/advisories/GHSA-86qp-5c8j-p5mr\n\nFixes: CVE-2026-48710\n(cherry picked from commit 83ece5c3a1e6340a1d9b9b40db3d5c50e9e05672)",
+      "83ece5c3a1e6340a1d9b9b40db3d5c50e9e05672": "python3Packages.starlette: 0.52.1 -> 1.1.0\n\nhttps://www.starlette.io/release-notes/#110\nhttps://github.com/Kludex/starlette/security/advisories/GHSA-86qp-5c8j-p5mr\n\nFixes: CVE-2026-48710"
+    },
+    "GHSA-86QP-5C8J-P5MR": {
+      "a416d0dc4ff922c0ba1f72c0d5ed53bef01f4ed7": "python3Packages.starlette: 0.52.1 -> 1.1.0\n\nhttps://www.starlette.io/release-notes/#110\nhttps://github.com/Kludex/starlette/security/advisories/GHSA-86qp-5c8j-p5mr\n\nFixes: CVE-2026-48710\n(cherry picked from commit 83ece5c3a1e6340a1d9b9b40db3d5c50e9e05672)",
+      "83ece5c3a1e6340a1d9b9b40db3d5c50e9e05672": "python3Packages.starlette: 0.52.1 -> 1.1.0\n\nhttps://www.starlette.io/release-notes/#110\nhttps://github.com/Kludex/starlette/security/advisories/GHSA-86qp-5c8j-p5mr\n\nFixes: CVE-2026-48710"
+    },
     "CVE-2026-48715": {
       "e9181fae4e4bd0ed9b60f4d908e79c6c309a968a": "radvd: 2.20 -> 2.21\n\nhttps://github.com/radvd-project/radvd/blob/refs/tags/v2.21/CHANGES\n\nFixes: CVE-2026-48715\n(cherry picked from commit 161ac6ef6b5dc567dd47eb5ea6ac4fc7b3ee771f)",
       "161ac6ef6b5dc567dd47eb5ea6ac4fc7b3ee771f": "radvd: 2.20 -> 2.21\n\nhttps://github.com/radvd-project/radvd/blob/refs/tags/v2.21/CHANGES\n\nFixes: CVE-2026-48715"
