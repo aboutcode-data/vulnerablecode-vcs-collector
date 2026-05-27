@@ -1,6 +1,14 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-5222": {
+      "2264c708d3de1f4e86038c20be511a505f3869b7": "[staging-26.05] cargo: add patches for CVE-2026-5222 and CVE-2026-5223 (#524640)",
+      "5f1133b2f1e36b654119f042b8eaf9f16aff706c": "cargo: add patches for CVE-2026-5222 and CVE-2026-5223\n\nUpstream pull request: https://github.com/rust-lang/cargo/pull/17031\n\nFixes: CVE-2026-5222, https://blog.rust-lang.org/2026/05/25/cve-2026-5222/\nFixes: CVE-2026-5223, https://blog.rust-lang.org/2026/05/25/cve-2026-5223/\nNot-cherry-picked-because: master will get these fixes via the rust 1.96 upgrade on 2026-05-28"
+    },
+    "CVE-2026-5223": {
+      "2264c708d3de1f4e86038c20be511a505f3869b7": "[staging-26.05] cargo: add patches for CVE-2026-5222 and CVE-2026-5223 (#524640)",
+      "5f1133b2f1e36b654119f042b8eaf9f16aff706c": "cargo: add patches for CVE-2026-5222 and CVE-2026-5223\n\nUpstream pull request: https://github.com/rust-lang/cargo/pull/17031\n\nFixes: CVE-2026-5222, https://blog.rust-lang.org/2026/05/25/cve-2026-5222/\nFixes: CVE-2026-5223, https://blog.rust-lang.org/2026/05/25/cve-2026-5223/\nNot-cherry-picked-because: master will get these fixes via the rust 1.96 upgrade on 2026-05-28"
+    },
     "CVE-2026-8946": {
       "7c81f43ed49858644417a268b728897e0d0a68e1": "thunderbird-unwrapped: 150.0.2 -> 151.0.1\n\nhttps://www.thunderbird.net/en-US/thunderbird/151.0/releasenotes/\nhttps://www.thunderbird.net/en-US/thunderbird/151.0.1/releasenotes/\nhttps://www.mozilla.org/en-US/security/advisories/mfsa2026-50/\n\nFixes:\nCVE-2026-8946, CVE-2026-8947, CVE-2026-8948, CVE-2026-8950,\nCVE-2026-8952, CVE-2026-8953, CVE-2026-8954, CVE-2026-8955,\nCVE-2026-8956, CVE-2026-8957, CVE-2026-8958, CVE-2026-8960,\nCVE-2026-8961, CVE-2026-8962, CVE-2026-8963, CVE-2026-8964,\nCVE-2026-8965, CVE-2026-8966, CVE-2026-8967, CVE-2026-8968,\nCVE-2026-8969, CVE-2026-8970, CVE-2026-8971, CVE-2026-8972,\nCVE-2026-8973, CVE-2026-8974, CVE-2026-8975\n\n(cherry picked from commit 6327c2998490e1f697df9515a0fc51c6c17966bb)",
       "ad59befbf3703cbd77ed586392f4201701b72873": "thunderbird-unwrapped: 150.0.2 -> 151.0.1\n\nhttps://www.thunderbird.net/en-US/thunderbird/151.0/releasenotes/\nhttps://www.thunderbird.net/en-US/thunderbird/151.0.1/releasenotes/\nhttps://www.mozilla.org/en-US/security/advisories/mfsa2026-50/\n\nFixes:\nCVE-2026-8946, CVE-2026-8947, CVE-2026-8948, CVE-2026-8950,\nCVE-2026-8952, CVE-2026-8953, CVE-2026-8954, CVE-2026-8955,\nCVE-2026-8956, CVE-2026-8957, CVE-2026-8958, CVE-2026-8960,\nCVE-2026-8961, CVE-2026-8962, CVE-2026-8963, CVE-2026-8964,\nCVE-2026-8965, CVE-2026-8966, CVE-2026-8967, CVE-2026-8968,\nCVE-2026-8969, CVE-2026-8970, CVE-2026-8971, CVE-2026-8972,\nCVE-2026-8973, CVE-2026-8974, CVE-2026-8975\n\n(cherry picked from commit 6327c2998490e1f697df9515a0fc51c6c17966bb)",
