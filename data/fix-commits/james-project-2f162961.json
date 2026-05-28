@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/james-project",
   "vulnerabilities": {
+    "CVE-2026-40914": {
+      "dbaddeb365d76262cebbeddc03fed240de638ed1": "[UPGRADE] Artemis 2.52.0 -> 2.53.0 (CVE-2026-40914)"
+    },
     "CVE-2025-67735": {
       "5d9f29746e5e9817d76214d4a709a4c9696750c8": "[UPGRADE] Upgrade Netty 4.1.126.Final \u2192 4.1.132.Final (CVE-2025-67735)"
     },
