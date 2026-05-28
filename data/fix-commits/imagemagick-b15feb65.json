@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-Q62C-H75R-2XHC": {
+      "960367f3318e650ba8544c0ce3844d7897aba43b": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-q62c-h75r-2xhc"
+    },
     "GHSA-4V89-6MGQ-6RGC": {
       "44df3a54af31b8d33fa5e40b4dc61d051c4a5d9a": "Added extra checks to prevent an overflow on 32-bit systems (GHSA-4v89-6mgq-6rgc)"
     },
