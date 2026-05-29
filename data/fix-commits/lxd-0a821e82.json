@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://github.com/lxc/lxd",
   "vulnerabilities": {
+    "CVE-2026-48753": {
+      "a6012422b45c86f3b1956788cff5d75c604ad838": "incusd/storage/s3: Confine multipart uploads with os.Root\n\nThis addresses CVE-2026-48753\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "CVE-2026-48754": {
+      "98e64f0a6fcfdc9676eea0246418d490c53297bf": "incusd/storage: Guard nil fields in createDependentVolumesFromBackup\n\nThis addresses CVE-2026-48754\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "CVE-2026-48756": {
+      "ab6b7dff0c770044875d9d26a6254a7075b4d00b": "incusd/storage: Guard nil ExpiresAt in CreateCustomVolumeFromBackup\n\nThis addresses CVE-2026-48756\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "CVE-2026-47753": {
+      "d71c5053a4c8318e6eb07337a7a4a07a6608ef73": "incusd/storage: Fix unsafe access to backup data\n\nThis addresses CVE-2026-47753\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
     "CVE-2026-41685": {
       "236711d0f240e8bf4ad5acafbf3db9501eba0d60": "incusd: Use QuotaWriter for backup and ISO uploads\n\nIncus should always respect project disk limits when they are in place\nas those are a very useful safety net to prevent users from causing a\ndenial of service by filling up the server's disk.\n\nThis addresses CVE-2026-41685\n\nReported-by: https://7asecurity.com\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
     },
