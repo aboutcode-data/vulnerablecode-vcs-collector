@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/vim/vim",
   "vulnerabilities": {
+    "GHSA-52MC-RQ6P-RC7C": {
+      "4b850457e12e1a678dd209f2868154f7553cbf8d": "patch 9.2.0561: [security]: possible code execution with python3complete\n\nProblem:  [security]: possible code execution with python3complete\nSolution: Disable execution of import/from statements\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-52mc-rq6p-rc7c\n\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-3H95-3962-MMVF": {
       "25e4e46c584840806b45da20edf8219cf19801a2": "patch 9.2.0513: [security]: memory safety issues in spellfile.c\n\nProblem:  [security]: memory safety issues in spellfile.c\n          (tacdm)\nSolution: Add recursion limit to read_tree_node(), add length limit\n          check in tree_count_words(), use alloc_clear() in\n          spell_read_tree().\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-3h95-3962-mmvf\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
     },

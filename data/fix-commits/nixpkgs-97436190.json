@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-5928": {
+      "4e83709f641c9740e83b5acfed09b64f4cbc69aa": "[Backport staging-26.05] glibc: 2.42-61 -> 2.42-67 / CVE-2026-5928 / CVE-2026-5450 (#523468)"
+    },
+    "CVE-2026-5450": {
+      "4e83709f641c9740e83b5acfed09b64f4cbc69aa": "[Backport staging-26.05] glibc: 2.42-61 -> 2.42-67 / CVE-2026-5928 / CVE-2026-5450 (#523468)"
+    },
     "GHSA-8G7M-96C8-8WWC": {
       "ba2269222852453c7c1dee50926b9eb3756912e6": "incus: 7.0.0 -> 7.1.0\n\nChangelog: https://github.com/lxc/incus/releases/tag/v7.1.0\n\nAdvisories:\n- https://github.com/lxc/incus/security/advisories/GHSA-8g7m-96c8-8wwc (Low)\n- https://github.com/lxc/incus/security/advisories/GHSA-xhqx-mgh3-3h7q (Low)\n- https://github.com/lxc/incus/security/advisories/GHSA-4xg6-52mh-fpw8 (Low)\n- https://github.com/lxc/incus/security/advisories/GHSA-ccjc-4qc3-jxqc (Critical)\n\n(cherry picked from commit dd25e365776f018fe0bcda8fadd14bf862a0e10d)",
       "dd25e365776f018fe0bcda8fadd14bf862a0e10d": "incus: 7.0.0 -> 7.1.0\n\nChangelog: https://github.com/lxc/incus/releases/tag/v7.1.0\n\nAdvisories:\n- https://github.com/lxc/incus/security/advisories/GHSA-8g7m-96c8-8wwc (Low)\n- https://github.com/lxc/incus/security/advisories/GHSA-xhqx-mgh3-3h7q (Low)\n- https://github.com/lxc/incus/security/advisories/GHSA-4xg6-52mh-fpw8 (Low)\n- https://github.com/lxc/incus/security/advisories/GHSA-ccjc-4qc3-jxqc (Critical)"

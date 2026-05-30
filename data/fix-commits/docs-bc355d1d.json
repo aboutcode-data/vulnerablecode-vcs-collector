@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/github/docs",
   "vulnerabilities": {
+    "GHSA-GF2Q-C269-PQGC": {
+      "12525174b9a38653e9d22b3867db981979d1bc79": "Bump liquidjs to ^10.27.0 (clears critical GHSA-gf2q-c269-pqgc) (#61486)\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+    },
     "CVE-2023-23766": {
       "473a8e32c9f057136dd0361f0726e7fa1c1980b3": "Add cve-2023-23766 (#43026)\n\nCo-authored-by: Matt Pollard <mattpollard@users.noreply.github.com>"
     },
