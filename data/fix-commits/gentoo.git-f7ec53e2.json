@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-48840": {
+      "6891157ebd2259189c3f4b053055764de2f6dbbf": "mail-mta/exim:-4.99.4: security bump\n\nCVE-2026-48840 PROXY-protocol uninitialised-stack information disclosure\n\nSigned-off-by: Fabian Groffen <grobian@gentoo.org>"
+    },
     "CVE-2026-46529": {
       "3386a9564b3629ddebcd3c5d951f467ca82162b5": "app-text/evince: patch CVE-2026-46529\n\nBug: https://bugs.gentoo.org/975515\nSigned-off-by: Sam James <sam@gentoo.org>"
     },

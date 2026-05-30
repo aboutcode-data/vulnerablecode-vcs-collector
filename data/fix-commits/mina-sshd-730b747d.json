@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/mina-sshd",
   "vulnerabilities": {
+    "CVE-2026-48827": {
+      "4dd93b9371ae3d32dbf1bc3dc1f7072de06c3400": "Mention security fix\n\nResolution of CVE-2026-48827."
+    },
     "CVE-2008-1561": {
       "023729c80be3a95f363a07d58e2de6c719dbcbe9": "Use more appropriate disconnect reason codes\n\nIn too many places the general SSH2_DISCONNECT_PROTOCOL_ERROR was used,\nwhich gives a potentially misleading message to the client. Use other\nerror reason codes that enable transporting custom messages. (With\n\"protocol error\" or \"mac error\" we always send a fixed message because\nof CVE-2008-1561.)"
     },
