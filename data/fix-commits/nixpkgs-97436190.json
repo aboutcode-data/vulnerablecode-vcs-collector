@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-48840": {
+      "b7258caca2823906e2d73fd64046182254b23b34": "exim: 4.99.3 -> 4.99.4\n\nFixes CVE-2026-48840 / EXIM-Security-2026-05-19.1\nhttps://www.exim.org/static/doc/security/EXIM-Security-2026-05-19.1/EXIM-Security-2026-05-19.1.txt\n\nhttps://code.exim.org/exim/exim/releases/tag/exim-4.99.4\n(cherry picked from commit 10648d2877b9ab32805bee4690c6dd129c2a8aa1)",
+      "10648d2877b9ab32805bee4690c6dd129c2a8aa1": "exim: 4.99.3 -> 4.99.4\n\nFixes CVE-2026-48840 / EXIM-Security-2026-05-19.1\nhttps://www.exim.org/static/doc/security/EXIM-Security-2026-05-19.1/EXIM-Security-2026-05-19.1.txt\n\nhttps://code.exim.org/exim/exim/releases/tag/exim-4.99.4"
+    },
     "CVE-2026-5928": {
       "4e83709f641c9740e83b5acfed09b64f4cbc69aa": "[Backport staging-26.05] glibc: 2.42-61 -> 2.42-67 / CVE-2026-5928 / CVE-2026-5450 (#523468)"
     },
