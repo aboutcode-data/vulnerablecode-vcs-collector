@@ -2,6 +2,8 @@
   "vcs_url": "https://github.com/apache/pulsar",
   "vulnerabilities": {
     "CVE-2026-45205": {
+      "be1ec2c9d26dda5c402f5d9846d2ee521fedcc9e": "[fix][sec] Upgrade commons-configuration2 to 2.15.0 to address CVE-2026-45205 (#25844)\n\n(cherry picked from commit 7220158b928b2b9dc8151400a1a596d93ecd5637)",
+      "758d6e927eb4e969b24b9741cb9b3c75c86ee283": "[fix][sec] Upgrade commons-configuration2 to 2.15.0 to address CVE-2026-45205 (#25844)\n\n(cherry picked from commit 7220158b928b2b9dc8151400a1a596d93ecd5637)",
       "7220158b928b2b9dc8151400a1a596d93ecd5637": "[fix][sec] Upgrade commons-configuration2 to 2.15.0 to address CVE-2026-45205 (#25844)"
     },
     "CVE-2025-33042": {
