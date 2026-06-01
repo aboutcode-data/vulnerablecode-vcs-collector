@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-44CP-C3WW-9RV5": {
+      "e8a61457c90fcc632217cf5504da5c31e4b8d95c": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-44cp-c3ww-9rv5"
+    },
     "GHSA-J989-F892-2335": {
       "310e325e65f5171f35ec6305c9c21ec253d80852": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-j989-f892-2335"
     },
