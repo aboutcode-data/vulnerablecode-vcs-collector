@@ -1,6 +1,39 @@
 {
   "vcs_url": "https://github.com/nuxt/nuxt",
   "vulnerabilities": {
+    "GHSA-534H-C3CW-V3H9": {
+      "1f9f4767a8725104da9bee872bb8d35246f25ae5": "fix(vite): bind vite-node IPC to a permissioned filesystem socket\n\nRefs: GHSA-534h-c3cw-v3h9",
+      "c293bf9503ccb3bc9559bff4a1f592f99063c9ea": "fix(vite): bind vite-node IPC to a permissioned filesystem socket\n\n(cherry picked from commit d2ea350bd359cc8f07e1d0b968c136b9e9a5cf48)\nRefs: GHSA-534h-c3cw-v3h9"
+    },
+    "GHSA-C9CV-MQ2M-PPP3": {
+      "e447a793c47766834f7497f8412a76cd56fd8ee1": "fix(nuxt): reject cross-origin paths in `reloadNuxtApp`\n\nRefs: GHSA-c9cv-mq2m-ppp3",
+      "2cce6fb02e621196d56df92e05594e07469b5a6d": "fix(nuxt): block path-normalization open redirect in `navigateTo`\n\nRefs: GHSA-c9cv-mq2m-ppp3",
+      "3394716d4a913cba904b028df5338f2aead50032": "fix(nuxt): apply `isScriptProtocol` guard to `navigateTo` open option (#35206)\n\nRefs: GHSA-c9cv-mq2m-ppp3",
+      "b3f370e22a6be73736c98767a0a8d5c9f646d6d2": "fix(nuxt): validate protocols in `reloadNuxtApp` path before reload (#35115)\n\nRefs: GHSA-c9cv-mq2m-ppp3",
+      "6497d99dd106254abd089f6a263d7773869a343b": "fix(nuxt): reject cross-origin paths in `reloadNuxtApp`\n\n(cherry picked from commit d97358675c1239d553155fbdf0f084c12daf7f0e)\nRefs: GHSA-c9cv-mq2m-ppp3",
+      "1f2dd5e78c77576437138e97671965573c232835": "fix(nuxt): block path-normalization open redirect in `navigateTo`\n\n(cherry picked from commit 32575822870417f159f60355245ff46793f861d7)\nRefs: GHSA-c9cv-mq2m-ppp3",
+      "62fc32eddf648b00a3890141e0235d2a222b024d": "fix(nuxt): apply `isScriptProtocol` guard to `navigateTo` open option (#35206)\n\n(cherry picked from commit 5fb121ac14f0a75785a81655aa665a1c7d5fefc2)\nRefs: GHSA-c9cv-mq2m-ppp3"
+    },
+    "GHSA-934W-87QH-QR26": {
+      "0103ce06fbbbdfa079a7f020ef8ce00121eac4a3": "fix(nuxt): reject script-capable protocols in `<NuxtLink>` href\n\nRefs: GHSA-934w-87qh-qr26",
+      "53284043dc21210a25d629d1cec67d3ae557ffd0": "fix(nuxt): reject script-capable protocols in `<NuxtLink>` href\n\n(cherry picked from commit 9d5ea6633f509f8500ab28e05605b937ebd322ce)\nRefs: GHSA-934w-87qh-qr26"
+    },
+    "GHSA-MM7M-92G8-7M47": {
+      "07e39cd6f26e407b4192b7865bd17bc44536b9bb": "fix(nuxt): match route rules case-insensitively to mirror `vue-router`\n\nRefs: GHSA-mm7m-92g8-7m47",
+      "3f3e3fa7b5eec8e495f4f8ce0a54813a8875a11e": "fix(nuxt): match route rules case-insensitively to mirror `vue-router`\n\n(cherry picked from commit 256c4038fee698f350a705dc719a38308b0fc5a6)\nRefs: GHSA-mm7m-92g8-7m47"
+    },
+    "GHSA-M3Q2-P4FW-W38M": {
+      "4b054e9d95f8daf366cb144b52782047c511a66e": "fix(nuxt): escape `<NoScript>` slot content\n\nRefs: GHSA-m3q2-p4fw-w38m",
+      "7fea9fd687f1dacbfb63db5fae5839896b017a0e": "fix(nuxt): escape `<NoScript>` slot content\n\n(cherry picked from commit 3ec506cfa73917e021e4aa0f868cbc0579c5c6c6)\nRefs: GHSA-m3q2-p4fw-w38m"
+    },
+    "GHSA-RQ7W-G337-39QQ": {
+      "55c75b78c989b8bd210837b0e5faaebbf2b87b15": "fix(nitro): gate chrome devtools workspace endpoint to local requests (#35201)\n\nRefs: GHSA-rq7w-g337-39qq",
+      "22fd58b008f40f3e909a205366775ce2f449d846": "fix(nitro): gate chrome devtools workspace endpoint to local requests (#35201)\n\n(cherry picked from commit 02893819e4effbc010764bd362e05314d0555202)\nRefs: GHSA-rq7w-g337-39qq"
+    },
+    "GHSA-X6QJ-4H56-5RJ5": {
+      "e351de943e82db16970618b60dc7fdbaa58630f3": "fix(rspack,webpack): require loopback host when missing same-origin signals (#35200)\n\nRefs: GHSA-x6qj-4h56-5rj5",
+      "77187ee4015e9267fb464951542a3e09e8b5fa05": "fix(rspack,webpack): require loopback host when missing same-origin signals (#35200)\n\n(cherry picked from commit e1aa468fd835e5581c837cb5b98d3bce3d2e5536)\nRefs: GHSA-x6qj-4h56-5rj5"
+    },
     "GHSA-3H5V-Q93C-6H6Q": {
       "5ef7311f092a1f2f8b29c65b1778d7882f903dce": "chore: add non-applicable advisory GHSA-3h5v-q93c-6h6q"
     },

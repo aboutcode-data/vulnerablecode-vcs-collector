@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/kafka",
   "vulnerabilities": {
+    "CVE-2026-41115": {
+      "e4b9bbd9f96b014f8072925fbfb4c42b185889dd": "MINOR: fix doc for CVE-2026-41115 (#22447)\n\nFix documentation for CVE-2026-41115, to use `DESCRIBE` permission on\n`GROUP` resource for `CONSUMER_GROUP_DESCRIBE (69)` API.\n\nReviewers: David Jacot <david.jacot@gmail.com>"
+    },
     "CVE-2025-67030": {
       "c782ceecb2f18935f17a162dabb1957f50fdf665": "KAFKA-20373: Bump maven artifact to 3.9.15 (#21911)\n\nBump maven-artifact to resolve plexus-utils CVE:\n[CVE-2025-67030](https://www.cve.org/CVERecord?id=CVE-2025-67030).\n\nReviewers: Chia-Ping Tsai <chia7712@gmail.com>, Mickael Maison\n<mickael.maison@gmail.com>",
       "df5748c6c14dfb8bd3be93a47a5a089b9aeec809": "KAFKA-20373: Bump maven artifact to 3.9.15 (#21911)\n\nBump maven-artifact to resolve plexus-utils CVE:\n[CVE-2025-67030](https://www.cve.org/CVERecord?id=CVE-2025-67030).\n\nReviewers: Chia-Ping Tsai <chia7712@gmail.com>, Mickael Maison\n<mickael.maison@gmail.com>",
