@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/python-pillow/pillow",
   "vulnerabilities": {
+    "CVE-2026-4775": {
+      "1ba93c6feb0c1dd69ac869e0d372a82964c7dd35": "Apply libtiff patch to fix CVE-2026-4775 (#9646)"
+    },
     "CVE-2014-3589": {
       "c69dcc1c2969406155788d4c3f4e8fb496490f5d": "Fix headers and retro-add notes for #7864\n\n- Include CVE link in title (via @hugovk)\n- Retro-add release notes for 2.3.2, 2.5.2 for CVE-2014-3589",
       "9cc0e47ec27ab56e5b4b253fd9120800f829b6e8": "Merge pull request #845 from wiredfool/icns_cve\n\nIcns DOS fix --  CVE-2014-3589",
