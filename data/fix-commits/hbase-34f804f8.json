@@ -1,6 +1,13 @@
 {
   "vcs_url": "https://github.com/apache/hbase",
   "vulnerabilities": {
+    "CVE-2025-7962": {
+      "d075ac31c2e9fb8bd409c056c42362dd64ff8c60": "HBASE-30193 Exclude transitive jakarta.mail dependency (CVE-2025-7962) (#8296)\n\nSigned-off-by: Peter Somogyi <psomogyi@apache.org>\n(cherry picked from commit 2eb5a34603fcb3ca035f63500ab2b6835d46a5ad)",
+      "82d68eb97f0936e70140817c366e10d34e654eec": "HBASE-30193 Exclude transitive jakarta.mail dependency (CVE-2025-7962) (#8296)\n\nSigned-off-by: Peter Somogyi <psomogyi@apache.org>\n(cherry picked from commit 2eb5a34603fcb3ca035f63500ab2b6835d46a5ad)",
+      "e54c286d1760244ac22fe4e8db72bc36d769a653": "HBASE-30193 Exclude transitive jakarta.mail dependency (CVE-2025-7962) (#8296)\n\nSigned-off-by: Peter Somogyi <psomogyi@apache.org>\n(cherry picked from commit 2eb5a34603fcb3ca035f63500ab2b6835d46a5ad)",
+      "6fff4a16f37d9a07bb4719a39470a1d160b4b1fa": "HBASE-30193 Exclude transitive jakarta.mail dependency (CVE-2025-7962) (#8296)\n\nSigned-off-by: Peter Somogyi <psomogyi@apache.org>\n(cherry picked from commit 2eb5a34603fcb3ca035f63500ab2b6835d46a5ad)",
+      "2eb5a34603fcb3ca035f63500ab2b6835d46a5ad": "HBASE-30193 Exclude transitive jakarta.mail dependency (CVE-2025-7962) (#8296)\n\nSigned-off-by: Peter Somogyi <psomogyi@apache.org>"
+    },
     "GHSA-2G4F-4PWH-QVX6": {
       "7b081327dc822a664613fce88a4506abdd364308": "HBASE-30005 Fix 1 high (flatted), 1 moderate (ajv) CVE in website dependencies (#7954)\n\nFix:\n\nExecuted `npm audit fix` to fix the vulnerable dependencies.\n\nnpm audit before:\n\n```\n# npm audit report\n\najv  <6.14.0\nSeverity: moderate\najv has ReDoS when using `$data` option - https://github.com/advisories/GHSA-2g4f-4pwh-qvx6\nfix available via `npm audit fix`\nnode_modules/ajv\n\nflatted  <3.4.0\nSeverity: high\nflatted vulnerable to unbounded recursion DoS in parse() revive phase - https://github.com/advisories/GHSA-25h7-pfq9-p65f\nfix available via `npm audit fix`\nnode_modules/flatted\n\n2 vulnerabilities (1 moderate, 1 high)\n\nTo address all issues, run:\n  npm audit fix\n```\n\nnpm audit after:\n\n```\nfound 0 vulnerabilities\n```\n\nSigned-off-by: Xiao Liu <liuxiaocs@apache.org>"
     },

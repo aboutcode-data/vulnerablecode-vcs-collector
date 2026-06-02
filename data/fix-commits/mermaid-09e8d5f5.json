@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/mermaid-js/mermaid",
   "vulnerabilities": {
+    "GHSA-3PPC-4F35-3M26": {
+      "e9a735d760ca63fb5bf774a5abf57166b36d1617": "chore(deps): override minimatch 10.x to ^10.2.1 (GHSA-3ppc-4f35-3m26 +2)\n\ndependency-review flagged minimatch@10.0.3 (3 High ReDoS advisories), pulled\ndev-only via rimraf -> glob@11 -> minimatch. Scope the override to the 10.x\nline (^10.2.1, resolves to 10.2.5) so glob v7/v8/v10's minimatch majors are\nuntouched. Dev dependency only."
+    },
+    "GHSA-7H2J-956F-4VF2": {
+      "e74bd62bab1e3f4cf39b517046524d5eca77e5b6": "chore(deps): override @isaacs/brace-expansion to ^5.0.1 (GHSA-7h2j-956f-4vf2)\n\nThe dependency-review check flagged @isaacs/brace-expansion@5.0.0 (High DoS via\nunbounded brace expansion), pulled dev-only via rimraf -> glob -> minimatch.\nAdd a pnpm override to ^5.0.1 (the patched release). Dev dependency only."
+    },
     "CVE-2026-41150": {
       "dd351a7cef45b70638147a5e000f1ee8bfd35637": "chore: bump mermaid version to v10.9.6\n\nBackports the following security fixes from [Mermaid v11.15.0][]:\n\n- CVE-2026-41150: **fix(gantt): limit loop if excluding all dates**\n  (a59ea56174712ee5430dfd5bc877cb5151f501a6)\n- CVE-2026-41148: **fix: prevent unbalanced CSS styles in classDefs**\n  (8fead23c59166b7bab6a39eac81acebee2859102)\n- CVE-2026-41149: **fix: create CSS styles using the CSSOM**\n  (4e2d512bf5bf6f9de1a8f0a48da78dc4d09ac4f3)\n- CVE-2026-41159: **fix: block stylis scope escape**\n  (a9d9f0d8eb790349121508688cd338253fd80d76)\n- CVE-2026-41907: **fix: loosen `uuid` dependency range to allow v14**\n  We don't use this vulnerable code, but it allows users to silence this\n  warning.\n  (e8c70434520dd9226bd442f857970cd211067627)\n\nAnd other dependency updates.\n\n[Mermaid v11.15.0]: https://github.com/mermaid-js/mermaid/releases/tag/mermaid%4011.15.0"
     },

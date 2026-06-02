@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-42250": {
+      "2f092df439722bc95d790d0a2c734e637ff08006": "bzip2: patch CVE-2026-42250\n\n(cherry picked from commit a7b6fa34c1c4955920c50349475f41c2581981b8)",
+      "ac824a1dff4f96f18c61657ac90fd9363dfe604b": "bzip2: patch CVE-2026-42250\n\n(cherry picked from commit a7b6fa34c1c4955920c50349475f41c2581981b8)",
+      "d4051ce2f3f6234ff8d79db26a4d2a5a2a6659c9": "bzip2: patch CVE-2026-42250 (#526529)",
+      "a7b6fa34c1c4955920c50349475f41c2581981b8": "bzip2: patch CVE-2026-42250"
+    },
     "CVE-2026-48840": {
       "b7258caca2823906e2d73fd64046182254b23b34": "exim: 4.99.3 -> 4.99.4\n\nFixes CVE-2026-48840 / EXIM-Security-2026-05-19.1\nhttps://www.exim.org/static/doc/security/EXIM-Security-2026-05-19.1/EXIM-Security-2026-05-19.1.txt\n\nhttps://code.exim.org/exim/exim/releases/tag/exim-4.99.4\n(cherry picked from commit 10648d2877b9ab32805bee4690c6dd129c2a8aa1)",
       "10648d2877b9ab32805bee4690c6dd129c2a8aa1": "exim: 4.99.3 -> 4.99.4\n\nFixes CVE-2026-48840 / EXIM-Security-2026-05-19.1\nhttps://www.exim.org/static/doc/security/EXIM-Security-2026-05-19.1/EXIM-Security-2026-05-19.1.txt\n\nhttps://code.exim.org/exim/exim/releases/tag/exim-4.99.4"

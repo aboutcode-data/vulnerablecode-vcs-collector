@@ -2,10 +2,13 @@
   "vcs_url": "https://github.com/nuxt/nuxt",
   "vulnerabilities": {
     "GHSA-534H-C3CW-V3H9": {
+      "8c2d1293aa0c0dcf6c0f87d0f7e765d4293a3509": "fix(vite): bind vite-node IPC to a permissioned filesystem socket\n\nRefs: GHSA-534h-c3cw-v3h9",
       "1f9f4767a8725104da9bee872bb8d35246f25ae5": "fix(vite): bind vite-node IPC to a permissioned filesystem socket\n\nRefs: GHSA-534h-c3cw-v3h9",
       "c293bf9503ccb3bc9559bff4a1f592f99063c9ea": "fix(vite): bind vite-node IPC to a permissioned filesystem socket\n\n(cherry picked from commit d2ea350bd359cc8f07e1d0b968c136b9e9a5cf48)\nRefs: GHSA-534h-c3cw-v3h9"
     },
     "GHSA-C9CV-MQ2M-PPP3": {
+      "e55b8774c056b143aaa66dd671f83bc5eb92aa04": "fix(nuxt): reject cross-origin paths in `reloadNuxtApp`\n\nRefs: GHSA-c9cv-mq2m-ppp3",
+      "74b5cff440453ff1986113f9d9b37771e4af55ce": "fix(nuxt): block path-normalization open redirect in `navigateTo`\n\nRefs: GHSA-c9cv-mq2m-ppp3",
       "e447a793c47766834f7497f8412a76cd56fd8ee1": "fix(nuxt): reject cross-origin paths in `reloadNuxtApp`\n\nRefs: GHSA-c9cv-mq2m-ppp3",
       "2cce6fb02e621196d56df92e05594e07469b5a6d": "fix(nuxt): block path-normalization open redirect in `navigateTo`\n\nRefs: GHSA-c9cv-mq2m-ppp3",
       "3394716d4a913cba904b028df5338f2aead50032": "fix(nuxt): apply `isScriptProtocol` guard to `navigateTo` open option (#35206)\n\nRefs: GHSA-c9cv-mq2m-ppp3",
@@ -15,14 +18,17 @@
       "62fc32eddf648b00a3890141e0235d2a222b024d": "fix(nuxt): apply `isScriptProtocol` guard to `navigateTo` open option (#35206)\n\n(cherry picked from commit 5fb121ac14f0a75785a81655aa665a1c7d5fefc2)\nRefs: GHSA-c9cv-mq2m-ppp3"
     },
     "GHSA-934W-87QH-QR26": {
+      "5dbd214ceb7d403d11a265e2fe63dc7e129e1b31": "fix(nuxt): reject script-capable protocols in `<NuxtLink>` href\n\nRefs: GHSA-934w-87qh-qr26",
       "0103ce06fbbbdfa079a7f020ef8ce00121eac4a3": "fix(nuxt): reject script-capable protocols in `<NuxtLink>` href\n\nRefs: GHSA-934w-87qh-qr26",
       "53284043dc21210a25d629d1cec67d3ae557ffd0": "fix(nuxt): reject script-capable protocols in `<NuxtLink>` href\n\n(cherry picked from commit 9d5ea6633f509f8500ab28e05605b937ebd322ce)\nRefs: GHSA-934w-87qh-qr26"
     },
     "GHSA-MM7M-92G8-7M47": {
+      "6f0f67d4e1871d58235f7a611ea0605aa1fb598b": "fix(nuxt): match route rules case-insensitively to mirror `vue-router`\n\nRefs: GHSA-mm7m-92g8-7m47",
       "07e39cd6f26e407b4192b7865bd17bc44536b9bb": "fix(nuxt): match route rules case-insensitively to mirror `vue-router`\n\nRefs: GHSA-mm7m-92g8-7m47",
       "3f3e3fa7b5eec8e495f4f8ce0a54813a8875a11e": "fix(nuxt): match route rules case-insensitively to mirror `vue-router`\n\n(cherry picked from commit 256c4038fee698f350a705dc719a38308b0fc5a6)\nRefs: GHSA-mm7m-92g8-7m47"
     },
     "GHSA-M3Q2-P4FW-W38M": {
+      "37c4b13d0bdf6db779ab0c0560d495a98b212f2b": "fix(nuxt): escape `<NoScript>` slot content\n\nRefs: GHSA-m3q2-p4fw-w38m",
       "4b054e9d95f8daf366cb144b52782047c511a66e": "fix(nuxt): escape `<NoScript>` slot content\n\nRefs: GHSA-m3q2-p4fw-w38m",
       "7fea9fd687f1dacbfb63db5fae5839896b017a0e": "fix(nuxt): escape `<NoScript>` slot content\n\n(cherry picked from commit 3ec506cfa73917e021e4aa0f868cbc0579c5c6c6)\nRefs: GHSA-m3q2-p4fw-w38m"
     },
