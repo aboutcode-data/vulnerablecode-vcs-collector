@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/matrix-org/matrix-js-sdk",
   "vulnerabilities": {
+    "CVE-2026-45056": {
+      "76aee8e682514931bc620b2b289eabe7a8e67118": "SECURITY: Update matrix-sdk-crypto-wasm to v18.3.1 (#5355)\n\n* SECURITY: Update matrix-sdk-crypto-wasm to v18.3.1\n\nUpdates to a new version of matrix-sdk-crypto-wasm to resolve\n[GHSA-wfq4-36m3-9g42](https://github.com/matrix-org/matrix-rust-sdk/security/advisories/GHSA-wfq4-36m3-9g42) / [CVE-2026-45056](https://www.cve.org/CVERecord?id=CVE-2026-45056).\n\n* bypass minimum release age for this version of crypto-wasm\n\n* comment\n\n* Allow all matrix-org\n\n* comment is no longer relevant"
+    },
+    "GHSA-WFQ4-36M3-9G42": {
+      "76aee8e682514931bc620b2b289eabe7a8e67118": "SECURITY: Update matrix-sdk-crypto-wasm to v18.3.1 (#5355)\n\n* SECURITY: Update matrix-sdk-crypto-wasm to v18.3.1\n\nUpdates to a new version of matrix-sdk-crypto-wasm to resolve\n[GHSA-wfq4-36m3-9g42](https://github.com/matrix-org/matrix-rust-sdk/security/advisories/GHSA-wfq4-36m3-9g42) / [CVE-2026-45056](https://www.cve.org/CVERecord?id=CVE-2026-45056).\n\n* bypass minimum release age for this version of crypto-wasm\n\n* comment\n\n* Allow all matrix-org\n\n* comment is no longer relevant"
+    },
     "CVE-2022-39249": {
       "a587d7c36026fe1fcf93dfff63588abee359be76": "Resolve multiple CVEs\n\nCVE-2022-39249\nCVE-2022-39250\nCVE-2022-39251\nCVE-2022-39236"
     },
