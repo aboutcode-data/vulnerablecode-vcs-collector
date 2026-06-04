@@ -1,6 +1,26 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-6873": {
+      "32ff989879ca372003d44ee8421d81f3353c8ac0": "python3Packages.django_5: 5.2.14 -> 5.2.15\n\nhttps://docs.djangoproject.com/en/5.2/releases/5.2.15/\nhttps://www.djangoproject.com/weblog/2026/jun/03/security-releases/\n\nFixes:\nCVE-2026-6873, CVE-2026-7666, CVE-2026-8404, CVE-2026-35193,\nCVE-2026-48587\n\n(cherry picked from commit 3b5d44bff532312e311282d9768c5204fc8d601a)",
+      "3b5d44bff532312e311282d9768c5204fc8d601a": "python3Packages.django_5: 5.2.14 -> 5.2.15\n\nhttps://docs.djangoproject.com/en/5.2/releases/5.2.15/\nhttps://www.djangoproject.com/weblog/2026/jun/03/security-releases/\n\nFixes:\nCVE-2026-6873, CVE-2026-7666, CVE-2026-8404, CVE-2026-35193,\nCVE-2026-48587"
+    },
+    "CVE-2026-7666": {
+      "32ff989879ca372003d44ee8421d81f3353c8ac0": "python3Packages.django_5: 5.2.14 -> 5.2.15\n\nhttps://docs.djangoproject.com/en/5.2/releases/5.2.15/\nhttps://www.djangoproject.com/weblog/2026/jun/03/security-releases/\n\nFixes:\nCVE-2026-6873, CVE-2026-7666, CVE-2026-8404, CVE-2026-35193,\nCVE-2026-48587\n\n(cherry picked from commit 3b5d44bff532312e311282d9768c5204fc8d601a)",
+      "3b5d44bff532312e311282d9768c5204fc8d601a": "python3Packages.django_5: 5.2.14 -> 5.2.15\n\nhttps://docs.djangoproject.com/en/5.2/releases/5.2.15/\nhttps://www.djangoproject.com/weblog/2026/jun/03/security-releases/\n\nFixes:\nCVE-2026-6873, CVE-2026-7666, CVE-2026-8404, CVE-2026-35193,\nCVE-2026-48587"
+    },
+    "CVE-2026-8404": {
+      "32ff989879ca372003d44ee8421d81f3353c8ac0": "python3Packages.django_5: 5.2.14 -> 5.2.15\n\nhttps://docs.djangoproject.com/en/5.2/releases/5.2.15/\nhttps://www.djangoproject.com/weblog/2026/jun/03/security-releases/\n\nFixes:\nCVE-2026-6873, CVE-2026-7666, CVE-2026-8404, CVE-2026-35193,\nCVE-2026-48587\n\n(cherry picked from commit 3b5d44bff532312e311282d9768c5204fc8d601a)",
+      "3b5d44bff532312e311282d9768c5204fc8d601a": "python3Packages.django_5: 5.2.14 -> 5.2.15\n\nhttps://docs.djangoproject.com/en/5.2/releases/5.2.15/\nhttps://www.djangoproject.com/weblog/2026/jun/03/security-releases/\n\nFixes:\nCVE-2026-6873, CVE-2026-7666, CVE-2026-8404, CVE-2026-35193,\nCVE-2026-48587"
+    },
+    "CVE-2026-35193": {
+      "32ff989879ca372003d44ee8421d81f3353c8ac0": "python3Packages.django_5: 5.2.14 -> 5.2.15\n\nhttps://docs.djangoproject.com/en/5.2/releases/5.2.15/\nhttps://www.djangoproject.com/weblog/2026/jun/03/security-releases/\n\nFixes:\nCVE-2026-6873, CVE-2026-7666, CVE-2026-8404, CVE-2026-35193,\nCVE-2026-48587\n\n(cherry picked from commit 3b5d44bff532312e311282d9768c5204fc8d601a)",
+      "3b5d44bff532312e311282d9768c5204fc8d601a": "python3Packages.django_5: 5.2.14 -> 5.2.15\n\nhttps://docs.djangoproject.com/en/5.2/releases/5.2.15/\nhttps://www.djangoproject.com/weblog/2026/jun/03/security-releases/\n\nFixes:\nCVE-2026-6873, CVE-2026-7666, CVE-2026-8404, CVE-2026-35193,\nCVE-2026-48587"
+    },
+    "CVE-2026-48587": {
+      "32ff989879ca372003d44ee8421d81f3353c8ac0": "python3Packages.django_5: 5.2.14 -> 5.2.15\n\nhttps://docs.djangoproject.com/en/5.2/releases/5.2.15/\nhttps://www.djangoproject.com/weblog/2026/jun/03/security-releases/\n\nFixes:\nCVE-2026-6873, CVE-2026-7666, CVE-2026-8404, CVE-2026-35193,\nCVE-2026-48587\n\n(cherry picked from commit 3b5d44bff532312e311282d9768c5204fc8d601a)",
+      "3b5d44bff532312e311282d9768c5204fc8d601a": "python3Packages.django_5: 5.2.14 -> 5.2.15\n\nhttps://docs.djangoproject.com/en/5.2/releases/5.2.15/\nhttps://www.djangoproject.com/weblog/2026/jun/03/security-releases/\n\nFixes:\nCVE-2026-6873, CVE-2026-7666, CVE-2026-8404, CVE-2026-35193,\nCVE-2026-48587"
+    },
     "CVE-2026-28847": {
       "79ac2b3e244b7ceb5bb9f31366a2f91158361b3a": "webkitgtk_6_0: 2.52.3 \u2192 2.52.4\n\nhttps://github.com/WebKit/WebKit/compare/webkitgtk-2.52.3...webkitgtk-2.52.4\nhttps://webkitgtk.org/2026/06/02/webkitgtk2.52.4-released.html\nhttps://webkitgtk.org/security/WSA-2026-0003.html\n\nCVE-2026-28847, CVE-2026-28883, CVE-2026-28901, CVE-2026-28902, CVE-2026-28903,\nCVE-2026-28904, CVE-2026-28905, CVE-2026-28907, CVE-2026-28942, CVE-2026-28946,\nCVE-2026-28947, CVE-2026-28953, CVE-2026-28955, CVE-2026-28958, CVE-2026-43658,\nCVE-2026-43660\n\n(cherry picked from commit f66b70ac403fce30d6276cdb376dc27c3ed96f12)",
       "70becd4ad8b7d24e8da20b492103659858660ddb": "webkitgtk_6_0: 2.52.3 \u2192 2.52.4\n\nhttps://github.com/WebKit/WebKit/compare/webkitgtk-2.52.3...webkitgtk-2.52.4\nhttps://webkitgtk.org/2026/06/02/webkitgtk2.52.4-released.html\nhttps://webkitgtk.org/security/WSA-2026-0003.html\n\nCVE-2026-28847, CVE-2026-28883, CVE-2026-28901, CVE-2026-28902, CVE-2026-28903,\nCVE-2026-28904, CVE-2026-28905, CVE-2026-28907, CVE-2026-28942, CVE-2026-28946,\nCVE-2026-28947, CVE-2026-28953, CVE-2026-28955, CVE-2026-28958, CVE-2026-43658,\nCVE-2026-43660\n\n(cherry picked from commit f66b70ac403fce30d6276cdb376dc27c3ed96f12)",
