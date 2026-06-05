@@ -1,6 +1,39 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-H5R4-W88W-7CCR": {
+      "ed143b98d72bba764b010eb822464f2a12b24ff1": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-h5r4-w88w-7ccr"
+    },
+    "GHSA-PJXJ-PCHX-4C3M": {
+      "47ca7210515f3c9ea033b86fe4323a70caa74468": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-pjxj-pchx-4c3m"
+    },
+    "GHSA-H58X-R7F7-RH84": {
+      "b237a4fa9cbffcb11ee579d386fd37c570d5dffe": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-h58x-r7f7-rh84"
+    },
+    "GHSA-M596-67P7-69WH": {
+      "fdbf39ba9a681e53e6025d40501ae5a2bfec3000": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-m596-67p7-69wh"
+    },
+    "GHSA-R628-69V2-2F9C": {
+      "b2dc602e175ee07b0794f3e31f1a29ae6b7267d1": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-r628-69v2-2f9c"
+    },
+    "GHSA-H7F2-F9CC-H2GV": {
+      "808506dc4d0cbf3972ce0d57544a06209b65009c": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-h7f2-f9cc-h2gv"
+    },
+    "GHSA-JFQ9-Q63X-RC63": {
+      "f34065ecd9512df16cb10083c8b4b46b5cd09b30": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-jfq9-q63x-rc63"
+    },
+    "GHSA-99W9-HV66-RFV7": {
+      "0bb3578ee087f3c4f14bbf1d8883ae456fc99092": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-99w9-hv66-rfv7"
+    },
+    "GHSA-3564-H588-56GR": {
+      "f80b878e884f5b4e2b8f0b512d685701729f7def": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-3564-h588-56gr"
+    },
+    "GHSA-HV63-QGJ6-7GH7": {
+      "d0d8ae7c5cfbd8990c2f9e0d5ca7621600b469c4": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-hv63-qgj6-7gh7"
+    },
+    "GHSA-HWF3-R46V-5GGX": {
+      "4079949bae0cde7e683df2e63c40f2e36f52c1b6": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-hwf3-r46v-5ggx"
+    },
     "GHSA-J8RH-V2R8-V94X": {
       "b535126ba5abf23f2693e62ed79f10277d938cf4": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-j8rh-v2r8-v94x"
     },
