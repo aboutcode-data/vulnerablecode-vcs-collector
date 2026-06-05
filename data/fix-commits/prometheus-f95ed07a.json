@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/prometheus/prometheus",
   "vulnerabilities": {
+    "CVE-2025-61140": {
+      "2625721ebaa86873c04357a9a222700cab9ebc02": "ui: update jsonpath to 1.3.0\n\nThis addresses CVE-2025-61140 and CVE-2025-1615 by updating jsonpath to a patched version.\n\nSigned-off-by: Oindrila Khan <oindrilakha12@gmail.com>"
+    },
+    "CVE-2025-1615": {
+      "2625721ebaa86873c04357a9a222700cab9ebc02": "ui: update jsonpath to 1.3.0\n\nThis addresses CVE-2025-61140 and CVE-2025-1615 by updating jsonpath to a patched version.\n\nSigned-off-by: Oindrila Khan <oindrilakha12@gmail.com>"
+    },
     "GHSA-39J6-789Q-QXVH": {
       "9122d1f50bd3056bffd035b202612fe116c13efd": "Merge pull request #18650 from roidelapluie/roidelapluie/ghsa-39j6-789q-qxvh-3.5\n\ndiscovery/stackit: use config.Secret for ServiceAccountKey and PrivateKey",
       "fd2d158f49819797216c263790fd46370be1b06a": "discovery/stackit: use config.Secret for ServiceAccountKey and PrivateKey\n\nFixes GHSA-39j6-789q-qxvh\n\nSigned-off-by: Julien Pivotto <291750+roidelapluie@users.noreply.github.com>",
