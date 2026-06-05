@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/neovim/neovim",
   "vulnerabilities": {
+    "GHSA-65P9-MWWX-7468": {
+      "e887cfb3b564c2248d902d524a9616440057a87d": "vim-patch:9.2.0597: [security]: possible code execution with python complete (#40117)\n\nProblem:  [security]: another possible code execution with python complete\n          (David Carliez)\nSolution: Strip default expressions and annotations from generated\n          source for pythoncomplete and python3complete.\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-65p9-mwwx-7468\n\nhttps://github.com/vim/vim/commit/c8c63673bc4253212820626aeeb75999d9a539d2\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-52MC-RQ6P-RC7C": {
       "de8c2db57796a18d918def998526d68ae50c9ed0": "vim-patch:9.2.0561: [security]: possible code execution with python3complete\n\nProblem:  [security]: possible code execution with python3complete\nSolution: Disable execution of import/from statements\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-52mc-rq6p-rc7c\n\nhttps://github.com/vim/vim/commit/4b850457e12e1a678dd209f2868154f7553cbf8d\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
     },

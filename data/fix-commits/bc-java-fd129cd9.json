@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/bcgit/bc-java",
   "vulnerabilities": {
+    "CVE-2026-5588": {
+      "6d9da1b13c466e840408d953116c46c6afdb9cc2": "Reject composite signatures missing or with extra components in CompositeVerifier (CVE-2026-5588 follow-up): require one component per key so a signature stripped to a verifying prefix no longer validates"
+    },
     "CVE-2018-5382": {
       "c014f78b148685527c5646b1204cd7f595005afa": "updates from FIPS API\nadded ref to CVE-2018-5382 in releasenotes.",
       "4534f41ab3ce581d1bb69d64276ab60d0df49a7e": "updates from FIPS API\nadded ref to CVE-2018-5382 in releasenotes.",
