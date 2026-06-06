@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/ansible/ansible",
   "vulnerabilities": {
+    "CVE-2026-11332": {
+      "edee59aa15abcc74d920bb3e9c3835ab8db05a2f": "Fix CVE-2026-11332 - prevent role requirements from configuring git (#87070)\n\n* Pass malformed role requirements as positional arguments to prevent arbitrary git configuration\n\n* Add test coverage, checking for specific errors and that git clone is always followed by --\n\nCo-authored-by: \ud83c\uddfa\ud83c\udde6 Sviatoslav Sydorenko (\u0421\u0432\u044f\u0442\u043e\u0441\u043b\u0430\u0432 \u0421\u0438\u0434\u043e\u0440\u0435\u043d\u043a\u043e) <wk.cvs.github@sydorenko.org.ua>"
+    },
     "CVE-2024-11079": {
       "70e83e72b43e05e57eb42a6d52d01a4d9768f510": "Fix CVE-2024-11079 hostvars unsafe context (#84339) (#84353)\n\nFix to preserve an unsafe variable when accessing through an\r\nintermediary variable from hostvars.\r\n\r\n(cherry picked from commit 2936b80dbbc7efb889934aeec80f6142c10266ce)",
       "98774d15d7748ebaaaf2e83942cc7e8d39f7280e": "Fix CVE-2024-11079 hostvars unsafe context (#84339) (#84354)\n\nFix to preserve an unsafe variable when accessing through an\r\nintermediary variable from hostvars.\r\n\r\n(cherry picked from commit 2936b80dbbc7efb889934aeec80f6142c10266ce)",
