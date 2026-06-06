@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-VGH5-R42G-4J44": {
+      "6336c4f1ce6dd97cdbaa471eaa4e2fa8fa58ca1c": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-vgh5-r42g-4j44",
+      "5952b6a46788522a599579cdd8af35ade1c91b89": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-vgh5-r42g-4j44"
+    },
     "GHSA-C8R2-MC3P-4F8J": {
       "6aee53fdae5c70020abe2a7f92d55ec8071d32ef": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-c8r2-mc3p-4f8j"
     },
@@ -66,9 +70,6 @@
     },
     "GHSA-6MWJ-RP89-6J5J": {
       "f1d37578fc0e0aca3d6b65d696f05ad7546c8dab": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-6mwj-rp89-6j5j"
-    },
-    "GHSA-VGH5-R42G-4J44": {
-      "5952b6a46788522a599579cdd8af35ade1c91b89": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-vgh5-r42g-4j44"
     },
     "GHSA-6GXQ-F64P-5W6F": {
       "81589e7209b72bb84442380ff53109f61d41902d": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-6gxq-f64p-5w6f",
