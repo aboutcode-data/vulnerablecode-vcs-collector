@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/webpack/webpack",
   "vulnerabilities": {
+    "GHSA-X9GQ-59M7-268R": {
+      "7a47f94151c0f8e8b35e0d91d50212a956cad541": "fix: reject path traversal in chunk names from node_modules\n\nEmit a build error when a webpackChunkName magic comment or\nrequire.ensure chunk name from a node_modules dependency contains\n\"..\", preventing supply-chain path traversal writes outside\noutput.path (GHSA-x9gq-59m7-268r).\n\nUser-authored code is not affected \u2014 the check only applies to\nmodules resolved under node_modules."
+    },
     "GHSA-H9RV-JMMF-4PGX": {
       "29b2bdd641b18d413281cf413afd31323b0bae82": "Update terser-webpack-plugin to ^1.4.3\n\nhttps://github.com/advisories/GHSA-h9rv-jmmf-4pgx"
     }
