@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/stedolan/jq",
   "vulnerabilities": {
+    "CVE-2026-49839": {
+      "e987df0d463d85fd70825e042a082427e8275b86": "Fix heap-buffer-overflow in raw file loading\n\nWhen `jv_string_append_buf` overflows the string length limit,\nit returns an invalid `jv`; `jv_load_file` then re-entered it\non the invalid value and overran the heap. Break out of the loop\nonce the value is invalid.\n\nFixes CVE-2026-49839."
+    },
     "GHSA-GGC9-RPV2-XGPM": {
       "df924eae91af10cc236a907cdadd97813827aa1f": "Fix undefined pointer arithmetic in UTF-8 helpers\n\nFixes GHSA-ggc9-rpv2-xgpm and GHSA-gvwx-xj9r-3frq."
     },
