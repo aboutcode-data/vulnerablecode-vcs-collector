@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/strongswan/strongswan",
   "vulnerabilities": {
+    "CVE-2026-47895": {
+      "d7e305f93f8e04d9425747bc5de867ac466b52e0": "NEWS: Add news for 6.0.7 and info about CVE-2026-47895",
+      "075323d895f574424cfc4a5f491a1d388cdfda37": "identification: Fix double-free when cloning empty IDs\n\nThe clone() method was missing a branch when there is an encoded chunk\nof length 0 that still needed to be cloned.  Otherwise, the destruction\nof the clone frees the same pointer that the original owns.\n\nThis double free was found with an improved `fuzz_ids` fuzz harness and\na two byte input to create an identification from \"@#\" or [0x40, 0x23].\nIt can also be triggered with `<type>:#` e.g. `dns:#`.\n\nOne of the problematic constructors is used to parse EAP-Identities,\nwhich are cloned before storing them in the auth-cfg.   So this can be\ntriggered by an unauthenticated attacker.\n\nNote that while the length check was already added with 418dbd624363\n(\"cloning %any ID without zero-byte memleak\") and identities that trigger\nthis can be created since 86ab5636c2c9 (\"support for @#hex ID_KEY_ID\nidentification_t\"), it was the referenced commit that made the length\ncheck problematic.\n\nFixes: 2147da40a5d7 (\"simplified identification_t.clone() using memcpy\")\nFixes: CVE-2026-47895"
+    },
     "CVE-2026-35328": {
       "8b68b2ea51f572491f0190b348d5cbcaaddd4284": "NEWS: Add news for 6.0.6 and info about CVEs (CVE-2026-35328..35334)",
       "56c7f0d13dffcfebf4255470e375234144d28134": "tls-server: Prevent infinite loop if supported versions are too short\n\nIf the extension doesn't contain a multiple of two bytes, the previous\ncode would get stuck in an infinite loop as `remaining()` continued to\nreturn TRUE while `read_uint16()` failed to parse a value. Initiating\nseveral connections with such an extension allows a DoS attack as no\nthreads would eventually be available to handle packets/events.\n\nFixes: 7fbe2e27ecf6 (\"tls-server: TLS 1.3 support for TLS server implementation\")\nFixes: CVE-2026-35328"

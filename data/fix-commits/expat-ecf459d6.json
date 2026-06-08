@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://android.googlesource.com/platform/external/expat",
   "vulnerabilities": {
+    "CVE-2026-50219": {
+      "3fd4d1c19c30f71979b00d73d367f3d27935fad5": "Merge pull request #1246 from libexpat/introduce-flag-inside-handler\n\n[CVE-2026-50219] Introduce handler call depth tracking",
+      "f17ca46befb59098da339ed6d2438de3bdece8b5": "Changes: Document CVE-2026-50219"
+    },
     "CVE-2026-45186": {
       "9bdfbc77e3355405ceefbe59420abed953a5657e": "Merge pull request #1216 from libexpat/attribute-collision-check-dos\n\n[CVE-2026-45186] Prevent attribute collision check DoS"
     },
