@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/u-boot/u-boot",
   "vulnerabilities": {
+    "CVE-2026-44431": {
+      "969a1dde3a0913ed00afdbd49abf318ce34dc9af": "doc: Update urllib3 version for building\n\nThe GitHub dependabot tool has reported two \"high\" priority bug,\nCVE-2026-44431 and CVE-2026-44432, with this package. Update to the\npatched version.\n\nReported-by: GitHub dependabot\nSigned-off-by: Tom Rini <trini@konsulko.com>"
+    },
+    "CVE-2026-44432": {
+      "969a1dde3a0913ed00afdbd49abf318ce34dc9af": "doc: Update urllib3 version for building\n\nThe GitHub dependabot tool has reported two \"high\" priority bug,\nCVE-2026-44431 and CVE-2026-44432, with this package. Update to the\npatched version.\n\nReported-by: GitHub dependabot\nSigned-off-by: Tom Rini <trini@konsulko.com>"
+    },
     "CVE-2024-42040": {
       "f447887238822af40582483112cab524926e9258": "net: bootp: Prevent out-of-bounds read in dhcp_message_type\n\ndhcp_message_type() scans DHCP options looking for a 0xff\nend-of-options marker with no check that the scan pointer stays\nwithin the received packet. A server can send a crafted OFFER with\nno 0xff terminator and large option length fields, advancing the\npointer past bp_vend[312] into adjacent heap memory.\n\nThis is the same class of bug as CVE-2024-42040, which fixed the\nrelated bootp_process_vendor() call site. Fix it by adding an end\nparameter to dhcp_message_type() and checking that popt is lower\nthan end.\n\nSigned-off-by: Francois Berder <fberder@outlook.fr>\nReviewed-by: Jerome Forissier <jerome.forissier@arm.com>",
       "81e5708cc2c865df606e49aed5415adb2a662171": "net: bootp: Prevent buffer overflow to avoid leaking the RAM content\n\nCVE-2024-42040 describes a possible buffer overflow when calling\nbootp_process_vendor() in bootp_handler() since the total length\nof the packet is passed to bootp_process_vendor() without being\nreduced to len-(offsetof(struct bootp_hdr,bp_vend)+4).\n\nThe packet length is also checked against its minimum size to avoid\nreading data from struct bootp_hdr outside of the packet length.\n\nSigned-off-by: Paul HENRYS <paul.henrys_ext@softathome.com>\nSigned-off-by: Philippe Reynes <philippe.reynes@softathome.com>"
