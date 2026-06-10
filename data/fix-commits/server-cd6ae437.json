@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/mariadb/server",
   "vulnerabilities": {
+    "CVE-2026-21968": {
+      "b6c1ed207d65316f44654f0ecb729623f6a297a8": "DOCS-6002 - Add CVE-2026-21968 to release notes pages"
+    },
     "CVE-2005-0004": {
       "412e3e6917233fe612354622a18b3f9cdf3a350c": "MDEV-9546 mysqlaccess script shows an old version (which was vulnerable to CVE-2005-0004)\n\nupdate mysqlaccess version"
     },
