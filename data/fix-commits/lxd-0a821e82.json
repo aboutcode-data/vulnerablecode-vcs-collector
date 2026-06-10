@@ -2,15 +2,19 @@
   "vcs_url": "https://github.com/lxc/lxd",
   "vulnerabilities": {
     "CVE-2026-48753": {
+      "9e3748f9396f5f2692f6eae1cb628acbbf274671": "incusd/storage/s3: Confine multipart uploads with os.Root\n\nThis addresses CVE-2026-48753\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
       "a6012422b45c86f3b1956788cff5d75c604ad838": "incusd/storage/s3: Confine multipart uploads with os.Root\n\nThis addresses CVE-2026-48753\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
     },
     "CVE-2026-48754": {
+      "81f334ffe18fea37c2b4ae49c20cec29772ccbfd": "incusd/storage: Guard nil fields in createDependentVolumesFromBackup\n\nThis addresses CVE-2026-48754\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
       "98e64f0a6fcfdc9676eea0246418d490c53297bf": "incusd/storage: Guard nil fields in createDependentVolumesFromBackup\n\nThis addresses CVE-2026-48754\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
     },
     "CVE-2026-48756": {
+      "8c2c02bd4b3e93fa0fa3bede5fcfb87ddfaa5f3c": "incusd/storage: Guard nil ExpiresAt in CreateCustomVolumeFromBackup\n\nThis addresses CVE-2026-48756\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
       "ab6b7dff0c770044875d9d26a6254a7075b4d00b": "incusd/storage: Guard nil ExpiresAt in CreateCustomVolumeFromBackup\n\nThis addresses CVE-2026-48756\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
     },
     "CVE-2026-47753": {
+      "5a75b878a5b078f8b43d550a13368fe63ca7c94e": "incusd/storage: Fix unsafe access to backup data\n\nThis addresses CVE-2026-47753\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
       "d71c5053a4c8318e6eb07337a7a4a07a6608ef73": "incusd/storage: Fix unsafe access to backup data\n\nThis addresses CVE-2026-47753\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
     },
     "CVE-2026-41685": {
