@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/kubernetes/kube-state-metrics",
   "vulnerabilities": {
     "CVE-2026-42504": {
+      "da2095a09794d774573c11f34f3f1c1ed093b478": "Merge pull request #2982 from slessard/dev-upggo\n\nchore: upgrade golang toolchain to address CVE-2026-42504 - GO-2026-5038",
       "6307e194ddacd9dd193fa07f37576e7fd77d97f9": "Merge pull request #2982 from slessard/dev-upggo\n\nchore: upgrade golang toolchain to address CVE-2026-42504 - GO-2026-5038",
       "237e2e441677141ecf32291eedb4839c79716eb1": "chore: upgrade golang toolchain to address CVE-2026-42504 - GO-2026-5038"
     },
