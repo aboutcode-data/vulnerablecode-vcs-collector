@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/pypa/virtualenv",
   "vulnerabilities": {
+    "CVE-2026-24049": {
+      "5389c25cf4a1ee11ea55183d6daf4c8055dc3060": "Add wheel-0.47.0 to seed packages as mitigation of CVE-2026-24049 (#3167)\n\nHi!\n\nMe and my team ran into the issue that even with the latest version of\n`virtualenv` each venv gets seeded with `wheel 0.45.1`, which is\nvulnerable in terms of\n[CVE-2026-24049](https://nvd.nist.gov/vuln/detail/CVE-2026-24049).\nThis PR adds the most current version of the `wheel` package to the list\nof seeding packages at the time this PR was authored.\n\n---------\n\nCo-authored-by: Patrick Kleindienst <Patrick.Kleindienst@ibm.com>"
+    },
     "CVE-2025-68146": {
       "7c284221b4751388801355fc6ebaa2abe60427bd": "fix: update filelock dependency version to 3.20.1 to fix CVE CVE-2025-68146 (#3002)"
     }
