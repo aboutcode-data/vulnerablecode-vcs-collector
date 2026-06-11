@@ -2,9 +2,13 @@
   "vcs_url": "https://gitlab.com/gitlab-org/gitlab",
   "vulnerabilities": {
     "CVE-2026-35172": {
+      "8a53c240c867de84380634ec8754a4546209b590": "Bump devfile gem to 0.5.2\n\nBackport of https://gitlab.com/gitlab-org/gitlab/-/merge_requests/239306\nto 18-11-stable-ee. Drops CVE-2026-35172 and CVE-2026-33540 from the\ndevfile gem's transitive Go dependencies.\n\nChangelog: security\nEE: true",
+      "926e091d979b1dad48dabeabaa6977eb3e99281e": "Bump devfile gem to 0.5.2\n\nBackport of https://gitlab.com/gitlab-org/gitlab/-/merge_requests/239306\nto 18-10-stable-ee. Drops CVE-2026-35172 and CVE-2026-33540 from the\ndevfile gem's transitive Go dependencies.\n\nChangelog: security\nEE: true",
       "ead125962f6bc835bbd11864de4e9ae2247207e7": "Bump devfile gem to 0.5.2 to resolve CVE-2026-35172 and CVE-2026-33540\n\nUpgrades devfile gem to 0.5.2, which bumps devfile/library to v2.4.0 and\ndrops the vulnerable github.com/distribution/distribution/v3 dependency\ncontaining CVE-2026-35172 and CVE-2026-33540.\n\ndevfile/library v2.4.0 changes env var ordering in generated Kubernetes\nmanifests (PROJECT_SOURCE now precedes PROJECTS_ROOT), so fixture files\nare updated accordingly.\n\nChangelog: security\nEE: true"
     },
     "CVE-2026-33540": {
+      "8a53c240c867de84380634ec8754a4546209b590": "Bump devfile gem to 0.5.2\n\nBackport of https://gitlab.com/gitlab-org/gitlab/-/merge_requests/239306\nto 18-11-stable-ee. Drops CVE-2026-35172 and CVE-2026-33540 from the\ndevfile gem's transitive Go dependencies.\n\nChangelog: security\nEE: true",
+      "926e091d979b1dad48dabeabaa6977eb3e99281e": "Bump devfile gem to 0.5.2\n\nBackport of https://gitlab.com/gitlab-org/gitlab/-/merge_requests/239306\nto 18-10-stable-ee. Drops CVE-2026-35172 and CVE-2026-33540 from the\ndevfile gem's transitive Go dependencies.\n\nChangelog: security\nEE: true",
       "ead125962f6bc835bbd11864de4e9ae2247207e7": "Bump devfile gem to 0.5.2 to resolve CVE-2026-35172 and CVE-2026-33540\n\nUpgrades devfile gem to 0.5.2, which bumps devfile/library to v2.4.0 and\ndrops the vulnerable github.com/distribution/distribution/v3 dependency\ncontaining CVE-2026-35172 and CVE-2026-33540.\n\ndevfile/library v2.4.0 changes env var ordering in generated Kubernetes\nmanifests (PROJECT_SOURCE now precedes PROJECTS_ROOT), so fixture files\nare updated accordingly.\n\nChangelog: security\nEE: true"
     },
     "CVE-2019-18451": {
