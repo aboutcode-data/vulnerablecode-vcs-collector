@@ -24,7 +24,6 @@
     "CVE-2024-34156": {
       "e570b8429c7fa7aa3c7c129a16c1e0a3a451ba26": "Bump golang version to 1.22.8 (address CVE-2024-34156) (#2050) (#2183)\n\nSigned-off-by: Sergey Pisarenko <spisarenko@palantir.com>\r\nSigned-off-by: AbstractionFactory <179820029+abstractionfactory@users.noreply.github.com>\r\nCo-authored-by: Sergey Pisarenko <sergey@pisarenko.net>\r\nCo-authored-by: Sergey Pisarenko <spisarenko@palantir.com>",
       "8f19aa2c1594d1aaac4a34e5dee8634b67f6fa55": "Bump golang version to 1.22.8 (address CVE-2024-34156) (#2050) (#2182)\n\nSigned-off-by: Sergey Pisarenko <spisarenko@palantir.com>\r\nSigned-off-by: AbstractionFactory <179820029+abstractionfactory@users.noreply.github.com>\r\nCo-authored-by: Sergey Pisarenko <sergey@pisarenko.net>\r\nCo-authored-by: Sergey Pisarenko <spisarenko@palantir.com>",
-      "f6e13956eaac82950674c2bc7e44bd850a19ae1b": "Bump golang version to 1.22.8 (address CVE-2024-34156) (#2050)\n\nSigned-off-by: Sergey Pisarenko <spisarenko@palantir.com>\nCo-authored-by: Sergey Pisarenko <spisarenko@palantir.com>\n(cherry picked from commit bb6b6c1fc4f5bf2a2d6ac9fcec90e5b43dde1ecd)\nSigned-off-by: AbstractionFactory <179820029+abstractionfactory@users.noreply.github.com>",
       "bb6b6c1fc4f5bf2a2d6ac9fcec90e5b43dde1ecd": "Bump golang version to 1.22.8 (address CVE-2024-34156) (#2050)\n\nSigned-off-by: Sergey Pisarenko <spisarenko@palantir.com>\r\nCo-authored-by: Sergey Pisarenko <spisarenko@palantir.com>"
     },
     "CVE-2024-6104": {
