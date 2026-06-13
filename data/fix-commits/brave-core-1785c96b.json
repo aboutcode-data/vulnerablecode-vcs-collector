@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/brave/brave-core",
   "vulnerabilities": {
+    "GHSA-GV7W-RQVM-QJHR": {
+      "6c857a4709c5834dd6cd6991954684c4d1a3749b": "bump esbuild\n\nfix https://github.com/advisories/GHSA-gv7w-rqvm-qjhr"
+    },
     "GHSA-W9J2-PVGH-6H63": {
       "e22bfb7026569f314064bacfa7a1c19f70062b4c": "bump axios to address security alerts (#36171)\n\naddress axios issues\n\nrelated to the following issues:\nhttps://github.com/advisories/GHSA-w9j2-pvgh-6h63\nhttps://github.com/advisories/GHSA-pmwg-cvhr-8vh7\nhttps://github.com/advisories/GHSA-3w6x-2g7m-8v23\nhttps://github.com/advisories/GHSA-q8qp-cvcw-x6jj\nhttps://github.com/advisories/GHSA-xhjh-pmcv-23jw\nhttps://github.com/advisories/GHSA-445q-vr5w-6q77\nhttps://github.com/advisories/GHSA-m7pr-hjqh-92cm\nhttps://github.com/advisories/GHSA-62hf-57xw-28j9"
     },
