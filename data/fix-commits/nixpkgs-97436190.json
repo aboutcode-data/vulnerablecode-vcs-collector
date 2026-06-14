@@ -1,6 +1,14 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-6507": {
+      "d3853b6fb998e87917e2a8412df43fdd85709d56": "dnsmasq: 2.92rel2 -> 2.93\n\nDropping the patch for CVE-2026-6507 since it has been fixed in this\ntag.\n\n(cherry picked from commit 5efefac4ae41ece2653996d295b2635a522495b1)",
+      "5efefac4ae41ece2653996d295b2635a522495b1": "dnsmasq: 2.92rel2 -> 2.93\n\nDropping the patch for CVE-2026-6507 since it has been fixed in this\ntag.",
+      "3189dfc2791ac1001a877f24a0a29147a6e14f89": "[Backport release-25.11] dnsmasq: apply patch for CVE-2026-6507 (#513133)",
+      "c1b471fc3727d444fb5e63561c3ff7536f3706e6": "dnsmasq: apply patch for CVE-2026-6507\n\nFixes #511439\n\nVendored the patch, access to the upstream cgit is filtered.\n\n(cherry picked from commit c946c99190d45787af51288de5e4d0213dfe60c9)",
+      "def188bbbd51f63d3f11d9fc199b87896bba9422": "dnsmasq: apply patch for CVE-2026-6507 (#511545)",
+      "c946c99190d45787af51288de5e4d0213dfe60c9": "dnsmasq: apply patch for CVE-2026-6507\n\nFixes #511439\n\nVendored the patch, access to the upstream cgit is filtered."
+    },
     "CVE-2026-12007": {
       "c90095eef13b31772a6bc93ce8af4b82fad04793": "ungoogled-chromium: 149.0.7827.102-1 -> 149.0.7827.114-1\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01962725236.html\n\nThis update includes 28 security fixes.\n\nCVEs:\nCVE-2026-12007 CVE-2026-12008 CVE-2026-12009 CVE-2026-12010\nCVE-2026-12011 CVE-2026-12012 CVE-2026-12013 CVE-2026-12014\nCVE-2026-12015 CVE-2026-12016 CVE-2026-12017 CVE-2026-12018\nCVE-2026-12019 CVE-2026-12020 CVE-2026-12022 CVE-2026-12023\nCVE-2026-12024 CVE-2026-12025 CVE-2026-12026 CVE-2026-12027\nCVE-2026-12028 CVE-2026-12029 CVE-2026-12030 CVE-2026-12031\nCVE-2026-12032 CVE-2026-12033 CVE-2026-12034 CVE-2026-12035\n\n(cherry picked from commit 155a9322c9f4722c250f7fbaab61d86e38d8f3e1)",
       "f8de5c3ad6d1afa222f699129b63e839a976194b": "chromium,chromedriver: 149.0.7827.102 -> 149.0.7827.114\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01962725236.html\n\nThis update includes 28 security fixes.\n\nCVEs:\nCVE-2026-12007 CVE-2026-12008 CVE-2026-12009 CVE-2026-12010\nCVE-2026-12011 CVE-2026-12012 CVE-2026-12013 CVE-2026-12014\nCVE-2026-12015 CVE-2026-12016 CVE-2026-12017 CVE-2026-12018\nCVE-2026-12019 CVE-2026-12020 CVE-2026-12022 CVE-2026-12023\nCVE-2026-12024 CVE-2026-12025 CVE-2026-12026 CVE-2026-12027\nCVE-2026-12028 CVE-2026-12029 CVE-2026-12030 CVE-2026-12031\nCVE-2026-12032 CVE-2026-12033 CVE-2026-12034 CVE-2026-12035\n\n(cherry picked from commit 307a2bf66f4d964b8f42167e5e1870ee38083af5)",
@@ -4808,12 +4816,6 @@
     "CVE-2026-6921": {
       "d002a29cfa2331c24426626b0e5cacb6b87751ea": "ungoogled-chromium: 147.0.7727.101-1 -> 147.0.7727.116-1\n\nhttps://chromereleases.googleblog.com/2026/04/stable-channel-update-for-desktop_22.html\n\nThis update includes 19 security fixes.\n\nCVEs:\nCVE-2026-6919 CVE-2026-6920 CVE-2026-6921\n\n(cherry picked from commit 9b69321d9e57075c70c92912fc3b758e38f54cdf)",
       "9b69321d9e57075c70c92912fc3b758e38f54cdf": "ungoogled-chromium: 147.0.7727.101-1 -> 147.0.7727.116-1\n\nhttps://chromereleases.googleblog.com/2026/04/stable-channel-update-for-desktop_22.html\n\nThis update includes 19 security fixes.\n\nCVEs:\nCVE-2026-6919 CVE-2026-6920 CVE-2026-6921"
-    },
-    "CVE-2026-6507": {
-      "3189dfc2791ac1001a877f24a0a29147a6e14f89": "[Backport release-25.11] dnsmasq: apply patch for CVE-2026-6507 (#513133)",
-      "c1b471fc3727d444fb5e63561c3ff7536f3706e6": "dnsmasq: apply patch for CVE-2026-6507\n\nFixes #511439\n\nVendored the patch, access to the upstream cgit is filtered.\n\n(cherry picked from commit c946c99190d45787af51288de5e4d0213dfe60c9)",
-      "def188bbbd51f63d3f11d9fc199b87896bba9422": "dnsmasq: apply patch for CVE-2026-6507 (#511545)",
-      "c946c99190d45787af51288de5e4d0213dfe60c9": "dnsmasq: apply patch for CVE-2026-6507\n\nFixes #511439\n\nVendored the patch, access to the upstream cgit is filtered."
     },
     "CVE-2026-6296": {
       "4dbeed124a2c3a10d4f844aa9f926962d7413832": "electron-chromedriver_40: 40.8.5 -> 40.9.2\n\n- Changelog: https://github.com/electron/electron/releases/tag/v40.9.2\n- Diff: https://github.com/electron/electron/compare/refs/tags/v40.8.5...v40.9.2\n- Fixes CVE-2026-6296\n- Fixes CVE-2026-6297\n- Fixes CVE-2026-6298\n- Fixes CVE-2026-6299\n- Fixes CVE-2026-6300\n- Fixes CVE-2026-6301\n- Fixes CVE-2026-6302\n- Fixes CVE-2026-6303\n- Fixes CVE-2026-6304\n- Fixes CVE-2026-6305\n- Fixes CVE-2026-6306\n- Fixes CVE-2026-6307\n- Fixes CVE-2026-6308\n- Fixes CVE-2026-6309\n- Fixes CVE-2026-6311\n- Fixes CVE-2026-6313\n- Fixes CVE-2026-6314\n- Fixes CVE-2026-6316\n- Fixes CVE-2026-6318\n- Fixes CVE-2026-6358\n- Fixes CVE-2026-6359\n- Fixes CVE-2026-6360\n- Fixes CVE-2026-6361\n- Fixes CVE-2026-6362\n- Fixes CVE-2026-6363\n- Fixes CVE-2026-6364\n\n(cherry picked from commit d7c2e8759fe26c3bc5abb4cffd43f85ad17e095e)",

@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/labstack/echo",
   "vulnerabilities": {
+    "GHSA-VFP3-V2GW-7WFQ": {
+      "c3fa2a27ff92b2b8db360de614f999ef1da24725": "fix(static): reject encoded path separators that bypass route-level middleware (#3011)\n\nv4 backport of GHSA-vfp3-v2gw-7wfq. See PR #3011.",
+      "8d1ae9d3360a71672418856d58753af25f2c3986": "fix(static): reject encoded path separators that bypass route-level middleware (#3009)\n\nFixes GHSA-vfp3-v2gw-7wfq. See PR #3009."
+    },
     "CVE-2023-39325": {
       "5780908c7cb110a8c4d56a62e32dc5cbc030a5ab": "Fix CVE-2023-39325 / CVE-2023-44487 (#2527)\n\nBump golang.org/x/net from v0.12.0 to v0.17.0\r\n\r\nRelated:\r\n* https://github.com/golang/go/issues/63417\r\n* https://www.cve.org/CVERecord?id=CVE-2023-44487"
     },
