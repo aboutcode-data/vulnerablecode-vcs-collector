@@ -1108,6 +1108,23 @@
       "729b5f94e59fd18c84e118d3dab114b15a7575b3": "electron_40-bin: 40.10.2 -> 40.10.3\n\n- Changelog: https://github.com/electron/electron/releases/tag/v40.10.3\n- Diff: https://github.com/electron/electron/compare/refs/tags/v40.10.2...v40.10.3\n- Fixes CVE-2026-9110\n- Fixes CVE-2026-9111\n- Fixes CVE-2026-9112\n- Fixes CVE-2026-9113\n- Fixes CVE-2026-9114\n- Fixes CVE-2026-9115\n- Fixes CVE-2026-9116\n- Fixes CVE-2026-9117\n- Fixes CVE-2026-9118\n- Fixes CVE-2026-9119\n- Fixes CVE-2026-9120\n- Fixes CVE-2026-9121\n- Fixes CVE-2026-9122\n- Fixes CVE-2026-9124\n- Fixes CVE-2026-9126",
       "28cf837ea7068a288fec7eb7d588d69cd4f11203": "electron-source.electron_40: 40.10.2 -> 40.10.3\n\n- Changelog: https://github.com/electron/electron/releases/tag/v40.10.3\n- Diff: https://github.com/electron/electron/compare/refs/tags/v40.10.2...v40.10.3\n- Fixes CVE-2026-9110\n- Fixes CVE-2026-9111\n- Fixes CVE-2026-9112\n- Fixes CVE-2026-9113\n- Fixes CVE-2026-9114\n- Fixes CVE-2026-9115\n- Fixes CVE-2026-9116\n- Fixes CVE-2026-9117\n- Fixes CVE-2026-9118\n- Fixes CVE-2026-9119\n- Fixes CVE-2026-9120\n- Fixes CVE-2026-9121\n- Fixes CVE-2026-9122\n- Fixes CVE-2026-9124\n- Fixes CVE-2026-9126"
     },
+    "CVE-2026-4224": {
+      "584d8c9e355d66259bc5d6627e8d8d034bee8897": "python313: 3.13.13 -> 3.13.14\n\nhttps://docs.python.org/release/3.13.13/whatsnew/changelog.html\n\nFixes: CVE-2026-4224, CVE-2026-3644, CVE-2026-2297",
+      "634df81a6bde9521cc2c14bc512ba5b2a89ae13f": "python313: 3.13.12 -> 3.13.13\n\nhttps://docs.python.org/release/3.13.13/whatsnew/changelog.html\n\nFixes: CVE-2026-4224, CVE-2026-3644, CVE-2026-2297",
+      "e5a825f3cb5cde6a9a655154e641c580acb641fc": "python314: 3.14.3 -> 3.14.4\n\nhttps://docs.python.org/release/3.14.4/whatsnew/changelog.html\n\nFixes: CVE-2026-4224, CVE-2026-3644, CVE-2026-2297",
+      "51c6e5d2b4f5f5c7e3eb08a28cc7d76f36506ade": "python315: 3.15.0a7 -> 3.15.0a8\n\nhttps://docs.python.org/3.15/whatsnew/changelog.html#python-3-15-0-alpha-8\n\nFixes: CVE-2026-4224, CVE-2026-3644"
+    },
+    "CVE-2026-3644": {
+      "584d8c9e355d66259bc5d6627e8d8d034bee8897": "python313: 3.13.13 -> 3.13.14\n\nhttps://docs.python.org/release/3.13.13/whatsnew/changelog.html\n\nFixes: CVE-2026-4224, CVE-2026-3644, CVE-2026-2297",
+      "634df81a6bde9521cc2c14bc512ba5b2a89ae13f": "python313: 3.13.12 -> 3.13.13\n\nhttps://docs.python.org/release/3.13.13/whatsnew/changelog.html\n\nFixes: CVE-2026-4224, CVE-2026-3644, CVE-2026-2297",
+      "e5a825f3cb5cde6a9a655154e641c580acb641fc": "python314: 3.14.3 -> 3.14.4\n\nhttps://docs.python.org/release/3.14.4/whatsnew/changelog.html\n\nFixes: CVE-2026-4224, CVE-2026-3644, CVE-2026-2297",
+      "51c6e5d2b4f5f5c7e3eb08a28cc7d76f36506ade": "python315: 3.15.0a7 -> 3.15.0a8\n\nhttps://docs.python.org/3.15/whatsnew/changelog.html#python-3-15-0-alpha-8\n\nFixes: CVE-2026-4224, CVE-2026-3644"
+    },
+    "CVE-2026-2297": {
+      "584d8c9e355d66259bc5d6627e8d8d034bee8897": "python313: 3.13.13 -> 3.13.14\n\nhttps://docs.python.org/release/3.13.13/whatsnew/changelog.html\n\nFixes: CVE-2026-4224, CVE-2026-3644, CVE-2026-2297",
+      "634df81a6bde9521cc2c14bc512ba5b2a89ae13f": "python313: 3.13.12 -> 3.13.13\n\nhttps://docs.python.org/release/3.13.13/whatsnew/changelog.html\n\nFixes: CVE-2026-4224, CVE-2026-3644, CVE-2026-2297",
+      "e5a825f3cb5cde6a9a655154e641c580acb641fc": "python314: 3.14.3 -> 3.14.4\n\nhttps://docs.python.org/release/3.14.4/whatsnew/changelog.html\n\nFixes: CVE-2026-4224, CVE-2026-3644, CVE-2026-2297"
+    },
     "CVE-2026-42488": {
       "96d850eec3dd82eb955f0da6711dfd389faed916": "xen: patch with XSA-494\n\n            Xen Security Advisory CVE-2026-42488 / XSA-494\n                               version 3\n\n                   x86: mismatched mapcache metadata\n\nSome shadow paging errors paths will switch the page-tables without\nupdating the currently running vCPU reference.  This causes a mismatch\nbetween the loaded page-tables and the mapcache metadata which can lead\nto corruption of the mapcache.\n\nPrivilege escalation, Denial of Service (DoS) affecting the entire host,\nand information leaks.\n\nhttps://xenbits.xen.org/xsa/advisory-494.html\n\nSigned-off-by: Fernando Rodrigues <alpha@sigmasquadron.net>\n(cherry picked from commit c8ec62ac39407e46ff9c97a28983455dce1837ad)",
       "61734f7ad5f5bdcb97c453ebd2eb29e23737f9a5": "xen: patch with XSA-494\n\n            Xen Security Advisory CVE-2026-42488 / XSA-494\n                               version 3\n\n                   x86: mismatched mapcache metadata\n\nSome shadow paging errors paths will switch the page-tables without\nupdating the currently running vCPU reference.  This causes a mismatch\nbetween the loaded page-tables and the mapcache metadata which can lead\nto corruption of the mapcache.\n\nPrivilege escalation, Denial of Service (DoS) affecting the entire host,\nand information leaks.\n\nhttps://xenbits.xen.org/xsa/advisory-494.html\n\nSigned-off-by: Fernando Rodrigues <alpha@sigmasquadron.net>\n(cherry picked from commit c8ec62ac39407e46ff9c97a28983455dce1837ad)",
@@ -5486,20 +5503,6 @@
     },
     "CVE-2026-5600": {
       "7368396e53254f6dd78babf7272754b8741bc777": "pretix: 2026.3.0 -> 2026.3.1\n\nhttps://pretix.eu/about/en/blog/20260408-release-2026-3-1/\nhttps://github.com/pretix/pretix/compare/v2026.3.0...v2026.3.1\n\nFixes: CVE-2026-5600"
-    },
-    "CVE-2026-4224": {
-      "634df81a6bde9521cc2c14bc512ba5b2a89ae13f": "python313: 3.13.12 -> 3.13.13\n\nhttps://docs.python.org/release/3.13.13/whatsnew/changelog.html\n\nFixes: CVE-2026-4224, CVE-2026-3644, CVE-2026-2297",
-      "e5a825f3cb5cde6a9a655154e641c580acb641fc": "python314: 3.14.3 -> 3.14.4\n\nhttps://docs.python.org/release/3.14.4/whatsnew/changelog.html\n\nFixes: CVE-2026-4224, CVE-2026-3644, CVE-2026-2297",
-      "51c6e5d2b4f5f5c7e3eb08a28cc7d76f36506ade": "python315: 3.15.0a7 -> 3.15.0a8\n\nhttps://docs.python.org/3.15/whatsnew/changelog.html#python-3-15-0-alpha-8\n\nFixes: CVE-2026-4224, CVE-2026-3644"
-    },
-    "CVE-2026-3644": {
-      "634df81a6bde9521cc2c14bc512ba5b2a89ae13f": "python313: 3.13.12 -> 3.13.13\n\nhttps://docs.python.org/release/3.13.13/whatsnew/changelog.html\n\nFixes: CVE-2026-4224, CVE-2026-3644, CVE-2026-2297",
-      "e5a825f3cb5cde6a9a655154e641c580acb641fc": "python314: 3.14.3 -> 3.14.4\n\nhttps://docs.python.org/release/3.14.4/whatsnew/changelog.html\n\nFixes: CVE-2026-4224, CVE-2026-3644, CVE-2026-2297",
-      "51c6e5d2b4f5f5c7e3eb08a28cc7d76f36506ade": "python315: 3.15.0a7 -> 3.15.0a8\n\nhttps://docs.python.org/3.15/whatsnew/changelog.html#python-3-15-0-alpha-8\n\nFixes: CVE-2026-4224, CVE-2026-3644"
-    },
-    "CVE-2026-2297": {
-      "634df81a6bde9521cc2c14bc512ba5b2a89ae13f": "python313: 3.13.12 -> 3.13.13\n\nhttps://docs.python.org/release/3.13.13/whatsnew/changelog.html\n\nFixes: CVE-2026-4224, CVE-2026-3644, CVE-2026-2297",
-      "e5a825f3cb5cde6a9a655154e641c580acb641fc": "python314: 3.14.3 -> 3.14.4\n\nhttps://docs.python.org/release/3.14.4/whatsnew/changelog.html\n\nFixes: CVE-2026-4224, CVE-2026-3644, CVE-2026-2297"
     },
     "CVE-2024-52615": {
       "f715bbf5a4de2c4c1914548a657894f57a0a6881": "nixos/avahi: Warn when susceptible to CVE-2024-52615",
