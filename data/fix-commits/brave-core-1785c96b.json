@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/brave/brave-core",
   "vulnerabilities": {
     "GHSA-GV7W-RQVM-QJHR": {
+      "9a4a1a9025040e589b92e5a6b37771b3880dcac0": "bump esbuild\n\nfix https://github.com/advisories/GHSA-gv7w-rqvm-qjhr",
       "788a4e01865c6b25ead9edb1a0f30d1212002345": "bump esbuild (#37234)\n\nfix https://github.com/advisories/GHSA-gv7w-rqvm-qjhr"
     },
     "GHSA-W9J2-PVGH-6H63": {
