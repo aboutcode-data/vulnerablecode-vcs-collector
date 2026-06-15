@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://github.com/ruby/ruby",
   "vulnerabilities": {
+    "CVE-2026-47240": {
+      "4fa1586817a88b468f6b2092118a22095ec6ce60": "Bump net-imap to 0.6.4.1\n\nFixes CVE-2026-47240, CVE-2026-47241, and CVE-2026-47242. The bump from 0.6.2 also includes the 0.6.4 security fixes (CVE-2026-42246 et al.) not yet backported to this branch.\n\nhttps://github.com/ruby/net-imap/releases/tag/v0.6.4.1"
+    },
+    "CVE-2026-47241": {
+      "4fa1586817a88b468f6b2092118a22095ec6ce60": "Bump net-imap to 0.6.4.1\n\nFixes CVE-2026-47240, CVE-2026-47241, and CVE-2026-47242. The bump from 0.6.2 also includes the 0.6.4 security fixes (CVE-2026-42246 et al.) not yet backported to this branch.\n\nhttps://github.com/ruby/net-imap/releases/tag/v0.6.4.1"
+    },
+    "CVE-2026-47242": {
+      "4fa1586817a88b468f6b2092118a22095ec6ce60": "Bump net-imap to 0.6.4.1\n\nFixes CVE-2026-47240, CVE-2026-47241, and CVE-2026-47242. The bump from 0.6.2 also includes the 0.6.4 security fixes (CVE-2026-42246 et al.) not yet backported to this branch.\n\nhttps://github.com/ruby/net-imap/releases/tag/v0.6.4.1"
+    },
+    "CVE-2026-42246": {
+      "4fa1586817a88b468f6b2092118a22095ec6ce60": "Bump net-imap to 0.6.4.1\n\nFixes CVE-2026-47240, CVE-2026-47241, and CVE-2026-47242. The bump from 0.6.2 also includes the 0.6.4 security fixes (CVE-2026-42246 et al.) not yet backported to this branch.\n\nhttps://github.com/ruby/net-imap/releases/tag/v0.6.4.1"
+    },
     "CVE-2020-36327": {
       "945c6ec3955544195964d4956153034e65e40945": "[ruby/rubygems] Print a warning for a potential confusion from the indirect dependencies.\n\nPrint a warning when a confusion by the indirect dependencies may happen.\nSee CVE-2020-36327 for the security risk.\n\nhttps://github.com/ruby/rubygems/commit/403d6744b2"
     },
