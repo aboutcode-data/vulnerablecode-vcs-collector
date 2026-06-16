@@ -1,6 +1,11 @@
 {
   "vcs_url": "https://github.com/apache/hadoop",
   "vulnerabilities": {
+    "CVE-2026-44249": {
+      "0059b837d65eb405a26538c4381f463a32fb46c3": "HADOOP-19919. Upgrade to netty 4.1.135 due to CVE-2026-44249. (#8546)\n\nReviewed-by: Aaron Fabbri <fabbri@apache.org>\nSigned-off-by: Cheng Pan <chengpan@apache.org>",
+      "7d1a3f28ebb0c8ae604d1e6d62aaac5243f2e827": "HADOOP-19919. Upgrade to netty 4.1.135 due to CVE-2026-44249. (#8546)\n\nReviewed-by: Aaron Fabbri <fabbri@apache.org>\nSigned-off-by: Cheng Pan <chengpan@apache.org>",
+      "a44da11f7452fdd83f6d2396434b4a9f48d3a4e0": "HADOOP-19919. Upgrade to netty 4.1.135 due to CVE-2026-44249. (#8546)\n\nReviewed-by: Aaron Fabbri <fabbri@apache.org>\nSigned-off-by: Cheng Pan <chengpan@apache.org>"
+    },
     "CVE-2025-67735": {
       "d3bf44d42d9c6f9d54bcd975c12c8d000a595fd6": "HADOOP-19788 update netty dependency to 4.1.130.Final (#8188)\n\nAddresses CVE-2025-67735\n\nContributed by Edward Capriolo",
       "5125fcf4713d0c3eb314ec523688fbf181c8982f": "HADOOP-19788 update netty dependency to 4.1.130.Final (#8188)\n\nAddresses CVE-2025-67735\n\nContributed by Edward Capriolo",
