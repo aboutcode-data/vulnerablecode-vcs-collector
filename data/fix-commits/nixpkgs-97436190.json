@@ -1,6 +1,11 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-11850": {
+      "22b77954c037fff3120f2eed14e254eac566365f": "krb5: patch CVE-2026-11850\n\n(cherry picked from commit c0ec12aeaec4ce63f60ff9606d286d006c821695)",
+      "00d8973fcf5f44ce0c32feb86cbd3502d052c3b7": "krb5: patch CVE-2026-11850 (#531513)",
+      "c0ec12aeaec4ce63f60ff9606d286d006c821695": "krb5: patch CVE-2026-11850"
+    },
     "CVE-2026-6507": {
       "d3853b6fb998e87917e2a8412df43fdd85709d56": "dnsmasq: 2.92rel2 -> 2.93\n\nDropping the patch for CVE-2026-6507 since it has been fixed in this\ntag.\n\n(cherry picked from commit 5efefac4ae41ece2653996d295b2635a522495b1)",
       "5efefac4ae41ece2653996d295b2635a522495b1": "dnsmasq: 2.92rel2 -> 2.93\n\nDropping the patch for CVE-2026-6507 since it has been fixed in this\ntag.",

@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/vim/vim",
   "vulnerabilities": {
+    "GHSA-WGH4-64F7-Q3JQ": {
+      "a80874d9b84a01040e3d1aef2d4a59e1934dafb7": "patch 9.2.0653: [security]: out-of-bounds write in tree_count_words()\n\nProblem:  [security]: a crafted spell file can drive tree_count_words()\n          past the end of its MAXWLEN-sized depth arrays; the descent\n          loop has no depth bound.\nSolution: only descend while depth < MAXWLEN - 1, as the sibling trie\n          walkers already do; apply the same guard to sug_filltree().\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-wgh4-64f7-q3jq\n\nSupported by AI.\n\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-65P9-MWWX-7468": {
       "c8c63673bc4253212820626aeeb75999d9a539d2": "patch 9.2.0597: [security]: possible code execution with python complete\n\nProblem:  [security]: another possible code execution with python complete\n          (David Carliez)\nSolution: Strip default expressions and annotations from generated\n          source for pythoncomplete and python3complete.\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-65p9-mwwx-7468\n\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
     },
