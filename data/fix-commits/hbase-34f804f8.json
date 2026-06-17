@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/hbase",
   "vulnerabilities": {
+    "GHSA-G7R4-M6W7-QQQR": {
+      "1543868ccb67755e401bcdb143b0bce83b42c563": "HBASE-30233 Fix recent website's CVEs (#8373)\n\n`esbuild < 0.28.1` is vulnerable to [GHSA-g7r4-m6w7-qqqr](https://github.com/advisories/GHSA-g7r4-m6w7-qqqr) (dev-server path traversal) and is pulled in transitively by Vite, and some other dependencies. The parents can't be bumped to resolve it (Vite 8 is blocked by React Router 7's `vite-node@3` cap). This adds an npm overrides entry forcing `esbuild` to `^0.28.1` across the tree as a temporary workaround until React Router is released with proper Vite 8 support, or adds its support to the current major version, but it's unlikely to happen.\n\nI also disabled all the future flags in this PR. They will become defaults in the next React Router 8 release, but for now some of them aren't ready for our \"prerendering\", aka \"static build\", strategy. Explicitly disabling them removes the annoying warnings in console.\n\nSigned-off-by: D\u00e1vid Paksy <paksyd@apache.org>"
+    },
     "CVE-2025-7962": {
       "d075ac31c2e9fb8bd409c056c42362dd64ff8c60": "HBASE-30193 Exclude transitive jakarta.mail dependency (CVE-2025-7962) (#8296)\n\nSigned-off-by: Peter Somogyi <psomogyi@apache.org>\n(cherry picked from commit 2eb5a34603fcb3ca035f63500ab2b6835d46a5ad)",
       "82d68eb97f0936e70140817c366e10d34e654eec": "HBASE-30193 Exclude transitive jakarta.mail dependency (CVE-2025-7962) (#8296)\n\nSigned-off-by: Peter Somogyi <psomogyi@apache.org>\n(cherry picked from commit 2eb5a34603fcb3ca035f63500ab2b6835d46a5ad)",

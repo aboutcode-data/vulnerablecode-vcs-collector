@@ -1,6 +1,14 @@
 {
   "vcs_url": "https://github.com/quarkusio/quarkus",
   "vulnerabilities": {
+    "GHSA-QCXP-GM7M-4J5V": {
+      "069696d704dfe452403eea33570efe6b2332833c": "Merge pull request #54906 from jmartisk/3.20.6-cve\n\n[3.20.6-emergency] Handle GHSA-qcxp-gm7m-4j5v",
+      "36294c31017f7861b610c259c347ab8dbf9201c7": "Merge pull request #54904 from jmartisk/3.33.2-cve\n\n[3.33.2-emergency] Handle GHSA-qcxp-gm7m-4j5v",
+      "71c8cf824353004aaf7db1046282363a5bc854d2": "Merge pull request #54905 from jmartisk/3.27.4-cve\n\n[3.27.4-emergency] Handle GHSA-qcxp-gm7m-4j5v",
+      "a5bbcdd13318689b6ff76e7f5b99122cf9797126": "Handle GHSA-qcxp-gm7m-4j5v",
+      "b56920d7798d356dcee368105f8d220812435a7b": "Handle GHSA-qcxp-gm7m-4j5v",
+      "d331315962f78fcb178891592d1ce40f029bcd2d": "Handle GHSA-qcxp-gm7m-4j5v"
+    },
     "CVE-2026-42198": {
       "799aa344cb46f78e9d047f440c61adaa34b03412": "Bump postgresql-jdbc.version to 42.7.11\n\nUpdated PostgreSQL JDBC version from 42.7.10 to 42.7.11 to fix https://nvd.nist.gov/vuln/detail/CVE-2026-42198",
       "a7f93d862210d7531ea7b61ba30d8cd08ab6016f": "Bump postgresql-jdbc.version to 42.7.11\n\nUpdated PostgreSQL JDBC version from 42.7.10 to 42.7.11 to fix https://nvd.nist.gov/vuln/detail/CVE-2026-42198\n\n(cherry picked from commit 66516a8e1792671096e3e8970f6a21c7514c0069)",

@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/angular/angular-cli",
   "vulnerabilities": {
+    "GHSA-W4PP-8PJF-RMXW": {
+      "77c9047acdf4b69ec6dd399af2dff7278e8014c7": "fix(@angular/cli): update pacote to 21.5.1\n\nUpdate pacote to 21.5.1 to address https://github.com/advisories/GHSA-w4pp-8pjf-rmxw\n\nFixes #33376",
+      "5f7c0328c3fe1a003ade44861d9aac98f485f014": "fix(@angular/cli): update pacote to 21.5.1\n\nUpdate pacote to 21.5.1 to address https://github.com/advisories/GHSA-w4pp-8pjf-rmxw\n\nFixes #33376"
+    },
     "GHSA-QX2V-QP2M-JG93": {
       "5e01ef40eb87deda79d18654fc696b64d18bf889": "fix(@angular-devkit/build-angular): upgrade postcss to 8.5.12\n\nThis addresses GHSA-qx2v-qp2m-jg93\n\nFixes: #33067",
       "49ae0ad2d452ab7d7510297919125fe00081fa49": "fix(@angular-devkit/build-angular): upgrade postcss to 8.5.12\n\nThis addresses GHSA-qx2v-qp2m-jg93\n\nFixes: #33067"
