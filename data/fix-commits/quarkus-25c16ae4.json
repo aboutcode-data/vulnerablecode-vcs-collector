@@ -5,6 +5,8 @@
       "069696d704dfe452403eea33570efe6b2332833c": "Merge pull request #54906 from jmartisk/3.20.6-cve\n\n[3.20.6-emergency] Handle GHSA-qcxp-gm7m-4j5v",
       "36294c31017f7861b610c259c347ab8dbf9201c7": "Merge pull request #54904 from jmartisk/3.33.2-cve\n\n[3.33.2-emergency] Handle GHSA-qcxp-gm7m-4j5v",
       "71c8cf824353004aaf7db1046282363a5bc854d2": "Merge pull request #54905 from jmartisk/3.27.4-cve\n\n[3.27.4-emergency] Handle GHSA-qcxp-gm7m-4j5v",
+      "919b80017d85564143a845b38e9cca54aff5b3cc": "Handle GHSA-qcxp-gm7m-4j5v",
+      "fc5c83aab65f62a2d7c7c8f9fd6845b080f94f53": "Handle GHSA-qcxp-gm7m-4j5v",
       "a5bbcdd13318689b6ff76e7f5b99122cf9797126": "Handle GHSA-qcxp-gm7m-4j5v",
       "b56920d7798d356dcee368105f8d220812435a7b": "Handle GHSA-qcxp-gm7m-4j5v",
       "d331315962f78fcb178891592d1ce40f029bcd2d": "Handle GHSA-qcxp-gm7m-4j5v"

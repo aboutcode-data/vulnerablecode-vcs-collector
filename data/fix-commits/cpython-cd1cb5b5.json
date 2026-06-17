@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/python/cpython",
   "vulnerabilities": {
     "CVE-2026-12003": {
+      "a86de0bc236fbb9452f98998fc8437e9fca35700": "[3.15] gh-151544: Fixes CVE-2026-12003 by removing the fallback to %VPATH%/Modules/Setup.local for discovering sources in getpath.py (GH-151545)\n\n(cherry picked from commit 9e863fab283eddca9c2a8f9d1ee30f4dc243e314)\n\nCo-authored-by: Steve Dower <steve.dower@python.org>",
       "9e863fab283eddca9c2a8f9d1ee30f4dc243e314": "gh-151544: Fixes CVE-2026-12003 by removing the fallback to %VPATH%/Modules/Setup.local for discovering sources in getpath.py (GH-151545)"
     },
     "CVE-2021-4189": {

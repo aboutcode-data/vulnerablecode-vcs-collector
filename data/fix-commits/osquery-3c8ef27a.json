@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/osquery/osquery",
   "vulnerabilities": {
+    "GHSA-4R78-6HG6-33GG": {
+      "3d457c412eb0c986b0c37d8903edae8bc9f9e246": "Fix heap buffer overflow in Windows processes table (GHSA-4r78-6hg6-33gg) (#8934)\n\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>"
+    },
     "CVE-2026-25210": {
       "8eb8c0d9aab923c4744e330f24581ce150b22098": "libraries: update expat to 2.7.4 to fix CVE-2026-25210 (#8794)\n\n## Summary\nUpdates the vendored expat submodule from 2.7.1 to 2.7.4 and \nupdates the pre-generated expat_config.h for x86_64 and aarch64.\n\n## Changes\n- Bumped expat submodule pointer to 2.7.4 (f5c2890d)\n- Updated PACKAGE_STRING and PACKAGE_VERSION in expat_config.h \n  for x86_64 and aarch64\n\n## Verification\n- Reviewed changelog between 2.7.1 and 2.7.4: no API changes, \n  only security fixes and CI/tooling updates\n- Confirmed all 3 source files (xmlparse.c, xmlrole.c, xmltok.c) \n  are unchanged\n- Confirmed CMakeLists.txt requires no changes\n- Confirmed expat_config.h.cmake diff has no functional changes\n\nNote: 2.7.4 also includes a fix for CVE-2026-24515, tracked in #8753,\nCVE-2025-66382 tracked in #8736, CVE-2025-59375 tracked in #8702.\n\nFixes #8793\nFixes #8753\nFixes #8736 \nFixes #8702"
     },
