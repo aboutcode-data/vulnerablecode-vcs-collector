@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/getsentry/sentry-javascript",
   "vulnerabilities": {
+    "CVE-2026-49356": {
+      "8e6a43ab59055eaa80eea6cb5f5d4801d4919342": "fix(deps): bump @babel/core from 7.29.0 to 7.29.7\n\nResolves CVE-2026-49356 / GHSA-4x5r-pxfx-6jf8 (low). Dependabot alert: https://github.com/getsentry/sentry-javascript/security/dependabot/1949\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>"
+    },
+    "GHSA-4X5R-PXFX-6JF8": {
+      "8e6a43ab59055eaa80eea6cb5f5d4801d4919342": "fix(deps): bump @babel/core from 7.29.0 to 7.29.7\n\nResolves CVE-2026-49356 / GHSA-4x5r-pxfx-6jf8 (low). Dependabot alert: https://github.com/getsentry/sentry-javascript/security/dependabot/1949\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>"
+    },
     "CVE-2026-40181": {
       "9b1995f2b1b325d1b0e9a33ff54edc2f2c387b88": "chore(deps): Bump react-router-6 to 6.30.4 (#21566)\n\n## Summary\n\nBumps the `react-router-6` test alias in `packages/react` from\n`npm:react-router@6.30.3` to `npm:react-router@6.30.4` \u2014 a patch bump\nthat stays within the v6 line used to test React Router 6 compatibility.\n\nResolves [Dependabot alert\n#1800](https://github.com/getsentry/sentry-javascript/security/dependabot/1800)\n\u2014 GHSA-2j2x-hqr9-3h42 / CVE-2026-40181 (medium, open redirect via\nprotocol-relative URL reinterpretation).\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-authored-by: Claude Opus 4.8 <noreply@anthropic.com>"
     },
