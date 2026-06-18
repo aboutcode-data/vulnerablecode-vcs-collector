@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/angular/angular-cli",
   "vulnerabilities": {
+    "GHSA-FX2H-PF6J-XCFF": {
+      "1f283a41c921b194c67c5bca05d4b5cff1d91857": "fix(@angular/build): bump vite to 7.3.5\n\nBumps vite to version 7.3.5 to resolve the GHSA-fx2h-pf6j-xcff security vulnerability.\n\nFixes #33407",
+      "e86d58a128725eee9dd63dcd2ccd35b8ee4706f3": "fix(@angular/build): bump vite to 7.3.5\n\nBumps vite to version 7.3.5 to resolve the GHSA-fx2h-pf6j-xcff security vulnerability.\n\nFixes #33407"
+    },
     "GHSA-W4PP-8PJF-RMXW": {
       "77c9047acdf4b69ec6dd399af2dff7278e8014c7": "fix(@angular/cli): update pacote to 21.5.1\n\nUpdate pacote to 21.5.1 to address https://github.com/advisories/GHSA-w4pp-8pjf-rmxw\n\nFixes #33376",
       "5f7c0328c3fe1a003ade44861d9aac98f485f014": "fix(@angular/cli): update pacote to 21.5.1\n\nUpdate pacote to 21.5.1 to address https://github.com/advisories/GHSA-w4pp-8pjf-rmxw\n\nFixes #33376"
