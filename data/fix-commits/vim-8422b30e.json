@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/vim/vim",
   "vulnerabilities": {
+    "GHSA-F36C-2QCP-7GPW": {
+      "b2338ca90643e2f01ecb6547c1172716aaec4f79": "patch 9.2.0670: [security]: Out-of-bounds read with text properties\n\nProblem:  [security]: Out-of-bounds read with text properties\n          (cipher-creator)\nSolution: Add out-of-bound checks (Yasuhiro Matsumoto)\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-f36c-2qcp-7gpw\n\nSupported by AI\n\nSigned-off-by: Yasuhiro Matsumoto <mattn.jp@gmail.com>\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-VHH8-V6WX-HJJH": {
       "55bc757a5d436e59d50fe43f7cda94b118f86cb2": "patch 9.2.0663: [security]: runtime(netrw): code injection in local file deletion\n\nProblem:  [security]: s:NetrwLocalRmFile() escapes only the backslash in\n          the file name before passing it to :execute, so a name\n          containing \"|\" injects arbitrary Ex commands when the file is\n          deleted (cipher-creator)\nSolution: Use fnameescape() to correctly escape the file name\n          (Yasuhiro Matsumoto).\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-vhh8-v6wx-hjjh\n\nSupported by AI\n\nSigned-off-by: Yasuhiro Matsumoto <mattn.jp@gmail.com>\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
     },
