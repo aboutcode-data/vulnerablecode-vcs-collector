@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/FFmpeg/FFmpeg",
   "vulnerabilities": {
     "CVE-2026-30999": {
+      "097bc4c44eefb0db2da3bd94185ba72d0842e85b": "tools/zmqsend: free the AVBprint buffer after using it\n\nFixes CVE-2026-30999\n\nFixes: memleak\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>\n(cherry picked from commit 144af8f81abc1385631b4e1f4672cd415a9c6e05)\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>",
       "5c8a8750de5239136da3e2cdb2ede8122864b252": "tools/zmqsend: free the AVBprint buffer after using it\n\nFixes CVE-2026-30999\n\nFixes: memleak\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>\n(cherry picked from commit 144af8f81abc1385631b4e1f4672cd415a9c6e05)\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>",
       "874cd67a3c560fcc2edbfc38940777610670b604": "tools/zmqsend: free the AVBprint buffer after using it\n\nFixes CVE-2026-30999\n\nFixes: memleak\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>\n(cherry picked from commit 144af8f81abc1385631b4e1f4672cd415a9c6e05)\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>",
       "144af8f81abc1385631b4e1f4672cd415a9c6e05": "tools/zmqsend: free the AVBprint buffer after using it\n\nFixes CVE-2026-30999\n\nFixes: memleak\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>"

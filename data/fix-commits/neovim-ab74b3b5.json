@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/neovim/neovim",
   "vulnerabilities": {
+    "GHSA-2FPV-9FF7-XG5W": {
+      "025a3e2baf18605dd319042457c31b64cc552c9c": "vim-patch:9.2.0479: [security]: runtime(tar): command injection in tar plugin\n\nProblem:  [security]: runtime(tar): command injection in tar plugin\n          (Christopher Lusk)\nSolution: Use the correct shellescape(args, 1) form for a :! command\n\nGithub Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-2fpv-9ff7-xg5w\n\nhttps://github.com/vim/vim/commit/3fb5e58fbc63d86a3e65f1a141b0d67af2aa38a1\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-VHH8-V6WX-HJJH": {
       "c4ce10930cef01b67b2d1feeff2c59a7b6777c0b": "vim-patch:9.2.0663: [security]: runtime(netrw): code injection in local file deletion\n\nProblem:  [security]: s:NetrwLocalRmFile() escapes only the backslash in\n          the file name before passing it to :execute, so a name\n          containing \"|\" injects arbitrary Ex commands when the file is\n          deleted (cipher-creator)\nSolution: Use fnameescape() to correctly escape the file name\n          (Yasuhiro Matsumoto).\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-vhh8-v6wx-hjjh\n\nSupported by AI\n\nhttps://github.com/vim/vim/commit/55bc757a5d436e59d50fe43f7cda94b118f86cb2\n\nCo-authored-by: Yasuhiro Matsumoto <mattn.jp@gmail.com>"
     },
