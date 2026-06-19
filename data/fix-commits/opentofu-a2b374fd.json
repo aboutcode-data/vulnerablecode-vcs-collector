@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/opentofu/opentofu",
   "vulnerabilities": {
+    "CVE-2026-4660": {
+      "8900054192dd60564b63da43c4560da365cf5dd6": "[CVE-2026-4660] go.mod: go get github.com/hashicorp/go-getter@v1.8.6 (#4288)\n\nSigned-off-by: Santhosh K <29794224+x418@users.noreply.github.com>"
+    },
     "CVE-2026-33814": {
       "a05aad690147a6fe3f0c140515788b6c08f49f6e": "go.mod: Upgrade to Go 1.26.3\n\nThis is primarily to address CVE-2026-33814, also known as GO-2026-4918.\n\nSigned-off-by: Martin Atkins <mart@degeneration.co.uk>",
       "cc6c038ddafb25b39730a765f59349660e9f6994": "go.mod: Upgrade to Go 1.26.3\n\nThis is primarily to address CVE-2026-33814, also known as GO-2026-4918.\n\nSigned-off-by: Martin Atkins <mart@degeneration.co.uk>",
