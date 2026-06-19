@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/vim/vim",
   "vulnerabilities": {
+    "GHSA-C4J9-WR9J-4486": {
+      "c8777cec25dcfae89c42e9aff51af61f71c5745f": "patch 9.2.0671: [security]: possible out-of-bounds read with sodium encrypted files\n\nProblem:  [security]: possible out-of-bounds read with sodium encrypted\n          files (cipher-creator)\nSolution: Verify that there is enough space before calling\n          crypto_secretstream_xchacha20poly1305_init_pull()\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-c4j9-wr9j-4486\n\nSupported by AI\n\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-F36C-2QCP-7GPW": {
       "b2338ca90643e2f01ecb6547c1172716aaec4f79": "patch 9.2.0670: [security]: Out-of-bounds read with text properties\n\nProblem:  [security]: Out-of-bounds read with text properties\n          (cipher-creator)\nSolution: Add out-of-bound checks (Yasuhiro Matsumoto)\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-f36c-2qcp-7gpw\n\nSupported by AI\n\nSigned-off-by: Yasuhiro Matsumoto <mattn.jp@gmail.com>\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
     },

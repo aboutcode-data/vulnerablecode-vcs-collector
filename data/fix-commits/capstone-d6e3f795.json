@@ -1,6 +1,14 @@
 {
   "vcs_url": "https://github.com/capstone-engine/capstone",
   "vulnerabilities": {
+    "CVE-2026-55893": {
+      "e17ee44a8307ea33375b4727ac4f987650bf7bed": "V5: Fix OOB reads/writes - CVE-2026-55893 & CVE-2026-55894 (#2969)\n\n* Fix several OOB writes by adding bounds checks\n\n* Add bounds check for index into decoder table",
+      "09e76802380b9e94d9720c44458d9d5282219e7e": "Fix OOB reads/writes - CVE-2026-55893 & CVE-2026-55894 (#2968)\n\n* Fix several OOB writes by adding bounds checks\n\n* Add bounds check for index into decoder table"
+    },
+    "CVE-2026-55894": {
+      "e17ee44a8307ea33375b4727ac4f987650bf7bed": "V5: Fix OOB reads/writes - CVE-2026-55893 & CVE-2026-55894 (#2969)\n\n* Fix several OOB writes by adding bounds checks\n\n* Add bounds check for index into decoder table",
+      "09e76802380b9e94d9720c44458d9d5282219e7e": "Fix OOB reads/writes - CVE-2026-55893 & CVE-2026-55894 (#2968)\n\n* Fix several OOB writes by adding bounds checks\n\n* Add bounds check for index into decoder table"
+    },
     "CVE-2026-47143": {
       "fab595205fee206f5c21be6ed8ad2eaf9225f1c7": "Backport of CVE-2026-47143 fix (#2924)\n\nReported by https://github.com/honey-nut-cheerios"
     },
