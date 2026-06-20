@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/vim/vim",
   "vulnerabilities": {
+    "GHSA-WW8H-47XP-HP4W": {
+      "b3faeecc976d3031d7c0675623516ec60c30f949": "patch 9.2.0679: [security]: Out-of-bounds read with text property virtual text\n\nProblem:  [security]: Out-of-bounds read with text property virtual text.\n          A crafted undo file can declare a virtual-text property whose\n          offset points outside the line's property data, so reading the\n          virtual text reads out of bounds.  This completes the count-only\n          check added in 9.2.0670.\nSolution: Validate the virtual-text offset and length of each property\n          against the available property data before turning the offset\n          into a pointer.\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-ww8h-47xp-hp4w\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>\nSigned-off-by: Hirohito Higashi <h.east.727@gmail.com>\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
+    },
+    "GHSA-X5FG-H5W9-9FRF": {
+      "b2cc9be119d51212bf0d3f2a994c7e517c73f4a9": "patch 9.2.0678: [security]: potential powershell code execution in zip.vim\n\nProblem:  [security]: potential powershell code execution in zip.vim\n          (DDugs)\nSolution: Cleanup zip.vim, introduce PSEscape() to escape() potential powershell code,\n          use consistent s:Escape() in the various PowerShell functions\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-x5fg-h5w9-9frf\n\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-C4J9-WR9J-4486": {
       "c8777cec25dcfae89c42e9aff51af61f71c5745f": "patch 9.2.0671: [security]: possible out-of-bounds read with sodium encrypted files\n\nProblem:  [security]: possible out-of-bounds read with sodium encrypted\n          files (cipher-creator)\nSolution: Verify that there is enough space before calling\n          crypto_secretstream_xchacha20poly1305_init_pull()\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-c4j9-wr9j-4486\n\nSupported by AI\n\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
     },
