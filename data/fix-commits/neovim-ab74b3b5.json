@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/neovim/neovim",
   "vulnerabilities": {
+    "GHSA-X5FG-H5W9-9FRF": {
+      "9a5944cdc099bd582969168d386f0a50b786667e": "vim-patch:9.2.0678: [security]: potential powershell code execution in zip.vim (#40343)\n\nProblem:  [security]: potential powershell code execution in zip.vim\n          (DDugs)\nSolution: Cleanup zip.vim, introduce PSEscape() to escape() potential powershell code,\n          use consistent s:Escape() in the various PowerShell functions\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-x5fg-h5w9-9frf\n\nhttps://github.com/vim/vim/commit/b2cc9be119d51212bf0d3f2a994c7e517c73f4a9\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-2FPV-9FF7-XG5W": {
       "025a3e2baf18605dd319042457c31b64cc552c9c": "vim-patch:9.2.0479: [security]: runtime(tar): command injection in tar plugin\n\nProblem:  [security]: runtime(tar): command injection in tar plugin\n          (Christopher Lusk)\nSolution: Use the correct shellescape(args, 1) form for a :! command\n\nGithub Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-2fpv-9ff7-xg5w\n\nhttps://github.com/vim/vim/commit/3fb5e58fbc63d86a3e65f1a141b0d67af2aa38a1\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
     },
