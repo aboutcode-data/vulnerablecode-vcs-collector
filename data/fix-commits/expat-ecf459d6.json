@@ -1,7 +1,14 @@
 {
   "vcs_url": "https://android.googlesource.com/platform/external/expat",
   "vulnerabilities": {
+    "CVE-2026-56132": {
+      "db1a48091b40f6892e622a282eba20752e6860ad": "Merge pull request #1272 from Smattr/smattr/ANT-2026-00037\n\n[CVE-2026-56132] lib: `doProlog`: Fix out-of-bound scaffolding index store"
+    },
+    "CVE-2026-56131": {
+      "b0256a667f74e3eedb12eda2e72f34c9e8fb87f8": "Merge pull request #1267 from netliomax25-code/resumeparser-handler-guard\n\n[CVE-2026-56131] lib: Protect `XML_ResumeParser` from being called from a handler"
+    },
     "CVE-2026-50219": {
+      "d5a654b4881f450827af5b3b7b72370a3bbf9a8f": "lib: protect XML_ResumeParser from being called from a handler\n\nThe handler-reentrancy guards from CVE-2026-50219 cover XML_Parse, XML_ParseBuffer, XML_GetBuffer, XML_ParserFree and XML_ParserReset but not XML_ResumeParser, which drives the parser through callProcessor in the same way.",
       "3fd4d1c19c30f71979b00d73d367f3d27935fad5": "Merge pull request #1246 from libexpat/introduce-flag-inside-handler\n\n[CVE-2026-50219] Introduce handler call depth tracking",
       "f17ca46befb59098da339ed6d2438de3bdece8b5": "Changes: Document CVE-2026-50219"
     },
