@@ -1,6 +1,23 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-56141": {
+      "4ec8fa78d9d68c85d88f931e24c24cd36f3c19aa": "youtrack: 2026.1.13570 -> 2026.1.13757\n\nfixes:\n- CVE-2026-56141\n- CVE-2026-56142\n- CVE-2026-50242\n- CVE-2026-50242\n\nhttps://youtrack.jetbrains.com/releaseNotes?q=%23JT%20%23Resolved%20Released%20in%20build:%202026.1.13757&title=YouTrack%202026.1.13757%20Release%20Notes\n(cherry picked from commit 69d96e5ae0b3bb58580191840f81c3e092ae0da8)",
+      "69d96e5ae0b3bb58580191840f81c3e092ae0da8": "youtrack: 2026.1.13570 -> 2026.1.13757\n\nfixes:\n- CVE-2026-56141\n- CVE-2026-56142\n- CVE-2026-50242\n- CVE-2026-50242\n\nhttps://youtrack.jetbrains.com/releaseNotes?q=%23JT%20%23Resolved%20Released%20in%20build:%202026.1.13757&title=YouTrack%202026.1.13757%20Release%20Notes"
+    },
+    "CVE-2026-56142": {
+      "4ec8fa78d9d68c85d88f931e24c24cd36f3c19aa": "youtrack: 2026.1.13570 -> 2026.1.13757\n\nfixes:\n- CVE-2026-56141\n- CVE-2026-56142\n- CVE-2026-50242\n- CVE-2026-50242\n\nhttps://youtrack.jetbrains.com/releaseNotes?q=%23JT%20%23Resolved%20Released%20in%20build:%202026.1.13757&title=YouTrack%202026.1.13757%20Release%20Notes\n(cherry picked from commit 69d96e5ae0b3bb58580191840f81c3e092ae0da8)",
+      "69d96e5ae0b3bb58580191840f81c3e092ae0da8": "youtrack: 2026.1.13570 -> 2026.1.13757\n\nfixes:\n- CVE-2026-56141\n- CVE-2026-56142\n- CVE-2026-50242\n- CVE-2026-50242\n\nhttps://youtrack.jetbrains.com/releaseNotes?q=%23JT%20%23Resolved%20Released%20in%20build:%202026.1.13757&title=YouTrack%202026.1.13757%20Release%20Notes"
+    },
+    "CVE-2026-50242": {
+      "4ec8fa78d9d68c85d88f931e24c24cd36f3c19aa": "youtrack: 2026.1.13570 -> 2026.1.13757\n\nfixes:\n- CVE-2026-56141\n- CVE-2026-56142\n- CVE-2026-50242\n- CVE-2026-50242\n\nhttps://youtrack.jetbrains.com/releaseNotes?q=%23JT%20%23Resolved%20Released%20in%20build:%202026.1.13757&title=YouTrack%202026.1.13757%20Release%20Notes\n(cherry picked from commit 69d96e5ae0b3bb58580191840f81c3e092ae0da8)",
+      "69d96e5ae0b3bb58580191840f81c3e092ae0da8": "youtrack: 2026.1.13570 -> 2026.1.13757\n\nfixes:\n- CVE-2026-56141\n- CVE-2026-56142\n- CVE-2026-50242\n- CVE-2026-50242\n\nhttps://youtrack.jetbrains.com/releaseNotes?q=%23JT%20%23Resolved%20Released%20in%20build:%202026.1.13757&title=YouTrack%202026.1.13757%20Release%20Notes"
+    },
+    "CVE-2026-47729": {
+      "3e2e2497a9c97ac4750243371fab9cd4fca4d90d": "squid: 7.5 -> 7.6\n\nFixes CVE-2026-47729\n\nhttps://github.com/squid-cache/squid/releases/tag/SQUID_7_6\n(cherry picked from commit 374ed9f147c28604396a8d98687bd31ea89ad71a)",
+      "cb32fadef5d0cbdc3e5d62d89bbb061667e49d06": "squid: 7.5 -> 7.6\n\nFixes CVE-2026-47729\n\nhttps://github.com/squid-cache/squid/releases/tag/SQUID_7_6\n(cherry picked from commit 374ed9f147c28604396a8d98687bd31ea89ad71a)",
+      "374ed9f147c28604396a8d98687bd31ea89ad71a": "squid: 7.5 -> 7.6\n\nFixes CVE-2026-47729\n\nhttps://github.com/squid-cache/squid/releases/tag/SQUID_7_6"
+    },
     "CVE-2026-9741": {
       "c49840574212f794900e40b701005aaa3448a1c1": "mongodb-7_0: 7.0.34 -> 7.0.37\n\nhttps://www.mongodb.com/docs/manual/release-notes/7.0-changelog/\n\nFixes: CVE-2026-9741\nFixes: CVE-2026-9746\nFixes: CVE-2026-9747\nFixes: CVE-2026-9748\nFixes: CVE-2026-9749\nFixes: CVE-2026-9750\nFixes: CVE-2026-9751\nFixes: CVE-2026-9752\nFixes: CVE-2026-9753\nFixes: CVE-2026-9740\nFixes: CVE-2026-11933\n(cherry picked from commit a6c97676a9a8a4ef1fa8b9414ffb88dd33f3bf25)",
       "a6c97676a9a8a4ef1fa8b9414ffb88dd33f3bf25": "mongodb-7_0: 7.0.34 -> 7.0.37\n\nhttps://www.mongodb.com/docs/manual/release-notes/7.0-changelog/\n\nFixes: CVE-2026-9741\nFixes: CVE-2026-9746\nFixes: CVE-2026-9747\nFixes: CVE-2026-9748\nFixes: CVE-2026-9749\nFixes: CVE-2026-9750\nFixes: CVE-2026-9751\nFixes: CVE-2026-9752\nFixes: CVE-2026-9753\nFixes: CVE-2026-9740\nFixes: CVE-2026-11933"

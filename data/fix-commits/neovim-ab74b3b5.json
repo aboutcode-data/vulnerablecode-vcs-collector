@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/neovim/neovim",
   "vulnerabilities": {
+    "GHSA-Q8MH-6QM3-25G4": {
+      "259f1173e4c3132d88674927527e5e82df32b5b8": "vim-patch:9.2.0698: [security]: Out-of-bounds write with soundfold() (#40362)\n\nProblem:  [security]: Out-of-bounds write with soundfold()\n          (cipher-creator)\nSolution: Add an abort condition to the for loop to validate the buffer\n          size.\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-q8mh-6qm3-25g4\n\nSupported by AI\n\nhttps://github.com/vim/vim/commit/497f931f85339d175d7f69588dd249e8ccfed41b\n\nThis is N/A as it only changes the !has_mbyte code path.\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
+    },
+    "GHSA-PPJ8-WQJF-6FP3": {
+      "7d0adc08f76743f991c769f25b98980ade498a64": "vim-patch:9.2.0699: [security]: possible code execution with python complete (#40363)\n\nProblem:  [security]: possible code execution with python complete\n          (morningbread)\nSolution: Use repr() to quote the doc strings correctly\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-ppj8-wqjf-6fp3\n\nSupported by AI\n\nhttps://github.com/vim/vim/commit/cce141c42740f122dd8486ae04e21c2a81016ba8\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-X5FG-H5W9-9FRF": {
       "9a5944cdc099bd582969168d386f0a50b786667e": "vim-patch:9.2.0678: [security]: potential powershell code execution in zip.vim (#40343)\n\nProblem:  [security]: potential powershell code execution in zip.vim\n          (DDugs)\nSolution: Cleanup zip.vim, introduce PSEscape() to escape() potential powershell code,\n          use consistent s:Escape() in the various PowerShell functions\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-x5fg-h5w9-9frf\n\nhttps://github.com/vim/vim/commit/b2cc9be119d51212bf0d3f2a994c7e517c73f4a9\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
     },
