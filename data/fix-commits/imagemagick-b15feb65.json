@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-93X9-JQ8C-CWCC": {
+      "4a3585b0e9aba893039eb8f09ded4afa23afe753": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-93x9-jq8c-cwcc"
+    },
+    "GHSA-422R-8C97-XCG4": {
+      "be99ffaa57c8f91ed8897c2221ff0940c561a368": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-422r-8c97-xcg4"
+    },
     "GHSA-F5M7-CQGW-8HM7": {
       "9acf93f66b0f8495fa222e1a27c3db534cd78864": "Added extra checks when acquiring the values of a kernel (GHSA-f5m7-cqgw-8hm7)"
     },
