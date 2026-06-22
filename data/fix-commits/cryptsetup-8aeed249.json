@@ -2,6 +2,7 @@
   "vcs_url": "https://gitlab.com/cryptsetup/cryptsetup",
   "vulnerabilities": {
     "CVE-2026-33948": {
+      "da8fdb30e87967bbbb6c55ef6ea8a2d237b6dac6": "ci: Fix jq no longer handling 0x00 characters\n\nDue to jq fix for CVE-2026-33948, we cannot use json with trailing 0x00.\n\nJust remove them and parse through jq.\n\nFixes: #989",
       "6298269486354834d4037ba294c91452dec4c2f5": "ci: Fix jq no longer handling 0x00 characters\n\nDue to jq fix for CVE-2026-33948, we cannot use json with trailing 0x00.\n\nJust remove them and parse through jq.\n\nFixes: #989"
     },
     "CVE-2021-4122": {

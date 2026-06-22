@@ -1,6 +1,13 @@
 {
   "vcs_url": "https://github.com/bcgit/bc-csharp",
   "vulnerabilities": {
+    "CVE-2024-0727": {
+      "db6ba6191109acf9d5755063f0cdb5c4772286c0": "Reject malformed/empty CMS content with CmsException instead of NRE\n\nCmsSignedData and CmsEnvelopedData -- and every CMS byte[]/stream parser, which\nfunnel through CmsUtils.ReadContentInfo -- threw NullReferenceException on empty\ninput and on a content-less ContentInfo (the [0] content is OPTIONAL in the\nASN.1, so a contentType-only ContentInfo is valid DER). This is the CMS sibling\nof the PKCS#12 CVE-2024-0727 null-content class. Null-guard the decoded\nContentInfo at the ReadContentInfo chokepoint (\"No content found.\") and the\nSignedData/EnvelopedData parse in the four ContentInfo ctors (\"Malformed\ncontent.\"), matching bc-java's CMSException guards. Found by mutational fuzzing.",
+      "2e2c06ac6c0bbdf35fe78a82186af0af9521cf4c": "Reject empty PKCS#12 input with IOException instead of NRE\n\nPkcs12Store.Load parsed the top-level PFX via Pfx.GetInstance(Asn1Object.\nFromStream(input)); an empty or EOF stream decoded to null, so Pfx.GetInstance\nreturned null and the next access (pfx.AuthSafe) threw NullReferenceException --\nan undeclared exception escaping the IOException contract (the top-level analog\nof the CVE-2024-0727 null-content class; the inner content was already guarded).\nNull-check the decoded PFX and throw IOException. Found by mutational fuzzing."
+    },
+    "CVE-2023-0464": {
+      "39f321ea3fab2e3f2c004345111b8efa7d28b2cc": "Bound the X.509 valid-policy-tree size during PKIX path validation\n\nRFC 5280 policy-mapping x anyPolicy expansion (6.1.3/6.1.4) grows the\nvalid-policy-tree multiplicatively per certificate with no node cap, so a crafted\ncertificate chain could exhaust memory during path validation -- the\nCVE-2023-0464 class. Add CheckPolicyTreeSize(), called once per certificate at\nthe end of ProcessCertD, which rejects a live node count above a configurable\nmaximum (default 8192, env Org.BouncyCastle.X509.MaxPolicyNodes) before the tree\ngrows further. Ports bc-java 01db42757d.\n\nThe test fixture is marked [NonParallelizable] because it sets the cap via an\nenvironment variable (matching Asn1IntegerTest); without it the low cap leaks\ninto NistCertPathTest running in parallel."
+    },
     "CVE-2017-15361": {
       "c809f7a6b6cfdfa2ff8cf2af190155e7f20086b0": "Add RSA test case for CVE-2017-15361 vulnerability"
     }

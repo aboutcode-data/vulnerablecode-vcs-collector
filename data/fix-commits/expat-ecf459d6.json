@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://android.googlesource.com/platform/external/expat",
   "vulnerabilities": {
+    "CVE-2026-56412": {
+      "11cd58eb92dd8ebd85e018eabb7357ee28fec1c7": "Merge pull request #1278 from hextheshadow/fix/cdata-handler-call-depth\n\n[CVE-2026-56412] lib: Guard `XML_TOK_DATA_CHARS` handler calls in `doCdataSection`"
+    },
     "CVE-2026-56132": {
       "db1a48091b40f6892e622a282eba20752e6860ad": "Merge pull request #1272 from Smattr/smattr/ANT-2026-00037\n\n[CVE-2026-56132] lib: `doProlog`: Fix out-of-bound scaffolding index store"
     },
