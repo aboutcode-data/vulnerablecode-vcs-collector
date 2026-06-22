@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/apache/superset",
   "vulnerabilities": {
+    "CVE-2026-48526": {
+      "e803cdb38ec84596b13422cf4ffb0563a8436f36": "chore(deps): bump pyjwt to 2.13.0 (CVE-2026-48526)\n\nPyJWT < 2.13.0 accepts a public-key JWK as an HMAC secret, enabling forged\nHS256 tokens when mixed key families are allowed (CVE-2026-48526,\nGHSA-xgmm-8j9v-c9wx). PyJWT is a direct dependency (pyproject: PyJWT>=2.4.0,<3.0)\nused for JWT handling including guest tokens. Patch bump in both lockfiles;\npyproject already allows it.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>"
+    },
+    "GHSA-XGMM-8J9V-C9WX": {
+      "e803cdb38ec84596b13422cf4ffb0563a8436f36": "chore(deps): bump pyjwt to 2.13.0 (CVE-2026-48526)\n\nPyJWT < 2.13.0 accepts a public-key JWK as an HMAC secret, enabling forged\nHS256 tokens when mixed key families are allowed (CVE-2026-48526,\nGHSA-xgmm-8j9v-c9wx). PyJWT is a direct dependency (pyproject: PyJWT>=2.4.0,<3.0)\nused for JWT handling including guest tokens. Patch bump in both lockfiles;\npyproject already allows it.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>"
+    },
     "CVE-2026-33036": {
       "9ca6ccbe3ab11a5f4d047166c2c1e61c7140392d": "fix(deps): patch fast-xml-parser CVE-2026-33036 and CVE-2026-33349 (#40118)",
       "dd523c1a7bb2ac445e29c6bcbf338f026d824124": "fix(deps): patch fast-xml-parser CVE-2026-33036 and CVE-2026-33349 (#40118)"

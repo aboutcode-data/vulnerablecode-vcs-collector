@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
     "GHSA-93X9-JQ8C-CWCC": {
+      "e70837c500cd4d3705f45ec903069731202fcaa1": "Revert unnecessary patch for GHSA-93x9-jq8c-cwcc",
       "4a3585b0e9aba893039eb8f09ded4afa23afe753": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-93x9-jq8c-cwcc"
     },
     "GHSA-422R-8C97-XCG4": {
