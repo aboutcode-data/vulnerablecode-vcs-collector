@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/tika",
   "vulnerabilities": {
+    "CVE-2026-2332": {
+      "979136ba1e2bacbbed45db5da3602256d02b8115": "fix(security): upgrade Jetty 11.0.26 -> 12.0.35 to fix CVE-2026-2332 (#2894)"
+    },
     "CVE-2025-66516": {
       "fd557d4e0187fd870b7b8809dc80271733159d98": "Addressing CVE-2025-66516 in branch_1x (#2437)\n\n* Addressing CVE-2025-66516\n\nDisabling the processing of external entities when parsing XML.\n\n* Addressing CVE-2025-54988\n\nBackport of missing patch.\n\n---------\n\nCo-authored-by: Manfred Baedke <manfred.baedke@gmail.com>"
     },
