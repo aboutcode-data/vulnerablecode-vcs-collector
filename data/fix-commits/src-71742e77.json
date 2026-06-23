@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/openbsd/src",
   "vulnerabilities": {
+    "CVE-2025-10263": {
+      "be56f357d439943f42ea57af7e1c5a8d0cf1c5fa": "Address CVE-2025-10263.  This requires doing the TLB invalidation twice.\nHowever, this has a considerable cost on some CPU cores (such as Apple's\nM1/M2 and Qualcomm Snapdragon X) that aren't vulnerable.  So bring over\nthe code patching infrastructure from amd64 and use it to NOP out the\nadditional TLB invalidation on CPUs that aren't vulnerable.\n\nThis also addresses errata on some older ARM CPU cores (that are\nclassified as unlikely to happen) on some cores that aren't vulnerable to\nthis particular CVE.\n\nok jca@, deraadt@"
+    },
     "CVE-2026-8376": {
       "1a1b1c7bb847728408e65af78bc80e6342c78bdc": "Upstream patch for buffer overflow in 32-bit perl\n\n* CVE-2026-8376\n    https://lists.security.metacpan.org/cve-announce/msg/40396161/\n    Perl versions through 5.43.10 have a heap buffer overflow when\n    compiling regular expressions with a repeated fixed string on 32-bit\n    builds"
     },
