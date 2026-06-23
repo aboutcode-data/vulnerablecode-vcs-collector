@@ -2,6 +2,8 @@
   "vcs_url": "https://github.com/quarkusio/quarkus",
   "vulnerabilities": {
     "GHSA-QCXP-GM7M-4J5V": {
+      "f4433061d2931576cbbf920877dc6ce4a0d92a4c": "Handle GHSA-qcxp-gm7m-4j5v",
+      "447b66d4dbf7f26a2bba0b55067104f8e0e60b05": "Handle GHSA-qcxp-gm7m-4j5v",
       "069696d704dfe452403eea33570efe6b2332833c": "Merge pull request #54906 from jmartisk/3.20.6-cve\n\n[3.20.6-emergency] Handle GHSA-qcxp-gm7m-4j5v",
       "36294c31017f7861b610c259c347ab8dbf9201c7": "Merge pull request #54904 from jmartisk/3.33.2-cve\n\n[3.33.2-emergency] Handle GHSA-qcxp-gm7m-4j5v",
       "71c8cf824353004aaf7db1046282363a5bc854d2": "Merge pull request #54905 from jmartisk/3.27.4-cve\n\n[3.27.4-emergency] Handle GHSA-qcxp-gm7m-4j5v",

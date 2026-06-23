@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2025-68161": {
+      "dbf04b0f4a5f4eb03341e7c1a251572f593b266a": "dev-java/log4j-core: add 2.26.0 - CVE-2025-68161\n\nBug: https://bugs.gentoo.org/971360\nSigned-off-by: Volkmar W. Pogatzki <gentoo@pogatzki.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/263\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
     "CVE-2026-48840": {
       "6891157ebd2259189c3f4b053055764de2f6dbbf": "mail-mta/exim:-4.99.4: security bump\n\nCVE-2026-48840 PROXY-protocol uninitialised-stack information disclosure\n\nSigned-off-by: Fabian Groffen <grobian@gentoo.org>"
     },
