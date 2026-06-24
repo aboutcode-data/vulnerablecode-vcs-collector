@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/osquery/osquery",
   "vulnerabilities": {
     "GHSA-4R78-6HG6-33GG": {
+      "da73593c277a8ca33387c02ff9c9cf9dd1991a40": "Fix heap buffer overflow in Windows processes table (GHSA-4r78-6hg6-33gg) (#8934)\n\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>",
       "3d457c412eb0c986b0c37d8903edae8bc9f9e246": "Fix heap buffer overflow in Windows processes table (GHSA-4r78-6hg6-33gg) (#8934)\n\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>"
     },
     "CVE-2026-25210": {
