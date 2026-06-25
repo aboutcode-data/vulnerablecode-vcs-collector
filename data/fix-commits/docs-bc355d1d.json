@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/github/docs",
   "vulnerabilities": {
+    "CVE-2026-27143": {
+      "38a29995f1fc8b418ad5dcff912c52c082982603": "Bump esbuild from 0.25.0 to 0.28.1 (fixes CVE-2026-27143) (#61872)\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+    },
     "GHSA-GF2Q-C269-PQGC": {
       "12525174b9a38653e9d22b3867db981979d1bc79": "Bump liquidjs to ^10.27.0 (clears critical GHSA-gf2q-c269-pqgc) (#61486)\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
     },
