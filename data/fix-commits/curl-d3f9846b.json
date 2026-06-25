@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/bagder/curl",
   "vulnerabilities": {
+    "CVE-2026-9080": {
+      "e9a2b0dc72dd3a9aa3a5210e89079a3b719475dc": "multi_ev: refresh sock entry after remove callback\n\nThis was missed in the fix for CVE-2026-9080.\n\nReported-by: stze on hackerone\nURL: https://hackerone.com/reports/3823985\nCloses #22163"
+    },
     "CVE-2025-71176": {
       "bcb02fe5265f1e0eb67945e389f7d7801a1d725f": "GHA: bump pytest from 9.0.2 to 9.0.3\n\nCVE-2025-71176\n\nCloses #21306"
     },
