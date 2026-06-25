@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://github.com/angular/angular-cli",
   "vulnerabilities": {
+    "GHSA-VXPW-J846-P89Q": {
+      "a2b6116eddc7a71e4539817da623221ca552a35f": "fix(@angular/build): bump undici to 7.28.0\n\nBumps undici to version 7.28.0 to resolve the GHSA-vxpw-j846-p89q security vulnerability.\nAlso mentions GHSA-fx2h-pf6j-xcff.\n\nFixes #33449",
+      "4ea787cd0dfc7226896643a6f8ccd99846c85c2c": "fix(@angular-devkit/build-angular): bump undici to 7.28.0\n\nBumps undici to version 7.28.0 to resolve the GHSA-vxpw-j846-p89q security vulnerability.\nAlso mentions GHSA-fx2h-pf6j-xcff.\n\nFixes #33449"
+    },
+    "GHSA-FX2H-PF6J-XCFF": {
+      "a2b6116eddc7a71e4539817da623221ca552a35f": "fix(@angular/build): bump undici to 7.28.0\n\nBumps undici to version 7.28.0 to resolve the GHSA-vxpw-j846-p89q security vulnerability.\nAlso mentions GHSA-fx2h-pf6j-xcff.\n\nFixes #33449",
+      "4ea787cd0dfc7226896643a6f8ccd99846c85c2c": "fix(@angular-devkit/build-angular): bump undici to 7.28.0\n\nBumps undici to version 7.28.0 to resolve the GHSA-vxpw-j846-p89q security vulnerability.\nAlso mentions GHSA-fx2h-pf6j-xcff.\n\nFixes #33449",
+      "7f236cfea9023a77c6ccaf1648f388678017ce1e": "fix(@angular/build): bump esbuild to 0.28.1\n\nBumps esbuild to 0.28.1 to address GHSA-fx2h-pf6j-xcff.\n\nFixes #33420.",
+      "6a06ce9e9847b4ddd66b94b9ea4c6fbbfc28d066": "fix(@angular/build): bump esbuild to 0.28.1\n\nBumps esbuild to 0.28.1 to address GHSA-fx2h-pf6j-xcff.\n\nFixes #33420.",
+      "1f283a41c921b194c67c5bca05d4b5cff1d91857": "fix(@angular/build): bump vite to 7.3.5\n\nBumps vite to version 7.3.5 to resolve the GHSA-fx2h-pf6j-xcff security vulnerability.\n\nFixes #33407",
+      "e86d58a128725eee9dd63dcd2ccd35b8ee4706f3": "fix(@angular/build): bump vite to 7.3.5\n\nBumps vite to version 7.3.5 to resolve the GHSA-fx2h-pf6j-xcff security vulnerability.\n\nFixes #33407"
+    },
     "GHSA-X9G3-XRWR-CWFG": {
       "94fb3c122a14a3a8540a24e22f2f8ff87d130cb5": "fix(@angular/build): bump piscina to 5.2.0\n\nBumps piscina to 5.2.0 to address GHSA-x9g3-xrwr-cwfg.\n\nFixes #33420.",
       "637b84877334de5acc6fcbe1ba4d62c7a6da420b": "fix(@angular/build): bump piscina to 5.2.0\n\nBumps piscina to 5.2.0 to address GHSA-x9g3-xrwr-cwfg.\n\nFixes #33420."
@@ -12,12 +24,6 @@
     "GHSA-4X5R-PXFX-6JF8": {
       "36adca99ce72d59e5909709f53e239b1e79d703e": "fix(@angular/build): bump @babel/core to 7.29.7\n\nBumps @babel/core to 7.29.7 to address GHSA-4x5r-pxfx-6jf8 / CVE-2026-49356.\n\nFixes #33420.",
       "9c366e8be42495d1bf90033788b3beae77e5fc28": "fix(@angular/build): bump @babel/core to 7.29.7\n\nBumps @babel/core to 7.29.7 to address GHSA-4x5r-pxfx-6jf8 / CVE-2026-49356.\n\nFixes #33420."
-    },
-    "GHSA-FX2H-PF6J-XCFF": {
-      "7f236cfea9023a77c6ccaf1648f388678017ce1e": "fix(@angular/build): bump esbuild to 0.28.1\n\nBumps esbuild to 0.28.1 to address GHSA-fx2h-pf6j-xcff.\n\nFixes #33420.",
-      "6a06ce9e9847b4ddd66b94b9ea4c6fbbfc28d066": "fix(@angular/build): bump esbuild to 0.28.1\n\nBumps esbuild to 0.28.1 to address GHSA-fx2h-pf6j-xcff.\n\nFixes #33420.",
-      "1f283a41c921b194c67c5bca05d4b5cff1d91857": "fix(@angular/build): bump vite to 7.3.5\n\nBumps vite to version 7.3.5 to resolve the GHSA-fx2h-pf6j-xcff security vulnerability.\n\nFixes #33407",
-      "e86d58a128725eee9dd63dcd2ccd35b8ee4706f3": "fix(@angular/build): bump vite to 7.3.5\n\nBumps vite to version 7.3.5 to resolve the GHSA-fx2h-pf6j-xcff security vulnerability.\n\nFixes #33407"
     },
     "GHSA-W4PP-8PJF-RMXW": {
       "77c9047acdf4b69ec6dd399af2dff7278e8014c7": "fix(@angular/cli): update pacote to 21.5.1\n\nUpdate pacote to 21.5.1 to address https://github.com/advisories/GHSA-w4pp-8pjf-rmxw\n\nFixes #33376",
