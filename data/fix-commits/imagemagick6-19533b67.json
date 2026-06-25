@@ -1,6 +1,13 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-G568-J2HH-JR58": {
+      "5a5c60eefb6eb1b9e4e6979aeb0a5210c80fd5e1": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-g568-j2hh-jr58",
+      "f9895734e00bf0008a98d665b04c61abe17dc434": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-g568-j2hh-jr58"
+    },
+    "GHSA-XV2G-79VC-75QF": {
+      "69775540e90337162dcecf31b08107c05f1688df": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-xv2g-79vc-75qf"
+    },
     "GHSA-F5M7-CQGW-8HM7": {
       "b3a93f501011a8882ec4962dd6db9f0a71e6f050": "Added extra checks when acquiring the values of a kernel (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-f5m7-cqgw-8hm7)"
     },

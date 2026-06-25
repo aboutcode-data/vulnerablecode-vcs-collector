@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/superset",
   "vulnerabilities": {
+    "CVE-2026-48526": {
+      "1f16d10cbf9491157d9adfd82dbc39cd30840596": "chore(deps): bump pyjwt to 2.13.0 (CVE-2026-48526) (#41288)\n\nCo-authored-by: Amin Ghadersohi <amin.ghadersohi@gmail.com>\nCo-authored-by: Claude Fable 5 <noreply@anthropic.com>"
+    },
     "GHSA-CMWH-PVXP-8882": {
       "959ad67ae3ae470452474afd160d6085076a9ef2": "chore(deps): bump vulnerable transitive deps across lockfiles\n\nResolves several Dependabot security alerts by pinning patched versions\nof transitive dependencies via npm `overrides` / yarn `resolutions`.\n\nsuperset-frontend (package-lock.json):\n- dompurify        -> 3.4.11  (GHSA-cmwh-pvxp-8882, -vxr8-fq34-vvx9, -gvmj-g25r-r7wr)\n- esbuild          -> 0.28.1  (GHSA-g7r4-m6w7-qqqr)\n- http-proxy-middleware -> 2.0.10 (GHSA-64mm-vxmg-q3vj)\n- tar              -> 7.5.16  (GHSA-vmf3-w455-68vh)\n\ndocs (yarn.lock):\n- ws               -> 8.21.0  (GHSA-96hv-2xvq-fx4p, two HIGH alerts; 7.x and 8.x consumers)\n\nsuperset-websocket (package-lock.json):\n- @babel/core      -> 7.29.7  (GHSA-4x5r-pxfx-6jf8)\n\nsuperset-frontend/cypress-base (package-lock.json):\n- @babel/core      -> 7.29.7  (GHSA-4x5r-pxfx-6jf8)\n\njs-yaml (GHSA-h67p-54hq-rp68) is intentionally NOT bumped: the only\npatched release is 4.2.0, but the remaining vulnerable instance is\njs-yaml@3.14.2 pulled in by @istanbuljs/load-nyc-config (jest coverage\ntooling) which uses the v3 API removed in v4. Forcing v4 would break the\nbuild; it needs upstream consumer upgrades and is tracked separately.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>"
     },
@@ -21,12 +24,6 @@
     },
     "GHSA-H67P-54HQ-RP68": {
       "959ad67ae3ae470452474afd160d6085076a9ef2": "chore(deps): bump vulnerable transitive deps across lockfiles\n\nResolves several Dependabot security alerts by pinning patched versions\nof transitive dependencies via npm `overrides` / yarn `resolutions`.\n\nsuperset-frontend (package-lock.json):\n- dompurify        -> 3.4.11  (GHSA-cmwh-pvxp-8882, -vxr8-fq34-vvx9, -gvmj-g25r-r7wr)\n- esbuild          -> 0.28.1  (GHSA-g7r4-m6w7-qqqr)\n- http-proxy-middleware -> 2.0.10 (GHSA-64mm-vxmg-q3vj)\n- tar              -> 7.5.16  (GHSA-vmf3-w455-68vh)\n\ndocs (yarn.lock):\n- ws               -> 8.21.0  (GHSA-96hv-2xvq-fx4p, two HIGH alerts; 7.x and 8.x consumers)\n\nsuperset-websocket (package-lock.json):\n- @babel/core      -> 7.29.7  (GHSA-4x5r-pxfx-6jf8)\n\nsuperset-frontend/cypress-base (package-lock.json):\n- @babel/core      -> 7.29.7  (GHSA-4x5r-pxfx-6jf8)\n\njs-yaml (GHSA-h67p-54hq-rp68) is intentionally NOT bumped: the only\npatched release is 4.2.0, but the remaining vulnerable instance is\njs-yaml@3.14.2 pulled in by @istanbuljs/load-nyc-config (jest coverage\ntooling) which uses the v3 API removed in v4. Forcing v4 would break the\nbuild; it needs upstream consumer upgrades and is tracked separately.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>"
-    },
-    "CVE-2026-48526": {
-      "e803cdb38ec84596b13422cf4ffb0563a8436f36": "chore(deps): bump pyjwt to 2.13.0 (CVE-2026-48526)\n\nPyJWT < 2.13.0 accepts a public-key JWK as an HMAC secret, enabling forged\nHS256 tokens when mixed key families are allowed (CVE-2026-48526,\nGHSA-xgmm-8j9v-c9wx). PyJWT is a direct dependency (pyproject: PyJWT>=2.4.0,<3.0)\nused for JWT handling including guest tokens. Patch bump in both lockfiles;\npyproject already allows it.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>"
-    },
-    "GHSA-XGMM-8J9V-C9WX": {
-      "e803cdb38ec84596b13422cf4ffb0563a8436f36": "chore(deps): bump pyjwt to 2.13.0 (CVE-2026-48526)\n\nPyJWT < 2.13.0 accepts a public-key JWK as an HMAC secret, enabling forged\nHS256 tokens when mixed key families are allowed (CVE-2026-48526,\nGHSA-xgmm-8j9v-c9wx). PyJWT is a direct dependency (pyproject: PyJWT>=2.4.0,<3.0)\nused for JWT handling including guest tokens. Patch bump in both lockfiles;\npyproject already allows it.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>"
     },
     "CVE-2026-33036": {
       "9ca6ccbe3ab11a5f4d047166c2c1e61c7140392d": "fix(deps): patch fast-xml-parser CVE-2026-33036 and CVE-2026-33349 (#40118)",
