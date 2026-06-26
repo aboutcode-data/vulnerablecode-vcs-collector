@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib",
   "vulnerabilities": {
+    "GHSA-VFFH-X6R8-XX99": {
+      "fa6fb151c739b9c9bbd7eb8104de1701e97d0d7c": "[chore] Ignore vulnerability GO-2026-5662 (#49343)\n\n<!--Ex. Fixing a bug - Describe the bug and how this fixes the issue.\nEx. Adding a feature - Explain what this achieves.-->\n#### Description\n\nThis PR adds https://pkg.go.dev/vuln/GO-2026-5662 to the ignore list of\n`govulncheck` to prevent builds from failing.\n\nThis has been causing build failures since\nhttps://github.com/open-telemetry/opentelemetry-collector-contrib/commit/713822a31f637af81a78df707224f82216d0e94b.\nThat commit is not the culprit, just the first time this scanner\ncomplained about the vulnerability. All builds since then are failing\nbecause of this, including PRs with recent commits.\n\nFirst of all, I don't understand why `govulncheck` is still reporting\nthis. I checked all the modules that depend on\n`github.com/prometheus/prometheus` and they all are on version v0.312.0,\nwhich according to [their\nchangelog](https://github.com/prometheus/prometheus/blob/main/CHANGELOG.md#3120--2026-05-28)\nand\nhttps://github.com/prometheus/prometheus/security/advisories/GHSA-vffh-x6r8-xx99,\nincludes a fix for that vulnerability.\n\n<!--Describe what testing was performed and which tests were added.-->\n#### Testing\n\nRan `make vulncheck` manually in a few affected packages and it passed.\n\n#### Authorship\n\n- [x] I, a human, wrote this pull request description myself.\n\n<!--Please delete paragraphs that you did not use before submitting.-->\n\n---------\n\nSigned-off-by: Douglas Camata <159076+douglascamata@users.noreply.github.com>"
+    },
     "GHSA-CP6G-7HQX-QXHP": {
       "0f527847d791323d9f9d885015686845f178953d": "Update mongo driver v2 to v2.7.0 (#49248)\n\nFix #48314\n\nThis upgrade fixes https://github.com/advisories/GHSA-cp6g-7hqx-qxhp"
     },
