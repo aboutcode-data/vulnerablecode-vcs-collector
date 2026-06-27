@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-11625": {
+      "1de3e5a5ab62edfc00f87e9287b8d9c8c2f638de": "[Backport release-26.05] perlPackages.BytesRandomSecure: add patch for CVE-2026-11625 (#536005)",
+      "98143898b6a630bd7433afabfb6386523f08e054": "perlPackages.BytesRandomSecure: add patch for CVE-2026-11625\n\n(cherry picked from commit f74dae849727a177dafb8686c1d573b945ff69ff)",
+      "7aba6643b1c735ae9bf79f7d14c21d1752acd6bb": "perlPackages.BytesRandomSecure: add patch for CVE-2026-11625 (#535973)",
+      "f74dae849727a177dafb8686c1d573b945ff69ff": "perlPackages.BytesRandomSecure: add patch for CVE-2026-11625"
+    },
+    "CVE-2026-11702": {
+      "4e244187afb26b26c921d6fd234e973bacbd5fd2": "[Backport release-26.05] perlPackages.BytesRandomSecureTiny: add patch for CVE-2026-11702 (#536001)",
+      "2e542f016565ab8013e1f4a3193940fcc8fb3501": "perlPackages.BytesRandomSecureTiny: add patch for CVE-2026-11702\n\n(cherry picked from commit 78581b87cd0b96d2cd1a36aa5d20aad57b9a1d4e)",
+      "4352ea32e8f87b40b788ad152cf5b6ede5b850d1": "perlPackages.BytesRandomSecureTiny: add patch for CVE-2026-11702 (#535971)",
+      "78581b87cd0b96d2cd1a36aa5d20aad57b9a1d4e": "perlPackages.BytesRandomSecureTiny: add patch for CVE-2026-11702"
+    },
     "CVE-2026-13281": {
       "eb197cfed7927b14ee6cc88d51f3fddd68e03a3e": "ungoogled-chromium: 149.0.7827.196-1 -> 149.0.7827.200-1\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283\n\n(cherry picked from commit 53a21295bc575b2c11209aae94c575729993920c)",
       "ce83b7ee8a937cab5bd4c29d8d0e5c3c4a9d0239": "chromium,chromedriver: 149.0.7827.196 -> 149.0.7827.200\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283\n\n(cherry picked from commit b94af336c06215e59b48d1867940ac4d84b349b3)",
