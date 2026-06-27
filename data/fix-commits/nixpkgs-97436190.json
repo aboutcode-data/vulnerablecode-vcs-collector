@@ -1,6 +1,112 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-13281": {
+      "eb197cfed7927b14ee6cc88d51f3fddd68e03a3e": "ungoogled-chromium: 149.0.7827.196-1 -> 149.0.7827.200-1\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283\n\n(cherry picked from commit 53a21295bc575b2c11209aae94c575729993920c)",
+      "ce83b7ee8a937cab5bd4c29d8d0e5c3c4a9d0239": "chromium,chromedriver: 149.0.7827.196 -> 149.0.7827.200\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283\n\n(cherry picked from commit b94af336c06215e59b48d1867940ac4d84b349b3)",
+      "5361550f002f75096b3aae875e845a67b47e6a08": "ungoogled-chromium: 149.0.7827.196-1 -> 149.0.7827.200-1\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283\n\n(cherry picked from commit 53a21295bc575b2c11209aae94c575729993920c)",
+      "eb0a771fb55200b5b76387afcdc74c2854c04c43": "chromium,chromedriver: 149.0.7827.196 -> 149.0.7827.200\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283\n\n(cherry picked from commit b94af336c06215e59b48d1867940ac4d84b349b3)",
+      "53a21295bc575b2c11209aae94c575729993920c": "ungoogled-chromium: 149.0.7827.196-1 -> 149.0.7827.200-1\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283",
+      "b94af336c06215e59b48d1867940ac4d84b349b3": "chromium,chromedriver: 149.0.7827.196 -> 149.0.7827.200\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283"
+    },
+    "CVE-2026-13282": {
+      "eb197cfed7927b14ee6cc88d51f3fddd68e03a3e": "ungoogled-chromium: 149.0.7827.196-1 -> 149.0.7827.200-1\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283\n\n(cherry picked from commit 53a21295bc575b2c11209aae94c575729993920c)",
+      "ce83b7ee8a937cab5bd4c29d8d0e5c3c4a9d0239": "chromium,chromedriver: 149.0.7827.196 -> 149.0.7827.200\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283\n\n(cherry picked from commit b94af336c06215e59b48d1867940ac4d84b349b3)",
+      "5361550f002f75096b3aae875e845a67b47e6a08": "ungoogled-chromium: 149.0.7827.196-1 -> 149.0.7827.200-1\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283\n\n(cherry picked from commit 53a21295bc575b2c11209aae94c575729993920c)",
+      "eb0a771fb55200b5b76387afcdc74c2854c04c43": "chromium,chromedriver: 149.0.7827.196 -> 149.0.7827.200\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283\n\n(cherry picked from commit b94af336c06215e59b48d1867940ac4d84b349b3)",
+      "53a21295bc575b2c11209aae94c575729993920c": "ungoogled-chromium: 149.0.7827.196-1 -> 149.0.7827.200-1\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283",
+      "b94af336c06215e59b48d1867940ac4d84b349b3": "chromium,chromedriver: 149.0.7827.196 -> 149.0.7827.200\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283"
+    },
+    "CVE-2026-13283": {
+      "eb197cfed7927b14ee6cc88d51f3fddd68e03a3e": "ungoogled-chromium: 149.0.7827.196-1 -> 149.0.7827.200-1\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283\n\n(cherry picked from commit 53a21295bc575b2c11209aae94c575729993920c)",
+      "ce83b7ee8a937cab5bd4c29d8d0e5c3c4a9d0239": "chromium,chromedriver: 149.0.7827.196 -> 149.0.7827.200\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283\n\n(cherry picked from commit b94af336c06215e59b48d1867940ac4d84b349b3)",
+      "5361550f002f75096b3aae875e845a67b47e6a08": "ungoogled-chromium: 149.0.7827.196-1 -> 149.0.7827.200-1\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283\n\n(cherry picked from commit 53a21295bc575b2c11209aae94c575729993920c)",
+      "eb0a771fb55200b5b76387afcdc74c2854c04c43": "chromium,chromedriver: 149.0.7827.196 -> 149.0.7827.200\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283\n\n(cherry picked from commit b94af336c06215e59b48d1867940ac4d84b349b3)",
+      "53a21295bc575b2c11209aae94c575729993920c": "ungoogled-chromium: 149.0.7827.196-1 -> 149.0.7827.200-1\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283",
+      "b94af336c06215e59b48d1867940ac4d84b349b3": "chromium,chromedriver: 149.0.7827.196 -> 149.0.7827.200\n\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html\n\nThis update includes 3 security fixes.\n\nCVEs:\nCVE-2026-13281 CVE-2026-13282 CVE-2026-13283"
+    },
+    "CVE-2026-8368": {
+      "03a06252a45713863ded5d69ef44e0a738281389": "perlPackages.libwwwperl: 6.72 -> 6.83\n\nFixes CVE-2026-8368. Covers both the libwwwperl and LWP attributes.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2024-58135": {
+      "5b6275f4054ef7e0c374079db3bfd761b710aad4": "perlPackages.Mojolicious: 9.39 -> 9.46\n\nFixes CVE-2024-58135.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2025-2814": {
+      "49ef24302dabf5edc456c4ed56af2133cac0b48c": "perlPackages.CryptCBC: 2.33 -> 3.07\n\nFixes CVE-2025-2814.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2025-40908": {
+      "2c79c8f23a6b7a61195c7f53622ef68ed3a84e9f": "perlPackages.YAMLLibYAML: 0.89 -> 0.907.0\n\nFixes CVE-2025-40908.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2025-40923": {
+      "02bfa3d8bc458884286314b9b12121c5578e34f1": "perlPackages.PlackMiddlewareSession: 0.33 -> 0.36\n\nFixes CVE-2025-40923, CVE-2013-10031.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2013-10031": {
+      "02bfa3d8bc458884286314b9b12121c5578e34f1": "perlPackages.PlackMiddlewareSession: 0.33 -> 0.36\n\nFixes CVE-2025-40923, CVE-2013-10031.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-11527": {
+      "02ee43b56f68a424ce31e1c986b9fe4dccb1cb2f": "perlPackages.ConfigIniFiles: 3.000003 -> 3.002000\n\nFixes CVE-2026-11527.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-11526": {
+      "55c68fd7a07225921f12f09c3fca242c5335dd53": "perlPackages.GD: 2.78 -> 2.86\n\nFixes CVE-2026-11526.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-40561": {
+      "d22c1175af2ad1614c19f547a34677bc9250618d": "perlPackages.Starlet: 0.31 -> 0.32\n\nFixes CVE-2026-40561.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-8647": {
+      "4b37127ec079734d0201385a0f3f96e1c6c20f45": "perlPackages.CryptScryptKDF: 0.010 -> 0.011\n\nFixes CVE-2026-8647.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-6659": {
+      "62e6ec8536bbdb987df446af821549d619a10aca": "perlPackages.CryptPasswdMD5: 1.42 -> 1.43\n\nFixes CVE-2026-6659.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-8177": {
+      "5fb740257c36a83351b79b1dc15d8056a1533976": "perlPackages.XMLLibXML: 2.0210 -> 2.0213\n\nFixes CVE-2026-8177. Drops the libxml-2.13 test patch, now included upstream.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-8796": {
+      "261df4c82cbef82eff433195316c3222c9dd5873": "perlPackages.Sereal: 5.004 -> 5.006\n\nFixes CVE-2026-8796. Covers Sereal, Sereal::Decoder and Sereal::Encoder.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-8700": {
+      "e86a4b4e44855be1d7c7ba081f2d057c98ebb928": "perlPackages.CryptDSA: 1.17 -> 1.21\n\nFixes CVE-2026-8700, CVE-2026-8704, CVE-2026-12205.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-8704": {
+      "e86a4b4e44855be1d7c7ba081f2d057c98ebb928": "perlPackages.CryptDSA: 1.17 -> 1.21\n\nFixes CVE-2026-8700, CVE-2026-8704, CVE-2026-12205.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-12205": {
+      "e86a4b4e44855be1d7c7ba081f2d057c98ebb928": "perlPackages.CryptDSA: 1.17 -> 1.21\n\nFixes CVE-2026-8700, CVE-2026-8704, CVE-2026-12205.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-8463": {
+      "de1d803f4387e8afbccf6a7650b8a8ff0c45b2fc": "perlPackages.CryptArgon2: 0.019 -> 0.031\n\nFixes CVE-2026-8463.\n\nCo-authored-by: Robert Sch\u00fctz <nix@dotlambda.de>\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2017-20240": {
+      "f1ec9089c3939acbba18a7e3c1650eff87cdf9c4": "perlPackages.CryptPBKDF2: 0.161520 -> 0.261630\n\nFixes CVE-2017-20240, CVE-2026-9638, CVE-2026-9641.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-9638": {
+      "f1ec9089c3939acbba18a7e3c1650eff87cdf9c4": "perlPackages.CryptPBKDF2: 0.161520 -> 0.261630\n\nFixes CVE-2017-20240, CVE-2026-9638, CVE-2026-9641.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-9641": {
+      "f1ec9089c3939acbba18a7e3c1650eff87cdf9c4": "perlPackages.CryptPBKDF2: 0.161520 -> 0.261630\n\nFixes CVE-2017-20240, CVE-2026-9638, CVE-2026-9641.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-10725": {
+      "0002e3ea35b952f747cc1cd19657f729422b7f42": "perlPackages.ProtocolHTTP2: 1.11 -> 1.13\n\nFixes CVE-2026-10725.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-46739": {
+      "9020587aa04036671788a5745f2ea63df581b064": "perlPackages.NetStatsd: 0.12 -> 0.13\n\nFixes CVE-2026-46739.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-8829": {
+      "7a4c9efd01e0980532edff7245f49768ad1deb01": "perlPackages.HTMLParser: 3.81 -> 3.85\n\nFixes CVE-2026-8829.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-9334": {
+      "66e7adfa8f255bff2e1ec8c12b888a8514aad48c": "perlPackages.CpanelJSONXS: 4.37 -> 4.42\n\nFixes CVE-2026-9334, CVE-2026-9516. Supersedes the in-tree CVE-2025-40929 patch.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-9516": {
+      "66e7adfa8f255bff2e1ec8c12b888a8514aad48c": "perlPackages.CpanelJSONXS: 4.37 -> 4.42\n\nFixes CVE-2026-9334, CVE-2026-9516. Supersedes the in-tree CVE-2025-40929 patch.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2025-40929": {
+      "66e7adfa8f255bff2e1ec8c12b888a8514aad48c": "perlPackages.CpanelJSONXS: 4.37 -> 4.42\n\nFixes CVE-2026-9334, CVE-2026-9516. Supersedes the in-tree CVE-2025-40929 patch.\n\nAssisted-by: Claude Code (Claude Opus 4.8)\nSigned-off-by: Stig Palmquist <git@stig.io>",
+      "7767cac629b7437c3f4597dba50e1129e648e0ce": "[Backport release-25.05] perlPackages.{CpanelJSONXS,JSONXS}: Patches for CVE-2025-40928 and CVE-2025-40929 (#442425)",
+      "fe1438c4897614d9574ac15da704410cebd7d961": "perlPackages.CpanelJSONXS: Patch for CVE-2025-40929\n\nNote that the .patch comments reference the related CVE-2025-40928\naffecting `JSON::XS`, that this module was originally forked from.\n\n(cherry picked from commit cb88a6fe753fd90146abc2ea5bd6e7b3b4b56466)",
+      "9c6d827f8d4803d2880f052661fad342ebca9c0f": "perlPackages.{CpanelJSONXS,JSONXS}: Patches for CVE-2025-40928 and CVE-2025-40929 (#441228)",
+      "cb88a6fe753fd90146abc2ea5bd6e7b3b4b56466": "perlPackages.CpanelJSONXS: Patch for CVE-2025-40929\n\nNote that the .patch comments reference the related CVE-2025-40928\naffecting `JSON::XS`, that this module was originally forked from."
+    },
     "CVE-2026-57053": {
       "047f3ce2575dcad5214b2c1e5db3dd51d48be02d": "libidn: 1.43 -> 1.44\n\nhttps://codeberg.org/libidn/libidn/src/tag/v1.44/NEWS\n\nFixes: CVE-2026-57053\n(cherry picked from commit 2f05530db272b87de4091030b556e383ffc95ded)",
       "2f05530db272b87de4091030b556e383ffc95ded": "libidn: 1.43 -> 1.44\n\nhttps://codeberg.org/libidn/libidn/src/tag/v1.44/NEWS\n\nFixes: CVE-2026-57053"
@@ -10463,12 +10569,6 @@
       "9c6d827f8d4803d2880f052661fad342ebca9c0f": "perlPackages.{CpanelJSONXS,JSONXS}: Patches for CVE-2025-40928 and CVE-2025-40929 (#441228)",
       "cb88a6fe753fd90146abc2ea5bd6e7b3b4b56466": "perlPackages.CpanelJSONXS: Patch for CVE-2025-40929\n\nNote that the .patch comments reference the related CVE-2025-40928\naffecting `JSON::XS`, that this module was originally forked from.",
       "b01a8eb4fdad9ec3037044474fefbd6a66161f0c": "perlPackages.JSONXS: Patch for CVE-2025-40928"
-    },
-    "CVE-2025-40929": {
-      "7767cac629b7437c3f4597dba50e1129e648e0ce": "[Backport release-25.05] perlPackages.{CpanelJSONXS,JSONXS}: Patches for CVE-2025-40928 and CVE-2025-40929 (#442425)",
-      "fe1438c4897614d9574ac15da704410cebd7d961": "perlPackages.CpanelJSONXS: Patch for CVE-2025-40929\n\nNote that the .patch comments reference the related CVE-2025-40928\naffecting `JSON::XS`, that this module was originally forked from.\n\n(cherry picked from commit cb88a6fe753fd90146abc2ea5bd6e7b3b4b56466)",
-      "9c6d827f8d4803d2880f052661fad342ebca9c0f": "perlPackages.{CpanelJSONXS,JSONXS}: Patches for CVE-2025-40928 and CVE-2025-40929 (#441228)",
-      "cb88a6fe753fd90146abc2ea5bd6e7b3b4b56466": "perlPackages.CpanelJSONXS: Patch for CVE-2025-40929\n\nNote that the .patch comments reference the related CVE-2025-40928\naffecting `JSON::XS`, that this module was originally forked from."
     },
     "CVE-2025-10200": {
       "ad0c831d6076f1e1838179320bcf6d4cff8ea34a": "ungoogled-chromium: 140.0.7339.80-1 -> 140.0.7339.127-1\n\nhttps://chromereleases.googleblog.com/2025/09/stable-channel-update-for-desktop_9.html\n\nThis update includes 2 security fixes.\n\nCVEs:\nCVE-2025-10200 CVE-2025-10201\n\n(cherry picked from commit e749fe7cdf5c726e2b392b5d17bc9d1ec3c746eb)",
