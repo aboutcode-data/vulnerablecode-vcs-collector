@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-48529": {
+      "e4431417d416d5482a714660cfd7aee405b2b5bb": "github-mcp-server: 1.0.5 -> 1.1.2\n\nBackported due to CVE-2026-48529/GHSA-pjp5-fpmr-3349 (#535960)\n(cherry picked from commit caf0d2495bce3edcf02b48dd39d6743acda8f0e9)"
+    },
+    "GHSA-PJP5-FPMR-3349": {
+      "e4431417d416d5482a714660cfd7aee405b2b5bb": "github-mcp-server: 1.0.5 -> 1.1.2\n\nBackported due to CVE-2026-48529/GHSA-pjp5-fpmr-3349 (#535960)\n(cherry picked from commit caf0d2495bce3edcf02b48dd39d6743acda8f0e9)"
+    },
     "GHSA-GH3R-JH6Q-WRVJ": {
       "530375c0ef1091284c41c75c26c5f302ca105db6": "freescout: 1.8.225 -> 1.8.226\n\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.226\n\nFixes:\nGHSA-gh3r-jh6q-wrvj, GHSA-gh3r-jh6q-wrvj, GHSA-w668-wq26-6c94,\nGHSA-wqq7-4q7m-273v"
     },
