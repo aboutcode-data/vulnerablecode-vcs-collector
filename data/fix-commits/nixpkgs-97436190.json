@@ -16,6 +16,12 @@
     "GHSA-WQQ7-4Q7M-273V": {
       "530375c0ef1091284c41c75c26c5f302ca105db6": "freescout: 1.8.225 -> 1.8.226\n\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.226\n\nFixes:\nGHSA-gh3r-jh6q-wrvj, GHSA-gh3r-jh6q-wrvj, GHSA-w668-wq26-6c94,\nGHSA-wqq7-4q7m-273v"
     },
+    "CVE-2026-57231": {
+      "d7a368779abec248368e8c0129854b168ed1e68d": "podman: 5.8.3 -> 5.8.4\n\nFixes CVE-2026-57231/GHSA-4hq8-gpf5-8p68 (#535959)"
+    },
+    "GHSA-4HQ8-GPF5-8P68": {
+      "d7a368779abec248368e8c0129854b168ed1e68d": "podman: 5.8.3 -> 5.8.4\n\nFixes CVE-2026-57231/GHSA-4hq8-gpf5-8p68 (#535959)"
+    },
     "CVE-2026-11625": {
       "1de3e5a5ab62edfc00f87e9287b8d9c8c2f638de": "[Backport release-26.05] perlPackages.BytesRandomSecure: add patch for CVE-2026-11625 (#536005)",
       "98143898b6a630bd7433afabfb6386523f08e054": "perlPackages.BytesRandomSecure: add patch for CVE-2026-11625\n\n(cherry picked from commit f74dae849727a177dafb8686c1d573b945ff69ff)",
