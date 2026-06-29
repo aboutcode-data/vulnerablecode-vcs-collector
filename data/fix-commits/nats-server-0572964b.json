@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://github.com/nats-io/nats-server",
   "vulnerabilities": {
+    "CVE-2026-42504": {
+      "0de85603e3e5036a07f3e1d505319c1f6d1f8147": "Upgrade Go versions for releases\n\nThis remediates CVE-2026-42504, CVE-2026-27145, and CVE-2026-42507.\n\nSigned-off-by: Chaitanya Munukutla <chaitanya.m61292@gmail.com>",
+      "fe7c07a4d5527f6148e5c5c19bcc47ab900f7cb3": "Upgrade Go versions for releases\n\nThis remediates CVE-2026-42504, CVE-2026-27145, and CVE-2026-42507.\n\nSigned-off-by: Chaitanya Munukutla <chaitanya.m61292@gmail.com>"
+    },
+    "CVE-2026-27145": {
+      "0de85603e3e5036a07f3e1d505319c1f6d1f8147": "Upgrade Go versions for releases\n\nThis remediates CVE-2026-42504, CVE-2026-27145, and CVE-2026-42507.\n\nSigned-off-by: Chaitanya Munukutla <chaitanya.m61292@gmail.com>",
+      "fe7c07a4d5527f6148e5c5c19bcc47ab900f7cb3": "Upgrade Go versions for releases\n\nThis remediates CVE-2026-42504, CVE-2026-27145, and CVE-2026-42507.\n\nSigned-off-by: Chaitanya Munukutla <chaitanya.m61292@gmail.com>"
+    },
+    "CVE-2026-42507": {
+      "0de85603e3e5036a07f3e1d505319c1f6d1f8147": "Upgrade Go versions for releases\n\nThis remediates CVE-2026-42504, CVE-2026-27145, and CVE-2026-42507.\n\nSigned-off-by: Chaitanya Munukutla <chaitanya.m61292@gmail.com>",
+      "fe7c07a4d5527f6148e5c5c19bcc47ab900f7cb3": "Upgrade Go versions for releases\n\nThis remediates CVE-2026-42504, CVE-2026-27145, and CVE-2026-42507.\n\nSigned-off-by: Chaitanya Munukutla <chaitanya.m61292@gmail.com>"
+    },
     "GHSA-H524-452V-82P9": {
       "c98d978505e6784ca2e42e70798d0b9442cf9548": "Upgrade goreleaser's Go version 1.26.4, and go.mod toolchain to 1.25.11 (#8281)\n\n<!-- Please make sure to read CONTRIBUTING.md, then delete this notice\nand replace it with your PR description. Commit sign-offs certify that\nthe contribution is your original work and that you license the work to\nthe project under the Apache-2.0 license. We cannot accept contributions\nwithout it. -->\n\nThis is to remediate https://github.com/advisories/GHSA-h524-452v-82p9,\nhttps://github.com/advisories/GHSA-4279-q6mj-392r, and\nhttps://github.com/advisories/GHSA-h3gm-q7m7-mp28."
     },
@@ -9,15 +21,6 @@
     },
     "GHSA-H3GM-Q7M7-MP28": {
       "c98d978505e6784ca2e42e70798d0b9442cf9548": "Upgrade goreleaser's Go version 1.26.4, and go.mod toolchain to 1.25.11 (#8281)\n\n<!-- Please make sure to read CONTRIBUTING.md, then delete this notice\nand replace it with your PR description. Commit sign-offs certify that\nthe contribution is your original work and that you license the work to\nthe project under the Apache-2.0 license. We cannot accept contributions\nwithout it. -->\n\nThis is to remediate https://github.com/advisories/GHSA-h524-452v-82p9,\nhttps://github.com/advisories/GHSA-4279-q6mj-392r, and\nhttps://github.com/advisories/GHSA-h3gm-q7m7-mp28."
-    },
-    "CVE-2026-42504": {
-      "fe7c07a4d5527f6148e5c5c19bcc47ab900f7cb3": "Upgrade Go versions for releases\n\nThis remediates CVE-2026-42504, CVE-2026-27145, and CVE-2026-42507.\n\nSigned-off-by: Chaitanya Munukutla <chaitanya.m61292@gmail.com>"
-    },
-    "CVE-2026-27145": {
-      "fe7c07a4d5527f6148e5c5c19bcc47ab900f7cb3": "Upgrade Go versions for releases\n\nThis remediates CVE-2026-42504, CVE-2026-27145, and CVE-2026-42507.\n\nSigned-off-by: Chaitanya Munukutla <chaitanya.m61292@gmail.com>"
-    },
-    "CVE-2026-42507": {
-      "fe7c07a4d5527f6148e5c5c19bcc47ab900f7cb3": "Upgrade Go versions for releases\n\nThis remediates CVE-2026-42504, CVE-2026-27145, and CVE-2026-42507.\n\nSigned-off-by: Chaitanya Munukutla <chaitanya.m61292@gmail.com>"
     },
     "CVE-2026-33216": {
       "b84fb8ddd4e258d824c1eeb4e4027412007c453e": "Send `JWT` to auth callout from MQTT clients\n\nThis was a regression from the CVE-2026-33216 fix.\n\nSigned-off-by: Neil Twigg <neil@nats.io>",
