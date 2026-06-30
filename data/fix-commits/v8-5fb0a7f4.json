@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://chromium.googlesource.com/v8/v8",
   "vulnerabilities": {
+    "CVE-2026-8723": {
+      "3a7c7a596ea9fc8241b93d69c82bf0d78e71ee2c": "Upgraded qs to 6.15.2 to address CVE 2026-8723\n\nBug: v8/tools/package-lock.json pins qs at 6.15.0, which has a vulnerability (CVE-2026-8723).\n\nqs.stringify throws a TypeError when called with arrayFormat: 'comma' and encodeValuesOnly: true on arrays containing null or undefined. Fixed in qs 6.15.2.\n\nChange-Id: I35d3fd11258f6473cab6010a01ad722731718d0c\nReviewed-on: https://chromium-review.googlesource.com/c/v8/v8/+/7952025\nReviewed-by: Paolo Severini <paolosev@microsoft.com>\nReviewed-by: Camillo Bruni <cbruni@chromium.org>\nCommit-Queue: Tejas Vasisht <tejasvasisht@microsoft.com>\nCr-Commit-Position: refs/heads/main@{#108343}"
+    },
     "GHSA-XXJR-MMJV-4GPG": {
       "2acd56ce93233d544ca40002ef5da871722940c8": "[tools] npm audit fix on tools & turbolizer\n\nAutomated source scanners are complaining about some packages used in\ntools and tools/turbolizer.\n\nhttps://github.com/advisories/GHSA-xxjr-mmjv-4gpg\nhttps://github.com/advisories/GHSA-6rw7-vpxm-498p\n\nChange-Id: Id94fae0977795f4acaee978ed86671b0130fc9de\nReviewed-on: https://chromium-review.googlesource.com/c/v8/v8/+/7624575\nReviewed-by: Paolo Severini <paolosev@microsoft.com>\nReviewed-by: Camillo Bruni <cbruni@chromium.org>\nCommit-Queue: Issack John <issackjohn@microsoft.com>\nCr-Commit-Position: refs/heads/main@{#105575}"
     },

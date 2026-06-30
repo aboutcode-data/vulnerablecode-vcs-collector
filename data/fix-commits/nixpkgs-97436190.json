@@ -1,6 +1,15 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "GHSA-VJ39-WW8J-VVX5": {
+      "bc126239bd7c64768fdaeff9e798f6320375ad79": "icinga2: 2.15.1 -> 2.16.2\n\nRelease notes (latest first):\n- https://github.com/Icinga/icinga2/releases/tag/v2.16.2\n- https://github.com/Icinga/icinga2/releases/tag/v2.16.1\n- https://github.com/Icinga/icinga2/releases/tag/v2.16.0\n\nGitHub security advisories (worse first):\n- https://github.com/Icinga/icinga2/security/advisories/GHSA-vj39-ww8j-vvx5\n- https://github.com/Icinga/icinga2/security/advisories/GHSA-jgqj-x5j9-vgcm\n- https://github.com/Icinga/icinga2/security/advisories/GHSA-wh38-wg57-5w7g"
+    },
+    "GHSA-JGQJ-X5J9-VGCM": {
+      "bc126239bd7c64768fdaeff9e798f6320375ad79": "icinga2: 2.15.1 -> 2.16.2\n\nRelease notes (latest first):\n- https://github.com/Icinga/icinga2/releases/tag/v2.16.2\n- https://github.com/Icinga/icinga2/releases/tag/v2.16.1\n- https://github.com/Icinga/icinga2/releases/tag/v2.16.0\n\nGitHub security advisories (worse first):\n- https://github.com/Icinga/icinga2/security/advisories/GHSA-vj39-ww8j-vvx5\n- https://github.com/Icinga/icinga2/security/advisories/GHSA-jgqj-x5j9-vgcm\n- https://github.com/Icinga/icinga2/security/advisories/GHSA-wh38-wg57-5w7g"
+    },
+    "GHSA-WH38-WG57-5W7G": {
+      "bc126239bd7c64768fdaeff9e798f6320375ad79": "icinga2: 2.15.1 -> 2.16.2\n\nRelease notes (latest first):\n- https://github.com/Icinga/icinga2/releases/tag/v2.16.2\n- https://github.com/Icinga/icinga2/releases/tag/v2.16.1\n- https://github.com/Icinga/icinga2/releases/tag/v2.16.0\n\nGitHub security advisories (worse first):\n- https://github.com/Icinga/icinga2/security/advisories/GHSA-vj39-ww8j-vvx5\n- https://github.com/Icinga/icinga2/security/advisories/GHSA-jgqj-x5j9-vgcm\n- https://github.com/Icinga/icinga2/security/advisories/GHSA-wh38-wg57-5w7g"
+    },
     "CVE-2026-1642": {
       "2c74ee68e88dd5a44586c4a74404a51ef3a7de2d": "openresty: 1.27.1.2 -> 1.31.1.1\n\nhttps://openresty.org/en/changelog-1031001.html (1.31.x)\nhttps://openresty.org/en/changelog-1029002.html (1.29.x)\n\nFixes:\nCVE-2026-1642\nCVE-2026-9256\nCVE-2026-27651\nCVE-2026-27654\nCVE-2026-27784\nCVE-2026-28753\nCVE-2026-28755\nCVE-2026-32647\nCVE-2026-40460\nCVE-2026-40701\nCVE-2026-42934\nCVE-2026-42945\nCVE-2026-42946\n\n(cherry picked from commit e9f2aca3d1d2bcd255fec2f86fa10e5e93cd1528)",
       "e9f2aca3d1d2bcd255fec2f86fa10e5e93cd1528": "openresty: 1.27.1.2 -> 1.31.1.1\n\nhttps://openresty.org/en/changelog-1031001.html (1.31.x)\nhttps://openresty.org/en/changelog-1029002.html (1.29.x)\n\nFixes:\nCVE-2026-1642\nCVE-2026-9256\nCVE-2026-27651\nCVE-2026-27654\nCVE-2026-27784\nCVE-2026-28753\nCVE-2026-28755\nCVE-2026-32647\nCVE-2026-40460\nCVE-2026-40701\nCVE-2026-42934\nCVE-2026-42945\nCVE-2026-42946"
