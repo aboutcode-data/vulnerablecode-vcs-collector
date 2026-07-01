@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-13482": {
+      "d652a17e6e3ad05784b965fc25d3a2963a76bfad": "skypilot: patch CVE-2026-13482 (#537116)",
+      "c7d40d39db98d15348374c3bb3c7a89ca9308e2d": "skypilot: patch CVE-2026-13482"
+    },
     "CVE-2025-15661": {
       "f6ae2642f15b6c0212614dac160b2bc1e73f41a9": "libssh2: patch CVE-2025-15661, CVE-2026-55199, and CVE-2026-55200\n\nfor vulnerability information, see: https://seclists.org/oss-sec/2026/q2/1010\npatches are pulled from debian as upstream fixes don't cleanly apply.\n\n(cherry picked from commit 4bb77f4c82891ac3a0ba769b714432bf94f9d8d0)",
       "364c81a19e0b1b44b16a9065fed67e5e0a4af861": "libssh2: patch CVE-2025-15661, CVE-2026-55199, and CVE-2026-55200 (#537250)",
