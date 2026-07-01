@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/github/docs",
   "vulnerabilities": {
+    "CVE-2026-12373": {
+      "b5d50bf1692708b95c20d55c29cdd187831b53e4": "Remove CVE-2026-12373 note from four GHES patch release notes (#61994)"
+    },
     "CVE-2026-27143": {
       "38a29995f1fc8b418ad5dcff912c52c082982603": "Bump esbuild from 0.25.0 to 0.28.1 (fixes CVE-2026-27143) (#61872)\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
     },
