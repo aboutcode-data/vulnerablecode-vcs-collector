@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/prometheus/prometheus",
   "vulnerabilities": {
+    "CVE-2026-53606": {
+      "ce770bb3a7d4235a6b1c70ad03062a40f41ec682": "build(web/ui): security bump for sanitize-html\n\nBump direct mantine-ui dependency to the patched version to resolve the security\nadvisory CVE-2026-53606 (no breaking changes):\n\n- sanitize-html\t^2.16.0 -> ^2.17.5\n\nSigned-off-by: Witek Bedyk <wbedyk@suse.com>"
+    },
     "CVE-2025-61140": {
       "2625721ebaa86873c04357a9a222700cab9ebc02": "ui: update jsonpath to 1.3.0\n\nThis addresses CVE-2025-61140 and CVE-2025-1615 by updating jsonpath to a patched version.\n\nSigned-off-by: Oindrila Khan <oindrilakha12@gmail.com>"
     },
