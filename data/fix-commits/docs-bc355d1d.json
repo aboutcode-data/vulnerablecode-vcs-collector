@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/github/docs",
   "vulnerabilities": {
+    "CVE-2026-14340": {
+      "df951e5d52a9e3fb07572654c0a1230867af16c9": "Reclassify CVE-2026-14340 note in GHES patch release notes (#62026)\n\nCo-authored-by: John Clement <70238417+jclement136@users.noreply.github.com>"
+    },
     "CVE-2026-12373": {
       "b5d50bf1692708b95c20d55c29cdd187831b53e4": "Remove CVE-2026-12373 note from four GHES patch release notes (#61994)"
     },
