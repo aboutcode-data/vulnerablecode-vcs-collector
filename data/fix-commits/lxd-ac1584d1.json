@@ -2,6 +2,8 @@
   "vcs_url": "https://github.com/canonical/lxd",
   "vulnerabilities": {
     "GHSA-47W9-6R3F-938G": {
+      "be2dd46998d4a2d5f4890b7a13e853c864a90c05": "Enforce project restrictions during instance move (#18605)\n\nFurther hardening for\n[GHSA-47w9-6r3f-938g](https://github.com/canonical/lxd/security/advisories/GHSA-47w9-6r3f-938g).",
+      "ba6e583b7a417fbe4043e3abdfb922a1fe6494f7": "lxd: check project restrictions during instance move\n\nIntroduce checkTargetProjectRestrictions, a helper that verifies an\ninstance and its snapshots satisfy the target project's limits and\nrestrictions before a cross-project placement. Apply it in\ninstancePostMigration to enforce these checks when moving an instance\nto a different project (further hardening for GHSA-47w9-6r3f-938g).\n\nSigned-off-by: Kadin Sayani <kadin.sayani@canonical.com>",
       "c3ad09fe82adec81bb60200f02daa9d9500266ff": "Enforce project restrictions during snapshot restore (stable-5.0) (#18623)\n\nFixes\n[GHSA-47w9-6r3f-938g](https://github.com/canonical/lxd/security/advisories/GHSA-47w9-6r3f-938g).",
       "be67cabbdf4ceb6363e0b8a0a960b0b1b8ccd34e": "test/suites/projects: ensure snapshot restore does not bypass project restrictions\n\nTests fix for GHSA-47w9-6r3f-938g.\n\nSigned-off-by: Kadin Sayani <kadin.sayani@canonical.com>\n(cherry picked from commit 42e1aa08f2d1902fd098ec9011049cf0033cc5e8)",
       "6b93b2a0c4f6f3eaf91e1e813f6875d5eb66b59b": "lxd: check project restrictions during snapshot restore\n\nFixes GHSA-47w9-6r3f-938g.\n\nSigned-off-by: Kadin Sayani <kadin.sayani@canonical.com>\n(cherry picked from commit cfd9f66f6af89e1fa3b3acb12bfe72f51b7f1e19)",
