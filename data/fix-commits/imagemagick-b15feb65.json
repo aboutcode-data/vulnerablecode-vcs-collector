@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-7RGW-XG25-PRJM": {
+      "093f476e985d61557ea75ad0ef30d491dff816f3": "Make sure we check the length after each read (GHSA-7rgw-xg25-prjm)"
+    },
     "GHSA-H22J-F9XW-XJJM": {
       "538ad18f3a421d1dd9629baa747eebc137c32b67": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-h22j-f9xw-xjjm"
     },
