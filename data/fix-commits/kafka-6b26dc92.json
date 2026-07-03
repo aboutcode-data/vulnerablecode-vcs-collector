@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/apache/kafka",
   "vulnerabilities": {
+    "GHSA-J3RV-43J4-C7QM": {
+      "4cf7397c19cb295b096c9bc0a87334b5a39c6140": "MINOR: Bump Jackson to 2.21.4 (#22732)\n\nTo address\n\n\nhttps://github.com/FasterXML/jackson-databind/security/advisories/GHSA-j3rv-43j4-c7qm\n\nhttps://github.com/FasterXML/jackson-databind/security/advisories/GHSA-rmj7-2vxq-3g9f\n\nReviewers: Chia-Ping Tsai <chia7712@gmail.com>"
+    },
+    "GHSA-RMJ7-2VXQ-3G9F": {
+      "4cf7397c19cb295b096c9bc0a87334b5a39c6140": "MINOR: Bump Jackson to 2.21.4 (#22732)\n\nTo address\n\n\nhttps://github.com/FasterXML/jackson-databind/security/advisories/GHSA-j3rv-43j4-c7qm\n\nhttps://github.com/FasterXML/jackson-databind/security/advisories/GHSA-rmj7-2vxq-3g9f\n\nReviewers: Chia-Ping Tsai <chia7712@gmail.com>"
+    },
     "CVE-2026-41115": {
       "e4b9bbd9f96b014f8072925fbfb4c42b185889dd": "MINOR: fix doc for CVE-2026-41115 (#22447)\n\nFix documentation for CVE-2026-41115, to use `DESCRIBE` permission on\n`GROUP` resource for `CONSUMER_GROUP_DESCRIBE (69)` API.\n\nReviewers: David Jacot <david.jacot@gmail.com>"
     },
