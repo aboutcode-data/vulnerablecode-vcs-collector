@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/nltk/nltk",
   "vulnerabilities": {
+    "CVE-2026-12615": {
+      "5ac475d2ab95ea95d2890c745a05e5275137fb98": "fix(security): isolate Stanford Java options and clean temp files (#3683)\n\nSeveral Stanford/Java wrappers wrote plaintext user input to delete=False temporary files and removed those files only after Java execution succeeded. If Java raised, the temporary input files remained on disk.\n\nThe wrappers also configured request-specific Java options by mutating the process-global nltk.internals._java_options. Failures or concurrent requests could leave wrapper-specific Java flags visible to later Java calls.\n\nAdd a keyword-only per-call options parameter to nltk.internals.java() and pass wrapper java_options directly to each subprocess invocation. Clean wrapper temporary input files from finally blocks so exception paths remove plaintext input.\n\nReported by KKfine via huntr. CVE-2026-12615 assigned."
+    },
     "CVE-2026-12614": {
       "8493007b3ec04bfa132ed5ca9cbecf127ecc9eda": "fix(security): avoid MaltParser process-wide CWD changes (#3682)\n\nMaltParser.parse_tagged_sents() changed the process CWD to the model directory before invoking the external parser and restored it only after _execute() returned. Because os.chdir() is process-wide, concurrent relative-path I/O in the same process could be redirected into the model directory, and exceptions could leave the process CWD polluted.\n\nRun the MaltParser subprocess with cwd set to the model directory instead of changing the Python process CWD. Also clean parser temp files from a finally block so they are removed on exception paths.\n\nReported by KKfine via huntr. CVE-2026-12614 assigned."
     },
