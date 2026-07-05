@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/weechat/weechat",
   "vulnerabilities": {
+    "GHSA-WMPC-M6G9-FWJ8": {
+      "b4ce4e626274042f9776f827ff2c03397dd82e4f": "core: update ChangeLog (GHSA-wmpc-m6g9-fwj8)",
+      "3bd95f0d124472ec06e3afd295105c137a7ad84f": "core: update ChangeLog (GHSA-wmpc-m6g9-fwj8)"
+    },
     "GHSA-VHV8-G2R9-CWCC": {
       "f5fa814fa4bc37ab8dfa9d8f496d14574fc28a81": "core: fix timing attack on TOTP validation (GHSA-vhv8-g2r9-cwcc)\n\nweecrypto_totp_validate compared the generated and client-supplied OTPs\nwith strcmp and broke out of the time-window loop on the first match.\nBoth choices leaked information via response timing: strcmp leaked the\nexpected OTP digit-by-digit (shrinking the brute-force search from\n~10^digits to a handful of guesses within the 30-second window), and\nthe early break leaked which window offset matched.\n\nCompare in constant time with string_memcmp_constant_time and always\niterate the full window, OR-ing the result into otp_ok without an\nearly exit.\n\nThis affects both relay protocols (which call totp_validate via the\npublic info hook) and any other caller of the info hook.",
       "34cbe56a6f04fb8cd085d329dec0f1f9bcd88992": "relay/irc: fix timing attack on PASS command (GHSA-vhv8-g2r9-cwcc)\n\nThe IRC relay protocol's PASS handler compared the server password with\nthe client-supplied value using strcmp, leaking the password byte-by-byte\nvia response timing. This is the same class of bug fixed for the api and\nweechat protocols, on a separate code path that did not go through\nrelay_auth_check_password_plain.\n\nExtract the HMAC-then-constant-time-compare logic from\nrelay_auth_check_password_plain into relay_auth_password_equals, then\nuse it in both the plain-auth wrapper and the IRC PASS handler.",
