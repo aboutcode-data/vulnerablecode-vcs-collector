@@ -2,9 +2,11 @@
   "vcs_url": "https://github.com/videolan/vlc",
   "vulnerabilities": {
     "CVE-2026-42046": {
+      "7bd230d919508bac08265600192af27f64a7b692": "contrib: caca: apply upstream patch\n\nTo fix CVE-2026-42046 [^1].\n\n[^1]: https://app.opencve.io/cve/CVE-2026-42046\n\n(cherry picked from commit 5888febf7e4c3f824dc2c8f23dbacc019e861c11)\nSigned-off-by: Steve Lhomme <robux4@ycbcr.xyz>",
       "5888febf7e4c3f824dc2c8f23dbacc019e861c11": "contrib: caca: apply upstream patch\n\nTo fix CVE-2026-42046 [^1].\n\n[^1]: https://app.opencve.io/cve/CVE-2026-42046"
     },
     "CVE-2026-6192": {
+      "a7094b8c7d7ca565817dc135ca34a5f9f6dbf3ca": "contrib: openjpeg: apply upstream patch\n\nTo fix CVE-2026-6192 [^1].\n\n[^1]: https://app.opencve.io/cve/CVE-2026-6192\n\n(cherry picked from commit d52fe31b907fa3c1972637622ec16689eaf0c920)\nSigned-off-by: Steve Lhomme <robux4@ycbcr.xyz>",
       "d52fe31b907fa3c1972637622ec16689eaf0c920": "contrib: openjpeg: apply upstream patch\n\nTo fix CVE-2026-6192 [^1].\n\n[^1]: https://app.opencve.io/cve/CVE-2026-6192"
     },
     "CVE-2026-5121": {
