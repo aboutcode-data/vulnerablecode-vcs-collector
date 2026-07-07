@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/openbsd/src",
   "vulnerabilities": {
+    "CVE-2026-12087": {
+      "e053a34c36bf543ed8ad52b0c40b21d9896f29f2": "Update Socket to 2.041\n\nCVE-2026-12087:\n Socket versions before 2.041 for Perl have an out-of-bounds heap read\n\nFrom security.metacpan.org"
+    },
     "CVE-2026-50219": {
       "82efd71b9bc2a2d3aa6b8d74ecd22c619ada7606": "Update libexpat to version 2.8.2.\n\nRelevant for OpenBSD are security fixes #1246 #1267 #1272 #1229\n#1232 #1249 #1251 #1255 #1262 #565 #1278, other changes #1283 #565\n#1220 #1221 #1222 #1224 #1226 #1228 #1230 #1238 #1239 #1240 #1241\n#1242 #1243 #1243 #1247 #1248 #1256 #1258 #1261 #1275.\nLibrary bump is not necessary.\nCVE-2026-50219 CVE-2026-56131 CVE-2026-56132 CVE-2026-56403\nCVE-2026-56404 CVE-2026-56405 CVE-2026-56406 CVE-2026-56407\nCVE-2026-56408 CVE-2026-56409 CVE-2026-56410 CVE-2026-56411\nCVE-2026-56412\n\nOK tb@"
     },
