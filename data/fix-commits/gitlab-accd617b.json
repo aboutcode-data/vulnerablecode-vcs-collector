@@ -2,6 +2,7 @@
   "vcs_url": "https://gitlab.com/gitlab-org/gitlab",
   "vulnerabilities": {
     "GHSA-PRQ8-7WVH-44QH": {
+      "625a896ffb8c6b499b1a9790a139d34c9bef56be": "Merge branch 'upgrade-jira-ruby-3-2-0' into 'master' \n\nUpgrade jira-ruby to 3.2.0 to fix GHSA-prq8-7wvh-44qh\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/244048\n\nMerged-by: Arpit Gogia <12347103-arpitgogia@users.noreply.gitlab.com>\nApproved-by: Aaron Algutifan <aalgutifan@gitlab.com>\nApproved-by: Arpit Gogia <12347103-arpitgogia@users.noreply.gitlab.com>\nCo-authored-by: Jorge Tomas <jtomas@gitlab.com>",
       "1a2c8c6602619aa229fd304b3c965f0470b828a4": "Upgrade jira-ruby to 3.2.0 to fix GHSA-prq8-7wvh-44qh\n\nThe oauth gem 0.5.6 is vulnerable to GHSA-prq8-7wvh-44qh and must be\nupgraded to >= 1.1.6. oauth is pulled in only by jira-ruby, which\nconstrained it to < 1.0. jira-ruby 3.2.0 relaxes this to ~> 1.0,\nallowing oauth 1.1.7 to resolve the advisory.\n\nNo application code changes are required: GitLab uses only auth_type\n:basic and injects its own Gitlab::Jira::HttpClient, so the 3.x OAuth,\nJWT, and HTTP-client changes do not affect GitLab.\n\nChangelog: security"
     },
     "CVE-2026-35172": {

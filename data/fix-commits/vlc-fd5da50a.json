@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/videolan/vlc",
   "vulnerabilities": {
+    "CVE-2023-47466": {
+      "0d219619c6c6aaf77719bbd5e5e0850223f59f5a": "contrib: taglib: fix crash in WAV\n\nFixes CVE-2023-47466 [^1].\n\n[^1]: https://github.com/taglib/taglib/issues/1163"
+    },
     "CVE-2026-42046": {
       "7bd230d919508bac08265600192af27f64a7b692": "contrib: caca: apply upstream patch\n\nTo fix CVE-2026-42046 [^1].\n\n[^1]: https://app.opencve.io/cve/CVE-2026-42046\n\n(cherry picked from commit 5888febf7e4c3f824dc2c8f23dbacc019e861c11)\nSigned-off-by: Steve Lhomme <robux4@ycbcr.xyz>",
       "5888febf7e4c3f824dc2c8f23dbacc019e861c11": "contrib: caca: apply upstream patch\n\nTo fix CVE-2026-42046 [^1].\n\n[^1]: https://app.opencve.io/cve/CVE-2026-42046"
