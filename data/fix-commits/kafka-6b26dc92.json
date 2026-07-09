@@ -1,6 +1,11 @@
 {
   "vcs_url": "https://github.com/apache/kafka",
   "vulnerabilities": {
+    "CVE-2026-54515": {
+      "1c58ed31936c864101f68d925dc249a1aeb49f83": "KAFKA-20773: Bump jackson to 2.21.5 (#22793)\n\nThis patch fixes a Jackson Databind vulnerability reported in:\n\nhttps: //nvd.nist.gov/vuln/detail/CVE-2026-54515\nReviewers: Mickael Maison <mickael.maison@gmail.com>\n\n---------\n\nSigned-off-by: Federico Valeri <fedevaleri@gmail.com>",
+      "1d2e1cb8bd416bd16cae61386cda9f7d0006813c": "KAFKA-20773: Bump jackson to 2.21.5 (#22793)\n\nThis patch fixes a Jackson Databind vulnerability reported in:\n\nhttps: //nvd.nist.gov/vuln/detail/CVE-2026-54515\nReviewers: Mickael Maison <mickael.maison@gmail.com>\n\n---------\n\nSigned-off-by: Federico Valeri <fedevaleri@gmail.com>",
+      "38924cb372bfdb25577462db0acd9fe5b7092b4a": "KAFKA-20773: Bump jackson to 2.21.5 (#22793)\n\nThis patch fixes a Jackson Databind vulnerability reported in:\n\nhttps: //nvd.nist.gov/vuln/detail/CVE-2026-54515\nReviewers: Mickael Maison <mickael.maison@gmail.com>\n\n---------\n\nSigned-off-by: Federico Valeri <fedevaleri@gmail.com>"
+    },
     "GHSA-J3RV-43J4-C7QM": {
       "4cf7397c19cb295b096c9bc0a87334b5a39c6140": "MINOR: Bump Jackson to 2.21.4 (#22732)\n\nTo address\n\n\nhttps://github.com/FasterXML/jackson-databind/security/advisories/GHSA-j3rv-43j4-c7qm\n\nhttps://github.com/FasterXML/jackson-databind/security/advisories/GHSA-rmj7-2vxq-3g9f\n\nReviewers: Chia-Ping Tsai <chia7712@gmail.com>"
     },

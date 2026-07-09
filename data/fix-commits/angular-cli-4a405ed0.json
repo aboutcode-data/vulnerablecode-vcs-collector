@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/angular/angular-cli",
   "vulnerabilities": {
+    "CVE-2026-55603": {
+      "df54298712bb84ec079787e4ca6c0164f6358cf1": "fix(@angular-devkit/build-angular): update http-proxy-middleware to 3.0.7\n\nThis updates http-proxy-middleware to version 3.0.7 to address a security vulnerability.\n\nCVE-2026-55603.\n\nFixes #33534",
+      "d4e07cb3e3f871822f9bf37fdea35814ec1cdb80": "fix(@angular-devkit/build-angular): update http-proxy-middleware to 3.0.7\n\nThis updates http-proxy-middleware to version 3.0.7 to address a security vulnerability.\n\nCVE-2026-55603.\n\nFixes #33534"
+    },
     "GHSA-VXPW-J846-P89Q": {
       "a2b6116eddc7a71e4539817da623221ca552a35f": "fix(@angular/build): bump undici to 7.28.0\n\nBumps undici to version 7.28.0 to resolve the GHSA-vxpw-j846-p89q security vulnerability.\nAlso mentions GHSA-fx2h-pf6j-xcff.\n\nFixes #33449",
       "4ea787cd0dfc7226896643a6f8ccd99846c85c2c": "fix(@angular-devkit/build-angular): bump undici to 7.28.0\n\nBumps undici to version 7.28.0 to resolve the GHSA-vxpw-j846-p89q security vulnerability.\nAlso mentions GHSA-fx2h-pf6j-xcff.\n\nFixes #33449"

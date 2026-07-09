@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/oven-sh/bun",
   "vulnerabilities": {
+    "CVE-2021-22939": {
+      "c3fcd1ad4a60e6ee3092fb804f2f59cc1075dc40": "node:tls: only an explicit false for rejectUnauthorized disables verification\n\nNode's CVE-2021-22939 fix checks `rejectUnauthorized !== false`: every\nother value, including null, keeps certificate verification on. Bun's\nclient connect paths stored the raw option value and then checked it\nfor truthiness, so rejectUnauthorized: null silently bypassed\nverification where Node rejects. Normalize to a real boolean at each\nstore site (the TLSSocket constructor, Server setSecureContext, and\nthe three Socket.prototype.connect TLS paths). The bindgen layer\nalready rejects 0/\"\"/1 with ERR_INVALID_ARG_TYPE, so null was the\nonly non-boolean that reached these sites.\n\nAlso: declare `session` with let before the try in the resumption\ntest instead of hoisting with var."
+    },
     "CVE-2021-23222": {
       "9a4d8ab835fe65ea013745e9c5c8233f16ed085d": "Bun.SQL(postgres): send plaintext startup when sslmode=prefer and server declines TLS\n\nWhen the server answers the SSLRequest with 'N', the prefer branch only\nset TlsStatus::SslNotAvailable and looped back, never writing a\nStartupMessage. The connection then idled until connectionTimeout. This\nmeant any non-SSL Postgres (the docker default) was unreachable via a\nstandard libpq ?sslmode=prefer URL.\n\nCall start() to send the plaintext StartupMessage on the same socket\nand return Ok(()) so any bytes that arrive alongside the 'N' are\ndiscarded rather than dispatched (the libpq CVE-2021-23222 shape).\n\nUpdate the tls_ctx leak test's mock server to answer the\nStartupMessage in a second round trip instead of packing AuthOk after\n'N' in one write, which depended on the old continue behaviour."
     },

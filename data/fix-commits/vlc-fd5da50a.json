@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/videolan/vlc",
   "vulnerabilities": {
+    "CVE-2026-41682": {
+      "20a646d9f0b689af5127c1e0e15a3b910ebef1f6": "contrib: update upnp to 1.14.31\n\nFixes CVE-2026-41682.\n\n(cherry picked from commit 5a6e69747ceef9ca709e890af85402493b1c704a)\nSigned-off-by: Steve Lhomme <robux4@ycbcr.xyz>"
+    },
     "CVE-2023-32573": {
       "4789bbe0ab3d756c18ca79c2069be4a85ece68d9": "contrib: qtsvg: apply security patches found in Qt 5.15\n\nCherry picked patches corresponding to https://download.qt.io/archive/qt/5.15/\n\nCorresponds to these patches (with test code patches removed):\n\n* CVE-2023-32573-qtsvg-5.15.diff"
     },
