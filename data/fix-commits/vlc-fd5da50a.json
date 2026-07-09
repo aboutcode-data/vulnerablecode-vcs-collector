@@ -1,6 +1,27 @@
 {
   "vcs_url": "https://github.com/videolan/vlc",
   "vulnerabilities": {
+    "CVE-2023-32573": {
+      "4789bbe0ab3d756c18ca79c2069be4a85ece68d9": "contrib: qtsvg: apply security patches found in Qt 5.15\n\nCherry picked patches corresponding to https://download.qt.io/archive/qt/5.15/\n\nCorresponds to these patches (with test code patches removed):\n\n* CVE-2023-32573-qtsvg-5.15.diff"
+    },
+    "CVE-2025-5455": {
+      "4edf0adeb377d30112d0f016931315ca3f9bc57a": "contrib: qt: apply security patches found in Qt 5.15\n\nCherry picked patches corresponding to https://download.qt.io/archive/qt/5.15/\n\nCorresponds to these patches (with test code patches removed):\n\n* CVE-2025-5455-qtbase-5.15.patch\n* CVE-2025-4211-qtbase-5.15.diff\n* CVE-2023-38197-qtbase-5.15.diff\n* CVE-2023-37369-qtbase-5.15.diff\n* CVE-2023-32763-qtbase-5.15.diff\n* CVE-2023-24607-qtbase-5.15.diff"
+    },
+    "CVE-2025-4211": {
+      "4edf0adeb377d30112d0f016931315ca3f9bc57a": "contrib: qt: apply security patches found in Qt 5.15\n\nCherry picked patches corresponding to https://download.qt.io/archive/qt/5.15/\n\nCorresponds to these patches (with test code patches removed):\n\n* CVE-2025-5455-qtbase-5.15.patch\n* CVE-2025-4211-qtbase-5.15.diff\n* CVE-2023-38197-qtbase-5.15.diff\n* CVE-2023-37369-qtbase-5.15.diff\n* CVE-2023-32763-qtbase-5.15.diff\n* CVE-2023-24607-qtbase-5.15.diff"
+    },
+    "CVE-2023-38197": {
+      "4edf0adeb377d30112d0f016931315ca3f9bc57a": "contrib: qt: apply security patches found in Qt 5.15\n\nCherry picked patches corresponding to https://download.qt.io/archive/qt/5.15/\n\nCorresponds to these patches (with test code patches removed):\n\n* CVE-2025-5455-qtbase-5.15.patch\n* CVE-2025-4211-qtbase-5.15.diff\n* CVE-2023-38197-qtbase-5.15.diff\n* CVE-2023-37369-qtbase-5.15.diff\n* CVE-2023-32763-qtbase-5.15.diff\n* CVE-2023-24607-qtbase-5.15.diff"
+    },
+    "CVE-2023-37369": {
+      "4edf0adeb377d30112d0f016931315ca3f9bc57a": "contrib: qt: apply security patches found in Qt 5.15\n\nCherry picked patches corresponding to https://download.qt.io/archive/qt/5.15/\n\nCorresponds to these patches (with test code patches removed):\n\n* CVE-2025-5455-qtbase-5.15.patch\n* CVE-2025-4211-qtbase-5.15.diff\n* CVE-2023-38197-qtbase-5.15.diff\n* CVE-2023-37369-qtbase-5.15.diff\n* CVE-2023-32763-qtbase-5.15.diff\n* CVE-2023-24607-qtbase-5.15.diff"
+    },
+    "CVE-2023-32763": {
+      "4edf0adeb377d30112d0f016931315ca3f9bc57a": "contrib: qt: apply security patches found in Qt 5.15\n\nCherry picked patches corresponding to https://download.qt.io/archive/qt/5.15/\n\nCorresponds to these patches (with test code patches removed):\n\n* CVE-2025-5455-qtbase-5.15.patch\n* CVE-2025-4211-qtbase-5.15.diff\n* CVE-2023-38197-qtbase-5.15.diff\n* CVE-2023-37369-qtbase-5.15.diff\n* CVE-2023-32763-qtbase-5.15.diff\n* CVE-2023-24607-qtbase-5.15.diff"
+    },
+    "CVE-2023-24607": {
+      "4edf0adeb377d30112d0f016931315ca3f9bc57a": "contrib: qt: apply security patches found in Qt 5.15\n\nCherry picked patches corresponding to https://download.qt.io/archive/qt/5.15/\n\nCorresponds to these patches (with test code patches removed):\n\n* CVE-2025-5455-qtbase-5.15.patch\n* CVE-2025-4211-qtbase-5.15.diff\n* CVE-2023-38197-qtbase-5.15.diff\n* CVE-2023-37369-qtbase-5.15.diff\n* CVE-2023-32763-qtbase-5.15.diff\n* CVE-2023-24607-qtbase-5.15.diff"
+    },
     "CVE-2023-47466": {
       "0d219619c6c6aaf77719bbd5e5e0850223f59f5a": "contrib: taglib: fix crash in WAV\n\nFixes CVE-2023-47466 [^1].\n\n[^1]: https://github.com/taglib/taglib/issues/1163"
     },

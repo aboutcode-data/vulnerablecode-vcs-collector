@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/strapi/strapi",
   "vulnerabilities": {
+    "CVE-2026-48779": {
+      "a07788bb6387b5ba48b68851407e82f11ea98869": "fix(data-transfer): bump ws to 8.21.0 to fix CVE-2026-48779 (#26898)"
+    },
     "GHSA-P6GQ-J5CR-W38F": {
       "0650341f4c339f8a3df2d5318287ff3fcb5ebd6e": "fix(providers): bump nodemailer to 9.0.1\n\nClears GHSA-p6gq-j5cr-w38f (high) with a semver pin bump only."
     },
