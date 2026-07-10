@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-82MP-VP5C-9PF7": {
+      "f48a0e2bad74c4cd42624e95205c3befd64062d8": "Added patches for https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-82mp-vp5c-9pf7."
+    },
     "GHSA-H22J-F9XW-XJJM": {
       "8018a5c3214ca9bf11a86c2816833dee920b1340": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-h22j-f9xw-xjjm"
     },

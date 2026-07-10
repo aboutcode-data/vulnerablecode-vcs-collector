@@ -2,7 +2,7 @@
   "vcs_url": "https://github.com/apache/flume",
   "vulnerabilities": {
     "CVE-2022-42468": {
-      "6ef617db9c9fa5f37d91613c4005be3a6fd58420": "Add info about CVE-2022-42468"
+      "7ea98caca210225eb92757197b6fdae50b9c5365": "Add info about CVE-2022-42468"
     },
     "CVE-2023-26048": {
       "2c65eb3669ee42c15d7cdf8f71752386f6be8c07": "Merge pull request #412 from nikita15p/fix-FLUME-3476\n\n[FLUME_3476] fixing vulnerability CVE-2023-26048",
