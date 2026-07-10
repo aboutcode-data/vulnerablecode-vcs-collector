@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/beam",
   "vulnerabilities": {
+    "CVE-2026-59939": {
+      "7d682e210f99133633c72ad12cd75f18b80ba7c1": "Bump httplib2 upper bound to `<1.0.0` (#39280)\n\nThis allows for httplib2 0.32.0 which includes a fix for CVE-2026-59939.\n\nResolves #39279."
+    },
     "GHSA-72HV-8253-57QQ": {
       "6ae46e3c2d46cb9a03308e2f2c183fd36a7cecf0": "Bump jackson_version - Fix GHSA-72hv-8253-57qq  (#37969)\n\n* Bump jackson_version - Fix GHSA-72hv-8253-57qq\n\njackson-core: Number Length Constraint Bypass in Async Parser Leads to Potential DoS Condition"
     },
