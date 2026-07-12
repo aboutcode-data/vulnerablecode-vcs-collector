@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/openbsd/src",
   "vulnerabilities": {
+    "CVE-2026-7017": {
+      "771d6f5d8645a473d9672a0639d1fc09611a38b7": "Update HTTP::Tiny to 0.096\n\nThis is mostly to pick up the fix for CVE-2026-7017 since we already\nhad the fixes for the earlier bugs.  However, applying the patches\njust for the fix was being painful so instead pull in the full update."
+    },
     "CVE-2026-12087": {
       "e053a34c36bf543ed8ad52b0c40b21d9896f29f2": "Update Socket to 2.041\n\nCVE-2026-12087:\n Socket versions before 2.041 for Perl have an out-of-bounds heap read\n\nFrom security.metacpan.org"
     },
