@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/micropython/micropython",
   "vulnerabilities": {
+    "CVE-2021-31571": {
+      "1557d83598829bc484131be9c79be6aa11759943": "cc3200/FreeRTOS/Source/queue: Add assert for potential integer overflow.\n\nThis issue was originally reported in CVE-2021-31571.  It was resolved\nupstream in commit\nhttps://github.com/FreeRTOS/FreeRTOS-Kernel/commit/47338393f1f79558f6144213409f09f81d7c4837\n\nSigned-off-by: npt-1707 <npthanh132@gmail.com>"
+    },
     "CVE-2025-4565": {
       "499bedf7aa07bb26dc19fb8b3ef5db5c8e578f52": "tools/ci.sh: Always call `apt-get update` before `apt-get install`.\n\nThere have been recent build failures in build_renesas_ra_board.  It\nappears to be the case that a security update for this package was recently\nissued by Ubuntu for CVE-2025-4565 and the buggy version is no longer on\npackage servers.  However, it is still referred to by the cached apt\nmetadata in the GitHub runners.\n\nAdd `apt-get update` to fix this, and audit for other sites in `ci.sh`\nwhere it might also be necessary.\n\nSigned-off-by: Jeff Epler <jepler@gmail.com>"
     },
