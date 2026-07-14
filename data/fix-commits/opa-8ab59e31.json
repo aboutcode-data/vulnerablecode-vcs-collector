@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/open-policy-agent/opa",
   "vulnerabilities": {
+    "GHSA-FXHP-MV3V-67QP": {
+      "3f0256edb298a5ebaff9adf1a34584a53278d051": "Bump oras-go@v2.6.2 to address GHSA-fxhp-mv3v-67qp found it in deps\n\nSigned-off-by: adrian2monk <adrian2monk@gmail.com>"
+    },
     "CVE-2026-42505": {
       "19855342fee78484172a6ccb9a417a964465a007": "build(go): bump to 1.26.5\n\nhttps://groups.google.com/g/golang-announce/c/OrmQE_Yp5Sc\n\ngovulncheck flagged us for:\n\n* crypto/tls: Encrypted Client Hello privacy leak\n\nThe Encrypted Client Hello implementation would leak the pre-shared key\nidentities during the handshake, allowing a passive network observer who can\ncollect handshakes to de-anonymize the hostname of the server, even when ECH was\nbeing used.\n\nThanks to Coia Prant (github.com/rbqvq) for reporting this issue.\n\nThis is CVE-2026-42505 and Go issue https://go.dev/issue/79282.\n\nSigned-off-by: Stephan Renatus <stephan.renatus@gmail.com>"
     },
