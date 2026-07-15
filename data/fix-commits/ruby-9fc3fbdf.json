@@ -2,14 +2,17 @@
   "vcs_url": "https://github.com/ruby/ruby",
   "vulnerabilities": {
     "CVE-2026-47240": {
-      "29df41411f2094a73a4e39bb6b5bdfc1dcd034ff": "Bump net-imap to 0.5.15\n\nFixes CVE-2026-47240, CVE-2026-47241, and CVE-2026-47242. The bump from 0.5.8 also includes the 0.5.14 security fixes (CVE-2026-42246 et al.) not yet backported to this branch.\n\nhttps://github.com/ruby/net-imap/releases/tag/v0.5.15",
-      "4fa1586817a88b468f6b2092118a22095ec6ce60": "Bump net-imap to 0.6.4.1\n\nFixes CVE-2026-47240, CVE-2026-47241, and CVE-2026-47242. The bump from 0.6.2 also includes the 0.6.4 security fixes (CVE-2026-42246 et al.) not yet backported to this branch.\n\nhttps://github.com/ruby/net-imap/releases/tag/v0.6.4.1"
-    },
-    "CVE-2026-47241": {
+      "cd7f0866e727625bf70c247d00df70af9d18e895": "Bump net-imap to 0.4.25 for Ruby 3.3\n\nBackport of the June 2026 net-imap security releases to the v0.4 line.\n\nCVE-2026-47240\nCVE-2026-47242\nCVE-2026-47241\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
       "29df41411f2094a73a4e39bb6b5bdfc1dcd034ff": "Bump net-imap to 0.5.15\n\nFixes CVE-2026-47240, CVE-2026-47241, and CVE-2026-47242. The bump from 0.5.8 also includes the 0.5.14 security fixes (CVE-2026-42246 et al.) not yet backported to this branch.\n\nhttps://github.com/ruby/net-imap/releases/tag/v0.5.15",
       "4fa1586817a88b468f6b2092118a22095ec6ce60": "Bump net-imap to 0.6.4.1\n\nFixes CVE-2026-47240, CVE-2026-47241, and CVE-2026-47242. The bump from 0.6.2 also includes the 0.6.4 security fixes (CVE-2026-42246 et al.) not yet backported to this branch.\n\nhttps://github.com/ruby/net-imap/releases/tag/v0.6.4.1"
     },
     "CVE-2026-47242": {
+      "cd7f0866e727625bf70c247d00df70af9d18e895": "Bump net-imap to 0.4.25 for Ruby 3.3\n\nBackport of the June 2026 net-imap security releases to the v0.4 line.\n\nCVE-2026-47240\nCVE-2026-47242\nCVE-2026-47241\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+      "29df41411f2094a73a4e39bb6b5bdfc1dcd034ff": "Bump net-imap to 0.5.15\n\nFixes CVE-2026-47240, CVE-2026-47241, and CVE-2026-47242. The bump from 0.5.8 also includes the 0.5.14 security fixes (CVE-2026-42246 et al.) not yet backported to this branch.\n\nhttps://github.com/ruby/net-imap/releases/tag/v0.5.15",
+      "4fa1586817a88b468f6b2092118a22095ec6ce60": "Bump net-imap to 0.6.4.1\n\nFixes CVE-2026-47240, CVE-2026-47241, and CVE-2026-47242. The bump from 0.6.2 also includes the 0.6.4 security fixes (CVE-2026-42246 et al.) not yet backported to this branch.\n\nhttps://github.com/ruby/net-imap/releases/tag/v0.6.4.1"
+    },
+    "CVE-2026-47241": {
+      "cd7f0866e727625bf70c247d00df70af9d18e895": "Bump net-imap to 0.4.25 for Ruby 3.3\n\nBackport of the June 2026 net-imap security releases to the v0.4 line.\n\nCVE-2026-47240\nCVE-2026-47242\nCVE-2026-47241\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
       "29df41411f2094a73a4e39bb6b5bdfc1dcd034ff": "Bump net-imap to 0.5.15\n\nFixes CVE-2026-47240, CVE-2026-47241, and CVE-2026-47242. The bump from 0.5.8 also includes the 0.5.14 security fixes (CVE-2026-42246 et al.) not yet backported to this branch.\n\nhttps://github.com/ruby/net-imap/releases/tag/v0.5.15",
       "4fa1586817a88b468f6b2092118a22095ec6ce60": "Bump net-imap to 0.6.4.1\n\nFixes CVE-2026-47240, CVE-2026-47241, and CVE-2026-47242. The bump from 0.6.2 also includes the 0.6.4 security fixes (CVE-2026-42246 et al.) not yet backported to this branch.\n\nhttps://github.com/ruby/net-imap/releases/tag/v0.6.4.1"
     },
