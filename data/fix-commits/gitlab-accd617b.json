@@ -2,6 +2,8 @@
   "vcs_url": "https://gitlab.com/gitlab-org/gitlab",
   "vulnerabilities": {
     "CVE-2026-47242": {
+      "1d905aa9fd5450149e35e3de8a8ee6a5d92a8d2e": "Update net-imap to v0.6.4.1\n\nThis update fixes CVE-2026-47242, which is a minor security issue that\ndoes not appear to affect GitLab.\n\nRelates to https://gitlab.com/gitlab-org/gitlab/-/work_items/600949.\n\nDiff: https://my.diffend.io/gems/net-imap/0.6.4/0.6.4.1\n\nChangelog: security",
+      "ef2446aa0b166fa8195c51dcc6a691cbbcdbc45c": "Update net-imap to v0.6.4.1\n\nThis update fixes CVE-2026-47242, which is a minor security issue that\ndoes not appear to affect GitLab.\n\nRelates to https://gitlab.com/gitlab-org/gitlab/-/work_items/600949.\n\nDiff: https://my.diffend.io/gems/net-imap/0.6.4/0.6.4.1\n\nChangelog: security",
       "d387db8b65d7a086a7902a945beadd8fc7b0d01f": "Update net-imap to v0.6.4.1\n\nThis update fixes CVE-2026-47242, which is a minor security issue that\ndoes not appear to affect GitLab.\n\nRelates to https://gitlab.com/gitlab-org/gitlab/-/work_items/600949.\n\nDiff: https://my.diffend.io/gems/net-imap/0.6.4/0.6.4.1\n\nChangelog: security"
     },
     "GHSA-PRQ8-7WVH-44QH": {

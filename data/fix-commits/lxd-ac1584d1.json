@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/canonical/lxd",
   "vulnerabilities": {
+    "CVE-2026-56852": {
+      "ea724d5822b78a2781f638c037812460dbf28bd3": "go: Bump `golang.org/x/text` version to address CVE-2026-56852 (#18754)\n\n`golang.org/x/text/unicode/norm` is not used in LXD's code so this is\nmostly to silence the security scanner:\n\n* https://github.com/canonical/lxd/security/code-scanning/2772\n* https://github.com/canonical/lxd/security/code-scanning/2773\n* https://github.com/canonical/lxd/security/code-scanning/2780\n* https://github.com/canonical/lxd/security/code-scanning/2781\n* https://github.com/canonical/lxd/security/code-scanning/2782\n* https://github.com/canonical/lxd/security/code-scanning/2783",
+      "2853c7a401993612af1493594aacbf3c0ec2a64b": "go: Bump `golang.org/x/text` version to address CVE-2026-56852\n\nSigned-off-by: Simon Deziel <simon.deziel@canonical.com>"
+    },
     "GHSA-47W9-6R3F-938G": {
       "20887da5a0b489de1d041b5fa1d27386ac318cc8": "Enforce project restrictions during instance move (stable-5.21) (#18651)\n\nBackports https://github.com/canonical/lxd/pull/18605. Further hardening\nfor GHSA-47w9-6r3f-938g.",
       "1527e02c22117f7cfdf4ff7607e6d06bfa552cef": "lxd: check project restrictions during instance move\n\nIntroduce checkTargetProjectRestrictions, a helper that verifies an\ninstance and its snapshots satisfy the target project's limits and\nrestrictions before a cross-project placement. Apply it in\ninstancePostMigration to enforce these checks when moving an instance\nto a different project (further hardening for GHSA-47w9-6r3f-938g).\n\nSigned-off-by: Kadin Sayani <kadin.sayani@canonical.com>\n(cherry picked from commit ba6e583b7a417fbe4043e3abdfb922a1fe6494f7)",
