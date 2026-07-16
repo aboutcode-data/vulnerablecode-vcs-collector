@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/rails/rails-html-sanitizer",
   "vulnerabilities": {
+    "GHSA-9WJQ-CP2P-HRGF": {
+      "74dcb8053e6da9921246ce71b06ad9fd65b19586": "Properly restrict SVG href attributes\n\nPermitScrubber reimplements Loofah's SVG local-reference restriction,\nwhich covered only `xlink:href`. SVG 2 also allows plain `href`, so\n`<use href=\"https://example.com/x.svg#p\"/>` passed through intact.\nRestrict both via Loofah's SVG_HREF_ATTRIBUTES set (Loofah >= 2.25.2),\nmirroring the related Loofah fix for GHSA-9wjq-cp2p-hrgf.\n\nref: https://github.com/rails/rails-html-sanitizer/security/advisories/GHSA-cj75-f6xr-r4g7"
+    },
+    "GHSA-CJ75-F6XR-R4G7": {
+      "74dcb8053e6da9921246ce71b06ad9fd65b19586": "Properly restrict SVG href attributes\n\nPermitScrubber reimplements Loofah's SVG local-reference restriction,\nwhich covered only `xlink:href`. SVG 2 also allows plain `href`, so\n`<use href=\"https://example.com/x.svg#p\"/>` passed through intact.\nRestrict both via Loofah's SVG_HREF_ATTRIBUTES set (Loofah >= 2.25.2),\nmirroring the related Loofah fix for GHSA-9wjq-cp2p-hrgf.\n\nref: https://github.com/rails/rails-html-sanitizer/security/advisories/GHSA-cj75-f6xr-r4g7"
+    },
     "CVE-2022-32209": {
       "45a5c10fed3d9aa141594c80afa06d748fa0967d": "fix: modify safelist option if it contains both `select` and `style`\n\nAddresses CVE-2022-32209",
       "c871aa4034d3d80ad67cf33a3462154b0a0fb477": "fix: modify safelist option if it contains both `select` and `style`\n\nAddresses CVE-2022-32209"
