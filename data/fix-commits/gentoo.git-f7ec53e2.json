@@ -1,6 +1,22 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-42533": {
+      "156fbf39a2805a1f615bf150e6f5a34b8a7f8630": "www-servers/nginx: add 1.30.4, fix CVE-2026-{42533,56434,60005}\n\nFixes CVE-2026-42533, CVE-2026-56434, CVE-2026-60005. See the linked bug\nand [1][2][3].\n\n[1]: https://github.com/nginx/nginx/releases/tag/release-1.30.4\n[2]: https://nginx.org/en/security_advisories.html\n[3]: https://nginx.org/en/CHANGES-1.30\n\nBug: https://bugs.gentoo.org/979311\nSigned-off-by: Zurab Kvachadze <zurabid2016@gmail.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1427\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1427\nSigned-off-by: Sam James <sam@gentoo.org>",
+      "1ba687a998e49ef77db1d9f3a3960753354e59b3": "www-servers/nginx: add 1.31.3, fix CVE-2026-{42533,56434,60005}\n\nFixes CVE-2026-42533, CVE-2026-56434, CVE-2026-60005. See the linked bug\nand [1][2][3].\n\n[1]: https://github.com/nginx/nginx/releases/tag/release-1.31.3\n[2]: https://nginx.org/en/security_advisories.html\n[3]: https://nginx.org/en/CHANGES\n\nBug: https://bugs.gentoo.org/979311\nSigned-off-by: Zurab Kvachadze <zurabid2016@gmail.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1427\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-56434": {
+      "156fbf39a2805a1f615bf150e6f5a34b8a7f8630": "www-servers/nginx: add 1.30.4, fix CVE-2026-{42533,56434,60005}\n\nFixes CVE-2026-42533, CVE-2026-56434, CVE-2026-60005. See the linked bug\nand [1][2][3].\n\n[1]: https://github.com/nginx/nginx/releases/tag/release-1.30.4\n[2]: https://nginx.org/en/security_advisories.html\n[3]: https://nginx.org/en/CHANGES-1.30\n\nBug: https://bugs.gentoo.org/979311\nSigned-off-by: Zurab Kvachadze <zurabid2016@gmail.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1427\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1427\nSigned-off-by: Sam James <sam@gentoo.org>",
+      "1ba687a998e49ef77db1d9f3a3960753354e59b3": "www-servers/nginx: add 1.31.3, fix CVE-2026-{42533,56434,60005}\n\nFixes CVE-2026-42533, CVE-2026-56434, CVE-2026-60005. See the linked bug\nand [1][2][3].\n\n[1]: https://github.com/nginx/nginx/releases/tag/release-1.31.3\n[2]: https://nginx.org/en/security_advisories.html\n[3]: https://nginx.org/en/CHANGES\n\nBug: https://bugs.gentoo.org/979311\nSigned-off-by: Zurab Kvachadze <zurabid2016@gmail.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1427\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-60005": {
+      "156fbf39a2805a1f615bf150e6f5a34b8a7f8630": "www-servers/nginx: add 1.30.4, fix CVE-2026-{42533,56434,60005}\n\nFixes CVE-2026-42533, CVE-2026-56434, CVE-2026-60005. See the linked bug\nand [1][2][3].\n\n[1]: https://github.com/nginx/nginx/releases/tag/release-1.30.4\n[2]: https://nginx.org/en/security_advisories.html\n[3]: https://nginx.org/en/CHANGES-1.30\n\nBug: https://bugs.gentoo.org/979311\nSigned-off-by: Zurab Kvachadze <zurabid2016@gmail.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1427\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1427\nSigned-off-by: Sam James <sam@gentoo.org>",
+      "1ba687a998e49ef77db1d9f3a3960753354e59b3": "www-servers/nginx: add 1.31.3, fix CVE-2026-{42533,56434,60005}\n\nFixes CVE-2026-42533, CVE-2026-56434, CVE-2026-60005. See the linked bug\nand [1][2][3].\n\n[1]: https://github.com/nginx/nginx/releases/tag/release-1.31.3\n[2]: https://nginx.org/en/security_advisories.html\n[3]: https://nginx.org/en/CHANGES\n\nBug: https://bugs.gentoo.org/979311\nSigned-off-by: Zurab Kvachadze <zurabid2016@gmail.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1427\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2021-3522": {
+      "6ffc8e42b3795284419b4bc60d7f9a10a5eeba22": "dev-java/openjfx: drop 8.1000-r2\n\nNothing depends on it and it blocks gtk2-removal (bug #768993).\nAnd it also blocks bug #824306 (CVE-2021-3522).\n\nCloses: https://bugs.gentoo.org/978894 (obsolete)\nBug: https://bugs.gentoo.org/977370\nCloses: https://bugs.gentoo.org/963147 (obsolete)\nCloses: https://bugs.gentoo.org/878927 (obsolete)\nCloses: https://bugs.gentoo.org/799227 (obsolete)\nSigned-off-by: Volkmar W. Pogatzki <gentoo@pogatzki.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1347\nSigned-off-by: Miroslav \u0160ulc <fordfrog@gentoo.org>",
+      "e18fbd00f235dd87479fde7ea039a6b8339f8f6a": "dev-java/openjfx: add gstreamer CVE-2021-3522 fix\n\nBug: https://bugs.gentoo.org/819633\nSigned-off-by: Georgy Yakovlev <gyakovlev@gentoo.org>"
+    },
     "CVE-2025-68161": {
       "dbf04b0f4a5f4eb03341e7c1a251572f593b266a": "dev-java/log4j-core: add 2.26.0 - CVE-2025-68161\n\nBug: https://bugs.gentoo.org/971360\nSigned-off-by: Volkmar W. Pogatzki <gentoo@pogatzki.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/263\nSigned-off-by: Sam James <sam@gentoo.org>"
     },
@@ -1755,9 +1771,6 @@
     },
     "CVE-2011-4000": {
       "c9d4876047a753ba4c8310507136e9220c799a1c": "app-text/chasen: update to version 2.4.5\n\nThis is the same as the version 2.4.4 with the fix for CVE-2011-4000.\n\nPackage-Manager: Portage-3.0.28, Repoman-3.0.3\nSigned-off-by: Akinori Hattori <hattya@gentoo.org>"
-    },
-    "CVE-2021-3522": {
-      "e18fbd00f235dd87479fde7ea039a6b8339f8f6a": "dev-java/openjfx: add gstreamer CVE-2021-3522 fix\n\nBug: https://bugs.gentoo.org/819633\nSigned-off-by: Georgy Yakovlev <gyakovlev@gentoo.org>"
     },
     "CVE-2020-14387": {
       "029532544d5edfe5fc70413a827831932e3c0b21": "net-misc/rsync: fix CVE-2020-14387\n\nBug: https://bugs.gentoo.org/792576\nSigned-off-by: Varsha Teratipally <teratipally@google.com>\nCloses: https://github.com/gentoo/gentoo/pull/22981\nSigned-off-by: Sam James <sam@gentoo.org>"

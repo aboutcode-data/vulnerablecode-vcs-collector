@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/github/docs",
   "vulnerabilities": {
+    "GHSA-8988-4F7V-96QF": {
+      "f530144caa72e5dd072f782004d6a11471dd9b5d": "Bump @opentelemetry deps to clear core < 2.8.0 baggage vuln (GHSA-8988-4f7v-96qf) (#62265)\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: 031a122f-ce90-4f05-8641-f98155428219"
+    },
     "CVE-2026-14340": {
       "df951e5d52a9e3fb07572654c0a1230867af16c9": "Reclassify CVE-2026-14340 note in GHES patch release notes (#62026)\n\nCo-authored-by: John Clement <70238417+jclement136@users.noreply.github.com>"
     },
