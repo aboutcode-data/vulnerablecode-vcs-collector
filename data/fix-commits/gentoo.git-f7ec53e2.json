@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-11625": {
+      "7208e9e86f37e37c0bbefe0cb63652ee4a85596f": "dev-perl/Bytes-Random-Secure: fix CVE-2026-11625\n\n- apply patch for CVE-2026-11625\n- update EAPI 7 -> 8\n- fix MissingVersionedVirtualPerlDependency\n\nBug: https://bugs.gentoo.org/979426\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nPart-of: https://codeberg.org/gentoo/gentoo//pulls/1451\nMerges: https://codeberg.org/gentoo/gentoo//pulls/1451\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
     "CVE-2026-42533": {
       "156fbf39a2805a1f615bf150e6f5a34b8a7f8630": "www-servers/nginx: add 1.30.4, fix CVE-2026-{42533,56434,60005}\n\nFixes CVE-2026-42533, CVE-2026-56434, CVE-2026-60005. See the linked bug\nand [1][2][3].\n\n[1]: https://github.com/nginx/nginx/releases/tag/release-1.30.4\n[2]: https://nginx.org/en/security_advisories.html\n[3]: https://nginx.org/en/CHANGES-1.30\n\nBug: https://bugs.gentoo.org/979311\nSigned-off-by: Zurab Kvachadze <zurabid2016@gmail.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1427\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1427\nSigned-off-by: Sam James <sam@gentoo.org>",
       "1ba687a998e49ef77db1d9f3a3960753354e59b3": "www-servers/nginx: add 1.31.3, fix CVE-2026-{42533,56434,60005}\n\nFixes CVE-2026-42533, CVE-2026-56434, CVE-2026-60005. See the linked bug\nand [1][2][3].\n\n[1]: https://github.com/nginx/nginx/releases/tag/release-1.31.3\n[2]: https://nginx.org/en/security_advisories.html\n[3]: https://nginx.org/en/CHANGES\n\nBug: https://bugs.gentoo.org/979311\nSigned-off-by: Zurab Kvachadze <zurabid2016@gmail.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1427\nSigned-off-by: Sam James <sam@gentoo.org>"
