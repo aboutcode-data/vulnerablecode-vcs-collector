@@ -1,9 +1,9 @@
-name: Hourly sync for collecting fix commits
+name: Every 4 Hours Sync for Collecting Fix Commits
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 */4 * * *'
 
 permissions:
   contents: write
