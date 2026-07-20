@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-55199": {
+      "d1523c24e93735ca5a8e3f19d987ac56b05f1249": "net-libs/libssh2: fix CVE-2026-55199 too\n\n* Add CVE-2026-55199 fix\n* Rebase CVE-2026-7598 patch\n\nJust git mv as the additional fix is simple.\n\nBug: https://bugs.gentoo.org/977961\nThanks-to: Kerin Millar <kfm@plushkava.net>\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-7598": {
+      "d1523c24e93735ca5a8e3f19d987ac56b05f1249": "net-libs/libssh2: fix CVE-2026-55199 too\n\n* Add CVE-2026-55199 fix\n* Rebase CVE-2026-7598 patch\n\nJust git mv as the additional fix is simple.\n\nBug: https://bugs.gentoo.org/977961\nThanks-to: Kerin Millar <kfm@plushkava.net>\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
     "CVE-2026-11625": {
       "7208e9e86f37e37c0bbefe0cb63652ee4a85596f": "dev-perl/Bytes-Random-Secure: fix CVE-2026-11625\n\n- apply patch for CVE-2026-11625\n- update EAPI 7 -> 8\n- fix MissingVersionedVirtualPerlDependency\n\nBug: https://bugs.gentoo.org/979426\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nPart-of: https://codeberg.org/gentoo/gentoo//pulls/1451\nMerges: https://codeberg.org/gentoo/gentoo//pulls/1451\nSigned-off-by: Sam James <sam@gentoo.org>"
     },

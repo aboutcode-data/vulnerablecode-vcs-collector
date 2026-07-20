@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/quarkusio/quarkus",
   "vulnerabilities": {
+    "CVE-2026-59889": {
+      "9e1d6d2db1a683b694da37ec14b73b565ae4b566": "[3.33] bump Jackson BOM to 2.21.5\n\nCVE-2026-59889 is only fixed in 2.21.5, we should bump Jackson version.\nI do not imply that Quarkus is affected, but ideally we would silence scanners in Keycloak https://github.com/keycloak/keycloak/issues/50955.\n\nSigned-off-by: Michal Vav\u0159\u00edk <dev@michalvavrik.net>"
+    },
     "GHSA-QCXP-GM7M-4J5V": {
       "f4433061d2931576cbbf920877dc6ce4a0d92a4c": "Handle GHSA-qcxp-gm7m-4j5v",
       "447b66d4dbf7f26a2bba0b55067104f8e0e60b05": "Handle GHSA-qcxp-gm7m-4j5v",
