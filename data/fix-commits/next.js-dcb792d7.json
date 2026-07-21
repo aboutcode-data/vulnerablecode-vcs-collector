@@ -1,6 +1,31 @@
 {
   "vcs_url": "https://github.com/vercel/next.js",
   "vulnerabilities": {
+    "GHSA-6GPP-XCG3-4W24": {
+      "6bf4df14508ad6c0cd46af50c6051ee42f2d9151": "Fix Turbopack middleware matcher with i18n single locale (#96014)\n\nhttps://github.com/vercel/next.js/security/advisories/GHSA-6gpp-xcg3-4w24\n\nCo-authored-by: Niklas Mischkulnig <4586894+mischnic@users.noreply.github.com>"
+    },
+    "GHSA-M99W-X7HQ-7VFJ": {
+      "019628571641dec57aaf349ba0c360e3964e6f12": "Improve performance of validating MPA form submissions (#96013)\n\nhttps://github.com/vercel/next.js/security/advisories/GHSA-m99w-x7hq-7vfj"
+    },
+    "GHSA-4C39-4CCG-62R3": {
+      "669426f454e032a2a823bc66df3a8d19e306ac83": "Enforce `serverActions.bodySizeLimit` for Server Actions in Edge runtime (#96012)\n\nhttps://github.com/vercel/next.js/security/advisories/GHSA-4c39-4ccg-62r3\n\nCo-authored-by: Dmitrii Troitskii <jsleitor@gmail.com>\nCo-authored-by: Sushanth Tiruvaipati <puzzleverseai@gmail.com>"
+    },
+    "GHSA-P9J2-GV94-2WF4": {
+      "cfab3698440c9441883c84fc273449299daaa195": "Set correct origin for internal redirects in custom server (#96011)\n\nhttps://github.com/vercel/next.js/security/advisories/GHSA-p9j2-gv94-2wf4",
+      "39c4783f14d4a3984846ceb0040fd452b6c8984d": "Ensure exotic rewrite param values are properly encoded (#96010)\n\nhttps://github.com/vercel/next.js/security/advisories/GHSA-p9j2-gv94-2wf4"
+    },
+    "GHSA-68G3-V927-F742": {
+      "0be95ebfa19465e8cdb21755066ddb9cbf626dc3": "fix(fetch-cache): key fetch(Request, init) by the effective request (#96009)\n\nhttps://github.com/vercel/next.js/security/advisories/GHSA-68g3-v927-f742\n\nCo-authored-by: Karim Rahal <karim@karimrahal.com>"
+    },
+    "GHSA-4633-3J49-MH5Q": {
+      "025bf4a5f7b47fb7758c4ebf1c931a61c451c082": "fix(incremental-cache): byte-exact fetch cache key for binary bodies (#96008)\n\nhttps://github.com/vercel/next.js/security/advisories/GHSA-4633-3j49-mh5q\n\nCo-authored-by: Karim Rahal <karim@karimrahal.com>"
+    },
+    "GHSA-955P-X3MX-JCVP": {
+      "025e8535dd4623ae63d5d39a4f9b328dccd19a3e": "Validate server reference IDs during manifest lookup (#96007)\n\nhttps://github.com/vercel/next.js/security/advisories/GHSA-955p-x3mx-jcvp\n\nCo-authored-by: Josh Story <story@hey.com>"
+    },
+    "GHSA-Q8WF-6R8G-63CH": {
+      "93cb90891402fa4c47798d03cb9e05c13233766c": "fix(next/image): improve performance of detectContentType()  (#96006)\n\nhttps://github.com/vercel/next.js/security/advisories/GHSA-q8wf-6r8g-63ch\n\nCo-authored-by: Steven <steven@ceriously.com>"
+    },
     "CVE-2025-27152": {
       "bf4e3425695daffcea510ec248dafb67b244eebf": "fix: bump @slack/web-api to drop vulnerable transitive axios (CVE-2025-27152)"
     },

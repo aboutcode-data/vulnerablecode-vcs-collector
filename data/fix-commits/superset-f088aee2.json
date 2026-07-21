@@ -15,10 +15,17 @@
       "9ca6ccbe3ab11a5f4d047166c2c1e61c7140392d": "fix(deps): patch fast-xml-parser CVE-2026-33036 and CVE-2026-33349 (#40118)",
       "dd523c1a7bb2ac445e29c6bcbf338f026d824124": "fix(deps): patch fast-xml-parser CVE-2026-33036 and CVE-2026-33349 (#40118)"
     },
+    "CVE-2026-34043": {
+      "eff77319e947375fc82ff3c91f07c08ae89f7ba3": "chore(deps-dev): bump copy-webpack-plugin to 14.0.0 and css-minimizer-webpack-plugin to 8.0.0 (#690)\n\nBumps copy-webpack-plugin 13.0.0\u219214.0.0 and css-minimizer-webpack-plugin\n7.0.2\u21928.0.0 to resolve serialize-javascript 6.0.2\u21927.0.5 (CVE-2026-34043,\nBDSA-2020-4569 CVSS 8.1, tagged Zero-click RCE).\n\nNote: webpack's bundled terser-webpack-plugin still pulls serialize-javascript\n6.0.2 as a transitive dep \u2014 requires webpack upgrade to fully resolve.\n\nCherry-picked from upstream apache/superset commits 361afff798, a2c23a2a58.\n\nCo-authored-by: Claude Opus 4.6 (1M context) <noreply@anthropic.com>"
+    },
+    "CVE-2025-64718": {
+      "2f2418258ad403f214042faf2051312ea2bdd2c6": "chore(deps): bump js-yaml from 3.14.1 to 3.14.2 and 4.1.0 to 4.1.1 in /superset-frontend (#687)\n\nBumps root js-yaml 3.14.1\u21923.14.2 and nested js-yaml 4.1.0\u21924.1.1\nto address prototype pollution vulnerability (CVE-2025-64718, CVSS 9.8).\nLerna's exact-pinned 4.1.0 entries are left as-is since they require\nthat exact version.\n\nCherry-picked from upstream apache/superset commit 362b5e3b89.\n\nCo-authored-by: Claude Opus 4.6 (1M context) <noreply@anthropic.com>"
+    },
     "GHSA-36JR-MH4H-2G58": {
       "af3e08823314199a783e3f53899b80cdb47cf321": "build(deps): resolve GHSA-36jr-mh4h-2g58 by upgrading d3-color to 3.1.0 (#37981)\n\nSigned-off-by: hainenber <dotronghai96@gmail.com>"
     },
     "CVE-2025-68428": {
+      "60e6fa267231a1e68bc6ecc02037b34506db715a": "fix(security): update jspdf to 4.0.0 to address CVE-2025-68428 (#37553)\n\n(cherry picked from commit 8fd34010776611e800e12481a3b6b34008142be3)",
       "fc1690f50b984212894e6753660b141ce9b2c964": "fix(security): update jspdf to 4.0.0 to address CVE-2025-68428 (#37553)",
       "8fd34010776611e800e12481a3b6b34008142be3": "fix(security): update jspdf to 4.0.0 to address CVE-2025-68428 (#37553)"
     },
