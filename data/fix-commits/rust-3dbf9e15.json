@@ -50,6 +50,9 @@
       "729e1b8851c55d521a05ca065c59503b731481be": "Update cargo for CVE-2026-5222 and CVE-2026-5223",
       "58072b1682b89fa1b13679b68802a8d3dec441f5": "Update cargo for CVE-2026-5222 and CVE-2026-5223"
     },
+    "CVE-2025-30066": {
+      "348794e6bc9b4c53957a6d8afbf5ad9ef9bea090": "ci: declare workflow-level contents: read on 6 workflows\n\nPins the default GITHUB_TOKEN to contents: read on the workflows in\n.github/workflows/ that don't call a GitHub API beyond the initial\ncheckout. The other workflows in this directory are left implicit\nbecause they need write scopes that a maintainer is better placed\nto declare.\n\nMotivation: CVE-2025-30066 (March 2025 tj-actions/changed-files\ncompromise) exfiltrated GITHUB_TOKEN from workflow logs. Per-workflow\ncaps bound runtime authority irrespective of repo or org default,\ngive drift protection if the default ever widens, and are credited\nper-file by the OpenSSF Scorecard Token-Permissions check.\n\nYAML validated locally with yaml.safe_load.\n\nSigned-off-by: Arpit Jain <arpitjain099@gmail.com>"
+    },
     "CVE-2026-6042": {
       "ef0fb8a2563200e322fa4419f09f65a63742038c": "Auto merge of #155211 - Mark-Simulacrum:beta-next, r=Mark-Simulacrum\n\n[beta] branch 1.96 release\n\nThis follows https://forge.rust-lang.org/release/process.html#beta-pr to branch beta. It also includes a backport of:\r\n\r\n* Patch musl's CVE-2026-6042 and CVE-2026-40200 rust-lang/rust#155171\r\n\r\nsince it landed after beta branched but per security discussion is getting backported direct to stable.\r\n\r\nr? me",
       "6efb623524553af1f2456642f069a6f5b8abc1dd": "Auto merge of #155210 - Mark-Simulacrum:stable-next, r=Mark-Simulacrum\n\n[stable] Rust 1.95.0 release\n\nhttps://forge.rust-lang.org/release/process.html#stable-pr\r\n\r\nThis also backports:\r\n\r\n* Patch musl's CVE-2026-6042 and CVE-2026-40200 rust-lang/rust#155171\r\n\r\nand cherry picks latest release notes.\r\n\r\nr? me",
