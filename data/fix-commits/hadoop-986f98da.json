@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/apache/hadoop",
   "vulnerabilities": {
+    "CVE-2026-47065": {
+      "6cb181143d714a70c5f012eddb2e6802d827c2fd": "HADOOP-19943. Upgrade Apache Mina to 2.0.29 due to CVE-2026-47065. (#8615)\n\nContributed by PJ Fanning",
+      "8a695de2e67ebe6dbb2e88ce4be6d9e347537eda": "HADOOP-19943. Upgrade Apache Mina to 2.0.29 due to CVE-2026-47065. (#8615)\n\n\nContributed by PJ Fanning"
+    },
     "CVE-2026-44249": {
       "0059b837d65eb405a26538c4381f463a32fb46c3": "HADOOP-19919. Upgrade to netty 4.1.135 due to CVE-2026-44249. (#8546)\n\nReviewed-by: Aaron Fabbri <fabbri@apache.org>\nSigned-off-by: Cheng Pan <chengpan@apache.org>",
       "7d1a3f28ebb0c8ae604d1e6d62aaac5243f2e827": "HADOOP-19919. Upgrade to netty 4.1.135 due to CVE-2026-44249. (#8546)\n\nReviewed-by: Aaron Fabbri <fabbri@apache.org>\nSigned-off-by: Cheng Pan <chengpan@apache.org>",
