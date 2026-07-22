@@ -1,6 +1,94 @@
 {
   "vcs_url": "https://github.com/nlnetlabs/unbound",
   "vulnerabilities": {
+    "CVE-2026-50248": {
+      "cf5e6e89a582151d5875fbd5db7d29fb3d9dc0cf": "- Fix error in log printout in fix for CVE-2026-50248, when the\n  primary name is bogus.",
+      "eed3f1ab3805d85aeebbe000c360df5eb1e1dab9": "- Unit test for CVE-2026-50248.",
+      "3530c81e29e64ed19c612ae3dea21c8800d882e1": "- Fix CVE-2026-50248, BOGUS configured primary hostname accepted for\n  XFR in auth/rpz zones. Thanks to Qifan Zhang, Palo Alto Networks,\n  for the report."
+    },
+    "CVE-2026-56416": {
+      "4941edf2757d535504f46974b711783d702068b3": "- Unit test for CVE-2026-56416.",
+      "4b1635e19406fd8040806f0fa4a4488c003b5d0d": "- Fix CVE-2026-56416, Possible heap buffer overflow when validator\n  canonicalizes RDATA that contains domain name. Thanks to Qifan\n  Zhang, Palo Alto Networks, for the report."
+    },
+    "CVE-2026-55973": {
+      "b08723ef9736cd1246ef285360865f00cfa7e2ad": "- Unit test for CVE-2026-55973.",
+      "96f875552023c0ccf376ebe050519f12f3371dc9": "- Fix CVE-2026-55973, 'dns-error-reporting: yes' leads to stack buffer\n  overflow. Thanks to Qifan Zhang, Palo Alto Networks, for the report."
+    },
+    "CVE-2026-55717": {
+      "c163fbc505283b1900d4ff10708ae6e2665239af": "- Unit test for CVE-2026-55717.",
+      "2ce2ca36912644d2dbf97249a41494a9e2500fc3": "- Fix CVE-2026-55717, 'serve-expired-client-timeout' and 'response-ip'\n  CNAME redirect could lead to a crash. Thanks to Qifan Zhang, Palo\n  Alto Networks, for the report. In addition, thanks to Xin Wang,\n  Jiapeng Li, and Jiajia Liu, Northwestern Polytechnical University,\n  for also reporting this issue."
+    },
+    "CVE-2026-50243": {
+      "63501f51bb699cd47aca09c02fd8f6e24b6bf83c": "- Unit test for CVE-2026-50243.",
+      "02b16de1ae40e43a3e3804e98ab9868da33d72eb": "- Fix CVE-2026-50243, 'response-ip'/'rpz' can rewrite BOGUS answers\n  instead of returning SERVFAIL. Thanks to Qifan Zhang, Palo Alto\n  Networks, for the report."
+    },
+    "CVE-2026-46582": {
+      "1ae2570bda9972aa0459e8650db2d6107f5f07d9": "- Unit test for CVE-2026-46582.",
+      "fea0ff550bb6193417c9b17ffff409eb6736f90d": "- Fix CVE-2026-46582, A wildcard replay, as another piece of data,\n  triggers poisoning in the serve expired reply path. Thanks to\n  Qifan Zhang, Palo Alto Networks, for the report."
+    },
+    "CVE-2026-50045": {
+      "9ad825b267d5c3d5ccc804973fe6dc02b192cbfa": "- Unit test for CVE-2026-50045.",
+      "364ac737f713b2a606f0fddecddb675d72a6a991": "- Fix CVE-2026-50045, 'max-global-quota' reset by DNSSEC validation\n  restarts. Thanks to Kunjie Shang, University of Science and\n  Technology of China, for the report."
+    },
+    "CVE-2026-44690": {
+      "3d5e6c06923eff9eac2f5e31a69c43a15ca9d3c2": "- Unit test for CVE-2026-44690.",
+      "f7637a4f1811f4a9331707d8a95cf0af65a97c0f": "- Fix CVE-2026-44690, Cross-zone wildcard cache poisoning via\n  RRSIG.labels manipulation. Thanks to Qifan Zhang, Palo Alto\n  Networks, for the report."
+    },
+    "CVE-2026-44687": {
+      "23e19ca6fcffa68307dbb5cfc6a6251b3a8270ca": "- Unit test for CVE-2026-44687.",
+      "1e1940383ab5ee655fe7fac0da606fe59c76ce86": "- Fix CVE-2026-44687, Off-by-one error in 'harden-below-nxdomain'\n  logic can shadow a stub/forward zone by a legitimate parent's\n  NXDOMAIN. Thanks to Qifan Zhang, Palo Alto Networks, for the report."
+    },
+    "CVE-2026-42955": {
+      "9f757aa9f3e869a944f24acd64cadfde55269575": "- Unit test for CVE-2026-42955.",
+      "13ec8d0f261ee7900ac67cfece551e8a703d14b1": "- Fix CVE-2026-42955, Extra fix for CVE-2026-40622 to also clamp\n  the TTL of A/AAAA records disallowing a one-time 'ghost domain'\n  delegation renewal via glue records. Thanks to Qifan Zhang, Palo\n  Alto Networks, for the report."
+    },
+    "CVE-2026-56444": {
+      "84d9682dd0876bc0cd118ecce03661f3443b0222": "- Fix CVE-2026-56444, Degradation of resolution service when\n  'discard-timeout' and 'serve-expired-client-timeout' are combined in\n  unusual configuration. Thanks to Qifan Zhang, Palo Alto Networks,\n  for the report. In addition, thanks to Xin Wang, Jiapeng Li,\n  and Jiajia Liu, Northwestern Polytechnical University, for also\n  reporting this issue. In addition, thanks to Haruki Oyama (Waseda\n  University), for also reporting this issue."
+    },
+    "CVE-2026-55991": {
+      "aac261cbb3795cbd60af2f37ef57bfa5c186aae6": "- Fix CVE-2026-55991, Remote DNS-over-QUIC (DoQ) flow-control\n  assertion failure in libngtcp2. Thanks to Qifan Zhang, Palo Alto\n  Networks, for the report. In addition, thanks to Xuanchao Xie,\n  for also reporting this issue."
+    },
+    "CVE-2026-55990": {
+      "ae1b3810cc3a8eb9b43c378289f74020b42aa7f4": "- Fix CVE-2026-55990, Packet of death for a DNSCrypt misconfigured\n  Unbound. Thanks to Qifan Zhang, Palo Alto Networks, for the report."
+    },
+    "CVE-2026-55708": {
+      "c29ff70f6aa9bb2f02e5f21001832f2b4791bd76": "- Fix CVE-2026-55708, Privacy/configuration issue when adding local\n  data in views through 'unbound-control'. Thanks to Qifan Zhang,\n  Palo Alto Networks, for the report."
+    },
+    "CVE-2026-54478": {
+      "8a15ffee620bce05fbfd2c69b0d4c31c10a02431": "- Fix CVE-2026-54478, DNS Cookie bypass when combined with\n  proxy-protocol use. Thanks to Qifan Zhang, Palo Alto Networks,\n  for the report."
+    },
+    "CVE-2026-52863": {
+      "8c702de175cb687d9645603ad3e8dc7c08a925e8": "- Fix CVE-2026-52863, Memory corruption could lead to crash and\n  denial of service. Thanks to Qifan Zhang, Palo Alto Networks,\n  for the report."
+    },
+    "CVE-2026-50252": {
+      "804cff4c152a121961b04605f75132370fc80df4": "- Fix CVE-2026-50252, Possible cache poisoning attack by mapping\n  source port population per thread. Thanks to Inbal Schussheim and\n  Amit Klein, Hebrew University, for the report."
+    },
+    "CVE-2026-50251": {
+      "e180b06298d8d39a764d3c5d4d4aca472c3a97d7": "- Fix CVE-2026-50251, Attacker supplied `0.0.0.0`/`::` glue triggers\n  defensive full-cache flush. Thanks to Qifan Zhang, Palo Alto\n  Networks, for the report."
+    },
+    "CVE-2026-50046": {
+      "1ad8d4c39594dcb28d636fb4922737a3640c9a65": "- Fix CVE-2026-50046, Possible heap use-after-free in an error path\n  when a DoT forwarded query is jostled out. Thanks to Qifan Zhang,\n  Palo Alto Networks, for the report."
+    },
+    "CVE-2026-44621": {
+      "f52a9e864bfa0f10d8816b64130586b1d224c474": "- Fix CVE-2026-44621, Libunbound applications configured with\n  'unwanted-reply-threshold' could eventually be abruptly\n  terminated. Thanks to Qifan Zhang, Palo Alto Networks, for the\n  report."
+    },
+    "CVE-2026-40622": {
+      "13ec8d0f261ee7900ac67cfece551e8a703d14b1": "- Fix CVE-2026-42955, Extra fix for CVE-2026-40622 to also clamp\n  the TTL of A/AAAA records disallowing a one-time 'ghost domain'\n  delegation renewal via glue records. Thanks to Qifan Zhang, Palo\n  Alto Networks, for the report.",
+      "b5f21f41658f65d6143df6a3208e8ccf1a01604d": "- Unit test for CVE-2026-40622.",
+      "8d8fa4226613138f5a244a9f1a2506704e049180": "- Fix CVE-2026-40622, \"Ghost domain name\" variant. Thanks to Qifan\n  Zhang, Palo Alto Networks, for the report."
+    },
+    "CVE-2026-41637": {
+      "27f22b88081eca4faf6b51194bd5088a034fcf33": "- Fix CVE-2026-41637, Degradation of resolution service from\n  improperly accounted client-terminated DNS-over-QUIC queries. Thanks\n  to Qifan Zhang, Palo Alto Networks, for the report."
+    },
+    "CVE-2026-40691": {
+      "f54e0791ba4488284d9f6059014640a3d0bd30da": "- Fix CVE-2026-40691, Packet of death for DNSCrypt over TCP. Thanks\n  to Qifan Zhang, Palo Alto Networks, for the report. In addition,\n  thanks to Trung Nguyen (@everping) of CyStack, for also reporting\n  this issue."
+    },
+    "CVE-2026-32665": {
+      "01dfd2f466d383370405d8ecf939570947f3523e": "- Fix CVE-2026-32665, Remote DNS-over-QUIC denial of\n  service due to `quic-size` budget bypass. Thanks to N0zoM1z0\n  (https://github.com/N0zoM1z0) for the report. In addition, thanks to\n  Kunta Chu, Kaihua Wang, and Jianjun Chen from Tsinghua University,\n  for also reporting this issue. In addition, thanks to Qifan Zhang,\n  Palo Alto Networks, for also reporting this issue. In addition,\n  thanks to Xuanchao Xie, for also reporting this issue."
+    },
+    "CVE-2026-14586": {
+      "f157c691bbd7ac5a2b29d1bf30283cb043052e9a": "- Fix CVE-2026-14586, Assertion in libngtcp2 when under pressure\n  in high concurrency DNS-over-QUIC environments. Thanks to Kunta\n  Chu, Kaihua Wang, and Jianjun Chen from Tsinghua University,\n  for the report."
+    },
     "CVE-2026-44390": {
       "25e112c6749cf23f9551ff35e40b3a7769785f73": "- Unit test for CVE-2026-44390.",
       "138fb48eac364f1567b5ad8a0a038eab6312a8be": "Changelog entry.\n- Fix CVE-2026-44390, Unbounded name compression in certain cases\n  causes degradation of service. Thanks to Qifan Zhang, Palo Alto\n  Networks, for the report.",
@@ -9,10 +97,6 @@
     "CVE-2026-42960": {
       "0d2282d5513e73b526a44483d63fc5d0f9c41439": "- Unit test for CVE-2026-42960.",
       "8ae4b4545dccaaabd30b597b0dcb0d9640c8cc39": "- Fix CVE-2026-42960, Possible cache poisoning attack while following\n  delegation. Thanks to TaoFei Guo from Peking University, Yang Luo\n  and JianJun Chen, Tsinghua University, for the report."
-    },
-    "CVE-2026-40622": {
-      "b5f21f41658f65d6143df6a3208e8ccf1a01604d": "- Unit test for CVE-2026-40622.",
-      "8d8fa4226613138f5a244a9f1a2506704e049180": "- Fix CVE-2026-40622, \"Ghost domain name\" variant. Thanks to Qifan\n  Zhang, Palo Alto Networks, for the report."
     },
     "CVE-2026-42959": {
       "d357935f662d239616fee1403f6799a66b60d986": "- Unit test for CVE-2026-42959.",
