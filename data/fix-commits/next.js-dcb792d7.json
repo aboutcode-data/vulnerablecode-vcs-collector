@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/vercel/next.js",
   "vulnerabilities": {
+    "GHSA-Q8WF-6R8G-63CH": {
+      "c9b0206b7c714f460ecc943df8c6ed79c2c9e1a2": "[test] Retry detectContentType event-loop sampling\n\nThe 1ms blocking bound from #96006 also measures OS scheduler noise in\nthe setImmediate gaps, which trips on Windows CI runners (observed\nfailure: exactly 1.0ms). Keep the bound, since it guards\nGHSA-q8wf-6r8g-63ch, but allow more retries: noise is transient while a\nreal regression blocks deterministically on every attempt.",
+      "93cb90891402fa4c47798d03cb9e05c13233766c": "fix(next/image): improve performance of detectContentType()  (#96006)\n\nhttps://github.com/vercel/next.js/security/advisories/GHSA-q8wf-6r8g-63ch\n\nCo-authored-by: Steven <steven@ceriously.com>"
+    },
     "GHSA-6GPP-XCG3-4W24": {
       "6bf4df14508ad6c0cd46af50c6051ee42f2d9151": "Fix Turbopack middleware matcher with i18n single locale (#96014)\n\nhttps://github.com/vercel/next.js/security/advisories/GHSA-6gpp-xcg3-4w24\n\nCo-authored-by: Niklas Mischkulnig <4586894+mischnic@users.noreply.github.com>"
     },
@@ -22,9 +26,6 @@
     },
     "GHSA-955P-X3MX-JCVP": {
       "025e8535dd4623ae63d5d39a4f9b328dccd19a3e": "Validate server reference IDs during manifest lookup (#96007)\n\nhttps://github.com/vercel/next.js/security/advisories/GHSA-955p-x3mx-jcvp\n\nCo-authored-by: Josh Story <story@hey.com>"
-    },
-    "GHSA-Q8WF-6R8G-63CH": {
-      "93cb90891402fa4c47798d03cb9e05c13233766c": "fix(next/image): improve performance of detectContentType()  (#96006)\n\nhttps://github.com/vercel/next.js/security/advisories/GHSA-q8wf-6r8g-63ch\n\nCo-authored-by: Steven <steven@ceriously.com>"
     },
     "CVE-2025-27152": {
       "bf4e3425695daffcea510ec248dafb67b244eebf": "fix: bump @slack/web-api to drop vulnerable transitive axios (CVE-2025-27152)"
