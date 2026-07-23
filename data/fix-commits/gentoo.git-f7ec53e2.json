@@ -1,6 +1,21 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-11527": {
+      "d4e976ea9401a534cdf7d856133384df31f74e09": "dev-perl/Config-IniFiles: add 3.1.0\n\n- fixes CVE-2026-11527\n- EAPI -> 8\n- fix MissingVersionedVirtualPerlDependency\n\nBug: https://bugs.gentoo.org/979587\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1474\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1474\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-56017": {
+      "0bee02e0fe70490a5570367e6cf3b9139d72765d": "dev-perl/JavaScript-Minifier-XS: add 0.160.0\n\n- fixes for CVE-2026-56017, CVE-2026-56018\n- fix MissingVersionedVirtualPerlDependency\n- fix EmptyGlobalAssignment\n\nBug: https://bugs.gentoo.org/979591\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1476\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1476\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-56018": {
+      "0bee02e0fe70490a5570367e6cf3b9139d72765d": "dev-perl/JavaScript-Minifier-XS: add 0.160.0\n\n- fixes for CVE-2026-56017, CVE-2026-56018\n- fix MissingVersionedVirtualPerlDependency\n- fix EmptyGlobalAssignment\n\nBug: https://bugs.gentoo.org/979591\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1476\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1476\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-12844": {
+      "79bf7303be667663fd4d9b62bc00e730196ef798": "dev-perl/List-SomeUtils-XS: add 0.590.0\n\n- fixes CVE-2026-12844\n- fix MissingVersionedVirtualPerlDependency\n\nBug: https://bugs.gentoo.org/979590\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1475\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1475\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-13593": {
+      "cc006fcd0fa15bb9e1b66824b6b31293f37a7edf": "dev-perl/CSS-Minifier-XS: add 0.140.0\n\n- fixes CVE-2026-13593\n- EAPI -> 8\n- fix MissingVersionedVirtualPerlDependency\n\nBug: https://bugs.gentoo.org/979592\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1477\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1477\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
     "CVE-2026-55199": {
       "d1523c24e93735ca5a8e3f19d987ac56b05f1249": "net-libs/libssh2: fix CVE-2026-55199 too\n\n* Add CVE-2026-55199 fix\n* Rebase CVE-2026-7598 patch\n\nJust git mv as the additional fix is simple.\n\nBug: https://bugs.gentoo.org/977961\nThanks-to: Kerin Millar <kfm@plushkava.net>\nSigned-off-by: Sam James <sam@gentoo.org>"
     },
