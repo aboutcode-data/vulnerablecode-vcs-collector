@@ -1,6 +1,15 @@
 {
   "vcs_url": "https://github.com/openbsd/src",
   "vulnerabilities": {
+    "CVE-2026-57433": {
+      "213ed881a5039c6b79caeff33b0a28e5f8a8f9c1": "Fix signed integer overflow in Storable\n\nStorable for Perl has a signed integer overflow when deserializing\na crafted SX_HOOK record\n\nCVE-2026-57433\n\nhttps://lists.security.metacpan.org/cve-announce/msg/41780100/"
+    },
+    "CVE-2026-57432": {
+      "44eb26e2d4b623aadaaebfb1680e560958c4891f": "Fix integer overflow in perl pack and unpack\n\nPerl has an integer overflow in S_measure_struct leading to an\nout-of-bounds heap read in pack and unpack.\n\nCVE-2026-57432\n\nhttps://lists.security.metacpan.org/cve-announce/msg/41780102/"
+    },
+    "CVE-2026-13221": {
+      "12e8f69a7b31cdefa1e14d8fe7038cc8b9c71cc1": "Fix for incorrect regular expression matches\n\nPerl produce silently incorrect regular expression matches when an\nalternation of more than 65535 fixed string branches is compiled\ninto a trie in Perl_study_chunk\n\nCVE-2026-13221\n\nhttps://lists.security.metacpan.org/cve-announce/msg/41780104/"
+    },
     "CVE-2026-7017": {
       "771d6f5d8645a473d9672a0639d1fc09611a38b7": "Update HTTP::Tiny to 0.096\n\nThis is mostly to pick up the fix for CVE-2026-7017 since we already\nhad the fixes for the earlier bugs.  However, applying the patches\njust for the fix was being painful so instead pull in the full update."
     },
