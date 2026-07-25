@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/bcgit/bc-java",
   "vulnerabilities": {
+    "CVE-2026-3505": {
+      "71b8e3657adce9828102d33772f290bfc60a1004": "Revert \"OpenPGP v6 SEIPDv2 AEAD chunkSize is unbounded on decrypt \u2192 1L<<(chunkSize+6) buffer: chunkSize 24 \u2192 1 GiB alloc (memory-DoS), 25 \u2192 NegativeArraySizeException. Concrete sibling asymmetry: v5 AEADEncDataPacket:51 has if (chunkSize > 16) throw (CVE-2026-3505) but v6 SymmetricEncIntegrityPacket:54 reads chunkSize=in.read() with no bound \u2014 the missed sibling. Attacker needs only the recipient's public key.\"\n\nThis reverts commit 1299519c70c21b4b56296762295528124f5825a7.",
+      "1299519c70c21b4b56296762295528124f5825a7": "OpenPGP v6 SEIPDv2 AEAD chunkSize is unbounded on decrypt \u2192 1L<<(chunkSize+6) buffer: chunkSize 24 \u2192 1 GiB alloc (memory-DoS), 25 \u2192 NegativeArraySizeException. Concrete sibling asymmetry: v5 AEADEncDataPacket:51 has if (chunkSize > 16) throw (CVE-2026-3505) but v6 SymmetricEncIntegrityPacket:54 reads chunkSize=in.read() with no bound \u2014 the missed sibling. Attacker needs only the recipient's public key."
+    },
     "CVE-2018-5382": {
       "faf5daa6e9b8460f862afc0af1cc0da365f7d4d2": "Gate loading of legacy 16-bit-MAC BKS v0/v1 keystores behind enable_v1 (CVE-2018-5382)",
       "c014f78b148685527c5646b1204cd7f595005afa": "updates from FIPS API\nadded ref to CVE-2018-5382 in releasenotes.",

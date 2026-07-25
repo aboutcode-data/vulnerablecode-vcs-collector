@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/vim/vim",
   "vulnerabilities": {
+    "GHSA-R22P-FHW4-84P2": {
+      "581a2f3ac9c6f96a26324f6b2c8c11415fd0d452": "patch 9.2.0847: [security]: vimball: code execution via .VimballRecord file\n\nProblem:  [security]: vimball: code execution via .VimballRecord file\n          (tdjackey)\nSolution: Forbid arbitrary commands, fix broken directory deletion code,\n          refactor code\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-r22p-fhw4-84p2\n\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-9JQX-HGPR-6V64": {
       "05c41c922309c7a11b6ec2f124be66551c90d66a": "patch 9.2.0846: [security]: heap buffer overflow in set_sofo()\n\nProblem:  [security]: heap buffer overflow in set_sofo()\n          (Yazan Balawneh)\nSolution: Reset sl_sal_first (Yasuhiro Matsumoto).\n\nA crafted spell file with an empty SN_SAL section before an SN_SOFO\nsection reaches set_sofo() with sl_sal_first[] already set to -1 by\nset_sal_first(). The counting loop then under-counts colliding\nmulti-byte \"from\" characters, allocates an undersized list and writes\npast its end.\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-9jqx-hgpr-6v64\n\nSigned-off-by: Yasuhiro Matsumoto <mattn.jp@gmail.com>\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
     },
