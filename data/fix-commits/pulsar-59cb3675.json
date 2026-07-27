@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/pulsar",
   "vulnerabilities": {
+    "CVE-2026-59949": {
+      "bbd1970deebc9d0d4136cb5d18d60d0c26f9b3ba": "[fix][sec] Upgrade lz4-java to 1.11.1 to address CVE-2026-59949 (#26250)"
+    },
     "GHSA-HRXH-6V49-42GF": {
       "8aab815314ddcfcef2780f295e0675b42c59fa89": "[fix][sec] Upgrade grpc in pulsar-function-go to 1.82.1 to fix GHSA-hrxh-6v49-42gf (#26235)"
     },
