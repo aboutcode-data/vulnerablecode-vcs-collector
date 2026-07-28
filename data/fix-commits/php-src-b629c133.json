@@ -1,6 +1,26 @@
 {
   "vcs_url": "https://github.com/php/php-src",
   "vulnerabilities": {
+    "CVE-2026-9672": {
+      "fb217524830e9fe5a16419e4954239ec393c3e14": "Merge branch 'PHP-8.5'\n\n* PHP-8.5:\n  Fix out-of-bounds write in ext-bcmath bccomp() via bc_str2num()\n  Add NEWS entries\n  Fix GHSA-vc5h-9ppw-p5f3: phar circular symlink crash\n  Fix SQL injection in ext-pgsql via E'...' backslash breakout\n  libgd patch for CVE-2026-9672",
+      "e5c3b4b083354d24f7202ccdb82f00a61bb16fe8": "Merge branch 'PHP-8.4' into PHP-8.5\n\n* PHP-8.4:\n  Fix out-of-bounds write in ext-bcmath bccomp() via bc_str2num()\n  Add NEWS entries\n  Fix GHSA-vc5h-9ppw-p5f3: phar circular symlink crash\n  Fix SQL injection in ext-pgsql via E'...' backslash breakout\n  libgd patch for CVE-2026-9672",
+      "d3f361c3b7ff7d9fd428f9ee5112885898cb4e43": "Merge branch 'PHP-8.3' into PHP-8.4\n\n* PHP-8.3:\n  Add NEWS entries\n  Fix GHSA-vc5h-9ppw-p5f3: phar circular symlink crash\n  Fix SQL injection in ext-pgsql via E'...' backslash breakout\n  libgd patch for CVE-2026-9672",
+      "416985389d0a5c7ad97161c911a53f0e6df7bbbe": "Merge branch 'PHP-8.2' into PHP-8.3\n\n* PHP-8.2:\n  Add NEWS entries\n  Fix GHSA-vc5h-9ppw-p5f3: phar circular symlink crash\n  Fix SQL injection in ext-pgsql via E'...' backslash breakout\n  libgd patch for CVE-2026-9672",
+      "fcd691b377d02285740744bee17c0f298be227d5": "libgd patch for CVE-2026-9672\n\nPatch by Pierre Joye (pierrejoye)."
+    },
+    "GHSA-VC5H-9PPW-P5F3": {
+      "fb217524830e9fe5a16419e4954239ec393c3e14": "Merge branch 'PHP-8.5'\n\n* PHP-8.5:\n  Fix out-of-bounds write in ext-bcmath bccomp() via bc_str2num()\n  Add NEWS entries\n  Fix GHSA-vc5h-9ppw-p5f3: phar circular symlink crash\n  Fix SQL injection in ext-pgsql via E'...' backslash breakout\n  libgd patch for CVE-2026-9672",
+      "e5c3b4b083354d24f7202ccdb82f00a61bb16fe8": "Merge branch 'PHP-8.4' into PHP-8.5\n\n* PHP-8.4:\n  Fix out-of-bounds write in ext-bcmath bccomp() via bc_str2num()\n  Add NEWS entries\n  Fix GHSA-vc5h-9ppw-p5f3: phar circular symlink crash\n  Fix SQL injection in ext-pgsql via E'...' backslash breakout\n  libgd patch for CVE-2026-9672",
+      "d3f361c3b7ff7d9fd428f9ee5112885898cb4e43": "Merge branch 'PHP-8.3' into PHP-8.4\n\n* PHP-8.3:\n  Add NEWS entries\n  Fix GHSA-vc5h-9ppw-p5f3: phar circular symlink crash\n  Fix SQL injection in ext-pgsql via E'...' backslash breakout\n  libgd patch for CVE-2026-9672",
+      "416985389d0a5c7ad97161c911a53f0e6df7bbbe": "Merge branch 'PHP-8.2' into PHP-8.3\n\n* PHP-8.2:\n  Add NEWS entries\n  Fix GHSA-vc5h-9ppw-p5f3: phar circular symlink crash\n  Fix SQL injection in ext-pgsql via E'...' backslash breakout\n  libgd patch for CVE-2026-9672",
+      "2e0fa0a44441d74bf8cc4e1ce1c8af9cd4209f52": "Fix GHSA-vc5h-9ppw-p5f3: phar circular symlink crash\n\nPrevents infinite recursion in phar_get_link_source."
+    },
+    "GHSA-X692-Q9X7-8C3F": {
+      "4f83876af75d43b24cf3ed567394451f42e6bca1": "Fix out-of-bounds write in ext-bcmath bccomp() via bc_str2num()\n\nWhen a fraction is truncated to a caller-supplied scale and then re-trimmed of\ntrailing zeros, str_scale was reduced but fractional_end was not, so\nbc_copy_and_toggle_bcd() copied more bytes than were reserved by\nbc_new_num_nonzeroed(). With small numbers allocated from the 256-byte stack\narena this is a stack-based OOB write reachable via bccomp($num1, $num2,\n$scale), e.g. bccomp(\"1.901\", \"0\", 2).\n\nKeep fractional_end in sync with str_scale so the copy length matches the\nreserved length.\n\nFixes GHSA-x692-q9x7-8c3f"
+    },
+    "GHSA-7QPV-R5MR-78M4": {
+      "ab048bd83b578119cf81b456526d50498421d617": "Fix SQL injection in ext-pgsql via E'...' backslash breakout\n\nphp_pgsql_add_quotes() quotes the string with E'...', but PQescapeStringConn()\ndoes not escape \\ unless standard_conforming_strings is off.\nPQescapeStringConn() is meant to be used with '', so do that instead.\n\nFixes GHSA-7qpv-r5mr-78m4"
+    },
     "CVE-2026-44927": {
       "bb739429b48130b0654fc460d4fee22e721b4cd8": "uri: Update to uriparser-1.0.2 (#22070)\n\nThis fixes CVE-2026-44927 and CVE-2026-44928."
     },

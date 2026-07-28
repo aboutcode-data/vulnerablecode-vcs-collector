@@ -1,6 +1,13 @@
 {
   "vcs_url": "https://github.com/bcgit/bc-java",
   "vulnerabilities": {
+    "CVE-2024-29857": {
+      "22db5b9594127e5774d246bb596df36db313f42b": "Add Properties.EC_MAX_F2M_FIELD_SIZE for the org.bouncycastle.ec.max_f2m_field_size F2m field size bound (CVE-2024-29857) and use it in ECCurve rather than the inlined literal, mirroring the constant into the jdk1.4 overlay.",
+      "b1e21a374d8672486afa7789d77f4ff26bf2416d": "Add missing 1.78 defects-fixed entries for CVE-2024-14041 (KyberSlash) and CVE-2024-29857 (F2m field size), cross-reference every 1.78 advisory CVE from its defects-fixed entry, and credit the Robusta team's constant-time analysis."
+    },
+    "CVE-2024-14041": {
+      "b1e21a374d8672486afa7789d77f4ff26bf2416d": "Add missing 1.78 defects-fixed entries for CVE-2024-14041 (KyberSlash) and CVE-2024-29857 (F2m field size), cross-reference every 1.78 advisory CVE from its defects-fixed entry, and credit the Robusta team's constant-time analysis."
+    },
     "CVE-2026-3505": {
       "71b8e3657adce9828102d33772f290bfc60a1004": "Revert \"OpenPGP v6 SEIPDv2 AEAD chunkSize is unbounded on decrypt \u2192 1L<<(chunkSize+6) buffer: chunkSize 24 \u2192 1 GiB alloc (memory-DoS), 25 \u2192 NegativeArraySizeException. Concrete sibling asymmetry: v5 AEADEncDataPacket:51 has if (chunkSize > 16) throw (CVE-2026-3505) but v6 SymmetricEncIntegrityPacket:54 reads chunkSize=in.read() with no bound \u2014 the missed sibling. Attacker needs only the recipient's public key.\"\n\nThis reverts commit 1299519c70c21b4b56296762295528124f5825a7.",
       "1299519c70c21b4b56296762295528124f5825a7": "OpenPGP v6 SEIPDv2 AEAD chunkSize is unbounded on decrypt \u2192 1L<<(chunkSize+6) buffer: chunkSize 24 \u2192 1 GiB alloc (memory-DoS), 25 \u2192 NegativeArraySizeException. Concrete sibling asymmetry: v5 AEADEncDataPacket:51 has if (chunkSize > 16) throw (CVE-2026-3505) but v6 SymmetricEncIntegrityPacket:54 reads chunkSize=in.read() with no bound \u2014 the missed sibling. Attacker needs only the recipient's public key."
