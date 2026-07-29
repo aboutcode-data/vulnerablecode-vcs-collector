@@ -2,31 +2,36 @@
   "vcs_url": "https://github.com/bcgit/bc-java",
   "vulnerabilities": {
     "CVE-2024-29857": {
-      "22db5b9594127e5774d246bb596df36db313f42b": "Add Properties.EC_MAX_F2M_FIELD_SIZE for the org.bouncycastle.ec.max_f2m_field_size F2m field size bound (CVE-2024-29857) and use it in ECCurve rather than the inlined literal, mirroring the constant into the jdk1.4 overlay.",
-      "b1e21a374d8672486afa7789d77f4ff26bf2416d": "Add missing 1.78 defects-fixed entries for CVE-2024-14041 (KyberSlash) and CVE-2024-29857 (F2m field size), cross-reference every 1.78 advisory CVE from its defects-fixed entry, and credit the Robusta team's constant-time analysis."
+      "40400826b535f0e1d47391732c0180d8eb72d5c0": "Add Properties.EC_MAX_F2M_FIELD_SIZE for the org.bouncycastle.ec.max_f2m_field_size F2m field size bound (CVE-2024-29857) and use it in ECCurve rather than the inlined literal, mirroring the constant into the jdk1.4 overlay.",
+      "30814a5091c7a2b4ce1e1332df189215e704518a": "Add missing 1.78 defects-fixed entries for CVE-2024-14041 (KyberSlash) and CVE-2024-29857 (F2m field size), cross-reference every 1.78 advisory CVE from its defects-fixed entry, and credit the Robusta team's constant-time analysis."
     },
     "CVE-2024-14041": {
-      "b1e21a374d8672486afa7789d77f4ff26bf2416d": "Add missing 1.78 defects-fixed entries for CVE-2024-14041 (KyberSlash) and CVE-2024-29857 (F2m field size), cross-reference every 1.78 advisory CVE from its defects-fixed entry, and credit the Robusta team's constant-time analysis."
+      "30814a5091c7a2b4ce1e1332df189215e704518a": "Add missing 1.78 defects-fixed entries for CVE-2024-14041 (KyberSlash) and CVE-2024-29857 (F2m field size), cross-reference every 1.78 advisory CVE from its defects-fixed entry, and credit the Robusta team's constant-time analysis."
     },
     "CVE-2026-3505": {
-      "71b8e3657adce9828102d33772f290bfc60a1004": "Revert \"OpenPGP v6 SEIPDv2 AEAD chunkSize is unbounded on decrypt \u2192 1L<<(chunkSize+6) buffer: chunkSize 24 \u2192 1 GiB alloc (memory-DoS), 25 \u2192 NegativeArraySizeException. Concrete sibling asymmetry: v5 AEADEncDataPacket:51 has if (chunkSize > 16) throw (CVE-2026-3505) but v6 SymmetricEncIntegrityPacket:54 reads chunkSize=in.read() with no bound \u2014 the missed sibling. Attacker needs only the recipient's public key.\"\n\nThis reverts commit 1299519c70c21b4b56296762295528124f5825a7.",
-      "1299519c70c21b4b56296762295528124f5825a7": "OpenPGP v6 SEIPDv2 AEAD chunkSize is unbounded on decrypt \u2192 1L<<(chunkSize+6) buffer: chunkSize 24 \u2192 1 GiB alloc (memory-DoS), 25 \u2192 NegativeArraySizeException. Concrete sibling asymmetry: v5 AEADEncDataPacket:51 has if (chunkSize > 16) throw (CVE-2026-3505) but v6 SymmetricEncIntegrityPacket:54 reads chunkSize=in.read() with no bound \u2014 the missed sibling. Attacker needs only the recipient's public key."
+      "de6dd1e538465235db3036a8d3d889eaa9698919": "Revert \"OpenPGP v6 SEIPDv2 AEAD chunkSize is unbounded on decrypt \u2192 1L<<(chunkSize+6) buffer: chunkSize 24 \u2192 1 GiB alloc (memory-DoS), 25 \u2192 NegativeArraySizeException. Concrete sibling asymmetry: v5 AEADEncDataPacket:51 has if (chunkSize > 16) throw (CVE-2026-3505) but v6 SymmetricEncIntegrityPacket:54 reads chunkSize=in.read() with no bound \u2014 the missed sibling. Attacker needs only the recipient's public key.\"\n\nThis reverts commit 12f6884e4f647e13cca0c725a3233b216a3b485a.",
+      "12f6884e4f647e13cca0c725a3233b216a3b485a": "OpenPGP v6 SEIPDv2 AEAD chunkSize is unbounded on decrypt \u2192 1L<<(chunkSize+6) buffer: chunkSize 24 \u2192 1 GiB alloc (memory-DoS), 25 \u2192 NegativeArraySizeException. Concrete sibling asymmetry: v5 AEADEncDataPacket:51 has if (chunkSize > 16) throw (CVE-2026-3505) but v6 SymmetricEncIntegrityPacket:54 reads chunkSize=in.read() with no bound \u2014 the missed sibling. Attacker needs only the recipient's public key."
     },
     "CVE-2018-5382": {
       "faf5daa6e9b8460f862afc0af1cc0da365f7d4d2": "Gate loading of legacy 16-bit-MAC BKS v0/v1 keystores behind enable_v1 (CVE-2018-5382)",
+      "b2a1bf753b673478fb978757d2165bfccfcde27d": "Gate loading of legacy 16-bit-MAC BKS v0/v1 keystores behind enable_v1 (CVE-2018-5382)",
       "c014f78b148685527c5646b1204cd7f595005afa": "updates from FIPS API\nadded ref to CVE-2018-5382 in releasenotes.",
       "4534f41ab3ce581d1bb69d64276ab60d0df49a7e": "updates from FIPS API\nadded ref to CVE-2018-5382 in releasenotes.",
       "15b91d6e88441348d3d0b387528e470be46e759f": "updates from FIPS API\nadded ref to CVE-2018-5382 in releasenotes."
     },
     "CVE-2023-0464": {
       "f344468ccdb8ac645c67ae37dd714568552681aa": "Bound the policy-tree in the PKIXCertPathReviewer copies too (CVE-2023-0464 class)",
-      "01db42757d45faf67e2111721c3c994203f5422d": "Bound the X.509 valid-policy-tree size during PKIX path validation (CVE-2023-0464 class)"
+      "9728b30cfca6217289b6bd9d6b28270a0af17d44": "Bound the policy-tree in the PKIXCertPathReviewer copies too (CVE-2023-0464 class)",
+      "01db42757d45faf67e2111721c3c994203f5422d": "Bound the X.509 valid-policy-tree size during PKIX path validation (CVE-2023-0464 class)",
+      "a6b4857b7845b68cffad18a416d9893c76847a48": "Bound the X.509 valid-policy-tree size during PKIX path validation (CVE-2023-0464 class)"
     },
     "CVE-2024-0727": {
-      "9a4ba02c3dd73e711b422103f151d1269af2c97c": "Complete CVE-2024-0727 null-content hardening across the PKCS#12 SPI pair"
+      "9a4ba02c3dd73e711b422103f151d1269af2c97c": "Complete CVE-2024-0727 null-content hardening across the PKCS#12 SPI pair",
+      "88324b45e07cccb718e28f943f26a885d3e42874": "Complete CVE-2024-0727 null-content hardening across the PKCS#12 SPI pair"
     },
     "CVE-2026-5588": {
-      "6d9da1b13c466e840408d953116c46c6afdb9cc2": "Reject composite signatures missing or with extra components in CompositeVerifier (CVE-2026-5588 follow-up): require one component per key so a signature stripped to a verifying prefix no longer validates"
+      "6d9da1b13c466e840408d953116c46c6afdb9cc2": "Reject composite signatures missing or with extra components in CompositeVerifier (CVE-2026-5588 follow-up): require one component per key so a signature stripped to a verifying prefix no longer validates",
+      "0fcd48a5033a05c4fa3275263966a749d2fe442c": "Reject composite signatures missing or with extra components in CompositeVerifier (CVE-2026-5588 follow-up): require one component per key so a signature stripped to a verifying prefix no longer validates"
     },
     "CVE-2017-15361": {
       "672fd2ae98019ddeb3afebfdb821e5531496d57f": "Add RSA test case for CVE-2017-15361 vulnerability",
