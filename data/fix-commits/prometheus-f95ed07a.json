@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/prometheus/prometheus",
   "vulnerabilities": {
+    "GHSA-HRXH-6V49-42GF": {
+      "78f28fad5413e0853531fda954c9dd1c55a158ec": "build(deps): bump google.golang.org/grpc to v1.82.1 (GHSA-hrxh-6v49-42gf)\n\nFixes gRPC-Go xDS RBAC and HTTP/2 vulnerabilities.\n\nSigned-off-by: Gy\u00f6rgy Krajcsovits <gyorgy.krajcsovits@grafana.com>"
+    },
+    "CVE-2026-56852": {
+      "67f988a9166b38927a51e5df54e70d771ce5af51": "build(deps): bump golang.org/x/text to v0.39.0 (CVE-2026-56852)\n\nFixes a HIGH severity vulnerability where a norm.Iter can enter an\ninfinite loop when handling certain input.\n\nSigned-off-by: Gy\u00f6rgy Krajcsovits <gyorgy.krajcsovits@grafana.com>"
+    },
     "CVE-2026-53606": {
       "ce770bb3a7d4235a6b1c70ad03062a40f41ec682": "build(web/ui): security bump for sanitize-html\n\nBump direct mantine-ui dependency to the patched version to resolve the security\nadvisory CVE-2026-53606 (no breaking changes):\n\n- sanitize-html\t^2.16.0 -> ^2.17.5\n\nSigned-off-by: Witek Bedyk <wbedyk@suse.com>"
     },
