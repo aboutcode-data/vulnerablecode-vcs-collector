@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/superset",
   "vulnerabilities": {
+    "CVE-2026-14257": {
+      "dbaab6d6f4f14f118f8e434f443a6a0ba7edf9b1": "fix: upgrade brace-expansion to patched versions (CVE-2026-14257) (#42583)"
+    },
     "CVE-2026-13676": {
       "d1f7dd9c6728901e4742a57f90b513afa2143eff": "fix(deps): override fast-uri to 3.1.3 to fix CVE-2026-13676 (#41631)\n\nSigned-off-by: Alejandro Solares <219859296+ASolarers-Rodriguez@users.noreply.github.com>"
     },
