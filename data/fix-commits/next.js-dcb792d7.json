@@ -2,7 +2,7 @@
   "vcs_url": "https://github.com/vercel/next.js",
   "vulnerabilities": {
     "GHSA-6G55-P6WH-862Q": {
-      "c3a25df7f735bf2f1fb5b544c0ee20ed15a39b76": "Bump postcss to 8.5.21 to patch GHSA-6g55-p6wh-862q"
+      "5cdcbbb05be0abc21afcb8d5346cc12d854be537": "Bump postcss to 8.5.23 (#96107)\n\nNote that https://github.com/advisories/GHSA-6g55-p6wh-862q does not\naffect Next.js users unless they build from untrusted source code (which\nwould have more severe security implications). We're merging this to\nreduce noise from security scanners.\n\n- 8.5.21 is 50h+ old so it can be installed\n- 8.5.22 is still under 48h - valid at 2026-07-24 08:48:15 UTC \n\nCloses: https://github.com/vercel/next.js/issues/96349"
     },
     "GHSA-6GPP-XCG3-4W24": {
       "6bf4df14508ad6c0cd46af50c6051ee42f2d9151": "Fix Turbopack middleware matcher with i18n single locale (#96014)\n\nhttps://github.com/vercel/next.js/security/advisories/GHSA-6gpp-xcg3-4w24\n\nCo-authored-by: Niklas Mischkulnig <4586894+mischnic@users.noreply.github.com>"
