@@ -2,9 +2,11 @@
   "vcs_url": "https://github.com/videolan/vlc",
   "vulnerabilities": {
     "CVE-2026-55869": {
+      "7c3b68f68358b030d9ddbe522f772608cb218a9c": "contrib: srt: update to 1.5.6\n\nFixes CVE-2026-55869 and CVE-2026-55868 [^1].\n\n[^1]: https://srtalliance.org/srt-alliance-security-advisory/\n\n(cherry picked from commit 276f2f2974e8ceb4550763aa4f847b331328f657)\nSigned-off-by: Steve Lhomme <robux4@ycbcr.xyz>",
       "276f2f2974e8ceb4550763aa4f847b331328f657": "contrib: srt: update to 1.5.6\n\nFixes CVE-2026-55869 and CVE-2026-55868 [^1].\n\n[^1]: https://srtalliance.org/srt-alliance-security-advisory/"
     },
     "CVE-2026-55868": {
+      "7c3b68f68358b030d9ddbe522f772608cb218a9c": "contrib: srt: update to 1.5.6\n\nFixes CVE-2026-55869 and CVE-2026-55868 [^1].\n\n[^1]: https://srtalliance.org/srt-alliance-security-advisory/\n\n(cherry picked from commit 276f2f2974e8ceb4550763aa4f847b331328f657)\nSigned-off-by: Steve Lhomme <robux4@ycbcr.xyz>",
       "276f2f2974e8ceb4550763aa4f847b331328f657": "contrib: srt: update to 1.5.6\n\nFixes CVE-2026-55869 and CVE-2026-55868 [^1].\n\n[^1]: https://srtalliance.org/srt-alliance-security-advisory/"
     },
     "CVE-2026-41682": {

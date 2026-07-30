@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/apache/hadoop",
   "vulnerabilities": {
+    "CVE-2026-45205": {
+      "c0649706c341f117fd440e7e9c629034eb010bd2": "HADOOP-19945. Update to commons-configuration2 2.15.0, commons-lang3 3.20.0 and commons-io 2.22.0 to fix CVE-2026-45205 (#8634)\n\nReviewed-by:  Shilun Fan <slfan1989@apache.org>\nReviewed-by:  Ayush Saxena <ayushsaxena@apache.org>\nSigned-off-by: Cheng Pan <chengpan@apache.org>",
+      "e91e948d5b0aeb424b06016df351c50cdad18d54": "HADOOP-19945. Update to commons-configuration2 2.15.0, commons-lang3 3.20.0 and commons-io 2.22.0 to fix CVE-2026-45205 (#8634)\n\nReviewed-by:  Shilun Fan <slfan1989@apache.org>\nReviewed-by:  Ayush Saxena <ayushsaxena@apache.org>\nSigned-off-by: Cheng Pan <chengpan@apache.org>"
+    },
     "CVE-2026-47065": {
       "6cb181143d714a70c5f012eddb2e6802d827c2fd": "HADOOP-19943. Upgrade Apache Mina to 2.0.29 due to CVE-2026-47065. (#8615)\n\nContributed by PJ Fanning",
       "8a695de2e67ebe6dbb2e88ce4be6d9e347537eda": "HADOOP-19943. Upgrade Apache Mina to 2.0.29 due to CVE-2026-47065. (#8615)\n\n\nContributed by PJ Fanning"
