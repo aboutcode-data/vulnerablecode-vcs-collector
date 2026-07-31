@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/moby/moby",
   "vulnerabilities": {
+    "CVE-2026-17106": {
+      "3704c55f55081896f1c0fcd90d46dd3a9f620518": "vendor: github.com/moby/go-archive v0.3.0\n\nfull diff: https://github.com/moby/go-archive/compare/v0.2.1...v0.3.0\n\nv0.3.0\n\nThis release fixes CVE-2026-17106 / GHSA-hfg8-hc9c-6c3h, where a crafted\ntar archive could use links to cause extraction operations to create or\noverwrite files outside the intended destination directory.\n\nThe issue affected Unpack, UnpackLayer, Untar, UntarUncompressed, and the\nApplyLayer helpers. Users should upgrade and avoid extracting untrusted\narchives with earlier versions.\n\nWhat's Changed\n\n* archive: harden tar extraction against path traversal\n* archive: do not follow reparse points in chtimes\n* archive: fix creation time updates on Windows\n* archive: minor cleanups and godoc touch-up\n* archive: RebaseArchiveEntries: fix archive path rebasing\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
+    },
+    "GHSA-HFG8-HC9C-6C3H": {
+      "3704c55f55081896f1c0fcd90d46dd3a9f620518": "vendor: github.com/moby/go-archive v0.3.0\n\nfull diff: https://github.com/moby/go-archive/compare/v0.2.1...v0.3.0\n\nv0.3.0\n\nThis release fixes CVE-2026-17106 / GHSA-hfg8-hc9c-6c3h, where a crafted\ntar archive could use links to cause extraction operations to create or\noverwrite files outside the intended destination directory.\n\nThe issue affected Unpack, UnpackLayer, Untar, UntarUncompressed, and the\nApplyLayer helpers. Users should upgrade and avoid extracting untrusted\narchives with earlier versions.\n\nWhat's Changed\n\n* archive: harden tar extraction against path traversal\n* archive: do not follow reparse points in chtimes\n* archive: fix creation time updates on Windows\n* archive: minor cleanups and godoc touch-up\n* archive: RebaseArchiveEntries: fix archive path rebasing\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
+    },
     "GHSA-6VCH-Q96H-7GC3": {
       "e693cc91911896ad0997f49b24b5e72f707e8e4b": "vendor: go.etcd.io/etcd/v3 v3.6.14\n\nNo changes in vendored code, but v3.6.14 includes a fix for GHSA-6vch-q96h-7gc3\n\nchangelog: https://github.com/etcd-io/etcd/blob/main/CHANGELOG/CHANGELOG-3.6.md\nfull diff: https://github.com/etcd-io/etcd/compare/v3.6.8...v3.6.14\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
     },

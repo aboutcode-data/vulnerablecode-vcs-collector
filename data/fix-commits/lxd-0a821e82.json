@@ -1,6 +1,70 @@
 {
   "vcs_url": "https://github.com/lxc/lxd",
   "vulnerabilities": {
+    "GHSA-6V6X-387M-RJ4W": {
+      "f86f08bfcd36aae7e8f29e83e71e6767ddb3e077": "incusd: Expand network address set project for authorization\n\nThe project expansion used for authorization had no branch for network\naddress sets, so their access checks ran against the requested project\nrather than the effective one, letting a restricted project act on the\ndefault project's address sets.\n\nThis addresses GHSA-6v6x-387m-rj4w (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "620c836181dd011672541835803f33712aa648fc": "incusd: Expand network address set project for authorization\n\nThe project expansion used for authorization had no branch for network\naddress sets, so their access checks ran against the requested project\nrather than the effective one, letting a restricted project act on the\ndefault project's address sets.\n\nThis addresses GHSA-6v6x-387m-rj4w (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "CVE-2026-62313": {
+      "0de0aac019efe95ba0e6e7e1e6fc3204bf5da5c7": "incusd/project: Enforce isolated restriction when idmap key omitted\n\nrestricted.containers.privilege=isolated only rejected an explicit\nsecurity.idmap.isolated=false, but the key defaults to non-isolated when\nomitted. Require containers to explicitly enable isolation.\n\nThis addresses CVE-2026-62313\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "8066e7707ccf423b6c41ad12976a0998e979e8f4": "incusd/project: Enforce isolated restriction when idmap key omitted\n\nrestricted.containers.privilege=isolated only rejected an explicit\nsecurity.idmap.isolated=false, but the key defaults to non-isolated when\nomitted. Require containers to explicitly enable isolation.\n\nThis addresses CVE-2026-62313\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "CVE-2026-62940": {
+      "57c415871256445efa758086e6ef8111464b1c26": "incusd/instance: Enforce project restrictions on migration overrides\n\nThe migration handler applied user-supplied config, device and profile\noverrides without any project restriction check, letting a restricted\nproject set keys like security.privileged or raw.lxc.\n\nThis addresses CVE-2026-62940\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "f1c75c6c48b5fe7d7c0d60ee5009522e7ac3a069": "incusd/instance: Enforce project restrictions on migration overrides\n\nThe migration handler applied user-supplied config, device and profile\noverrides without any project restriction check, letting a restricted\nproject set keys like security.privileged or raw.lxc.\n\nThis addresses CVE-2026-62940\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "CVE-2026-62941": {
+      "9bc9f9ba5ab61fd5e6c9fa0f5e2440d4ce8495e5": "incusd/instances: Re-check restrictions after copy config merge\n\nThe source instance's config is merged into the request only after the\ninitial project restriction check, letting a cross-project copy carry\nrestricted keys into the target project. Re-check the merged config.\n\nThis addresses CVE-2026-62941\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "7cec16a23cbc6dd3df8228cf20b59cecf1e4138e": "incusd/instances: Re-check restrictions after copy config merge\n\nThe source instance's config is merged into the request only after the\ninitial project restriction check, letting a cross-project copy carry\nrestricted keys into the target project. Re-check the merged config.\n\nThis addresses CVE-2026-62941\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "GHSA-26GP-P5FW-3R2H": {
+      "0d21c84dbff03e1a676a94ecbfaafca8b48695ba": "incusd/instances: Validate instance name on backup import\n\nThis addresses GHSA-26gp-p5fw-3r2h (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "c203fcf2559d16e2168eab6f1776c449f70d1ee4": "incusd/instances: Validate instance name on backup import\n\nThis addresses GHSA-26gp-p5fw-3r2h (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "GHSA-67QW-68V3-36H6": {
+      "c7cf33d46a83fd39b59843f0bd406a2c88d2e899": "incusd/storage: Validate volume name on ISO and backup import\n\nThis addresses GHSA-67qw-68v3-36h6 (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "e2547b834f1cead6c57a3ac034fdf9365c8f7af7": "incusd/storage: Validate volume name on ISO and backup import\n\nThis addresses GHSA-67qw-68v3-36h6 (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "CVE-2026-48769": {
+      "3d7246efe5ec4dba476f95ec163eb4a165717863": "incusd/images: Validate image fingerprint for all protocols\n\nThe fingerprint validation added for CVE-2026-48769 was only applied to\nthe direct protocol. Validate it for all protocols and re-check after it\nis taken from the remote server's response.\n\nThis addresses GHSA-p2v3-6wvc-cv3p (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "42be307a1452ee54f8822e9bcf45c70a6af0e90c": "incusd/images: Validate image fingerprint for all protocols\n\nThe fingerprint validation added for CVE-2026-48769 was only applied to\nthe direct protocol. Validate it for all protocols and re-check after it\nis taken from the remote server's response.\n\nThis addresses GHSA-p2v3-6wvc-cv3p (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "609acee9fdceb72e19bbb24754ea5c39d143edfb": "incusd/images: Validate fingerprint on direct download\n\nThis addresses CVE-2026-48769\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "46d6ef232186df5535c49ca9f3597cab381f9b86": "incusd/images: Validate fingerprint on direct download\n\nThis addresses CVE-2026-48769\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "GHSA-P2V3-6WVC-CV3P": {
+      "3d7246efe5ec4dba476f95ec163eb4a165717863": "incusd/images: Validate image fingerprint for all protocols\n\nThe fingerprint validation added for CVE-2026-48769 was only applied to\nthe direct protocol. Validate it for all protocols and re-check after it\nis taken from the remote server's response.\n\nThis addresses GHSA-p2v3-6wvc-cv3p (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "42be307a1452ee54f8822e9bcf45c70a6af0e90c": "incusd/images: Validate image fingerprint for all protocols\n\nThe fingerprint validation added for CVE-2026-48769 was only applied to\nthe direct protocol. Validate it for all protocols and re-check after it\nis taken from the remote server's response.\n\nThis addresses GHSA-p2v3-6wvc-cv3p (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "CVE-2026-48752": {
+      "181ae5c746c718767e8ca6f3edbe3df4a6fc9fbe": "incusd/instance/qemu: Confine template access to instance root\n\nThe template traversal guard from CVE-2026-48752 was only applied to the\nLXC driver. Apply the same checks to the QEMU driver.\n\nThis addresses GHSA-4qxq-p5hm-3q3p (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "436041b4930f8515b73e060419aceaeefe0e760d": "incusd/instance/qemu: Confine template access to instance root\n\nThe template traversal guard from CVE-2026-48752 was only applied to the\nLXC driver. Apply the same checks to the QEMU driver.\n\nThis addresses GHSA-4qxq-p5hm-3q3p (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "d9d80e87c7aca1979a6a8058c740eb368997cb81": "incusd/instance: Confine template access to instance root\n\nThis addresses CVE-2026-48752\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "cbefa31ae0da8fd96361178aed3a3c631e098fef": "incusd/instance: Confine template access to instance root\n\nThis addresses CVE-2026-48752\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "GHSA-4QXQ-P5HM-3Q3P": {
+      "181ae5c746c718767e8ca6f3edbe3df4a6fc9fbe": "incusd/instance/qemu: Confine template access to instance root\n\nThe template traversal guard from CVE-2026-48752 was only applied to the\nLXC driver. Apply the same checks to the QEMU driver.\n\nThis addresses GHSA-4qxq-p5hm-3q3p (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "436041b4930f8515b73e060419aceaeefe0e760d": "incusd/instance/qemu: Confine template access to instance root\n\nThe template traversal guard from CVE-2026-48752 was only applied to the\nLXC driver. Apply the same checks to the QEMU driver.\n\nThis addresses GHSA-4qxq-p5hm-3q3p (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "CVE-2026-63343": {
+      "1bb869273c69cd5d17558a021028c5dee45d82d4": "incusd/instance: Confine metadata.yaml access to instance root\n\nThis addresses CVE-2026-63343\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "443e845023ae62befe916980f05ffd8933652816": "incusd/instance: Confine metadata.yaml access to instance root\n\nThis addresses CVE-2026-63343\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "CVE-2026-63125": {
+      "7135f0183d9dc0661d2e3eb36779bc2273545266": "incusd/storage: Confine backup.yaml write to instance root\n\nThis addresses CVE-2026-63125\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "1ff313f55454a1d4fb83557306c0fd6c2a1927a6": "incusd/storage: Confine backup.yaml write to instance root\n\nThis addresses CVE-2026-63125\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "GHSA-7FJ9-65V4-RP7H": {
+      "0b0847de515424e64fc898f7f5deddb4770ceb14": "incusd/instance: Confine OCI network writes to instance root\n\nAlso rejects line breaks in the oci.dns.domain and oci.dns.search values\nwhich are written to the generated resolv.conf.\n\nThis addresses GHSA-7fj9-65v4-rp7h (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "e46720cb6dc6223f24d804e1c085257caab17b53": "incusd/instance: Confine OCI network writes to instance root\n\nAlso rejects line breaks in the oci.dns.domain and oci.dns.search values\nwhich are written to the generated resolv.conf.\n\nThis addresses GHSA-7fj9-65v4-rp7h (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "GHSA-M3J6-P3V3-QMJV": {
+      "4f847ad5ab34716efb723e3f46e3d72e472035de": "internal/instance: Prevent line breaks in NVIDIA config values\n\nThis addresses GHSA-m3j6-p3v3-qmjv (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "4d64535046e63c86ded3338ac58329db88d1492d": "internal/instance: Prevent line breaks in NVIDIA config values\n\nThis addresses GHSA-m3j6-p3v3-qmjv (CVE pending)\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
+    "CVE-2026-62867": {
+      "dbc1e36173f8cac74ef276a88ba1e0bc9964002c": "incusd/project: Restrict volume creation options in restricted projects\n\nA user in a restricted project could set block.create_options to inject\narguments into the filesystem creation command run as root. Restrict such\nprojects to the pool's configured default for that option.\n\nThis addresses CVE-2026-62867\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
+      "041269ff2670e235faa49e3c973de657ace3f28d": "incusd/project: Restrict volume creation options in restricted projects\n\nA user in a restricted project could set block.create_options to inject\narguments into the filesystem creation command run as root. Restrict such\nprojects to the pool's configured default for that option.\n\nThis addresses CVE-2026-62867\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
+    },
     "CVE-2026-55622": {
       "83e31cfef356db49a9f3938a6a6f6136e7b762ff": "incusd/instances: Check source instance access on copy\n\nThis addresses CVE-2026-55622\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
       "1e3ffc53a10950e55de62ac1e0d612be597b84eb": "incusd/instances: Check source instance access on copy\n\nThis addresses CVE-2026-55622\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
@@ -9,17 +73,9 @@
       "457687e5a0ae2dba9a17f77c6a1c85adc9faab29": "incusd/storage: Check source volume access on copy\n\nThis addresses CVE-2026-55621\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
       "2e01078366e2653712719dec82318e51c6d21b28": "incusd/storage: Check source volume access on copy\n\nThis addresses CVE-2026-55621\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
     },
-    "CVE-2026-48769": {
-      "609acee9fdceb72e19bbb24754ea5c39d143edfb": "incusd/images: Validate fingerprint on direct download\n\nThis addresses CVE-2026-48769\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
-      "46d6ef232186df5535c49ca9f3597cab381f9b86": "incusd/images: Validate fingerprint on direct download\n\nThis addresses CVE-2026-48769\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
-    },
     "CVE-2026-48755": {
       "a34b4d531b2c00495900bdb4df4f1d00ef8c3c4c": "shared/validate: Reject compression algorithm arguments\n\nThis addresses CVE-2026-48755\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
       "873a032a461df6b09b7586435b592873863a4e88": "shared/validate: Reject compression algorithm arguments\n\nThis addresses CVE-2026-48755\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
-    },
-    "CVE-2026-48752": {
-      "d9d80e87c7aca1979a6a8058c740eb368997cb81": "incusd/instance: Confine template access to instance root\n\nThis addresses CVE-2026-48752\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
-      "cbefa31ae0da8fd96361178aed3a3c631e098fef": "incusd/instance: Confine template access to instance root\n\nThis addresses CVE-2026-48752\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
     },
     "CVE-2026-48751": {
       "12df568641cfa7d5fda7beabb638a8821f51f598": "incusd/instance: Enforce project restrictions on snapshot restore\n\nThis addresses CVE-2026-48751\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
