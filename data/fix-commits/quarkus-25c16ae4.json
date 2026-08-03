@@ -1,10 +1,9 @@
 {
   "vcs_url": "https://github.com/quarkusio/quarkus",
   "vulnerabilities": {
-    "CVE-2026-59889": {
-      "9e1d6d2db1a683b694da37ec14b73b565ae4b566": "[3.33] bump Jackson BOM to 2.21.5\n\nCVE-2026-59889 is only fixed in 2.21.5, we should bump Jackson version.\nI do not imply that Quarkus is affected, but ideally we would silence scanners in Keycloak https://github.com/keycloak/keycloak/issues/50955.\n\nSigned-off-by: Michal Vav\u0159\u00edk <dev@michalvavrik.net>"
-    },
     "GHSA-QCXP-GM7M-4J5V": {
+      "9e54b7237977627eb1087a28bf914d919b286dc1": "Handle GHSA-qcxp-gm7m-4j5v",
+      "822ce7afee616b50c9c7046f9d41fb13a5c9e2f7": "Handle GHSA-qcxp-gm7m-4j5v",
       "f4433061d2931576cbbf920877dc6ce4a0d92a4c": "Handle GHSA-qcxp-gm7m-4j5v",
       "447b66d4dbf7f26a2bba0b55067104f8e0e60b05": "Handle GHSA-qcxp-gm7m-4j5v",
       "069696d704dfe452403eea33570efe6b2332833c": "Merge pull request #54906 from jmartisk/3.20.6-cve\n\n[3.20.6-emergency] Handle GHSA-qcxp-gm7m-4j5v",
@@ -15,6 +14,9 @@
       "a5bbcdd13318689b6ff76e7f5b99122cf9797126": "Handle GHSA-qcxp-gm7m-4j5v",
       "b56920d7798d356dcee368105f8d220812435a7b": "Handle GHSA-qcxp-gm7m-4j5v",
       "d331315962f78fcb178891592d1ce40f029bcd2d": "Handle GHSA-qcxp-gm7m-4j5v"
+    },
+    "CVE-2026-59889": {
+      "9e1d6d2db1a683b694da37ec14b73b565ae4b566": "[3.33] bump Jackson BOM to 2.21.5\n\nCVE-2026-59889 is only fixed in 2.21.5, we should bump Jackson version.\nI do not imply that Quarkus is affected, but ideally we would silence scanners in Keycloak https://github.com/keycloak/keycloak/issues/50955.\n\nSigned-off-by: Michal Vav\u0159\u00edk <dev@michalvavrik.net>"
     },
     "CVE-2026-42198": {
       "799aa344cb46f78e9d047f440c61adaa34b03412": "Bump postgresql-jdbc.version to 42.7.11\n\nUpdated PostgreSQL JDBC version from 42.7.10 to 42.7.11 to fix https://nvd.nist.gov/vuln/detail/CVE-2026-42198",
