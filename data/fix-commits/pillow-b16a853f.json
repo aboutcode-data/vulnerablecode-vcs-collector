@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/python-pillow/pillow",
   "vulnerabilities": {
     "CVE-2026-4775": {
+      "4990482cc25901aa76bdb30f1ae5a9af28e12483": "Remove patch for CVE-2026-4775",
       "1ba93c6feb0c1dd69ac869e0d372a82964c7dd35": "Apply libtiff patch to fix CVE-2026-4775 (#9646)"
     },
     "CVE-2014-3589": {

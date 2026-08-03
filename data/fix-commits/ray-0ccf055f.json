@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/ray-project/ray",
   "vulnerabilities": {
+    "GHSA-GCFJ-64VW-6MP9": {
+      "532773865854347d9c840fca986c0cf25b2ea8c1": "[dashboard] Update axios to ^1.18.0 (#65130)\n\n## Description\nRe-opening of #63640 since GitHub closed it due to a force-push base\nchange.\n\nRegenerated the `package-lock.json` using Node 14.21.3 as requested by\n@sampan-s-nayak. Bumped axios to `^1.18.0` to fully address\nGHSA-gcfj-64vw-6mp9.\n\n## Related issues\nCloses #63640\n\n## Additional information\nSigned-off-by: RinZ27 <222222878+RinZ27@users.noreply.github.com>\n\n---\n*Note: This is a replacement for PR #65106 which was automatically\nclosed due to a git history issue.*\n\nSigned-off-by: RinZ27 <222222878+RinZ27@users.noreply.github.com>"
+    },
     "CVE-2026-34480": {
       "1831bd5705e019de57c9253db0e791303036b8c0": "build(java): upgrade log4j to 2.25.4 (#64269)\n\n## Description\n\nThis upgrades Ray's Java Log4j dependencies from 2.25.3 to 2.25.4 to\naddress CVE-2026-34480 reported in #64251.\n\nThe Log4j artifacts are kept on the same version to avoid mixing\n`log4j-api`, `log4j-core`, and `log4j-slf4j-impl` versions.\n\n## Related issues\n\nCloses #64251.\n\n## Additional information\n\nChecks:\n- `bazelisk build @maven//:org_apache_logging_log4j_log4j_core`\n- `bazelisk build @maven//:org_apache_logging_log4j_log4j_api\n@maven//:org_apache_logging_log4j_log4j_slf4j_impl`\n- `bazelisk build //java:io_ray_ray_api`\n\nSigned-off-by: nh-atuan <anhtuan21347@gmail.com>\nCo-authored-by: Edward Oakes <ed.nmi.oakes@gmail.com>"
     },
