@@ -2,6 +2,8 @@
   "vcs_url": "https://github.com/angular/angular-cli",
   "vulnerabilities": {
     "GHSA-FXQJ-RQCC-2CMP": {
+      "0b4008f17d76c821d9f075b86da80b826f085d23": "fix(@angular-devkit/build-angular): upgrade postcss to 8.5.23\n\nThis addresses https://github.com/postcss/postcss/security/advisories/GHSA-fxqj-rqcc-2cmp",
+      "fc861affcd8866b71b81c8ba90f7a63890b6577c": "fix(@angular/build): upgrade postcss to 8.5.23\n\nThis addresses https://github.com/postcss/postcss/security/advisories/GHSA-fxqj-rqcc-2cmp",
       "972f6db7e9ccf3c4b0e895341a49b104a8b0ac9b": "fix(@angular-devkit/build-angular): upgrade postcss to 8.5.23\n\nThis addresses https://github.com/postcss/postcss/security/advisories/GHSA-fxqj-rqcc-2cmp\n\nTAG=agy\n\nCONV=63a146aa-f34e-4200-88d1-90537150adb0",
       "8de75ada503d4182af7f0be957e58fe678a63b98": "fix(@angular/build): upgrade postcss to 8.5.23\n\nThis addresses https://github.com/postcss/postcss/security/advisories/GHSA-fxqj-rqcc-2cmp\n\nTAG=agy\n\nCONV=63a146aa-f34e-4200-88d1-90537150adb0"
     },
