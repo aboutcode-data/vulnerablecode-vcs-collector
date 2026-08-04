@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/quarkusio/quarkus",
   "vulnerabilities": {
     "GHSA-QCXP-GM7M-4J5V": {
+      "aa68083f931c88b9491824058fc0f756766037f4": "Handle GHSA-qcxp-gm7m-4j5v",
       "9e54b7237977627eb1087a28bf914d919b286dc1": "Handle GHSA-qcxp-gm7m-4j5v",
       "822ce7afee616b50c9c7046f9d41fb13a5c9e2f7": "Handle GHSA-qcxp-gm7m-4j5v",
       "f4433061d2931576cbbf920877dc6ce4a0d92a4c": "Handle GHSA-qcxp-gm7m-4j5v",

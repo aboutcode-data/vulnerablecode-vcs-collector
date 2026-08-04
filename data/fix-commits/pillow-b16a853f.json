@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/python-pillow/pillow",
   "vulnerabilities": {
+    "GHSA-F87V-9578-P47W": {
+      "39d14a0dbc674a7ab0547d0602d0279f67718c5b": "Handle zero dimensions in Offset.c\n\nhttps://github.com/python-pillow/Pillow/security/advisories/GHSA-f87v-9578-p47w"
+    },
     "CVE-2026-4775": {
       "4990482cc25901aa76bdb30f1ae5a9af28e12483": "Remove patch for CVE-2026-4775",
       "1ba93c6feb0c1dd69ac869e0d372a82964c7dd35": "Apply libtiff patch to fix CVE-2026-4775 (#9646)"
