@@ -1,6 +1,25 @@
 {
   "vcs_url": "https://github.com/videolan/vlc",
   "vulnerabilities": {
+    "CVE-2025-27516": {
+      "7c7020d0a784a62ec5002ed685e636a1808df8f0": "contrib: update jinja to 3.1.6\n\nFixes CVE-2025-27516."
+    },
+    "CVE-2026-41682": {
+      "d062c04ca381567cce8d5a96607e999fc5351d59": "contrib: update upnp to 1.14.31\n\nFixes CVE-2026-41682.",
+      "20a646d9f0b689af5127c1e0e15a3b910ebef1f6": "contrib: update upnp to 1.14.31\n\nFixes CVE-2026-41682.\n\n(cherry picked from commit 5a6e69747ceef9ca709e890af85402493b1c704a)\nSigned-off-by: Steve Lhomme <robux4@ycbcr.xyz>"
+    },
+    "CVE-2025-6965": {
+      "533e360b1ddd087468695ddaf6a048d09da7e71b": "contrib: update sqlite to 3530300\n\nSQLite rejects --datarootdir and related options.\n\nIncludes fixes for CVE-2025-6965, CVE-2025-70873,\nCVE-2025-7709, and CVE-2026-11822."
+    },
+    "CVE-2025-70873": {
+      "533e360b1ddd087468695ddaf6a048d09da7e71b": "contrib: update sqlite to 3530300\n\nSQLite rejects --datarootdir and related options.\n\nIncludes fixes for CVE-2025-6965, CVE-2025-70873,\nCVE-2025-7709, and CVE-2026-11822."
+    },
+    "CVE-2025-7709": {
+      "533e360b1ddd087468695ddaf6a048d09da7e71b": "contrib: update sqlite to 3530300\n\nSQLite rejects --datarootdir and related options.\n\nIncludes fixes for CVE-2025-6965, CVE-2025-70873,\nCVE-2025-7709, and CVE-2026-11822."
+    },
+    "CVE-2026-11822": {
+      "533e360b1ddd087468695ddaf6a048d09da7e71b": "contrib: update sqlite to 3530300\n\nSQLite rejects --datarootdir and related options.\n\nIncludes fixes for CVE-2025-6965, CVE-2025-70873,\nCVE-2025-7709, and CVE-2026-11822."
+    },
     "CVE-2026-55869": {
       "7c3b68f68358b030d9ddbe522f772608cb218a9c": "contrib: srt: update to 1.5.6\n\nFixes CVE-2026-55869 and CVE-2026-55868 [^1].\n\n[^1]: https://srtalliance.org/srt-alliance-security-advisory/\n\n(cherry picked from commit 276f2f2974e8ceb4550763aa4f847b331328f657)\nSigned-off-by: Steve Lhomme <robux4@ycbcr.xyz>",
       "276f2f2974e8ceb4550763aa4f847b331328f657": "contrib: srt: update to 1.5.6\n\nFixes CVE-2026-55869 and CVE-2026-55868 [^1].\n\n[^1]: https://srtalliance.org/srt-alliance-security-advisory/"
@@ -8,9 +27,6 @@
     "CVE-2026-55868": {
       "7c3b68f68358b030d9ddbe522f772608cb218a9c": "contrib: srt: update to 1.5.6\n\nFixes CVE-2026-55869 and CVE-2026-55868 [^1].\n\n[^1]: https://srtalliance.org/srt-alliance-security-advisory/\n\n(cherry picked from commit 276f2f2974e8ceb4550763aa4f847b331328f657)\nSigned-off-by: Steve Lhomme <robux4@ycbcr.xyz>",
       "276f2f2974e8ceb4550763aa4f847b331328f657": "contrib: srt: update to 1.5.6\n\nFixes CVE-2026-55869 and CVE-2026-55868 [^1].\n\n[^1]: https://srtalliance.org/srt-alliance-security-advisory/"
-    },
-    "CVE-2026-41682": {
-      "20a646d9f0b689af5127c1e0e15a3b910ebef1f6": "contrib: update upnp to 1.14.31\n\nFixes CVE-2026-41682.\n\n(cherry picked from commit 5a6e69747ceef9ca709e890af85402493b1c704a)\nSigned-off-by: Steve Lhomme <robux4@ycbcr.xyz>"
     },
     "CVE-2023-32573": {
       "4789bbe0ab3d756c18ca79c2069be4a85ece68d9": "contrib: qtsvg: apply security patches found in Qt 5.15\n\nCherry picked patches corresponding to https://download.qt.io/archive/qt/5.15/\n\nCorresponds to these patches (with test code patches removed):\n\n* CVE-2023-32573-qtsvg-5.15.diff"

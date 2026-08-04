@@ -2,9 +2,13 @@
   "vcs_url": "https://github.com/apache/pulsar",
   "vulnerabilities": {
     "CVE-2026-59949": {
+      "e2f7ce2eb25fcab11700439a373bd5e017bb5502": "[fix][sec] Upgrade lz4-java to 1.11.1 to address CVE-2026-59949 (#26250)\n\n(cherry picked from commit bbd1970deebc9d0d4136cb5d18d60d0c26f9b3ba)",
+      "d85cfae1ddb2a5f909febc57eb0849bb2f931505": "[fix][sec] Upgrade lz4-java to 1.11.1 to address CVE-2026-59949 (#26250)\n\n(cherry picked from commit bbd1970deebc9d0d4136cb5d18d60d0c26f9b3ba)",
       "bbd1970deebc9d0d4136cb5d18d60d0c26f9b3ba": "[fix][sec] Upgrade lz4-java to 1.11.1 to address CVE-2026-59949 (#26250)"
     },
     "GHSA-HRXH-6V49-42GF": {
+      "fd12ebbbfc844efd8779005b447d604b2be46054": "[fix][sec] Upgrade grpc in pulsar-function-go to 1.82.1 to fix GHSA-hrxh-6v49-42gf (#26235)\n\n(cherry picked from commit 8aab815314ddcfcef2780f295e0675b42c59fa89)",
+      "eca68d5d773fa4e0a039b9302f06d1eb2edb6c87": "[fix][sec] Upgrade grpc in pulsar-function-go to 1.82.1 to fix GHSA-hrxh-6v49-42gf (#26235)\n\n(cherry picked from commit 8aab815314ddcfcef2780f295e0675b42c59fa89)",
       "8aab815314ddcfcef2780f295e0675b42c59fa89": "[fix][sec] Upgrade grpc in pulsar-function-go to 1.82.1 to fix GHSA-hrxh-6v49-42gf (#26235)"
     },
     "CVE-2026-45205": {
