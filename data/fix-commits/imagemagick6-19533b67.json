@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-WXW6-98RJ-HJFR": {
+      "0ca580238abba18910cfee0fcc3159621fec0dee": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-wxw6-98rj-hjfr"
+    },
     "GHSA-99W9-HV66-RFV7": {
       "e7c22e0f547035d5d8890afcacf82f6a553005a8": "Patches for https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-99w9-hv66-rfv7.",
       "353e2604d1983b6d8ec4c04f4f38bbd4668ba0e1": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-99w9-hv66-rfv7"
