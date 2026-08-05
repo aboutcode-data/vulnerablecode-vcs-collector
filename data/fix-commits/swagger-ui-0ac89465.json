@@ -1,37 +1,21 @@
 {
   "vcs_url": "https://github.com/swagger-api/swagger-ui",
   "vulnerabilities": {
-    "CVE-2017-18924": {
-      "7b5a54f81f4ffcaa4d7eda2101be06d89d5107c5": "chore(deps): replace local-web-server with serve, migrate oauth2-server to @node-oauth/oauth2-server\n\n- Replace local-web-server (unmaintained) with serve for the serve-static script\n- Migrate oauth2-server to @node-oauth/oauth2-server v5 to address CVE-2017-18924 and CVE-2020-26938\n  - Rewrite E2E OAuth2 test server to use v3+ Request/Response API\n  - Rewrite model to use synchronous return values and v3+ method signatures (saveToken, grants on client)\n- Fix jest.artifact.config.js testEnvironment to use explicit jest-environment-jsdom\n- Update test/unit/core/utils.js to use history.pushState instead of deleting window.location\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
-    },
-    "CVE-2020-26938": {
-      "7b5a54f81f4ffcaa4d7eda2101be06d89d5107c5": "chore(deps): replace local-web-server with serve, migrate oauth2-server to @node-oauth/oauth2-server\n\n- Replace local-web-server (unmaintained) with serve for the serve-static script\n- Migrate oauth2-server to @node-oauth/oauth2-server v5 to address CVE-2017-18924 and CVE-2020-26938\n  - Rewrite E2E OAuth2 test server to use v3+ Request/Response API\n  - Rewrite model to use synchronous return values and v3+ method signatures (saveToken, grants on client)\n- Fix jest.artifact.config.js testEnvironment to use explicit jest-environment-jsdom\n- Update test/unit/core/utils.js to use history.pushState instead of deleting window.location\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
-    },
     "CVE-2026-27135": {
       "dcdca62c8b64a0a54e4decd4e1a6c3c712fdcc60": "chore(release): cut the 5.32.6 release\n\n## [5.32.6](https://github.com/swagger-api/swagger-ui/compare/v5.32.5...v5.32.6) (2026-05-12)\n\n### Bug Fixes\n\n* **deps-dev:** address undici vulnerability ([#10870](https://github.com/swagger-api/swagger-ui/issues/10870)) ([35f5a6a](https://github.com/swagger-api/swagger-ui/commit/35f5a6a84a9b4681809e8d70d32b9de69c779691))\n* **docker:** address CVE-2026-27135 nghttp2-libs vulnerability ([#10879](https://github.com/swagger-api/swagger-ui/issues/10879)) ([0a63415](https://github.com/swagger-api/swagger-ui/commit/0a63415dfbaa491f5741d9025407e30a8ebf9592))",
-      "0a63415dfbaa491f5741d9025407e30a8ebf9592": "fix(docker): address CVE-2026-27135 nghttp2-libs vulnerability (#10879)",
-      "3c0a58d12c8e94369f3d356996cdd9d84e0f992e": "fix(docker): address CVE-2026-27135 nghttp2-libs vulnerability\n\nPin nghttp2-libs to >=1.68.1-r0 in Docker image to fix HIGH severity\nCVE-2026-27135 (DoS via malformed HTTP/2 frames after session termination).\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
-    },
-    "CVE-2026-28390": {
-      "9ced3791b605347e906b2560055a5b5c256e9045": "fix(docker): upgrade alpine packages to address HIGH severity CVEs\n\nExplicitly pin minimum versions for libcrypto3, libssl3, musl, and\nmusl-utils to resolve Trivy-detected vulnerabilities in the Docker image:\n\n- CVE-2026-28390 (HIGH): OpenSSL NULL pointer dereference DoS\n  libcrypto3/libssl3 3.5.5-r0 \u2192 >=3.5.6-r0\n- CVE-2026-40200 (HIGH): musl libc arbitrary code execution/DoS\n  musl/musl-utils 1.2.5-r21 \u2192 >=1.2.5-r23\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
-    },
-    "CVE-2026-40200": {
-      "9ced3791b605347e906b2560055a5b5c256e9045": "fix(docker): upgrade alpine packages to address HIGH severity CVEs\n\nExplicitly pin minimum versions for libcrypto3, libssl3, musl, and\nmusl-utils to resolve Trivy-detected vulnerabilities in the Docker image:\n\n- CVE-2026-28390 (HIGH): OpenSSL NULL pointer dereference DoS\n  libcrypto3/libssl3 3.5.5-r0 \u2192 >=3.5.6-r0\n- CVE-2026-40200 (HIGH): musl libc arbitrary code execution/DoS\n  musl/musl-utils 1.2.5-r21 \u2192 >=1.2.5-r23\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+      "0a63415dfbaa491f5741d9025407e30a8ebf9592": "fix(docker): address CVE-2026-27135 nghttp2-libs vulnerability (#10879)"
     },
     "CVE-2026-33416": {
       "d02a2df106961d8cb6bceb6b4b3aa8d9f6faaf4a": "chore(release): cut the 5.32.2 release\n\n## [5.32.2](https://github.com/swagger-api/swagger-ui/compare/v5.32.1...v5.32.2) (2026-04-07)\n\n### Bug Fixes\n\n* **docker:** bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184 ([#10802](https://github.com/swagger-api/swagger-ui/issues/10802)) ([c200a69](https://github.com/swagger-api/swagger-ui/commit/c200a69b634343b663f4cb8908678cd332aa8e64))",
-      "c200a69b634343b663f4cb8908678cd332aa8e64": "fix(docker): bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184 (#10802)",
-      "56a2a1c6c9dd3595da79a632e122d9cf5cf4787b": "fix(docker): bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184"
+      "c200a69b634343b663f4cb8908678cd332aa8e64": "fix(docker): bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184 (#10802)"
     },
     "CVE-2026-33636": {
       "d02a2df106961d8cb6bceb6b4b3aa8d9f6faaf4a": "chore(release): cut the 5.32.2 release\n\n## [5.32.2](https://github.com/swagger-api/swagger-ui/compare/v5.32.1...v5.32.2) (2026-04-07)\n\n### Bug Fixes\n\n* **docker:** bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184 ([#10802](https://github.com/swagger-api/swagger-ui/issues/10802)) ([c200a69](https://github.com/swagger-api/swagger-ui/commit/c200a69b634343b663f4cb8908678cd332aa8e64))",
-      "c200a69b634343b663f4cb8908678cd332aa8e64": "fix(docker): bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184 (#10802)",
-      "56a2a1c6c9dd3595da79a632e122d9cf5cf4787b": "fix(docker): bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184"
+      "c200a69b634343b663f4cb8908678cd332aa8e64": "fix(docker): bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184 (#10802)"
     },
     "CVE-2026-22184": {
       "d02a2df106961d8cb6bceb6b4b3aa8d9f6faaf4a": "chore(release): cut the 5.32.2 release\n\n## [5.32.2](https://github.com/swagger-api/swagger-ui/compare/v5.32.1...v5.32.2) (2026-04-07)\n\n### Bug Fixes\n\n* **docker:** bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184 ([#10802](https://github.com/swagger-api/swagger-ui/issues/10802)) ([c200a69](https://github.com/swagger-api/swagger-ui/commit/c200a69b634343b663f4cb8908678cd332aa8e64))",
-      "c200a69b634343b663f4cb8908678cd332aa8e64": "fix(docker): bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184 (#10802)",
-      "56a2a1c6c9dd3595da79a632e122d9cf5cf4787b": "fix(docker): bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184"
+      "c200a69b634343b663f4cb8908678cd332aa8e64": "fix(docker): bump libpng and zlib versions to fix CVE-2026-33416, CVE-2026-33636 and CVE-2026-22184 (#10802)"
     },
     "CVE-2025-48174": {
       "1b712dc9fc0181a4c2d5f7450d4ac814f0c4c9e3": "chore(release): cut the 5.25.4 release\n\n## [5.25.4](https://github.com/swagger-api/swagger-ui/compare/v5.25.3...v5.25.4) (2025-07-01)\n\n### Bug Fixes\n\n* **docker:** bump nginx image to version 1.29.0-alpine to fix CVE-2025-48174 ([#10508](https://github.com/swagger-api/swagger-ui/issues/10508)) ([94f0818](https://github.com/swagger-api/swagger-ui/commit/94f0818e66e7c59957878e14a5e90121e5a0d17e))",
