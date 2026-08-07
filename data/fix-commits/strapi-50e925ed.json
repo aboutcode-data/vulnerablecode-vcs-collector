@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/strapi/strapi",
   "vulnerabilities": {
+    "GHSA-FRVP-7C67-39W9": {
+      "11759643993cf561a3f5c4b3c7c6f0ffa31f0711": "security(deps): bump @modelcontextprotocol/sdk to 1.30.0\n\nPulls @hono/node-server >=2.0.5 and clears GHSA-frvp-7c67-39w9\n(Windows serve-static path traversal) for the MCP HTTP stack."
+    },
     "CVE-2026-33327": {
       "ccdedac926514c658508acb631542c66e762dd63": "security(upload): bump sharp to 0.35.3 for libvips CVEs (#27255)\n\nsharp <0.35.0 inherits four libvips vulnerabilities in the GIF, TIFF and\nVIPS decoders (CVE-2026-33327, CVE-2026-33328, CVE-2026-35590,\nCVE-2026-35591), reachable by processing untrusted uploads.\nSee GHSA-f88m-g3jw-g9cj.\n\nTargets 0.35.3 rather than 0.35.0: 0.35.0 shipped an exports map with no\n\"types\" condition while root \"types\" still pointed at the unreachable\n./lib/index.d.ts, so typings failed to resolve under\nmoduleResolution: \"Bundler\". Upstream fixed this in 0.35.1.\n\nAlso drops the now-redundant OutputInfo augmentation (pageHeight has been\nin sharp's own types since 0.34.2) and switches the sharp.Metadata /\nsharp.ResizeOptions namespace references to named type imports, which the\n0.35.x ESM typings require.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>"
     },
