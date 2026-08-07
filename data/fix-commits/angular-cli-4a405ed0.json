@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/angular/angular-cli",
   "vulnerabilities": {
+    "CVE-2026-49356": {
+      "ba5d16cacab4139897d1f0cf4161562b1bd00553": "fix(@angular/cli): update dependency @modelcontextprotocol/sdk to v1.30.0\n\nCVE-2026-49356.\n\nFixes #33787",
+      "3962517b95c76016ff7bcb53662704dff18c0552": "fix(@angular/cli): update dependency @modelcontextprotocol/sdk to v1.30.0\n\nCVE-2026-49356.\n\nFixes #33787",
+      "36adca99ce72d59e5909709f53e239b1e79d703e": "fix(@angular/build): bump @babel/core to 7.29.7\n\nBumps @babel/core to 7.29.7 to address GHSA-4x5r-pxfx-6jf8 / CVE-2026-49356.\n\nFixes #33420.",
+      "9c366e8be42495d1bf90033788b3beae77e5fc28": "fix(@angular/build): bump @babel/core to 7.29.7\n\nBumps @babel/core to 7.29.7 to address GHSA-4x5r-pxfx-6jf8 / CVE-2026-49356.\n\nFixes #33420."
+    },
     "GHSA-FXQJ-RQCC-2CMP": {
       "0b4008f17d76c821d9f075b86da80b826f085d23": "fix(@angular-devkit/build-angular): upgrade postcss to 8.5.23\n\nThis addresses https://github.com/postcss/postcss/security/advisories/GHSA-fxqj-rqcc-2cmp",
       "fc861affcd8866b71b81c8ba90f7a63890b6577c": "fix(@angular/build): upgrade postcss to 8.5.23\n\nThis addresses https://github.com/postcss/postcss/security/advisories/GHSA-fxqj-rqcc-2cmp",
@@ -26,10 +32,6 @@
     "GHSA-X9G3-XRWR-CWFG": {
       "94fb3c122a14a3a8540a24e22f2f8ff87d130cb5": "fix(@angular/build): bump piscina to 5.2.0\n\nBumps piscina to 5.2.0 to address GHSA-x9g3-xrwr-cwfg.\n\nFixes #33420.",
       "637b84877334de5acc6fcbe1ba4d62c7a6da420b": "fix(@angular/build): bump piscina to 5.2.0\n\nBumps piscina to 5.2.0 to address GHSA-x9g3-xrwr-cwfg.\n\nFixes #33420."
-    },
-    "CVE-2026-49356": {
-      "36adca99ce72d59e5909709f53e239b1e79d703e": "fix(@angular/build): bump @babel/core to 7.29.7\n\nBumps @babel/core to 7.29.7 to address GHSA-4x5r-pxfx-6jf8 / CVE-2026-49356.\n\nFixes #33420.",
-      "9c366e8be42495d1bf90033788b3beae77e5fc28": "fix(@angular/build): bump @babel/core to 7.29.7\n\nBumps @babel/core to 7.29.7 to address GHSA-4x5r-pxfx-6jf8 / CVE-2026-49356.\n\nFixes #33420."
     },
     "GHSA-4X5R-PXFX-6JF8": {
       "36adca99ce72d59e5909709f53e239b1e79d703e": "fix(@angular/build): bump @babel/core to 7.29.7\n\nBumps @babel/core to 7.29.7 to address GHSA-4x5r-pxfx-6jf8 / CVE-2026-49356.\n\nFixes #33420.",

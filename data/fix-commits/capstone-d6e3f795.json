@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/capstone-engine/capstone",
   "vulnerabilities": {
+    "GHSA-5Q63-4654-94V6": {
+      "de4b58b2e74b92296a1e181f4121c42bd65eb286": "Merge commit from fork\n\n* Fix OOB read in SH module.\n\nReported by @pant0m in GHSA-5q63-4654-94v6.\n\n* Add several bound checking asserts to SH disassembler.\n\n* Fix macro formatting for readability.\n\n* Add asserts in case of opening failure to detect them."
+    },
     "CVE-2026-55893": {
       "e17ee44a8307ea33375b4727ac4f987650bf7bed": "V5: Fix OOB reads/writes - CVE-2026-55893 & CVE-2026-55894 (#2969)\n\n* Fix several OOB writes by adding bounds checks\n\n* Add bounds check for index into decoder table",
       "09e76802380b9e94d9720c44458d9d5282219e7e": "Fix OOB reads/writes - CVE-2026-55893 & CVE-2026-55894 (#2968)\n\n* Fix several OOB writes by adding bounds checks\n\n* Add bounds check for index into decoder table"
