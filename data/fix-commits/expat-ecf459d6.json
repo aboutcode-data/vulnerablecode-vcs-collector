@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://android.googlesource.com/platform/external/expat",
   "vulnerabilities": {
+    "CVE-2026-72522": {
+      "27c6536c2bfa857b6678b1038d14f43fd65a4aa6": "Merge pull request #1296 from libexpat/mozilla-2053153\n\n[CVE-2026-72522] Fix an OOB read and the resulting infinite loop in `*_toUtf16` functions",
+      "8fbfb52fa88e040e8b0b7a9d39f260d6a9e8b6db": "Changes: Document surrogates issue CVE-2026-72522\n\nFor readers new to surrogates in Unicode:\nhttps://en.wikipedia.org/wiki/Universal_Character_Set_characters#Surrogates"
+    },
     "CVE-2026-56412": {
       "11cd58eb92dd8ebd85e018eabb7357ee28fec1c7": "Merge pull request #1278 from hextheshadow/fix/cdata-handler-call-depth\n\n[CVE-2026-56412] lib: Guard `XML_TOK_DATA_CHARS` handler calls in `doCdataSection`"
     },
