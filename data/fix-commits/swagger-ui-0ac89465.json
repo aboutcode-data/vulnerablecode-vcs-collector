@@ -22,20 +22,16 @@
       "94f0818e66e7c59957878e14a5e90121e5a0d17e": "fix(docker): bump nginx image to version 1.29.0-alpine to fix CVE-2025-48174 (#10508)"
     },
     "CVE-2025-32414": {
-      "01e380e3bce7f36ad3d654c1589508f99bd7f7a3": "fix(docker): address CVE-2025-32414/CVE-2025-32415 (#10461)",
-      "86001762344f018c7f498a06b46bddbc0e2fc40b": "fix(docker): address CVE-2025-32414/CVE-2025-32415"
+      "01e380e3bce7f36ad3d654c1589508f99bd7f7a3": "fix(docker): address CVE-2025-32414/CVE-2025-32415 (#10461)"
     },
     "CVE-2025-32415": {
-      "01e380e3bce7f36ad3d654c1589508f99bd7f7a3": "fix(docker): address CVE-2025-32414/CVE-2025-32415 (#10461)",
-      "86001762344f018c7f498a06b46bddbc0e2fc40b": "fix(docker): address CVE-2025-32414/CVE-2025-32415"
+      "01e380e3bce7f36ad3d654c1589508f99bd7f7a3": "fix(docker): address CVE-2025-32414/CVE-2025-32415 (#10461)"
     },
     "CVE-2024-56171": {
-      "3dc2cd6dc21b0f626598952fcf8bc4d4b3a9f9e4": "fix(docker): fix security issues CVE-2024-56171, CVE-2025-24928 (#10351)",
-      "57bc3bcd6acce09c998fa42d5a222db688671fcb": "fix(docker): fix security issues CVE-2024-56171, CVE-2025-24928"
+      "3dc2cd6dc21b0f626598952fcf8bc4d4b3a9f9e4": "fix(docker): fix security issues CVE-2024-56171, CVE-2025-24928 (#10351)"
     },
     "CVE-2025-24928": {
-      "3dc2cd6dc21b0f626598952fcf8bc4d4b3a9f9e4": "fix(docker): fix security issues CVE-2024-56171, CVE-2025-24928 (#10351)",
-      "57bc3bcd6acce09c998fa42d5a222db688671fcb": "fix(docker): fix security issues CVE-2024-56171, CVE-2025-24928"
+      "3dc2cd6dc21b0f626598952fcf8bc4d4b3a9f9e4": "fix(docker): fix security issues CVE-2024-56171, CVE-2025-24928 (#10351)"
     },
     "CVE-2024-27983": {
       "a94dd2808b2f0971cf3147c29ed43f5a9d1f229b": "fix(docker): fix CVE-2024-27983 related to Node.js (#9786)"
