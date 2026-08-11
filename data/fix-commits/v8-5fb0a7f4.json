@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://chromium.googlesource.com/v8/v8",
   "vulnerabilities": {
+    "CVE-2026-5078": {
+      "441d84acce645ea5c8cf4e2ebfeb1aff69c77c74": "[tools] Bump morgan to 1.11.0 to address CVE-2026-5078\n\nUpdates the transitive morgan dependency in tools/package-lock.json\nand tools/turbolizer/package-lock.json. Lockfile-only, no manifest\nchange.\n\nChange-Id: Ic545b1b1e84fb23b2a6346426b92e47d7b0881da\nReviewed-on: https://chromium-review.googlesource.com/c/v8/v8/+/8222305\nReviewed-by: Camillo Bruni <cbruni@chromium.org>\nCommit-Queue: Tejas Vasisht <tejasvasisht@microsoft.com>\nReviewed-by: Paolo Severini <paolosev@microsoft.com>\nCr-Commit-Position: refs/heads/main@{#109187}"
+    },
     "CVE-2026-8723": {
       "3a7c7a596ea9fc8241b93d69c82bf0d78e71ee2c": "Upgraded qs to 6.15.2 to address CVE 2026-8723\n\nBug: v8/tools/package-lock.json pins qs at 6.15.0, which has a vulnerability (CVE-2026-8723).\n\nqs.stringify throws a TypeError when called with arrayFormat: 'comma' and encodeValuesOnly: true on arrays containing null or undefined. Fixed in qs 6.15.2.\n\nChange-Id: I35d3fd11258f6473cab6010a01ad722731718d0c\nReviewed-on: https://chromium-review.googlesource.com/c/v8/v8/+/7952025\nReviewed-by: Paolo Severini <paolosev@microsoft.com>\nReviewed-by: Camillo Bruni <cbruni@chromium.org>\nCommit-Queue: Tejas Vasisht <tejasvasisht@microsoft.com>\nCr-Commit-Position: refs/heads/main@{#108343}"
     },
