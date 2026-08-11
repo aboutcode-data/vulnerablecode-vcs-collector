@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://android.googlesource.com/platform/external/expat",
   "vulnerabilities": {
+    "CVE-2026-45186": {
+      "b7e436e81d947784845284881fc55911ba23ddd5": "Changes: Document upstream CVSS score for CVE-2026-45186 of 2.8.1",
+      "9bdfbc77e3355405ceefbe59420abed953a5657e": "Merge pull request #1216 from libexpat/attribute-collision-check-dos\n\n[CVE-2026-45186] Prevent attribute collision check DoS"
+    },
     "CVE-2026-72522": {
       "27c6536c2bfa857b6678b1038d14f43fd65a4aa6": "Merge pull request #1296 from libexpat/mozilla-2053153\n\n[CVE-2026-72522] Fix an OOB read and the resulting infinite loop in `*_toUtf16` functions",
       "8fbfb52fa88e040e8b0b7a9d39f260d6a9e8b6db": "Changes: Document surrogates issue CVE-2026-72522\n\nFor readers new to surrogates in Unicode:\nhttps://en.wikipedia.org/wiki/Universal_Character_Set_characters#Surrogates"
@@ -18,9 +22,6 @@
       "d5a654b4881f450827af5b3b7b72370a3bbf9a8f": "lib: protect XML_ResumeParser from being called from a handler\n\nThe handler-reentrancy guards from CVE-2026-50219 cover XML_Parse, XML_ParseBuffer, XML_GetBuffer, XML_ParserFree and XML_ParserReset but not XML_ResumeParser, which drives the parser through callProcessor in the same way.",
       "3fd4d1c19c30f71979b00d73d367f3d27935fad5": "Merge pull request #1246 from libexpat/introduce-flag-inside-handler\n\n[CVE-2026-50219] Introduce handler call depth tracking",
       "f17ca46befb59098da339ed6d2438de3bdece8b5": "Changes: Document CVE-2026-50219"
-    },
-    "CVE-2026-45186": {
-      "9bdfbc77e3355405ceefbe59420abed953a5657e": "Merge pull request #1216 from libexpat/attribute-collision-check-dos\n\n[CVE-2026-45186] Prevent attribute collision check DoS"
     },
     "CVE-2026-41080": {
       "ed80eaea0ce7179b56713fb22fe933b993aee814": "Merge pull request #1183 from libexpat/issue-47-improve-protection-against-hash-flooding\n\n[CVE-2026-41080] Improve protection against hash flooding (fixes #47)",
