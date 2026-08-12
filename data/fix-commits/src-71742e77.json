@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/openbsd/src",
   "vulnerabilities": {
+    "CVE-2026-72522": {
+      "2d225ad45d42506d4068f43c0f3f4af6f3c799d0": "Update libexpat to version 2.8.3.\n\nRelevant for OpenBSD are bug fixes #1297 #1300 #1286 #1305 #1306,\nother changes #1303.  Library bump is not necessary.  CVE-2026-72522\n\nOK deraadt@ tb@"
+    },
     "CVE-2026-57433": {
       "213ed881a5039c6b79caeff33b0a28e5f8a8f9c1": "Fix signed integer overflow in Storable\n\nStorable for Perl has a signed integer overflow when deserializing\na crafted SX_HOOK record\n\nCVE-2026-57433\n\nhttps://lists.security.metacpan.org/cve-announce/msg/41780100/"
     },
