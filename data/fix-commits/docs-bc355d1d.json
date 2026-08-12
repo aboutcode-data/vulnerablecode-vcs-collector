@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/github/docs",
   "vulnerabilities": {
+    "GHSA-2V37-7H3G-55P8": {
+      "a7832252b2d90fb4e5dfa6b8a4641c5ee258bf70": "Bump nanoid to 3.3.17 to fix infinite loop vulnerability (GHSA-2v37-7h3g-55p8) (#62706)\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+    },
     "GHSA-8988-4F7V-96QF": {
       "f530144caa72e5dd072f782004d6a11471dd9b5d": "Bump @opentelemetry deps to clear core < 2.8.0 baggage vuln (GHSA-8988-4f7v-96qf) (#62265)\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: 031a122f-ce90-4f05-8641-f98155428219"
     },
