@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/apache/superset",
   "vulnerabilities": {
     "CVE-2026-14257": {
+      "739365979d46f296584676e1eccf56c70bbb2fa3": "fix: upgrade brace-expansion to 5.0.8 (CVE-2026-14257) (#42435)\n\nCo-authored-by: Claude Sonnet 4.6 <noreply@anthropic.com>",
       "dbaab6d6f4f14f118f8e434f443a6a0ba7edf9b1": "fix: upgrade brace-expansion to patched versions (CVE-2026-14257) (#42583)"
     },
     "CVE-2026-13676": {
