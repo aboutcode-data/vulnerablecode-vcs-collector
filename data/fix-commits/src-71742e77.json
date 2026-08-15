@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/openbsd/src",
   "vulnerabilities": {
+    "CVE-2026-15534": {
+      "f9f0b1aaf0110eab67ca610a0fcc337c97a9717c": "Fix out-of-bounds heap reads and writes in perl regex\n\nPerl versions through 5.45.1 have out-of-bounds heap reads and writes\nduring regular expression matching via an undersized superlinear cache\nin S_regmatch\n\nThis is CVE-2026-15534\n\nhttps://github.com/Perl/perl5/commit/568e6fd238867bb9e99fa3f47cba3169009239e0\nhttps://github.com/Perl/perl5/commit/54cf3d44cbbedd17d774e9a37921963e8fd5d0cb"
+    },
     "CVE-2026-72522": {
       "2d225ad45d42506d4068f43c0f3f4af6f3c799d0": "Update libexpat to version 2.8.3.\n\nRelevant for OpenBSD are bug fixes #1297 #1300 #1286 #1305 #1306,\nother changes #1303.  Library bump is not necessary.  CVE-2026-72522\n\nOK deraadt@ tb@"
     },
