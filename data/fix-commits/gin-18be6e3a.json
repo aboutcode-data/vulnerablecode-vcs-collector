@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/gin-gonic/gin",
   "vulnerabilities": {
+    "CVE-2026-56852": {
+      "8dd20118ba9a9dfa18ebba99e33d6a59b0090436": "fix(deps): bump golang.org/x/net and golang.org/x/text to patched versions (#4807)\n\nThe scheduled Trivy scan has been failing on master with two HIGH\nfindings, and it fails every pull request along with it:\n\n- CVE-2026-56852, golang.org/x/text, denial of service, fixed in 0.39.0\n- CVE-2026-46600, golang.org/x/net/dns/dnsmessage, denial of service,\n  fixed in 0.56.0\n\nBump both to the first patched release. golang.org/x/crypto and\ngolang.org/x/sys move with them as transitive requirements of x/net.\n\nVerified with the same settings the workflow uses:\n\n  trivy fs --scanners vuln --severity CRITICAL,HIGH,MEDIUM \\\n    --ignore-unfixed --exit-code 1 .\n\nwhich now exits 0. go build ./... and go test ./... pass.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCo-authored-by: Bo-Yi Wu <appleboy.tw@gmail.com>"
+    },
+    "CVE-2026-46600": {
+      "8dd20118ba9a9dfa18ebba99e33d6a59b0090436": "fix(deps): bump golang.org/x/net and golang.org/x/text to patched versions (#4807)\n\nThe scheduled Trivy scan has been failing on master with two HIGH\nfindings, and it fails every pull request along with it:\n\n- CVE-2026-56852, golang.org/x/text, denial of service, fixed in 0.39.0\n- CVE-2026-46600, golang.org/x/net/dns/dnsmessage, denial of service,\n  fixed in 0.56.0\n\nBump both to the first patched release. golang.org/x/crypto and\ngolang.org/x/sys move with them as transitive requirements of x/net.\n\nVerified with the same settings the workflow uses:\n\n  trivy fs --scanners vuln --severity CRITICAL,HIGH,MEDIUM \\\n    --ignore-unfixed --exit-code 1 .\n\nwhich now exits 0. go build ./... and go test ./... pass.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCo-authored-by: Bo-Yi Wu <appleboy.tw@gmail.com>"
+    },
     "CVE-2025-59530": {
       "af6e8b70b8261bb0c99ad094fe552ab92991620a": "chore(deps): upgrade quic-go to v0.57.1\n\nFix CVE-2025-59530 vulnerability (quic-go Crash Due to Premature HANDSHAKE_DONE Frame)\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>"
     },
