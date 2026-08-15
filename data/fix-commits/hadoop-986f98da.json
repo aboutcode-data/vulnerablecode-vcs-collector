@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/hadoop",
   "vulnerabilities": {
+    "CVE-2026-59901": {
+      "5a2a4923d52bc62ed0c114150a607bdb37aca8aa": "HADOOP-19957. Upgrade Netty to 4.1.137 due to CVEs (#8667) Contributed by PJ Fanning\n\n* HADOOP-19957. Upgrade Netty to 4.1.136 due to CVE-2026-59901\n\nReviewed-by: Ayush Saxena <ayushsaxena@apache.org>\nSigned-off-by: Shilun Fan <slfan1989@apache.org>"
+    },
     "CVE-2026-59949": {
       "6dd24f5815f25431e6eab58e7f16894d1446b708": "HADOOP-19949. Upgrade lz4-java to 1.11.1 due to CVE-2026-59949 (#8643)\n\nAuthored-by: PJ Fanning <fanningpj@apache.org>\nReviewed-by: Shilun Fan <slfan1989@apache.org>\nSigned-off-by: Cheng Pan <chengpan@apache.org>",
       "d80ff0aaf4660280ebd628a4cad93e09f9250764": "HADOOP-19949. Upgrade lz4-java to 1.11.1 due to CVE-2026-59949 (#8643)\n\nAuthored-by: PJ Fanning <fanningpj@apache.org>\nReviewed-by: Shilun Fan <slfan1989@apache.org>\nSigned-off-by: Cheng Pan <chengpan@apache.org>",

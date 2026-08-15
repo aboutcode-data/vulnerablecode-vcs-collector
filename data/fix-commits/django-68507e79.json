@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/django/django",
   "vulnerabilities": {
     "CVE-2026-15307": {
+      "4ee04972e7f9163dbdf5a7c36330e3379187e187": "Refs CVE-2026-15307 -- Used a more common lookup in raster lookup tests.\n\nThis avoids the need to add `@skipUnlessGISLookup(\"contained\")` while\nmodeling equally realistic usage.",
       "99a723043feb4133fc22692a31c43a13dcaa32ac": "[5.2.x] Added CVE-2026-15307, CVE-2026-15337, CVE-2026-15830, and CVE-2026-15920 to security archive.\n\nBackport of 7d75c0b9285f0e29cb796c647cc27f2076f9d49c from main.",
       "809998448b45284aa6152112feb46d927b209019": "[6.1.x] Added CVE-2026-15307, CVE-2026-15337, CVE-2026-15830, and CVE-2026-15920 to security archive.\n\nBackport of 7d75c0b9285f0e29cb796c647cc27f2076f9d49c from main.",
       "d4b02a7bf937b865e2ffc1584e36f1e753c689b9": "[6.0.x] Added CVE-2026-15307, CVE-2026-15337, CVE-2026-15830, and CVE-2026-15920 to security archive.\n\nBackport of 7d75c0b9285f0e29cb796c647cc27f2076f9d49c from main.",
