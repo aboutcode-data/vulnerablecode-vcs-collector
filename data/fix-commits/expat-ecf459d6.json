@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://android.googlesource.com/platform/external/expat",
   "vulnerabilities": {
+    "CVE-2026-66046": {
+      "e97a6c453a4ef0595953e3f72f64ad1b74afc96a": "Merge pull request #1321 from libexpat/vulncheck-2026-07-24\n\n[CVE-2026-66046] lib: Migrate `.isCdata` lookup from a linear loop to a hash table lookup",
+      "392978976b6930864889294fa2fa8a6588aed656": "Changes: Document CVE-2026-66046"
+    },
     "CVE-2026-45186": {
       "b7e436e81d947784845284881fc55911ba23ddd5": "Changes: Document upstream CVSS score for CVE-2026-45186 of 2.8.1",
       "9bdfbc77e3355405ceefbe59420abed953a5657e": "Merge pull request #1216 from libexpat/attribute-collision-check-dos\n\n[CVE-2026-45186] Prevent attribute collision check DoS"
