@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitlab.com/gitlab-org/gitlab",
   "vulnerabilities": {
+    "CVE-2022-1944": {
+      "c61e79b49c28112dbb391bb7e6df6c10194ff83f": "Correct who can run interactive web terminals\n\nThe permissions table has granted this ability by role since the feature\nshipped. Since 15.1 only the user who triggered a job can run its\nterminal, so the row is wrong for both roles it marks.\n\nThe ownership condition arrived with the fix for CVE-2022-1944, which\nstopped a user with the Developer role from opening a terminal on\nanother user's running job. The table was never updated with it. The\nfeature page states the rule correctly.\n\nRelated to https://gitlab.com/gitlab-org/gitlab/-/issues/616886"
+    },
     "CVE-2026-32700": {
       "93801163255d9f56f4754d64d2a8e7391e43c6be": "Upgrade devise gem from 4.9.4 to 5.0.4\n\nBumps devise to v5.0.4 to resolve CVE-2026-32700 and CVE-2026-40295.\n\nAlso relaxes the devise version constraint in the vendored\ndevise-pbkdf2-encryptable gemspec from '~> 4.0' to '>= 4.0, < 6.0'\nto allow compatibility with devise v5.\n\nResolves https://gitlab.com/gitlab-org/gitlab/-/work_items/606702\n\nChangelog: security"
     },
