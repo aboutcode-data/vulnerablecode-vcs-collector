@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/sigstore/rekor",
   "vulnerabilities": {
+    "GHSA-843X-PX86-VQ42": {
+      "705fc05d8397407872ebce83598c6ab27ef2a13b": "Apply proactive hardening against malformed requests (GHSA-843x-px86-vq42) (#2945)\n\nThese checks should be a no-op, simply preventing panics in favor of\nreturning errors.\n\nSigned-off-by: Hayden <8418760+Hayden-IO@users.noreply.github.com>"
+    },
     "GHSA-4C4X-JM2X-PF9J": {
       "60ef2bceba192c5bf9327d003bceea8bf1f8275f": "Drop support for fetching public keys by URL in the search index (#2731)\n\nThis mitigates blind SSRF. Note that this API was marked as experimental\nso while this is a breaking change to the API, we offered no guarantee\nof stability.\n\nFixes GHSA-4c4x-jm2x-pf9j\n\nSigned-off-by: Hayden <8418760+Hayden-IO@users.noreply.github.com>"
     },
