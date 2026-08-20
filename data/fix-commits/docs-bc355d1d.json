@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/github/docs",
   "vulnerabilities": {
     "GHSA-2V37-7H3G-55P8": {
+      "1bad1b42c9bc7d5c256f0d5407c7ffe4b3c1cb80": "Bump nanoid to 3.3.18 to fix GHSA-2v37-7h3g-55p8 (#62808)\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: 645c73a6-af94-4c7e-9444-66c92aabd7a9",
       "a7832252b2d90fb4e5dfa6b8a4641c5ee258bf70": "Bump nanoid to 3.3.17 to fix infinite loop vulnerability (GHSA-2v37-7h3g-55p8) (#62706)\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
     },
     "GHSA-8988-4F7V-96QF": {
