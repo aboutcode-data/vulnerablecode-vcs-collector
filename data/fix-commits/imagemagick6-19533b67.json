@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-27M9-54JX-FGVQ": {
+      "6ba345f88a14fcce35c723c231914ae054c4281a": "Don't throw a fatal exception when hitting a recursion depth (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-27m9-54jx-fgvq)."
+    },
+    "GHSA-4MWF-MGGW-29VP": {
+      "29f17f3fe5008fc56f00c1fbc96adf46169db245": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-4mwf-mggw-29vp"
+    },
     "GHSA-F2R2-QW7G-3C8X": {
       "04a4c5b89c034cf2c93bb0a10044332d941b4fa5": "Fixed double free in non cairo builds (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-f2r2-qw7g-3c8x)"
     },
