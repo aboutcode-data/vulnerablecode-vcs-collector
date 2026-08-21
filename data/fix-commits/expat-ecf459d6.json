@@ -1,7 +1,17 @@
 {
   "vcs_url": "https://android.googlesource.com/platform/external/expat",
   "vulnerabilities": {
+    "CVE-2026-76641": {
+      "208c70454f68b8f7542fd2f96cde9ecd13805b06": "Merge pull request #1331 from liuzeyouzeyou/fix-dtdcopy-default-att-hash-entry-size\n\n[CVE-2026-76641] lib: Fix out-of-bounds read from hash table entries created by dtdCopy"
+    },
+    "CVE-2026-76957": {
+      "6f80c72c0edf19dfca607a76e3bda88bb30ce3b8": "Merge pull request #1322 from carrerasdarren-cell/fix/unknown-encoding-callback-reentrancy\n\n[CVE-2026-76957] Protect custom encoding callbacks from parser re-entry"
+    },
+    "CVE-2026-76956": {
+      "5935b102a528a85401ff982263b176c28df26618": "Merge pull request #1326 from Sorrashut-K/fix-getentropy-inverted-return\n\n[CVE-2026-76956] lib: Fix inverted `getentropy()` return in `writeRandomBytes_getentropy`"
+    },
     "CVE-2026-66046": {
+      "98599f6dcc2b460410881fe420f5f55d6bec63bf": "lib: Fix out-of-bounds read from hash table entries created by dtdCopy\n\nCommit f8f7c4ff grew the entries of ELEMENT_TYPE member\n.defaultAttForName from structure NAMED to the larger structure\nNAME_AND_DEFAULT_ATTRIBUTE and adjusted function defineAttribute\naccordingly, but function dtdCopy kept creating entries of size\nsizeof(NAMED).  Because function lookup allocates exactly createSize\nbytes, function storeAtts reads member .attIndex past the end of those\nentries whenever attributes are parsed by a parser that was created by\nXML_ExternalEntityParserCreate.\n\nThat out-of-bounds value is then used as an index into member\n.defaultAtts, so the effects range from silently not normalizing\nwhitespace in attributes that are not of type CDATA, to dereferencing a\nwild pointer: a release build of master segfaults in function storeAtts\non the document used by the new test.  A zero-filled heap happens to\nyield index 0, which is why the existing tests did not catch this.\n\nMember .attIndex is now stored the way function defineAttribute stores\nit, i.e. keeping the index of the first declaration, so that a copied\nDTD resolves attributes exactly like the DTD that it was copied from.\n\nThis was found while backporting the fix for CVE-2026-66046 onto Expat\n2.6.4 for the OpenCloudOS Stream distribution.  Only master is affected,\nno released version of Expat contains commit f8f7c4ff.",
       "e97a6c453a4ef0595953e3f72f64ad1b74afc96a": "Merge pull request #1321 from libexpat/vulncheck-2026-07-24\n\n[CVE-2026-66046] lib: Migrate `.isCdata` lookup from a linear loop to a hash table lookup",
       "392978976b6930864889294fa2fa8a6588aed656": "Changes: Document CVE-2026-66046"
     },

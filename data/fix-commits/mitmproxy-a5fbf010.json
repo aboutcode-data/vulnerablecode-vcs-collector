@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/mitmproxy/mitmproxy",
   "vulnerabilities": {
+    "CVE-2014-3566": {
+      "f384cb740183e14582bd748b583b82d081f5c002": "net.tls: handle SSL.Error from set_min/max_proto_version in is_supported_version (#8294)\n\n* net.tls: handle SSL.Error from set_min/max_proto_version in is_supported_version\n\nis_supported_version() built an SSL.Context, set the min/max protocol\nversion, then probed support with client_conn.recv(). Only the recv()\nprobe was wrapped in try/except SSL.Error.\n\nOn OpenSSL builds that have dropped a protocol version entirely (e.g.\nSSLv3 after POODLE / CVE-2014-3566, see pyca/cryptography#9523),\nset_min_proto_version(SSL3_VERSION) raises SSL.Error already at\ncontext-setup time, before the guarded recv(). The exception then\npropagated unhandled and crashed callers such as\nTlsConfig._warn_unsupported_version, which iterates over every Version to\nbuild the \"supported versions\" list.\n\nMove the protocol-version setters and connection setup inside the\nexisting try, so a setup-time SSL.Error is treated the same as a\nprobe-time one: the version is reported as unsupported (return False)\ninstead of raising. Behavior for currently-supported versions is\nunchanged.\n\nAdd a regression test that monkeypatches SSL.Context.set_min_proto_version\nto raise SSL.Error, reproducing the crash path deterministically on any\nOpenSSL build, and clear the is_supported_version LRU cache around it.\n\nCloses #8264\n\n* Remove test for SSL context setup error handling\n\n---------\n\nCo-authored-by: Maximilian Hils <git@maximilianhils.com>"
+    },
     "GHSA-527G-3W9M-29HV": {
       "71c9234057922bc29b9734ec408d712113d294d2": "Fix LDAP Sanitization (#8178)\n\nThis fixes GHSA-527g-3w9m-29hv."
     },
