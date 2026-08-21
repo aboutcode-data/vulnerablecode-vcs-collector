@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/apache/hadoop",
   "vulnerabilities": {
+    "CVE-2026-49844": {
+      "f5c7d36fadb5df3ae5badf85086c3cfed7c3ae32": "HADOOP-19968. Upgrade to log4j 2.26.1 due to CVE-2026-49844 (#8695)\n\nAuthored-by: PJ Fanning <fanningpj@apache.org>\nReviewed-by: Shilun Fan <slfan1989@apache.org>\nSigned-off-by: Cheng Pan <chengpan@apache.org>",
+      "5d1cd61f994d005242ce72706b1a64de35281db4": "HADOOP-19968. Upgrade to log4j 2.26.1 due to CVE-2026-49844 (#8695)\n\nAuthored-by: PJ Fanning <fanningpj@apache.org>\nReviewed-by: Shilun Fan <slfan1989@apache.org>\nSigned-off-by: Cheng Pan <chengpan@apache.org>"
+    },
     "CVE-2026-59901": {
       "5a2a4923d52bc62ed0c114150a607bdb37aca8aa": "HADOOP-19957. Upgrade Netty to 4.1.137 due to CVEs (#8667) Contributed by PJ Fanning\n\n* HADOOP-19957. Upgrade Netty to 4.1.136 due to CVE-2026-59901\n\nReviewed-by: Ayush Saxena <ayushsaxena@apache.org>\nSigned-off-by: Shilun Fan <slfan1989@apache.org>"
     },

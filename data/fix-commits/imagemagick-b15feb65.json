@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-F2R2-QW7G-3C8X": {
+      "326451aae51ac2dabc99fe66e063de6ec14cf8c8": "Fixed double free in non cairo builds (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-f2r2-qw7g-3c8x)"
+    },
     "GHSA-X8G2-7R3W-H44P": {
       "fb0b4ffc4b798b9b36744b978726b7d7ec39bd8d": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-x8g2-7r3w-h44p"
     },
