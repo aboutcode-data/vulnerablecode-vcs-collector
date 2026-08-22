@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-4JV7-Q6XW-6F4X": {
+      "d56cab9f2253373e57c2e77809ab12abbbbdd680": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-4jv7-q6xw-6f4x"
+    },
     "GHSA-27M9-54JX-FGVQ": {
       "6ba345f88a14fcce35c723c231914ae054c4281a": "Don't throw a fatal exception when hitting a recursion depth (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-27m9-54jx-fgvq)."
     },

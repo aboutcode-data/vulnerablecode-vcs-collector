@@ -1,6 +1,15 @@
 {
   "vcs_url": "https://github.com/bcgit/bc-java",
   "vulnerabilities": {
+    "CVE-2024-7246": {
+      "cf054e182c2e6f8feb507d6ee83e8b889897e33a": "Take the MLS interop harness gRPC and protobuf dependencies by Maven coordinate at gRPC 1.83.1 and protobuf-java 3.25.9 rather than as jars hand-placed under test/libs, clearing CVE-2024-7246, CVE-2025-55163 and CVE-2024-7254, and dropping the twelve superseded jars a dependency scanner could not see."
+    },
+    "CVE-2025-55163": {
+      "cf054e182c2e6f8feb507d6ee83e8b889897e33a": "Take the MLS interop harness gRPC and protobuf dependencies by Maven coordinate at gRPC 1.83.1 and protobuf-java 3.25.9 rather than as jars hand-placed under test/libs, clearing CVE-2024-7246, CVE-2025-55163 and CVE-2024-7254, and dropping the twelve superseded jars a dependency scanner could not see."
+    },
+    "CVE-2024-7254": {
+      "cf054e182c2e6f8feb507d6ee83e8b889897e33a": "Take the MLS interop harness gRPC and protobuf dependencies by Maven coordinate at gRPC 1.83.1 and protobuf-java 3.25.9 rather than as jars hand-placed under test/libs, clearing CVE-2024-7246, CVE-2025-55163 and CVE-2024-7254, and dropping the twelve superseded jars a dependency scanner could not see."
+    },
     "CVE-2024-29857": {
       "40400826b535f0e1d47391732c0180d8eb72d5c0": "Add Properties.EC_MAX_F2M_FIELD_SIZE for the org.bouncycastle.ec.max_f2m_field_size F2m field size bound (CVE-2024-29857) and use it in ECCurve rather than the inlined literal, mirroring the constant into the jdk1.4 overlay.",
       "30814a5091c7a2b4ce1e1332df189215e704518a": "Add missing 1.78 defects-fixed entries for CVE-2024-14041 (KyberSlash) and CVE-2024-29857 (F2m field size), cross-reference every 1.78 advisory CVE from its defects-fixed entry, and credit the Robusta team's constant-time analysis."
