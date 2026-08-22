@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/jellyfin/jellyfin",
   "vulnerabilities": {
     "GHSA-WWWM-PX48-FPVQ": {
+      "c04f11bd76acd19a1440bbb4351160642a09ef9c": "Merge pull request #17685 from jellyfin/GHSA-wwwm-px48-fpvq-v12\n\nFix GHSA-wwwm-px48-fpvq",
       "a8da0664a387aa871f7c0ee03fd3f53c82d00346": "Fix GHSA-wwwm-px48-fpvq\n\n# Conflicts:\n#\tMediaBrowser.MediaEncoding/Subtitles/SubtitleEncoder.cs",
       "f2b358a3c86e8012a2c7cdd3c142015f36ad9ce6": "Merge commit from fork\n\nFix GHSA-wwwm-px48-fpvq",
       "19a35a6159a91bd1aad5d0a4c03fa7cb4bcab5a2": "Fix GHSA-wwwm-px48-fpvq"
