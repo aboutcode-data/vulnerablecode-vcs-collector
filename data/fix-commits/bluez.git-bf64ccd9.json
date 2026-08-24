@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://git.kernel.org/pub/scm/bluetooth/bluez.git",
   "vulnerabilities": {
+    "GHSA-68H6-5QGP-3975": {
+      "381b5d0d208972586282116d333865ba93b8dec2": "eir: Fix stack buffer overflow when parsing the remote name\n\nname2utf8() copies len bytes into a HCI_MAX_NAME_LENGTH + 2, so 250,\nbyte stack buffer without clamping len first.\n\neir_parse() only rejects a field once it runs past the end of the EIR\ndata, and that data is up to 255 bytes, so field_len can be 254 and the\ndata_len passed to name2utf8() can reach 253. strncpy() then writes 253\nbytes into the 250 byte buffer and leaves it unterminated, so the\nfollowing g_strstrip() and g_strdup() also read past the end.\n\nThe EIR data comes from a remote device, either in an extended inquiry\nresponse or in an advertising report, so the length is attacker\ncontrolled.\n\nClamp len to HCI_MAX_NAME_LENGTH, which is what the local name is\nlimited to anyway, and what ad_replace_name() already clamps to.\n\nFixes: https://github.com/bluez/bluez/security/advisories/GHSA-68h6-5qgp-3975\nAssisted-by: Claude:claude-opus-5"
+    },
     "GHSA-4P57-MRCV-R2JC": {
       "95fa5735562e9f020c174199f19016cbb1c09ff2": "unit: Add test for slow element_end() append\n\nThis uses 40k iterations as this takes a visible amount of time on a\npretty fast desktop machine (3-4 secs on an i9 9900k).\n\nSee: https://github.com/bluez/bluez/security/advisories/GHSA-4p57-mrcv-r2jc"
     },

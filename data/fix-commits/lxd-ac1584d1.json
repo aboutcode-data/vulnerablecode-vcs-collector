@@ -1,6 +1,34 @@
 {
   "vcs_url": "https://github.com/canonical/lxd",
   "vulnerabilities": {
+    "CVE-2026-66897": {
+      "895bdceedaab996f2a9d8450a5064cb0b10d92d7": "Security fix for CVE-2026-66897 (stable-4.0) (#18911)\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv).",
+      "ddc9146a19de4e7ed1420620c74903b8121da113": "Security fix for CVE-2026-66897 (stable-5.0) (#18907)\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv).",
+      "85b333df894eac772f6cb931d29c8e909608c02e": "Security fix for CVE-2026-66897 and release note updates (release-5.21.7)  (#18908)\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv)\nand release note updates.",
+      "029ed75692cb6e3e5896251568d4ff8b37467694": "Security fix for CVE-2026-66897 (release-6.9) (#18909)\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv).",
+      "628b9165b9a52754f27125576e0f92321b3d5091": "Security fix for CVE-2026-66897 (release-4.0.13) (#18912)\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv).",
+      "afac395799d7e7e352dcd79b8b621682274b63c9": "Security fix for CVE-2026-66897 (release-5.0.9) (#18910)\n\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv).",
+      "8bb8b2994a6540634d4f7fd2f2e9810127ea9279": "Security fix for CVE-2026-66897 and release note updates (stable-5.21) (#18906)\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv)\nand release note updates.",
+      "eae9c8d094bb542e4be01893f76e42b5132bc702": "Security fix for CVE-2026-66897 and release note updates (#18905)\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv)\nand release note updates.",
+      "e9ae13cad215cd396f4ddce1d80bf83fc5816189": "doc: Adds reference to CVE-2026-66897 that was included in the LTS releases\n\nSigned-off-by: Thomas Parrott <thomas.parrott@canonical.com>",
+      "afb4276475536ad8193e74c40455fc8289676846": "doc: Adds reference to CVE-2026-66897 that was included in the LTS releases\n\nSigned-off-by: Thomas Parrott <thomas.parrott@canonical.com>",
+      "f0c052ca42c9ace0cbd1b4a8ec3d137a55e90108": "doc: Adds reference to CVE-2026-66897 that was included in the LTS releases\n\nSigned-off-by: Thomas Parrott <thomas.parrott@canonical.com>",
+      "e758c993767e98081f648bccf35090d06ec9c839": "doc: Adds reference to CVE-2026-66897 that was included in the interim 6.9-ab8fad2 release\n\nSigned-off-by: Thomas Parrott <thomas.parrott@canonical.com>"
+    },
+    "GHSA-Q39M-8FX9-42FV": {
+      "895bdceedaab996f2a9d8450a5064cb0b10d92d7": "Security fix for CVE-2026-66897 (stable-4.0) (#18911)\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv).",
+      "ddc9146a19de4e7ed1420620c74903b8121da113": "Security fix for CVE-2026-66897 (stable-5.0) (#18907)\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv).",
+      "85b333df894eac772f6cb931d29c8e909608c02e": "Security fix for CVE-2026-66897 and release note updates (release-5.21.7)  (#18908)\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv)\nand release note updates.",
+      "029ed75692cb6e3e5896251568d4ff8b37467694": "Security fix for CVE-2026-66897 (release-6.9) (#18909)\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv).",
+      "628b9165b9a52754f27125576e0f92321b3d5091": "Security fix for CVE-2026-66897 (release-4.0.13) (#18912)\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv).",
+      "afac395799d7e7e352dcd79b8b621682274b63c9": "Security fix for CVE-2026-66897 (release-5.0.9) (#18910)\n\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv).",
+      "8bb8b2994a6540634d4f7fd2f2e9810127ea9279": "Security fix for CVE-2026-66897 and release note updates (stable-5.21) (#18906)\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv)\nand release note updates.",
+      "eae9c8d094bb542e4be01893f76e42b5132bc702": "Security fix for CVE-2026-66897 and release note updates (#18905)\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv)\nand release note updates.",
+      "bcddff5db70d1d501b2410e3ea3a332c3ba1ee92": "lxd/instance/drivers/driver/qemu: Use securePathJoin in templateApplyNow\n\nFixes https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv\n\nSigned-off-by: Thomas Parrott <thomas.parrott@canonical.com>",
+      "43d4802819c9eb083721ef7d872c6a1970ad22b1": "lxd/instance/drivers/driver/lxc: Use securePathJoin in templateApplyNow\n\nFixes https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv\n\nSigned-off-by: Thomas Parrott <thomas.parrott@canonical.com>",
+      "6528392749660b34689cf7c9d75356a97e187d87": "lxd/instance/drivers/driver/qemu: Use securePathJoin in templateApplyNow\n\nFixes https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv\n\nSigned-off-by: Thomas Parrott <thomas.parrott@canonical.com>",
+      "3cd6223c741f8e8943e9dd3ccf2e53fec7fb0c4c": "lxd/instance/drivers/driver/lxc: Use securePathJoin in templateApplyNow\n\nFixes https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv\n\nSigned-off-by: Thomas Parrott <thomas.parrott@canonical.com>"
+    },
     "GHSA-FV82-V4FJ-MM4M": {
       "3f7eb8788dd04efc841bc9040b732d0f1d84c28b": "lxd/archive: Reject unconfined backup.yaml file after unpack\n\nFixes https://github.com/canonical/lxd/security/advisories/GHSA-fv82-v4fj-mm4m.\n\nSigned-off-by: Julian Peliz\u00e4us <julian.pelizaeus@canonical.com>",
       "6586f28f96ea77710fe17b7cc1b66f9ce44d432b": "lxd/archive: Reject unconfined backup.yaml file after unpack\n\nFixes https://github.com/canonical/lxd/security/advisories/GHSA-fv82-v4fj-mm4m.\n\nSigned-off-by: Julian Peliz\u00e4us <julian.pelizaeus@canonical.com>",
