@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-75900": {
+      "217f49118041ac8f7c54f3130cc5ffdcfe5abaa6": "app-crypt/swtpm: add 0.10.2\n\nFix CVE-2026-75900\n\nBug: https://bugs.gentoo.org/981050\nSigned-off-by: Christopher Byrne <salah.coronya@gmail.com>\nPart-of: https://github.com/gentoo/gentoo/pull/46693\nCloses: https://github.com/gentoo/gentoo/pull/46693\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-41992": {
+      "6df401bb7db4d5a5e4cf416388ed08b3f2232631": "app-arch/gzip: fix CVE-2026-41992\n\nAlso, fix a quoting issue in zgrep (https://debbugs.gnu.org/80868) but\nupstream don't consider that a security issue.\n\nBug: https://bugs.gentoo.org/981308\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
     "CVE-2026-44950": {
       "14b8bbd54067df58ab67d18c6d975c2d1b31870b": "x11-libs/libXfont2: add 2.0.9\n\n- fixes for CVE-2026-44950, CVE-2026-59679\n- fontserver support now disabled by default (upstream change)\n\nBug: https://bugs.gentoo.org/980377\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1620\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1620\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nSigned-off-by: Matt Turner <mattst88@gentoo.org>"
     },
