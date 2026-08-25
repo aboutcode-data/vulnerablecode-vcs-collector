@@ -1,6 +1,14 @@
 {
   "vcs_url": "https://github.com/angular/angular-cli",
   "vulnerabilities": {
+    "GHSA-M28W-2PQF-7QGJ": {
+      "94b620acd76e39c7d5cc8527dfc6fe9096855cbd": "fix(@angular-devkit/build-angular): update webpack-dev-server to 5.2.6\n\nMitigates GHSA-m28w-2pqf-7qgj and GHSA-f5vj-f2hx-8m93.\nFixes #33903",
+      "b0047b04f56f5cb3fb8e4465ba0fad777497144a": "fix(@angular-devkit/build-angular): update webpack-dev-server to 5.2.6\n\nMitigates GHSA-m28w-2pqf-7qgj and GHSA-f5vj-f2hx-8m93.\nFixes #33903"
+    },
+    "GHSA-F5VJ-F2HX-8M93": {
+      "94b620acd76e39c7d5cc8527dfc6fe9096855cbd": "fix(@angular-devkit/build-angular): update webpack-dev-server to 5.2.6\n\nMitigates GHSA-m28w-2pqf-7qgj and GHSA-f5vj-f2hx-8m93.\nFixes #33903",
+      "b0047b04f56f5cb3fb8e4465ba0fad777497144a": "fix(@angular-devkit/build-angular): update webpack-dev-server to 5.2.6\n\nMitigates GHSA-m28w-2pqf-7qgj and GHSA-f5vj-f2hx-8m93.\nFixes #33903"
+    },
     "CVE-2026-13697": {
       "f7f60e69e77cda60378543a9ca9cc2c76c0bf34f": "fix(@angular/build): bump undici to 7.29.0\n\nBumps undici to version 7.29.0 to resolve a number of CVEs including CVE-2026-13697 (GHSA-4cwx-7wf7-3272) and CVE-2026-16729 (GHSA-v3r7-h72x-cjcm).\n\nCloses #33822",
       "f348efe8b6d9c9d7014afb331eecda0a9478ba0a": "fix(@angular-devkit/build-angular): bump undici to 7.29.0\n\nBumps undici to version 7.29.0 to resolve a number of CVEs including CVE-2026-13697 (GHSA-4cwx-7wf7-3272) and CVE-2026-16729 (GHSA-v3r7-h72x-cjcm).\n\nCloses #33822"
