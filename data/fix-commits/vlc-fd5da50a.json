@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/videolan/vlc",
   "vulnerabilities": {
+    "GHSA-86RM-G7QF-J2FH": {
+      "b6d509c768f0f14038001237fab8c166be1301ed": "contrib: zbvi: update to 0.2.45\n\nIt fixes some security issues [^1] [^2].\n\n[^1]: https://github.com/zapping-vbi/zvbi/security/advisories/GHSA-86rm-g7qf-j2fh\n[^2]: https://github.com/zapping-vbi/zvbi/blob/main/ChangeLog"
+    },
     "CVE-2025-27516": {
       "7c7020d0a784a62ec5002ed685e636a1808df8f0": "contrib: update jinja to 3.1.6\n\nFixes CVE-2025-27516."
     },
