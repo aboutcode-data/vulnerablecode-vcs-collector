@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/vim/vim",
   "vulnerabilities": {
+    "GHSA-CVC5-P4X9-3F9F": {
+      "e41756455701b9419f2493ab2e2e0f01557fe939": "patch 9.2.1014: [security]: overflow in undo file entry size check on 32-bit arch\n\nProblem:  [security]: The check that guards the allocation of the line\n          array in unserialize_uep() uses the size of a pointer instead of\n          the size of the array element.  On 32-bit systems the\n          multiplication for the allocation can therefore overflow, so that\n          a crafted undo file leads to an undersized allocation and an\n          out-of-bounds write (Yazan Balawneh, after v8.1.0688).\nSolution: Use the size of undoline_T for the check, as that is what is\n          allocated.\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-cvc5-p4x9-3f9f\n\nrelated: v8.1.0688\n\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
+    },
+    "GHSA-VFC7-MHVM-GJP8": {
+      "e4f51e505ae0d64c4797c89314ecff1be88135be": "patch 9.2.1013: [security]: out-of-bounds access in libvterm CSI 8 t resize\n\nProblem:  [security]: With libvterm the CSI 8 ; rows ; cols t may use raw\n\t  terminal values without validating bounds, causing an out-of-bounds\n          access and heap-buffer-overflow (Yazan Balawneh).\nSolution: Clamp rows and columns to VTERM_MAX_COLS and VTERM_MAX_ROWS in\n          on_resize.\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-vfc7-mhvm-gjp8\n\nrelated: v9.2.0569\n\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-R77M-8M55-RPR6": {
       "331d5d67028505c5b6043603a57d1e8497b922b5": "patch 9.2.1011: [security]: arbitrary Ex command execution during C omni-completion\n\nProblem:  arbitrary Ex command execution during C omni-completion via\n          tag file names (Yazan Balawneh)\nSolution: Escape the | for all returned tag files\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-r77m-8m55-rpr6\n\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
     },

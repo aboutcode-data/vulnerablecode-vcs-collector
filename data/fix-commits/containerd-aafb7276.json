@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/containerd/containerd",
   "vulnerabilities": {
+    "GHSA-2V4P-QF9Q-27WJ": {
+      "89ba8063e1b1a6b03c20b268128059fe926a46f0": "vendor: google.golang.org/grpc v1.83.2\n\ncontains a fix for [GHSA-2v4p-qf9q-27wj]\n\nfull diff: https://github.com/grpc/grpc-go/compare/v1.83.1...v1.83.2\n\n[GHSA-2v4p-qf9q-27wj]: https://github.com/grpc/grpc-go/security/advisories/GHSA-2v4p-qf9q-27wj\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
+    },
     "CVE-2026-56865": {
       "b665fde220ff77431f28671253329285542a37e0": "Update Go to 1.26.6\n\nThis release includes 10 security fixes covering module checksum\nverification, denial-of-service protections, parser crashes, XSS, and\nIDNA hostname validation, most notably:\n\n- CVE-2026-56865: prevent malicious GOPROXY servers from bypassing sumdb transparency-log verification: https://go.dev/issue/80744\n- CVE-2026-56864: prevent malicious GOSUMDB servers from serving unauthenticated module content: https://go.dev/issue/80745\n- CVE-2026-56859: add recursion limits for XML decoding: https://go.dev/issue/80481\n- CVE-2026-56853: apply ReadHeaderTimeout during unencrypted HTTP/2 detection: https://go.dev/issue/80205\n- CVE-2026-56860: prevent quadratic behavior in URL path resolution: https://go.dev/issue/80494\n- CVE-2026-46600: prevent panics when parsing malformed SVCB/HTTPS DNS records: https://go.dev/issue/79795\n- CVE-2026-56862: limit excessive TLS post-handshake messages: https://go.dev/issue/80528\n- CVE-2026-56858: fix JavaScript regexp context tracking in html/template: https://go.dev/issue/80435\n- CVE-2026-39821: reject invalid ASCII-only Punycode labels: https://go.dev/issue/78760\n- CVE-2026-33818: add recursion limits for ASN.1 unmarshalling: https://go.dev/issue/80405\n\nSigned-off-by: Pawe\u0142 Gronowski <pawel.gronowski@docker.com>"
     },
