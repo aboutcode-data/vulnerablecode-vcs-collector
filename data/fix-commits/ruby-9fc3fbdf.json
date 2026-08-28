@@ -2,9 +2,11 @@
   "vcs_url": "https://github.com/ruby/ruby",
   "vulnerabilities": {
     "CVE-2026-80212": {
+      "619ea0f602ac09e7c9ea626c572c3ce7465e8316": "Bump up resolv-0.3.2 for Ruby 3.3\n\nBackport of the August 2026 resolv security release.\n\nCVE-2026-80212\nCVE-2026-80213\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
       "2da9a6ef3f423fb85acfd5c41150bb22cdeb14ef": "Bump up resolv-0.7.2 for Ruby 4.0\n\nBackport of the August 2026 resolv security release.\n\nCVE-2026-80212\nCVE-2026-80213\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
     },
     "CVE-2026-80213": {
+      "619ea0f602ac09e7c9ea626c572c3ce7465e8316": "Bump up resolv-0.3.2 for Ruby 3.3\n\nBackport of the August 2026 resolv security release.\n\nCVE-2026-80212\nCVE-2026-80213\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
       "2da9a6ef3f423fb85acfd5c41150bb22cdeb14ef": "Bump up resolv-0.7.2 for Ruby 4.0\n\nBackport of the August 2026 resolv security release.\n\nCVE-2026-80212\nCVE-2026-80213\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
     },
     "CVE-2026-47240": {
