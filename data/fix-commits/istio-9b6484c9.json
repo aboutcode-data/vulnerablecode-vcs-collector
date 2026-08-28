@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/istio/istio",
   "vulnerabilities": {
+    "CVE-2026-73551": {
+      "eed52ebb66ade45214088877b0f82855d954060d": "Update proxy SHA and normalization test for Envoy CVE-2026-73551 path parameter fix (#61478)\n\nEnvoy's security patch (envoyproxy/envoy#47001) now strips path\nparameters from dot/dotdot segments when normalize_path is enabled,\ncorrectly resolving /..;/admin to /admin. Update the test expectation\nto reflect this intentional security hardening.\n\nSigned-off-by: Jacek Ewertowski <jacek.ewertowski1@gmail.com>"
+    },
     "CVE-2025-27144": {
       "72fd7c2b9ac3b41e1660cb0ab7830fdd7d6e661a": "bump go-jose to 4.0.5 to address CVE-2025-27144 (#55351) (#56139)\n\n* bump go-jose to 4.0.5 to address CVE-2025-27144 (#55351)\n\n* make gen\n\n---------\n\nCo-authored-by: Daniel Grimm <dgrimm@redhat.com>",
       "07f3bf2f2d061dc702f225c1dc53125234beb35d": "bump go-jose to 4.0.5 to address CVE-2025-27144 (#55373)",

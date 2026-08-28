@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/strapi/strapi",
   "vulnerabilities": {
+    "GHSA-HMJ8-698P-8J9H": {
+      "37c91d4f8d151b8eb962cead974543410592ee68": "security: broaden DTS exclusion to cover entity payload content, not just file paths\n\nThe first pass of this exclusion only named asset-metadata path traversal.\nA separate report class (GHSA-hmj8-698p-8j9h, and the second sink in\nGHSA-56w6-q722-pp9j) argues that unvalidated admin::user/role/api-token\nentity injection over a push token is a distinct, more severe issue,\nreasoning from the CLI's client-side IGNORED_CONTENT_TYPE_PREFIXES filter\nas if it were a security boundary. It isn't: that filter is a default\nconvenience for ordinary content migrations, not evidence Strapi intends\nto block administrative content from being mirrored. A legitimate\nenvironment-mirror operation must be able to carry the real admin roster\nalong with content, and the receiving side of a mirror has no way to\ndistinguish that from an attacker-crafted payload - only token possession\nis checkable. Broadened the exclusion's wording to say so explicitly."
+    },
+    "GHSA-56W6-Q722-PP9J": {
+      "37c91d4f8d151b8eb962cead974543410592ee68": "security: broaden DTS exclusion to cover entity payload content, not just file paths\n\nThe first pass of this exclusion only named asset-metadata path traversal.\nA separate report class (GHSA-hmj8-698p-8j9h, and the second sink in\nGHSA-56w6-q722-pp9j) argues that unvalidated admin::user/role/api-token\nentity injection over a push token is a distinct, more severe issue,\nreasoning from the CLI's client-side IGNORED_CONTENT_TYPE_PREFIXES filter\nas if it were a security boundary. It isn't: that filter is a default\nconvenience for ordinary content migrations, not evidence Strapi intends\nto block administrative content from being mirrored. A legitimate\nenvironment-mirror operation must be able to carry the real admin roster\nalong with content, and the receiving side of a mirror has no way to\ndistinguish that from an attacker-crafted payload - only token possession\nis checkable. Broadened the exclusion's wording to say so explicitly."
+    },
     "GHSA-FRVP-7C67-39W9": {
       "c9dd7f159b1f8aec2f36d8c1a80407dadd220f02": "security(deps): bump @modelcontextprotocol/sdk to 1.30.0 (#27301)\n\nPulls @hono/node-server >=2.0.5 and clears GHSA-frvp-7c67-39w9\n(Windows serve-static path traversal) for the MCP HTTP stack."
     },

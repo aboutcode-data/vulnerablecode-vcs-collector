@@ -1,6 +1,22 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-2W4H-697J-4VRM": {
+      "86672a16cedbf5a06d64e629e058310d683bb48e": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-2w4h-697j-4vrm"
+    },
+    "GHSA-4FQ9-VRX7-GV92": {
+      "c69f54e1c8660e45f2ff83c354bf924a946d9356": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-4fq9-vrx7-gv92"
+    },
+    "GHSA-5RG6-J44Q-Q892": {
+      "78378cd623468760bee82a5930cb3011725916f8": "Escape the labels to prevent code injection (GHSA-5rg6-j44q-q892)"
+    },
+    "GHSA-6XF5-C3JX-RP39": {
+      "5d29c094020612dc8fb471b10fc1d1cc6e9e4378": "Corrected the call to CheckPrimitiveExtent to fix the use of uninitialized heap memory (GHSA-6xf5-c3jx-rp39)"
+    },
+    "GHSA-VCJJ-32HG-QPX5": {
+      "dcdbbf4278fab20a32a4ad80e64cb95c368ca8dd": "More fixes for GHSA-vcjj-32hg-qpx5.",
+      "82f373fedb3425c83a239103ab86f4fa86fd49ac": "Fixed the policy check for coders (GHSA-vcjj-32hg-qpx5)"
+    },
     "GHSA-R868-PMWH-FV2C": {
       "768bdd0dbb9a9ad743b6a6e557126b788b325970": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-r868-pmwh-fv2c"
     },
