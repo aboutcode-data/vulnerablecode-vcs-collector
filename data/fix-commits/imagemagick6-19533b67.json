@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-92RW-C5MW-27V4": {
+      "3b124bb81d3c53ec7d2b46f5ea04c00c4b07b9b3": "Added missing null check to avoid a null pointer dereference (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-92rw-c5mw-27v4)"
+    },
     "GHSA-89WQ-F8F6-2J2V": {
       "4332e26659c849bf126aecb215482de1eed73308": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-89wq-f8f6-2j2v"
     },
