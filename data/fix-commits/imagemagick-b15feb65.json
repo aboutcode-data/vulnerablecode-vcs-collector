@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
     "GHSA-3RJR-534C-8V67": {
+      "4fe31106f41fa114945ceaf93226fb151ada0d19": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-3rjr-534c-8v67",
       "282f455de5c80a7a0d1a713087db9c8fce344141": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-3rjr-534c-8v67"
     },
     "GHSA-92RW-C5MW-27V4": {
