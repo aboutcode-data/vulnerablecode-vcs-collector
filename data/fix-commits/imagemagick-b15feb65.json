@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-89WQ-F8F6-2J2V": {
+      "d779ac52f92c3045ced59362b483bee25a3fc784": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-89wq-f8f6-2j2v"
+    },
     "GHSA-V45J-X8P4-3MH4": {
       "f491576297141ff685dc4460d811986f5b6b6cec": "Use a better algorithm to determine the numerator and denominator (GHSA-v45j-x8p4-3mh4)"
     },
