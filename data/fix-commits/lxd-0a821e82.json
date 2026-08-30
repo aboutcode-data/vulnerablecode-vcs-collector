@@ -2,9 +2,11 @@
   "vcs_url": "https://github.com/lxc/lxd",
   "vulnerabilities": {
     "CVE-2026-81500": {
+      "8723e980417255462f5123b2aff30973673b2076": "client/images: Prevent path traversal in downloaded image name\n\nThe local filename for an exported image came from server-controlled\ndata (Content-Disposition for unified images, the simplestreams index\npath) and was joined with the target directory. Basename it.\n\nThis addresses CVE-2026-81500\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
       "9e188e31e43c21fa8f2a4cac265aa246d4c947f2": "client/images: Prevent path traversal in downloaded image name\n\nThe local filename for an exported image came from server-controlled\ndata (Content-Disposition for unified images, the simplestreams index\npath) and was joined with the target directory. Basename it.\n\nThis addresses CVE-2026-81500\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
     },
     "CVE-2026-81501": {
+      "2521bf480af23765ea25754fd9a0a2ca146945c6": "incusd/images: Check access before reusing cross-project image\n\nimageDownload reused an image from another project without checking the\ncaller could view it, letting a client that knew a private fingerprint\nimport it. Only reuse it directly when public or viewable, otherwise\ndownload it (proving access) and dedupe against the on-disk copy.\n\nThis addresses CVE-2026-81501\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>",
       "83682ab16af5777b2a5650bb7c9878d57d0187f9": "incusd/images: Check access before reusing cross-project image\n\nimageDownload reused an image from another project without checking the\ncaller could view it, letting a client that knew a private fingerprint\nimport it. Only reuse it directly when public or viewable, otherwise\ndownload it (proving access) and dedupe against the on-disk copy.\n\nThis addresses CVE-2026-81501\n\nSigned-off-by: St\u00e9phane Graber <stgraber@stgraber.org>"
     },
     "GHSA-6V6X-387M-RJ4W": {
