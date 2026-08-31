@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/canonical/lxd",
   "vulnerabilities": {
+    "CVE-2026-30405": {
+      "40a14d0d94cbbff4e67f43283756a0c9ea2ae82a": "lxd/bgp/server: switch from `github.com/osrg/gobgp/v3` to `github.com/osrg/gobgp/v4`\n\nhttps://github.com/advisories/GHSA-4p9m-8gc4-rw2h (GO-2026-4736/CVE-2026-30405)\nis only fixed in v4.\n\nTweak the error inspection in `removePrefixByUUID` to be more specific while\nstill matching the upstream error.\n\nhttps://github.com/osrg/gobgp/blob/a31017415c8e85fdc2d30c43fcbd6f3cab7ae760/pkg/server/server.go#L2544-L2546\n```\n\t\t\tif len(deletePathList) == 0 {\n\t\t\t\treturn fmt.Errorf(\"can't find a specified path(s) with the given UUID(s)\")\n\t\t\t}\n```\n\nAlso, rename `family` variable to avoid name clashes.\n\nSigned-off-by: Simon Deziel <simon.deziel@canonical.com>"
+    },
+    "GHSA-4P9M-8GC4-RW2H": {
+      "40a14d0d94cbbff4e67f43283756a0c9ea2ae82a": "lxd/bgp/server: switch from `github.com/osrg/gobgp/v3` to `github.com/osrg/gobgp/v4`\n\nhttps://github.com/advisories/GHSA-4p9m-8gc4-rw2h (GO-2026-4736/CVE-2026-30405)\nis only fixed in v4.\n\nTweak the error inspection in `removePrefixByUUID` to be more specific while\nstill matching the upstream error.\n\nhttps://github.com/osrg/gobgp/blob/a31017415c8e85fdc2d30c43fcbd6f3cab7ae760/pkg/server/server.go#L2544-L2546\n```\n\t\t\tif len(deletePathList) == 0 {\n\t\t\t\treturn fmt.Errorf(\"can't find a specified path(s) with the given UUID(s)\")\n\t\t\t}\n```\n\nAlso, rename `family` variable to avoid name clashes.\n\nSigned-off-by: Simon Deziel <simon.deziel@canonical.com>"
+    },
     "CVE-2026-66897": {
       "895bdceedaab996f2a9d8450a5064cb0b10d92d7": "Security fix for CVE-2026-66897 (stable-4.0) (#18911)\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv).",
       "ddc9146a19de4e7ed1420620c74903b8121da113": "Security fix for CVE-2026-66897 (stable-5.0) (#18907)\n\nFix for\n[CVE-2026-66897](https://github.com/canonical/lxd/security/advisories/GHSA-q39m-8fx9-42fv).",
