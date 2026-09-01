@@ -1,15 +1,20 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-5RG6-J44Q-Q892": {
+      "2ba2edfd04a1ab3d45af4a0dc1e640dde7020192": "More fixes for GHSA-5rg6-j44q-q892.",
+      "78378cd623468760bee82a5930cb3011725916f8": "Escape the labels to prevent code injection (GHSA-5rg6-j44q-q892)"
+    },
+    "GHSA-89WQ-F8F6-2J2V": {
+      "b5da5eac006bae77c587a7c238e346c90ea52acd": "More fixes for GHSA-89wq-f8f6-2j2v",
+      "d779ac52f92c3045ced59362b483bee25a3fc784": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-89wq-f8f6-2j2v"
+    },
     "GHSA-3RJR-534C-8V67": {
       "4fe31106f41fa114945ceaf93226fb151ada0d19": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-3rjr-534c-8v67",
       "282f455de5c80a7a0d1a713087db9c8fce344141": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-3rjr-534c-8v67"
     },
     "GHSA-92RW-C5MW-27V4": {
       "c4b3c9039a1509e3e7869331773865b521a62f93": "Added missing null check to avoid a null pointer dereference (GHSA-92rw-c5mw-27v4)"
-    },
-    "GHSA-89WQ-F8F6-2J2V": {
-      "d779ac52f92c3045ced59362b483bee25a3fc784": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-89wq-f8f6-2j2v"
     },
     "GHSA-V45J-X8P4-3MH4": {
       "f491576297141ff685dc4460d811986f5b6b6cec": "Use a better algorithm to determine the numerator and denominator (GHSA-v45j-x8p4-3mh4)"
@@ -22,9 +27,6 @@
     },
     "GHSA-4FQ9-VRX7-GV92": {
       "c69f54e1c8660e45f2ff83c354bf924a946d9356": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-4fq9-vrx7-gv92"
-    },
-    "GHSA-5RG6-J44Q-Q892": {
-      "78378cd623468760bee82a5930cb3011725916f8": "Escape the labels to prevent code injection (GHSA-5rg6-j44q-q892)"
     },
     "GHSA-6XF5-C3JX-RP39": {
       "5d29c094020612dc8fb471b10fc1d1cc6e9e4378": "Corrected the call to CheckPrimitiveExtent to fix the use of uninitialized heap memory (GHSA-6xf5-c3jx-rp39)"

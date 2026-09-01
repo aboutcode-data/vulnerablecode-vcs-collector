@@ -1,6 +1,14 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-5RG6-J44Q-Q892": {
+      "d5750d7309ef5a8cd561430d932a183e4168f484": "More fixes for https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5rg6-j44q-q892.",
+      "879489740daa44dd72e9405b26c845e8aa3d2f53": "Escape the labels to prevent code injection (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5rg6-j44q-q892)"
+    },
+    "GHSA-89WQ-F8F6-2J2V": {
+      "0d768346a13b63e4d791be4b798482abd1e050d5": "More fixes for https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-89wq-f8f6-2j2v",
+      "4332e26659c849bf126aecb215482de1eed73308": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-89wq-f8f6-2j2v"
+    },
     "GHSA-3RJR-534C-8V67": {
       "742ee222f6df8e7512755a8939b16b90a034a9a7": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-3rjr-534c-8v67",
       "3e0ff6b63c37844732a4f79700bc58ac5370fa25": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-3rjr-534c-8v67"
@@ -8,14 +16,8 @@
     "GHSA-92RW-C5MW-27V4": {
       "3b124bb81d3c53ec7d2b46f5ea04c00c4b07b9b3": "Added missing null check to avoid a null pointer dereference (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-92rw-c5mw-27v4)"
     },
-    "GHSA-89WQ-F8F6-2J2V": {
-      "4332e26659c849bf126aecb215482de1eed73308": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-89wq-f8f6-2j2v"
-    },
     "GHSA-QR53-HC3P-FC62": {
       "49560a1641f72a127e413b9861eca0997fde2b96": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-qr53-hc3p-fc62"
-    },
-    "GHSA-5RG6-J44Q-Q892": {
-      "879489740daa44dd72e9405b26c845e8aa3d2f53": "Escape the labels to prevent code injection (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5rg6-j44q-q892)"
     },
     "GHSA-6XF5-C3JX-RP39": {
       "bfe0117fd9742b3970383e000978d64e5e04372d": "Corrected the call to CheckPrimitiveExtent to fix the use of uninitialized heap memory (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-6xf5-c3jx-rp39)"
