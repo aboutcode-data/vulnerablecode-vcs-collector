@@ -1,6 +1,27 @@
 {
   "vcs_url": "https://github.com/mastodon/mastodon",
   "vulnerabilities": {
+    "GHSA-VX32-X96W-QQ65": {
+      "70f5a5f1085083006843b0f72300f8407962ceec": "Fix GHSA-vx32-x96w-qq65",
+      "5eb9cfe0aa625578cb949eff12d11befa435376e": "Fix GHSA-vx32-x96w-qq65",
+      "f7cf4e4dd21e96a120bd07853b13effe0a84d90d": "Fix GHSA-vx32-x96w-qq65",
+      "fa9dbd167f0d9a4ddd252b7e006fa410a28a39e5": "Fix GHSA-vx32-x96w-qq65",
+      "048317565aef3395da6614cf53006bfb39c22838": "Fix GHSA-vx32-x96w-qq65"
+    },
+    "GHSA-62J4-HVJ7-PX3F": {
+      "e1e5803a287eff3ec42ea16dd3685389577a4a42": "Fixes GHSA-62j4-hvj7-px3f",
+      "a42f018747d22aa6a6741a1402ac0bfbdedbcd30": "Fixes GHSA-62j4-hvj7-px3f",
+      "63eae9292ea5ebdf3742edc7beac89927c3109ca": "Fixes GHSA-62j4-hvj7-px3f",
+      "bd3a357e0826221a4d258680a3a3bc483773bffd": "Fixes GHSA-62j4-hvj7-px3f",
+      "cbc5aeb5042f511f7c1b284e06332678fc02479c": "Fixes GHSA-62j4-hvj7-px3f"
+    },
+    "GHSA-VGM8-FRGH-RH2V": {
+      "05fe4bc0669a03bb9457902de63cbac1754ebdb4": "Fix GHSA-vgm8-frgh-rh2v",
+      "b2095039dae665f41c057d49840855eb763a9592": "Fix GHSA-vgm8-frgh-rh2v",
+      "d8e613a35ca652c7684f5210a184bf92919d6bdd": "Fix GHSA-vgm8-frgh-rh2v",
+      "d52d6e62c3a30638fb07564787da6d86e7d42bbf": "Fix GHSA-vgm8-frgh-rh2v",
+      "f218645f2a92998474af6c6c7d45ff95d8452e08": "Fix GHSA-vgm8-frgh-rh2v"
+    },
     "GHSA-7JVV-FHMG-WPFW": {
       "467c933459c7d0e5513475b9e4888afaedfb1074": "Merge commit from fork\n\n* Fix GHSA-7jvv-fhmg-wpfw\n\n* Fix GHSA-hx34-2pfw-2qfj\n\n* Fix GHSA-vwhj-3g83-v276\n\n* Bump version to v4.6.4",
       "da47a1bd3cd07935d7ca55a1f4f1a76f7f167e0d": "Merge commit from fork\n\n* Fix GHSA-7jvv-fhmg-wpfw\n\n* Fix GHSA-vwhj-3g83-v276\n\n* Bump version to v4.4.21",

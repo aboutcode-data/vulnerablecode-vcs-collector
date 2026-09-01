@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/mattermost/mattermost",
   "vulnerabilities": {
+    "CVE-2026-17106": {
+      "f076092fbcf607d25aa0223a3574296cbd3572ee": "Bump moby/go-archive to v0.3.0 to fix CVE-2026-17106 (symlink attack)\n\nPulled transitively via testcontainers-go; go-archive <0.3.0 is vulnerable\nto a symlink traversal during archive extraction (CWE-59, CVSS 7.1).\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>"
+    },
     "CVE-2020-10675": {
       "190631b6e174a920bd6eb8da708f373f74bc532c": "Suppress CVE-2020-10675 (#14132)\n\nAutomatic Merge"
     }

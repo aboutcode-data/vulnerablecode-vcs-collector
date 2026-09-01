@@ -2,6 +2,9 @@
   "vcs_url": "https://github.com/apache/kafka",
   "vulnerabilities": {
     "CVE-2026-68497": {
+      "e3d4f4755deee0674536ab96e4a4c246499a3996": "KAFKA-21004: Bump jackson to 2.21.6 (#23321)\n\nThis patch fixes a Jackson Databind vulnerability CVE-2026-68497\nhttps://github.com/FasterXML/jackson/wiki/Jackson-Release-2.21.6\n\nReviewers: Ken Huang <s7133700@gmail.com>",
+      "f0a2be3d284464c4c98cff7a669cd8d6f3db8c41": "KAFKA-21004: Bump jackson to 2.21.6 (#23321)\n\nThis patch fixes a Jackson Databind vulnerability CVE-2026-68497\nhttps://github.com/FasterXML/jackson/wiki/Jackson-Release-2.21.6\n\nReviewers: Ken Huang <s7133700@gmail.com>",
+      "3225ce490ef02f6c6c957db3b5683b96a973c8ed": "KAFKA-21004: Bump jackson to 2.21.6 (#23321)\n\nThis patch fixes a Jackson Databind vulnerability CVE-2026-68497\nhttps://github.com/FasterXML/jackson/wiki/Jackson-Release-2.21.6\n\nReviewers: Ken Huang <s7133700@gmail.com>",
       "5aa50d8981ccd0138518cf6b4d097f7a6734ba85": "KAFKA-21004: Bump jackson to 2.21.6 (#23321)\n\nThis patch fixes a Jackson Databind vulnerability CVE-2026-68497\nhttps://github.com/FasterXML/jackson/wiki/Jackson-Release-2.21.6\n\nReviewers: Ken Huang <s7133700@gmail.com>"
     },
     "CVE-2026-44432": {
