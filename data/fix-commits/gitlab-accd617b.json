@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitlab.com/gitlab-org/gitlab",
   "vulnerabilities": {
+    "GHSA-2X63-GW47-W4MM": {
+      "dbec9ef841fec3bf7e893642aeecf33b2f8a77ce": "Bump websocket-driver to 0.8.2 in remaining lockfiles\n\nFix GHSA-2x63-gw47-w4mm by updating websocket-driver from outdated\nversions in two lockfiles that were missed in the initial fix:\n- gems/gitlab-database-load_balancing: 0.8.0 -> 0.8.2\n- vendor/gems/microsoft_graph_mailer: 0.7.5 -> 0.8.2\n\nResolves https://gitlab.com/gitlab-org/gitlab/-/work_items/626827\n\nChangelog: security"
+    },
     "CVE-2022-1944": {
       "c61e79b49c28112dbb391bb7e6df6c10194ff83f": "Correct who can run interactive web terminals\n\nThe permissions table has granted this ability by role since the feature\nshipped. Since 15.1 only the user who triggered a job can run its\nterminal, so the row is wrong for both roles it marks.\n\nThe ownership condition arrived with the fix for CVE-2022-1944, which\nstopped a user with the Developer role from opening a terminal on\nanother user's running job. The table was never updated with it. The\nfeature page states the rule correctly.\n\nRelated to https://gitlab.com/gitlab-org/gitlab/-/issues/616886"
     },
