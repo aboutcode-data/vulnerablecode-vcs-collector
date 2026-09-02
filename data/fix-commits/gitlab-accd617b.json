@@ -2,6 +2,7 @@
   "vcs_url": "https://gitlab.com/gitlab-org/gitlab",
   "vulnerabilities": {
     "GHSA-2X63-GW47-W4MM": {
+      "11985383a7e66db208dab02742fb9debb8bfaa50": "Merge branch 'duo/fix/626827-bump-websocket-driver-to-0.8.2' into 'master' \n\nBump websocket-driver to 0.8.2 in remaining lockfiles (GHSA-2x63-gw47-w4mm)\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/252879\n\nMerged-by: Panos Kanellidis <pkanellidis@gitlab.com>\nApproved-by: Anas Shahid <ashahid@gitlab.com>\nApproved-by: Panos Kanellidis <pkanellidis@gitlab.com>\nCo-authored-by: Duo Developer <service_account_group_9970_1976e9ecde3c53c783b64edb9ae993eb@noreply.gitlab.com>",
       "dbec9ef841fec3bf7e893642aeecf33b2f8a77ce": "Bump websocket-driver to 0.8.2 in remaining lockfiles\n\nFix GHSA-2x63-gw47-w4mm by updating websocket-driver from outdated\nversions in two lockfiles that were missed in the initial fix:\n- gems/gitlab-database-load_balancing: 0.8.0 -> 0.8.2\n- vendor/gems/microsoft_graph_mailer: 0.7.5 -> 0.8.2\n\nResolves https://gitlab.com/gitlab-org/gitlab/-/work_items/626827\n\nChangelog: security"
     },
     "CVE-2022-1944": {
