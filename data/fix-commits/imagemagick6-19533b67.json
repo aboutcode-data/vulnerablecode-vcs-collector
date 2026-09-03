@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-JVJM-9F73-FHPQ": {
+      "91f4ed74a1fd8326ade11a1153de110f22d89aa1": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-jvjm-9f73-fhpq"
+    },
     "GHSA-5RG6-J44Q-Q892": {
       "d5750d7309ef5a8cd561430d932a183e4168f484": "More fixes for https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5rg6-j44q-q892.",
       "879489740daa44dd72e9405b26c845e8aa3d2f53": "Escape the labels to prevent code injection (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5rg6-j44q-q892)"

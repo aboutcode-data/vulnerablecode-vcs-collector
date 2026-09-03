@@ -1,6 +1,16 @@
 {
   "vcs_url": "https://github.com/opentofu/opentofu",
   "vulnerabilities": {
+    "CVE-2026-78662": {
+      "b7b3478a9bf3cb909cfe8c14a30b45b447fe2fa0": "go.mod: go get golang.org/x/crypto@v0.56.0\n\nThis is primarily to address CVE-2026-78662 and CVE-2026-56855, but also\nincludes a number of other minor changes.\n\nUnfortunately because the Go project has a policy of always ratcheting\nup the version requirements between the golang.org/x/... modules this\nalso requires upgrading some others we use, but these newer versions\nhave already been adopted for the OpenTofu v1.13 series after reviewing\ntheir impact.\n\nSigned-off-by: Martin Atkins <mart@degeneration.co.uk>",
+      "a6a7935dd7b1c9ce3ef26d9cdae9665301f58c67": "go.mod: go get golang.org/x/crypto@v0.56.0\n\nThis is primarily to address CVE-2026-78662 and CVE-2026-56855, but also\nincludes a number of other minor changes.\n\nSigned-off-by: Martin Atkins <mart@degeneration.co.uk>",
+      "0fc3f07de81ddc64fe8e223693d684ad54bfb8a5": "go.mod: go get golang.org/x/crypto@v0.56.0\n\nThis is primarily to address CVE-2026-78662 and CVE-2026-56855, but also\nincludes a number of other minor changes.\n\nSigned-off-by: Martin Atkins <mart@degeneration.co.uk>"
+    },
+    "CVE-2026-56855": {
+      "b7b3478a9bf3cb909cfe8c14a30b45b447fe2fa0": "go.mod: go get golang.org/x/crypto@v0.56.0\n\nThis is primarily to address CVE-2026-78662 and CVE-2026-56855, but also\nincludes a number of other minor changes.\n\nUnfortunately because the Go project has a policy of always ratcheting\nup the version requirements between the golang.org/x/... modules this\nalso requires upgrading some others we use, but these newer versions\nhave already been adopted for the OpenTofu v1.13 series after reviewing\ntheir impact.\n\nSigned-off-by: Martin Atkins <mart@degeneration.co.uk>",
+      "a6a7935dd7b1c9ce3ef26d9cdae9665301f58c67": "go.mod: go get golang.org/x/crypto@v0.56.0\n\nThis is primarily to address CVE-2026-78662 and CVE-2026-56855, but also\nincludes a number of other minor changes.\n\nSigned-off-by: Martin Atkins <mart@degeneration.co.uk>",
+      "0fc3f07de81ddc64fe8e223693d684ad54bfb8a5": "go.mod: go get golang.org/x/crypto@v0.56.0\n\nThis is primarily to address CVE-2026-78662 and CVE-2026-56855, but also\nincludes a number of other minor changes.\n\nSigned-off-by: Martin Atkins <mart@degeneration.co.uk>"
+    },
     "CVE-2026-4660": {
       "8900054192dd60564b63da43c4560da365cf5dd6": "[CVE-2026-4660] go.mod: go get github.com/hashicorp/go-getter@v1.8.6 (#4288)\n\nSigned-off-by: Santhosh K <29794224+x418@users.noreply.github.com>"
     },

@@ -1,6 +1,16 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-19042": {
+      "224d458d7b54078f75dfd9144279148e83f58ff9": "net-misc/teamviewer: add 15.81.5\n\nnew version that fixes multiple security issues:\n\nCVE-2026-19042, TV-2026-1009, CVSSv3 Score 8.8\nCVE-2026-16444, TV-2026-1008, CVSSv3 Score 7.5\n\nNote: x86 support has been dropped upstream.\nNo fixed 15.x version for x86 available.\n\nBug: https://bugs.gentoo.org/981678\nSigned-off-by: Martin Dummer <martin.dummer@gmx.net>\nPart-of: https://github.com/gentoo/gentoo/pull/46721\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-16444": {
+      "224d458d7b54078f75dfd9144279148e83f58ff9": "net-misc/teamviewer: add 15.81.5\n\nnew version that fixes multiple security issues:\n\nCVE-2026-19042, TV-2026-1009, CVSSv3 Score 8.8\nCVE-2026-16444, TV-2026-1008, CVSSv3 Score 7.5\n\nNote: x86 support has been dropped upstream.\nNo fixed 15.x version for x86 available.\n\nBug: https://bugs.gentoo.org/981678\nSigned-off-by: Martin Dummer <martin.dummer@gmx.net>\nPart-of: https://github.com/gentoo/gentoo/pull/46721\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-75758": {
+      "39040306d15897726122b71d31750b1f0c775c3f": "dev-lang/elixir: backport CVE-2026-75758 fix to 1.16.3\n\nBug: https://bugs.gentoo.org/981585\nSigned-off-by: Haelwenn (lanodan) Monnier <contact@hacktivis.me>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1761\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1761\nSigned-off-by: Sam James <sam@gentoo.org>",
+      "4e35d013c4fa35a5bbb64e0273a35eac088b3e1c": "dev-lang/elixir: backport CVE-2026-75758 fix to 1.17.3\n\nBug: https://bugs.gentoo.org/981585\nSigned-off-by: Haelwenn (lanodan) Monnier <contact@hacktivis.me>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1761\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
     "CVE-2026-79619": {
       "4d83c9be889b1ccdc79c5c32feb932edba3df2a0": "sys-fs/zfs-kmod: drop 2.1.16\n\nThe 2.1 branch is EOL upstream and has no fix for CVE-2026-79619.\n\nSigned-off-by: Alexander Moch <mail@alexmoch.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1759\nSigned-off-by: Marc Schiffbauer <mschiff@gentoo.org>",
       "694a1efadb2f15ce5612282bb98111bedd8d5746": "sys-fs/zfs: drop 2.1.16\n\nThe 2.1 branch is EOL upstream and has no fix for CVE-2026-79619.\n\nSigned-off-by: Alexander Moch <mail@alexmoch.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1759\nSigned-off-by: Marc Schiffbauer <mschiff@gentoo.org>",
