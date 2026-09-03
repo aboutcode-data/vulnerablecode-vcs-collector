@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-P6J5-2QWH-6486": {
+      "350da106fa180fcbc5704d5a89a47e9d0ec7470b": "Trim labels to prevent code injection (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-p6j5-2qwh-6486)"
+    },
     "GHSA-JVJM-9F73-FHPQ": {
       "91f4ed74a1fd8326ade11a1153de110f22d89aa1": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-jvjm-9f73-fhpq"
     },
