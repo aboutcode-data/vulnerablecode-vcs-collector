@@ -2,6 +2,7 @@
   "vcs_url": "https://gitlab.gnome.org/gnome/libxml2",
   "vulnerabilities": {
     "CVE-2025-24928": {
+      "d1686f91dbda141a752200419d35639fd6b38340": "fix: add bounds checks to xmlSnprintfElements in valid.c\n\nCVE-2025-24928 fixed xmlSnprintfElementContent for unchecked strcat()\nwrites, but the sibling function xmlSnprintfElements has the identical\nunfixed pattern. The strcat(buf, \"(\") before the while loop and\nstrcat(buf, \")\") after the loop exit have no bounds checks.\n\nAdd remaining-space checks before both strcat calls, with early return\nand ellipsis when space is insufficient.",
       "61e5f3ea97609bb221a355579d2285ddd28d90d2": "fix: add bounds checks to xmlSnprintfElements in valid.c\n\nCVE-2025-24928 fixed xmlSnprintfElementContent for unchecked strcat()\nwrites, but the sibling function xmlSnprintfElements has the identical\nunfixed pattern. The strcat(buf, \"(\") before the while loop and\nstrcat(buf, \")\") after the loop exit have no bounds checks.\n\nAdd remaining-space checks before both strcat calls, with early return\nand ellipsis when space is insufficient.",
       "858ca26c0689161a6b903a6682cc8a1cc10a0ea8": "[CVE-2025-24928] Fix stack-buffer-overflow in xmlSnprintfElements\n\nFixes #847.",
       "8c8753ad5280ee13aee5eec9b0f6eee2ed920f57": "[CVE-2025-24928] Fix stack-buffer-overflow in xmlSnprintfElements\n\nFixes #847.",
