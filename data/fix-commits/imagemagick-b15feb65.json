@@ -1,6 +1,24 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-V2X3-WPMG-C4W6": {
+      "fb743d60700c9bc350c3d2a0b48b998bdabc466c": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-v2x3-wpmg-c4w6"
+    },
+    "GHSA-9F9W-84G3-VP2C": {
+      "15892fc0dc050a3693e28a214478a8d8488d648c": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-9f9w-84g3-vp2c"
+    },
+    "GHSA-JJP4-3FWF-393J": {
+      "1926ccf119141c26274c120d1899dffae19b0c71": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-jjp4-3fwf-393j"
+    },
+    "GHSA-8X3V-WR32-QQH4": {
+      "12db6f04e895deae4537ead10c771a244607794a": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-8x3v-wr32-qqh4"
+    },
+    "GHSA-CVGP-Q487-J22W": {
+      "0e82a4d0b294581186ed7b3e1dce59c858a73dba": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-cvgp-q487-j22w"
+    },
+    "GHSA-8XMR-6Q99-C4X8": {
+      "af7b85012e62fa65393277790b96c56a98d882b6": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-8xmr-6q99-c4x8"
+    },
     "GHSA-P6J5-2QWH-6486": {
       "8309dc92a18722a9ccc4bb9c848ac2d01426cfe5": "Trim labels to prevent code injection (GHSA-p6j5-2qwh-6486)"
     },
