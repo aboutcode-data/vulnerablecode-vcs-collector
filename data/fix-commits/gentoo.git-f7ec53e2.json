@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2025-14847": {
+      "247d4663ce20aeec22082f209945c5bd3cb21db4": "dev-db/mongodb: Make requested changes to ebuilds\n\n.. and patches.\n\n* Remove 8.0.8 and 8.0.12 as they are vulnerable to mongobleed(CVE-2025-14847).\n* Remove 8.2.9, superceded by 8.3.x.\n* Version bump 8.0.23 to 8.0.26.\n\nBug: https://bugs.gentoo.org/968160\nBug: https://bugs.gentoo.org/967856\nBug: https://bugs.gentoo.org/976310\nSigned-off-by: Aaron Sears-Aldridge <geodelic@gmail.com>\nPart-of: https://github.com/gentoo/gentoo/pull/46392\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
     "CVE-2026-19042": {
       "224d458d7b54078f75dfd9144279148e83f58ff9": "net-misc/teamviewer: add 15.81.5\n\nnew version that fixes multiple security issues:\n\nCVE-2026-19042, TV-2026-1009, CVSSv3 Score 8.8\nCVE-2026-16444, TV-2026-1008, CVSSv3 Score 7.5\n\nNote: x86 support has been dropped upstream.\nNo fixed 15.x version for x86 available.\n\nBug: https://bugs.gentoo.org/981678\nSigned-off-by: Martin Dummer <martin.dummer@gmx.net>\nPart-of: https://github.com/gentoo/gentoo/pull/46721\nSigned-off-by: Sam James <sam@gentoo.org>"
     },
