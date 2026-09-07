@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/mattermost/mattermost",
   "vulnerabilities": {
+    "CVE-2026-56855": {
+      "d3b808b88a50de85fb361ab16f31158da20c47b8": "Bump golang.org/x/crypto to v0.56.0\n\nFixes CVE-2026-56855 and CVE-2026-78662 (CWE-770 allocation of\nresources without limits) flagged by Snyk in the x/crypto/ssh\npackage pulled in transitively via testcontainers-go.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>"
+    },
+    "CVE-2026-78662": {
+      "d3b808b88a50de85fb361ab16f31158da20c47b8": "Bump golang.org/x/crypto to v0.56.0\n\nFixes CVE-2026-56855 and CVE-2026-78662 (CWE-770 allocation of\nresources without limits) flagged by Snyk in the x/crypto/ssh\npackage pulled in transitively via testcontainers-go.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>"
+    },
     "CVE-2026-17106": {
       "f076092fbcf607d25aa0223a3574296cbd3572ee": "Bump moby/go-archive to v0.3.0 to fix CVE-2026-17106 (symlink attack)\n\nPulled transitively via testcontainers-go; go-archive <0.3.0 is vulnerable\nto a symlink traversal during archive extraction (CWE-59, CVSS 7.1).\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>"
     },
