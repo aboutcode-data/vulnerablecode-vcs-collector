@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/kubernetes/kubernetes",
   "vulnerabilities": {
+    "CVE-2026-78662": {
+      "7abbc3e0709aa029b8209e2dae5b031f30ac5390": "Merge pull request #141886 from AboEl3iz/fix-cve-2026-78662\n\nupdate golang.org/x/crypto to v0.56.0"
+    },
     "CVE-2026-33186": {
       "bf2712d71b395db54097b5ae40f1383fe979e384": "Update google.golang.org/grpc to v1.82.1\n\nThis release fixes three security issues in grpc-go.\n\n- A gRPC server now stops reading from a connection when a peer sends\n  too many HTTP/2 control frames. Before this change, a peer could\n  flood a server with control frames and make it use too much memory\n  and CPU. See grpc/grpc-go#9236. There is no fixed v1.81.x release.\n- The GRPC_GO_EXPERIMENTAL_DISABLE_STRICT_PATH_CHECKING environment\n  variable is removed. Setting it turned strict path checking off and\n  brought back the authorization bypass from CVE-2026-33186.\n- The old gzip Decompressor API now limits how much data it\n  decompresses, so a small compressed message can no longer use an\n  unbounded amount of memory. Kubernetes does not call this API.\n\nThe update does not change any other dependency. Kubernetes already\nrequires newer versions of everything grpc v1.82.1 needs, so the\nvendor changes cover only vendor/google.golang.org/grpc. There are no\nchanges to hack/unwanted-dependencies.json or LICENSES."
     },

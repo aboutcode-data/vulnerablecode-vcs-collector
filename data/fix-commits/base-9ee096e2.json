@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://android.googlesource.com/platform/frameworks/base",
   "vulnerabilities": {
+    "CVE-2025-22442": {
+      "79dd06a8c17c5e5b8a5a22b4f8819a5c8c263011": "CVE-2025-22442: set profile user restrictions earlier\n\nBug: 382064697\nFlag: EXEMPT BUGFIX\nCherrypick-From: https://googleplex-android-review.googlesource.com/q/commit:994366d40c9519f00a9a67c554f7b459ebf587ee\nCherrypick-From: https://googleplex-android-review.googlesource.com/q/commit:0821e223d2d989c7c3b3820faa063e982aed6dc7\nMerged-In: I9019c05f61455feb1ce03d0dd8818a6f13c7af97\nChange-Id: I9019c05f61455feb1ce03d0dd8818a6f13c7af97"
+    },
     "CVE-2025-48525": {
       "bde20ba16ceac713395a347a8a0fd18d3b7792b3": "Revert \"[CDM] Revoke NLS when all associations are removed.\"\n\nThis reverts commit a987e9d91a93b5945ac7d6477e6d34cd2715f2ec.\n\nReason for revert: CVE-2025-48525 A-391895151 is being removed from ASB#2025-09 due to a possible regression that may prevent Android Auto projection to launch properly. Partners are recommended to remove this fix until the updated fix is available.\n\nBug: 391895151\n(cherry picked from https://googleplex-android-review.googlesource.com/q/commit:cd108837baa0008e53f93eba3208db56a0499bb0)\nMerged-In: I648f49c7413afebf46409806a90db2576b5ef5af\nChange-Id: I648f49c7413afebf46409806a90db2576b5ef5af"
     },

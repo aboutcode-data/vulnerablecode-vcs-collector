@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/kubernetes/client-go",
   "vulnerabilities": {
+    "CVE-2026-78662": {
+      "bd33a045e7a26a42e6ff40cdfe0ad124cbdbbe6b": "Merge pull request #141886 from AboEl3iz/fix-cve-2026-78662\n\nupdate golang.org/x/crypto to v0.56.0\n\nKubernetes-commit: 7abbc3e0709aa029b8209e2dae5b031f30ac5390"
+    },
     "CVE-2026-33814": {
       "e584095d8287628ded0767fa0bc0263143a87ea2": "Update golang.org/x/net to v0.53.0\n\nFixes CVE-2026-33814 (golang/go#78476): HTTP/2 Transport hangs\nindefinitely when a peer sends a SETTINGS frame with MaxFrameSize=0.\nThis is reachable from kube-apiserver's OIDC, admission webhook,\nand aggregated API client paths.\n\nKubernetes-commit: 12a2470693d86f63f4614048ffdd43dc393dd7e0"
     },

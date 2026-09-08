@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/strapi/strapi",
   "vulnerabilities": {
+    "GHSA-866G-F22W-33X8": {
+      "7d5021bd21401f811bcfe3c4d58cf87d0b5672dd": "chore(deps): bump ai sdk in content-type-builder to v6 (EE-174)\n\nMove `ai` 5.0.210 -> 6.0.277 and `@ai-sdk/react` 2.0.212 -> 3.0.280 so the\ntransitive `@ai-sdk/provider-utils` leaves the 3.x line flagged by\nGHSA-866g-f22w-33x8 (now 4.0.50).\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>"
+    },
     "GHSA-HMJ8-698P-8J9H": {
       "37c91d4f8d151b8eb962cead974543410592ee68": "security: broaden DTS exclusion to cover entity payload content, not just file paths\n\nThe first pass of this exclusion only named asset-metadata path traversal.\nA separate report class (GHSA-hmj8-698p-8j9h, and the second sink in\nGHSA-56w6-q722-pp9j) argues that unvalidated admin::user/role/api-token\nentity injection over a push token is a distinct, more severe issue,\nreasoning from the CLI's client-side IGNORED_CONTENT_TYPE_PREFIXES filter\nas if it were a security boundary. It isn't: that filter is a default\nconvenience for ordinary content migrations, not evidence Strapi intends\nto block administrative content from being mirrored. A legitimate\nenvironment-mirror operation must be able to carry the real admin roster\nalong with content, and the receiving side of a mirror has no way to\ndistinguish that from an attacker-crafted payload - only token possession\nis checkable. Broadened the exclusion's wording to say so explicitly."
     },
