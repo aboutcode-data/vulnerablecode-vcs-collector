@@ -1,6 +1,21 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-10805": {
+      "eafe7bdca65bcb3eedb33770110077576719647b": "net-misc/networkmanager: add 1.58.1\n\n* upstream changes contain fix for CVE-2026-10805. Necessary ebuild changes\n  only, other changes postponed to a follow-up PR:\n  * add slang dep for nmtui\n  * Remove obsolete dhclient use flag,\n  * Remove obsolete 'modify_system' meson option which \"is no longer allowed due\n    to security reasons\"\n\nSee: https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/commit/0b75d905e59999539ab1e92a92646b634c221215\nSee: https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/commit/1756ec54e384cc7e66878e9eecf7dd713df9de29\nSee: https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/commit/fbcaa53b42a8483e00ab3c17919eb7e6504beb1a\nBug: https://bugs.gentoo.org/981154\nBug: https://bugs.gentoo.org/981249\nSigned-off-by: Lukas Schmelting <lschmelting@posteo.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1717\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1717\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-61627": {
+      "6b3fe0196dbac1febcd8a1bd8de4f7e08e0ab289": "media-libs/libass: add 0.17.5\n\nThis includes two security fixes for\n  - CVE-2026-61627 / GHSA-pjjp-65r7-ppgm\n  - CVE-2026-61626 / GHSA-5gf7-wjfm-vmvm\n\nBug: https://bugs.gentoo.org/982219\nSigned-off-by: Oneric <oneric@oneric.stub>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1814\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-61626": {
+      "6b3fe0196dbac1febcd8a1bd8de4f7e08e0ab289": "media-libs/libass: add 0.17.5\n\nThis includes two security fixes for\n  - CVE-2026-61627 / GHSA-pjjp-65r7-ppgm\n  - CVE-2026-61626 / GHSA-5gf7-wjfm-vmvm\n\nBug: https://bugs.gentoo.org/982219\nSigned-off-by: Oneric <oneric@oneric.stub>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1814\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "GHSA-PJJP-65R7-PPGM": {
+      "6b3fe0196dbac1febcd8a1bd8de4f7e08e0ab289": "media-libs/libass: add 0.17.5\n\nThis includes two security fixes for\n  - CVE-2026-61627 / GHSA-pjjp-65r7-ppgm\n  - CVE-2026-61626 / GHSA-5gf7-wjfm-vmvm\n\nBug: https://bugs.gentoo.org/982219\nSigned-off-by: Oneric <oneric@oneric.stub>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1814\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "GHSA-5GF7-WJFM-VMVM": {
+      "6b3fe0196dbac1febcd8a1bd8de4f7e08e0ab289": "media-libs/libass: add 0.17.5\n\nThis includes two security fixes for\n  - CVE-2026-61627 / GHSA-pjjp-65r7-ppgm\n  - CVE-2026-61626 / GHSA-5gf7-wjfm-vmvm\n\nBug: https://bugs.gentoo.org/982219\nSigned-off-by: Oneric <oneric@oneric.stub>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1814\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
     "CVE-2025-14847": {
       "247d4663ce20aeec22082f209945c5bd3cb21db4": "dev-db/mongodb: Make requested changes to ebuilds\n\n.. and patches.\n\n* Remove 8.0.8 and 8.0.12 as they are vulnerable to mongobleed(CVE-2025-14847).\n* Remove 8.2.9, superceded by 8.3.x.\n* Version bump 8.0.23 to 8.0.26.\n\nBug: https://bugs.gentoo.org/968160\nBug: https://bugs.gentoo.org/967856\nBug: https://bugs.gentoo.org/976310\nSigned-off-by: Aaron Sears-Aldridge <geodelic@gmail.com>\nPart-of: https://github.com/gentoo/gentoo/pull/46392\nSigned-off-by: Sam James <sam@gentoo.org>"
     },

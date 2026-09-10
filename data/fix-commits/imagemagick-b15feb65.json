@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-Q6H4-6F2H-8HFQ": {
+      "2ec49e6f1971ee5b0ff654364cf806b20c202c86": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-q6h4-6f2h-8hfq"
+    },
     "GHSA-2VWG-3G4G-QPRM": {
       "cafc7372c8113a9636766f0eddde7b90373c9b44": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-2vwg-3g4g-qprm"
     },
