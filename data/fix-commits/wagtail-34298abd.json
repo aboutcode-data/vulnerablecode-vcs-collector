@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/wagtail/wagtail",
   "vulnerabilities": {
+    "CVE-2026-15337": {
+      "b6a76ac81270c556115e84b401d06e73cc904c82": "Reject over-long inputs to get_supported_content_language_variant (#14611)\n\nAnalogous to Django's fix for CVE-2026-15337 (https://github.com/django/django/commit/224dbc832586ad5cfb0237c2ff30d14baeaddc6f). An attacker with the ability to pass arbitrary language codes to get_supported_content_language_variant could consume process memory by passing excessively long strings. This is not exploitable within Wagtail itself, as all calls to this function are made with already-bounded values from configuration files, and this function is not documented for use in third-party code. However, this is being patched in the interest of security hardening.\n\nMany thanks to Kaya Emre Arikan for the report."
+    },
     "CVE-2026-28223": {
       "d5807f771fde7dd6806d9367b9242ec6b941492f": "Release note for CVE-2026-28223 in 7.3.1",
       "001f921beadcb6bccfba928c8f05067d301d464d": "Release note for CVE-2026-28223 in 7.2.3",
