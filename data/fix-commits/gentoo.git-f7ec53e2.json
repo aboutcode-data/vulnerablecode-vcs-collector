@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-8450": {
+      "053756a224e8b06931f3d0659b30236f62483dee": "dev-perl/HTTP-Daemon: fix CVE-2026-8450\n\n- backport fix for CVE-2026-8450\n- Remove unversioned perl virtuals (MissingVersionedVirtualPerlDependency)\n- Remove blocker for dev-perl/libwww-perl-6 (NonexistentBlocker)\n\nBug: https://bugs.gentoo.org/976110\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1033\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1033\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2025-15646": {
+      "c6fb9f0a32e71db44c54db73417cfcd9eecd35cf": "dev-perl/HTML-Gumbo: add 0.190.0\n\n- fixes CVE-2025-15646\n- fix MissingVersionedVirtualPerlDependency\n\nBug: https://bugs.gentoo.org/979603\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1479\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1479\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-60074": {
+      "45b6d1403bf1aa885c5d3708e4d30694ead09590": "dev-perl/Date-Manip: revbump, security fixes\n\nApply patches for CVE-2026-60074, CVE-2026-60075.\n\nBug: https://bugs.gentoo.org/980109\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1595\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1595\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-60075": {
+      "45b6d1403bf1aa885c5d3708e4d30694ead09590": "dev-perl/Date-Manip: revbump, security fixes\n\nApply patches for CVE-2026-60074, CVE-2026-60075.\n\nBug: https://bugs.gentoo.org/980109\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1595\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1595\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
     "CVE-2026-10805": {
       "ec0ea2587aafab8b3c5c32730aea428f094db01c": "net-misc/networkmanager: fixup 1.58.1\n\n* Add recently postponed changes after CVE-2026-10805 has been addressed\n  in eafe7bdca6\n* enable python3.15\n* add clat use flag and deps\n* add wext deprecation ewarn\n\nSee: https://codeberg.org/gentoo/gentoo/pulls/1717\nCloses: https://bugs.gentoo.org/981154\nSigned-off-by: Lukas Schmelting <lschmelting@posteo.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1718\nSigned-off-by: Sam James <sam@gentoo.org>",
       "eafe7bdca65bcb3eedb33770110077576719647b": "net-misc/networkmanager: add 1.58.1\n\n* upstream changes contain fix for CVE-2026-10805. Necessary ebuild changes\n  only, other changes postponed to a follow-up PR:\n  * add slang dep for nmtui\n  * Remove obsolete dhclient use flag,\n  * Remove obsolete 'modify_system' meson option which \"is no longer allowed due\n    to security reasons\"\n\nSee: https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/commit/0b75d905e59999539ab1e92a92646b634c221215\nSee: https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/commit/1756ec54e384cc7e66878e9eecf7dd713df9de29\nSee: https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/commit/fbcaa53b42a8483e00ab3c17919eb7e6504beb1a\nBug: https://bugs.gentoo.org/981154\nBug: https://bugs.gentoo.org/981249\nSigned-off-by: Lukas Schmelting <lschmelting@posteo.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1717\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1717\nSigned-off-by: Sam James <sam@gentoo.org>"
