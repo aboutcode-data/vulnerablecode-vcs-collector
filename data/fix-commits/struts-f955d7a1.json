@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/struts",
   "vulnerabilities": {
+    "CVE-2026-47883": {
+      "c373c531285e2a3aaa0fb1349c75209bd4be973b": "WW-5717 build: bump Spring Framework to 7.0.9 in the jakartaee11 profile\n\n7.0.9 is the first OSS Spring Framework release covering the\n2026-08-20 advisory wave (CVE-2026-47883..47893, 59280..59283, 59313,\n59314) that the OWASP dependency-check run flags on spring-core 7.0.8.\nNone of the 17 sits on a code path Struts executes (they are Spring\nMVC/WebFlux/RSocket, SpEL, DataBinder and UrlHandlerFilter issues),\nso this is dependency hygiene, not a Struts fix.\n\nThe default profile stays on 6.2.19: it is the last OSS 6.2.x release,\n6.2.20 is Enterprise-Support-only, and CI scans the jakartaee11 profile.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>"
+    },
     "CVE-2017-5638": {
       "e1de9362aff09b3c8e06e3782dfe5c66f0e011e5": "Improve Claude Code agents configuration for Apache Struts\n\n- Replace hardcoded user paths with dynamic $USER environment variable\n- Update ticket patterns from eng_XXXX to Apache Struts WW-XXXX format\n- Create thoughts/ directory structure for research documentation\n- Add Maven build commands (mvn test -DskipAssembly) to agents\n- Enhance security analysis with CVE-specific patterns (CVE-2017-5638, CVE-2018-11776)\n- Improve Struts-specific knowledge in codebase analysis agents\n- Add Jakarta module support and OGNL security focus\n- Enable portable configuration across all developers\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>"
     },

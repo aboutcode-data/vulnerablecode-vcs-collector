@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/apache/james-project",
   "vulnerabilities": {
+    "CVE-2025-67735": {
+      "c93b1d6bf5eec138d1db38414ca43c5755097c6c": "[UPGRADE] Upgrade Netty 4.1.126.Final \u2192 4.1.132.Final (CVE-2025-67735)",
+      "5d9f29746e5e9817d76214d4a709a4c9696750c8": "[UPGRADE] Upgrade Netty 4.1.126.Final \u2192 4.1.132.Final (CVE-2025-67735)"
+    },
     "CVE-2026-54475": {
       "3480b6808e5fc5ed25f86a0a72c7fbe8178fd1d6": "[UPGRADE] activemq 6.2.6 -> 6.2.7 + arttemis 2.53.0 -> 2.55.0 to fix several CVEs\n\n - CVE-2026-54475: Apache ActiveMQ Broker, Apache ActiveMQ All, Apache ActiveMQ: Temporary destination ownership takeover\n - CVE-2026-53917: Apache ActiveMQ, Apache ActiveMQ All, Apache ActiveMQ Client, Apache ActiveMQ Broker: Unbounded memory allocation in OpenWire property unmarshalling\n - CVE-2026-53916: Apache ActiveMQ, Apache ActiveMQ All, Apache ActiveMQ Stomp: Unbounded header buffer in STOMP NIO codec\n - CVE-2026-52760: Apache ActiveMQ, Apache ActiveMQ Web Console: Stored XSS via Unescaped values in ActiveMQ Web Console\n - CVE-2026-50750: Apache ActiveMQ Broker, Apache ActiveMQ, Apache ActiveMQ All: Pre-authentication OpenWire DoS following fix for CVE-2026-49270\n - CVE-2026-50734: Apache ActiveMQ Client, Apache ActiveMQ, Apache ActiveMQ All: Pre-authentication OpenWire memory-allocation DoS during wire format negotiation\n - CVE-2026-49877: Apache ActiveMQ: Authenticated web users retain admin access by default in the Web Console\n - CVE-2026-49432: Apache ActiveMQ, Apache ActiveMQ All, Apache ActiveMQ Stomp: STOMP negative content-length enables denial of service\n - CVE-2026-49434: Apache ActiveMQ Broker, Apache ActiveMQ, Apache ActiveMQ All: LdapNetworkConnector instantiates denied transports and a remote-properties broker",
       "dbeadfa382dcb4001a4e3af996a9ea5ddbf9ae63": "[UPGRADE] activemq 6.2.6 -> 6.2.7 + arttemis 2.53.0 -> 2.55.0 to fix several CVEs\n\n - CVE-2026-54475: Apache ActiveMQ Broker, Apache ActiveMQ All, Apache ActiveMQ: Temporary destination ownership takeover\n - CVE-2026-53917: Apache ActiveMQ, Apache ActiveMQ All, Apache ActiveMQ Client, Apache ActiveMQ Broker: Unbounded memory allocation in OpenWire property unmarshalling\n - CVE-2026-53916: Apache ActiveMQ, Apache ActiveMQ All, Apache ActiveMQ Stomp: Unbounded header buffer in STOMP NIO codec\n - CVE-2026-52760: Apache ActiveMQ, Apache ActiveMQ Web Console: Stored XSS via Unescaped values in ActiveMQ Web Console\n - CVE-2026-50750: Apache ActiveMQ Broker, Apache ActiveMQ, Apache ActiveMQ All: Pre-authentication OpenWire DoS following fix for CVE-2026-49270\n - CVE-2026-50734: Apache ActiveMQ Client, Apache ActiveMQ, Apache ActiveMQ All: Pre-authentication OpenWire memory-allocation DoS during wire format negotiation\n - CVE-2026-49877: Apache ActiveMQ: Authenticated web users retain admin access by default in the Web Console\n - CVE-2026-49432: Apache ActiveMQ, Apache ActiveMQ All, Apache ActiveMQ Stomp: STOMP negative content-length enables denial of service\n - CVE-2026-49434: Apache ActiveMQ Broker, Apache ActiveMQ, Apache ActiveMQ All: LdapNetworkConnector instantiates denied transports and a remote-properties broker"
@@ -43,9 +47,6 @@
     },
     "CVE-2026-40914": {
       "dbaddeb365d76262cebbeddc03fed240de638ed1": "[UPGRADE] Artemis 2.52.0 -> 2.53.0 (CVE-2026-40914)"
-    },
-    "CVE-2025-67735": {
-      "5d9f29746e5e9817d76214d4a709a4c9696750c8": "[UPGRADE] Upgrade Netty 4.1.126.Final \u2192 4.1.132.Final (CVE-2025-67735)"
     },
     "CVE-2026-41044": {
       "d8d6f8717fe3e409c20b771203010ea4f0bc0570": "[UPGRADE] activeMQ 6.2.4 -> 6.2.5 (CVE-2026-41044 CVE-2026-41043 CVE-2026-40466)"

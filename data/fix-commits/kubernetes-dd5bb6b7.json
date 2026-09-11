@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/kubernetes/kubernetes",
   "vulnerabilities": {
+    "CVE-2026-84445": {
+      "bbd0a69d228a459fd069840c8fde86cd91e4c5fd": "Merge pull request #141976 from harshitgupta31415/codex/grpc-cve-2026-84445\n\ndeps: bump google.golang.org/grpc to v1.82.2"
+    },
     "CVE-2026-78662": {
       "7abbc3e0709aa029b8209e2dae5b031f30ac5390": "Merge pull request #141886 from AboEl3iz/fix-cve-2026-78662\n\nupdate golang.org/x/crypto to v0.56.0"
     },
