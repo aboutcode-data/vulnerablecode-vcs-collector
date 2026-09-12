@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/oven-sh/bun",
   "vulnerabilities": {
+    "CVE-2026-56850": {
+      "6b19264837f813157eee6a03ba8c2a8e72945206": "node:https: key the Agent pool name by what object-valued and file TLS options hold\n\nhttps.Agent#getName() appended ca, cert, key, pfx, crl and dhparam with\nstring coercion. A { buf | pem, passphrase } entry, an ArrayBuffer and a\nBlob all coerce to \"[object ...]\", and the Bun-only certFile, keyFile and\ncaFile options were not in the name. Requests that present different client\ncertificates then shared one pool name, one keep-alive connection and one\ncached TLS session.\n\npoolKeyPart() keeps Node's name for strings, Buffers, TypedArrays and\narrays of those. It keys a pfx entry the way Node's getPfxAgentKey() does\n(nodejs/node 9f03017f38, CVE-2026-56850), keys a key entry by its pem, keys\nan ArrayBuffer by its bytes, and keys every other object by identity.\ncertFile, keyFile and caFile are labelled parts at the end of the name."
+    },
     "CVE-2026-48934": {
       "670fc2c0ae8fe15fdb61e81cdd90c37fdfdf7e0f": "node:tls: re-check server identity on resumed sessions\n\nA resumed handshake sends no certificate. BoringSSL keeps the peer chain\non the SSL_SESSION, so getPeerCertificate() returns the original\ncertificate on a resumed connection. Run checkServerIdentity on it\ninstead of skipping the check when isSessionReused() is true.\n\nWith the gate, tls.connect({servername: \"b\", session: <ticket for \"a\">})\nreports authorized:true although the stored certificate does not cover\n\"b\". Any peer that can decrypt the ticket is then authorized on the\nticket alone. Node fixed the same hole as CVE-2026-48934\n(nodejs/node@9cc4e32375) by not offering a session that was\nauthenticated for another servername."
     },

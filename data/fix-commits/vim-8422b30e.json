@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/vim/vim",
   "vulnerabilities": {
+    "GHSA-X9JF-RJM6-VXQH": {
+      "2942c934ec7c68791b9da7ab6c29ae4987f7a2fb": "patch 9.2.1090: [security]: ex command injection in sign jump\n\nProblem:  [security]: ex command injection in sign jump (skeletonsec)\nSolution: Use do_ecmd() directly instead of constructing a command line\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-x9jf-rjm6-vxqh\n\nSupported by AI.\n\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-CVC5-P4X9-3F9F": {
       "e41756455701b9419f2493ab2e2e0f01557fe939": "patch 9.2.1014: [security]: overflow in undo file entry size check on 32-bit arch\n\nProblem:  [security]: The check that guards the allocation of the line\n          array in unserialize_uep() uses the size of a pointer instead of\n          the size of the array element.  On 32-bit systems the\n          multiplication for the allocation can therefore overflow, so that\n          a crafted undo file leads to an undersized allocation and an\n          out-of-bounds write (Yazan Balawneh, after v8.1.0688).\nSolution: Use the size of undoline_T for the check, as that is what is\n          allocated.\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-cvc5-p4x9-3f9f\n\nrelated: v8.1.0688\n\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
     },
