@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/neovim/neovim",
   "vulnerabilities": {
+    "GHSA-X9JF-RJM6-VXQH": {
+      "350746a41156c8ad3e735e96652a1134b6b27e08": "vim-patch:9.2.1090: [security]: ex command injection in sign jump\n\nProblem:  [security]: ex command injection in sign jump (skeletonsec)\nSolution: Use do_ecmd() directly instead of constructing a command line\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-x9jf-rjm6-vxqh\n\nSupported by AI.\n\nhttps://github.com/vim/vim/commit/2942c934ec7c68791b9da7ab6c29ae4987f7a2fb\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-R77M-8M55-RPR6": {
       "f9186e0c0ebb3f9e47dd1e97382772a0d30e5728": "vim-patch:9.2.1011: [security]: arbitrary Ex command execution during C omni-completion (#41501)\n\nProblem:  arbitrary Ex command execution during C omni-completion via\n          tag file names (Yazan Balawneh)\nSolution: Escape the | for all returned tag files\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-r77m-8m55-rpr6\n\nhttps://github.com/vim/vim/commit/331d5d67028505c5b6043603a57d1e8497b922b5\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
     },
