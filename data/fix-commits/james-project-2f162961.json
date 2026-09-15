@@ -2,7 +2,7 @@
   "vcs_url": "https://github.com/apache/james-project",
   "vulnerabilities": {
     "CVE-2025-67735": {
-      "c93b1d6bf5eec138d1db38414ca43c5755097c6c": "[UPGRADE] Upgrade Netty 4.1.126.Final \u2192 4.1.132.Final (CVE-2025-67735)",
+      "c8edac91ff7350b7189942d773fc595f9e3f8ce5": "[UPGRADE] Upgrade Netty 4.1.126.Final \u2192 4.1.132.Final (CVE-2025-67735)",
       "5d9f29746e5e9817d76214d4a709a4c9696750c8": "[UPGRADE] Upgrade Netty 4.1.126.Final \u2192 4.1.132.Final (CVE-2025-67735)"
     },
     "CVE-2026-54475": {
