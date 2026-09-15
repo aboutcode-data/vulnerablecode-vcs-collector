@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/kubernetes/kube-state-metrics",
   "vulnerabilities": {
+    "CVE-2026-56854": {
+      "ca59026251fddbc245a37015f94e4d9cee945474": "Merge pull request #3120 from madmuffin1/fix/bump-x-crypto-cve-2026-56854\n\nbuild(deps): Bump golang.org/x/crypto from 0.54.0 to 0.57.0 (CVE-2026-56854)",
+      "d8bf5364d6c6ee115de41ccdecced8c46ab7f674": "build(deps): Bump golang.org/x/crypto from 0.54.0 to 0.57.0\n\nAddresses CVE-2026-56854 / GO-2026-6303 (source-address critical option\nnot enforced for non-public-key auth callbacks in golang.org/x/crypto/ssh,\nfixed in 0.55.0), and also picks up GO-2026-6354 and GO-2026-6355 (SSH\nchannel deadlock DoS, fixed in 0.56.0).\n\nkube-state-metrics does not run an SSH server, so none of these code paths\nare reachable from this module (govulncheck reports them only under\n\"modules you require\"). The bump is to keep dependency scanners quiet and\navoid shipping a known-vulnerable transitive dependency in the image SBOM."
+    },
     "CVE-2026-42504": {
       "da2095a09794d774573c11f34f3f1c1ed093b478": "Merge pull request #2982 from slessard/dev-upggo\n\nchore: upgrade golang toolchain to address CVE-2026-42504 - GO-2026-5038",
       "6307e194ddacd9dd193fa07f37576e7fd77d97f9": "Merge pull request #2982 from slessard/dev-upggo\n\nchore: upgrade golang toolchain to address CVE-2026-42504 - GO-2026-5038",
