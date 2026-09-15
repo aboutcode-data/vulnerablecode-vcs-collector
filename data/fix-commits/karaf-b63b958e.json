@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/karaf",
   "vulnerabilities": {
+    "CVE-2026-54513": {
+      "31f1b3fdac58aa883270f577a0b3a2e2826b48f8": "Upgrade jackson 2.18 legacy features to 2.18.10 (#2901)\n\nFixes CVE-2026-54513."
+    },
     "CVE-2023-33008": {
       "45117823da42006804246787025fd74d6d21c77d": "KARAF-7712 - Upgrade to Sling common johnzon 1.2.16 (johnzon 1.2.21) to fix CVE-2023-33008\n\n(cherry picked from commit f426ad082fac73487612f0ec411ff7655b8d86ae)",
       "f426ad082fac73487612f0ec411ff7655b8d86ae": "KARAF-7712 - Upgrade to Sling common johnzon 1.2.16 (johnzon 1.2.21) to fix CVE-2023-33008"
