@@ -1,6 +1,34 @@
 {
   "vcs_url": "https://github.com/nlnetlabs/unbound",
   "vulnerabilities": {
+    "CVE-2026-85501": {
+      "13b6717f1716810523ffb60f971a6c9c5e8ce127": "- Fix CVE-2026-85501, Retrap: Novel Vulnerabilities to launch\n  Algorithmic Complexity Attacks on DNSSEC. Thanks to Zuyao Xu and\n  Xiang Li from Nankai University, AOSP Lab for the report. In\n  addition, thanks to Qifan Zhang from Palo Alto Networks for a\n  complimentary report."
+    },
+    "CVE-2026-82717": {
+      "0d4a6a63dd71050d216a467b488e28176f2599df": "- Fix CVE-2026-82717, CNAME synthesis could lead to heap corruption.\n  Thanks to Ben Morris from Anthropic for the report."
+    },
+    "CVE-2026-77860": {
+      "bd71e3b8a6dd87682bf454dc3687fc9e70b1bb78": "- Fix CVE-2026-77860, 'serve-expired' can bypass Unbound 'wait-limit'.\n  Thanks to Xuanchao Xie, Lutong Chen, and Kaiping Xue from the\n  University of Science and Technology of China (USTC) for the\n  report."
+    },
+    "CVE-2026-81642": {
+      "3a6ba0da81536020dc2244f6da6d6a9d60d4e063": "- Unit test for CVE-2026-81642 fix.",
+      "8c2e0fd6cc5b6eaa618ac72227808824b4edee7c": "- Fix CVE-2026-81642, Heap buffer overflow and possible Remote Code\n  Execution when digesting DNSKEY. Thanks to Yuqi Qiu and Xiang Li\n  from Nankai University, AOSP Lab for the report."
+    },
+    "CVE-2026-81634": {
+      "3d65973d38cd7e4dcdc9d5764ef1ea40fd849d10": "- Fix CVE-2026-81634, Possible heap buffer overflow during DNSSEC\n  canonicalization. Thanks to Vlatko Kosturjak with Marlink Cyber,\n  for the report."
+    },
+    "CVE-2026-77955": {
+      "565651cd02d1f7c70cbbd1bbc40d9f130ee38651": "- Fix CVE-2026-77955, Possible ZONEMD verification bypass window.\n  Thanks to Yuqi Qiu and Xiang Li from Nankai University, AOSP Lab,\n  for the report. In addition, thanks to Qifan Zhang from Palo Alto\n  Networks for also reporting this issue."
+    },
+    "CVE-2026-78227": {
+      "7914901915dd46817e7ae9877776d6fb6fc2060e": "- Fix CVE-2026-78227, Use-after-free in DoQ stream output buffer on\n  reset re-transmission. Thanks to Yuqi Qiu and Xiang Li from Nankai\n  University, AOSP Lab for the report."
+    },
+    "CVE-2026-82720": {
+      "eba3d35ad4ecd07aaf114a7434bcc8a097e938a8": "- Fix CVE-2026-82720, Use-after-free in DoH stream cleanup code path.\n  Thanks to Yuqi Qiu and Xiang Li from Nankai University, AOSP Lab,\n  for the report."
+    },
+    "CVE-2026-80225": {
+      "e619ead2dbcde8fc47f03b2ac68987b3377da4c7": "- Fix CVE-2026-80225, Possible degradation of service from continuous\n  queries on the same TCP/DoT connection. Thanks to Qifan Zhang from\n  Palo Alto Networks for the report."
+    },
     "CVE-2026-50248": {
       "cf5e6e89a582151d5875fbd5db7d29fb3d9dc0cf": "- Fix error in log printout in fix for CVE-2026-50248, when the\n  primary name is bogus.",
       "eed3f1ab3805d85aeebbe000c360df5eb1e1dab9": "- Unit test for CVE-2026-50248.",
