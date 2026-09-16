@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/oven-sh/bun",
   "vulnerabilities": {
+    "CVE-2026-58040": {
+      "5abca77745325e8fb3fa0f7e64f2fac10305c236": "node:https: do not share a connection or TLS session of a request that has its own checkServerIdentity\n\nPort of nodejs/node 52a8ace880 (CVE-2026-58040). A request that passes its\nown checkServerIdentity to https.request() gets a unique Agent name, does\nnot read or fill the Agent's TLS session cache, and its socket never\nreturns to the keep-alive pool. An Agent-level checkServerIdentity still\npools, because Agent options override request options.\n\nThe proxy tunnel path caches the target's session in establishTunnel,\nwhich Node does not do, so the same rule is applied there."
+    },
     "GHSA-PFWX-36V6-832X": {
       "31eff2e275426dd44911ada85e653f4ccafff72a": "test(install): serve GitHub tarball fixtures locally in the GHSA-pfwx-36v6-832x and lifecycle script tests\n\nAdds githubTarball() to test/harness.ts. It builds the tarball layout GitHub\nreturns for /repos/<owner>/<repo>/tarball/<ref>. The GHSA-pfwx-36v6-832x and\nlifecycle script tests serve that tarball from a local server through\nGITHUB_API_URL. isolated-install.test.ts drops its inline tar writer for the\nhelper.",
       "7bd4bbf5252d8b280f7470f507a1043b2fa855a4": "test(install): serve GitHub tarball fixtures locally in the GHSA-pfwx-36v6-832x and lifecycle script tests (#39115)",

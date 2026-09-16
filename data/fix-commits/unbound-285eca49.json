@@ -2,9 +2,11 @@
   "vcs_url": "https://github.com/nlnetlabs/unbound",
   "vulnerabilities": {
     "CVE-2026-85501": {
+      "a7fc80d8c5dd6215c52570dd281ec58d04d25eea": "- Unit test for CVE-2026-85501.",
       "13b6717f1716810523ffb60f971a6c9c5e8ce127": "- Fix CVE-2026-85501, Retrap: Novel Vulnerabilities to launch\n  Algorithmic Complexity Attacks on DNSSEC. Thanks to Zuyao Xu and\n  Xiang Li from Nankai University, AOSP Lab for the report. In\n  addition, thanks to Qifan Zhang from Palo Alto Networks for a\n  complimentary report."
     },
     "CVE-2026-82717": {
+      "5d89e0c2a7577e78f8a8433b940b20819efc262e": "- Unit test for CVE-2026-82717.",
       "0d4a6a63dd71050d216a467b488e28176f2599df": "- Fix CVE-2026-82717, CNAME synthesis could lead to heap corruption.\n  Thanks to Ben Morris from Anthropic for the report."
     },
     "CVE-2026-77860": {

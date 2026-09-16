@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/ruby/ruby",
   "vulnerabilities": {
     "CVE-2026-80212": {
+      "fe24147a6224399a611826ad5beedf34e48cc18c": "[ruby/resolv] Do not register on-demand classes for unknown DNS types and SvcParamKeys\n\nDecoding an unknown (type, class) pair or an unknown SvcParamKey\nregistered the generated class in a constant and in ClassHash\npermanently, so a malicious response could exhaust memory.\n\nDropping the registration means a fresh class per decode, which breaks\nthe class identity that Resource#== and Message#== relied on, so both now\ncompare through Resource::Generic.type_class_equal?.\n\nFixes CVE-2026-80212.\n\nhttps://github.com/ruby/resolv/commit/9e331b5960",
       "6deacfb8275bd1583ffa1b8c2b87f25484586a91": "Bump up resolv-0.7.2 for Ruby 3.4\n\nBackport of the August 2026 resolv security release.\n\nCVE-2026-80212\nCVE-2026-80213\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
       "619ea0f602ac09e7c9ea626c572c3ce7465e8316": "Bump up resolv-0.3.2 for Ruby 3.3\n\nBackport of the August 2026 resolv security release.\n\nCVE-2026-80212\nCVE-2026-80213\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
       "2da9a6ef3f423fb85acfd5c41150bb22cdeb14ef": "Bump up resolv-0.7.2 for Ruby 4.0\n\nBackport of the August 2026 resolv security release.\n\nCVE-2026-80212\nCVE-2026-80213\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
