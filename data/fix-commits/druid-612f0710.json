@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/druid",
   "vulnerabilities": {
+    "CVE-2026-73334": {
+      "0d63dc02e88429ccb17a761596bbbc5e1b93203d": "ci: suppress CVE-2026-73334 for parquet crypto.keytools (not used by Druid)\n\nCVE-2026-73334 affects org.apache.parquet.crypto.keytools \u2014 a KMS URL\nvalidation bypass that can redirect token requests to a malicious host.\nDruid does not use Parquet's envelope encryption or KmsClient integration,\nso the vulnerable code path is unreachable.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+    },
     "GHSA-PJWM-PJ3P-43MV": {
       "1bcae25a84c91abed3683242e9cb1fcacf4378de": "build(deps): bump axios from 1.15.2 to 1.20.0 and form-data from 4.0.4 to 4.0.6 (#20361)\n\nFixes multiple security vulnerabilities in the web console:\n- axios 1.20.0: fixes GHSA-pjwm-pj3p-43mv (NO_PROXY bypass via IPv6-mapped addresses),\n  GHSA-j5f8-grm9-p9fc and GHSA-p92q-9vqr-4j8v (Proxy-Authorization header leakage on redirect),\n  GHSA-gcfj-64vw-6mp9 and GHSA-35jp-ww65-95wh (prototype pollution MITM),\n  GHSA-hfxv-24rg-xrqf (ReDoS in cookie handling),\n  GHSA-777c-7fjr-54vf (fetch adapter ignores size limits)\n- form-data 4.0.6: fixes GHSA-hmw2-7cc7-3qxx (CRLF injection in multipart field names)"
     },
