@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://gitlab.com/gitlab-org/gitlab",
   "vulnerabilities": {
+    "CVE-2026-13210": {
+      "f960e9e9eb755fcbef935bd90efbe44bd0177ae6": "Merge branch 'cve-2026-13210-canonical-18-11' into '18-11-stable-ee' \n\nBackport of 'Anchor and escape EnvironmentMatcher wildcard patterns'\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/255940\n\nMerged-by: Reuben Pereira <2967854-rpereira2@users.noreply.gitlab.com>\nApproved-by: Michael Kozono <mkozono@gitlab.com>\nApproved-by: Vishal Tak <vtak@gitlab.com>\nCo-authored-by: Lachlan Grant <lgrant@gitlab.com>",
+      "ffce75ea0447e32d9f6873ef5764f1ef863109e2": "Merge branch 'cve-2026-13210-canonical-19-0' into '19-0-stable-ee' \n\nBackport of 'Anchor and escape EnvironmentMatcher wildcard patterns'\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/255939\n\nMerged-by: Reuben Pereira <2967854-rpereira2@users.noreply.gitlab.com>\nApproved-by: Michael Kozono <mkozono@gitlab.com>\nApproved-by: Vishal Tak <vtak@gitlab.com>\nCo-authored-by: Lachlan Grant <lgrant@gitlab.com>"
+    },
     "CVE-2026-33816": {
       "c2e73c476f9f57883b8fd2d641acffe0796a6176": "Update GitLab Elasticsearch Indexer to 5.14.14\n\nv5.14.13 was cut from the v5.14.7 lineage and builds with\njackc/pgx/v5 5.8.0, below the 5.9.0 fixed line for CVE-2026-33816.\nv5.14.14 is cut from main and restores pgx 5.10.0 and go 1.26 while\nkeeping the ICU charset-conversion fix.\n\nBackport of https://gitlab.com/gitlab-org/gitlab/-/merge_requests/255533",
       "a172dcb9a52210365a06073708125c00295cf1fe": "Update GitLab Elasticsearch Indexer to 5.14.14\n\nBackport of https://gitlab.com/gitlab-org/gitlab/-/merge_requests/255533\nto 19-2-stable-ee.\n\nThe 5.14.13 pin on this branch was cut from the v5.14.7 lineage, so it\nships jackc/pgx/v5 5.8.0 -- below the 5.9.0 fixed line for\nCVE-2026-33816. v5.14.14 is the union of both lineages, so this single\nbump restores pgx 5.10.0 and keeps the ICU charset-conversion fix.",
