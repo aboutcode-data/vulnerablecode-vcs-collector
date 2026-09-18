@@ -2,7 +2,7 @@
   "vcs_url": "https://github.com/pypa/virtualenv",
   "vulnerabilities": {
     "CVE-2026-24049": {
-      "e36b99224d3c4267c0ef58ce9f52d42295662ac1": "\ud83d\udd27 chore(changelog): drop dead CVE fragment\n\ndocs/changelog/CVE-2026-24049.fix.rst has sat unpublished since #3167 in\nJune. towncrier only recognises feature, bugfix, doc, removal and misc, and\npyproject.toml configures no extra types, so the fix extension made towncrier\nskip the file. Six releases went out without it, including 21.7.11 today.\n\nRenaming it to a valid type would announce a wheel bump that shipped in\n21.4.3 and was undone in the next commit, #3168. virtualenv stopped embedding\nwheel altogether in #3170, and v21.5.0 already records \"Removed wheel of\n0.47.0\", so the bump has no audience left. Deleting beats publishing a\nthree-month-old note about a seed package that is gone.",
+      "087a2ef8bd3aa15b562a3558b1068f603e50f77a": "\ud83d\udd27 chore(changelog): drop dead CVE-2026-24049 fragment (#3249)",
       "5389c25cf4a1ee11ea55183d6daf4c8055dc3060": "Add wheel-0.47.0 to seed packages as mitigation of CVE-2026-24049 (#3167)\n\nHi!\n\nMe and my team ran into the issue that even with the latest version of\n`virtualenv` each venv gets seeded with `wheel 0.45.1`, which is\nvulnerable in terms of\n[CVE-2026-24049](https://nvd.nist.gov/vuln/detail/CVE-2026-24049).\nThis PR adds the most current version of the `wheel` package to the list\nof seeding packages at the time this PR was authored.\n\n---------\n\nCo-authored-by: Patrick Kleindienst <Patrick.Kleindienst@ibm.com>"
     },
     "CVE-2025-68146": {
