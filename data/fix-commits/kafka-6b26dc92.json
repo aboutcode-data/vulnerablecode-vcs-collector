@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/kafka",
   "vulnerabilities": {
+    "CVE-2026-90560": {
+      "176020f69e8e5b5c2b3d00c27b1ac77b5ea3bad9": "KAFKA-21123: bump zstd-jni (#23506)\n\nLooks like there are a bunch of recently reported CVEs involving\nzstd-jni. Bumping to latest version to mitigate\nE.g. https://nvd.nist.gov/vuln/detail/cve-2026-90560\n\nVerified completion levels are still the same\nhttps://raw.githubusercontent.com/facebook/zstd/v1.5.7/lib/compress/clevels.h\n\nReviewers: Ken Huang <s7133700@gmail.com>"
+    },
     "CVE-2026-68497": {
       "e3d4f4755deee0674536ab96e4a4c246499a3996": "KAFKA-21004: Bump jackson to 2.21.6 (#23321)\n\nThis patch fixes a Jackson Databind vulnerability CVE-2026-68497\nhttps://github.com/FasterXML/jackson/wiki/Jackson-Release-2.21.6\n\nReviewers: Ken Huang <s7133700@gmail.com>",
       "f0a2be3d284464c4c98cff7a669cd8d6f3db8c41": "KAFKA-21004: Bump jackson to 2.21.6 (#23321)\n\nThis patch fixes a Jackson Databind vulnerability CVE-2026-68497\nhttps://github.com/FasterXML/jackson/wiki/Jackson-Release-2.21.6\n\nReviewers: Ken Huang <s7133700@gmail.com>",
