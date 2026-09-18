@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-3429-F84M-8QHW": {
+      "45bb7328b36c163234f5ccb7f1d494b7c4c8c775": "Escape the title in the CIP encoder (GHSA-3429-f84m-8qhw)"
+    },
     "GHSA-RVV7-5MH8-VCFC": {
       "a0ca2c739c0216ff4efbd631d1ba7fd54dba1ff4": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-rvv7-5mh8-vcfc"
     },

@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitlab.com/freetype/freetype",
   "vulnerabilities": {
+    "CVE-2026-27171": {
+      "891f904e2e7b4289f615598cd4b69832f87d2f3a": "[gzip] Apply security fix for CVE-2026-27171.\n\nThis is probably completely unnecessary, but it doesn't hurt.\n\nTaken from\n\n  https://github.com/madler/zlib/commit/ba829a458576d1ff0f26fc7230c6de816d1f6a77\n\nFixes issue #1468."
+    },
     "CVE-2020-15999": {
       "a3bab162b2ae616074c8877a04556932998aeacd": "[sfnt] Fix heap buffer overflow (#59308).\n\nThis is CVE-2020-15999.\n\n* src/sfnt/pngshim.c (Load_SBit_Png): Test bitmap size earlier."
     },
