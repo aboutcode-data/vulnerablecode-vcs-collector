@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/FFmpeg/FFmpeg",
   "vulnerabilities": {
+    "CVE-2026-30998": {
+      "8f0166f5d1310f50b710595280929a73a706c2da": "tools/zmqsend: close the input FILE\n\nFixes CVE-2026-30998\n\nFixes: Resource leak\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>\n(cherry picked from commit 18b83f2d0a0f9bcbafb0001a2911327c4b8df056)",
+      "18b83f2d0a0f9bcbafb0001a2911327c4b8df056": "tools/zmqsend: close the input FILE\n\nFixes CVE-2026-30998\n\nFixes: Resource leak\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>"
+    },
     "CVE-2025-1594": {
       "ba69be84a1ceabfb39127831ad8da0fd7cb471f3": "avcodec/aacenc_tns: fix three-filter energy measurement\n\nBackport of bedfb6eca402037f5cbb115fa767d106b8c14f1c to release/6.0.\n\nAAC Main can select three TNS filters, but the old direction calculation only allocates two energy measurements and reads beyond that array for the third filter. Measure all three regions and compare each filter with the following region.\n\nFixes: CVE-2025-1594\nFixes: https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/22696\nFound-by: 0x20z\nSigned-off-by: lizhixuan.HUST <2069360659@qq.com>\nAssisted-by: Fairy",
       "64626725c36c2c0e449ae63381587c35552d2d2f": "avcodec/aacenc_tns: fix three-filter energy measurement\n\nBackport of bedfb6eca402037f5cbb115fa767d106b8c14f1c to release/5.0.\n\nAAC Main can select three TNS filters, but the old direction calculation only allocates two energy measurements and reads beyond that array for the third filter. Measure all three regions and compare each filter with the following region.\n\nFixes: CVE-2025-1594\nFixes: https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/22696\nFound-by: 0x20z\nSigned-off-by: lizhixuan.HUST <2069360659@qq.com>\nAssisted-by: Fairy",
@@ -14,9 +18,6 @@
       "a33bd846c99b66497e6f200cf54d47cf86f29604": "tools/zmqsend: free the AVBprint buffer after using it\n\nFixes CVE-2026-30999\n\nFixes: memleak\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>\n(cherry picked from commit 144af8f81abc1385631b4e1f4672cd415a9c6e05)\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>",
       "946bf8977e64c38811c7deaf69d9d09b3168971f": "tools/zmqsend: free the AVBprint buffer after using it\n\nFixes CVE-2026-30999\n\nFixes: memleak\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>\n(cherry picked from commit 144af8f81abc1385631b4e1f4672cd415a9c6e05)\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>",
       "144af8f81abc1385631b4e1f4672cd415a9c6e05": "tools/zmqsend: free the AVBprint buffer after using it\n\nFixes CVE-2026-30999\n\nFixes: memleak\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>"
-    },
-    "CVE-2026-30998": {
-      "18b83f2d0a0f9bcbafb0001a2911327c4b8df056": "tools/zmqsend: close the input FILE\n\nFixes CVE-2026-30998\n\nFixes: Resource leak\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>"
     },
     "CVE-2026-30997": {
       "c3795bf59a414ae3156940e229a14279a2991657": "avcodec/av1dec: check that primary_ref_frame is within range\n\nFixes CVE-2026-30997\n\nFixes: Out-of-Bounds Access\nFound-by: Xinghang Lv\nSigned-off-by: James Almer <jamrial@gmail.com>\n(cherry picked from commit 1a2c16fe514b60e1860829c42ce199de77a007e5)\n(cherry picked from commit 3c4ca300f469d657051c8584515870fe9c36aaa3)\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>",

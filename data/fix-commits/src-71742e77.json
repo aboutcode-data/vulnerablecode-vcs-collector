@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/openbsd/src",
   "vulnerabilities": {
+    "CVE-2026-82560": {
+      "a69f31d2395d233e4863878b547b9c5f7d21306b": "Handle overly large margins that could exhaust memory and cpu\n\nThis is CVE-2026-82560 for Pod::Text\n\nUpstream commit:\nhttps://github.com/rra/podlators/commit/70510174f69eb54aa6d617bde4e1402cd9b7c61f.patch"
+    },
     "CVE-2026-31912": {
       "db50546ab958fbbea8e8a780a6057b9b9ebca6b8": "Add proper program bound checks to the bpf engine\n\nIntroduce new bpf functions _bpf_lfilter and bpf_lfilter which properly\nbound check the bpf program and ensure that no jump instruction goes\nout of bound. The old bpf_filter and _bpf_filter functions pass a len of\nzero and bypass the bound checks.\n\nIn the kernel bpf_mfilter now uses the bpf_program (which includes the len)\nand by that all calls are bounded.\nIn userland pcap_offline_filter uses now bpf_lfilter and is bounded.\nDirect calls to bpf_filter and _bpf_filter don't do bound checking and\nshould no longer be used. These functions will be removed from our libpcap\nsoon.\n\nFix for libpcap CVE-2026-31912."
     },
