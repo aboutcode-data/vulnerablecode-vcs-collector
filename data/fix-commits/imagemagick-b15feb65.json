@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-462X-739V-QVQ2": {
+      "507aee2308046b25e251d0be1a5371327bb79683": "Corrected depth check to prevent a stack overflow (GHSA-462x-739v-qvq2)"
+    },
     "GHSA-3429-F84M-8QHW": {
       "45bb7328b36c163234f5ccb7f1d494b7c4c8c775": "Escape the title in the CIP encoder (GHSA-3429-f84m-8qhw)"
     },
