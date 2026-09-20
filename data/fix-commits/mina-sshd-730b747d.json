@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/apache/mina-sshd",
   "vulnerabilities": {
+    "CVE-2026-8763": {
+      "f4d631efd08ce7fdf67b0c164a64a7dcc97ef33c": "Bump Bouncy Castle 1.84 -> 1.85\n\nResolves dependency vulnerabilities:\n\n* CVE-2026-8763 [1]\n* CVE-2026-13506 [2]\n\n[1[ https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%908763\n[2] https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9013506"
+    },
+    "CVE-2026-13506": {
+      "f4d631efd08ce7fdf67b0c164a64a7dcc97ef33c": "Bump Bouncy Castle 1.84 -> 1.85\n\nResolves dependency vulnerabilities:\n\n* CVE-2026-8763 [1]\n* CVE-2026-13506 [2]\n\n[1[ https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%908763\n[2] https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%9013506"
+    },
     "CVE-2026-48827": {
       "4dd93b9371ae3d32dbf1bc3dc1f7072de06c3400": "Mention security fix\n\nResolution of CVE-2026-48827."
     },
