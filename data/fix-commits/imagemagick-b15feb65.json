@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-JPH3-37CG-79WG": {
+      "7605c7619da77a5ff1ccf4ec159f3ec782c6bda7": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-jph3-37cg-79wg"
+    },
     "GHSA-462X-739V-QVQ2": {
       "507aee2308046b25e251d0be1a5371327bb79683": "Corrected depth check to prevent a stack overflow (GHSA-462x-739v-qvq2)"
     },
