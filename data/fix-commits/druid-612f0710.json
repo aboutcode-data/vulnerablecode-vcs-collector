@@ -1,6 +1,15 @@
 {
   "vcs_url": "https://github.com/apache/druid",
   "vulnerabilities": {
+    "CVE-2026-79993": {
+      "7aeab259e36d49a80295006bc30c55ab6b9536ec": "ci: suppress ZooKeeper server-side CVEs not reachable from Druid's ZK client\n\nCVE-2026-79993: deleteContainer ACL bypass (ZK server-side, fixed in 3.8.7)\nCVE-2026-59739: SetWatches reconnect replay leaks path names (ZK server-side, fixed in 3.8.7)\nCVE-2026-59969: quorum TLS hostname bypass in FIPS mode (server-to-server only, fixed in 3.8.7)\n\nDruid uses ZooKeeper as a client only and does not run a ZK server or quorum,\nso none of these code paths are reachable from Druid.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+    },
+    "CVE-2026-59739": {
+      "7aeab259e36d49a80295006bc30c55ab6b9536ec": "ci: suppress ZooKeeper server-side CVEs not reachable from Druid's ZK client\n\nCVE-2026-79993: deleteContainer ACL bypass (ZK server-side, fixed in 3.8.7)\nCVE-2026-59739: SetWatches reconnect replay leaks path names (ZK server-side, fixed in 3.8.7)\nCVE-2026-59969: quorum TLS hostname bypass in FIPS mode (server-to-server only, fixed in 3.8.7)\n\nDruid uses ZooKeeper as a client only and does not run a ZK server or quorum,\nso none of these code paths are reachable from Druid.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+    },
+    "CVE-2026-59969": {
+      "7aeab259e36d49a80295006bc30c55ab6b9536ec": "ci: suppress ZooKeeper server-side CVEs not reachable from Druid's ZK client\n\nCVE-2026-79993: deleteContainer ACL bypass (ZK server-side, fixed in 3.8.7)\nCVE-2026-59739: SetWatches reconnect replay leaks path names (ZK server-side, fixed in 3.8.7)\nCVE-2026-59969: quorum TLS hostname bypass in FIPS mode (server-to-server only, fixed in 3.8.7)\n\nDruid uses ZooKeeper as a client only and does not run a ZK server or quorum,\nso none of these code paths are reachable from Druid.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+    },
     "CVE-2026-73334": {
       "e5ba9b92c5a1d6083bc1c66eb4398305c875ab53": "Broaden parquet CVE-2026-73334 suppression",
       "0d63dc02e88429ccb17a761596bbbc5e1b93203d": "ci: suppress CVE-2026-73334 for parquet crypto.keytools (not used by Druid)\n\nCVE-2026-73334 affects org.apache.parquet.crypto.keytools \u2014 a KMS URL\nvalidation bypass that can redirect token requests to a malicious host.\nDruid does not use Parquet's envelope encryption or KmsClient integration,\nso the vulnerable code path is unreachable.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
