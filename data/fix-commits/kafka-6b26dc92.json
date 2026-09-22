@@ -1,6 +1,15 @@
 {
   "vcs_url": "https://github.com/apache/kafka",
   "vulnerabilities": {
+    "CVE-2026-19204": {
+      "f7143734e4acebc3345b895e74e24abebe4e9f9e": "KAFKA-21139: bump jetty to 12.0.39 (#23543)\n\nhttps://jetty.org/security.html lists 3 CVEs impacting the current jetty\nversion used in Kafka (12.0.37)\n\n\n[CVE-2026-19204](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-19204)\n\n\n[CVE-2026-19203](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-19203)\n\n\n[CVE-2026-12611](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-12611)\n\n\nUpgrading to latest jetty version to mitigate the reported CVEs\n\nReviewers: Ken Huang <s7133700@gmail.com>"
+    },
+    "CVE-2026-19203": {
+      "f7143734e4acebc3345b895e74e24abebe4e9f9e": "KAFKA-21139: bump jetty to 12.0.39 (#23543)\n\nhttps://jetty.org/security.html lists 3 CVEs impacting the current jetty\nversion used in Kafka (12.0.37)\n\n\n[CVE-2026-19204](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-19204)\n\n\n[CVE-2026-19203](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-19203)\n\n\n[CVE-2026-12611](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-12611)\n\n\nUpgrading to latest jetty version to mitigate the reported CVEs\n\nReviewers: Ken Huang <s7133700@gmail.com>"
+    },
+    "CVE-2026-12611": {
+      "f7143734e4acebc3345b895e74e24abebe4e9f9e": "KAFKA-21139: bump jetty to 12.0.39 (#23543)\n\nhttps://jetty.org/security.html lists 3 CVEs impacting the current jetty\nversion used in Kafka (12.0.37)\n\n\n[CVE-2026-19204](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-19204)\n\n\n[CVE-2026-19203](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-19203)\n\n\n[CVE-2026-12611](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-12611)\n\n\nUpgrading to latest jetty version to mitigate the reported CVEs\n\nReviewers: Ken Huang <s7133700@gmail.com>"
+    },
     "CVE-2026-90560": {
       "176020f69e8e5b5c2b3d00c27b1ac77b5ea3bad9": "KAFKA-21123: bump zstd-jni (#23506)\n\nLooks like there are a bunch of recently reported CVEs involving\nzstd-jni. Bumping to latest version to mitigate\nE.g. https://nvd.nist.gov/vuln/detail/cve-2026-90560\n\nVerified completion levels are still the same\nhttps://raw.githubusercontent.com/facebook/zstd/v1.5.7/lib/compress/clevels.h\n\nReviewers: Ken Huang <s7133700@gmail.com>"
     },
