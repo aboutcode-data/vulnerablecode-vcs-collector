@@ -1,6 +1,21 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-HVWF-WMM6-HVC3": {
+      "55346382cebdf5c5fa6c544a7df7ae4910ffb090": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-hvwf-wmm6-hvc3"
+    },
+    "GHSA-W68R-6FMR-CVG4": {
+      "93aa075f0fa5a6ae6a83a63acc7c84283aa6d31b": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-w68r-6fmr-cvg4"
+    },
+    "GHSA-W288-JJ5X-HHVP": {
+      "a568d698ffb3dd57134fef8e9b64b61f1154a1df": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-w288-jj5x-hhvp"
+    },
+    "GHSA-69JX-J2X2-G5W4": {
+      "3e2075fe4a148ce33e7d749a99898e55a6cad7b5": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-69jx-j2x2-g5w4"
+    },
+    "GHSA-PMQJ-84PR-QC7C": {
+      "d4f06dcca7ad99d639af85bc347ad9fdfdcec8e2": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-pmqj-84pr-qc7c"
+    },
     "GHSA-462X-739V-QVQ2": {
       "c10823904b251d07fe79346a7136b0af295d451b": "Corrected depth check to prevent a stack overflow (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-462x-739v-qvq2)"
     },
