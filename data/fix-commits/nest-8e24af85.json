@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/nestjs/nest",
   "vulnerabilities": {
+    "CVE-2026-88932": {
+      "fb8ecdbef124f102f96de7f62db70b68296e6ae0": "fix(deps): update dependency multer to v2.4.0 [security]\n\nFixes CVE-2026-88932 (GHSA-3pph-fpjx-jg34).\n\nCloses #17847"
+    },
+    "GHSA-3PPH-FPJX-JG34": {
+      "fb8ecdbef124f102f96de7f62db70b68296e6ae0": "fix(deps): update dependency multer to v2.4.0 [security]\n\nFixes CVE-2026-88932 (GHSA-3pph-fpjx-jg34).\n\nCloses #17847"
+    },
     "CVE-2025-15284": {
       "d492171fd14d7d215bb6305f8cfd8d31fc31a4d0": "Merge pull request #16178 from Xilis/fix/body-parser-qs-cve\n\nfix(express): Update body-parser to 1.20.4 for CVE-2025-15284",
       "b9ec98fee72b1cd841fa8d63e69fc60e062b3fa8": "fix(express): Update body-parser to 1.20.4 for CVE-2025-15284",
