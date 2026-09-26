@@ -2,9 +2,11 @@
   "vcs_url": "https://github.com/moby/buildkit",
   "vulnerabilities": {
     "CVE-2026-53493": {
+      "1279a9ccff684eb6d02d6c5e9be2b7164ac46e43": "Dockerfile: containerd v2.3.6, v2.2.9, v1.7.36\n\nincludes a fix for CVE-2026-53493 / [GHSA-pg57-6jwg-q645]\n\n[GHSA-pg57-6jwg-q645]: https://github.com/containerd/containerd/security/advisories/GHSA-pg57-6jwg-q645\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>",
       "600b89776e0d78d7a612a945a52e7bc46d1e88c9": "vendor: github.com/containerd/containerd/v2 v2.3.6\n\nincludes a fix for CVE-2026-53493 / [GHSA-pg57-6jwg-q645]\n\nfull diff: https://github.com/containerd/containerd/compare/v2.3.5...v2.3.6\n\n[GHSA-pg57-6jwg-q645]: https://github.com/containerd/containerd/security/advisories/GHSA-pg57-6jwg-q645\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
     },
     "GHSA-PG57-6JWG-Q645": {
+      "1279a9ccff684eb6d02d6c5e9be2b7164ac46e43": "Dockerfile: containerd v2.3.6, v2.2.9, v1.7.36\n\nincludes a fix for CVE-2026-53493 / [GHSA-pg57-6jwg-q645]\n\n[GHSA-pg57-6jwg-q645]: https://github.com/containerd/containerd/security/advisories/GHSA-pg57-6jwg-q645\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>",
       "600b89776e0d78d7a612a945a52e7bc46d1e88c9": "vendor: github.com/containerd/containerd/v2 v2.3.6\n\nincludes a fix for CVE-2026-53493 / [GHSA-pg57-6jwg-q645]\n\nfull diff: https://github.com/containerd/containerd/compare/v2.3.5...v2.3.6\n\n[GHSA-pg57-6jwg-q645]: https://github.com/containerd/containerd/security/advisories/GHSA-pg57-6jwg-q645\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
     },
     "CVE-2026-53495": {
