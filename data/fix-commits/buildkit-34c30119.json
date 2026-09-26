@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/moby/buildkit",
   "vulnerabilities": {
+    "CVE-2026-53493": {
+      "600b89776e0d78d7a612a945a52e7bc46d1e88c9": "vendor: github.com/containerd/containerd/v2 v2.3.6\n\nincludes a fix for CVE-2026-53493 / [GHSA-pg57-6jwg-q645]\n\nfull diff: https://github.com/containerd/containerd/compare/v2.3.5...v2.3.6\n\n[GHSA-pg57-6jwg-q645]: https://github.com/containerd/containerd/security/advisories/GHSA-pg57-6jwg-q645\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
+    },
+    "GHSA-PG57-6JWG-Q645": {
+      "600b89776e0d78d7a612a945a52e7bc46d1e88c9": "vendor: github.com/containerd/containerd/v2 v2.3.6\n\nincludes a fix for CVE-2026-53493 / [GHSA-pg57-6jwg-q645]\n\nfull diff: https://github.com/containerd/containerd/compare/v2.3.5...v2.3.6\n\n[GHSA-pg57-6jwg-q645]: https://github.com/containerd/containerd/security/advisories/GHSA-pg57-6jwg-q645\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
+    },
     "CVE-2026-53495": {
       "de650e3cb550004aaa2f1a841f1dafdacf35d124": "vendor: github.com/containerd/containerd/v2 v2.3.5\n\nfull diff: https://github.com/containerd/containerd/compare/v2.3.4...v2.3.5\n\nSecurity Updates\n\n- [**CVE-2026-53495**](https://github.com/containerd/containerd/security/advisories/GHSA-7jxh-36q5-gcqv)\n- [**GHSA-rp3h-jf77-q9p4**](https://github.com/containerd/containerd/security/advisories/GHSA-rp3h-jf77-q9p4)\n\nImage Distribution\n\n- Apply hardening to strip sensitive authentication headers when fetching descriptor URLs\n\nRuntime\n\n- Avoid hangs and data races when streaming container standard I/O in CRI\n- Fix missing error messages in OpenTelemetry trace attributes\n- Fix user and group lookup failures in container rootfs containing symlinked /etc/passwd or /etc/group\n- Fix configuration loading error when drop-in configuration files have a higher version than the root configuration\n- Avoid containerd startup hangs when loading shims\n- Add context to error when shim delete times out\n- Fix Windows Server 2022 container compatibility on host builds newer than the latest LTSC\n\nSnapshotters\n\n- Fix unpack failure for EROFS images containing the erofs OS feature\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
     },

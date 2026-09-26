@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/kubernetes/kubernetes",
   "vulnerabilities": {
+    "CVE-2026-56865": {
+      "8590fe063b9b76b6ae027bf056cb6f431939d654": "Bump golang.org/x modules and mdlayher/socket\n\ngolang.org/x/net v0.59.0, crypto v0.57.0, sys v0.48.0, term v0.46.0,\ntext v0.42.0, sync v0.23.0, tools v0.50.0, mod v0.41.0, time v0.16.0,\noauth2 v0.37.0, exp 85c1c2202aba, and github.com/mdlayher/socket v0.7.0.\n\nx/mod v0.40.0 fixed CVE-2026-56865 and CVE-2026-56864 in sumdb; the\npackage is not vendored but module scanners flag the requirement. The\nfloors move together: x/net v0.59.0 requires the crypto, sys, term and\ntext versions above, x/crypto v0.57.0 and mdlayher/socket v0.7.0\nrequire x/net >= v0.58.0, and x/tools v0.50.0 requires x/mod v0.41.0."
+    },
+    "CVE-2026-56864": {
+      "8590fe063b9b76b6ae027bf056cb6f431939d654": "Bump golang.org/x modules and mdlayher/socket\n\ngolang.org/x/net v0.59.0, crypto v0.57.0, sys v0.48.0, term v0.46.0,\ntext v0.42.0, sync v0.23.0, tools v0.50.0, mod v0.41.0, time v0.16.0,\noauth2 v0.37.0, exp 85c1c2202aba, and github.com/mdlayher/socket v0.7.0.\n\nx/mod v0.40.0 fixed CVE-2026-56865 and CVE-2026-56864 in sumdb; the\npackage is not vendored but module scanners flag the requirement. The\nfloors move together: x/net v0.59.0 requires the crypto, sys, term and\ntext versions above, x/crypto v0.57.0 and mdlayher/socket v0.7.0\nrequire x/net >= v0.58.0, and x/tools v0.50.0 requires x/mod v0.41.0."
+    },
     "CVE-2026-84445": {
       "bbd0a69d228a459fd069840c8fde86cd91e4c5fd": "Merge pull request #141976 from harshitgupta31415/codex/grpc-cve-2026-84445\n\ndeps: bump google.golang.org/grpc to v1.82.2"
     },
