@@ -1,6 +1,24 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-VM77-Q83H-5FHG": {
+      "e87c97d2c1d19dd6bf138e79b9ded4befde54794": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-vm77-q83h-5fhg"
+    },
+    "GHSA-7R5G-P7FF-JGCP": {
+      "9108482a07ca08620021853a14133b9bc6e77054": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-7r5g-p7ff-jgcp"
+    },
+    "GHSA-5JF2-9GCP-Q234": {
+      "d8d635ecc52aec6553d96dcf5ca34cab81293a17": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5jf2-9gcp-q234"
+    },
+    "GHSA-M938-565C-H9QF": {
+      "8980924dff771df8286cd5311ba0d2c9ef1902ca": "Fix memory leak when SimilarityImage fails (GHSA-m938-565c-h9qf)"
+    },
+    "GHSA-H9G3-4QVR-RX8H": {
+      "24095b79b34474e707759aa6f91c0b85e052d68c": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-h9g3-4qvr-rx8h"
+    },
+    "GHSA-C2QQ-JQW7-Q4MX": {
+      "68168e6e5617e4cc478452777586e408f542362b": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-c2qq-jqw7-q4mx"
+    },
     "GHSA-6P6Q-WFRV-FFHH": {
       "09b961e05cdb7caeb923e1736caa340ac26c84ea": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-6p6q-wfrv-ffhh"
     },

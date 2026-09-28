@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/kubernetes/kubernetes",
   "vulnerabilities": {
+    "GHSA-CQR7-R6X2-9CQF": {
+      "11f5f2467c6694e76706e76ea2e0276ab66830ae": "Bump go-openapi jsonpointer, jsonreference to v1.0.2 and swag to v0.29.2\n\njsonpointer v1.0.2 fixes two uncaught panics in the name provider and\nin Pointer.Set (GHSA-cqr7-r6x2-9cqf, GHSA-m8w9-vj7g-gxgg).\n\nSigned-off-by: Davanum Srinivas <davanum@gmail.com>"
+    },
+    "GHSA-M8W9-VJ7G-GXGG": {
+      "11f5f2467c6694e76706e76ea2e0276ab66830ae": "Bump go-openapi jsonpointer, jsonreference to v1.0.2 and swag to v0.29.2\n\njsonpointer v1.0.2 fixes two uncaught panics in the name provider and\nin Pointer.Set (GHSA-cqr7-r6x2-9cqf, GHSA-m8w9-vj7g-gxgg).\n\nSigned-off-by: Davanum Srinivas <davanum@gmail.com>"
+    },
     "CVE-2026-84304": {
       "7f2c19ad34f40c3cb9f027fb560a291658587545": "Bump google.golang.org/grpc to v1.84.0 and lift its pin\n\nv1.82.2 lacks the CVE-2026-84304 fix (grpc/grpc-go#9331, in v1.83.1+).\nThe four modules v1.83+ adds via cloud.google.com/go/auth are graph-only\n(only credentials/google imports them, not vendored); record them in\nstatus.unwantedReferences, option 1 of #142005.\n\nSigned-off-by: Davanum Srinivas <davanum@gmail.com>"
     },
