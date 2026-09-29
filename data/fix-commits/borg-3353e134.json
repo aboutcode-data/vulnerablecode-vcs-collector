@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/borgbackup/borg",
   "vulnerabilities": {
+    "GHSA-J586-36CW-2GC2": {
+      "e84d7ac7a890c89c940697874507acdebc17aef8": "support msgpack 1.2.3\n\nmsgpack 1.2.3 brings fixes relevant to borg's usage of the C extension:\nmemory leaks when map key validation or container hooks fail\n(GHSA-j586-36cw-2gc2) and a use-after-free when cleaning up an\nincomplete Unpacker.skip().\n\nThe C Unpacker now raises ValueError when switching between unpack,\nskip, header readers or read_bytes() while an object is incomplete.\nborg only uses feed() plus unpack()/iteration (and RobustUnpacker\ncreates a fresh Unpacker on each resync attempt), so this does not\naffect borg.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "084f3fbce66c29334ad0a1d83324011398339547": "support msgpack 1.2.3\n\nmsgpack 1.2.3 brings fixes relevant to borg's usage of the C extension:\nmemory leaks when map key validation or container hooks fail\n(GHSA-j586-36cw-2gc2) and a use-after-free when cleaning up an\nincomplete Unpacker.skip().\n\nThe C Unpacker now raises ValueError when switching between unpack,\nskip, header readers or read_bytes() while an object is incomplete.\nborg only uses feed() plus unpack()/iteration (and RobustUnpacker\ncreates a fresh Unpacker on each resync attempt), so this does not\naffect borg.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+    },
     "CVE-2026-62268": {
       "066acd971d4f06279dfd2badcfb697440a4e572f": "Merge pull request #9916 from ThomasWaldmann/1.2-fixes\n\n1.2-maint: CVE-2026-62268 and other fixes",
       "907ba36c6f135e4b8efbf2636000b9adf07b7edf": "Merge pull request #9919 from ThomasWaldmann/cve-2026-62268-master\n\nmaster: CVE-2026-62268 fixes",

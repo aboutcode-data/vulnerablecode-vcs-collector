@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-PWPF-8799-94CJ": {
+      "cf40ce974c3f780b7f6913bcff7bec27087c9104": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-pwpf-8799-94cj"
+    },
+    "GHSA-V9Q4-CM37-Q2JM": {
+      "b41a6bc92ac778e0459ce500e9d64fb361e29fd5": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-v9q4-cm37-q2jm"
+    },
+    "GHSA-8W9C-HJ38-8PF9": {
+      "a63bdd29ebe8439d1bfa51ca4e7890b8b4742560": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-8w9c-hj38-8pf9"
+    },
+    "GHSA-MQMP-R5JH-JX7W": {
+      "63dde0cf281383ab69432b88305f7dcd6a8ce900": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-mqmp-r5jh-jx7w"
+    },
     "GHSA-83W9-W85J-H9JC": {
       "af510e976301c2516aaa26ea8f88318450eeece2": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-83w9-w85j-h9jc",
       "62c7876c37347dee0be1872e623650ba59f8a541": "Added missing cleanup in error path of the MAT decoder (GHSA-83w9-w85j-h9jc)"
