@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/rails/rails-html-sanitizer",
   "vulnerabilities": {
+    "GHSA-X2F5-4PRF-W687": {
+      "1757549a680f20174f64c12c918a76e736326bb7": "dep(dev): bump json to 2.19.9\n\nThe lockfile pinned json 2.19.8, which is affected by GHSA-x2f5-4prf-w687.\nUpdate json, and record the current gem version (1.7.1) in the lockfile.\n\nref: https://github.com/rails/rails-html-sanitizer/security/dependabot/68"
+    },
     "GHSA-9WJQ-CP2P-HRGF": {
       "74dcb8053e6da9921246ce71b06ad9fd65b19586": "Properly restrict SVG href attributes\n\nPermitScrubber reimplements Loofah's SVG local-reference restriction,\nwhich covered only `xlink:href`. SVG 2 also allows plain `href`, so\n`<use href=\"https://example.com/x.svg#p\"/>` passed through intact.\nRestrict both via Loofah's SVG_HREF_ATTRIBUTES set (Loofah >= 2.25.2),\nmirroring the related Loofah fix for GHSA-9wjq-cp2p-hrgf.\n\nref: https://github.com/rails/rails-html-sanitizer/security/advisories/GHSA-cj75-f6xr-r4g7"
     },

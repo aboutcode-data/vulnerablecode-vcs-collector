@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-83W9-W85J-H9JC": {
+      "af510e976301c2516aaa26ea8f88318450eeece2": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-83w9-w85j-h9jc",
+      "62c7876c37347dee0be1872e623650ba59f8a541": "Added missing cleanup in error path of the MAT decoder (GHSA-83w9-w85j-h9jc)"
+    },
     "GHSA-7438-VH5V-V52H": {
       "3882fd7116e0794a05457f78da80cd39f83b52c3": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-7438-vh5v-v52h"
     },

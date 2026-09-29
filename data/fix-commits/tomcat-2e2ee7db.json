@@ -1,6 +1,24 @@
 {
   "vcs_url": "https://github.com/apache/tomcat",
   "vulnerabilities": {
+    "CVE-2026-78437": {
+      "ee765042755b6236c8092c581b1aa8d8d0c3933a": "Add test case for CVE-2026-78437",
+      "4a5e28603260df00b454e4669ce41a9bf8bc17ee": "Add test case for CVE-2026-78437",
+      "51e4e60a32202b2632c21adfaa176b3352b5fd82": "Add test case for CVE-2026-78437",
+      "e5a5d87495699f1e5accedf116fd5d45ecb5f313": "Add test case for CVE-2026-78437"
+    },
+    "CVE-2026-77791": {
+      "1a401087aea0a2caa359ed321c00f89e5d1ad48f": "Add test case for CVE-2026-77791\n\nGenerated-by: Claude Code / Sonnet 5",
+      "5484ea8336286635baab3801458b1b5c794649f2": "Add test case for CVE-2026-77791\n\nGenerated-by: Claude Code / Sonnet 5",
+      "315e8a22afeb4254ae33118450df8316fac28a50": "Add test case for CVE-2026-77791\n\nGenerated-by: Claude Code / Sonnet 5",
+      "595d2608250d1aba308c090e9c91ddca2073faab": "Add test case for CVE-2026-77791\n\nGenerated-by: Claude Code / Sonnet 5"
+    },
+    "CVE-2026-77762": {
+      "ff143e4821e2cb67023f9eb122162e7d2e1fc1cf": "Add test case for CVE-2026-77762\n\nGenerated-by: Claude Code / Sonnet 5",
+      "f685706ccb89a1b3dbf3a1310738d250493ee575": "Add test case for CVE-2026-77762\n\nGenerated-by: Claude Code / Sonnet 5",
+      "8ed480fca69e630b08b728da00578f1cdadabd80": "Add test case for CVE-2026-77762\n\nGenerated-by: Claude Code / Sonnet 5",
+      "0eae5c69d99620e0becfce32cea67c18fe177c52": "Add test case for CVE-2026-77762\n\nGenerated-by: Claude Code / Sonnet 5"
+    },
     "CVE-2022-23181": {
       "7fa56afd0afb11f38b7770ad21e85f552dabd9c9": "Add a test in TestFileStore relevant to CVE-2022-23181",
       "a936bc0bd6d0ecef7f5978db0972829ba44aa81b": "Add a test in TestFileStore relevant to CVE-2022-23181",
