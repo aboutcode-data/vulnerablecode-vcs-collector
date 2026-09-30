@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/beam",
   "vulnerabilities": {
+    "CVE-2026-69247": {
+      "cc24fdfabafc4b5822e1a5f76a72d034297905b1": "Remove upper bound pin for cryptography. (#40180)\n\nThis pin is dangerous because it prevents future CVE's in a critical library\nfrom being upgraded. For example, installing the latest version of beam right\nnow forces a version of cryptography vulnerable to CVE-2026-69247."
+    },
     "CVE-2026-59939": {
       "7d682e210f99133633c72ad12cd75f18b80ba7c1": "Bump httplib2 upper bound to `<1.0.0` (#39280)\n\nThis allows for httplib2 0.32.0 which includes a fix for CVE-2026-59939.\n\nResolves #39279."
     },
