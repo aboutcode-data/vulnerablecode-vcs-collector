@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/ruby/ruby",
   "vulnerabilities": {
+    "CVE-2025-24294": {
+      "fccc81a3e63cf047059262aa9b5ecf11845a7399": "[ruby/resolv] Bound the number of compression pointers per name\n\nCommit 4c2f71b (CVE-2025-24294) capped a decompressed name at 255 octets,\nbounding its length but not the work: a chain of compression pointers adds\nno label octets, so the cap never fires while the decoder follows every\npointer, and many records sharing one chain make decoding quadratic. Cap\nthe pointers followed per name at 128.\n\nReported by: whiteshadow_8500 (https://hackerone.com/whiteshadow_8500)\n\nhttps://github.com/ruby/resolv/commit/0415f01bcf\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>"
+    },
     "CVE-2026-80212": {
       "fe24147a6224399a611826ad5beedf34e48cc18c": "[ruby/resolv] Do not register on-demand classes for unknown DNS types and SvcParamKeys\n\nDecoding an unknown (type, class) pair or an unknown SvcParamKey\nregistered the generated class in a constant and in ClassHash\npermanently, so a malicious response could exhaust memory.\n\nDropping the registration means a fresh class per decode, which breaks\nthe class identity that Resource#== and Message#== relied on, so both now\ncompare through Resource::Generic.type_class_equal?.\n\nFixes CVE-2026-80212.\n\nhttps://github.com/ruby/resolv/commit/9e331b5960",
       "6deacfb8275bd1583ffa1b8c2b87f25484586a91": "Bump up resolv-0.7.2 for Ruby 3.4\n\nBackport of the August 2026 resolv security release.\n\nCVE-2026-80212\nCVE-2026-80213\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
