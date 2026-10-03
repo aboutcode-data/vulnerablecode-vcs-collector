@@ -1,6 +1,14 @@
 {
   "vcs_url": "https://github.com/angular/angular-cli",
   "vulnerabilities": {
+    "CVE-2026-102992": {
+      "7e6d2da08406f240b18b1d7e692cad27f29af314": "fix(@angular/build): bump piscina to 5.3.2\n\nBumps piscina to 5.3.2 to address GHSA-67c8-pqhq-4rmx / CVE-2026-102992.\n\nCloses #34241",
+      "3e39e33fb1422af144ea795d871969640a27627b": "fix(@angular/build): bump piscina to 5.3.2\n\nBumps piscina to 5.3.2 to address GHSA-67c8-pqhq-4rmx / CVE-2026-102992.\n\nCloses #34241"
+    },
+    "GHSA-67C8-PQHQ-4RMX": {
+      "7e6d2da08406f240b18b1d7e692cad27f29af314": "fix(@angular/build): bump piscina to 5.3.2\n\nBumps piscina to 5.3.2 to address GHSA-67c8-pqhq-4rmx / CVE-2026-102992.\n\nCloses #34241",
+      "3e39e33fb1422af144ea795d871969640a27627b": "fix(@angular/build): bump piscina to 5.3.2\n\nBumps piscina to 5.3.2 to address GHSA-67c8-pqhq-4rmx / CVE-2026-102992.\n\nCloses #34241"
+    },
     "GHSA-M28W-2PQF-7QGJ": {
       "94b620acd76e39c7d5cc8527dfc6fe9096855cbd": "fix(@angular-devkit/build-angular): update webpack-dev-server to 5.2.6\n\nMitigates GHSA-m28w-2pqf-7qgj and GHSA-f5vj-f2hx-8m93.\nFixes #33903",
       "b0047b04f56f5cb3fb8e4465ba0fad777497144a": "fix(@angular-devkit/build-angular): update webpack-dev-server to 5.2.6\n\nMitigates GHSA-m28w-2pqf-7qgj and GHSA-f5vj-f2hx-8m93.\nFixes #33903"
