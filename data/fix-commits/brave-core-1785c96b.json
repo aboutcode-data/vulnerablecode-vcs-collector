@@ -2,7 +2,7 @@
   "vcs_url": "https://github.com/brave/brave-core",
   "vulnerabilities": {
     "GHSA-GJJ5-9665-RWRC": {
-      "88640c5770edf09e13f669b35d066b5f8e88d8dd": "Override probe-image-size to 7.4.0 to address GHSA-gjj5-9665-rwrc"
+      "fca88f00b879360593817c575f4eebc20d750cbb": "Override probe-image-size to 7.4.0 to address GHSA-gjj5-9665-rwrc (#40495)"
     },
     "GHSA-V5MP-JGW5-2X6J": {
       "355ce93f6b938c362a3a0722cda63fe58bed0eec": "fix: override toml to 4.1.2 for GHSA-v5mp-jgw5-2x6j (uplift to 1.95.x) (#39647)\n\nUplift of #39630 (squashed) to release",
