@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "GHSA-CR2J-534F-MF3G": {
+      "c5df8ef8e4fd60871807c1c06cf941eedfeef08a": "app-containers/apptainer: Add 1.5.4, Moderate severity SA\n\nMoved file patch to sed\n\nBug: https://bugs.gentoo.org/983341\nGHSA: https://github.com/apptainer/apptainer/security/advisories/GHSA-cr2j-534f-mf3g\nSigned-off-by: Martin Mokry <martin-kokos@protonmail.com>\nPart-of: https://github.com/gentoo/gentoo/pull/46824\nCloses: https://github.com/gentoo/gentoo/pull/46824\nSigned-off-by: Viorel Munteanu <ceamac@gentoo.org>"
+    },
     "CVE-2026-19743": {
       "6fcdad87feda992372132460e67625101a2e86d8": "net-misc/teamviewer: add 15.82.6\n\nfixes multiple Vulnerabilities:\nTeamviewer Security Bulletin TV-2026-1010\nAssigned CVE CVE-2026-19743, CVE-2026-92368, CVE-2026-92369, CVE-2026-92370, CVE-2026-92371\n\nBug: https://bugs.gentoo.org/983570\nSigned-off-by: Martin Dummer <martin.dummer@gmx.net>\nPart-of: https://github.com/gentoo/gentoo/pull/46852\nCloses: https://github.com/gentoo/gentoo/pull/46852\nSigned-off-by: Sam James <sam@gentoo.org>"
     },
