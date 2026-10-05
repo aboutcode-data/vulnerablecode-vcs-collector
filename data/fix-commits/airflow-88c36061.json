@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/apache/airflow",
   "vulnerabilities": {
+    "CVE-2026-3479": {
+      "48f6b5173979ca595d49eaeeadbdfd9ec1722089": "Require moto 5.2.2 or newer for the Amazon provider tests (#74224)\n\nOlder moto loads its bundled EC2 data through ../ resource paths, which Python builds carrying the CVE-2026-3479 pkgutil.get_data patch (Docker Hardened Images among them) reject, so every EC2-backed test failed in the lowest-dependency run.\n\nGenerated-by: Claude Opus 5",
+      "313106aacb120b27ef030dfa9f76e40be0b903bc": "Require moto 5.2.2 or newer for the Amazon provider tests\n\nOlder moto loads its bundled EC2 data through ../ resource paths, which Python builds carrying the CVE-2026-3479 pkgutil.get_data patch (Docker Hardened Images among them) reject, so every EC2-backed test failed in the lowest-dependency run.\n\nGenerated-by: Claude Opus 5"
+    },
     "CVE-2026-81726": {
       "aa19d2dbb9ed187ec01957a92848d9b005e9ba9d": "Allow GHSA-8mgp-746c-j5xp (nltk) in the dependency review gate\n\nThe `Reject vulnerable dependency changes` job fails on\n`uv.lock \u00bb nltk@3.10.3` for GHSA-8mgp-746c-j5xp (CVE-2026-81726), a\npath traversal in nltk's model-artifact save/load APIs with no released\nfix yet.\n\nIt does not affect Airflow:\n\n* nltk is not an Airflow dependency. It arrives only through\n  `llama-index-core`, itself the `llamaindex` optional extra and dev\n  group of `apache-airflow-providers-common-ai`.\n* It is absent from the released constraints - `nltk` appears only in\n  `constraints-source-providers-*.txt`.\n* The affected APIs (`TransitionParser`, `AveragedPerceptron.save`/\n  `load`, `PerceptronTagger.save_to_json`, `save_maxent_params`) are\n  never imported by `llama-index-core`, which uses only the Punkt\n  tokenizer and the stopwords corpus.\n\nUpstream merged the fix on nltk's develop branch (nltk/nltk#3757,\nnltk/nltk#3759, nltk/nltk#3813) after v3.10.3 was tagged, so the check\nstays red until nltk 3.10.4 ships. Drop the entry once it does.\n\nGenerated-by: Claude Opus 5\nClaude-Session: https://claude.ai/code/session_01G9A6Mofr5qErDuTh7vqWcX"
     },
