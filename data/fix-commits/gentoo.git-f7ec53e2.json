@@ -1,6 +1,15 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-53413": {
+      "6db0a4ba831adf617740818351b678faf01c8a50": "net-im/zoom: 7.1.5.4332 with security fixes\n\nFixes CVE-2026-53413, CVE-2026-53414, and CVE-2026-53415.\n\nBug: https://bugs.gentoo.org/980808\nSigned-off-by: Peter Volkov <peter.volkov@gmail.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1942\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1942\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-53414": {
+      "6db0a4ba831adf617740818351b678faf01c8a50": "net-im/zoom: 7.1.5.4332 with security fixes\n\nFixes CVE-2026-53413, CVE-2026-53414, and CVE-2026-53415.\n\nBug: https://bugs.gentoo.org/980808\nSigned-off-by: Peter Volkov <peter.volkov@gmail.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1942\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1942\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-53415": {
+      "6db0a4ba831adf617740818351b678faf01c8a50": "net-im/zoom: 7.1.5.4332 with security fixes\n\nFixes CVE-2026-53413, CVE-2026-53414, and CVE-2026-53415.\n\nBug: https://bugs.gentoo.org/980808\nSigned-off-by: Peter Volkov <peter.volkov@gmail.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1942\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1942\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
     "GHSA-CR2J-534F-MF3G": {
       "c5df8ef8e4fd60871807c1c06cf941eedfeef08a": "app-containers/apptainer: Add 1.5.4, Moderate severity SA\n\nMoved file patch to sed\n\nBug: https://bugs.gentoo.org/983341\nGHSA: https://github.com/apptainer/apptainer/security/advisories/GHSA-cr2j-534f-mf3g\nSigned-off-by: Martin Mokry <martin-kokos@protonmail.com>\nPart-of: https://github.com/gentoo/gentoo/pull/46824\nCloses: https://github.com/gentoo/gentoo/pull/46824\nSigned-off-by: Viorel Munteanu <ceamac@gentoo.org>"
     },
