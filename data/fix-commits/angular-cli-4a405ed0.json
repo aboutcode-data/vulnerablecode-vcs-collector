@@ -1,6 +1,14 @@
 {
   "vcs_url": "https://github.com/angular/angular-cli",
   "vulnerabilities": {
+    "CVE-2026-104850": {
+      "9d2987f354df7718ec76992cf28a0ab6cbf96539": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.31.0\n\nBumps @modelcontextprotocol/sdk to 1.31.0 to address GHSA-6qxp-vccf-f47h / CVE-2026-104850.\n\nCloses #34263",
+      "373a7cedce59662f6db6f5361192b6158377e01d": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.31.0\n\nBumps @modelcontextprotocol/sdk to 1.31.0 to address GHSA-6qxp-vccf-f47h / CVE-2026-104850.\n\nCloses #34263"
+    },
+    "GHSA-6QXP-VCCF-F47H": {
+      "9d2987f354df7718ec76992cf28a0ab6cbf96539": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.31.0\n\nBumps @modelcontextprotocol/sdk to 1.31.0 to address GHSA-6qxp-vccf-f47h / CVE-2026-104850.\n\nCloses #34263",
+      "373a7cedce59662f6db6f5361192b6158377e01d": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.31.0\n\nBumps @modelcontextprotocol/sdk to 1.31.0 to address GHSA-6qxp-vccf-f47h / CVE-2026-104850.\n\nCloses #34263"
+    },
     "CVE-2026-102992": {
       "7e6d2da08406f240b18b1d7e692cad27f29af314": "fix(@angular/build): bump piscina to 5.3.2\n\nBumps piscina to 5.3.2 to address GHSA-67c8-pqhq-4rmx / CVE-2026-102992.\n\nCloses #34241",
       "3e39e33fb1422af144ea795d871969640a27627b": "fix(@angular/build): bump piscina to 5.3.2\n\nBumps piscina to 5.3.2 to address GHSA-67c8-pqhq-4rmx / CVE-2026-102992.\n\nCloses #34241"

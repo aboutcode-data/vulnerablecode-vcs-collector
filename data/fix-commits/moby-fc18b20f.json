@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/moby/moby",
   "vulnerabilities": {
+    "CVE-2026-10722": {
+      "0095228a62c5b32cb20cafc9d2a262f1447dc3c5": "vendor: github.com/cilium/ebpf v0.22.0\n\nfix Kernel 7.1 compatibility\n\nIn kernel 7.1 the BTF header was extended to introduce a new feature called\nBTF layout. This change caused our BTF parser to fail when parsing vmlinux\nfor this kernel. This has been fixed in this latest release, we recommend\nupgrading to this latest release to avoid breakage on 7.1 and newer kernels\n\nv0.21.0 also includes a fix for CVE-2026-10722\n\nfull diff: https://github.com/cilium/ebpf/compare/v0.17.2...v0.22.0\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
+    },
     "CVE-2026-53493": {
       "4f2d0a55fce0fcad1b7ff558ce19f2b0a8bef902": "Dockerfile: update to containerd v2.3.6\n\nincludes a fix for CVE-2026-53493 / [GHSA-pg57-6jwg-q645]\n\nrelease-notes: https://github.com/containerd/containerd/releases/tag/v2.3.6\nfull diff: https://github.com/containerd/containerd/compare/v2.3.5...v2.3.6\n\n[GHSA-pg57-6jwg-q645]: https://github.com/containerd/containerd/security/advisories/GHSA-pg57-6jwg-q645\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>",
       "43d5fafdf3fa85839df40627794ccb431ebf3055": "Dockerfile: update to containerd v2.4.1\n\nincludes a fix for CVE-2026-53493 / [GHSA-pg57-6jwg-q645]\n\nrelease-notes: https://github.com/containerd/containerd/releases/tag/v2.4.1\nfull diff: https://github.com/containerd/containerd/compare/v2.4.0...v2.4.1\n\n[GHSA-pg57-6jwg-q645]: https://github.com/containerd/containerd/security/advisories/GHSA-pg57-6jwg-q645\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>",
