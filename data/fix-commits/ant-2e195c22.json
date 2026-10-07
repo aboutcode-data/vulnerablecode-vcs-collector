@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/ant",
   "vulnerabilities": {
+    "CVE-2026-94114": {
+      "6a0e551087a4bdec7157b064008ff1f32a0694d3": "update BCEL because of CVE-2026-94114"
+    },
     "GHSA-269G-PWP5-87PP": {
       "4ae9d1cd603ca52659891dcd391df813fcee6bb5": "bump JUnit to fix https://github.com/junit-team/junit4/security/advisories/GHSA-269g-pwp5-87pp"
     },

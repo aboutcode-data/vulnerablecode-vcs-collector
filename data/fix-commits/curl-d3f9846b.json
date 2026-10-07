@@ -1,8 +1,211 @@
 {
   "vcs_url": "https://github.com/bagder/curl",
   "vulnerabilities": {
+    "CVE-2026-80229": {
+      "b68876a969f569e1bb0812b957509d47cfe41258": "CVE-2026-80229: OpenSSL provider use-after-free\n\nopenssl: avoid conn reuse if provider is used\n\nReported-by: Stanislav Fort",
+      "abdd53533682433048ace23a67f1d964101a642c": "CVE-2026-80229: OpenSSL provider use-after-free\n\nCherry-picked from 7ea37abc6ac0120ba5f6d9\n\nopenssl: avoid conn reuse if provider is used\n\nReported-by: Stanislav Fort\n\nCloses #22665",
+      "7a84111cf702c34635ba4022fbe94590f206716f": "CVE-2026-80229: OpenSSL provider use-after-free\n\nCherry-picked from 7ea37abc6ac0120ba5f6d9\n\nopenssl: avoid conn reuse if provider is used\n\nReported-by: Stanislav Fort\n\nCloses #22665"
+    },
+    "CVE-2026-80230": {
+      "732af45f431913752092151256a175de2197cb99": "CVE-2026-80230: OpenSSL pinning bypass\n\nopenssl: no server cert is only okay if also not pinned\n\nReported-by: Stanislav Fort",
+      "4cf456b7ba9896a7fa54761e8dd084d93968240f": "CVE-2026-80230: OpenSSL pinning bypass\n\nopenssl: no server cert is only okay if also not pinned\n\nReported-by: Stanislav Fort",
+      "82bdb06a06f0a5203bc523c2d7a80ef0008cd760": "CVE-2026-80230: OpenSSL pinning bypass\n\nopenssl: no server cert is only okay if also not pinned\n\nReported-by: Stanislav Fort"
+    },
+    "CVE-2026-80231": {
+      "ce56d392bece39580d43f13649035a55505afcf7": "CVE-2026-80231: native CA store conn reuse",
+      "22a16157d9a17ae21c43c1f8b06153c665deef73": "CVE-2026-80231: native CA store conn reuse",
+      "d50d8ede9fc96092a6052fc6f6715fd8a2f6c40a": "CVE-2026-80231: native CA store conn reuse"
+    },
+    "CVE-2026-80255": {
+      "40e5dbf5808ccacaab9e68f4dfc769e8fd17ead5": "CVE-2026-80255: secure cookie attribute bypass with tab\n\nReported-by: Stanislav Fort",
+      "f1b139236fccce2d6d8560cc4beae37480f08830": "CVE-2026-80255: secure cookie attribute bypass with tab\n\nReported-by: Stanislav Fort",
+      "85cf2c3343d36e10c36f14daef8af7c7e95d3f20": "CVE-2026-80255: secure cookie attribute bypass with tab\n\nReported-by: Stanislav Fort"
+    },
+    "CVE-2026-82208": {
+      "e470fcf1ec525cbaf0c455218ae774bd68e640fd": "CVE-2026-82208: wolfSSL CA-cache hit overrides callback",
+      "99f3676372d972fd41ffa340ae33c18f02b7d868": "CVE-2026-82208: wolfSSL CA-cache hit overrides callback",
+      "5f19ec3dbe835793738afce2d05fd971ecc3183c": "CVE-2026-82208: wolfSSL CA-cache hit overrides callback"
+    },
+    "CVE-2026-82209": {
+      "b6d5507e20dafb7df76e119d5087ba649a18f350": "CVE-2026-82209: domain-scoped PSL domain cookie\n\ncookie: cookies set for an exact PSL domain is host-only\n\nAdded test 2318 to verify.\n\nReported-by: Stanislav Fort (Aisle Research)",
+      "70050f6b1bc56f785d6d9341d6840e6d37ecdba7": "CVE-2026-82209: domain-scoped PSL domain cookie\n\ncookie: cookies set for an exact PSL domain is host-only\n\nAdded test 2318 to verify.\n\nReported-by: Stanislav Fort (Aisle Research)",
+      "f4b108080d585d196578772e8c151fe7390baeaa": "CVE-2026-82209: domain-scoped PSL domain cookie\n\ncookie: cookies set for an exact PSL domain is host-only\n\nAdded test 2318 to verify.\n\nReported-by: Stanislav Fort (Aisle Research)"
+    },
+    "CVE-2026-18924": {
+      "369db905fe3dc806b24ecfcb8402a2c8072aebce": "CVE-2026-18924: HTTP/2 server push UAF\n\nhttp2: make server push transfers inherit share from parent\n\nReported-by: Stephan Zeisberg\nCloses #22488",
+      "4d76ff098fed071c4cf45388bce40c07a2c7889e": "CVE-2026-18924: HTTP/2 server push UAF\n\nhttp2: make server push transfers inherit share from parent\n\nReported-by: Stephan Zeisberg\nCloses #22488",
+      "6ed70f61f643ff84894c7d17b590a925509c4b09": "CVE-2026-18924: HTTP/2 server push UAF\n\nCherry-picked from 90325ff0444cbdff368bda5d2\n\nhttp2: make server push transfers inherit share from parent\n\nReported-by: Stephan Zeisberg\nCloses #22488"
+    },
+    "CVE-2026-13608": {
+      "5e57f446bd3e0d02358998f22114e4a477360eea": "CVE-2026-13608: OpenLDAP SASL authentication bypass\n\nCherry-picked from ea71c3b6b60e563651ea8596a9\n\nopenldap: handle Curl_sasl_continue() returns better\n\nSimilar to how it gets treated already in other protocol handlers.\n\nFollow-up to eeca818b1e8d1e61c2d4\n\nReported-by: Eunsoo Kim\nCloses #22213",
+      "9302ae4997baf06216318ba3e18fc100f4d27055": "CVE-2026-13608: OpenLDAP SASL authentication bypass\n\nCherry-picked from ea71c3b6b60e563651ea8596a9\n\nopenldap: handle Curl_sasl_continue() returns better\n\nSimilar to how it gets treated already in other protocol handlers.\n\nFollow-up to eeca818b1e8d1e61c2d4\n\nReported-by: Eunsoo Kim\nCloses #22213",
+      "1bf7b2c48016f3463722146cd8bad0f2d15390ed": "CVE-2026-13608: OpenLDAP SASL authentication bypass\n\nCherry-picked from ea71c3b6b60e563651ea85\n\nopenldap: handle Curl_sasl_continue() returns better\n\nSimilar to how it gets treated already in other protocol handlers.\n\nFollow-up to eeca818b1e8d1e61c2d4\n\nReported-by: Eunsoo Kim\nCloses #22213"
+    },
+    "CVE-2026-12064": {
+      "a1486f9274eddefb1dfe8dc6a83c5e42027f0b7f": "CVE-2026-12064: proto-default skips SSH verification\n\nCherry-picked from ab3bb8cd8be8f9d4acb97da041\n\nconfig2setopts: use default protocol properly\n\nVerified by test 1724, 1725 and 2036\n\nCloses #21983",
+      "08b09b3029d4cabecf05279d92ddbe2459381957": "CVE-2026-12064: proto-default skips SSH verification\n\nCherry-picked from ab3bb8cd8be8f9d4acb97da041\n\nconfig2setopts: use default protocol properly\n\nVerified by test 1724, 1725 and 2036\n\nCloses #21983",
+      "4fcfa07d9c71a1d3af9fac6a246306cd50f55d1e": "CVE-2026-12064: proto-default skips SSH verification\n\nCherry-picked from ab3bb8cd8be8f9d4ac"
+    },
+    "CVE-2026-11856": {
+      "aed01dd1f09b5df32fd212ea06187df14ccf5212": "CVE-2026-11856: cross-origin Digest auth state leak\n\nCherry-picked from 7f5b0d014ce907ab4352ca88",
+      "a5e4f9ec90347a61f239461bc18de99796b81289": "CVE-2026-11856: cross-origin Digest auth state leak\n\nReimplemented without the creds system",
+      "5b9483405cceb0d2305fcace5cb4b63882a27ec0": "CVE-2026-11856: cross-origin Digest auth state leak\n\nCherry-picked from 7f5b0d014ce907ab4352ca88"
+    },
+    "CVE-2026-11586": {
+      "88ec649a3ed59f86d2e72a602673e28cfe810005": "CVE-2026-11586: WS Auto-PONG memory exhaustion\n\nws: make pong sending lazy\n\nDo not send PONG frames unless there is sufficient space left in the\nwebsocket send buffer. A server might be lazy in reading our data and\nintermediary PONG frames can be skipped by a client (RFC 6455, ch.\n5.5.3).\n\nAdd test case measuring no real RSS increase on a server blasting with\nPING frames.\n\nCloses #21911",
+      "10d79a86b3baaf9a07b7da87074a0208e6c7cbf8": "CVE-2026-11586: WS Auto-PONG memory exhaustion\n\nCherry-picked from 849317ff5c5a5e13f50ec3d0"
+    },
+    "CVE-2026-10536": {
+      "f403d89072df9bf2b7495a62c618031d1aa2237e": "CVE-2026-10536: HTTP/2 stream-dependency tree UAF\n\nhttp2: remove stream dependency tracking\n\nThe HTTP/2 feature is deprecated, few servers implement it and our\nimplementation is complicated by its state management. Make the two\nCURLOPT_* involved a nop and deprecate them.\n\nCloses #21723",
+      "90408a27b38c6b2be96c7554c05759d62c70a18a": "CVE-2026-10536: HTTP/2 stream-dependency tree UAF\n\nCherry-picked from bfbff7852f050232edd3e5ca\n\nhttp2: remove stream dependency tracking\n\nThe HTTP/2 feature is deprecated, few servers implement it and our\nimplementation is complicated by its state management. Make the two\nCURLOPT_* involved a nop and deprecate them.\n\nCloses #21723",
+      "66324f6fe3d7013119925e3dea1e66aa7db73986": "CVE-2026-10536: HTTP/2 stream-dependency tree UAF\n\nCherry-picked from bfbff7852f050232edd3e5ca\n\nhttp2: remove stream dependency tracking\n\nThe HTTP/2 feature is deprecated, few servers implement it and our\nimplementation is complicated by its state management. Make the two\nCURLOPT_* involved a nop and deprecate them.\n\nCloses #21723"
+    },
+    "CVE-2026-9547": {
+      "6b0e5c3627315acb14c000aa944f610123691e4f": "CVE-2026-9547: SSH improper host validation\n\nlibssh: map SSH_KNOWN_HOSTS_OTHER to CURLKHMATCH_MISMATCH\n\nHost key type mismatch from libssh was incorrectly reported as missing,\ncausing key callbacks to accept instead of reject.\n\nReported by: Joshua Rogers (Aisle Research)\nCloses #21724",
+      "19014661c75833c363d953ca9392c8ea508c3ef2": "CVE-2026-9547: SSH improper host validation\n\nCherry-picked from 0b8dbbc63c98777e4584cb9\n\nlibssh: map SSH_KNOWN_HOSTS_OTHER to CURLKHMATCH_MISMATCH\n\nHost key type mismatch from libssh was incorrectly reported as missing,\ncausing key callbacks to accept instead of reject.\n\nReported by: Joshua Rogers (Aisle Research)\nCloses #21724",
+      "c80e9431adb4e84d10fc098eb20195b3f3026597": "CVE-2026-9547: SSH improper host validation\n\nCherry-picked from 0b8dbbc63c98777e4584cb9\n\nlibssh: map SSH_KNOWN_HOSTS_OTHER to CURLKHMATCH_MISMATCH\n\nHost key type mismatch from libssh was incorrectly reported as missing,\ncausing key callbacks to accept instead of reject.\n\nReported by: Joshua Rogers (Aisle Research)\nCloses #21724"
+    },
+    "CVE-2026-9545": {
+      "d2bac17f3e941cad63097b76acb9b219c2dc1031": "CVE-2026-9545: exposing HTTP/3 early data",
+      "b6392c3bb06ba1cb230de2ffd2f5c9ddeb0a09f6": "CVE-2026-9545: exposing HTTP/3 early data",
+      "ddea52f804023b318259a5067e01dc812c8f0822": "CVE-2026-9545: exposing HTTP/3 early data [fixed]\n\nCherry-picked from 7b9613fa9b1a5e04301a\n\nngtcp2: fail handshake directly\n\nWhen certificate verification fails, error out of the handshake\ncallback, forcing ngtcp2 to stop processing the connection any further.\n\nCloses #21712"
+    },
     "CVE-2026-9080": {
+      "193ee5f87092a539deb78fc8819466ace5423b3f": "CVE-2026-9080: UAF after pause in socket callback",
+      "0fa47e5c510feb10b384dd34557b8dfbefc1ebe5": "CVE-2026-9080: UAF after pause in socket callback",
+      "a9dab2821c61a523dd479a8fab61ceb99b80ca2a": "CVE-2026-9080: UAF after pause in socket callback\n\nCherry-picked a6af50c484f6b - which is not the fix that is mentioned in\nthe CVE, but was merged later.\n\nmulti: forbid curl_easy_pause from within multi socket callback\n\n- there is a risk for a nasty recursive situation\n\n- we avoid certain risks that the pause call changes things so that when\n  returning from the callback, the state of some internals is undefined\n  and we need to reload which is easy to miss\n\n- we can't think of legitiate use cases for doing this. This is\n  basically just the new favorite point for AI and security researchers\n  to find hypothetical problems\n\nCloses #22179",
       "e9a2b0dc72dd3a9aa3a5210e89079a3b719475dc": "multi_ev: refresh sock entry after remove callback\n\nThis was missed in the fix for CVE-2026-9080.\n\nReported-by: stze on hackerone\nURL: https://hackerone.com/reports/3823985\nCloses #22163"
+    },
+    "CVE-2026-9079": {
+      "7f8f525c376413d6cd527e9dbd2522dd930261d5": "CVE-2026-9079: stale proxy password leak",
+      "ead803225c8f3b3530455daca187b0e8efee9410": "CVE-2026-9079: stale proxy password leak",
+      "9e948bd3d74e58b204060cea845ded9902556969": "CVE-2026-9079: stale proxy password leak\n\nCherry-picked from 88c7e16cceec (except the test changes)"
+    },
+    "CVE-2026-8932": {
+      "5fa2c9ad327d53ce14404d0710ee35dfeb689625": "CVE-2026-8932: incomplete mTLS config matching in conn reuse",
+      "8487a483d4c6a3513281bff09b3dd4eab2e8a074": "CVE-2026-8932: incomplete mTLS config matching in conn reuse",
+      "24e012595965b58f096752e57b702ef9a08dd929": "CVE-2026-8932: incomplete mTLS config matching in conn reuse\n\nCherry-picked 7541ae569d82fb308a5e2d then edited"
+    },
+    "CVE-2026-8927": {
+      "b2a6d9c2079b523cca54648376dfae5389dcf5a6": "CVE-2026-8927: env-set cross-proxy Digest auth state leak\n\nurl: detect proxy changes read from environment\n\nWhen a proxy is set from an environment variable, detect if that proxy\nis not the same as previously and flush state.\n\nVerified by test1647: verify changing proxy with env variables and make\nsure Digest state is flushed in the second use\n\nCloses #21666",
+      "d23450113af97e008ca10d263fcb18b09e907f50": "CVE-2026-8927: env-set cross-proxy Digest auth state leak\n\nCherry-picked from 5c225384b8d52c6 then tweaked\n\nurl: detect proxy changes read from environment\n\nWhen a proxy is set from an environment variable, detect if that proxy\nis not the same as previously and flush state.\n\nVerified by test1647: verify changing proxy with env variables and make\nsure Digest state is flushed in the second use\n\nCloses #21666",
+      "9275aca5b123049ed4d566bc1625e10183954337": "CVE-2026-8927: env-set cross-proxy Digest auth state leak\n\nCherry-picked 5c225384b8d52c6, except the test parts"
+    },
+    "CVE-2026-8926": {
+      "ea0ae8e1266e312ff28e8482002a14483e4e982b": "CVE-2026-8926: password leak with netrc and user in URL\n\nFixed differently than original fix",
+      "ce9c45080139af5f6498601c4a0ce61e7ade85bd": "CVE-2026-8926: password leak with netrc and user in URL\n\nFixed differently than original fix",
+      "775fe3b89923302125ea956ce8af4391f77555c8": "CVE-2026-8926: password leak with netrc and user in URL\n\nFix implemented differently due to lack of Curl_creds - and the original\nfix is a larger netrc retake.\n\nTest 1304 extended in similar spirit as in the original patch."
+    },
+    "CVE-2026-8925": {
+      "8f09f36334735156339c809afe6a8cf7232a0832": "CVE-2026-8925: SASL double-free\n\ngsasl: fix potential double free\n\nAlso:\n- require libgsasl 1.6.0+ (2010-12-14) for a `gsasl_finish()` that\n  handles a NULL argument.\n  Ref: https://gitlab.com/gsasl/gsasl/-/commit/b550032df8488a9ceaa3cfd4c634947d8f219717\n\nReported-by: Joshua Rogers (Aisle Research)\n\nCloses #21609",
+      "2ea0cbd27670d30c429763df7fbba6d0201c1ea0": "CVE-2026-8925: SASL double-free\n\ngsasl: fix potential double free\n\nAlso:\n- require libgsasl 1.6.0+ (2010-12-14) for a `gsasl_finish()` that\n  handles a NULL argument.\n  Ref: https://gitlab.com/gsasl/gsasl/-/commit/b550032df8488a9ceaa3cfd4c634947d8f219717\n\nReported-by: Joshua Rogers (Aisle Research)\n\nCloses #21609\n\nCherry-picked from 3da249e1f0716c0"
+    },
+    "CVE-2026-8924": {
+      "92cb0f3b83fa681f117d79c10fd2d87cdcb0bd5b": "CVE-2026-8924: trailing dot domain super cookie\n\ncookie: trim trailing dots when checking PSL\n\nVerified with test 1629\n\nCloses #21636",
+      "c7525d3628d10008a7e2cce66998e4d34e0eb19f": "CVE-2026-8924: trailing dot domain super cookie\n\nThe cookie change from 51beed175dbfc37da (skipped the test part)",
+      "4ab0dfa977862dcfd60aa458d095e39d764afec9": "CVE-2026-8924: trailing dot domain super cookie\n\nThe cookie change from 51beed175dbfc37da (skipped the test part)"
+    },
+    "CVE-2026-8458": {
+      "e1ae7b7f63f1f57de29b1ac538673f0891306270": "CVE-2026-8458: wrong reuse for different services\n\nCherry-picked from 308adae518b9f3f7057 (which is the fix from the 8.20.X\nbranch) and edited. Fixed differently than official patch due to lack of\nCurl_creds",
+      "960fd8644c78e70b8f59c1852379227b71f7147d": "CVE-2026-8458: wrong reuse for different services\n\nCherry-picked from 308adae518b9f3f7057 (which is the fix from the 8.20.X\nbranch) and edited. Fixed differently than official patch due to lack of\nCurl_creds",
+      "c0d796d61674e84b1aad7b30adc6a188060766cb": "CVE-2026-8458: wrong reuse for different services\n\nFixed differently than official patch due to lack of Curl_creds"
+    },
+    "CVE-2026-8286": {
+      "73533b26806e81e72320be0b9b9daccf9117812d": "CVE-2026-8286: wrong STARTTLS connection reuse\n\nurl: fix connection reuse for starttls protocols\n\nWhen a connection is tested for reuse in a transfer that *may* upgrade\nto TLS (commonly via STARTTLS), the SSL configuration must match the\nexisting connection.\n\nReported-by: Andrew Nesbit\nCloses #21522",
+      "5b5668d65d1c04912e67f9aacf0e50e89c2ae4e4": "CVE-2026-8286: wrong STARTTLS connection reuse\n\nCherry-picked from a86efdd7ca5433de9231e6\n\nurl: fix connection reuse for starttls protocols\n\nWhen a connection is tested for reuse in a transfer that *may* upgrade\nto TLS (commonly via STARTTLS), the SSL configuration must match the\nexisting connection.\n\nReported-by: Andrew Nesbit\nCloses #21522",
+      "63bd51c1cd2bf0fbc5d8e9c85921cb2b2b040aed": "CVE-2026-8286: wrong STARTTLS connection reuse [fixed]\n\nurl: fix connection reuse for starttls protocols\n\nWhen a connection is tested for reuse in a transfer that *may* upgrade\nto TLS (commonly via STARTTLS), the SSL configuration must match the\nexisting connection.\n\nCherry-picked a86efdd7ca5433de9231e6\n\nReported-by: Andrew Nesbit\nCloses #21522"
+    },
+    "CVE-2026-7168": {
+      "95fd8d9327ea707f234fbd8bfd4565759cc7fe1b": "CVE-2026-7168: cross-proxy Digest auth state leak\n\nBased on c1cfdf59acbaf9504c45 (edited)",
+      "1ce368ed92a7c69c0b4e112000f1fe538ebc943b": "CVE-2026-7168: cross-proxy Digest auth state leak\n\nBased on c1cfdf59acbaf9504c45 (edited)"
+    },
+    "CVE-2026-6429": {
+      "6119ec35cee8dcf4528ac7e5154276cd89052177": "CVE-2026-6429: netrc credential leak with reused proxy connection\n\nBased on b4024bf808bd558026fdc6\n\nImported Curl_url_same_origin() from 32a513e180ce83d5e9b708 (and edited)",
+      "e06a419bf4364df5c9b26549124b6c19e66187e9": "CVE-2026-6429: netrc credential leak with reused proxy connection\n\nBased on b4024bf808bd558026fdc6\n\nImported Curl_url_same_origin() from 32a513e180ce83d5e9b708 (and edited)"
+    },
+    "CVE-2026-6276": {
+      "69b9697eb8b5072928ae9d8627f009a9fcafd454": "CVE-2026-6276: stale custom cookie host causes cookie leak\n\nurldata: move cookiehost to struct SingleRequest\n\nTo make it scoped for the single request appropriately.\n\nReported-by: Muhamad Arga Reksapati\n\nVerify with libtest 2504: a custom Host *disabled* on reused handle\n\nCloses #21312",
+      "3db791981869bd9ff149a7ae64e973d72d6bd5d3": "CVE-2026-6276: stale custom cookie host causes cookie leak\n\nReimplemented 3a19987a87f393d93"
+    },
+    "CVE-2026-6253": {
+      "fc76be28e1fa4d327c395fe6e75a74f78739df48": "CVE-2026-6253: proxy credentials leak over redirect-to proxy\n\nCherry-picked from 188c2f166a20fa97c2325 (tweaked)\n\nhttp: clear the proxy credentials as well on port or scheme change\n\nAdd tests 2009-2011 to verify switching between proxies with credentials\nwhen the switch is driven by a redirect\n\nReported-by: Dwij Mehta\n\nCloses #21304",
+      "9cdae138f6f411c25a40265d3401556b4f638e69": "CVE-2026-6253: proxy credentials leak over redirect-to proxy\n\nCherry-picked from 188c2f166a20fa97c2325 (tweaked)\n\nhttp: clear the proxy credentials as well on port or scheme change\n\nAdd tests 2009-2011 to verify switching between proxies with credentials\nwhen the switch is driven by a redirect\n\nReported-by: Dwij Mehta\n\nCloses #21304"
+    },
+    "CVE-2026-5773": {
+      "558153c1b597723b4bb9fdd60761efb3acd31805": "CVE-2026-5773: wrong reuse of SMB connection\n\nRefuse SMB connections to do connection reuse. Different fix than the\nofficial one.",
+      "d2eadee5ae9811f67861870aa0c295ae66d64329": "CVE-2026-5773: wrong reuse of SMB connection\n\nRefuse SMB connections to do connection reuse. Different fix than the\nofficial one."
+    },
+    "CVE-2026-5545": {
+      "b5ce8085ba3aa48dd34ba39114de359ed7b4c396": "CVE-2026-5545: wrong reuse of HTTP Negotiate connection\n\nCherry-picked from 33e43985b8f3b9e6669\n\nurl: improve connection reuse on negotiate\n\nCheck state of negotiate to allow proper connection reuse.\n\nCloses #21203",
+      "27ad729134952e538457c39c3ae25852cd68a8b0": "CVE-2026-5545: wrong reuse of HTTP Negotiate connection\n\nCherry-picked from 33e43985b8f3b9e6669\n\nurl: improve connection reuse on negotiate\n\nCheck state of negotiate to allow proper connection reuse.\n\nCloses #21203"
+    },
+    "CVE-2026-4873": {
+      "bbc7ac9ab8b1b9fbd4574e9c97fc360a003abe20": "CVE-2026-4873: connection reuse ignores TLS requirement\n\nCherry-picked from 507e7be573b0a76fca5\n\nurl: do not reuse a non-tls starttls connection if new requires TLS\n\nReported-by: Arkadi Vainbrand\n\nCloses #21082",
+      "b1c6b036ba7c9eb94c7943ea76e564eea20d9ebc": "CVE-2026-4873: connection reuse ignores TLS requirement\n\nCherry-picked from 507e7be573b0a76fca5\n\nurl: do not reuse a non-tls starttls connection if new requires TLS\n\nReported-by: Arkadi Vainbrand\n\nCloses #21082"
+    },
+    "CVE-2026-19931": {
+      "6c61f14c4b24778e66b020fb6ee32e7426e02a05": "CVE-2026-19931: Negotiate ambient user conn reuse",
+      "b12dc923c7e05b7cf1b984b2ff05eebb4082a1f8": "CVE-2026-19931: Negotiate ambient user conn reuse\n\nDifferent than original patch",
+      "ece988fcc21a45e56582ec53da991760cf4266c3": "CVE-2026-19931: Negotiate ambient user conn reuse"
+    },
+    "CVE-2026-3805": {
+      "d480857ebc60ae3cd58f27f5ec1cef88d2bd5e65": "CVE-2026-3805: use after free in SMB connection reuse\n\nCherry-picked e090be9f73a7a71459ef678c\n\nsmb: free the path in the request struct properly\n\nCloses #20854",
+      "289bd3bd847fcb3395aa1918cb01824c6074c6f4": "CVE-2026-3805: use after free in SMB connection reuse\n\nCherry-picked from e090be9f73a7a71459ef678c plus manual cleanup\n\nsmb: free the path in the request struct properly\n\nCloses #20854"
+    },
+    "CVE-2026-3784": {
+      "c025cb2598e1bc19e1dd620ac6040429dfa56be5": "CVE-2026-3784: wrong proxy connection reuse with credentials\n\nCherry-picked from 5f13a7645e565c5c1a06f3\n\nproxy-auth: additional tests\n\nAlso eliminate the special handling for socks proxy match.\n\nCloses #20837",
+      "70b2c2837c4319950efca985342bb40b25659880": "CVE-2026-3784: wrong proxy connection reuse with credentials\n\nCherry-picked from 5f13a7645e565c5c1a06f3\n\nproxy-auth: additional tests\n\nAlso eliminate the special handling for socks proxy match.\n\nCloses #20837"
+    },
+    "CVE-2026-3783": {
+      "4dda0cfa917c90bdb4d568b7295131031cd20dc4": "CVE-2026-3783: token leak with redirect and netrc\n\nCherry-picked from e3d7401a32a46516c9e5ee877\n\nhttp: only send bearer if auth is allowed\n\nVerify with test 2006\n\nCloses #20843",
+      "b9bd2ecc2fb7d905d4638b849f868986c2d967d2": "CVE-2026-3783: token leak with redirect and netrc\n\nCherry-picked from e3d7401a32a46516c9e5ee877\n\nhttp: only send bearer if auth is allowed\n\nVerify with test 2006\n\nCloses #20843"
+    },
+    "CVE-2026-1965": {
+      "5f98de0c116165fb81d19104fa59d3df006bbd1c": "CVE-2026-1965: bad reuse of HTTP Negotiate connection\n\nCherry-picked from 34fa034d9a390c4bd6 + f1a39f221d57354990\n\nurl: fix reuse of connections using HTTP Negotiate\n\nAssume Negotiate means connection-based\n\nReported-by: Zhicheng Chen\nCloses #20534",
+      "f849a232d408a4c3fba232ce2fde6026bd0dc72c": "CVE-2026-1965: bad reuse of HTTP Negotiate connection\n\nCherry-picked from 34fa034d9a390c4bd6 + f1a39f221d57354990\n\nurl: fix reuse of connections using HTTP Negotiate\n\nAssume Negotiate means connection-based\n\nReported-by: Zhicheng Chen\nCloses #20534"
+    },
+    "CVE-2025-15224": {
+      "20a99c56c3c4518425a4d722f8d894a41b0293b3": "CVE-2025-15224: libssh key passphrase bypass without agent set\n\nCherry-picked from 16d5f2a5660c61cc27bd5f1c7f512391d1c92\n\nlibssh: require private key or user-agent for public key auth\n\nCloses #20110",
+      "e5d3798e75e2aaca0d835ec591ece4fc5cda7ff4": "CVE-2025-15224: libssh key passphrase bypass without agent set\n\nlibssh: require private key or user-agent for public key auth\n\nCloses #20110"
+    },
+    "CVE-2025-15079": {
+      "85b33a8aeb11e4a61a8f81aafc5bf0e6abbdb25b": "CVE-2025-15079: libssh global known_hosts override\n\nCherry-picked from adca486c125d9a6d956\n\nlibssh: set both knownhosts options to the same file\n\nReported-by: Harry Sintonen\n\nCloses #20092",
+      "6625bc1cb1f6c05bc326f9b4dcefc59fa8c9c6f8": "CVE-2025-15079: libssh global known_hosts override\n\nCherry-picked from adca486c125d9a6d956\n\nlibssh: set both knownhosts options to the same file\n\nReported-by: Harry Sintonen\n\nCloses #20092"
+    },
+    "CVE-2025-14819": {
+      "7aed03414c111d4faf66e1adbb372a1d637f4585": "CVE-2025-14819: OpenSSL partial chain store policy bypass\n\nCherry-picked from cd046f6c93b39d673a58c1864\n\nopenssl: toggling CURLSSLOPT_NO_PARTIALCHAIN makes a different CA cache\n\nReported-by: Stanislav Fort\n\nCloses #20009",
+      "d30eac0edb34edb84038eaab2ac5c495b163eb69": "CVE-2025-14819: OpenSSL partial chain store policy bypass\n\nCherry-picked from cd046f6c93b39d673a58c1864\n\nopenssl: toggling CURLSSLOPT_NO_PARTIALCHAIN makes a different CA cache\n\nReported-by: Stanislav Fort\n\nCloses #20009"
+    },
+    "CVE-2025-14524": {
+      "327a4bb95cd5fc98104023eb839a95fc7e330391": "CVE-2025-14524: bearer token leak on cross-protocol redirect\n\nImplemented differently that official fix",
+      "6ed9bbad4deaafc790e74712d9a6462b68e6b163": "CVE-2025-14524: bearer token leak on cross-protocol redirect\n\ncurl_sasl: if redirected, require permission to use bearer\n\nCloses #19933"
+    },
+    "CVE-2025-14017": {
+      "2954925659a3fd3c9dbf655a223298223ff5c7b7": "CVE-2025-14017: broken TLS options for threaded LDAPS\n\nCherry-picked from 39d1976b7f709a516e324333\n\nldap: call ldap_init() before setting the options\n\nCloses #19830",
+      "5a2b122c37efb78fb5eb89e984697c931cbe6a99": "CVE-2025-14017: broken TLS options for threaded LDAPS\n\nldap: call ldap_init() before setting the options\n\nCloses #19830"
+    },
+    "CVE-2025-13034": {
+      "ad518eb2e81d3c1f79d5eac1f6503386b63990ab": "CVE-2025-13034: No QUIC certificate pinning with GnuTLS\n\nCherry-picked from 3d91ca8cdb3b434226e743946\n\nvquic-tls/gnutls: call Curl_gtls_verifyserver unconditionally\n\nCloses #19531",
+      "3c481895a0c4d384931631d60d8923a5a0f3bb5a": "CVE-2025-13034: No QUIC certificate pinning with GnuTLS\n\nCherry-picked from 3d91ca8cdb3b434226e743946\n\nvquic-tls/gnutls: call Curl_gtls_verifyserver unconditionally\n\nCloses #19531"
+    },
+    "CVE-2025-10966": {
+      "d9107480c6f429f1f85ae8009cda8a2ef513c919": "CVE-2025-10966: missing SFTP host verification with wolfSSH\n\nvssh: drop support for wolfSSH\n\nThe implementation was incomplete and lesser than the other backends. No\none ever reported a bug or requested enhancements for this, indicating\nthat this backend was never used.\n\nCloses #18700",
+      "a703ee0e795844ecbc9cacc7c4c856c9dbdd5369": "CVE-2025-10966: missing SFTP host verification with wolfSSH\n\nCherry-picked from b011e3fcfb06d6c0278\n\nvssh: drop support for wolfSSH\n\nThe implementation was incomplete and lesser than the other backends. No\none ever reported a bug or requested enhancements for this, indicating\nthat this backend was never used.\n\nCloses #18700"
+    },
+    "CVE-2026-11564": {
+      "47abd8cb986215ff6ea0e59725ff7ec74b3942ef": "CVE-2026-11564: Native CA trust persist\n\nInspired by d69bfad3fa3daf5e72331, implemented differently"
+    },
+    "CVE-2025-10148": {
+      "b59924a3a76afbddc6fd5312fe647a49358102dc": "CVE-2025-10148: predictable WebSocket mask\n\nCherry-picked from 84db7a9eae8468c0445b15\n\nws: get a new mask for each new outgoing frame\n\nReported-by: Calvin Ruocco\nCloses #18496"
+    },
+    "CVE-2025-9086": {
+      "e3e4446b5cd96368f27bb828a5c2f4f02986bb31": "CVE-2025-9086: Out of bounds read for cookie path\n\nCherry-picked from c6ae07c6a541e0e96d0040afb6\n\ncookie: don't treat the leading slash as trailing\n\nIf there is only a leading slash in the path, keep that. Also add an\nassert to make sure the path is never blank.\n\nReported-by: Google Big Sleep\nCloses #18266"
+    },
+    "CVE-2026-11352": {
+      "3b3135d9bb746127b4208f3417c752e533c1fd00": "CVE-2026-11352: QUIC zero-length UDP datagrams busy-loop\n\nCherry-picked from 56eca2afb4806f1032872fa9\n\nquic: count zero length packets against max\n\nWith a flood of zero lenght UDP packets to curl, the receive loop might\nrun longer than intended to. Count such packets against the max to\nterminate the loop as intended.\n\nURL: https://hackerone.com/reports/3783438\nReported-by: vectorqueue on hackerone\nCloses #21869"
+    },
+    "CVE-2026-9546": {
+      "dbeb551a11d9ae199c7923235723650ec3b22306": "CVE-2026-9546: sending old referer\n\nCherry-picked from 862e8a74a84478d (excluding the tests)"
     },
     "CVE-2025-71176": {
       "bcb02fe5265f1e0eb67945e389f7d7801a1d725f": "GHA: bump pytest from 9.0.2 to 9.0.3\n\nCVE-2025-71176\n\nCloses #21306"
