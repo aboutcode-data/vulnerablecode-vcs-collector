@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/quarkusio/quarkus",
   "vulnerabilities": {
+    "CVE-2026-90559": {
+      "2be4f6b3832da44ee7d95cf15a7dc79664d38fca": "Upgrade snappy-java to 1.1.10.11\n\n- fixes https://access.redhat.com/security/cve/cve-2026-90559"
+    },
     "GHSA-QCXP-GM7M-4J5V": {
       "aa68083f931c88b9491824058fc0f756766037f4": "Handle GHSA-qcxp-gm7m-4j5v",
       "9e54b7237977627eb1087a28bf914d919b286dc1": "Handle GHSA-qcxp-gm7m-4j5v",
