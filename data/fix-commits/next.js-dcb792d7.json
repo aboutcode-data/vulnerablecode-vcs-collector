@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/vercel/next.js",
   "vulnerabilities": {
+    "CVE-2026-94483": {
+      "c692e952dc9d5297bf790398fa160a5e0f37a19d": "Bump next in upgrade eval fixtures for CVE-2026-94483 (#99838)\n\n## Summary\n\nBumps `next` in three upgrade eval fixtures that were pinned to versions\naffected by CVE-2026-94483 (Image Optimization SSRF via allow-listed\nremote patterns; fixed in 16.3.8):\n\n- `future-cache-components-nudge`: 16.3.5 \u2192 16.4.0\n- `future-cache-components-same-version`: 16.3.5 \u2192 16.4.0\n- `latest-same-major`: 16.2.12 \u2192 16.3.8\n\nA few things needed to be updated to match\n\n- `latest/setup.ts` and `future/setup.ts` mock\n`registry.npmjs.org/next/latest` with a hardcoded `target`. That target\nis now 16.4.0 (the current `latest`), so the same-version scenarios\nstill sit on \"latest\" and the same-major scenario still has a newer\ntarget in the same major.\n- `latest-same-major` uses 16.3.8 rather than 16.4.0 because it has to\nstart below the target in the same major. 16.3.8 is the oldest patched\nrelease; there is no patched 16.2.x.\n- The `EVAL.ts` exact-version assertions are updated to match.\n\nThe `latest-cross-major`, `latest-nudge` and `future-cache-components`\nscenarios now also upgrade to 16.4.0. Their starting versions are\nunchanged.\n\nFixes VULN-16485\nFixes VULN-16486\nFixes VULN-16487\n\n<!-- NEXT_JS_LLM -->"
+    },
     "GHSA-VCVR-R3JV-PC5J": {
       "51603630d7d127227ca7af74d76dffd02ab9abef": "Harden `next/og` SVG serialization (#99061)\n\nSee\nhttps://github.com/vercel/next.js/security/advisories/GHSA-vcvr-r3jv-pc5j"
     },
