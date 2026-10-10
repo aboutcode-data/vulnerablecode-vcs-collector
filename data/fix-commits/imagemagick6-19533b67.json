@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-J2RP-5R6M-F7X8": {
+      "636d571ee6e7490ac72f3e9afc3997cc966c8ea7": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-j2rp-5r6m-f7x8"
+    },
     "GHSA-528X-2384-JMXP": {
       "f6a6c3db4f1822fecb9cd95c3f1b75840a1e0fdd": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-528x-2384-jmxp"
     },
