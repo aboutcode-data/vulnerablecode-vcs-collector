@@ -1,6 +1,14 @@
 {
   "vcs_url": "https://github.com/weechat/weechat",
   "vulnerabilities": {
+    "GHSA-8WR2-X42M-7FXV": {
+      "9fb7f87379d5a6aa275e25a0a48546a5a819495b": "relay: fix heap buffer overflow in path of hdata sent to clients with \"weechat\" protocol (GHSA-8wr2-x42m-7fxv)\n\nThe path of hdata returned to the client was built in a buffer allocated\nwith twice the length of the path received, but a variable name can be\nreplaced by a hdata name more than twice longer (for example \"next_nick\"\nreplaced by \"irc_channel_speaking\"), so that an authenticated client could\nwrite out of bounds with a path containing many such variables.\n\nNow the path returned is built with a dynamic string.",
+      "07b85b3f1608af24b7bb3399f3a97fa5f6ec390c": "relay: fix heap buffer overflow in path of hdata sent to clients with \"weechat\" protocol (GHSA-8wr2-x42m-7fxv)\n\nThe path of hdata returned to the client was built in a buffer allocated\nwith twice the length of the path received, but a variable name can be\nreplaced by a hdata name more than twice longer (for example \"next_nick\"\nreplaced by \"irc_channel_speaking\"), so that an authenticated client could\nwrite out of bounds with a path containing many such variables.\n\nNow the path returned is built with a dynamic string."
+    },
+    "GHSA-XJ8H-X2W9-M8M6": {
+      "ebd2849cdcff305153060840470e2acb1bfa645c": "irc: fix heap buffer overflow in nick prefixes after a reconnection (GHSA-xj8h-x2w9-m8m6)\n\nWhen the server sent an empty PREFIX in message 005 and the connection\nwas lost before message 001, the nicks were kept with 1-byte prefixes\nwhile the default prefix chars (\"@+\") were restored on reconnection,\nso that the next prefix set on a nick was written out of bounds.\n\nNow the prefixes are reset with function irc_server_set_prefix_modes_chars\non connection and disconnection, so that the prefixes of all nicks are\nreallocated, and a prefix is set in a nick only if its index is within\nthe nick prefixes.",
+      "faadd35befbb94bc09dfa612adb8721863a5305b": "irc: fix heap buffer overflow in nick prefixes after a reconnection (GHSA-xj8h-x2w9-m8m6)\n\nWhen the server sent an empty PREFIX in message 005 and the connection\nwas lost before message 001, the nicks were kept with 1-byte prefixes\nwhile the default prefix chars (\"@+\") were restored on reconnection,\nso that the next prefix set on a nick was written out of bounds.\n\nNow the prefixes are reset with function irc_server_set_prefix_modes_chars\non connection and disconnection, so that the prefixes of all nicks are\nreallocated, and a prefix is set in a nick only if its index is within\nthe nick prefixes."
+    },
     "CVE-2026-86036": {
       "63bfd872bb6b18be0bd3062d20fee2204cfac7d3": "core: add CVE-2026-86036 in changelog",
       "1252442adca46b5971741efbf12e3b51b6a5ab9a": "core: add CVE-2026-86036 in changelog"
