@@ -1,6 +1,15 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-107181": {
+      "a6349e37951ac1e1fb48281610a1593b70a21651": "net-im/telegram-desktop: Fix CVE-2026-107181 in most recent version\n\nBug: https://bugs.gentoo.org/983963\nPart-of: https://github.com/gentoo/gentoo/pull/46879\nSigned-off-by: Esteve Varela Colominas <esteve.varela@gmail.com>\nSigned-off-by: Yixun Lan <dlan@gentoo.org>"
+    },
+    "CVE-2026-107570": {
+      "71dcb73ba7a78609e7f6fc8e50083893b7c0d24e": "mail-client/mutt-2.4.3: version bump (CVE-2026-107570)\n\nBug: https://bugs.gentoo.org/983999\nSigned-off-by: Fabian Groffen <grobian@gentoo.org>"
+    },
+    "CVE-2026-96512": {
+      "5548522e2c2fa10a4c009348e9ba84c44783f47d": "app-admin/sudo: Revbump, add patch for CVE-2026-96512 (bug 983967)\n\nBug: https://bugs.gentoo.org/983967\nSigned-off-by: Patrick McLean <chutzpah@gentoo.org>"
+    },
     "CVE-2026-53413": {
       "6db0a4ba831adf617740818351b678faf01c8a50": "net-im/zoom: 7.1.5.4332 with security fixes\n\nFixes CVE-2026-53413, CVE-2026-53414, and CVE-2026-53415.\n\nBug: https://bugs.gentoo.org/980808\nSigned-off-by: Peter Volkov <peter.volkov@gmail.com>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1942\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1942\nSigned-off-by: Sam James <sam@gentoo.org>"
     },
