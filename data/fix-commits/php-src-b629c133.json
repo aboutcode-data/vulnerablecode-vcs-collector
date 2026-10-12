@@ -1,6 +1,27 @@
 {
   "vcs_url": "https://github.com/php/php-src",
   "vulnerabilities": {
+    "GHSA-2P8C-FF85-VH9X": {
+      "1e8a51d545d92084e1d354d81030e30cc8a3e3a0": "Backport PCRE2 security fixes to bundled 10.40\n\nApply the upstream backports listed for PCRE2 10.40 in SUPPORT-LIFECYCLE.md through 10.49 (GHSA-2p8c-ff85-vh9x, GHSA-q8g2-wprr-34m9, GHSA-9qww-pwc4-77qq, GHSA-fmgr-6ggq-9859, GHSA-3r4p-g7gg-ppmf, GHSA-r9hj-j2rw-4q3m), adapted to 10.40 where the patched code differs. Disable the legacy ARM64 NEON SIMD scanning for GHSA-43gg-c3xx-7w7g, as the upstream fix is a rewrite with no small backport.\n\nCloses GH-24011."
+    },
+    "GHSA-Q8G2-WPRR-34M9": {
+      "1e8a51d545d92084e1d354d81030e30cc8a3e3a0": "Backport PCRE2 security fixes to bundled 10.40\n\nApply the upstream backports listed for PCRE2 10.40 in SUPPORT-LIFECYCLE.md through 10.49 (GHSA-2p8c-ff85-vh9x, GHSA-q8g2-wprr-34m9, GHSA-9qww-pwc4-77qq, GHSA-fmgr-6ggq-9859, GHSA-3r4p-g7gg-ppmf, GHSA-r9hj-j2rw-4q3m), adapted to 10.40 where the patched code differs. Disable the legacy ARM64 NEON SIMD scanning for GHSA-43gg-c3xx-7w7g, as the upstream fix is a rewrite with no small backport.\n\nCloses GH-24011."
+    },
+    "GHSA-9QWW-PWC4-77QQ": {
+      "1e8a51d545d92084e1d354d81030e30cc8a3e3a0": "Backport PCRE2 security fixes to bundled 10.40\n\nApply the upstream backports listed for PCRE2 10.40 in SUPPORT-LIFECYCLE.md through 10.49 (GHSA-2p8c-ff85-vh9x, GHSA-q8g2-wprr-34m9, GHSA-9qww-pwc4-77qq, GHSA-fmgr-6ggq-9859, GHSA-3r4p-g7gg-ppmf, GHSA-r9hj-j2rw-4q3m), adapted to 10.40 where the patched code differs. Disable the legacy ARM64 NEON SIMD scanning for GHSA-43gg-c3xx-7w7g, as the upstream fix is a rewrite with no small backport.\n\nCloses GH-24011."
+    },
+    "GHSA-FMGR-6GGQ-9859": {
+      "1e8a51d545d92084e1d354d81030e30cc8a3e3a0": "Backport PCRE2 security fixes to bundled 10.40\n\nApply the upstream backports listed for PCRE2 10.40 in SUPPORT-LIFECYCLE.md through 10.49 (GHSA-2p8c-ff85-vh9x, GHSA-q8g2-wprr-34m9, GHSA-9qww-pwc4-77qq, GHSA-fmgr-6ggq-9859, GHSA-3r4p-g7gg-ppmf, GHSA-r9hj-j2rw-4q3m), adapted to 10.40 where the patched code differs. Disable the legacy ARM64 NEON SIMD scanning for GHSA-43gg-c3xx-7w7g, as the upstream fix is a rewrite with no small backport.\n\nCloses GH-24011."
+    },
+    "GHSA-3R4P-G7GG-PPMF": {
+      "1e8a51d545d92084e1d354d81030e30cc8a3e3a0": "Backport PCRE2 security fixes to bundled 10.40\n\nApply the upstream backports listed for PCRE2 10.40 in SUPPORT-LIFECYCLE.md through 10.49 (GHSA-2p8c-ff85-vh9x, GHSA-q8g2-wprr-34m9, GHSA-9qww-pwc4-77qq, GHSA-fmgr-6ggq-9859, GHSA-3r4p-g7gg-ppmf, GHSA-r9hj-j2rw-4q3m), adapted to 10.40 where the patched code differs. Disable the legacy ARM64 NEON SIMD scanning for GHSA-43gg-c3xx-7w7g, as the upstream fix is a rewrite with no small backport.\n\nCloses GH-24011."
+    },
+    "GHSA-R9HJ-J2RW-4Q3M": {
+      "1e8a51d545d92084e1d354d81030e30cc8a3e3a0": "Backport PCRE2 security fixes to bundled 10.40\n\nApply the upstream backports listed for PCRE2 10.40 in SUPPORT-LIFECYCLE.md through 10.49 (GHSA-2p8c-ff85-vh9x, GHSA-q8g2-wprr-34m9, GHSA-9qww-pwc4-77qq, GHSA-fmgr-6ggq-9859, GHSA-3r4p-g7gg-ppmf, GHSA-r9hj-j2rw-4q3m), adapted to 10.40 where the patched code differs. Disable the legacy ARM64 NEON SIMD scanning for GHSA-43gg-c3xx-7w7g, as the upstream fix is a rewrite with no small backport.\n\nCloses GH-24011."
+    },
+    "GHSA-43GG-C3XX-7W7G": {
+      "1e8a51d545d92084e1d354d81030e30cc8a3e3a0": "Backport PCRE2 security fixes to bundled 10.40\n\nApply the upstream backports listed for PCRE2 10.40 in SUPPORT-LIFECYCLE.md through 10.49 (GHSA-2p8c-ff85-vh9x, GHSA-q8g2-wprr-34m9, GHSA-9qww-pwc4-77qq, GHSA-fmgr-6ggq-9859, GHSA-3r4p-g7gg-ppmf, GHSA-r9hj-j2rw-4q3m), adapted to 10.40 where the patched code differs. Disable the legacy ARM64 NEON SIMD scanning for GHSA-43gg-c3xx-7w7g, as the upstream fix is a rewrite with no small backport.\n\nCloses GH-24011."
+    },
     "GHSA-FPWC-W8RQ-CR92": {
       "63886140b4e3d8282f8d45a41482edba791d3ed9": "Merge branch 'PHP-8.6'\n\n* PHP-8.6:\n  Fix GHSA-fpwc-w8rq-cr92: do not cut the request short when stripping the last user header",
       "bf40d5fb244b266439e946f8926425a149d28aa7": "Merge branch 'PHP-8.5' into PHP-8.6\n\n* PHP-8.5:\n  Fix GHSA-fpwc-w8rq-cr92: do not cut the request short when stripping the last user header",

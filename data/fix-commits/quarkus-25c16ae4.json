@@ -1,8 +1,15 @@
 {
   "vcs_url": "https://github.com/quarkusio/quarkus",
   "vulnerabilities": {
+    "CVE-2026-107314": {
+      "36304710765c8394f3eca5438e764028b6d01d3f": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315"
+    },
+    "CVE-2026-107315": {
+      "36304710765c8394f3eca5438e764028b6d01d3f": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315"
+    },
     "CVE-2026-90559": {
-      "2be4f6b3832da44ee7d95cf15a7dc79664d38fca": "Upgrade snappy-java to 1.1.10.11\n\n- fixes https://access.redhat.com/security/cve/cve-2026-90559"
+      "2be4f6b3832da44ee7d95cf15a7dc79664d38fca": "Upgrade snappy-java to 1.1.10.11\n\n- fixes https://access.redhat.com/security/cve/cve-2026-90559",
+      "37018e05947dc846da86b955c6e8e353bb7402d4": "Upgrade snappy-java to 1.1.10.11\n\n- fixes https://access.redhat.com/security/cve/cve-2026-90559"
     },
     "GHSA-QCXP-GM7M-4J5V": {
       "aa68083f931c88b9491824058fc0f756766037f4": "Handle GHSA-qcxp-gm7m-4j5v",
