@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-68742": {
+      "3fb4328ccc0f8cab8fcd6c3edb32abf447d8158a": "sssd: backport fix for CVE-2026-68742 (#572463)",
+      "da08e1727865663920c3226a88e9d0875cb91a58": "sssd: backport fix for CVE-2026-68742\n\nAssisted-by: OpenAI Codex (Daybreak Blue)"
+    },
     "CVE-2026-85091": {
       "b0ef6a3c6c9d69107802c6545a1be4a715f71639": "[Backport release-26.05] zlib: backport fix for CVE-2026-85091 (#571762)",
       "b1cd03f26d8eab3a89053597a06c791ace3757af": "zlib: backport fix for CVE-2026-85091\n\nhttps://github.com/madler/zlib/commit/df84af25dc1942490e1d1c899a07619152a46148\n(cherry picked from commit bdac6308f02a969f29125a8b0f648b86d2d1b947)",
