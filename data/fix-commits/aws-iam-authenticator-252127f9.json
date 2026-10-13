@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/kubernetes-sigs/aws-iam-authenticator",
   "vulnerabilities": {
+    "CVE-2026-39821": {
+      "de6d785f68b33a8438ba416faf2e4deb5526be1f": "Upgrade Go to 1.27.1 and bump dependencies for CVE mitigation\n\nBumps the Go toolchain to 1.27.1 across go.work, all go.mod files,\n.go-version, and the Dockerfile golang/go-runner images to address\nCVE-2026-39821 (GO-2026-5026) in go/stdlib, including the go-runner\nbinary.\n\nDependency bumps to latest:\n- golang.org/x/net v0.56.0 => v0.61.0\n- golang.org/x/text v0.40.0 => v0.43.0\n- go.opentelemetry.io/otel v1.43.0 => v1.47.0"
+    },
     "CVE-2025-47910": {
       "e274c1a7d126c52e6807991e6c456b0e98e661d4": "Merge pull request #930 from a-cool-train/master\n\nFix CVE-2025-47910",
       "e5c37d0bc4d181c87f9c1e0e4cd022adbfb48ad3": "Fix CVE-2025-47910"
