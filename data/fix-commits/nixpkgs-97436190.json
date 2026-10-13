@@ -1,14 +1,15 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
-    "CVE-2026-108976": {
-      "8d6dac12c72263373828586e1a34940d1f0267ca": "emacs: patch CVE-2026-108976 (#573262)",
-      "68665701b8fc11f1c0066b433501234a039814b7": "emacs: patch CVE-2026-108976\n\nIncomplete fix for Emacs CVE-2026-79992\n\nWonyoung Jung of 78ResearchLab, using their PatchHawk tool, discovered\nthat the fix for CVE-2026-79992 was incomplete.\n\nThe tramp-user-regexp failed to check for some additional problematic\ncharacters in user names, meaning that exploitation was still possible.\n\nThe attached patch by TRAMP maintainer Michael Albinus addresses the\nproblem.  It will be included in Emacs 31.2 though that won't be\nreleased soon.\n\nMessage and patch taken from:\nhttps://www.openwall.com/lists/oss-security/2026/10/11/1\n\nRef: #573231"
-    },
     "CVE-2026-6192": {
+      "c6d47e07256507957c06bd81845c504c8c502f7c": "[Backport staging-26.05] openjpeg: fix CVE-2026-6192 (#573373)",
       "09e0ddf582a4b37ac52df6c623c11699f31324a6": "openjpeg: fix CVE-2026-6192\n\n(cherry picked from commit 4c0c1a10445d63c38526a73df255d213d06726a0)",
       "bceeeb7aab6051fd7637c409cc84ff9e3854b9f6": "openjpeg: fix CVE-2026-6192 (#571874)",
       "4c0c1a10445d63c38526a73df255d213d06726a0": "openjpeg: fix CVE-2026-6192"
+    },
+    "CVE-2026-108976": {
+      "8d6dac12c72263373828586e1a34940d1f0267ca": "emacs: patch CVE-2026-108976 (#573262)",
+      "68665701b8fc11f1c0066b433501234a039814b7": "emacs: patch CVE-2026-108976\n\nIncomplete fix for Emacs CVE-2026-79992\n\nWonyoung Jung of 78ResearchLab, using their PatchHawk tool, discovered\nthat the fix for CVE-2026-79992 was incomplete.\n\nThe tramp-user-regexp failed to check for some additional problematic\ncharacters in user names, meaning that exploitation was still possible.\n\nThe attached patch by TRAMP maintainer Michael Albinus addresses the\nproblem.  It will be included in Emacs 31.2 though that won't be\nreleased soon.\n\nMessage and patch taken from:\nhttps://www.openwall.com/lists/oss-security/2026/10/11/1\n\nRef: #573231"
     },
     "CVE-2026-79992": {
       "68665701b8fc11f1c0066b433501234a039814b7": "emacs: patch CVE-2026-108976\n\nIncomplete fix for Emacs CVE-2026-79992\n\nWonyoung Jung of 78ResearchLab, using their PatchHawk tool, discovered\nthat the fix for CVE-2026-79992 was incomplete.\n\nThe tramp-user-regexp failed to check for some additional problematic\ncharacters in user names, meaning that exploitation was still possible.\n\nThe attached patch by TRAMP maintainer Michael Albinus addresses the\nproblem.  It will be included in Emacs 31.2 though that won't be\nreleased soon.\n\nMessage and patch taken from:\nhttps://www.openwall.com/lists/oss-security/2026/10/11/1\n\nRef: #573231",
