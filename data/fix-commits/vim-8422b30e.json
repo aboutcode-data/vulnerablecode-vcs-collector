@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/vim/vim",
   "vulnerabilities": {
+    "GHSA-X2W5-PJ55-7HPC": {
+      "7670338d8b695c476de868dabd34d68d6de2443b": "patch 9.2.1178: [security]: code injection via rmd syntax pattern\n\nProblem:  [security]: code injection via rmd syntax pattern for fenced\n          languages (ylerni7-ant)\nSolution: Keep only the leading word characters of the language name\n          in the syntax script.\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-x2w5-pj55-7hpc\n\nAssisted-by: Claude Opus\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
+    },
+    "GHSA-4XGR-VQH2-XFX8": {
+      "05d704d2856dbb75e95bd33cf222c2e6264fff8b": "patch 9.2.1177: [security]: possible code injection via rubycomplete\n\nProblem:  [security]: possible code injection via rubycomplete\n          (tnshima)\nSolution: Do not use eval() for arbitrary buffer text\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-4xgr-vqh2-xfx8\n\nAssisted-by: Opus\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-X9JF-RJM6-VXQH": {
       "2942c934ec7c68791b9da7ab6c29ae4987f7a2fb": "patch 9.2.1090: [security]: ex command injection in sign jump\n\nProblem:  [security]: ex command injection in sign jump (skeletonsec)\nSolution: Use do_ecmd() directly instead of constructing a command line\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-x9jf-rjm6-vxqh\n\nSupported by AI.\n\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
     },

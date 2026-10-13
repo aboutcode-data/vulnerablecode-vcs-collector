@@ -1,6 +1,22 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-108976": {
+      "8d6dac12c72263373828586e1a34940d1f0267ca": "emacs: patch CVE-2026-108976 (#573262)",
+      "68665701b8fc11f1c0066b433501234a039814b7": "emacs: patch CVE-2026-108976\n\nIncomplete fix for Emacs CVE-2026-79992\n\nWonyoung Jung of 78ResearchLab, using their PatchHawk tool, discovered\nthat the fix for CVE-2026-79992 was incomplete.\n\nThe tramp-user-regexp failed to check for some additional problematic\ncharacters in user names, meaning that exploitation was still possible.\n\nThe attached patch by TRAMP maintainer Michael Albinus addresses the\nproblem.  It will be included in Emacs 31.2 though that won't be\nreleased soon.\n\nMessage and patch taken from:\nhttps://www.openwall.com/lists/oss-security/2026/10/11/1\n\nRef: #573231"
+    },
+    "CVE-2026-6192": {
+      "09e0ddf582a4b37ac52df6c623c11699f31324a6": "openjpeg: fix CVE-2026-6192\n\n(cherry picked from commit 4c0c1a10445d63c38526a73df255d213d06726a0)",
+      "bceeeb7aab6051fd7637c409cc84ff9e3854b9f6": "openjpeg: fix CVE-2026-6192 (#571874)",
+      "4c0c1a10445d63c38526a73df255d213d06726a0": "openjpeg: fix CVE-2026-6192"
+    },
+    "CVE-2026-79992": {
+      "68665701b8fc11f1c0066b433501234a039814b7": "emacs: patch CVE-2026-108976\n\nIncomplete fix for Emacs CVE-2026-79992\n\nWonyoung Jung of 78ResearchLab, using their PatchHawk tool, discovered\nthat the fix for CVE-2026-79992 was incomplete.\n\nThe tramp-user-regexp failed to check for some additional problematic\ncharacters in user names, meaning that exploitation was still possible.\n\nThe attached patch by TRAMP maintainer Michael Albinus addresses the\nproblem.  It will be included in Emacs 31.2 though that won't be\nreleased soon.\n\nMessage and patch taken from:\nhttps://www.openwall.com/lists/oss-security/2026/10/11/1\n\nRef: #573231",
+      "aec23d9ca53c20ef937b79604e2ff5241750456a": "[Backport release-26.05] emacs30, emacs30-macport: patch CVE-2026-79992 (#557253)",
+      "ce295f663f6dad79db4e20e0b7a8f2551448ec09": "emacs30, emacs30-macport: patch CVE-2026-79992\n\n(cherry picked from commit ece60c611b9915bd6dcb62d6b17f0f323b203ac3)",
+      "df8611e3f5ae7c201c1d9ff5fffb3aa4028b8978": "emacs30, emacs30-macport: patch CVE-2026-79992 (#556991)",
+      "ece60c611b9915bd6dcb62d6b17f0f323b203ac3": "emacs30, emacs30-macport: patch CVE-2026-79992"
+    },
     "CVE-2026-68742": {
       "3fb4328ccc0f8cab8fcd6c3edb32abf447d8158a": "sssd: backport fix for CVE-2026-68742 (#572463)",
       "da08e1727865663920c3226a88e9d0875cb91a58": "sssd: backport fix for CVE-2026-68742\n\nAssisted-by: OpenAI Codex (Daybreak Blue)"
@@ -5958,12 +5974,6 @@
     },
     "CVE-2026-72809": {
       "f937c968950f396ccafe4e2e1833f676e0feac70": "siyuan: 3.7.3 -> 3.8.2\n\nSupersedes #552595 (closed because 3.8.0 was released before it could be\nmerged). Jumps to 3.8.2 instead of 3.8.1 since 3.8.2 was released while\nthis PR was still open.\n\nChanges since 3.7.3:\n- Fix CVE-2026-72788, CVE-2026-72790, CVE-2026-72793, CVE-2026-72801,\n  CVE-2026-72807, CVE-2026-72809 (publish-mode access-control and\n  information-disclosure issues).\n- Handle upstream pandoc changes in 3.8.x: electron-builder afterPack\n  hook now requires a packaged pandoc.zip, and the kernel needs the\n  pandoc-resources directory. Rebuild pandoc archive from the Nix pandoc\n  binary instead of removing the whole pandoc/ directory.\n- Adapt set-pandoc-path.patch to the new InitPandoc(customPandocBinPath)\n  API introduced in 3.8.x.\n- Enable sqlcipher support (encrypted notebooks) to match upstream\n  Dockerfile build flags.\n- Skip kernel tests during main build (doCheck = false) and add them\n  as passthru.tests.kernel, as upstream tests make assumptions that do\n  not hold in the Nix sandbox.\n- Expose kernel derivation via passthru.kernel. This fixes the existing\n  --subpackage=kernel flag in the updateScript, which previously failed\n  to evaluate siyuan.kernel because the attr path was not available.\n\nReference: https://github.com/mtul0729/siyuan-nix\n\nChangelog: https://github.com/siyuan-note/siyuan/releases/tag/v3.8.0\nChangelog: https://github.com/siyuan-note/siyuan/releases/tag/v3.8.1\nChangelog: https://github.com/siyuan-note/siyuan/releases/tag/v3.8.2\n\nAssisted-by: opencode / big-pickle"
-    },
-    "CVE-2026-79992": {
-      "aec23d9ca53c20ef937b79604e2ff5241750456a": "[Backport release-26.05] emacs30, emacs30-macport: patch CVE-2026-79992 (#557253)",
-      "ce295f663f6dad79db4e20e0b7a8f2551448ec09": "emacs30, emacs30-macport: patch CVE-2026-79992\n\n(cherry picked from commit ece60c611b9915bd6dcb62d6b17f0f323b203ac3)",
-      "df8611e3f5ae7c201c1d9ff5fffb3aa4028b8978": "emacs30, emacs30-macport: patch CVE-2026-79992 (#556991)",
-      "ece60c611b9915bd6dcb62d6b17f0f323b203ac3": "emacs30, emacs30-macport: patch CVE-2026-79992"
     },
     "GHSA-9PQW-C7M4-XVG7": {
       "2b87b353af75331589a46a59686dfc7d0cb191c7": "incus-lts: backport 7.4 security fixes\n\nsourced from:\n- https://github.com/lxc/incus/pull/3916\n\nadvisories:\n- https://github.com/lxc/incus/security/advisories/GHSA-9pqw-c7m4-xvg7 (Moderate)\n- https://github.com/lxc/incus/security/advisories/GHSA-c6wx-8679-hpr9 (Moderate)\n\n(cherry picked from commit aab3bb3eb19d102014960c28476da3b0790b4eb8)",
