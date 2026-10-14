@@ -1,7 +1,24 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-107570": {
+      "87dbae60cdc62856dcafd927b0b7369cc6ded69b": "[26.05] mutt: fix for CVE-2026-107570 (#573899)",
+      "eeadd96e1341be3deac273868d0ca740613029f1": "mutt: fix for CVE-2026-107570\n\nNot-cherry-picked-becaus: master is on 2.4.3."
+    },
+    "GHSA-H2V8-394M-P7VV": {
+      "b92a7ce15f98962951c173d334f772f6d5902cef": "rustls-ffi: 0.15.4 -> 0.15.5\n\nThis addresses GHSA-h2v8-394m-p7vv, GHSA-w44r-93j7-qv28, and\nGHSA-vp88-798v-h67f by updating rustls-ffi from 0.15.4 to 0.15.5.\nSee the upstream release notes for more information:\n\n  https://github.com/rustls/rustls-ffi/releases/tag/v0.15.5\n\n(cherry picked from commit ef1eccfa55cafafcb519beb0c01b21fcc383c2b8)",
+      "ef1eccfa55cafafcb519beb0c01b21fcc383c2b8": "rustls-ffi: 0.15.4 -> 0.15.5\n\nThis addresses GHSA-h2v8-394m-p7vv, GHSA-w44r-93j7-qv28, and\nGHSA-vp88-798v-h67f by updating rustls-ffi from 0.15.4 to 0.15.5.\nSee the upstream release notes for more information:\n\n  https://github.com/rustls/rustls-ffi/releases/tag/v0.15.5"
+    },
+    "GHSA-W44R-93J7-QV28": {
+      "b92a7ce15f98962951c173d334f772f6d5902cef": "rustls-ffi: 0.15.4 -> 0.15.5\n\nThis addresses GHSA-h2v8-394m-p7vv, GHSA-w44r-93j7-qv28, and\nGHSA-vp88-798v-h67f by updating rustls-ffi from 0.15.4 to 0.15.5.\nSee the upstream release notes for more information:\n\n  https://github.com/rustls/rustls-ffi/releases/tag/v0.15.5\n\n(cherry picked from commit ef1eccfa55cafafcb519beb0c01b21fcc383c2b8)",
+      "ef1eccfa55cafafcb519beb0c01b21fcc383c2b8": "rustls-ffi: 0.15.4 -> 0.15.5\n\nThis addresses GHSA-h2v8-394m-p7vv, GHSA-w44r-93j7-qv28, and\nGHSA-vp88-798v-h67f by updating rustls-ffi from 0.15.4 to 0.15.5.\nSee the upstream release notes for more information:\n\n  https://github.com/rustls/rustls-ffi/releases/tag/v0.15.5"
+    },
+    "GHSA-VP88-798V-H67F": {
+      "b92a7ce15f98962951c173d334f772f6d5902cef": "rustls-ffi: 0.15.4 -> 0.15.5\n\nThis addresses GHSA-h2v8-394m-p7vv, GHSA-w44r-93j7-qv28, and\nGHSA-vp88-798v-h67f by updating rustls-ffi from 0.15.4 to 0.15.5.\nSee the upstream release notes for more information:\n\n  https://github.com/rustls/rustls-ffi/releases/tag/v0.15.5\n\n(cherry picked from commit ef1eccfa55cafafcb519beb0c01b21fcc383c2b8)",
+      "ef1eccfa55cafafcb519beb0c01b21fcc383c2b8": "rustls-ffi: 0.15.4 -> 0.15.5\n\nThis addresses GHSA-h2v8-394m-p7vv, GHSA-w44r-93j7-qv28, and\nGHSA-vp88-798v-h67f by updating rustls-ffi from 0.15.4 to 0.15.5.\nSee the upstream release notes for more information:\n\n  https://github.com/rustls/rustls-ffi/releases/tag/v0.15.5"
+    },
     "CVE-2026-108976": {
+      "bd723c0ecf27f7413f8b83e832444ebddd34d1c0": "[Backport release-26.05] emacs30-macport: patch CVE-2026-108976 (#574014)",
       "3890f457ce69d4e7fde29f1fc7b4902559e7c775": "emacs30-macport: patch CVE-2026-108976\n\nIncomplete fix for Emacs CVE-2026-79992\n\nWonyoung Jung of 78ResearchLab, using their PatchHawk tool, discovered\nthat the fix for CVE-2026-79992 was incomplete.\n\nThe tramp-user-regexp failed to check for some additional problematic\ncharacters in user names, meaning that exploitation was still possible.\n\nThe attached patch by TRAMP maintainer Michael Albinus addresses the\nproblem.  It will be included in Emacs 31.2 though that won't be\nreleased soon.\n\nMessage and patch taken from:\nhttps://www.openwall.com/lists/oss-security/2026/10/11/1\n\nRef: #573231, #573262\n(cherry picked from commit b9cb25e75aa47f6d0469bb48d49bc17ef37bdf76)",
       "47aea5e56a80fadb52efc348e68a3647f67d4ec2": "emacs30-macport: patch CVE-2026-108976 (#573469)",
       "b9cb25e75aa47f6d0469bb48d49bc17ef37bdf76": "emacs30-macport: patch CVE-2026-108976\n\nIncomplete fix for Emacs CVE-2026-79992\n\nWonyoung Jung of 78ResearchLab, using their PatchHawk tool, discovered\nthat the fix for CVE-2026-79992 was incomplete.\n\nThe tramp-user-regexp failed to check for some additional problematic\ncharacters in user names, meaning that exploitation was still possible.\n\nThe attached patch by TRAMP maintainer Michael Albinus addresses the\nproblem.  It will be included in Emacs 31.2 though that won't be\nreleased soon.\n\nMessage and patch taken from:\nhttps://www.openwall.com/lists/oss-security/2026/10/11/1\n\nRef: #573231, #573262",
