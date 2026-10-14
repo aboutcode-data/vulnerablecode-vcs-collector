@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/quarkusio/quarkus",
   "vulnerabilities": {
+    "CVE-2026-102554": {
+      "bc5c7b25f8095cefeb38433eade9de79d57a4413": "Manage guava in application BOM\n\n- fixes https://nvd.nist.gov/vuln/detail/cve-2026-102554"
+    },
     "CVE-2026-107314": {
       "36304710765c8394f3eca5438e764028b6d01d3f": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315"
     },
