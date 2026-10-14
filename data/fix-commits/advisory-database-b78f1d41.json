@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/github/advisory-database",
   "vulnerabilities": {
+    "GHSA-J54J-R8Q7-V2HQ": {
+      "53c46a34a9dbfdd0d27f43a5191afc3be3fde8bc": "Publish GHSA-j54j-r8q7-v2hq"
+    },
     "GHSA-49QH-H4VJ-MRGF": {
       "1985a0664f9a005a247f24a002b01af74a815c72": "Publish GHSA-49qh-h4vj-mrgf",
       "ac1c707e2cdcfad537c8ef9fe61f634f33e50ec1": "Publish GHSA-49qh-h4vj-mrgf",
