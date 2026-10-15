@@ -1,6 +1,36 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-15176": {
+      "79d0e88fccce2b8ff454a8da7e81340ded74e2a8": "nginxStable: 1.30.5 -> 1.30.6\n\nhttps://nginx.org/en/CHANGES-1.30\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205\n\n(cherry picked from commit 36ff115a154246ebbc25c6bc417dbef9c8e4d788)",
+      "6d05b756e3f08c8eaa10911536e2cc3c9708029b": "nginxMainline: 1.31.6 -> 1.31.7\n\nhttps://nginx.org/en/CHANGES\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205\n\n(cherry picked from commit 22e558071c33e93dd30ac4f8d1c306ba8c959eef)",
+      "36ff115a154246ebbc25c6bc417dbef9c8e4d788": "nginxStable: 1.30.5 -> 1.30.6\n\nhttps://nginx.org/en/CHANGES-1.30\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205",
+      "22e558071c33e93dd30ac4f8d1c306ba8c959eef": "nginxMainline: 1.31.6 -> 1.31.7\n\nhttps://nginx.org/en/CHANGES\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205"
+    },
+    "CVE-2026-93479": {
+      "79d0e88fccce2b8ff454a8da7e81340ded74e2a8": "nginxStable: 1.30.5 -> 1.30.6\n\nhttps://nginx.org/en/CHANGES-1.30\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205\n\n(cherry picked from commit 36ff115a154246ebbc25c6bc417dbef9c8e4d788)",
+      "6d05b756e3f08c8eaa10911536e2cc3c9708029b": "nginxMainline: 1.31.6 -> 1.31.7\n\nhttps://nginx.org/en/CHANGES\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205\n\n(cherry picked from commit 22e558071c33e93dd30ac4f8d1c306ba8c959eef)",
+      "36ff115a154246ebbc25c6bc417dbef9c8e4d788": "nginxStable: 1.30.5 -> 1.30.6\n\nhttps://nginx.org/en/CHANGES-1.30\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205",
+      "22e558071c33e93dd30ac4f8d1c306ba8c959eef": "nginxMainline: 1.31.6 -> 1.31.7\n\nhttps://nginx.org/en/CHANGES\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205"
+    },
+    "CVE-2026-95101": {
+      "79d0e88fccce2b8ff454a8da7e81340ded74e2a8": "nginxStable: 1.30.5 -> 1.30.6\n\nhttps://nginx.org/en/CHANGES-1.30\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205\n\n(cherry picked from commit 36ff115a154246ebbc25c6bc417dbef9c8e4d788)",
+      "6d05b756e3f08c8eaa10911536e2cc3c9708029b": "nginxMainline: 1.31.6 -> 1.31.7\n\nhttps://nginx.org/en/CHANGES\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205\n\n(cherry picked from commit 22e558071c33e93dd30ac4f8d1c306ba8c959eef)",
+      "36ff115a154246ebbc25c6bc417dbef9c8e4d788": "nginxStable: 1.30.5 -> 1.30.6\n\nhttps://nginx.org/en/CHANGES-1.30\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205",
+      "22e558071c33e93dd30ac4f8d1c306ba8c959eef": "nginxMainline: 1.31.6 -> 1.31.7\n\nhttps://nginx.org/en/CHANGES\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205"
+    },
+    "CVE-2026-97629": {
+      "79d0e88fccce2b8ff454a8da7e81340ded74e2a8": "nginxStable: 1.30.5 -> 1.30.6\n\nhttps://nginx.org/en/CHANGES-1.30\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205\n\n(cherry picked from commit 36ff115a154246ebbc25c6bc417dbef9c8e4d788)",
+      "6d05b756e3f08c8eaa10911536e2cc3c9708029b": "nginxMainline: 1.31.6 -> 1.31.7\n\nhttps://nginx.org/en/CHANGES\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205\n\n(cherry picked from commit 22e558071c33e93dd30ac4f8d1c306ba8c959eef)",
+      "36ff115a154246ebbc25c6bc417dbef9c8e4d788": "nginxStable: 1.30.5 -> 1.30.6\n\nhttps://nginx.org/en/CHANGES-1.30\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205",
+      "22e558071c33e93dd30ac4f8d1c306ba8c959eef": "nginxMainline: 1.31.6 -> 1.31.7\n\nhttps://nginx.org/en/CHANGES\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205"
+    },
+    "CVE-2026-97205": {
+      "79d0e88fccce2b8ff454a8da7e81340ded74e2a8": "nginxStable: 1.30.5 -> 1.30.6\n\nhttps://nginx.org/en/CHANGES-1.30\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205\n\n(cherry picked from commit 36ff115a154246ebbc25c6bc417dbef9c8e4d788)",
+      "6d05b756e3f08c8eaa10911536e2cc3c9708029b": "nginxMainline: 1.31.6 -> 1.31.7\n\nhttps://nginx.org/en/CHANGES\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205\n\n(cherry picked from commit 22e558071c33e93dd30ac4f8d1c306ba8c959eef)",
+      "36ff115a154246ebbc25c6bc417dbef9c8e4d788": "nginxStable: 1.30.5 -> 1.30.6\n\nhttps://nginx.org/en/CHANGES-1.30\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205",
+      "22e558071c33e93dd30ac4f8d1c306ba8c959eef": "nginxMainline: 1.31.6 -> 1.31.7\n\nhttps://nginx.org/en/CHANGES\n\nfixes\n- CVE-2026-15176\n- CVE-2026-93479\n- CVE-2026-95101\n- CVE-2026-97629\n- CVE-2026-97205"
+    },
     "CVE-2026-110152": {
       "2e83694f95f25ec52a31cba076a5149fdd948fb4": "ungoogled-chromium: 155.0.8059.39-1 -> 155.0.8059.79-1\n\nhttps://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_01668083673.html\n\nThis update includes 37 security fixes.\n\nCVEs:\nCVE-2026-110152 CVE-2026-110149 CVE-2026-110136 CVE-2026-110161\nCVE-2026-110165 CVE-2026-110148 CVE-2026-110151 CVE-2026-110162\nCVE-2026-110170 CVE-2026-110160 CVE-2026-110143 CVE-2026-110146\nCVE-2026-110150 CVE-2026-110156 CVE-2026-110137 CVE-2026-110140\nCVE-2026-110158 CVE-2026-110145 CVE-2026-110159 CVE-2026-110144\nCVE-2026-110153 CVE-2026-110166 CVE-2026-110169 CVE-2026-110168\nCVE-2026-110139 CVE-2026-110172 CVE-2026-110164 CVE-2026-110163\nCVE-2026-110141 CVE-2026-110138 CVE-2026-110157 CVE-2026-110147\nCVE-2026-110154 CVE-2026-110155 CVE-2026-110167 CVE-2026-110171\nCVE-2026-110142\n\n(cherry picked from commit c21ecfad0689f1fca5abc9f04ca1b383b2c0e787)",
       "c21ecfad0689f1fca5abc9f04ca1b383b2c0e787": "ungoogled-chromium: 155.0.8059.39-1 -> 155.0.8059.79-1\n\nhttps://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_01668083673.html\n\nThis update includes 37 security fixes.\n\nCVEs:\nCVE-2026-110152 CVE-2026-110149 CVE-2026-110136 CVE-2026-110161\nCVE-2026-110165 CVE-2026-110148 CVE-2026-110151 CVE-2026-110162\nCVE-2026-110170 CVE-2026-110160 CVE-2026-110143 CVE-2026-110146\nCVE-2026-110150 CVE-2026-110156 CVE-2026-110137 CVE-2026-110140\nCVE-2026-110158 CVE-2026-110145 CVE-2026-110159 CVE-2026-110144\nCVE-2026-110153 CVE-2026-110166 CVE-2026-110169 CVE-2026-110168\nCVE-2026-110139 CVE-2026-110172 CVE-2026-110164 CVE-2026-110163\nCVE-2026-110141 CVE-2026-110138 CVE-2026-110157 CVE-2026-110147\nCVE-2026-110154 CVE-2026-110155 CVE-2026-110167 CVE-2026-110171\nCVE-2026-110142",
@@ -224,6 +254,7 @@
       "a3fd85e95837ce5d2e879357445c6eb5cd02d280": "chromium,chromedriver: 155.0.8059.39 -> 155.0.8059.79\n\nhttps://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_01668083673.html\n\nThis update includes 37 security fixes.\n\nCVEs:\nCVE-2026-110152 CVE-2026-110149 CVE-2026-110136 CVE-2026-110161\nCVE-2026-110165 CVE-2026-110148 CVE-2026-110151 CVE-2026-110162\nCVE-2026-110170 CVE-2026-110160 CVE-2026-110143 CVE-2026-110146\nCVE-2026-110150 CVE-2026-110156 CVE-2026-110137 CVE-2026-110140\nCVE-2026-110158 CVE-2026-110145 CVE-2026-110159 CVE-2026-110144\nCVE-2026-110153 CVE-2026-110166 CVE-2026-110169 CVE-2026-110168\nCVE-2026-110139 CVE-2026-110172 CVE-2026-110164 CVE-2026-110163\nCVE-2026-110141 CVE-2026-110138 CVE-2026-110157 CVE-2026-110147\nCVE-2026-110154 CVE-2026-110155 CVE-2026-110167 CVE-2026-110171\nCVE-2026-110142"
     },
     "CVE-2026-109448": {
+      "e8ce72a5cd33b9e797aa732e7e35f417e70d5d0a": "psqlodbc: 18.00.0004 -> 18.00.0005\n\nRelease Notes:\nhttps://github.com/postgresql-interfaces/psqlodbc/releases/tag/REL-18_00_0005\n\nSecurity: CVE-2026-109448\nFixes #573674\n\n(cherry picked from commit 6c1ae520d9dcf7eff5cc762f044d863ded0e0d61)",
       "6c1ae520d9dcf7eff5cc762f044d863ded0e0d61": "psqlodbc: 18.00.0004 -> 18.00.0005\n\nRelease Notes:\nhttps://github.com/postgresql-interfaces/psqlodbc/releases/tag/REL-18_00_0005\n\nSecurity: CVE-2026-109448\nFixes #573674"
     },
     "CVE-2026-107570": {
