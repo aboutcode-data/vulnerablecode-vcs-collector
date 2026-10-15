@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/superset",
   "vulnerabilities": {
+    "CVE-2025-55673": {
+      "a82a73dff8d14a0a52476809b11fad6a037435f7": "Tighten redaction comments and catch ordering bugs in the samples test\n\n- Comments: the helper fails closed for a guest whose principal can't be\n  resolved (not for any unresolvable principal), and the\n  \"can view query on Dashboard\" gate dates from #43151 rather than the\n  CVE-2025-55673 strip.\n- Samples real-helper test: assert on the response as serialized when\n  `json_response` is called, instead of the dict mutated in place, so the\n  test fails if the redaction ever runs after the response is built.\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>"
+    },
     "GHSA-8R5X-FM3F-WHWJ": {
       "44dbb00d6a9050988f1e7f564065aee2f806fc68": "fix(deps): bump handlebars to 4.7.10 (handlebars part of #45143)\n\nhandlebars <= 4.7.9 is affected by GHSA-8r5x-fm3f-whwj and\nGHSA-p8wg-vrv2-v86f (critical, JavaScript injection) and\nGHSA-xw65-4hp5-5hc7 (medium); 4.7.10 fixes them. The Handlebars chart\nplugin, the deck.gl tooltip renderer and Matrixify compile templates with it.\n\nTakes only the handlebars changes from the security-group bump #45143\n(8318398da4): the package ranges and the lockfile entries, including the\nnested 4.7.9 copy lerna pins. Its other updates are dev tooling or docs\n(concurrently, yeoman-generator 9 -> 10 for generator-superset,\nwebpack-dev-middleware) and conflict with 7.0's older generator-superset\ndependencies, so they are left out."
     },
