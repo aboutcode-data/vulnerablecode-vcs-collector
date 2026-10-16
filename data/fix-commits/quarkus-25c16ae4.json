@@ -2,18 +2,22 @@
   "vcs_url": "https://github.com/quarkusio/quarkus",
   "vulnerabilities": {
     "CVE-2026-102554": {
+      "405f256c5f1e770e1a3536351c206978cab4d056": "Upgrade guava to 33.7.2-jre\n\n- fixes https://nvd.nist.gov/vuln/detail/cve-2026-102554",
+      "405243acf2a98866db3de895227f9b3f8951d291": "Upgrade guava to 33.7.2-jre\n\n- fixes https://nvd.nist.gov/vuln/detail/cve-2026-102554",
+      "d94cf3e9a9c98eef255094b0dff7c41b1e9b277d": "Upgrade guava to 33.7.2-jre\n\n- fixes https://nvd.nist.gov/vuln/detail/cve-2026-102554",
       "bc5c7b25f8095cefeb38433eade9de79d57a4413": "Manage guava in application BOM\n\n- fixes https://nvd.nist.gov/vuln/detail/cve-2026-102554"
+    },
+    "CVE-2026-90559": {
+      "db1d7bc7a96f6ae02cbc605c9ada02b8a629d46f": "Upgrade snappy-java to 1.1.10.11\n\n- fixes https://access.redhat.com/security/cve/cve-2026-90559",
+      "af6ebbdc43bc3023b1aa61df2c0277471d28a527": "Upgrade snappy-java to 1.1.10.11\n\n- fixes https://access.redhat.com/security/cve/cve-2026-90559",
+      "2be4f6b3832da44ee7d95cf15a7dc79664d38fca": "Upgrade snappy-java to 1.1.10.11\n\n- fixes https://access.redhat.com/security/cve/cve-2026-90559",
+      "37018e05947dc846da86b955c6e8e353bb7402d4": "Upgrade snappy-java to 1.1.10.11\n\n- fixes https://access.redhat.com/security/cve/cve-2026-90559"
     },
     "CVE-2026-107314": {
       "36304710765c8394f3eca5438e764028b6d01d3f": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315"
     },
     "CVE-2026-107315": {
       "36304710765c8394f3eca5438e764028b6d01d3f": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315"
-    },
-    "CVE-2026-90559": {
-      "af6ebbdc43bc3023b1aa61df2c0277471d28a527": "Upgrade snappy-java to 1.1.10.11\n\n- fixes https://access.redhat.com/security/cve/cve-2026-90559",
-      "2be4f6b3832da44ee7d95cf15a7dc79664d38fca": "Upgrade snappy-java to 1.1.10.11\n\n- fixes https://access.redhat.com/security/cve/cve-2026-90559",
-      "37018e05947dc846da86b955c6e8e353bb7402d4": "Upgrade snappy-java to 1.1.10.11\n\n- fixes https://access.redhat.com/security/cve/cve-2026-90559"
     },
     "GHSA-QCXP-GM7M-4J5V": {
       "aa68083f931c88b9491824058fc0f756766037f4": "Handle GHSA-qcxp-gm7m-4j5v",
