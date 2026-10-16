@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/neovim/neovim",
   "vulnerabilities": {
     "GHSA-X2W5-PJ55-7HPC": {
+      "29ecd1644429aed0b4fb2ef77da350094c2515f2": "vim-patch:9.2.1201: [security]: code injection via cargo quickfix plugin #42406\n\nProblem:  [security]: code injection via cargo quickfix plugin\n          (Daniel Dalvelac)\nSolution: Use chdir() instead of string executing a cd command\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-x2w5-pj55-7hpc\n\nfyi @gpanders\n\nhttps://github.com/vim/vim/commit/b93c000ddfc27c6a1192bcba77204709536cf094\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>",
       "b64e3327d84218b4d5e76accdffd7a6545cb14a6": "vim-patch:9.2.1178: [security]: code injection via rmd syntax pattern\n\nProblem:  [security]: code injection via rmd syntax pattern for fenced\n          languages (ylerni7-ant)\nSolution: Keep only the leading word characters of the language name\n          in the syntax script.\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-x2w5-pj55-7hpc\n\nhttps://github.com/vim/vim/commit/7670338d8b695c476de868dabd34d68d6de2443b\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
     },
     "GHSA-4XGR-VQH2-XFX8": {
