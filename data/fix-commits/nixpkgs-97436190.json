@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-69150": {
+      "f08b4cd95667cbfa22571ad495251a9ba4187dd9": "keepassxc: fix CVE-2026-69150 (#575169)",
+      "1b2cf585dabdd27a02bfde2b1bba2194b6bb3f53": "keepassxc: fix CVE-2026-69150"
+    },
     "CVE-2026-109786": {
       "d98536ff78ff2ed9576652d9489f881df5b84c1a": "fail2ban: include fix for CVE-2026-109786\n\nVulnerability and fix confirmed by running the following command in the interactive tests:\n\n```py\nclient.execute(\"sshpass -p wrongpasswd ssh -o StrictHostKeyChecking=no 'x 192.169.0.1 on@2001:db8:1::2'\")\n```\n\n(cherry picked from commit cf5553c7c88574974f9c03b729f595f3daa41a28)",
       "40b477c34b2c5c86152c84bab2e91eea0dbc34d5": "fail2ban: include fix for CVE-2026-109786 (#574773)",
