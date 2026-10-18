@@ -1,14 +1,47 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
-    "CVE-2026-69150": {
-      "f08b4cd95667cbfa22571ad495251a9ba4187dd9": "keepassxc: fix CVE-2026-69150 (#575169)",
-      "1b2cf585dabdd27a02bfde2b1bba2194b6bb3f53": "keepassxc: fix CVE-2026-69150"
-    },
     "CVE-2026-109786": {
+      "8d7beab89545b3b28d183b8832c39c9d2ad5aa19": "[Backport release-26.05] fail2ban: include fix for CVE-2026-109786 (#575064)",
       "d98536ff78ff2ed9576652d9489f881df5b84c1a": "fail2ban: include fix for CVE-2026-109786\n\nVulnerability and fix confirmed by running the following command in the interactive tests:\n\n```py\nclient.execute(\"sshpass -p wrongpasswd ssh -o StrictHostKeyChecking=no 'x 192.169.0.1 on@2001:db8:1::2'\")\n```\n\n(cherry picked from commit cf5553c7c88574974f9c03b729f595f3daa41a28)",
       "40b477c34b2c5c86152c84bab2e91eea0dbc34d5": "fail2ban: include fix for CVE-2026-109786 (#574773)",
       "cf5553c7c88574974f9c03b729f595f3daa41a28": "fail2ban: include fix for CVE-2026-109786\n\nVulnerability and fix confirmed by running the following command in the interactive tests:\n\n```py\nclient.execute(\"sshpass -p wrongpasswd ssh -o StrictHostKeyChecking=no 'x 192.169.0.1 on@2001:db8:1::2'\")\n```"
+    },
+    "CVE-2026-96297": {
+      "60e06bfc9252e6154ceaa8af2f41b19d7c861a71": "mongodb-7_0: 7.0.43 -> 7.0.45\n\nhttps://www.mongodb.com/docs/manual/release-notes/7.0-changelog/#7045-changelog\n\nFixes: CVE-2026-96297\nFixes: CVE-2026-103965\n(cherry picked from commit cd8156b96be8f1ba9086ff8a752ef0b6a24905ad)",
+      "cd8156b96be8f1ba9086ff8a752ef0b6a24905ad": "mongodb-7_0: 7.0.43 -> 7.0.45\n\nhttps://www.mongodb.com/docs/manual/release-notes/7.0-changelog/#7045-changelog\n\nFixes: CVE-2026-96297\nFixes: CVE-2026-103965"
+    },
+    "CVE-2026-103965": {
+      "60e06bfc9252e6154ceaa8af2f41b19d7c861a71": "mongodb-7_0: 7.0.43 -> 7.0.45\n\nhttps://www.mongodb.com/docs/manual/release-notes/7.0-changelog/#7045-changelog\n\nFixes: CVE-2026-96297\nFixes: CVE-2026-103965\n(cherry picked from commit cd8156b96be8f1ba9086ff8a752ef0b6a24905ad)",
+      "cd8156b96be8f1ba9086ff8a752ef0b6a24905ad": "mongodb-7_0: 7.0.43 -> 7.0.45\n\nhttps://www.mongodb.com/docs/manual/release-notes/7.0-changelog/#7045-changelog\n\nFixes: CVE-2026-96297\nFixes: CVE-2026-103965"
+    },
+    "CVE-2026-13719": {
+      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
+    },
+    "CVE-2026-13720": {
+      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
+    },
+    "CVE-2026-81841": {
+      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
+    },
+    "CVE-2026-81842": {
+      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
+    },
+    "CVE-2026-15577": {
+      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
+    },
+    "CVE-2026-33374": {
+      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
+    },
+    "CVE-2026-93294": {
+      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
+    },
+    "CVE-2026-95502": {
+      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
+    },
+    "CVE-2026-69150": {
+      "f08b4cd95667cbfa22571ad495251a9ba4187dd9": "keepassxc: fix CVE-2026-69150 (#575169)",
+      "1b2cf585dabdd27a02bfde2b1bba2194b6bb3f53": "keepassxc: fix CVE-2026-69150"
     },
     "CVE-2026-110922": {
       "1d5b0f892b7a2c473f86b7d423550b64b8c32de0": "ungoogled-chromium: 155.0.8059.79-1 -> 155.0.8059.84-1\n\nhttps://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_01886704284.html\n\nThis update includes 10 security fixes.\n\nCVEs:\nCVE-2026-110922 CVE-2026-110913 CVE-2026-110919 CVE-2026-110918\nCVE-2026-110917 CVE-2026-110921 CVE-2026-110920 CVE-2026-110916\nCVE-2026-110915 CVE-2026-110914\n\n(cherry picked from commit c52da8f66dd182d613b0db550f6d626e015166f5)",

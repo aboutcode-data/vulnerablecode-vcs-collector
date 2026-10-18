@@ -1,6 +1,20 @@
 {
   "vcs_url": "https://github.com/github/advisory-database",
   "vulnerabilities": {
+    "GHSA-HXV6-398X-69PJ": {
+      "e3f92d62f7edb6ab6e373e9f3459fece22cc0610": "Publish GHSA-hxv6-398x-69pj"
+    },
+    "GHSA-7P85-W9PX-JPJP": {
+      "58274274b3c3bf647e1fff7b873ca435ddceb717": "Improve GHSA-7p85-w9px-jpjp",
+      "b65c7ce0ced863d8d67a64c7900b015f0b41aaf2": "Publish Advisories\n\nGHSA-24x9-r6q4-q93w\nGHSA-35wc-cvqg-78fp\nGHSA-7p85-w9px-jpjp\nGHSA-vcc8-phrv-43wj"
+    },
+    "GHSA-45VW-WH46-2VX8": {
+      "7cfee74fb17650d920f3bc9944c0c366ce6cfbf6": "Improve GHSA-45vw-wh46-2vx8",
+      "7605c0714323a9008c0beb2e45874b1dc5cf2af1": "Publish Advisories\n\nGHSA-45vw-wh46-2vx8\nGHSA-fxqw-97cc-7g5c\nGHSA-h4mp-g9c6-xwph\nGHSA-hr9v-r8r2-hg7j"
+    },
+    "GHSA-VC3G-5238-RMMW": {
+      "97bd795dce8d8a226e8da2850d14d1223437290c": "Publish GHSA-vc3g-5238-rmmw"
+    },
     "GHSA-26H2-7XPC-QJ48": {
       "27185a855580c49d2738b648493da1e9246a2cfe": "Publish GHSA-26h2-7xpc-qj48"
     },
@@ -36627,9 +36641,6 @@
     "GHSA-C3QP-2GGW-XJG7": {
       "dcad0d2cc00a6f6a0a63df082faaed09167aa87f": "Publish GHSA-c3qp-2ggw-xjg7"
     },
-    "GHSA-45VW-WH46-2VX8": {
-      "7605c0714323a9008c0beb2e45874b1dc5cf2af1": "Publish Advisories\n\nGHSA-45vw-wh46-2vx8\nGHSA-fxqw-97cc-7g5c\nGHSA-h4mp-g9c6-xwph\nGHSA-hr9v-r8r2-hg7j"
-    },
     "GHSA-FXQW-97CC-7G5C": {
       "7605c0714323a9008c0beb2e45874b1dc5cf2af1": "Publish Advisories\n\nGHSA-45vw-wh46-2vx8\nGHSA-fxqw-97cc-7g5c\nGHSA-h4mp-g9c6-xwph\nGHSA-hr9v-r8r2-hg7j"
     },
@@ -38974,9 +38985,6 @@
       "b65c7ce0ced863d8d67a64c7900b015f0b41aaf2": "Publish Advisories\n\nGHSA-24x9-r6q4-q93w\nGHSA-35wc-cvqg-78fp\nGHSA-7p85-w9px-jpjp\nGHSA-vcc8-phrv-43wj"
     },
     "GHSA-35WC-CVQG-78FP": {
-      "b65c7ce0ced863d8d67a64c7900b015f0b41aaf2": "Publish Advisories\n\nGHSA-24x9-r6q4-q93w\nGHSA-35wc-cvqg-78fp\nGHSA-7p85-w9px-jpjp\nGHSA-vcc8-phrv-43wj"
-    },
-    "GHSA-7P85-W9PX-JPJP": {
       "b65c7ce0ced863d8d67a64c7900b015f0b41aaf2": "Publish Advisories\n\nGHSA-24x9-r6q4-q93w\nGHSA-35wc-cvqg-78fp\nGHSA-7p85-w9px-jpjp\nGHSA-vcc8-phrv-43wj"
     },
     "GHSA-VCC8-PHRV-43WJ": {
