@@ -1,6 +1,13 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-102296": {
+      "a6c8d8187af42664af06e1da59720d45b210f5e5": "[release-26.05] zoneminder: 1.36.38 -> 1.36.39+git20260703_cfac136 + fix CVE-2026-102296 (#574141)",
+      "4660a12acbe03ca8a5df03188c8158ac090f421b": "zoneminder: 1.36.38 -> 1.36.39+git20260703_cfac136 + fix CVE-2026-102296\n\nZoneMinder has quietly released version 1.36.39 under 1.36.x series to\nfix a number of security fixes. However, because NixOS unstable/26.11\nhas already moved to 1.38.x series and 1.36.x is now under \"best-effort\nsecurity fixes\" [^1], this will likely be the last update I get to do\nfor 1.36.x in NixOS 26.05 before it goes EoL in Dec 2026. So I've\ndecided to go ahead and bring in the tip of `release-1.36` branch, which\ncontains a few more security fixes, without waiting for another release.\n\nFor \"changelog\", see:\n\nhttps://github.com/ZoneMinder/zoneminder/compare/1.36.38...41b48ee145b4012d173759210bd46e9deca7b821\n\n[^1]: https://github.com/ZoneMinder/zoneminder/blob/master/SECURITY.md\n\nNot-cherry-picked-because: unstable has advanced to 1.38.x series"
+    },
+    "CVE-2026-108094": {
+      "49cca9177ce7d1bf5a89fdf9ae3d64a48ecfe39f": "mutter: 50.4 -> 50.5\n\nhttps://gitlab.gnome.org/GNOME/mutter/-/compare/50.4...50.5\n\nThis fixes CVE-2026-108094 [1] via [2].\n\nThe HDR saturation issue [3] was fixed in [4].\n\n[1] https://bugzilla.redhat.com/show_bug.cgi?id=2549511\n[2] https://gitlab.gnome.org/GNOME/mutter/-/commit/2a65d1c4b84289c8c917abf42608e18845848821\n[3] https://gitlab.gnome.org/GNOME/mutter/-/work_items/4952\n[4] https://gitlab.gnome.org/GNOME/mutter/-/commit/bd90edfcdaf5846e35a523b4ed5d315d34bd45a5"
+    },
     "CVE-2026-110698": {
       "3cf37b321c4549d4a991b2372f5f32507eba5e2c": "praat: quick fix for CVE-2026-110698 (#574675)",
       "703eb616f135dbeaeb23afd466adff8aba3d97fa": "praat: quick fix for CVE-2026-110698"
