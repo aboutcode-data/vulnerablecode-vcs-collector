@@ -1,6 +1,24 @@
 {
   "vcs_url": "https://github.com/apache/flink",
   "vulnerabilities": {
+    "CVE-2026-59949": {
+      "c1e1d359c73f8ddcfb19984a994ce9e438e14177": "[FLINK-41022][build] Update lz4-java to 1.12.0\n\n1.12.0 fixes CVE-2026-59949 and CVE-2026-106449 to CVE-2026-106453.\nFlink only uses the block compressor and fast decompressor; the\nstricter validation in 1.12.0 is in classes Flink does not use.\nRound-trip throughput of Lz4BlockCompressor and Lz4BlockDecompressor on\nthe JNI path is within noise of 1.10.3.\n\nGenerated-by: Claude Code (Claude Opus 5.5)"
+    },
+    "CVE-2026-106449": {
+      "c1e1d359c73f8ddcfb19984a994ce9e438e14177": "[FLINK-41022][build] Update lz4-java to 1.12.0\n\n1.12.0 fixes CVE-2026-59949 and CVE-2026-106449 to CVE-2026-106453.\nFlink only uses the block compressor and fast decompressor; the\nstricter validation in 1.12.0 is in classes Flink does not use.\nRound-trip throughput of Lz4BlockCompressor and Lz4BlockDecompressor on\nthe JNI path is within noise of 1.10.3.\n\nGenerated-by: Claude Code (Claude Opus 5.5)"
+    },
+    "CVE-2026-106453": {
+      "c1e1d359c73f8ddcfb19984a994ce9e438e14177": "[FLINK-41022][build] Update lz4-java to 1.12.0\n\n1.12.0 fixes CVE-2026-59949 and CVE-2026-106449 to CVE-2026-106453.\nFlink only uses the block compressor and fast decompressor; the\nstricter validation in 1.12.0 is in classes Flink does not use.\nRound-trip throughput of Lz4BlockCompressor and Lz4BlockDecompressor on\nthe JNI path is within noise of 1.10.3.\n\nGenerated-by: Claude Code (Claude Opus 5.5)"
+    },
+    "CVE-2026-71497": {
+      "99c5866b0717ef20d67f243ba7a6486d5eb85a3d": "[FLINK-41021][docs] Update jsoup to 1.23.2\n\njsoup is only used by ConfigOptionsDocsCompletenessITCase. 1.23.2 fixes\nCVE-2026-71497 and CVE-2026-75140.\n\nGenerated-by: Claude Code (Claude Opus 5.5)"
+    },
+    "CVE-2026-75140": {
+      "99c5866b0717ef20d67f243ba7a6486d5eb85a3d": "[FLINK-41021][docs] Update jsoup to 1.23.2\n\njsoup is only used by ConfigOptionsDocsCompletenessITCase. 1.23.2 fixes\nCVE-2026-71497 and CVE-2026-75140.\n\nGenerated-by: Claude Code (Claude Opus 5.5)"
+    },
+    "CVE-2025-48734": {
+      "458ed943a95be08004707e60c3603e37a2b44f95": "[FLINK-41021][fs] Update commons-beanutils to 1.11.0\n\n1.9.4 is affected by CVE-2025-48734. flink-s3-fs-hadoop and\nflink-s3-fs-presto pin their own version, so they stay on 1.9.4 unless\nflink-fs-hadoop-shaded and both S3 modules are bumped. flink-yarn keeps\nits 1.8.3 test pin for the Hadoop 2 build.\n\nGenerated-by: Claude Code (Claude Opus 5.5)"
+    },
     "CVE-2024-36114": {
       "aaa8ad48f8e0fa7876d92068517d8a648133c91e": "[FLINK-36593] Update io.airlift:aircompressor to 0.27. This closes #25567\n\nUpgrade the io.airlift:aircompressor version used by flink-runtime from 0.21 to 0.27.\r\nThis addresses CVE-2024-36114."
     },
