@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://github.com/apache/tomcat",
   "vulnerabilities": {
+    "CVE-2026-101356": {
+      "5280c9ebd04560523041fac81b70f21b98fae346": "Add a test case for CVE-2026-101356",
+      "880dca2acde36fbd2d2330692d7561dc4b5ca798": "Add a test case for CVE-2026-101356",
+      "1eda38633da7aea4fd9ab83fe380c7ec21c8aadf": "Add a test case for CVE-2026-101356",
+      "6c0327626cabbaa7e739227f743abc1517a73925": "Add a test case for CVE-2026-101356"
+    },
+    "CVE-2026-103119": {
+      "e5911bf44df42a823f4c41f9eee18207818fbc27": "Add a test case for CVE-2026-103119",
+      "8e26f6af0bdc89c8e8a8a43611ddadb93ab4a28e": "Add a test case for CVE-2026-103119",
+      "6f19f1a58092635c635163a0449c6b8c94966abf": "Add a test case for CVE-2026-103119",
+      "9a2b13306e59b61cdc62d8e3b0cdcb12d176e504": "Add a test case for CVE-2026-103119"
+    },
     "CVE-2026-78437": {
       "ee765042755b6236c8092c581b1aa8d8d0c3933a": "Add test case for CVE-2026-78437",
       "4a5e28603260df00b454e4669ce41a9bf8bc17ee": "Add test case for CVE-2026-78437",

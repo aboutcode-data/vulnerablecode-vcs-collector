@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://github.com/wagtail/wagtail",
   "vulnerabilities": {
+    "GHSA-3XGH-XC8P-9H54": {
+      "403c2bcef90c27a9118a94151d09e86ee3d0a6c8": "Disable access to custom fields through the admin pages API\n\nFixes https://github.com/wagtail/wagtail/security/advisories/GHSA-3xgh-xc8p-9h54\n\nThe admin API allowed access to arbitrary fields of all explorable pages. Since this API is only used by the explorer menu, which only makes use of the default fields of the base page model (plus `parent`), lock it down to ignore the fields parameter.",
+      "00eecee620b802a59a8f462b55ea4c5b004a56ae": "Disable access to custom fields through the admin pages API\n\nFixes https://github.com/wagtail/wagtail/security/advisories/GHSA-3xgh-xc8p-9h54\n\nThe admin API allowed access to arbitrary fields of all explorable pages. Since this API is only used by the explorer menu, which only makes use of the default fields of the base page model (plus `parent`), lock it down to ignore the fields parameter.",
+      "3aa3657dcc6c45a888b92b618d2264977c97593b": "Disable access to custom fields through the admin pages API\n\nFixes https://github.com/wagtail/wagtail/security/advisories/GHSA-3xgh-xc8p-9h54\n\nThe admin API allowed access to arbitrary fields of all explorable pages. Since this API is only used by the explorer menu, which only makes use of the default fields of the base page model (plus `parent`), lock it down to ignore the fields parameter."
+    },
+    "GHSA-4PG7-87VV-VRH7": {
+      "151662dcafc68b39967176ad4d653a4a91c7f02c": "Prevent HTML sanitisation bypass inside links\n\nFixes https://github.com/wagtail/wagtail/security/advisories/GHSA-4pg7-87vv-vrh7\n\nThe code path for handling `<a data-linktype=\"...\">` links in `wagtail.admin.rich_text.converters.editor_html.DbWhitelister` iterated directly over the link tag's contents, rather than taking a copy. This meant that if the list was mutated during iteration (for example, removing a comment node), iteration would continue at the next index, skipping an element and allowing it to bypass sanitisation.",
+      "c8606059eb185a4ab5bd8a77dde5316c02475fc6": "Prevent HTML sanitisation bypass inside links\n\nFixes https://github.com/wagtail/wagtail/security/advisories/GHSA-4pg7-87vv-vrh7\n\nThe code path for handling `<a data-linktype=\"...\">` links in `wagtail.admin.rich_text.converters.editor_html.DbWhitelister` iterated directly over the link tag's contents, rather than taking a copy. This meant that if the list was mutated during iteration (for example, removing a comment node), iteration would continue at the next index, skipping an element and allowing it to bypass sanitisation."
+    },
+    "GHSA-JM43-45CC-Q9RR": {
+      "3dc7bd32e32741ad7796f12aeed15773136d750f": "Apply instance-level permission check on collection set-privacy view\n\nFixes https://github.com/wagtail/wagtail/security/advisories/GHSA-jm43-45cc-q9rr"
+    },
     "CVE-2026-15337": {
       "b6a76ac81270c556115e84b401d06e73cc904c82": "Reject over-long inputs to get_supported_content_language_variant (#14611)\n\nAnalogous to Django's fix for CVE-2026-15337 (https://github.com/django/django/commit/224dbc832586ad5cfb0237c2ff30d14baeaddc6f). An attacker with the ability to pass arbitrary language codes to get_supported_content_language_variant could consume process memory by passing excessively long strings. This is not exploitable within Wagtail itself, as all calls to this function are made with already-bounded values from configuration files, and this function is not documented for use in third-party code. However, this is being patched in the interest of security hardening.\n\nMany thanks to Kaya Emre Arikan for the report."
     },

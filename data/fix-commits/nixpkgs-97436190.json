@@ -1,6 +1,14 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-111943": {
+      "84e6dc7437caaba1b01728efa4f08f47751d97e9": "rustls-ffi: 0.15.5 -> 0.15.6\n\nThis addresses CVE-2026-111943 by updating rustls-ffi from 0.15.5 to\n0.15.6. See the upstream release notes for more information:\n\n  https://github.com/rustls/rustls-ffi/releases/tag/v0.15.6\n\n(cherry picked from commit cba8aa501cdf83a2efb7b0bcd98db1827be4e1c3)",
+      "cba8aa501cdf83a2efb7b0bcd98db1827be4e1c3": "rustls-ffi: 0.15.5 -> 0.15.6\n\nThis addresses CVE-2026-111943 by updating rustls-ffi from 0.15.5 to\n0.15.6. See the upstream release notes for more information:\n\n  https://github.com/rustls/rustls-ffi/releases/tag/v0.15.6"
+    },
+    "CVE-2026-113470": {
+      "6317a2b1b57e5cd5a910947dfeb13dca21780209": "firefox-esr-153-unwrapped: 153.5.0esr -> 153.5.1.esr\n\nhttps://www.firefox.com/en-US/firefox/153.5.1/releasenotes/\nhttps://www.mozilla.org/en-US/security/advisories/mfsa2026-112/\n\nFixes: CVE-2026-113470\n(cherry picked from commit 732ef391a4dd38ae002fcf632fcc87c8c882744e)",
+      "732ef391a4dd38ae002fcf632fcc87c8c882744e": "firefox-esr-153-unwrapped: 153.5.0esr -> 153.5.1.esr\n\nhttps://www.firefox.com/en-US/firefox/153.5.1/releasenotes/\nhttps://www.mozilla.org/en-US/security/advisories/mfsa2026-112/\n\nFixes: CVE-2026-113470"
+    },
     "CVE-2025-46394": {
       "0095c3461b8de0aaf17c40f59321a6002b0034f5": "busybox: add patch for CVE-2025-46394 (#575361)",
       "283444cd54ffb6ca5065399410ff4c1daa47e047": "busybox: add patch for CVE-2025-46394\n\nAssisted-by: Claude:claude-opus-5-5"
