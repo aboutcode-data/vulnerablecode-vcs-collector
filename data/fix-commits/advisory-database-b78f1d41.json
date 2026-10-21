@@ -1,6 +1,15 @@
 {
   "vcs_url": "https://github.com/github/advisory-database",
   "vulnerabilities": {
+    "GHSA-8CXG-V7P7-QC7J": {
+      "59c861f2a90dfe1427e8b8d60964523d3ea62f62": "Publish GHSA-8cxg-v7p7-qc7j"
+    },
+    "GHSA-GG2P-37PV-V7FQ": {
+      "84fe8eb9e0ffe46f74aba26a627ad321c76c4a16": "Improve GHSA-gg2p-37pv-v7fq"
+    },
+    "GHSA-JM7P-F6M7-XR3M": {
+      "e86f96b5e41bc38ef3ec9913ece84e0f70fd0a09": "Publish GHSA-jm7p-f6m7-xr3m"
+    },
     "GHSA-4HV2-WQJX-8Q9J": {
       "f298cfddb634df4626139a52343d44e178a9bffe": "Publish GHSA-4hv2-wqjx-8q9j"
     },

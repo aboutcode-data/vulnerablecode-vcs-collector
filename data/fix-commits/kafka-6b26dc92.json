@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/kafka",
   "vulnerabilities": {
+    "CVE-2026-110879": {
+      "132ce7095342997d48a87026d27962a5600ba92b": "KAFKA-21305 Bump Jackson version to 2.22.4 (#23862)\n\nThere is a new jackson patch release\n\nhttps://github.com/FasterXML/jackson/wiki/Jackson-Release-2.22.4\n\nIt fixes a bunch of CVEs but I think for Kafka only CVE-2026-110879 can\nbe impactful.\n\nReviewers: Chia-Ping Tsai <chia7712@gmail.com>"
+    },
     "CVE-2026-106451": {
       "5404e508db0102de7b7a74f6859b80268eddc2e8": "KAFKA-21174: Update lz4 to 1.11.4 (#23767)\n\nFix lz4 CVE for 4.3\n- [CVE-2026-106451 \u2014\nOpenCVE](https://app.opencve.io/cve/CVE-2026-106451)\n- [CVE-2026-106451 \u2014 GitLab\n\nAdvisory](https://advisories.gitlab.com/maven/at.yawk.lz4/lz4-java/CVE-2026-106451/)\n- [CVE-2026-106451 \u2014\ncvereports](https://cvereports.com/reports/CVE-2026-106451)\n\nReviewers: PoAn Yang <payang@apache.org>"
     },
