@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-111943": {
+      "cda95970042e3f9efd0ac1eb8e6e4c2c52718b11": "dev-qt/qtwebengine: backport for QTBUG-149946 and CVE-2026-111943\n\nMeant to wait for qtwebengine-6.11.3 to release to patch anything\nfor less rebuilding given it was supposed to be imminent, but it\nkeeps being delayed so may as well at least do these.\n\nCloses: https://bugs.gentoo.org/984271\nCloses: https://bugs.gentoo.org/984633\nSigned-off-by: Ionen Wolkens <ionen@gentoo.org>"
+    },
     "CVE-2026-97399": {
       "45e361a6fc566af16efe6d0eae2e00b52a01e4e3": "sys-libs/glibc: keyword 2.44-r4\n\nPatchset changelog:\n9bee3251b6 (HEAD -> gentoo/2.44, tag: gentoo/glibc-2.44-5, gentoo/gentoo/2.44) powerpc: Fix one byte overread in strncasecmp (bug 34683, CVE-2026-97399)\nb8fcb890cd realloc: Fix mmap non-mremap reallocation case [BZ #34697]\ne92ed66e13 CVE-2026-89092: nscd: replace alloca with malloc in aicache, hstcache\n\nSigned-off-by: Andreas K. H\u00fcttel <dilfridge@gentoo.org>",
       "ef6cccf98089e0922e01ccc159fa7db1fb1349c4": "sys-libs/glibc: keyword 2.43-r6\n\nPatchset changelog:\n6038fe94f8 (HEAD -> gentoo/2.43, tag: gentoo/glibc-2.43-7, gentoo/gentoo/2.43) powerpc: Fix one byte overread in strncasecmp (bug 34683, CVE-2026-97399)\n4a90ce622f elf: Open the normalized $ORIGIN rpath in AT_SECURE programs (BZ 34360)\n386fc12779 realloc: Fix mmap non-mremap reallocation case [BZ #34697]\n\nSigned-off-by: Andreas K. H\u00fcttel <dilfridge@gentoo.org>"

@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/buildroot/buildroot",
   "vulnerabilities": {
+    "CVE-2026-107891": {
+      "77473256bd9a49f2120d1efedbc412aaf4501ecd": "package/musl: add upstream security patch for CVE-2026-107891\n\nCVE-2026-107891: musl libc: multiple integer overflow in regcomp,\npossibly leading to incorrect allocation sizes and out-of-bounds heap\nwrites\nhttps://www.openwall.com/lists/musl/2026/10/21/1\n\nThe upstream announcement states: \"The vulnerable code has been\npresent since version 0.5.0. All subsequent versions up through 1.2.6\nare affected.\" So the patch needs to be backported to all Buildroot\nstable branches.\n\nSigned-off-by: Fiona Klute <fiona.klute@gmx.de>\nSigned-off-by: Thomas Petazzoni <thomas.petazzoni@bootlin.com>"
+    },
     "CVE-2026-109618": {
       "e9be6e35d3da84c9ba1ea792169641b38e086e34": "package/php: security bump to v8.5.12\n\nThis release include fixes for critical remote code execution\nvulnerabilities:\n\n- https://www.php.net/archive/2026.php#2026-10-21-5\n\nSee the release notes: https://www.php.net/ChangeLog-8.php#8.5.12\n\nThis fixes the following vulnerabilities:\n\n- CVE-2026-109618: https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w\n- CVE-2026-109619: https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp\n\nSigned-off-by: Thomas Perale <thomas.perale@mind.be>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
     },

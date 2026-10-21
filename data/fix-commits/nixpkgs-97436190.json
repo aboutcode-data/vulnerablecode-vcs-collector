@@ -1,6 +1,32 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-39199": {
+      "dcf00dd52469732de413d0a245d9ef5faaec428e": "[Backport release-26.05] snes9x{,-gtk}: apply patch for CVE-2026-39199 (#576749)",
+      "536b8bd92b4e22d1016e130c3766cc6f1ed14f75": "snes9x: apply patch for CVE-2026-39199\n\nBackport upstream commit 96b366100172723f6314c40e237b370f4f7b59f4,\nwhich fixes an out-of-bounds write when applying a crafted UPS patch.\n\nFixes #532926\n\nAssisted-by: Claude Code (claude-opus-5-5)\n(cherry picked from commit a6f34d79884a608ccd06a2d4c7cbecf56a5f2bc5)",
+      "184342bddcfe7136465dc940bae0fecf2a3f5c4d": "snes9x{,-gtk}: apply patch for CVE-2026-39199 (#576477)",
+      "a6f34d79884a608ccd06a2d4c7cbecf56a5f2bc5": "snes9x: apply patch for CVE-2026-39199\n\nBackport upstream commit 96b366100172723f6314c40e237b370f4f7b59f4,\nwhich fixes an out-of-bounds write when applying a crafted UPS patch.\n\nFixes #532926\n\nAssisted-by: Claude Code (claude-opus-5-5)"
+    },
+    "CVE-2025-24912": {
+      "77a268ebb0dda4f0777407855d42940d5cce1c30": "[26.05] hostapd: fix CVE-2025-24912 (#576843)",
+      "3dd37910df5349ac70a131fa7dd0c0e63aa1ebd7": "hostapd: fix CVE-2025-24912\n\nBackport the patch for this RADIUS issue. Upstream is already one\nversion ahead and has the fix. The update was not backported, because\nthere are subtle changes in the config file format.\n\nNot-cherry-picked-because: Unstable has hostapd 2.12 with the fix."
+    },
+    "CVE-2026-109618": {
+      "f257622487a5fc0a8e6d617acca8231ba9e8d49b": "php85: 8.5.11 -> 8.5.12, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.5.12\n(cherry picked from commit 81513f364091c759812f716cef3c175109d07342)",
+      "c37378eb313e3f49a38db9eff624307a218c8795": "php84: 8.4.26 -> 8.4.27, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.4.27\n(cherry picked from commit ee62357e90778a37aa7aa4a646e7ccd4fdb643b3)",
+      "f8a7b9a0276bcd103c9692c4e0243b711e6f88ef": "php83: 8.3.35 -> 8.3.36, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.3.36\n(cherry picked from commit 8122eb15f960d1e04ab982e4ee971c374133a1e8)",
+      "81513f364091c759812f716cef3c175109d07342": "php85: 8.5.11 -> 8.5.12, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.5.12",
+      "ee62357e90778a37aa7aa4a646e7ccd4fdb643b3": "php84: 8.4.26 -> 8.4.27, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.4.27",
+      "8122eb15f960d1e04ab982e4ee971c374133a1e8": "php83: 8.3.35 -> 8.3.36, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.3.36"
+    },
+    "CVE-2026-109619": {
+      "f257622487a5fc0a8e6d617acca8231ba9e8d49b": "php85: 8.5.11 -> 8.5.12, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.5.12\n(cherry picked from commit 81513f364091c759812f716cef3c175109d07342)",
+      "c37378eb313e3f49a38db9eff624307a218c8795": "php84: 8.4.26 -> 8.4.27, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.4.27\n(cherry picked from commit ee62357e90778a37aa7aa4a646e7ccd4fdb643b3)",
+      "f8a7b9a0276bcd103c9692c4e0243b711e6f88ef": "php83: 8.3.35 -> 8.3.36, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.3.36\n(cherry picked from commit 8122eb15f960d1e04ab982e4ee971c374133a1e8)",
+      "81513f364091c759812f716cef3c175109d07342": "php85: 8.5.11 -> 8.5.12, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.5.12",
+      "ee62357e90778a37aa7aa4a646e7ccd4fdb643b3": "php84: 8.4.26 -> 8.4.27, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.4.27",
+      "8122eb15f960d1e04ab982e4ee971c374133a1e8": "php83: 8.3.35 -> 8.3.36, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.3.36"
+    },
     "CVE-2024-50612": {
       "0da8007a77b22cc120821e13e97a915ff697d35e": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555\n\nAssisted-by: Claude:claude-opus-5-5\n(cherry picked from commit 91d5f8b1e1343fc25cda7dcbbe4079b0a102c9c9)",
       "14a6896509d722afee128476f600c40c2871d83e": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555 (#575364)",
@@ -10,11 +36,6 @@
       "0da8007a77b22cc120821e13e97a915ff697d35e": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555\n\nAssisted-by: Claude:claude-opus-5-5\n(cherry picked from commit 91d5f8b1e1343fc25cda7dcbbe4079b0a102c9c9)",
       "14a6896509d722afee128476f600c40c2871d83e": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555 (#575364)",
       "91d5f8b1e1343fc25cda7dcbbe4079b0a102c9c9": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555\n\nAssisted-by: Claude:claude-opus-5-5"
-    },
-    "CVE-2026-39199": {
-      "536b8bd92b4e22d1016e130c3766cc6f1ed14f75": "snes9x: apply patch for CVE-2026-39199\n\nBackport upstream commit 96b366100172723f6314c40e237b370f4f7b59f4,\nwhich fixes an out-of-bounds write when applying a crafted UPS patch.\n\nFixes #532926\n\nAssisted-by: Claude Code (claude-opus-5-5)\n(cherry picked from commit a6f34d79884a608ccd06a2d4c7cbecf56a5f2bc5)",
-      "184342bddcfe7136465dc940bae0fecf2a3f5c4d": "snes9x{,-gtk}: apply patch for CVE-2026-39199 (#576477)",
-      "a6f34d79884a608ccd06a2d4c7cbecf56a5f2bc5": "snes9x: apply patch for CVE-2026-39199\n\nBackport upstream commit 96b366100172723f6314c40e237b370f4f7b59f4,\nwhich fixes an out-of-bounds write when applying a crafted UPS patch.\n\nFixes #532926\n\nAssisted-by: Claude Code (claude-opus-5-5)"
     },
     "CVE-2026-102700": {
       "9f35183e5f81744aec063e30da8d46972709d2e2": "xen: patch with XSA-520\n\n           Xen Security Advisory CVE-2026-102700 / XSA-520\n\n      gnttab: cache-flush handling may cause page reference leak\n\nWith its original introduction, GNTTAB_cache_flush was made available\nuniformly.  XSA-232 (CVE-2017-14318) then covered an omitted NULL\npointer check, yet the addition of that check failed to adjust the\nsubsequent error path.  That error path fails to drop a page reference in\ncase the specified page is owned by a special system domain (DOM_IO and\nDOM_COW are system domains which can have memory pages assigned to them.)\n\nThe most likely outcome is Denial of Service (DoS) of either Domain 0\n(then likely affecting the entire host) or of another domain.\n\nhttps://xenbits.xenproject.org/xsa/advisory-520.html\n\nSigned-off-by: Fernando Rodrigues <alpha@sigmasquadron.net>\n\n(cherry picked from commit 32247b0a3ecc8cb2ee16b32cb1a5f47db2de56a1)",
