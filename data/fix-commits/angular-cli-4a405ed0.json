@@ -1,6 +1,46 @@
 {
   "vcs_url": "https://github.com/angular/angular-cli",
   "vulnerabilities": {
+    "CVE-2026-112943": {
+      "a1e3016f1efe65b49b9d6affd13e6fe1d95607e4": "fix(@angular/build): bump vite to 7.3.7\n\nBumps vite to 7.3.7 to address GHSA-698v-4r3x-3vcv / CVE-2026-112943.\n\nRefs #34452",
+      "a081d8b6dbef26d33cb22b4b40c9a843a2b87047": "fix(@angular/build): bump vite to 7.3.7\n\nBumps vite to 7.3.7 to address GHSA-698v-4r3x-3vcv / CVE-2026-112943.\n\nRefs #34452"
+    },
+    "GHSA-698V-4R3X-3VCV": {
+      "a1e3016f1efe65b49b9d6affd13e6fe1d95607e4": "fix(@angular/build): bump vite to 7.3.7\n\nBumps vite to 7.3.7 to address GHSA-698v-4r3x-3vcv / CVE-2026-112943.\n\nRefs #34452",
+      "a081d8b6dbef26d33cb22b4b40c9a843a2b87047": "fix(@angular/build): bump vite to 7.3.7\n\nBumps vite to 7.3.7 to address GHSA-698v-4r3x-3vcv / CVE-2026-112943.\n\nRefs #34452"
+    },
+    "CVE-2026-111767": {
+      "36fbb892b48f6313de1946cf32bc6fb4140eb959": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.32.1\n\nBumps @modelcontextprotocol/sdk to 1.32.1 to address GHSA-22jm-h49p-29qw / CVE-2026-111767, GHSA-46jr-4wx8-v453 / CVE-2026-111768, GHSA-6prh-2h8m-c8cw / CVE-2026-111769 and GHSA-rvq5-wwqv-78pq / CVE-2026-111771.\n\nCloses #34455",
+      "225d00adb469a23a8b14bb33dff9a14595f8ca8c": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.32.1\n\nBumps @modelcontextprotocol/sdk to 1.32.1 to address GHSA-22jm-h49p-29qw / CVE-2026-111767, GHSA-46jr-4wx8-v453 / CVE-2026-111768, GHSA-6prh-2h8m-c8cw / CVE-2026-111769 and GHSA-rvq5-wwqv-78pq / CVE-2026-111771.\n\nCloses #34455"
+    },
+    "CVE-2026-111768": {
+      "36fbb892b48f6313de1946cf32bc6fb4140eb959": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.32.1\n\nBumps @modelcontextprotocol/sdk to 1.32.1 to address GHSA-22jm-h49p-29qw / CVE-2026-111767, GHSA-46jr-4wx8-v453 / CVE-2026-111768, GHSA-6prh-2h8m-c8cw / CVE-2026-111769 and GHSA-rvq5-wwqv-78pq / CVE-2026-111771.\n\nCloses #34455",
+      "225d00adb469a23a8b14bb33dff9a14595f8ca8c": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.32.1\n\nBumps @modelcontextprotocol/sdk to 1.32.1 to address GHSA-22jm-h49p-29qw / CVE-2026-111767, GHSA-46jr-4wx8-v453 / CVE-2026-111768, GHSA-6prh-2h8m-c8cw / CVE-2026-111769 and GHSA-rvq5-wwqv-78pq / CVE-2026-111771.\n\nCloses #34455"
+    },
+    "CVE-2026-111769": {
+      "36fbb892b48f6313de1946cf32bc6fb4140eb959": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.32.1\n\nBumps @modelcontextprotocol/sdk to 1.32.1 to address GHSA-22jm-h49p-29qw / CVE-2026-111767, GHSA-46jr-4wx8-v453 / CVE-2026-111768, GHSA-6prh-2h8m-c8cw / CVE-2026-111769 and GHSA-rvq5-wwqv-78pq / CVE-2026-111771.\n\nCloses #34455",
+      "225d00adb469a23a8b14bb33dff9a14595f8ca8c": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.32.1\n\nBumps @modelcontextprotocol/sdk to 1.32.1 to address GHSA-22jm-h49p-29qw / CVE-2026-111767, GHSA-46jr-4wx8-v453 / CVE-2026-111768, GHSA-6prh-2h8m-c8cw / CVE-2026-111769 and GHSA-rvq5-wwqv-78pq / CVE-2026-111771.\n\nCloses #34455"
+    },
+    "CVE-2026-111771": {
+      "36fbb892b48f6313de1946cf32bc6fb4140eb959": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.32.1\n\nBumps @modelcontextprotocol/sdk to 1.32.1 to address GHSA-22jm-h49p-29qw / CVE-2026-111767, GHSA-46jr-4wx8-v453 / CVE-2026-111768, GHSA-6prh-2h8m-c8cw / CVE-2026-111769 and GHSA-rvq5-wwqv-78pq / CVE-2026-111771.\n\nCloses #34455",
+      "225d00adb469a23a8b14bb33dff9a14595f8ca8c": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.32.1\n\nBumps @modelcontextprotocol/sdk to 1.32.1 to address GHSA-22jm-h49p-29qw / CVE-2026-111767, GHSA-46jr-4wx8-v453 / CVE-2026-111768, GHSA-6prh-2h8m-c8cw / CVE-2026-111769 and GHSA-rvq5-wwqv-78pq / CVE-2026-111771.\n\nCloses #34455"
+    },
+    "GHSA-22JM-H49P-29QW": {
+      "36fbb892b48f6313de1946cf32bc6fb4140eb959": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.32.1\n\nBumps @modelcontextprotocol/sdk to 1.32.1 to address GHSA-22jm-h49p-29qw / CVE-2026-111767, GHSA-46jr-4wx8-v453 / CVE-2026-111768, GHSA-6prh-2h8m-c8cw / CVE-2026-111769 and GHSA-rvq5-wwqv-78pq / CVE-2026-111771.\n\nCloses #34455",
+      "225d00adb469a23a8b14bb33dff9a14595f8ca8c": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.32.1\n\nBumps @modelcontextprotocol/sdk to 1.32.1 to address GHSA-22jm-h49p-29qw / CVE-2026-111767, GHSA-46jr-4wx8-v453 / CVE-2026-111768, GHSA-6prh-2h8m-c8cw / CVE-2026-111769 and GHSA-rvq5-wwqv-78pq / CVE-2026-111771.\n\nCloses #34455"
+    },
+    "GHSA-46JR-4WX8-V453": {
+      "36fbb892b48f6313de1946cf32bc6fb4140eb959": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.32.1\n\nBumps @modelcontextprotocol/sdk to 1.32.1 to address GHSA-22jm-h49p-29qw / CVE-2026-111767, GHSA-46jr-4wx8-v453 / CVE-2026-111768, GHSA-6prh-2h8m-c8cw / CVE-2026-111769 and GHSA-rvq5-wwqv-78pq / CVE-2026-111771.\n\nCloses #34455",
+      "225d00adb469a23a8b14bb33dff9a14595f8ca8c": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.32.1\n\nBumps @modelcontextprotocol/sdk to 1.32.1 to address GHSA-22jm-h49p-29qw / CVE-2026-111767, GHSA-46jr-4wx8-v453 / CVE-2026-111768, GHSA-6prh-2h8m-c8cw / CVE-2026-111769 and GHSA-rvq5-wwqv-78pq / CVE-2026-111771.\n\nCloses #34455"
+    },
+    "GHSA-6PRH-2H8M-C8CW": {
+      "36fbb892b48f6313de1946cf32bc6fb4140eb959": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.32.1\n\nBumps @modelcontextprotocol/sdk to 1.32.1 to address GHSA-22jm-h49p-29qw / CVE-2026-111767, GHSA-46jr-4wx8-v453 / CVE-2026-111768, GHSA-6prh-2h8m-c8cw / CVE-2026-111769 and GHSA-rvq5-wwqv-78pq / CVE-2026-111771.\n\nCloses #34455",
+      "225d00adb469a23a8b14bb33dff9a14595f8ca8c": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.32.1\n\nBumps @modelcontextprotocol/sdk to 1.32.1 to address GHSA-22jm-h49p-29qw / CVE-2026-111767, GHSA-46jr-4wx8-v453 / CVE-2026-111768, GHSA-6prh-2h8m-c8cw / CVE-2026-111769 and GHSA-rvq5-wwqv-78pq / CVE-2026-111771.\n\nCloses #34455"
+    },
+    "GHSA-RVQ5-WWQV-78PQ": {
+      "36fbb892b48f6313de1946cf32bc6fb4140eb959": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.32.1\n\nBumps @modelcontextprotocol/sdk to 1.32.1 to address GHSA-22jm-h49p-29qw / CVE-2026-111767, GHSA-46jr-4wx8-v453 / CVE-2026-111768, GHSA-6prh-2h8m-c8cw / CVE-2026-111769 and GHSA-rvq5-wwqv-78pq / CVE-2026-111771.\n\nCloses #34455",
+      "225d00adb469a23a8b14bb33dff9a14595f8ca8c": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.32.1\n\nBumps @modelcontextprotocol/sdk to 1.32.1 to address GHSA-22jm-h49p-29qw / CVE-2026-111767, GHSA-46jr-4wx8-v453 / CVE-2026-111768, GHSA-6prh-2h8m-c8cw / CVE-2026-111769 and GHSA-rvq5-wwqv-78pq / CVE-2026-111771.\n\nCloses #34455"
+    },
     "CVE-2026-104850": {
       "9d2987f354df7718ec76992cf28a0ab6cbf96539": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.31.0\n\nBumps @modelcontextprotocol/sdk to 1.31.0 to address GHSA-6qxp-vccf-f47h / CVE-2026-104850.\n\nCloses #34263",
       "373a7cedce59662f6db6f5361192b6158377e01d": "fix(@angular/cli): bump @modelcontextprotocol/sdk to 1.31.0\n\nBumps @modelcontextprotocol/sdk to 1.31.0 to address GHSA-6qxp-vccf-f47h / CVE-2026-104850.\n\nCloses #34263"

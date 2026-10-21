@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://github.com/openbsd/src",
   "vulnerabilities": {
+    "CVE-2026-50106": {
+      "c04101f4a830c0b0b70f697669918ec3e3b85940": "import unbound 1.26.2, ok phessler\n\nCVE-2026-50106, Possible insecure NXDOMAIN for non-existing\nrecords under a configured island trust anchor underneath an\ninsecure parent.\n\nCVE-2026-96405, Aggregate DNS name chained pointer decompression\nwork leads to degradation of service.\n\nCVE-2026-109125, Possible cache poisoning vulnerability via\na cache side-channel exposed by 'unwanted-reply-threshold'.\n\nCVE-2026-35501, Bypass of a configured island trust anchor\nunderneath an insecure parent from an attacker-controlled NSEC\nrecord."
+    },
+    "CVE-2026-96405": {
+      "c04101f4a830c0b0b70f697669918ec3e3b85940": "import unbound 1.26.2, ok phessler\n\nCVE-2026-50106, Possible insecure NXDOMAIN for non-existing\nrecords under a configured island trust anchor underneath an\ninsecure parent.\n\nCVE-2026-96405, Aggregate DNS name chained pointer decompression\nwork leads to degradation of service.\n\nCVE-2026-109125, Possible cache poisoning vulnerability via\na cache side-channel exposed by 'unwanted-reply-threshold'.\n\nCVE-2026-35501, Bypass of a configured island trust anchor\nunderneath an insecure parent from an attacker-controlled NSEC\nrecord."
+    },
+    "CVE-2026-109125": {
+      "c04101f4a830c0b0b70f697669918ec3e3b85940": "import unbound 1.26.2, ok phessler\n\nCVE-2026-50106, Possible insecure NXDOMAIN for non-existing\nrecords under a configured island trust anchor underneath an\ninsecure parent.\n\nCVE-2026-96405, Aggregate DNS name chained pointer decompression\nwork leads to degradation of service.\n\nCVE-2026-109125, Possible cache poisoning vulnerability via\na cache side-channel exposed by 'unwanted-reply-threshold'.\n\nCVE-2026-35501, Bypass of a configured island trust anchor\nunderneath an insecure parent from an attacker-controlled NSEC\nrecord."
+    },
+    "CVE-2026-35501": {
+      "c04101f4a830c0b0b70f697669918ec3e3b85940": "import unbound 1.26.2, ok phessler\n\nCVE-2026-50106, Possible insecure NXDOMAIN for non-existing\nrecords under a configured island trust anchor underneath an\ninsecure parent.\n\nCVE-2026-96405, Aggregate DNS name chained pointer decompression\nwork leads to degradation of service.\n\nCVE-2026-109125, Possible cache poisoning vulnerability via\na cache side-channel exposed by 'unwanted-reply-threshold'.\n\nCVE-2026-35501, Bypass of a configured island trust anchor\nunderneath an insecure parent from an attacker-controlled NSEC\nrecord."
+    },
     "CVE-2026-101341": {
       "63cc4862b93cd7b2dda32b56cd14e6644ea3fd6f": "Backport security fixes from upstream nsd(8) version 4.15.3.\n\n* CVE-2026-101341: Stack overwrite from specially formatted TXT-DATA\n  RDATA field\n* CVE-2026-101339: Stack overwrite from a specially crafted and\n  formatted HIP RR\n* CVE-2026-101338: Stack overwrite from a specially crafted and\n  formatted SVCB or HTTPS RR\n* CVE-2026-101337: Stack overwrite from specially formatted base64\n  RDATA field\n\nOK sthen@ renaud@ deraadt@"
     },

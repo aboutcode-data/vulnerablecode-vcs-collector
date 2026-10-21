@@ -1,6 +1,23 @@
 {
   "vcs_url": "https://github.com/nlnetlabs/unbound",
   "vulnerabilities": {
+    "CVE-2026-35501": {
+      "37776636b685a7a0ea764ff428148ed8f506fea8": "- Unit test for CVE-2026-35501.",
+      "f0cd7067d950921427c91ade4ecf060e944f88eb": "- Fix CVE-2026-35501, Bypass of a configured island trust anchor\n  underneath an insecure parent from an attacker-controlled NSEC\n  record. Thanks to Qifan Zhang from Palo Alto Networks for the\n  report."
+    },
+    "CVE-2026-50106": {
+      "1d0d27513a4aa013e6cf827c95e97de372ac4a39": "- Unit test for CVE-2026-50106.",
+      "a42b89f7a608f7badbd812338702a0b2d77d5bcc": "- Fix CVE-2026-50106, Possible insecure NXDOMAIN for non-existing\n  records under a configured island trust anchor underneath an\n  insecure parent. Thanks to Qifan Zhang from Palo Alto Networks\n  for the report."
+    },
+    "CVE-2026-109125": {
+      "9dbe744b1525ed69353d154538b1ef1bb410d5d4": "- Fix CVE-2026-109125, Possible cache poisoning vulnerability via\n  a cache side-channel exposed by 'unwanted-reply-threshold'. Thanks\n  to TaoFei Guo (Peking University), and Yang Luo and JianJun Chen\n  (Tsinghua University) for the report."
+    },
+    "CVE-2026-96405": {
+      "7efed803558daed6ff6ba835d53c1362232b01ea": "- Fix CVE-2026-96405, Aggregate DNS name chained pointer decompression\n  work leads to degradation of service. Thanks to Yuheng Zhang\n  (Tsinghua University and Jingxian Technology Co., Ltd.), Jianjun\n  Chen (Tsinghua University), Zihan Wang (Z.AI Co., Ltd.) and Kaiwen\n  Shen (CloudItera) for the report."
+    },
+    "CVE-2026-97206": {
+      "05aa633403138b340485cf36b4854cbac983e1ea": "- Fix CVE-2026-97206, DoQ path-migration can lead to use-after-free on\n  multi-threaded deployments. Thanks to Kunta Chu and Jianjun Chen\n  from Tsinghua University for the report."
+    },
     "CVE-2026-85501": {
       "a7fc80d8c5dd6215c52570dd281ec58d04d25eea": "- Unit test for CVE-2026-85501.",
       "13b6717f1716810523ffb60f971a6c9c5e8ce127": "- Fix CVE-2026-85501, Retrap: Novel Vulnerabilities to launch\n  Algorithmic Complexity Attacks on DNSSEC. Thanks to Zuyao Xu and\n  Xiang Li from Nankai University, AOSP Lab for the report. In\n  addition, thanks to Qifan Zhang from Palo Alto Networks for a\n  complimentary report."
