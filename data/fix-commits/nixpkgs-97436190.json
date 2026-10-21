@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-82035": {
+      "116fbe57837b469f2e3e68203d2cc668b5de30fa": "python3Packages.pymupdf: patch to fix CVE-2026-82035"
+    },
     "CVE-2026-111943": {
       "84e6dc7437caaba1b01728efa4f08f47751d97e9": "rustls-ffi: 0.15.5 -> 0.15.6\n\nThis addresses CVE-2026-111943 by updating rustls-ffi from 0.15.5 to\n0.15.6. See the upstream release notes for more information:\n\n  https://github.com/rustls/rustls-ffi/releases/tag/v0.15.6\n\n(cherry picked from commit cba8aa501cdf83a2efb7b0bcd98db1827be4e1c3)",
       "cba8aa501cdf83a2efb7b0bcd98db1827be4e1c3": "rustls-ffi: 0.15.5 -> 0.15.6\n\nThis addresses CVE-2026-111943 by updating rustls-ffi from 0.15.5 to\n0.15.6. See the upstream release notes for more information:\n\n  https://github.com/rustls/rustls-ffi/releases/tag/v0.15.6"

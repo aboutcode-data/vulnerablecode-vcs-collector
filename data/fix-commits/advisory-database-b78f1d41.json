@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/github/advisory-database",
   "vulnerabilities": {
+    "GHSA-4HV2-WQJX-8Q9J": {
+      "f298cfddb634df4626139a52343d44e178a9bffe": "Publish GHSA-4hv2-wqjx-8q9j"
+    },
     "GHSA-4FPJ-G9JF-9RGG": {
       "e411ff2b84c425b1b0349aa88916713bebe7786a": "Publish Advisories\n\nGHSA-4fpj-g9jf-9rgg\nGHSA-x32g-jvvm-4725\nGHSA-x397-5hrv-j9m9"
     },
