@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/woocommerce/woocommerce",
   "vulnerabilities": {
+    "CVE-2026-109618": {
+      "dfbfd08020ef644b4620596601d366c553d3bf8b": "Warn PHP < 8.1 stores about the October 2026 PHP security vulnerabilities\n\nExtend the PHP 8.1 requirement notice with a paragraph explaining that\nPHP versions below 8.1 did not receive the fixes for CVE-2026-109618 and\nCVE-2026-109619, and that merchants should check with their host unless\nit has patched their PHP build."
+    },
+    "CVE-2026-109619": {
+      "dfbfd08020ef644b4620596601d366c553d3bf8b": "Warn PHP < 8.1 stores about the October 2026 PHP security vulnerabilities\n\nExtend the PHP 8.1 requirement notice with a paragraph explaining that\nPHP versions below 8.1 did not receive the fixes for CVE-2026-109618 and\nCVE-2026-109619, and that merchants should check with their host unless\nit has patched their PHP build."
+    },
     "GHSA-7HC6-8HQ5-9Q2M": {
       "4d4522b443185d33e58438aaa27b701203b12253": "[CI] Skip Markdown validation steps without matching files (#68413)\n\n* fix(ci): skip unselected Markdown validations\n\ndorny/paths-filter exposes per-filter results as text outputs.\n\nGitHub treats non-empty output strings as truthy, so the bare conditions\nran Markdownlint and Docusaurus even when their filters returned false.\n\nCompare each output explicitly with 'true' so unselected validation\nsteps remain skipped and avoid unnecessary work.\n\n* fix(ci): update paths-filter security patch\n\nThe Markdown validation job consumes shell-formatted filenames from\npaths-filter v4.0.2, which is affected by GHSA-7hc6-8hq5-9q2m.\n\nPin every CI use to the patched v4.0.3 commit so multiline filenames\nare escaped before the output reaches the shell."
     },

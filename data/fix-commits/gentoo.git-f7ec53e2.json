@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-107891": {
+      "8ee458f3b9d9c8f9358a2e7276cb0091d2d6acb1": "sys-libs/musl: fix CVE-2026-107891\n\nBug: https://bugs.gentoo.org/984682\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
     "CVE-2026-111943": {
       "cda95970042e3f9efd0ac1eb8e6e4c2c52718b11": "dev-qt/qtwebengine: backport for QTBUG-149946 and CVE-2026-111943\n\nMeant to wait for qtwebengine-6.11.3 to release to patch anything\nfor less rebuilding given it was supposed to be imminent, but it\nkeeps being delayed so may as well at least do these.\n\nCloses: https://bugs.gentoo.org/984271\nCloses: https://bugs.gentoo.org/984633\nSigned-off-by: Ionen Wolkens <ionen@gentoo.org>"
     },
