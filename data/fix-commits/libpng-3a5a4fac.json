@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://android.googlesource.com/platform/external/libpng",
   "vulnerabilities": {
+    "CVE-2026-46675": {
+      "231c304157eed203d03d9e960ca0217bd419035e": "test: Add regression tests for CVE-2026-46675\n\nThis tests commit 6c7783b151377f591c83955e23da50991ad1a600.\n\nThis is a cherry-pick of commit 682e5fe8003ad8d5fa398b00a8a6ca3cdf03f6b6\nfrom branch 'libpng18'."
+    },
     "CVE-2025-65018": {
       "e4f7ad4ea2a471776c81dda4846b7691925d9786": "Fix a heap buffer over-read in `png_image_read_direct_scaled`\n\nFix a regression from commit 218612ddd6b17944e21eda56caf8b4bf7779d1ea.\n\nThe function `png_image_read_direct_scaled`, introduced by the fix for\nCVE-2025-65018, copies transformed row data from an intermediate buffer\n(`local_row`) to the user's output buffer. The copy incorrectly used\n`row_bytes` (the caller's stride) as the size parameter to memcpy, even\nthough `local_row` is only `png_get_rowbytes()` bytes long.\n\nThis causes a heap buffer over-read when:\n\n1. The caller provides a padded stride (e.g., for memory alignment):\n   memcpy reads past the end of `local_row` by `stride - row_width`\n   bytes.\n\n2. The caller provides a negative stride (for bottom-up layouts):\n   casting ptrdiff_t to size_t produces ~2^64, causing memcpy to\n   attempt reading exabytes, resulting in an immediate crash.\n\nThe fix consists in using the size of the row buffer for the copy and\nusing the stride for pointer advancement only.\n\nReported-by: Petr Simecek <simecek@users.noreply.github.com>\nAnalyzed-by: Stanislav Fort\nAnalyzed-by: Pavel Kohout\nCo-authored-by: Petr Simecek <simecek@users.noreply.github.com>\nSigned-off-by: Cosmin Truta <ctruta@gmail.com>"
     },

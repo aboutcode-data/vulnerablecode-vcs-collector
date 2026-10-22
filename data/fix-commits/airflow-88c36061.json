@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/airflow",
   "vulnerabilities": {
+    "GHSA-C978-59M8-C77V": {
+      "c88f8da3e46902673792b6a60c2b30f26f3add05": "Bump virtualenv to 21.14.10 to pick up the GHSA-c978-59m8-c77v fix\n\nvirtualenv < 21.14.9 generates POSIX console launchers that interpret destination paths as shell syntax (high severity). Only uv.lock changes."
+    },
     "CVE-2026-3479": {
       "48f6b5173979ca595d49eaeeadbdfd9ec1722089": "Require moto 5.2.2 or newer for the Amazon provider tests (#74224)\n\nOlder moto loads its bundled EC2 data through ../ resource paths, which Python builds carrying the CVE-2026-3479 pkgutil.get_data patch (Docker Hardened Images among them) reject, so every EC2-backed test failed in the lowest-dependency run.\n\nGenerated-by: Claude Opus 5"
     },
