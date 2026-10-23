@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/buildroot/buildroot",
   "vulnerabilities": {
+    "CVE-2026-58055": {
+      "15c73cbb31768c24849333f2a793ac712e89bf26": "package/nghttp2: security bump version to 1.70.0\n\nCVE-2026-58055 [1]: nghttp2's nghttpx proxy through 1.69.0 forwards an\nHTTP/1.1 Upgrade request that also carries a Content-Length header and\nbody onto reusable keep-alive backend connections, re-adding the\nUpgrade and Connection headers while passing Content-Length\nverbatim. A backend that resolves the resulting ambiguous message in\nthe attacker's favor enables HTTP request/response smuggling and\ncross-client response-queue poisoning.\n\nUpstream changelogs (no specific mentions of security):\nhttps://github.com/nghttp2/nghttp2/releases/tag/v1.70.0\nhttps://github.com/nghttp2/nghttp2/releases/tag/v1.69.0\n\n[1] https://nvd.nist.gov/vuln/detail/cve-2026-58055\n\nSigned-off-by: Fiona Klute <fiona.klute@gmx.de>\nSigned-off-by: Thomas Petazzoni <thomas.petazzoni@bootlin.com>"
+    },
     "CVE-2026-19630": {
       "b904a38926a15849ad92482a7ca63914fecda420": "package/bind: security bump version to 9.20.30\n\nhttps://ftp.isc.org/isc/bind9/9.20.30/doc/arm/html/notes.html#notes-for-bind-9-20-30\n\nFixes CVE-2026-19630, CVE-2026-94300, CVE-2026-96888 & CVE-2026-97313.\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Thomas Petazzoni <thomas.petazzoni@bootlin.com>"
     },

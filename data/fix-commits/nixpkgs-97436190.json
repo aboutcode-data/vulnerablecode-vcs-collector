@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2024-50612": {
+      "d45a1e64bca5b126d0c05c139b36409fd5b6478d": "[Backport staging-26.05] libsndfile: add patches for CVE-2024-50612, CVE-2026-37555 (#576771)",
+      "0da8007a77b22cc120821e13e97a915ff697d35e": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555\n\nAssisted-by: Claude:claude-opus-5-5\n(cherry picked from commit 91d5f8b1e1343fc25cda7dcbbe4079b0a102c9c9)",
+      "14a6896509d722afee128476f600c40c2871d83e": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555 (#575364)",
+      "91d5f8b1e1343fc25cda7dcbbe4079b0a102c9c9": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555\n\nAssisted-by: Claude:claude-opus-5-5"
+    },
+    "CVE-2026-37555": {
+      "d45a1e64bca5b126d0c05c139b36409fd5b6478d": "[Backport staging-26.05] libsndfile: add patches for CVE-2024-50612, CVE-2026-37555 (#576771)",
+      "0da8007a77b22cc120821e13e97a915ff697d35e": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555\n\nAssisted-by: Claude:claude-opus-5-5\n(cherry picked from commit 91d5f8b1e1343fc25cda7dcbbe4079b0a102c9c9)",
+      "14a6896509d722afee128476f600c40c2871d83e": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555 (#575364)",
+      "91d5f8b1e1343fc25cda7dcbbe4079b0a102c9c9": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555\n\nAssisted-by: Claude:claude-opus-5-5"
+    },
     "GHSA-6Q3J-62J9-F9HH": {
       "7b408c0bb1058c3300f3c78a27d392b964649485": "frankenphp: 1.12.7 -> 1.13.2\n\nhttps://github.com/php/frankenphp/releases/tag/v1.13.2\n\nFixes GHSA-6q3j-62j9-f9hh\nFixes GHSA-fq24-r53r-xcx3\nFixes GHSA-ccgp-ch9h-533f\nFixes GHSA-4gfw-9v29-gp9h"
     },
@@ -40,16 +52,6 @@
     "CVE-2025-24912": {
       "77a268ebb0dda4f0777407855d42940d5cce1c30": "[26.05] hostapd: fix CVE-2025-24912 (#576843)",
       "3dd37910df5349ac70a131fa7dd0c0e63aa1ebd7": "hostapd: fix CVE-2025-24912\n\nBackport the patch for this RADIUS issue. Upstream is already one\nversion ahead and has the fix. The update was not backported, because\nthere are subtle changes in the config file format.\n\nNot-cherry-picked-because: Unstable has hostapd 2.12 with the fix."
-    },
-    "CVE-2024-50612": {
-      "0da8007a77b22cc120821e13e97a915ff697d35e": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555\n\nAssisted-by: Claude:claude-opus-5-5\n(cherry picked from commit 91d5f8b1e1343fc25cda7dcbbe4079b0a102c9c9)",
-      "14a6896509d722afee128476f600c40c2871d83e": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555 (#575364)",
-      "91d5f8b1e1343fc25cda7dcbbe4079b0a102c9c9": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555\n\nAssisted-by: Claude:claude-opus-5-5"
-    },
-    "CVE-2026-37555": {
-      "0da8007a77b22cc120821e13e97a915ff697d35e": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555\n\nAssisted-by: Claude:claude-opus-5-5\n(cherry picked from commit 91d5f8b1e1343fc25cda7dcbbe4079b0a102c9c9)",
-      "14a6896509d722afee128476f600c40c2871d83e": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555 (#575364)",
-      "91d5f8b1e1343fc25cda7dcbbe4079b0a102c9c9": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555\n\nAssisted-by: Claude:claude-opus-5-5"
     },
     "CVE-2026-112050": {
       "62694a9c03379afecf9db34f935b0141e093f666": "gitify: 7.9.0 -> 7.10.0\n\nFix CVE-2026-112050 (login CSRF through missing OAuth state validation).\nUpstream fix:\nhttps://github.com/gitify-app/gitify/commit/10235b243e167a7c76eafd6a3d0ebc8c575eebc7\nRelated: https://github.com/NixOS/nixpkgs/issues/575935"
