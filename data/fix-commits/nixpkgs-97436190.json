@@ -1,6 +1,47 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-96760": {
+      "1a9ba8d7e0453bce35f153cbaa26120d79bdcb2e": "python3Packages.authlib: 1.7.2 -> 1.8.0\n\nhttps://github.com/lepture/authlib/blob/v1.8.0/docs/upgrades/changelog.rst\n\nFixes: CVE-2026-96760"
+    },
+    "CVE-2026-107891": {
+      "d6307688623b487f1f65fbd11801287a251d2d17": "[26.05] musl: add patch for CVE-2026-107891 (#577696)",
+      "054ab27ba12b374a54ee4cf45f03d0ef5e84e37c": "musl: add patch for CVE-2026-107891\n\nDescription on https://www.openwall.com/lists/musl/2026/10/21/1\n\n(cherry picked from commit cefc7e9a4395a21306e63eeffb3b30bedf63ef53)",
+      "5a8d2b8d8fc4547defc69adb9d27f8b3f4ba41b4": "musl: add patch for CVE-2026-107891 (#576916)",
+      "cefc7e9a4395a21306e63eeffb3b30bedf63ef53": "musl: add patch for CVE-2026-107891\n\nDescription on https://www.openwall.com/lists/musl/2026/10/21/1"
+    },
+    "CVE-2026-111152": {
+      "80c2190997b7ef455753e2c65723c5e221849e87": "[Backport staging-next-26.05] game-music-emu: apply patch for CVE-2026-111152 (#577690)",
+      "4bc3c38f5074ee26a4e80282242ddb98ade972cf": "game-music-emu: apply patch for CVE-2026-111152\n\nBackport upstream commit ae10a8f05479e3c8f80429e7a59759fed06f8c13,\nwhich fixes a heap out-of-bounds read in the AY loader.\n\nFixes #575908\n\nAssisted-by: Claude Code (claude-opus-5-5)\n(cherry picked from commit f9a8c4aea6b1233614352a05f907137299959ddb)",
+      "71f16d18fbfe0ae01f4ae1170215ae7f8291c326": "game-music-emu: apply patch for CVE-2026-111152 (#576375)",
+      "f9a8c4aea6b1233614352a05f907137299959ddb": "game-music-emu: apply patch for CVE-2026-111152\n\nBackport upstream commit ae10a8f05479e3c8f80429e7a59759fed06f8c13,\nwhich fixes a heap out-of-bounds read in the AY loader.\n\nFixes #575908\n\nAssisted-by: Claude Code (claude-opus-5-5)"
+    },
+    "CVE-2026-19445": {
+      "988b9531d05a8f9382836df3365e80dd9d52b133": "python314: 3.14.7 -> 3.14.8\n\nhttps://docs.python.org/release/3.14.8/whatsnew/changelog.html\n\nFixes: CVE-2026-19445, CVE-2026-15806\n\n(cherry picked from commit b770a38574c0e6f8afc6ed519fac71e447987a6e)",
+      "54fb96b79113760014a6a0387c27786279e69026": "python313: 3.13.15 -> 3.13.16\n\nhttps://docs.python.org/release/3.13.16/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806\n\n(cherry picked from commit f742cf461e419e5c0dc3e9792f805c6b13600734)",
+      "726dc48a259d32e3c0183023b6f83381844c1f08": "python312: 3.12.14 -> 3.12.15\n\nhttps://docs.python.org/release/3.12.15/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806\n(cherry picked from commit 85704e963dcd56b725fac2dcda38ebbe862c1c38)",
+      "2b118c7cd40593c84163930add9d8d4e95edc9e8": "python311: 3.11.16 -> 3.11.17\n\nhttps://docs.python.org/release/3.11.17/whatsnew/changelog.html\n\nFixes: CVE 2026-82049, CVE-2026-19445, CVE-2026-15806\n(cherry picked from commit bdd8a23501370337c62c113d45ac1b00a8cb9cf3)",
+      "b770a38574c0e6f8afc6ed519fac71e447987a6e": "python314: 3.14.7 -> 3.14.8\n\nhttps://docs.python.org/release/3.14.8/whatsnew/changelog.html\n\nFixes: CVE-2026-19445, CVE-2026-15806",
+      "f742cf461e419e5c0dc3e9792f805c6b13600734": "python313: 3.13.15 -> 3.13.16\n\nhttps://docs.python.org/release/3.13.16/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806",
+      "85704e963dcd56b725fac2dcda38ebbe862c1c38": "python312: 3.12.14 -> 3.12.15\n\nhttps://docs.python.org/release/3.12.15/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806",
+      "bdd8a23501370337c62c113d45ac1b00a8cb9cf3": "python311: 3.11.16 -> 3.11.17\n\nhttps://docs.python.org/release/3.11.17/whatsnew/changelog.html\n\nFixes: CVE 2026-82049, CVE-2026-19445, CVE-2026-15806"
+    },
+    "CVE-2026-15806": {
+      "988b9531d05a8f9382836df3365e80dd9d52b133": "python314: 3.14.7 -> 3.14.8\n\nhttps://docs.python.org/release/3.14.8/whatsnew/changelog.html\n\nFixes: CVE-2026-19445, CVE-2026-15806\n\n(cherry picked from commit b770a38574c0e6f8afc6ed519fac71e447987a6e)",
+      "54fb96b79113760014a6a0387c27786279e69026": "python313: 3.13.15 -> 3.13.16\n\nhttps://docs.python.org/release/3.13.16/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806\n\n(cherry picked from commit f742cf461e419e5c0dc3e9792f805c6b13600734)",
+      "726dc48a259d32e3c0183023b6f83381844c1f08": "python312: 3.12.14 -> 3.12.15\n\nhttps://docs.python.org/release/3.12.15/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806\n(cherry picked from commit 85704e963dcd56b725fac2dcda38ebbe862c1c38)",
+      "2b118c7cd40593c84163930add9d8d4e95edc9e8": "python311: 3.11.16 -> 3.11.17\n\nhttps://docs.python.org/release/3.11.17/whatsnew/changelog.html\n\nFixes: CVE 2026-82049, CVE-2026-19445, CVE-2026-15806\n(cherry picked from commit bdd8a23501370337c62c113d45ac1b00a8cb9cf3)",
+      "b770a38574c0e6f8afc6ed519fac71e447987a6e": "python314: 3.14.7 -> 3.14.8\n\nhttps://docs.python.org/release/3.14.8/whatsnew/changelog.html\n\nFixes: CVE-2026-19445, CVE-2026-15806",
+      "f742cf461e419e5c0dc3e9792f805c6b13600734": "python313: 3.13.15 -> 3.13.16\n\nhttps://docs.python.org/release/3.13.16/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806",
+      "85704e963dcd56b725fac2dcda38ebbe862c1c38": "python312: 3.12.14 -> 3.12.15\n\nhttps://docs.python.org/release/3.12.15/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806",
+      "bdd8a23501370337c62c113d45ac1b00a8cb9cf3": "python311: 3.11.16 -> 3.11.17\n\nhttps://docs.python.org/release/3.11.17/whatsnew/changelog.html\n\nFixes: CVE 2026-82049, CVE-2026-19445, CVE-2026-15806"
+    },
+    "CVE-2026-82049": {
+      "54fb96b79113760014a6a0387c27786279e69026": "python313: 3.13.15 -> 3.13.16\n\nhttps://docs.python.org/release/3.13.16/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806\n\n(cherry picked from commit f742cf461e419e5c0dc3e9792f805c6b13600734)",
+      "726dc48a259d32e3c0183023b6f83381844c1f08": "python312: 3.12.14 -> 3.12.15\n\nhttps://docs.python.org/release/3.12.15/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806\n(cherry picked from commit 85704e963dcd56b725fac2dcda38ebbe862c1c38)",
+      "f742cf461e419e5c0dc3e9792f805c6b13600734": "python313: 3.13.15 -> 3.13.16\n\nhttps://docs.python.org/release/3.13.16/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806",
+      "85704e963dcd56b725fac2dcda38ebbe862c1c38": "python312: 3.12.14 -> 3.12.15\n\nhttps://docs.python.org/release/3.12.15/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806"
+    },
     "CVE-2024-50612": {
       "d45a1e64bca5b126d0c05c139b36409fd5b6478d": "[Backport staging-26.05] libsndfile: add patches for CVE-2024-50612, CVE-2026-37555 (#576771)",
       "0da8007a77b22cc120821e13e97a915ff697d35e": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555\n\nAssisted-by: Claude:claude-opus-5-5\n(cherry picked from commit 91d5f8b1e1343fc25cda7dcbbe4079b0a102c9c9)",
@@ -2395,32 +2436,6 @@
     "CVE-2026-46675": {
       "ae33207afaf1284c59502769228f8410909b7e73": "libpng: 1.6.58 -> 1.6.59\n\nchangelog: https://github.com/pnggroup/libpng/blob/v1.6.59/ANNOUNCE\ndiff: https://github.com/pnggroup/libpng/compare/v1.6.58...v1.6.59\n\nthere doesn't appear to be an update to the apng patch, but it applies\nfine.\n\nFixes: CVE-2026-46675\n(cherry picked from commit 4833f81f676da1536656c05cb6a770b2af0dca7d)",
       "4833f81f676da1536656c05cb6a770b2af0dca7d": "libpng: 1.6.58 -> 1.6.59\n\nchangelog: https://github.com/pnggroup/libpng/blob/v1.6.59/ANNOUNCE\ndiff: https://github.com/pnggroup/libpng/compare/v1.6.58...v1.6.59\n\nthere doesn't appear to be an update to the apng patch, but it applies\nfine.\n\nFixes: CVE-2026-46675"
-    },
-    "CVE-2026-19445": {
-      "d1cc59b79513b60f658049c4565943d3eb3e6808": "python314: 3.14.7 -> 3.14.8\n\nhttps://docs.python.org/release/3.14.8/whatsnew/changelog.html\n\nFixes: CVE-2026-19445, CVE-2026-15806\n\n(cherry picked from commit b770a38574c0e6f8afc6ed519fac71e447987a6e)",
-      "b0efec9730363ed5ee78b48657a2b4c5251cec48": "python313: 3.13.15 -> 3.13.16\n\nhttps://docs.python.org/release/3.13.16/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806\n\n(cherry picked from commit f742cf461e419e5c0dc3e9792f805c6b13600734)",
-      "3b565f3a6571c86b6c7e058bb99dab4e7d043215": "python312: 3.12.14 -> 3.12.15\n\nhttps://docs.python.org/release/3.12.15/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806\n(cherry picked from commit 85704e963dcd56b725fac2dcda38ebbe862c1c38)",
-      "68187582f286747b533c9f6e3adc12a3b574b558": "python311: 3.11.16 -> 3.11.17\n\nhttps://docs.python.org/release/3.11.17/whatsnew/changelog.html\n\nFixes: CVE 2026-82049, CVE-2026-19445, CVE-2026-15806\n(cherry picked from commit bdd8a23501370337c62c113d45ac1b00a8cb9cf3)",
-      "b770a38574c0e6f8afc6ed519fac71e447987a6e": "python314: 3.14.7 -> 3.14.8\n\nhttps://docs.python.org/release/3.14.8/whatsnew/changelog.html\n\nFixes: CVE-2026-19445, CVE-2026-15806",
-      "f742cf461e419e5c0dc3e9792f805c6b13600734": "python313: 3.13.15 -> 3.13.16\n\nhttps://docs.python.org/release/3.13.16/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806",
-      "85704e963dcd56b725fac2dcda38ebbe862c1c38": "python312: 3.12.14 -> 3.12.15\n\nhttps://docs.python.org/release/3.12.15/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806",
-      "bdd8a23501370337c62c113d45ac1b00a8cb9cf3": "python311: 3.11.16 -> 3.11.17\n\nhttps://docs.python.org/release/3.11.17/whatsnew/changelog.html\n\nFixes: CVE 2026-82049, CVE-2026-19445, CVE-2026-15806"
-    },
-    "CVE-2026-15806": {
-      "d1cc59b79513b60f658049c4565943d3eb3e6808": "python314: 3.14.7 -> 3.14.8\n\nhttps://docs.python.org/release/3.14.8/whatsnew/changelog.html\n\nFixes: CVE-2026-19445, CVE-2026-15806\n\n(cherry picked from commit b770a38574c0e6f8afc6ed519fac71e447987a6e)",
-      "b0efec9730363ed5ee78b48657a2b4c5251cec48": "python313: 3.13.15 -> 3.13.16\n\nhttps://docs.python.org/release/3.13.16/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806\n\n(cherry picked from commit f742cf461e419e5c0dc3e9792f805c6b13600734)",
-      "3b565f3a6571c86b6c7e058bb99dab4e7d043215": "python312: 3.12.14 -> 3.12.15\n\nhttps://docs.python.org/release/3.12.15/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806\n(cherry picked from commit 85704e963dcd56b725fac2dcda38ebbe862c1c38)",
-      "68187582f286747b533c9f6e3adc12a3b574b558": "python311: 3.11.16 -> 3.11.17\n\nhttps://docs.python.org/release/3.11.17/whatsnew/changelog.html\n\nFixes: CVE 2026-82049, CVE-2026-19445, CVE-2026-15806\n(cherry picked from commit bdd8a23501370337c62c113d45ac1b00a8cb9cf3)",
-      "b770a38574c0e6f8afc6ed519fac71e447987a6e": "python314: 3.14.7 -> 3.14.8\n\nhttps://docs.python.org/release/3.14.8/whatsnew/changelog.html\n\nFixes: CVE-2026-19445, CVE-2026-15806",
-      "f742cf461e419e5c0dc3e9792f805c6b13600734": "python313: 3.13.15 -> 3.13.16\n\nhttps://docs.python.org/release/3.13.16/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806",
-      "85704e963dcd56b725fac2dcda38ebbe862c1c38": "python312: 3.12.14 -> 3.12.15\n\nhttps://docs.python.org/release/3.12.15/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806",
-      "bdd8a23501370337c62c113d45ac1b00a8cb9cf3": "python311: 3.11.16 -> 3.11.17\n\nhttps://docs.python.org/release/3.11.17/whatsnew/changelog.html\n\nFixes: CVE 2026-82049, CVE-2026-19445, CVE-2026-15806"
-    },
-    "CVE-2026-82049": {
-      "b0efec9730363ed5ee78b48657a2b4c5251cec48": "python313: 3.13.15 -> 3.13.16\n\nhttps://docs.python.org/release/3.13.16/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806\n\n(cherry picked from commit f742cf461e419e5c0dc3e9792f805c6b13600734)",
-      "3b565f3a6571c86b6c7e058bb99dab4e7d043215": "python312: 3.12.14 -> 3.12.15\n\nhttps://docs.python.org/release/3.12.15/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806\n(cherry picked from commit 85704e963dcd56b725fac2dcda38ebbe862c1c38)",
-      "f742cf461e419e5c0dc3e9792f805c6b13600734": "python313: 3.13.15 -> 3.13.16\n\nhttps://docs.python.org/release/3.13.16/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806",
-      "85704e963dcd56b725fac2dcda38ebbe862c1c38": "python312: 3.12.14 -> 3.12.15\n\nhttps://docs.python.org/release/3.12.15/whatsnew/changelog.html\n\nFixes: CVE-2026-82049, CVE-2026-19445, CVE-2026-15806"
     },
     "CVE-2026-3633": {
       "850875068e3f3c9d80cf1607aa506fa39d0107e3": "libsoup_3: 3.6.6 -> 3.8.0\n\nDiff: https://gitlab.gnome.org/GNOME/libsoup/-/compare/3.6.6...3.8.0\nChangelog: https://gitlab.gnome.org/GNOME/libsoup/-/blob/3.8.0/NEWS\n\nThis fixes the following security issues:\n\nCVE-2026-3633\nCVE-2026-15709 (https://github.com/NixOS/nixpkgs/issues/544160)\nCVE-2026-66338 (https://github.com/NixOS/nixpkgs/issues/545683)\nCVE-2026-66337 (https://github.com/NixOS/nixpkgs/issues/545680)\nCVE-2026-66339 (https://github.com/NixOS/nixpkgs/issues/545678)\nCVE-2026-85197 (https://github.com/NixOS/nixpkgs/issues/560171)\nCVE-2026-102555 (https://github.com/NixOS/nixpkgs/issues/568624)\nCVE-2026-102556\nCVE-2026-102557 (https://github.com/NixOS/nixpkgs/issues/568640)\nCVE-2026-102558 (https://github.com/NixOS/nixpkgs/issues/568638)\nCVE-2026-102559 (https://github.com/NixOS/nixpkgs/issues/568632)\nCVE-2026-102560 (https://github.com/NixOS/nixpkgs/issues/568619)\nCVE-2026-103399 (https://github.com/NixOS/nixpkgs/issues/569071)\n\n(cherry picked from commit 6e84cb11dd3fca86d0e53192b083f59aef555974)",

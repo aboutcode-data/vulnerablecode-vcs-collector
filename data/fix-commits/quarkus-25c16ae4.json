@@ -1,6 +1,14 @@
 {
   "vcs_url": "https://github.com/quarkusio/quarkus",
   "vulnerabilities": {
+    "CVE-2026-107314": {
+      "2389069c6e2dcaf398b1e326f7cf918903c86ba7": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315\n\n(cherry picked from commit 36304710765c8394f3eca5438e764028b6d01d3f)",
+      "36304710765c8394f3eca5438e764028b6d01d3f": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315"
+    },
+    "CVE-2026-107315": {
+      "2389069c6e2dcaf398b1e326f7cf918903c86ba7": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315\n\n(cherry picked from commit 36304710765c8394f3eca5438e764028b6d01d3f)",
+      "36304710765c8394f3eca5438e764028b6d01d3f": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315"
+    },
     "CVE-2026-90559": {
       "e9561ff2d19a3d3fcb30b8648fda05280a098cf9": "Upgrade snappy-java to 1.1.10.11\n\n- fixes https://access.redhat.com/security/cve/cve-2026-90559",
       "e27d8ecdb9ff68114faa6cc7c0a572fa6d42d861": "Upgrade snappy-java to 1.1.10.11\n\n- fixes https://access.redhat.com/security/cve/cve-2026-90559",
@@ -15,12 +23,6 @@
       "405243acf2a98866db3de895227f9b3f8951d291": "Upgrade guava to 33.7.2-jre\n\n- fixes https://nvd.nist.gov/vuln/detail/cve-2026-102554",
       "d94cf3e9a9c98eef255094b0dff7c41b1e9b277d": "Upgrade guava to 33.7.2-jre\n\n- fixes https://nvd.nist.gov/vuln/detail/cve-2026-102554",
       "bc5c7b25f8095cefeb38433eade9de79d57a4413": "Manage guava in application BOM\n\n- fixes https://nvd.nist.gov/vuln/detail/cve-2026-102554"
-    },
-    "CVE-2026-107314": {
-      "36304710765c8394f3eca5438e764028b6d01d3f": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315"
-    },
-    "CVE-2026-107315": {
-      "36304710765c8394f3eca5438e764028b6d01d3f": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315"
     },
     "GHSA-QCXP-GM7M-4J5V": {
       "aa68083f931c88b9491824058fc0f756766037f4": "Handle GHSA-qcxp-gm7m-4j5v",
