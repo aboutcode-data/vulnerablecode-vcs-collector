@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/twisted/twisted",
   "vulnerabilities": {
+    "CVE-2023-44487": {
+      "44048df8c7581df6112016747bfe864e93ac0809": "#12705 twisted.web HTTP/2: rate-limit stream resets to mitigate Rapid Reset (CVE-2023-44487) (#12749)",
+      "498939422b69d5a75c4b8f81fa7926423dac534d": "web: rate-limit HTTP/2 stream resets to mitigate Rapid Reset (CVE-2023-44487) (Fixes #12705)"
+    },
     "GHSA-GRGV-6HW6-V9G4": {
       "2d196123264efb0027eecfe1b430be4a9babdbd8": "Merge commit from fork\n\nnames: mitigate DNS compression-pointer flood (GHSA-grgv-6hw6-v9g4)"
     },

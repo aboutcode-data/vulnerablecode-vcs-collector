@@ -1,6 +1,36 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "GHSA-6Q3J-62J9-F9HH": {
+      "7b408c0bb1058c3300f3c78a27d392b964649485": "frankenphp: 1.12.7 -> 1.13.2\n\nhttps://github.com/php/frankenphp/releases/tag/v1.13.2\n\nFixes GHSA-6q3j-62j9-f9hh\nFixes GHSA-fq24-r53r-xcx3\nFixes GHSA-ccgp-ch9h-533f\nFixes GHSA-4gfw-9v29-gp9h"
+    },
+    "GHSA-FQ24-R53R-XCX3": {
+      "7b408c0bb1058c3300f3c78a27d392b964649485": "frankenphp: 1.12.7 -> 1.13.2\n\nhttps://github.com/php/frankenphp/releases/tag/v1.13.2\n\nFixes GHSA-6q3j-62j9-f9hh\nFixes GHSA-fq24-r53r-xcx3\nFixes GHSA-ccgp-ch9h-533f\nFixes GHSA-4gfw-9v29-gp9h"
+    },
+    "GHSA-CCGP-CH9H-533F": {
+      "7b408c0bb1058c3300f3c78a27d392b964649485": "frankenphp: 1.12.7 -> 1.13.2\n\nhttps://github.com/php/frankenphp/releases/tag/v1.13.2\n\nFixes GHSA-6q3j-62j9-f9hh\nFixes GHSA-fq24-r53r-xcx3\nFixes GHSA-ccgp-ch9h-533f\nFixes GHSA-4gfw-9v29-gp9h"
+    },
+    "GHSA-4GFW-9V29-GP9H": {
+      "7b408c0bb1058c3300f3c78a27d392b964649485": "frankenphp: 1.12.7 -> 1.13.2\n\nhttps://github.com/php/frankenphp/releases/tag/v1.13.2\n\nFixes GHSA-6q3j-62j9-f9hh\nFixes GHSA-fq24-r53r-xcx3\nFixes GHSA-ccgp-ch9h-533f\nFixes GHSA-4gfw-9v29-gp9h"
+    },
+    "CVE-2026-109618": {
+      "38991a250af71523eae86a3c79dfdb0b25ce8eb3": "php86: 8.6.0RC3 -> 8.6.0RC4\n\nChanges: https://github.com/php/php-src/blob/php-8.6.0RC4/NEWS\n\nRC4 fixes CVE-2026-109618 and CVE-2026-109619, so drop knownVulnerabilities.",
+      "f257622487a5fc0a8e6d617acca8231ba9e8d49b": "php85: 8.5.11 -> 8.5.12, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.5.12\n(cherry picked from commit 81513f364091c759812f716cef3c175109d07342)",
+      "c37378eb313e3f49a38db9eff624307a218c8795": "php84: 8.4.26 -> 8.4.27, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.4.27\n(cherry picked from commit ee62357e90778a37aa7aa4a646e7ccd4fdb643b3)",
+      "f8a7b9a0276bcd103c9692c4e0243b711e6f88ef": "php83: 8.3.35 -> 8.3.36, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.3.36\n(cherry picked from commit 8122eb15f960d1e04ab982e4ee971c374133a1e8)",
+      "81513f364091c759812f716cef3c175109d07342": "php85: 8.5.11 -> 8.5.12, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.5.12",
+      "ee62357e90778a37aa7aa4a646e7ccd4fdb643b3": "php84: 8.4.26 -> 8.4.27, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.4.27",
+      "8122eb15f960d1e04ab982e4ee971c374133a1e8": "php83: 8.3.35 -> 8.3.36, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.3.36"
+    },
+    "CVE-2026-109619": {
+      "38991a250af71523eae86a3c79dfdb0b25ce8eb3": "php86: 8.6.0RC3 -> 8.6.0RC4\n\nChanges: https://github.com/php/php-src/blob/php-8.6.0RC4/NEWS\n\nRC4 fixes CVE-2026-109618 and CVE-2026-109619, so drop knownVulnerabilities.",
+      "f257622487a5fc0a8e6d617acca8231ba9e8d49b": "php85: 8.5.11 -> 8.5.12, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.5.12\n(cherry picked from commit 81513f364091c759812f716cef3c175109d07342)",
+      "c37378eb313e3f49a38db9eff624307a218c8795": "php84: 8.4.26 -> 8.4.27, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.4.27\n(cherry picked from commit ee62357e90778a37aa7aa4a646e7ccd4fdb643b3)",
+      "f8a7b9a0276bcd103c9692c4e0243b711e6f88ef": "php83: 8.3.35 -> 8.3.36, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.3.36\n(cherry picked from commit 8122eb15f960d1e04ab982e4ee971c374133a1e8)",
+      "81513f364091c759812f716cef3c175109d07342": "php85: 8.5.11 -> 8.5.12, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.5.12",
+      "ee62357e90778a37aa7aa4a646e7ccd4fdb643b3": "php84: 8.4.26 -> 8.4.27, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.4.27",
+      "8122eb15f960d1e04ab982e4ee971c374133a1e8": "php83: 8.3.35 -> 8.3.36, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.3.36"
+    },
     "CVE-2026-39199": {
       "dcf00dd52469732de413d0a245d9ef5faaec428e": "[Backport release-26.05] snes9x{,-gtk}: apply patch for CVE-2026-39199 (#576749)",
       "536b8bd92b4e22d1016e130c3766cc6f1ed14f75": "snes9x: apply patch for CVE-2026-39199\n\nBackport upstream commit 96b366100172723f6314c40e237b370f4f7b59f4,\nwhich fixes an out-of-bounds write when applying a crafted UPS patch.\n\nFixes #532926\n\nAssisted-by: Claude Code (claude-opus-5-5)\n(cherry picked from commit a6f34d79884a608ccd06a2d4c7cbecf56a5f2bc5)",
@@ -10,22 +40,6 @@
     "CVE-2025-24912": {
       "77a268ebb0dda4f0777407855d42940d5cce1c30": "[26.05] hostapd: fix CVE-2025-24912 (#576843)",
       "3dd37910df5349ac70a131fa7dd0c0e63aa1ebd7": "hostapd: fix CVE-2025-24912\n\nBackport the patch for this RADIUS issue. Upstream is already one\nversion ahead and has the fix. The update was not backported, because\nthere are subtle changes in the config file format.\n\nNot-cherry-picked-because: Unstable has hostapd 2.12 with the fix."
-    },
-    "CVE-2026-109618": {
-      "f257622487a5fc0a8e6d617acca8231ba9e8d49b": "php85: 8.5.11 -> 8.5.12, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.5.12\n(cherry picked from commit 81513f364091c759812f716cef3c175109d07342)",
-      "c37378eb313e3f49a38db9eff624307a218c8795": "php84: 8.4.26 -> 8.4.27, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.4.27\n(cherry picked from commit ee62357e90778a37aa7aa4a646e7ccd4fdb643b3)",
-      "f8a7b9a0276bcd103c9692c4e0243b711e6f88ef": "php83: 8.3.35 -> 8.3.36, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.3.36\n(cherry picked from commit 8122eb15f960d1e04ab982e4ee971c374133a1e8)",
-      "81513f364091c759812f716cef3c175109d07342": "php85: 8.5.11 -> 8.5.12, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.5.12",
-      "ee62357e90778a37aa7aa4a646e7ccd4fdb643b3": "php84: 8.4.26 -> 8.4.27, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.4.27",
-      "8122eb15f960d1e04ab982e4ee971c374133a1e8": "php83: 8.3.35 -> 8.3.36, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.3.36"
-    },
-    "CVE-2026-109619": {
-      "f257622487a5fc0a8e6d617acca8231ba9e8d49b": "php85: 8.5.11 -> 8.5.12, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.5.12\n(cherry picked from commit 81513f364091c759812f716cef3c175109d07342)",
-      "c37378eb313e3f49a38db9eff624307a218c8795": "php84: 8.4.26 -> 8.4.27, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.4.27\n(cherry picked from commit ee62357e90778a37aa7aa4a646e7ccd4fdb643b3)",
-      "f8a7b9a0276bcd103c9692c4e0243b711e6f88ef": "php83: 8.3.35 -> 8.3.36, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.3.36\n(cherry picked from commit 8122eb15f960d1e04ab982e4ee971c374133a1e8)",
-      "81513f364091c759812f716cef3c175109d07342": "php85: 8.5.11 -> 8.5.12, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.5.12",
-      "ee62357e90778a37aa7aa4a646e7ccd4fdb643b3": "php84: 8.4.26 -> 8.4.27, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.4.27",
-      "8122eb15f960d1e04ab982e4ee971c374133a1e8": "php83: 8.3.35 -> 8.3.36, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.3.36"
     },
     "CVE-2024-50612": {
       "0da8007a77b22cc120821e13e97a915ff697d35e": "libsndfile: add patches for CVE-2024-50612, CVE-2026-37555\n\nAssisted-by: Claude:claude-opus-5-5\n(cherry picked from commit 91d5f8b1e1343fc25cda7dcbbe4079b0a102c9c9)",

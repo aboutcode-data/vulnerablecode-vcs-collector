@@ -2,7 +2,7 @@
   "vcs_url": "https://github.com/getsentry/sentry-java",
   "vulnerabilities": {
     "CVE-2026-111943": {
-      "5518d2dd7b5c1e8fda5e960d4414d7c9b35c8180": "fix(transport): Reject leaked eMudhra intermediate certificates\n\nThe private keys of eight eMudhra intermediates can be recovered from their certificates (CVE-2026-111943). Their Sectigo cross-signs chain to AAA Certificate Services, which is trusted on every Android version, so platform trust store updates won't reach every device. The envelope transport and the distribution client now reject servers that present one of these keys, right after the TLS handshake and before any request is written.\n\nFixes JAVA-783\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+      "0411fe490b159c67aeb86f1a86db9af114bdca72": "fix(transport): Reject leaked eMudhra intermediate certificates\n\nThe private keys of eight eMudhra intermediates can be recovered from their certificates (CVE-2026-111943). Their Sectigo cross-signs chain to AAA Certificate Services, which is trusted on every Android version, so platform trust store updates won't reach every device. The envelope transport and the distribution client now reject servers that present one of these keys, right after the TLS handshake and before any request is written.\n\nFixes JAVA-783\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
     },
     "CVE-2018-9492": {
       "897ad85f50e5be591f53f110db37025e7a791ca0": "Expand fix for potential Privilege Escalation via Content Provider (CVE-2018-9492) (#2482)",
