@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-XVQP-RCJ6-3H2Q": {
+      "7acbf6afd57c447581aeeed424c9ae2757b8aa0b": "Added new security option that can be used to limit the number of profiles an image can have (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-xvqp-rcj6-3h2q)"
+    },
     "GHSA-M9P2-WQC3-MJ22": {
       "bc041563cbef5249b5e573c9fb0b1fa3deae3266": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-m9p2-wqc3-mj22"
     },

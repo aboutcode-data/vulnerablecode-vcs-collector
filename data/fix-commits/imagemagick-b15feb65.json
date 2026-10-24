@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-2H6M-67XH-CM4P": {
+      "11313ac549e3466edaa47012616b0db4def5c22b": "Added new security option that can be used to limit the number of profiles an image can have (GHSA-2h6m-67xh-cm4p)"
+    },
     "GHSA-M9P2-WQC3-MJ22": {
       "d3a850ae253815067a343a51d3743a60ed6818e0": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-m9p2-wqc3-mj22"
     },

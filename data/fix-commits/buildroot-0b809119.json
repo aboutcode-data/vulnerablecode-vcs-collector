@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/buildroot/buildroot",
   "vulnerabilities": {
+    "CVE-2026-109411": {
+      "66f318bff6b691f468d762177907b63be1b2b1b7": "package/samba4: security bump version to 4.25.1\n\nhttps://www.samba.org/samba/history/samba-4.25.1.html\n\nFixes CVE-2026-109411.\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Thomas Petazzoni <thomas.petazzoni@bootlin.com>"
+    },
     "CVE-2026-111497": {
       "f904d35dce2f40226a115cb0e440bc486a7ae48f": "package/python-brotli: security bump to version 1.2.1\n\nFor change log, see:\nhttps://github.com/google/brotli/releases/tag/v1.2.1\n\nThis release includes the upstream commit:\nhttps://github.com/google/brotli/commit/b418fa81c48262a86a95332b0bc6d62c30aa78b6\nwhich fixes CVE-2026-111497.\n\nFixes:\nhttps://nvd.nist.gov/vuln/detail/cve-2026-111497\n\nSigned-off-by: James Hilliard <james.hilliard1@gmail.com>\n[Julien: mark commit as \"security\" and add info in commit log]\nSigned-off-by: Julien Olivain <ju.o@free.fr>",
       "f6dd7e28aec579e318b1f63dbaa1fd719f71e84c": "package/brotli: security bump to version 1.2.1\n\nFixes the following vulnerability:\n\nCVE-2026-111497: out-of-bounds write permits remote code execution\n\nhttps://github.com/advisories/GHSA-9v8h-qqgm-4m35\n\nhttps://github.com/google/brotli/releases/tag/v1.2.1\n\nSigned-off-by: Peter Korsgaard <peter@korsgaard.com>\nSigned-off-by: Julien Olivain <ju.o@free.fr>",

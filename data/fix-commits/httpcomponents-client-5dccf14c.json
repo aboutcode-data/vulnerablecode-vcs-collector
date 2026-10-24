@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/apache/httpcomponents-client",
   "vulnerabilities": {
+    "CVE-2026-111497": {
+      "676ed2b957391df43100f810aeed13ca0f751407": "Upgrade brotli4j to 1.24.0 for CVE-2026-111497",
+      "67b09151419e8c5d13725c465e838444098a7794": "Upgrade brotli4j to 1.24.0 for CVE-2026-111497"
+    },
     "CVE-2021-44832": {
       "fefbf0b75659e38db7657591a21867f3c44cd831": "Bumping versions of slf4j and log4j.\n\nRemoves CVE-2021-44832."
     }
