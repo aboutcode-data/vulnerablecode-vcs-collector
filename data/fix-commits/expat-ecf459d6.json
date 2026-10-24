@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://android.googlesource.com/platform/external/expat",
   "vulnerabilities": {
+    "CVE-2026-113351": {
+      "d8f31e647a4d1eda088e89354f4769b0dad303d3": "Merge pull request #1431 from libexpat/fix-parser-reset\n\n[CVE-2026-113351] Fix parser reset"
+    },
+    "CVE-2026-115506": {
+      "c30145b28632b31f805d57f9838ba36b8db99367": "Merge pull request #1433 from shani-any/issue3\n\n[CVE-2026-115506] Precompute entity expanded sizes to detect amplification attacks early"
+    },
     "CVE-2026-76641": {
       "208c70454f68b8f7542fd2f96cde9ecd13805b06": "Merge pull request #1331 from liuzeyouzeyou/fix-dtdcopy-default-att-hash-entry-size\n\n[CVE-2026-76641] lib: Fix out-of-bounds read from hash table entries created by dtdCopy"
     },

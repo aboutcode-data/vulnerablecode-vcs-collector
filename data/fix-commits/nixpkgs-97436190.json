@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
     "CVE-2026-96760": {
+      "597a4f8a703a72d834af3768636c7e82751d325e": "python3Packages.authlib: 1.7.2 -> 1.8.0\n\nhttps://github.com/lepture/authlib/blob/v1.8.0/docs/upgrades/changelog.rst\n\nFixes: CVE-2026-96760\n(cherry picked from commit 1a9ba8d7e0453bce35f153cbaa26120d79bdcb2e)",
       "1a9ba8d7e0453bce35f153cbaa26120d79bdcb2e": "python3Packages.authlib: 1.7.2 -> 1.8.0\n\nhttps://github.com/lepture/authlib/blob/v1.8.0/docs/upgrades/changelog.rst\n\nFixes: CVE-2026-96760"
     },
     "CVE-2026-107891": {

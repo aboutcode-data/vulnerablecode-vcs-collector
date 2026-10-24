@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/backstage/backstage",
   "vulnerabilities": {
+    "CVE-2026-111497": {
+      "50c594efa12dfd66735521ba3427eb794c292dbd": "ci: bump Node 24 pin to 24.22.1 and Yarn to 4.18.1\n\nNode 24.22.1 includes the fix for CVE-2026-111497. Yarn 4.18.1 includes\nthe fix for the HTTP retry race that required pinning Node 24 to 24.19.0.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nSigned-off-by: Fredrik Adel\u00f6w <freben@gmail.com>"
+    },
     "GHSA-MW96-CPMX-2VGC": {
       "2e5c5f85b2b36f9062adc624e2a90a9445f1be73": "Bump glob to v13 and rollup to v4.59+ to fix security vulnerabilities\n\nAddresses the high severity rollup path traversal vulnerability\n(GHSA-mw96-cpmx-2vgc) and the glob security advisory by upgrading\nall instances across the monorepo. Updates code that used the legacy\ncallback-based glob API to use the modern promise/sync API.\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>\nSigned-off-by: Fredrik Adel\u00f6w <freben@spotify.com>",
       "6d76b1729bf8f2337a6e04c871f3c6cc040dc66d": "Bump glob to v13 and rollup to v4.59+ to fix security vulnerabilities\n\nAddresses the high severity rollup path traversal vulnerability\n(GHSA-mw96-cpmx-2vgc) and the glob security advisory by upgrading\nall instances across the monorepo. Updates code that used the legacy\ncallback-based glob API to use the modern promise/sync API.\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>\nSigned-off-by: Fredrik Adel\u00f6w <freben@spotify.com>",
