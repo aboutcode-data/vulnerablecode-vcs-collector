@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/openbsd/src",
   "vulnerabilities": {
+    "CVE-2026-102633": {
+      "cbe275d525c150b02721016146cbf0a1f5acac1d": "Update libexpat to version 2.9.0\n\nRelevant for OpenBSD are security fixes #1392 #1393, bug fixes\n#1387, new features #1327 #1323, other changes #1394 #1399 #1400\n#1401 #1402 #1404 #1405.  Minor library bump is necessary for API\nextension.\nCVE-2026-102633 CVE-2026-77214\n\nOK tb@"
+    },
+    "CVE-2026-77214": {
+      "cbe275d525c150b02721016146cbf0a1f5acac1d": "Update libexpat to version 2.9.0\n\nRelevant for OpenBSD are security fixes #1392 #1393, bug fixes\n#1387, new features #1327 #1323, other changes #1394 #1399 #1400\n#1401 #1402 #1404 #1405.  Minor library bump is necessary for API\nextension.\nCVE-2026-102633 CVE-2026-77214\n\nOK tb@"
+    },
     "CVE-2026-50106": {
       "c04101f4a830c0b0b70f697669918ec3e3b85940": "import unbound 1.26.2, ok phessler\n\nCVE-2026-50106, Possible insecure NXDOMAIN for non-existing\nrecords under a configured island trust anchor underneath an\ninsecure parent.\n\nCVE-2026-96405, Aggregate DNS name chained pointer decompression\nwork leads to degradation of service.\n\nCVE-2026-109125, Possible cache poisoning vulnerability via\na cache side-channel exposed by 'unwanted-reply-threshold'.\n\nCVE-2026-35501, Bypass of a configured island trust anchor\nunderneath an insecure parent from an attacker-controlled NSEC\nrecord."
     },

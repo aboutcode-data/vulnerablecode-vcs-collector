@@ -1,6 +1,15 @@
 {
   "vcs_url": "https://github.com/bagder/curl",
   "vulnerabilities": {
+    "GHSA-567Q-5QVW-PF92": {
+      "66c33953280959ea9c945a65e0f9ba18714eae9b": "pytest: update pip filelock from 4.0.12 to 4.2.4\n\nTo silence CVE notifications about about:\nhttps://osv.dev/vulnerability/GHSA-567q-5qvw-pf92\nhttps://osv.dev/vulnerability/GHSA-9vhv-jxww-xfm5\nhttps://osv.dev/vulnerability/GHSA-v4x8-3wr5-3wq8\n\nCloses #23587"
+    },
+    "GHSA-9VHV-JXWW-XFM5": {
+      "66c33953280959ea9c945a65e0f9ba18714eae9b": "pytest: update pip filelock from 4.0.12 to 4.2.4\n\nTo silence CVE notifications about about:\nhttps://osv.dev/vulnerability/GHSA-567q-5qvw-pf92\nhttps://osv.dev/vulnerability/GHSA-9vhv-jxww-xfm5\nhttps://osv.dev/vulnerability/GHSA-v4x8-3wr5-3wq8\n\nCloses #23587"
+    },
+    "GHSA-V4X8-3WR5-3WQ8": {
+      "66c33953280959ea9c945a65e0f9ba18714eae9b": "pytest: update pip filelock from 4.0.12 to 4.2.4\n\nTo silence CVE notifications about about:\nhttps://osv.dev/vulnerability/GHSA-567q-5qvw-pf92\nhttps://osv.dev/vulnerability/GHSA-9vhv-jxww-xfm5\nhttps://osv.dev/vulnerability/GHSA-v4x8-3wr5-3wq8\n\nCloses #23587"
+    },
     "CVE-2026-9080": {
       "e9a2b0dc72dd3a9aa3a5210e89079a3b719475dc": "multi_ev: refresh sock entry after remove callback\n\nThis was missed in the fix for CVE-2026-9080.\n\nReported-by: stze on hackerone\nURL: https://hackerone.com/reports/3823985\nCloses #22163"
     },
