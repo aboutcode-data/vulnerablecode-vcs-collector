@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-89078": {
+      "98eb2c6b1b08c8f21d71e4e1cda3d8f64ddfe08a": "ruby_3_3: 3.3.12 -> 3.3.13\n\nSecurity  patch release.\nAnnouncement: https://www.ruby-lang.org/en/news/2026/10/23/regexp-fixes-for-gitlab-cves/\nRelease notes: https://github.com/ruby/ruby/releases/tag/v3_3_13\n\nFixes: CVE-2026-89078, CVE-2026-93577, CVE-2026-97229, CVE-2026-110264"
+    },
+    "CVE-2026-93577": {
+      "98eb2c6b1b08c8f21d71e4e1cda3d8f64ddfe08a": "ruby_3_3: 3.3.12 -> 3.3.13\n\nSecurity  patch release.\nAnnouncement: https://www.ruby-lang.org/en/news/2026/10/23/regexp-fixes-for-gitlab-cves/\nRelease notes: https://github.com/ruby/ruby/releases/tag/v3_3_13\n\nFixes: CVE-2026-89078, CVE-2026-93577, CVE-2026-97229, CVE-2026-110264"
+    },
+    "CVE-2026-97229": {
+      "98eb2c6b1b08c8f21d71e4e1cda3d8f64ddfe08a": "ruby_3_3: 3.3.12 -> 3.3.13\n\nSecurity  patch release.\nAnnouncement: https://www.ruby-lang.org/en/news/2026/10/23/regexp-fixes-for-gitlab-cves/\nRelease notes: https://github.com/ruby/ruby/releases/tag/v3_3_13\n\nFixes: CVE-2026-89078, CVE-2026-93577, CVE-2026-97229, CVE-2026-110264"
+    },
+    "CVE-2026-110264": {
+      "98eb2c6b1b08c8f21d71e4e1cda3d8f64ddfe08a": "ruby_3_3: 3.3.12 -> 3.3.13\n\nSecurity  patch release.\nAnnouncement: https://www.ruby-lang.org/en/news/2026/10/23/regexp-fixes-for-gitlab-cves/\nRelease notes: https://github.com/ruby/ruby/releases/tag/v3_3_13\n\nFixes: CVE-2026-89078, CVE-2026-93577, CVE-2026-97229, CVE-2026-110264"
+    },
     "CVE-2026-96760": {
       "597a4f8a703a72d834af3768636c7e82751d325e": "python3Packages.authlib: 1.7.2 -> 1.8.0\n\nhttps://github.com/lepture/authlib/blob/v1.8.0/docs/upgrades/changelog.rst\n\nFixes: CVE-2026-96760\n(cherry picked from commit 1a9ba8d7e0453bce35f153cbaa26120d79bdcb2e)",
       "1a9ba8d7e0453bce35f153cbaa26120d79bdcb2e": "python3Packages.authlib: 1.7.2 -> 1.8.0\n\nhttps://github.com/lepture/authlib/blob/v1.8.0/docs/upgrades/changelog.rst\n\nFixes: CVE-2026-96760"

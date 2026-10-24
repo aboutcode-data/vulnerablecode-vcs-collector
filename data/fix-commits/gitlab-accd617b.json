@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitlab.com/gitlab-org/gitlab",
   "vulnerabilities": {
+    "CVE-2026-112212": {
+      "0b4a41bab11006c86749361e4c56c2fcaf108205": "Docs: clarify the OIDC discovery document must be self-served\n\nThe non-public instance workaround tells readers to host the OpenID\nconfiguration and JWKS at a public location, but does not say that\nexposing GitLab's own discovery endpoint through a public hostname is\nnot a substitute, nor that ci_id_tokens_issuer_url has no effect on the\ndiscovery document. Support has seen several customers reach the latter\nconclusion from this page.\n\nBefore 19.3.6, 19.4.3, and 19.5.1 the endpoint URLs in the discovery\ndocument followed the host in the request, so proxying the live endpoint\nappeared to work for AWS. The fix for CVE-2026-112212 builds those URLs\nfrom the instance URL, which breaks those setups on upgrade. Add a\ntroubleshooting bullet for that symptom."
+    },
     "CVE-2026-26962": {
       "87276fbd9293a0d7dad1af38bf4eac4c0f8642f3": "Update rack gem to 2.2.24\n\nBumps rack from 2.2.23 to 2.2.24 in both Gemfile.lock and\nGemfile.next.lock. This is a security release fixing\nCVE-2026-26962: improper unfolding of folded multipart headers\npreserves CRLF in parsed parameter values.\n\nThe existing Gemfile constraint (~> 2.2.9) already permits 2.2.24,\nso only the lockfiles change.\n\nhttps://github.com/rack/rack/blob/2-2-stable/CHANGELOG.md"
     },
