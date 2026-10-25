@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-111148": {
+      "9c1dc6804e91bad4c21240b575f24c5e8f530bd9": "libsidplayfp: Apply fix for CVE-2026-111148 (#578062)",
+      "88d62ddb8c79d7601c80f0efc614a483f9e75085": "libsidplayfp: Apply fix for CVE-2026-111148"
+    },
     "CVE-2026-89078": {
       "98eb2c6b1b08c8f21d71e4e1cda3d8f64ddfe08a": "ruby_3_3: 3.3.12 -> 3.3.13\n\nSecurity  patch release.\nAnnouncement: https://www.ruby-lang.org/en/news/2026/10/23/regexp-fixes-for-gitlab-cves/\nRelease notes: https://github.com/ruby/ruby/releases/tag/v3_3_13\n\nFixes: CVE-2026-89078, CVE-2026-93577, CVE-2026-97229, CVE-2026-110264"
     },
@@ -332,6 +336,9 @@
     "GHSA-58R4-6RV3-GFH8": {
       "42d6623846013d26dae31ae953076f6e326d46cb": "python3Packages.pillow: 12.3.0 -> 13.0.0\n\nhttps://pillow.readthedocs.io/en/stable/releasenotes/13.0.0.html\n\nFixes:\nCVE-2026-96639, CVE-2026-96644, CVE-2026-96637, CVE-2026-96643,\nCVE-2026-96778, CVE-2026-96640, CVE-2026-96636, CVE-2026-96642,\nCVE-2026-96638\n\nGHSA-5x8w-8jj5-q52h, GHSA-8g5g-8vmr-9782, GHSA-462x-pgg6-55fp,\nGHSA-c6hw-5grf-ff96, GHSA-p4wg-p73j-c528, GHSA-pchr-8j38-3x4p,\nGHSA-332p-7hrc-92wf, GHSA-xcvg-w56q-r89m, GHSA-xvh5-g6gv-559v,\nGHSA-q45j-58j2-45rg, GHSA-78g4-xqwv-q3g8, GHSA-4rr5-89j8-mwwm,\nGHSA-f2g6-542v-9j58, GHSA-5xm2-6676-qcp9, GHSA-gg2r-wvfm-q9rx,\nGHSA-wqgw-9xfh-qf2g, GHSA-jg86-v3jv-hrpm, GHSA-254f-3936-288h,\nGHSA-rfgq-q3w2-pmv2, GHSA-xgh8-jp6q-p5x8, GHSA-22hg-r758-rrw9,\nGHSA-74r2-7ff9-mjj2, GHSA-fc9g-5qg7-mf45, GHSA-27h8-gf7j-v5hc,\nGHSA-cp9v-662q-vvx9, GHSA-j4m9-6w36-pw47, GHSA-7mwm-ghpf-9vrm,\nGHSA-4558-3h8r-v8xp, GHSA-w889-685w-c8fh, GHSA-65qm-jvmh-6pqg,\nGHSA-vx6w-vv9f-6gvg, GHSA-58r4-6rv3-gfh8\n\n(cherry picked from commit 084270a6626c073552c98b0ac31660ada9bf3302)",
       "084270a6626c073552c98b0ac31660ada9bf3302": "python3Packages.pillow: 12.3.0 -> 13.0.0\n\nhttps://pillow.readthedocs.io/en/stable/releasenotes/13.0.0.html\n\nFixes:\nCVE-2026-96639, CVE-2026-96644, CVE-2026-96637, CVE-2026-96643,\nCVE-2026-96778, CVE-2026-96640, CVE-2026-96636, CVE-2026-96642,\nCVE-2026-96638\n\nGHSA-5x8w-8jj5-q52h, GHSA-8g5g-8vmr-9782, GHSA-462x-pgg6-55fp,\nGHSA-c6hw-5grf-ff96, GHSA-p4wg-p73j-c528, GHSA-pchr-8j38-3x4p,\nGHSA-332p-7hrc-92wf, GHSA-xcvg-w56q-r89m, GHSA-xvh5-g6gv-559v,\nGHSA-q45j-58j2-45rg, GHSA-78g4-xqwv-q3g8, GHSA-4rr5-89j8-mwwm,\nGHSA-f2g6-542v-9j58, GHSA-5xm2-6676-qcp9, GHSA-gg2r-wvfm-q9rx,\nGHSA-wqgw-9xfh-qf2g, GHSA-jg86-v3jv-hrpm, GHSA-254f-3936-288h,\nGHSA-rfgq-q3w2-pmv2, GHSA-xgh8-jp6q-p5x8, GHSA-22hg-r758-rrw9,\nGHSA-74r2-7ff9-mjj2, GHSA-fc9g-5qg7-mf45, GHSA-27h8-gf7j-v5hc,\nGHSA-cp9v-662q-vvx9, GHSA-j4m9-6w36-pw47, GHSA-7mwm-ghpf-9vrm,\nGHSA-4558-3h8r-v8xp, GHSA-w889-685w-c8fh, GHSA-65qm-jvmh-6pqg,\nGHSA-vx6w-vv9f-6gvg, GHSA-58r4-6rv3-gfh8"
+    },
+    "CVE-2024-25398": {
+      "477e1abe6489fbce759a20f27e54113431cbee91": "srelay: 0.4.8 -> 0.4.9\n\nUpstream 0.4.9 includes \"fix CVE-2024-25398\" (NVD: denial of service via a\ncrafted network payload in srelay 0.4.8p3).\n\narm.patch dropped: upstream configure.ac no longer checks the CPU.\n\nsignal-handler.patch dropped: build with -std=gnu17 instead, since upstream\ndeclares its signal handlers with unprototyped function pointers, which\nthe C23 default rejects.\n\nAssisted-by: Claude Code (Claude Sonnet 5.5)"
     },
     "CVE-2026-102296": {
       "a6c8d8187af42664af06e1da59720d45b210f5e5": "[release-26.05] zoneminder: 1.36.38 -> 1.36.39+git20260703_cfac136 + fix CVE-2026-102296 (#574141)",

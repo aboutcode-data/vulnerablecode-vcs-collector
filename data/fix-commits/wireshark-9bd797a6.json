@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/wireshark/wireshark",
   "vulnerabilities": {
+    "CVE-2026-111497": {
+      "c7d46557cfac7488ce20f30cd3c9438c5337ad9c": "Windows: Update brotli to 1.2.1\n\nBrotli 1.2.1 fixes CVE-2026-111497, an out-of-bounds write in the\ndecoder which might affect us. Use the same packages as\nFetchArtifacts.cmake on 4.6 and later (10a6f4ab06)."
+    },
     "CVE-2022-0585": {
       "3fa8b2e13086d81270f27993512635854e71df9a": "openflow_v6: Use a subset tvb to fix an infinite loop\n\nUse a subset tvb for the action so that a ReportedBoundsError\nis automatically thrown if the length in the action header is\nnot long enough for what is actually contained.\n\nIn particular, this fixes the case in fuzzed data where the length\nindicated in the header is zero, and an unknown type is encountered.\nAn exception will be thrown while dissecting the header instead of\nthe offset moving backwards.\n\nEssentially the same issue as #17847 / CVE-2022-0585, but in a\ndifferent part of the dissector.\n\nAlso, update the URL to the current location.\n\nFix #20932"
     },
