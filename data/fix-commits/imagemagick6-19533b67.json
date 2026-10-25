@@ -1,14 +1,24 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-P58Q-7CV7-7W3M": {
+      "5436efbcf718652ffbeca639b31a9ab37fcc86ff": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-p58q-7cv7-7w3m"
+    },
+    "GHSA-Q66G-3M63-78MH": {
+      "712e523e7f746d35c963b78555e1c24364a9426e": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-q66g-3m63-78mh"
+    },
+    "GHSA-2VWG-3G4G-QPRM": {
+      "c34476c0c789c31a7bff7765a5a7569cbde33eb1": "Backport GHSA-2vwg-3g4g-qprm."
+    },
+    "GHSA-2PC3-3339-3QC9": {
+      "223d63a3752f0b9961def17f91dff186f99862a0": "Added new method to sanitize filenames and use that for https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-2pc3-3339-3qc9.",
+      "d322b2997f2e706cfaf0611c5bfa454fe9fed8ac": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-2pc3-3339-3qc9"
+    },
     "GHSA-XVQP-RCJ6-3H2Q": {
       "7acbf6afd57c447581aeeed424c9ae2757b8aa0b": "Added new security option that can be used to limit the number of profiles an image can have (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-xvqp-rcj6-3h2q)"
     },
     "GHSA-M9P2-WQC3-MJ22": {
       "bc041563cbef5249b5e573c9fb0b1fa3deae3266": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-m9p2-wqc3-mj22"
-    },
-    "GHSA-2PC3-3339-3QC9": {
-      "d322b2997f2e706cfaf0611c5bfa454fe9fed8ac": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-2pc3-3339-3qc9"
     },
     "GHSA-3PF7-CJFR-3FPQ": {
       "79af8a0fe97e7090ce0d4543c0751c3c97e33ccd": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-3pf7-cjfr-3fpq"
