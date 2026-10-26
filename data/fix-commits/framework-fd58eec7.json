@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/laravel/framework",
   "vulnerabilities": {
+    "CVE-2026-114509": {
+      "47781ee0cc09940c2d706623160e14d7c6eb6b36": "Reject non-string tokens in TokenGuard (#62177)\n\nBackport of the 12.x/13.x fix for GHSA-f9x3-7vq9-cph6 (CVE-2026-114509).\nTokenGuard::user() and validate() now ignore non-string token values,\nso a crafted value such as api_token=[0] is never passed to the user\nprovider. On MySQL/MariaDB such values could otherwise match an existing\nuser through type coercion.\n\nMirrors laravel/framework@8dbb08bccac1be095dba4a9d259a419620f1e8a5."
+    },
+    "GHSA-F9X3-7VQ9-CPH6": {
+      "47781ee0cc09940c2d706623160e14d7c6eb6b36": "Reject non-string tokens in TokenGuard (#62177)\n\nBackport of the 12.x/13.x fix for GHSA-f9x3-7vq9-cph6 (CVE-2026-114509).\nTokenGuard::user() and validate() now ignore non-string token values,\nso a crafted value such as api_token=[0] is never passed to the user\nprovider. On MySQL/MariaDB such values could otherwise match an existing\nuser through type coercion.\n\nMirrors laravel/framework@8dbb08bccac1be095dba4a9d259a419620f1e8a5."
+    },
     "GHSA-QRR6-MG7R-M243": {
       "6d067e531ea17b698a187727125d7dbb5bff1105": "Ignore PHPUnit security advisory GHSA-qrr6-mg7r-m243 (#59761)"
     },

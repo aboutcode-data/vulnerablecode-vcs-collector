@@ -1,6 +1,30 @@
 {
   "vcs_url": "https://github.com/angular/angular-cli",
   "vulnerabilities": {
+    "CVE-2026-109869": {
+      "aa2ecc154e7fb591afc2e1789a4094644828f246": "fix(@angular/build): bump undici to 7.30.1\n\nBumps undici to 7.30.1 to address GHSA-xjj6-f33q-929c / CVE-2026-109869,\nGHSA-4qv8-2p9j-2685 / CVE-2026-109924 and GHSA-f72v-6w45-q472 / CVE-2026-109841.\n\nCloses #34518",
+      "d6ce6ec214ae35a91bdc6c03fc5697f0a69c10bc": "fix(@angular-devkit/build-angular): bump undici to 7.30.1\n\nBumps undici to 7.30.1 to address GHSA-xjj6-f33q-929c / CVE-2026-109869,\nGHSA-4qv8-2p9j-2685 / CVE-2026-109924 and GHSA-f72v-6w45-q472 / CVE-2026-109841.\n\nRefs #34518"
+    },
+    "CVE-2026-109924": {
+      "aa2ecc154e7fb591afc2e1789a4094644828f246": "fix(@angular/build): bump undici to 7.30.1\n\nBumps undici to 7.30.1 to address GHSA-xjj6-f33q-929c / CVE-2026-109869,\nGHSA-4qv8-2p9j-2685 / CVE-2026-109924 and GHSA-f72v-6w45-q472 / CVE-2026-109841.\n\nCloses #34518",
+      "d6ce6ec214ae35a91bdc6c03fc5697f0a69c10bc": "fix(@angular-devkit/build-angular): bump undici to 7.30.1\n\nBumps undici to 7.30.1 to address GHSA-xjj6-f33q-929c / CVE-2026-109869,\nGHSA-4qv8-2p9j-2685 / CVE-2026-109924 and GHSA-f72v-6w45-q472 / CVE-2026-109841.\n\nRefs #34518"
+    },
+    "CVE-2026-109841": {
+      "aa2ecc154e7fb591afc2e1789a4094644828f246": "fix(@angular/build): bump undici to 7.30.1\n\nBumps undici to 7.30.1 to address GHSA-xjj6-f33q-929c / CVE-2026-109869,\nGHSA-4qv8-2p9j-2685 / CVE-2026-109924 and GHSA-f72v-6w45-q472 / CVE-2026-109841.\n\nCloses #34518",
+      "d6ce6ec214ae35a91bdc6c03fc5697f0a69c10bc": "fix(@angular-devkit/build-angular): bump undici to 7.30.1\n\nBumps undici to 7.30.1 to address GHSA-xjj6-f33q-929c / CVE-2026-109869,\nGHSA-4qv8-2p9j-2685 / CVE-2026-109924 and GHSA-f72v-6w45-q472 / CVE-2026-109841.\n\nRefs #34518"
+    },
+    "GHSA-XJJ6-F33Q-929C": {
+      "aa2ecc154e7fb591afc2e1789a4094644828f246": "fix(@angular/build): bump undici to 7.30.1\n\nBumps undici to 7.30.1 to address GHSA-xjj6-f33q-929c / CVE-2026-109869,\nGHSA-4qv8-2p9j-2685 / CVE-2026-109924 and GHSA-f72v-6w45-q472 / CVE-2026-109841.\n\nCloses #34518",
+      "d6ce6ec214ae35a91bdc6c03fc5697f0a69c10bc": "fix(@angular-devkit/build-angular): bump undici to 7.30.1\n\nBumps undici to 7.30.1 to address GHSA-xjj6-f33q-929c / CVE-2026-109869,\nGHSA-4qv8-2p9j-2685 / CVE-2026-109924 and GHSA-f72v-6w45-q472 / CVE-2026-109841.\n\nRefs #34518"
+    },
+    "GHSA-4QV8-2P9J-2685": {
+      "aa2ecc154e7fb591afc2e1789a4094644828f246": "fix(@angular/build): bump undici to 7.30.1\n\nBumps undici to 7.30.1 to address GHSA-xjj6-f33q-929c / CVE-2026-109869,\nGHSA-4qv8-2p9j-2685 / CVE-2026-109924 and GHSA-f72v-6w45-q472 / CVE-2026-109841.\n\nCloses #34518",
+      "d6ce6ec214ae35a91bdc6c03fc5697f0a69c10bc": "fix(@angular-devkit/build-angular): bump undici to 7.30.1\n\nBumps undici to 7.30.1 to address GHSA-xjj6-f33q-929c / CVE-2026-109869,\nGHSA-4qv8-2p9j-2685 / CVE-2026-109924 and GHSA-f72v-6w45-q472 / CVE-2026-109841.\n\nRefs #34518"
+    },
+    "GHSA-F72V-6W45-Q472": {
+      "aa2ecc154e7fb591afc2e1789a4094644828f246": "fix(@angular/build): bump undici to 7.30.1\n\nBumps undici to 7.30.1 to address GHSA-xjj6-f33q-929c / CVE-2026-109869,\nGHSA-4qv8-2p9j-2685 / CVE-2026-109924 and GHSA-f72v-6w45-q472 / CVE-2026-109841.\n\nCloses #34518",
+      "d6ce6ec214ae35a91bdc6c03fc5697f0a69c10bc": "fix(@angular-devkit/build-angular): bump undici to 7.30.1\n\nBumps undici to 7.30.1 to address GHSA-xjj6-f33q-929c / CVE-2026-109869,\nGHSA-4qv8-2p9j-2685 / CVE-2026-109924 and GHSA-f72v-6w45-q472 / CVE-2026-109841.\n\nRefs #34518"
+    },
     "CVE-2026-112943": {
       "a1e3016f1efe65b49b9d6affd13e6fe1d95607e4": "fix(@angular/build): bump vite to 7.3.7\n\nBumps vite to 7.3.7 to address GHSA-698v-4r3x-3vcv / CVE-2026-112943.\n\nRefs #34452",
       "a081d8b6dbef26d33cb22b4b40c9a843a2b87047": "fix(@angular/build): bump vite to 7.3.7\n\nBumps vite to 7.3.7 to address GHSA-698v-4r3x-3vcv / CVE-2026-112943.\n\nRefs #34452"

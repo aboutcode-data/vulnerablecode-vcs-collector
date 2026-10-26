@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/videolan/vlc",
   "vulnerabilities": {
+    "GHSA-P2VX-RPW8-HP43": {
+      "6ae433cc2c45c30563c4db9fb792ba0d64f8b059": "contrib: zvbi: update to 0.2.46\n\nFixes security advisory GHSA-p2vx-rpw8-hp43 [^1].\n\n[^1]: https://github.com/zapping-vbi/zvbi/security/advisories/GHSA-p2vx-rpw8-hp43"
+    },
     "GHSA-86RM-G7QF-J2FH": {
       "cb10fccc2e3d52a1bf5bc9315a075a6af07b7ea6": "contrib: zbvi: update to 0.2.45\n\nIt fixes some security issues [^1] [^2].\n\n[^1]: https://github.com/zapping-vbi/zvbi/security/advisories/GHSA-86rm-g7qf-j2fh\n[^2]: https://github.com/zapping-vbi/zvbi/blob/main/ChangeLog\n\n(cherry picked from commit b6d509c768f0f14038001237fab8c166be1301ed)\nSigned-off-by: Steve Lhomme <robux4@ycbcr.xyz>",
       "b6d509c768f0f14038001237fab8c166be1301ed": "contrib: zbvi: update to 0.2.45\n\nIt fixes some security issues [^1] [^2].\n\n[^1]: https://github.com/zapping-vbi/zvbi/security/advisories/GHSA-86rm-g7qf-j2fh\n[^2]: https://github.com/zapping-vbi/zvbi/blob/main/ChangeLog"

@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/brave/brave-core",
   "vulnerabilities": {
+    "GHSA-F2PH-CMG5-WXC8": {
+      "9f1e4d87e18e9607929afcfa0b5232d6d2e05763": "Fix Windows CI installs by bumping leo\n\nSince Oct 22, the Windows x64 build of every PR fails at the install\nstage with \"ERR_PNPM_FETCH_403 GET .../storybook-8.6.18.tgz\". The leo\nversion in package.json locks storybook 8.6.18, which has had a critical\nadvisory (GHSA-f2ph-cmg5-wxc8) since Oct 21, and the package firewall\nused by the Windows agents refuses to download it.\n\nThis commit updates leo to its latest commit, which uses storybook\n8.6.19. brave/brave-core#40974 makes the same change."
+    },
     "GHSA-PQG4-J6R4-53MV": {
       "f09cf2cfee3dff6687563e3c5bdc66f5cebb512c": "Override shell-quote to 1.11.0 to address GHSA-pqg4-j6r4-53mv"
     },

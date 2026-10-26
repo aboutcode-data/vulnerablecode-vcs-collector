@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/nim-lang/nim",
   "vulnerabilities": {
+    "GHSA-4XC7-FP2P-49J3": {
+      "59850c2034019651170df9a36f52c25082975a62": "httpclient: reject CR/LF in the request target and headers (STD-006)\n\nThe fix for GHSA-4xc7-fp2p-49j3 only checks string URLs for newlines.\nA `Uri` whose path, query or hostname contains CR/LF, as well as header\nnames and values (per-request or `client.headers`), were written into\nthe request unchanged, allowing header and request injection.\n\n`generateHeaders` now raises `ValueError` for CR, LF or NUL in the\nrequest target, the Host header parts and every header field, before\nanything is sent.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n(cherry picked from commit ab6aba3e8da59903756307a61a03a7c3372ff554)",
+      "ab6aba3e8da59903756307a61a03a7c3372ff554": "httpclient: reject CR/LF in the request target and headers (STD-006)\n\nThe fix for GHSA-4xc7-fp2p-49j3 only checks string URLs for newlines.\nA `Uri` whose path, query or hostname contains CR/LF, as well as header\nnames and values (per-request or `client.headers`), were written into\nthe request unchanged, allowing header and request injection.\n\n`generateHeaders` now raises `ValueError` for CR, LF or NUL in the\nrequest target, the Host header parts and every header field, before\nanything is sent.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+    },
     "CVE-2021-41259": {
       "9df8ca0d8104c5f474dd5184b69446bbb1515242": "Add URI parsing warning (#21547)\n\nRelated to CVE-2021-41259\r\nhttps://github.com/nim-lang/security/security/advisories/GHSA-3gg2-rw3q-qwgc\r\nhttps://github.com/nim-lang/Nim/pull/19128#issuecomment-1181944367"
     },
