@@ -2,19 +2,22 @@
   "vcs_url": "https://github.com/nuxt/nuxt",
   "vulnerabilities": {
     "GHSA-X287-WCFC-Q46C": {
-      "63299e13c7f3a5c7e419c25e35aac12505409a75": "fix(vite): do not read files named in client error reports\n\nAdvisory: https://github.com/nuxt/nuxt/security/advisories/GHSA-x287-wcfc-q46c"
-    },
-    "GHSA-648H-GW55-M2G7": {
-      "c7e204ec6ba0c13089cb4e37507e874fa4e4dae9": "fix(vite): deny dev server access to nitro dev output\n\nAdvisory: https://github.com/nuxt/nuxt/security/advisories/GHSA-648h-gw55-m2g7"
+      "35856eb148bf8d6f1ad753c5b8b337c52b4fd6b3": "fix(vite): do not read files named in client error reports\n\nAdvisory: https://github.com/nuxt/nuxt/security/advisories/GHSA-x287-wcfc-q46c",
+      "aec8129f68e9b870ca919f8f60e65a4608c8a6d8": "fix(vite): do not read files named in client error reports\n\nAdvisory: https://github.com/nuxt/nuxt/security/advisories/GHSA-x287-wcfc-q46c"
     },
     "GHSA-3XF4-9G3C-4H4W": {
-      "16dfdc2a9882c89f8b9b7bf11de9ac203dcefe9e": "fix(vite): deny serving generated app secret in dev\n\nAdvisory: https://github.com/nuxt/nuxt/security/advisories/GHSA-3xf4-9g3c-4h4w"
-    },
-    "GHSA-9V7C-Q64Q-VV33": {
-      "440250d9748f3d92b71a1a066a20eb5cf18d0afd": "fix(nitro,nuxt): handle dot segments in request paths\n\nAdvisory: https://github.com/nuxt/nuxt/security/advisories/GHSA-9v7c-q64q-vv33"
+      "545004cc350be7003dea4116ce6206d6f980b1fd": "fix(vite): deny serving generated app secret in dev\n\nAdvisory: https://github.com/nuxt/nuxt/security/advisories/GHSA-3xf4-9g3c-4h4w",
+      "2981290f36d9c5412c022758f3d89ba21a845308": "fix(vite): deny serving generated app secret in dev\n\nAdvisory: https://github.com/nuxt/nuxt/security/advisories/GHSA-3xf4-9g3c-4h4w"
     },
     "GHSA-2FXJ-C3J7-RR69": {
-      "b20372dbe9e9719beeed0b534a34065c8ea9b45d": "fix(nuxt): apply redirect route rules to page islands\n\nAdvisory: https://github.com/nuxt/nuxt/security/advisories/GHSA-2fxj-c3j7-rr69"
+      "524519093cfa043a14a3c7c60098d0856299669c": "fix(nuxt): apply redirect route rules to page islands\n\nAdvisory: https://github.com/nuxt/nuxt/security/advisories/GHSA-2fxj-c3j7-rr69",
+      "57da2ae8eb628d6d0702f2628f757ff3df22da38": "fix(nuxt): apply redirect route rules to page islands\n\nAdvisory: https://github.com/nuxt/nuxt/security/advisories/GHSA-2fxj-c3j7-rr69"
+    },
+    "GHSA-648H-GW55-M2G7": {
+      "12b58f9d8768682611c3ad4ea4d403875129dbca": "fix(vite): deny dev server access to nitro dev output\n\nAdvisory: https://github.com/nuxt/nuxt/security/advisories/GHSA-648h-gw55-m2g7"
+    },
+    "GHSA-9V7C-Q64Q-VV33": {
+      "45463f8b58487e387149ebfb704d6a0834b3a450": "fix(nitro,nuxt): handle dot segments in request paths\n\nAdvisory: https://github.com/nuxt/nuxt/security/advisories/GHSA-9v7c-q64q-vv33"
     },
     "GHSA-534H-C3CW-V3H9": {
       "8c2d1293aa0c0dcf6c0f87d0f7e765d4293a3509": "fix(vite): bind vite-node IPC to a permissioned filesystem socket\n\nRefs: GHSA-534h-c3cw-v3h9",
