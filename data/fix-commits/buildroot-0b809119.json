@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/buildroot/buildroot",
   "vulnerabilities": {
+    "CVE-2026-75900": {
+      "b6a653e5fc31ab9e0e0b105583a693938b59711a": "package/swtpm: security bump version to 0.10.2\n\nCVE-2026-75900: Fix length check in SWTPM_NVRAM_CheckHeader()\nhttps://github.com/advisories/GHSA-gqrg-h59c-j4wj\n\nUpstream changelog:\nhttps://github.com/stefanberger/swtpm/releases/tag/v0.10.2\n\nSigned-off-by: Fiona Klute (othermo GmbH) <fiona.klute@gmx.de>\nReviewed-by: Jarkko Sakkinen <jarkko@kernel.org>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "GHSA-GQRG-H59C-J4WJ": {
+      "b6a653e5fc31ab9e0e0b105583a693938b59711a": "package/swtpm: security bump version to 0.10.2\n\nCVE-2026-75900: Fix length check in SWTPM_NVRAM_CheckHeader()\nhttps://github.com/advisories/GHSA-gqrg-h59c-j4wj\n\nUpstream changelog:\nhttps://github.com/stefanberger/swtpm/releases/tag/v0.10.2\n\nSigned-off-by: Fiona Klute (othermo GmbH) <fiona.klute@gmx.de>\nReviewed-by: Jarkko Sakkinen <jarkko@kernel.org>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
     "CVE-2026-115557": {
       "3736eda341337a2ddd824111a5f065c84d44c584": "package/python3: security bump version to 3.14.10\n\nhttps://www.python.org/downloads/release/python-31410/\n\nSecurity content in this release:\n\nCVE-2026-115557:\nDistrust compromised eMudhra intermediate CA keys\n\nCVE-2026-114583:\nReject links replacing the destination in tarfile.tar_filter\n\ngh-160300:\nReject cookies with a negative version in http.cookiejar\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Peter Korsgaard <peter@korsgaard.com>"
     },

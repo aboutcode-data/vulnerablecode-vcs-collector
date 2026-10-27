@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-M2P5-QPX9-5MX6": {
+      "bff52bae5761ae3dd602312db3a502d6ac074ee6": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-m2p5-qpx9-5mx6"
+    },
     "GHSA-2VWG-3G4G-QPRM": {
       "36fafd8d099d815e2fd2c3c80398458403066169": "Additional patches for GHSA-2vwg-3g4g-qprm.",
       "c34476c0c789c31a7bff7765a5a7569cbde33eb1": "Backport GHSA-2vwg-3g4g-qprm."
