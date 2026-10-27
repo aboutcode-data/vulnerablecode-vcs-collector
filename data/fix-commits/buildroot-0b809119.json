@@ -1,6 +1,15 @@
 {
   "vcs_url": "https://github.com/buildroot/buildroot",
   "vulnerabilities": {
+    "CVE-2023-26137": {
+      "89fcc7132a9b4f94d082fb9936b4335d28d91b43": "package/drogon: fix CVE-2023-26137 and CVE-2023-26138\n\nAll drogon releases, including 1.9.14, are affected by two CRLF\ninjection vulnerabilities, which upstream has fixed but not released\nyet.\n\n- CVE-2023-26137: HTTP response splitting when untrusted input is used\n  to build header values in addHeader() and addCookie().\n  https://www.cve.org/CVERecord?id=CVE-2023-26137\n- CVE-2023-26138: CRLF injection when untrusted input is used to set\n  request headers in addHeader().\n  https://www.cve.org/CVERecord?id=CVE-2023-26138\n\nBackport the upstream fix, which rejects CR and LF characters in header\nand cookie values, both in responses and in requests sent by\nHttpClient.\n\nSigned-off-by: Dario Binacchi <dario.binacchi@amarulasolutions.com>\nSigned-off-by: Thomas Petazzoni <thomas.petazzoni@bootlin.com>"
+    },
+    "CVE-2023-26138": {
+      "89fcc7132a9b4f94d082fb9936b4335d28d91b43": "package/drogon: fix CVE-2023-26137 and CVE-2023-26138\n\nAll drogon releases, including 1.9.14, are affected by two CRLF\ninjection vulnerabilities, which upstream has fixed but not released\nyet.\n\n- CVE-2023-26137: HTTP response splitting when untrusted input is used\n  to build header values in addHeader() and addCookie().\n  https://www.cve.org/CVERecord?id=CVE-2023-26137\n- CVE-2023-26138: CRLF injection when untrusted input is used to set\n  request headers in addHeader().\n  https://www.cve.org/CVERecord?id=CVE-2023-26138\n\nBackport the upstream fix, which rejects CR and LF characters in header\nand cookie values, both in responses and in requests sent by\nHttpClient.\n\nSigned-off-by: Dario Binacchi <dario.binacchi@amarulasolutions.com>\nSigned-off-by: Thomas Petazzoni <thomas.petazzoni@bootlin.com>"
+    },
+    "GHSA-VFXR-HXQ9-9H35": {
+      "7a0fc179a01d18189bc64fdbf57b170709f600cb": "package/shairport-sync: security bump version to 5.6.2\n\nhttps://github.com/mikebrady/shairport-sync/releases/tag/5.6.2\nhttps://github.com/mikebrady/shairport-sync/releases/tag/5.6.1\n\nFixes GHSA-vfxr-hxq9-9h35:\nhttps://github.com/mikebrady/shairport-sync/security/advisories/GHSA-vfxr-hxq9-9h35\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Thomas Petazzoni <thomas.petazzoni@bootlin.com>"
+    },
     "CVE-2026-75900": {
       "b6a653e5fc31ab9e0e0b105583a693938b59711a": "package/swtpm: security bump version to 0.10.2\n\nCVE-2026-75900: Fix length check in SWTPM_NVRAM_CheckHeader()\nhttps://github.com/advisories/GHSA-gqrg-h59c-j4wj\n\nUpstream changelog:\nhttps://github.com/stefanberger/swtpm/releases/tag/v0.10.2\n\nSigned-off-by: Fiona Klute (othermo GmbH) <fiona.klute@gmx.de>\nReviewed-by: Jarkko Sakkinen <jarkko@kernel.org>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
     },

@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/superset",
   "vulnerabilities": {
+    "CVE-2026-111497": {
+      "86d54d9e7e19b53e381cb048041c2c172928f517": "fix(deps): bump brotli to 1.2.1 for scanners complaining about CVE-2026-111497 (#45743)\n\nCo-authored-by: Claude Opus 5.5 <noreply@anthropic.com>"
+    },
     "GHSA-8R5X-FM3F-WHWJ": {
       "44dbb00d6a9050988f1e7f564065aee2f806fc68": "fix(deps): bump handlebars to 4.7.10 (handlebars part of #45143)\n\nhandlebars <= 4.7.9 is affected by GHSA-8r5x-fm3f-whwj and\nGHSA-p8wg-vrv2-v86f (critical, JavaScript injection) and\nGHSA-xw65-4hp5-5hc7 (medium); 4.7.10 fixes them. The Handlebars chart\nplugin, the deck.gl tooltip renderer and Matrixify compile templates with it.\n\nTakes only the handlebars changes from the security-group bump #45143\n(8318398da4): the package ranges and the lockfile entries, including the\nnested 4.7.9 copy lerna pins. Its other updates are dev tooling or docs\n(concurrently, yeoman-generator 9 -> 10 for generator-superset,\nwebpack-dev-middleware) and conflict with 7.0's older generator-superset\ndependencies, so they are left out."
     },

@@ -5,6 +5,18 @@
       "834a0183f1a119cfc0f1375062d114719c3b13f4": "rustls-ffi: 0.15.6 -> 0.15.7\n\nThis addresses GHSA-rc3f-4j82-cmrg by updating rustls-ffi from 0.15.6 to\n0.15.7. See the upstream release notes for more information:\n\n  https://github.com/rustls/rustls-ffi/releases/tag/v0.15.7\n\n(cherry picked from commit 27938fe0b6bd551b99e5ed4e96bb25e2eae0a83b)",
       "27938fe0b6bd551b99e5ed4e96bb25e2eae0a83b": "rustls-ffi: 0.15.6 -> 0.15.7\n\nThis addresses GHSA-rc3f-4j82-cmrg by updating rustls-ffi from 0.15.6 to\n0.15.7. See the upstream release notes for more information:\n\n  https://github.com/rustls/rustls-ffi/releases/tag/v0.15.7"
     },
+    "CVE-2026-69260": {
+      "b5c49274a9fa13185aab596e52ac00423a209a49": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803."
+    },
+    "CVE-2026-69261": {
+      "b5c49274a9fa13185aab596e52ac00423a209a49": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803."
+    },
+    "CVE-2026-105802": {
+      "b5c49274a9fa13185aab596e52ac00423a209a49": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803."
+    },
+    "CVE-2026-105803": {
+      "b5c49274a9fa13185aab596e52ac00423a209a49": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803."
+    },
     "CVE-2026-111148": {
       "9c1dc6804e91bad4c21240b575f24c5e8f530bd9": "libsidplayfp: Apply fix for CVE-2026-111148 (#578062)",
       "88d62ddb8c79d7601c80f0efc614a483f9e75085": "libsidplayfp: Apply fix for CVE-2026-111148"

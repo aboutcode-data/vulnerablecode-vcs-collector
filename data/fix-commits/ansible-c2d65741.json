@@ -1,7 +1,18 @@
 {
   "vcs_url": "https://github.com/ansible/ansible",
   "vulnerabilities": {
+    "CVE-2026-84503": {
+      "7ecbc0b885ca31a461198ca0d9280452d5a87b7b": "git module - run_command cleanup (#87762) (#87763)\n\nCVE-2026-84503\n\n(cherry picked from commit 5186cff137018276877e2e6c24e669ec46098d2a)",
+      "5fc81bd6fc93eb1cc1088016ae8b1d6b58d42e96": "git module - run_command cleanup (#87762) (#87764)\n\nCVE-2026-84503\n\n(cherry picked from commit 5186cff137018276877e2e6c24e669ec46098d2a)",
+      "221e2995cf6b8d6424b4db5583ce409f3ab8b342": "git module - run_command cleanup (#87762) (#87765)\n\nCVE-2026-84503\n\n(cherry picked from commit 5186cff137018276877e2e6c24e669ec46098d2a)",
+      "31d3c7e77b3c75b6e67d21d3626f7a6a83d5eeac": "git module - run_command cleanup (#87762) (#87766)\n\nCVE-2026-84503\n\n(cherry picked from commit 5186cff137018276877e2e6c24e669ec46098d2a)",
+      "5186cff137018276877e2e6c24e669ec46098d2a": "git module - run_command cleanup (#87762)\n\nCVE-2026-84503"
+    },
     "CVE-2026-105929": {
+      "34bffe08337e4cb19cba80580d9d86754a3f0287": "ansible-galaxy - Validate the role name  (#87749) (#87756)\n\n* Validate the role name before creating or modifying the installation path\n\nFixes CVE-2026-105929\nSimplify by making any unsafe role name an error instead of guarding against modifying/installing it\n\n* handle possible diff error messages\n\n---------\n\n\n(cherry picked from commit 9795c1b56a67138e807404d97b3e4b4d33098614)\n\nCo-authored-by: Sloane Hertel <19572925+s-hertel@users.noreply.github.com>",
+      "4abc2cff79d4768d31e01577828741e28f20c41e": "ansible-galaxy - Validate the role name  (#87749) (#87757)\n\n* Validate the role name before creating or modifying the installation path\n\nFixes CVE-2026-105929\nSimplify by making any unsafe role name an error instead of guarding against modifying/installing it\n\n* handle possible diff error messages\n\n---------\n\n\n(cherry picked from commit 9795c1b56a67138e807404d97b3e4b4d33098614)\n\nCo-authored-by: Sloane Hertel <19572925+s-hertel@users.noreply.github.com>",
+      "2f71d00f5b416018fc39b67e3ad9b449efab6ffb": "ansible-galaxy - Validate the role name  (#87749) (#87758)\n\n* Validate the role name before creating or modifying the installation path\n\nFixes CVE-2026-105929\nSimplify by making any unsafe role name an error instead of guarding against modifying/installing it\n\n* handle possible diff error messages\n\n---------\n\n\n(cherry picked from commit 9795c1b56a67138e807404d97b3e4b4d33098614)\n\nCo-authored-by: Sloane Hertel <19572925+s-hertel@users.noreply.github.com>",
+      "267a44d25c0f2b9f8a5b8b30b1a6b98c475324a6": "ansible-galaxy - Validate the role name  (#87749) (#87759)\n\n* Validate the role name before creating or modifying the installation path\n\nFixes CVE-2026-105929\nSimplify by making any unsafe role name an error instead of guarding against modifying/installing it\n\n* handle possible diff error messages\n\n---------\n\n\n(cherry picked from commit 9795c1b56a67138e807404d97b3e4b4d33098614)\n\nCo-authored-by: Sloane Hertel <19572925+s-hertel@users.noreply.github.com>",
       "9795c1b56a67138e807404d97b3e4b4d33098614": "ansible-galaxy - Validate the role name  (#87749)\n\n* Validate the role name before creating or modifying the installation path\n\nFixes CVE-2026-105929\nSimplify by making any unsafe role name an error instead of guarding against modifying/installing it\n\n* handle possible diff error messages\n\n---------\n\nCo-authored-by: Sloane Hertel <19572925+s-hertel@users.noreply.github.com>"
     },
     "CVE-2026-11332": {
