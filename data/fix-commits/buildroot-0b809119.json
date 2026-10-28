@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://github.com/buildroot/buildroot",
   "vulnerabilities": {
+    "CVE-2026-102486": {
+      "7af7e73ca4b485ba77105d745feaae4fe93cb45d": "package/ntpsec: security bump version to 1.2.6\n\n- bump version to 1.2.6 (for details see [1])\n- fixes CVE-2026-102486, CVE-2026-102483, CVE-2026-102484, CVE-2026-102485\n\n[1] https://lists.ntpsec.org/pipermail/devel/2026-October/011062.html\n\nSigned-off-by: Peter Seiderer <ps.report@gmx.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-102483": {
+      "7af7e73ca4b485ba77105d745feaae4fe93cb45d": "package/ntpsec: security bump version to 1.2.6\n\n- bump version to 1.2.6 (for details see [1])\n- fixes CVE-2026-102486, CVE-2026-102483, CVE-2026-102484, CVE-2026-102485\n\n[1] https://lists.ntpsec.org/pipermail/devel/2026-October/011062.html\n\nSigned-off-by: Peter Seiderer <ps.report@gmx.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-102484": {
+      "7af7e73ca4b485ba77105d745feaae4fe93cb45d": "package/ntpsec: security bump version to 1.2.6\n\n- bump version to 1.2.6 (for details see [1])\n- fixes CVE-2026-102486, CVE-2026-102483, CVE-2026-102484, CVE-2026-102485\n\n[1] https://lists.ntpsec.org/pipermail/devel/2026-October/011062.html\n\nSigned-off-by: Peter Seiderer <ps.report@gmx.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-102485": {
+      "7af7e73ca4b485ba77105d745feaae4fe93cb45d": "package/ntpsec: security bump version to 1.2.6\n\n- bump version to 1.2.6 (for details see [1])\n- fixes CVE-2026-102486, CVE-2026-102483, CVE-2026-102484, CVE-2026-102485\n\n[1] https://lists.ntpsec.org/pipermail/devel/2026-October/011062.html\n\nSigned-off-by: Peter Seiderer <ps.report@gmx.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
     "CVE-2026-115207": {
       "302f5b6a2fc54ff49a6eb90b6daa24f39c8fec43": "package/patch: security bump version to 2.8.1\n\n- bump version to 2.8.1 (see [1] and [2] for details)\n- fixes CVE-2026-115207\n- remove 0001-Fix-segfault-with-mangled-rename-patch.patch\n  (from upstream, see [3])\n- remove 0002-Allow-input-files-to-be-missing-for-ed-style-patches.patch\n  (from upstream, see [4])\n- remove 0003-Fix-arbitrary-command-execution-in-ed-style-patches-.patch\n  (from upstream, see [5])\n- remove 0004-Invoke-ed-directly-instead-of-using-the-shell.patch\n  (from upstream, see [6])\n- remove 0005-Don-t-follow-symlinks-unless--follow-symlinks-is-given.patch\n  (from upstream, see [7])\n- remove 0006-Fix-swapping-fake-lines-in-pch-swap.patch\n  (from upstream, see [8])\n- removed 0007-Avoid-invalid-memory-access-in-context-format-diffs.patch\n  (from upstream, see [9])\n\n[1] https://lists.gnu.org/archive/html/bug-patch/2025-03/msg00003.html\n[2] https://lists.gnu.org/archive/html/bug-patch/2026-10/msg00014.html\n[3] https://cgit.git.savannah.gnu.org/cgit/patch.git/commit/?id=f290f48a621867084884bfff87f8093c15195e6a\n[4] https://cgit.git.savannah.gnu.org/cgit/patch.git/commit/?id=b5a91a01e5d0897facdd0f49d64b76b0f02b43e1\n[5] https://cgit.git.savannah.gnu.org/cgit/patch.git/commit/?id=123eaff0d5d1aebe128295959435b9ca5909c26d\n[6] https://cgit.git.savannah.gnu.org/cgit/patch.git/commit/?id=3fcd042d26d70856e826a42b5f93dc4854d80bf0\n[7] https://cgit.git.savannah.gnu.org/cgit/patch.git/commit/?id=dce4683cbbe107a95f1f0d45fabc304acfb5d71a\n[8] https://cgit.git.savannah.gnu.org/cgit/patch.git/commit/?id=9c986353e420ead6e706262bf204d6e03322c300\n[9] https://cgit.git.savannah.gnu.org/cgit/patch.git/commit/?id=15b158db3ae11cb835f2eb8d2eb48e09d1a4af48\n\nSigned-off-by: Peter Seiderer <ps.report@gmx.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
     },

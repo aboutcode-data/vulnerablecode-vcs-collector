@@ -1,6 +1,14 @@
 {
   "vcs_url": "https://github.com/angular/angular-cli",
   "vulnerabilities": {
+    "CVE-2026-76844": {
+      "3fc679987f0414a2c490d1a35ffba3f945363c98": "fix(@angular-devkit/build-angular): update `webpack-dev-middleware` to `7.4.6`\n\nUpdate `webpack-dev-middleware` to 7.4.6 to address GHSA-g84c-rxfj-3j2c / CVE-2026-76844.\n\nThe advisory lists versions below 7.4.5 as affected but names 7.4.6 as the first patched\nrelease, which contains the fix, so 7.4.5 is updated as well.",
+      "892f3ccdfc4dbe0c65ef70760d9018e14e174e41": "fix(@angular-devkit/build-angular): update `webpack-dev-middleware` to `7.4.6`\n\nUpdate `webpack-dev-middleware` to 7.4.6 to address GHSA-g84c-rxfj-3j2c / CVE-2026-76844.\n\nThe advisory lists versions below 7.4.5 as affected but names 7.4.6 as the first patched\nrelease, which contains the fix, so 7.4.5 is updated as well."
+    },
+    "GHSA-G84C-RXFJ-3J2C": {
+      "3fc679987f0414a2c490d1a35ffba3f945363c98": "fix(@angular-devkit/build-angular): update `webpack-dev-middleware` to `7.4.6`\n\nUpdate `webpack-dev-middleware` to 7.4.6 to address GHSA-g84c-rxfj-3j2c / CVE-2026-76844.\n\nThe advisory lists versions below 7.4.5 as affected but names 7.4.6 as the first patched\nrelease, which contains the fix, so 7.4.5 is updated as well.",
+      "892f3ccdfc4dbe0c65ef70760d9018e14e174e41": "fix(@angular-devkit/build-angular): update `webpack-dev-middleware` to `7.4.6`\n\nUpdate `webpack-dev-middleware` to 7.4.6 to address GHSA-g84c-rxfj-3j2c / CVE-2026-76844.\n\nThe advisory lists versions below 7.4.5 as affected but names 7.4.6 as the first patched\nrelease, which contains the fix, so 7.4.5 is updated as well."
+    },
     "CVE-2026-109869": {
       "aa2ecc154e7fb591afc2e1789a4094644828f246": "fix(@angular/build): bump undici to 7.30.1\n\nBumps undici to 7.30.1 to address GHSA-xjj6-f33q-929c / CVE-2026-109869,\nGHSA-4qv8-2p9j-2685 / CVE-2026-109924 and GHSA-f72v-6w45-q472 / CVE-2026-109841.\n\nCloses #34518",
       "d6ce6ec214ae35a91bdc6c03fc5697f0a69c10bc": "fix(@angular-devkit/build-angular): bump undici to 7.30.1\n\nBumps undici to 7.30.1 to address GHSA-xjj6-f33q-929c / CVE-2026-109869,\nGHSA-4qv8-2p9j-2685 / CVE-2026-109924 and GHSA-f72v-6w45-q472 / CVE-2026-109841.\n\nRefs #34518"

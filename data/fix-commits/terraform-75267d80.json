@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/hashicorp/terraform",
   "vulnerabilities": {
+    "CVE-2026-116587": {
+      "51ceb852bd7a2f93c3dca1c82e1b4cb094d1aa97": "Backport/v1.17/39462 (#39463)\n\n* Address reported security vulnerabilities in dependencies.\n\nGO-2026-6860\nGO-2026-6866\ncve-2026-116587\n\n* Syncdeps",
+      "6ebd7d936bc0ada97a9aa48731a7634acfcc0d66": "Address reported security vulnerabilities in dependencies. (#39462)\n\nAddress reported security vulnerabilities in dependencies.\n\nGO-2026-6860\nGO-2026-6866\ncve-2026-116587"
+    },
     "GHSA-W8RR-5GCM-PP58": {
       "e44f9c508cde8c00c54501d2a0c32fad923f32c9": "Bump go.opentelemetry.io/contrib/exporters/autoexport to address reported vulnerability (#38367)\n\n* chore: go get go.opentelemetry.io/contrib/exporters/autoexport@v0.68.0 & make syncdeps\n\nThis causes go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp indirect dependency to reach v1.43.0, fixing https://github.com/open-telemetry/opentelemetry-go/security/advisories/GHSA-w8rr-5gcm-pp58\n\n* chore: make protobuf\n\n* Address grpc errors"
     },
