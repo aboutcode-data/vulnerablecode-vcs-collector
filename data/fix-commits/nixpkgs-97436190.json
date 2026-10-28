@@ -1,6 +1,16 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "GHSA-99CJ-7HG9-MP4M": {
+      "91ec4d7d18925d7bf855b85e80929ddc5af7a749": "[Backport release-26.05] edk2: Add patch for GHSA-99cj-7hg9-mp4m (#579841)",
+      "a1eb2155151a4982eefe922ad93f60e94d15f3ff": "edk2: Add patch for GHSA-99cj-7hg9-mp4m (#579840)",
+      "f22cb1b10919a90978ca6014805af84fcb2a8560": "edk2: Add patch for GHSA-99cj-7hg9-mp4m\n\nAlso known as CVE-2026-97631.\n\n(cherry picked from commit b6863773ddd21f52f1e511017b21602f4d503b21)",
+      "b6863773ddd21f52f1e511017b21602f4d503b21": "edk2: Add patch for GHSA-99cj-7hg9-mp4m\n\nAlso known as CVE-2026-97631."
+    },
+    "CVE-2026-97631": {
+      "f22cb1b10919a90978ca6014805af84fcb2a8560": "edk2: Add patch for GHSA-99cj-7hg9-mp4m\n\nAlso known as CVE-2026-97631.\n\n(cherry picked from commit b6863773ddd21f52f1e511017b21602f4d503b21)",
+      "b6863773ddd21f52f1e511017b21602f4d503b21": "edk2: Add patch for GHSA-99cj-7hg9-mp4m\n\nAlso known as CVE-2026-97631."
+    },
     "GHSA-RC3F-4J82-CMRG": {
       "834a0183f1a119cfc0f1375062d114719c3b13f4": "rustls-ffi: 0.15.6 -> 0.15.7\n\nThis addresses GHSA-rc3f-4j82-cmrg by updating rustls-ffi from 0.15.6 to\n0.15.7. See the upstream release notes for more information:\n\n  https://github.com/rustls/rustls-ffi/releases/tag/v0.15.7\n\n(cherry picked from commit 27938fe0b6bd551b99e5ed4e96bb25e2eae0a83b)",
       "27938fe0b6bd551b99e5ed4e96bb25e2eae0a83b": "rustls-ffi: 0.15.6 -> 0.15.7\n\nThis addresses GHSA-rc3f-4j82-cmrg by updating rustls-ffi from 0.15.6 to\n0.15.7. See the upstream release notes for more information:\n\n  https://github.com/rustls/rustls-ffi/releases/tag/v0.15.7"
