@@ -1,6 +1,21 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-111497": {
+      "4acc3b44c8ea21ed4a907542c4dd2850d502dbd8": "sys-firmware/edk2-bin: Bump Brotli, OpenSSL, and MS SBO for 202408\n\nThe versions are Brotli 1.1.1, OpenSSL 3.0.22, MS SBO 1.7.1. This addresses\nBrotli CVE-2026-111497.\n\nStraight to stable because of the vulnerability. I haven't thoroughly tested\nthe new builds, but I have at least checked that each can reach the EDK2 setup\nscreen under QEMU.\n\nBug: https://bugs.gentoo.org/984844\nSigned-off-by: James Le Cuirot <chewi@gentoo.org>",
+      "55ad8bbf0ac48e5c4b29146cbee53d780b50e429": "sys-firmware/edk2-bin: Bump Brotli, OpenSSL, and MS SBO for 202608\n\nThe versions are Brotli 1.2.1, OpenSSL 3.5.9, MS SBO 1.7.1. This addresses\nBrotli CVE-2026-111497.\n\nBug: https://bugs.gentoo.org/984844\nSigned-off-by: James Le Cuirot <chewi@gentoo.org>",
+      "bd6715832ea3a272cf0779f102bd33cedb96ba8f": "sys-firmware/edk2: Bump Brotli, OpenSSL, and MS SBO for 202608\n\nThe versions are Brotli 1.2.1, OpenSSL 3.5.9, MS SBO 1.7.1. This addresses\nBrotli CVE-2026-111497.\n\nBug: https://bugs.gentoo.org/984844\nSigned-off-by: James Le Cuirot <chewi@gentoo.org>",
+      "46a91d123634f710f84f77656db6448fce105df6": "app-emulation/qemu: Drop old 9.2.4-r1\n\nThis depends on edk2-bin-202202, which we'd like to drop due to CVE-2026-111497.\n\nBug: https://bugs.gentoo.org/984844\nSigned-off-by: James Le Cuirot <chewi@gentoo.org>"
+    },
+    "CVE-2026-107348": {
+      "26bd47e83b28a7eb90482ac17420035a294d4058": "dev-db/pgbouncer: add 1.26.1\n\nFixes CVE-2026-107348, CVE-2026-107349 and CVE-2026-107350, and builds\nagainst OpenSSL 4 without patches.\n\nMove virtual/pandoc from RDEPEND to BDEPEND, as it is only used to\ngenerate the man pages, and add the missing virtual/pkgconfig.\n\nBug: https://bugs.gentoo.org/973115\nSigned-off-by: David Seifert <soap@gentoo.org>"
+    },
+    "CVE-2026-107349": {
+      "26bd47e83b28a7eb90482ac17420035a294d4058": "dev-db/pgbouncer: add 1.26.1\n\nFixes CVE-2026-107348, CVE-2026-107349 and CVE-2026-107350, and builds\nagainst OpenSSL 4 without patches.\n\nMove virtual/pandoc from RDEPEND to BDEPEND, as it is only used to\ngenerate the man pages, and add the missing virtual/pkgconfig.\n\nBug: https://bugs.gentoo.org/973115\nSigned-off-by: David Seifert <soap@gentoo.org>"
+    },
+    "CVE-2026-107350": {
+      "26bd47e83b28a7eb90482ac17420035a294d4058": "dev-db/pgbouncer: add 1.26.1\n\nFixes CVE-2026-107348, CVE-2026-107349 and CVE-2026-107350, and builds\nagainst OpenSSL 4 without patches.\n\nMove virtual/pandoc from RDEPEND to BDEPEND, as it is only used to\ngenerate the man pages, and add the missing virtual/pkgconfig.\n\nBug: https://bugs.gentoo.org/973115\nSigned-off-by: David Seifert <soap@gentoo.org>"
+    },
     "CVE-2026-107891": {
       "8ee458f3b9d9c8f9358a2e7276cb0091d2d6acb1": "sys-libs/musl: fix CVE-2026-107891\n\nBug: https://bugs.gentoo.org/984682\nSigned-off-by: Sam James <sam@gentoo.org>"
     },
