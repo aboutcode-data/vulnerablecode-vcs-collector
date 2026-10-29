@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-101272": {
+      "85e051eb893ef0169e087f502aa3bbaf68148080": "pretix: 2026.8.0 -> 2026.9.0\n\nhttps://pretix.eu/about/en/blog/20261028-release-2026-8-1/\nhttps://pretix.eu/about/en/blog/20261029-release-2026-9-0/\nhttps://github.com/pretix/pretix/compare/v2026.8.0...v2026.9.0\n\nFixes: CVE-2026-101272, CVE-2026-101273, CVE-2026-101274",
+      "df0ece706dd83dd84eab586b8672b61fa6e9369f": "pretix: backport security fixes up until 2026.6.4\n\nhttps://pretix.eu/about/en/blog/20261028-release-2026-8-1/\n\nFixes: CVE-2026-101272, CVE-2026-101273, CVE-2026-101274"
+    },
+    "CVE-2026-101273": {
+      "85e051eb893ef0169e087f502aa3bbaf68148080": "pretix: 2026.8.0 -> 2026.9.0\n\nhttps://pretix.eu/about/en/blog/20261028-release-2026-8-1/\nhttps://pretix.eu/about/en/blog/20261029-release-2026-9-0/\nhttps://github.com/pretix/pretix/compare/v2026.8.0...v2026.9.0\n\nFixes: CVE-2026-101272, CVE-2026-101273, CVE-2026-101274",
+      "df0ece706dd83dd84eab586b8672b61fa6e9369f": "pretix: backport security fixes up until 2026.6.4\n\nhttps://pretix.eu/about/en/blog/20261028-release-2026-8-1/\n\nFixes: CVE-2026-101272, CVE-2026-101273, CVE-2026-101274"
+    },
+    "CVE-2026-101274": {
+      "85e051eb893ef0169e087f502aa3bbaf68148080": "pretix: 2026.8.0 -> 2026.9.0\n\nhttps://pretix.eu/about/en/blog/20261028-release-2026-8-1/\nhttps://pretix.eu/about/en/blog/20261029-release-2026-9-0/\nhttps://github.com/pretix/pretix/compare/v2026.8.0...v2026.9.0\n\nFixes: CVE-2026-101272, CVE-2026-101273, CVE-2026-101274",
+      "df0ece706dd83dd84eab586b8672b61fa6e9369f": "pretix: backport security fixes up until 2026.6.4\n\nhttps://pretix.eu/about/en/blog/20261028-release-2026-8-1/\n\nFixes: CVE-2026-101272, CVE-2026-101273, CVE-2026-101274"
+    },
     "CVE-2026-117612": {
       "f9d7687569c1e69cb27b309ab9f2cab523549e11": "jenkins: 2.580.1 -> 2.580.2\n\nhttps://www.jenkins.io/changelog-stable/#v2.580.2\n\nFixes 15 CVEs:\n\n- CVE-2026-117612\n- CVE-2026-117613\n- CVE-2026-117614\n- CVE-2026-117615\n- CVE-2026-117616\n- CVE-2026-117617\n- CVE-2026-117621\n- CVE-2026-117622\n- CVE-2026-117623\n- CVE-2026-117618\n- CVE-2026-117619\n- CVE-2026-117620\n- CVE-2026-117624\n- CVE-2026-117625\n- CVE-2026-117626\n\nSigned-off-by: Felix Singer <felixsinger@posteo.net>\n(cherry picked from commit 37209ebf4020c1cb63e6ad306f2eda5a5ef8f120)",
       "37209ebf4020c1cb63e6ad306f2eda5a5ef8f120": "jenkins: 2.580.1 -> 2.580.2\n\nhttps://www.jenkins.io/changelog-stable/#v2.580.2\n\nFixes 15 CVEs:\n\n- CVE-2026-117612\n- CVE-2026-117613\n- CVE-2026-117614\n- CVE-2026-117615\n- CVE-2026-117616\n- CVE-2026-117617\n- CVE-2026-117621\n- CVE-2026-117622\n- CVE-2026-117623\n- CVE-2026-117618\n- CVE-2026-117619\n- CVE-2026-117620\n- CVE-2026-117624\n- CVE-2026-117625\n- CVE-2026-117626\n\nSigned-off-by: Felix Singer <felixsinger@posteo.net>"

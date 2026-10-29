@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://android.googlesource.com/platform/external/expat",
   "vulnerabilities": {
+    "CVE-2026-117610": {
+      "2480a0520fee623a8f7c3f038ff9fb491105472c": "Merge pull request #1444 from libexpat/nonfinal-empty-subparser-parse\n\n[CVE-2026-117610] lib: Fix initial non-final empty subparser call with a handler"
+    },
+    "CVE-2026-118370": {
+      "c8c6d89617e7408235b160d14707de4ca9e40be7": "Merge pull request #1450 from libexpat/storeatts-attindex-integer-overflow\n\n[CVE-2026-118370] lib: Protect `attIndex` and `nPrefixes` in `storeAtts` from signed integer overflow"
+    },
     "CVE-2026-113351": {
       "d8f31e647a4d1eda088e89354f4769b0dad303d3": "Merge pull request #1431 from libexpat/fix-parser-reset\n\n[CVE-2026-113351] Fix parser reset"
     },
