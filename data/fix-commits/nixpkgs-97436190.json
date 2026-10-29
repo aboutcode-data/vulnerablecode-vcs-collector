@@ -1,6 +1,32 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2018-1000035": {
+      "91109cc6bbe73e5f2bafebb9a673a3d58248e708": "unzip: add patch for CVE-2018-1000035\n\nHeap overflow in the password prompt (UzpPassword, fileio.c) for\npassword-protected archives. Patch from Debian (6.0-22+), originally\nfrom SUSE: https://bugs.debian.org/889838\n\nAssisted-by: Claude Code (Claude Opus 5.5)\n(cherry picked from commit e11fafc72bd7fd92cc63d3b60f6447cf9c522844)",
+      "bd5aa500b75e4ee074f5ff826cb412d23216b40d": "unzip: add patch for CVE-2018-1000035 (#579754)",
+      "e11fafc72bd7fd92cc63d3b60f6447cf9c522844": "unzip: add patch for CVE-2018-1000035\n\nHeap overflow in the password prompt (UzpPassword, fileio.c) for\npassword-protected archives. Patch from Debian (6.0-22+), originally\nfrom SUSE: https://bugs.debian.org/889838\n\nAssisted-by: Claude Code (Claude Opus 5.5)"
+    },
+    "CVE-2026-114583": {
+      "f911d6929fd9eeb86bec8e1040d5d287c5ab59bf": "python311: 3.11.17 -> 3.11.18\n\nhttps://docs.python.org/release/3.11.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557",
+      "240b38717c975c84f0832bd9fb58b4e9e87923b5": "python312: 3.12.15 -> 3.12.16\n\nhttps://docs.python.org/release/3.12.16/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
+      "f0d8eff3cd4427c0fb742ca44f8e6ceeb6347193": "python313: 3.13.17 -> 3.13.18\n\nhttps://docs.python.org/release/3.13.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
+      "a52abe1dc98ea97036a464f5e3f9df7632b46c6b": "python314: 3.14.8 -> 3.14.10\n\nhttps://docs.python.org/release/3.14.10/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345"
+    },
+    "CVE-2026-115557": {
+      "f911d6929fd9eeb86bec8e1040d5d287c5ab59bf": "python311: 3.11.17 -> 3.11.18\n\nhttps://docs.python.org/release/3.11.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557",
+      "240b38717c975c84f0832bd9fb58b4e9e87923b5": "python312: 3.12.15 -> 3.12.16\n\nhttps://docs.python.org/release/3.12.16/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
+      "f0d8eff3cd4427c0fb742ca44f8e6ceeb6347193": "python313: 3.13.17 -> 3.13.18\n\nhttps://docs.python.org/release/3.13.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
+      "6d4887a81cc86dd3eb986af79fa5292f99da282d": "python315: 3.15.0 -> 3.15.2\n\nhttps://docs.python.org/release/3.15.2/whatsnew/changelog.html\n\nFixes: CVE-2026-1114583, CVE-2026-115557",
+      "a52abe1dc98ea97036a464f5e3f9df7632b46c6b": "python314: 3.14.8 -> 3.14.10\n\nhttps://docs.python.org/release/3.14.10/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345"
+    },
+    "CVE-2026-12345": {
+      "240b38717c975c84f0832bd9fb58b4e9e87923b5": "python312: 3.12.15 -> 3.12.16\n\nhttps://docs.python.org/release/3.12.16/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
+      "f0d8eff3cd4427c0fb742ca44f8e6ceeb6347193": "python313: 3.13.17 -> 3.13.18\n\nhttps://docs.python.org/release/3.13.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
+      "a52abe1dc98ea97036a464f5e3f9df7632b46c6b": "python314: 3.14.8 -> 3.14.10\n\nhttps://docs.python.org/release/3.14.10/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345"
+    },
+    "CVE-2026-1114583": {
+      "6d4887a81cc86dd3eb986af79fa5292f99da282d": "python315: 3.15.0 -> 3.15.2\n\nhttps://docs.python.org/release/3.15.2/whatsnew/changelog.html\n\nFixes: CVE-2026-1114583, CVE-2026-115557"
+    },
     "GHSA-99CJ-7HG9-MP4M": {
       "91ec4d7d18925d7bf855b85e80929ddc5af7a749": "[Backport release-26.05] edk2: Add patch for GHSA-99cj-7hg9-mp4m (#579841)",
       "a1eb2155151a4982eefe922ad93f60e94d15f3ff": "edk2: Add patch for GHSA-99cj-7hg9-mp4m (#579840)",
