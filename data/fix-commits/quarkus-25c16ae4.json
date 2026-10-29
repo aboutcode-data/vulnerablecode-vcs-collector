@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/quarkusio/quarkus",
   "vulnerabilities": {
+    "CVE-2026-111497": {
+      "57ec209f23a495edbff5585e8374cea3a86b9cba": "Update Brotli4J to 1.24.0\n\nBrotli4J 1.23.0 bundles the native Brotli 1.2.0 decoder, which is\naffected by CVE-2026-111497. Brotli4J 1.24.0 bundles Brotli 1.2.1.\n\nSigned-off-by: \uc774\ucc3d\ubbfc <92606611+EeeasyCode@users.noreply.github.com>"
+    },
     "CVE-2026-107314": {
       "2389069c6e2dcaf398b1e326f7cf918903c86ba7": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315\n\n(cherry picked from commit 36304710765c8394f3eca5438e764028b6d01d3f)",
       "36304710765c8394f3eca5438e764028b6d01d3f": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315"
