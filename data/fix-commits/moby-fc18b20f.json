@@ -2,9 +2,11 @@
   "vcs_url": "https://github.com/moby/moby",
   "vulnerabilities": {
     "CVE-2026-116591": {
+      "7aadb24402397b1dcd7d50f758db206408630e20": "vendor: github.com/klauspost/compress v1.20.2\n\nincludes a fix for CVE-2026-116591 / [GHSA-fpmh-frq8-7rj8]\n\nfull diff: https://github.com/klauspost/compress/compare/v1.20.1...v1.20.2\n\n[GHSA-fpmh-frq8-7rj8]: https://github.com/klauspost/compress/security/advisories/GHSA-fpmh-frq8-7rj8\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>\n(cherry picked from commit 8e8a8a575697550919fdb9183cddcf86cb0daf22)\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>",
       "8e8a8a575697550919fdb9183cddcf86cb0daf22": "vendor: github.com/klauspost/compress v1.20.2\n\nincludes a fix for CVE-2026-116591 / [GHSA-fpmh-frq8-7rj8]\n\nfull diff: https://github.com/klauspost/compress/compare/v1.20.1...v1.20.2\n\n[GHSA-fpmh-frq8-7rj8]: https://github.com/klauspost/compress/security/advisories/GHSA-fpmh-frq8-7rj8\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
     },
     "GHSA-FPMH-FRQ8-7RJ8": {
+      "7aadb24402397b1dcd7d50f758db206408630e20": "vendor: github.com/klauspost/compress v1.20.2\n\nincludes a fix for CVE-2026-116591 / [GHSA-fpmh-frq8-7rj8]\n\nfull diff: https://github.com/klauspost/compress/compare/v1.20.1...v1.20.2\n\n[GHSA-fpmh-frq8-7rj8]: https://github.com/klauspost/compress/security/advisories/GHSA-fpmh-frq8-7rj8\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>\n(cherry picked from commit 8e8a8a575697550919fdb9183cddcf86cb0daf22)\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>",
       "8e8a8a575697550919fdb9183cddcf86cb0daf22": "vendor: github.com/klauspost/compress v1.20.2\n\nincludes a fix for CVE-2026-116591 / [GHSA-fpmh-frq8-7rj8]\n\nfull diff: https://github.com/klauspost/compress/compare/v1.20.1...v1.20.2\n\n[GHSA-fpmh-frq8-7rj8]: https://github.com/klauspost/compress/security/advisories/GHSA-fpmh-frq8-7rj8\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
     },
     "CVE-2026-78661": {

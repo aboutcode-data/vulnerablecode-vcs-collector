@@ -1,6 +1,56 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-117609": {
+      "0e2b3362bb9df07c76a5f0205e6b6be37f4a2213": "rtl433: add fix for CVE-2026-117609 (#580565)",
+      "6f363615a5f6f1c7039d29c2e20706ede2dedf61": "rtl_433: add patch for CVE-2026-117609"
+    },
+    "CVE-2026-100105": {
+      "2681299f07334e0849b59dd7f213be0c0a27ea06": "[26.05] grafana: 13.0.11 -> 13.0.12; fixes CVE-2026-100105, CVE-2026-88858, CVE-2026-88967 (#580545)",
+      "b0135405f7335dcf061dc6779e242b85b1ca7a04": "grafana: 13.0.11 -> 13.0.12; fixes CVE-2026-100105, CVE-2026-88858, CVE-2026-88967\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.0.12",
+      "ae76e5f01c6761983e94d23086a191624907e561": "grafana: 13.2.4 -> 13.3.0\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.3.0\n\nFix CVE-2026-100105, CVE-2026-13719, CVE-2026-13720, CVE-2026-15577,\nCVE-2026-33374, CVE-2026-81841, CVE-2026-88858, CVE-2026-88967,\nCVE-2026-93294, CVE-2026-95502.,"
+    },
+    "CVE-2026-88858": {
+      "2681299f07334e0849b59dd7f213be0c0a27ea06": "[26.05] grafana: 13.0.11 -> 13.0.12; fixes CVE-2026-100105, CVE-2026-88858, CVE-2026-88967 (#580545)",
+      "b0135405f7335dcf061dc6779e242b85b1ca7a04": "grafana: 13.0.11 -> 13.0.12; fixes CVE-2026-100105, CVE-2026-88858, CVE-2026-88967\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.0.12",
+      "ae76e5f01c6761983e94d23086a191624907e561": "grafana: 13.2.4 -> 13.3.0\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.3.0\n\nFix CVE-2026-100105, CVE-2026-13719, CVE-2026-13720, CVE-2026-15577,\nCVE-2026-33374, CVE-2026-81841, CVE-2026-88858, CVE-2026-88967,\nCVE-2026-93294, CVE-2026-95502.,"
+    },
+    "CVE-2026-88967": {
+      "2681299f07334e0849b59dd7f213be0c0a27ea06": "[26.05] grafana: 13.0.11 -> 13.0.12; fixes CVE-2026-100105, CVE-2026-88858, CVE-2026-88967 (#580545)",
+      "b0135405f7335dcf061dc6779e242b85b1ca7a04": "grafana: 13.0.11 -> 13.0.12; fixes CVE-2026-100105, CVE-2026-88858, CVE-2026-88967\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.0.12",
+      "ae76e5f01c6761983e94d23086a191624907e561": "grafana: 13.2.4 -> 13.3.0\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.3.0\n\nFix CVE-2026-100105, CVE-2026-13719, CVE-2026-13720, CVE-2026-15577,\nCVE-2026-33374, CVE-2026-81841, CVE-2026-88858, CVE-2026-88967,\nCVE-2026-93294, CVE-2026-95502.,"
+    },
+    "GHSA-288H-6J8H-6X5J": {
+      "ec286b92cc8044f5fb65a1a6ed6201bcc78820dc": "mastodon: 4.7.3 -> 4.7.4\n\nchangelog: https://github.com/mastodon/mastodon/releases/tag/v4.7.4\n\nAddresses GHSA-288h-6j8h-6x5j."
+    },
+    "CVE-2026-13719": {
+      "ae76e5f01c6761983e94d23086a191624907e561": "grafana: 13.2.4 -> 13.3.0\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.3.0\n\nFix CVE-2026-100105, CVE-2026-13719, CVE-2026-13720, CVE-2026-15577,\nCVE-2026-33374, CVE-2026-81841, CVE-2026-88858, CVE-2026-88967,\nCVE-2026-93294, CVE-2026-95502.,",
+      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
+    },
+    "CVE-2026-13720": {
+      "ae76e5f01c6761983e94d23086a191624907e561": "grafana: 13.2.4 -> 13.3.0\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.3.0\n\nFix CVE-2026-100105, CVE-2026-13719, CVE-2026-13720, CVE-2026-15577,\nCVE-2026-33374, CVE-2026-81841, CVE-2026-88858, CVE-2026-88967,\nCVE-2026-93294, CVE-2026-95502.,",
+      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
+    },
+    "CVE-2026-15577": {
+      "ae76e5f01c6761983e94d23086a191624907e561": "grafana: 13.2.4 -> 13.3.0\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.3.0\n\nFix CVE-2026-100105, CVE-2026-13719, CVE-2026-13720, CVE-2026-15577,\nCVE-2026-33374, CVE-2026-81841, CVE-2026-88858, CVE-2026-88967,\nCVE-2026-93294, CVE-2026-95502.,",
+      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
+    },
+    "CVE-2026-33374": {
+      "ae76e5f01c6761983e94d23086a191624907e561": "grafana: 13.2.4 -> 13.3.0\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.3.0\n\nFix CVE-2026-100105, CVE-2026-13719, CVE-2026-13720, CVE-2026-15577,\nCVE-2026-33374, CVE-2026-81841, CVE-2026-88858, CVE-2026-88967,\nCVE-2026-93294, CVE-2026-95502.,",
+      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
+    },
+    "CVE-2026-81841": {
+      "ae76e5f01c6761983e94d23086a191624907e561": "grafana: 13.2.4 -> 13.3.0\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.3.0\n\nFix CVE-2026-100105, CVE-2026-13719, CVE-2026-13720, CVE-2026-15577,\nCVE-2026-33374, CVE-2026-81841, CVE-2026-88858, CVE-2026-88967,\nCVE-2026-93294, CVE-2026-95502.,",
+      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
+    },
+    "CVE-2026-93294": {
+      "ae76e5f01c6761983e94d23086a191624907e561": "grafana: 13.2.4 -> 13.3.0\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.3.0\n\nFix CVE-2026-100105, CVE-2026-13719, CVE-2026-13720, CVE-2026-15577,\nCVE-2026-33374, CVE-2026-81841, CVE-2026-88858, CVE-2026-88967,\nCVE-2026-93294, CVE-2026-95502.,",
+      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
+    },
+    "CVE-2026-95502": {
+      "ae76e5f01c6761983e94d23086a191624907e561": "grafana: 13.2.4 -> 13.3.0\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.3.0\n\nFix CVE-2026-100105, CVE-2026-13719, CVE-2026-13720, CVE-2026-15577,\nCVE-2026-33374, CVE-2026-81841, CVE-2026-88858, CVE-2026-88967,\nCVE-2026-93294, CVE-2026-95502.,",
+      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
+    },
     "CVE-2026-101272": {
       "85e051eb893ef0169e087f502aa3bbaf68148080": "pretix: 2026.8.0 -> 2026.9.0\n\nhttps://pretix.eu/about/en/blog/20261028-release-2026-8-1/\nhttps://pretix.eu/about/en/blog/20261029-release-2026-9-0/\nhttps://github.com/pretix/pretix/compare/v2026.8.0...v2026.9.0\n\nFixes: CVE-2026-101272, CVE-2026-101273, CVE-2026-101274",
       "df0ece706dd83dd84eab586b8672b61fa6e9369f": "pretix: backport security fixes up until 2026.6.4\n\nhttps://pretix.eu/about/en/blog/20261028-release-2026-8-1/\n\nFixes: CVE-2026-101272, CVE-2026-101273, CVE-2026-101274"
@@ -12,6 +62,40 @@
     "CVE-2026-101274": {
       "85e051eb893ef0169e087f502aa3bbaf68148080": "pretix: 2026.8.0 -> 2026.9.0\n\nhttps://pretix.eu/about/en/blog/20261028-release-2026-8-1/\nhttps://pretix.eu/about/en/blog/20261029-release-2026-9-0/\nhttps://github.com/pretix/pretix/compare/v2026.8.0...v2026.9.0\n\nFixes: CVE-2026-101272, CVE-2026-101273, CVE-2026-101274",
       "df0ece706dd83dd84eab586b8672b61fa6e9369f": "pretix: backport security fixes up until 2026.6.4\n\nhttps://pretix.eu/about/en/blog/20261028-release-2026-8-1/\n\nFixes: CVE-2026-101272, CVE-2026-101273, CVE-2026-101274"
+    },
+    "CVE-2026-114583": {
+      "3c7b13446f3b7528d279ec8694cfc6d7065bd540": "python311: 3.11.17 -> 3.11.18\n\nhttps://docs.python.org/release/3.11.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557\n(cherry picked from commit f911d6929fd9eeb86bec8e1040d5d287c5ab59bf)",
+      "9a35ff519f8a8a33b77cae415388756ab2760a83": "python312: 3.12.15 -> 3.12.16\n\nhttps://docs.python.org/release/3.12.16/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345\n(cherry picked from commit 240b38717c975c84f0832bd9fb58b4e9e87923b5)",
+      "fa7d8b5f41a5cf7fa6f6727c21653227d19f0367": "python313: 3.13.17 -> 3.13.18\n\nhttps://docs.python.org/release/3.13.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345\n\n(cherry picked from commit f0d8eff3cd4427c0fb742ca44f8e6ceeb6347193)",
+      "693e18db426089def50dfe7de82975dd318f876f": "python314: 3.14.8 -> 3.14.10\n\nhttps://docs.python.org/release/3.14.10/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345\n\n(cherry picked from commit a52abe1dc98ea97036a464f5e3f9df7632b46c6b)",
+      "f911d6929fd9eeb86bec8e1040d5d287c5ab59bf": "python311: 3.11.17 -> 3.11.18\n\nhttps://docs.python.org/release/3.11.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557",
+      "240b38717c975c84f0832bd9fb58b4e9e87923b5": "python312: 3.12.15 -> 3.12.16\n\nhttps://docs.python.org/release/3.12.16/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
+      "f0d8eff3cd4427c0fb742ca44f8e6ceeb6347193": "python313: 3.13.17 -> 3.13.18\n\nhttps://docs.python.org/release/3.13.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
+      "a52abe1dc98ea97036a464f5e3f9df7632b46c6b": "python314: 3.14.8 -> 3.14.10\n\nhttps://docs.python.org/release/3.14.10/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345"
+    },
+    "CVE-2026-115557": {
+      "3c7b13446f3b7528d279ec8694cfc6d7065bd540": "python311: 3.11.17 -> 3.11.18\n\nhttps://docs.python.org/release/3.11.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557\n(cherry picked from commit f911d6929fd9eeb86bec8e1040d5d287c5ab59bf)",
+      "9a35ff519f8a8a33b77cae415388756ab2760a83": "python312: 3.12.15 -> 3.12.16\n\nhttps://docs.python.org/release/3.12.16/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345\n(cherry picked from commit 240b38717c975c84f0832bd9fb58b4e9e87923b5)",
+      "fa7d8b5f41a5cf7fa6f6727c21653227d19f0367": "python313: 3.13.17 -> 3.13.18\n\nhttps://docs.python.org/release/3.13.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345\n\n(cherry picked from commit f0d8eff3cd4427c0fb742ca44f8e6ceeb6347193)",
+      "25f634d09ec699bb90e3e8ebd3566ced0894b206": "python315: 3.15.0 -> 3.15.2\n\nhttps://docs.python.org/release/3.15.2/whatsnew/changelog.html\n\nFixes: CVE-2026-1114583, CVE-2026-115557\n(cherry picked from commit 6d4887a81cc86dd3eb986af79fa5292f99da282d)",
+      "693e18db426089def50dfe7de82975dd318f876f": "python314: 3.14.8 -> 3.14.10\n\nhttps://docs.python.org/release/3.14.10/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345\n\n(cherry picked from commit a52abe1dc98ea97036a464f5e3f9df7632b46c6b)",
+      "f911d6929fd9eeb86bec8e1040d5d287c5ab59bf": "python311: 3.11.17 -> 3.11.18\n\nhttps://docs.python.org/release/3.11.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557",
+      "240b38717c975c84f0832bd9fb58b4e9e87923b5": "python312: 3.12.15 -> 3.12.16\n\nhttps://docs.python.org/release/3.12.16/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
+      "f0d8eff3cd4427c0fb742ca44f8e6ceeb6347193": "python313: 3.13.17 -> 3.13.18\n\nhttps://docs.python.org/release/3.13.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
+      "6d4887a81cc86dd3eb986af79fa5292f99da282d": "python315: 3.15.0 -> 3.15.2\n\nhttps://docs.python.org/release/3.15.2/whatsnew/changelog.html\n\nFixes: CVE-2026-1114583, CVE-2026-115557",
+      "a52abe1dc98ea97036a464f5e3f9df7632b46c6b": "python314: 3.14.8 -> 3.14.10\n\nhttps://docs.python.org/release/3.14.10/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345"
+    },
+    "CVE-2026-12345": {
+      "9a35ff519f8a8a33b77cae415388756ab2760a83": "python312: 3.12.15 -> 3.12.16\n\nhttps://docs.python.org/release/3.12.16/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345\n(cherry picked from commit 240b38717c975c84f0832bd9fb58b4e9e87923b5)",
+      "fa7d8b5f41a5cf7fa6f6727c21653227d19f0367": "python313: 3.13.17 -> 3.13.18\n\nhttps://docs.python.org/release/3.13.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345\n\n(cherry picked from commit f0d8eff3cd4427c0fb742ca44f8e6ceeb6347193)",
+      "693e18db426089def50dfe7de82975dd318f876f": "python314: 3.14.8 -> 3.14.10\n\nhttps://docs.python.org/release/3.14.10/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345\n\n(cherry picked from commit a52abe1dc98ea97036a464f5e3f9df7632b46c6b)",
+      "240b38717c975c84f0832bd9fb58b4e9e87923b5": "python312: 3.12.15 -> 3.12.16\n\nhttps://docs.python.org/release/3.12.16/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
+      "f0d8eff3cd4427c0fb742ca44f8e6ceeb6347193": "python313: 3.13.17 -> 3.13.18\n\nhttps://docs.python.org/release/3.13.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
+      "a52abe1dc98ea97036a464f5e3f9df7632b46c6b": "python314: 3.14.8 -> 3.14.10\n\nhttps://docs.python.org/release/3.14.10/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345"
+    },
+    "CVE-2026-1114583": {
+      "25f634d09ec699bb90e3e8ebd3566ced0894b206": "python315: 3.15.0 -> 3.15.2\n\nhttps://docs.python.org/release/3.15.2/whatsnew/changelog.html\n\nFixes: CVE-2026-1114583, CVE-2026-115557\n(cherry picked from commit 6d4887a81cc86dd3eb986af79fa5292f99da282d)",
+      "6d4887a81cc86dd3eb986af79fa5292f99da282d": "python315: 3.15.0 -> 3.15.2\n\nhttps://docs.python.org/release/3.15.2/whatsnew/changelog.html\n\nFixes: CVE-2026-1114583, CVE-2026-115557"
     },
     "CVE-2026-117612": {
       "f9d7687569c1e69cb27b309ab9f2cab523549e11": "jenkins: 2.580.1 -> 2.580.2\n\nhttps://www.jenkins.io/changelog-stable/#v2.580.2\n\nFixes 15 CVEs:\n\n- CVE-2026-117612\n- CVE-2026-117613\n- CVE-2026-117614\n- CVE-2026-117615\n- CVE-2026-117616\n- CVE-2026-117617\n- CVE-2026-117621\n- CVE-2026-117622\n- CVE-2026-117623\n- CVE-2026-117618\n- CVE-2026-117619\n- CVE-2026-117620\n- CVE-2026-117624\n- CVE-2026-117625\n- CVE-2026-117626\n\nSigned-off-by: Felix Singer <felixsinger@posteo.net>\n(cherry picked from commit 37209ebf4020c1cb63e6ad306f2eda5a5ef8f120)",
@@ -73,31 +157,26 @@
       "f9d7687569c1e69cb27b309ab9f2cab523549e11": "jenkins: 2.580.1 -> 2.580.2\n\nhttps://www.jenkins.io/changelog-stable/#v2.580.2\n\nFixes 15 CVEs:\n\n- CVE-2026-117612\n- CVE-2026-117613\n- CVE-2026-117614\n- CVE-2026-117615\n- CVE-2026-117616\n- CVE-2026-117617\n- CVE-2026-117621\n- CVE-2026-117622\n- CVE-2026-117623\n- CVE-2026-117618\n- CVE-2026-117619\n- CVE-2026-117620\n- CVE-2026-117624\n- CVE-2026-117625\n- CVE-2026-117626\n\nSigned-off-by: Felix Singer <felixsinger@posteo.net>\n(cherry picked from commit 37209ebf4020c1cb63e6ad306f2eda5a5ef8f120)",
       "37209ebf4020c1cb63e6ad306f2eda5a5ef8f120": "jenkins: 2.580.1 -> 2.580.2\n\nhttps://www.jenkins.io/changelog-stable/#v2.580.2\n\nFixes 15 CVEs:\n\n- CVE-2026-117612\n- CVE-2026-117613\n- CVE-2026-117614\n- CVE-2026-117615\n- CVE-2026-117616\n- CVE-2026-117617\n- CVE-2026-117621\n- CVE-2026-117622\n- CVE-2026-117623\n- CVE-2026-117618\n- CVE-2026-117619\n- CVE-2026-117620\n- CVE-2026-117624\n- CVE-2026-117625\n- CVE-2026-117626\n\nSigned-off-by: Felix Singer <felixsinger@posteo.net>"
     },
+    "CVE-2026-69260": {
+      "39a7f3a9151e6d2af05ff064e7a0a7e5e7c54ee0": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803.\n\n(cherry picked from commit b5c49274a9fa13185aab596e52ac00423a209a49)",
+      "b5c49274a9fa13185aab596e52ac00423a209a49": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803."
+    },
+    "CVE-2026-69261": {
+      "39a7f3a9151e6d2af05ff064e7a0a7e5e7c54ee0": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803.\n\n(cherry picked from commit b5c49274a9fa13185aab596e52ac00423a209a49)",
+      "b5c49274a9fa13185aab596e52ac00423a209a49": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803."
+    },
+    "CVE-2026-105802": {
+      "39a7f3a9151e6d2af05ff064e7a0a7e5e7c54ee0": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803.\n\n(cherry picked from commit b5c49274a9fa13185aab596e52ac00423a209a49)",
+      "b5c49274a9fa13185aab596e52ac00423a209a49": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803."
+    },
+    "CVE-2026-105803": {
+      "39a7f3a9151e6d2af05ff064e7a0a7e5e7c54ee0": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803.\n\n(cherry picked from commit b5c49274a9fa13185aab596e52ac00423a209a49)",
+      "b5c49274a9fa13185aab596e52ac00423a209a49": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803."
+    },
     "CVE-2018-1000035": {
       "91109cc6bbe73e5f2bafebb9a673a3d58248e708": "unzip: add patch for CVE-2018-1000035\n\nHeap overflow in the password prompt (UzpPassword, fileio.c) for\npassword-protected archives. Patch from Debian (6.0-22+), originally\nfrom SUSE: https://bugs.debian.org/889838\n\nAssisted-by: Claude Code (Claude Opus 5.5)\n(cherry picked from commit e11fafc72bd7fd92cc63d3b60f6447cf9c522844)",
       "bd5aa500b75e4ee074f5ff826cb412d23216b40d": "unzip: add patch for CVE-2018-1000035 (#579754)",
       "e11fafc72bd7fd92cc63d3b60f6447cf9c522844": "unzip: add patch for CVE-2018-1000035\n\nHeap overflow in the password prompt (UzpPassword, fileio.c) for\npassword-protected archives. Patch from Debian (6.0-22+), originally\nfrom SUSE: https://bugs.debian.org/889838\n\nAssisted-by: Claude Code (Claude Opus 5.5)"
-    },
-    "CVE-2026-114583": {
-      "f911d6929fd9eeb86bec8e1040d5d287c5ab59bf": "python311: 3.11.17 -> 3.11.18\n\nhttps://docs.python.org/release/3.11.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557",
-      "240b38717c975c84f0832bd9fb58b4e9e87923b5": "python312: 3.12.15 -> 3.12.16\n\nhttps://docs.python.org/release/3.12.16/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
-      "f0d8eff3cd4427c0fb742ca44f8e6ceeb6347193": "python313: 3.13.17 -> 3.13.18\n\nhttps://docs.python.org/release/3.13.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
-      "a52abe1dc98ea97036a464f5e3f9df7632b46c6b": "python314: 3.14.8 -> 3.14.10\n\nhttps://docs.python.org/release/3.14.10/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345"
-    },
-    "CVE-2026-115557": {
-      "f911d6929fd9eeb86bec8e1040d5d287c5ab59bf": "python311: 3.11.17 -> 3.11.18\n\nhttps://docs.python.org/release/3.11.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557",
-      "240b38717c975c84f0832bd9fb58b4e9e87923b5": "python312: 3.12.15 -> 3.12.16\n\nhttps://docs.python.org/release/3.12.16/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
-      "f0d8eff3cd4427c0fb742ca44f8e6ceeb6347193": "python313: 3.13.17 -> 3.13.18\n\nhttps://docs.python.org/release/3.13.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
-      "6d4887a81cc86dd3eb986af79fa5292f99da282d": "python315: 3.15.0 -> 3.15.2\n\nhttps://docs.python.org/release/3.15.2/whatsnew/changelog.html\n\nFixes: CVE-2026-1114583, CVE-2026-115557",
-      "a52abe1dc98ea97036a464f5e3f9df7632b46c6b": "python314: 3.14.8 -> 3.14.10\n\nhttps://docs.python.org/release/3.14.10/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345"
-    },
-    "CVE-2026-12345": {
-      "240b38717c975c84f0832bd9fb58b4e9e87923b5": "python312: 3.12.15 -> 3.12.16\n\nhttps://docs.python.org/release/3.12.16/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
-      "f0d8eff3cd4427c0fb742ca44f8e6ceeb6347193": "python313: 3.13.17 -> 3.13.18\n\nhttps://docs.python.org/release/3.13.18/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345",
-      "a52abe1dc98ea97036a464f5e3f9df7632b46c6b": "python314: 3.14.8 -> 3.14.10\n\nhttps://docs.python.org/release/3.14.10/whatsnew/changelog.html\n\nFixes: CVE-2026-114583, CVE-2026-115557, CVE-2026-12345"
-    },
-    "CVE-2026-1114583": {
-      "6d4887a81cc86dd3eb986af79fa5292f99da282d": "python315: 3.15.0 -> 3.15.2\n\nhttps://docs.python.org/release/3.15.2/whatsnew/changelog.html\n\nFixes: CVE-2026-1114583, CVE-2026-115557"
     },
     "GHSA-99CJ-7HG9-MP4M": {
       "91ec4d7d18925d7bf855b85e80929ddc5af7a749": "[Backport release-26.05] edk2: Add patch for GHSA-99cj-7hg9-mp4m (#579841)",
@@ -112,18 +191,6 @@
     "GHSA-RC3F-4J82-CMRG": {
       "834a0183f1a119cfc0f1375062d114719c3b13f4": "rustls-ffi: 0.15.6 -> 0.15.7\n\nThis addresses GHSA-rc3f-4j82-cmrg by updating rustls-ffi from 0.15.6 to\n0.15.7. See the upstream release notes for more information:\n\n  https://github.com/rustls/rustls-ffi/releases/tag/v0.15.7\n\n(cherry picked from commit 27938fe0b6bd551b99e5ed4e96bb25e2eae0a83b)",
       "27938fe0b6bd551b99e5ed4e96bb25e2eae0a83b": "rustls-ffi: 0.15.6 -> 0.15.7\n\nThis addresses GHSA-rc3f-4j82-cmrg by updating rustls-ffi from 0.15.6 to\n0.15.7. See the upstream release notes for more information:\n\n  https://github.com/rustls/rustls-ffi/releases/tag/v0.15.7"
-    },
-    "CVE-2026-69260": {
-      "b5c49274a9fa13185aab596e52ac00423a209a49": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803."
-    },
-    "CVE-2026-69261": {
-      "b5c49274a9fa13185aab596e52ac00423a209a49": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803."
-    },
-    "CVE-2026-105802": {
-      "b5c49274a9fa13185aab596e52ac00423a209a49": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803."
-    },
-    "CVE-2026-105803": {
-      "b5c49274a9fa13185aab596e52ac00423a209a49": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803."
     },
     "CVE-2026-111148": {
       "9c1dc6804e91bad4c21240b575f24c5e8f530bd9": "libsidplayfp: Apply fix for CVE-2026-111148 (#578062)",
@@ -537,28 +604,7 @@
     "CVE-2026-29059": {
       "02b0a9c7c1b57064e4beab0f629eab7d79bbc84b": "windmill: 1.601.1 -> 1.839.0\n\nChangelog: https://github.com/windmill-labs/windmill/blob/v1.839.0/CHANGELOG.md\n\nReleases before 1.783.0 have CVE-2026-29059.\n\n- Regenerate the patches for the new source.\n- Remove `rust_executor.patch`. Upstream now has a default value when\n  `HOME` is not set.\n- Remove the `loki` feature, because upstream removed it.\n- Use the `simdutf` archive of `librusty_v8`, because the `deno` crates\n  enable the `simdutf` feature of `v8`. Update `update-librusty.sh` to\n  get this archive.\n- Remove the `mold` linker flag of upstream, because `mold` is not in\n  the build environment.\n- Set `auditable = false`, because `cargo-auditable` gives the features\n  of `windmill` to all workspace members, and `windmill-mcp` refuses\n  `oauth2`.\n- Set `OPENSSL_NO_VENDOR`, so that the binary links to the `openssl` of\n  nixpkgs and does not contain its own copy of OpenSSL.\n- Use response files in the cc and ld wrappers, because the link of\n  the `windmill` binary has too many arguments for one `exec`.\n\nAssisted-by: Claude:claude-opus-5-5"
     },
-    "CVE-2026-13719": {
-      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
-    },
-    "CVE-2026-13720": {
-      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
-    },
-    "CVE-2026-81841": {
-      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
-    },
     "CVE-2026-81842": {
-      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
-    },
-    "CVE-2026-15577": {
-      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
-    },
-    "CVE-2026-33374": {
-      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
-    },
-    "CVE-2026-93294": {
-      "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
-    },
-    "CVE-2026-95502": {
       "139f8df441a9e76a100d80e43f2e8f70acc1f9bb": "grafana: 13.0.9 -> 13.0.11\n\nFixes CVE-2026-13719, CVE-2026-13720, CVE-2026-81841, CVE-2026-81842,\nCVE-2026-15577, CVE-2026-33374, CVE-2026-93294, CVE-2026-95502.\n\nChangeLogs:\n* https://github.com/grafana/grafana/releases/tag/v13.0.10\n* https://github.com/grafana/grafana/releases/tag/v13.0.11"
     },
     "CVE-2026-110922": {
