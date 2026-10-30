@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://github.com/moby/buildkit",
   "vulnerabilities": {
+    "CVE-2026-71482": {
+      "2472fd7a359fc4b7b6194f40350458b739f8270c": "vendor: github.com/containerd/stargz-snapshotter v0.19.1\n\nfull diff: https://github.com/containerd/stargz-snapshotter/compare/v0.18.2...v0.19.1\n\nIncludes fixes for;\n\n- [CVE-2026-71482] / [GHSA-6q59-3mx3-jpgq]\n- [CVE-2026-77395] / [GHSA-6j84-h5gg-w3gr]\n\n[GHSA-6q59-3mx3-jpgq]: https://github.com/containerd/stargz-snapshotter/security/advisories/GHSA-6q59-3mx3-jpgq\n[GHSA-6j84-h5gg-w3gr]: https://github.com/containerd/stargz-snapshotter/security/advisories/GHSA-6j84-h5gg-w3gr\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
+    },
+    "CVE-2026-77395": {
+      "2472fd7a359fc4b7b6194f40350458b739f8270c": "vendor: github.com/containerd/stargz-snapshotter v0.19.1\n\nfull diff: https://github.com/containerd/stargz-snapshotter/compare/v0.18.2...v0.19.1\n\nIncludes fixes for;\n\n- [CVE-2026-71482] / [GHSA-6q59-3mx3-jpgq]\n- [CVE-2026-77395] / [GHSA-6j84-h5gg-w3gr]\n\n[GHSA-6q59-3mx3-jpgq]: https://github.com/containerd/stargz-snapshotter/security/advisories/GHSA-6q59-3mx3-jpgq\n[GHSA-6j84-h5gg-w3gr]: https://github.com/containerd/stargz-snapshotter/security/advisories/GHSA-6j84-h5gg-w3gr\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
+    },
+    "GHSA-6Q59-3MX3-JPGQ": {
+      "2472fd7a359fc4b7b6194f40350458b739f8270c": "vendor: github.com/containerd/stargz-snapshotter v0.19.1\n\nfull diff: https://github.com/containerd/stargz-snapshotter/compare/v0.18.2...v0.19.1\n\nIncludes fixes for;\n\n- [CVE-2026-71482] / [GHSA-6q59-3mx3-jpgq]\n- [CVE-2026-77395] / [GHSA-6j84-h5gg-w3gr]\n\n[GHSA-6q59-3mx3-jpgq]: https://github.com/containerd/stargz-snapshotter/security/advisories/GHSA-6q59-3mx3-jpgq\n[GHSA-6j84-h5gg-w3gr]: https://github.com/containerd/stargz-snapshotter/security/advisories/GHSA-6j84-h5gg-w3gr\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
+    },
+    "GHSA-6J84-H5GG-W3GR": {
+      "2472fd7a359fc4b7b6194f40350458b739f8270c": "vendor: github.com/containerd/stargz-snapshotter v0.19.1\n\nfull diff: https://github.com/containerd/stargz-snapshotter/compare/v0.18.2...v0.19.1\n\nIncludes fixes for;\n\n- [CVE-2026-71482] / [GHSA-6q59-3mx3-jpgq]\n- [CVE-2026-77395] / [GHSA-6j84-h5gg-w3gr]\n\n[GHSA-6q59-3mx3-jpgq]: https://github.com/containerd/stargz-snapshotter/security/advisories/GHSA-6q59-3mx3-jpgq\n[GHSA-6j84-h5gg-w3gr]: https://github.com/containerd/stargz-snapshotter/security/advisories/GHSA-6j84-h5gg-w3gr\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
+    },
     "CVE-2026-78659": {
       "ae979d58fea0696b8ba9129741cb5155928827a4": "vendor: golang.org/x/net v0.60.0\n\nIncludes fixes for;\n\n- CVE-2026-78659 / [GO-2026-6603]\n- CVE-2026-78660 / [GO-2026-6610]\n- CVE-2026-78669 / [GO-2026-6611]\n- CVE-2026-78663 / [GO-2026-6612]\n- CVE-2026-97032 / [GO-2026-6617]\n\nfull diff: full diff: https://github.com/golang/net/compare/v0.59.0...v0.60.0\n\n[GO-2026-6603]: https://pkg.go.dev/vuln/GO-2026-6603\n[GO-2026-6610]: https://pkg.go.dev/vuln/GO-2026-6610\n[GO-2026-6611]: https://pkg.go.dev/vuln/GO-2026-6611\n[GO-2026-6612]: https://pkg.go.dev/vuln/GO-2026-6612\n[GO-2026-6617]: https://pkg.go.dev/vuln/GO-2026-6617\n\nSigned-off-by: Sebastiaan van Stijn <github@gone.nl>"
     },

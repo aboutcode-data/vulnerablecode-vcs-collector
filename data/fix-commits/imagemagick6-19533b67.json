@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-HPJV-7VMP-F58W": {
+      "fc85e19679104a44709ca7cad3d0f586860899d5": "Match both slash- and backslash-separated paths and patterns during lexical and canonical path-policy evaluation on Windows (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-hpjv-7vmp-f58w)"
+    },
     "GHSA-5JWM-R7F4-4M53": {
       "1fbc05e20e1fef96729c081eebb2debdb0e126bf": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5jwm-r7f4-4m53"
     },
