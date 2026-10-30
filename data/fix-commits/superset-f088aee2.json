@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/apache/superset",
   "vulnerabilities": {
     "CVE-2026-111497": {
+      "38ea19faa0f81e76f11f60b7c60fa69c45307a7d": "fix(deps): bump brotli to 1.2.1 for scanners complaining about CVE-2026-111497 (#45743)\n\nCo-authored-by: Claude Opus 5.5 <noreply@anthropic.com>\n(cherry picked from commit 86d54d9e7e19b53e381cb048041c2c172928f517)",
       "86d54d9e7e19b53e381cb048041c2c172928f517": "fix(deps): bump brotli to 1.2.1 for scanners complaining about CVE-2026-111497 (#45743)\n\nCo-authored-by: Claude Opus 5.5 <noreply@anthropic.com>"
     },
     "GHSA-8R5X-FM3F-WHWJ": {
