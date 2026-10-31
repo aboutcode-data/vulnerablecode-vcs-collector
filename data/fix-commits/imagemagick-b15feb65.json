@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-H9F8-QMVX-P39M": {
+      "998773fa3d60f5c8a7964a73850904edf441b9fc": "Also create a StrictReadInlineImage implementation (GHSA-h9f8-qmvx-p39m)"
+    },
     "GHSA-5V9F-R478-X7VX": {
       "28f65867d313fd5da01cc890addc9094b03d12f6": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5v9f-r478-x7vx"
     },

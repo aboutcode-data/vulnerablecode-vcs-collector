@@ -238,6 +238,145 @@
       "f9d7687569c1e69cb27b309ab9f2cab523549e11": "jenkins: 2.580.1 -> 2.580.2\n\nhttps://www.jenkins.io/changelog-stable/#v2.580.2\n\nFixes 15 CVEs:\n\n- CVE-2026-117612\n- CVE-2026-117613\n- CVE-2026-117614\n- CVE-2026-117615\n- CVE-2026-117616\n- CVE-2026-117617\n- CVE-2026-117621\n- CVE-2026-117622\n- CVE-2026-117623\n- CVE-2026-117618\n- CVE-2026-117619\n- CVE-2026-117620\n- CVE-2026-117624\n- CVE-2026-117625\n- CVE-2026-117626\n\nSigned-off-by: Felix Singer <felixsinger@posteo.net>\n(cherry picked from commit 37209ebf4020c1cb63e6ad306f2eda5a5ef8f120)",
       "37209ebf4020c1cb63e6ad306f2eda5a5ef8f120": "jenkins: 2.580.1 -> 2.580.2\n\nhttps://www.jenkins.io/changelog-stable/#v2.580.2\n\nFixes 15 CVEs:\n\n- CVE-2026-117612\n- CVE-2026-117613\n- CVE-2026-117614\n- CVE-2026-117615\n- CVE-2026-117616\n- CVE-2026-117617\n- CVE-2026-117621\n- CVE-2026-117622\n- CVE-2026-117623\n- CVE-2026-117618\n- CVE-2026-117619\n- CVE-2026-117620\n- CVE-2026-117624\n- CVE-2026-117625\n- CVE-2026-117626\n\nSigned-off-by: Felix Singer <felixsinger@posteo.net>"
     },
+    "CVE-2026-116264": {
+      "36c8c4f993b8fdaee599383beb45a93c51165860": "perlPackages.MIMETools: 5.509 -> 5.522\n\nFixes CVE-2026-116264, CVE-2026-116265, CVE-2026-116266,\nCVE-2026-116267, CVE-2026-116268, CVE-2026-116269, CVE-2026-116270,\nCVE-2026-116271, CVE-2026-116272 and CVE-2026-116273.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116265": {
+      "36c8c4f993b8fdaee599383beb45a93c51165860": "perlPackages.MIMETools: 5.509 -> 5.522\n\nFixes CVE-2026-116264, CVE-2026-116265, CVE-2026-116266,\nCVE-2026-116267, CVE-2026-116268, CVE-2026-116269, CVE-2026-116270,\nCVE-2026-116271, CVE-2026-116272 and CVE-2026-116273.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116266": {
+      "36c8c4f993b8fdaee599383beb45a93c51165860": "perlPackages.MIMETools: 5.509 -> 5.522\n\nFixes CVE-2026-116264, CVE-2026-116265, CVE-2026-116266,\nCVE-2026-116267, CVE-2026-116268, CVE-2026-116269, CVE-2026-116270,\nCVE-2026-116271, CVE-2026-116272 and CVE-2026-116273.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116267": {
+      "36c8c4f993b8fdaee599383beb45a93c51165860": "perlPackages.MIMETools: 5.509 -> 5.522\n\nFixes CVE-2026-116264, CVE-2026-116265, CVE-2026-116266,\nCVE-2026-116267, CVE-2026-116268, CVE-2026-116269, CVE-2026-116270,\nCVE-2026-116271, CVE-2026-116272 and CVE-2026-116273.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116268": {
+      "36c8c4f993b8fdaee599383beb45a93c51165860": "perlPackages.MIMETools: 5.509 -> 5.522\n\nFixes CVE-2026-116264, CVE-2026-116265, CVE-2026-116266,\nCVE-2026-116267, CVE-2026-116268, CVE-2026-116269, CVE-2026-116270,\nCVE-2026-116271, CVE-2026-116272 and CVE-2026-116273.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116269": {
+      "36c8c4f993b8fdaee599383beb45a93c51165860": "perlPackages.MIMETools: 5.509 -> 5.522\n\nFixes CVE-2026-116264, CVE-2026-116265, CVE-2026-116266,\nCVE-2026-116267, CVE-2026-116268, CVE-2026-116269, CVE-2026-116270,\nCVE-2026-116271, CVE-2026-116272 and CVE-2026-116273.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116270": {
+      "36c8c4f993b8fdaee599383beb45a93c51165860": "perlPackages.MIMETools: 5.509 -> 5.522\n\nFixes CVE-2026-116264, CVE-2026-116265, CVE-2026-116266,\nCVE-2026-116267, CVE-2026-116268, CVE-2026-116269, CVE-2026-116270,\nCVE-2026-116271, CVE-2026-116272 and CVE-2026-116273.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116271": {
+      "36c8c4f993b8fdaee599383beb45a93c51165860": "perlPackages.MIMETools: 5.509 -> 5.522\n\nFixes CVE-2026-116264, CVE-2026-116265, CVE-2026-116266,\nCVE-2026-116267, CVE-2026-116268, CVE-2026-116269, CVE-2026-116270,\nCVE-2026-116271, CVE-2026-116272 and CVE-2026-116273.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116272": {
+      "36c8c4f993b8fdaee599383beb45a93c51165860": "perlPackages.MIMETools: 5.509 -> 5.522\n\nFixes CVE-2026-116264, CVE-2026-116265, CVE-2026-116266,\nCVE-2026-116267, CVE-2026-116268, CVE-2026-116269, CVE-2026-116270,\nCVE-2026-116271, CVE-2026-116272 and CVE-2026-116273.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116273": {
+      "36c8c4f993b8fdaee599383beb45a93c51165860": "perlPackages.MIMETools: 5.509 -> 5.522\n\nFixes CVE-2026-116264, CVE-2026-116265, CVE-2026-116266,\nCVE-2026-116267, CVE-2026-116268, CVE-2026-116269, CVE-2026-116270,\nCVE-2026-116271, CVE-2026-116272 and CVE-2026-116273.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116131": {
+      "479f4d6f11ce9da827b97df9bd6b251ed7f2a5f1": "perlPackages.HTTPBody: 1.23 -> 1.24_01\n\nFixes CVE-2026-116131, CVE-2026-116132, CVE-2026-116133,\nCVE-2026-116134, CVE-2026-116135, CVE-2026-116285, CVE-2026-116531,\nCVE-2026-117500 and CVE-2026-117501.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116132": {
+      "479f4d6f11ce9da827b97df9bd6b251ed7f2a5f1": "perlPackages.HTTPBody: 1.23 -> 1.24_01\n\nFixes CVE-2026-116131, CVE-2026-116132, CVE-2026-116133,\nCVE-2026-116134, CVE-2026-116135, CVE-2026-116285, CVE-2026-116531,\nCVE-2026-117500 and CVE-2026-117501.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116133": {
+      "479f4d6f11ce9da827b97df9bd6b251ed7f2a5f1": "perlPackages.HTTPBody: 1.23 -> 1.24_01\n\nFixes CVE-2026-116131, CVE-2026-116132, CVE-2026-116133,\nCVE-2026-116134, CVE-2026-116135, CVE-2026-116285, CVE-2026-116531,\nCVE-2026-117500 and CVE-2026-117501.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116134": {
+      "479f4d6f11ce9da827b97df9bd6b251ed7f2a5f1": "perlPackages.HTTPBody: 1.23 -> 1.24_01\n\nFixes CVE-2026-116131, CVE-2026-116132, CVE-2026-116133,\nCVE-2026-116134, CVE-2026-116135, CVE-2026-116285, CVE-2026-116531,\nCVE-2026-117500 and CVE-2026-117501.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116135": {
+      "479f4d6f11ce9da827b97df9bd6b251ed7f2a5f1": "perlPackages.HTTPBody: 1.23 -> 1.24_01\n\nFixes CVE-2026-116131, CVE-2026-116132, CVE-2026-116133,\nCVE-2026-116134, CVE-2026-116135, CVE-2026-116285, CVE-2026-116531,\nCVE-2026-117500 and CVE-2026-117501.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116285": {
+      "479f4d6f11ce9da827b97df9bd6b251ed7f2a5f1": "perlPackages.HTTPBody: 1.23 -> 1.24_01\n\nFixes CVE-2026-116131, CVE-2026-116132, CVE-2026-116133,\nCVE-2026-116134, CVE-2026-116135, CVE-2026-116285, CVE-2026-116531,\nCVE-2026-117500 and CVE-2026-117501.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116531": {
+      "479f4d6f11ce9da827b97df9bd6b251ed7f2a5f1": "perlPackages.HTTPBody: 1.23 -> 1.24_01\n\nFixes CVE-2026-116131, CVE-2026-116132, CVE-2026-116133,\nCVE-2026-116134, CVE-2026-116135, CVE-2026-116285, CVE-2026-116531,\nCVE-2026-117500 and CVE-2026-117501.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-117500": {
+      "479f4d6f11ce9da827b97df9bd6b251ed7f2a5f1": "perlPackages.HTTPBody: 1.23 -> 1.24_01\n\nFixes CVE-2026-116131, CVE-2026-116132, CVE-2026-116133,\nCVE-2026-116134, CVE-2026-116135, CVE-2026-116285, CVE-2026-116531,\nCVE-2026-117500 and CVE-2026-117501.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-117501": {
+      "479f4d6f11ce9da827b97df9bd6b251ed7f2a5f1": "perlPackages.HTTPBody: 1.23 -> 1.24_01\n\nFixes CVE-2026-116131, CVE-2026-116132, CVE-2026-116133,\nCVE-2026-116134, CVE-2026-116135, CVE-2026-116285, CVE-2026-116531,\nCVE-2026-117500 and CVE-2026-117501.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-110335": {
+      "aa1b6f51cdbc942edc05d4847058618e6332c14f": "perlPackages.PlackMiddlewareReverseProxy: 0.16 -> 0.17\n\nRelated to CVE-2026-110335.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>",
+      "f386f0af9052c7d477f7ef3edfeadc2301e955a1": "perlPackages.Plack: 1.0053 -> 1.0057\n\nFixes CVE-2026-110332, CVE-2026-110333, CVE-2026-110334,\nCVE-2026-110335 and CVE-2026-115825.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-115817": {
+      "2f383fb19a5b9fc0d60d4619711c44b2c0aaa4e0": "perlPackages.Starman: 0.4018 -> 0.4019\n\nFixes CVE-2026-115817, CVE-2026-115822, CVE-2026-115823 and\nCVE-2026-115824.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-115822": {
+      "2f383fb19a5b9fc0d60d4619711c44b2c0aaa4e0": "perlPackages.Starman: 0.4018 -> 0.4019\n\nFixes CVE-2026-115817, CVE-2026-115822, CVE-2026-115823 and\nCVE-2026-115824.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-115823": {
+      "2f383fb19a5b9fc0d60d4619711c44b2c0aaa4e0": "perlPackages.Starman: 0.4018 -> 0.4019\n\nFixes CVE-2026-115817, CVE-2026-115822, CVE-2026-115823 and\nCVE-2026-115824.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-115824": {
+      "2f383fb19a5b9fc0d60d4619711c44b2c0aaa4e0": "perlPackages.Starman: 0.4018 -> 0.4019\n\nFixes CVE-2026-115817, CVE-2026-115822, CVE-2026-115823 and\nCVE-2026-115824.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-110332": {
+      "f386f0af9052c7d477f7ef3edfeadc2301e955a1": "perlPackages.Plack: 1.0053 -> 1.0057\n\nFixes CVE-2026-110332, CVE-2026-110333, CVE-2026-110334,\nCVE-2026-110335 and CVE-2026-115825.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-110333": {
+      "f386f0af9052c7d477f7ef3edfeadc2301e955a1": "perlPackages.Plack: 1.0053 -> 1.0057\n\nFixes CVE-2026-110332, CVE-2026-110333, CVE-2026-110334,\nCVE-2026-110335 and CVE-2026-115825.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-110334": {
+      "f386f0af9052c7d477f7ef3edfeadc2301e955a1": "perlPackages.Plack: 1.0053 -> 1.0057\n\nFixes CVE-2026-110332, CVE-2026-110333, CVE-2026-110334,\nCVE-2026-110335 and CVE-2026-115825.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-115825": {
+      "f386f0af9052c7d477f7ef3edfeadc2301e955a1": "perlPackages.Plack: 1.0053 -> 1.0057\n\nFixes CVE-2026-110332, CVE-2026-110333, CVE-2026-110334,\nCVE-2026-110335 and CVE-2026-115825.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-74765": {
+      "a99c76d7ad1fed7ec498b989b4ccedeff9678db8": "perlPackages.NetIDNEncode: 2.500 -> 2.590\n\nFixes CVE-2026-74765, CVE-2026-74766, CVE-2026-87078, CVE-2026-87079,\nCVE-2026-87080, CVE-2026-87081 and CVE-2026-87082.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-74766": {
+      "a99c76d7ad1fed7ec498b989b4ccedeff9678db8": "perlPackages.NetIDNEncode: 2.500 -> 2.590\n\nFixes CVE-2026-74765, CVE-2026-74766, CVE-2026-87078, CVE-2026-87079,\nCVE-2026-87080, CVE-2026-87081 and CVE-2026-87082.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-87078": {
+      "a99c76d7ad1fed7ec498b989b4ccedeff9678db8": "perlPackages.NetIDNEncode: 2.500 -> 2.590\n\nFixes CVE-2026-74765, CVE-2026-74766, CVE-2026-87078, CVE-2026-87079,\nCVE-2026-87080, CVE-2026-87081 and CVE-2026-87082.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-87079": {
+      "a99c76d7ad1fed7ec498b989b4ccedeff9678db8": "perlPackages.NetIDNEncode: 2.500 -> 2.590\n\nFixes CVE-2026-74765, CVE-2026-74766, CVE-2026-87078, CVE-2026-87079,\nCVE-2026-87080, CVE-2026-87081 and CVE-2026-87082.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-87080": {
+      "a99c76d7ad1fed7ec498b989b4ccedeff9678db8": "perlPackages.NetIDNEncode: 2.500 -> 2.590\n\nFixes CVE-2026-74765, CVE-2026-74766, CVE-2026-87078, CVE-2026-87079,\nCVE-2026-87080, CVE-2026-87081 and CVE-2026-87082.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-87081": {
+      "a99c76d7ad1fed7ec498b989b4ccedeff9678db8": "perlPackages.NetIDNEncode: 2.500 -> 2.590\n\nFixes CVE-2026-74765, CVE-2026-74766, CVE-2026-87078, CVE-2026-87079,\nCVE-2026-87080, CVE-2026-87081 and CVE-2026-87082.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-87082": {
+      "a99c76d7ad1fed7ec498b989b4ccedeff9678db8": "perlPackages.NetIDNEncode: 2.500 -> 2.590\n\nFixes CVE-2026-74765, CVE-2026-74766, CVE-2026-87078, CVE-2026-87079,\nCVE-2026-87080, CVE-2026-87081 and CVE-2026-87082.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-82560": {
+      "5ee2b335207139e460b7ab6dffa4ad0ebe97c8e4": "perlPackages.podlators: 5.01 -> 6.1.1\n\nFixes CVE-2026-82560.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-93012": {
+      "b68930dbf837f0ab2e5e58837b45ce9f9ed66dda": "perlPackages.EmailSender: 2.600 -> 2.603\n\nFixes CVE-2026-93012.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-113877": {
+      "9b77d5976cfafa35a5550cf46c6a250aba252424": "perlPackages.HTTPHeadersActionPack: 0.09 -> 0.10\n\nFixes CVE-2026-113877.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-107373": {
+      "8f896e3cbdc5aa8b79202eb40303dd989ace5d3d": "perlPackages.ExtUtilsTypemapsDefault: 1.05 -> 1.07\n\nFixes CVE-2026-107373 and CVE-2026-107794.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-107794": {
+      "8f896e3cbdc5aa8b79202eb40303dd989ace5d3d": "perlPackages.ExtUtilsTypemapsDefault: 1.05 -> 1.07\n\nFixes CVE-2026-107373 and CVE-2026-107794.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-102504": {
+      "92db891dbed50baa04f3dc2bf08824b143cf2ce2": "perlPackages.Imager: 1.036 -> 1.040\n\nFixes CVE-2026-102504 and CVE-2026-102505.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-102505": {
+      "92db891dbed50baa04f3dc2bf08824b143cf2ce2": "perlPackages.Imager: 1.036 -> 1.040\n\nFixes CVE-2026-102504 and CVE-2026-102505.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-88815": {
+      "a22484d148af1d493b49db8258aac2d2721fed39": "perlPackages.DBI: 1.653 -> 1.656\n\nFixes CVE-2026-88815, CVE-2026-88816, CVE-2026-108518 and\nCVE-2026-111879.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-88816": {
+      "a22484d148af1d493b49db8258aac2d2721fed39": "perlPackages.DBI: 1.653 -> 1.656\n\nFixes CVE-2026-88815, CVE-2026-88816, CVE-2026-108518 and\nCVE-2026-111879.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-108518": {
+      "a22484d148af1d493b49db8258aac2d2721fed39": "perlPackages.DBI: 1.653 -> 1.656\n\nFixes CVE-2026-88815, CVE-2026-88816, CVE-2026-108518 and\nCVE-2026-111879.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-111879": {
+      "a22484d148af1d493b49db8258aac2d2721fed39": "perlPackages.DBI: 1.653 -> 1.656\n\nFixes CVE-2026-88815, CVE-2026-88816, CVE-2026-108518 and\nCVE-2026-111879.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
     "CVE-2026-69260": {
       "39a7f3a9151e6d2af05ff064e7a0a7e5e7c54ee0": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803.\n\n(cherry picked from commit b5c49274a9fa13185aab596e52ac00423a209a49)",
       "b5c49274a9fa13185aab596e52ac00423a209a49": "git-lfs: 3.8.0 -> 3.8.1\n\nhttps://github.com/git-lfs/git-lfs/releases/tag/v3.8.1\n\nFixes CVE-2026-69260, CVE-2026-69261, CVE-2026-105802, and CVE-2026-105803."
