@@ -1,6 +1,11 @@
 {
   "vcs_url": "https://github.com/jackc/pgx",
   "vulnerabilities": {
+    "GHSA-95FJ-3FXW-G62G": {
+      "5a17450b96d2b81901b172bf04d9f6c970cecc88": "pgconn: require AuthenticationOk before ReadyForQuery\n\nValidate authentication completion and required channel binding at AuthenticationOk, then require that accepted state before the initial ReadyForQuery. Keep authentication-method checks before sending credentials.\n\nHave OAuth peek at its response so the startup loop consumes AuthenticationOk and applies the same completion checks for every method. Preserve OAuth error diagnostics.\n\nCover missing AuthenticationOk under permissive policies and after password, MD5, and SCRAM exchanges, plus OAuth success and error paths. Rejected connections never reach ValidateConnect.\n\nSecurity report: https://github.com/jackc/pgx/security/advisories/GHSA-95fj-3fxw-g62g",
+      "de3116095b1b8576a6e90eba75ee1231e3ae0015": "pgconn: enforce required channel binding throughout startup\n\nTrack verified SCRAM-PLUS completion and reject AuthenticationOk or ReadyForQuery without it when channel_binding=require. Reject password, MD5, GSS, and OAuth before sending credentials or invoking the token provider.\n\nAdd plaintext and TLS protocol regressions, successful SCRAM exchanges for all channel-binding modes, and invalid server-signature controls.\n\nSecurity report: https://github.com/jackc/pgx/security/advisories/GHSA-95fj-3fxw-g62g",
+      "ce114ec69b14b9da9505f4f01a24358ec2621665": "pgconn: enforce require_auth before ReadyForQuery\n\nReject startup that skips authentication when require_auth requires a completed exchange, before invoking ValidateConnect. Cover skipped authentication, AuthenticationOk controls, permissive policies, and completed password authentication.\n\nSecurity report: https://github.com/jackc/pgx/security/advisories/GHSA-95fj-3fxw-g62g"
+    },
     "CVE-2024-27289": {
       "c543134753a0c5d22881c12404025724cb05ffd8": "SQL sanitizer wraps arguments in parentheses\n\npgx v5 was not vulnerable to CVE-2024-27289 do to how the sanitizer was\nbeing called. But the sanitizer itself still had the underlying issue.\nThis commit ports the fix from pgx v4 to v5 to ensure that the issue\ndoes not emerge if pgx uses the sanitizer differently in the future."
     },

@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitlab.com/gitlab-org/gitlab",
   "vulnerabilities": {
+    "CVE-2026-97229": {
+      "98b47cb7cf332c9ed0e216c22be66a8d8f570748": "Docs: update self-compiled version requirements for 19.x\n\nThe software requirements for self-compiled installations recommended\nRuby 3.2.x, which is below the release that fixes CVE-2026-97229. Source\ninstalls use the system Ruby, so upgrading GitLab alone does not apply\nthe fix. Bump the Ruby minimum to the fixed 3.3.13 release and add a\nwarning that Ruby must be updated separately.\n\nAlso refresh the other outdated minimums to the versions used by GitLab\n19.5: RubyGems 3.6, Go 1.26, Git 2.51, Node.js 22.23, and PostgreSQL 17.\nUpdate the Go download, Node setup, and PostgreSQL package snippets to\nmatch.\n\nSee https://gitlab.com/gitlab-org/gitlab/-/issues/637412\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>"
+    },
     "CVE-2026-115893": {
       "976c87766e34289e9bfa46df2e10a20962f5c5ec": "Match findings on the package and the identifier\n\nA package can carry several advisories. wasmtime got a finding for CVE-2026-115893 from an earlier sequence before the newest sequence had synced, and the wait loop stopped on it.",
       "4830a3584d25a862ff85626f2bdb10d471c68f5d": "Match findings on the package and the identifier\n\nA package can carry several advisories. wasmtime got a finding for CVE-2026-115893 from an earlier sequence before the newest sequence had synced, and the wait loop stopped on it."
