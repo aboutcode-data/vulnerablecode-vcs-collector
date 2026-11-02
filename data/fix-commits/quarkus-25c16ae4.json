@@ -1,6 +1,21 @@
 {
   "vcs_url": "https://github.com/quarkusio/quarkus",
   "vulnerabilities": {
+    "CVE-2026-119210": {
+      "7cf7f0cd4018d23cf3d8da413ad920c9954eca0e": "Upgrade mariadb-java-client to 3.5.11\n\n- fixes https://nvd.nist.gov/vuln/detail/cve-2026-119210, https://nvd.nist.gov/vuln/detail/cve-2026-119276,\n https://nvd.nist.gov/vuln/detail/cve-2026-119277, https://nvd.nist.gov/vuln/detail/cve-2026-119280,\n https://nvd.nist.gov/vuln/detail/cve-2026-119281"
+    },
+    "CVE-2026-119276": {
+      "7cf7f0cd4018d23cf3d8da413ad920c9954eca0e": "Upgrade mariadb-java-client to 3.5.11\n\n- fixes https://nvd.nist.gov/vuln/detail/cve-2026-119210, https://nvd.nist.gov/vuln/detail/cve-2026-119276,\n https://nvd.nist.gov/vuln/detail/cve-2026-119277, https://nvd.nist.gov/vuln/detail/cve-2026-119280,\n https://nvd.nist.gov/vuln/detail/cve-2026-119281"
+    },
+    "CVE-2026-119277": {
+      "7cf7f0cd4018d23cf3d8da413ad920c9954eca0e": "Upgrade mariadb-java-client to 3.5.11\n\n- fixes https://nvd.nist.gov/vuln/detail/cve-2026-119210, https://nvd.nist.gov/vuln/detail/cve-2026-119276,\n https://nvd.nist.gov/vuln/detail/cve-2026-119277, https://nvd.nist.gov/vuln/detail/cve-2026-119280,\n https://nvd.nist.gov/vuln/detail/cve-2026-119281"
+    },
+    "CVE-2026-119280": {
+      "7cf7f0cd4018d23cf3d8da413ad920c9954eca0e": "Upgrade mariadb-java-client to 3.5.11\n\n- fixes https://nvd.nist.gov/vuln/detail/cve-2026-119210, https://nvd.nist.gov/vuln/detail/cve-2026-119276,\n https://nvd.nist.gov/vuln/detail/cve-2026-119277, https://nvd.nist.gov/vuln/detail/cve-2026-119280,\n https://nvd.nist.gov/vuln/detail/cve-2026-119281"
+    },
+    "CVE-2026-119281": {
+      "7cf7f0cd4018d23cf3d8da413ad920c9954eca0e": "Upgrade mariadb-java-client to 3.5.11\n\n- fixes https://nvd.nist.gov/vuln/detail/cve-2026-119210, https://nvd.nist.gov/vuln/detail/cve-2026-119276,\n https://nvd.nist.gov/vuln/detail/cve-2026-119277, https://nvd.nist.gov/vuln/detail/cve-2026-119280,\n https://nvd.nist.gov/vuln/detail/cve-2026-119281"
+    },
     "CVE-2026-111497": {
       "57ec209f23a495edbff5585e8374cea3a86b9cba": "Update Brotli4J to 1.24.0\n\nBrotli4J 1.23.0 bundles the native Brotli 1.2.0 decoder, which is\naffected by CVE-2026-111497. Brotli4J 1.24.0 bundles Brotli 1.2.1.\n\nSigned-off-by: \uc774\ucc3d\ubbfc <92606611+EeeasyCode@users.noreply.github.com>"
     },

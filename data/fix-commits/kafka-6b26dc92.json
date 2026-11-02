@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/kafka",
   "vulnerabilities": {
+    "CVE-2026-115644": {
+      "b230da4dd9b97c3b95bcf2fcabbdaf400a0d1e24": "MINOR: Refactor REST extension registration (#23150) (#24012)\n\nRefactor the Connect REST extension registration logic so that REST\nextensions configured via rest.extension.classes are also registered on\nthe admin listener's ResourceConfig when admin.listeners is set\n(CVE-2026-115644).\n\nCo-authored-by: Mickael Maison <mimaison@users.noreply.github.com>\nReviewers: Mickael Maison <mickael.maison@gmail.com>"
+    },
     "CVE-2026-110879": {
       "132ce7095342997d48a87026d27962a5600ba92b": "KAFKA-21305 Bump Jackson version to 2.22.4 (#23862)\n\nThere is a new jackson patch release\n\nhttps://github.com/FasterXML/jackson/wiki/Jackson-Release-2.22.4\n\nIt fixes a bunch of CVEs but I think for Kafka only CVE-2026-110879 can\nbe impactful.\n\nReviewers: Chia-Ping Tsai <chia7712@gmail.com>"
     },

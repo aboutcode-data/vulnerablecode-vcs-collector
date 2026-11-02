@@ -1,14 +1,15 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-C764-55GW-GJ6C": {
+      "4e2ee3178c70706be46a96652854f2071f961df9": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-c764-55gw-gj6c",
+      "3fd3608af01343488ef4e4fe808c5a66da77dc42": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-c764-55gw-gj6c"
+    },
     "GHSA-H9F8-QMVX-P39M": {
       "998773fa3d60f5c8a7964a73850904edf441b9fc": "Also create a StrictReadInlineImage implementation (GHSA-h9f8-qmvx-p39m)"
     },
     "GHSA-5V9F-R478-X7VX": {
       "28f65867d313fd5da01cc890addc9094b03d12f6": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5v9f-r478-x7vx"
-    },
-    "GHSA-C764-55GW-GJ6C": {
-      "3fd3608af01343488ef4e4fe808c5a66da77dc42": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-c764-55gw-gj6c"
     },
     "GHSA-HPJV-7VMP-F58W": {
       "4f3be68037c3a378cba8f75e10d4511325e636fa": "Match both slash- and backslash-separated paths and patterns during lexical and canonical path-policy evaluation on Windows (GHSA-hpjv-7vmp-f58w)"
