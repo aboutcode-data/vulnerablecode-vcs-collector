@@ -1,6 +1,17 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2017-10140": {
+      "235d668973cc7ff5d6a4c9009850281338dc5a00": "sys-libs/db: fix CVE-2017-10140 (4.8.30)\n\nDo not access DB_CONFIG when db_home is not set.\n\nThis patch from Fedora has been well tested in other distros since 2017\nand consumers which caused concern, like net-nds/openldap no longer\ndepend on this package.\n\nModified patch for 4.8.30 as the file was moved.\n\nBug: https://bugs.gentoo.org/638434\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/820\nSigned-off-by: Sam James <sam@gentoo.org>",
+      "48dcc3e5cc5cc4ba648cb9582d0c412cca766c5d": "sys-libs/db: fix CVE-2017-10140\n\nDo not access DB_CONFIG when db_home is not set.\n\nThis patch from Fedora has been well tested in other distros since 2017\nand consumers which caused concern, like net-nds/openldap no longer\ndepend on this package.\n\nPatch applies cleanly to both 5.3 and 6.0 series.\n\nBug: https://bugs.gentoo.org/638434\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/820\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2022-47021": {
+      "ef314e5ac851b848931600867cee6556f4a65f4e": "media-libs/opusfile: revbump, fix CVE-2022-47021\n\nApply upstream patch for CVE-2022-47021.\n\nBug: https://bugs.gentoo.org/891785\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/1597\nMerges: https://codeberg.org/gentoo/gentoo/pulls/1597\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
+    "CVE-2026-109821": {
+      "236fff4a05eed9974bbb874379a9b2ae77718d4b": "dev-lang/elixir: backport CVE-2026-109821 fix to 1.16.3\n\nBug: https://bugs.gentoo.org/985321\nSigned-off-by: Haelwenn (lanodan) Monnier <contact@hacktivis.me>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/2267\nMerges: https://codeberg.org/gentoo/gentoo/pulls/2267\nSigned-off-by: Sam James <sam@gentoo.org>",
+      "7e90aeec364c27712890b6725852263608607ed2": "dev-lang/elixir: backport CVE-2026-109821 fix to 1.17.3\n\nBug: https://bugs.gentoo.org/985321\nSigned-off-by: Haelwenn (lanodan) Monnier <contact@hacktivis.me>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/2267\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
     "CVE-2026-92372": {
       "ccf0b32491825dcec894f9037b51640d7d0d97e7": "net-misc/teamviewer: add 15.83.3\n\nfixes multiple Vulnerabilities\nTeamviewer Security Bulletin TV-2026-1011\nAssigned CVE: CVE-2026-92372, CVE-2026-92374, CVE-2026-111585\nhad to drop KEYWORD arm - no more SRC_URI for arm\n\nBug: https://bugs.gentoo.org/985235\nSigned-off-by: Martin Dummer <martin.dummer@gmx.net>\nPart-of: https://github.com/gentoo/gentoo/pull/46962\nCloses: https://github.com/gentoo/gentoo/pull/46962\nSigned-off-by: Sam James <sam@gentoo.org>"
     },
