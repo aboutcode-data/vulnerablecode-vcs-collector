@@ -1,6 +1,13 @@
 {
   "vcs_url": "https://github.com/rails/rails-html-sanitizer",
   "vulnerabilities": {
+    "GHSA-CPGF-5MJF-73P7": {
+      "235d7a44dc52f1ad8bd20076366a2b17804951ab": "Merge pull request #243 from rails/card-934-release-v1-7-2\n\nSecurity fixes for GHSA-cpgf-5mjf-73p7 and GHSA-h7wh-q2qr-458c",
+      "f776f963b9d9346271aade9cb903e793fd38e865": "Scrub SVG href attributes in linear time\n\n`PermitScrubber#scrub_attribute` tested SVG `href` and `xlink:href`\nagainst `/^\\s*[^#\\s].*/m`. `^` matches every line start and `\\s` includes\n`\\n`, so on an all-whitespace value the engine rescanned the whole run\nfrom each of its n line starts, which is O(n\u00b2). A 20 KB attribute took\n3.4 seconds on Ruby 3.1.7. Ruby 3.2's linear-time regexp matching hides\nthis, so only Ruby 3.1 and earlier are affected.\n\nCall `Loofah::HTML5::Scrub.prefixed_attribute_name` and\n`.scrub_attribute_value` rather than repeating loofah's attribute rules\nhere, which drops the pattern from this repo. `scrub_attribute_value`\nreturns true only when the URI scrub removed the attribute, so a\nlocal-href removal still falls through to the `src` check and\n`force_correct_attribute_escaping!` as it did before.\n\nRequire Loofah >= 2.25.3, the first release with those methods.\n\nref: https://github.com/rails/rails-html-sanitizer/security/advisories/GHSA-cpgf-5mjf-73p7"
+    },
+    "GHSA-H7WH-Q2QR-458C": {
+      "235d7a44dc52f1ad8bd20076366a2b17804951ab": "Merge pull request #243 from rails/card-934-release-v1-7-2\n\nSecurity fixes for GHSA-cpgf-5mjf-73p7 and GHSA-h7wh-q2qr-458c"
+    },
     "GHSA-X2F5-4PRF-W687": {
       "9a2f3655bc8f3bffd27d5dce9c821b491892b92f": "dep(dev): bump json to 2.19.9 (#232)\n\nThe lockfile pinned json 2.19.8, which is affected by GHSA-x2f5-4prf-w687.\nUpdate json, and record the current gem version (1.7.1) in the lockfile.\n\nref: https://github.com/rails/rails-html-sanitizer/security/dependabot/68"
     },
