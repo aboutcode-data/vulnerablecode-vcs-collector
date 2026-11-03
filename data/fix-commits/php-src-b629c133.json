@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/php/php-src",
   "vulnerabilities": {
+    "CVE-2026-48841": {
+      "9ea25b50585269f92ba192585f57d1a865845fc3": "uri: Update to uriparser-1.0.3 (#25145)\n\nThis fixes CVE-2026-48841."
+    },
     "CVE-2026-109618": {
       "3584a98bda0f2c0d367255b046798b0d3a221a19": "Avoid state corruption via bailout\n\n- Replace bailout on OOM with UnwindExit\n- Properly reset various globals that may be accessed during startup\n\nFix GHSA-w8hw-w9fx-j79w (CVE-2026-109618)\nFix GHSA-6wmf-4rv5-p3rp (CVE-2026-109619)\n\nCo-authored-by: Ilija Tovilo <ilija.tovilo@me.com>\nCo-authored-by: Jakub Zelenka <bukka@php.net>\nCo-authored-by: Nora Dossche <7771979+ndossche@users.noreply.github.com>\nCo-authored-by: Nicolas Grekas <nicolas.grekas@gmail.com>",
       "1d7dec178a094e6e75b229ce22754045f8c6070a": "Avoid state corruption via bailout\n\nMinimal mitigation for EOL version.\n\nFix GHSA-w8hw-w9fx-j79w (CVE-2026-109618)\nFix GHSA-6wmf-4rv5-p3rp (CVE-2026-109619)\n\nCo-authored-by: Ilija Tovilo <ilija.tovilo@me.com>",
