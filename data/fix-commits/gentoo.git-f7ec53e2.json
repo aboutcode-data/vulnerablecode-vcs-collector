@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-111426": {
+      "d5df54a4f76aa7f1ecb66c7a2f1ec85477ba5fe9": "kde-misc/kdeconnect: Fix CVE-2026-111426\n\nBug: https://bugs.gentoo.org/985463\nSigned-off-by: Andreas Sturmlechner <asturm@gentoo.org>"
+    },
     "CVE-2017-10140": {
       "235d668973cc7ff5d6a4c9009850281338dc5a00": "sys-libs/db: fix CVE-2017-10140 (4.8.30)\n\nDo not access DB_CONFIG when db_home is not set.\n\nThis patch from Fedora has been well tested in other distros since 2017\nand consumers which caused concern, like net-nds/openldap no longer\ndepend on this package.\n\nModified patch for 4.8.30 as the file was moved.\n\nBug: https://bugs.gentoo.org/638434\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/820\nSigned-off-by: Sam James <sam@gentoo.org>",
       "48dcc3e5cc5cc4ba648cb9582d0c412cca766c5d": "sys-libs/db: fix CVE-2017-10140\n\nDo not access DB_CONFIG when db_home is not set.\n\nThis patch from Fedora has been well tested in other distros since 2017\nand consumers which caused concern, like net-nds/openldap no longer\ndepend on this package.\n\nPatch applies cleanly to both 5.3 and 6.0 series.\n\nBug: https://bugs.gentoo.org/638434\nSigned-off-by: Brett A C Sheffield <bacs@librecast.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/820\nSigned-off-by: Sam James <sam@gentoo.org>"
