@@ -1,6 +1,16 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-111943": {
+      "84482645854cb64ec94a016e0c9905a367663285": "www-client/links: disable builtin certificates for CVE-2026-111943\n\nBug: https://bugs.gentoo.org/985407\nSigned-off-by: Ben Kohler <bkohler@gentoo.org>",
+      "cda95970042e3f9efd0ac1eb8e6e4c2c52718b11": "dev-qt/qtwebengine: backport for QTBUG-149946 and CVE-2026-111943\n\nMeant to wait for qtwebengine-6.11.3 to release to patch anything\nfor less rebuilding given it was supposed to be imminent, but it\nkeeps being delayed so may as well at least do these.\n\nCloses: https://bugs.gentoo.org/984271\nCloses: https://bugs.gentoo.org/984633\nSigned-off-by: Ionen Wolkens <ionen@gentoo.org>"
+    },
+    "CVE-2026-112060": {
+      "16881f0cb2867cbc6da3f3f10bccf0c8cf00a247": "media-video/rtmpdump: add 2.6, fix CVE-2026-112060, CVE-2026-112061\n\nFix AMF decoding error handling and checks\n\nBug: https://bugs.gentoo.org/985570\nSigned-off-by: Craig Andrews <candrews@gentoo.org>"
+    },
+    "CVE-2026-112061": {
+      "16881f0cb2867cbc6da3f3f10bccf0c8cf00a247": "media-video/rtmpdump: add 2.6, fix CVE-2026-112060, CVE-2026-112061\n\nFix AMF decoding error handling and checks\n\nBug: https://bugs.gentoo.org/985570\nSigned-off-by: Craig Andrews <candrews@gentoo.org>"
+    },
     "CVE-2026-111426": {
       "d5df54a4f76aa7f1ecb66c7a2f1ec85477ba5fe9": "kde-misc/kdeconnect: Fix CVE-2026-111426\n\nBug: https://bugs.gentoo.org/985463\nSigned-off-by: Andreas Sturmlechner <asturm@gentoo.org>"
     },
@@ -41,9 +51,6 @@
     },
     "CVE-2026-107891": {
       "8ee458f3b9d9c8f9358a2e7276cb0091d2d6acb1": "sys-libs/musl: fix CVE-2026-107891\n\nBug: https://bugs.gentoo.org/984682\nSigned-off-by: Sam James <sam@gentoo.org>"
-    },
-    "CVE-2026-111943": {
-      "cda95970042e3f9efd0ac1eb8e6e4c2c52718b11": "dev-qt/qtwebengine: backport for QTBUG-149946 and CVE-2026-111943\n\nMeant to wait for qtwebengine-6.11.3 to release to patch anything\nfor less rebuilding given it was supposed to be imminent, but it\nkeeps being delayed so may as well at least do these.\n\nCloses: https://bugs.gentoo.org/984271\nCloses: https://bugs.gentoo.org/984633\nSigned-off-by: Ionen Wolkens <ionen@gentoo.org>"
     },
     "CVE-2026-97399": {
       "45e361a6fc566af16efe6d0eae2e00b52a01e4e3": "sys-libs/glibc: keyword 2.44-r4\n\nPatchset changelog:\n9bee3251b6 (HEAD -> gentoo/2.44, tag: gentoo/glibc-2.44-5, gentoo/gentoo/2.44) powerpc: Fix one byte overread in strncasecmp (bug 34683, CVE-2026-97399)\nb8fcb890cd realloc: Fix mmap non-mremap reallocation case [BZ #34697]\ne92ed66e13 CVE-2026-89092: nscd: replace alloca with malloc in aicache, hstcache\n\nSigned-off-by: Andreas K. H\u00fcttel <dilfridge@gentoo.org>",

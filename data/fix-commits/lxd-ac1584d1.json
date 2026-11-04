@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/canonical/lxd",
   "vulnerabilities": {
     "GHSA-99JP-JWMC-65P4": {
+      "3b745c8a0d638713c3b245b2d7c8c69204f61033": "Auth: Do not trust non-leaf certificates (stable-5.0) (#19429)\n\nFixes\nhttps://github.com/canonical/lxd/security/advisories/GHSA-99jp-jwmc-65p4",
       "8d939c78898bc2d588b4d8a20298d43f1f6699b4": "Auth: Do not trust non-leaf certificates (stable-5.21) (#19430)\n\nFixes\nhttps://github.com/canonical/lxd/security/advisories/GHSA-99jp-jwmc-65p4",
       "3bb7ab7396425b59974167a6424093b58e13adad": "Auth: Do not trust non-leaf certificates (stable-6) (#19426)\n\nFixes for\nhttps://github.com/canonical/lxd/security/advisories/GHSA-99jp-jwmc-65p4\n(already fixed privately in latest release of all LTS versions and\nedge).\n\n## Checklist\n\n- [x] I have read the [contributing\nguidelines](https://github.com/canonical/lxd/blob/main/CONTRIBUTING.md)\nand attest that all commits in this PR are [signed\noff](https://github.com/canonical/lxd/blob/main/CONTRIBUTING.md#including-a-signed-off-by-line-in-your-commits),\n[cryptographically\nsigned](https://github.com/canonical/lxd/blob/main/CONTRIBUTING.md#commit-signature-verification),\nand follow this project's [commit\nstructure](https://github.com/canonical/lxd/blob/main/CONTRIBUTING.md#commit-structure).\n- [x] I have checked and added or updated relevant documentation."
     },
