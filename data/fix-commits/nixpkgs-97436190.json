@@ -1,6 +1,26 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-102703": {
+      "02ac5499124b91ad0e41e6bb5cce5e9e5243b5aa": "xen: patch with XSA-523\n\n   Xen Security Advisory CVE-2026-102703,CVE-2026-102704 / XSA-523\n\n                    arbitrary read/write via grant copy\n\nA common access pattern is a batch of Grant Copy operations acting on\nadjacent address ranges in the same source or destination page.  For\nperformance reasons, Xen caches details internally to reuse already\nvalidated data.  The conditions on when to re-validate the internal data\nwere not correct in some cases:\n\n - Frame numbers and grant references could wrongly be mixed up.  This\n   is CVE-2026-102703.\n\n - Copying by frame number (rather than grant reference) is permitted\n   only when operating on the caller's own memory.  The check to enforce\n   this restriction was misplaced.  This is CVE-2026-102704.\n\nA malicious guest can read and write arbitrary memory, belonging to\nother domains, including Dom0.\n\nhttps://xenbits.xenproject.org/xsa/advisory-523.html\n\nSigned-off-by: Fernando Rodrigues <alpha@sigmasquadron.net>\n(cherry picked from commit 9f88934d29d06253bb29af82b0529c5b0b94fa32)",
+      "9f88934d29d06253bb29af82b0529c5b0b94fa32": "xen: patch with XSA-523\n\n   Xen Security Advisory CVE-2026-102703,CVE-2026-102704 / XSA-523\n\n                    arbitrary read/write via grant copy\n\nA common access pattern is a batch of Grant Copy operations acting on\nadjacent address ranges in the same source or destination page.  For\nperformance reasons, Xen caches details internally to reuse already\nvalidated data.  The conditions on when to re-validate the internal data\nwere not correct in some cases:\n\n - Frame numbers and grant references could wrongly be mixed up.  This\n   is CVE-2026-102703.\n\n - Copying by frame number (rather than grant reference) is permitted\n   only when operating on the caller's own memory.  The check to enforce\n   this restriction was misplaced.  This is CVE-2026-102704.\n\nA malicious guest can read and write arbitrary memory, belonging to\nother domains, including Dom0.\n\nhttps://xenbits.xenproject.org/xsa/advisory-523.html\n\nSigned-off-by: Fernando Rodrigues <alpha@sigmasquadron.net>"
+    },
+    "CVE-2026-102704": {
+      "02ac5499124b91ad0e41e6bb5cce5e9e5243b5aa": "xen: patch with XSA-523\n\n   Xen Security Advisory CVE-2026-102703,CVE-2026-102704 / XSA-523\n\n                    arbitrary read/write via grant copy\n\nA common access pattern is a batch of Grant Copy operations acting on\nadjacent address ranges in the same source or destination page.  For\nperformance reasons, Xen caches details internally to reuse already\nvalidated data.  The conditions on when to re-validate the internal data\nwere not correct in some cases:\n\n - Frame numbers and grant references could wrongly be mixed up.  This\n   is CVE-2026-102703.\n\n - Copying by frame number (rather than grant reference) is permitted\n   only when operating on the caller's own memory.  The check to enforce\n   this restriction was misplaced.  This is CVE-2026-102704.\n\nA malicious guest can read and write arbitrary memory, belonging to\nother domains, including Dom0.\n\nhttps://xenbits.xenproject.org/xsa/advisory-523.html\n\nSigned-off-by: Fernando Rodrigues <alpha@sigmasquadron.net>\n(cherry picked from commit 9f88934d29d06253bb29af82b0529c5b0b94fa32)",
+      "9f88934d29d06253bb29af82b0529c5b0b94fa32": "xen: patch with XSA-523\n\n   Xen Security Advisory CVE-2026-102703,CVE-2026-102704 / XSA-523\n\n                    arbitrary read/write via grant copy\n\nA common access pattern is a batch of Grant Copy operations acting on\nadjacent address ranges in the same source or destination page.  For\nperformance reasons, Xen caches details internally to reuse already\nvalidated data.  The conditions on when to re-validate the internal data\nwere not correct in some cases:\n\n - Frame numbers and grant references could wrongly be mixed up.  This\n   is CVE-2026-102703.\n\n - Copying by frame number (rather than grant reference) is permitted\n   only when operating on the caller's own memory.  The check to enforce\n   this restriction was misplaced.  This is CVE-2026-102704.\n\nA malicious guest can read and write arbitrary memory, belonging to\nother domains, including Dom0.\n\nhttps://xenbits.xenproject.org/xsa/advisory-523.html\n\nSigned-off-by: Fernando Rodrigues <alpha@sigmasquadron.net>"
+    },
+    "CVE-2026-113351": {
+      "0f629651e27b9f127d9176025c24c578de50ac13": "expat: 2.9.0 -> 2.10.0\n\nblog: https://blog.hartwork.org/posts/expat-2-10-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_10_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_9_0...R_2_10_0\n\nFixes: CVE-2026-113351, CVE-2026-115506, CVE-2026-117610, CVE-2026-117610\n(cherry picked from commit 9a7b087c270eeea8fe5cbd89c4878d949f0f30bc)",
+      "9a7b087c270eeea8fe5cbd89c4878d949f0f30bc": "expat: 2.9.0 -> 2.10.0\n\nblog: https://blog.hartwork.org/posts/expat-2-10-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_10_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_9_0...R_2_10_0\n\nFixes: CVE-2026-113351, CVE-2026-115506, CVE-2026-117610, CVE-2026-117610"
+    },
+    "CVE-2026-115506": {
+      "0f629651e27b9f127d9176025c24c578de50ac13": "expat: 2.9.0 -> 2.10.0\n\nblog: https://blog.hartwork.org/posts/expat-2-10-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_10_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_9_0...R_2_10_0\n\nFixes: CVE-2026-113351, CVE-2026-115506, CVE-2026-117610, CVE-2026-117610\n(cherry picked from commit 9a7b087c270eeea8fe5cbd89c4878d949f0f30bc)",
+      "9a7b087c270eeea8fe5cbd89c4878d949f0f30bc": "expat: 2.9.0 -> 2.10.0\n\nblog: https://blog.hartwork.org/posts/expat-2-10-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_10_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_9_0...R_2_10_0\n\nFixes: CVE-2026-113351, CVE-2026-115506, CVE-2026-117610, CVE-2026-117610"
+    },
+    "CVE-2026-117610": {
+      "0f629651e27b9f127d9176025c24c578de50ac13": "expat: 2.9.0 -> 2.10.0\n\nblog: https://blog.hartwork.org/posts/expat-2-10-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_10_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_9_0...R_2_10_0\n\nFixes: CVE-2026-113351, CVE-2026-115506, CVE-2026-117610, CVE-2026-117610\n(cherry picked from commit 9a7b087c270eeea8fe5cbd89c4878d949f0f30bc)",
+      "9a7b087c270eeea8fe5cbd89c4878d949f0f30bc": "expat: 2.9.0 -> 2.10.0\n\nblog: https://blog.hartwork.org/posts/expat-2-10-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_10_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_9_0...R_2_10_0\n\nFixes: CVE-2026-113351, CVE-2026-115506, CVE-2026-117610, CVE-2026-117610"
+    },
     "CVE-2026-108147": {
       "074b3fc94c77340799ff8c07f8fb68d0b606d43d": "python3Packages.django_5: 5.2.18 -> 5.2.19\n\nhttps://docs.djangoproject.com/en/5.2/releases/5.2.19/\nhttps://www.djangoproject.com/weblog/2026/nov/03/security-releases/\n\nFixes:\nCVE-2026-108147, CVE-2026-111211, CVE-2026-111362, CVE-2026-113593,\nCVE-2026-113733, CVE-2026-114582\n\n(cherry picked from commit 39b3e4ef581647d7e8430c6fdb457f4b1f742642)",
       "cdceb554df2dff10c05b5c4f018e2ad513a1cfbd": "python3Packages.django_6_0: 6.0.9 -> 6.0.10\n\nhttps://docs.djangoproject.com/en/6.0/releases/6.0.10/\nhttps://djangoproject.com/weblog/2026/nov/03/security-releases\n\nFixes:\nCVE-2026-108147, CVE-2026-111211, CVE-2026-111362, CVE-2026-113593,\nCVE-2026-113733, CVE-2026-114582\n\n(cherry picked from commit c392b9b14db54c85e49d92a0cf47650c4f7c1e6e)",
@@ -61,6 +81,14 @@
       "7fa0c99a83a6e4fa7f2b70bba8ab8ad4727b3820": "libcss: fix CVE-2026-116740\n\n(cherry picked from commit 83350f457693584dc1625c7f7b3b5eec02c33643)",
       "c6a4a3963803a344bf1bc901fb9c1471a2729740": "libcss: fix CVE-2026-116740 (#582411)",
       "83350f457693584dc1625c7f7b3b5eec02c33643": "libcss: fix CVE-2026-116740"
+    },
+    "CVE-2026-69150": {
+      "cc5c0c4a4113392e6b7bdd1b29cf290e13429e22": "keepassxc: fix CVE-2026-69150\n\n(cherry picked from commit 1b2cf585dabdd27a02bfde2b1bba2194b6bb3f53)\n\nSigned-off-by: Fernando Rodrigues <alpha@sigmasquadron.net>",
+      "628715f364d5694fc8ca97f99077f15b0c0ecdf3": "Revert \"keepassxc: fix CVE-2026-69150\"\n\nThis reverts commit 1b3e3b7e1adcb1356c434ccd31715244d12384ef.\n\nNot-cherry-picked-because: This revert is necessary to facilitate future backports, and is reapplied cleanly later on this patch set\nSigned-off-by: Fernando Rodrigues <alpha@sigmasquadron.net>",
+      "21691b79c41ba30a80b110523c943d8d45a0912b": "[Backport release-26.05] keepassxc: fix CVE-2026-69150 (#575370)",
+      "1b3e3b7e1adcb1356c434ccd31715244d12384ef": "keepassxc: fix CVE-2026-69150\n\n(cherry picked from commit 1b2cf585dabdd27a02bfde2b1bba2194b6bb3f53)",
+      "f08b4cd95667cbfa22571ad495251a9ba4187dd9": "keepassxc: fix CVE-2026-69150 (#575169)",
+      "1b2cf585dabdd27a02bfde2b1bba2194b6bb3f53": "keepassxc: fix CVE-2026-69150"
     },
     "CVE-2026-119760": {
       "05e40c13e69818d1e259ee0b5cdfcfa0f85ead63": "sniproxy: 0.7.0 -> 0.24.2, switch to the maintained fork\n\nUpstream has not released since 0.7.0, and that version is vulnerable to\nCVE-2026-119760 (NixOS#581363).\n\nrenaudallard's fork has the fix and years of hardening (c-ares instead\nof udns, seccomp, OpenSSL, DTLS, HTTP/2), so follow it from now on.\n\n(cherry picked from commit 692c796ed203c1d53fa65569ed57593797c0bcf2)",
@@ -879,12 +907,6 @@
     "CVE-2026-110698": {
       "3cf37b321c4549d4a991b2372f5f32507eba5e2c": "praat: quick fix for CVE-2026-110698 (#574675)",
       "703eb616f135dbeaeb23afd466adff8aba3d97fa": "praat: quick fix for CVE-2026-110698"
-    },
-    "CVE-2026-69150": {
-      "21691b79c41ba30a80b110523c943d8d45a0912b": "[Backport release-26.05] keepassxc: fix CVE-2026-69150 (#575370)",
-      "1b3e3b7e1adcb1356c434ccd31715244d12384ef": "keepassxc: fix CVE-2026-69150\n\n(cherry picked from commit 1b2cf585dabdd27a02bfde2b1bba2194b6bb3f53)",
-      "f08b4cd95667cbfa22571ad495251a9ba4187dd9": "keepassxc: fix CVE-2026-69150 (#575169)",
-      "1b2cf585dabdd27a02bfde2b1bba2194b6bb3f53": "keepassxc: fix CVE-2026-69150"
     },
     "CVE-2026-56288": {
       "9bcfa63993659359ca40d5d7101f5de78b0aa003": "gnupatch: add patches for CVE-2026-56288, CVE-2026-56289 (#575363)",

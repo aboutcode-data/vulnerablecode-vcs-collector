@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://chromium.googlesource.com/chromium/src",
   "vulnerabilities": {
+    "CVE-2026-111497": {
+      "4a3d27f0b508af81b6feec1ecbd86ef67b89d483": "[vpython] Upgrade brotli from 1.0.9 to 1.2.1\n\nUpgrade brotli to 1.2.1 in vpython.toml to address CVE-2026-111497 and\ndrop the obsolete python_version >= 3.14 dependency splits now that\nvpython3 bounds uv lockfile compilation to requires-python (<3.12).\n\nThe vuln is marked as 9.2, so utilizing break glass to submit this\nCL with greenlight given by the supply chain security team.\n\nTAG=agy\nCONV=f3054355-bc68-4ae0-8ce4-c5711edb6f58\n\nBug: None\nChange-Id: Ia96b0a643d5abceb827800c8d76cfb4eaee572e0\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/8739601\nReviewed-by: Takuto Ikuta <tikuta@chromium.org>\nAuto-Submit: Alex Ovsienko <ovsienko@google.com>\nCommit-Queue: Alex Ovsienko <ovsienko@google.com>\nOwners-Override: Alex Ovsienko <ovsienko@google.com>\nCr-Commit-Position: refs/heads/main@{#1736065}"
+    },
     "CVE-2020-8910": {
       "1d1dc671902e7d702018c6105b5cd894c36886fc": "Mark CVE-2020-8910 as mitigated in closure_library README.chromium\n\nThe affected file (closure/goog/uri/utils.js) was removed in\nhttps://crrev.com/c/6171485.\n\nBug: 357737761\nChange-Id: Iec1fe92c81e16f2b9d64f1bc8ef18b1fd2acc9a0\nReviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/8557500\nAuto-Submit: Darren Shen <shend@chromium.org>\nCommit-Queue: Darren Shen <shend@chromium.org>\nReviewed-by: John Palmer <jopalmer@chromium.org>\nCr-Commit-Position: refs/heads/main@{#1717326}"
     },
