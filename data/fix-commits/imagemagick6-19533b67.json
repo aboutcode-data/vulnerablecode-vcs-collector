@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-W85X-JCRH-64RR": {
+      "66f6f3c321789dea1cfab226b12fd4c87d628780": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-w85x-jcrh-64rr"
+    },
+    "GHSA-V56X-R6P7-8V88": {
+      "0da92629bf81b347a3e576ed1221c5ca6bd5c3a0": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-v56x-r6p7-8v88"
+    },
     "GHSA-H9F8-QMVX-P39M": {
       "42a75bb8b9fbfcfcd5cdf1f12632d86dd0263a67": "Also create a StrictReadInlineImage implementation (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-h9f8-qmvx-p39m)"
     },

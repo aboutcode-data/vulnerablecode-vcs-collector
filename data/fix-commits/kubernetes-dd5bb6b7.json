@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/kubernetes/kubernetes",
   "vulnerabilities": {
+    "CVE-2026-116587": {
+      "c87af0b8186e0c95ec762fea9e4430605c52eaa4": "Merge pull request #143657 from H3xKatana/bump-go-jose-v4.1.7\n\nBump go-jose to v4.1.7 for CVE-2026-116587",
+      "b81418cfc0c93ab1cd166fba43946933769df35d": "Bump go-jose to v4.1.7 for CVE-2026-116587\n\nv4.1.5 is vulnerable to a denial of service when parsing crafted JWKs.\nv4.1.7 also fixes GHSA-r39w-98wm-9pp6, GHSA-27pc-rm86-68pq,\nGHSA-p9j4-2j95-j4rv, GHSA-v6h2-qj3f-2h6v and GHSA-c67m-wr4h-2ccg.\n\nGenerated with hack/pin-dependency.sh and hack/update-vendor.sh.\n\nSigned-off-by: 0xkatana <H3xKatana@users.noreply.github.com>"
+    },
     "CVE-2026-78661": {
       "512785fb4cdbee732c2b1890709293ac27305252": "Merge pull request #143642 from yue9944882/bump-golang-net-cve\n\nBump golang.org/x/net to 0.62.0 for cve-2026-78661 and cve-2026-97045",
       "bd872cb03cd0ab35a4ecc65c393317552d47bb3d": "bump golang.org/x/net to 0.62.0 for cve-2026-78661 and cve-2026-97045\n\nSigned-off-by: Min Jin <minkimzz@amazon.com>"
@@ -8,6 +12,21 @@
     "CVE-2026-97045": {
       "512785fb4cdbee732c2b1890709293ac27305252": "Merge pull request #143642 from yue9944882/bump-golang-net-cve\n\nBump golang.org/x/net to 0.62.0 for cve-2026-78661 and cve-2026-97045",
       "bd872cb03cd0ab35a4ecc65c393317552d47bb3d": "bump golang.org/x/net to 0.62.0 for cve-2026-78661 and cve-2026-97045\n\nSigned-off-by: Min Jin <minkimzz@amazon.com>"
+    },
+    "GHSA-R39W-98WM-9PP6": {
+      "b81418cfc0c93ab1cd166fba43946933769df35d": "Bump go-jose to v4.1.7 for CVE-2026-116587\n\nv4.1.5 is vulnerable to a denial of service when parsing crafted JWKs.\nv4.1.7 also fixes GHSA-r39w-98wm-9pp6, GHSA-27pc-rm86-68pq,\nGHSA-p9j4-2j95-j4rv, GHSA-v6h2-qj3f-2h6v and GHSA-c67m-wr4h-2ccg.\n\nGenerated with hack/pin-dependency.sh and hack/update-vendor.sh.\n\nSigned-off-by: 0xkatana <H3xKatana@users.noreply.github.com>"
+    },
+    "GHSA-27PC-RM86-68PQ": {
+      "b81418cfc0c93ab1cd166fba43946933769df35d": "Bump go-jose to v4.1.7 for CVE-2026-116587\n\nv4.1.5 is vulnerable to a denial of service when parsing crafted JWKs.\nv4.1.7 also fixes GHSA-r39w-98wm-9pp6, GHSA-27pc-rm86-68pq,\nGHSA-p9j4-2j95-j4rv, GHSA-v6h2-qj3f-2h6v and GHSA-c67m-wr4h-2ccg.\n\nGenerated with hack/pin-dependency.sh and hack/update-vendor.sh.\n\nSigned-off-by: 0xkatana <H3xKatana@users.noreply.github.com>"
+    },
+    "GHSA-P9J4-2J95-J4RV": {
+      "b81418cfc0c93ab1cd166fba43946933769df35d": "Bump go-jose to v4.1.7 for CVE-2026-116587\n\nv4.1.5 is vulnerable to a denial of service when parsing crafted JWKs.\nv4.1.7 also fixes GHSA-r39w-98wm-9pp6, GHSA-27pc-rm86-68pq,\nGHSA-p9j4-2j95-j4rv, GHSA-v6h2-qj3f-2h6v and GHSA-c67m-wr4h-2ccg.\n\nGenerated with hack/pin-dependency.sh and hack/update-vendor.sh.\n\nSigned-off-by: 0xkatana <H3xKatana@users.noreply.github.com>"
+    },
+    "GHSA-V6H2-QJ3F-2H6V": {
+      "b81418cfc0c93ab1cd166fba43946933769df35d": "Bump go-jose to v4.1.7 for CVE-2026-116587\n\nv4.1.5 is vulnerable to a denial of service when parsing crafted JWKs.\nv4.1.7 also fixes GHSA-r39w-98wm-9pp6, GHSA-27pc-rm86-68pq,\nGHSA-p9j4-2j95-j4rv, GHSA-v6h2-qj3f-2h6v and GHSA-c67m-wr4h-2ccg.\n\nGenerated with hack/pin-dependency.sh and hack/update-vendor.sh.\n\nSigned-off-by: 0xkatana <H3xKatana@users.noreply.github.com>"
+    },
+    "GHSA-C67M-WR4H-2CCG": {
+      "b81418cfc0c93ab1cd166fba43946933769df35d": "Bump go-jose to v4.1.7 for CVE-2026-116587\n\nv4.1.5 is vulnerable to a denial of service when parsing crafted JWKs.\nv4.1.7 also fixes GHSA-r39w-98wm-9pp6, GHSA-27pc-rm86-68pq,\nGHSA-p9j4-2j95-j4rv, GHSA-v6h2-qj3f-2h6v and GHSA-c67m-wr4h-2ccg.\n\nGenerated with hack/pin-dependency.sh and hack/update-vendor.sh.\n\nSigned-off-by: 0xkatana <H3xKatana@users.noreply.github.com>"
     },
     "GHSA-CQR7-R6X2-9CQF": {
       "11f5f2467c6694e76706e76ea2e0276ab66830ae": "Bump go-openapi jsonpointer, jsonreference to v1.0.2 and swag to v0.29.2\n\njsonpointer v1.0.2 fixes two uncaught panics in the name provider and\nin Pointer.Set (GHSA-cqr7-r6x2-9cqf, GHSA-m8w9-vj7g-gxgg).\n\nSigned-off-by: Davanum Srinivas <davanum@gmail.com>"

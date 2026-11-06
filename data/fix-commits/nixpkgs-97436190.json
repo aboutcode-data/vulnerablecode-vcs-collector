@@ -21,6 +21,18 @@
       "0f629651e27b9f127d9176025c24c578de50ac13": "expat: 2.9.0 -> 2.10.0\n\nblog: https://blog.hartwork.org/posts/expat-2-10-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_10_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_9_0...R_2_10_0\n\nFixes: CVE-2026-113351, CVE-2026-115506, CVE-2026-117610, CVE-2026-117610\n(cherry picked from commit 9a7b087c270eeea8fe5cbd89c4878d949f0f30bc)",
       "9a7b087c270eeea8fe5cbd89c4878d949f0f30bc": "expat: 2.9.0 -> 2.10.0\n\nblog: https://blog.hartwork.org/posts/expat-2-10-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_10_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_9_0...R_2_10_0\n\nFixes: CVE-2026-113351, CVE-2026-115506, CVE-2026-117610, CVE-2026-117610"
     },
+    "CVE-2026-120689": {
+      "6c357957658a86453c9e68702f54cc447eb302ae": "hdf5_2: 2.2.0 -> 2.2.0-unstable-2026-11-04\n\nFixes:\nCVE-2026-120689\nCVE-2026-120757\nCVE-2026-120756\nCVE-2026-120758"
+    },
+    "CVE-2026-120757": {
+      "6c357957658a86453c9e68702f54cc447eb302ae": "hdf5_2: 2.2.0 -> 2.2.0-unstable-2026-11-04\n\nFixes:\nCVE-2026-120689\nCVE-2026-120757\nCVE-2026-120756\nCVE-2026-120758"
+    },
+    "CVE-2026-120756": {
+      "6c357957658a86453c9e68702f54cc447eb302ae": "hdf5_2: 2.2.0 -> 2.2.0-unstable-2026-11-04\n\nFixes:\nCVE-2026-120689\nCVE-2026-120757\nCVE-2026-120756\nCVE-2026-120758"
+    },
+    "CVE-2026-120758": {
+      "6c357957658a86453c9e68702f54cc447eb302ae": "hdf5_2: 2.2.0 -> 2.2.0-unstable-2026-11-04\n\nFixes:\nCVE-2026-120689\nCVE-2026-120757\nCVE-2026-120756\nCVE-2026-120758"
+    },
     "CVE-2026-108147": {
       "074b3fc94c77340799ff8c07f8fb68d0b606d43d": "python3Packages.django_5: 5.2.18 -> 5.2.19\n\nhttps://docs.djangoproject.com/en/5.2/releases/5.2.19/\nhttps://www.djangoproject.com/weblog/2026/nov/03/security-releases/\n\nFixes:\nCVE-2026-108147, CVE-2026-111211, CVE-2026-111362, CVE-2026-113593,\nCVE-2026-113733, CVE-2026-114582\n\n(cherry picked from commit 39b3e4ef581647d7e8430c6fdb457f4b1f742642)",
       "cdceb554df2dff10c05b5c4f018e2ad513a1cfbd": "python3Packages.django_6_0: 6.0.9 -> 6.0.10\n\nhttps://docs.djangoproject.com/en/6.0/releases/6.0.10/\nhttps://djangoproject.com/weblog/2026/nov/03/security-releases\n\nFixes:\nCVE-2026-108147, CVE-2026-111211, CVE-2026-111362, CVE-2026-113593,\nCVE-2026-113733, CVE-2026-114582\n\n(cherry picked from commit c392b9b14db54c85e49d92a0cf47650c4f7c1e6e)",
@@ -90,15 +102,39 @@
       "f08b4cd95667cbfa22571ad495251a9ba4187dd9": "keepassxc: fix CVE-2026-69150 (#575169)",
       "1b2cf585dabdd27a02bfde2b1bba2194b6bb3f53": "keepassxc: fix CVE-2026-69150"
     },
+    "CVE-2026-65059": {
+      "37dbece7eebe28edfa48207f660b795b9085be81": "perlPackages.Furl: fix CVE-2026-65059\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
     "CVE-2026-119760": {
       "05e40c13e69818d1e259ee0b5cdfcfa0f85ead63": "sniproxy: 0.7.0 -> 0.24.2, switch to the maintained fork\n\nUpstream has not released since 0.7.0, and that version is vulnerable to\nCVE-2026-119760 (NixOS#581363).\n\nrenaudallard's fork has the fix and years of hardening (c-ares instead\nof udns, seccomp, OpenSSL, DTLS, HTTP/2), so follow it from now on.\n\n(cherry picked from commit 692c796ed203c1d53fa65569ed57593797c0bcf2)",
       "692c796ed203c1d53fa65569ed57593797c0bcf2": "sniproxy: 0.7.0 -> 0.24.2, switch to the maintained fork\n\nUpstream has not released since 0.7.0, and that version is vulnerable to\nCVE-2026-119760 (NixOS#581363).\n\nrenaudallard's fork has the fix and years of hardening (c-ares instead\nof udns, seccomp, OpenSSL, DTLS, HTTP/2), so follow it from now on."
+    },
+    "CVE-2026-93469": {
+      "1a80aaf9c8b90f0b575b12fb1208135a761b3916": "perlPackages.libnet: 3.15 -> 3.16\n\nFixes CVE-2026-93469.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
     },
     "CVE-2026-111148": {
       "bf73ab8dbd364aefffd07ea769df9e599e9cc544": "[26.05] libsidplayfp: Apply fix for CVE-2026-111148 (#578074)",
       "93543b425ed44121ce856ec2fd9113a585b71a6f": "libsidplayfp: Apply fix for CVE-2026-111148\n\n(cherry picked from commit 88d62ddb8c79d7601c80f0efc614a483f9e75085)\n\nAdjusted to older version of libsidplayfp.",
       "9c1dc6804e91bad4c21240b575f24c5e8f530bd9": "libsidplayfp: Apply fix for CVE-2026-111148 (#578062)",
       "88d62ddb8c79d7601c80f0efc614a483f9e75085": "libsidplayfp: Apply fix for CVE-2026-111148"
+    },
+    "CVE-2026-115865": {
+      "eafafc68cdb689eab289fb315ad1f6e54ab74fba": "perlPackages.Starlet: 0.32 -> 0.33\n\nFixes CVE-2026-115865, CVE-2026-115866, CVE-2026-116127 and\nCVE-2026-116128.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-115866": {
+      "eafafc68cdb689eab289fb315ad1f6e54ab74fba": "perlPackages.Starlet: 0.32 -> 0.33\n\nFixes CVE-2026-115865, CVE-2026-115866, CVE-2026-116127 and\nCVE-2026-116128.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116127": {
+      "eafafc68cdb689eab289fb315ad1f6e54ab74fba": "perlPackages.Starlet: 0.32 -> 0.33\n\nFixes CVE-2026-115865, CVE-2026-115866, CVE-2026-116127 and\nCVE-2026-116128.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116128": {
+      "eafafc68cdb689eab289fb315ad1f6e54ab74fba": "perlPackages.Starlet: 0.32 -> 0.33\n\nFixes CVE-2026-115865, CVE-2026-115866, CVE-2026-116127 and\nCVE-2026-116128.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-116130": {
+      "893aecc85d0c987f5da329f9784dba80a0faba94": "perlPackages.HTTPParserXS: 0.17 -> 0.18\n\nFixes CVE-2026-116130.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
+    },
+    "CVE-2026-115943": {
+      "fc8a09544c45490b8900251b69c81fd19d8a4e9a": "perlPackages.SpreadsheetXLSX: 0.17 -> 0.20\n\nFixes CVE-2026-115943.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
     },
     "GHSA-5F4M-FF4W-G458": {
       "697658ef33712bbf19c338253d7e40604cce854d": "frankenphp: 1.13.2 -> 1.13.4\n\nhttps://github.com/php/frankenphp/releases/tag/v1.13.3\nhttps://github.com/php/frankenphp/releases/tag/v1.13.4\n\nFixes GHSA-5f4m-ff4w-g458\nFixes GHSA-rgpj-f2qx-xwhf\nFixes GHSA-cm3q-jw2q-9rh5\nFixes GHSA-8386-64gm-3m8q\nFixes GHSA-pmvg-8483-mw84\nFixes GHSA-h764-4wh7-m7j2\nFixes GHSA-x6j6-qv7w-fq3c\n\npkg-config is now needed on all platforms, as the cbrotli Go binding\nresolves brotli through it.\n\nAssisted-by: Claude Code (Claude Opus 5.5)"
