@@ -1,6 +1,15 @@
 {
   "vcs_url": "https://github.com/getsentry/sentry-javascript",
   "vulnerabilities": {
+    "CVE-2026-4867": {
+      "847559167b8952395e236a812728a8a8160400dc": "chore(deps): Bump path-to-regexp to fix CVE-2026-4867\n\nBumps path-to-regexp 0.1.12 -> 0.1.13 (within express 4's ~0.1.12 range).\n\nFixes Dependabot alert:\n- https://github.com/getsentry/sentry-javascript/security/dependabot/3189\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+    },
+    "CVE-2026-73086": {
+      "79a2d0b6c4fdd10cc5439f378330c654b4e6eeb6": "chore(deps): Bump nanoid to fix CVE-2026-73086\n\nBumps nanoid 5.1.9 -> 5.1.16 (within @size-limit's ^5.1.7 range).\n\nFixes Dependabot alert:\n- https://github.com/getsentry/sentry-javascript/security/dependabot/3275\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+    },
+    "CVE-2026-111181": {
+      "8c2bc971483d33e91b929477f8e0648e3d20918d": "chore(deps): Bump body-parser to fix CVE-2026-111181 (#26164)\n\n**Why:** Fixes Dependabot alerts\n[3366](https://github.com/getsentry/sentry-javascript/security/dependabot/3366),\n[3365](https://github.com/getsentry/sentry-javascript/security/dependabot/3365)\nand\n[3250](https://github.com/getsentry/sentry-javascript/security/dependabot/3250)\n(body-parser DoS, high). Bumps body-parser 1.20.4 \u2192 1.20.9 and 2.3.0 \u2192\n2.4.0. All parents (express 4/5, @apollo/server) already allow these\nversions, so it is a lockfile refresh plus the direct `^2.4.0` in\nnode-integration-tests. Dev/test-only. It also pulls in newer qs and\ncontent-type through body-parser.\n\nCo-authored-by: Claude Opus 5.5 <noreply@anthropic.com>"
+    },
     "GHSA-X6JW-M9V5-85VH": {
       "930a4c80cd10bc03c8c527d76813956ed04ecca7": "chore(deps): Bump @nuxt/devtools from 3.4.1 to 3.4.4 (#26097)\n\n**Why:** Fixes the open simple-git advisories, including two critical\n(GHSA-x6jw-m9v5-85vh, GHSA-v5rq-49vh-5v5c). `@nuxt/devtools` 3.4.3\ndropped its `simple-git` dependency, so a lockfile-only bump removes it.\nDependabot alerts:\nhttps://github.com/getsentry/sentry-javascript/security/dependabot/3324,\nhttps://github.com/getsentry/sentry-javascript/security/dependabot/3325\n\nCo-authored-by: Claude Opus 5.5 <noreply@anthropic.com>"
     },

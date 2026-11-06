@@ -1,6 +1,17 @@
 {
   "vcs_url": "https://github.com/quarkusio/quarkus",
   "vulnerabilities": {
+    "CVE-2026-107912": {
+      "69a5e99b7178b5822ff3013f7c1b8b834523196e": "Merge pull request #58192 from jmartisk/3.40-cve-2026-107912\n\n[3.40] Update ImmutablePathMatcher to have the root path always end with forward slash",
+      "c0acda480301fdd970c9de463b593504e450ac6a": "Merge pull request #58193 from jmartisk/3.33-cve-2026-107912\n\n[3.33] Update ImmutablePathMatcher to have the root path always end with forward slash",
+      "b61520bf9dc9ca7b7ee92a23f2ae783ce24bb6f5": "Merge pull request #58191 from jmartisk/main-cve-2026-107912\n\nUpdate ImmutablePathMatcher to have the root path always end with forward slash"
+    },
+    "CVE-2026-111497": {
+      "dc2418f7eaf65f8c7c9c2fb80e7871b4111b9c39": "Update Brotli4J to 1.24.0\n\nBrotli4J 1.23.0 bundles the native Brotli 1.2.0 decoder, which is\naffected by CVE-2026-111497. Brotli4J 1.24.0 bundles Brotli 1.2.1.\n\nSigned-off-by: \uc774\ucc3d\ubbfc <92606611+EeeasyCode@users.noreply.github.com>\n(cherry picked from commit 57ec209f23a495edbff5585e8374cea3a86b9cba)",
+      "c22f0d399a6f991df5f2068c6385eb8b9a5da1ff": "Update Brotli4J to 1.24.0\n\nBrotli4J 1.23.0 bundles the native Brotli 1.2.0 decoder, which is\naffected by CVE-2026-111497. Brotli4J 1.24.0 bundles Brotli 1.2.1.\n\nSigned-off-by: \uc774\ucc3d\ubbfc <92606611+EeeasyCode@users.noreply.github.com>\n(cherry picked from commit 57ec209f23a495edbff5585e8374cea3a86b9cba)",
+      "9929a3a5506f2b33b29f85e679232f26dd42dd1d": "Update Brotli4J to 1.24.0\n\nBrotli4J 1.23.0 bundles the native Brotli 1.2.0 decoder, which is\naffected by CVE-2026-111497. Brotli4J 1.24.0 bundles Brotli 1.2.1.\n\nSigned-off-by: \uc774\ucc3d\ubbfc <92606611+EeeasyCode@users.noreply.github.com>\n(cherry picked from commit 57ec209f23a495edbff5585e8374cea3a86b9cba)",
+      "57ec209f23a495edbff5585e8374cea3a86b9cba": "Update Brotli4J to 1.24.0\n\nBrotli4J 1.23.0 bundles the native Brotli 1.2.0 decoder, which is\naffected by CVE-2026-111497. Brotli4J 1.24.0 bundles Brotli 1.2.1.\n\nSigned-off-by: \uc774\ucc3d\ubbfc <92606611+EeeasyCode@users.noreply.github.com>"
+    },
     "CVE-2026-107314": {
       "c49c8022babd0239647691e582093cdd0272882f": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315\n\n(cherry picked from commit 36304710765c8394f3eca5438e764028b6d01d3f)",
       "2389069c6e2dcaf398b1e326f7cf918903c86ba7": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315\n\n(cherry picked from commit 36304710765c8394f3eca5438e764028b6d01d3f)",
@@ -10,10 +21,6 @@
       "c49c8022babd0239647691e582093cdd0272882f": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315\n\n(cherry picked from commit 36304710765c8394f3eca5438e764028b6d01d3f)",
       "2389069c6e2dcaf398b1e326f7cf918903c86ba7": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315\n\n(cherry picked from commit 36304710765c8394f3eca5438e764028b6d01d3f)",
       "36304710765c8394f3eca5438e764028b6d01d3f": "Upgrade postgresql-jdbc to 42.7.14\n\n- fixes https://access.redhat.com/security/cve/cve-2026-107314 and\n https://access.redhat.com/security/cve/cve-2026-107315"
-    },
-    "CVE-2026-111497": {
-      "9929a3a5506f2b33b29f85e679232f26dd42dd1d": "Update Brotli4J to 1.24.0\n\nBrotli4J 1.23.0 bundles the native Brotli 1.2.0 decoder, which is\naffected by CVE-2026-111497. Brotli4J 1.24.0 bundles Brotli 1.2.1.\n\nSigned-off-by: \uc774\ucc3d\ubbfc <92606611+EeeasyCode@users.noreply.github.com>\n(cherry picked from commit 57ec209f23a495edbff5585e8374cea3a86b9cba)",
-      "57ec209f23a495edbff5585e8374cea3a86b9cba": "Update Brotli4J to 1.24.0\n\nBrotli4J 1.23.0 bundles the native Brotli 1.2.0 decoder, which is\naffected by CVE-2026-111497. Brotli4J 1.24.0 bundles Brotli 1.2.1.\n\nSigned-off-by: \uc774\ucc3d\ubbfc <92606611+EeeasyCode@users.noreply.github.com>"
     },
     "CVE-2026-91403": {
       "39478898c342fabb3702b5854625fa2bcda6fa84": "chore: update Java version in .sdkmanrc to patched release\n\nUpdate Java from Temurin 21.0.12 to 21.0.13, which removes the\ncompromised eMudhra/Comodo intermediate CA certificates\n(CVE-2026-91403 / CVE-2026-114820) from the JDK cacerts keystore.\n\nSigned-off-by: Matheus Oliveira <matheus.6148@gmail.com>"

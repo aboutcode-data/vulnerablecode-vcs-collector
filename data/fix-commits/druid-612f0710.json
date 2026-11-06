@@ -1,6 +1,15 @@
 {
   "vcs_url": "https://github.com/apache/druid",
   "vulnerabilities": {
+    "CVE-2026-111115": {
+      "9b3080949abeb845477534a1af4dcd5d6db50c61": "Bump kafka version to address  CVE-2026-111115, CVE-2026-116593"
+    },
+    "CVE-2026-116593": {
+      "9b3080949abeb845477534a1af4dcd5d6db50c61": "Bump kafka version to address  CVE-2026-111115, CVE-2026-116593"
+    },
+    "CVE-2026-115448": {
+      "622b57184dae0a4b0861e22dd2deaf0e9e36d5ce": "Suppress CVE-2026-115448 for ZooKeeper 3.8.8 as a false positive"
+    },
     "CVE-2026-110879": {
       "9c4bd1a34d2de43205f1e323949af1d81407b38c": "fix: resolve CVE-2026-110879, CVE-2026-104895 (#20852) (#20854)\n\n* fix: resolve CVE-2026-118042, CVE-2026-110879, CVE-2026-104895\n* Update shaded guava version\n\n(cherry picked from commit 2a6a00adc45e1da4d9a5ff42d6db457d0689715e)",
       "2a6a00adc45e1da4d9a5ff42d6db457d0689715e": "fix: resolve CVE-2026-110879, CVE-2026-104895 (#20852)\n\n* fix: resolve CVE-2026-118042, CVE-2026-110879, CVE-2026-104895\n* Update shaded guava version"

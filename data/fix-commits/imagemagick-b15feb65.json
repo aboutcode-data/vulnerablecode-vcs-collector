@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-VF87-6HHW-9HCJ": {
+      "1b171f936eb6e92a922d907e0cf9a22d2349c62e": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-vf87-6hhw-9hcj"
+    },
     "GHSA-W85X-JCRH-64RR": {
       "116c283a011c6b6eb357c120de802d6df8aae6f8": "Privat://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-w85x-jcrh-64rr"
     },
