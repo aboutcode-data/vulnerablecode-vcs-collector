@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://gitlab.com/gitlab-org/gitlab",
   "vulnerabilities": {
+    "GHSA-95M3-7Q98-8XR5": {
+      "18cf3fcf67f7fdf38ba608dbfb6b9a68fff8084f": "Dedupe crypto-browserify dependencies and update cipher-base\n\nsha.js: 2.4.10 -> 2.4.12 (GHSA-95m3-7q98-8xr5)\ncipher-base: 1.0.4 -> 1.0.7 (GHSA-cpq7-6gpm-g9rc)\nripemd160, hash-base and readable-stream now resolve to one version each.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+    },
+    "GHSA-CPQ7-6GPM-G9RC": {
+      "18cf3fcf67f7fdf38ba608dbfb6b9a68fff8084f": "Dedupe crypto-browserify dependencies and update cipher-base\n\nsha.js: 2.4.10 -> 2.4.12 (GHSA-95m3-7q98-8xr5)\ncipher-base: 1.0.4 -> 1.0.7 (GHSA-cpq7-6gpm-g9rc)\nripemd160, hash-base and readable-stream now resolve to one version each.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+    },
     "CVE-2026-102422": {
       "45630830fcde515169dac8ce4e06fd97c2fb96b2": "Update shell-quote and pbkdf2\n\nshell-quote: 1.9.0 -> 1.12.0 (CVE-2026-102422, quote() command injection)\npbkdf2: 3.0.14 -> 3.1.7 (GHSA-477h-4r7f-fvrx, long-password DoS)\n\nBoth are transitive dev or build-time dependencies and neither is\nreachable in GitLab: launch-editor only calls shell-quote parse(), and\npbkdf2 only ships in webpack 4's crypto-browserify polyfill.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
     },
