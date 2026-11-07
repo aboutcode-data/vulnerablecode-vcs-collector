@@ -1,10 +1,56 @@
 {
   "vcs_url": "https://github.com/github/advisory-database",
   "vulnerabilities": {
+    "GHSA-R374-RXX8-8654": {
+      "65d8e8bc9a3c2333c6f994ae7d6aa2451bb44ffb": "Publish GHSA-r374-rxx8-8654",
+      "6d9bd0f1d4a161d4ff47fa876db48bb2b3d4eff0": "Merge pull request #10890 from github/skleinsasser-lv-GHSA-r374-rxx8-8654",
+      "76a5269278d080b9ac65184cee1151b7ad4ccea9": "Merge pull request #10671 from github/zuhairhalawa-GHSA-r374-rxx8-8654",
+      "487f1270267ebc2ff59f13b450216eff7ac84249": "Improve GHSA-r374-rxx8-8654",
+      "2e1dd3a4f80b3ce1966d4a579879dc2172d35328": "Improve GHSA-r374-rxx8-8654",
+      "90a090afea0eea411dcf5accdb76380543ee4788": "Publish Advisories\n\nGHSA-g47v-rwmh-r9f8\nGHSA-r374-rxx8-8654",
+      "6628b074c8de48dbec4f4925452aa33c9f1bd3ed": "Publish Advisories\n\nGHSA-r374-rxx8-8654\nGHSA-wpww-4qvv-xpv8"
+    },
+    "GHSA-FHQ3-2GF3-8F3J": {
+      "17d4d4ac4e174a116cddd061660202b26123fc23": "Publish GHSA-fhq3-2gf3-8f3j",
+      "b6764998f1520e58749df84a7a3b09fc9092b763": "Merge pull request #10668 from github/zuhairhalawa-GHSA-fhq3-2gf3-8f3j",
+      "0ccef8562d13027733c54ff2fb38123fab5bdd16": "Improve GHSA-fhq3-2gf3-8f3j",
+      "56a2017264c0b807e3948cf77c8b5d298e8acac3": "Publish Advisories\n\nGHSA-fhq3-2gf3-8f3j\nGHSA-j4rh-7jcr-qm69\nGHSA-pjv4-3c63-699f"
+    },
+    "GHSA-5F38-J7H2-22Q2": {
+      "722b7bc859492eb36e47a3b6a32455402ea0b1b1": "Publish GHSA-5f38-j7h2-22q2"
+    },
+    "GHSA-47W9-6R3F-938G": {
+      "5ca63d9b5b4796275f29e5da5e72c5959f919858": "Publish Advisories\n\nGHSA-47w9-6r3f-938g\nGHSA-7mr3-28h5-m5vx\nGHSA-qx75-2p3r-pwm5"
+    },
+    "GHSA-7MR3-28H5-M5VX": {
+      "5ca63d9b5b4796275f29e5da5e72c5959f919858": "Publish Advisories\n\nGHSA-47w9-6r3f-938g\nGHSA-7mr3-28h5-m5vx\nGHSA-qx75-2p3r-pwm5"
+    },
+    "GHSA-QX75-2P3R-PWM5": {
+      "5ca63d9b5b4796275f29e5da5e72c5959f919858": "Publish Advisories\n\nGHSA-47w9-6r3f-938g\nGHSA-7mr3-28h5-m5vx\nGHSA-qx75-2p3r-pwm5"
+    },
+    "GHSA-R4HM-P9F9-FJ9V": {
+      "0d413bb2a07b6216969b5a0ab87b2b6bc37eee83": "Publish GHSA-r4hm-p9f9-fj9v"
+    },
+    "GHSA-FQPV-MQ26-PR4J": {
+      "53f590f0eb6b365dd5bf54f8a077b1e0352e8252": "Publish GHSA-fqpv-mq26-pr4j"
+    },
+    "GHSA-9FPX-FR6J-2VH6": {
+      "4c7a5221cb2f673db6b3473c8d4c34fbb5c9e7f4": "Publish Advisories\n\nGHSA-9fpx-fr6j-2vh6\nGHSA-fmc8-p6q7-75cc\nGHSA-j93m-3j9p-m5m8\nGHSA-pjff-c2wc-f6jm"
+    },
+    "GHSA-FMC8-P6Q7-75CC": {
+      "4c7a5221cb2f673db6b3473c8d4c34fbb5c9e7f4": "Publish Advisories\n\nGHSA-9fpx-fr6j-2vh6\nGHSA-fmc8-p6q7-75cc\nGHSA-j93m-3j9p-m5m8\nGHSA-pjff-c2wc-f6jm"
+    },
+    "GHSA-J93M-3J9P-M5M8": {
+      "4c7a5221cb2f673db6b3473c8d4c34fbb5c9e7f4": "Publish Advisories\n\nGHSA-9fpx-fr6j-2vh6\nGHSA-fmc8-p6q7-75cc\nGHSA-j93m-3j9p-m5m8\nGHSA-pjff-c2wc-f6jm"
+    },
+    "GHSA-PJFF-C2WC-F6JM": {
+      "4c7a5221cb2f673db6b3473c8d4c34fbb5c9e7f4": "Publish Advisories\n\nGHSA-9fpx-fr6j-2vh6\nGHSA-fmc8-p6q7-75cc\nGHSA-j93m-3j9p-m5m8\nGHSA-pjff-c2wc-f6jm"
+    },
+    "GHSA-VGHH-5RFX-XHQ8": {
+      "2957c4b6dbe5add45829f6ac802e9fb32a71920d": "Publish GHSA-vghh-5rfx-xhq8"
+    },
     "GHSA-MXWC-WH95-PW4G": {
       "c6718f419947064fe70016c160d434677457d6d1": "Publish GHSA-mxwc-wh95-pw4g",
-      "e6beb24577e3df92e5dc513ba3b766d0dbb24ab1": "Merge pull request #10645 from github/zuhairhalawa-GHSA-mxwc-wh95-pw4g",
-      "fedf91717ea6c78694cd94988103b73582ea8ece": "Improve GHSA-mxwc-wh95-pw4g",
       "cd3724e36c66f99ff6d2ae793585b3c0ce978dc9": "Publish Advisories\n\nGHSA-vqc2-c9jh-3jjv\nGHSA-35rm-7j9c-2f7m\nGHSA-4jhm-jv67-739f\nGHSA-659f-rgp5-w4wf\nGHSA-9x82-rm84-c6x7\nGHSA-mxwc-wh95-pw4g\nGHSA-v5px-423j-pf7p\nGHSA-v66x-68f2-pxf5\nGHSA-vmwx-m75v-qvch"
     },
     "GHSA-G3HV-75WG-M249": {
@@ -541,12 +587,6 @@
     "GHSA-3GV6-G396-9V4R": {
       "5dba8c957620db8b87373c076694d087e15d7904": "Publish GHSA-3gv6-g396-9v4r",
       "ab46352d12bbd57e957c6403d3f5121ce24d6e6c": "Publish Advisories\n\nGHSA-3gv6-g396-9v4r\nGHSA-3h6j-9x8m-rg3g\nGHSA-4wwr-7h7c-chqr\nGHSA-8v4x-mgvp-p658\nGHSA-g6pg-52vf-843h\nGHSA-vqqj-9cmv-hx43"
-    },
-    "GHSA-R374-RXX8-8654": {
-      "487f1270267ebc2ff59f13b450216eff7ac84249": "Improve GHSA-r374-rxx8-8654",
-      "2e1dd3a4f80b3ce1966d4a579879dc2172d35328": "Improve GHSA-r374-rxx8-8654",
-      "90a090afea0eea411dcf5accdb76380543ee4788": "Publish Advisories\n\nGHSA-g47v-rwmh-r9f8\nGHSA-r374-rxx8-8654",
-      "6628b074c8de48dbec4f4925452aa33c9f1bd3ed": "Publish Advisories\n\nGHSA-r374-rxx8-8654\nGHSA-wpww-4qvv-xpv8"
     },
     "GHSA-VQQJ-9CMV-HX43": {
       "7a766ee5a5ba897bab2181e56b8275e9cfb2349c": "Publish GHSA-vqqj-9cmv-hx43",
@@ -3973,10 +4013,6 @@
     "GHSA-H7WW-273W-6CM8": {
       "61320bd628c88e2dfcd3567b455c11d954fa3e13": "Improve GHSA-h7ww-273w-6cm8",
       "c806dd230b30da4286b1630940c112502789b910": "Publish Advisories\n\nGHSA-27mw-82g8-phjj\nGHSA-2qrf-pqgx-qh9v\nGHSA-3476-c5c2-fr73\nGHSA-53xc-49m8-p798\nGHSA-8cqv-vvq2-6p8c\nGHSA-cwm5-jh59-mwxr\nGHSA-cx6f-vjhg-g3cc\nGHSA-h7ww-273w-6cm8\nGHSA-hfwf-hgvp-4rr8\nGHSA-p92p-rxj5-7p2x\nGHSA-q7qq-6mhp-9rc4\nGHSA-8cqv-vvq2-6p8c\nGHSA-hfwf-hgvp-4rr8"
-    },
-    "GHSA-FHQ3-2GF3-8F3J": {
-      "0ccef8562d13027733c54ff2fb38123fab5bdd16": "Improve GHSA-fhq3-2gf3-8f3j",
-      "56a2017264c0b807e3948cf77c8b5d298e8acac3": "Publish Advisories\n\nGHSA-fhq3-2gf3-8f3j\nGHSA-j4rh-7jcr-qm69\nGHSA-pjv4-3c63-699f"
     },
     "GHSA-5MMC-8PC9-WGGG": {
       "e070b5777e63acbeb803d48f98f7628fc0597620": "Improve GHSA-5mmc-8pc9-wggg",

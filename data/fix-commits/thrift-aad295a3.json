@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/thrift",
   "vulnerabilities": {
+    "GHSA-6GGR-R7MH-2MV8": {
+      "44d082d6b49f02f6f6afcdbb15b0c50171658412": "Raise rebar3 to 3.28.0 in the lib-erl CI matrix\nClient: build\n\nrebar3 3.28.0 contains the fix for GHSA-6ggr-r7mh-2mv8 and replaces 3.27.0\nin the OTP 26.2, 27.3, 28.5 and 29.1 rows. The OTP 25.3 row keeps 3.18.0,\nbecause 3.27.3 and 3.28.0 do not load on OTP 25.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+    },
     "CVE-2019-0205": {
       "33dcbd08c080d589c639275b151e0b6ff0e6a0be": "THRIFT-5075: Backport changes for CVE-2019-0205 to 0.9.3.1 branch\n\nThis closes #1993\n\nTHRIFT-4024, THRIFT-4783, THRIFT-4784: throw when skipping invalid type (#1742)\n* THRIFT-4024: make c_glib throw on unsupported type when skipping\n* THRIFT-4783: throw on invalid skip (py)\n* THRIFT-4024: make cpp throw on unsupported type when skipping\n* THRIFT-4024: uniform skip behavior on unsupported type\n* THRIFT-4784: Thrift should throw when skipping over unexpected data"
     }
