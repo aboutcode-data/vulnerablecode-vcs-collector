@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-12299": {
+      "c63363d9395161c26c2cd3fa34d53ecf3165f740": "dulwich: 1.2.17 -> 1.2.21\n\nFixes CVE-2026-12299\n\n(cherry picked from commit 50f27d201904b1549e16bf91482e2241a223b251)",
+      "50f27d201904b1549e16bf91482e2241a223b251": "dulwich: 1.2.17 -> 1.2.21\n\nFixes CVE-2026-12299"
+    },
     "GHSA-J99Q-3WR8-XJ43": {
       "2f2bce9b29d1b3535c0c10a78978c9ef74479125": "frankenphp: 1.13.4 -> 1.13.5\n\nhttps://github.com/php/frankenphp/releases/tag/v1.13.5\n\nFixes GHSA-j99q-3wr8-xj43\nFixes GHSA-jvmv-5538-pqpg\nFixes GHSA-2725-rh2w-9j9w\nFixes GHSA-j45x-h238-h4xx\nFixes GHSA-5359-vg53-5464\nFixes GHSA-q6vv-3p75-53wr\nFixes GHSA-2x4j-r638-wxff\nFixes GHSA-388m-835f-7723\nFixes GHSA-g7pw-whv8-97j7\nFixes GHSA-v7hf-4gqv-hf8p\nFixes GHSA-8qcf-v46r-g2mc\nFixes GHSA-j2f3-wxf2-8qgv\nFixes GHSA-xh92-4p94-ch7x\nFixes GHSA-hfxc-999w-mp67\nFixes GHSA-g9v4-rp77-rv76\nFixes GHSA-cp2q-fc46-38f5\nFixes GHSA-28vm-87fh-3px5\n\nAssisted-by: Claude Code (Claude Opus 5.5)\n(cherry picked from commit 0f9bdcb13c420ddf9edff62924679ec234e9d627)",
       "0f9bdcb13c420ddf9edff62924679ec234e9d627": "frankenphp: 1.13.4 -> 1.13.5\n\nhttps://github.com/php/frankenphp/releases/tag/v1.13.5\n\nFixes GHSA-j99q-3wr8-xj43\nFixes GHSA-jvmv-5538-pqpg\nFixes GHSA-2725-rh2w-9j9w\nFixes GHSA-j45x-h238-h4xx\nFixes GHSA-5359-vg53-5464\nFixes GHSA-q6vv-3p75-53wr\nFixes GHSA-2x4j-r638-wxff\nFixes GHSA-388m-835f-7723\nFixes GHSA-g7pw-whv8-97j7\nFixes GHSA-v7hf-4gqv-hf8p\nFixes GHSA-8qcf-v46r-g2mc\nFixes GHSA-j2f3-wxf2-8qgv\nFixes GHSA-xh92-4p94-ch7x\nFixes GHSA-hfxc-999w-mp67\nFixes GHSA-g9v4-rp77-rv76\nFixes GHSA-cp2q-fc46-38f5\nFixes GHSA-28vm-87fh-3px5\n\nAssisted-by: Claude Code (Claude Opus 5.5)"
@@ -112,9 +116,6 @@
     "GHSA-4GFW-9V29-GP9H": {
       "411d6f653380d74e0436a295f8f20c8713d79292": "frankenphp: 1.12.7 -> 1.13.2\n\nhttps://github.com/php/frankenphp/releases/tag/v1.13.2\n\nFixes GHSA-6q3j-62j9-f9hh\nFixes GHSA-fq24-r53r-xcx3\nFixes GHSA-ccgp-ch9h-533f\nFixes GHSA-4gfw-9v29-gp9h\n\n(cherry picked from commit 7b408c0bb1058c3300f3c78a27d392b964649485)",
       "7b408c0bb1058c3300f3c78a27d392b964649485": "frankenphp: 1.12.7 -> 1.13.2\n\nhttps://github.com/php/frankenphp/releases/tag/v1.13.2\n\nFixes GHSA-6q3j-62j9-f9hh\nFixes GHSA-fq24-r53r-xcx3\nFixes GHSA-ccgp-ch9h-533f\nFixes GHSA-4gfw-9v29-gp9h"
-    },
-    "CVE-2026-12299": {
-      "50f27d201904b1549e16bf91482e2241a223b251": "dulwich: 1.2.17 -> 1.2.21\n\nFixes CVE-2026-12299"
     },
     "CVE-2026-102703": {
       "02ac5499124b91ad0e41e6bb5cce5e9e5243b5aa": "xen: patch with XSA-523\n\n   Xen Security Advisory CVE-2026-102703,CVE-2026-102704 / XSA-523\n\n                    arbitrary read/write via grant copy\n\nA common access pattern is a batch of Grant Copy operations acting on\nadjacent address ranges in the same source or destination page.  For\nperformance reasons, Xen caches details internally to reuse already\nvalidated data.  The conditions on when to re-validate the internal data\nwere not correct in some cases:\n\n - Frame numbers and grant references could wrongly be mixed up.  This\n   is CVE-2026-102703.\n\n - Copying by frame number (rather than grant reference) is permitted\n   only when operating on the caller's own memory.  The check to enforce\n   this restriction was misplaced.  This is CVE-2026-102704.\n\nA malicious guest can read and write arbitrary memory, belonging to\nother domains, including Dom0.\n\nhttps://xenbits.xenproject.org/xsa/advisory-523.html\n\nSigned-off-by: Fernando Rodrigues <alpha@sigmasquadron.net>\n(cherry picked from commit 9f88934d29d06253bb29af82b0529c5b0b94fa32)",
