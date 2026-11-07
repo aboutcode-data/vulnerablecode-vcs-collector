@@ -1,6 +1,15 @@
 {
   "vcs_url": "https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git",
   "vulnerabilities": {
+    "CVE-2026-100082": {
+      "a02926f7c89bfc798ee9514e09694ff4279928a1": "xen-blkback: Avoid UAF when reading I/O statistics\n\nReading I/O statistics via sysfs concurrently with tearing down a\nfrontend device might result in UAF or a NULL dereference, as the\nreading of the statistics data is not synchronized with freeing the\ndata.\n\nUse a rwlock for synchronizing.\n\nThis is XSA-528 / CVE-2026-100082\n\nFixes: db6fbc106786 (\"xen/blkback: make st_ statistics per ring\")\nReported-by: Yehyeong Lee <yhlee@isslab.korea.ac.kr>\nSigned-off-by: Juergen Gross <jgross@suse.com>\nAcked-by: Roger Pau Monn\u00e9 <roger@xenproject.org>"
+    },
+    "CVE-2026-100081": {
+      "bfddc420afe827d9f06458cdf8087cd602f8c9cb": "xen-netback: defer xenvif_mcast_addr_list_free()\n\nIn order for the function to legitimately avoid locking/RCU, it needs to\nrun after all TX/RX processing has finished/stopped: Lookups happen from\nxenvif_start_xmit(), while adds/removes happen from xenvif_tx_action()\n(called out of xenvif_poll()).\n\nMove the call out of xenvif_disconnect_data() (the call to the function\nfrom connect()'s error path doesn't require any cleaning up there), and\nput it past the synchronization point in backend_disconnect().\n\nThis is XSA-527 / CVE-2026-100081.\n\nFixes: b17075d5c198 (\"xen-netback: fix race condition on XenBus disconnect\")\nReported-by: kerhunt <kerhunt@proton.me>\nSigned-off-by: Jan Beulich <jbeulich@suse.com>\nReviewed-by: Juergen Gross <jgross@suse.com>"
+    },
+    "CVE-2026-100080": {
+      "5fb756f1bbec7a3862dda5d79028bf656271804c": "xen-netback: Fix UAF when reading statistics data\n\nThe network statistic data in the driver is protected by RCU.\nUnfortunately when tearing down the queues after an error during\nconnecting to the frontend (e.g. due to illegal Xenstore data filled\nin by the guest), the statistic data is being freed without\nsynchronizing the RCU state.  In case the data is being read via sysfs\nin this phase, access to already freed memory or memory being in new\nuse is possible.\n\nFix that by calling synchronize_net() before freeing the queue data.\n\nThis is XSA-526 / CVE-2026-100080\n\nReported-by: Yehyeong Lee <yhlee@isslab.korea.ac.kr>\nSigned-off-by: Juergen Gross <jgross@suse.com>"
+    },
     "CVE-2026-45959": {
       "7af2a51f19ca828750701054ee130cfb094706e6": "coccinelle: free: add a checker for `__cleanup(kfree)` usage\n\nUsing __cleanup(kfree) will pass the stack address of the annotated\nlocal variable to kfree functions. This will lead to invalid\ndeallocation issues. Inspired by CVE-2026-45959 and similar bugs\nrecently detected.\n\nSigned-off-by: Ella Ma <alansnape3058@gmail.com>\nSigned-off-by: Julia Lawall <julia.lawall@inria.fr>"
     },
