@@ -272,6 +272,14 @@
     "CVE-2026-115943": {
       "fc8a09544c45490b8900251b69c81fd19d8a4e9a": "perlPackages.SpreadsheetXLSX: 0.17 -> 0.20\n\nFixes CVE-2026-115943.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
     },
+    "CVE-2026-11822": {
+      "a5585ce5a2694968414a4057150585ddc540daa6": "fetchPnpmDeps: pin SQLite to 3.51.2 for the database dump\n\nThe SQLite 3.51.2 -> 3.53.3 backport (#553231) changed the `.dump`\noutput, BLOBs are now written as `x'...'` instead of `X'...'`. With\nfetcherVersion >= 4, the pnpm 11 store index is dumped to an SQL file,\nso this broke existing fetchPnpmDeps hashes.\n\nUse a pinned SQLite 3.51.2 for the sqlite3 CLI generating the dump,\nwhich restores the previous output. The pinned SQLite is only used to\nproduce the fetcher output, pnpmConfigHook keeps using the default one.\n\nThe fix for CVE-2026-11822 and CVE-2026-11824 (heap buffer overflow in\nFTS5 with a crafted database), the reason for the SQLite bump, is\napplied to the pinned SQLite. These are not reachable in the fetcher,\nas the pnpm store index has no FTS5 tables, but this avoids shipping a\nknown vulnerable SQLite.\n\nNot-cherry-picked-because: release-26.05 specific fix for the SQLite backport, master instead rewrites the dump with sed\nAssisted-by: Claude Code (Claude Opus 5.5)",
+      "65faaa31167843a140f760e201f25bb774ccc4a5": "sqlite, sqlite-analyzer: 3.51.2 -> 3.53.3 (CVE-2026-11822, CVE-2026-11824) (#553231)"
+    },
+    "CVE-2026-11824": {
+      "a5585ce5a2694968414a4057150585ddc540daa6": "fetchPnpmDeps: pin SQLite to 3.51.2 for the database dump\n\nThe SQLite 3.51.2 -> 3.53.3 backport (#553231) changed the `.dump`\noutput, BLOBs are now written as `x'...'` instead of `X'...'`. With\nfetcherVersion >= 4, the pnpm 11 store index is dumped to an SQL file,\nso this broke existing fetchPnpmDeps hashes.\n\nUse a pinned SQLite 3.51.2 for the sqlite3 CLI generating the dump,\nwhich restores the previous output. The pinned SQLite is only used to\nproduce the fetcher output, pnpmConfigHook keeps using the default one.\n\nThe fix for CVE-2026-11822 and CVE-2026-11824 (heap buffer overflow in\nFTS5 with a crafted database), the reason for the SQLite bump, is\napplied to the pinned SQLite. These are not reachable in the fetcher,\nas the pnpm store index has no FTS5 tables, but this avoids shipping a\nknown vulnerable SQLite.\n\nNot-cherry-picked-because: release-26.05 specific fix for the SQLite backport, master instead rewrites the dump with sed\nAssisted-by: Claude Code (Claude Opus 5.5)",
+      "65faaa31167843a140f760e201f25bb774ccc4a5": "sqlite, sqlite-analyzer: 3.51.2 -> 3.53.3 (CVE-2026-11822, CVE-2026-11824) (#553231)"
+    },
     "CVE-2026-115504": {
       "37f6211e339bc68cf6370f0a803b8d97b4a103f2": "[Backport release-26.05] cfitsio: fix CVE-2026-115504 (#581072)",
       "a35539b065a7aeae7f98a40535d35b7d663bbff5": "cfitsio: add patch to remediate CVE-2026-115504\n\nFixes: #577792\nCo-authored-by: Fabi\u00e1n Heredia Montiel <fabianhjr@protonmail.com>\n(cherry picked from commit 9568de1138df9735d5ee7e9f3e6e1ffe2d7b9202)",
@@ -1445,12 +1453,6 @@
       "ce295f663f6dad79db4e20e0b7a8f2551448ec09": "emacs30, emacs30-macport: patch CVE-2026-79992\n\n(cherry picked from commit ece60c611b9915bd6dcb62d6b17f0f323b203ac3)",
       "df8611e3f5ae7c201c1d9ff5fffb3aa4028b8978": "emacs30, emacs30-macport: patch CVE-2026-79992 (#556991)",
       "ece60c611b9915bd6dcb62d6b17f0f323b203ac3": "emacs30, emacs30-macport: patch CVE-2026-79992"
-    },
-    "CVE-2026-11822": {
-      "65faaa31167843a140f760e201f25bb774ccc4a5": "sqlite, sqlite-analyzer: 3.51.2 -> 3.53.3 (CVE-2026-11822, CVE-2026-11824) (#553231)"
-    },
-    "CVE-2026-11824": {
-      "65faaa31167843a140f760e201f25bb774ccc4a5": "sqlite, sqlite-analyzer: 3.51.2 -> 3.53.3 (CVE-2026-11822, CVE-2026-11824) (#553231)"
     },
     "CVE-2026-107181": {
       "ef1e8f90325645951aa17c3af6c0125407dce2d1": "[Backport release-26.05] materialgram: mark knownVulnerabilities CVE-2026-107181 (#573800)",

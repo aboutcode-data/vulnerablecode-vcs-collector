@@ -1,6 +1,16 @@
 {
   "vcs_url": "https://github.com/github/advisory-database",
   "vulnerabilities": {
+    "GHSA-Q2PQ-RWVM-QMRR": {
+      "7ffc48995e0db3f4eeff80e47796daada5d41ac9": "Publish GHSA-q2pq-rwvm-qmrr"
+    },
+    "GHSA-C7HR-448W-65PX": {
+      "f95b2accfcb1e99d0f2325fc8d4aaba6aa96545a": "Improve GHSA-c7hr-448w-65px",
+      "6d1e9927990358eb375d88617de5f821ffc6dedc": "Publish Advisories\n\nGHSA-9ggw-87m9-9gfc\nGHSA-7pwq-q9jf-539h\nGHSA-c7hr-448w-65px\nGHSA-pr85-w493-9w3x\nGHSA-9ggw-87m9-9gfc"
+    },
+    "GHSA-F77Q-JH4P-G2HW": {
+      "466be031d10c0f3b2b5e1397d5b4cd80b5a7cda4": "Publish GHSA-f77q-jh4p-g2hw"
+    },
     "GHSA-V4MV-7G6H-5VH8": {
       "a56077694cacc2bf092f908aba3f3dec9019c5e1": "Publish GHSA-v4mv-7g6h-5vh8",
       "b686f380dab08832dd384160adf0faf831e665a1": "Publish Advisories\n\nGHSA-22pv-7v9j-hqxp\nGHSA-vq42-chwj-gj93\nGHSA-v4mv-7g6h-5vh8",
@@ -20770,9 +20780,6 @@
     "GHSA-9GGW-87M9-9GFC": {
       "6d1e9927990358eb375d88617de5f821ffc6dedc": "Publish Advisories\n\nGHSA-9ggw-87m9-9gfc\nGHSA-7pwq-q9jf-539h\nGHSA-c7hr-448w-65px\nGHSA-pr85-w493-9w3x\nGHSA-9ggw-87m9-9gfc",
       "069960fbc75d075b720a05e5fe099e4dc407ed72": "Publish Advisories\n\nGHSA-25mw-359m-f6rj\nGHSA-9ggw-87m9-9gfc\nGHSA-wq28-w638-7xcv"
-    },
-    "GHSA-C7HR-448W-65PX": {
-      "6d1e9927990358eb375d88617de5f821ffc6dedc": "Publish Advisories\n\nGHSA-9ggw-87m9-9gfc\nGHSA-7pwq-q9jf-539h\nGHSA-c7hr-448w-65px\nGHSA-pr85-w493-9w3x\nGHSA-9ggw-87m9-9gfc"
     },
     "GHSA-PR85-W493-9W3X": {
       "6d1e9927990358eb375d88617de5f821ffc6dedc": "Publish Advisories\n\nGHSA-9ggw-87m9-9gfc\nGHSA-7pwq-q9jf-539h\nGHSA-c7hr-448w-65px\nGHSA-pr85-w493-9w3x\nGHSA-9ggw-87m9-9gfc"
