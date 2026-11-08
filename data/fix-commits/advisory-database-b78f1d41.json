@@ -1,6 +1,70 @@
 {
   "vcs_url": "https://github.com/github/advisory-database",
   "vulnerabilities": {
+    "GHSA-589F-C66P-HXR4": {
+      "13d889c3135726516ef58e2b70d3b6553b8bee9d": "Improve GHSA-589f-c66p-hxr4",
+      "030668213eb7caa798ef495d82e91b1a5bb566c2": "Improve GHSA-589f-c66p-hxr4",
+      "afe7a9cdecd818e3aebd0bd630d1ddc3f1c78a88": "Publish Advisories\n\nGHSA-54w4-2f2p-f48h\nGHSA-589f-c66p-hxr4\nGHSA-6367-p3v8-7mgw\nGHSA-74wf-cwjg-9cf2\nGHSA-7vrv-5m2h-rjw9\nGHSA-pc62-cq5x-3j5g\nGHSA-rwvf-c3wm-qm6w\nGHSA-v42q-78w8-8fcc\nGHSA-vqgr-mfxm-47f3\nGHSA-wfvx-fx73-3rfj\nGHSA-wr4v-3f2h-6hhh"
+    },
+    "GHSA-25H5-X769-924V": {
+      "01ec58531afd348d4b06ae0c9c8487d539e27693": "Publish Advisories\n\nGHSA-25h5-x769-924v\nGHSA-29x9-g353-m9xx\nGHSA-c85f-3jpw-h6f8"
+    },
+    "GHSA-29X9-G353-M9XX": {
+      "01ec58531afd348d4b06ae0c9c8487d539e27693": "Publish Advisories\n\nGHSA-25h5-x769-924v\nGHSA-29x9-g353-m9xx\nGHSA-c85f-3jpw-h6f8"
+    },
+    "GHSA-C85F-3JPW-H6F8": {
+      "01ec58531afd348d4b06ae0c9c8487d539e27693": "Publish Advisories\n\nGHSA-25h5-x769-924v\nGHSA-29x9-g353-m9xx\nGHSA-c85f-3jpw-h6f8"
+    },
+    "GHSA-237F-P9H6-WQ4R": {
+      "945e2ae431bc670b0df04e7bac921084d1ba9b4d": "Publish GHSA-237f-p9h6-wq4r"
+    },
+    "GHSA-4V58-8P28-2RQ3": {
+      "9b9689289eef4fc65d3e2f84b8cb23913f8bd817": "Improve GHSA-4v58-8p28-2rq3",
+      "d8c9d28ba69a3645e6fa2a53be096708ab5d7864": "Improve GHSA-4v58-8p28-2rq3",
+      "dc1d8d59a30d53080229845f42700640f7ddda72": "Publish Advisories\n\nGHSA-4v58-8p28-2rq3\nGHSA-8m7c-8m39-rv4x\nGHSA-cwj3-vqpp-pmxr"
+    },
+    "GHSA-JXXR-4GWJ-5JF2": {
+      "803c47f21d3d0ef80837e556933449b82acbe948": "Improve GHSA-jxxr-4gwj-5jf2",
+      "0a101044c30e9b94623ee76868c74a5f200089f1": "Publish Advisories\n\nGHSA-8489-44mv-ggj8\nGHSA-h5cw-625j-3rxh\nGHSA-5cvp-p7p4-mcx9\nGHSA-7h26-hg47-p9hx\nGHSA-8xvp-7hj6-mcj9\nGHSA-9mvm-4gwg-v8mp\nGHSA-c3px-h233-h6fq\nGHSA-ccfq-2454-f5xw\nGHSA-gxx6-h3g6-vwjh\nGHSA-jpjh-jm2p-39hh\nGHSA-jxxr-4gwj-5jf2\nGHSA-mc57-h6j3-3hmv\nGHSA-pf9c-ch8r-2958\nGHSA-q2pj-8v84-9mh5\nGHSA-qg89-qwwh-5f3j\nGHSA-w8j3-pq8g-8m7w\nGHSA-wmm3-h9qj-p5v6\nGHSA-x7m9-mwc2-g6w2\nGHSA-xc4x-2452-5gc9",
+      "70983a71dcf406997978ecb44c0f7d6ab00c72c9": "Publish Advisories\n\nGHSA-245j-xjvr-xvm5\nGHSA-jxxr-4gwj-5jf2\nGHSA-mc57-h6j3-3hmv"
+    },
+    "GHSA-89G2-XW5C-V95P": {
+      "2c7b3461891704635f1f106694e92f5daed0d3fe": "Improve GHSA-89g2-xw5c-v95p",
+      "7decd068cbd9f4be7d880a52cf0e714bc5a5c009": "Publish Advisories\n\nGHSA-89g2-xw5c-v95p\nGHSA-hrcw-xc63-g29m\nGHSA-pxhg-7xr2-w7xg\nGHSA-rfgq-wgg8-662p"
+    },
+    "GHSA-7XW9-549R-8JRC": {
+      "849dede883291600d2423f91dfb22297d239c539": "Improve GHSA-7xw9-549r-8jrc",
+      "7c26320e7664cbc9d55a40a2aa2511fa0d9d860e": "Publish Advisories\n\nGHSA-7xw9-549r-8jrc\nGHSA-h4pc-58cc-hc95\nGHSA-m4m7-4cw8-62j6\nGHSA-vg99-gr89-qhw9"
+    },
+    "GHSA-VG99-GR89-QHW9": {
+      "8c8f40a8b31de7aa73898838c6404f5e036341e7": "Improve GHSA-vg99-gr89-qhw9",
+      "7c26320e7664cbc9d55a40a2aa2511fa0d9d860e": "Publish Advisories\n\nGHSA-7xw9-549r-8jrc\nGHSA-h4pc-58cc-hc95\nGHSA-m4m7-4cw8-62j6\nGHSA-vg99-gr89-qhw9"
+    },
+    "GHSA-9JPV-C7P4-997X": {
+      "2998d5ea491d626f123c6c6cc8d8f7c17d7362a8": "Improve GHSA-9jpv-c7p4-997x",
+      "8c0d6f28592886098950ebda34197a34b81ff0ec": "Improve GHSA-9jpv-c7p4-997x",
+      "b186ec1209bb17f857a09c83b3e8370fd12aa24c": "Publish Advisories\n\nGHSA-2g9c-vf8h-prxx\nGHSA-9jpv-c7p4-997x\nGHSA-mxpf-qgg6-v3ff"
+    },
+    "GHSA-M4M7-4CW8-62J6": {
+      "0042bdce44f1487ba19f2749a673489565f45b5f": "Improve GHSA-m4m7-4cw8-62j6",
+      "7c26320e7664cbc9d55a40a2aa2511fa0d9d860e": "Publish Advisories\n\nGHSA-7xw9-549r-8jrc\nGHSA-h4pc-58cc-hc95\nGHSA-m4m7-4cw8-62j6\nGHSA-vg99-gr89-qhw9"
+    },
+    "GHSA-4G9F-Q2JM-5527": {
+      "0d26c1f1348aa691b203709f298e2b06722d8e62": "Publish GHSA-4g9f-q2jm-5527"
+    },
+    "GHSA-HFCP-477W-3WJW": {
+      "21a97f9ee600506d752389125c230550c87f8d93": "Improve GHSA-hfcp-477w-3wjw",
+      "63dcd4ae273a86eb91b550ac63d892ed0473713f": "Publish Advisories\n\nGHSA-7g5x-9c4v-4w5r\nGHSA-hfcp-477w-3wjw"
+    },
+    "GHSA-863C-M9F2-HGXH": {
+      "3e5da135e4c392ef7dfbd61b74cc448f2e274e4d": "Publish GHSA-863c-m9f2-hgxh",
+      "e730f9a1ebbeab02c35b87bcdd6b5d564e789b55": "Publish Advisories\n\nGHSA-2844-9647-m4rw\nGHSA-29xr-58g9-8qfq\nGHSA-3wm7-jw5g-v3gq\nGHSA-4742-mr57-2r9j\nGHSA-4x3m-m7qg-rjvc\nGHSA-5884-m867-xg58\nGHSA-6w33-8qh2-c7jv\nGHSA-786g-jpf2-55wg\nGHSA-863c-m9f2-hgxh\nGHSA-94f7-w8j3-ppqr\nGHSA-cjpf-7pxx-hqc7\nGHSA-fcr8-c3fr-779m\nGHSA-fjmr-7667-8v4p\nGHSA-gg4j-vv7g-h3f6\nGHSA-hfg8-jg35-3hqr\nGHSA-hh4w-cc4q-rp64\nGHSA-hxgr-h468-wf97\nGHSA-m6vw-2qvg-8xgj\nGHSA-p3hp-24mv-wr6w\nGHSA-qmf6-23g2-95xp\nGHSA-qwx9-mmhx-chg8\nGHSA-w5h6-3m3q-q8pm\nGHSA-ww9v-567h-hcvj"
+    },
+    "GHSA-Q339-8RMV-2MHV": {
+      "fc990bdeb9ee79e43d01b7e5506e381832bec670": "Improve GHSA-q339-8rmv-2mhv",
+      "1f3f5b40dadeb95885169e467968ef6e3c984f6d": "Publish Advisories\n\nGHSA-c336-7962-wfj2\nGHSA-q339-8rmv-2mhv\nGHSA-7g26-2qgj-chfg\nGHSA-qc4c-hrmc-4f78\nGHSA-rc6v-5rmx-w5mv",
+      "f393cedf7664575be95d7df0a5cddfb476bfe91b": "Publish Advisories\n\nGHSA-m2m6-cff5-3w7c\nGHSA-q339-8rmv-2mhv"
+    },
     "GHSA-2J9H-CHV5-8537": {
       "6c9cc5ff16a47ab682f46b1eb33d9a149201bee4": "Publish Advisories\n\nGHSA-2j9h-chv5-8537\nGHSA-2mgp-38q6-99x9\nGHSA-3g9w-x4v7-974v\nGHSA-4435-94rm-8hr8\nGHSA-47pm-jg2m-gx97\nGHSA-488p-3q24-423r\nGHSA-6vqr-9fh5-xmwj\nGHSA-78p4-p67c-wwv7\nGHSA-9f68-g44h-hw2f\nGHSA-fq3w-qx64-29mp\nGHSA-g6hq-r9gh-7r48\nGHSA-m587-3v6q-xg7x\nGHSA-m836-p73r-8pm6\nGHSA-prj8-x666-xqff\nGHSA-q8gp-6fc4-wgxp\nGHSA-r5m7-h2q9-5j9j\nGHSA-v95p-x24p-5c2m\nGHSA-vj5w-qq84-5r93\nGHSA-xvqw-hjj4-j538\nGHSA-xxh9-x8mr-vqr4"
     },
@@ -10961,10 +11025,6 @@
     },
     "GHSA-3RPR-3QJQ-FG52": {
       "44f3ef072c75b7f816b26475657b7f86fe7d4602": "Publish Advisories\n\nGHSA-82m2-w5q8-xfh9\nGHSA-3cf3-h799-fjvq\nGHSA-3rpr-3qjq-fg52"
-    },
-    "GHSA-589F-C66P-HXR4": {
-      "030668213eb7caa798ef495d82e91b1a5bb566c2": "Improve GHSA-589f-c66p-hxr4",
-      "afe7a9cdecd818e3aebd0bd630d1ddc3f1c78a88": "Publish Advisories\n\nGHSA-54w4-2f2p-f48h\nGHSA-589f-c66p-hxr4\nGHSA-6367-p3v8-7mgw\nGHSA-74wf-cwjg-9cf2\nGHSA-7vrv-5m2h-rjw9\nGHSA-pc62-cq5x-3j5g\nGHSA-rwvf-c3wm-qm6w\nGHSA-v42q-78w8-8fcc\nGHSA-vqgr-mfxm-47f3\nGHSA-wfvx-fx73-3rfj\nGHSA-wr4v-3f2h-6hhh"
     },
     "GHSA-37PR-3JCM-PPM2": {
       "af8fe47ed5cbaecf1aa16fecb047e023e6c43327": "Publish Advisories\n\nGHSA-37pr-3jcm-ppm2\nGHSA-26qv-8fmw-h89f\nGHSA-6hf7-jgwh-5jh8\nGHSA-94wq-q9ff-wp6r\nGHSA-cc3x-v8vh-qhvv\nGHSA-fgph-j4q2-h2m4\nGHSA-fw7v-38f5-7w57\nGHSA-gfr9-3wh5-5636\nGHSA-jchq-r8m9-6xgq\nGHSA-m473-fq7f-v95f\nGHSA-pp3g-9mvp-c3vm\nGHSA-pr39-2p6v-p39j\nGHSA-w3cp-w8pp-v434"
@@ -29965,15 +30025,6 @@
     "GHSA-C67F-GMXW-MJ93": {
       "aaf7e2bd50803ab6cc4402065a5d8dcb55a2c669": "Publish GHSA-c67f-gmxw-mj93"
     },
-    "GHSA-7XW9-549R-8JRC": {
-      "7c26320e7664cbc9d55a40a2aa2511fa0d9d860e": "Publish Advisories\n\nGHSA-7xw9-549r-8jrc\nGHSA-h4pc-58cc-hc95\nGHSA-m4m7-4cw8-62j6\nGHSA-vg99-gr89-qhw9"
-    },
-    "GHSA-M4M7-4CW8-62J6": {
-      "7c26320e7664cbc9d55a40a2aa2511fa0d9d860e": "Publish Advisories\n\nGHSA-7xw9-549r-8jrc\nGHSA-h4pc-58cc-hc95\nGHSA-m4m7-4cw8-62j6\nGHSA-vg99-gr89-qhw9"
-    },
-    "GHSA-VG99-GR89-QHW9": {
-      "7c26320e7664cbc9d55a40a2aa2511fa0d9d860e": "Publish Advisories\n\nGHSA-7xw9-549r-8jrc\nGHSA-h4pc-58cc-hc95\nGHSA-m4m7-4cw8-62j6\nGHSA-vg99-gr89-qhw9"
-    },
     "GHSA-4CHG-4752-W88R": {
       "e30d7f4f129752a13688a0e0f4cc0b97f51c90e5": "Publish GHSA-4chg-4752-w88r"
     },
@@ -29997,9 +30048,6 @@
       "7c85d97daf6f6ffe0b6b838782a4c54d5e0ace5f": "Publish GHSA-w2w5-w2pw-r929"
     },
     "GHSA-2G9C-VF8H-PRXX": {
-      "b186ec1209bb17f857a09c83b3e8370fd12aa24c": "Publish Advisories\n\nGHSA-2g9c-vf8h-prxx\nGHSA-9jpv-c7p4-997x\nGHSA-mxpf-qgg6-v3ff"
-    },
-    "GHSA-9JPV-C7P4-997X": {
       "b186ec1209bb17f857a09c83b3e8370fd12aa24c": "Publish Advisories\n\nGHSA-2g9c-vf8h-prxx\nGHSA-9jpv-c7p4-997x\nGHSA-mxpf-qgg6-v3ff"
     },
     "GHSA-MXPF-QGG6-V3FF": {
@@ -39585,10 +39633,6 @@
       "9d3f9ea5d5730dcaa2370d94ca3da446cb7a1322": "Publish Advisories\n\nGHSA-333v-68xh-8mmq\nGHSA-c336-7962-wfj2\nGHSA-qcfc-hmrc-59x7",
       "f501918c77bd31517d75db41ef3d431480f09cf3": "Publish Advisories\n\nGHSA-c336-7962-wfj2\nGHSA-mmwx-79f6-67jg\nGHSA-v3m3-f69x-jf25"
     },
-    "GHSA-Q339-8RMV-2MHV": {
-      "1f3f5b40dadeb95885169e467968ef6e3c984f6d": "Publish Advisories\n\nGHSA-c336-7962-wfj2\nGHSA-q339-8rmv-2mhv\nGHSA-7g26-2qgj-chfg\nGHSA-qc4c-hrmc-4f78\nGHSA-rc6v-5rmx-w5mv",
-      "f393cedf7664575be95d7df0a5cddfb476bfe91b": "Publish Advisories\n\nGHSA-m2m6-cff5-3w7c\nGHSA-q339-8rmv-2mhv"
-    },
     "GHSA-QC4C-HRMC-4F78": {
       "1f3f5b40dadeb95885169e467968ef6e3c984f6d": "Publish Advisories\n\nGHSA-c336-7962-wfj2\nGHSA-q339-8rmv-2mhv\nGHSA-7g26-2qgj-chfg\nGHSA-qc4c-hrmc-4f78\nGHSA-rc6v-5rmx-w5mv",
       "14869823cb22f3857bc3bd672df1883d3616693a": "Publish GHSA-qc4c-hrmc-4f78"
@@ -39634,10 +39678,6 @@
     "GHSA-JPJH-JM2P-39HH": {
       "0a101044c30e9b94623ee76868c74a5f200089f1": "Publish Advisories\n\nGHSA-8489-44mv-ggj8\nGHSA-h5cw-625j-3rxh\nGHSA-5cvp-p7p4-mcx9\nGHSA-7h26-hg47-p9hx\nGHSA-8xvp-7hj6-mcj9\nGHSA-9mvm-4gwg-v8mp\nGHSA-c3px-h233-h6fq\nGHSA-ccfq-2454-f5xw\nGHSA-gxx6-h3g6-vwjh\nGHSA-jpjh-jm2p-39hh\nGHSA-jxxr-4gwj-5jf2\nGHSA-mc57-h6j3-3hmv\nGHSA-pf9c-ch8r-2958\nGHSA-q2pj-8v84-9mh5\nGHSA-qg89-qwwh-5f3j\nGHSA-w8j3-pq8g-8m7w\nGHSA-wmm3-h9qj-p5v6\nGHSA-x7m9-mwc2-g6w2\nGHSA-xc4x-2452-5gc9",
       "86e282bd9a4499c9a8158a1168a3294e1abfbda3": "Publish Advisories\n\nGHSA-99gv-2m7h-3hh9\nGHSA-jpjh-jm2p-39hh"
-    },
-    "GHSA-JXXR-4GWJ-5JF2": {
-      "0a101044c30e9b94623ee76868c74a5f200089f1": "Publish Advisories\n\nGHSA-8489-44mv-ggj8\nGHSA-h5cw-625j-3rxh\nGHSA-5cvp-p7p4-mcx9\nGHSA-7h26-hg47-p9hx\nGHSA-8xvp-7hj6-mcj9\nGHSA-9mvm-4gwg-v8mp\nGHSA-c3px-h233-h6fq\nGHSA-ccfq-2454-f5xw\nGHSA-gxx6-h3g6-vwjh\nGHSA-jpjh-jm2p-39hh\nGHSA-jxxr-4gwj-5jf2\nGHSA-mc57-h6j3-3hmv\nGHSA-pf9c-ch8r-2958\nGHSA-q2pj-8v84-9mh5\nGHSA-qg89-qwwh-5f3j\nGHSA-w8j3-pq8g-8m7w\nGHSA-wmm3-h9qj-p5v6\nGHSA-x7m9-mwc2-g6w2\nGHSA-xc4x-2452-5gc9",
-      "70983a71dcf406997978ecb44c0f7d6ab00c72c9": "Publish Advisories\n\nGHSA-245j-xjvr-xvm5\nGHSA-jxxr-4gwj-5jf2\nGHSA-mc57-h6j3-3hmv"
     },
     "GHSA-MC57-H6J3-3HMV": {
       "0a101044c30e9b94623ee76868c74a5f200089f1": "Publish Advisories\n\nGHSA-8489-44mv-ggj8\nGHSA-h5cw-625j-3rxh\nGHSA-5cvp-p7p4-mcx9\nGHSA-7h26-hg47-p9hx\nGHSA-8xvp-7hj6-mcj9\nGHSA-9mvm-4gwg-v8mp\nGHSA-c3px-h233-h6fq\nGHSA-ccfq-2454-f5xw\nGHSA-gxx6-h3g6-vwjh\nGHSA-jpjh-jm2p-39hh\nGHSA-jxxr-4gwj-5jf2\nGHSA-mc57-h6j3-3hmv\nGHSA-pf9c-ch8r-2958\nGHSA-q2pj-8v84-9mh5\nGHSA-qg89-qwwh-5f3j\nGHSA-w8j3-pq8g-8m7w\nGHSA-wmm3-h9qj-p5v6\nGHSA-x7m9-mwc2-g6w2\nGHSA-xc4x-2452-5gc9",
@@ -49771,9 +49811,6 @@
     "GHSA-9857-6MW7-FQ2M": {
       "bb79fe5a63eed5a820f77730c1cb5d333c00c1c8": "Publish Advisories\n\nGHSA-9857-6mw7-fq2m\nGHSA-mm5f-8q57-4fc4"
     },
-    "GHSA-89G2-XW5C-V95P": {
-      "7decd068cbd9f4be7d880a52cf0e714bc5a5c009": "Publish Advisories\n\nGHSA-89g2-xw5c-v95p\nGHSA-hrcw-xc63-g29m\nGHSA-pxhg-7xr2-w7xg\nGHSA-rfgq-wgg8-662p"
-    },
     "GHSA-HRCW-XC63-G29M": {
       "7decd068cbd9f4be7d880a52cf0e714bc5a5c009": "Publish Advisories\n\nGHSA-89g2-xw5c-v95p\nGHSA-hrcw-xc63-g29m\nGHSA-pxhg-7xr2-w7xg\nGHSA-rfgq-wgg8-662p"
     },
@@ -49789,9 +49826,6 @@
       "2355e13f4c11ab339e17bf0213233918a3c841b4": "Publish Advisories\n\nGHSA-qcmw-8mm4-4p28\nGHSA-vr2g-rhm5-q4jr",
       "68788c6e4030d48895834bb6651e841ebf265bcd": "Publish Advisories\n\nGHSA-hc5h-pmr3-3497\nGHSA-3mwp-wvh9-7528\nGHSA-53mr-6c8q-9789\nGHSA-658g-p7jg-wx5g\nGHSA-8x5q-pvf5-64mp\nGHSA-jjhc-v7c2-5hh6\nGHSA-qcmw-8mm4-4p28\nGHSA-vr2g-rhm5-q4jr\nGHSA-wc4h-2348-jc3p",
       "5871c559e933e12fa211d50aaab8e1208e2eece3": "Publish GHSA-vr2g-rhm5-q4jr"
-    },
-    "GHSA-4V58-8P28-2RQ3": {
-      "dc1d8d59a30d53080229845f42700640f7ddda72": "Publish Advisories\n\nGHSA-4v58-8p28-2rq3\nGHSA-8m7c-8m39-rv4x\nGHSA-cwj3-vqpp-pmxr"
     },
     "GHSA-8M7C-8M39-RV4X": {
       "dc1d8d59a30d53080229845f42700640f7ddda72": "Publish Advisories\n\nGHSA-4v58-8p28-2rq3\nGHSA-8m7c-8m39-rv4x\nGHSA-cwj3-vqpp-pmxr"
@@ -65088,9 +65122,6 @@
     "GHSA-7G5X-9C4V-4W5R": {
       "63dcd4ae273a86eb91b550ac63d892ed0473713f": "Publish Advisories\n\nGHSA-7g5x-9c4v-4w5r\nGHSA-hfcp-477w-3wjw"
     },
-    "GHSA-HFCP-477W-3WJW": {
-      "63dcd4ae273a86eb91b550ac63d892ed0473713f": "Publish Advisories\n\nGHSA-7g5x-9c4v-4w5r\nGHSA-hfcp-477w-3wjw"
-    },
     "GHSA-V4JW-M6RM-399H": {
       "c953e0d29c1721ee194ddfa615b37b67df0ec4e8": "Publish GHSA-v4jw-m6rm-399h"
     },
@@ -77621,9 +77652,6 @@
       "e730f9a1ebbeab02c35b87bcdd6b5d564e789b55": "Publish Advisories\n\nGHSA-2844-9647-m4rw\nGHSA-29xr-58g9-8qfq\nGHSA-3wm7-jw5g-v3gq\nGHSA-4742-mr57-2r9j\nGHSA-4x3m-m7qg-rjvc\nGHSA-5884-m867-xg58\nGHSA-6w33-8qh2-c7jv\nGHSA-786g-jpf2-55wg\nGHSA-863c-m9f2-hgxh\nGHSA-94f7-w8j3-ppqr\nGHSA-cjpf-7pxx-hqc7\nGHSA-fcr8-c3fr-779m\nGHSA-fjmr-7667-8v4p\nGHSA-gg4j-vv7g-h3f6\nGHSA-hfg8-jg35-3hqr\nGHSA-hh4w-cc4q-rp64\nGHSA-hxgr-h468-wf97\nGHSA-m6vw-2qvg-8xgj\nGHSA-p3hp-24mv-wr6w\nGHSA-qmf6-23g2-95xp\nGHSA-qwx9-mmhx-chg8\nGHSA-w5h6-3m3q-q8pm\nGHSA-ww9v-567h-hcvj"
     },
     "GHSA-786G-JPF2-55WG": {
-      "e730f9a1ebbeab02c35b87bcdd6b5d564e789b55": "Publish Advisories\n\nGHSA-2844-9647-m4rw\nGHSA-29xr-58g9-8qfq\nGHSA-3wm7-jw5g-v3gq\nGHSA-4742-mr57-2r9j\nGHSA-4x3m-m7qg-rjvc\nGHSA-5884-m867-xg58\nGHSA-6w33-8qh2-c7jv\nGHSA-786g-jpf2-55wg\nGHSA-863c-m9f2-hgxh\nGHSA-94f7-w8j3-ppqr\nGHSA-cjpf-7pxx-hqc7\nGHSA-fcr8-c3fr-779m\nGHSA-fjmr-7667-8v4p\nGHSA-gg4j-vv7g-h3f6\nGHSA-hfg8-jg35-3hqr\nGHSA-hh4w-cc4q-rp64\nGHSA-hxgr-h468-wf97\nGHSA-m6vw-2qvg-8xgj\nGHSA-p3hp-24mv-wr6w\nGHSA-qmf6-23g2-95xp\nGHSA-qwx9-mmhx-chg8\nGHSA-w5h6-3m3q-q8pm\nGHSA-ww9v-567h-hcvj"
-    },
-    "GHSA-863C-M9F2-HGXH": {
       "e730f9a1ebbeab02c35b87bcdd6b5d564e789b55": "Publish Advisories\n\nGHSA-2844-9647-m4rw\nGHSA-29xr-58g9-8qfq\nGHSA-3wm7-jw5g-v3gq\nGHSA-4742-mr57-2r9j\nGHSA-4x3m-m7qg-rjvc\nGHSA-5884-m867-xg58\nGHSA-6w33-8qh2-c7jv\nGHSA-786g-jpf2-55wg\nGHSA-863c-m9f2-hgxh\nGHSA-94f7-w8j3-ppqr\nGHSA-cjpf-7pxx-hqc7\nGHSA-fcr8-c3fr-779m\nGHSA-fjmr-7667-8v4p\nGHSA-gg4j-vv7g-h3f6\nGHSA-hfg8-jg35-3hqr\nGHSA-hh4w-cc4q-rp64\nGHSA-hxgr-h468-wf97\nGHSA-m6vw-2qvg-8xgj\nGHSA-p3hp-24mv-wr6w\nGHSA-qmf6-23g2-95xp\nGHSA-qwx9-mmhx-chg8\nGHSA-w5h6-3m3q-q8pm\nGHSA-ww9v-567h-hcvj"
     },
     "GHSA-94F7-W8J3-PPQR": {

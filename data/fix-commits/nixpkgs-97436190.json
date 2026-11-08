@@ -1,6 +1,14 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-116067": {
+      "b96fc8655dd42bd465df94b1a4405e70d0301e3a": "[Backport release-26.05] paisa: add patch for CVE-2026-116067 (#579187)",
+      "c4ddd25d189e2b864a5432784d0659f659d8c9f0": "paisa: add patch for CVE-2026-116067\n\nPath traversal in the Editor and Sheet API allowed an attacker to access\narbitrary files on the host system and deleting backups outside the\njournal / sheets directory.\n\nApplies upstream commit\nhttps://github.com/ananthakumaran/paisa/commit/035949351f7c0d0f90ecf767aa1e28b4d5a0ae31\nwhich fixes the issue and is already included in paisa v0.7.8 on master.\n\nhttps://github.com/ananthakumaran/paisa/issues/420\n\nNot-cherry-picked-because: Unstable has paisa 0.7.8 with the fix."
+    },
+    "CVE-2026-118384": {
+      "5d334c26e40043b9f8bbda98ecac5fd9de88391c": "mtools: 4.0.49 -> 4.0.50\n\nCHANGELOG:\n> v4_0_50\n> - Fix CVE-2026-118384\n\n(cherry picked from commit 4e68f6396de2c8ed64b19b1bd57da45133970b1c)",
+      "4e68f6396de2c8ed64b19b1bd57da45133970b1c": "mtools: 4.0.49 -> 4.0.50\n\nCHANGELOG:\n> v4_0_50\n> - Fix CVE-2026-118384"
+    },
     "CVE-2026-44604": {
       "0f604edf4a83d622d6542c2c72948fe8a58c2916": "rpm: 4.20.1 -> 6.1.0\n\nChanges:\nhttps://rpm.org/releases/6.1.0\nhttps://rpm.org/releases/6.0.0\n\nThe Darwin patch should not be needed anymore, upstream code now uses\nsigaction() instead of signal().\n\nTook the opportunity to build directly from the sources instead of\nintermediary tarball.\n\nFixes #526344 (CVE-2026-44604)\nFixes #549784 (CVE-2026-44605)"
     },
