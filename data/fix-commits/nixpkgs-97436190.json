@@ -817,6 +817,13 @@
       "ee62357e90778a37aa7aa4a646e7ccd4fdb643b3": "php84: 8.4.26 -> 8.4.27, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.4.27",
       "8122eb15f960d1e04ab982e4ee971c374133a1e8": "php83: 8.3.35 -> 8.3.36, fixes CVE-2026-109618, CVE-2026-109619\n\nChangeLog: https://www.php.net/ChangeLog-8.php#8.3.36"
     },
+    "CVE-2026-107181": {
+      "42bcac17024c7d2d02d99056eaef130963c84e52": "materialgram: 7.0.5.1 -> 7.3.1.1\n\nhttps://github.com/kukuruzka165/materialgram/releases/tag/v7.3.1.1\n\nRemove the CVE-2026-107181 vulnerability marker because this release\nincludes the IPC record injection fix.\n\nAssisted-by: Codex (gpt-6.1-sol)",
+      "ef1e8f90325645951aa17c3af6c0125407dce2d1": "[Backport release-26.05] materialgram: mark knownVulnerabilities CVE-2026-107181 (#573800)",
+      "34c915da334c277abc53a5ac8062f73ce7314d9d": "materialgram: mark knownVulnerabilities CVE-2026-107181\n\n(cherry picked from commit ce3331cfc774e757952cf346122ac6af0fbeb964)",
+      "b97565d885e00f5c3343cb75a7c632c187d23e84": "materialgram: mark knownVulnerabilities CVE-2026-107181 (#572228)",
+      "ce3331cfc774e757952cf346122ac6af0fbeb964": "materialgram: mark knownVulnerabilities CVE-2026-107181"
+    },
     "CVE-2026-39199": {
       "dcf00dd52469732de413d0a245d9ef5faaec428e": "[Backport release-26.05] snes9x{,-gtk}: apply patch for CVE-2026-39199 (#576749)",
       "536b8bd92b4e22d1016e130c3766cc6f1ed14f75": "snes9x: apply patch for CVE-2026-39199\n\nBackport upstream commit 96b366100172723f6314c40e237b370f4f7b59f4,\nwhich fixes an out-of-bounds write when applying a crafted UPS patch.\n\nFixes #532926\n\nAssisted-by: Claude Code (claude-opus-5-5)\n(cherry picked from commit a6f34d79884a608ccd06a2d4c7cbecf56a5f2bc5)",
@@ -1470,12 +1477,6 @@
       "ce295f663f6dad79db4e20e0b7a8f2551448ec09": "emacs30, emacs30-macport: patch CVE-2026-79992\n\n(cherry picked from commit ece60c611b9915bd6dcb62d6b17f0f323b203ac3)",
       "df8611e3f5ae7c201c1d9ff5fffb3aa4028b8978": "emacs30, emacs30-macport: patch CVE-2026-79992 (#556991)",
       "ece60c611b9915bd6dcb62d6b17f0f323b203ac3": "emacs30, emacs30-macport: patch CVE-2026-79992"
-    },
-    "CVE-2026-107181": {
-      "ef1e8f90325645951aa17c3af6c0125407dce2d1": "[Backport release-26.05] materialgram: mark knownVulnerabilities CVE-2026-107181 (#573800)",
-      "34c915da334c277abc53a5ac8062f73ce7314d9d": "materialgram: mark knownVulnerabilities CVE-2026-107181\n\n(cherry picked from commit ce3331cfc774e757952cf346122ac6af0fbeb964)",
-      "b97565d885e00f5c3343cb75a7c632c187d23e84": "materialgram: mark knownVulnerabilities CVE-2026-107181 (#572228)",
-      "ce3331cfc774e757952cf346122ac6af0fbeb964": "materialgram: mark knownVulnerabilities CVE-2026-107181"
     },
     "CVE-2026-39923": {
       "91bb74f4c3980f391251633d5b0a9e1192b5b076": "flarum: 1.8.1 -> 1.8.19\n\nFixes CVE-2026-39923, CVE-2026-39924 and CVE-2026-41887.\n\nThe lock is generated with COMPOSER_NO_SECURITY_BLOCKING=1 because\nleague/flysystem 1.x has an advisory that won't be fixed on that branch.\n\n(cherry picked from commit 8da03a59bccfffb73c7cfdee11b0f376fdac2cac)",
