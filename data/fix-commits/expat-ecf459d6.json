@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://android.googlesource.com/platform/external/expat",
   "vulnerabilities": {
+    "CVE-2026-124317": {
+      "3f83976721f156ea77173bc76fa49e6c077e817f": "Merge pull request #1492 from libexpat/overread-unknown-encoding-decoder\n\n[CVE-2026-124317] lib: Fix overread in unknown encoding decoder"
+    },
     "CVE-2026-117610": {
       "2480a0520fee623a8f7c3f038ff9fb491105472c": "Merge pull request #1444 from libexpat/nonfinal-empty-subparser-parse\n\n[CVE-2026-117610] lib: Fix initial non-final empty subparser call with a handler"
     },
