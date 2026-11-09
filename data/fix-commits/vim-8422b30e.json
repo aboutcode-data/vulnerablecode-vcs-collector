@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/vim/vim",
   "vulnerabilities": {
+    "GHSA-26QR-JVFJ-HCWM": {
+      "bdcb63d47fa5e86406a7b04a0ab62638018fb6b5": "patch 9.2.1309:[security]: heap-buffer-overflow with two SOFO sections\n\nProblem:  [security]: A spell file with two SN_SOFO sections frees the\n          first one's items as SN_SAL items, reading beyond the\n          allocated memory (pangflame).\nSolution: Give a format error when more than one section is found.\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-26qr-jvfj-hcwm\n\nAssisted-by: Claude\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-P99J-MFJP-R4CG": {
       "a448e0c6bc459d7dbeab581bcb76a0d51695fb51": "patch 9.2.1308: [security]: socketserver does not verify permissions\n\nProblem:  [security]: an existing socket directory is used without\n          checking permissions, and the socket is created with the\n          umask, so another local user can pre-create\n          \"/tmp/vim-<uid>\" and connect to or replace the server socket\n          (360AlphaLab)\nSolution: Only use the socket directory if it is a real directory owned\n          by the user and not accessible by others.\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-p99j-mfjp-r4cg\n\nAssisted-by: Claude\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
     },
