@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/pulsar",
   "vulnerabilities": {
+    "CVE-2026-57914": {
+      "dd247bf36f4ae5cb027056c617b159f7996255a5": "[fix][sec] Upgrade transitive Apache Kerby modules to 2.1.2 to address CVE-2026-57914 (#27486)"
+    },
     "GHSA-CHPW-2MQM-95CC": {
       "4a2250585ba149b34c02fc4c6d60d8c1144f7eaf": "[fix][ci] Upgrade gradle/actions to 6.4.1 (GHSA-chpw-2mqm-95cc) and develocity-actions to 2.5 (#27179)\n\n(cherry picked from commit da1e86f567c3f22efa63609d895fa884c59018ce)",
       "da1e86f567c3f22efa63609d895fa884c59018ce": "[fix][ci] Upgrade gradle/actions to 6.4.1 (GHSA-chpw-2mqm-95cc) and develocity-actions to 2.5 (#27179)"
