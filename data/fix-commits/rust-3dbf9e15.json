@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/rust-lang/rust",
   "vulnerabilities": {
     "CVE-2026-107891": {
+      "142b7601c083c3d7b1ce390d906608f8cc9df3c5": "Patch musl for CVE-2026-107891\n\nAdvisory: https://www.openwall.com/lists/musl/2026/10/21/1\n(cherry picked from commit b8bd87135ea97525fd426632574740975cf7c1d6)",
       "3b0202dcde0ac75d57351de7b10dfa396747bd5e": "Auto merge of #165577 - Amanieu:musl-security-beta, r=cuviper\n\n[beta] Apply CVE patches for musl targets\n\nBackport of rust-lang/rust#165575\n\nThis patches our bundled musl for [CVE-2026-107891] (integer overflow in regcomp).\n\nIt also fixes the following targets which weren't getting any of the CVE patches for musl ([CVE-2025-26519], [CVE-2026-6042], [CVE-2026-40200], [CVE-2026-107891]):\n- loongarch64-unknown-linux-musl\n- powerpc64-unknown-linux-musl\n- powerpc64le-unknown-linux-musl\n- riscv64gc-unknown-linux-musl\n\n[CVE-2025-26519]: https://www.openwall.com/lists/musl/2025/02/13/1\n[CVE-2026-6042]: https://www.openwall.com/lists/musl/2026/04/03/2\n[CVE-2026-40200]: https://www.openwall.com/lists/musl/2026/04/10/3\n[CVE-2026-107891]: https://www.openwall.com/lists/musl/2026/10/21/1\n\nr? cuviper",
       "b8bd87135ea97525fd426632574740975cf7c1d6": "Patch musl for CVE-2026-107891\n\nAdvisory: https://www.openwall.com/lists/musl/2026/10/21/1"
     },
