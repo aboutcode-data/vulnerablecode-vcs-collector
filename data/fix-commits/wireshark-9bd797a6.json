@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/wireshark/wireshark",
   "vulnerabilities": {
     "CVE-2026-85091": {
+      "fb364b53afe446d0f9e1aea0eb8f3ac3defa1f08": "FetchArtifiacts: Update minizip-ng and glib-bundle on Windows\n\nUpdate to a rebuilt minizip-ng bundle on Windows that picks up the new\nDLL name to match the other packages from vcpkg.\n\nAlso update the glib-bundle to get the rebuild zlib package that patches\nCVE-2026-85091 (though we do not appear to be vulnerable to it) and\na minor point release update of GLib to 2.90.1\n\n\n(cherry picked from commit e0ea1d57e7e9dc59d7b867f71353bafcd455ed39)\n\nCo-authored-by: John Thacker <johnthacker@gmail.com>",
       "e0ea1d57e7e9dc59d7b867f71353bafcd455ed39": "FetchArtifiacts: Update minizip-ng and glib-bundle on Windows\n\nUpdate to a rebuilt minizip-ng bundle on Windows that picks up the new\nDLL name to match the other packages from vcpkg.\n\nAlso update the glib-bundle to get the rebuild zlib package that patches\nCVE-2026-85091 (though we do not appear to be vulnerable to it) and\na minor point release update of GLib to 2.90.1"
     },
     "CVE-2022-0585": {

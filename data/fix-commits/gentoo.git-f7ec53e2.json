@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-116337": {
+      "23e86cf58ff1174f8041264b80d3b999d92f2e27": "dev-qt/qtbase: backport fix for CVE-2026-116337\n\nBug: https://bugs.gentoo.org/986097\nSigned-off-by: Ionen Wolkens <ionen@gentoo.org>"
+    },
+    "CVE-2026-125350": {
+      "322f691665f4bffd7e072642852964b9d629629a": "dev-libs/libxslt: fix CVE-2026-125350\n\nBug: https://bugs.gentoo.org/986081\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
     "CVE-2026-111943": {
       "84482645854cb64ec94a016e0c9905a367663285": "www-client/links: disable builtin certificates for CVE-2026-111943\n\nBug: https://bugs.gentoo.org/985407\nSigned-off-by: Ben Kohler <bkohler@gentoo.org>",
       "cda95970042e3f9efd0ac1eb8e6e4c2c52718b11": "dev-qt/qtwebengine: backport for QTBUG-149946 and CVE-2026-111943\n\nMeant to wait for qtwebengine-6.11.3 to release to patch anything\nfor less rebuilding given it was supposed to be imminent, but it\nkeeps being delayed so may as well at least do these.\n\nCloses: https://bugs.gentoo.org/984271\nCloses: https://bugs.gentoo.org/984633\nSigned-off-by: Ionen Wolkens <ionen@gentoo.org>"
