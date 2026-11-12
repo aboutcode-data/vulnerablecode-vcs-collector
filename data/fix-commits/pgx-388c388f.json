@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/jackc/pgx",
   "vulnerabilities": {
+    "GHSA-W9RP-VFRH-Q8VV": {
+      "e2bb01086bad419db40fb253992060c8b82a6146": "Fix Rows.Values panic on mismatched field counts\n\nReject DataRow value counts that differ from RowDescription, matching Scan error handling. Add mock-server regression coverage for missing and extra values.\n\nSecurity advisory: https://github.com/jackc/pgx/security/advisories/GHSA-w9rp-vfrh-q8vv"
+    },
     "GHSA-95FJ-3FXW-G62G": {
       "5a17450b96d2b81901b172bf04d9f6c970cecc88": "pgconn: require AuthenticationOk before ReadyForQuery\n\nValidate authentication completion and required channel binding at AuthenticationOk, then require that accepted state before the initial ReadyForQuery. Keep authentication-method checks before sending credentials.\n\nHave OAuth peek at its response so the startup loop consumes AuthenticationOk and applies the same completion checks for every method. Preserve OAuth error diagnostics.\n\nCover missing AuthenticationOk under permissive policies and after password, MD5, and SCRAM exchanges, plus OAuth success and error paths. Rejected connections never reach ValidateConnect.\n\nSecurity report: https://github.com/jackc/pgx/security/advisories/GHSA-95fj-3fxw-g62g",
       "de3116095b1b8576a6e90eba75ee1231e3ae0015": "pgconn: enforce required channel binding throughout startup\n\nTrack verified SCRAM-PLUS completion and reject AuthenticationOk or ReadyForQuery without it when channel_binding=require. Reject password, MD5, GSS, and OAuth before sending credentials or invoking the token provider.\n\nAdd plaintext and TLS protocol regressions, successful SCRAM exchanges for all channel-binding modes, and invalid server-signature controls.\n\nSecurity report: https://github.com/jackc/pgx/security/advisories/GHSA-95fj-3fxw-g62g",
