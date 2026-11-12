@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/labstack/echo",
   "vulnerabilities": {
+    "GHSA-3F6J-CW5H-QW9C": {
+      "53cdb2be42cccf61da4a9c6efefb769c4daac0e5": "chore: prepare v5.4.5 release (#3229)\n\n* chore: prepare v5.4.5 release\n\n* docs: link GHSA-3f6j-cw5h-qw9c in changelog\n\n* docs: clarify when redirect middleware returns 400",
+      "25c7b0459ffa539e024760e7fd1cbd8bdc084e5d": "chore: prepare v4.16.4 release (#3230)\n\n* chore: prepare v4.16.4 release\n\n* docs: link GHSA-3f6j-cw5h-qw9c in changelog\n\n* docs: clarify when redirect middleware returns 400"
+    },
     "CVE-2026-118651": {
       "ebbb855f5827b76fb206e267dd91d020000baf66": "fix: secure v4 client IP defaults for proxying and rate limiting (#3197)\n\n* fix: derive v4 client IP from the connection peer by default\n\nIgnore untrusted forwarding headers when IPExtractor is unset and always replace upstream X-Real-IP from Context.RealIP. Preserve explicit extractors and document migration for applications behind proxies. Addresses CVE-2026-118651 and CVE-2026-118653.\n\n* fix: preserve derived proxy identity after hop header stripping\n\n* docs: describe the secure RealIP default on the public interface",
       "1edd550d22116bc3ffb6529b63290bf142b37d46": "fix: derive v4 client IP from the connection peer by default\n\nIgnore untrusted forwarding headers when IPExtractor is unset and always replace upstream X-Real-IP from Context.RealIP. Preserve explicit extractors and document migration for applications behind proxies. Addresses CVE-2026-118651 and CVE-2026-118653."
