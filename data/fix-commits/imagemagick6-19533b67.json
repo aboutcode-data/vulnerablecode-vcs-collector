@@ -1,11 +1,18 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
-    "GHSA-F965-FVCW-9VHF": {
-      "b94bffbe1bf401d833ae93dfe070e33859225607": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-f965-fvcw-9vhf"
+    "GHSA-H5QR-J3RH-P38H": {
+      "1a60d88ac76739da7e3c7c6b816d65b9ac85123a": "Added extra checks to prevent an infinite loop when using -rotational-blur (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-h5qr-j3rh-p38h)"
+    },
+    "GHSA-RQG8-7WQ4-54HJ": {
+      "1cea048cf207d2dc5e71763836ac57a144091789": "Correct size check to prevent an heap buffer over-write (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-rqg8-7wq4-54hj)"
     },
     "GHSA-6R6F-X5H8-FW8H": {
+      "45f416c1e5d88ee70a90715b6f3672f20b1694b9": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-6r6f-x5h8-fw8h",
       "ce8cb3e49d5d3cca8084641f07ed12a9bcb42917": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-6r6f-x5h8-fw8h"
+    },
+    "GHSA-F965-FVCW-9VHF": {
+      "b94bffbe1bf401d833ae93dfe070e33859225607": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-f965-fvcw-9vhf"
     },
     "GHSA-J4X4-Q2RM-QXJF": {
       "60e4f314c94d91d89fd3d8fa1d93ed85d6e318f1": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-j4x4-q2rm-qxjf"

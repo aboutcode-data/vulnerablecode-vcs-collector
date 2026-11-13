@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/camel",
   "vulnerabilities": {
+    "GHSA-6Q48-6C7W-9GW2": {
+      "ff39b0a05b176f72255eb313fa959bb2cb1ef5f9": "chore(deps): Bump certifi from 2026.10.19 to 2026.10.23 in /.github/actions/check-container-upgrade\n\n2026.10.19 already has the fix for GHSA-6q48-6c7w-9gw2 (fixed in 2026.10.18),\nbut Dependabot alert #226 stayed open. Bump to the latest release so the\nmanifest is scanned again.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nSigned-off-by: Claus Ibsen <claus.ibsen@gmail.com>"
+    },
     "CVE-2026-102554": {
       "1fc0d5cc3b33d497eeb88f4a954d2ba954647323": "[camel-4.22.x] Upgrade Guava to 33.7.2-jre (CVE-2026-102554) (#28117)"
     },
