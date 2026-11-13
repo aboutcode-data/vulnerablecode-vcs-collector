@@ -1,6 +1,84 @@
 {
   "vcs_url": "https://github.com/buildroot/buildroot",
   "vulnerabilities": {
+    "CVE-2026-86561": {
+      "3c1cb086df0e0a174b6e140f586262a93a0fe7a4": "package/dpdk: security bump to version 25.11.4\n\nSee the release note of the new versions:\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id4\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id7\n\nFixes the following CVEs:\n- CVE-2026-86561\n- CVE-2026-86562\n- CVE-2026-86563\n- CVE-2026-86565\n- CVE-2026-86566\n- CVE-2026-86567\n- CVE-2026-86845\n- CVE-2026-86846\n- CVE-2026-86847\n- CVE-2026-86848\n- CVE-2026-86849\n- CVE-2026-86856\n- CVE-2026-93683\n- CVE-2026-100236\n\nSigned-off-by: Maxime Leroy <maxime@leroys.fr>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-86562": {
+      "3c1cb086df0e0a174b6e140f586262a93a0fe7a4": "package/dpdk: security bump to version 25.11.4\n\nSee the release note of the new versions:\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id4\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id7\n\nFixes the following CVEs:\n- CVE-2026-86561\n- CVE-2026-86562\n- CVE-2026-86563\n- CVE-2026-86565\n- CVE-2026-86566\n- CVE-2026-86567\n- CVE-2026-86845\n- CVE-2026-86846\n- CVE-2026-86847\n- CVE-2026-86848\n- CVE-2026-86849\n- CVE-2026-86856\n- CVE-2026-93683\n- CVE-2026-100236\n\nSigned-off-by: Maxime Leroy <maxime@leroys.fr>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-86563": {
+      "3c1cb086df0e0a174b6e140f586262a93a0fe7a4": "package/dpdk: security bump to version 25.11.4\n\nSee the release note of the new versions:\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id4\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id7\n\nFixes the following CVEs:\n- CVE-2026-86561\n- CVE-2026-86562\n- CVE-2026-86563\n- CVE-2026-86565\n- CVE-2026-86566\n- CVE-2026-86567\n- CVE-2026-86845\n- CVE-2026-86846\n- CVE-2026-86847\n- CVE-2026-86848\n- CVE-2026-86849\n- CVE-2026-86856\n- CVE-2026-93683\n- CVE-2026-100236\n\nSigned-off-by: Maxime Leroy <maxime@leroys.fr>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-86565": {
+      "3c1cb086df0e0a174b6e140f586262a93a0fe7a4": "package/dpdk: security bump to version 25.11.4\n\nSee the release note of the new versions:\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id4\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id7\n\nFixes the following CVEs:\n- CVE-2026-86561\n- CVE-2026-86562\n- CVE-2026-86563\n- CVE-2026-86565\n- CVE-2026-86566\n- CVE-2026-86567\n- CVE-2026-86845\n- CVE-2026-86846\n- CVE-2026-86847\n- CVE-2026-86848\n- CVE-2026-86849\n- CVE-2026-86856\n- CVE-2026-93683\n- CVE-2026-100236\n\nSigned-off-by: Maxime Leroy <maxime@leroys.fr>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-86566": {
+      "3c1cb086df0e0a174b6e140f586262a93a0fe7a4": "package/dpdk: security bump to version 25.11.4\n\nSee the release note of the new versions:\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id4\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id7\n\nFixes the following CVEs:\n- CVE-2026-86561\n- CVE-2026-86562\n- CVE-2026-86563\n- CVE-2026-86565\n- CVE-2026-86566\n- CVE-2026-86567\n- CVE-2026-86845\n- CVE-2026-86846\n- CVE-2026-86847\n- CVE-2026-86848\n- CVE-2026-86849\n- CVE-2026-86856\n- CVE-2026-93683\n- CVE-2026-100236\n\nSigned-off-by: Maxime Leroy <maxime@leroys.fr>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-86567": {
+      "3c1cb086df0e0a174b6e140f586262a93a0fe7a4": "package/dpdk: security bump to version 25.11.4\n\nSee the release note of the new versions:\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id4\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id7\n\nFixes the following CVEs:\n- CVE-2026-86561\n- CVE-2026-86562\n- CVE-2026-86563\n- CVE-2026-86565\n- CVE-2026-86566\n- CVE-2026-86567\n- CVE-2026-86845\n- CVE-2026-86846\n- CVE-2026-86847\n- CVE-2026-86848\n- CVE-2026-86849\n- CVE-2026-86856\n- CVE-2026-93683\n- CVE-2026-100236\n\nSigned-off-by: Maxime Leroy <maxime@leroys.fr>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-86845": {
+      "3c1cb086df0e0a174b6e140f586262a93a0fe7a4": "package/dpdk: security bump to version 25.11.4\n\nSee the release note of the new versions:\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id4\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id7\n\nFixes the following CVEs:\n- CVE-2026-86561\n- CVE-2026-86562\n- CVE-2026-86563\n- CVE-2026-86565\n- CVE-2026-86566\n- CVE-2026-86567\n- CVE-2026-86845\n- CVE-2026-86846\n- CVE-2026-86847\n- CVE-2026-86848\n- CVE-2026-86849\n- CVE-2026-86856\n- CVE-2026-93683\n- CVE-2026-100236\n\nSigned-off-by: Maxime Leroy <maxime@leroys.fr>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-86846": {
+      "3c1cb086df0e0a174b6e140f586262a93a0fe7a4": "package/dpdk: security bump to version 25.11.4\n\nSee the release note of the new versions:\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id4\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id7\n\nFixes the following CVEs:\n- CVE-2026-86561\n- CVE-2026-86562\n- CVE-2026-86563\n- CVE-2026-86565\n- CVE-2026-86566\n- CVE-2026-86567\n- CVE-2026-86845\n- CVE-2026-86846\n- CVE-2026-86847\n- CVE-2026-86848\n- CVE-2026-86849\n- CVE-2026-86856\n- CVE-2026-93683\n- CVE-2026-100236\n\nSigned-off-by: Maxime Leroy <maxime@leroys.fr>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-86847": {
+      "3c1cb086df0e0a174b6e140f586262a93a0fe7a4": "package/dpdk: security bump to version 25.11.4\n\nSee the release note of the new versions:\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id4\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id7\n\nFixes the following CVEs:\n- CVE-2026-86561\n- CVE-2026-86562\n- CVE-2026-86563\n- CVE-2026-86565\n- CVE-2026-86566\n- CVE-2026-86567\n- CVE-2026-86845\n- CVE-2026-86846\n- CVE-2026-86847\n- CVE-2026-86848\n- CVE-2026-86849\n- CVE-2026-86856\n- CVE-2026-93683\n- CVE-2026-100236\n\nSigned-off-by: Maxime Leroy <maxime@leroys.fr>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-86848": {
+      "3c1cb086df0e0a174b6e140f586262a93a0fe7a4": "package/dpdk: security bump to version 25.11.4\n\nSee the release note of the new versions:\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id4\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id7\n\nFixes the following CVEs:\n- CVE-2026-86561\n- CVE-2026-86562\n- CVE-2026-86563\n- CVE-2026-86565\n- CVE-2026-86566\n- CVE-2026-86567\n- CVE-2026-86845\n- CVE-2026-86846\n- CVE-2026-86847\n- CVE-2026-86848\n- CVE-2026-86849\n- CVE-2026-86856\n- CVE-2026-93683\n- CVE-2026-100236\n\nSigned-off-by: Maxime Leroy <maxime@leroys.fr>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-86849": {
+      "3c1cb086df0e0a174b6e140f586262a93a0fe7a4": "package/dpdk: security bump to version 25.11.4\n\nSee the release note of the new versions:\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id4\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id7\n\nFixes the following CVEs:\n- CVE-2026-86561\n- CVE-2026-86562\n- CVE-2026-86563\n- CVE-2026-86565\n- CVE-2026-86566\n- CVE-2026-86567\n- CVE-2026-86845\n- CVE-2026-86846\n- CVE-2026-86847\n- CVE-2026-86848\n- CVE-2026-86849\n- CVE-2026-86856\n- CVE-2026-93683\n- CVE-2026-100236\n\nSigned-off-by: Maxime Leroy <maxime@leroys.fr>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-86856": {
+      "3c1cb086df0e0a174b6e140f586262a93a0fe7a4": "package/dpdk: security bump to version 25.11.4\n\nSee the release note of the new versions:\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id4\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id7\n\nFixes the following CVEs:\n- CVE-2026-86561\n- CVE-2026-86562\n- CVE-2026-86563\n- CVE-2026-86565\n- CVE-2026-86566\n- CVE-2026-86567\n- CVE-2026-86845\n- CVE-2026-86846\n- CVE-2026-86847\n- CVE-2026-86848\n- CVE-2026-86849\n- CVE-2026-86856\n- CVE-2026-93683\n- CVE-2026-100236\n\nSigned-off-by: Maxime Leroy <maxime@leroys.fr>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-93683": {
+      "3c1cb086df0e0a174b6e140f586262a93a0fe7a4": "package/dpdk: security bump to version 25.11.4\n\nSee the release note of the new versions:\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id4\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id7\n\nFixes the following CVEs:\n- CVE-2026-86561\n- CVE-2026-86562\n- CVE-2026-86563\n- CVE-2026-86565\n- CVE-2026-86566\n- CVE-2026-86567\n- CVE-2026-86845\n- CVE-2026-86846\n- CVE-2026-86847\n- CVE-2026-86848\n- CVE-2026-86849\n- CVE-2026-86856\n- CVE-2026-93683\n- CVE-2026-100236\n\nSigned-off-by: Maxime Leroy <maxime@leroys.fr>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-100236": {
+      "3c1cb086df0e0a174b6e140f586262a93a0fe7a4": "package/dpdk: security bump to version 25.11.4\n\nSee the release note of the new versions:\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id4\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id7\n\nFixes the following CVEs:\n- CVE-2026-86561\n- CVE-2026-86562\n- CVE-2026-86563\n- CVE-2026-86565\n- CVE-2026-86566\n- CVE-2026-86567\n- CVE-2026-86845\n- CVE-2026-86846\n- CVE-2026-86847\n- CVE-2026-86848\n- CVE-2026-86849\n- CVE-2026-86856\n- CVE-2026-93683\n- CVE-2026-100236\n\nSigned-off-by: Maxime Leroy <maxime@leroys.fr>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-97033": {
+      "9041f3af8f47509d74010fac4ba157db1101df87": "package/go: security bump version to 1.27.4\n\nhttps://go.dev/doc/devel/release#go1.27.4\nhttps://groups.google.com/g/golang-announce/c/iY8TY0wWgbM\n\nFixes CVE-2026-97033, CVE-2026-97034, CVE-2026-97035, CVE-2026-97036,\nCVE-2026-97037, CVE-2026-97038, CVE-2026-97039, CVE-2026-97040,\nCVE-2026-97041, CVE-2026-97042, CVE-2026-97043, CVE-2026-97054\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-97034": {
+      "9041f3af8f47509d74010fac4ba157db1101df87": "package/go: security bump version to 1.27.4\n\nhttps://go.dev/doc/devel/release#go1.27.4\nhttps://groups.google.com/g/golang-announce/c/iY8TY0wWgbM\n\nFixes CVE-2026-97033, CVE-2026-97034, CVE-2026-97035, CVE-2026-97036,\nCVE-2026-97037, CVE-2026-97038, CVE-2026-97039, CVE-2026-97040,\nCVE-2026-97041, CVE-2026-97042, CVE-2026-97043, CVE-2026-97054\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-97035": {
+      "9041f3af8f47509d74010fac4ba157db1101df87": "package/go: security bump version to 1.27.4\n\nhttps://go.dev/doc/devel/release#go1.27.4\nhttps://groups.google.com/g/golang-announce/c/iY8TY0wWgbM\n\nFixes CVE-2026-97033, CVE-2026-97034, CVE-2026-97035, CVE-2026-97036,\nCVE-2026-97037, CVE-2026-97038, CVE-2026-97039, CVE-2026-97040,\nCVE-2026-97041, CVE-2026-97042, CVE-2026-97043, CVE-2026-97054\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-97036": {
+      "9041f3af8f47509d74010fac4ba157db1101df87": "package/go: security bump version to 1.27.4\n\nhttps://go.dev/doc/devel/release#go1.27.4\nhttps://groups.google.com/g/golang-announce/c/iY8TY0wWgbM\n\nFixes CVE-2026-97033, CVE-2026-97034, CVE-2026-97035, CVE-2026-97036,\nCVE-2026-97037, CVE-2026-97038, CVE-2026-97039, CVE-2026-97040,\nCVE-2026-97041, CVE-2026-97042, CVE-2026-97043, CVE-2026-97054\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-97037": {
+      "9041f3af8f47509d74010fac4ba157db1101df87": "package/go: security bump version to 1.27.4\n\nhttps://go.dev/doc/devel/release#go1.27.4\nhttps://groups.google.com/g/golang-announce/c/iY8TY0wWgbM\n\nFixes CVE-2026-97033, CVE-2026-97034, CVE-2026-97035, CVE-2026-97036,\nCVE-2026-97037, CVE-2026-97038, CVE-2026-97039, CVE-2026-97040,\nCVE-2026-97041, CVE-2026-97042, CVE-2026-97043, CVE-2026-97054\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-97038": {
+      "9041f3af8f47509d74010fac4ba157db1101df87": "package/go: security bump version to 1.27.4\n\nhttps://go.dev/doc/devel/release#go1.27.4\nhttps://groups.google.com/g/golang-announce/c/iY8TY0wWgbM\n\nFixes CVE-2026-97033, CVE-2026-97034, CVE-2026-97035, CVE-2026-97036,\nCVE-2026-97037, CVE-2026-97038, CVE-2026-97039, CVE-2026-97040,\nCVE-2026-97041, CVE-2026-97042, CVE-2026-97043, CVE-2026-97054\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-97039": {
+      "9041f3af8f47509d74010fac4ba157db1101df87": "package/go: security bump version to 1.27.4\n\nhttps://go.dev/doc/devel/release#go1.27.4\nhttps://groups.google.com/g/golang-announce/c/iY8TY0wWgbM\n\nFixes CVE-2026-97033, CVE-2026-97034, CVE-2026-97035, CVE-2026-97036,\nCVE-2026-97037, CVE-2026-97038, CVE-2026-97039, CVE-2026-97040,\nCVE-2026-97041, CVE-2026-97042, CVE-2026-97043, CVE-2026-97054\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-97040": {
+      "9041f3af8f47509d74010fac4ba157db1101df87": "package/go: security bump version to 1.27.4\n\nhttps://go.dev/doc/devel/release#go1.27.4\nhttps://groups.google.com/g/golang-announce/c/iY8TY0wWgbM\n\nFixes CVE-2026-97033, CVE-2026-97034, CVE-2026-97035, CVE-2026-97036,\nCVE-2026-97037, CVE-2026-97038, CVE-2026-97039, CVE-2026-97040,\nCVE-2026-97041, CVE-2026-97042, CVE-2026-97043, CVE-2026-97054\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-97041": {
+      "9041f3af8f47509d74010fac4ba157db1101df87": "package/go: security bump version to 1.27.4\n\nhttps://go.dev/doc/devel/release#go1.27.4\nhttps://groups.google.com/g/golang-announce/c/iY8TY0wWgbM\n\nFixes CVE-2026-97033, CVE-2026-97034, CVE-2026-97035, CVE-2026-97036,\nCVE-2026-97037, CVE-2026-97038, CVE-2026-97039, CVE-2026-97040,\nCVE-2026-97041, CVE-2026-97042, CVE-2026-97043, CVE-2026-97054\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-97042": {
+      "9041f3af8f47509d74010fac4ba157db1101df87": "package/go: security bump version to 1.27.4\n\nhttps://go.dev/doc/devel/release#go1.27.4\nhttps://groups.google.com/g/golang-announce/c/iY8TY0wWgbM\n\nFixes CVE-2026-97033, CVE-2026-97034, CVE-2026-97035, CVE-2026-97036,\nCVE-2026-97037, CVE-2026-97038, CVE-2026-97039, CVE-2026-97040,\nCVE-2026-97041, CVE-2026-97042, CVE-2026-97043, CVE-2026-97054\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-97043": {
+      "9041f3af8f47509d74010fac4ba157db1101df87": "package/go: security bump version to 1.27.4\n\nhttps://go.dev/doc/devel/release#go1.27.4\nhttps://groups.google.com/g/golang-announce/c/iY8TY0wWgbM\n\nFixes CVE-2026-97033, CVE-2026-97034, CVE-2026-97035, CVE-2026-97036,\nCVE-2026-97037, CVE-2026-97038, CVE-2026-97039, CVE-2026-97040,\nCVE-2026-97041, CVE-2026-97042, CVE-2026-97043, CVE-2026-97054\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
+    "CVE-2026-97054": {
+      "9041f3af8f47509d74010fac4ba157db1101df87": "package/go: security bump version to 1.27.4\n\nhttps://go.dev/doc/devel/release#go1.27.4\nhttps://groups.google.com/g/golang-announce/c/iY8TY0wWgbM\n\nFixes CVE-2026-97033, CVE-2026-97034, CVE-2026-97035, CVE-2026-97036,\nCVE-2026-97037, CVE-2026-97038, CVE-2026-97039, CVE-2026-97040,\nCVE-2026-97041, CVE-2026-97042, CVE-2026-97043, CVE-2026-97054\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
     "CVE-2026-119618": {
       "64e7c99cef742315ee92a1e9e61925ee012f8884": "package/apache: security bump version to 2.4.71\n\n- bump version to 2.4.71 (for details see [1])\n- fixes CVE-2026-119618, CVE-2026-109163, CVE-2026-106023\n\n[1] https://archive.apache.org/dist/httpd/CHANGES_2.4.71\n\nSigned-off-by: Peter Seiderer <ps.report@gmx.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
     },

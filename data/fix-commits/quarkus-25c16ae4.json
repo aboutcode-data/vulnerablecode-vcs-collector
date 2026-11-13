@@ -2,7 +2,8 @@
   "vcs_url": "https://github.com/quarkusio/quarkus",
   "vulnerabilities": {
     "CVE-2026-119078": {
-      "1bccd1f4b454b67fc615b2038ace0554abce6e88": "Upgrade commons-codec to 1.23.0\n\n- related to https://nvd.nist.gov/vuln/detail/cve-2026-119078\n- version 1.23.0 corrects the documentation, but the behavior is unchanged\n- upgrading alone does not fix affected code, users should check their applications"
+      "1bccd1f4b454b67fc615b2038ace0554abce6e88": "Upgrade commons-codec to 1.23.0\n\n- related to https://nvd.nist.gov/vuln/detail/cve-2026-119078\n- version 1.23.0 corrects the documentation, but the behavior is unchanged\n- upgrading alone does not fix affected code, users should check their applications",
+      "ece32196615d7eef64c294ba979fcb552d44e72c": "Upgrade commons-codec to 1.23.0\n\n- related to https://nvd.nist.gov/vuln/detail/cve-2026-119078\n- version 1.23.0 corrects the documentation, but the behavior is unchanged\n- upgrading alone does not fix affected code, users should check their applications"
     },
     "CVE-2026-107912": {
       "3f19a3e7b5026e092877d288f0daa8819e303ece": "Merge pull request #58194 from jmartisk/3.27-cve-2026-107912\n\n[3.27] Update ImmutablePathMatcher to have the root path always end with forward slash",

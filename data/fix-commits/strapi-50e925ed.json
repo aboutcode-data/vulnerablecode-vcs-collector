@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/strapi/strapi",
   "vulnerabilities": {
+    "GHSA-CG2G-XH64-V4Q7": {
+      "6ed1be0fd1a0d37f25a0e0a74ecac2bebb9f14f3": "fix(docs): bump dompurify to 3.4.17 (#28625)\n\nUpgrade the contributor docs lockfile so the transitive dompurify copy\npulled in by mermaid leaves the GHSA-cg2g-xh64-v4q7 range."
+    },
     "CVE-2024-52588": {
       "1e91259c7a944229f733da443acedb0e9e51fe00": "security: document admin-configured webhook destinations as a specific exclusion (#28543)\n\n* security: document admin-configured webhook destinations as a specific exclusion\n\nAdd a Specific Exclusions entry, under CNA Operational Rules 4.1.3 and\n4.1.2, for requests a webhook makes to a destination an administrator\nconfigured, including localhost, internal network addresses and\nredirects to them. The webhook permissions are the boundary. The\nsave-time URL check is there to catch mistakes and is not a security\ncontrol. The entry names GHSA-v8wj-f5c7-pvxf (CVE-2024-52588) as the\nposition it replaces.\n\nAlso define a production application in Testing Requirements by\nNODE_ENV=production. strapi start does not set NODE_ENV, and when it is\nunset Strapi runs as development, so the old wording pointed reporters\nat a development-mode run.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n* security: shorten the webhook exclusion and Testing Requirements wording\n\nCut the webhook entry down to one paragraph and trim the NODE_ENV\nexplanation in Testing Requirements. No change in scope.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 5.5 <noreply@anthropic.com>"
     },

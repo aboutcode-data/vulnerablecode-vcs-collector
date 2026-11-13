@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://gitlab.com/gitlab-org/gitlab",
   "vulnerabilities": {
+    "CVE-2026-46625": {
+      "4fecff4e021ed88d607abc8ad711dbd0379216bc": "Merge branch '639414-js-cookie-3-0-8' into 'master' \n\nUpgrade js-cookie to 3.0.8 (CVE-2026-46625)\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/270251\n\nMerged-by: Justin Ho Tuan Duong <hduong@gitlab.com>\nApproved-by: GitLab Duo <gitlab-duo@gitlab.com>\nApproved-by: Justin Ho Tuan Duong <hduong@gitlab.com>\nReviewed-by: Justin Ho Tuan Duong <hduong@gitlab.com>\nCo-authored-by: Priyanshu Kumar <priyanshukumar@Priyanshus-MacBook-Air-2.local>",
+      "682b4dd0e5d61453950d1cc6ff9001ebb23287a0": "Upgrade js-cookie to 3.0.8\n\njs-cookie 3.0.5 is affected by CVE-2026-46625 (fixed in 3.0.7).\njs-cookie is a declared runtime dependency bundled into browser assets.\n\nCloses https://gitlab.com/gitlab-org/gitlab/-/work_items/639414\n\nChangelog: security\nSigned-off-by: Priyanshu Jha <priyanshujhaa753@gmail.com>"
+    },
     "CVE-2026-78663": {
       "5b5953229443b6c0b5a0c7dfe2d4a177480bf6ad": "Update golang.org/x/net to v0.60.0 in workhorse\n\nGO-2026-6612 (CVE-2026-78663): the HTTP/2 server can refund\nconnection-level flow control twice for the same data, so a client can\nbypass MaxReceiveBufferPerConnection. It is fixed in x/net v0.60.0.\nWorkhorse is at v0.58.0, and the open Renovate update to v0.59.0 does\nnot contain the fix.\n\nx/net v0.60.0 declares go 1.26.0, so the go directive moves from\n1.25.10 to 1.26.0, which matches GO_VERSION 1.26 in CI. go mod tidy\nalso moves x/crypto, x/mod, x/sync, x/sys, x/text and x/tools to the\nversions v0.60.0 requires.\n\nSupersedes https://gitlab.com/gitlab-org/gitlab/-/merge_requests/258862"
     },

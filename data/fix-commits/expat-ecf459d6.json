@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://android.googlesource.com/platform/external/expat",
   "vulnerabilities": {
+    "CVE-2026-128241": {
+      "3d3f3aedea52216b006046333704e1c28524f183": "Merge pull request #1502 from libexpat/xmlwf-symlink-truncation\n\n[CVE-2026-128241] xmlwf: Plug symlink attacks with `-d <directory>` mode + create files with `0600` rather than `0666` mode"
+    },
     "CVE-2026-124317": {
       "3f83976721f156ea77173bc76fa49e6c077e817f": "Merge pull request #1492 from libexpat/overread-unknown-encoding-decoder\n\n[CVE-2026-124317] lib: Fix overread in unknown encoding decoder"
     },

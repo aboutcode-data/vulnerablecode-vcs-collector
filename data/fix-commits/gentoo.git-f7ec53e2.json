@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-108472": {
+      "1739c77a5c4c611a5aad15247c826968bd66236c": "sys-fs/xfsprogs: Add patch for CVE-2026-108472 (bug #986222)\n\nBug: https://bugs.gentoo.org/986222\nSigned-off-by: Patrick McLean <chutzpah@gentoo.org>"
+    },
     "CVE-2026-116337": {
       "23e86cf58ff1174f8041264b80d3b999d92f2e27": "dev-qt/qtbase: backport fix for CVE-2026-116337\n\nBug: https://bugs.gentoo.org/986097\nSigned-off-by: Ionen Wolkens <ionen@gentoo.org>"
     },

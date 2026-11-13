@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/neovim/neovim",
   "vulnerabilities": {
+    "GHSA-PP46-P33V-78RF": {
+      "82e563a0c2c3759b9eec33d853cd75aa829ac148": "vim-patch:9.2.1342: [security]: command execution with CSS omni completion (#42825)\n\nProblem:  [security]: the csscomplete script passes the file name\n          after @import to glob(), which may cause the pattern\n          being handled by a shell, causing command execution (Magashwarahan)\nSolution: Escape the characters that make glob() use the shell.\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-pp46-p33v-78rf\n\nhttps://github.com/vim/vim/commit/cd50664ab086a37839e3d12754040dbc324dbfa7\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-26QR-JVFJ-HCWM": {
       "fab7b780a299d9f41100fa29eb2b98170fed33a0": "vim-patch:9.2.1309: [security]: heap-buffer-overflow with two SOFO sections (#42755)\n\nProblem:  [security]: A spell file with two SN_SOFO sections frees the\n          first one's items as SN_SAL items, reading beyond the\n          allocated memory (pangflame).\nSolution: Give a format error when more than one section is found.\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-26qr-jvfj-hcwm\n\nhttps://github.com/vim/vim/commit/bdcb63d47fa5e86406a7b04a0ab62638018fb6b5\n\nCo-authored-by: Christian Brabandt <cb@256bit.org>"
     },
