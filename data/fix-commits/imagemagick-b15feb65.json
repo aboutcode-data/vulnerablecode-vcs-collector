@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-5C63-85HH-8VPJ": {
+      "eb9299434aecf3f486039c4a6c367160ed526e5a": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5c63-85hh-8vpj"
+    },
+    "GHSA-58V3-CMWM-HJ3W": {
+      "52aec4ddf0c9222ab7867896362a4227c225321e": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-58v3-cmwm-hj3w"
+    },
     "GHSA-H5QR-J3RH-P38H": {
       "fd4c374db74a7348387e15b16e8a0082654fe933": "Added extra checks to prevent an infinite loop when using -rotational-blur (GHSA-h5qr-j3rh-p38h)"
     },

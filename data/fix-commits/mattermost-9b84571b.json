@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/mattermost/mattermost",
   "vulnerabilities": {
+    "CVE-2024-4367": {
+      "03c48d47b2ff2b6e2b5232a2eb0c69ba2faad271": "fix(e2e): pin pdfjs-dist 4.10.38 for the Percy advisory\n\n@percy/cli-pdf still requests pdfjs-dist 2.16.105, which is CVE-2024-4367. Override it to 4.10.38, the patched release the webapp already uses.\n\nCo-authored-by: saturnino <saturnino@mattermost.com>"
+    },
     "CVE-2026-78661": {
       "3a6870257fabf6b8c7a73b31637131dead2177e4": "Update server Go dependencies for November 2026. (#39582)\n\nBump module dependencies within their current major versions, including golang.org/x/net v0.62.0 which fixes CVE-2026-78661 and CVE-2026-97045 in golang.org/x/net/html.\n\nCo-authored-by: Cursor Agent <cursoragent@cursor.com>\nCo-authored-by: jesse <jesse@mattermost.com>"
     },
