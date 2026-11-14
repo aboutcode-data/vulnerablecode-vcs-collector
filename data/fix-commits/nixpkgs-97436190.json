@@ -1,6 +1,24 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-102589": {
+      "7fa6544b27de76edd2c7651b6eaaadaeba3afd94": "grafana: 13.3.0 -> 13.3.1\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.3.1\n\nFix: CVE-2026-102589, CVE-2026-107509, CVE-2026-110992, CVE-2026-111024,\n     CVE-2026-13721, CVE-2026-14242."
+    },
+    "CVE-2026-107509": {
+      "7fa6544b27de76edd2c7651b6eaaadaeba3afd94": "grafana: 13.3.0 -> 13.3.1\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.3.1\n\nFix: CVE-2026-102589, CVE-2026-107509, CVE-2026-110992, CVE-2026-111024,\n     CVE-2026-13721, CVE-2026-14242."
+    },
+    "CVE-2026-110992": {
+      "7fa6544b27de76edd2c7651b6eaaadaeba3afd94": "grafana: 13.3.0 -> 13.3.1\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.3.1\n\nFix: CVE-2026-102589, CVE-2026-107509, CVE-2026-110992, CVE-2026-111024,\n     CVE-2026-13721, CVE-2026-14242."
+    },
+    "CVE-2026-111024": {
+      "7fa6544b27de76edd2c7651b6eaaadaeba3afd94": "grafana: 13.3.0 -> 13.3.1\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.3.1\n\nFix: CVE-2026-102589, CVE-2026-107509, CVE-2026-110992, CVE-2026-111024,\n     CVE-2026-13721, CVE-2026-14242."
+    },
+    "CVE-2026-13721": {
+      "7fa6544b27de76edd2c7651b6eaaadaeba3afd94": "grafana: 13.3.0 -> 13.3.1\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.3.1\n\nFix: CVE-2026-102589, CVE-2026-107509, CVE-2026-110992, CVE-2026-111024,\n     CVE-2026-13721, CVE-2026-14242."
+    },
+    "CVE-2026-14242": {
+      "7fa6544b27de76edd2c7651b6eaaadaeba3afd94": "grafana: 13.3.0 -> 13.3.1\n\nChangeLog: https://github.com/grafana/grafana/releases/tag/v13.3.1\n\nFix: CVE-2026-102589, CVE-2026-107509, CVE-2026-110992, CVE-2026-111024,\n     CVE-2026-13721, CVE-2026-14242."
+    },
     "CVE-2026-28730": {
       "a048a253ba723c903e863d807976833afd2c498c": "hyperscan: 5.4.2 -> 5.4.2.1\n\nFixes CVE-2026-28730, CVE-2026-33094, CVE-2026-34017, CVE-2026-40216,\nCVE-2026-40424 and CVE-2026-63540.\n\n5.4.2.1 requires OpenSSL for database HMAC verification. Work around\nthree upstream build issues:\n\n- build_wrapper.sh finds libcrypto via `cc --print-file-name`, which\n  fails in the sandbox, so FAT_RUNTIME prefixes OpenSSL symbols.\n- unit-hyperscan calls internal hs_db_free/hs_db_unprotect, which are\n  hidden in shared builds. Export them.\n- hscollider includes util/hash_util.h, which upstream never committed.\n  It is an uninstalled test tool, so skip building it.\n\nAssisted-by: Claude Code (claude-opus-5-5)"
     },

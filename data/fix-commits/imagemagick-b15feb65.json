@@ -1,6 +1,23 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-F3R8-89F9-MX43": {
+      "2e579f80e58bd57706950ac282d38deca7720e31": "Serialize Graphviz calls in the DOT decoder (GHSA-f3r8-89f9-mx43)"
+    },
+    "GHSA-6RM4-QG7H-VVC4": {
+      "fe7592d56c3dd60ed1a2995def617f0ceb514053": "Another fix for GHSA-6rm4-qg7h-vvc4.",
+      "4e9ccd4a30d5017b26a3c4b0973620291ac5a63b": "Correct checks in various drawing operations that could cause a null pointer dereference or heap buffer over-read (GHSA-6rm4-qg7h-vvc4)"
+    },
+    "GHSA-4CMR-G39Q-MH38": {
+      "e41876eb4ad4d2bdac696036a7d589b962ee976a": "Added missing overflow checks (GHSA-4cmr-g39q-mh38)"
+    },
+    "GHSA-4JG2-G974-7W79": {
+      "a8d186976fe97f93773cc852734d7f7f0d047110": "Use the correct depth value when encoding a DPX image (GHSA-4jg2-g974-7w79)",
+      "a1fb00b14231a58215aea67b18321c20963d8858": "Added missing check for the component_size in the PICT decoder (GHSA-4jg2-g974-7w79)"
+    },
+    "GHSA-8XM2-Q8HQ-M68Q": {
+      "1360d45eeee6ce2e6f7a895911ffb7485c0c1a70": "Fixed possible out of bounds write in ShearRotateImage (GHSA-8xm2-q8hq-m68q)"
+    },
     "GHSA-5C63-85HH-8VPJ": {
       "eb9299434aecf3f486039c4a6c367160ed526e5a": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-5c63-85hh-8vpj"
     },
