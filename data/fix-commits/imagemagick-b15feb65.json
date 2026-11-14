@@ -1,6 +1,17 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-5545-XPGP-WJ32": {
+      "dc950e22f0e1fd76dbab9b927353c638b7a8aa2a": "Serialize ASHLAR tile composition and annotation (GHSA-5545-xpgp-wj32)"
+    },
+    "GHSA-WP55-FJ9P-XX9Q": {
+      "36289ea55a5a05946f31afa57374359c42dbca04": "Correct allocation of number of threads (GHSA-wp55-fj9p-xx9q)"
+    },
+    "GHSA-CVRX-J29F-C5Q9": {
+      "9f91a2b2ff42bf5672ee6e27b7bdfece94520be4": "Perform the null checks inside a lock instead (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-cvrx-j29f-c5q9)",
+      "61bcc7f815eb2372a262cffa983460068862abc0": "Fix dangling splay-tree iterator after node removal (GHSA-cvrx-j29f-c5q9)",
+      "8db4d05f31f589cccc16e38fad86bbc3193391c7": "Preserve the same key instead of replacing it in the splay tree (GHSA-cvrx-j29f-c5q9)"
+    },
     "GHSA-F3R8-89F9-MX43": {
       "2e579f80e58bd57706950ac282d38deca7720e31": "Serialize Graphviz calls in the DOT decoder (GHSA-f3r8-89f9-mx43)"
     },

@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/buildroot/buildroot",
   "vulnerabilities": {
+    "CVE-2026-84243": {
+      "43f47f795cee1422416b4f7c7d1fa46cdf54acd5": "package/{glibc, localedef}: security bump version to 2.44-77-g438677ef4\n\nFixes CVE-2026-84243:\nhttps://gitlab.com/gnutools/glibc/-/commit/438677ef498552b28c2060060c9e3947373f1e2c\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
     "CVE-2026-86561": {
       "3c1cb086df0e0a174b6e140f586262a93a0fe7a4": "package/dpdk: security bump to version 25.11.4\n\nSee the release note of the new versions:\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id4\n- https://doc.dpdk.org/guides-25.11/rel_notes/release_25_11.html#id7\n\nFixes the following CVEs:\n- CVE-2026-86561\n- CVE-2026-86562\n- CVE-2026-86563\n- CVE-2026-86565\n- CVE-2026-86566\n- CVE-2026-86567\n- CVE-2026-86845\n- CVE-2026-86846\n- CVE-2026-86847\n- CVE-2026-86848\n- CVE-2026-86849\n- CVE-2026-86856\n- CVE-2026-93683\n- CVE-2026-100236\n\nSigned-off-by: Maxime Leroy <maxime@leroys.fr>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
     },

@@ -1,6 +1,11 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-CVRX-J29F-C5Q9": {
+      "ec42905c91b23e24f39300472935210f7b423c8d": "Perform the null checks inside a lock instead (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-cvrx-j29f-c5q9)",
+      "2d81e4aef75ea42a5de27137c914315135d0f946": "Fix dangling splay-tree iterator after node removal (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-cvrx-j29f-c5q9)",
+      "49ba69ac1aba73e3aad1cf230e0ad53715d22294": "Preserve the same key instead of replacing it in the splay tree (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-cvrx-j29f-c5q9)"
+    },
     "GHSA-F3R8-89F9-MX43": {
       "f98c6b84f57e5dc7d429b953535d23e762f3a92e": "Serialize Graphviz calls in the DOT decoder (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-f3r8-89f9-mx43)"
     },
