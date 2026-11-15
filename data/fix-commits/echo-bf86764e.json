@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/labstack/echo",
   "vulnerabilities": {
+    "GHSA-H6X5-PHVW-C55C": {
+      "1a99655ca84ecce5c8deca2675dfa9c965230dd1": "Merge commit from fork\n\n* fix(proxy): restore X-Forwarded-Proto after hop-by-hop removal\n\nA client could remove X-Forwarded-Proto from the upstream request by naming it in the Connection header, because httputil.ReverseProxy deletes Connection-listed headers after the Director runs. Set the scheme again at the transport boundary, as X-Real-IP already is.\n\nFixes GHSA-h6x5-phvw-c55c. Reported by @zachary-satterly, whose tests are included.\n\n* chore: prepare v4.16.5 security release",
+      "f275a6b1109ee90f288b51a5e2a6fcc617491255": "Merge commit from fork\n\n* fix(proxy): restore X-Forwarded-Proto after hop-by-hop removal\n\nA client could remove X-Forwarded-Proto from the upstream request by naming it in the Connection header, because httputil.ReverseProxy deletes Connection-listed headers after the Director runs. Set the scheme again at the transport boundary, as X-Real-IP already is.\n\nFixes GHSA-h6x5-phvw-c55c. Reported by @zachary-satterly, whose tests are included.\n\n* chore: prepare v5.4.6 security release"
+    },
     "GHSA-3F6J-CW5H-QW9C": {
       "53cdb2be42cccf61da4a9c6efefb769c4daac0e5": "chore: prepare v5.4.5 release (#3229)\n\n* chore: prepare v5.4.5 release\n\n* docs: link GHSA-3f6j-cw5h-qw9c in changelog\n\n* docs: clarify when redirect middleware returns 400",
       "25c7b0459ffa539e024760e7fd1cbd8bdc084e5d": "chore: prepare v4.16.4 release (#3230)\n\n* chore: prepare v4.16.4 release\n\n* docs: link GHSA-3f6j-cw5h-qw9c in changelog\n\n* docs: clarify when redirect middleware returns 400"
