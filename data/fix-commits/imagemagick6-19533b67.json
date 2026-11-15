@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-QW9C-MQ27-W844": {
+      "75e9cf7f398013e082d8ee1bab9d9c747c8c6a0a": "Correct extent calculation (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-qw9c-mq27-w844)"
+    },
     "GHSA-CVRX-J29F-C5Q9": {
       "06dee9eefe09f6172e0b6672cef4be5f663c23e5": "Correct the patch for https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-cvrx-j29f-c5q9 that causes a crash when the value in a splay tree owns the key.",
       "ec42905c91b23e24f39300472935210f7b423c8d": "Perform the null checks inside a lock instead (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-cvrx-j29f-c5q9)",
