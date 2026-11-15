@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/buildroot/buildroot",
   "vulnerabilities": {
+    "CVE-2026-111581": {
+      "baf0eedb6de939a0cf86709620b590abcc9ac459": "package/libblockdev: security bump to version 3.6.0\n\nRelease notes:\nhttps://github.com/storaged-project/libblockdev/releases/tag/3.6.0\n\nThe crypto plugin now uses libdevmapper directly, so add lvm2 to the\ndependencies of the crypto plugin (it was previously only pulled in\nindirectly through cryptsetup).\n\nRefresh patch 0001 so it applies without fuzz.\n\nFixes:\nhttps://nvd.nist.gov/vuln/detail/cve-2026-111581\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nSigned-off-by: Giulio Benetti <giulio.benetti@benettiengineering.com>\n[Julien: marked the commit as \"security\", add link to CVE]\n(cherry picked from commit 80407b615d5346da8335e2d4654e359f8bdbf62e)\nSigned-off-by: Julien Olivain <ju.o@free.fr>",
+      "80407b615d5346da8335e2d4654e359f8bdbf62e": "package/libblockdev: security bump to version 3.6.0\n\nRelease notes:\nhttps://github.com/storaged-project/libblockdev/releases/tag/3.6.0\n\nThe crypto plugin now uses libdevmapper directly, so add lvm2 to the\ndependencies of the crypto plugin (it was previously only pulled in\nindirectly through cryptsetup).\n\nRefresh patch 0001 so it applies without fuzz.\n\nFixes:\nhttps://nvd.nist.gov/vuln/detail/cve-2026-111581\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nSigned-off-by: Giulio Benetti <giulio.benetti@benettiengineering.com>\n[Julien: marked the commit as \"security\", add link to CVE]\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
+    },
     "CVE-2026-84243": {
       "43f47f795cee1422416b4f7c7d1fa46cdf54acd5": "package/{glibc, localedef}: security bump version to 2.44-77-g438677ef4\n\nFixes CVE-2026-84243:\nhttps://gitlab.com/gnutools/glibc/-/commit/438677ef498552b28c2060060c9e3947373f1e2c\n\nSigned-off-by: Bernd Kuhls <bernd@kuhls.net>\nSigned-off-by: Julien Olivain <ju.o@free.fr>"
     },

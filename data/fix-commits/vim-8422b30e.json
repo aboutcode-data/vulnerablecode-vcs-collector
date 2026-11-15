@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/vim/vim",
   "vulnerabilities": {
+    "GHSA-J6WV-2276-36JQ": {
+      "8da4660cf4068e6812b4eacdf78c8b05c7774d9a": "patch 9.2.1352: [security]: 'tagsecure' can be bypassed by escapes\n\nProblem:  [security]: 'tagsecure' can be bypassed by escapes\n          (Zachariah Mithani)\nSolution: Check the expanded tag value for being a URL\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-j6wv-2276-36jq\n\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
+    },
     "GHSA-CGCR-VX5V-WF6Q": {
       "188a790b05a282926b311503245f5119a5f6f3ed": "patch 9.2.1346: [security]: possible code execution via powershell ftplugin\n\nProblem:  [security]: possible code execution via powershell ftplugin\n          (Zachariah Mithani)\nSolution: Quote also UTF-8 single quotes U+2018-U+201B\n\nGithub Security Advisory:\nhttps://github.com/vim/vim/security/advisories/GHSA-cgcr-vx5v-wf6q\n\nSigned-off-by: Christian Brabandt <cb@256bit.org>"
     },
