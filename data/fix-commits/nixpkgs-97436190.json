@@ -1,6 +1,14 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-91838": {
+      "ff660e93e19c711fa3d9c65bf754f1d005cac8fa": "networkmanager-sstp: fix CVE-2026-91838, drop knownVulnerabilities (#575922)",
+      "d17b6cb75f19dd3ef240e7147c16665f1b2eb316": "networkmanager-sstp: fix CVE-2026-91838, drop knownVulnerabilities\n\nApply the upstream fix from GNOME/network-manager-sstp!60, which quotes\nthe profile values that reach the pppd `pty` shell command.\n\nAssisted-by: Claude Code (Claude Opus 5.5)"
+    },
+    "CVE-2026-90781": {
+      "b1836b01a697a3ae114e3d0640bd410bbefca9bd": "alsa-lib: Fetch CVE-2026-90781 Patches (#563607)",
+      "13c3c2c6753b2faa6b3474bf22b694c90b12ee96": "alsa-lib: Fetch CVE-2026-90781 Patches"
+    },
     "GHSA-3848-QR89-46R9": {
       "a3f38fe912eec78e4c8734504f5db5e73538874e": "freescout: 1.8.241 -> 1.8.251\n\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.242\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.243\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.244\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.245\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.246\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.247\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.248\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.249\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.250\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.251\n\nFixes:\nGHSA-3848-qr89-46r9, GHSA-3xfh-rcc6-75fr, GHSA-625r-7399-m8rj,\nGHSA-6q4w-p2f4-q8q8, GHSA-7vcv-4xfj-p598, GHSA-c359-7mcr-j3xx,\nGHSA-c8rg-2r2h-5vgc, GHSA-cxf4-7mrp-vvpr, GHSA-f9x3-7vq9-cph6,\nGHSA-hmhp-3vmh-wr85, GHSA-mm6p-53cp-mcx7, GHSA-qgjh-pmpj-85m6,\nGHSA-qp58-4g6r-qq78, GHSA-r79h-87qg-7gr3, GHSA-vcgj-6qfr-7qr6,\nGHSA-w3jr-fphw-whgv"
     },
