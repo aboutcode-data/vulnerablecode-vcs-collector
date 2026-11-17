@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-109545": {
+      "a573c3f2b7a6addb018aa59829f64fc4db902046": "app-crypt/tpm2-tss: add 4.2.2\n\nFixes CVE-2026-109545 + others. See\nhttps://github.com/tpm2-software/tpm2-tss/security.\n\nBug: https://bugs.gentoo.org/985239\nSigned-off-by: Christopher Byrne <salah.coronya@gmail.com>\nPart-of: https://github.com/gentoo/gentoo/pull/46963\nSigned-off-by: Sam James <sam@gentoo.org>"
+    },
     "CVE-2026-108472": {
       "1739c77a5c4c611a5aad15247c826968bd66236c": "sys-fs/xfsprogs: Add patch for CVE-2026-108472 (bug #986222)\n\nBug: https://bugs.gentoo.org/986222\nSigned-off-by: Patrick McLean <chutzpah@gentoo.org>"
     },

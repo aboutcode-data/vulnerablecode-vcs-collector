@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-VV46-HFQG-834X": {
+      "fc420d2c38f7aac68199c198d28cf1dfe9b442cf": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-vv46-hfqg-834x"
+    },
     "GHSA-QW9C-MQ27-W844": {
       "9d52b4715fc5236dbce17d36328be72073bba0ce": "Another case for https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-qw9c-mq27-w844.",
       "75e9cf7f398013e082d8ee1bab9d9c747c8c6a0a": "Correct extent calculation (https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-qw9c-mq27-w844)"
