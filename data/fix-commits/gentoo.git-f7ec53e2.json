@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-99288": {
+      "01198bde13f488c1191ea93cc819df380df29c81": "sys-kernel/gentoo-sources: Security fix for CVE-2026-99288\n\ninet: reject unhashed sockets during established lookups\n\nSigned-off-by: Mike Pagano <mpagano@gentoo.org>",
+      "57cb7bb6ffb9c635d8b05bbaabda9d8221c5580a": "sys-kernel/gentoo-sources: ext4 and security patch\n\ninet: reject unhashed sockets during established lookups\nFixes CVE-2026-99288\n\next4: fix NULL folio dereference in mballoc\nBug: https://bugs.gentoo.org/986252\n\nSigned-off-by: Mike Pagano <mpagano@gentoo.org>"
+    },
     "CVE-2026-109545": {
       "a573c3f2b7a6addb018aa59829f64fc4db902046": "app-crypt/tpm2-tss: add 4.2.2\n\nFixes CVE-2026-109545 + others. See\nhttps://github.com/tpm2-software/tpm2-tss/security.\n\nBug: https://bugs.gentoo.org/985239\nSigned-off-by: Christopher Byrne <salah.coronya@gmail.com>\nPart-of: https://github.com/gentoo/gentoo/pull/46963\nSigned-off-by: Sam James <sam@gentoo.org>"
     },

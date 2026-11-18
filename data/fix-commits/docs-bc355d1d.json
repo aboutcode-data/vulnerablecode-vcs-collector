@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/github/docs",
   "vulnerabilities": {
+    "CVE-2026-131800": {
+      "717cbe03bc3846568738d9056108b3003c2a5218": "Update GHES release notes for CVE-2026-131800 (#64781)\n\nCo-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>"
+    },
     "CVE-2026-111497": {
       "d5ba06c8be831fbbe379dc3b7295a232116b95c0": "Enforce Node >= 24.22.1 at image build (CVE-2026-111497) (#64427)\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
     },

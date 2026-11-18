@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/apache/nifi",
   "vulnerabilities": {
+    "GHSA-3G3M-2FJR-6PW4": {
+      "1417d2ade30ecc5059b53407497b6b46f85ae6c3": "NIFI-16596 Address nifi-frontend npm audit findings (#11933)\n\nClear the 37 moderate npm audit advisories in nifi-frontend by\nresolving the two leaf packages they originate from:\n\n- glob pinned to ^14.0.2 (GHSA-3g3m-2fjr-6pw4)\n- minimatch pinned to ^11.0.1 (GHSA-g3hv-75wg-m249)\n\n@eslint/eslintrc keeps minimatch at 3.1.5. It imports minimatch as a\ndefault export, which minimatch 11 does not provide, and breaks the Nx\nESLint project graph. 3.1.5 is the range eslintrc already declares and\nis outside the advisory range.\n\nRemove overrides that no longer suppress any advisory (piscina, zod,\nqs, node-forge, fast-uri, ip-address, serialize-javascript,\n@eslint/plugin-kit, @modelcontextprotocol/sdk) and the nx-scoped\nminimatch ^9 pin, which remained in the vulnerable range."
+    },
+    "GHSA-G3HV-75WG-M249": {
+      "1417d2ade30ecc5059b53407497b6b46f85ae6c3": "NIFI-16596 Address nifi-frontend npm audit findings (#11933)\n\nClear the 37 moderate npm audit advisories in nifi-frontend by\nresolving the two leaf packages they originate from:\n\n- glob pinned to ^14.0.2 (GHSA-3g3m-2fjr-6pw4)\n- minimatch pinned to ^11.0.1 (GHSA-g3hv-75wg-m249)\n\n@eslint/eslintrc keeps minimatch at 3.1.5. It imports minimatch as a\ndefault export, which minimatch 11 does not provide, and breaks the Nx\nESLint project graph. 3.1.5 is the range eslintrc already declares and\nis outside the advisory range.\n\nRemove overrides that no longer suppress any advisory (piscina, zod,\nqs, node-forge, fast-uri, ip-address, serialize-javascript,\n@eslint/plugin-kit, @modelcontextprotocol/sdk) and the nx-scoped\nminimatch ^9 pin, which remained in the vulnerable range."
+    },
     "GHSA-72HV-8253-57QQ": {
       "d0f3cc2cd1dd977ed11e9e0e2c0c1be13f15a5c6": "NIFI-15950 Removed Grype ignore for GHSA-72hv-8253-57qq (#11261)\n\n- parquet-jackson 1.17.1 includes newer version of Jackson\n- hazelcast 5.7.0 includes newer version of Jackson"
     },

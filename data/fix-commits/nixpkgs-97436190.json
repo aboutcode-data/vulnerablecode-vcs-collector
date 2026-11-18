@@ -1,6 +1,26 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-114938": {
+      "9c20dbdc920acc0dbbfb0750c4ede9b8bbdd67e5": "zulu{17,21,25,27}: update Linux JDKs for CVE-2026-114938\n\nUpdate the plain Linux JDKs to the November 2026 security releases.\n\nhttps://docs.azul.com/core/cve\n\nSigned-off-by: Leonard Sheng Sheng Lee <leonard.sheng.sheng.lee@gmail.com>\nAssisted-by: OpenAI Codex ([GPT-6.2 Sol](https://models.dev/models/openai/gpt-6.2-sol/))\n(cherry picked from commit 4eb9e2c0f7bab3fcb7b3f492b3690e79060a9614)",
+      "8f4e2fe123557d1caba24aa0926428ffe2eabd0e": "zulu: update plain Linux JDKs for CVE-2026-114938 (#589862)",
+      "4eb9e2c0f7bab3fcb7b3f492b3690e79060a9614": "zulu{17,21,25,27}: update Linux JDKs for CVE-2026-114938\n\nUpdate the plain Linux JDKs to the November 2026 security releases.\n\nhttps://docs.azul.com/core/cve\n\nSigned-off-by: Leonard Sheng Sheng Lee <leonard.sheng.sheng.lee@gmail.com>\nAssisted-by: OpenAI Codex ([GPT-6.2 Sol](https://models.dev/models/openai/gpt-6.2-sol/))"
+    },
+    "CVE-2026-123633": {
+      "f0a5d452ddf1d33975d62054a1999327d952a98d": "nginx: 1.30.6 -> 1.30.7\n\nFixes: CVE-2026-123633, CVE-2026-123007",
+      "5cca2244da8275146f94814b6dac8007ab0af07a": "nginxMainline: 1.31.8 -> 1.31.9\n\nFixes: CVE-2026-123633, CVE-2026-123007"
+    },
+    "CVE-2026-123007": {
+      "f0a5d452ddf1d33975d62054a1999327d952a98d": "nginx: 1.30.6 -> 1.30.7\n\nFixes: CVE-2026-123633, CVE-2026-123007",
+      "5cca2244da8275146f94814b6dac8007ab0af07a": "nginxMainline: 1.31.8 -> 1.31.9\n\nFixes: CVE-2026-123633, CVE-2026-123007"
+    },
+    "CVE-2026-49272": {
+      "8d8784319bbc1cec12cdc77d5102b91379ec8b13": "python3Packages.django-oauth-toolkit: fast forward\n\nfor oauthlib 4.0.1 compat which fixes device code validation in the\ndevice token flow (CVE-2026-49272)."
+    },
+    "CVE-2026-110339": {
+      "b8b7fb11e1f27e417530da4877ac55d218d77cd1": "[26.05] libreswan: add patch for CVE-2026-110339 (#589782)",
+      "058a663c792d119fb668b53d900080faefc57802": "libreswan: add patch for CVE-2026-110339\n\nNot-cherry-picked-because: Master is not vulnerable."
+    },
     "CVE-2026-84243": {
       "286d07a34667eda8076f5b7519716822320eb615": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819\n\n(cherry picked from commit bd6603bf87fe2793a4d7be358a586c68d94a8ab3)",
       "bd6603bf87fe2793a4d7be358a586c68d94a8ab3": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819"

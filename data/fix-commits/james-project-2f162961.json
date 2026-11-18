@@ -1,6 +1,25 @@
 {
   "vcs_url": "https://github.com/apache/james-project",
   "vulnerabilities": {
+    "CVE-2024-36124": {
+      "1ce8a4903ab38ad76820c1c839e1f711b823ca7a": "[BUILD] Upgrade iq80 snappy to 0.5 (CVE-2024-36124)\n\nsnappy 0.4 reads outside the bounds of its byte arrays when\nuncompressing crafted data. It reaches the build through\nmailetdocs-maven-plugin -> maven-reporting-impl -> maven-archiver ->\nplexus-archiver; it is not part of any James server distribution.\n\nManage it at 0.5, the release fixing the issue."
+    },
+    "CVE-2025-48924": {
+      "2b39408525a48a38c35df714c0320ed20539536f": "[BUILD] MPT: remove the Cyrus IMAP module (CVE-2025-48924)\n\nThe module is the only consumer of com.spotify:docker-client 8.16.0,\nunmaintained, which pulls commons-lang 2.6 into the build. commons-lang\n2.x is end-of-life and affected by CVE-2025-48924 (uncontrolled recursion\nin ClassUtils.getClass), with no fixed 2.x release.\n\nThe module is dead: its only test, CyrusACLIntegration, is not matched by\nthe surefire includes, and its linagora/cyrus-imap image is published with\na Docker v1 manifest that current Docker daemons refuse to pull.\n\nAlso remove the code only it used: the ACLIntegration and ACLCommands\nsuites, ACLScriptedTestProtocol, MailboxMessageAppender, GrantRightsOnHost\n(ImapHostSystem already declares grantRights) and their scripts.",
+      "be7bd6db582ffa67994caf8eba40999beb20e0a8": "[FIX] commons-lang3 3.17.0 -> 3.18.0 (CVE-2025-48924) (#2768)"
+    },
+    "CVE-2026-118259": {
+      "fc7b9c1ad5cc45afd5ecfd632fca59f566acd269": "[BUILD] Upgrade OpenTelemetry API to 1.68.0 (CVE-2026-118259, CVE-2026-45292)\n\nopentelemetry-api 1.45.0, pulled by pulsar-client-all 4.0.5, is affected by:\n - CVE-2026-45292: unbounded allocation when parsing oversized baggage,\n   fixed in 1.62.0\n - CVE-2026-118259: quadratic backtracking in W3C tracestate parsing,\n   fixed in 1.67.0\n\nUpgrade pulsar-client-all to 4.0.14, the latest release of the 4.0 LTS\nline, which is built against OpenTelemetry 1.62.0, and import the\nOpenTelemetry BOMs at 1.68.0 so that api, context, common and the\nincubator module stay aligned. Every OpenTelemetry member referenced by\npulsar-client-all 4.0.14 exists in 1.68.0."
+    },
+    "CVE-2026-45292": {
+      "fc7b9c1ad5cc45afd5ecfd632fca59f566acd269": "[BUILD] Upgrade OpenTelemetry API to 1.68.0 (CVE-2026-118259, CVE-2026-45292)\n\nopentelemetry-api 1.45.0, pulled by pulsar-client-all 4.0.5, is affected by:\n - CVE-2026-45292: unbounded allocation when parsing oversized baggage,\n   fixed in 1.62.0\n - CVE-2026-118259: quadratic backtracking in W3C tracestate parsing,\n   fixed in 1.67.0\n\nUpgrade pulsar-client-all to 4.0.14, the latest release of the 4.0 LTS\nline, which is built against OpenTelemetry 1.62.0, and import the\nOpenTelemetry BOMs at 1.68.0 so that api, context, common and the\nincubator module stay aligned. Every OpenTelemetry member referenced by\npulsar-client-all 4.0.14 exists in 1.68.0."
+    },
+    "CVE-2025-14813": {
+      "5410f1a0bdbe0e4ad24d4d75a1c357706c1e80a9": "[BUILD] Pulsar: drop the BouncyCastle jars embedded by bouncy-castle-bc (CVE-2025-14813)\n\npulsar-client-all depends on org.apache.pulsar:bouncy-castle-bc:pkg, a\njar that nests bcprov/bcpkix/bcutil 1.78.1. Scanners report it as\nbcprov-ext-jdk18on 1.78.1, affected by CVE-2025-14813 (GOST CTR mode,\nfixed in 1.84). James does not use GOST, but it leaves two BouncyCastle\nreleases on the classpath.\n\nThe Pulsar client looks the BC provider up on the classpath\n(SecurityUtility.getBCProviderFromClassPath), where bcprov-jdk18on is\nmanaged at 1.87 by the root pom, so the nested jars are not needed."
+    },
+    "CVE-2026-54291": {
+      "a860a09292b12bc7d7edd12b33577132080ac81e": "[BUILD] Upgrade pgjdbc to 42.7.14 (CVE-2026-54291)\n\npgjdbc 42.7.4 to 42.7.11 can silently downgrade a channelBinding=require\nconnection from SCRAM-SHA-256-PLUS to SCRAM-SHA-256, losing the\nman-in-the-middle protection channel binding is meant to provide.\n\nThe driver is pulled at 42.7.11 by jooq-postgres-extensions. Manage it\nin the root pom, and drop the version hardcoded in scaling-pulsar-smtp\nso that every module uses the same driver."
+    },
     "CVE-2026-55851": {
       "0a2a3a928ef164a1aa5ecf54500080d0c2e29e01": "[FIX] PROXY protocol: bound the bytes buffered while waiting for the header\n\nHAProxyMessageDecoder reads the PROXY v2 version byte as a signed byte:\n0xFF becomes -1, its 'need more data' value, so the decoder buffers\neverything the client sends until direct memory runs out\n(CVE-2026-55851). Any client reaching a SMTP/LMTP/POP3/IMAP/ManageSieve\nport with proxyRequired enabled could crash James before authenticating.\n\nRather than bumping Netty, wrap the decoder: once more bytes than the\nlongest legal header (16 + 65535 bytes) are buffered without a header\nbeing decoded, the connection is closed."
     },
@@ -111,9 +130,6 @@
     },
     "CVE-2025-11226": {
       "0cd58041113e45c8346e9889c74fd60594f59462": "[UPGRADE] logback 1.5.18 -> 1.5.19 to fix minor CVE-2025-11226"
-    },
-    "CVE-2025-48924": {
-      "be7bd6db582ffa67994caf8eba40999beb20e0a8": "[FIX] commons-lang3 3.17.0 -> 3.18.0 (CVE-2025-48924) (#2768)"
     },
     "CVE-2025-48976": {
       "2f59333b9f08640d358ccbd6e7d0673a0ab2bcf7": "[UPGRADE] commons-fileupload 1.5 -> 1.6.0\n\nFixes CVE-2025-48976 FileUpload DoS via part headers",
