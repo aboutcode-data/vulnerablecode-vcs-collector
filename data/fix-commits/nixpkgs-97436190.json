@@ -1,6 +1,18 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-84243": {
+      "286d07a34667eda8076f5b7519716822320eb615": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819\n\n(cherry picked from commit bd6603bf87fe2793a4d7be358a586c68d94a8ab3)",
+      "bd6603bf87fe2793a4d7be358a586c68d94a8ab3": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819"
+    },
+    "CVE-2026-100290": {
+      "286d07a34667eda8076f5b7519716822320eb615": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819\n\n(cherry picked from commit bd6603bf87fe2793a4d7be358a586c68d94a8ab3)",
+      "bd6603bf87fe2793a4d7be358a586c68d94a8ab3": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819"
+    },
+    "CVE-2026-115819": {
+      "286d07a34667eda8076f5b7519716822320eb615": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819\n\n(cherry picked from commit bd6603bf87fe2793a4d7be358a586c68d94a8ab3)",
+      "bd6603bf87fe2793a4d7be358a586c68d94a8ab3": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819"
+    },
     "CVE-2026-102504": {
       "4fd3e2b2afa08585723ba4e6172e311c2d576580": "perlPackages.Imager: 1.036 -> 1.040\n\nFixes CVE-2026-102504 and CVE-2026-102505.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>\n(cherry picked from commit 92db891dbed50baa04f3dc2bf08824b143cf2ce2)",
       "92db891dbed50baa04f3dc2bf08824b143cf2ce2": "perlPackages.Imager: 1.036 -> 1.040\n\nFixes CVE-2026-102504 and CVE-2026-102505.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>"
