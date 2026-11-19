@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-130065": {
+      "fa01346a1c1a669006892ed27cf26bf7ed250209": "[release-26.05] msgpack-c: apply patch for CVE-2026-130065 (#590168)",
+      "4faaecec7e6e832d84ac9b4b66c23af8bda018f5": "msgpack-c: apply patch for CVE-2026-130065 (#590166)",
+      "2d4e91e5b4dc0568ac1ec5f7061c16f0a38697c0": "[release-26.05] msgpack-c: apply patch for CVE-2026-130065",
+      "76157f8d405e0f945221a6de0e2ee9609e888be1": "msgpack-c: apply patch for CVE-2026-130065"
+    },
     "CVE-2026-127174": {
       "33ca1f76a1a394dd24a769b00d88bef2bd05193f": "[release-26.05] pretix: mark vulnerable to CVE-2026-127174 (#590155)",
       "3e7efb1c86b5eafddcd99871fcf03fe3391621cc": "pretix: mark vulnerable to CVE-2026-127174\n\nTried applying the patch from 2026.7.5, but it doesn't apply cleanly and\nI'm not sure I can resolve this in a reasonable amount of time.\n\nGiven that you already need privileges to exploit this issue I'm marking\nit as WONTFIX.\n\nhttps://github.com/advisories/GHSA-cvm5-63v7-9qvf",

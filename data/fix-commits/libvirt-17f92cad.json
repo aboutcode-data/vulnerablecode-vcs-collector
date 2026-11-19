@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitlab.com/libvirt/libvirt",
   "vulnerabilities": {
+    "CVE-2026-119151": {
+      "4ed73304c42c22f7d6233d1577281515ff04b369": "rpc: Deny REMOTE_PROC_AUTH_SASL_STEP without REMOTE_PROC_AUTH_SASL_START\n\nThe usual flow of SASL is REMOTE_PROC_AUTH_SASL_INIT followed by\nREMOTE_PROC_AUTH_SASL_START which can either complete\nauthentication or require further steps which are then done by\ncalling REMOTE_PROC_AUTH_SASL_STEP (multiple times even).\n\nBut if a malicious client skips the SASL_START step and calls\nSASL_INIT followed by SASL_STEP then the 'sasl->conn' structure\ninside of virNetSASLSessionServerStep() is not fully allocated\n(most notably the list of auth mechanisms 'mech' is NULL). But\nthen sasl_server_step() dereferences that pointer leading to a\ncrash.\n\nFix this by disallowing SASL_STEP until SASL_START completed\nsuccessfully.\n\nFixes: CVE-2026-119151\nResolves: https://gitlab.com/libvirt/libvirt/-/work_items/940\nReported-by: Denis Rastyogin <gerben@altlinux.org>\nSigned-off-by: Michal Privoznik <mprivozn@redhat.com>\nReviewed-by: Daniel P. Berrang\u00e9 <berrange@redhat.com>\nReviewed-by: Peter Krempa <pkrempa@redhat.com>"
+    },
     "CVE-2026-77158": {
       "9d3adf8db6da40a2e5966ca44989eedddc71a2f7": "qemu: agent: clear stale pointer in qemuAgentGetDisks\n\nCVE-2026-77158\n\nIn case of hitting the cleanup label, the disks array\nwas freed but the pointer was not cleared, leading\nto a possible double free.\n\nFixes: 0cb2d9f05d00497a715352f6ea28cf8fb6921731 (v6.10.0-9-g0cb2d9f05d)\nCloses: https://gitlab.com/libvirt/libvirt/-/work_items/910\nReported-by: David Korczynski (Ada Logics)\nFound-by: Claude\nSigned-off-by: J\u00e1n Tomko <jtomko@redhat.com>\nReviewed-by: Peter Krempa <pkrempa@redhat.com>"
     },
