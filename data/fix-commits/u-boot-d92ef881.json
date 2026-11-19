@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/u-boot/u-boot",
   "vulnerabilities": {
+    "CVE-2026-112909": {
+      "98e9beced7b81b29d07dd5c98d5e9362428f13fe": "test/py, buildman: Update filelock package version\n\nThe GitHub dependabot tool has reported a \"moderate\" priority bug,\nCVE-2026-112909, with this package. Update to the latest version as the\nminimal version for fixing this issue security issue has a regression\nwith our testsuite, which upstream has since fixed.\n\nReported-by: GitHub dependabot\nSigned-off-by: Tom Rini <trini@konsulko.com>"
+    },
     "CVE-2026-97689": {
       "255d50f4f77ee07ba3b77d31edf67dbde8024b76": "doc: Update urllib3 version for building\n\nThe GitHub dependabot tool has reported two \"high\" priorities bugs and\none \"moderate\" priority bugs (CVE-2026-97689, CVE-2026-97687 and\nCVE-2026-97688 respectively) with this package. Update to the patched\nversion.\n\nReported-by: GitHub dependabot\nSigned-off-by: Tom Rini <trini@konsulko.com>"
     },

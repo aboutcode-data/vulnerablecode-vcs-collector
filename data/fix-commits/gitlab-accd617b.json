@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://gitlab.com/gitlab-org/gitlab",
   "vulnerabilities": {
+    "GHSA-8474-XRP6-WH69": {
+      "28fcd9de0fe18fd49f33ce0738d2a190e87cfbf4": "Backport ActiveSupport safe_constantize fix to 19.4\n\nPort the upstream fix for GHSA-8474-xrp6-wh69, so that\nActiveSupport::Inflector#safe_constantize matches the LoadError message\nas a literal string instead of compiling a Regexp from the constant\nname.\n\nRails ships the fix in 8.0.5.2 and 8.1.4.1 only, and this branch runs\nactivesupport 7.2.3.1, so carry the change as a patch pinned to that\nversion.\n\nChangelog: security",
+      "bf45ca525216bb4720c1942b0499a804e248e25a": "Backport ActiveSupport safe_constantize fix to 19.5\n\nPort the upstream fix for GHSA-8474-xrp6-wh69, so that\nActiveSupport::Inflector#safe_constantize matches the LoadError message\nas a literal string instead of compiling a Regexp from the constant\nname.\n\nRails ships the fix in 8.0.5.2 and 8.1.4.1 only, and this branch runs\nactivesupport 7.2.3.1, so carry the change as a patch pinned to that\nversion.\n\nChangelog: security"
+    },
     "CVE-2026-46625": {
       "4fecff4e021ed88d607abc8ad711dbd0379216bc": "Merge branch '639414-js-cookie-3-0-8' into 'master' \n\nUpgrade js-cookie to 3.0.8 (CVE-2026-46625)\n\nSee merge request https://gitlab.com/gitlab-org/gitlab/-/merge_requests/270251\n\nMerged-by: Justin Ho Tuan Duong <hduong@gitlab.com>\nApproved-by: GitLab Duo <gitlab-duo@gitlab.com>\nApproved-by: Justin Ho Tuan Duong <hduong@gitlab.com>\nReviewed-by: Justin Ho Tuan Duong <hduong@gitlab.com>\nCo-authored-by: Priyanshu Kumar <priyanshukumar@Priyanshus-MacBook-Air-2.local>",
       "682b4dd0e5d61453950d1cc6ff9001ebb23287a0": "Upgrade js-cookie to 3.0.8\n\njs-cookie 3.0.5 is affected by CVE-2026-46625 (fixed in 3.0.7).\njs-cookie is a declared runtime dependency bundled into browser assets.\n\nCloses https://gitlab.com/gitlab-org/gitlab/-/work_items/639414\n\nChangelog: security\nSigned-off-by: Priyanshu Jha <priyanshujhaa753@gmail.com>"

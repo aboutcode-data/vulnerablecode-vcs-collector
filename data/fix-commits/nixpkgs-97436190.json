@@ -1,10 +1,36 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-127174": {
+      "33ca1f76a1a394dd24a769b00d88bef2bd05193f": "[release-26.05] pretix: mark vulnerable to CVE-2026-127174 (#590155)",
+      "3e7efb1c86b5eafddcd99871fcf03fe3391621cc": "pretix: mark vulnerable to CVE-2026-127174\n\nTried applying the patch from 2026.7.5, but it doesn't apply cleanly and\nI'm not sure I can resolve this in a reasonable amount of time.\n\nGiven that you already need privileges to exploit this issue I'm marking\nit as WONTFIX.\n\nhttps://github.com/advisories/GHSA-cvm5-63v7-9qvf",
+      "f54e1f47f7952d42d161a36b0db443523072659c": "pretix: 2026.9.1 -> 2026.9.2\n\nhttps://pretix.eu/about/de/blog/20261117-release-2026-9-2-pretixscan-wordpress-widget/\nhttps://github.com/pretix/pretix/compare/v2026.9.1...v2026.9.2\n\nFixes: CVE-2026-127138, CVE-2026-127139, CVE-2026-127140, CVE-2026-127174"
+    },
+    "GHSA-CVM5-63V7-9QVF": {
+      "3e7efb1c86b5eafddcd99871fcf03fe3391621cc": "pretix: mark vulnerable to CVE-2026-127174\n\nTried applying the patch from 2026.7.5, but it doesn't apply cleanly and\nI'm not sure I can resolve this in a reasonable amount of time.\n\nGiven that you already need privileges to exploit this issue I'm marking\nit as WONTFIX.\n\nhttps://github.com/advisories/GHSA-cvm5-63v7-9qvf"
+    },
+    "CVE-2026-101266": {
+      "f85d4512524c6419251b99156eb93785a9d8b732": "[release-26.05] pretix: fix checkout regression from the CVE-2026-101266 patch (#590047)",
+      "e452d5378554ca18944e376db2abb05d26cb58fc": "pretix: fix checkout regression from the CVE-2026-101266 patch\n\nThe CVE-2026-101266 fix made checkout validate every step before the\nselected one, so customers who completed a step could be sent back with\n\"please enter your name\" or an empty cart. Upstream released this hotfix\ntogether with the security fix in 2026.5.6, 2026.6.3, 2026.7.2 and\n2026.8.0, but only the security commit was backported here.\n\nhttps://github.com/pretix/pretix/commit/d339e1d594db4511233cb238f15eee902d664454\n\nAssisted-By: Claude Opus 5.5",
+      "5f1af8ce6357a4431e1cb2fec4ed8520d25309a9": "pretix: backport security fixes up until 2026.5.6\n\nhttps://pretix.eu/about/en/blog/20260929-release-2026-7-1/\n\nFixes:\nCVE-2026-101266, CVE-2026-101267, CVE-2026-101268, CVE-2026-101269,\nCVE-2026-101270, CVE-2026-10127",
+      "1763f36b15c63cea7f32374ae0ed2b9173db9044": "pretix: 2026.7.0 -> 2026.7.2\n\nhttps://github.com/pretix/pretix/compare/v2026.7.0...v2026.7.2\nhttps://pretix.eu/about/en/blog/20260929-release-2026-7-1/\n\nFixes:\nCVE-2026-101266, CVE-2026-101267, CVE-2026-101268, CVE-2026-101269,\nCVE-2026-101270, CVE-2026-10127"
+    },
     "CVE-2026-114938": {
+      "0a2a2eb87542affb36be46480b66aa05409da594": "corretto: update 11, 17, 21 and 25 for CVE-2026-114938  (#589861)",
+      "3798e9593e9a36fcf43436bd122ab01c588f3ab1": "corretto{11,17,21,25}: update for CVE-2026-114938\n\n11.0.30.7.1 -> 11.0.33.1.1\n17.0.17.10 -> 17.0.21.1.2\n21.0.9.11.1 -> 21.0.13.1.2\n25.0.1.9.1 -> 25.0.5.1.2\n\nRefresh the Gradle patches for 17 and 21 and add bsdtar for packaging 21 and 25.\n\nhttps://aws.amazon.com/about-aws/whats-new/2026/11/amazon-corretto-nov-2026-updates/\n\nSigned-off-by: Leonard Sheng Sheng Lee <leonard.sheng.sheng.lee@gmail.com>\nAssisted-by: OpenAI Codex ([GPT-6.2 Sol](https://models.dev/models/openai/gpt-6.2-sol/))\nCo-authored-by: Rolf Schr\u00f6der <58295931+rollf@users.noreply.github.com>",
+      "4a6c6b3710bbcf82468bb5aaff7a8cffac7c9c46": "[Backport release-26.05] zulu: update plain Linux JDKs for CVE-2026-114938 (#589999)",
       "9c20dbdc920acc0dbbfb0750c4ede9b8bbdd67e5": "zulu{17,21,25,27}: update Linux JDKs for CVE-2026-114938\n\nUpdate the plain Linux JDKs to the November 2026 security releases.\n\nhttps://docs.azul.com/core/cve\n\nSigned-off-by: Leonard Sheng Sheng Lee <leonard.sheng.sheng.lee@gmail.com>\nAssisted-by: OpenAI Codex ([GPT-6.2 Sol](https://models.dev/models/openai/gpt-6.2-sol/))\n(cherry picked from commit 4eb9e2c0f7bab3fcb7b3f492b3690e79060a9614)",
       "8f4e2fe123557d1caba24aa0926428ffe2eabd0e": "zulu: update plain Linux JDKs for CVE-2026-114938 (#589862)",
       "4eb9e2c0f7bab3fcb7b3f492b3690e79060a9614": "zulu{17,21,25,27}: update Linux JDKs for CVE-2026-114938\n\nUpdate the plain Linux JDKs to the November 2026 security releases.\n\nhttps://docs.azul.com/core/cve\n\nSigned-off-by: Leonard Sheng Sheng Lee <leonard.sheng.sheng.lee@gmail.com>\nAssisted-by: OpenAI Codex ([GPT-6.2 Sol](https://models.dev/models/openai/gpt-6.2-sol/))"
+    },
+    "CVE-2026-127138": {
+      "f54e1f47f7952d42d161a36b0db443523072659c": "pretix: 2026.9.1 -> 2026.9.2\n\nhttps://pretix.eu/about/de/blog/20261117-release-2026-9-2-pretixscan-wordpress-widget/\nhttps://github.com/pretix/pretix/compare/v2026.9.1...v2026.9.2\n\nFixes: CVE-2026-127138, CVE-2026-127139, CVE-2026-127140, CVE-2026-127174"
+    },
+    "CVE-2026-127139": {
+      "f54e1f47f7952d42d161a36b0db443523072659c": "pretix: 2026.9.1 -> 2026.9.2\n\nhttps://pretix.eu/about/de/blog/20261117-release-2026-9-2-pretixscan-wordpress-widget/\nhttps://github.com/pretix/pretix/compare/v2026.9.1...v2026.9.2\n\nFixes: CVE-2026-127138, CVE-2026-127139, CVE-2026-127140, CVE-2026-127174"
+    },
+    "CVE-2026-127140": {
+      "f54e1f47f7952d42d161a36b0db443523072659c": "pretix: 2026.9.1 -> 2026.9.2\n\nhttps://pretix.eu/about/de/blog/20261117-release-2026-9-2-pretixscan-wordpress-widget/\nhttps://github.com/pretix/pretix/compare/v2026.9.1...v2026.9.2\n\nFixes: CVE-2026-127138, CVE-2026-127139, CVE-2026-127140, CVE-2026-127174"
     },
     "CVE-2026-123633": {
       "f0a5d452ddf1d33975d62054a1999327d952a98d": "nginx: 1.30.6 -> 1.30.7\n\nFixes: CVE-2026-123633, CVE-2026-123007",
@@ -4093,10 +4119,6 @@
     "CVE-2026-101045": {
       "5232260abe49753cc37ca34c8121f02ba89bcd03": "fleet: 4.90.1 -> 4.92.1\n\nFixes CVE-2026-101045.\nFixes https://github.com/NixOS/nixpkgs/issues/567826\n\nChanges:\nhttps://github.com/fleetdm/fleet/releases/tag/fleet-v4.92.1\nhttps://github.com/fleetdm/fleet/releases/tag/fleet-v4.92.0\nhttps://github.com/fleetdm/fleet/releases/tag/fleet-v4.91.1\nhttps://github.com/fleetdm/fleet/releases/tag/fleet-v4.91.0\n(cherry picked from commit 1a709adce3ef685ba103bc8eab661e8d8ce179aa)",
       "1a709adce3ef685ba103bc8eab661e8d8ce179aa": "fleet: 4.90.1 -> 4.92.1\n\nFixes CVE-2026-101045.\nFixes https://github.com/NixOS/nixpkgs/issues/567826\n\nChanges:\nhttps://github.com/fleetdm/fleet/releases/tag/fleet-v4.92.1\nhttps://github.com/fleetdm/fleet/releases/tag/fleet-v4.92.0\nhttps://github.com/fleetdm/fleet/releases/tag/fleet-v4.91.1\nhttps://github.com/fleetdm/fleet/releases/tag/fleet-v4.91.0"
-    },
-    "CVE-2026-101266": {
-      "5f1af8ce6357a4431e1cb2fec4ed8520d25309a9": "pretix: backport security fixes up until 2026.5.6\n\nhttps://pretix.eu/about/en/blog/20260929-release-2026-7-1/\n\nFixes:\nCVE-2026-101266, CVE-2026-101267, CVE-2026-101268, CVE-2026-101269,\nCVE-2026-101270, CVE-2026-10127",
-      "1763f36b15c63cea7f32374ae0ed2b9173db9044": "pretix: 2026.7.0 -> 2026.7.2\n\nhttps://github.com/pretix/pretix/compare/v2026.7.0...v2026.7.2\nhttps://pretix.eu/about/en/blog/20260929-release-2026-7-1/\n\nFixes:\nCVE-2026-101266, CVE-2026-101267, CVE-2026-101268, CVE-2026-101269,\nCVE-2026-101270, CVE-2026-10127"
     },
     "CVE-2026-101267": {
       "5f1af8ce6357a4431e1cb2fec4ed8520d25309a9": "pretix: backport security fixes up until 2026.5.6\n\nhttps://pretix.eu/about/en/blog/20260929-release-2026-7-1/\n\nFixes:\nCVE-2026-101266, CVE-2026-101267, CVE-2026-101268, CVE-2026-101269,\nCVE-2026-101270, CVE-2026-10127",
