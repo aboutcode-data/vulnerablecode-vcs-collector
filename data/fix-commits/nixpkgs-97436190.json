@@ -1,6 +1,32 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-115819": {
+      "c5b31cda0871acc4e4aa72580fcae765e3a0162c": "[26.05] glibc: 2.42-103 -> 2.42-113; fixes CVE-2026-115819, CVE-2026-100290, CVE-2026-84243 (#590510)",
+      "46f6141a01a29761d015c06d511d972bc68cb01c": "glibc: 2.42-103 -> 2.42-113; fixes CVE-2026-115819, CVE-2026-100290, CVE-2026-84243",
+      "286d07a34667eda8076f5b7519716822320eb615": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819\n\n(cherry picked from commit bd6603bf87fe2793a4d7be358a586c68d94a8ab3)",
+      "bd6603bf87fe2793a4d7be358a586c68d94a8ab3": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819"
+    },
+    "CVE-2026-100290": {
+      "c5b31cda0871acc4e4aa72580fcae765e3a0162c": "[26.05] glibc: 2.42-103 -> 2.42-113; fixes CVE-2026-115819, CVE-2026-100290, CVE-2026-84243 (#590510)",
+      "46f6141a01a29761d015c06d511d972bc68cb01c": "glibc: 2.42-103 -> 2.42-113; fixes CVE-2026-115819, CVE-2026-100290, CVE-2026-84243",
+      "286d07a34667eda8076f5b7519716822320eb615": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819\n\n(cherry picked from commit bd6603bf87fe2793a4d7be358a586c68d94a8ab3)",
+      "bd6603bf87fe2793a4d7be358a586c68d94a8ab3": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819"
+    },
+    "CVE-2026-84243": {
+      "c5b31cda0871acc4e4aa72580fcae765e3a0162c": "[26.05] glibc: 2.42-103 -> 2.42-113; fixes CVE-2026-115819, CVE-2026-100290, CVE-2026-84243 (#590510)",
+      "46f6141a01a29761d015c06d511d972bc68cb01c": "glibc: 2.42-103 -> 2.42-113; fixes CVE-2026-115819, CVE-2026-100290, CVE-2026-84243",
+      "286d07a34667eda8076f5b7519716822320eb615": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819\n\n(cherry picked from commit bd6603bf87fe2793a4d7be358a586c68d94a8ab3)",
+      "bd6603bf87fe2793a4d7be358a586c68d94a8ab3": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819"
+    },
+    "CVE-2026-130156": {
+      "20819b5cbb9a0adfa2e71f4fb6bb6b4a3eb492ad": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp (#590743)",
+      "d1b7ff99a57554cad9e792ca8ffc764a1c29ad0d": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp"
+    },
+    "GHSA-CF4P-FCVR-78PP": {
+      "20819b5cbb9a0adfa2e71f4fb6bb6b4a3eb492ad": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp (#590743)",
+      "d1b7ff99a57554cad9e792ca8ffc764a1c29ad0d": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp"
+    },
     "CVE-2026-116366": {
       "f25a4902f27bbe2f682041fc4846f6200b2a2f0e": "clickhouse, clickhouse-lts: fix CVE-2026-116366 (#589078)",
       "db7949a8cdaa539facadeedf5a5b74a7787344e1": "clickhouse: 26.8.7.19-lts -> 26.10.4.207-stable\n\nFixes CVE-2026-116366.\nhttps://clickhouse.com/docs/whats-new/security-changelog#cve-2026-116366",
@@ -371,18 +397,6 @@
     "CVE-2026-110339": {
       "b8b7fb11e1f27e417530da4877ac55d218d77cd1": "[26.05] libreswan: add patch for CVE-2026-110339 (#589782)",
       "058a663c792d119fb668b53d900080faefc57802": "libreswan: add patch for CVE-2026-110339\n\nNot-cherry-picked-because: Master is not vulnerable."
-    },
-    "CVE-2026-84243": {
-      "286d07a34667eda8076f5b7519716822320eb615": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819\n\n(cherry picked from commit bd6603bf87fe2793a4d7be358a586c68d94a8ab3)",
-      "bd6603bf87fe2793a4d7be358a586c68d94a8ab3": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819"
-    },
-    "CVE-2026-100290": {
-      "286d07a34667eda8076f5b7519716822320eb615": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819\n\n(cherry picked from commit bd6603bf87fe2793a4d7be358a586c68d94a8ab3)",
-      "bd6603bf87fe2793a4d7be358a586c68d94a8ab3": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819"
-    },
-    "CVE-2026-115819": {
-      "286d07a34667eda8076f5b7519716822320eb615": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819\n\n(cherry picked from commit bd6603bf87fe2793a4d7be358a586c68d94a8ab3)",
-      "bd6603bf87fe2793a4d7be358a586c68d94a8ab3": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819"
     },
     "CVE-2026-102504": {
       "4fd3e2b2afa08585723ba4e6172e311c2d576580": "perlPackages.Imager: 1.036 -> 1.040\n\nFixes CVE-2026-102504 and CVE-2026-102505.\n\nAssisted-by: Claude Code (Claude Opus 5.5)\nSigned-off-by: Stig Palmquist <git@stig.io>\n(cherry picked from commit 92db891dbed50baa04f3dc2bf08824b143cf2ce2)",

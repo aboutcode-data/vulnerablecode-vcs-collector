@@ -1,6 +1,10 @@
 {
   "vcs_url": "https://github.com/quarkusio/quarkus",
   "vulnerabilities": {
+    "CVE-2026-133200": {
+      "add20f114d01b8b159d2a18eeb79d5f7f72c6461": "Merge pull request #58575 from jponge/3.33-CVE-2026-133200\n\n[3.33] Fix worker thread leak on client disconnect in VertxOutputStream",
+      "d34d62cea70217aa390e2e57807f9a6709c5bef0": "Merge pull request #58577 from jponge/main-CVE-2026-133200\n\nFix worker thread leak on client disconnect in VertxOutputStream"
+    },
     "CVE-2026-119210": {
       "e1f6574459c7379c5b3c57f80ec696f20f07514b": "Upgrade mariadb-java-client to 3.5.11\n\n- fixes https://nvd.nist.gov/vuln/detail/cve-2026-119210, https://nvd.nist.gov/vuln/detail/cve-2026-119276,\n https://nvd.nist.gov/vuln/detail/cve-2026-119277, https://nvd.nist.gov/vuln/detail/cve-2026-119280,\n https://nvd.nist.gov/vuln/detail/cve-2026-119281\n\n(cherry picked from commit 7cf7f0cd4018d23cf3d8da413ad920c9954eca0e)",
       "1f81fa3193b5f8143b146c10f42fcc5a9a57e0ce": "Upgrade mariadb-java-client to 3.5.11\n\n- fixes https://nvd.nist.gov/vuln/detail/cve-2026-119279, https://nvd.nist.gov/vuln/detail/cve-2026-119210,\n https://nvd.nist.gov/vuln/detail/cve-2026-119276, https://nvd.nist.gov/vuln/detail/cve-2026-119277,\n https://nvd.nist.gov/vuln/detail/cve-2026-119280, https://nvd.nist.gov/vuln/detail/cve-2026-119281",

@@ -1,6 +1,11 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-133325": {
+      "f2b5f67800f00bb0af01f02799da56300eb9cb60": "www-servers/tomcat: 9.0.124-r1 patched for CVE-2026-133325\n\nBug: https://bugs.gentoo.org/986846\nSigned-off-by: Volkmar W. Pogatzki <gentoo@pogatzki.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/2475\nMerges: https://codeberg.org/gentoo/gentoo/pulls/2475\nSigned-off-by: Miroslav \u0160ulc <fordfrog@gentoo.org>",
+      "5e2b1f5db937d0e29e44c8520ed6c0cef9475f3e": "www-servers/tomcat: 10.1.62-r1 patched for CVE-2026-133325\n\nBug: https://bugs.gentoo.org/986846\nSigned-off-by: Volkmar W. Pogatzki <gentoo@pogatzki.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/2475\nSigned-off-by: Miroslav \u0160ulc <fordfrog@gentoo.org>",
+      "0bfcb729829d603371cf7c499bc8c54944bf9697": "www-servers/tomcat: 11.0.29-r1 patched for CVE-2026-133325\n\nBug: https://bugs.gentoo.org/986846\nSigned-off-by: Volkmar W. Pogatzki <gentoo@pogatzki.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/2475\nSigned-off-by: Miroslav \u0160ulc <fordfrog@gentoo.org>"
+    },
     "CVE-2026-99288": {
       "01198bde13f488c1191ea93cc819df380df29c81": "sys-kernel/gentoo-sources: Security fix for CVE-2026-99288\n\ninet: reject unhashed sockets during established lookups\n\nSigned-off-by: Mike Pagano <mpagano@gentoo.org>",
       "57cb7bb6ffb9c635d8b05bbaabda9d8221c5580a": "sys-kernel/gentoo-sources: ext4 and security patch\n\ninet: reject unhashed sockets during established lookups\nFixes CVE-2026-99288\n\next4: fix NULL folio dereference in mballoc\nBug: https://bugs.gentoo.org/986252\n\nSigned-off-by: Mike Pagano <mpagano@gentoo.org>"
