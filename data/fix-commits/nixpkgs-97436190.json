@@ -1,6 +1,30 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-131163": {
+      "dc524e0409c7f17cf4dcfc93c4cc8842f2ae994a": "pretix: 2026.9.2 -> 2026.9.3\n\nhttps://pretix.eu/about/en/blog/20261120-release-2026-9-3-adyen/\nhttps://github.com/pretix/pretix/compare/v2026.9.2...v2026.9.3\n\nFixes:\nCVE-2026-131163, CVE-2026-131164, CVE-2026-131165, CVE-2026-131166,\nCVE-2026-131167, CVE-2026-131168, CVE-2026-131169, CVE-2026-131170"
+    },
+    "CVE-2026-131164": {
+      "dc524e0409c7f17cf4dcfc93c4cc8842f2ae994a": "pretix: 2026.9.2 -> 2026.9.3\n\nhttps://pretix.eu/about/en/blog/20261120-release-2026-9-3-adyen/\nhttps://github.com/pretix/pretix/compare/v2026.9.2...v2026.9.3\n\nFixes:\nCVE-2026-131163, CVE-2026-131164, CVE-2026-131165, CVE-2026-131166,\nCVE-2026-131167, CVE-2026-131168, CVE-2026-131169, CVE-2026-131170"
+    },
+    "CVE-2026-131165": {
+      "dc524e0409c7f17cf4dcfc93c4cc8842f2ae994a": "pretix: 2026.9.2 -> 2026.9.3\n\nhttps://pretix.eu/about/en/blog/20261120-release-2026-9-3-adyen/\nhttps://github.com/pretix/pretix/compare/v2026.9.2...v2026.9.3\n\nFixes:\nCVE-2026-131163, CVE-2026-131164, CVE-2026-131165, CVE-2026-131166,\nCVE-2026-131167, CVE-2026-131168, CVE-2026-131169, CVE-2026-131170"
+    },
+    "CVE-2026-131166": {
+      "dc524e0409c7f17cf4dcfc93c4cc8842f2ae994a": "pretix: 2026.9.2 -> 2026.9.3\n\nhttps://pretix.eu/about/en/blog/20261120-release-2026-9-3-adyen/\nhttps://github.com/pretix/pretix/compare/v2026.9.2...v2026.9.3\n\nFixes:\nCVE-2026-131163, CVE-2026-131164, CVE-2026-131165, CVE-2026-131166,\nCVE-2026-131167, CVE-2026-131168, CVE-2026-131169, CVE-2026-131170"
+    },
+    "CVE-2026-131167": {
+      "dc524e0409c7f17cf4dcfc93c4cc8842f2ae994a": "pretix: 2026.9.2 -> 2026.9.3\n\nhttps://pretix.eu/about/en/blog/20261120-release-2026-9-3-adyen/\nhttps://github.com/pretix/pretix/compare/v2026.9.2...v2026.9.3\n\nFixes:\nCVE-2026-131163, CVE-2026-131164, CVE-2026-131165, CVE-2026-131166,\nCVE-2026-131167, CVE-2026-131168, CVE-2026-131169, CVE-2026-131170"
+    },
+    "CVE-2026-131168": {
+      "dc524e0409c7f17cf4dcfc93c4cc8842f2ae994a": "pretix: 2026.9.2 -> 2026.9.3\n\nhttps://pretix.eu/about/en/blog/20261120-release-2026-9-3-adyen/\nhttps://github.com/pretix/pretix/compare/v2026.9.2...v2026.9.3\n\nFixes:\nCVE-2026-131163, CVE-2026-131164, CVE-2026-131165, CVE-2026-131166,\nCVE-2026-131167, CVE-2026-131168, CVE-2026-131169, CVE-2026-131170"
+    },
+    "CVE-2026-131169": {
+      "dc524e0409c7f17cf4dcfc93c4cc8842f2ae994a": "pretix: 2026.9.2 -> 2026.9.3\n\nhttps://pretix.eu/about/en/blog/20261120-release-2026-9-3-adyen/\nhttps://github.com/pretix/pretix/compare/v2026.9.2...v2026.9.3\n\nFixes:\nCVE-2026-131163, CVE-2026-131164, CVE-2026-131165, CVE-2026-131166,\nCVE-2026-131167, CVE-2026-131168, CVE-2026-131169, CVE-2026-131170"
+    },
+    "CVE-2026-131170": {
+      "dc524e0409c7f17cf4dcfc93c4cc8842f2ae994a": "pretix: 2026.9.2 -> 2026.9.3\n\nhttps://pretix.eu/about/en/blog/20261120-release-2026-9-3-adyen/\nhttps://github.com/pretix/pretix/compare/v2026.9.2...v2026.9.3\n\nFixes:\nCVE-2026-131163, CVE-2026-131164, CVE-2026-131165, CVE-2026-131166,\nCVE-2026-131167, CVE-2026-131168, CVE-2026-131169, CVE-2026-131170"
+    },
     "CVE-2026-115819": {
       "c5b31cda0871acc4e4aa72580fcae765e3a0162c": "[26.05] glibc: 2.42-103 -> 2.42-113; fixes CVE-2026-115819, CVE-2026-100290, CVE-2026-84243 (#590510)",
       "46f6141a01a29761d015c06d511d972bc68cb01c": "glibc: 2.42-103 -> 2.42-113; fixes CVE-2026-115819, CVE-2026-100290, CVE-2026-84243",
