@@ -1,6 +1,59 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-130156": {
+      "cdb545792448392e1c239e01fc58db51d0bbd798": "[26.05] bazarr: 1.6.0 -> 1.6.2, patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp (#590938)",
+      "f5dd7c674a6e0bc982cca869818ca2d0f05cd560": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp\n\n(cherry picked from commit d1b7ff99a57554cad9e792ca8ffc764a1c29ad0d)",
+      "20819b5cbb9a0adfa2e71f4fb6bb6b4a3eb492ad": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp (#590743)",
+      "d1b7ff99a57554cad9e792ca8ffc764a1c29ad0d": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp"
+    },
+    "GHSA-CF4P-FCVR-78PP": {
+      "cdb545792448392e1c239e01fc58db51d0bbd798": "[26.05] bazarr: 1.6.0 -> 1.6.2, patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp (#590938)",
+      "f5dd7c674a6e0bc982cca869818ca2d0f05cd560": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp\n\n(cherry picked from commit d1b7ff99a57554cad9e792ca8ffc764a1c29ad0d)",
+      "20819b5cbb9a0adfa2e71f4fb6bb6b4a3eb492ad": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp (#590743)",
+      "d1b7ff99a57554cad9e792ca8ffc764a1c29ad0d": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp"
+    },
+    "CVE-2026-128089": {
+      "2fcdcddb9ce80f133e4afd37f6bcec2a99784de0": "python3Packages.dnspython: 2.9.0 -> 2.9.2\n\nChangelog: https://dnspython.readthedocs.io/en/stable/whatsnew.html#id1\nDiff: https://github.com/rthalley/dnspython/compare/v2.9.0...v2.9.2\n\nFixes: CVE-2026-128089\n\nSigned-off-by: Florian Brandes <florian.brandes@posteo.de>\n(cherry picked from commit 8fb7b3eace110935c3d762ec91ccd9c3bca5f069)",
+      "8fb7b3eace110935c3d762ec91ccd9c3bca5f069": "python3Packages.dnspython: 2.9.0 -> 2.9.2\n\nChangelog: https://dnspython.readthedocs.io/en/stable/whatsnew.html#id1\nDiff: https://github.com/rthalley/dnspython/compare/v2.9.0...v2.9.2\n\nFixes: CVE-2026-128089\n\nSigned-off-by: Florian Brandes <florian.brandes@posteo.de>"
+    },
+    "CVE-2026-76781": {
+      "c0bb05e7af5ea39b23a67464f7cc34c417c2863f": "libxml2_13: fix CVE-2026-76781\n\n(cherry picked from commit 9009c1a116f76c49f0f806b5ff23d382d07c68cc)",
+      "f92cf63fe9cef2b8755a7d9df2bcc0f4c07facbe": "libxml2_13: fix CVE-2026-76781 (#588819)",
+      "9009c1a116f76c49f0f806b5ff23d382d07c68cc": "libxml2_13: fix CVE-2026-76781"
+    },
+    "CVE-2026-111497": {
+      "83c8eece67110461b59bdbdad3cac80495d7bb56": "clion,rider: add knownVulnerabilities; CVE-2026-111497\n\n(cherry picked from commit 13a2f8bf07529b0f154d11916cb300034eca52a7)",
+      "00b57f9ab0e68c3e720ae18cafaaa13e074b142c": "clion,rider: add knownVulnerabilities; CVE-2026-111497 (#590462)",
+      "13a2f8bf07529b0f154d11916cb300034eca52a7": "clion,rider: add knownVulnerabilities; CVE-2026-111497"
+    },
+    "CVE-2026-103227": {
+      "2609b7f9201fe5030f597f43cfb1d546211fa22e": "gpac: add patches for CVE-2026-103227, CVE-2026-108538, CVE-2026-124030, CVE-2026-124031, CVE-2026-128239 and CVE-2026-128240 (#590836)",
+      "5c6c844c6fb566c75f14340bc5a5f55f22084734": "gpac: add patches for CVE-2026-103227, CVE-2026-108538, CVE-2026-124030, CVE-2026-124031, CVE-2026-128239 and CVE-2026-128240\n\nAssisted-by: Claude Code (claude-opus-5-5)"
+    },
+    "CVE-2026-108538": {
+      "2609b7f9201fe5030f597f43cfb1d546211fa22e": "gpac: add patches for CVE-2026-103227, CVE-2026-108538, CVE-2026-124030, CVE-2026-124031, CVE-2026-128239 and CVE-2026-128240 (#590836)",
+      "5c6c844c6fb566c75f14340bc5a5f55f22084734": "gpac: add patches for CVE-2026-103227, CVE-2026-108538, CVE-2026-124030, CVE-2026-124031, CVE-2026-128239 and CVE-2026-128240\n\nAssisted-by: Claude Code (claude-opus-5-5)"
+    },
+    "CVE-2026-124030": {
+      "2609b7f9201fe5030f597f43cfb1d546211fa22e": "gpac: add patches for CVE-2026-103227, CVE-2026-108538, CVE-2026-124030, CVE-2026-124031, CVE-2026-128239 and CVE-2026-128240 (#590836)",
+      "5c6c844c6fb566c75f14340bc5a5f55f22084734": "gpac: add patches for CVE-2026-103227, CVE-2026-108538, CVE-2026-124030, CVE-2026-124031, CVE-2026-128239 and CVE-2026-128240\n\nAssisted-by: Claude Code (claude-opus-5-5)"
+    },
+    "CVE-2026-124031": {
+      "2609b7f9201fe5030f597f43cfb1d546211fa22e": "gpac: add patches for CVE-2026-103227, CVE-2026-108538, CVE-2026-124030, CVE-2026-124031, CVE-2026-128239 and CVE-2026-128240 (#590836)",
+      "5c6c844c6fb566c75f14340bc5a5f55f22084734": "gpac: add patches for CVE-2026-103227, CVE-2026-108538, CVE-2026-124030, CVE-2026-124031, CVE-2026-128239 and CVE-2026-128240\n\nAssisted-by: Claude Code (claude-opus-5-5)"
+    },
+    "CVE-2026-128239": {
+      "2609b7f9201fe5030f597f43cfb1d546211fa22e": "gpac: add patches for CVE-2026-103227, CVE-2026-108538, CVE-2026-124030, CVE-2026-124031, CVE-2026-128239 and CVE-2026-128240 (#590836)",
+      "5c6c844c6fb566c75f14340bc5a5f55f22084734": "gpac: add patches for CVE-2026-103227, CVE-2026-108538, CVE-2026-124030, CVE-2026-124031, CVE-2026-128239 and CVE-2026-128240\n\nAssisted-by: Claude Code (claude-opus-5-5)"
+    },
+    "CVE-2026-128240": {
+      "2609b7f9201fe5030f597f43cfb1d546211fa22e": "gpac: add patches for CVE-2026-103227, CVE-2026-108538, CVE-2026-124030, CVE-2026-124031, CVE-2026-128239 and CVE-2026-128240 (#590836)",
+      "5c6c844c6fb566c75f14340bc5a5f55f22084734": "gpac: add patches for CVE-2026-103227, CVE-2026-108538, CVE-2026-124030, CVE-2026-124031, CVE-2026-128239 and CVE-2026-128240\n\nAssisted-by: Claude Code (claude-opus-5-5)"
+    },
+    "CVE-2026-100308": {
+      "fcd6250fcc0affed4e2f531c84d6e8ac696a0023": "python3Packages.gluonts: 0.16.2 -> 0.17.0\n\nBackport of https://github.com/NixOS/nixpkgs/pull/561896 to address CVE-2026-100308 (https://github.com/NixOS/nixpkgs/issues/568633).\nRemoved the Pandas 3 compatibility patch from the backport since 26.05 has Pandas 2.x.\n\nDiff: https://github.com/awslabs/gluonts/compare/v0.16.2...v0.17.0\n\nChangelog: https://github.com/awslabs/gluonts/releases/tag/v0.17.0\n(cherry picked from commit 90cdc4ad06fefc622be0b13fd31e2fbf771b17a9)"
+    },
     "CVE-2026-131163": {
       "dc524e0409c7f17cf4dcfc93c4cc8842f2ae994a": "pretix: 2026.9.2 -> 2026.9.3\n\nhttps://pretix.eu/about/en/blog/20261120-release-2026-9-3-adyen/\nhttps://github.com/pretix/pretix/compare/v2026.9.2...v2026.9.3\n\nFixes:\nCVE-2026-131163, CVE-2026-131164, CVE-2026-131165, CVE-2026-131166,\nCVE-2026-131167, CVE-2026-131168, CVE-2026-131169, CVE-2026-131170"
     },
@@ -42,14 +95,6 @@
       "46f6141a01a29761d015c06d511d972bc68cb01c": "glibc: 2.42-103 -> 2.42-113; fixes CVE-2026-115819, CVE-2026-100290, CVE-2026-84243",
       "286d07a34667eda8076f5b7519716822320eb615": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819\n\n(cherry picked from commit bd6603bf87fe2793a4d7be358a586c68d94a8ab3)",
       "bd6603bf87fe2793a4d7be358a586c68d94a8ab3": "glibc: 2.44-57 -> 2.44-79\n\nfixes CVE-2026-84243 CVE-2026-100290 CVE-2026-115819"
-    },
-    "CVE-2026-130156": {
-      "20819b5cbb9a0adfa2e71f4fb6bb6b4a3eb492ad": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp (#590743)",
-      "d1b7ff99a57554cad9e792ca8ffc764a1c29ad0d": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp"
-    },
-    "GHSA-CF4P-FCVR-78PP": {
-      "20819b5cbb9a0adfa2e71f4fb6bb6b4a3eb492ad": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp (#590743)",
-      "d1b7ff99a57554cad9e792ca8ffc764a1c29ad0d": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp"
     },
     "CVE-2026-116366": {
       "f25a4902f27bbe2f682041fc4846f6200b2a2f0e": "clickhouse, clickhouse-lts: fix CVE-2026-116366 (#589078)",
