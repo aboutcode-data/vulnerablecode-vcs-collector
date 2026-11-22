@@ -2,6 +2,7 @@
   "vcs_url": "https://github.com/apache/pulsar",
   "vulnerabilities": {
     "CVE-2026-57914": {
+      "54bdda4d985abc79319fe609f7cd19aafb30e8af": "[fix][sec] Upgrade transitive Apache Kerby modules to 2.1.2 to address CVE-2026-57914 (#27486)\n\n(cherry picked from commit dd247bf36f4ae5cb027056c617b159f7996255a5)",
       "56222712449ece7f07d84c489acac06b7155b79c": "[fix][sec] Upgrade transitive Apache Kerby modules to 2.1.2 to address CVE-2026-57914 (#27486)\n\n(cherry picked from commit dd247bf36f4ae5cb027056c617b159f7996255a5)",
       "75a9ce4d2d799935d22ba40e8b048c3e0c1be21f": "[fix][sec] Upgrade transitive Apache Kerby modules to 2.1.2 to address CVE-2026-57914 (#27486)\n\n(cherry picked from commit dd247bf36f4ae5cb027056c617b159f7996255a5)",
       "dd247bf36f4ae5cb027056c617b159f7996255a5": "[fix][sec] Upgrade transitive Apache Kerby modules to 2.1.2 to address CVE-2026-57914 (#27486)"
