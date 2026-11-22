@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick",
   "vulnerabilities": {
+    "GHSA-FHGM-CVXQ-2MRX": {
+      "d6229725132f5a4dbc7ccaea97692f4da7b6bed9": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-fhgm-cvxq-2mrx"
+    },
+    "GHSA-XVRF-W5WX-J4Q8": {
+      "ff825daf077b4b3bab1ff5e3e7d02f9283578ec5": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-xvrf-w5wx-j4q8"
+    },
     "GHSA-8GQ7-VWH9-5PJ8": {
       "bc5be9763a85f87e21f38220731f14d70b81dbbc": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-8gq7-vwh9-5pj8 & https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-8xj8-jg2m-c6p7"
     },

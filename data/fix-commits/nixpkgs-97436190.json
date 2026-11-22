@@ -33,6 +33,13 @@
       "2fcdcddb9ce80f133e4afd37f6bcec2a99784de0": "python3Packages.dnspython: 2.9.0 -> 2.9.2\n\nChangelog: https://dnspython.readthedocs.io/en/stable/whatsnew.html#id1\nDiff: https://github.com/rthalley/dnspython/compare/v2.9.0...v2.9.2\n\nFixes: CVE-2026-128089\n\nSigned-off-by: Florian Brandes <florian.brandes@posteo.de>\n(cherry picked from commit 8fb7b3eace110935c3d762ec91ccd9c3bca5f069)",
       "8fb7b3eace110935c3d762ec91ccd9c3bca5f069": "python3Packages.dnspython: 2.9.0 -> 2.9.2\n\nChangelog: https://dnspython.readthedocs.io/en/stable/whatsnew.html#id1\nDiff: https://github.com/rthalley/dnspython/compare/v2.9.0...v2.9.2\n\nFixes: CVE-2026-128089\n\nSigned-off-by: Florian Brandes <florian.brandes@posteo.de>"
     },
+    "CVE-2025-6020": {
+      "e534b2ab2f0dd3b704bd47cee0bb85e8ce6a7641": "linux-pam: remove obsolete patch for CVE-2025-6020",
+      "b61a65812f0eab4c39c3ef090154799bc47a8dbd": "Merge: [Backport staging-25.05] linux-pam: apply patch for CVE-2025-6020 (#421734)",
+      "fa4d08eaeadca2bf67e2eb9bbb0dfa5c4d758e47": "linux-pam: apply patch for CVE-2025-6020\n\n(cherry picked from commit 26c092bbc7d8b2b15d2d7a4edbc2b29228114d9a)",
+      "5d64648541fba3edb5ea5b53375f0bf56bca7f0e": "linux-pam: apply patch for CVE-2025-6020 (#418180)",
+      "26c092bbc7d8b2b15d2d7a4edbc2b29228114d9a": "linux-pam: apply patch for CVE-2025-6020"
+    },
     "CVE-2026-130156": {
       "cdb545792448392e1c239e01fc58db51d0bbd798": "[26.05] bazarr: 1.6.0 -> 1.6.2, patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp (#590938)",
       "f5dd7c674a6e0bc982cca869818ca2d0f05cd560": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp\n\n(cherry picked from commit d1b7ff99a57554cad9e792ca8ffc764a1c29ad0d)",
@@ -25317,12 +25324,6 @@
     "CVE-2025-48386": {
       "a52e65b54ae11453b7c42601bdc9f4cbd9a74b00": "git: 2.50 -> 2.50.1\n\nDiff: https://github.com/git/git/compare/v2.50.0...v2.50.1\n\nSecurity:\n\n- CVE-2025-48384\n- CVE-2025-48385\n- CVE-2025-48386\n\n(cherry picked from commit 6c00ea29367c467054680f7a603305e2c8c16321)",
       "6c00ea29367c467054680f7a603305e2c8c16321": "git: 2.50 -> 2.50.1\n\nDiff: https://github.com/git/git/compare/v2.50.0...v2.50.1\n\nSecurity:\n\n- CVE-2025-48384\n- CVE-2025-48385\n- CVE-2025-48386"
-    },
-    "CVE-2025-6020": {
-      "b61a65812f0eab4c39c3ef090154799bc47a8dbd": "Merge: [Backport staging-25.05] linux-pam: apply patch for CVE-2025-6020 (#421734)",
-      "fa4d08eaeadca2bf67e2eb9bbb0dfa5c4d758e47": "linux-pam: apply patch for CVE-2025-6020\n\n(cherry picked from commit 26c092bbc7d8b2b15d2d7a4edbc2b29228114d9a)",
-      "5d64648541fba3edb5ea5b53375f0bf56bca7f0e": "linux-pam: apply patch for CVE-2025-6020 (#418180)",
-      "26c092bbc7d8b2b15d2d7a4edbc2b29228114d9a": "linux-pam: apply patch for CVE-2025-6020"
     },
     "CVE-2025-31162": {
       "56e24b9a42b77245dc4b2056277804361b64c193": "[Backport release-25.05] fig2dev: apply patches for CVE-2025-31162 and CVE-2025-31163 (#422456)",
