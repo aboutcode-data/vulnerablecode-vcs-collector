@@ -1,6 +1,21 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-49272": {
+      "baab6bf80986a5f14fb7ab1e65cc9ec172948891": "python3Packages.django-oauth-toolkit: fast forward\n\nfor oauthlib 4.0.1 compat which fixes device code validation in the\ndevice token flow (CVE-2026-49272)."
+    },
+    "CVE-2026-131873": {
+      "2dbc4075efb619e8b2a6513c4e759cb5e81f16cf": "[Backport release-26.05] gargoyle: patch CVE-2026-131873 and CVE-2026-131874 (#591513)",
+      "a1ffb5d9073fcd0736d5de01d5ab24ecb65c19e1": "gargoyle: patch CVE-2026-131873 and CVE-2026-131874\n\nAssisted-by: Claude Code (claude-opus-5-5)\n(cherry picked from commit 90dcb057a8df88d7127174bb15ea65abab45a7c5)",
+      "219cf390713ea454d191a8281c63744eee282377": "gargoyle: patch CVE-2026-131873 and CVE-2026-131874 (#591259)",
+      "90dcb057a8df88d7127174bb15ea65abab45a7c5": "gargoyle: patch CVE-2026-131873 and CVE-2026-131874\n\nAssisted-by: Claude Code (claude-opus-5-5)"
+    },
+    "CVE-2026-131874": {
+      "2dbc4075efb619e8b2a6513c4e759cb5e81f16cf": "[Backport release-26.05] gargoyle: patch CVE-2026-131873 and CVE-2026-131874 (#591513)",
+      "a1ffb5d9073fcd0736d5de01d5ab24ecb65c19e1": "gargoyle: patch CVE-2026-131873 and CVE-2026-131874\n\nAssisted-by: Claude Code (claude-opus-5-5)\n(cherry picked from commit 90dcb057a8df88d7127174bb15ea65abab45a7c5)",
+      "219cf390713ea454d191a8281c63744eee282377": "gargoyle: patch CVE-2026-131873 and CVE-2026-131874 (#591259)",
+      "90dcb057a8df88d7127174bb15ea65abab45a7c5": "gargoyle: patch CVE-2026-131873 and CVE-2026-131874\n\nAssisted-by: Claude Code (claude-opus-5-5)"
+    },
     "CVE-2026-117557": {
       "01ea1cc3d065cc7c239ac59d0189cc00ec98d6a6": "{sdl3-,SDL2_}image: fix CVE-2026-117557 (#591411)",
       "9def2611b43ddddf1ad09bf5e78bcfac62615349": "sdl3-image: pick patch for CVE-2026-117557\n\nSee https://nvd.nist.gov/vuln/detail/cve-2026-117557 and https://github.com/libsdl-org/SDL_image/issues/769 for details.",
@@ -11,14 +26,6 @@
       "83c8eece67110461b59bdbdad3cac80495d7bb56": "clion,rider: add knownVulnerabilities; CVE-2026-111497\n\n(cherry picked from commit 13a2f8bf07529b0f154d11916cb300034eca52a7)",
       "00b57f9ab0e68c3e720ae18cafaaa13e074b142c": "clion,rider: add knownVulnerabilities; CVE-2026-111497 (#590462)",
       "13a2f8bf07529b0f154d11916cb300034eca52a7": "clion,rider: add knownVulnerabilities; CVE-2026-111497"
-    },
-    "CVE-2026-131873": {
-      "219cf390713ea454d191a8281c63744eee282377": "gargoyle: patch CVE-2026-131873 and CVE-2026-131874 (#591259)",
-      "90dcb057a8df88d7127174bb15ea65abab45a7c5": "gargoyle: patch CVE-2026-131873 and CVE-2026-131874\n\nAssisted-by: Claude Code (claude-opus-5-5)"
-    },
-    "CVE-2026-131874": {
-      "219cf390713ea454d191a8281c63744eee282377": "gargoyle: patch CVE-2026-131873 and CVE-2026-131874 (#591259)",
-      "90dcb057a8df88d7127174bb15ea65abab45a7c5": "gargoyle: patch CVE-2026-131873 and CVE-2026-131874\n\nAssisted-by: Claude Code (claude-opus-5-5)"
     },
     "CVE-2026-128089": {
       "e8fa5eeca2544277dfc0a92edc90c52c0175ab99": "python3Packages.dnspython: 2.9.1 -> 2.9.2\n\nfixes CVE-2026-128089\nfixes #588144\n\nSigned-off-by: Florian Brandes <florian.brandes@posteo.de>\n(cherry picked from commit 7f0ce4617646270a5d585a93b351378d4a13c528)",
@@ -475,9 +482,6 @@
     "CVE-2026-123007": {
       "f0a5d452ddf1d33975d62054a1999327d952a98d": "nginx: 1.30.6 -> 1.30.7\n\nFixes: CVE-2026-123633, CVE-2026-123007",
       "5cca2244da8275146f94814b6dac8007ab0af07a": "nginxMainline: 1.31.8 -> 1.31.9\n\nFixes: CVE-2026-123633, CVE-2026-123007"
-    },
-    "CVE-2026-49272": {
-      "8d8784319bbc1cec12cdc77d5102b91379ec8b13": "python3Packages.django-oauth-toolkit: fast forward\n\nfor oauthlib 4.0.1 compat which fixes device code validation in the\ndevice token flow (CVE-2026-49272)."
     },
     "CVE-2026-110339": {
       "b8b7fb11e1f27e417530da4877ac55d218d77cd1": "[26.05] libreswan: add patch for CVE-2026-110339 (#589782)",
