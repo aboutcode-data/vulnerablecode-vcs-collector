@@ -1,6 +1,29 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-127039": {
+      "b6f18d3aed2c88c6e18ada210385ac73fdb50cda": "gnutls: 3.8.13 -> 3.8.14\n\nchangelog: https://github.com/gnutls/gnutls/blob/3.8.14/NEWS\ndiff: https://github.com/gnutls/gnutls/compare/3.8.13...3.8.14\n\nFixes: CVE-2026-127039, CVE-2026-127040, CVE-2026-127231\n(cherry picked from commit 1daa6b6db203311f8ae923da8cb7a39884e2035d)",
+      "446b42f0df897d445e26b6f84a4821244f48981d": "gnutls: 3.8.13 -> 3.8.14\n\nchangelog: https://github.com/gnutls/gnutls/blob/3.8.14/NEWS\ndiff: https://github.com/gnutls/gnutls/compare/3.8.13...3.8.14\n\nFixes: CVE-2026-127039, CVE-2026-127040, CVE-2026-127231\n(cherry picked from commit 1daa6b6db203311f8ae923da8cb7a39884e2035d)",
+      "1daa6b6db203311f8ae923da8cb7a39884e2035d": "gnutls: 3.8.13 -> 3.8.14\n\nchangelog: https://github.com/gnutls/gnutls/blob/3.8.14/NEWS\ndiff: https://github.com/gnutls/gnutls/compare/3.8.13...3.8.14\n\nFixes: CVE-2026-127039, CVE-2026-127040, CVE-2026-127231"
+    },
+    "CVE-2026-127040": {
+      "b6f18d3aed2c88c6e18ada210385ac73fdb50cda": "gnutls: 3.8.13 -> 3.8.14\n\nchangelog: https://github.com/gnutls/gnutls/blob/3.8.14/NEWS\ndiff: https://github.com/gnutls/gnutls/compare/3.8.13...3.8.14\n\nFixes: CVE-2026-127039, CVE-2026-127040, CVE-2026-127231\n(cherry picked from commit 1daa6b6db203311f8ae923da8cb7a39884e2035d)",
+      "446b42f0df897d445e26b6f84a4821244f48981d": "gnutls: 3.8.13 -> 3.8.14\n\nchangelog: https://github.com/gnutls/gnutls/blob/3.8.14/NEWS\ndiff: https://github.com/gnutls/gnutls/compare/3.8.13...3.8.14\n\nFixes: CVE-2026-127039, CVE-2026-127040, CVE-2026-127231\n(cherry picked from commit 1daa6b6db203311f8ae923da8cb7a39884e2035d)",
+      "1daa6b6db203311f8ae923da8cb7a39884e2035d": "gnutls: 3.8.13 -> 3.8.14\n\nchangelog: https://github.com/gnutls/gnutls/blob/3.8.14/NEWS\ndiff: https://github.com/gnutls/gnutls/compare/3.8.13...3.8.14\n\nFixes: CVE-2026-127039, CVE-2026-127040, CVE-2026-127231"
+    },
+    "CVE-2026-127231": {
+      "b6f18d3aed2c88c6e18ada210385ac73fdb50cda": "gnutls: 3.8.13 -> 3.8.14\n\nchangelog: https://github.com/gnutls/gnutls/blob/3.8.14/NEWS\ndiff: https://github.com/gnutls/gnutls/compare/3.8.13...3.8.14\n\nFixes: CVE-2026-127039, CVE-2026-127040, CVE-2026-127231\n(cherry picked from commit 1daa6b6db203311f8ae923da8cb7a39884e2035d)",
+      "446b42f0df897d445e26b6f84a4821244f48981d": "gnutls: 3.8.13 -> 3.8.14\n\nchangelog: https://github.com/gnutls/gnutls/blob/3.8.14/NEWS\ndiff: https://github.com/gnutls/gnutls/compare/3.8.13...3.8.14\n\nFixes: CVE-2026-127039, CVE-2026-127040, CVE-2026-127231\n(cherry picked from commit 1daa6b6db203311f8ae923da8cb7a39884e2035d)",
+      "1daa6b6db203311f8ae923da8cb7a39884e2035d": "gnutls: 3.8.13 -> 3.8.14\n\nchangelog: https://github.com/gnutls/gnutls/blob/3.8.14/NEWS\ndiff: https://github.com/gnutls/gnutls/compare/3.8.13...3.8.14\n\nFixes: CVE-2026-127039, CVE-2026-127040, CVE-2026-127231"
+    },
+    "CVE-2026-117557": {
+      "b28f86f8214ef0feddbb1ac67e17d6c3f202e342": "{sdl3-,SDL2_}image: fix CVE-2026-117557, sdl3-image: 3.4.4 -> 3.4.8 (#592008)",
+      "12786bb3ca8ad1a67be81dbaf3ac4a3324a7b9c7": "sdl3-image: pick patch for CVE-2026-117557\n\nSee https://nvd.nist.gov/vuln/detail/cve-2026-117557 and https://github.com/libsdl-org/SDL_image/issues/769 for details.\n\n(cherry picked from commit 9def2611b43ddddf1ad09bf5e78bcfac62615349)",
+      "c71e1f3e011cd5ab9fa8da69c024d2459362e7fc": "SDL2_image: pick patch for CVE-2026-117557\n\nSee https://nvd.nist.gov/vuln/detail/cve-2026-117557 and https://github.com/libsdl-org/SDL_image/issues/769 for details.\n\n(cherry picked from commit 7b556b533e8da8487a1b5b69c1e69902e0fdc78f)",
+      "01ea1cc3d065cc7c239ac59d0189cc00ec98d6a6": "{sdl3-,SDL2_}image: fix CVE-2026-117557 (#591411)",
+      "9def2611b43ddddf1ad09bf5e78bcfac62615349": "sdl3-image: pick patch for CVE-2026-117557\n\nSee https://nvd.nist.gov/vuln/detail/cve-2026-117557 and https://github.com/libsdl-org/SDL_image/issues/769 for details.",
+      "7b556b533e8da8487a1b5b69c1e69902e0fdc78f": "SDL2_image: pick patch for CVE-2026-117557\n\nSee https://nvd.nist.gov/vuln/detail/cve-2026-117557 and https://github.com/libsdl-org/SDL_image/issues/769 for details."
+    },
     "GHSA-VJ9C-FMJF-J8MG": {
       "cd231df5882f61db26cc77e2664c58b0f1c63d10": "freescout: 1.8.251 -> 1.8.252\n\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.252\n\nFixes: GHSA-vj9c-fmjf-j8mg, GHSA-qf7m-8wm8-vg65, GHSA-jw5r-h8p3-m2cw,\nGHSA-r58q-pvpq-f68j"
     },
@@ -33,11 +56,6 @@
       "a1ffb5d9073fcd0736d5de01d5ab24ecb65c19e1": "gargoyle: patch CVE-2026-131873 and CVE-2026-131874\n\nAssisted-by: Claude Code (claude-opus-5-5)\n(cherry picked from commit 90dcb057a8df88d7127174bb15ea65abab45a7c5)",
       "219cf390713ea454d191a8281c63744eee282377": "gargoyle: patch CVE-2026-131873 and CVE-2026-131874 (#591259)",
       "90dcb057a8df88d7127174bb15ea65abab45a7c5": "gargoyle: patch CVE-2026-131873 and CVE-2026-131874\n\nAssisted-by: Claude Code (claude-opus-5-5)"
-    },
-    "CVE-2026-117557": {
-      "01ea1cc3d065cc7c239ac59d0189cc00ec98d6a6": "{sdl3-,SDL2_}image: fix CVE-2026-117557 (#591411)",
-      "9def2611b43ddddf1ad09bf5e78bcfac62615349": "sdl3-image: pick patch for CVE-2026-117557\n\nSee https://nvd.nist.gov/vuln/detail/cve-2026-117557 and https://github.com/libsdl-org/SDL_image/issues/769 for details.",
-      "7b556b533e8da8487a1b5b69c1e69902e0fdc78f": "SDL2_image: pick patch for CVE-2026-117557\n\nSee https://nvd.nist.gov/vuln/detail/cve-2026-117557 and https://github.com/libsdl-org/SDL_image/issues/769 for details."
     },
     "CVE-2026-111497": {
       "50c914dbf554e9c74211894648eb2a1018ceea84": "[Backport release-26.05] clion,rider: add knownVulnerabilities; CVE-2026-111497 (#591167)",
