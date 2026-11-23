@@ -1,6 +1,24 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "GHSA-VJ9C-FMJF-J8MG": {
+      "cd231df5882f61db26cc77e2664c58b0f1c63d10": "freescout: 1.8.251 -> 1.8.252\n\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.252\n\nFixes: GHSA-vj9c-fmjf-j8mg, GHSA-qf7m-8wm8-vg65, GHSA-jw5r-h8p3-m2cw,\nGHSA-r58q-pvpq-f68j"
+    },
+    "GHSA-QF7M-8WM8-VG65": {
+      "cd231df5882f61db26cc77e2664c58b0f1c63d10": "freescout: 1.8.251 -> 1.8.252\n\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.252\n\nFixes: GHSA-vj9c-fmjf-j8mg, GHSA-qf7m-8wm8-vg65, GHSA-jw5r-h8p3-m2cw,\nGHSA-r58q-pvpq-f68j"
+    },
+    "GHSA-JW5R-H8P3-M2CW": {
+      "cd231df5882f61db26cc77e2664c58b0f1c63d10": "freescout: 1.8.251 -> 1.8.252\n\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.252\n\nFixes: GHSA-vj9c-fmjf-j8mg, GHSA-qf7m-8wm8-vg65, GHSA-jw5r-h8p3-m2cw,\nGHSA-r58q-pvpq-f68j"
+    },
+    "GHSA-R58Q-PVPQ-F68J": {
+      "cd231df5882f61db26cc77e2664c58b0f1c63d10": "freescout: 1.8.251 -> 1.8.252\n\nhttps://github.com/freescout-help-desk/freescout/releases/tag/1.8.252\n\nFixes: GHSA-vj9c-fmjf-j8mg, GHSA-qf7m-8wm8-vg65, GHSA-jw5r-h8p3-m2cw,\nGHSA-r58q-pvpq-f68j"
+    },
+    "CVE-2026-76781": {
+      "0dc498bfe49baeb18b0f9891e800b53bb2603193": "[Backport release-26.05] libxml2_13: fix CVE-2026-76781 (#591169)",
+      "c0bb05e7af5ea39b23a67464f7cc34c417c2863f": "libxml2_13: fix CVE-2026-76781\n\n(cherry picked from commit 9009c1a116f76c49f0f806b5ff23d382d07c68cc)",
+      "f92cf63fe9cef2b8755a7d9df2bcc0f4c07facbe": "libxml2_13: fix CVE-2026-76781 (#588819)",
+      "9009c1a116f76c49f0f806b5ff23d382d07c68cc": "libxml2_13: fix CVE-2026-76781"
+    },
     "CVE-2026-49272": {
       "baab6bf80986a5f14fb7ab1e65cc9ec172948891": "python3Packages.django-oauth-toolkit: fast forward\n\nfor oauthlib 4.0.1 compat which fixes device code validation in the\ndevice token flow (CVE-2026-49272)."
     },
@@ -51,11 +69,6 @@
       "f5dd7c674a6e0bc982cca869818ca2d0f05cd560": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp\n\n(cherry picked from commit d1b7ff99a57554cad9e792ca8ffc764a1c29ad0d)",
       "20819b5cbb9a0adfa2e71f4fb6bb6b4a3eb492ad": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp (#590743)",
       "d1b7ff99a57554cad9e792ca8ffc764a1c29ad0d": "bazarr: patch CVE-2026-130156 and GHSA-cf4p-fcvr-78pp"
-    },
-    "CVE-2026-76781": {
-      "c0bb05e7af5ea39b23a67464f7cc34c417c2863f": "libxml2_13: fix CVE-2026-76781\n\n(cherry picked from commit 9009c1a116f76c49f0f806b5ff23d382d07c68cc)",
-      "f92cf63fe9cef2b8755a7d9df2bcc0f4c07facbe": "libxml2_13: fix CVE-2026-76781 (#588819)",
-      "9009c1a116f76c49f0f806b5ff23d382d07c68cc": "libxml2_13: fix CVE-2026-76781"
     },
     "CVE-2026-103227": {
       "2609b7f9201fe5030f597f43cfb1d546211fa22e": "gpac: add patches for CVE-2026-103227, CVE-2026-108538, CVE-2026-124030, CVE-2026-124031, CVE-2026-128239 and CVE-2026-128240 (#590836)",

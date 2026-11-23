@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://github.com/videolan/vlc",
   "vulnerabilities": {
+    "CVE-2026-110713": {
+      "391a3bf87302769a3e45143b8a2f9961be45db0e": "contrib: smb2: update to 7.0.0\n\nThe API/ABI has changed [^1] but it seems we don't use these API's.\n\nIt also includes some CVE fixes (CVE-2026-110713, CVE-2026-110714).\n\n[^1]: https://github.com/sahlberg/libsmb2/releases/tag/libsmb2-7.0.0"
+    },
+    "CVE-2026-110714": {
+      "391a3bf87302769a3e45143b8a2f9961be45db0e": "contrib: smb2: update to 7.0.0\n\nThe API/ABI has changed [^1] but it seems we don't use these API's.\n\nIt also includes some CVE fixes (CVE-2026-110713, CVE-2026-110714).\n\n[^1]: https://github.com/sahlberg/libsmb2/releases/tag/libsmb2-7.0.0"
+    },
     "CVE-2026-46675": {
       "978212a42d569a8d13fd83eae205e1bff4c7096d": "contrib: png: update to 1.6.59\n\nChangelog [^1]:\n\n* Fixed CVE-2026-46675 (medium severity): Use-after-free of zlib input in png_read_end after incomplete zTXt, iTXt or iCCP decompression. (Reported independently by Ze Sheng and JasonHonKL@users.noreply.github.com.)\n* Fixed a regression introduced in version 1.6.47 that caused libpng to reject hIST chunks in their correct position, after PLTE. (Contributed by Yuki Sekiguchi.)\n* Prevented a double free of png_struct members after an allocation failure. (Contributed by Anthony Hurtado.)\n* Applied fixes and updates to the CMake build.\n* Adopted the REUSE Specification for licensing the CI files.\n\n[^1]: https://sourceforge.net/projects/libpng/files/libpng16/1.6.59/"
     },
