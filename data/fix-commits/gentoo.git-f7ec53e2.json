@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-132779": {
+      "8556d75abeb85ee2eaa118823aaa9a17b4e3fe73": "www-servers/nginx: security bump CVE-2026-132779\n\nSigned-off-by: Robin H. Johnson <robbat2@gentoo.org>"
+    },
     "CVE-2026-133325": {
       "f2b5f67800f00bb0af01f02799da56300eb9cb60": "www-servers/tomcat: 9.0.124-r1 patched for CVE-2026-133325\n\nBug: https://bugs.gentoo.org/986846\nSigned-off-by: Volkmar W. Pogatzki <gentoo@pogatzki.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/2475\nMerges: https://codeberg.org/gentoo/gentoo/pulls/2475\nSigned-off-by: Miroslav \u0160ulc <fordfrog@gentoo.org>",
       "5e2b1f5db937d0e29e44c8520ed6c0cef9475f3e": "www-servers/tomcat: 10.1.62-r1 patched for CVE-2026-133325\n\nBug: https://bugs.gentoo.org/986846\nSigned-off-by: Volkmar W. Pogatzki <gentoo@pogatzki.net>\nPart-of: https://codeberg.org/gentoo/gentoo/pulls/2475\nSigned-off-by: Miroslav \u0160ulc <fordfrog@gentoo.org>",

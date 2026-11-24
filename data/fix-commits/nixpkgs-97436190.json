@@ -1,6 +1,24 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-85644": {
+      "d6e2c4b33efcaf9c4f4c891822237abcf3d7e3a2": "perlPackages.XSParseKeyword: 0.48 -> 0.51\n\nfixes CVE-2026-85644\n\nChangelog: https://metacpan.org/release/PEVANS/XS-Parse-Keyword-0.51/changes\n(cherry picked from commit 5550e94d9dfed5c4440d227174ad1d63b30abfc1)",
+      "e0bdd1cb0012ae5c3fc797a3004d9003623f3eab": "perlPackages.XSParseKeyword: 0.48 -> 0.51\n\nfixes CVE-2026-85644\n\nChangelog: https://metacpan.org/release/PEVANS/XS-Parse-Keyword-0.51/changes\n(cherry picked from commit 5550e94d9dfed5c4440d227174ad1d63b30abfc1)",
+      "5550e94d9dfed5c4440d227174ad1d63b30abfc1": "perlPackages.XSParseKeyword: 0.48 -> 0.51\n\nfixes CVE-2026-85644\n\nChangelog: https://metacpan.org/release/PEVANS/XS-Parse-Keyword-0.51/changes"
+    },
+    "CVE-2026-134401": {
+      "147099bc835685d6ef4833d404e7973842e8ddad": "chromium,chromedriver: 158.0.8127.36 -> 158.0.8127.88\n\nhttps://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html\n\nThis update includes 1 security fixes.\n\nCVEs:\nCVE-2026-134401\n\n(cherry picked from commit d793cbbd45790f2ecd0aa844b78c868d2e676fda)",
+      "d793cbbd45790f2ecd0aa844b78c868d2e676fda": "chromium,chromedriver: 158.0.8127.36 -> 158.0.8127.88\n\nhttps://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html\n\nThis update includes 1 security fixes.\n\nCVEs:\nCVE-2026-134401"
+    },
+    "CVE-2026-132779": {
+      "0fdb37c0f52a5e5be5073d9bd9ef53ca7d7e1c0e": "nginxStable: 1.30.7 -> 1.30.8\n\nhttps://github.com/nginx/nginx/releases/tag/release-1.30.8\n\nfixes CVE-2026-132779\n\n(cherry picked from commit cf00fffde572103c2415dfc2e0dbea0c09b0654f)",
+      "9ea755632c0c00b25fadae10f0cd9fa68fc253c6": "nginxMainline: 1.31.9 -> 1.31.10\n\nhttps://github.com/nginx/nginx/releases/tag/release-1.30.8\n\nfixes CVE-2026-132779\n\n(cherry picked from commit e6281f8596a9872be6f2c758818fb04c4d131e95)",
+      "e6281f8596a9872be6f2c758818fb04c4d131e95": "nginxMainline: 1.31.9 -> 1.31.10\n\nhttps://github.com/nginx/nginx/releases/tag/release-1.30.8\n\nfixes CVE-2026-132779",
+      "cf00fffde572103c2415dfc2e0dbea0c09b0654f": "nginxStable: 1.30.7 -> 1.30.8\n\nhttps://github.com/nginx/nginx/releases/tag/release-1.30.8\n\nfixes CVE-2026-132779"
+    },
+    "GHSA-9C3V-4VV2-9WRF": {
+      "1f8ec121799837074b504e0caaf2dd2eecf8bb9e": "qui: 1.35.0 -> 1.36.1\n\nFixes GHSA-9c3v-4vv2-9wrf. Skip three capture tests whose fixtures are not included by Go vendoring."
+    },
     "CVE-2026-127039": {
       "b6f18d3aed2c88c6e18ada210385ac73fdb50cda": "gnutls: 3.8.13 -> 3.8.14\n\nchangelog: https://github.com/gnutls/gnutls/blob/3.8.14/NEWS\ndiff: https://github.com/gnutls/gnutls/compare/3.8.13...3.8.14\n\nFixes: CVE-2026-127039, CVE-2026-127040, CVE-2026-127231\n(cherry picked from commit 1daa6b6db203311f8ae923da8cb7a39884e2035d)",
       "446b42f0df897d445e26b6f84a4821244f48981d": "gnutls: 3.8.13 -> 3.8.14\n\nchangelog: https://github.com/gnutls/gnutls/blob/3.8.14/NEWS\ndiff: https://github.com/gnutls/gnutls/compare/3.8.13...3.8.14\n\nFixes: CVE-2026-127039, CVE-2026-127040, CVE-2026-127231\n(cherry picked from commit 1daa6b6db203311f8ae923da8cb7a39884e2035d)",

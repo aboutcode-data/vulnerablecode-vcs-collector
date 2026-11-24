@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/imagemagick/imagemagick6",
   "vulnerabilities": {
+    "GHSA-C764-55GW-GJ6C": {
+      "4204f719015ce6f7e9ddf03b1c23d5445706a83c": "Backport patch for https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-c764-55gw-gj6c"
+    },
     "GHSA-MGX5-6PWR-J4WC": {
       "29501bbe8b146cd14eece27523509940d993bf85": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-mgx5-6pwr-j4wc"
     },

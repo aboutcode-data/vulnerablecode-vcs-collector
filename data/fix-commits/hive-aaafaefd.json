@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/apache/hive",
   "vulnerabilities": {
+    "CVE-2026-71290": {
+      "42d1cbc33bfaa76ba5e7c28b24add75d10e22d63": "HIVE-30266: Upgrade httpclient5 to 5.6.5 to fix cve-2026-71290 (#6968)"
+    },
     "CVE-2026-34481": {
       "37c563397bd190859ee5c27332b6be1e9f73dfb6": "HIVE-30066: Upgrade log4j to 2.26.1 to fix CVE-2026-34481 (#6795)"
     },
