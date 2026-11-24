@@ -1,6 +1,21 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-124317": {
+      "231c5ea6b99c806ad42f523ab0d0261ba691c192": "expat: 2.10.0 -> 2.11.0\n\nblog: https://blog.hartwork.org/posts/expat-2-11-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_11_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_10_0...R_2_11_0\n\nFixes: CVE-2026-124317, CVE-2026-128241, CVE-2026-134703\n(cherry picked from commit 37fa0caf8c565f57b0d4fb92c94a5406e8719bef)",
+      "46409c65bfb4abc1fdaad42c5926a970c5182ad4": "expat: 2.10.0 -> 2.11.0\n\nblog: https://blog.hartwork.org/posts/expat-2-11-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_11_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_10_0...R_2_11_0\n\nFixes: CVE-2026-124317, CVE-2026-128241, CVE-2026-134703\n(cherry picked from commit 37fa0caf8c565f57b0d4fb92c94a5406e8719bef)",
+      "37fa0caf8c565f57b0d4fb92c94a5406e8719bef": "expat: 2.10.0 -> 2.11.0\n\nblog: https://blog.hartwork.org/posts/expat-2-11-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_11_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_10_0...R_2_11_0\n\nFixes: CVE-2026-124317, CVE-2026-128241, CVE-2026-134703"
+    },
+    "CVE-2026-128241": {
+      "231c5ea6b99c806ad42f523ab0d0261ba691c192": "expat: 2.10.0 -> 2.11.0\n\nblog: https://blog.hartwork.org/posts/expat-2-11-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_11_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_10_0...R_2_11_0\n\nFixes: CVE-2026-124317, CVE-2026-128241, CVE-2026-134703\n(cherry picked from commit 37fa0caf8c565f57b0d4fb92c94a5406e8719bef)",
+      "46409c65bfb4abc1fdaad42c5926a970c5182ad4": "expat: 2.10.0 -> 2.11.0\n\nblog: https://blog.hartwork.org/posts/expat-2-11-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_11_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_10_0...R_2_11_0\n\nFixes: CVE-2026-124317, CVE-2026-128241, CVE-2026-134703\n(cherry picked from commit 37fa0caf8c565f57b0d4fb92c94a5406e8719bef)",
+      "37fa0caf8c565f57b0d4fb92c94a5406e8719bef": "expat: 2.10.0 -> 2.11.0\n\nblog: https://blog.hartwork.org/posts/expat-2-11-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_11_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_10_0...R_2_11_0\n\nFixes: CVE-2026-124317, CVE-2026-128241, CVE-2026-134703"
+    },
+    "CVE-2026-134703": {
+      "231c5ea6b99c806ad42f523ab0d0261ba691c192": "expat: 2.10.0 -> 2.11.0\n\nblog: https://blog.hartwork.org/posts/expat-2-11-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_11_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_10_0...R_2_11_0\n\nFixes: CVE-2026-124317, CVE-2026-128241, CVE-2026-134703\n(cherry picked from commit 37fa0caf8c565f57b0d4fb92c94a5406e8719bef)",
+      "46409c65bfb4abc1fdaad42c5926a970c5182ad4": "expat: 2.10.0 -> 2.11.0\n\nblog: https://blog.hartwork.org/posts/expat-2-11-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_11_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_10_0...R_2_11_0\n\nFixes: CVE-2026-124317, CVE-2026-128241, CVE-2026-134703\n(cherry picked from commit 37fa0caf8c565f57b0d4fb92c94a5406e8719bef)",
+      "37fa0caf8c565f57b0d4fb92c94a5406e8719bef": "expat: 2.10.0 -> 2.11.0\n\nblog: https://blog.hartwork.org/posts/expat-2-11-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_11_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_10_0...R_2_11_0\n\nFixes: CVE-2026-124317, CVE-2026-128241, CVE-2026-134703"
+    },
     "CVE-2026-85644": {
       "d6e2c4b33efcaf9c4f4c891822237abcf3d7e3a2": "perlPackages.XSParseKeyword: 0.48 -> 0.51\n\nfixes CVE-2026-85644\n\nChangelog: https://metacpan.org/release/PEVANS/XS-Parse-Keyword-0.51/changes\n(cherry picked from commit 5550e94d9dfed5c4440d227174ad1d63b30abfc1)",
       "e0bdd1cb0012ae5c3fc797a3004d9003623f3eab": "perlPackages.XSParseKeyword: 0.48 -> 0.51\n\nfixes CVE-2026-85644\n\nChangelog: https://metacpan.org/release/PEVANS/XS-Parse-Keyword-0.51/changes\n(cherry picked from commit 5550e94d9dfed5c4440d227174ad1d63b30abfc1)",

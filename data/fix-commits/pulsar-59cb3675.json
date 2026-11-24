@@ -1,18 +1,6 @@
 {
   "vcs_url": "https://github.com/apache/pulsar",
   "vulnerabilities": {
-    "CVE-2026-118259": {
-      "0930baac819223603ac11548309a14894091752c": "[fix][sec][branch-4.2] Upgrade OpenTelemetry to 1.67.0\n\nAddress CVE-2026-118259 by updating the OpenTelemetry Java stable and alpha BOMs together. Update the server and shell binary license inventories to match.",
-      "df305fbc202a754094008d515d99cf813614946b": "[fix][sec][branch-4.0] Upgrade OpenTelemetry to 1.67.0\n\nAddress CVE-2026-118259 by updating the OpenTelemetry Java stable and alpha BOMs together. Update the server and shell binary license inventories to match."
-    },
-    "CVE-2026-63436": {
-      "4ba66507d3b5e55ca84a98b590458882459df844": "[fix][sec][branch-4.2] Upgrade zt-zip to 1.18.3\n\nAddress CVE-2026-63436 and CVE-2026-63499. Let Functions Utils inherit the version from the root POM and update the binary license listing.",
-      "4731dbcbe256dc63916cba6868c01da742fd3600": "[fix][sec][branch-4.0] Upgrade zt-zip to 1.18.3\n\nAddress CVE-2026-63436 and CVE-2026-63499. Let Functions Utils inherit the version from the root POM and update the binary license listing."
-    },
-    "CVE-2026-63499": {
-      "4ba66507d3b5e55ca84a98b590458882459df844": "[fix][sec][branch-4.2] Upgrade zt-zip to 1.18.3\n\nAddress CVE-2026-63436 and CVE-2026-63499. Let Functions Utils inherit the version from the root POM and update the binary license listing.",
-      "4731dbcbe256dc63916cba6868c01da742fd3600": "[fix][sec][branch-4.0] Upgrade zt-zip to 1.18.3\n\nAddress CVE-2026-63436 and CVE-2026-63499. Let Functions Utils inherit the version from the root POM and update the binary license listing."
-    },
     "CVE-2026-57914": {
       "54bdda4d985abc79319fe609f7cd19aafb30e8af": "[fix][sec] Upgrade transitive Apache Kerby modules to 2.1.2 to address CVE-2026-57914 (#27486)\n\n(cherry picked from commit dd247bf36f4ae5cb027056c617b159f7996255a5)",
       "56222712449ece7f07d84c489acac06b7155b79c": "[fix][sec] Upgrade transitive Apache Kerby modules to 2.1.2 to address CVE-2026-57914 (#27486)\n\n(cherry picked from commit dd247bf36f4ae5cb027056c617b159f7996255a5)",
