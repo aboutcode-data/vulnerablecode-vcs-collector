@@ -1,6 +1,14 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-109908": {
+      "7ff19fa1cadb366048b8df3dcc7c845a2fdb0c36": "[release-26.05] libxfont_1: patch CVE-2026-109908 and CVE-2026-109920 (#592120)",
+      "b37c500f1c064d15ac7b3855bdd31e08d70a8a1e": "libxfont_1: patch CVE-2026-109908 and CVE-2026-109920\n\nbackported from libxfont2. advisory:\nhttps://lists.x.org/archives/xorg-announce/2026-November/003765.html.\n\nNot-cherry-picked-because: package dropped on unstable"
+    },
+    "CVE-2026-109920": {
+      "7ff19fa1cadb366048b8df3dcc7c845a2fdb0c36": "[release-26.05] libxfont_1: patch CVE-2026-109908 and CVE-2026-109920 (#592120)",
+      "b37c500f1c064d15ac7b3855bdd31e08d70a8a1e": "libxfont_1: patch CVE-2026-109908 and CVE-2026-109920\n\nbackported from libxfont2. advisory:\nhttps://lists.x.org/archives/xorg-announce/2026-November/003765.html.\n\nNot-cherry-picked-because: package dropped on unstable"
+    },
     "CVE-2026-123007": {
       "99166d29ea027ff6089eb3188327726c30bd24bb": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
       "a19da2ecfa84d0d264b9ccec1e04f4cdc3aa10c9": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",

@@ -1,6 +1,15 @@
 {
   "vcs_url": "https://github.com/wagtail/wagtail",
   "vulnerabilities": {
+    "GHSA-7G44-G9RC-X53W": {
+      "9d1d10eac2758af668b0fcc628815b7e0d56c736": "Require Python 3.11.5 so the lockfile can use a fixed soupsieve\n\nEvery soupsieve release that fixes GHSA-7g44-g9rc-x53w,\nGHSA-6655-6qjp-jx7x and GHSA-mmhr-3c5m-f64f (3.0.2 and up) declares\nrequires-python >=3.11.5, so with >=3.11 the lock can't hold a fixed\nsoupsieve for every supported Python. Raising the floor to 3.11.5 lets\nuv lock --upgrade-package soupsieve move it to 4.1.3. No other package\nversion changes.\n\nAssisted-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01WUfEahsTXEpnGdTvHgNdvD"
+    },
+    "GHSA-6655-6QJP-JX7X": {
+      "9d1d10eac2758af668b0fcc628815b7e0d56c736": "Require Python 3.11.5 so the lockfile can use a fixed soupsieve\n\nEvery soupsieve release that fixes GHSA-7g44-g9rc-x53w,\nGHSA-6655-6qjp-jx7x and GHSA-mmhr-3c5m-f64f (3.0.2 and up) declares\nrequires-python >=3.11.5, so with >=3.11 the lock can't hold a fixed\nsoupsieve for every supported Python. Raising the floor to 3.11.5 lets\nuv lock --upgrade-package soupsieve move it to 4.1.3. No other package\nversion changes.\n\nAssisted-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01WUfEahsTXEpnGdTvHgNdvD"
+    },
+    "GHSA-MMHR-3C5M-F64F": {
+      "9d1d10eac2758af668b0fcc628815b7e0d56c736": "Require Python 3.11.5 so the lockfile can use a fixed soupsieve\n\nEvery soupsieve release that fixes GHSA-7g44-g9rc-x53w,\nGHSA-6655-6qjp-jx7x and GHSA-mmhr-3c5m-f64f (3.0.2 and up) declares\nrequires-python >=3.11.5, so with >=3.11 the lock can't hold a fixed\nsoupsieve for every supported Python. Raising the floor to 3.11.5 lets\nuv lock --upgrade-package soupsieve move it to 4.1.3. No other package\nversion changes.\n\nAssisted-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01WUfEahsTXEpnGdTvHgNdvD"
+    },
     "GHSA-3XGH-XC8P-9H54": {
       "403c2bcef90c27a9118a94151d09e86ee3d0a6c8": "Disable access to custom fields through the admin pages API\n\nFixes https://github.com/wagtail/wagtail/security/advisories/GHSA-3xgh-xc8p-9h54\n\nThe admin API allowed access to arbitrary fields of all explorable pages. Since this API is only used by the explorer menu, which only makes use of the default fields of the base page model (plus `parent`), lock it down to ignore the fields parameter.",
       "00eecee620b802a59a8f462b55ea4c5b004a56ae": "Disable access to custom fields through the admin pages API\n\nFixes https://github.com/wagtail/wagtail/security/advisories/GHSA-3xgh-xc8p-9h54\n\nThe admin API allowed access to arbitrary fields of all explorable pages. Since this API is only used by the explorer menu, which only makes use of the default fields of the base page model (plus `parent`), lock it down to ignore the fields parameter.",
