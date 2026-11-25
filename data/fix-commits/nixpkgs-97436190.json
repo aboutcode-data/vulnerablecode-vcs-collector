@@ -1,6 +1,80 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-123007": {
+      "99166d29ea027ff6089eb3188327726c30bd24bb": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "a19da2ecfa84d0d264b9ccec1e04f4cdc3aa10c9": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "f3e18b59278b4948f31557bcb15fedc78edc6cb1": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640",
+      "f0a5d452ddf1d33975d62054a1999327d952a98d": "nginx: 1.30.6 -> 1.30.7\n\nFixes: CVE-2026-123633, CVE-2026-123007",
+      "5cca2244da8275146f94814b6dac8007ab0af07a": "nginxMainline: 1.31.8 -> 1.31.9\n\nFixes: CVE-2026-123633, CVE-2026-123007"
+    },
+    "CVE-2026-123633": {
+      "99166d29ea027ff6089eb3188327726c30bd24bb": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "a19da2ecfa84d0d264b9ccec1e04f4cdc3aa10c9": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "f3e18b59278b4948f31557bcb15fedc78edc6cb1": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640",
+      "f0a5d452ddf1d33975d62054a1999327d952a98d": "nginx: 1.30.6 -> 1.30.7\n\nFixes: CVE-2026-123633, CVE-2026-123007",
+      "5cca2244da8275146f94814b6dac8007ab0af07a": "nginxMainline: 1.31.8 -> 1.31.9\n\nFixes: CVE-2026-123633, CVE-2026-123007"
+    },
+    "CVE-2026-121810": {
+      "99166d29ea027ff6089eb3188327726c30bd24bb": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "a19da2ecfa84d0d264b9ccec1e04f4cdc3aa10c9": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "f3e18b59278b4948f31557bcb15fedc78edc6cb1": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640"
+    },
+    "CVE-2026-123634": {
+      "99166d29ea027ff6089eb3188327726c30bd24bb": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "a19da2ecfa84d0d264b9ccec1e04f4cdc3aa10c9": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "f3e18b59278b4948f31557bcb15fedc78edc6cb1": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640"
+    },
+    "CVE-2026-113425": {
+      "99166d29ea027ff6089eb3188327726c30bd24bb": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "a19da2ecfa84d0d264b9ccec1e04f4cdc3aa10c9": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "f3e18b59278b4948f31557bcb15fedc78edc6cb1": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640"
+    },
+    "CVE-2026-125283": {
+      "99166d29ea027ff6089eb3188327726c30bd24bb": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "a19da2ecfa84d0d264b9ccec1e04f4cdc3aa10c9": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "f3e18b59278b4948f31557bcb15fedc78edc6cb1": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640"
+    },
+    "CVE-2026-118899": {
+      "99166d29ea027ff6089eb3188327726c30bd24bb": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "a19da2ecfa84d0d264b9ccec1e04f4cdc3aa10c9": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "f3e18b59278b4948f31557bcb15fedc78edc6cb1": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640"
+    },
+    "CVE-2026-120967": {
+      "99166d29ea027ff6089eb3188327726c30bd24bb": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "a19da2ecfa84d0d264b9ccec1e04f4cdc3aa10c9": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "f3e18b59278b4948f31557bcb15fedc78edc6cb1": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640"
+    },
+    "CVE-2026-120993": {
+      "99166d29ea027ff6089eb3188327726c30bd24bb": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "a19da2ecfa84d0d264b9ccec1e04f4cdc3aa10c9": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "f3e18b59278b4948f31557bcb15fedc78edc6cb1": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640"
+    },
+    "CVE-2026-123640": {
+      "99166d29ea027ff6089eb3188327726c30bd24bb": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "a19da2ecfa84d0d264b9ccec1e04f4cdc3aa10c9": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640\n(cherry picked from commit f3e18b59278b4948f31557bcb15fedc78edc6cb1)",
+      "f3e18b59278b4948f31557bcb15fedc78edc6cb1": "openresty: 1.31.8.1 -> 1.31.9.1\n\nChangelog: https://openresty.org/en/changelog-1031009.html\n\nFixes: CVE-2026-123007\nFixes: CVE-2026-123633\nFixes: CVE-2026-121810\nFixes: CVE-2026-123634\nFixes: CVE-2026-113425\nFixes: CVE-2026-125283\nFixes: CVE-2026-118899\nFixes: CVE-2026-120967\nFixes: CVE-2026-120993\nFixes: CVE-2026-123640"
+    },
+    "CVE-2026-125209": {
+      "c896464ecc1369a92e6ec55fc78512d1c1036cf3": "ffmpeg: mitigation for CVE-2026-125209 (#592515)",
+      "7a2a0e911c1a0e121a609afb0ddd0cbcdfdb4b0a": "ffmpeg: mitigation for CVE-2026-125209\n\nUpstream patch to fix dvdsubenc byte alignment issues, which was not yet\nbackported to any versions below ffmpeg 8.\nAs this corner of ffmpeg hasn't been touched in 14 years, it still applies\ncleanly."
+    },
+    "CVE-2026-119586": {
+      "f0e810d396e257430f8f6eec93bf2c7d8fb9dad8": "[Backport staging-26.11] sqlite: add patches for CVE-2026-119586 (#592670)",
+      "19c50b3046ebad08a80fb4fbbff7af05dd373f3d": "sqlite: add patches for CVE-2026-119586\n\nAssisted-by: Claude Code (claude-opus-5-5)\n(cherry picked from commit 3f3a74f250ade5aec1999a19f35e48670b5f2fcd)",
+      "ab68983dcd22f550ed6db560baaf45eb92144fcb": "sqlite: add patches for CVE-2026-119586 (#591125)",
+      "3f3a74f250ade5aec1999a19f35e48670b5f2fcd": "sqlite: add patches for CVE-2026-119586\n\nAssisted-by: Claude Code (claude-opus-5-5)"
+    },
+    "CVE-2026-124851": {
+      "d1f8baec70c3ec90735c442f5e60657c5c3a6926": "zstd: 1.5.7 -> 1.6.0\n\nchangelog: https://github.com/meta/zstd/releases/tag/v1.6.0\ndiff: https://github.com/meta/zstd/compare/v1.5.7...v1.6.0\n\nFixes: CVE-2026-124851\n(cherry picked from commit b662f702a44e5f570a1fe74540e4a4d6bedaed87)",
+      "b662f702a44e5f570a1fe74540e4a4d6bedaed87": "zstd: 1.5.7 -> 1.6.0\n\nchangelog: https://github.com/meta/zstd/releases/tag/v1.6.0\ndiff: https://github.com/meta/zstd/compare/v1.5.7...v1.6.0\n\nFixes: CVE-2026-124851"
+    },
+    "CVE-2026-134401": {
+      "10e1436b6a0ce971d6d42becc172d79cc571e8bf": "ungoogled-chromium: 158.0.8127.36-1 -> 158.0.8127.88-1\n\nhttps://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html\n\nThis update includes 1 security fixes.\n\nCVEs:\nCVE-2026-134401\n\n(cherry picked from commit c0222128f8bf4f9e01ad3fd9890b936764735ac6)",
+      "c0222128f8bf4f9e01ad3fd9890b936764735ac6": "ungoogled-chromium: 158.0.8127.36-1 -> 158.0.8127.88-1\n\nhttps://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html\n\nThis update includes 1 security fixes.\n\nCVEs:\nCVE-2026-134401",
+      "147099bc835685d6ef4833d404e7973842e8ddad": "chromium,chromedriver: 158.0.8127.36 -> 158.0.8127.88\n\nhttps://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html\n\nThis update includes 1 security fixes.\n\nCVEs:\nCVE-2026-134401\n\n(cherry picked from commit d793cbbd45790f2ecd0aa844b78c868d2e676fda)",
+      "d793cbbd45790f2ecd0aa844b78c868d2e676fda": "chromium,chromedriver: 158.0.8127.36 -> 158.0.8127.88\n\nhttps://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html\n\nThis update includes 1 security fixes.\n\nCVEs:\nCVE-2026-134401"
+    },
     "CVE-2026-124317": {
       "231c5ea6b99c806ad42f523ab0d0261ba691c192": "expat: 2.10.0 -> 2.11.0\n\nblog: https://blog.hartwork.org/posts/expat-2-11-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_11_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_10_0...R_2_11_0\n\nFixes: CVE-2026-124317, CVE-2026-128241, CVE-2026-134703\n(cherry picked from commit 37fa0caf8c565f57b0d4fb92c94a5406e8719bef)",
       "46409c65bfb4abc1fdaad42c5926a970c5182ad4": "expat: 2.10.0 -> 2.11.0\n\nblog: https://blog.hartwork.org/posts/expat-2-11-0-released/\nchangelog: https://github.com/libexpat/libexpat/blob/R_2_11_0/expat/Changes\ndiff: https://github.com/libexpat/libexpat/compare/R_2_10_0...R_2_11_0\n\nFixes: CVE-2026-124317, CVE-2026-128241, CVE-2026-134703\n(cherry picked from commit 37fa0caf8c565f57b0d4fb92c94a5406e8719bef)",
@@ -20,10 +94,6 @@
       "d6e2c4b33efcaf9c4f4c891822237abcf3d7e3a2": "perlPackages.XSParseKeyword: 0.48 -> 0.51\n\nfixes CVE-2026-85644\n\nChangelog: https://metacpan.org/release/PEVANS/XS-Parse-Keyword-0.51/changes\n(cherry picked from commit 5550e94d9dfed5c4440d227174ad1d63b30abfc1)",
       "e0bdd1cb0012ae5c3fc797a3004d9003623f3eab": "perlPackages.XSParseKeyword: 0.48 -> 0.51\n\nfixes CVE-2026-85644\n\nChangelog: https://metacpan.org/release/PEVANS/XS-Parse-Keyword-0.51/changes\n(cherry picked from commit 5550e94d9dfed5c4440d227174ad1d63b30abfc1)",
       "5550e94d9dfed5c4440d227174ad1d63b30abfc1": "perlPackages.XSParseKeyword: 0.48 -> 0.51\n\nfixes CVE-2026-85644\n\nChangelog: https://metacpan.org/release/PEVANS/XS-Parse-Keyword-0.51/changes"
-    },
-    "CVE-2026-134401": {
-      "147099bc835685d6ef4833d404e7973842e8ddad": "chromium,chromedriver: 158.0.8127.36 -> 158.0.8127.88\n\nhttps://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html\n\nThis update includes 1 security fixes.\n\nCVEs:\nCVE-2026-134401\n\n(cherry picked from commit d793cbbd45790f2ecd0aa844b78c868d2e676fda)",
-      "d793cbbd45790f2ecd0aa844b78c868d2e676fda": "chromium,chromedriver: 158.0.8127.36 -> 158.0.8127.88\n\nhttps://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html\n\nThis update includes 1 security fixes.\n\nCVEs:\nCVE-2026-134401"
     },
     "CVE-2026-132779": {
       "0fdb37c0f52a5e5be5073d9bd9ef53ca7d7e1c0e": "nginxStable: 1.30.7 -> 1.30.8\n\nhttps://github.com/nginx/nginx/releases/tag/release-1.30.8\n\nfixes CVE-2026-132779\n\n(cherry picked from commit cf00fffde572103c2415dfc2e0dbea0c09b0654f)",
@@ -545,14 +615,6 @@
     },
     "CVE-2026-127140": {
       "f54e1f47f7952d42d161a36b0db443523072659c": "pretix: 2026.9.1 -> 2026.9.2\n\nhttps://pretix.eu/about/de/blog/20261117-release-2026-9-2-pretixscan-wordpress-widget/\nhttps://github.com/pretix/pretix/compare/v2026.9.1...v2026.9.2\n\nFixes: CVE-2026-127138, CVE-2026-127139, CVE-2026-127140, CVE-2026-127174"
-    },
-    "CVE-2026-123633": {
-      "f0a5d452ddf1d33975d62054a1999327d952a98d": "nginx: 1.30.6 -> 1.30.7\n\nFixes: CVE-2026-123633, CVE-2026-123007",
-      "5cca2244da8275146f94814b6dac8007ab0af07a": "nginxMainline: 1.31.8 -> 1.31.9\n\nFixes: CVE-2026-123633, CVE-2026-123007"
-    },
-    "CVE-2026-123007": {
-      "f0a5d452ddf1d33975d62054a1999327d952a98d": "nginx: 1.30.6 -> 1.30.7\n\nFixes: CVE-2026-123633, CVE-2026-123007",
-      "5cca2244da8275146f94814b6dac8007ab0af07a": "nginxMainline: 1.31.8 -> 1.31.9\n\nFixes: CVE-2026-123633, CVE-2026-123007"
     },
     "CVE-2026-110339": {
       "b8b7fb11e1f27e417530da4877ac55d218d77cd1": "[26.05] libreswan: add patch for CVE-2026-110339 (#589782)",

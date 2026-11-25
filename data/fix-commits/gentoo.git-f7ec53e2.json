@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://gitweb.gentoo.org/repo/gentoo.git",
   "vulnerabilities": {
+    "CVE-2026-124749": {
+      "9e2453386c1a35e887b715058b492251fe711a46": "sys-auth/pam_mysql: Fix authentication bypass (CVE-2026-124749) and segfaults\n\nBug: https://bugs.gentoo.org/986865\nSigned-off-by: Hanno B\u00f6ck <hanno@gentoo.org>"
+    },
     "CVE-2026-132779": {
       "8556d75abeb85ee2eaa118823aaa9a17b4e3fe73": "www-servers/nginx: security bump CVE-2026-132779\n\nSigned-off-by: Robin H. Johnson <robbat2@gentoo.org>"
     },
