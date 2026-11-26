@@ -2,9 +2,15 @@
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
     "CVE-2026-114938": {
+      "692716090380b63a90ad51a56d8bfda67f1344e4": "[Backport release-26.11] jetbrains.*: update all IDEs (CVE-2026-114938) (#593635)",
+      "794723fe268aa91b698a3fd510d406047cc09237": "rider: add CVE-2026-114938 to knownVulnerabilities\n\n(cherry picked from commit cd53111f8c76b599a3f9da64142e7890829eaab7)",
+      "cd90a8141bf278b1cf6015b72bb0a92778221734": "clion: add CVE-2026-114938 to knownVulnerabilities\n\n(cherry picked from commit 88f6572daca0520dc0e222fc69a6b90bd86a3b02)",
+      "38a19401791a8c243399d4c867a8fe934925f0bc": "jetbrains.*: update all IDEs (CVE-2026-114938) (#593063)",
       "cc95aff178b0b549d6f66f787c699fbb9d0c2367": "cryptomator: 1.19.6 -> 1.19.7\n\n1.19.7 only disables the JVM's Base64 intrinsics (-XX:-UseBASE64Intrinsics)\nto remove the attack surface for CVE-2026-114938. The packaged JDK is the\nZulu 27 JavaFX build, which is not part of the November security release\n(only the plain Linux JDKs were updated for that CVE), so carry the flag\nin the wrapper to match upstream.\n\n(cherry picked from commit d82bfa093998a8ea8827afe26c56b05da8e2e7b9)",
       "a894ebb5dc5f001830935b24fa870a402240cf0d": "cryptomator: 1.19.6 -> 1.19.7\n\n1.19.7 only disables the JVM's Base64 intrinsics (-XX:-UseBASE64Intrinsics)\nto remove the attack surface for CVE-2026-114938. The packaged JDK is the\nZulu 27 JavaFX build, which is not part of the November security release\n(only the plain Linux JDKs were updated for that CVE), so carry the flag\nin the wrapper to match upstream.\n\n(cherry picked from commit d82bfa093998a8ea8827afe26c56b05da8e2e7b9)",
       "d82bfa093998a8ea8827afe26c56b05da8e2e7b9": "cryptomator: 1.19.6 -> 1.19.7\n\n1.19.7 only disables the JVM's Base64 intrinsics (-XX:-UseBASE64Intrinsics)\nto remove the attack surface for CVE-2026-114938. The packaged JDK is the\nZulu 27 JavaFX build, which is not part of the November security release\n(only the plain Linux JDKs were updated for that CVE), so carry the flag\nin the wrapper to match upstream.",
+      "cd53111f8c76b599a3f9da64142e7890829eaab7": "rider: add CVE-2026-114938 to knownVulnerabilities",
+      "88f6572daca0520dc0e222fc69a6b90bd86a3b02": "clion: add CVE-2026-114938 to knownVulnerabilities",
       "53f28077b41a92ff94b2baaaf2f5c1a5a4602fbc": "[Backport release-26.05] temurin-bin-17: update for CVE-2026-114938 (#590606)",
       "316b400ccd3c488e8734ff0aeddf634155d544b7": "temurin-bin-25: update for CVE-2026-114938 (#590304)",
       "7a56027e1445bb7c5d49187455bb7423ed5dfeda": "temurin-bin-17: update for CVE-2026-114938 (#590084)",
@@ -15,6 +21,14 @@
       "9c20dbdc920acc0dbbfb0750c4ede9b8bbdd67e5": "zulu{17,21,25,27}: update Linux JDKs for CVE-2026-114938\n\nUpdate the plain Linux JDKs to the November 2026 security releases.\n\nhttps://docs.azul.com/core/cve\n\nSigned-off-by: Leonard Sheng Sheng Lee <leonard.sheng.sheng.lee@gmail.com>\nAssisted-by: OpenAI Codex ([GPT-6.2 Sol](https://models.dev/models/openai/gpt-6.2-sol/))\n(cherry picked from commit 4eb9e2c0f7bab3fcb7b3f492b3690e79060a9614)",
       "8f4e2fe123557d1caba24aa0926428ffe2eabd0e": "zulu: update plain Linux JDKs for CVE-2026-114938 (#589862)",
       "4eb9e2c0f7bab3fcb7b3f492b3690e79060a9614": "zulu{17,21,25,27}: update Linux JDKs for CVE-2026-114938\n\nUpdate the plain Linux JDKs to the November 2026 security releases.\n\nhttps://docs.azul.com/core/cve\n\nSigned-off-by: Leonard Sheng Sheng Lee <leonard.sheng.sheng.lee@gmail.com>\nAssisted-by: OpenAI Codex ([GPT-6.2 Sol](https://models.dev/models/openai/gpt-6.2-sol/))"
+    },
+    "CVE-2026-134465": {
+      "24f6b43420d97cc894c536e6ad9f3ae28176b164": "python3Packages.mcp-server-git: mark as insecure\n\nRelated security issues: CVE-2026-134465, GHSA-w766-5x43-whvw\n\nFix: https://github.com/NixOS/nixpkgs/issues/592891\n(cherry picked from commit 98197b37ca2f014ea666fc09e5dca777d28a8dff)",
+      "98197b37ca2f014ea666fc09e5dca777d28a8dff": "python3Packages.mcp-server-git: mark as insecure\n\nRelated security issues: CVE-2026-134465, GHSA-w766-5x43-whvw\n\nFix: https://github.com/NixOS/nixpkgs/issues/592891"
+    },
+    "GHSA-W766-5X43-WHVW": {
+      "24f6b43420d97cc894c536e6ad9f3ae28176b164": "python3Packages.mcp-server-git: mark as insecure\n\nRelated security issues: CVE-2026-134465, GHSA-w766-5x43-whvw\n\nFix: https://github.com/NixOS/nixpkgs/issues/592891\n(cherry picked from commit 98197b37ca2f014ea666fc09e5dca777d28a8dff)",
+      "98197b37ca2f014ea666fc09e5dca777d28a8dff": "python3Packages.mcp-server-git: mark as insecure\n\nRelated security issues: CVE-2026-134465, GHSA-w766-5x43-whvw\n\nFix: https://github.com/NixOS/nixpkgs/issues/592891"
     },
     "CVE-2026-133217": {
       "353fa5fbe70ffeb85e325d69a6911738f750b088": "shapelib: fix CVE-2026-133217 (#593122)",
@@ -27,12 +41,6 @@
       "27dedf02ad359ad6fc92d498b14f05749187d93a": "zstd: 1.5.7 -> 1.6.0\n\nchangelog: https://github.com/meta/zstd/releases/tag/v1.6.0\ndiff: https://github.com/meta/zstd/compare/v1.5.7...v1.6.0\n\nFixes: CVE-2026-124851\n\n(cherry picked from commit b662f702a44e5f570a1fe74540e4a4d6bedaed87)",
       "d1f8baec70c3ec90735c442f5e60657c5c3a6926": "zstd: 1.5.7 -> 1.6.0\n\nchangelog: https://github.com/meta/zstd/releases/tag/v1.6.0\ndiff: https://github.com/meta/zstd/compare/v1.5.7...v1.6.0\n\nFixes: CVE-2026-124851\n(cherry picked from commit b662f702a44e5f570a1fe74540e4a4d6bedaed87)",
       "b662f702a44e5f570a1fe74540e4a4d6bedaed87": "zstd: 1.5.7 -> 1.6.0\n\nchangelog: https://github.com/meta/zstd/releases/tag/v1.6.0\ndiff: https://github.com/meta/zstd/compare/v1.5.7...v1.6.0\n\nFixes: CVE-2026-124851"
-    },
-    "CVE-2026-134465": {
-      "98197b37ca2f014ea666fc09e5dca777d28a8dff": "python3Packages.mcp-server-git: mark as insecure\n\nRelated security issues: CVE-2026-134465, GHSA-w766-5x43-whvw\n\nFix: https://github.com/NixOS/nixpkgs/issues/592891"
-    },
-    "GHSA-W766-5X43-WHVW": {
-      "98197b37ca2f014ea666fc09e5dca777d28a8dff": "python3Packages.mcp-server-git: mark as insecure\n\nRelated security issues: CVE-2026-134465, GHSA-w766-5x43-whvw\n\nFix: https://github.com/NixOS/nixpkgs/issues/592891"
     },
     "CVE-2026-109908": {
       "7ff19fa1cadb366048b8df3dcc7c845a2fdb0c36": "[release-26.05] libxfont_1: patch CVE-2026-109908 and CVE-2026-109920 (#592120)",
