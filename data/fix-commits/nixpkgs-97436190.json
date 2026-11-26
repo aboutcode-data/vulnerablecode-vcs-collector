@@ -1,6 +1,39 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-114938": {
+      "cc95aff178b0b549d6f66f787c699fbb9d0c2367": "cryptomator: 1.19.6 -> 1.19.7\n\n1.19.7 only disables the JVM's Base64 intrinsics (-XX:-UseBASE64Intrinsics)\nto remove the attack surface for CVE-2026-114938. The packaged JDK is the\nZulu 27 JavaFX build, which is not part of the November security release\n(only the plain Linux JDKs were updated for that CVE), so carry the flag\nin the wrapper to match upstream.\n\n(cherry picked from commit d82bfa093998a8ea8827afe26c56b05da8e2e7b9)",
+      "a894ebb5dc5f001830935b24fa870a402240cf0d": "cryptomator: 1.19.6 -> 1.19.7\n\n1.19.7 only disables the JVM's Base64 intrinsics (-XX:-UseBASE64Intrinsics)\nto remove the attack surface for CVE-2026-114938. The packaged JDK is the\nZulu 27 JavaFX build, which is not part of the November security release\n(only the plain Linux JDKs were updated for that CVE), so carry the flag\nin the wrapper to match upstream.\n\n(cherry picked from commit d82bfa093998a8ea8827afe26c56b05da8e2e7b9)",
+      "d82bfa093998a8ea8827afe26c56b05da8e2e7b9": "cryptomator: 1.19.6 -> 1.19.7\n\n1.19.7 only disables the JVM's Base64 intrinsics (-XX:-UseBASE64Intrinsics)\nto remove the attack surface for CVE-2026-114938. The packaged JDK is the\nZulu 27 JavaFX build, which is not part of the November security release\n(only the plain Linux JDKs were updated for that CVE), so carry the flag\nin the wrapper to match upstream.",
+      "53f28077b41a92ff94b2baaaf2f5c1a5a4602fbc": "[Backport release-26.05] temurin-bin-17: update for CVE-2026-114938 (#590606)",
+      "316b400ccd3c488e8734ff0aeddf634155d544b7": "temurin-bin-25: update for CVE-2026-114938 (#590304)",
+      "7a56027e1445bb7c5d49187455bb7423ed5dfeda": "temurin-bin-17: update for CVE-2026-114938 (#590084)",
+      "fc61be15bd7012d6b1a1bf27a43e3d112246f3db": "temurin-bin-27: update for CVE-2026-114938 (#590305)",
+      "0a2a2eb87542affb36be46480b66aa05409da594": "corretto: update 11, 17, 21 and 25 for CVE-2026-114938  (#589861)",
+      "3798e9593e9a36fcf43436bd122ab01c588f3ab1": "corretto{11,17,21,25}: update for CVE-2026-114938\n\n11.0.30.7.1 -> 11.0.33.1.1\n17.0.17.10 -> 17.0.21.1.2\n21.0.9.11.1 -> 21.0.13.1.2\n25.0.1.9.1 -> 25.0.5.1.2\n\nRefresh the Gradle patches for 17 and 21 and add bsdtar for packaging 21 and 25.\n\nhttps://aws.amazon.com/about-aws/whats-new/2026/11/amazon-corretto-nov-2026-updates/\n\nSigned-off-by: Leonard Sheng Sheng Lee <leonard.sheng.sheng.lee@gmail.com>\nAssisted-by: OpenAI Codex ([GPT-6.2 Sol](https://models.dev/models/openai/gpt-6.2-sol/))\nCo-authored-by: Rolf Schr\u00f6der <58295931+rollf@users.noreply.github.com>",
+      "4a6c6b3710bbcf82468bb5aaff7a8cffac7c9c46": "[Backport release-26.05] zulu: update plain Linux JDKs for CVE-2026-114938 (#589999)",
+      "9c20dbdc920acc0dbbfb0750c4ede9b8bbdd67e5": "zulu{17,21,25,27}: update Linux JDKs for CVE-2026-114938\n\nUpdate the plain Linux JDKs to the November 2026 security releases.\n\nhttps://docs.azul.com/core/cve\n\nSigned-off-by: Leonard Sheng Sheng Lee <leonard.sheng.sheng.lee@gmail.com>\nAssisted-by: OpenAI Codex ([GPT-6.2 Sol](https://models.dev/models/openai/gpt-6.2-sol/))\n(cherry picked from commit 4eb9e2c0f7bab3fcb7b3f492b3690e79060a9614)",
+      "8f4e2fe123557d1caba24aa0926428ffe2eabd0e": "zulu: update plain Linux JDKs for CVE-2026-114938 (#589862)",
+      "4eb9e2c0f7bab3fcb7b3f492b3690e79060a9614": "zulu{17,21,25,27}: update Linux JDKs for CVE-2026-114938\n\nUpdate the plain Linux JDKs to the November 2026 security releases.\n\nhttps://docs.azul.com/core/cve\n\nSigned-off-by: Leonard Sheng Sheng Lee <leonard.sheng.sheng.lee@gmail.com>\nAssisted-by: OpenAI Codex ([GPT-6.2 Sol](https://models.dev/models/openai/gpt-6.2-sol/))"
+    },
+    "CVE-2026-133217": {
+      "353fa5fbe70ffeb85e325d69a6911738f750b088": "shapelib: fix CVE-2026-133217 (#593122)",
+      "ab58a88e6afd79c88cc8dd000b5e1afad7a277e1": "shapelib: fix CVE-2026-133217\n\nReference #591295"
+    },
+    "CVE-2026-49272": {
+      "4f130d3abd3a54325d9f5f6e482df2b285e6d965": "python3Packages.django-oauth-toolkit: fast forward\n\nfor oauthlib 4.0.1 compat which fixes device code validation in the\ndevice token flow (CVE-2026-49272)."
+    },
+    "CVE-2026-124851": {
+      "27dedf02ad359ad6fc92d498b14f05749187d93a": "zstd: 1.5.7 -> 1.6.0\n\nchangelog: https://github.com/meta/zstd/releases/tag/v1.6.0\ndiff: https://github.com/meta/zstd/compare/v1.5.7...v1.6.0\n\nFixes: CVE-2026-124851\n\n(cherry picked from commit b662f702a44e5f570a1fe74540e4a4d6bedaed87)",
+      "d1f8baec70c3ec90735c442f5e60657c5c3a6926": "zstd: 1.5.7 -> 1.6.0\n\nchangelog: https://github.com/meta/zstd/releases/tag/v1.6.0\ndiff: https://github.com/meta/zstd/compare/v1.5.7...v1.6.0\n\nFixes: CVE-2026-124851\n(cherry picked from commit b662f702a44e5f570a1fe74540e4a4d6bedaed87)",
+      "b662f702a44e5f570a1fe74540e4a4d6bedaed87": "zstd: 1.5.7 -> 1.6.0\n\nchangelog: https://github.com/meta/zstd/releases/tag/v1.6.0\ndiff: https://github.com/meta/zstd/compare/v1.5.7...v1.6.0\n\nFixes: CVE-2026-124851"
+    },
+    "CVE-2026-134465": {
+      "98197b37ca2f014ea666fc09e5dca777d28a8dff": "python3Packages.mcp-server-git: mark as insecure\n\nRelated security issues: CVE-2026-134465, GHSA-w766-5x43-whvw\n\nFix: https://github.com/NixOS/nixpkgs/issues/592891"
+    },
+    "GHSA-W766-5X43-WHVW": {
+      "98197b37ca2f014ea666fc09e5dca777d28a8dff": "python3Packages.mcp-server-git: mark as insecure\n\nRelated security issues: CVE-2026-134465, GHSA-w766-5x43-whvw\n\nFix: https://github.com/NixOS/nixpkgs/issues/592891"
+    },
     "CVE-2026-109908": {
       "7ff19fa1cadb366048b8df3dcc7c845a2fdb0c36": "[release-26.05] libxfont_1: patch CVE-2026-109908 and CVE-2026-109920 (#592120)",
       "b37c500f1c064d15ac7b3855bdd31e08d70a8a1e": "libxfont_1: patch CVE-2026-109908 and CVE-2026-109920\n\nbackported from libxfont2. advisory:\nhttps://lists.x.org/archives/xorg-announce/2026-November/003765.html.\n\nNot-cherry-picked-because: package dropped on unstable"
@@ -72,10 +105,6 @@
       "19c50b3046ebad08a80fb4fbbff7af05dd373f3d": "sqlite: add patches for CVE-2026-119586\n\nAssisted-by: Claude Code (claude-opus-5-5)\n(cherry picked from commit 3f3a74f250ade5aec1999a19f35e48670b5f2fcd)",
       "ab68983dcd22f550ed6db560baaf45eb92144fcb": "sqlite: add patches for CVE-2026-119586 (#591125)",
       "3f3a74f250ade5aec1999a19f35e48670b5f2fcd": "sqlite: add patches for CVE-2026-119586\n\nAssisted-by: Claude Code (claude-opus-5-5)"
-    },
-    "CVE-2026-124851": {
-      "d1f8baec70c3ec90735c442f5e60657c5c3a6926": "zstd: 1.5.7 -> 1.6.0\n\nchangelog: https://github.com/meta/zstd/releases/tag/v1.6.0\ndiff: https://github.com/meta/zstd/compare/v1.5.7...v1.6.0\n\nFixes: CVE-2026-124851\n(cherry picked from commit b662f702a44e5f570a1fe74540e4a4d6bedaed87)",
-      "b662f702a44e5f570a1fe74540e4a4d6bedaed87": "zstd: 1.5.7 -> 1.6.0\n\nchangelog: https://github.com/meta/zstd/releases/tag/v1.6.0\ndiff: https://github.com/meta/zstd/compare/v1.5.7...v1.6.0\n\nFixes: CVE-2026-124851"
     },
     "CVE-2026-134401": {
       "10e1436b6a0ce971d6d42becc172d79cc571e8bf": "ungoogled-chromium: 158.0.8127.36-1 -> 158.0.8127.88-1\n\nhttps://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html\n\nThis update includes 1 security fixes.\n\nCVEs:\nCVE-2026-134401\n\n(cherry picked from commit c0222128f8bf4f9e01ad3fd9890b936764735ac6)",
@@ -152,9 +181,6 @@
       "c0bb05e7af5ea39b23a67464f7cc34c417c2863f": "libxml2_13: fix CVE-2026-76781\n\n(cherry picked from commit 9009c1a116f76c49f0f806b5ff23d382d07c68cc)",
       "f92cf63fe9cef2b8755a7d9df2bcc0f4c07facbe": "libxml2_13: fix CVE-2026-76781 (#588819)",
       "9009c1a116f76c49f0f806b5ff23d382d07c68cc": "libxml2_13: fix CVE-2026-76781"
-    },
-    "CVE-2026-49272": {
-      "baab6bf80986a5f14fb7ab1e65cc9ec172948891": "python3Packages.django-oauth-toolkit: fast forward\n\nfor oauthlib 4.0.1 compat which fixes device code validation in the\ndevice token flow (CVE-2026-49272)."
     },
     "CVE-2026-131873": {
       "2dbc4075efb619e8b2a6513c4e759cb5e81f16cf": "[Backport release-26.05] gargoyle: patch CVE-2026-131873 and CVE-2026-131874 (#591513)",
@@ -457,18 +483,6 @@
     },
     "CVE-2026-102977": {
       "ed377bfd17a73d69b6135069cecfb104f0f7d5a6": "mediawiki: 1.45.4 -> 1.45.7\n\nhttps://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/thread/LHSEHQXIZ6RE63D7NIOEREQXB26JJLLE/\nhttps://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/thread/4WXGIT3HVZ7QSELSPT6BX7XUFM6UMW2D/\n\nFixes:\n1.45.7\nCVE-2026-132657, CVE-2026-132670, CVE-2026-132671, CVE-2026-132672,\nCVE-2026-132673, CVE-2026-132674, CVE-2026-132675, CVE-2026-132676,\nCVE-2026-132677, CVE-2026-132680, CVE-2026-132681, CVE-2026-132682,\nCVE-2026-132685, CVE-2026-132686, CVE-2026-132687, CVE-2026-132688,\nCVE-2026-132693, CVE-2026-132694, CVE-2026-132696, CVE-2026-132706,\nCVE-2026-132707, CVE-2026-132708, CVE-2026-132709, CVE-2026-132710,\nCVE-2026-132711, CVE-2026-132712, CVE-2026-132713, CVE-2026-132714,\nCVE-2026-132715, CVE-2026-132717, CVE-2026-132718, CVE-2026-132719,\nCVE-2026-132720, CVE-2026-132726, CVE-2026-132728, CVE-2026-132730,\nCVE-2026-132735, CVE-2026-132736,\n\n1.45.5\nCVE-2026-102966, CVE-2026-102967, CVE-2026-102968, CVE-2026-102969,\nCVE-2026-102970, CVE-2026-102971, CVE-2026-102972, CVE-2026-102973,\nCVE-2026-102975, CVE-2026-102974, CVE-2026-102977"
-    },
-    "CVE-2026-114938": {
-      "53f28077b41a92ff94b2baaaf2f5c1a5a4602fbc": "[Backport release-26.05] temurin-bin-17: update for CVE-2026-114938 (#590606)",
-      "316b400ccd3c488e8734ff0aeddf634155d544b7": "temurin-bin-25: update for CVE-2026-114938 (#590304)",
-      "7a56027e1445bb7c5d49187455bb7423ed5dfeda": "temurin-bin-17: update for CVE-2026-114938 (#590084)",
-      "fc61be15bd7012d6b1a1bf27a43e3d112246f3db": "temurin-bin-27: update for CVE-2026-114938 (#590305)",
-      "0a2a2eb87542affb36be46480b66aa05409da594": "corretto: update 11, 17, 21 and 25 for CVE-2026-114938  (#589861)",
-      "3798e9593e9a36fcf43436bd122ab01c588f3ab1": "corretto{11,17,21,25}: update for CVE-2026-114938\n\n11.0.30.7.1 -> 11.0.33.1.1\n17.0.17.10 -> 17.0.21.1.2\n21.0.9.11.1 -> 21.0.13.1.2\n25.0.1.9.1 -> 25.0.5.1.2\n\nRefresh the Gradle patches for 17 and 21 and add bsdtar for packaging 21 and 25.\n\nhttps://aws.amazon.com/about-aws/whats-new/2026/11/amazon-corretto-nov-2026-updates/\n\nSigned-off-by: Leonard Sheng Sheng Lee <leonard.sheng.sheng.lee@gmail.com>\nAssisted-by: OpenAI Codex ([GPT-6.2 Sol](https://models.dev/models/openai/gpt-6.2-sol/))\nCo-authored-by: Rolf Schr\u00f6der <58295931+rollf@users.noreply.github.com>",
-      "4a6c6b3710bbcf82468bb5aaff7a8cffac7c9c46": "[Backport release-26.05] zulu: update plain Linux JDKs for CVE-2026-114938 (#589999)",
-      "9c20dbdc920acc0dbbfb0750c4ede9b8bbdd67e5": "zulu{17,21,25,27}: update Linux JDKs for CVE-2026-114938\n\nUpdate the plain Linux JDKs to the November 2026 security releases.\n\nhttps://docs.azul.com/core/cve\n\nSigned-off-by: Leonard Sheng Sheng Lee <leonard.sheng.sheng.lee@gmail.com>\nAssisted-by: OpenAI Codex ([GPT-6.2 Sol](https://models.dev/models/openai/gpt-6.2-sol/))\n(cherry picked from commit 4eb9e2c0f7bab3fcb7b3f492b3690e79060a9614)",
-      "8f4e2fe123557d1caba24aa0926428ffe2eabd0e": "zulu: update plain Linux JDKs for CVE-2026-114938 (#589862)",
-      "4eb9e2c0f7bab3fcb7b3f492b3690e79060a9614": "zulu{17,21,25,27}: update Linux JDKs for CVE-2026-114938\n\nUpdate the plain Linux JDKs to the November 2026 security releases.\n\nhttps://docs.azul.com/core/cve\n\nSigned-off-by: Leonard Sheng Sheng Lee <leonard.sheng.sheng.lee@gmail.com>\nAssisted-by: OpenAI Codex ([GPT-6.2 Sol](https://models.dev/models/openai/gpt-6.2-sol/))"
     },
     "CVE-2026-127178": {
       "0cffa7aa1971e9f199fab0e80b4dd20588c536c0": "postfixadmin: 4.0.5 -> 4.0.7\n\nhttps://github.com/postfixadmin/postfixadmin/releases/tag/v4.0.7\n\nFixes CVE-2026-127178\nCloses #590429\n\n(cherry picked from commit a463f6d336f8aeaa282c15d893d8cf03cbc1fde9)",

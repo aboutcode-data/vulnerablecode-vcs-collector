@@ -1,6 +1,27 @@
 {
   "vcs_url": "https://github.com/github/advisory-database",
   "vulnerabilities": {
+    "GHSA-CMRR-63R4-J6F9": {
+      "16e023a58832bafec96442a744a36756b274faa7": "Publish GHSA-cmrr-63r4-j6f9"
+    },
+    "GHSA-VW2V-G4X7-XCQG": {
+      "a67478317bed991650fe7b5d88a61d9fc6f209dd": "Publish GHSA-vw2v-g4x7-xcqg"
+    },
+    "GHSA-7FGC-3H6C-698R": {
+      "d22333cd701640158b4f6c78b361c7a3de3ff826": "Publish GHSA-7fgc-3h6c-698r"
+    },
+    "GHSA-H746-QPXH-PH7G": {
+      "4c5f6673646284475f0ab42609239564e7df5c30": "Publish GHSA-h746-qpxh-ph7g"
+    },
+    "GHSA-VX55-MMVV-P227": {
+      "f5a82674ebcb40f29eaf221186c57056f81dd761": "Publish Advisories\n\nGHSA-vx55-mmvv-p227\nGHSA-7rqg-q392-46rw\nGHSA-c7vr-vjm2-3grc"
+    },
+    "GHSA-7RQG-Q392-46RW": {
+      "f5a82674ebcb40f29eaf221186c57056f81dd761": "Publish Advisories\n\nGHSA-vx55-mmvv-p227\nGHSA-7rqg-q392-46rw\nGHSA-c7vr-vjm2-3grc"
+    },
+    "GHSA-C7VR-VJM2-3GRC": {
+      "f5a82674ebcb40f29eaf221186c57056f81dd761": "Publish Advisories\n\nGHSA-vx55-mmvv-p227\nGHSA-7rqg-q392-46rw\nGHSA-c7vr-vjm2-3grc"
+    },
     "GHSA-Q22X-99Q7-FR6W": {
       "87d8c109dfa7217c586336f0283dadd0625ea4cf": "Publish GHSA-q22x-99q7-fr6w"
     },
