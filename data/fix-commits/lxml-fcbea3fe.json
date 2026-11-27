@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://github.com/lxml/lxml",
   "vulnerabilities": {
+    "GHSA-59QX-3JJV-X996": {
+      "69467099943c8224bfd6d5b2dd3f24643043d534": "GHSA-59qx-3jjv-x996: Postpone parse event reporting while parsing entities that may fail to succeed.\nlibxml2 discards parsed entities without notice if they fail to parse, which leaves node events that were already reported for them referring to released memory, triggering a use-after-free or double-free."
+    },
     "GHSA-27MW-M39X-FM32": {
       "0df4757446a9daa47e2ee9dd074c0bcc64229308": "Fix incorrect DTD comment/PI handling when loading the internal/external subsets during sax/target/iterparse parsing.\n\nIt is unclear why comments and PIs in internal/external subsets should get reported at all, so this change disables the existing special case.\n\nCloses https://github.com/lxml/lxml/security/advisories/GHSA-27mw-m39x-fm32"
     },
