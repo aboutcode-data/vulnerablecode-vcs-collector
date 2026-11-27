@@ -1,6 +1,11 @@
 {
   "vcs_url": "https://github.com/nixos/nixpkgs",
   "vulnerabilities": {
+    "CVE-2026-133167": {
+      "36fb1cb331c17472f4125c5854ef8390e982ec0c": "dcmtk: patch CVE-2026-133167\n\nBackport upstream commit f9fbc4f\nRelated to: #591287\n\n(cherry picked from commit 1c9551017c92960804e092dc3bf7a94ca78d13c2)",
+      "87b5876193a92381b532c60c9f9cb3cd5e29819d": "dcmtk: patch CVE-2026-133167 (#592023)",
+      "1c9551017c92960804e092dc3bf7a94ca78d13c2": "dcmtk: patch CVE-2026-133167\n\nBackport upstream commit f9fbc4f\nRelated to: #591287"
+    },
     "CVE-2026-114938": {
       "692716090380b63a90ad51a56d8bfda67f1344e4": "[Backport release-26.11] jetbrains.*: update all IDEs (CVE-2026-114938) (#593635)",
       "794723fe268aa91b698a3fd510d406047cc09237": "rider: add CVE-2026-114938 to knownVulnerabilities\n\n(cherry picked from commit cd53111f8c76b599a3f9da64142e7890829eaab7)",

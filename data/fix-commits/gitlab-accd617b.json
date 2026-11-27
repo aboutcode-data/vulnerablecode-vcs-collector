@@ -1,6 +1,12 @@
 {
   "vcs_url": "https://gitlab.com/gitlab-org/gitlab",
   "vulnerabilities": {
+    "GHSA-5XRQ-8626-4RWP": {
+      "36b9eb092794905bea69cd1102e60cff855f4071": "Upgrade Vitest to 5.1.2\n\nVitest 4.0.8 is affected by the critical advisory GHSA-5xrq-8626-4rwp:\na listening Vitest UI or API server can read and execute arbitrary\nfiles. Vitest 5 also fixes the path traversal in @vitest/mocker,\nGHSA-82fw-gwwq-j7x9.\n\nVitest 5 uses the project's own Vite as a peer dependency, so the\nlockfile drops the second copy of Vite 7, esbuild and Rollup that\nVitest 4 installed. The lockfile is deduplicated, so the newer\n@jridgewell and tinyexec versions that Vitest 5 brings in replace the\nolder copies instead of sitting next to them."
+    },
+    "GHSA-82FW-GWWQ-J7X9": {
+      "36b9eb092794905bea69cd1102e60cff855f4071": "Upgrade Vitest to 5.1.2\n\nVitest 4.0.8 is affected by the critical advisory GHSA-5xrq-8626-4rwp:\na listening Vitest UI or API server can read and execute arbitrary\nfiles. Vitest 5 also fixes the path traversal in @vitest/mocker,\nGHSA-82fw-gwwq-j7x9.\n\nVitest 5 uses the project's own Vite as a peer dependency, so the\nlockfile drops the second copy of Vite 7, esbuild and Rollup that\nVitest 4 installed. The lockfile is deduplicated, so the newer\n@jridgewell and tinyexec versions that Vitest 5 brings in replace the\nolder copies instead of sitting next to them."
+    },
     "GHSA-2586-8GHR-69FJ": {
       "be23bac2cf2133ac15028ab9c3395f7031b010e6": "Do not restore sessions destroyed during a request\n\nA request that loaded a session wrote it back when it finished, even\nafter a sign-out or a revocation had destroyed it in the meantime, so\nthe old session ID worked again.\n\nRails 8.0.5.2 fixed this in ActionDispatch::Session::CacheStore\n(GHSA-2586-8ghr-69fj), but Gitlab::Sessions::CacheStore replaces the\nmethod that received the fix. Run the same check there.\n\nA request that signs the user out now also gets a new session ID.\nOtherwise it would lose what it stores afterwards, such as the flash\nmessage, because the session it loaded no longer exists.\n\nChangelog: fixed"
     },
