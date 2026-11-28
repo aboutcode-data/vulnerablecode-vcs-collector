@@ -1,6 +1,9 @@
 {
   "vcs_url": "https://android.googlesource.com/platform/external/expat",
   "vulnerabilities": {
+    "CVE-2026-137951": {
+      "e263ba0223b802e24d2541f6140f667cef505e86": "Merge pull request #1534 from libexpat/no-ge-unicode\n\n[CVE-2026-137951] lib: Fix `storeSelfEntityValue` for `XML_GE == 0 && defined(XML_UNICODE)`"
+    },
     "CVE-2026-134703": {
       "0d6dacce2895f5805d704e3cb76c64b6ee98e4c7": "Merge pull request #1519 from libexpat/november-2-issue-2\n\n[CVE-2026-134703] lib: Access the right \"last two bytes\" when checking for trailing isolated high surrogates with UTF-16 decoding"
     },
